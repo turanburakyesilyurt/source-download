@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Turan Burak Yeşilyurt">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Download</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header class="toolbar">
+    <div class="toolbar__brand">
+      <img src="icons/icon32.png" alt="">
+      <h1>Source Download</h1>
+    </div>
+
+    <div class="toolbar__search" id="toolbar-search">
+      <svg class="toolbar__search-icon" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <circle cx="7" cy="7" r="4.5"/>
+        <path d="M10.5 10.5L14 14"/>
+      </svg>
+      <input id="search-input" type="text" spellcheck="false" autocomplete="off"
+             placeholder="Search by name, URL, type, alt text or title…"
+             aria-label="Search resources">
+      <button id="search-clear" class="icon-btn toolbar__search-clear" title="Clear search" hidden>
+        <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M4 4l8 8M12 4l-8 8"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toolbar__actions">
+      <div class="view-toggle" role="group" aria-label="View mode">
+        <button id="view-grid" class="icon-btn icon-btn--active" title="Grid view">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4">
+            <rect x="3" y="3" width="4.2" height="4.2" rx="1"/>
+            <rect x="8.8" y="3" width="4.2" height="4.2" rx="1"/>
+            <rect x="3" y="8.8" width="4.2" height="4.2" rx="1"/>
+            <rect x="8.8" y="8.8" width="4.2" height="4.2" rx="1"/>
+          </svg>
+        </button>
+        <button id="view-list" class="icon-btn" title="List view">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M3 4h10M3 8h10M3 12h10"/>
+          </svg>
+        </button>
+      </div>
+      <button id="btn-refresh" class="btn" title="Re-scan the page for resources currently in the DOM">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13.5 8A5.5 5.5 0 1 1 11 3.7"/>
+          <path d="M13.5 2v2.5H11"/>
+        </svg>
+        Refresh
+      </button>
+      <button id="btn-download-selected" class="btn" title="Download the resources you checked as a ZIP">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
+          <path d="M2.5 12.5h11"/>
+        </svg>
+        Download Selected
+        <span id="btn-download-selected-count" class="btn__badge" hidden>0</span>
+      </button>
+      <button id="btn-download-view" class="btn" title="Download only the visible resources (current category + search)">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1.5 8s2.4-4.5 6.5-4.5S14.5 8 14.5 8 12.1 12.5 8 12.5 1.5 8 1.5 8z"/>
+          <circle cx="8" cy="8" r="2"/>
+          <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
+          <path d="M2.5 12.5h11"/>
+        </svg>
+        <span>Download View</span>
+      </button>
+      <button id="btn-download-all" class="btn btn--primary" title="Download every captured resource as a folder-structured ZIP">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
+          <path d="M2.5 12.5h11"/>
+        </svg>
+        Download All
+      </button>
+      <button id="btn-guide" class="icon-btn toolbar__guide-btn" title="How to use Source Download">
+        <span class="toolbar__guide-q">?</span>
+      </button>
+    </div>
+  </header>
+
+  <div id="progress-wrap" class="progress" hidden>
+    <div class="progress__bar"><div id="progress-fill" class="progress__fill"></div></div>
+    <span id="progress-label" class="progress__label">Preparing…</span>
+  </div>
+
+  <main class="main">
+    <nav class="tabs-vertical" id="tabs"></nav>
+
+    <section class="list-pane">
+      <div id="filterbar" class="filterbar">
+        <input id="f-min-size" class="filterbar__input" type="number" min="0" step="1" placeholder="Min KB" title="Minimum file size (KB)">
+        <input id="f-max-size" class="filterbar__input" type="number" min="0" step="1" placeholder="Max KB" title="Maximum file size (KB)">
+        <span id="f-dims" class="filterbar__dims" hidden>
+          <input id="f-min-width" class="filterbar__input" type="number" min="0" step="1" placeholder="Min width px" title="Minimum width (px)">
+          <input id="f-min-height" class="filterbar__input" type="number" min="0" step="1" placeholder="Min height px" title="Minimum height (px)">
+        </span>
+        <select id="f-method" class="filterbar__select" title="Filter by HTTP method" hidden>
+          <option value="">All methods</option>
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="PATCH">PATCH</option>
+          <option value="DELETE">DELETE</option>
+          <option value="HEAD">HEAD</option>
+          <option value="OPTIONS">OPTIONS</option>
+        </select>
+        <select id="f-type" class="filterbar__select" title="Filter by request type" hidden>
+          <option value="">All types</option>
+          <option value="xhr">XHR</option>
+          <option value="fetch">Fetch</option>
+        </select>
+        <select id="f-sort" class="filterbar__select" title="Sort resources">
+          <option value="name">Sort by name</option>
+          <option value="size">Sort by size</option>
+          <option value="type">Sort by type</option>
+          <option value="time">Sort by time</option>
+        </select>
+        <button id="f-sort-dir" class="icon-btn" title="Toggle ascending / descending">↑</button>
+        <button id="f-clear" class="btn btn--sm" title="Clear all filters">Clear</button>
+      </div>
+      <div id="list" class="list"></div>
+      <div id="empty-state" class="empty" hidden>
+        <div class="empty__icon">
+          <svg viewBox="0 0 48 48" width="42" height="42" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="6" width="36" height="36" rx="6"/>
+            <path d="M16 34V14M24 34V14M32 34V14"/>
+          </svg>
+        </div>
+        <p class="empty__title" id="empty-title">No resources found</p>
+        <p class="empty__subtitle" id="empty-subtitle">
+          Reload the page while this panel is open to capture network requests, or click Refresh to scan the current DOM.
+        </p>
+      </div>
+
+      <div id="text-view" class="text-view" hidden>
+        <div class="text-hint">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="8" r="6.5"/>
+            <path d="M8 7.2c0-1.2 1-1.9 2-1.6 1 .3 1.5 1.3 1.1 2.2-.4 1-1.3 1.2-1.9 2.1"/>
+            <path d="M8 11.8h.01"/>
+          </svg>
+          <span>
+            This is a live <strong>content viewer</strong>, not a resource list. Everything holding
+            text on the page is captured in DOM order and kept here as the page changes. Use the
+            <strong>Show</strong> filter to narrow it down, and the <strong>Export</strong> buttons to
+            save what you see. See the <a href="#" id="text-hint-guide">guide</a> for details.
+          </span>
+        </div>
+        <div class="text-filters">
+          <div class="tf-group">
+            <span class="tf-group__label">Show</span>
+            <select id="tf-kind" class="filterbar__select" title="Which parts of the page to display. Element types found on the page (div, span, …) are added to this list automatically.">
+              <option value="all">All elements</option>
+              <option value="heading">Headings</option>
+              <option value="paragraph">Paragraphs</option>
+              <option value="list">List items</option>
+              <option value="table">Tables</option>
+              <option value="css">CSS selector</option>
+            </select>
+            <select id="tf-level" class="filterbar__select" title="Heading level">
+              <option value="all">All levels</option>
+              <option value="h1">H1</option>
+              <option value="h2">H2</option>
+              <option value="h3">H3</option>
+              <option value="h4">H4</option>
+              <option value="h5">H5</option>
+              <option value="h6">H6</option>
+            </select>
+          </div>
+          <div class="tf-group tf-group--grow">
+            <span class="tf-group__label">CSS selector</span>
+            <input id="tf-css" class="filterbar__input filterbar__input--wide" type="text" placeholder=".price, li.item, [data-x] — press Enter" title="Extra elements to capture — any CSS selector (press Enter to apply)">
+          </div>
+          <div class="tf-group tf-group--grow">
+            <span class="tf-group__label">Search</span>
+            <input id="tf-query" class="filterbar__input filterbar__input--wide" type="text" placeholder="Filter captured text…" title="Only keep blocks containing this text">
+          </div>
+          <div class="tf-group">
+            <span class="tf-group__label">Capture</span>
+            <button id="tf-live" class="btn btn--sm btn--primary" title="Keep scanning the page as it changes">Live on</button>
+            <button id="tf-refresh" class="btn btn--sm" title="Scan the page right now">Scan now</button>
+            <button id="tf-clear" class="btn btn--sm" title="Clear all captured content">Clear</button>
+          </div>
+          <div class="tf-group">
+            <span class="tf-group__label">Export</span>
+            <button id="tf-export-md" class="btn btn--sm" title="Headings & paragraphs as Markdown">MD</button>
+            <button id="tf-export-csv" class="btn btn--sm" title="Tables as CSV (ZIP)">CSV</button>
+            <button id="tf-export-html" class="btn btn--sm" title="Tables as HTML (ZIP)">HTML</button>
+            <button id="tf-export-xlsx" class="btn btn--sm btn--primary" title="Tables as a real XLSX workbook">XLSX</button>
+          </div>
+        </div>
+        <div id="text-stream" class="text-stream"></div>
+      </div>
+    </section>
+
+    <div id="resizer" class="resizer" title="Drag to resize"></div>
+
+    <aside class="inspector" id="inspector" hidden>
+      <div class="inspector__tabs" id="inspector-tabs" hidden></div>
+      <div id="inspector-empty" class="inspector__empty">
+        <svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="20" cy="20" r="12"/>
+          <path d="M28 28L38 38"/>
+          <path d="M16 20h8M20 16v8"/>
+        </svg>
+        <p>Select a resource to inspect its details</p>
+      </div>
+      <div id="inspector-body" class="inspector__body" hidden>
+        <header class="inspector__header">
+          <h2 id="inspector-title">Resource</h2>
+          <div class="inspector__header-actions">
+            <button id="inspector-details" class="icon-btn inspector__details-btn" title="Toggle details">
+              <svg class="chev" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6.5l4 4 4-4"/>
+              </svg>
+              <span>Details</span>
+            </button>
+            <button id="inspector-open" class="icon-btn" title="Open in new tab">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2.5H2.5V13.5H13.5V10"/>
+                <path d="M9 2.5h4.5V7"/>
+                <path d="M13.5 2.5L8 8"/>
+              </svg>
+            </button>
+            <button id="inspector-copy" class="icon-btn" title="Copy URL">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="6" width="8" height="8" rx="2"/>
+                <path d="M4 10H3a1 1 0 01-1-1V3a1 1 0 011-1h6a1 1 0 011 1v1"/>
+              </svg>
+            </button>
+            <button id="inspector-download" class="icon-btn" title="Download this file">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
+                <path d="M2.5 12.5h11"/>
+              </svg>
+            </button>
+            <button id="inspector-close" class="icon-btn" title="Close this file">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M4 4l8 8M12 4l-8 8"/>
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div id="inspector-preview" class="inspector__preview"></div>
+
+        <div id="inspector-meta-wrap" class="inspector__meta" hidden>
+          <dl class="inspector__meta-grid">
+            <div class="meta-row">
+              <dt>URL</dt>
+              <dd><a id="meta-url" href="#" target="_blank" rel="noopener"></a></dd>
+            </div>
+            <div class="meta-row">
+              <dt>Type</dt>
+              <dd id="meta-type"></dd>
+            </div>
+            <div class="meta-row">
+              <dt>MIME</dt>
+              <dd id="meta-mime"></dd>
+            </div>
+            <div class="meta-row">
+              <dt>Size</dt>
+              <dd id="meta-size"></dd>
+            </div>
+            <div class="meta-row">
+              <dt>HTTP</dt>
+              <dd id="meta-http"></dd>
+            </div>
+            <div class="meta-row">
+              <dt>Source</dt>
+              <dd id="meta-source"></dd>
+            </div>
+            <div class="meta-row" id="meta-title-row" hidden>
+              <dt>Title</dt>
+              <dd id="meta-title"></dd>
+            </div>
+            <div class="meta-row" id="meta-alt-row" hidden>
+              <dt>Alt</dt>
+              <dd id="meta-alt"></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="statusbar">
+    <span id="status-resources">0 resources</span>
+    <span id="status-selected" hidden></span>
+    <span id="status-size"></span>
+    <span id="status-message" class="statusbar__message"></span>
+  </footer>
+
+  <div id="context-menu" class="context-menu" hidden></div>
+  <div id="toast" class="toast" hidden></div>
+
+  <div id="guide" class="guide" hidden>
+    <div class="guide__backdrop" id="guide-backdrop"></div>
+    <div class="guide__modal" role="dialog" aria-modal="true" aria-labelledby="guide-title">
+      <header class="guide__header">
+        <h2 id="guide-title">Source Download — User Guide</h2>
+        <div class="guide__search">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input id="guide-search" type="text" spellcheck="false" autocomplete="off"
+                 placeholder="Search the guide…" aria-label="Search the guide">
+        </div>
+        <button id="guide-close" class="icon-btn guide__close" title="Close (Esc)">
+          <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M4 4l8 8M12 4l-8 8"/>
+          </svg>
+        </button>
+      </header>
+      <div class="guide__body" id="guide-body">
+        <section class="guide__sec" data-key="getting started open devtools popup badge icon">
+          <h3>Getting started</h3>
+          <p>
+            Click the <strong>Source Download</strong> tab in the DevTools toolbar (press
+            <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, then the tab in the DevTools
+            toolbar). Chrome does not allow extensions to open DevTools automatically, which is why the
+            panel lives there. The toolbar icon popup lets you choose which categories feed the badge
+            counter on the icon.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="categories tabs sidebar vertical">
+          <h3>Categories</h3>
+          <p>
+            The vertical tabs on the left group every captured resource by type: Images, Videos, Audio,
+            Documents, Fonts, WASM, SVG, APIs, and more. Each tab shows a live count. Only one category
+            is shown at a time; switching resets all filters, so what you see always matches the tab.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="search regex filter toolbar">
+          <h3>Search &amp; filters</h3>
+          <p>
+            The search bar filters by name, URL, type, alt text or title. Enclose your query in
+            <kbd>/…/</kbd> to use a regular expression, e.g. <code>/\.(png|jpg)$/</code>. Below the
+            toolbar, the filter bar changes per category: size and dimension ranges for media, HTTP
+            method and request type for APIs, plus sorting and direction.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="grid list view toggle">
+          <h3>Grid &amp; list view</h3>
+          <p>
+            Toggle between a compact grid (small thumbnails) and a detailed list with the buttons next
+            to the search bar. Your choice is remembered between sessions. In list view, checkboxes let
+            you select individual resources for a bulk download.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="inspect preview viewer details tabs">
+          <h3>Inspect a resource</h3>
+          <p>
+            Click any resource to open it in the inspect pane on the right. Each opened file becomes a
+            tab, so you can compare several resources side by side — the newest opens on the left.
+            Specialized viewers exist for images, video, audio, fonts, SVG, and text/code (with a
+            Beautify toggle). APIs show a split view: response on the left, request details (method,
+            status, headers, query parameters and body) on the right.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="download zip selected view all">
+          <h3>Downloading</h3>
+          <p>
+            <strong>Download View</strong> saves the currently visible resources (active category +
+            search + filters) as a ZIP; it relabels to <em>Download Filtered (N)</em> when filters are
+            active. <strong>Download Selected</strong> downloads only the checked items. <strong>Download
+            All</strong> captures every discovered resource into a folder-structured ZIP. Failed
+            downloads are retried automatically and can be retried again from the context menu.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="lightbox zoom pan keyboard">
+          <h3>Lightbox</h3>
+          <p>
+            The zoom button opens media in a full-size lightbox where you can pan by dragging, zoom with
+            the mouse wheel, the on-screen buttons or the keyboard (<kbd>+</kbd>/<kbd>-</kbd> to zoom,
+            <kbd>0</kbd> to reset, <kbd>Esc</kbd> to close).
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="text content viewer table html export md csv xlsx">
+          <h3>Text &amp; tables</h3>
+          <p>
+            The <strong>Text</strong> category is a live content viewer. It captures every element that
+            holds text — headings, paragraphs, list items, buttons, <code>div</code>/<code>span</code>
+            and more — in DOM order, and keeps scanning while <strong>Live</strong> is on. Use
+            <strong>Show</strong> to filter by element type, a heading level, or a custom CSS selector.
+            Tables store a bounded history of snapshots so dynamic (SPA) tables are never lost; the chip
+            next to each table shows how many snapshots and unique rows you can export. Export as
+            Markdown (headings/paragraphs), or tables as CSV, HTML, or a real multi-sheet
+            <strong>XLSX</strong> workbook. Checked items win; otherwise everything currently visible is
+            exported.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="video hls dash fallback merge">
+          <h3>Video fallback &amp; HLS</h3>
+          <p>
+            Streams the browser cannot play natively (HLS <code>.m3u8</code>, DASH <code>.mpd</code>,
+            unknown codecs) show a fallback instead of a black player. For HLS you can merge the
+            segments into a single video file right from the panel, or download the original manifest.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="tips badges api xhr fetch wasm svg fonts">
+          <h3>Pro tips</h3>
+          <p>
+            Dynamic <strong>API</strong> responses (XHR/fetch) are not deduplicated by URL — each reply
+            stays in the list (capped FIFO) so you can compare repeated requests. Static assets are
+            deduplicated. Use <strong>Refresh</strong> to re-scan the current DOM, and reload the page
+            while the panel is open to capture every network request, including ones triggered before
+            you switched tabs.
+          </p>
+        </section>
+      </div>
+      <div class="guide__empty" id="guide-empty">No guide sections match your search.</div>
+      <footer class="guide__footer">
+        <span>Source Download v<span id="guide-version">1.8.1</span> — 100% dependency-free.</span>
+      </footer>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lightbox__stage" id="lightbox-stage">
+      <div id="lightbox-content" class="lightbox__content"></div>
+      <div class="lightbox__toolbar">
+        <button class="lightbox__btn" id="lightbox-zoom-out" title="Zoom out (−)">−</button>
+        <span id="lightbox-zoom-label" class="lightbox__zoom-label">100%</span>
+        <button class="lightbox__btn" id="lightbox-zoom-in" title="Zoom in (+)">+</button>
+        <button class="lightbox__btn" id="lightbox-zoom-reset" title="Reset zoom (0)">⤾</button>
+        <span class="lightbox__sep"></span>
+        <button class="lightbox__btn lightbox__btn--close" id="lightbox-close" title="Close (Esc)">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/zip.js"></script>
+  <script src="lib/xlsx.js"></script>
+  <script src="lib/hls.js"></script>
+  <script src="lib/beautify.js"></script>
+  <script src="panel.js"></script>
+</body>
+</html>

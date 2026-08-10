@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Turan Burak Yeşilyurt">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <header class="popup__header">
+      <img class="popup__logo" src="icons/icon32.png" alt="">
+      <h1>Source Download</h1>
+      <span id="badge-preview" class="popup__badge" hidden></span>
+    </header>
+
+    <div class="popup__body">
+      <section class="popup__col popup__col--tracking">
+        <p class="popup__intro">
+          Categories counted by the <strong>toolbar badge</strong>.
+          Toggle one off to stop counting it — the badge instantly reflects only what you track.
+        </p>
+        <div id="tracking-list" class="tracking"></div>
+      </section>
+
+      <section class="popup__col">
+        <div class="popup__help">
+          <h2 class="popup__help-title">How to use the full panel</h2>
+          <ol class="popup__steps">
+            <li>
+              <span class="step-num">1</span>
+              <div>
+                Open DevTools for the page you want to inspect
+                <div class="hint">
+                  <kbd>F12</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS:
+                  <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)
+                </div>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              Click the <strong>Source Download</strong> tab in the DevTools toolbar
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              Browse, inspect and download resources — individually or all at once as a ZIP.
+            </li>
+          </ol>
+          <p class="popup__note">
+            Note: Chrome does not allow extensions to programmatically open DevTools, which is why the
+            full panel is reached through the DevTools toolbar.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="popup__footer">
+      <span>v1.8.1</span>
+      <span>Manifest V3</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

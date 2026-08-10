@@ -1,0 +1,15 @@
+{
+  "name": "source-download",
+  "version": "1.8.1",
+  "description": "Chrome DevTools panel to browse, inspect and download every resource (API calls, images, SVG, videos, audio, JS, CSS, fonts, JSON, WASM, manifests, documents, …) loaded by a web page, plus a live page-text/table capture tool. Zero third-party dependencies — 100% hand-written code, no build step required.",
+  "author": {
+    "name": "Turan Burak Yeşilyurt",
+    "url": "https://www.linkedin.com/in/turan-burak-yesilyurt/"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "icons": "python3 tools/generate_icons.py",
+    "test": "node tools/lib_test.js && node tools/sniff_test.js"
+  }
+}

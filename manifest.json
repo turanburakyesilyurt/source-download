@@ -3,7 +3,7 @@
   "name": "Source Download",
   "version": "1.8.1",
   "author": "Turan Burak Yeşilyurt",
-  "description": "Browse, inspect and download every asset a page loads — images, SVG, video, audio, JS, CSS, fonts, JSON, WASM and more — as a ZIP.",
+  "description": "Browse, inspect and download every web asset a page loads seamlessly as a ZIP.",
   "minimum_chrome_version": "114",
   "devtools_page": "devtools.html",
   "action": {

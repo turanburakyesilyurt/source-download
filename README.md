@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store version">
   <img src="https://img.shields.io/badge/version-1.8.1-4f8cff?style=flat-square" alt="Version 1.8.1">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-4f8cff?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -32,7 +33,7 @@ biggest driver for making this thing better. And please, don't forget to
 [**connect with me on LinkedIn**](https://www.linkedin.com/in/turan-burak-yesilyurt/) — I'd love to
 hear how you use it and chat about what else we could build together. Enjoy!
 
-> The Chrome Web Store link will be announced right here as soon as the listing is published.
+> **Live on the Chrome Web Store:** [Install Source Download](https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd)
 
 ---
 
@@ -55,7 +56,7 @@ hear how you use it and chat about what else we could build together. Enjoy!
 ## Installation
 
 ### From the Chrome Web Store
-1. Visit the **Source Download** listing on the [Chrome Web Store](https://chrome.google.com/webstore).
+1. Visit the **Source Download** listing on the [Chrome Web Store](https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd).
 2. Click **Add to Chrome** and confirm.
 3. Open DevTools (`F12`) on any page and switch to the **Source Download** tab.
 

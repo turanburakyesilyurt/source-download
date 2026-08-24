@@ -5,7 +5,7 @@
 const assert = require('assert');
 
 // --- copied logic under test (mirrors panel.js) ---
-const STATIC_EXTS = new Set(['png','jpg','jpeg','gif','webp','svg','mp4','mp3','css','js','mjs','woff','woff2','ttf','otf','json','html','txt','xml','wasm','webmanifest','manifest']);
+const STATIC_EXTS = new Set(['png','jpg','jpeg','gif','webp','svg','mp4','mp3','css','js','mjs','woff','woff2','ttf','otf','json','html','txt','xml','wasm','webmanifest','manifest','vtt','srt','map']);
 
 function getExt(url) {
   try {
@@ -55,39 +55,9 @@ function apiKindOf(entry) {
   return null;
 }
 
-function sniffTextType(text) {
-  const t = text.trim();
-  if (!t) return null;
-  const head = t.slice(0, 4096);
-  if (/^<svg[\s>/]/i.test(head)) return 'svg';
-  if (/^<!doctype\s+html/i.test(head) || /^<html[\s>]/i.test(head)) return 'document';
-  if (/^<\?xml/i.test(head)) return 'document';
-  const first = head[0];
-  if (first === '{' || first === '[') {
-    try { JSON.parse(t.length <= 262144 ? t : t.slice(0, 262144)); } catch { /* still promote */ }
-    return 'json';
-  }
-  if (/^[a-zA-Z_$][\w$]*\s*\(/.test(head)) return 'js'; // JSONP
-  if (/^(function\b|const\b|let\b|var\b|class\b|async\b|document\.|window\.|module\.exports|import\b|export\b)/.test(head)) return 'js';
-  if (/^@(charset|import|media|supports|font-face|keyframes|namespace)\b/i.test(head)) return 'css';
-  return null;
-}
-
-function sniffBinaryType(content) {
-  const b = content instanceof Uint8Array ? content : new Uint8Array(content || []);
-  if (b.length < 4) return null;
-  if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return 'image';
-  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return 'image';
-  if (b[0] === 0x47 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x38) return 'image';
-  if (b.length >= 12 && b[0] === 0x52 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x46 &&
-      b[8] === 0x57 && b[9] === 0x45 && b[10] === 0x42 && b[11] === 0x50) return 'image';
-  if (b[0] === 0x00 && b[1] === 0x61 && b[2] === 0x73 && b[3] === 0x6d) return 'wasm';
-  if (b[0] === 0x25 && b[1] === 0x50 && b[2] === 0x44 && b[3] === 0x46) return 'document';
-  if (b[0] === 0x77 && b[1] === 0x4f && b[2] === 0x46 && b[3] === 0x46) return 'font';
-  if ((b[0] === 0x00 && b[1] === 0x01 && b[2] === 0x00 && b[3] === 0x00) ||
-      (b[0] === 0x4f && b[1] === 0x54 && b[2] === 0x54 && b[3] === 0x4f)) return 'font';
-  return null;
-}
+// The sniffers and the extension logic are the real implementation, loaded
+// straight from lib/ so this suite can never drift from what the panel runs.
+const { sniffTextType, sniffBinaryType, extFromBytes, ensureExtension } = require('../lib/filetype.js');
 
 // --- isApiRequest tests ---
 assert.strictEqual(isApiRequest({ request: { url: 'https://x.com/api/users?limit=10' }, _resourceType: 'Fetch' }), true, 'fetch query');
@@ -114,6 +84,13 @@ assert.strictEqual(isApiRequest({ request: { url: 'https://x.com/a.css?v=2' } })
 // --- sniffTextType tests ---
 assert.strictEqual(sniffTextType('{"name": "a", "items": [1,2]}'), 'json', 'json obj');
 assert.strictEqual(sniffTextType('[{"a":1}]'), 'json', 'json arr');
+assert.strictEqual(
+  sniffTextType('{"version":3,"sources":["a.js"],"mappings":"AAAA"}'),
+  'sourcemap',
+  'source map json'
+);
+assert.strictEqual(sniffTextType('WEBVTT\n\n00:00.000 --> 00:01.000\nHi'), 'caption', 'webvtt');
+assert.strictEqual(sniffTextType('1\n00:00:00,000 --> 00:00:01,000\nHi'), 'caption', 'srt');
 assert.strictEqual(sniffTextType('   { "k" : "v" }   '), 'json', 'json padded');
 assert.strictEqual(sniffTextType('const x = 1;\nfunction f() { return 2; }'), 'js', 'js const');
 assert.strictEqual(sniffTextType('function foo() {}'), 'js', 'js function');
@@ -163,5 +140,70 @@ assert.strictEqual(sniffBinaryType(new Uint8Array([0x25, 0x50, 0x44, 0x46, 0x2d,
 assert.strictEqual(sniffBinaryType(new Uint8Array([0x77, 0x4f, 0x46, 0x46, 0x00, 0x01])), 'font', 'woff');
 assert.strictEqual(sniffBinaryType(new Uint8Array([0x00, 0x01, 0x00, 0x00, 0x00])), 'font', 'ttf');
 assert.strictEqual(sniffBinaryType(new Uint8Array([1, 2, 3, 4])), null, 'unknown binary');
+
+// --- extFromBytes: the extension actually written to disk ---
+const png = new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
+const jpg = new Uint8Array([0xff, 0xd8, 0xff, 0xe0, 0x00, 0x10]);
+const gif = new Uint8Array([0x47, 0x49, 0x46, 0x38, 0x39, 0x61]);
+const webp = new Uint8Array([0x52, 0x49, 0x46, 0x46, 4, 0, 0, 0, 0x57, 0x45, 0x42, 0x50]);
+const wav = new Uint8Array([0x52, 0x49, 0x46, 0x46, 4, 0, 0, 0, 0x57, 0x41, 0x56, 0x45]);
+const mp4 = new Uint8Array([0, 0, 0, 0x20, 0x66, 0x74, 0x79, 0x70, 0x69, 0x73, 0x6f, 0x6d]);
+const avif = new Uint8Array([0, 0, 0, 0x20, 0x66, 0x74, 0x79, 0x70, 0x61, 0x76, 0x69, 0x66]);
+const woff2 = new Uint8Array([0x77, 0x4f, 0x46, 0x32, 0, 1, 0, 0]);
+const pdf = new Uint8Array([0x25, 0x50, 0x44, 0x46, 0x2d, 0x31]);
+assert.strictEqual(extFromBytes(png), 'png', 'png ext');
+assert.strictEqual(extFromBytes(jpg), 'jpg', 'jpg ext');
+assert.strictEqual(extFromBytes(gif), 'gif', 'gif ext');
+assert.strictEqual(extFromBytes(webp), 'webp', 'webp ext');
+assert.strictEqual(extFromBytes(wav), 'wav', 'wav ext (RIFF disambiguated)');
+assert.strictEqual(extFromBytes(mp4), 'mp4', 'mp4 ext');
+assert.strictEqual(extFromBytes(avif), 'avif', 'avif brand beats generic ftyp');
+assert.strictEqual(extFromBytes(woff2), 'woff2', 'woff2 ext');
+assert.strictEqual(extFromBytes(pdf), 'pdf', 'pdf ext');
+assert.strictEqual(extFromBytes(new Uint8Array([1, 2, 3, 4])), '', 'unknown bytes -> no ext');
+
+// --- ensureExtension: what a downloaded file ends up being called ---
+const img = { type: 'image', mimeType: '' };
+// The YouTube case: an extension-less CDN URL must not reach disk bare.
+assert.strictEqual(ensureExtension('hqdefault', img, jpg), 'hqdefault.jpg', 'extension-less name gets one');
+assert.strictEqual(ensureExtension('photo.jpg', img, jpg), 'photo.jpg', 'correct extension is untouched');
+assert.strictEqual(ensureExtension('avatar.php', img, png), 'avatar.png', 'dynamic endpoint suffix replaced');
+assert.strictEqual(ensureExtension('render.aspx', img, webp), 'render.webp', 'aspx replaced');
+assert.strictEqual(ensureExtension('sprite.png', img, jpg), 'sprite.png', 'known extension wins over sniffing');
+assert.strictEqual(
+  ensureExtension('data', { type: 'api', mimeType: 'application/json' }, '{"a":1}'),
+  'data.json',
+  'json body via text sniff'
+);
+assert.strictEqual(
+  ensureExtension('style', { type: 'css', mimeType: 'text/css' }, 'body{color:red}'),
+  'style.css',
+  'mime type fills in for text formats'
+);
+assert.strictEqual(
+  ensureExtension('thing', { type: 'font', mimeType: '' }, null),
+  'thing.woff2',
+  'category fallback when nothing else is known'
+);
+assert.strictEqual(
+  ensureExtension('report', { type: 'other', mimeType: '' }, null),
+  'report',
+  'unknown category leaves the name alone'
+);
+assert.strictEqual(
+  ensureExtension('my photo', img, png),
+  'my_photo.png',
+  'spaces sanitized when the name is rewritten'
+);
+assert.strictEqual(
+  ensureExtension('captions', { type: 'caption', mimeType: 'text/vtt' }, 'WEBVTT\n\n00:00.000 --> 00:01.000\nHi'),
+  'captions.vtt',
+  'webvtt sniffed as caption'
+);
+assert.strictEqual(
+  ensureExtension('bundle', { type: 'sourcemap', mimeType: '' }, '{"version":3,"sources":["a.js"],"mappings":"AAAA"}'),
+  'bundle.map',
+  'source map sniffed as .map'
+);
 
 console.log('ALL MIXED TESTS PASSED');

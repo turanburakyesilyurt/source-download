@@ -6,26 +6,46 @@
 
 'use strict';
 
+const THEME_STORAGE = 'sourceDownloadTheme';
+
+(function applyThemeEarly() {
+  try {
+    const saved = localStorage.getItem(THEME_STORAGE);
+    if (saved === 'light' || saved === 'dark') {
+      document.documentElement.dataset.theme = saved;
+      return;
+    }
+  } catch { /* noop */ }
+  try {
+    document.documentElement.dataset.theme =
+      chrome.devtools.panels.themeName === 'dark' ? 'dark' : 'light';
+  } catch {
+    document.documentElement.dataset.theme = 'dark';
+  }
+})();
+
 /* ============================================================
  * 1. Constants & helpers
  * ============================================================ */
 
 const TYPES = {
-  all:      { label: 'All',       folder: null },
-  api:      { label: 'API',       folder: 'api' },
-  image:    { label: 'Images',    folder: 'images' },
-  svg:      { label: 'SVG',       folder: 'svg' },
-  video:    { label: 'Videos',    folder: 'videos' },
-  audio:    { label: 'Audio',     folder: 'audio' },
-  css:      { label: 'CSS',       folder: 'css' },
-  js:       { label: 'JS',        folder: 'js' },
-  font:     { label: 'Fonts',     folder: 'fonts' },
-  document: { label: 'Documents', folder: 'documents' },
-  json:     { label: 'JSON',      folder: 'json' },
-  wasm:     { label: 'WASM',      folder: 'wasm' },
-  manifest: { label: 'Manifests', folder: 'manifests' },
-  text:     { label: 'Text',      folder: 'text' },
-  other:    { label: 'Other',     folder: 'other' },
+  all:      { label: 'All',         folder: null },
+  api:      { label: 'API',         folder: 'api' },
+  image:    { label: 'Images',      folder: 'images' },
+  svg:      { label: 'SVG',         folder: 'svg' },
+  video:    { label: 'Videos',      folder: 'videos' },
+  audio:    { label: 'Audio',       folder: 'audio' },
+  caption:  { label: 'Captions',    folder: 'captions' },
+  css:      { label: 'CSS',         folder: 'css' },
+  js:       { label: 'JS',          folder: 'js' },
+  sourcemap:{ label: 'Source maps', folder: 'sourcemaps' },
+  font:     { label: 'Fonts',       folder: 'fonts' },
+  document: { label: 'Documents',   folder: 'documents' },
+  json:     { label: 'JSON',        folder: 'json' },
+  wasm:     { label: 'WASM',        folder: 'wasm' },
+  manifest: { label: 'Manifests',   folder: 'manifests' },
+  text:     { label: 'Text',        folder: 'text' },
+  other:    { label: 'Other',       folder: 'other' },
 };
 
 const EXT_TYPES = {
@@ -36,70 +56,96 @@ const EXT_TYPES = {
   ts: 'video', m3u8: 'video', m3u: 'video', mpd: 'video',
   mp3: 'audio', wav: 'audio', ogg: 'audio', oga: 'audio', m4a: 'audio', aac: 'audio',
   flac: 'audio', opus: 'audio', weba: 'audio',
+  vtt: 'caption', srt: 'caption', ttml: 'caption', sbv: 'caption', ass: 'caption', ssa: 'caption',
   css: 'css',
   js: 'js', mjs: 'js', cjs: 'js', jsx: 'js', ts: 'js', tsx: 'js',
+  map: 'sourcemap',
   woff: 'font', woff2: 'font', ttf: 'font', otf: 'font', eot: 'font',
   pdf: 'document', doc: 'document', docx: 'document', xls: 'document', xlsx: 'document',
   ppt: 'document', pptx: 'document', txt: 'document', xml: 'document',
   html: 'document', htm: 'document', csv: 'document', md: 'document', rtf: 'document',
   zip: 'document', gz: 'document',
-  json: 'json', json5: 'json', geojson: 'json', map: 'json',
+  json: 'json', json5: 'json', geojson: 'json',
   wasm: 'wasm',
   webmanifest: 'manifest', manifest: 'manifest',
 };
 
-const MIME_EXT = {
-  'image/png': 'png', 'image/jpeg': 'jpg', 'image/gif': 'gif', 'image/webp': 'webp',
-  'image/svg+xml': 'svg', 'image/avif': 'avif', 'image/x-icon': 'ico', 'image/bmp': 'bmp',
-  'video/mp4': 'mp4', 'video/webm': 'webm', 'video/x-m4v': 'm4v', 'video/ogg': 'ogv',
-  'audio/mpeg': 'mp3', 'audio/wav': 'wav', 'audio/x-wav': 'wav', 'audio/ogg': 'ogg',
-  'audio/aac': 'aac', 'audio/mp4': 'm4a', 'audio/flac': 'flac', 'audio/webm': 'weba',
-  'text/css': 'css', 'text/javascript': 'js', 'application/javascript': 'js',
-  'font/woff2': 'woff2', 'font/woff': 'woff', 'application/font-woff': 'woff',
-  'font/ttf': 'ttf', 'font/otf': 'otf', 'application/x-font-ttf': 'ttf',
-  'application/vnd.ms-fontobject': 'eot',
-  'application/json': 'json', 'application/manifest+json': 'webmanifest',
-  'text/html': 'html', 'text/plain': 'txt',
-  'application/pdf': 'pdf', 'text/xml': 'xml', 'application/xml': 'xml', 'text/csv': 'csv',
-  'application/wasm': 'wasm',
-};
+// File-type detection and extension repair live in lib/filetype.js so the
+// panel and the test suite share exactly one implementation.
+const FT = window.SourceDownloadFileType;
+const { mimeExt, sniffType } = FT;
 
 const TYPE_DOT_COLORS = {
   all: '#9aa0ae',
-  api: '#a78bfa',
-  image: '#7dd3fc',
-  svg: '#fbbf24',
-  video: '#fca5a5',
-  audio: '#fcd34d',
-  css: '#c4b5fd',
-  js: '#86efac',
-  font: '#f9a8d4',
-  document: '#fdba74',
-  json: '#60a5fa',
-  wasm: '#f472b6',
+  api: '#c084fc',
+  image: '#38bdf8',
+  svg: '#f59e0b',
+  video: '#f87171',
+  audio: '#eab308',
+  caption: '#2dd4bf',
+  css: '#818cf8',
+  js: '#4ade80',
+  sourcemap: '#fb7185',
+  font: '#f472b6',
+  document: '#fb923c',
+  json: '#38bdf8',
+  wasm: '#e879f9',
   manifest: '#a78bfa',
-  text: '#5eead4',
-  other: '#e5e7eb',
+  text: '#2dd4bf',
+  other: '#cbd5e1',
 };
 
-const ICONS = {  download: '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg>',
+// Same hues, darkened so they stay ≥ ~4.5:1 on the light panel background.
+const TYPE_DOT_COLORS_LIGHT = {
+  all: '#334155',
+  api: '#6d28d9',
+  image: '#0369a1',
+  svg: '#b45309',
+  video: '#b91c1c',
+  audio: '#a16207',
+  caption: '#0f766e',
+  css: '#5b21b6',
+  js: '#15803d',
+  sourcemap: '#be123c',
+  font: '#be185d',
+  document: '#c2410c',
+  json: '#1d4ed8',
+  wasm: '#a21caf',
+  manifest: '#6d28d9',
+  text: '#0f766e',
+  other: '#334155',
+};
+
+function isLightTheme() {
+  return document.documentElement.dataset.theme === 'light';
+}
+
+function typeColor(key) {
+  const map = isLightTheme() ? TYPE_DOT_COLORS_LIGHT : TYPE_DOT_COLORS;
+  return map[key] || map.other;
+}
+
+const ICONS = {
+  download: '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg>',
   open: '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5H2.5V13.5H13.5V10"/><path d="M9 2.5h4.5V7"/><path d="M13.5 2.5L8 8"/></svg>',
   copy: '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="8" height="8" rx="2"/><path d="M4 10H3a1 1 0 01-1-1V3a1 1 0 011-1h6a1 1 0 011 1v1"/></svg>',
-  all: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6h10M7 18h10M5 8v8M19 8v8"/></svg>',
-  api: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 7v10a2 2 0 002 2h12a2 2 0 002-2V7"/><path d="M9 7l-3-3M15 7l3-3"/><path d="M9 13h2M13 13h2M9 16h4"/></svg>',
-  image: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="1.6"/><path d="M21 15l-5-5-9 9"/></svg>',
-  video: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg>',
-  audio: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>',
-  css: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l1.6 16L12 21.5 18.4 20 20 4z"/><path d="M8 8h8M8.5 12.5h7M9.5 16.5h5"/></svg>',
-  js: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 8v7a3 3 0 006 0v-1"/><path d="M8 15h3"/></svg>',
-  font: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19L9 5h6l4 14"/><path d="M7 13.5h10"/></svg>',
-  document: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/></svg>',
-  svg: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L21 20H3z"/><path d="M12 9l2.5 5h-5z"/></svg>',
-  json: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v3a2 2 0 01-2 2 2 2 0 012 2v3a2 2 0 002 2h2"/><path d="M15 5h2a2 2 0 012 2v3a2 2 0 012 2 2 2 0 01-2 2v3a2 2 0 01-2 2h-2"/></svg>',
-  wasm: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M9 8l2 8 1-5 1 5 2-8"/></svg>',
-  manifest: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v4M16 3v4"/><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 10h6M9 14h6"/></svg>',
-  other: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 9h18M7 14h6"/></svg>',
-  text: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5V3h14v2"/><path d="M12 3v18M9 21h6"/></svg>',
+  all: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1.5" opacity="0.9"/><rect x="13" y="3" width="8" height="8" rx="1.5" opacity="0.55"/><rect x="3" y="13" width="8" height="8" rx="1.5" opacity="0.55"/><rect x="13" y="13" width="8" height="8" rx="1.5" opacity="0.9"/></svg>',
+  api: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8L4 12l4 4M16 8l4 4-4 4"/><path d="M14 7l-4 10" stroke-width="2"/></svg>',
+  image: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="8.5" cy="9" r="1.7" fill="currentColor" stroke="none"/><path d="M21 16.5l-5.5-5.5-8 7.5" fill="currentColor" fill-opacity="0.35"/></svg>',
+  video: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="6" width="14" height="12" rx="2"/><path d="M16.5 10l5-2.5v9L16.5 14z" fill="currentColor" stroke="none"/></svg>',
+  audio: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M9 18V5.5l11-2V16"/><circle cx="6.2" cy="18" r="2.8" fill="currentColor" stroke="none"/><circle cx="16.2" cy="16" r="2.8" fill="currentColor" stroke="none"/></svg>',
+  caption: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 5h16a2 2 0 012 2v8a2 2 0 01-2 2H9l-5 3.5V7a2 2 0 012-2z" fill="currentColor" fill-opacity="0.2"/><path d="M8 10h8M8 13h5"/></svg>',
+  css: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3.5l1.5 17L12 22l6-1.5 1.5-17z" fill="currentColor" fill-opacity="0.18"/><path d="M8 8h8l-.6 7L12 16.5 8.6 15"/></svg>',
+  js: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor" fill-opacity="0.18"/><path d="M9 8v7.2c0 1.7 2.4 1.7 2.4 0V14" stroke-linecap="round"/><path d="M14 15.2c.5.8 1.4 1.2 2.3.5.7-.5.6-1.5-.2-1.9-.7-.4-1.6-.2-2 .5" stroke-linecap="round"/></svg>',
+  sourcemap: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V5h10l4 4v10z" fill="currentColor" fill-opacity="0.18"/><path d="M15 5v4h4"/><circle cx="10" cy="14" r="2.2"/><path d="M10 12.2V9.5M12 14.8l2 1.6"/></svg>',
+  font: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L9.2 5h2.4L17 19"/><path d="M6.4 13.5h8.2"/><path d="M18.2 19v-6.5m0 0c0-1.2.9-2 2.1-2" stroke-width="1.6"/></svg>',
+  document: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z" fill="currentColor" fill-opacity="0.18"/><path d="M14 3v5h5M8 12h8M8 16h6"/></svg>',
+  svg: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3l9 17H3z" fill="currentColor" fill-opacity="0.22"/><circle cx="12" cy="14" r="2.2" fill="currentColor" stroke="none"/></svg>',
+  json: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 5H7a3 3 0 00-3 3v1.5A2.5 2.5 0 012 12a2.5 2.5 0 012 2.5V16a3 3 0 003 3h1"/><path d="M16 5h1a3 3 0 013 3v1.5A2.5 2.5 0 0122 12a2.5 2.5 0 01-2 2.5V16a3 3 0 01-3 3h-1"/></svg>',
+  wasm: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.5l8.5 5v9L12 21.5 3.5 16.5v-9z" fill="currentColor" fill-opacity="0.18"/><path d="M8.2 9l2.2 7 1.6-4.2L13.6 16l2.2-7"/></svg>',
+  manifest: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="4" width="14" height="17" rx="2" fill="currentColor" fill-opacity="0.18"/><path d="M8 4.5V3h8v1.5M8 10h8M8 14h8M8 18h5"/></svg>',
+  other: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="3 2"><rect x="3.5" y="5.5" width="17" height="13" rx="3"/></svg>',
+  text: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5h16M8 5v15M6 20h4"/><path d="M12 10h8M12 14h6" stroke-width="1.5"/></svg>',
 };
 
 function escapeHtml(s) {
@@ -127,10 +173,6 @@ function getExt(url) {
   }
 }
 
-function mimeExt(mime) {
-  return MIME_EXT[(mime || '').toLowerCase()] || '';
-}
-
 function filenameFromUrl(url, mimeType) {
   let name = '';
   try {
@@ -154,6 +196,12 @@ function filenameFromUrl(url, mimeType) {
   return name;
 }
 
+// Every download runs through this so a file never lands on disk without an
+// extension that matches its actual bytes.
+function downloadName(res, content) {
+  return FT.ensureExtension(res.filename || 'resource', res, content);
+}
+
 function hostnameOf(url) {
   try {
     return new URL(url).hostname || 'unknown';
@@ -168,7 +216,13 @@ function classifyByUrl(url, mimeType) {
     if (m.includes('svg')) return 'svg';
     if (m.includes('wasm')) return 'wasm';
     if (m.includes('manifest')) return 'manifest';
-    if (m.includes('json')) return 'json';
+    if (m.includes('vtt') || m.includes('ttml') || m.includes('subrip') || m === 'text/srt') return 'caption';
+    if (m.includes('sourcemap')) return 'sourcemap';
+    if (m.includes('json')) {
+      const ext = getExt(url);
+      if (ext === 'map') return 'sourcemap';
+      return 'json';
+    }
     if (m.startsWith('image/')) return 'image';
     if (m.startsWith('video/')) return 'video';
     if (m.startsWith('audio/')) return 'audio';
@@ -270,6 +324,8 @@ function guessMime(url) {
     json: 'application/json', pdf: 'application/pdf', html: 'text/html', htm: 'text/html',
     txt: 'text/plain', xml: 'text/xml', csv: 'text/csv', md: 'text/plain', wasm: 'application/wasm',
     webmanifest: 'application/manifest+json',
+    vtt: 'text/vtt', srt: 'application/x-subrip', ttml: 'application/ttml+xml',
+    map: 'application/json',
   };
   return map[ext] || '';
 }
@@ -303,16 +359,18 @@ function isFetchableUrl(url) {
 
 function isTextType(res) {
   const m = (res.mimeType || '').toLowerCase();
-  if (['css', 'js', 'svg', 'json', 'manifest'].includes(res.type)) return true;
-  if (/(text\/|application\/(json|xml|javascript|x-javascript|xhtml|manifest))/i.test(m)) return true;
+  if (['css', 'js', 'svg', 'json', 'manifest', 'caption', 'sourcemap'].includes(res.type)) return true;
+  if (/(text\/|application\/(json|xml|javascript|x-javascript|xhtml|manifest)|text\/vtt)/i.test(m)) return true;
   const ext = getExt(res.url);
   return [
     'json', 'map', 'html', 'htm', 'txt', 'xml', 'svg', 'css', 'js', 'mjs',
     'md', 'csv', 'tsv', 'yml', 'yaml', 'ini', 'log', 'rtf',
+    'vtt', 'srt', 'ttml',
   ].includes(ext);
 }
 
 function isJsonType(res) {
+  if (res.type === 'json' || res.type === 'sourcemap' || res.type === 'manifest') return true;
   const m = (res.mimeType || '').toLowerCase();
   if (m.includes('json')) return true;
   const ext = getExt(res.url);
@@ -402,6 +460,7 @@ const state = {
     sortDir: 'asc',
     method: '',
     reqType: '',
+    hideDupes: false,
   },
   text: {
     blocks: [],
@@ -409,12 +468,14 @@ const state = {
     live: true,
     sel: new Set(),
     lastSig: '',
-    filters: {
-      kind: 'all',      // all | heading | paragraph | list | table | css
-      level: 'all',     // all | h1 | h2 | h3 | h4 | h5 | h6
-      css: '',          // custom CSS selector
-      query: '',        // text filter across captured content
-    },
+    // One query box, four ways to read it. `text` and `regex` filter what was
+    // captured; `css` and `xpath` are resolved against the live page instead,
+    // so they can reach elements the readable-text walk skips.
+    query: { mode: 'text', value: '' },
+    queryError: '',
+    tag: 'all',         // all | heading | table | <tag name>
+    level: 'all',       // all | h1 … h6
+    readMode: false,
   },
 };
 
@@ -517,53 +578,6 @@ function addResource(partial) {
 const SNIFF_CONCURRENCY = 4;
 let sniffRunning = false;
 
-function sniffBinaryType(content) {
-  const b = content instanceof Uint8Array ? content : new Uint8Array(content || []);
-  if (b.length < 4) return null;
-  if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return 'image'; // PNG
-  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return 'image'; // JPEG
-  if (b[0] === 0x47 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x38) return 'image'; // GIF
-  if (b.length >= 12 && b[0] === 0x52 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x46 &&
-      b[8] === 0x57 && b[9] === 0x45 && b[10] === 0x42 && b[11] === 0x50) return 'image'; // WebP
-  if (b[0] === 0x00 && b[1] === 0x61 && b[2] === 0x73 && b[3] === 0x6d) return 'wasm'; // \0asm
-  if (b[0] === 0x25 && b[1] === 0x50 && b[2] === 0x44 && b[3] === 0x46) return 'document'; // %PDF
-  if (b[0] === 0x77 && b[1] === 0x4f && b[2] === 0x46 && b[3] === 0x46) return 'font'; // wOFF
-  if ((b[0] === 0x00 && b[1] === 0x01 && b[2] === 0x00 && b[3] === 0x00) ||
-      (b[0] === 0x4f && b[1] === 0x54 && b[2] === 0x54 && b[3] === 0x4f)) return 'font'; // TTF/OTF
-  return null;
-}
-
-function sniffTextType(text) {
-  const t = text.trim();
-  if (!t) return null;
-  const head = t.slice(0, 4096);
-  if (/^<svg[\s>/]/i.test(head)) return 'svg';
-  if (/^<!doctype\s+html/i.test(head) || /^<html[\s>]/i.test(head)) return 'document';
-  if (/^<\?xml/i.test(head)) return 'document';
-  const first = head[0];
-  if (first === '{' || first === '[') {
-    // `{`/`[` bodies are JSON in the overwhelming majority of cases. Validate
-    // when cheap; truncated or huge single-line payloads still get promoted so
-    // they receive the JSON viewer.
-    try {
-      JSON.parse(t.length <= 262144 ? t : t.slice(0, 262144));
-    } catch {
-      /* fall through — still promote */
-    }
-    return 'json';
-  }
-  if (/^[a-zA-Z_$][\w$]*\s*\(/.test(head)) return 'js'; // JSONP callback(…
-  if (/^(function\b|const\b|let\b|var\b|class\b|async\b|document\.|window\.|module\.exports|import\b|export\b)/.test(head)) return 'js';
-  if (/^@(charset|import|media|supports|font-face|keyframes|namespace)\b/i.test(head)) return 'css';
-  return null;
-}
-
-function sniffType(content) {
-  if (content instanceof Uint8Array || content instanceof ArrayBuffer) return sniffBinaryType(content);
-  if (typeof content === 'string') return sniffTextType(content);
-  return null;
-}
-
 async function sniffOne(res) {
   res._sniffing = true;
   try {
@@ -573,16 +587,16 @@ async function sniffOne(res) {
     if (!detected || detected === res.type) return;
     // "document" is only promoted to clearly distinct kinds — a .txt that
     // happens to start with "function" shouldn't become a JS file.
-    if (res.type === 'document' && !['json', 'svg', 'wasm', 'font'].includes(detected)) return;
+    if (res.type === 'document' && !['json', 'svg', 'wasm', 'font', 'caption', 'sourcemap'].includes(detected)) return;
     // A query-string GET classified as API is demoted to its real category when
     // the bytes say it's a static asset; genuine JSON responses stay in API.
     if (res.type === 'api') {
       if (res._apiKind !== 'query' || detected === 'json') return;
-      if (!['image', 'svg', 'js', 'css', 'wasm', 'font', 'document'].includes(detected)) return;
+      if (!['image', 'svg', 'js', 'css', 'wasm', 'font', 'document', 'caption', 'sourcemap'].includes(detected)) return;
       apiCount = Math.max(0, apiCount - 1);
     }
     res.type = detected;
-    if (detected === 'json' && res._beautified === undefined) res._beautified = true;
+    if ((detected === 'json' || detected === 'sourcemap') && res._beautified === undefined) res._beautified = true;
     scheduleRender();
     syncPanelCounts();
   } catch {
@@ -611,6 +625,7 @@ function sniffResources() {
   Promise.all(Array.from({ length: Math.min(SNIFF_CONCURRENCY, targets.length) }, worker)).then(() => {
     sniffRunning = false;
     render();
+    scheduleDupeScan();
   });
 }
 
@@ -837,7 +852,7 @@ function matchesSearch(res, matcher) {
     res.tag || '',
     res.title || '',
     res.alt || '',
-    TYPES[res.type].label,
+    TYPES[res.type] ? TYPES[res.type].label : '',
   ].join(' ');
   if (matcher(hay)) return true;
   const content = state.contentIndex.get(res.url);
@@ -859,7 +874,7 @@ async function scanContentForSearch() {
     return null;
   }
   state.searching = true;
-  setStatusMessage('Searching file contents…');
+  setStatusMessage('Indexing file contents…');
   let i = 0;
   const worker = async () => {
     while (i < targets.length) {
@@ -867,8 +882,7 @@ async function scanContentForSearch() {
       try {
         const content = await getContent(r);
         if (content !== null && content !== undefined && content !== '') {
-          const t = contentToText(content).toLowerCase().slice(0, CONTENT_INDEX_CAP);
-          state.contentIndex.set(r.url, t.toLowerCase().slice(0, CONTENT_INDEX_CAP));
+          state.contentIndex.set(r.url, await indexContentAsync(content));
         } else {
           state.contentIndex.set(r.url, '');
         }
@@ -891,58 +905,53 @@ function hasActiveFilters() {
   return !!(
     f.minSize || f.maxSize || f.minWidth || f.minHeight ||
     f.sortBy !== 'name' || f.sortDir !== 'asc' ||
-    f.method || f.reqType
+    f.method || f.reqType || f.hideDupes
   );
 }
 
 function filteredResources() {
   const raw = state.search.trim();
   const matcher = raw ? compileSearch(raw) : null;
-  let list = state.resources;
-  if (state.activeTab !== 'all') list = list.filter((r) => r.type === state.activeTab);
-  if (matcher) list = list.filter((r) => matchesSearch(r, matcher));
-
-  // Category filter bar
   const f = state.filters;
-  const minSize = parseFloat(f.minSize);
-  const maxSize = parseFloat(f.maxSize);
-  if (minSize) list = list.filter((r) => (r.size || 0) >= minSize * 1024);
-  if (maxSize) list = list.filter((r) => (r.size || 0) <= maxSize * 1024);
+  const tab = state.activeTab;
+  const minBytes = parseFloat(f.minSize) * 1024;
+  const maxBytes = parseFloat(f.maxSize) * 1024;
   const minW = parseFloat(f.minWidth);
   const minH = parseFloat(f.minHeight);
-  // Resources without a known size are kept until they can be measured.
-  if (minW) list = list.filter((r) => !r.width || r.width >= minW);
-  if (minH) list = list.filter((r) => !r.height || r.height >= minH);
-  if (f.method) {
-    const method = f.method.toUpperCase();
-    list = list.filter((r) => (r.method || 'GET').toUpperCase() === method);
-  }
-  if (f.reqType) {
-    list = list.filter((r) => (r.resourceType || '').toLowerCase() === f.reqType.toLowerCase());
+  const method = f.method ? f.method.toUpperCase() : '';
+  const reqType = f.reqType ? f.reqType.toLowerCase() : '';
+
+  // A single pass, rather than a chain of .filter() calls that would each
+  // allocate another array every time the list re-renders.
+  const list = [];
+  for (const r of state.resources) {
+    if (tab !== 'all' && r.type !== tab) continue;
+    if (matcher && !matchesSearch(r, matcher)) continue;
+    if (minBytes && (r.size || 0) < minBytes) continue;
+    if (maxBytes && (r.size || 0) > maxBytes) continue;
+    // Resources without a known size are kept until they can be measured.
+    if (minW && r.width && r.width < minW) continue;
+    if (minH && r.height && r.height < minH) continue;
+    if (method && (r.method || 'GET').toUpperCase() !== method) continue;
+    if (reqType && (r.resourceType || '').toLowerCase() !== reqType) continue;
+    if (f.hideDupes && r.dupeCount > 1 && !r.dupePrimary) continue;
+    list.push(r);
   }
 
+  // Sort keys are derived once per resource instead of on every comparison,
+  // which matters most for the default name sort and its toLowerCase().
   const dir = f.sortDir === 'desc' ? -1 : 1;
-  list = [...list].sort((a, b) => {
-    let va;
-    let vb;
-    if (f.sortBy === 'size') {
-      va = a.size || 0;
-      vb = b.size || 0;
-    } else if (f.sortBy === 'type') {
-      va = a.type;
-      vb = b.type;
-    } else if (f.sortBy === 'time') {
-      va = a.time || 0;
-      vb = b.time || 0;
-    } else {
-      va = a.filename.toLowerCase();
-      vb = b.filename.toLowerCase();
-    }
-    if (va < vb) return -1 * dir;
-    if (va > vb) return 1 * dir;
-    return 0;
-  });
-  return list;
+  const sortBy = f.sortBy;
+  const keyed = list.map((r) => ({
+    r,
+    key:
+      sortBy === 'size' ? r.size || 0 :
+      sortBy === 'type' ? r.type :
+      sortBy === 'time' ? r.time || 0 :
+      r.filename.toLowerCase(),
+  }));
+  keyed.sort((a, b) => (a.key < b.key ? -dir : a.key > b.key ? dir : 0));
+  return keyed.map((x) => x.r);
 }
 
 /* ============================================================
@@ -980,76 +989,122 @@ function evalText(expr) {
   });
 }
 
-function textMetaExpr(cssSel) {
-  // Walks the live page in DOM order and returns a flat, ordered list of
-  // "blocks". Every element that carries direct text is captured with its tag
-  // name (div, span, a, button, h1..h6, p, li, …) so the user can filter by
-  // whatever element type the page actually contains. Nested duplicates are
-  // skipped: when a parent already holds text, its children are rejected.
+/*
+ * Builds the expression evaluated inside the inspected page.
+ *
+ * Default mode walks the whole document in DOM order and returns every element
+ * that carries its own text, tagged with its element name, so the panel can
+ * present a readable version of the page and let the user narrow it down
+ * afterwards. Nested duplicates are skipped: once a parent holds text, its
+ * children are rejected.
+ *
+ * `css` and `xpath` modes resolve the query against the live page instead and
+ * return only what matched, together with any error the page reported so the
+ * panel can show it verbatim.
+ */
+function textCaptureExpr(mode, query) {
   return '(function () {' +
-    'const out = [];' +
+    'var out = [];' +
+    'var err = "";' +
+    'var MODE = ' + JSON.stringify(mode) + ';' +
+    'var Q = ' + JSON.stringify(query) + ';' +
     'function hasDirectText(el) {' +
-    '  for (let i = 0; i < el.childNodes.length; i++) {' +
-    "    if (el.childNodes[i].nodeType === 3 && el.childNodes[i].textContent.trim()) return true;" +
+    '  for (var i = 0; i < el.childNodes.length; i++) {' +
+    '    if (el.childNodes[i].nodeType === 3 && el.childNodes[i].textContent.trim()) return true;' +
     '  }' +
     '  return false;' +
     '}' +
+    'function isTable(el) {' +
+    '  return el.tagName === "TABLE" || (el.getAttribute && el.getAttribute("role") === "table");' +
+    '}' +
     'function sigFor(rows) {' +
-    "  return JSON.stringify(rows[0] || []) + '|' + Math.max.apply(null, rows.map(function (r) { return r.length; }).concat(0));" +
+    '  return JSON.stringify(rows[0] || []) + "|" + Math.max.apply(null, rows.map(function (r) { return r.length; }).concat(0));' +
     '}' +
     'function cellsOf(tr) {' +
-    '  const cells = [];' +
+    '  var cells = [];' +
     '  tr.querySelectorAll("th, td, [role=cell], [role=columnheader], [role=rowheader]").forEach(function (td) {' +
-    "    let t = (td.innerText || '').trim();" +
-    "    if (t.length > 300) t = t.slice(0, 300) + '…';" +
+    '    var t = (td.innerText || "").trim();' +
+    '    if (t.length > 300) t = t.slice(0, 300) + "\\u2026";' +
     '    cells.push(t);' +
     '  });' +
     '  return cells;' +
     '}' +
-    'function capture(el) {' +
-    '  const tag = el.tagName;' +
-    '  if (/^H[1-6]$/.test(tag)) {' +
-    "    const t = (el.innerText || el.textContent || '').trim();" +
-    '    if (t) out.push({ kind: tag.toLowerCase(), text: t.slice(0, 1000) });' +
-    '  } else if (tag === "TABLE" || (el.getAttribute && el.getAttribute("role") === "table")) {' +
-    '    const trs = el.querySelectorAll("tr, [role=row]");' +
-    '    const preview = [];' +
-    '    for (let j = 0; j < Math.min(trs.length, 3); j++) {' +
-    '      const c = cellsOf(trs[j]);' +
-    '      if (c.length) preview.push(c);' +
-    '    }' +
-    '    if (preview.length) out.push({ kind: "table", rowCount: trs.length, preview: preview, sig: sigFor(preview) });' +
-    '  } else {' +
-    "    const t = (el.innerText || el.textContent || '').trim();" +
-    '    if (t) out.push({ kind: tag.toLowerCase(), text: t.slice(0, 3000) });' +
+    // A short "where did this come from" hint shown next to each block.
+    'function whereOf(el) {' +
+    '  var s = el.tagName ? el.tagName.toLowerCase() : "";' +
+    '  if (el.id) s += "#" + el.id;' +
+    '  else if (el.classList && el.classList.length) s += "." + Array.prototype.slice.call(el.classList, 0, 2).join(".");' +
+    '  return s.slice(0, 80);' +
+    '}' +
+    'function captureTable(el) {' +
+    '  var trs = el.querySelectorAll("tr, [role=row]");' +
+    '  var preview = [];' +
+    '  for (var j = 0; j < Math.min(trs.length, 3); j++) {' +
+    '    var c = cellsOf(trs[j]);' +
+    '    if (c.length) preview.push(c);' +
+    '  }' +
+    '  if (preview.length) {' +
+    '    out.push({ kind: "table", rowCount: trs.length, preview: preview, sig: sigFor(preview), where: whereOf(el) });' +
     '  }' +
     '}' +
-    'const F = NodeFilter;' +
-    'const walker = document.createTreeWalker(document.body, F.SHOW_ELEMENT, {' +
+    'function captureEl(el, forced) {' +
+    '  if (!el || el.nodeType !== 1) return;' +
+    '  if (isTable(el)) { captureTable(el); return; }' +
+    '  var t = (el.innerText || el.textContent || "").trim();' +
+    '  if (!t) return;' +
+    '  var tag = el.tagName.toLowerCase();' +
+    '  out.push({ kind: tag, text: t.slice(0, /^h[1-6]$/.test(tag) ? 1000 : 3000), where: whereOf(el), matched: !!forced });' +
+    '}' +
+    'if (MODE === "css" || MODE === "xpath") {' +
+    '  var nodes = [];' +
+    '  try {' +
+    '    if (MODE === "css") {' +
+    '      nodes = Array.prototype.slice.call(document.querySelectorAll(Q));' +
+    '    } else {' +
+    '      var snap = null;' +
+    '      try {' +
+    '        snap = document.evaluate(Q, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);' +
+    '      } catch (inner) {' +
+    // Expressions like count(//a) or string(//title) are not node sets; show
+    // their scalar result rather than calling the query invalid.
+    '        var any = document.evaluate(Q, document, null, XPathResult.ANY_TYPE, null);' +
+    '        var val = any.resultType === XPathResult.NUMBER_TYPE ? any.numberValue' +
+    '          : any.resultType === XPathResult.BOOLEAN_TYPE ? any.booleanValue' +
+    '          : any.stringValue;' +
+    '        out.push({ kind: "value", text: String(val), where: "xpath", matched: true });' +
+    '        return { blocks: out, error: "", count: 1 };' +
+    '      }' +
+    '      for (var i = 0; i < snap.snapshotLength; i++) nodes.push(snap.snapshotItem(i));' +
+    '    }' +
+    '  } catch (e) {' +
+    '    err = (e && e.message) || "invalid query";' +
+    '  }' +
+    '  for (var k = 0; k < nodes.length && k < 5000; k++) {' +
+    '    var n = nodes[k];' +
+    '    if (n.nodeType === 1) captureEl(n, true);' +
+    '    else if (n.nodeValue && n.nodeValue.trim()) {' +
+    '      out.push({ kind: n.nodeType === 2 ? "attr" : "text", text: n.nodeValue.trim().slice(0, 3000), where: n.nodeName, matched: true });' +
+    '    }' +
+    '  }' +
+    '  return { blocks: out, error: err, count: nodes.length };' +
+    '}' +
+    'var F = NodeFilter;' +
+    'var walker = document.createTreeWalker(document.body, F.SHOW_ELEMENT, {' +
     '  acceptNode: function (el) {' +
-    '    let p = el.parentElement;' +
+    '    var p = el.parentElement;' +
     '    while (p) {' +
-    '      if (p.tagName === "TABLE" || (p.getAttribute && p.getAttribute("role") === "table")) return F.FILTER_REJECT;' +
+    '      if (isTable(p)) return F.FILTER_REJECT;' +
     '      if (hasDirectText(p)) return F.FILTER_REJECT;' +
     '      p = p.parentElement;' +
     '    }' +
-    '    if (el.tagName === "TABLE" || (el.getAttribute && el.getAttribute("role") === "table")) return F.FILTER_ACCEPT;' +
+    '    if (isTable(el)) return F.FILTER_ACCEPT;' +
     '    if (hasDirectText(el)) return F.FILTER_ACCEPT;' +
     '    return F.FILTER_SKIP;' +
     '  }' +
     '});' +
-    'let node;' +
-    'while ((node = walker.nextNode())) capture(node);' +
-    'const cssSel = ' + JSON.stringify(cssSel) + ';' +
-    'if (cssSel) {' +
-    '  try {' +
-    '    document.querySelectorAll(cssSel).forEach(function (el) {' +
-    "      const t = (el.innerText || el.textContent || '').trim();" +
-    '      if (t) out.push({ kind: "css", selector: cssSel, text: t.slice(0, 3000) });' +
-    '    });' +
-    '  } catch (e) {}' +
-    '}' +
-    'return out;' +
+    'var node;' +
+    'while ((node = walker.nextNode())) captureEl(node, false);' +
+    'return { blocks: out, error: "", count: out.length };' +
     '})()';
 }
 
@@ -1091,13 +1146,35 @@ function tableFullExpr(sig) {
     '})()';
 }
 
+// CSS/XPath queries run inside the page; text and regex queries filter what
+// the default whole-page walk already captured.
+function pageQuery() {
+  const q = state.text.query;
+  const mode = q.mode === 'css' || q.mode === 'xpath' ? q.mode : 'all';
+  const value = q.value.trim();
+  return mode !== 'all' && value ? { mode, value } : { mode: 'all', value: '' };
+}
+
 async function pollTextOnce(silent) {
   if (textPolling) return;
   textPolling = true;
   try {
-    const sel = state.text.filters.css.trim();
-    const blocks = await evalText(textMetaExpr(sel));
-    if (!blocks || !blocks.length) return;
+    const pq = pageQuery();
+    const result = await evalText(textCaptureExpr(pq.mode, pq.value));
+    const blocks = result && result.blocks ? result.blocks : null;
+    const prevError = state.text.queryError;
+    state.text.queryError = (result && result.error) || '';
+    if (!blocks || !blocks.length) {
+      // An empty result is meaningful for a query — show it instead of
+      // leaving the previous matches on screen.
+      if (pq.mode !== 'all' || state.text.queryError !== prevError) {
+        state.text.blocks = [];
+        state.text.lastSig = 'empty\u0001' + state.text.queryError;
+        if (silent) renderTabs();
+        else render();
+      }
+      return;
+    }
     const now = Date.now();
 
     // Preserve the user's export selection across poll cycles by content key.
@@ -1130,16 +1207,21 @@ async function pollTextOnce(silent) {
           rowCount: b.rowCount,
           rows: snap ? snap.rows : [],
           hist,
+          where: b.where || '',
           firstSeen: hist.snapshots.length ? hist.snapshots[0].ts : now,
           ts: now,
         });
       } else {
-        const key = (b.kind === 'css' ? 'c\u0000' + b.selector + '\u0000' : b.kind + '\u0000') + b.text;
-        const nb = { kind: b.kind, text: b.text };
-        if (b.kind === 'css') nb.selector = b.selector;
+        const key = b.kind + '\u0000' + (b.where || '') + '\u0000' + b.text;
         const id = nextTextId();
         if (selKeys.has(key)) state.text.sel.add(id);
-        newBlocks.push({ id, key, ts: now, ...nb });
+        newBlocks.push({
+          id, key, ts: now,
+          kind: b.kind,
+          text: b.text,
+          where: b.where || '',
+          matched: !!b.matched,
+        });
       }
     }
 
@@ -1223,23 +1305,39 @@ function stopBgTextPoll() {
   }
 }
 
+function textBlockHaystack(b) {
+  return b.kind === 'table' ? b.rows.map((r) => r.join(' ')).join(' ') : b.text || '';
+}
+
+// Compiles the query box into a predicate. CSS/XPath already ran in the page,
+// so those modes match everything that came back.
+function compileTextQuery() {
+  const { mode, value } = state.text.query;
+  const v = value.trim();
+  if (!v || mode === 'css' || mode === 'xpath') return { test: null, error: '' };
+  if (mode === 'regex') {
+    try {
+      const re = new RegExp(v, 'i');
+      return { test: (s) => re.test(s), error: '' };
+    } catch (e) {
+      return { test: null, error: e.message || 'invalid regular expression' };
+    }
+  }
+  const lower = v.toLowerCase();
+  return { test: (s) => s.toLowerCase().includes(lower), error: '' };
+}
+
 function filteredTextBlocks() {
-  const f = state.text.filters;
-  const q = f.query.trim().toLowerCase();
-  return state.text.blocks.filter((b) => {
-    if (f.kind === 'heading') {
+  const t = state.text;
+  const { test } = compileTextQuery();
+  return t.blocks.filter((b) => {
+    if (t.tag === 'heading') {
       if (!/^h[1-6]$/.test(b.kind)) return false;
-      if (f.level !== 'all' && b.kind !== f.level) return false;
-    } else if (f.kind !== 'all' && b.kind !== f.kind) {
+      if (t.level !== 'all' && b.kind !== t.level) return false;
+    } else if (t.tag !== 'all' && b.kind !== t.tag) {
       return false;
     }
-    if (q) {
-      const hay = (b.kind === 'table'
-        ? b.rows.map((r) => r.join(' ')).join(' ')
-        : b.text
-      ).toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
+    if (test && !test(textBlockHaystack(b))) return false;
     return true;
   });
 }
@@ -1253,88 +1351,236 @@ function timeAgo(ts) {
   return new Date(ts).toLocaleTimeString();
 }
 
-// Keep the "Show" dropdown in sync with the captured blocks: static options
-// for the built-in groups, plus one option per element type actually found on
-// the page (div, span, a, button, section, …) so users can filter by whatever
-// the page really contains.
-function syncTextKindOptions() {
-  const kindSel = document.getElementById('tf-kind');
-  if (!kindSel) return;
-  const present = new Set();
+// The element dropdown lists what the page actually contains, with a count
+// beside each entry, so it doubles as a map of the captured document.
+function syncTextTagOptions() {
+  const sel = document.getElementById('tf-kind');
+  if (!sel) return;
+  const counts = new Map();
+  let headings = 0;
   for (const b of state.text.blocks) {
-    if (b.kind === 'table' || b.kind === 'css' || /^h[1-6]$/.test(b.kind)) continue;
-    present.add(b.kind);
+    if (/^h[1-6]$/.test(b.kind)) headings++;
+    counts.set(b.kind, (counts.get(b.kind) || 0) + 1);
   }
-  const special = new Set(['all', 'heading', 'paragraph', 'list', 'table', 'css']);
-  const existing = new Set([...kindSel.options].map((o) => o.value));
-  for (const k of [...present].sort()) {
-    if (!existing.has(k) && !special.has(k)) {
+  const opts = [['all', 'All elements (' + state.text.blocks.length + ')']];
+  if (headings) opts.push(['heading', 'Headings (' + headings + ')']);
+  for (const tag of [...counts.keys()].sort()) {
+    if (/^h[1-6]$/.test(tag)) continue;
+    opts.push([tag, tag.toUpperCase() + ' (' + counts.get(tag) + ')']);
+  }
+  // Never drop the active choice, even when the page momentarily has none.
+  if (!opts.some(([v]) => v === state.text.tag)) {
+    opts.push([state.text.tag, state.text.tag.toUpperCase() + ' (0)']);
+  }
+
+  // Counts move on every poll of a live page; rebuilding the list while it is
+  // open would yank it out from under the pointer.
+  if (document.activeElement === sel) return;
+
+  const signature = opts.map(([v, l]) => v + '\u0000' + l).join('\u0001');
+  if (sel.dataset.sig !== signature) {
+    sel.dataset.sig = signature;
+    sel.innerHTML = '';
+    for (const [value, label] of opts) {
       const opt = document.createElement('option');
-      opt.value = k;
-      opt.textContent = k.toUpperCase();
-      kindSel.appendChild(opt);
+      opt.value = value;
+      opt.textContent = label;
+      sel.appendChild(opt);
     }
   }
+  if (sel.value !== state.text.tag) sel.value = state.text.tag;
 }
 
-function renderTextView() {
+const QUERY_PLACEHOLDERS = {
+  text: 'Filter the page text…',
+  regex: '^Price:\\s*\\d+  — JavaScript regular expression',
+  css: '.product-card .price, article h2 — any CSS selector',
+  xpath: '//div[@class="row"]//td[2]  ·  count(//a)  ·  //@href',
+};
+
+function syncTextToolbar() {
   const liveBtn = document.getElementById('tf-live');
   if (liveBtn) {
     liveBtn.classList.toggle('btn--primary', state.text.live);
     liveBtn.textContent = state.text.live ? 'Live on' : 'Live off';
   }
-  const kindSel = document.getElementById('tf-kind');
-  if (kindSel && kindSel.value !== state.text.filters.kind) kindSel.value = state.text.filters.kind;
+  const mode = document.getElementById('tf-mode');
+  if (mode && mode.value !== state.text.query.mode) mode.value = state.text.query.mode;
+  const input = document.getElementById('tf-query');
+  if (input) {
+    if (document.activeElement !== input && input.value !== state.text.query.value) {
+      input.value = state.text.query.value;
+    }
+    input.placeholder = QUERY_PLACEHOLDERS[state.text.query.mode] || '';
+  }
   const levelSel = document.getElementById('tf-level');
   if (levelSel) {
-    levelSel.hidden = state.text.filters.kind !== 'all' && state.text.filters.kind !== 'heading';
-    if (levelSel.value !== state.text.filters.level) levelSel.value = state.text.filters.level;
+    levelSel.hidden = state.text.tag !== 'heading';
+    if (levelSel.value !== state.text.level) levelSel.value = state.text.level;
   }
-  syncTextKindOptions();
+  const textView = document.getElementById('text-view');
+  if (textView) textView.classList.toggle('text-view--read', !!state.text.readMode);
+  const readBtn = document.getElementById('tf-read');
+  if (readBtn) {
+    readBtn.classList.toggle('btn--primary', !!state.text.readMode);
+    readBtn.textContent = state.text.readMode ? 'Reading on' : 'Reading';
+  }
+  syncTextTagOptions();
+}
+
+// One line under the query box: how many blocks matched, or exactly what the
+// page said about a broken selector / regular expression.
+function renderTextStatus(shown) {
+  const el = document.getElementById('tf-query-status');
+  if (!el) return;
+  const { mode, value } = state.text.query;
+  const local = compileTextQuery();
+  const error = state.text.queryError || local.error;
+  if (error) {
+    el.className = 'tf-status tf-status--error';
+    el.textContent = (mode === 'xpath' ? 'XPath: ' : mode === 'css' ? 'Selector: ' : 'Regex: ') + error;
+    return;
+  }
+  el.className = 'tf-status';
+  if (!value.trim()) {
+    el.textContent = '';
+    return;
+  }
+  el.textContent = shown + ' match' + (shown === 1 ? '' : 'es');
+}
+
+// The captured document is rendered in windows too — a content-heavy page can
+// produce well over a thousand blocks, and tables add rows on top of that.
+const TEXT_CHUNK = 80;
+let textWindow = null;
+let textObserver = null;
+
+function teardownTextWindow() {
+  if (textObserver) {
+    textObserver.disconnect();
+    textObserver = null;
+  }
+  textWindow = null;
+}
+
+function appendTextChunk() {
+  if (!textWindow) return;
+  const { stream, blocks, sentinel } = textWindow;
+  const end = Math.min(textWindow.index + TEXT_CHUNK, blocks.length);
+  const frag = document.createDocumentFragment();
+  for (let i = textWindow.index; i < end; i++) frag.appendChild(renderTextBlock(blocks[i]));
+  stream.insertBefore(frag, sentinel);
+  textWindow.index = end;
+
+  if (end >= blocks.length) {
+    teardownTextWindow();
+    sentinel.remove();
+  } else if (textObserver) {
+    textObserver.unobserve(sentinel);
+    textObserver.observe(sentinel);
+  }
+}
+
+function renderTextView() {
+  teardownTextWindow();
+  syncTextToolbar();
+
   const stream = document.getElementById('text-stream');
   if (!stream) return;
   stream.innerHTML = '';
   const blocks = filteredTextBlocks();
+  renderTextStatus(blocks.length);
 
+  const queryActive = !!state.text.query.value.trim();
   if (!state.text.blocks.length) {
     const empty = document.createElement('div');
     empty.className = 'text-empty';
-    empty.innerHTML =
-      '<svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5V3h14v2M12 3v18M9 21h6"/></svg>' +
-      '<p><b>Nothing captured yet.</b> Live capture is running — the whole page will appear here as readable text. Press <em>Scan now</em> or wait a moment for the first snapshot.</p>';
+    empty.innerHTML = state.text.queryError
+      ? '<p><b>The page rejected that query.</b> Fix it above and the results will come straight back.</p>'
+      : queryActive
+        ? '<p><b>No element on the page matches this query.</b> Try a looser selector, or switch the mode next to the box.</p>'
+        : '<svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5V3h14v2M12 3v18M9 21h6"/></svg>' +
+          '<p><b>Nothing captured yet.</b> Live capture is running — the whole page will appear here as readable text. Press <em>Scan now</em> or wait a moment for the first snapshot.</p>';
     stream.appendChild(empty);
     return;
   }
   if (!blocks.length) {
     const empty = document.createElement('div');
     empty.className = 'text-empty';
-    empty.innerHTML = '<p>Nothing matches the current filters.</p>';
+    empty.innerHTML = '<p>Nothing matches the current query and element filter.</p>';
     stream.appendChild(empty);
     return;
   }
 
+  stream.appendChild(renderTextSummary(blocks));
+
+  const sentinel = document.createElement('div');
+  sentinel.className = 'text-sentinel';
+  stream.appendChild(sentinel);
+  textWindow = { stream, blocks, sentinel, index: 0 };
+
+  if (window.IntersectionObserver) {
+    textObserver = new IntersectionObserver(
+      (records) => {
+        if (records.some((r) => r.isIntersecting)) appendTextChunk();
+      },
+      { root: stream, rootMargin: '900px 0px' }
+    );
+    textObserver.observe(sentinel);
+  }
+  appendTextChunk();
+  if (!window.IntersectionObserver) {
+    while (textWindow) appendTextChunk();
+  }
+}
+
+// A one-line read-out of what is on screen and what an export will contain,
+// with the words/characters count people usually want from a text tool.
+function renderTextSummary(shown) {
   const summary = document.createElement('div');
   summary.className = 'text-summary';
-  const kinds = [
-    ['heading', 'headings'],
-    ['p', 'paragraphs'],
-    ['li', 'list items'],
-    ['table', 'tables'],
-    ['css', 'selector matches'],
+
+  const tables = shown.filter((b) => b.kind === 'table');
+  let words = 0;
+  let chars = 0;
+  for (const b of shown) {
+    if (b.kind === 'table') continue;
+    const t = b.text || '';
+    chars += t.length;
+    if (t.trim()) words += t.trim().split(/\s+/).length;
+  }
+
+  const chips = [
+    shown.length + ' block' + (shown.length === 1 ? '' : 's'),
+    words.toLocaleString() + ' words',
+    chars.toLocaleString() + ' characters',
   ];
-  for (const [kind, label] of kinds) {
-    const n = kind === 'heading'
-      ? state.text.blocks.filter((b) => /^h[1-6]$/.test(b.kind)).length
-      : state.text.blocks.filter((b) => b.kind === kind).length;
-    if (!n && state.text.filters.kind !== kind) continue;
+  if (tables.length) {
+    const rows = tables.reduce(
+      (n, b) => n + dedupeRows(b.hist.snapshots.flatMap((s) => s.rows)).length,
+      0
+    );
+    chips.push(tables.length + ' table' + (tables.length === 1 ? '' : 's') + ' · ' + rows + ' unique rows');
+  }
+  if (state.text.sel.size) chips.push(state.text.sel.size + ' selected — exports use these only');
+
+  for (const text of chips) {
     const chip = document.createElement('span');
-    chip.className = 'text-summary__chip' + (state.text.filters.kind === kind ? ' text-summary__chip--active' : '');
-    chip.textContent = n + ' ' + label;
+    chip.className = 'text-summary__chip';
+    chip.textContent = text;
     summary.appendChild(chip);
   }
-  stream.appendChild(summary);
 
-  for (const b of blocks) stream.appendChild(renderTextBlock(b));
+  const copy = document.createElement('button');
+  copy.className = 'btn btn--sm text-summary__copy';
+  copy.textContent = 'Copy text';
+  copy.title = 'Copy everything shown below to the clipboard';
+  copy.addEventListener('click', () => {
+    copyText(plainTextOf(shown));
+    toast('Copied ' + shown.length + ' block' + (shown.length === 1 ? '' : 's'), 'success');
+  });
+  summary.appendChild(copy);
+  return summary;
 }
 
 function blockCheckbox(b, container) {
@@ -1352,6 +1598,24 @@ function blockCheckbox(b, container) {
   return check;
 }
 
+// Plain-text rendering of what is on screen, used by "Copy text" and the TXT
+// export. Headings keep their weight through blank lines, tables become
+// tab-separated rows so they paste straight into a spreadsheet.
+function plainTextOf(blocks) {
+  const out = [];
+  for (const b of blocks) {
+    if (b.kind === 'table') {
+      const rows = tableRowsFor(b);
+      out.push(rows.map((r) => r.join('\t')).join('\n'));
+    } else if (/^h[1-6]$/.test(b.kind)) {
+      out.push('\n' + b.text);
+    } else {
+      out.push(b.text);
+    }
+  }
+  return out.join('\n\n').trim() + '\n';
+}
+
 function renderTextBlock(b) {
   const el = document.createElement('div');
   const isHeading = /^h[1-6]$/.test(b.kind);
@@ -1361,29 +1625,47 @@ function renderTextBlock(b) {
     (isHeading ? ' txt-block--heading txt-block--h' + b.kind[1] : '') +
     (b.kind === 'p' ? ' txt-block--paragraph' : '') +
     (b.kind === 'li' ? ' txt-block--list' : '') +
-    (b.kind === 'css' ? ' txt-block--css' : '') +
+    (b.matched ? ' txt-block--match' : '') +
     (state.text.sel.has(b.id) ? ' txt-block--sel' : '');
   el.dataset.id = b.id;
 
   if (isTable) {
     renderTextTable(el, b);
-  } else {
-    const check = blockCheckbox(b, el);
-    const tag = document.createElement('span');
-    tag.className = 'txt-block__tag';
-    if (isHeading) tag.textContent = b.kind.toUpperCase();
-    else if (b.kind === 'p') tag.textContent = 'P';
-    else if (b.kind === 'li') tag.textContent = 'LI';
-    else if (b.kind === 'css') tag.textContent = 'CSS';
-    else tag.textContent = b.kind.toUpperCase();
-    const text = document.createElement('span');
-    text.className = 'txt-block__text';
-    text.textContent = b.text;
-    el.appendChild(check);
-    el.appendChild(tag);
-    el.appendChild(text);
+    return el;
+  }
+
+  el.appendChild(blockCheckbox(b, el));
+
+  const tag = document.createElement('span');
+  tag.className = 'txt-block__tag';
+  tag.textContent = b.kind.toUpperCase();
+  if (b.where) tag.title = b.where;
+  el.appendChild(tag);
+
+  const text = document.createElement('span');
+  text.className = 'txt-block__text';
+  text.textContent = b.text;
+  el.appendChild(text);
+
+  // Where on the page this came from — invaluable when a query returns a
+  // dozen look-alike blocks and you need to tell them apart.
+  if (b.where) {
+    const where = document.createElement('span');
+    where.className = 'txt-block__where';
+    where.textContent = b.where;
+    where.title = 'Matched element: ' + b.where;
+    el.appendChild(where);
   }
   return el;
+}
+
+// What the table shows right now: either the newest snapshot, or every unique
+// row seen since capture started — which is exactly what an export contains.
+function tableRowsFor(b) {
+  if (!b.hist) return b.rows || [];
+  return b.hist.merged
+    ? dedupeRows(b.hist.snapshots.flatMap((s) => s.rows))
+    : b.rows || [];
 }
 
 function renderTextTable(el, b) {
@@ -1396,14 +1678,16 @@ function renderTextTable(el, b) {
   tag.textContent = 'TBL';
   head.appendChild(tag);
 
+  const unique = dedupeRows(b.hist.snapshots.flatMap((s) => s.rows)).length;
+  const shownRows = tableRowsFor(b);
+
   const title = document.createElement('span');
   title.className = 'txt-table__title';
-  title.textContent = 'Table — ' + b.rowCount + ' row' + (b.rowCount === 1 ? '' : 's');
+  title.textContent = b.hist.merged
+    ? 'Table — all ' + unique + ' unique row' + (unique === 1 ? '' : 's')
+    : 'Table — ' + b.rowCount + ' row' + (b.rowCount === 1 ? '' : 's') + ' on screen';
   head.appendChild(title);
 
-  // History summary, right next to the title (not pushed to the far edge),
-  // so it can never be missed. Shows what an export will actually contain.
-  const unique = dedupeRows(b.hist.snapshots.flatMap((s) => s.rows)).length;
   const meta = document.createElement('span');
   meta.className = 'txt-table__meta';
   const parts = [
@@ -1414,6 +1698,21 @@ function renderTextTable(el, b) {
   if (b.hist.snapshots.length > 1) parts.push('since ' + timeAgo(b.firstSeen));
   meta.textContent = parts.join(' · ');
   head.appendChild(meta);
+
+  // The most useful control on a dynamic table: see everything collected so
+  // far, not just whatever the page happens to be showing this second.
+  if (unique > (b.rows ? b.rows.length : 0) || b.hist.merged) {
+    const mergeBtn = document.createElement('button');
+    mergeBtn.className = 'btn btn--sm' + (b.hist.merged ? ' btn--primary' : '');
+    mergeBtn.textContent = b.hist.merged ? 'Showing all rows' : 'Show all ' + unique + ' rows';
+    mergeBtn.title = 'Combine every snapshot into one deduplicated table — this is what gets exported';
+    mergeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      b.hist.merged = !b.hist.merged;
+      renderTextView();
+    });
+    head.appendChild(mergeBtn);
+  }
 
   if (b.hist.snapshots.length > 1) {
     const histBtn = document.createElement('button');
@@ -1433,9 +1732,9 @@ function renderTextTable(el, b) {
   wrap.className = 'txt-table__wrap';
   const tbl = document.createElement('table');
   tbl.className = 'txt-table';
-  if (b.rows.length) {
-    const maxCols = Math.max(...b.rows.map((r) => r.length));
-    for (const row of b.rows) {
+  if (shownRows.length) {
+    const maxCols = Math.max(...shownRows.map((r) => r.length));
+    for (const row of shownRows) {
       const tr = document.createElement('tr');
       for (let c = 0; c < maxCols; c++) {
         const td = document.createElement('td');
@@ -1531,22 +1830,50 @@ function exportTableItems() {
   return out;
 }
 
+// The whole readable page, exactly as shown, as a plain .txt file.
+function exportTextPlain() {
+  const blocks = exportTextSelection();
+  if (!blocks.length) {
+    toast('Nothing to export');
+    return;
+  }
+  saveBlob(new Blob([plainTextOf(blocks)], { type: 'text/plain' }), 'text/page-text.txt');
+  toast('Exported ' + blocks.length + ' block' + (blocks.length === 1 ? '' : 's') + ' as TXT');
+}
+
 function exportTextMarkdown() {
-  const blocks = exportTextSelection().filter((b) => b.kind !== 'table');
+  const blocks = exportTextSelection();
   if (!blocks.length) {
     toast('Nothing to export');
     return;
   }
   const lines = [];
   for (const b of blocks) {
-    if (/^h[1-6]$/.test(b.kind)) lines.push('#'.repeat(+b.kind[1]) + ' ' + b.text);
-    else if (b.kind === 'li') lines.push('- ' + b.text);
-    else if (b.kind === 'css') lines.push('[' + b.selector + '] ' + b.text);
-    else lines.push(b.text);
+    if (b.kind === 'table') {
+      const rows = tableRowsFor(b);
+      if (!rows.length) continue;
+      const cols = Math.max(...rows.map((r) => r.length));
+      const pad = (r) => Array.from({ length: cols }, (_, i) => String(r[i] || '').replace(/\|/g, '\\|'));
+      lines.push(
+        '| ' + pad(rows[0]).join(' | ') + ' |\n' +
+        '| ' + Array(cols).fill('---').join(' | ') + ' |\n' +
+        rows.slice(1).map((r) => '| ' + pad(r).join(' | ') + ' |').join('\n')
+      );
+    } else if (/^h[1-6]$/.test(b.kind)) {
+      lines.push('#'.repeat(+b.kind[1]) + ' ' + b.text);
+    } else if (b.kind === 'li') {
+      lines.push('- ' + b.text);
+    } else {
+      lines.push(b.text);
+    }
+  }
+  if (!lines.length) {
+    toast('Nothing to export');
+    return;
   }
   const blob = new Blob([lines.join('\n\n')], { type: 'text/markdown' });
   saveBlob(blob, 'text/page-content.md');
-  toast('Exported ' + lines.length + ' text block' + (lines.length === 1 ? '' : 's'));
+  toast('Exported ' + lines.length + ' block' + (lines.length === 1 ? '' : 's') + ' as Markdown');
 }
 
 async function exportTablesAs(format) {
@@ -1570,7 +1897,7 @@ async function exportTablesAs(format) {
       entries.push({ name: 'text/table-' + (i + 1) + '.html', data: html });
     }
   }
-  const zip = await SourceDownloadZip.createZip(entries);
+  const zip = await buildZip(entries);
   saveBlob(zip, format === 'csv' ? 'text/tables.csv.zip' : 'text/tables.html.zip');
   toast('Exported ' + entries.length + ' table' + (entries.length === 1 ? '' : 's') + ' as ' + format.toUpperCase());
 }
@@ -1582,7 +1909,7 @@ async function exportTextXlsx() {
     return;
   }
   const sheets = tables.map((t, i) => ({ name: ('Table ' + (i + 1)).slice(0, 31), rows: t.rows }));
-  const blob = await SourceDownloadXlsx.build(sheets);
+  const blob = await buildXlsx(sheets);
   saveBlob(blob, 'text/tables.xlsx');
   toast('Exported ' + sheets.length + ' sheet' + (sheets.length === 1 ? '' : 's') + ' as XLSX');
 }
@@ -1608,6 +1935,7 @@ function render() {
   if (isText) {
     stopTextPoll();
     stopBgTextPoll();
+    teardownListWindow();
     renderTextView();
     ensureTextPoll();
   } else {
@@ -1616,6 +1944,7 @@ function render() {
     renderFilterBar();
     renderStatus();
     ensureBgTextPoll();
+    if (state.activeTab === 'image' || state.filters.hideDupes) scheduleDupeScan();
   }
   for (const r of state.resources) r.isNew = false;
 }
@@ -1640,6 +1969,11 @@ function renderFilterBar() {
   const isApi = state.activeTab === 'api';
   document.getElementById('f-method').hidden = !isApi;
   document.getElementById('f-type').hidden = !isApi;
+  const hideDupes = document.getElementById('f-hide-dupes');
+  if (hideDupes) {
+    hideDupes.hidden = state.activeTab !== 'image';
+    hideDupes.classList.toggle('btn--primary', !!f.hideDupes);
+  }
   const setSel = (id, v) => {
     const el = document.getElementById(id);
     if (el && el.value !== v) el.value = v;
@@ -1658,7 +1992,7 @@ async function decodeImageSizes() {
       (r.width === undefined || r.height === undefined) &&
       !r._decoding
   );
-  if (!targets.length || !window.createImageBitmap) return;
+  if (!targets.length) return;
   const CONC = 3;
   let i = 0;
   const worker = async () => {
@@ -1668,11 +2002,15 @@ async function decodeImageSizes() {
       try {
         const content = await getContent(r);
         if (!content) continue;
-        const blob = toBlob(content, r.mimeType || (r.type === 'svg' ? 'image/svg+xml' : undefined));
-        const bmp = await createImageBitmap(blob);
-        r.width = bmp.width;
-        r.height = bmp.height;
-        bmp.close();
+        const mime = r.mimeType || (r.type === 'svg' ? 'image/svg+xml' : '');
+        const size = await measureImageSize(content, mime);
+        if (size && size.width) {
+          r.width = size.width;
+          r.height = size.height;
+        } else {
+          r.width = 0;
+          r.height = 0;
+        }
       } catch {
         r.width = 0;
         r.height = 0;
@@ -1682,6 +2020,78 @@ async function decodeImageSizes() {
   await Promise.all(Array.from({ length: Math.min(CONC, targets.length) }, worker));
   render();
   syncPanelCounts();
+}
+
+function refreshDupeMarks() {
+  const groups = new Map();
+  for (const r of state.resources) {
+    r.dupeCount = 0;
+    r.dupePrimary = false;
+    if (r.type !== 'image' || !r.dupeKey) continue;
+    let g = groups.get(r.dupeKey);
+    if (!g) {
+      g = [];
+      groups.set(r.dupeKey, g);
+    }
+    g.push(r);
+  }
+  let extra = 0;
+  for (const g of groups.values()) {
+    if (g.length < 2) continue;
+    extra += g.length - 1;
+    g[0].dupePrimary = true;
+    for (const r of g) r.dupeCount = g.length;
+  }
+  return extra;
+}
+
+let dupeScanRun = null;
+let dupeScanTimer = null;
+
+function scheduleDupeScan() {
+  if (state.activeTab !== 'image' && !state.filters.hideDupes) return;
+  if (dupeScanTimer) return;
+  dupeScanTimer = setTimeout(() => {
+    dupeScanTimer = null;
+    scanImageDupes();
+  }, 700);
+}
+
+async function scanImageDupes() {
+  if (dupeScanRun) return dupeScanRun;
+  const targets = state.resources.filter(
+    (r) => r.type === 'image' && !r.dupeKey && !r._hashing
+  );
+  if (!targets.length) {
+    const extra = refreshDupeMarks();
+    const el = document.getElementById('status-dupes');
+    if (el) {
+      el.hidden = extra === 0;
+      if (extra) el.textContent = extra + ' duplicate image' + (extra === 1 ? '' : 's');
+    }
+    return null;
+  }
+  setStatusMessage('Checking image duplicates…');
+  let i = 0;
+  const worker = async () => {
+    while (i < targets.length) {
+      const r = targets[i++];
+      r._hashing = true;
+      try {
+        const content = await getContent(r);
+        r.dupeKey = content ? await hashContentAsync(content) : 'empty:' + r.id;
+      } catch {
+        r.dupeKey = 'fail:' + r.id;
+      }
+    }
+  };
+  dupeScanRun = Promise.all(Array.from({ length: Math.min(3, targets.length) }, worker)).then(() => {
+    dupeScanRun = null;
+    refreshDupeMarks();
+    setStatusMessage('');
+    render();
+  });
+  return dupeScanRun;
 }
 
 function scheduleRender() {
@@ -1697,7 +2107,10 @@ function scheduleRender() {
 // live network requests), so when DevTools is open we push its own per-category
 // counts to the background worker so the toolbar badge stays accurate.
 function computePanelCounts() {
-  const counts = { all: 0, api: 0, image: 0, svg: 0, video: 0, audio: 0, css: 0, js: 0, font: 0, document: 0, json: 0, wasm: 0, manifest: 0, other: 0 };
+  const counts = { all: 0 };
+  for (const k of Object.keys(TYPES)) {
+    if (k !== 'all' && k !== 'text') counts[k] = 0;
+  }
   for (const r of state.resources) {
     if (counts[r.type] !== undefined) counts[r.type]++;
   }
@@ -1732,6 +2145,7 @@ function renderTabs() {
     tab.className = 'vtab' + (key === state.activeTab ? ' vtab--active' : '');
     tab.dataset.tab = key;
     tab.title = t.label;
+    tab.style.setProperty('--tab-color', typeColor(key));
     tab.innerHTML =
       '<span class="vtab__icon">' + (ICONS[key] || ICONS.other) + '</span>' +
       '<span class="vtab__label">' + t.label + '</span>' +
@@ -1741,7 +2155,7 @@ function renderTabs() {
       // A category switch must always start fresh: reset every resource filter
       // and the search box so a leftover filter (e.g. POST from the API tab)
       // can never silently empty another category.
-      state.filters = { minSize: '', maxSize: '', minWidth: '', minHeight: '', sortBy: 'name', sortDir: 'asc', method: '', reqType: '' };
+      state.filters = emptyResourceFilters();
       state.search = '';
       const searchInput = document.getElementById('search-input');
       if (searchInput) searchInput.value = '';
@@ -1801,6 +2215,7 @@ function renderCard(res) {
     img.alt = '';
     thumb.appendChild(img);
   } else {
+    thumb.style.color = typeColor(res.type);
     thumb.innerHTML = ICONS[res.type] || ICONS.other;
   }
 
@@ -1822,8 +2237,9 @@ function renderCard(res) {
   meta.className = 'card__meta';
   const parts = [];
   if (res.type === 'api') parts.push(methodChip(res));
-  parts.push(TYPES[res.type].label);
+  parts.push((TYPES[res.type] || TYPES.other).label);
   if (res.size) parts.push(formatBytes(res.size));
+  if (res.dupeCount > 1) parts.push('<span class="dupe-chip" title="Same bytes as ' + (res.dupeCount - 1) + ' other image' + (res.dupeCount === 2 ? '' : 's') + '">dup ×' + res.dupeCount + '</span>');
   const extra = res.alt || res.title;
   if (extra) parts.push('<span class="meta-alt">' + escapeHtml(extra).slice(0, 90) + '</span>');
   meta.innerHTML = parts.join(' <span class="sep">·</span> ');
@@ -1882,6 +2298,7 @@ function renderTile(res) {
   } else {
     const iconWrap = document.createElement('div');
     iconWrap.className = 'tile__icon';
+    iconWrap.style.color = typeColor(res.type);
     iconWrap.innerHTML = ICONS[res.type] || ICONS.other;
     tile.appendChild(iconWrap);
   }
@@ -1912,6 +2329,14 @@ function renderTile(res) {
     tile.appendChild(chip);
   }
 
+  if (res.dupeCount > 1) {
+    const dupe = document.createElement('span');
+    dupe.className = 'tile__dupe';
+    dupe.title = 'Duplicate — same bytes as ' + (res.dupeCount - 1) + ' other image' + (res.dupeCount === 2 ? '' : 's');
+    dupe.textContent = '×' + res.dupeCount;
+    tile.appendChild(dupe);
+  }
+
   if (state.failed.has(res.id)) {
     const warn = document.createElement('button');
     warn.className = 'tile__warn';
@@ -1934,11 +2359,105 @@ function renderTile(res) {
   return tile;
 }
 
+/*
+ * The list is rendered in windows rather than all at once: a page with a few
+ * thousand resources would otherwise build a few thousand DOM nodes on every
+ * network update. Rows past the first window are appended as the sentinel at
+ * the bottom scrolls into view.
+ */
+const LIST_CHUNK = 120;
+let listChunkObserver = null;
+let listWindow = null;
+let listWindowSize = LIST_CHUNK;
+let listSignature = '';
+
+// Anything that changes which resources are shown resets the window back to
+// its first chunk; a plain data refresh keeps whatever the user scrolled to.
+function currentListSignature() {
+  const f = state.filters;
+  return [
+    state.activeTab, state.view, state.search,
+    f.minSize, f.maxSize, f.minWidth, f.minHeight,
+    f.sortBy, f.sortDir, f.method, f.reqType,
+  ].join('\u0000');
+}
+
+function teardownListWindow() {
+  if (listChunkObserver) {
+    listChunkObserver.disconnect();
+    listChunkObserver = null;
+  }
+  listWindow = null;
+}
+
+// Flattens the filtered resources into a render plan of group headers and
+// cards, so windowing does not have to care about the "All" tab's grouping.
+function buildListRows(filtered) {
+  if (state.activeTab !== 'all') return filtered.map((res) => ({ res }));
+
+  const groups = new Map();
+  for (const r of filtered) {
+    let g = groups.get(r.type);
+    if (!g) groups.set(r.type, (g = []));
+    g.push(r);
+  }
+  const rows = [];
+  for (const key of Object.keys(TYPES)) {
+    if (key === 'all') continue;
+    const group = groups.get(key);
+    if (!group || !group.length) continue;
+    rows.push({ header: TYPES[key].label, count: group.length });
+    for (const r of group) rows.push({ res: r });
+  }
+  return rows;
+}
+
+function appendListChunk() {
+  if (!listWindow) return;
+  const { listEl, rows, renderOne, sentinel } = listWindow;
+  const end = Math.min(listWindow.index + LIST_CHUNK, rows.length);
+  const frag = document.createDocumentFragment();
+  for (let i = listWindow.index; i < end; i++) {
+    const row = rows[i];
+    if (row.header !== undefined) {
+      const header = document.createElement('div');
+      header.className = 'group-header';
+      header.innerHTML =
+        '<span>' + row.header + '</span>' +
+        '<span class="group-header__line"></span>' +
+        '<span class="group-header__count">' + row.count + '</span>';
+      frag.appendChild(header);
+    } else {
+      frag.appendChild(renderOne(row.res));
+    }
+  }
+  listEl.insertBefore(frag, sentinel);
+  listWindow.index = end;
+  listWindowSize = end;
+
+  if (end >= rows.length) {
+    teardownListWindow();
+    sentinel.remove();
+  } else if (listChunkObserver) {
+    // Re-observing forces a fresh callback when the sentinel is still on
+    // screen after this batch (tall panes, short rows).
+    listChunkObserver.unobserve(sentinel);
+    listChunkObserver.observe(sentinel);
+  }
+}
+
 function renderList() {
   const listEl = document.getElementById('list');
+  teardownListWindow();
   listEl.className = state.view === 'grid' ? 'list list--grid' : 'list list--list';
   listEl.innerHTML = '';
   const filtered = filteredResources();
+
+  const sig = currentListSignature();
+  if (sig !== listSignature) {
+    listSignature = sig;
+    listWindowSize = LIST_CHUNK;
+  }
 
   const empty = document.getElementById('empty-state');
   const emptyTitle = document.getElementById('empty-title');
@@ -1961,24 +2480,34 @@ function renderList() {
   }
   empty.hidden = true;
 
-  const renderOne = state.view === 'grid' ? renderTile : renderCard;
+  const rows = buildListRows(filtered);
+  const sentinel = document.createElement('div');
+  sentinel.className = 'list__sentinel';
+  listEl.appendChild(sentinel);
 
-  if (state.activeTab === 'all') {
-    for (const key of Object.keys(TYPES)) {
-      if (key === 'all') continue;
-      const group = filtered.filter((r) => r.type === key);
-      if (!group.length) continue;
-      const header = document.createElement('div');
-      header.className = 'group-header';
-      header.innerHTML =
-        '<span>' + TYPES[key].label + '</span>' +
-        '<span class="group-header__line"></span>' +
-        '<span class="group-header__count">' + group.length + '</span>';
-      listEl.appendChild(header);
-      for (const r of group) listEl.appendChild(renderOne(r));
-    }
-  } else {
-    for (const r of filtered) listEl.appendChild(renderOne(r));
+  listWindow = {
+    listEl,
+    rows,
+    sentinel,
+    index: 0,
+    renderOne: state.view === 'grid' ? renderTile : renderCard,
+  };
+
+  if (window.IntersectionObserver) {
+    listChunkObserver = new IntersectionObserver(
+      (records) => {
+        if (records.some((r) => r.isIntersecting)) appendListChunk();
+      },
+      { root: document.querySelector('.list-pane'), rootMargin: '800px 0px' }
+    );
+    listChunkObserver.observe(sentinel);
+  }
+
+  // Restore however far the user had already scrolled before this re-render.
+  const target = Math.min(rows.length, Math.max(LIST_CHUNK, listWindowSize));
+  while (listWindow && listWindow.index < target) appendListChunk();
+  if (!window.IntersectionObserver) {
+    while (listWindow) appendListChunk();
   }
 }
 
@@ -1996,22 +2525,43 @@ function renderStatus() {
   for (const r of state.resources) if (r.size) size += r.size;
   document.getElementById('status-size').textContent = size ? '≈ ' + formatBytes(size) : '';
 
+  const extraDupes = state.resources.filter((r) => r.dupeCount > 1 && !r.dupePrimary).length;
+  const dupeEl = document.getElementById('status-dupes');
+  if (dupeEl) {
+    dupeEl.hidden = extraDupes === 0;
+    if (extraDupes) dupeEl.textContent = extraDupes + ' duplicate image' + (extraDupes === 1 ? '' : 's');
+  }
+
   const badge = document.getElementById('btn-download-selected-count');
   badge.hidden = sel === 0;
   badge.textContent = sel;
   document.getElementById('btn-download-selected').disabled = state.busy || sel === 0;
   document.getElementById('btn-download-all').disabled = state.busy;
 
-  // "Download View" becomes "Download Filtered (N)" while any category filter
-  // (size / dimensions / sort) is active — it always downloads exactly what
-  // is visible in the list.
+  const allEst = estimateArchiveBytes(state.resources);
+  const viewList = filteredResources();
+  const viewEst = estimateArchiveBytes(viewList);
+  const selList = selectedResources();
+  const selEst = estimateArchiveBytes(selList);
+  const btnAll = document.getElementById('btn-download-all');
   const btnView = document.getElementById('btn-download-view');
-  const filteredCount = filteredResources().length;
-  btnView.disabled = state.busy || filteredCount === 0;
+  const btnSel = document.getElementById('btn-download-selected');
+  if (btnAll) btnAll.title = 'Download every captured resource as a folder-structured ZIP' +
+    (state.resources.length ? ' (' + formatEstimate(allEst) + ')' : '');
+  if (btnSel) btnSel.title = 'Download the resources you checked as a ZIP' +
+    (sel ? ' (' + formatEstimate(selEst) + ')' : '');
+
+  btnView.disabled = state.busy || viewList.length === 0;
   const label = btnView.querySelector('span');
   if (label) label.textContent = hasActiveFilters()
-    ? ' Download Filtered (' + filteredCount + ')'
+    ? ' Download Filtered (' + viewList.length + ')'
     : ' Download View';
+  if (btnView) {
+    btnView.title = (hasActiveFilters()
+      ? 'Download the visible filtered resources as a ZIP'
+      : 'Download only the visible resources (current category + search)') +
+      (viewList.length ? ' (' + formatEstimate(viewEst) + ')' : '');
+  }
 }
 
 /* ============================================================
@@ -2092,7 +2642,7 @@ const SYNTAX = {
 function languageFor(res) {
   if (res.type === 'js') return 'js';
   if (res.type === 'css') return 'css';
-  if (res.type === 'json' || res.type === 'manifest') return 'json';
+  if (res.type === 'json' || res.type === 'manifest' || res.type === 'sourcemap') return 'json';
   if (res.type === 'svg') return 'markup';
   const ext = getExt(res.url);
   if (['js', 'mjs', 'cjs', 'ts', 'tsx', 'jsx'].includes(ext)) return 'js';
@@ -2117,19 +2667,75 @@ function highlightCode(text, lang) {
   return html;
 }
 
+// Preview bodies are kept whole up to this point. Beyond it the file is
+// almost certainly a source map or a data blob, not something to read.
+const MAX_PREVIEW_CHARS = 8 * 1024 * 1024;
+
+// Formatting a multi-megabyte bundle on the UI thread is what used to lock the
+// panel up, so anything sizeable is handed to the archive worker instead.
+const BEAUTIFY_INLINE_LIMIT = 256 * 1024;
+// Auto-formatting is a convenience, not worth a long wait on a huge payload.
+const AUTO_BEAUTIFY_LIMIT = 2 * 1024 * 1024;
+
+function clampPreviewText(text) {
+  if (text.length <= MAX_PREVIEW_CHARS) return text;
+  return text.slice(0, MAX_PREVIEW_CHARS) +
+    '\n\n… (preview capped at ' + formatBytes(MAX_PREVIEW_CHARS) + ' — download the file to read the rest)';
+}
+
+function beautifyLangFor(res) {
+  if (res.type === 'json' || res.type === 'manifest' || res.type === 'sourcemap' || isJsonType(res)) return 'json';
+  if (res.type === 'css') return 'css';
+  if (res.type === 'js') return 'js';
+  if (res.type === 'svg' || res.type === 'xml' || res.type === 'document') return 'html';
+  return '';
+}
+
 function beautifyText(res, text) {
   const b = window.SourceDownloadBeautify;
-  if (!b) return text;
+  const lang = beautifyLangFor(res);
+  if (!b || !lang || !b[lang]) return text;
   try {
-    const type = res.type;
-    if (type === 'json' || type === 'manifest' || isJsonType(res)) return b.json(text);
-    if (type === 'css') return b.css(text);
-    if (type === 'js') return b.js(text);
-    if (type === 'svg' || type === 'xml' || type === 'document') return b.html(text);
+    return b[lang](text);
   } catch {
-    /* beautification failed — keep the original text */
+    return text; // beautification failed — keep the original text
   }
-  return text;
+}
+
+// Resolves to the formatted text, off-thread when the payload is large enough
+// for the difference to be felt.
+async function beautifyAsync(res, text) {
+  if (res._formatted !== undefined) return res._formatted;
+  if (res._beautifyPromise) return res._beautifyPromise;
+  const lang = beautifyLangFor(res);
+  if (!lang) return text;
+
+  const run = (async () => {
+    if (text.length <= BEAUTIFY_INLINE_LIMIT) return beautifyText(res, text);
+    try {
+      return await runCpuJob({ kind: 'beautify', lang, text }, null, 25000);
+    } catch (err) {
+      if (err && err.timeout) {
+        toast('Formatting timed out — showing the original file.', 'error');
+        return text;
+      }
+      if (err && err.workerUnavailable) {
+        toast('Could not format off-thread — showing the original file.', 'error');
+        return text;
+      }
+      toast('Could not format this file — showing the original.', 'error');
+      return text;
+    }
+  })();
+
+  res._beautifyPromise = run;
+  try {
+    const formatted = await run;
+    res._formatted = formatted;
+    return formatted;
+  } finally {
+    res._beautifyPromise = null;
+  }
 }
 
 function escapeHtmlText(s) {
@@ -2152,50 +2758,166 @@ function findMatches(text, term) {
   return matches;
 }
 
-function buildContentHtml(text, term, lang) {
-  const matches = findMatches(text, term);
-  const esc = escapeHtmlText;
-  if (!matches.length) return highlightCode(text, lang);
+/*
+ * Code preview rendering.
+ *
+ * Files are shown in full — a 3 MB bundle used to be cut off at 300 000
+ * characters, which silently broke Beautify because it only ever saw the
+ * truncated head. Instead of trimming the content, rows are built lazily:
+ * only the visible window exists in the DOM, and minified lines (which can be
+ * megabytes long on a single line) are split into segments so layout never
+ * stalls on one enormous text node.
+ */
+const CODE_CHUNK = 300;
+const MAX_SEGMENT_CHARS = 4000;
+const MAX_DISPLAY_ROWS = 400000;
+
+let codeWindow = null;
+let codeObserver = null;
+
+function teardownCodeWindow() {
+  if (codeObserver) {
+    codeObserver.disconnect();
+    codeObserver = null;
+  }
+  codeWindow = null;
+}
+
+function buildCodeRows(text) {
+  const rows = [];
+  const lines = text.split('\n');
+  let offset = 0;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (line.length <= MAX_SEGMENT_CHARS) {
+      rows.push({ n: i + 1, start: offset, text: line });
+    } else {
+      for (let p = 0; p < line.length; p += MAX_SEGMENT_CHARS) {
+        rows.push({
+          n: p === 0 ? i + 1 : 0,      // 0 = continuation of the line above
+          start: offset + p,
+          text: line.slice(p, p + MAX_SEGMENT_CHARS),
+        });
+      }
+    }
+    offset += line.length + 1;         // + the newline itself
+    if (rows.length >= MAX_DISPLAY_ROWS) break;
+  }
+  return rows;
+}
+
+// First match whose end lies past `offset`; matches are sorted, so a binary
+// search keeps per-row work independent of how many matches there are.
+function firstMatchFrom(matches, offset) {
+  let lo = 0;
+  let hi = matches.length;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (matches[mid][0] + matches[mid][1] <= offset) lo = mid + 1;
+    else hi = mid;
+  }
+  return lo;
+}
+
+function rowIndexForOffset(rows, offset) {
+  let lo = 0;
+  let hi = rows.length - 1;
+  let best = 0;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (rows[mid].start <= offset) {
+      best = mid;
+      lo = mid + 1;
+    } else {
+      hi = mid - 1;
+    }
+  }
+  return best;
+}
+
+// Marks carry their global match index so "next match" can find the element
+// even after the window has grown.
+function codeRowHtml(row, matches, lang) {
+  if (!matches.length) return highlightCode(row.text, lang);
+  const start = row.start;
+  const end = start + row.text.length;
   let html = '';
   let pos = 0;
-  for (const [start, len] of matches) {
-    if (start > pos) html += highlightCode(text.slice(pos, start), lang);
-    html += '<mark class="hl" data-match>' + esc(text.slice(start, start + len)) + '</mark>';
-    pos = start + len;
+  for (let mi = firstMatchFrom(matches, start); mi < matches.length; mi++) {
+    const ms = matches[mi][0];
+    if (ms >= end) break;
+    const me = ms + matches[mi][1];
+    const relS = Math.max(0, ms - start);
+    const relE = Math.min(row.text.length, me - start);
+    if (relE <= pos) continue;
+    if (relS > pos) html += highlightCode(row.text.slice(pos, relS), lang);
+    html += '<mark class="hl" data-match data-mi="' + mi + '">' +
+      escapeHtmlText(row.text.slice(relS, relE)) + '</mark>';
+    pos = relE;
   }
-  if (pos < text.length) html += highlightCode(text.slice(pos), lang);
+  if (pos < row.text.length) html += highlightCode(row.text.slice(pos), lang);
   return html;
 }
 
-const MAX_CODE_ROWS = 20000;
-
-function renderCodeRows(body, text, term, lang) {
-  const lines = text.split('\n');
-  const max = Math.min(lines.length, MAX_CODE_ROWS);
-  body.innerHTML = '';
+function appendCodeChunk() {
+  if (!codeWindow) return;
+  const { body, rows, sentinel, matches, lang } = codeWindow;
+  const end = Math.min(codeWindow.index + CODE_CHUNK, rows.length);
   const frag = document.createDocumentFragment();
-  for (let i = 0; i < max; i++) {
+  for (let i = codeWindow.index; i < end; i++) {
+    const r = rows[i];
     const row = document.createElement('div');
     row.className = 'code-row';
     const ln = document.createElement('span');
     ln.className = 'code-ln';
-    ln.textContent = i + 1;
+    ln.textContent = r.n ? String(r.n) : '';
     const line = document.createElement('code');
     line.className = 'code-line';
-    line.innerHTML = buildContentHtml(lines[i], term, lang);
+    line.innerHTML = codeRowHtml(r, matches, lang);
     row.appendChild(ln);
     row.appendChild(line);
     frag.appendChild(row);
   }
-  if (lines.length > max) {
-    const row = document.createElement('div');
-    row.className = 'code-row code-row--note';
-    row.innerHTML =
-      '<span class="code-ln"></span>' +
-      '<code class="code-line">… ' + (lines.length - max) + ' more lines omitted</code>';
-    frag.appendChild(row);
+  body.insertBefore(frag, sentinel);
+  codeWindow.index = end;
+
+  if (end >= rows.length) {
+    teardownCodeWindow();
+    sentinel.remove();
+  } else if (codeObserver) {
+    codeObserver.unobserve(sentinel);
+    codeObserver.observe(sentinel);
   }
-  body.appendChild(frag);
+}
+
+// Grows the window until `rowIdx` exists in the DOM, used when jumping to a
+// search hit that lives below everything rendered so far.
+function ensureCodeRow(rowIdx) {
+  let guard = 0;
+  while (codeWindow && codeWindow.index <= rowIdx && guard++ < 100000) appendCodeChunk();
+}
+
+function renderCodeRows(body, rows, matches, lang, scroller) {
+  teardownCodeWindow();
+  body.innerHTML = '';
+  const sentinel = document.createElement('div');
+  sentinel.className = 'code-sentinel';
+  body.appendChild(sentinel);
+  codeWindow = { body, rows, sentinel, matches, lang, index: 0 };
+
+  if (window.IntersectionObserver) {
+    codeObserver = new IntersectionObserver(
+      (records) => {
+        if (records.some((r) => r.isIntersecting)) appendCodeChunk();
+      },
+      { root: scroller || null, rootMargin: '1200px 0px' }
+    );
+    codeObserver.observe(sentinel);
+  }
+  appendCodeChunk();
+  if (!window.IntersectionObserver) {
+    while (codeWindow) appendCodeChunk();
+  }
 }
 
 function setupContentSearch(scroller, body, text, lang, opts) {
@@ -2212,33 +2934,38 @@ function setupContentSearch(scroller, body, text, lang, opts) {
     '<button class="content-find__close" title="Close">✕</button>';
   const input = bar.querySelector('input');
   const count = bar.querySelector('.content-find__count');
+  const rows = buildCodeRows(text);
 
-  const marksOf = () => body.querySelectorAll('mark[data-match]');
+  // Scrolls to the active hit, growing the rendered window first when the hit
+  // is still below what has been built.
+  const focusMatch = () => {
+    const m = contentFind.matches[contentFind.index];
+    if (!m) return;
+    ensureCodeRow(rowIndexForOffset(rows, m[0]));
+    body.querySelectorAll('mark.hl--active').forEach((el) => el.classList.remove('hl--active'));
+    const el = body.querySelector('mark[data-mi="' + contentFind.index + '"]');
+    if (el) {
+      el.classList.add('hl--active');
+      el.scrollIntoView({ block: 'center' });
+    }
+  };
 
   const apply = () => {
     contentFind.term = input.value.trim();
     contentFind.matches = findMatches(text, contentFind.term);
     contentFind.index = contentFind.matches.length ? 0 : -1;
-    renderCodeRows(body, text, contentFind.term, lang);
+    renderCodeRows(body, rows, contentFind.matches, lang, scroller);
     count.textContent = contentFind.matches.length
       ? (contentFind.index + 1) + '/' + contentFind.matches.length
       : '0/0';
-    const marks = marksOf();
-    marks.forEach((m, i) => {
-      m.classList.toggle('hl--active', i === contentFind.index);
-    });
-    if (contentFind.matches.length && contentFind.index !== -1 && marks.length) {
-      marks[contentFind.index].scrollIntoView({ block: 'center' });
-    }
+    if (contentFind.index !== -1) focusMatch();
   };
 
   const step = (dir) => {
     if (!contentFind.matches.length) return;
     contentFind.index = (contentFind.index + dir + contentFind.matches.length) % contentFind.matches.length;
-    const marks = marksOf();
-    marks.forEach((m, i) => m.classList.toggle('hl--active', i === contentFind.index));
-    if (marks[contentFind.index]) marks[contentFind.index].scrollIntoView({ block: 'center' });
     count.textContent = (contentFind.index + 1) + '/' + contentFind.matches.length;
+    focusMatch();
   };
 
   input.addEventListener('input', apply);
@@ -2256,7 +2983,7 @@ function setupContentSearch(scroller, body, text, lang, opts) {
   bar.querySelector('[data-dir="1"]').addEventListener('click', () => step(1));
   bar.querySelector('.content-find__close').addEventListener('click', () => {
     contentFind = { term: '', matches: [], index: -1 };
-    renderCodeRows(body, text, '', lang);
+    renderCodeRows(body, rows, [], lang, scroller);
     bar.remove();
   });
   if (opts) {
@@ -2285,8 +3012,6 @@ function renderTextPreview(res, container) {
   pv.appendChild(wrap);
 
   const lang = languageFor(res);
-  const shown = res._beautified ? beautifyText(res, text) : text;
-
   const opts = {
     beautified: !!res._beautified,
     toggle: () => {
@@ -2294,8 +3019,36 @@ function renderTextPreview(res, container) {
       renderTextPreview(res, pv === document.getElementById('inspector-preview') ? undefined : pv);
     },
   };
-  const bar = setupContentSearch(scroller, body, shown, lang, opts);
-  wrap.insertBefore(bar, scroller);
+
+  const mount = (shown) => {
+    if (!pv.isConnected) return;
+    const bar = setupContentSearch(scroller, body, shown, lang, opts);
+    wrap.insertBefore(bar, scroller);
+  };
+
+  if (!res._beautified) {
+    mount(text);
+    return;
+  }
+  if (res._formatted !== undefined) {
+    mount(res._formatted);
+    return;
+  }
+  // Show the original immediately so a slow worker can never leave the
+  // inspector stuck on a "Formatting…" placeholder.
+  mount(text);
+  const btn = wrap.querySelector('.content-find__beautify');
+  if (btn) {
+    btn.textContent = 'Formatting…';
+    btn.disabled = true;
+  }
+  beautifyAsync(res, text).then((formatted) => {
+    if (!pv.isConnected || state.current !== res || !res._beautified) return;
+    const bar = wrap.querySelector('.content-find');
+    if (bar) bar.remove();
+    body.innerHTML = '';
+    mount(formatted);
+  });
 }
 
 /* ---------- API request viewer ---------- */
@@ -2387,10 +3140,10 @@ function renderApiPreview(res) {
         pre.textContent = 'No response preview — the content could not be retrieved.';
         return;
       }
-      let text = contentToText(content);
-      if (text.length > 300000) text = text.slice(0, 300000) + '\n\n… (content truncated)';
-      res._text = text;
-      if (isJsonType(res) && res._beautified === undefined) res._beautified = true;
+      res._text = clampPreviewText(contentToText(content));
+      if (isJsonType(res) && res._beautified === undefined) {
+        res._beautified = res._text.length <= AUTO_BEAUTIFY_LIMIT;
+      }
       renderTextPreview(res, main);
     });
   }
@@ -2675,7 +3428,7 @@ function renderInspectorTabs() {
     tab.className = 'itab' + (active ? ' itab--active' : '');
     tab.title = r.filename;
     tab.innerHTML =
-      '<span class="itab__dot" style="background:' + TYPE_DOT_COLORS[r.type] + '"></span>' +
+      '<span class="itab__dot" style="background:' + typeColor(r.type) + '"></span>' +
       '<span class="itab__name">' + escapeHtml(r.filename) + '</span>' +
       '<span class="itab__close">×</span>';
     tab.addEventListener('click', (e) => {
@@ -2771,10 +3524,10 @@ function renderActiveResource() {
         pre.textContent = 'No preview available — the content could not be retrieved.';
         return;
       }
-      let text = contentToText(content);
-      if (text.length > 300000) text = text.slice(0, 300000) + '\n\n… (content truncated)';
-      res._text = text;
-      if (isJsonType(res) && res._beautified === undefined) res._beautified = true;
+      res._text = clampPreviewText(contentToText(content));
+      if (isJsonType(res) && res._beautified === undefined) {
+        res._beautified = res._text.length <= AUTO_BEAUTIFY_LIMIT;
+      }
       renderTextPreview(res);
     });
   } else {
@@ -2787,7 +3540,7 @@ function renderActiveResource() {
   setInspectorMeta('meta-url', res.url, true);
   setInspectorMeta('meta-type', '', false);
   document.getElementById('meta-type').innerHTML =
-    '<span class="meta-chip meta-chip--' + res.type + '">' + TYPES[res.type].label + '</span>';
+    '<span class="meta-chip meta-chip--' + res.type + '">' + (TYPES[res.type] || TYPES.other).label + '</span>';
   setInspectorMeta('meta-mime', res.mimeType || '—', false);
   setInspectorMeta('meta-size', res.size ? formatBytes(res.size) : '—', false);
   setInspectorMeta(
@@ -2886,6 +3639,61 @@ function filterGuide(query) {
   document.getElementById('guide-empty').classList.toggle('guide__empty--show', visible === 0);
 }
 
+function chromeThemeName() {
+  try {
+    return chrome.devtools.panels.themeName === 'dark' ? 'dark' : 'light';
+  } catch {
+    return 'dark';
+  }
+}
+
+function readStoredTheme() {
+  try {
+    const v = localStorage.getItem(THEME_STORAGE);
+    if (v === 'light' || v === 'dark') return v;
+  } catch { /* noop */ }
+  if (panelPrefs.theme === 'light' || panelPrefs.theme === 'dark') return panelPrefs.theme;
+  return null;
+}
+
+function resolvedTheme() {
+  return readStoredTheme() || chromeThemeName();
+}
+
+function syncThemeButton() {
+  const btn = document.getElementById('btn-theme');
+  if (!btn) return;
+  const light = isLightTheme();
+  btn.title = light ? 'Switch to dark theme' : 'Switch to light theme';
+  btn.setAttribute('aria-label', btn.title);
+  btn.setAttribute('aria-pressed', light ? 'false' : 'true');
+}
+
+function applyTheme(theme, persist) {
+  const next = theme === 'light' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  if (persist) {
+    try { localStorage.setItem(THEME_STORAGE, next); } catch { /* noop */ }
+    panelPrefs.theme = next;
+    savePrefs();
+  }
+  syncThemeButton();
+}
+
+function toggleTheme() {
+  applyTheme(isLightTheme() ? 'dark' : 'light', true);
+  render();
+  if (state.open.length) renderInspectorTabs();
+}
+
+function applyDevtoolsTheme() {
+  if (readStoredTheme()) {
+    applyTheme(readStoredTheme(), false);
+    return;
+  }
+  applyTheme(chromeThemeName(), false);
+}
+
 function setupGuide() {
   document.getElementById('btn-guide').addEventListener('click', openGuide);
   document.getElementById('guide-close').addEventListener('click', closeGuide);
@@ -2893,6 +3701,12 @@ function setupGuide() {
   document.getElementById('guide-search').addEventListener('input', (e) => {
     filterGuide(e.target.value);
   });
+  try {
+    const ver = document.getElementById('guide-version');
+    if (ver) ver.textContent = chrome.runtime.getManifest().version;
+  } catch {
+    /* noop */
+  }
   const hintLink = document.getElementById('text-hint-guide');
   if (hintLink) hintLink.addEventListener('click', (e) => {
     e.preventDefault();
@@ -3234,6 +4048,209 @@ async function mergeHlsAndDownload(res) {
  * 9. Downloads
  * ============================================================ */
 
+/*
+ * Two workers: zip-worker.js owns CRC / deflate / XLSX assembly, and
+ * jobs-worker.js owns Beautify, the content-search index, image hashing and
+ * createImageBitmap decode. Splitting them means a ZIP build cannot stall a
+ * Beautify click (or vice versa). Both fall back to inline work if a worker
+ * cannot start.
+ */
+function createJobRunner(scriptUrl) {
+  let worker = null;
+  const jobs = new Map();
+  let seq = 0;
+
+  function failAll(message) {
+    for (const job of jobs.values()) {
+      if (job.timer) clearTimeout(job.timer);
+      const err = new Error(message);
+      err.workerUnavailable = true;
+      job.reject(err);
+    }
+    jobs.clear();
+  }
+
+  function getWorker() {
+    if (worker) return worker;
+    try {
+      const w = new Worker(scriptUrl);
+      w.addEventListener('message', (e) => {
+        const msg = e.data || {};
+        const job = jobs.get(msg.id);
+        if (!job) return;
+        if (msg.type === 'progress') {
+          if (job.onProgress) job.onProgress(msg.fraction);
+          return;
+        }
+        jobs.delete(msg.id);
+        if (job.timer) clearTimeout(job.timer);
+        if (msg.type === 'done') job.resolve(msg.blob);
+        else job.reject(new Error(msg.message || 'job failed'));
+      });
+      w.addEventListener('error', () => {
+        worker = null;
+        failAll(scriptUrl + ' crashed');
+      });
+      worker = w;
+      return w;
+    } catch {
+      return null;
+    }
+  }
+
+  function run(payload, onProgress, timeoutMs) {
+    const w = getWorker();
+    if (!w) {
+      const err = new Error('worker unavailable');
+      err.workerUnavailable = true;
+      return Promise.reject(err);
+    }
+    return new Promise((resolve, reject) => {
+      const id = ++seq;
+      const job = { resolve, reject, onProgress, timer: null };
+      jobs.set(id, job);
+      if (timeoutMs > 0) {
+        job.timer = setTimeout(() => {
+          jobs.delete(id);
+          if (jobs.size === 0 && worker) {
+            try { worker.terminate(); } catch { /* noop */ }
+            worker = null;
+          }
+          const err = new Error('timed out');
+          err.timeout = true;
+          reject(err);
+        }, timeoutMs);
+      }
+      try {
+        // Buffers are cloned rather than transferred: the same ArrayBuffers
+        // stay cached on each resource for previews and repeat downloads.
+        w.postMessage(Object.assign({ id }, payload));
+      } catch (err) {
+        jobs.delete(id);
+        if (job.timer) clearTimeout(job.timer);
+        err.workerUnavailable = true;
+        reject(err);
+      }
+    });
+  }
+
+  return { run };
+}
+
+const archiveRunner = createJobRunner('lib/zip-worker.js');
+const cpuRunner = createJobRunner('lib/jobs-worker.js');
+
+function runArchiveJob(payload, onProgress) {
+  return archiveRunner.run(payload, onProgress, 0);
+}
+
+function runCpuJob(payload, onProgress, timeoutMs) {
+  return cpuRunner.run(payload, onProgress, timeoutMs || 0);
+}
+
+async function indexContentAsync(content) {
+  if (content === null || content === undefined || content === '') return '';
+  const asText = typeof content === 'string';
+  if (asText && content.length <= 4096) {
+    return content.toLowerCase().slice(0, CONTENT_INDEX_CAP);
+  }
+  try {
+    const payload = asText
+      ? { kind: 'index', text: content, cap: CONTENT_INDEX_CAP }
+      : { kind: 'index', bytes: content, cap: CONTENT_INDEX_CAP };
+    return await runCpuJob(payload, null, 20000);
+  } catch {
+    return contentToText(content).toLowerCase().slice(0, CONTENT_INDEX_CAP);
+  }
+}
+
+function contentToBytes(content) {
+  if (content instanceof Uint8Array) return content;
+  if (content instanceof ArrayBuffer) return new Uint8Array(content);
+  if (typeof content === 'string') return new TextEncoder().encode(content);
+  if (content && content.buffer) return new Uint8Array(content.buffer, content.byteOffset, content.byteLength);
+  return null;
+}
+
+async function hashContentAsync(content) {
+  const bytes = contentToBytes(content);
+  if (!bytes) return 'empty';
+  if (bytes.length <= 2048) {
+    let h = 2166136261;
+    for (let i = 0; i < bytes.length; i++) {
+      h ^= bytes[i];
+      h = Math.imul(h, 16777619);
+    }
+    return (h >>> 0).toString(16) + ':' + bytes.length;
+  }
+  try {
+    return await runCpuJob({ kind: 'hash', bytes }, null, 8000);
+  } catch {
+    let h = 2166136261;
+    const n = Math.min(bytes.length, 8192);
+    for (let i = 0; i < n; i++) {
+      h ^= bytes[i];
+      h = Math.imul(h, 16777619);
+    }
+    return (h >>> 0).toString(16) + ':' + bytes.length;
+  }
+}
+
+async function measureImageSize(content, mime) {
+  const bytes = contentToBytes(content);
+  if (!bytes) return null;
+  try {
+    return await runCpuJob({ kind: 'imageSize', bytes, mime }, null, 8000);
+  } catch {
+    if (!window.createImageBitmap) return null;
+    try {
+      const blob = toBlob(content, mime || undefined);
+      const bmp = await createImageBitmap(blob);
+      const out = { width: bmp.width, height: bmp.height };
+      bmp.close();
+      return out;
+    } catch {
+      return null;
+    }
+  }
+}
+
+async function buildZip(entries, onProgress, options) {
+  try {
+    return await runArchiveJob({ kind: 'zip', entries, options }, onProgress);
+  } catch (err) {
+    if (!err || !err.workerUnavailable) throw err;
+    return window.SourceDownloadZip.createZip(entries, onProgress, options);
+  }
+}
+
+async function buildXlsx(sheets) {
+  try {
+    return await runArchiveJob({ kind: 'xlsx', sheets });
+  } catch (err) {
+    if (!err || !err.workerUnavailable) throw err;
+    return window.SourceDownloadXlsx.build(sheets);
+  }
+}
+
+function estimateArchiveBytes(resources) {
+  let bytes = 0;
+  let unknown = 0;
+  for (const r of resources) {
+    if (r.size > 0) bytes += r.size;
+    else unknown++;
+  }
+  bytes += resources.length * 80 + 22;
+  return { bytes, unknown };
+}
+
+function formatEstimate(est) {
+  if (!est || (!est.bytes && !est.unknown)) return '';
+  if (!est.bytes && est.unknown) return 'size unknown';
+  const s = '≈ ' + formatBytes(est.bytes);
+  return est.unknown ? s + '+' : s;
+}
+
 function uniqueName(used, folder, name) {
   let set = used.get(folder);
   if (!set) {
@@ -3265,10 +4282,11 @@ async function downloadSingle(res) {
       toast('Could not fetch this resource (CORS or unsupported type).', 'error');
       return;
     }
-    saveBlob(toBlob(content, res.mimeType || undefined), res.filename);
+    const name = downloadName(res, content);
+    saveBlob(toBlob(content, res.mimeType || undefined), name);
     state.failed.delete(res.id);
     render();
-    toast('Download started: ' + res.filename, 'success');
+    toast('Download started: ' + name, 'success');
   } finally {
     hideProgress();
     setBusy(false);
@@ -3285,7 +4303,8 @@ async function downloadZip(resources, baseName) {
     return;
   }
   setBusy(true);
-  showProgress('Fetching 0/' + resources.length + '…');
+  const est = estimateArchiveBytes(resources);
+  showProgress('Fetching 0/' + resources.length + ' · ZIP ' + formatEstimate(est) + '…');
   try {
     const used = new Map();
     const total = resources.length;
@@ -3303,7 +4322,7 @@ async function downloadZip(resources, baseName) {
         }
         const done = i + 1;
         if (done % 5 === 0 || done === total) {
-          updateProgress(done / total, 'Fetching ' + done + '/' + total + '…');
+          updateProgress(done / total, 'Fetching ' + done + '/' + total + ' · ZIP ' + formatEstimate(est) + '…');
         }
       }
     };
@@ -3318,9 +4337,9 @@ async function downloadZip(resources, baseName) {
     const failedNow = [];
     for (const { res, content } of results) {
       if (content !== null && content !== undefined && content !== '') {
-        const folderName = TYPES[res.type].folder || 'other';
+        const folderName = (TYPES[res.type] && TYPES[res.type].folder) || 'other';
         entries.push({
-          name: folderName + '/' + uniqueName(used, folderName, res.filename),
+          name: folderName + '/' + uniqueName(used, folderName, downloadName(res, content)),
           data: content,
           date: res.timestamp ? new Date(res.timestamp) : new Date(),
         });
@@ -3333,7 +4352,7 @@ async function downloadZip(resources, baseName) {
     }
 
     updateProgress(1, 'Creating ZIP archive…');
-    const blob = await window.SourceDownloadZip.createZip(entries, (fraction) => {
+    const blob = await buildZip(entries, (fraction) => {
       updateProgress(0.5 + 0.5 * fraction, 'Creating ZIP ' + Math.round(fraction * 100) + '%…');
     });
     hideProgress();
@@ -3366,7 +4385,7 @@ async function downloadZip(resources, baseName) {
 
 function setBusy(busy) {
   state.busy = busy;
-  for (const id of ['btn-download-all', 'btn-download-view', 'btn-download-selected', 'btn-refresh', 'view-grid', 'view-list']) {
+  for (const id of ['btn-download-all', 'btn-download-view', 'btn-download-selected', 'btn-refresh', 'view-grid', 'view-list', 'btn-export']) {
     const el = document.getElementById(id);
     if (el) el.disabled = busy;
   }
@@ -3394,12 +4413,106 @@ function zipBaseName() {
   );
 }
 
+function exportResourceList(format) {
+  const list = filteredResources();
+  if (!list.length) {
+    toast('No resources to export.', 'error');
+    return;
+  }
+  const rows = list.map((r) => ({
+    url: r.url,
+    filename: r.filename,
+    type: r.type,
+    mimeType: r.mimeType || '',
+    size: r.size || '',
+    status: r.status || '',
+    method: r.method || '',
+    hostname: r.hostname || '',
+    width: r.width || '',
+    height: r.height || '',
+    source: r.source || '',
+    duplicate: r.dupeCount > 1 ? r.dupeCount : '',
+  }));
+  const name = zipBaseName() + '-list.' + format;
+  if (format === 'json') {
+    saveBlob(new Blob([JSON.stringify(rows, null, 2)], { type: 'application/json' }), name);
+  } else {
+    const cols = Object.keys(rows[0]);
+    const lines = [cols.join(',')].concat(
+      rows.map((row) => cols.map((c) => csvEscape(row[c])).join(','))
+    );
+    saveBlob(new Blob([lines.join('\r\n')], { type: 'text/csv' }), name);
+  }
+  toast('Exported ' + rows.length + ' resource' + (rows.length === 1 ? '' : 's') + ' as ' + format.toUpperCase(), 'success');
+}
+
+function exportHar() {
+  chrome.devtools.network.getHAR((har) => {
+    if (!har) {
+      toast('Could not read the network log.', 'error');
+      return;
+    }
+    const log = har.log ? har.log : har;
+    if (!log.creator) {
+      let version = '1.11.0';
+      try { version = chrome.runtime.getManifest().version; } catch { /* keep */ }
+      log.creator = { name: 'Source Download', version };
+    }
+    const file = { log };
+    saveBlob(new Blob([JSON.stringify(file, null, 2)], { type: 'application/json' }), zipBaseName() + '.har');
+    const n = (log.entries || []).length;
+    toast('HAR exported (' + n + ' ' + (n === 1 ? 'entry' : 'entries') + ')', 'success');
+  });
+}
+
+function closeExportMenu() {
+  const menu = document.getElementById('export-menu');
+  if (menu) menu.hidden = true;
+}
+
+function openExportMenu(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  closeContextMenu();
+  const menu = document.getElementById('export-menu');
+  const btn = document.getElementById('btn-export');
+  if (!menu || !btn) return;
+  menu.hidden = !menu.hidden;
+  if (menu.hidden) return;
+  const rect = btn.getBoundingClientRect();
+  menu.style.left = Math.max(8, rect.right - 220) + 'px';
+  menu.style.top = (rect.bottom + 4) + 'px';
+}
+
+function emptyResourceFilters() {
+  return { minSize: '', maxSize: '', minWidth: '', minHeight: '', sortBy: 'name', sortDir: 'asc', method: '', reqType: '', hideDupes: false };
+}
+
+function resetTextFilters(opts) {
+  const recapture = !opts || opts.recapture !== false;
+  state.text.tag = 'all';
+  state.text.level = 'all';
+  state.text.query = { mode: 'text', value: '' };
+  state.text.queryError = '';
+  state.text.lastSig = '';
+  const input = document.getElementById('tf-query');
+  if (input) input.value = '';
+  const mode = document.getElementById('tf-mode');
+  if (mode) mode.value = 'text';
+  if (recapture) {
+    state.text.blocks = [];
+    state.text.tables.clear();
+    state.text.sel.clear();
+  }
+}
+
 /* ============================================================
  * 10. Context menu
  * ============================================================ */
 
 function openContextMenu(e, res) {
   e.preventDefault();
+  closeExportMenu();
   const menu = document.getElementById('context-menu');
   menu.innerHTML = '';
 
@@ -3442,6 +4555,7 @@ function openContextMenu(e, res) {
 
 function closeContextMenu() {
   document.getElementById('context-menu').hidden = true;
+  closeExportMenu();
 }
 
 function openResourceTab(res) {
@@ -3505,20 +4619,27 @@ function setStatusMessage(msg) {
  * ============================================================ */
 
 const PREFS_KEY = 'panelPrefs';
-let panelPrefs = { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false };
+let panelPrefs = { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false, readMode: false, theme: null };
 
 function loadPrefs() {
   return new Promise((resolve) => {
-    chrome.storage.local.get({ panelPrefs: { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false } }, (data) => {
+    chrome.storage.local.get({ panelPrefs: { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false, readMode: false, theme: null } }, (data) => {
       const p = data.panelPrefs || {};
+      const stored = (p.theme === 'light' || p.theme === 'dark') ? p.theme : null;
       panelPrefs = {
         view: p.view === 'grid' ? 'grid' : 'list',
         activeTab: TYPES[p.activeTab] ? p.activeTab : 'all',
         inspectorWidth: typeof p.inspectorWidth === 'number' && p.inspectorWidth > 0 ? p.inspectorWidth : null,
         guideSeen: p.guideSeen === true,
+        readMode: p.readMode === true,
+        theme: stored,
       };
+      if (stored) {
+        try { localStorage.setItem(THEME_STORAGE, stored); } catch { /* noop */ }
+      }
       state.view = panelPrefs.view;
       state.activeTab = panelPrefs.activeTab;
+      state.text.readMode = panelPrefs.readMode;
       resolve();
     });
   });
@@ -3604,53 +4725,73 @@ function bindEvents() {
     render();
   });
   document.getElementById('f-clear').addEventListener('click', () => {
-    state.filters = { minSize: '', maxSize: '', minWidth: '', minHeight: '', sortBy: 'name', sortDir: 'asc', method: '', reqType: '' };
+    state.filters = emptyResourceFilters();
     render();
   });
 
+  const hideDupesBtn = document.getElementById('f-hide-dupes');
+  if (hideDupesBtn) {
+    hideDupesBtn.addEventListener('click', () => {
+      state.filters.hideDupes = !state.filters.hideDupes;
+      if (state.filters.hideDupes) scheduleDupeScan();
+      render();
+    });
+  }
+
   // Text capture controls
   document.getElementById('tf-kind').addEventListener('change', (e) => {
-    state.text.filters.kind = e.target.value;
-    // Switching away from the custom selector clears it, so the normal
-    // whole-page capture resumes (and vice-versa: typing a selector switches
-    // the filter to the CSS mode automatically).
-    if (e.target.value !== 'css') {
-      state.text.filters.css = '';
-      document.getElementById('tf-css').value = '';
-    }
+    state.text.tag = e.target.value;
+    if (state.text.tag !== 'heading') state.text.level = 'all';
     renderTextView();
-    pollTextOnce().catch(() => {});
   });
   document.getElementById('tf-level').addEventListener('change', (e) => {
-    state.text.filters.level = e.target.value;
+    state.text.level = e.target.value;
     renderTextView();
   });
-  const tfCss = document.getElementById('tf-css');
-  tfCss.addEventListener('input', () => {
-    if (state.text.filters.kind !== 'css') {
-      state.text.filters.kind = 'css';
-      renderTextView();
+
+  // CSS and XPath queries have to run inside the page, so those two modes
+  // trigger a fresh capture; text and regex just re-filter what is already
+  // here and stay instant.
+  const applyTextQuery = () => {
+    renderTextView();
+    if (state.text.query.mode === 'css' || state.text.query.mode === 'xpath') {
+      pollTextOnce().catch(() => {});
     }
-  });
-  const applyCss = () => {
-    const v = tfCss.value.trim();
-    state.text.filters.css = v;
-    if (!v && state.text.filters.kind === 'css') state.text.filters.kind = 'all';
-    renderTextView();
-    pollTextOnce().catch(() => {});
   };
-  tfCss.addEventListener('change', applyCss);
-  tfCss.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') applyCss();
+  document.getElementById('tf-mode').addEventListener('change', (e) => {
+    state.text.query.mode = e.target.value;
+    state.text.queryError = '';
+    state.text.lastSig = '';
+    applyTextQuery();
   });
   let tfQueryTimer = null;
-  document.getElementById('tf-query').addEventListener('input', (e) => {
+  const tfQuery = document.getElementById('tf-query');
+  tfQuery.addEventListener('input', (e) => {
     if (tfQueryTimer) clearTimeout(tfQueryTimer);
+    const wait = state.text.query.mode === 'css' || state.text.query.mode === 'xpath' ? 450 : 180;
     tfQueryTimer = setTimeout(() => {
       tfQueryTimer = null;
-      state.text.filters.query = e.target.value;
-      renderTextView();
-    }, 200);
+      state.text.query.value = e.target.value;
+      state.text.queryError = '';
+      state.text.lastSig = '';
+      if (!e.target.value.trim()) {
+        state.text.tag = 'all';
+        state.text.level = 'all';
+      }
+      applyTextQuery();
+    }, wait);
+  });
+  tfQuery.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter') return;
+    if (tfQueryTimer) clearTimeout(tfQueryTimer);
+    tfQueryTimer = null;
+    state.text.query.value = tfQuery.value;
+    state.text.lastSig = '';
+    if (!tfQuery.value.trim()) {
+      state.text.tag = 'all';
+      state.text.level = 'all';
+    }
+    applyTextQuery();
   });
   document.getElementById('tf-live').addEventListener('click', () => {
     state.text.live = !state.text.live;
@@ -3666,12 +4807,20 @@ function bindEvents() {
     pollTextOnce().catch(() => {});
   });
   document.getElementById('tf-clear').addEventListener('click', () => {
-    state.text.blocks = [];
-    state.text.tables.clear();
-    state.text.sel.clear();
-    state.text.lastSig = '';
+    resetTextFilters({ recapture: true });
     renderTextView();
+    pollTextOnce().catch(() => {});
   });
+  const readBtn = document.getElementById('tf-read');
+  if (readBtn) {
+    readBtn.addEventListener('click', () => {
+      state.text.readMode = !state.text.readMode;
+      panelPrefs.readMode = state.text.readMode;
+      savePrefs();
+      renderTextView();
+    });
+  }
+  document.getElementById('tf-export-txt').addEventListener('click', exportTextPlain);
   document.getElementById('tf-export-md').addEventListener('click', exportTextMarkdown);
   document.getElementById('tf-export-csv').addEventListener('click', () => exportTablesAs('csv'));
   document.getElementById('tf-export-html').addEventListener('click', () => exportTablesAs('html'));
@@ -3699,6 +4848,8 @@ function bindEvents() {
     render();
   });
 
+  document.getElementById('btn-theme').addEventListener('click', toggleTheme);
+
   document.getElementById('btn-download-all').addEventListener('click', () => {
     if (!state.resources.length) {
       toast('No resources to download.', 'error');
@@ -3725,12 +4876,35 @@ function bindEvents() {
     downloadZip(list, zipBaseName());
   });
 
+  const exportBtn = document.getElementById('btn-export');
+  if (exportBtn) exportBtn.addEventListener('click', openExportMenu);
+  const exportMenu = document.getElementById('export-menu');
+  if (exportMenu) {
+    exportMenu.addEventListener('click', (e) => {
+      const item = e.target.closest('[data-export]');
+      if (!item) return;
+      closeExportMenu();
+      const kind = item.getAttribute('data-export');
+      if (kind === 'json' || kind === 'csv') exportResourceList(kind);
+      else if (kind === 'har') exportHar();
+    });
+  }
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById('export-menu');
+    if (!menu || menu.hidden) return;
+    const btn = document.getElementById('btn-export');
+    if (btn && btn.contains(e.target)) return;
+    if (menu.contains(e.target)) return;
+    closeExportMenu();
+  });
+
   document.getElementById('inspector-close').addEventListener('click', closeActiveResource);
   document.getElementById('inspector-details').addEventListener('click', toggleInspectorDetails);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeLightbox();
       closeContextMenu();
+      closeExportMenu();
       closeGuide();
     }
     const lightboxOpen = !document.getElementById('lightbox').hidden;
@@ -3820,6 +4994,10 @@ function init() {
   setupLightbox();
   setupGuide();
   applyInspectorWidth();
+  applyDevtoolsTheme();
+  if (chrome.devtools.panels.onThemeChanged) {
+    chrome.devtools.panels.onThemeChanged.addListener(applyDevtoolsTheme);
+  }
   render();
 
   chrome.devtools.network.getHAR((har) => {
@@ -3852,6 +5030,10 @@ function init() {
     state.text.tables.clear();
     state.text.sel.clear();
     state.text.lastSig = '';
+    state.text.query = { mode: 'text', value: '' };
+    state.text.queryError = '';
+    state.text.tag = 'all';
+    state.text.level = 'all';
     closeInspector();
     render();
     syncPanelCounts();

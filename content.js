@@ -14,6 +14,7 @@
     ts: 'video', m3u8: 'video', m3u: 'video',
     mp3: 'audio', wav: 'audio', ogg: 'audio', oga: 'audio', m4a: 'audio', aac: 'audio',
     flac: 'audio', opus: 'audio', weba: 'audio',
+    vtt: 'caption', srt: 'caption', ttml: 'caption', sbv: 'caption', ass: 'caption', ssa: 'caption',
     css: 'css',
     js: 'js', mjs: 'js', cjs: 'js', jsx: 'js', ts: 'js', tsx: 'js',
     woff: 'font', woff2: 'font', ttf: 'font', otf: 'font', eot: 'font',
@@ -21,7 +22,8 @@
     ppt: 'document', pptx: 'document', txt: 'document', xml: 'document',
     html: 'document', htm: 'document', csv: 'document', md: 'document', rtf: 'document',
     zip: 'document', gz: 'document',
-    json: 'json', json5: 'json', geojson: 'json', map: 'json',
+    json: 'json', json5: 'json', geojson: 'json',
+    map: 'sourcemap',
     wasm: 'wasm',
     webmanifest: 'manifest', manifest: 'manifest',
   };
@@ -48,6 +50,7 @@
       case 'img': return 'image';
       case 'video': return 'video';
       case 'audio': return 'audio';
+      case 'track': return 'caption';
       case 'script': return 'js';
       case 'css': return 'css';
       case 'fetch':
@@ -99,10 +102,11 @@
     doc.querySelectorAll('link[rel~="stylesheet"]').forEach((el) => add(el.href, 'css'));
     doc.querySelectorAll('link[rel~="icon"]').forEach((el) => add(el.href, 'link'));
     doc.querySelectorAll('iframe[src]').forEach((el) => add(el.src, 'document'));
+    doc.querySelectorAll('track[src]').forEach((el) => add(el.src, 'track'));
   }
 
   function computeCounts() {
-    const counts = { all: 0, api: 0, image: 0, svg: 0, video: 0, audio: 0, css: 0, js: 0, font: 0, document: 0, json: 0, wasm: 0, manifest: 0, other: 0 };
+    const counts = { all: 0, api: 0, image: 0, svg: 0, video: 0, audio: 0, caption: 0, css: 0, js: 0, sourcemap: 0, font: 0, document: 0, json: 0, wasm: 0, manifest: 0, other: 0 };
     for (const t of seen.values()) if (counts[t] !== undefined) counts[t]++;
     counts.all = seen.size;
     return counts;

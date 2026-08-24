@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Source Download",
-  "version": "1.8.1",
+  "version": "1.11.0",
   "author": "Turan Burak Yeşilyurt",
   "description": "Browse, inspect and download every web asset a page loads seamlessly as a ZIP.",
   "minimum_chrome_version": "114",

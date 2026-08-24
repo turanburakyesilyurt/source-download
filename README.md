@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store version">
-  <img src="https://img.shields.io/badge/version-1.8.1-4f8cff?style=flat-square" alt="Version 1.8.1">
+  <img src="https://img.shields.io/badge/version-1.11.0-4f8cff?style=flat-square" alt="Version 1.11.0">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-4f8cff?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
   <img src="https://img.shields.io/badge/license-MIT-22c55e?style=flat-square" alt="MIT license">
@@ -88,19 +88,24 @@ cd source-download
 - **Content sniffing.** Files that land in *Other* are read back (a few bytes) and promoted to
   their real category — JSON, JS, SVG, HTML, WASM, fonts and binary image signatures are detected
   automatically, so unknown-looking URLs still get the right preview and beautifier.
-- **15 category tabs** with live counts: All · API · Images · SVG · Videos · Audio · CSS · JS ·
-  Fonts · Documents · JSON · WASM · Manifests · Text · Other.
+- **17 category tabs** with live counts: All · API · Images · SVG · Videos · Audio · Captions ·
+  CSS · JS · Source maps · Fonts · Documents · JSON · WASM · Manifests · Text · Other.
 - **Smart search with regex** — instant filtering across filename, URL, MIME type, tag, alt text
-  and title… *plus file contents*. Type `width` and get every stylesheet that references it; wrap a
+  and title… *plus file contents*. The content index is built in a worker so typing in the search
+  box does not freeze the panel. Type `width` and get every stylesheet that references it; wrap a
   query in `/…/` for regex, e.g. `/\.svg$/`.
 - **Per-category filter bar** — min/max size (KB), and for images/SVG/videos also **min width /
-  min height** (dimensions are decoded on demand from the captured bytes). Sort by name, size,
-  type or time, ascending or descending.
+  min height** (dimensions are decoded on demand in a worker via `createImageBitmap`). Images also
+  get **duplicate detection** and a *Hide duplicates* filter. Sort by name, size, type or time.
 - **The inspector** — multi-file tabs (newest on the left), true previews for images, video,
   audio, fonts, SVG, code (line numbers + Beautify), API split view, collapsible metadata, and a
-  resizable pane.
+  resizable pane. Beautify of large files never leaves you stuck on “Formatting…” — the original
+  is shown immediately and swapped when the worker answers.
 - **Three download modes** — Selected, View (what you see after filtering), All — all as tidy,
-  folder-structured ZIPs with live progress and failure retries.
+  folder-structured ZIPs with a **size estimate before you click**, live progress and failure retries.
+- **List & HAR export** — dump the visible resource list as JSON or CSV, or Chrome’s network log
+  as a HAR file.
+- **Follows the DevTools theme** — light and dark, including the code highlighter.
 - **The live toolbar badge** — the extension icon shows a running total; you decide which
   categories count via the popup's per-category toggles.
 - **The Text workbench** — a live content viewer that captures every text-carrying element and
@@ -125,6 +130,7 @@ CSS, Open Graph thumbnails, favicons, `blob:` images created by the page, everyt
 - **Min/max width & height filters** — the panel decodes each image's real dimensions on demand,
   so you can isolate "all hero images ≥ 1200px" or "all tiny icons ≤ 64px".
 - **Grid view** — a dense thumbnail wall makes visual triage instant.
+- **Duplicate detection** — identical image bytes are marked; *Hide duplicates* keeps one copy.
 - **Search** — filter by filename, alt text or even the surrounding page context.
 - **Lightbox** — click any thumbnail for a full-screen, zoomable, pannable preview.
 
@@ -214,6 +220,36 @@ CSS, Open Graph thumbnails, favicons, `blob:` images created by the page, everyt
 > ### Screenshot slot
 > | ![Audio category](screenshots/cat-audio.png) |
 > |:---:|
+
+---
+
+### Captions & subtitles
+
+**What it captures.** WebVTT, SRT, TTML and other caption files, including `<track src>` on video.
+
+**How the tools help.**
+- **Own tab** — they no longer mix with documents or “other”.
+- **Text preview** — captions are treated as text, so you can search inside them.
+
+**Use cases.**
+- **Accessibility QA:** download the captions a player actually requested and check they match
+  the video.
+- **Transcript research:** grab every `.vtt` on a course or news page in one ZIP.
+
+---
+
+### Source maps
+
+**What it captures.** `.map` files and JSON bodies that look like source maps (`mappings` +
+`sources`), instead of dumping them into the JSON tab.
+
+**How the tools help.**
+- **JSON viewer + Beautify** — same readable preview as other JSON, in a dedicated folder on
+  download.
+
+**Use cases.**
+- **Debug a production bundle:** collect every source map the page loaded so you can reconstruct
+  original sources offline.
 
 ---
 
@@ -370,13 +406,22 @@ files.
 every real `<table>` / ARIA grid on the page.
 
 **How the tools help.**
-- **Filter-first workbench** — the whole pane becomes a readable document; filter by element type
-  (the dropdown even lists element kinds *actually found on the page*), heading level, or your own
-  CSS selector. Typing a selector auto-switches the filter to CSS mode.
-- **Tables never lose state** — every DOM change adds a new snapshot (bounded history), and the
-  header chip tells you exactly what you'd export: `8 snapshots · 124 unique rows`.
+- **One query box, four languages.** Pick the mode next to it: **Contains** and **Regex** filter the
+  captured text instantly, while **CSS selector** and **XPath** are evaluated against the live page so
+  they can reach anything in the DOM. XPath also handles expressions that return a value instead of
+  elements — `count(//a)`, `//@href`, `string(//title)`. Whatever the page says about a broken query
+  is shown right under the box, so you are never guessing.
+- **Element filter built from the page.** The dropdown lists the element types actually present, each
+  with its count, so it doubles as a map of the document. Clearing the query (or pressing **Clear**)
+  returns you to *All elements* and recaptures — no extra clicks.
+- **Reading mode** hides tags, checkboxes and location crumbs so the stream reads like a document.
+- **Tables never lose state** — every DOM change adds a new snapshot (bounded history), and the header
+  tells you exactly what you'd export: `8 snapshots · 124 unique rows`. Press **Show all rows** to
+  merge every snapshot into one deduplicated table so you can *see* the full harvest instead of
+  trusting the export.
 - **Exports with automatic duplicate-row removal:**
-  - **MD** — headings, paragraphs, list items & element blocks as a Markdown document.
+  - **TXT** — the readable page exactly as shown, tables included as tab-separated rows.
+  - **MD** — headings, paragraphs, element blocks and tables as a Markdown document.
   - **CSV** — every table as `text/table-N.csv` inside a ZIP.
   - **HTML** — each table as a self-contained `<table>` page inside a ZIP.
   - **XLSX** — a *real* Excel workbook with one sheet per table, built by my own hand-written
@@ -449,12 +494,13 @@ Downloads stream with a progress bar and survive partial failures (auto-retry + 
 the context menu).
 
 ### 5 · The Text tab
-The **Text** category swaps the pane for a live content viewer: everything that holds text on the
-page is captured in DOM order and kept updated while **Live** is on. Filter by element type, heading
-level, or your own CSS selector. Dynamic tables store a bounded snapshot history (the chip next to
-each table shows `snapshots · unique rows`), and you can export the content as Markdown, or the
-tables as CSV, HTML, or a real multi-sheet **XLSX** workbook. Checked items win; otherwise everything
-currently visible is exported.
+The **Text** category swaps the pane for a live, readable copy of the page: everything that holds
+text is captured in DOM order and kept updated while **Live** is on. Query it with plain text, a
+regular expression, a **CSS selector** or an **XPath** expression, and narrow it further to a single
+element type. Dynamic tables store a bounded snapshot history — press **Show all rows** to merge
+every snapshot into one deduplicated view. Export as TXT or Markdown, or the tables as CSV, HTML, or
+a real multi-sheet **XLSX** workbook. Checked items win; otherwise everything currently visible is
+exported.
 
 ### 6 · When a video won't play
 Streams the browser can't render natively (HLS `.m3u8`, DASH `.mpd`, unknown codecs) show a fallback
@@ -491,13 +537,21 @@ instead of a black player: **Merge segments & download** produces a single playa
 3. **Fetch** — file bodies come from the network API (`request.getContent()`), which ignores CORS,
    with `fetch()` and in-page `blob:` readback as fallbacks.
 4. **Preview** — content is rendered through purpose-built viewers (image, media, font, SVG,
-   code, API request view). The **Text** tab polls the live DOM (headings/paragraphs/tables) and
-   builds a bounded snapshot history for tables.
-5. **Archive** — the ZIP is assembled *in your browser* by `lib/zip.js`, a from-scratch writer of
-   the PKZIP format (CRC-32 + central directory + store method); XLSX workbooks are produced by
-   `lib/xlsx.js` (a ZIP of hand-written spreadsheet XML); HLS streams that can't play natively
-   are merged by `lib/hls.js` into a single download. Files are saved with a standard `<a download>`
-   click, so Chrome keeps its normal download prompts and permissions.
+   code, API request view). Code is shown in full and built in windows as you scroll, so a
+   multi-megabyte bundle stays readable and **Beautify** always sees the whole file. The **Text**
+   tab polls the live DOM and builds a bounded snapshot history for tables.
+5. **Name** — before anything reaches disk, `lib/filetype.js` checks the bytes and repairs the file
+   name. Extension-less CDN URLs (YouTube thumbnails and the like) and dynamic endpoints such as
+   `/photo.aspx` end up as `.jpg`, `.webp` or whatever they actually are, instead of a file the OS
+   cannot open.
+6. **Archive** — the ZIP is assembled *in your browser* by `lib/zip.js`, a from-scratch writer of
+   the PKZIP format (CRC-32, central directory, ZIP64 records and deflate via the browser's native
+   `CompressionStream`); XLSX workbooks are produced by `lib/xlsx.js` (a ZIP of hand-written
+   spreadsheet XML); HLS streams that can't play natively are merged by `lib/hls.js` into a single
+   download. ZIP assembly runs in `lib/zip-worker.js`; Beautify, the content-search index, image
+   hashing and `createImageBitmap` decode run in a second worker (`lib/jobs-worker.js`) so a large
+   archive never stalls a format click. Files are saved with a standard `<a download>` click, so Chrome
+   keeps its normal download prompts and permissions.
 
 ---
 
@@ -512,7 +566,10 @@ instead of a black player: **Merge segments & download** produces a single playa
 ├── panel.html / .css / .js    # The DevTools panel UI and all its logic
 ├── popup.html / .css / .js    # Toolbar popup — tracking toggles + quick-start guide
 ├── lib/
-│   ├── zip.js                 # Hand-written ZIP writer (CRC-32 + store) — zero deps
+│   ├── filetype.js            # Byte sniffing + download extension repair — zero deps
+│   ├── zip.js                 # Hand-written ZIP writer (CRC-32, deflate, ZIP64) — zero deps
+│   ├── zip-worker.js          # ZIP / XLSX off the UI thread — zero deps
+│   ├── jobs-worker.js         # Beautify, search index, image hash & decode — zero deps
 │   ├── xlsx.js                # Hand-written XLSX builder (ZIP of XML) — zero deps
 │   ├── hls.js                 # Hand-written HLS (m3u8) merger — zero deps
 │   └── beautify.js            # Hand-written CSS/JS/HTML/JSON formatters — zero deps
@@ -525,7 +582,7 @@ instead of a black player: **Merge segments & download** produces a single playa
 └── LICENSE                    # MIT
 ```
 
-**Zero third-party code.** `lib/` contains only four files, all written for this project. The icon
+**Zero third-party code.** `lib/` contains only seven files, all written for this project. The icon
 generator uses the Python standard library. There is no `node_modules`, no bundler, no build
 script — the extension you see in the repo is exactly what Chrome loads.
 

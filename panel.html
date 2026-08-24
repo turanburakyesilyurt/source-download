@@ -5,6 +5,22 @@
   <meta name="author" content="Turan Burak Yeşilyurt">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Source Download</title>
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('sourceDownloadTheme'); } catch (e) {}
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.dataset.theme = saved;
+        return;
+      }
+      try {
+        document.documentElement.dataset.theme =
+          chrome.devtools.panels.themeName === 'dark' ? 'dark' : 'light';
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="panel.css">
 </head>
 <body>
@@ -52,6 +68,13 @@
         </svg>
         Refresh
       </button>
+      <button id="btn-export" class="btn" title="Export the visible list as JSON/CSV, or the network log as HAR">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 10.5V13h8v-2.5"/>
+          <path d="M8 3v8M5 6l3-3 3 3"/>
+        </svg>
+        Export
+      </button>
       <button id="btn-download-selected" class="btn" title="Download the resources you checked as a ZIP">
         <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
@@ -75,6 +98,15 @@
           <path d="M2.5 12.5h11"/>
         </svg>
         Download All
+      </button>
+      <button id="btn-theme" class="icon-btn toolbar__theme-btn" title="Switch theme" aria-label="Switch theme">
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13.5 9.2A5.5 5.5 0 1 1 6.8 2.5 4.3 4.3 0 0 0 13.5 9.2z"/>
+        </svg>
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="8" cy="8" r="3"/>
+          <path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/>
+        </svg>
       </button>
       <button id="btn-guide" class="icon-btn toolbar__guide-btn" title="How to use Source Download">
         <span class="toolbar__guide-q">?</span>
@@ -120,6 +152,7 @@
           <option value="time">Sort by time</option>
         </select>
         <button id="f-sort-dir" class="icon-btn" title="Toggle ascending / descending">↑</button>
+        <button id="f-hide-dupes" class="btn btn--sm" title="Hide images that share the same bytes as another image" hidden>Hide duplicates</button>
         <button id="f-clear" class="btn btn--sm" title="Clear all filters">Clear</button>
       </div>
       <div id="list" class="list"></div>
@@ -144,24 +177,30 @@
             <path d="M8 11.8h.01"/>
           </svg>
           <span>
-            This is a live <strong>content viewer</strong>, not a resource list. Everything holding
-            text on the page is captured in DOM order and kept here as the page changes. Use the
-            <strong>Show</strong> filter to narrow it down, and the <strong>Export</strong> buttons to
-            save what you see. See the <a href="#" id="text-hint-guide">guide</a> for details.
+            A live, readable copy of the page. Every element holding text is captured in DOM order
+            and kept here as the page changes. Query it with plain text, a regular expression, a
+            <strong>CSS selector</strong> or an <strong>XPath</strong> expression, then export what
+            matched. See the <a href="#" id="text-hint-guide">guide</a> for details.
           </span>
         </div>
         <div class="text-filters">
-          <div class="tf-group">
-            <span class="tf-group__label">Show</span>
-            <select id="tf-kind" class="filterbar__select" title="Which parts of the page to display. Element types found on the page (div, span, …) are added to this list automatically.">
-              <option value="all">All elements</option>
-              <option value="heading">Headings</option>
-              <option value="paragraph">Paragraphs</option>
-              <option value="list">List items</option>
-              <option value="table">Tables</option>
+          <div class="tf-group tf-group--query">
+            <span class="tf-group__label">Query</span>
+            <select id="tf-mode" class="filterbar__select" title="How the query box is interpreted">
+              <option value="text">Contains</option>
+              <option value="regex">Regex</option>
               <option value="css">CSS selector</option>
+              <option value="xpath">XPath</option>
             </select>
-            <select id="tf-level" class="filterbar__select" title="Heading level">
+            <input id="tf-query" class="filterbar__input filterbar__input--wide" type="text" spellcheck="false" placeholder="Filter the page text…">
+            <span id="tf-query-status" class="tf-status"></span>
+          </div>
+          <div class="tf-group">
+            <span class="tf-group__label">Element</span>
+            <select id="tf-kind" class="filterbar__select" title="Restrict to one element type. The list is built from what the page actually contains.">
+              <option value="all">All elements</option>
+            </select>
+            <select id="tf-level" class="filterbar__select" title="Heading level" hidden>
               <option value="all">All levels</option>
               <option value="h1">H1</option>
               <option value="h2">H2</option>
@@ -171,23 +210,17 @@
               <option value="h6">H6</option>
             </select>
           </div>
-          <div class="tf-group tf-group--grow">
-            <span class="tf-group__label">CSS selector</span>
-            <input id="tf-css" class="filterbar__input filterbar__input--wide" type="text" placeholder=".price, li.item, [data-x] — press Enter" title="Extra elements to capture — any CSS selector (press Enter to apply)">
-          </div>
-          <div class="tf-group tf-group--grow">
-            <span class="tf-group__label">Search</span>
-            <input id="tf-query" class="filterbar__input filterbar__input--wide" type="text" placeholder="Filter captured text…" title="Only keep blocks containing this text">
-          </div>
           <div class="tf-group">
             <span class="tf-group__label">Capture</span>
             <button id="tf-live" class="btn btn--sm btn--primary" title="Keep scanning the page as it changes">Live on</button>
             <button id="tf-refresh" class="btn btn--sm" title="Scan the page right now">Scan now</button>
-            <button id="tf-clear" class="btn btn--sm" title="Clear all captured content">Clear</button>
+            <button id="tf-read" class="btn btn--sm" title="Hide tags and checkboxes for a calmer reading view">Reading</button>
+            <button id="tf-clear" class="btn btn--sm" title="Reset filters and recapture the page">Clear</button>
           </div>
           <div class="tf-group">
             <span class="tf-group__label">Export</span>
-            <button id="tf-export-md" class="btn btn--sm" title="Headings & paragraphs as Markdown">MD</button>
+            <button id="tf-export-txt" class="btn btn--sm" title="Everything shown, as plain text">TXT</button>
+            <button id="tf-export-md" class="btn btn--sm" title="Everything shown, as Markdown (tables included)">MD</button>
             <button id="tf-export-csv" class="btn btn--sm" title="Tables as CSV (ZIP)">CSV</button>
             <button id="tf-export-html" class="btn btn--sm" title="Tables as HTML (ZIP)">HTML</button>
             <button id="tf-export-xlsx" class="btn btn--sm btn--primary" title="Tables as a real XLSX workbook">XLSX</button>
@@ -291,11 +324,18 @@
   <footer class="statusbar">
     <span id="status-resources">0 resources</span>
     <span id="status-selected" hidden></span>
+    <span id="status-dupes" hidden></span>
     <span id="status-size"></span>
     <span id="status-message" class="statusbar__message"></span>
   </footer>
 
   <div id="context-menu" class="context-menu" hidden></div>
+  <div id="export-menu" class="context-menu" hidden>
+    <button type="button" class="context-menu__item" data-export="json">Visible list as JSON</button>
+    <button type="button" class="context-menu__item" data-export="csv">Visible list as CSV</button>
+    <div class="context-menu__sep"></div>
+    <button type="button" class="context-menu__item" data-export="har">Network log as HAR</button>
+  </div>
   <div id="toast" class="toast" hidden></div>
 
   <div id="guide" class="guide" hidden>
@@ -318,14 +358,15 @@
         </button>
       </header>
       <div class="guide__body" id="guide-body">
-        <section class="guide__sec" data-key="getting started open devtools popup badge icon">
+        <section class="guide__sec" data-key="getting started open devtools popup badge icon theme dark light">
           <h3>Getting started</h3>
           <p>
             Click the <strong>Source Download</strong> tab in the DevTools toolbar (press
             <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, then the tab in the DevTools
             toolbar). Chrome does not allow extensions to open DevTools automatically, which is why the
             panel lives there. The toolbar icon popup lets you choose which categories feed the badge
-            counter on the icon.
+            counter on the icon. The sun/moon button in the panel toolbar locks a light or dark theme
+            independently of Chrome; that choice is remembered.
           </p>
         </section>
 
@@ -333,8 +374,9 @@
           <h3>Categories</h3>
           <p>
             The vertical tabs on the left group every captured resource by type: Images, Videos, Audio,
-            Documents, Fonts, WASM, SVG, APIs, and more. Each tab shows a live count. Only one category
-            is shown at a time; switching resets all filters, so what you see always matches the tab.
+            Captions, Documents, Fonts, Source maps, WASM, SVG, APIs, and more. Each tab shows a live
+            count. Only one category is shown at a time; switching resets all filters, so what you see
+            always matches the tab.
           </p>
         </section>
 
@@ -373,9 +415,12 @@
           <p>
             <strong>Download View</strong> saves the currently visible resources (active category +
             search + filters) as a ZIP; it relabels to <em>Download Filtered (N)</em> when filters are
-            active. <strong>Download Selected</strong> downloads only the checked items. <strong>Download
+            active. Hover any download button to see an estimated archive size before you click.
+            <strong>Download Selected</strong> downloads only the checked items. <strong>Download
             All</strong> captures every discovered resource into a folder-structured ZIP. Failed
             downloads are retried automatically and can be retried again from the context menu.
+            <strong>Export</strong> writes the visible list as JSON or CSV, or dumps Chrome's network
+            log as a HAR file.
           </p>
         </section>
 
@@ -388,18 +433,59 @@
           </p>
         </section>
 
-        <section class="guide__sec" data-key="text content viewer table html export md csv xlsx">
+        <section class="guide__sec" data-key="text content viewer table html export md csv xlsx txt xpath regex css selector query">
           <h3>Text &amp; tables</h3>
           <p>
-            The <strong>Text</strong> category is a live content viewer. It captures every element that
-            holds text — headings, paragraphs, list items, buttons, <code>div</code>/<code>span</code>
-            and more — in DOM order, and keeps scanning while <strong>Live</strong> is on. Use
-            <strong>Show</strong> to filter by element type, a heading level, or a custom CSS selector.
-            Tables store a bounded history of snapshots so dynamic (SPA) tables are never lost; the chip
-            next to each table shows how many snapshots and unique rows you can export. Export as
-            Markdown (headings/paragraphs), or tables as CSV, HTML, or a real multi-sheet
+            The <strong>Text</strong> category is a live, readable copy of the page. It captures every
+            element that holds text — headings, paragraphs, list items, buttons,
+            <code>div</code>/<code>span</code> and more — in DOM order, and keeps scanning while
+            <strong>Live</strong> is on.
+          </p>
+          <p>
+            The <strong>Query</strong> box works four ways, picked from the dropdown beside it:
+            <strong>Contains</strong> and <strong>Regex</strong> filter the text already captured, while
+            <strong>CSS selector</strong> and <strong>XPath</strong> are run against the live page so they
+            can reach anything in the DOM. XPath also accepts expressions that return a value rather than
+            elements, such as <code>count(//a)</code> or <code>//@href</code>. Whatever the page says about
+            a broken query is shown next to the box. <strong>Element</strong> narrows the result to a single
+            tag, with the count of each tag found on the page. Clearing the query box (or pressing
+            <strong>Clear</strong>) returns you to <em>All elements</em> and recaptures the page —
+            you never have to reset the dropdown by hand.
+          </p>
+          <p>
+            <strong>Reading</strong> hides tags, checkboxes and location crumbs so the stream reads
+            like a document. Tables store a bounded history of snapshots so dynamic (SPA) tables are never lost. Press
+            <strong>Show all rows</strong> on a table to merge every snapshot into one deduplicated view —
+            that is exactly what an export contains. Export as <strong>TXT</strong> (the readable page),
+            <strong>MD</strong> (Markdown, tables included), or tables as CSV, HTML or a real multi-sheet
             <strong>XLSX</strong> workbook. Checked items win; otherwise everything currently visible is
             exported.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="captions subtitles vtt srt ttml track">
+          <h3>Captions &amp; subtitles</h3>
+          <p>
+            WebVTT, SRT, TTML and other caption files — including <code>&lt;track&gt;</code> sources —
+            land in their own <strong>Captions</strong> tab instead of mixing with documents.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="source maps sourcemap mappings js map">
+          <h3>Source maps</h3>
+          <p>
+            <code>.map</code> files and JSON bodies that look like source maps (they contain
+            <code>mappings</code> and <code>sources</code>) are grouped under <strong>Source maps</strong>,
+            with the JSON viewer and Beautify, so they no longer clutter the JSON tab.
+          </p>
+        </section>
+
+        <section class="guide__sec" data-key="duplicate images hide dupes hash">
+          <h3>Duplicate images</h3>
+          <p>
+            On the Images tab the panel hashes captured bytes and marks identical files. A
+            <strong>Hide duplicates</strong> filter keeps the first copy of each set so a ZIP of the
+            view does not ship the same thumbnail twice.
           </p>
         </section>
 
@@ -425,7 +511,7 @@
       </div>
       <div class="guide__empty" id="guide-empty">No guide sections match your search.</div>
       <footer class="guide__footer">
-        <span>Source Download v<span id="guide-version">1.8.1</span> — 100% dependency-free.</span>
+        <span>Source Download v<span id="guide-version">1.11.0</span> — 100% dependency-free.</span>
       </footer>
     </div>
   </div>
@@ -444,6 +530,7 @@
     </div>
   </div>
 
+  <script src="lib/filetype.js"></script>
   <script src="lib/zip.js"></script>
   <script src="lib/xlsx.js"></script>
   <script src="lib/hls.js"></script>

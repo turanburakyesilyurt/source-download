@@ -8,7 +8,7 @@
 
 'use strict';
 
-const CATEGORIES = ['api', 'image', 'svg', 'video', 'audio', 'css', 'js', 'font', 'document', 'json', 'wasm', 'manifest', 'other'];
+const CATEGORIES = ['api', 'image', 'svg', 'video', 'audio', 'caption', 'css', 'js', 'sourcemap', 'font', 'document', 'json', 'wasm', 'manifest', 'other'];
 const DEFAULT_TRACKING = {};
 for (const k of CATEGORIES) DEFAULT_TRACKING[k] = true;
 

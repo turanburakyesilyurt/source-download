@@ -235,55 +235,73 @@ function getMenuTitle(key, fallback, lang) {
   return fallback;
 }
 
+let isSettingUpMenus = false;
+
 function setupContextMenus(lang) {
   if (lang) currentBackgroundLang = lang;
+  if (isSettingUpMenus) return;
+  isSettingUpMenus = true;
+
   try {
     chrome.contextMenus.removeAll(() => {
-      chrome.contextMenus.create({
-        id: 'sd-zap-element',
-        title: getMenuTitle('contextMenuZap', 'Zap / Hide this element', currentBackgroundLang),
-        contexts: ['all'],
-      });
-      chrome.contextMenus.create({
-        id: 'sd-undo-zap',
-        title: getMenuTitle('contextMenuUndoZap', 'Restore last hidden element', currentBackgroundLang),
-        contexts: ['all'],
-      });
-      chrome.contextMenus.create({
-        id: 'sd-reset-zap',
-        title: getMenuTitle('contextMenuResetZap', 'Reset all hidden elements', currentBackgroundLang),
-        contexts: ['all'],
-      });
-      chrome.contextMenus.create({ id: 'sd-sep-1', type: 'separator', contexts: ['all'] });
-      chrome.contextMenus.create({
-        id: 'sd-capture-area',
-        title: getMenuTitle('contextMenuCaptureArea', 'Capture area screenshot', currentBackgroundLang),
-        contexts: ['all'],
-      });
-      chrome.contextMenus.create({
-        id: 'sd-record-area',
-        title: getMenuTitle('contextMenuRecordArea', 'Record Regional Video / GIF', currentBackgroundLang),
-        contexts: ['all'],
-      });
-      chrome.contextMenus.create({ id: 'sd-sep-2', type: 'separator', contexts: ['all'] });
-      chrome.contextMenus.create({
-        id: 'sd-pick-color',
-        title: getMenuTitle('contextMenuPickColor', 'Pick color from screen', currentBackgroundLang),
-        contexts: ['all'],
-      });
-      chrome.contextMenus.create({ id: 'sd-sep-3', type: 'separator', contexts: ['all'] });
-      chrome.contextMenus.create({
-        id: 'sd-capture-page',
-        title: getMenuTitle('contextMenuCapturePage', 'Capture full page screenshot', currentBackgroundLang),
-        contexts: ['all'],
-      });
-      chrome.contextMenus.create({
-        id: 'sd-page-archive',
-        title: getMenuTitle('contextMenuPageArchive', 'Download offline page archive', currentBackgroundLang),
-        contexts: ['all'],
-      });
+      void chrome.runtime.lastError;
+
+      const items = [
+        {
+          id: 'sd-zap-element',
+          title: getMenuTitle('contextMenuZap', 'Zap / Hide this element', currentBackgroundLang),
+          contexts: ['all'],
+        },
+        {
+          id: 'sd-undo-zap',
+          title: getMenuTitle('contextMenuUndoZap', 'Restore last hidden element', currentBackgroundLang),
+          contexts: ['all'],
+        },
+        {
+          id: 'sd-reset-zap',
+          title: getMenuTitle('contextMenuResetZap', 'Reset all hidden elements', currentBackgroundLang),
+          contexts: ['all'],
+        },
+        { id: 'sd-sep-1', type: 'separator', contexts: ['all'] },
+        {
+          id: 'sd-capture-area',
+          title: getMenuTitle('contextMenuCaptureArea', 'Capture area screenshot', currentBackgroundLang),
+          contexts: ['all'],
+        },
+        {
+          id: 'sd-record-area',
+          title: getMenuTitle('contextMenuRecordArea', 'Record Regional Video / GIF', currentBackgroundLang),
+          contexts: ['all'],
+        },
+        { id: 'sd-sep-2', type: 'separator', contexts: ['all'] },
+        {
+          id: 'sd-pick-color',
+          title: getMenuTitle('contextMenuPickColor', 'Pick color from screen', currentBackgroundLang),
+          contexts: ['all'],
+        },
+        { id: 'sd-sep-3', type: 'separator', contexts: ['all'] },
+        {
+          id: 'sd-capture-page',
+          title: getMenuTitle('contextMenuCapturePage', 'Capture full page screenshot', currentBackgroundLang),
+          contexts: ['all'],
+        },
+        {
+          id: 'sd-page-archive',
+          title: getMenuTitle('contextMenuPageArchive', 'Download offline page archive', currentBackgroundLang),
+          contexts: ['all'],
+        },
+      ];
+
+      for (const item of items) {
+        chrome.contextMenus.create(item, () => {
+          void chrome.runtime.lastError;
+        });
+      }
+
+      isSettingUpMenus = false;
     });
   } catch (e) {
+    isSettingUpMenus = false;
     console.warn('Context menu creation error:', e);
   }
 }
@@ -297,7 +315,6 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.storage.local.get({ lang: 'auto' }, (data) => {
   currentBackgroundLang = data.lang || 'auto';
-  setupContextMenus(currentBackgroundLang);
 });
 
 chrome.storage.onChanged.addListener((changes, area) => {
@@ -352,7 +369,9 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
       const dataUrl = await chrome.tabs.captureVisibleTab(tab.windowId, { format: 'png' });
       const stored = await chrome.storage.local.get({ lang: 'auto' });
       const lang = stored.lang || 'auto';
-      chrome.tabs.sendMessage(tab.id, { type: 'startAreaCapture', dataUrl, lang });
+      chrome.tabs.sendMessage(tab.id, { type: 'startAreaCapture', dataUrl, lang }, () => {
+        void chrome.runtime.lastError;
+      });
     } catch (err) {
       console.warn('Area screenshot capture failed:', err);
     }
@@ -360,7 +379,9 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     try {
       const stored = await chrome.storage.local.get({ lang: 'auto' });
       const lang = stored.lang || 'auto';
-      chrome.tabs.sendMessage(tab.id, { type: 'startAreaVideoRecord', lang });
+      chrome.tabs.sendMessage(tab.id, { type: 'startAreaVideoRecord', lang }, () => {
+        void chrome.runtime.lastError;
+      });
     } catch (err) {
       console.warn('Area video record start failed:', err);
     }
@@ -368,7 +389,9 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     try {
       const stored = await chrome.storage.local.get({ lang: 'auto' });
       const lang = stored.lang || 'auto';
-      chrome.tabs.sendMessage(tab.id, { type: 'startColorPicker', lang });
+      chrome.tabs.sendMessage(tab.id, { type: 'startColorPicker', lang }, () => {
+        void chrome.runtime.lastError;
+      });
     } catch (err) {
       console.warn('Color picker start failed:', err);
     }

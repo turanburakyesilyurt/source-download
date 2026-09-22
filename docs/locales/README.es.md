@@ -55,7 +55,7 @@ Conéctate conmigo en [**LinkedIn**](https://www.linkedin.com/in/turan-burak-yes
 
 ## Recorrido Visual y Módulos Principales
 
-Explore los módulos de interfaz de alta resolución integrados directamente en Chrome DevTools, Panel Lateral y Ventana Emergente.
+Explore los módulos de interfaz de alta resolución integrados directamente en Chrome DevTools, Menú de Clic Derecho y Ventana Emergente.
 
 ### 1. Inspector y Descargador Universal de Recursos Web
 > **★ SUITE DE INGENIERÍA DEVTOOLS · F12** — Detecte, inspeccione, filtre por resolución y descargue imágenes, vectores SVG, transmisiones HLS, fuentes, scripts y tablas en un único estudio.
@@ -114,7 +114,7 @@ Explore los módulos de interfaz de alta resolución integrados directamente en 
 
 Source Download es la suite profesional todo en uno para la inspección, extracción, captura de pantalla y grabación de vídeo y GIF de recursos web, integrada de forma nativa en Google Chrome. Diseñada para desarrolladores, diseñadores y analistas, Source Download facilita la extracción de recursos, análisis de red, capturas completas y grabación en alta definición.
 
-Con tres modos de trabajo flexibles —un panel de ingeniería en DevTools (F12), un panel lateral asistente (Side Panel) y una ventana emergente rápida en la barra de herramientas—, Source Download detecta, categoriza, formatea y archiva todo lo que carga una página web. Desde fotografías en alta resolución y gráficos vectoriales SVG hasta transmisiones HLS, tablas dinámicas del DOM, fuentes web y respuestas de API, puede inspeccionar cada recurso con métricas técnicas avanzadas y exportarlos individualmente o empaquetados en un archivo ZIP/ZIP64 organizado.
+Con tres modos de trabajo flexibles —un panel de ingeniería en DevTools (F12), un menú contextual intuitivo con clic derecho y una ventana emergente rápida en la barra de herramientas—, Source Download detecta, categoriza, formatea y archiva todo lo que carga una página web. Desde fotografías en alta resolución y gráficos vectoriales SVG hasta transmisiones HLS, tablas dinámicas del DOM, fuentes web y respuestas de API, puede inspeccionar cada recurso con métricas técnicas avanzadas y exportarlos individualmente o empaquetados en un archivo ZIP/ZIP64 organizado.
 
 
 ## GUÍA COMPLETA DE CARACTERÍSTICAS Y FUNCIONALIDADES
@@ -225,7 +225,7 @@ Reúna cientos de archivos en un único archivo organizado con un solo clic:
 - **Ingenieros de QA y Pruebas:** Grabar reproducciones de errores en MP4 o GIF a 2 FPS, capturar páginas completas para pruebas de regresión.
 - **Analistas de Datos e Investigadores:** Extraer tablas de datos paginadas sin copiar y pegar manualmente directamente a hojas de cálculo Excel.
 - **Creadores de Contenido y Educadores:** Generar GIFs explicativos ligeros para guías y documentación técnica, capturar gráficos nítidos.
-- **Archivistas Digitales y Auditores Legales:** Guardar páginas web completas en archivos HTML independientes que no se degradarán con el tiempo.
+- **Archivistas Digitales:** Guardar páginas web completas en archivos HTML independientes que no se degradan con el tiempo.
 
 
 ## PRIVACIDAD, SEGURIDAD Y CUMPLIMIENTO CORPORATIVO
@@ -244,18 +244,19 @@ Source Download está construida sobre una arquitectura estricta de privacidad l
 
 
 Source Download solicita únicamente los permisos indispensables para su funcionamiento:
-- **activeTab:** Permite leer recursos y capturar la pantalla únicamente en la pestaña que esté activa al pulsar la extensión.
-- **storage:** Guarda sus preferencias, esquemas de nombrado y ajustes localmente en su perfil de Chrome.
-- **downloads:** Permite guardar las imágenes, vídeos y archivos ZIP en su carpeta de descargas habitual.
-- **contextMenus:** Añade accesos rápidos en el menú contextual del clic derecho (Zapper, Captura de Área, Página Completa).
-- **sidePanel:** Proporciona un panel lateral cómodo para gestionar recursos sin restar espacio a su pestaña principal.
+- **activeTab:** Lee recursos y captura la pantalla únicamente en la pestaña activa al invocar la extensión.
+- **storage:** Guarda preferencias, esquemas de nombrado y ajustes localmente en Chrome.
+- **downloads:** Guarda imágenes, vídeos y archivos ZIP en su carpeta de descargas habitual.
+- **contextMenus:** Añade accesos rápidos en el menú del clic derecho (Zapper, Captura de Área, Página Completa).
+- **clipboardWrite:** Copia códigos de color, tablas, scripts y capturas directamente a su portapapeles.
+- **scripting:** Ejecuta el Element Zapper e inyecta herramientas de inspección en las pestañas activas.
 
 
 ## ATAJOS DE TECLADO Y TRUCOS
 
 
 - **Abrir DevTools:** Pulse F12 o Ctrl+Mayús+I (Cmd+Option+I en macOS) y haga clic en la pestaña "Source Download".
-- **Abrir Panel Lateral:** Haga clic en el icono de Side Panel en la barra de Chrome y elija Source Download.
+- **Herramientas de Clic Derecho:** Clic derecho en la página para ocultar elementos, extraer colores o grabar áreas.
 - **Detener Grabación:** Pulse la tecla ESC o haga clic en el botón rojo Detener de la barra flotante.
 - **Cancelar Selección:** Pulse ESC en cualquier momento para cerrar el marco de recorte o la cruceta de captura.
 - **Cambiar Tasa de FPS:** Con el formato GIF activo, haga clic en el indicador de FPS para alternar (10 -> 5 -> 2 -> 1 -> 15 FPS).

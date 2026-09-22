@@ -112,9 +112,6 @@
   "btnGuide": {
     "message": "Anleitung"
   },
-  "btnOpenSidePanel": {
-    "message": "Seitenleiste öffnen"
-  },
   "btnCaptureFullPage": {
     "message": "Vollständiger Screenshot"
   },
@@ -294,15 +291,6 @@
   },
   "heroArchiveDesc": {
     "message": "Eingebettete Styles & Base64-Bilder • Offline verfügbar"
-  },
-  "sidePanelDevToolsTitle": {
-    "message": "DevTools Detailanalyse"
-  },
-  "sidePanelDevToolsDesc": {
-    "message": "Für Live-Netzwerkanfragen, API-Endpunkte, formatierte Skripte und Source Maps öffnen Sie Chrome DevTools."
-  },
-  "sidePanelDevToolsHint": {
-    "message": "Drücken Sie F12 (macOS: ⌥⌘I) → Source Download"
   },
   "copyDataUri": {
     "message": "Data-URI kopieren"

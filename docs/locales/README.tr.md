@@ -55,7 +55,7 @@ Geri bildirimleriniz ve deneyimleriniz benim için son derece değerlidir. Bana 
 
 ## Görsel Tur ve Temel Modüller
 
-Google Chrome DevTools, Yan Panel ve Araç Çubuğu içerisine entegre edilen yüksek çözünürlüklü arayüz modüllerini keşfedin.
+Google Chrome DevTools, Sağ Tık Menüsü ve Araç Çubuğu içerisine entegre edilen yüksek çözünürlüklü arayüz modüllerini keşfedin.
 
 ### 1. Hepsi Bir Arada Web Varlık Analizcisi ve İndirici
 > **★ GELİŞTİRİCİ MÜHENDİSLİK SUİTİ · F12** — Resimleri, SVG vektörlerini, HLS video akışlarını, fontları, kodları ve tabloları tek bir stüdyoda tespit edin, filtreleyin ve indirin.
@@ -114,7 +114,7 @@ Google Chrome DevTools, Yan Panel ve Araç Çubuğu içerisine entegre edilen y�
 
 Source Download; web geliştiricileri, UI/UX tasarımcıları, test mühendisleri (QA), dijital arşivciler ve veri araştırmacıları için doğrudan Google Chrome içine entegre edilmiş hepsi bir arada profesyonel web varlık inceleme, çıkarma, ekran görüntüsü ve video/GIF kayıt stüdyosudur.
 
-F12 DevTools Geliştirici Paneli, Yan Panel (Side Panel) ve araç çubuğu açılır penceresiyle çalışan Source Download; ziyaret ettiğiniz herhangi bir sayfanın yüklediği tüm kaynakları derinlemesine teknik metriklerle inceler. Yüksek çözünürlüklü görsellerden SVG vektör çizimlerine, HLS video akışlarından dinamik DOM tablolarına, yazı tiplerinden API yanıtlarına kadar her öğeyi anında tespit eder, kategorize eder, biçimlendirir ve tek tek ya da organize bir ZIP/ZIP64 arşivi olarak kaydetmenizi sağlar.
+F12 DevTools Geliştirici Paneli, sezgisel sağ tık menüsü ve araç çubuğu açılır penceresiyle çalışan Source Download; ziyaret ettiğiniz herhangi bir sayfanın yüklediği tüm kaynakları derinlemesine teknik metriklerle inceler. Yüksek çözünürlüklü görsellerden SVG vektör çizimlerine, HLS video akışlarından dinamik DOM tablolarına, yazı tiplerinden API yanıtlarına kadar her öğeyi anında tespit eder, kategorize eder, biçimlendirir ve tek tek ya da organize bir ZIP/ZIP64 arşivi olarak kaydetmenizi sağlar.
 
 
 ## KAPSAMLI ÖZELLİK VE YETENEKLER
@@ -246,18 +246,19 @@ Source Download katı bir yerel gizlilik mimarisi ile tasarlanmıştır:
 
 
 Source Download yalnızca temel işlevler için gereken asgari izinleri talep eder:
-- **activeTab:** Yalnızca eklentiyi çalıştırdığınız etkin sekmede kaynakları okumayı, DOM ağacını incelemeyi ve ekran görüntüsü almayı sağlar.
-- **storage:** Arayüz tercihlerinizi, dosya adlandırma şablonlarınızı ve kayıt ayarlarınızı tarayıcınızda yerel olarak saklar.
+- **activeTab:** Yalnızca eklentiyi başlattığınız etkin sekmede kaynakları okur ve ekran görüntüsü almayı sağlar.
+- **storage:** Arayüz tercihlerinizi, adlandırma şablonlarını ve kayıt ayarlarını tarayıcıda saklar.
 - **downloads:** Yakalanan görselleri, videoları ve ZIP arşivlerini varsayılan indirme klasörünüze kaydeder.
-- **contextMenus:** Sağ tık menüsüne hızlı eylemler (Element Zapper, Alan Görüntüsü, Tam Sayfa) ekler.
-- **sidePanel:** Ana görüntüleme alanınızı daraltmadan varlıkları yönetmek için Yan Panel eşlikçisini sunar.
+- **contextMenus:** Sağ tık menüsüne hızlı eylemler (Element Zapper, Alan Görüntüsü, Tam Sayfa, Renk Seçici) ekler.
+- **clipboardWrite:** Renk kodlarını, tabloları, biçimlendirilmiş kodları ve ekran görüntülerini panoya kopyalar.
+- **scripting:** Element Zapper ve sayfa içi ekran yakalama araçlarını etkin sekmede çalıştırır.
 
 
 ## KLAVYE KISAYOLLARI VE PRATİK İPUÇLARI
 
 
 - **DevTools Panelini Aç:** F12 veya Ctrl+Shift+I (macOS için Cmd+Option+I) tuşlarına basın ve "Source Download" sekmesine geçin.
-- **Yan Paneli Aç:** Chrome araç çubuğundaki Yan Panel simgesine tıklayın ve Source Download'ı seçin.
+- **Sağ Tık Hızlı Araçlar:** Sayfada sağ tıklayarak öğeleri gizleyin, renk seçin veya bölgesel kayıt başlatın.
 - **Kaydı Durdur:** ESC tuşuna basın veya kayan çubuktaki kırmızı Durdur butonuna tıklayın.
 - **Çekimi İptal Et:** Kırpma alanını veya artı imleci kapatmak için dilediğiniz an ESC tuşuna basın.
 - **GIF Kare Hızını Değiştir:** Format GIF iken çubuktaki FPS rozetine tıklayarak 10 -> 5 -> 2 -> 1 -> 15 FPS arasında geçiş yapın.
@@ -324,7 +325,7 @@ Google Chrome için en hızlı, kapsamlı ve tamamen yerel web varlık stüdyosu
 ### Yöntem 1: Chrome Web Store Üzerinden Kurulum (Önerilen)
 1. Resmi [Source Download Chrome Web Store](https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd) mağaza sayfasını ziyaret edin.
 2. **Chrome'a Ekle** butonuna tıklayarak kurulumu onaylayın.
-3. Herhangi bir web sayfasında `F12` (veya `Ctrl+Shift+I` / `Cmd+Option+I`) basarak **Source Download** sekmesine geçin veya araç çubuğundan **Yan Panel**'i açın.
+3. Herhangi bir web sayfasında `F12` (veya `Ctrl+Shift+I` / `Cmd+Option+I`) basarak **Source Download** sekmesine geçin veya sayfada sağ tıklayın.
 
 ### Yöntem 2: Kaynak Koddan Geliştirici Modu ile Kurulum
 1. Depoyu yerel bilgisayarınıza klonlayın:

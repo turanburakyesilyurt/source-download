@@ -112,9 +112,6 @@
   "btnGuide": {
     "message": "User Guide"
   },
-  "btnOpenSidePanel": {
-    "message": "Open Side Panel"
-  },
   "btnCaptureFullPage": {
     "message": "Full Page Screenshot"
   },
@@ -294,15 +291,6 @@
   },
   "heroArchiveDesc": {
     "message": "Inlines CSS & Base64 images, offline-safe snapshot"
-  },
-  "sidePanelDevToolsTitle": {
-    "message": "Chrome DevTools Inspection"
-  },
-  "sidePanelDevToolsDesc": {
-    "message": "Live network traffic, API endpoints, JavaScript bundles, CSS rules, and source maps are available in Chrome DevTools."
-  },
-  "sidePanelDevToolsHint": {
-    "message": "Press F12 (macOS: ⌥⌘I) → Source Download"
   },
   "copyDataUri": {
     "message": "Copy Data-URI"

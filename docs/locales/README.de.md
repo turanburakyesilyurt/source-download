@@ -55,7 +55,7 @@ Vernetzen Sie sich gern auf [**LinkedIn**](https://www.linkedin.com/in/turan-bur
 
 ## Visuelle Tour & Kernmodule
 
-Entdecken Sie die nahtlos in Google Chrome DevTools, Seitenleiste und Symbolleiste integrierten Arbeitsbereiche.
+Entdecken Sie die nahtlos in Google Chrome DevTools, Rechtsklick-Menü und Symbolleiste integrierten Arbeitsbereiche.
 
 ### 1. All-in-One Web-Asset-Inspektor & Downloader
 > **★ ENTWICKLER-ENGINEERING-SUITE · F12** — Erkennen, prüfen, nach Auflösung filtern und herunterladen von Bildern, SVGs, HLS-Videostreams, Schriftarten, Skripten und Tabellen in einem Studio.
@@ -114,7 +114,7 @@ Entdecken Sie die nahtlos in Google Chrome DevTools, Seitenleiste und Symbolleis
 
 Source Download ist die professionelle All-in-One-Suite zur Inspektion, Extraktion, Bildschirmaufnahme und Video/GIF-Aufzeichnung von Web-Assets – direkt nativ in Google Chrome integriert. Entwickelt für Webentwickler, UI/UX-Designer, QA-Ingenieure, digitale Archivare, Datenanalysten und Content Creator, beseitigt Source Download alle Hürden beim Erfassen von Webinhalten, Analysieren von Netzwerk-Streams, Erstellen von Full-Page-Screenshots und Aufzeichnen hochauflösender Bildschirmaufnahmen.
 
-Ausgestattet mit einer leistungsstarken F12 DevTools Engineering Suite, einer Side Panel Seitenleiste und einem Toolbar-Popup erfasst und strukturiert Source Download alles, was eine Webseite im Hintergrund lädt: von hochauflösenden Medien und SVG-Vektoren über HLS-Videostreams und dynamische DOM-Tabellen bis hin zu Web-Fonts und API-Antworten – exportierbar einzeln oder als sauberes, strukturiertes ZIP/ZIP64-Archiv.
+Ausgestattet mit einer leistungsstarken F12 DevTools Engineering Suite, einem intuitiven Rechtsklick-Menü und einem Toolbar-Popup erfasst und strukturiert Source Download alles, was eine Webseite im Hintergrund lädt: von hochauflösenden Medien und SVG-Vektoren über HLS-Videostreams und dynamische DOM-Tabellen bis hin zu Web-Fonts und API-Antworten – exportierbar einzeln oder als sauberes, strukturiertes ZIP/ZIP64-Archiv.
 
 
 ## VOLLSTÄNDIGE FUNKTIONSÜBERSICHT
@@ -246,18 +246,19 @@ Source Download folgt einer kompromisslosen lokalen Datenschutz-Architektur:
 
 
 Source Download fordert ausschließlich minimale, technisch notwendige Berechtigungen an:
-- **activeTab:** Ermöglicht das Auslesen von Ressourcen und Erstellen von Screenshots im gerade aktiven Tab.
-- **storage:** Sichert Ihre individuellen Einstellungen und Vorlagen lokal in Ihrem Browserprofil.
-- **downloads:** Speichert extrahierte Dateien, Videos und ZIP-Archive in Ihrem regulären Download-Ordner.
+- **activeTab:** Liest Ressourcen aus und erstellt Screenshots im jeweils aktiven Tab.
+- **storage:** Sichert individuelle Einstellungen und Vorlagen lokal im Browserprofil.
+- **downloads:** Speichert extrahierte Dateien, Videos und ZIP-Archive im Download-Ordner.
 - **contextMenus:** Fügt nützliche Schnellaktionen in das Rechtsklick-Menü ein (Element Zapper, Bereichsauswahl, Full-Page).
-- **sidePanel:** Bietet eine komfortable Seitenleiste zur Asset-Verwaltung, ohne das Hauptfenster zu verkleinern.
+- **clipboardWrite:** Kopiert Farbcodes, Tabellen, Skripte und Screenshots direkt in Ihre Zwischenablage.
+- **scripting:** Führt den Element Zapper und seiteninterne Erfassungswerkzeuge auf aktiven Tabs aus.
 
 
 ## TASTATURKÜRZEL & TIPPS
 
 
 - **DevTools öffnen:** Drücken Sie F12 oder Strg+Umschalt+I (macOS: Cmd+Option+I) und wählen Sie den Tab „Source Download“.
-- **Seitenleiste aufrufen:** Klicken Sie auf das Side-Panel-Symbol in der Chrome-Symbolleiste und wählen Sie Source Download.
+- **Schnelle Rechtsklick-Tools:** Rechtsklick auf der Seite öffnet Zapper, Farbpipette und Bereichsaufnahme.
 - **Aufnahme beenden:** Drücken Sie ESC oder klicken Sie auf die Stopp-Schaltfläche in der schwebenden Leiste.
 - **Auswahl abbrechen:** Drücken Sie jederzeit ESC, um die Auswahlbox oder das Fadenkreuz zu schließen.
 - **Bildrate wechseln:** Klicken Sie bei ausgewähltem GIF-Format auf das FPS-Badge (10 -> 5 -> 2 -> 1 -> 15 FPS).

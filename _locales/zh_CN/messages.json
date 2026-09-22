@@ -112,9 +112,6 @@
   "btnGuide": {
     "message": "使用指南"
   },
-  "btnOpenSidePanel": {
-    "message": "打开侧边栏"
-  },
   "btnCaptureFullPage": {
     "message": "整页完整截图"
   },
@@ -294,15 +291,6 @@
   },
   "heroArchiveDesc": {
     "message": "内联样式与 Base64 图像 • 离线即开可用"
-  },
-  "sidePanelDevToolsTitle": {
-    "message": "DevTools 深度分析"
-  },
-  "sidePanelDevToolsDesc": {
-    "message": "查看实时网络请求、API 接口、JavaScript 代码格式化、CSS 规则及 Source Maps，请打开 DevTools。"
-  },
-  "sidePanelDevToolsHint": {
-    "message": "按 F12 (macOS: ⌥⌘I) → Source Download"
   },
   "copyDataUri": {
     "message": "复制 Data-URI"

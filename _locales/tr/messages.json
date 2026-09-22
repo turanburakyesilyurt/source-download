@@ -112,9 +112,6 @@
   "btnGuide": {
     "message": "Kullanım Kılavuzu"
   },
-  "btnOpenSidePanel": {
-    "message": "Yan Paneli Aç"
-  },
   "btnCaptureFullPage": {
     "message": "Tam Sayfa Ekran Görüntüsü"
   },
@@ -294,15 +291,6 @@
   },
   "heroArchiveDesc": {
     "message": "Gömülü CSS & görseller • Çevrimdışı hazır"
-  },
-  "sidePanelDevToolsTitle": {
-    "message": "DevTools Derin Analiz"
-  },
-  "sidePanelDevToolsDesc": {
-    "message": "Canlı ağ trafiği, API uç noktaları, JavaScript ayrıştırıcı, CSS kuralları ve kaynak haritaları için Chrome DevTools'u açın."
-  },
-  "sidePanelDevToolsHint": {
-    "message": "F12 (macOS: ⌥⌘I) tuşuna basın → Source Download"
   },
   "copyDataUri": {
     "message": "Data-URI Kopyala"

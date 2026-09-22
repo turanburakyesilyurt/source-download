@@ -112,9 +112,6 @@
   "btnGuide": {
     "message": "使い方ガイド"
   },
-  "btnOpenSidePanel": {
-    "message": "サイドパネルを開く"
-  },
   "btnCaptureFullPage": {
     "message": "フルページスクリーンショット"
   },
@@ -294,15 +291,6 @@
   },
   "heroArchiveDesc": {
     "message": "CSS・画像を完全インライン化 • オフライン閲覧可能"
-  },
-  "sidePanelDevToolsTitle": {
-    "message": "DevTools 詳細エンジニアリング解析"
-  },
-  "sidePanelDevToolsDesc": {
-    "message": "リアルタイムAPI通信、JSバンドル整形、CSSスタイル、ソースマップの解析はChrome DevToolsでご利用いただけます。"
-  },
-  "sidePanelDevToolsHint": {
-    "message": "F12 (macOS: ⌥⌘I) を押下 → Source Download"
   },
   "copyDataUri": {
     "message": "Data-URIをコピー"

@@ -55,7 +55,7 @@ This is my **first open-source project**, so your feedback means the world to me
 
 ## Visual Tour & Core Modules
 
-Explore the high-resolution interface modules built directly into Google Chrome DevTools, Side Panel, and Toolbar Popup.
+Explore the high-resolution interface modules built directly into Google Chrome DevTools, Right-Click Menu, and Toolbar Popup.
 
 ### 1. All-in-One Web Asset Inspector & Downloader
 > **★ DEVTOOLS ENGINEERING SUITE · F12** — Detect, inspect, filter by resolution, and download images, SVGs, HLS video streams, fonts, scripts, and tables in one unified studio.
@@ -114,7 +114,7 @@ Explore the high-resolution interface modules built directly into Google Chrome 
 
 Source Download is the professional, all-in-one web asset inspection, extraction, screen capture, and recording studio built natively into Google Chrome. Engineered for web developers, UI/UX designers, QA engineers, digital archivists, and researchers, Source Download eliminates the friction of scraping resources, inspecting network streams, capturing long-scrolling pages, and recording high-definition screen clips.
 
-Operating through an advanced DevTools Engineering Suite (F12), an instant Side Panel companion, and a fast toolbar popup, Source Download detects, categorizes, formats, and archives everything a web page loads. From high-resolution media and vector graphics to HLS video streams, dynamic DOM tables, web fonts, and API responses, you can inspect every asset with deep technical metrics and export them individually or bundled into a clean, folder-structured ZIP archive.
+Operating through an advanced DevTools Engineering Suite (F12), an intuitive right-click context menu, and a fast toolbar popup, Source Download detects, categorizes, formats, and archives everything a web page loads. From high-resolution media and vector graphics to HLS video streams, dynamic DOM tables, web fonts, and API responses, you can inspect every asset with deep technical metrics and export them individually or bundled into a clean, folder-structured ZIP archive.
 
 
 ## COMPLETE FEATURE OVERVIEW
@@ -228,7 +228,7 @@ Bundle hundreds of files into an organized archive with one click:
 - **QA & Test Engineers:** Record bug reproduction clips in MP4 or 2 FPS stop-motion GIF, capture long visual regression screenshots, and export DOM tables.
 - **Data Analysts:** Scrape live tabular data across interactive pagination and export directly to multi-sheet Excel workbooks or CSV files with zero manual work.
 - **Content Creators:** Create lightweight, looping animated GIFs of software features or memes for documentation, email newsletters, and changelogs.
-- **Digital Archivists:** Save complete, self-contained single-file offline HTML snapshots of articles and documentation that remain readable forever.
+- **Digital Archivists:** Save complete single-file offline HTML snapshots of articles and documentation that remain readable forever.
 
 
 ## PRIVACY, SECURITY & ZERO-DEPENDENCY MANIFESTO
@@ -245,18 +245,19 @@ Source Download is engineered under a strict privacy-first architecture:
 
 
 Source Download requests only the minimal permissions required to deliver its functionality:
-- **activeTab:** Enables reading resources, capturing screenshots, and recording video strictly on the active tab when invoked.
-- **storage:** Saves your interface preferences, naming pattern templates, and recording settings locally across browser sessions.
-- **downloads:** Allows saving captured screenshots, recordings, and ZIP bundles to your default downloads folder.
-- **contextMenus:** Adds quick-access right-click actions (Element Zapper, Area Screenshot, Full-Page Capture).
-- **sidePanel:** Displays the Side Panel companion for convenient side-by-side asset management without taking over your main viewport.
+- **activeTab:** Reads resources, captures screenshots, and records video on the active tab when invoked.
+- **storage:** Saves interface preferences, naming templates, and recording settings locally across browser sessions.
+- **downloads:** Saves captured screenshots, recordings, and ZIP bundles to your default downloads folder.
+- **contextMenus:** Adds quick right-click actions for Element Zapper, Area Screenshot, and Color Picker.
+- **clipboardWrite:** Copies color codes, dynamic tables, formatted code, and screenshots directly to your clipboard.
+- **scripting:** Executes Element Zapper and injects page-level capture and inspection utilities on active tabs.
 
 
 ## KEYBOARD SHORTCUTS & PRO-TIPS
 
 
 - **Open DevTools Suite:** Press F12 or Ctrl+Shift+I (Cmd+Option+I on macOS) and navigate to the "Source Download" tab.
-- **Open Side Panel Companion:** Click the Side Panel icon in your Chrome toolbar and select Source Download.
+- **Quick Right-Click Tools:** Right-click anywhere on the page to zap elements, sample colors, or record screen regions.
 - **Stop Recording:** Press ESC or click the Stop button on the floating recording toolbar.
 - **Cancel Capture / Overlay:** Press ESC at any time to immediately dismiss the recording box or area screenshot crosshairs.
 - **Cycle GIF Frame Rates:** When format is set to GIF, click the FPS badge on the floating toolbar to cycle between 10 -> 5 -> 2 -> 1 -> 15 FPS.
@@ -305,7 +306,7 @@ Install Source Download today to experience the fastest, most comprehensive, and
 ### Method 1: Direct Install from Chrome Web Store (Recommended)
 1. Visit the official [Source Download Chrome Web Store Listing](https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd).
 2. Click **Add to Chrome** and grant permissions.
-3. Open Chrome DevTools (`F12` or `Ctrl+Shift+I` / `Cmd+Option+I` on macOS) and click the **Source Download** tab, or open the **Side Panel** from the toolbar.
+3. Open Chrome DevTools (`F12` or `Ctrl+Shift+I` / `Cmd+Option+I` on macOS) and click the **Source Download** tab, or right-click anywhere on the page.
 
 ### Method 2: Load Unpacked Extension from Source (Developer Mode)
 1. Clone the official GitHub repository:

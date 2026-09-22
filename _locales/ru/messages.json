@@ -112,9 +112,6 @@
   "btnGuide": {
     "message": "Справка"
   },
-  "btnOpenSidePanel": {
-    "message": "Открыть боковую панель"
-  },
   "btnCaptureFullPage": {
     "message": "Снимок всей страницы"
   },
@@ -294,15 +291,6 @@
   },
   "heroArchiveDesc": {
     "message": "Встроенный CSS и Base64-графика • Просмотр офлайн"
-  },
-  "sidePanelDevToolsTitle": {
-    "message": "Инженерный анализ в DevTools"
-  },
-  "sidePanelDevToolsDesc": {
-    "message": "Для отслеживания живого трафика API, форматирования скриптов, анализа CSS и Source Maps откройте Chrome DevTools."
-  },
-  "sidePanelDevToolsHint": {
-    "message": "Нажмите F12 (macOS: ⌥⌘I) → Source Download"
   },
   "copyDataUri": {
     "message": "Копировать Data-URI"

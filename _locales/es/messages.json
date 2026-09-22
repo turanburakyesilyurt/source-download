@@ -112,9 +112,6 @@
   "btnGuide": {
     "message": "Guía de uso"
   },
-  "btnOpenSidePanel": {
-    "message": "Abrir panel lateral"
-  },
   "btnCaptureFullPage": {
     "message": "Captura de Página Completa"
   },
@@ -294,15 +291,6 @@
   },
   "heroArchiveDesc": {
     "message": "CSS e imágenes incrustadas • Listo sin conexión"
-  },
-  "sidePanelDevToolsTitle": {
-    "message": "Inspección Técnica en DevTools"
-  },
-  "sidePanelDevToolsDesc": {
-    "message": "Para tráfico de red en vivo, puntos finales de API, código JavaScript y mapas de origen, abra Chrome DevTools."
-  },
-  "sidePanelDevToolsHint": {
-    "message": "Presiona F12 (macOS: ⌥⌘I) → Source Download"
   },
   "copyDataUri": {
     "message": "Copiar Data-URI"

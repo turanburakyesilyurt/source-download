@@ -11,6 +11,7 @@ require('../lib/zip.js');
 require('../lib/beautify.js');
 require('../lib/xlsx.js');
 require('../lib/hls.js');
+require('../lib/gif.js');
 
 function textToBytes(s) { return new TextEncoder().encode(s); }
 
@@ -557,6 +558,46 @@ async function main() {
   await jobsBox.self.onmessage({ data: { id: 16, kind: 'nope' } });
   assert.ok(jobsPosted.find((m) => m.type === 'error'), 'unknown CPU job reports an error');
   console.log('  - Jobs worker: beautify + index + hash + imageSize OK');
+
+  // GIF test: GIF89a, median-cut quantization, LZW and variable FPS / frame delay
+  const gifLib = require('../lib/gif.js');
+  const gw = 40, gh = 30;
+  const testGifFrames = [];
+  for (let f = 0; f < 3; f++) {
+    const buf = new Uint8Array(gw * gh * 4);
+    for (let i = 0; i < buf.length; i += 4) {
+      buf[i] = f === 0 ? 255 : 0;
+      buf[i + 1] = f === 1 ? 255 : 0;
+      buf[i + 2] = f === 2 ? 255 : 0;
+      buf[i + 3] = 255;
+    }
+    testGifFrames.push(buf);
+  }
+  let progressCalled = false;
+  // Test 2 FPS: 50 centiseconds delay (500ms / half-second step)
+  const testDelay = 50;
+  const gifBlob = await gifLib.createAnimatedGifBlob(testGifFrames, gw, gh, testDelay, (cur, tot) => {
+    progressCalled = true;
+  });
+  assert.ok(gifBlob, 'GIF blob created');
+  assert.strictEqual(gifBlob.type, 'image/gif', 'Blob MIME type is image/gif');
+  assert.ok(progressCalled, 'Progress callback was invoked');
+  const gifAb = await gifBlob.arrayBuffer();
+  const gifU8 = new Uint8Array(gifAb);
+  assert.strictEqual(String.fromCharCode(gifU8[0], gifU8[1], gifU8[2], gifU8[3], gifU8[4], gifU8[5]), 'GIF89a', 'Magic header is GIF89a');
+
+  // Verify delay in Graphic Control Extension
+  let foundDelay = false;
+  for (let i = 0; i < gifU8.length - 6; i++) {
+    if (gifU8[i] === 0x21 && gifU8[i + 1] === 0xf9 && gifU8[i + 2] === 0x04) {
+      const delay = gifU8[i + 4] | (gifU8[i + 5] << 8);
+      assert.strictEqual(delay, testDelay, 'GIF Graphic Control Extension delay matches specified FPS delay');
+      foundDelay = true;
+      break;
+    }
+  }
+  assert.ok(foundDelay, 'Graphic Control Extension with custom frame delay found');
+  console.log('  - GIF: GIF89a encoding, color quantization, LZW, custom FPS delay and progress OK');
 
   console.log('\nAll lib tests passed.');
 }

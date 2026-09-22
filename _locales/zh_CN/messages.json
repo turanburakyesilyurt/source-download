@@ -1,0 +1,1394 @@
+{
+  "appName": {
+    "message": "Source Download",
+    "description": "扩展名称"
+  },
+  "appDesc": {
+    "message": "无缝浏览、检查并以ZIP格式下载网页所有资源。全页长截图、动态表格提取与开发者工作台。",
+    "description": "扩展描述"
+  },
+  "actionTitle": {
+    "message": "Source Download — 打开面板并跟踪资源",
+    "description": "工具栏操作提示"
+  },
+  "contextMenuZap": {
+    "message": "隐藏此元素 (Zap)",
+    "description": "右键隐藏元素"
+  },
+  "contextMenuUndoZap": {
+    "message": "恢复上一个隐藏的元素",
+    "description": "恢复上一个隐藏元素"
+  },
+  "contextMenuResetZap": {
+    "message": "恢复所有隐藏的元素",
+    "description": "恢复所有隐藏元素"
+  },
+  "contextMenuCapturePage": {
+    "message": "捕获全页长截图",
+    "description": "全页截图右键菜单"
+  },
+  "contextMenuPageArchive": {
+    "message": "下载完整离线页面归档",
+    "description": "下载离线网页"
+  },
+  "catAll": {
+    "message": "全部"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "图片"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "视频"
+  },
+  "catAudio": {
+    "message": "音频"
+  },
+  "catCaptions": {
+    "message": "字幕"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "源映射 (Source Map)"
+  },
+  "catFonts": {
+    "message": "字体"
+  },
+  "catDocuments": {
+    "message": "文档"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifest"
+  },
+  "catText": {
+    "message": "文本与表格"
+  },
+  "catOther": {
+    "message": "其他"
+  },
+  "catScreenshot": {
+    "message": "网页截图"
+  },
+  "catArchive": {
+    "message": "页面归档"
+  },
+  "btnRefresh": {
+    "message": "刷新"
+  },
+  "btnExport": {
+    "message": "导出"
+  },
+  "btnDownloadSelected": {
+    "message": "下载选中项"
+  },
+  "btnDownloadView": {
+    "message": "下载当前视图"
+  },
+  "btnDownloadAll": {
+    "message": "下载全部"
+  },
+  "btnDownloadFiltered": {
+    "message": "下载过滤项"
+  },
+  "btnTheme": {
+    "message": "切换主题"
+  },
+  "btnGuide": {
+    "message": "使用指南"
+  },
+  "btnOpenSidePanel": {
+    "message": "打开侧边栏"
+  },
+  "btnCaptureFullPage": {
+    "message": "整页完整截图"
+  },
+  "btnOfflineArchive": {
+    "message": "保存单文件 HTML"
+  },
+  "filterMinKb": {
+    "message": "最小 KB"
+  },
+  "filterMaxKb": {
+    "message": "最大 KB"
+  },
+  "filterMinWidth": {
+    "message": "最小宽度 px"
+  },
+  "filterMinHeight": {
+    "message": "最小高度 px"
+  },
+  "filterSortName": {
+    "message": "按名称排序"
+  },
+  "filterSortSize": {
+    "message": "按大小排序"
+  },
+  "filterSortType": {
+    "message": "按类型排序"
+  },
+  "filterSortTime": {
+    "message": "按时间排序"
+  },
+  "filterHideDupes": {
+    "message": "隐藏重复项"
+  },
+  "filterClear": {
+    "message": "重置"
+  },
+  "textModeContains": {
+    "message": "包含"
+  },
+  "textModeRegex": {
+    "message": "正则"
+  },
+  "textModeCss": {
+    "message": "CSS 选择器"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "过滤页面文本或实时查询 DOM…"
+  },
+  "textAllElements": {
+    "message": "所有元素"
+  },
+  "textLiveOn": {
+    "message": "实时捕获 开"
+  },
+  "textLiveOff": {
+    "message": "实时关闭"
+  },
+  "textScanNow": {
+    "message": "立即扫描"
+  },
+  "textReading": {
+    "message": "阅读模式"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "选择一个资源以查看详细信息"
+  },
+  "inspectorDetails": {
+    "message": "详情"
+  },
+  "inspectorOpenTab": {
+    "message": "在新标签页中打开"
+  },
+  "inspectorCopyUrl": {
+    "message": "复制 URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "下载此文件"
+  },
+  "inspectorClose": {
+    "message": "关闭"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "类型"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "大小"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "来源"
+  },
+  "metaTitle": {
+    "message": "标题"
+  },
+  "metaAlt": {
+    "message": "Alt 文本"
+  },
+  "ratingPrompt": {
+    "message": "觉得 Source Download 对你有帮助吗？欢迎在 Chrome Web Store 评分或在 GitHub 给我们一颗 Star 支持开源！"
+  },
+  "ratingReview": {
+    "message": "★ 前往评价"
+  },
+  "ratingStar": {
+    "message": "★ GitHub Star"
+  },
+  "ratingDismiss": {
+    "message": "稍后再说"
+  },
+  "toastElementZapped": {
+    "message": "元素已在当前会话中隐藏。"
+  },
+  "toastElementRestored": {
+    "message": "元素已恢复。"
+  },
+  "toastAllElementsRestored": {
+    "message": "所有已隐藏元素已全部恢复。"
+  },
+  "toastScreenshotCapturing": {
+    "message": "正在捕获整页截图…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "整页截图已保存。"
+  },
+  "toastArchiveCreated": {
+    "message": "单文件 HTML 存档已保存。"
+  },
+  "brandSignature": {
+    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "图像与矢量 SVG"
+  },
+  "tabMedia": {
+    "message": "媒体与音频"
+  },
+  "tabFonts": {
+    "message": "字体文件"
+  },
+  "tabTextScraper": {
+    "message": "文本与表格抓取"
+  },
+  "heroScreenshotTitle": {
+    "message": "整页完整截图"
+  },
+  "heroScreenshotDesc": {
+    "message": "无缝多屏拼接 • 自动抑制吸顶浮窗"
+  },
+  "heroArchiveTitle": {
+    "message": "单文件离线 HTML"
+  },
+  "heroArchiveDesc": {
+    "message": "内联样式与 Base64 图像 • 离线即开可用"
+  },
+  "sidePanelDevToolsTitle": {
+    "message": "DevTools 深度分析"
+  },
+  "sidePanelDevToolsDesc": {
+    "message": "查看实时网络请求、API 接口、JavaScript 代码格式化、CSS 规则及 Source Maps，请打开 DevTools。"
+  },
+  "sidePanelDevToolsHint": {
+    "message": "按 F12 (macOS: ⌥⌘I) → Source Download"
+  },
+  "copyDataUri": {
+    "message": "复制 Data-URI"
+  },
+  "copyUrl": {
+    "message": "复制 URL"
+  },
+  "downloadSingle": {
+    "message": "下载"
+  },
+  "searchPlaceholder": {
+    "message": "按名称、URL、标签、类型或 /正则/ 过滤…"
+  },
+  "viewGrid": {
+    "message": "网格视图"
+  },
+  "viewList": {
+    "message": "列表视图"
+  },
+  "btnScreenshot": {
+    "message": "长截图"
+  },
+  "btnArchive": {
+    "message": "保存HTML"
+  },
+  "exportJson": {
+    "message": "可见列表 (JSON)"
+  },
+  "exportCsv": {
+    "message": "可见列表 (CSV)"
+  },
+  "exportHar": {
+    "message": "网络日志 (HAR)"
+  },
+  "exportScreenshot": {
+    "message": "全页长截图 (PNG)"
+  },
+  "exportArchive": {
+    "message": "离线网页归档 (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "所有方法"
+  },
+  "filterTypeAll": {
+    "message": "所有类型"
+  },
+  "filterSortDir": {
+    "message": "切换正序/倒序"
+  },
+  "emptyTitle": {
+    "message": "未找到任何资源"
+  },
+  "emptySubtitle": {
+    "message": "请在面板打开的状态下刷新页面以捕获网络请求，或点击刷新以扫描当前 DOM。"
+  },
+  "statusResources": {
+    "message": "个资源"
+  },
+  "statusFiltered": {
+    "message": "已过滤"
+  },
+  "statusSelected": {
+    "message": "已选择"
+  },
+  "statusDupes": {
+    "message": "重复已隐藏"
+  },
+  "statusSize": {
+    "message": "大小"
+  },
+  "langAuto": {
+    "message": "自动（浏览器默认）"
+  },
+  "langSelectorTitle": {
+    "message": "语言选择"
+  },
+  "textPillAll": {
+    "message": "全部内容"
+  },
+  "textPillText": {
+    "message": "📄 文本与文章"
+  },
+  "textPillTables": {
+    "message": "📊 仅表格"
+  },
+  "textSelectAll": {
+    "message": "全选"
+  },
+  "textDeselectAll": {
+    "message": "取消全选"
+  },
+  "textClearSelection": {
+    "message": "清空"
+  },
+  "toastRefreshComplete": {
+    "message": "页面扫描完成：新增 $COUNT$ 个资源",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "已复制 $COUNT$ 个区块",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "已复制到剪贴板"
+  },
+  "toastTableCopied": {
+    "message": "表格已复制到剪贴板"
+  },
+  "toastNothingToExport": {
+    "message": "没有可导出的内容"
+  },
+  "toastExportedTxt": {
+    "message": "已导出 $COUNT$ 个区块为 TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "已导出 $COUNT$ 个区块为 Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "未捕获到表格行"
+  },
+  "toastExportedCsv": {
+    "message": "表格已导出为 CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "表格已导出为 XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "已导出 $COUNT$ 个表格为 $FORMAT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "已导出 $COUNT$ 个工作表为 XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "没有可下载的资源。"
+  },
+  "toastNoVisibleResources": {
+    "message": "没有可见的资源可供下载。"
+  },
+  "toastSelectAtLeastOne": {
+    "message": "请先选择至少一个资源。"
+  },
+  "toastZipSaved": {
+    "message": "ZIP 已保存：共 $TOTAL$ 个资源中的 $FETCHED$ 个",
+    "placeholders": {
+      "total": {
+        "content": "$1",
+        "example": "10"
+      },
+      "fetched": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP 生成失败：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR 已导出（$COUNT$ 条记录）",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL 已复制到剪贴板"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools 检查窗口不可用。"
+  },
+  "toastScreenshotError": {
+    "message": "截图错误：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "正在创建离线页面存档…"
+  },
+  "toastArchiveError": {
+    "message": "存档错误：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "格式化超时 — 显示原始文件。"
+  },
+  "toastFormatFailed": {
+    "message": "无法格式化文件 — 显示原始文件。"
+  },
+  "emptySearchTitle": {
+    "message": "未找到匹配 \"$QUERY$\" 的结果",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "请尝试其他搜索词，或切换到其他分类。"
+  },
+  "emptyFiltersTitle": {
+    "message": "没有资源符合当前筛选条件"
+  },
+  "emptyFiltersSub": {
+    "message": "请放宽上方的尺寸限制或点击清除。"
+  },
+  "textEmptyQueryReject": {
+    "message": "页面拒绝了该查询。请在上方修改。"
+  },
+  "textEmptyNoMatch": {
+    "message": "页面上没有元素匹配此查询。"
+  },
+  "textEmptyInitial": {
+    "message": "尚未捕获任何内容。实时捕获运行中。"
+  },
+  "textEmptyFiltered": {
+    "message": "没有内容匹配当前查询和元素筛选。"
+  },
+  "textSummaryBlocks": {
+    "message": "$COUNT$ 个区块",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$COUNT$ 个词",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$COUNT$ 个字符",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$TABLES$ 个表格 · $ROWS$ 行唯一数据",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "已选择 $COUNT$ 项 — 仅导出这些项",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "表格 — 屏幕上 $COUNT$ 行",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "表格 — 全部 $COUNT$ 行",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$COUNT$ 次快照",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "更新于 $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "显示全部 $COUNT$ 行",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "正在显示全部行"
+  },
+  "textTableHistory": {
+    "message": "历史快照 ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "隐藏历史"
+  },
+  "textTableNoRows": {
+    "message": "尚未捕获到行数据。"
+  },
+  "textBtnCopy": {
+    "message": "复制文本"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 复制"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$COUNT$ 个重复图片",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "导出"
+  },
+  "inspectorLoadingSvg": {
+    "message": "正在加载 SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "无法获取 SVG 内容。"
+  },
+  "inspectorLoadingFont": {
+    "message": "正在加载字体预览…"
+  },
+  "inspectorFontSample": {
+    "message": "字体预览"
+  },
+  "inspectorBeautify": {
+    "message": "美化代码"
+  },
+  "inspectorOriginal": {
+    "message": "原始内容"
+  },
+  "inspectorHeaders": {
+    "message": "请求头"
+  },
+  "inspectorResponse": {
+    "message": "响应"
+  },
+  "inspectorRequest": {
+    "message": "请求"
+  },
+  "inspectorQueryParams": {
+    "message": "查询参数"
+  },
+  "inspectorRequestBody": {
+    "message": "请求正文"
+  },
+  "textHintHtml": {
+    "message": "页面的实时可读副本。包含文本的每个元素均按DOM顺序捕获。通过纯文本、正则表达式、<strong>CSS选择器</strong>或<strong>XPath</strong>表达式进行查询，然后导出匹配内容。详见<a href=\"#\" id=\"text-hint-guide\">指南</a>。"
+  },
+  "textHeadings": {
+    "message": "标题"
+  },
+  "textAllLevels": {
+    "message": "所有级别"
+  },
+  "textMatches": {
+    "message": "个匹配"
+  },
+  "textMatch": {
+    "message": "个匹配"
+  },
+  "textReadingOn": {
+    "message": "阅读模式开启"
+  },
+  "toastDownloadStarted": {
+    "message": "开始下载: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "无法获取此资源（CORS 或不受支持的类型）。"
+  },
+  "ratingBannerText": {
+    "message": "喜欢 Source Download 吗？欢迎在 Chrome 网上应用店撰写评价或在 GitHub 上点赞支持我们的开源愿景！"
+  },
+  "ratingBannerReview": {
+    "message": "★ 评价"
+  },
+  "ratingBannerStar": {
+    "message": "★ Star"
+  },
+  "textTableUniqueRows": {
+    "message": "$COUNT$ 个唯一行",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$COUNT$秒前",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$COUNT$分钟前",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "区域截图"
+  },
+  "btnAreaDownload": {
+    "message": "下载"
+  },
+  "btnAreaCopy": {
+    "message": "复制到剪贴板"
+  },
+  "btnAreaCancel": {
+    "message": "取消"
+  },
+  "toastAreaCopied": {
+    "message": "区域截图已复制到剪贴板"
+  },
+  "toastAreaDownloaded": {
+    "message": "区域截图已保存"
+  },
+  "statusFoundCssResources": {
+    "message": "从 CSS 中发现 $COUNT$ 个引用的资源",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM 扫描失败: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "正在索引文件内容…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "正在检查重复图片…"
+  },
+  "statusWorking": {
+    "message": "正在处理…"
+  },
+  "filterMethodTitle": {
+    "message": "按 HTTP 方法过滤"
+  },
+  "filterTypeTitle": {
+    "message": "按请求类型过滤"
+  },
+  "filterSortTitle": {
+    "message": "排序资源"
+  },
+  "textModeTitle": {
+    "message": "查询框解析模式"
+  },
+  "textKindTitle": {
+    "message": "限制为特定元素类型"
+  },
+  "textHeadingLevelTitle": {
+    "message": "标题级别"
+  },
+  "textPlaceholderRegex": {
+    "message": "^价格:\\s*\\d+  — JavaScript 正则表达式"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — CSS 选择器"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "搜索指南…"
+  },
+  "popupIntro": {
+    "message": "<strong>工具栏徽章</strong>统计的资源分类。关闭任一分类即可停止统计。"
+  },
+  "popupHelpTitle": {
+    "message": "如何使用完整面板"
+  },
+  "popupStep1": {
+    "message": "在需要检查的页面上打开开发者工具 <div class=\"hint\"><kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "点击 DevTools 工具栏中的 <strong>Source Download</strong> 选项卡"
+  },
+  "popupStep3": {
+    "message": "浏览、检查并下载资源 — 可单独下载或打包为 ZIP 统一导出。"
+  },
+  "popupNote": {
+    "message": "注意：Chrome 安全机制不允许扩展程序通过代码直接打开 DevTools，因此完整功能需通过 DevTools 面板使用。"
+  },
+  "popupTrackAll": {
+    "message": "跟踪所有分类"
+  },
+  "popupLanguage": {
+    "message": "语言"
+  },
+  "inspectorBinaryResponse": {
+    "message": "二进制响应 — 下载后查看"
+  },
+  "inspectorLoadingResponse": {
+    "message": "正在加载响应…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "无响应预览 — 无法检索内容。"
+  },
+  "inspectorLoadingContent": {
+    "message": "正在加载内容…"
+  },
+  "inspectorNoPreview": {
+    "message": "无可用预览 — 无法检索内容。"
+  },
+  "inspectorCloseAllTabs": {
+    "message": "全部关闭"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "关闭所有打开的标签页"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "点击放大"
+  },
+  "inspectorViewSource": {
+    "message": "查看源码"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "显示带语法高亮的 SVG 标记"
+  },
+  "inspectorFormatting": {
+    "message": "正在格式化…"
+  },
+  "findInContentPlaceholder": {
+    "message": "在内容中查找…"
+  },
+  "findPreviousMatch": {
+    "message": "上一个匹配项"
+  },
+  "findNextMatch": {
+    "message": "下一个匹配项"
+  },
+  "findClose": {
+    "message": "关闭"
+  },
+  "findShowRaw": {
+    "message": "显示原始内容（未格式化）"
+  },
+  "findBeautify": {
+    "message": "格式化 / 美化此内容"
+  },
+  "btnRaw": {
+    "message": "原始"
+  },
+  "btnBeautify": {
+    "message": "美化"
+  },
+  "videoHlsDetected": {
+    "message": "检测到 HLS (m3u8) 流"
+  },
+  "videoCannotPlay": {
+    "message": "无法在浏览器中播放此视频"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome 无法直接播放 HLS 流。您可以将 <b>$NAME$</b> 的所有分段合并为一个 MP4/TS 视频文件。",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "浏览器不支持此格式"
+  },
+  "btnMergeHls": {
+    "message": "合并分段并下载"
+  },
+  "toastHlsMerged": {
+    "message": "已将 $COUNT$ 个分段合并为 $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "大小未知"
+  },
+  "progressFetching": {
+    "message": "正在获取 $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "正在创建 ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP 已保存：$FETCHED$ / $TOTAL$ 个资源（$SKIPPED$ 个失败）",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "重试 $COUNT$ 项",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "重试下载"
+  },
+  "searchRegexHint": {
+    "message": "正则表达式搜索已激活 — 请将查询包裹在 /pattern/i 中"
+  },
+  "textIncludeInExports": {
+    "message": "包含在导出中"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "将每个快照合并为一个去重的表格 — 这就是导出的内容"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "浏览此表格的早期快照"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "将此表格下载为 CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "快照 $INDEX$ — $TIME$（$COUNT$ 行）",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "切换批量下载的选择"
+  },
+  "cardDownloadTitle": {
+    "message": "下载文件"
+  },
+  "cardRetryFailedTitle": {
+    "message": "上次下载失败 — 点击重试"
+  },
+  "btnThemeLight": {
+    "message": "切换至浅色主题"
+  },
+  "btnThemeDark": {
+    "message": "切换至深色主题"
+  },
+  "guideTitle": {
+    "message": "Source Download — 用户指南"
+  },
+  "guideEmpty": {
+    "message": "没有匹配您搜索的指南部分。"
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% 无外部依赖。",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "缩小 (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "放大 (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "重置缩放 (0)"
+  },
+  "lightboxClose": {
+    "message": "关闭 (Esc)"
+  },
+  "resizerTitle": {
+    "message": "拖动以调整大小"
+  },
+  "ratingDismissTitle": {
+    "message": "关闭"
+  },
+  "inspectorResourceTitle": {
+    "message": "资源"
+  },
+  "guideSecGettingStarted": {
+    "message": "快速入门"
+  },
+  "guideSecCategories": {
+    "message": "分类"
+  },
+  "guideSecSearchFilters": {
+    "message": "搜索与过滤"
+  },
+  "guideSecGridView": {
+    "message": "网格与列表视图"
+  },
+  "guideSecInspect": {
+    "message": "检查资源"
+  },
+  "guideSecDownloading": {
+    "message": "下载"
+  },
+  "guideSecLightbox": {
+    "message": "灯箱预览"
+  },
+  "guideSecTextTables": {
+    "message": "文本与表格"
+  },
+  "guideSecCaptions": {
+    "message": "字幕"
+  },
+  "guideSecSourceMaps": {
+    "message": "源映射 (Source Map)"
+  },
+  "guideSecDupes": {
+    "message": "重复图片"
+  },
+  "guideSecVideoHls": {
+    "message": "视频回退与 HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "高级提示"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "在开发者工具 (DevTools) 工具栏中点击 <strong>Source Download</strong> 选项卡（按 <kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>）。扩展图标弹出窗口可配置角标统计分类。太阳/月亮按钮可独立锁定浅色或深色主题。"
+  },
+  "guideSecCategoriesContent": {
+    "message": "左侧垂直标签按类型归类抓取的资源：图片、视频、音频、字幕、文档、字体、源映射、WASM、SVG、API 等，每个标签实时统计数量。"
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "搜索栏支持按名称、URL、类型或标题过滤。使用 <kbd>/…/</kbd> 包裹以启用正则表达式，例如 <code>/\\.(png|jpg)$/</code>。"
+  },
+  "guideSecGridViewContent": {
+    "message": "在紧凑网格与详细列表视图之间自由切换，列表视图支持多选框进行批量精准下载。"
+  },
+  "guideSecInspectContent": {
+    "message": "点击任意资源可在右侧检查面板以多标签页形式打开对比。配备图片、音视频、字体、代码及 API 专用预览器。"
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>下载视图</strong>将当前可见资源打包为 ZIP；<strong>下载选中</strong>仅下载勾选项目；<strong>全部下载</strong>将全部资源按分类目录打包。"
+  },
+  "guideSecLightboxContent": {
+    "message": "放大镜可在全屏灯箱中查看媒体，支持滚轮缩放、拖拽平移与键盘快捷键 (<kbd>+</kbd>/<kbd>-</kbd> 缩放，<kbd>0</kbd> 重置，<kbd>Esc</kbd> 关闭)。"
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>文本</strong>分类实时捕获网页可读内容。支持包含、正则、CSS 选择器与 XPath 查询。</p><p>表格功能自动保存动态快照历史，支持一键合并并导出为 TXT、Markdown、CSV、HTML 或真正的多工作表 <strong>XLSX</strong> Excel 文件。</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT、SRT、TTML 等字幕文件集中展示在专属字幕标签中。"
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> 源映射文件自动归类，内置 JSON 树形预览与美化工具。"
+  },
+  "guideSecDupesContent": {
+    "message": "图片面板自动计算字节哈希识别相同内容，隐藏重复项可避免打包冗余图片。"
+  },
+  "guideSecVideoHlsContent": {
+    "message": "针对 HLS (.m3u8) 等流媒体提供片段合并下载功能，轻松转换为单个完整视频。"
+  },
+  "guideSecPowerTipsContent": {
+    "message": "动态 API 请求保留完整历史记录，便于对比多次请求与响应报文。"
+  },
+  "toolArrow": {
+    "message": "绘制箭头"
+  },
+  "toolRect": {
+    "message": "绘制矩形"
+  },
+  "toolText": {
+    "message": "添加文字"
+  },
+  "toolUndo": {
+    "message": "撤销 (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "重做 (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "颜色"
+  },
+  "badgeStrokeSize": {
+    "message": "粗细: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "字号: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "录制区域视频/GIF"
+  },
+  "btnRecStart": {
+    "message": "开始录制"
+  },
+  "btnRecPause": {
+    "message": "暂停"
+  },
+  "btnRecResume": {
+    "message": "继续"
+  },
+  "btnRecStop": {
+    "message": "完成并下载"
+  },
+  "btnRecCancel": {
+    "message": "取消"
+  },
+  "toastRecSaved": {
+    "message": "区域录制已保存"
+  },
+  "toastRecCancelled": {
+    "message": "视频录制已取消"
+  },
+  "toastRecPermissionDenied": {
+    "message": "未授予屏幕录制权限"
+  },
+  "btnPopupRecordArea": {
+    "message": "区域视频/GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "区域截图"
+  },
+  "contextMenuPickColor": {
+    "message": "从屏幕取色"
+  },
+  "btnPopupPickColor": {
+    "message": "屏幕取色"
+  },
+  "colorPickerTitle": {
+    "message": "颜色选取器"
+  },
+  "btnColorPickAgain": {
+    "message": "再次取色"
+  },
+  "toastColorCopied": {
+    "message": "颜色已复制到剪贴板"
+  },
+  "toastProgressCapturing": {
+    "message": "正在捕获整页... $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "正在拼接图片..."
+  },
+  "modalExportTitle": {
+    "message": "整页截图已就绪"
+  },
+  "btnExportPng": {
+    "message": "下载 PNG"
+  },
+  "btnExportJpg": {
+    "message": "下载 JPG"
+  },
+  "btnExportPdf": {
+    "message": "另存为 PDF"
+  },
+  "btnExportCopy": {
+    "message": "复制到剪贴板"
+  },
+  "btnExportGenerating": {
+    "message": "生成中..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF 文档已保存。"
+  },
+  "settingNamingPatterns": {
+    "message": "文件命名模式"
+  },
+  "settingVideoFormat": {
+    "message": "默认视频格式"
+  },
+  "settingNamingPreview": {
+    "message": "预览:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "正在生成 GIF，请稍候..."
+  },
+  "settingGifResolution": {
+    "message": "默认GIF分辨率"
+  },
+  "optGifOriginal": {
+    "message": "原始 (1:1 原始分辨率 — 完整 3K/4K 无缩放)"
+  },
+  "optGif1080p": {
+    "message": "1080p 全高清 (最大 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p 高清 (最大 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p 标清 (最大 854px — 更快且文件更小)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF 格式支持的最长录制时间为 1 分钟（60 秒）。"
+  },
+  "guideSecScreenRecording": {
+    "message": "屏幕录制（视频与 GIF）"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "将屏幕上的任意区域录制为 MP4、WebM 或动画 GIF。GIF 录制支持 1:1 原始分辨率、1080p、720p 和 480p 配置，并提供实时预估大小。为了获得最佳浏览器性能，GIF 最大录制时长为 1 分钟（60 秒）。"
+  },
+  "msgGifMaxDurationReached": {
+    "message": "已达到 GIF 最大时长 1 分钟（60 秒）。正在生成 GIF..."
+  },
+  "labelGifMaxDuration": {
+    "message": "最多 1 分钟 (60秒)"
+  },
+  "settingGifFps": {
+    "message": "默认 GIF 帧率 (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — 流畅（高流畅度，文件较大）"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — 标准（网页推荐，兼顾体积与流畅）"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — 紧凑 / 表情包（低帧率，小体积）"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — 定格动画 / 慢速（逐帧卡顿风，极小体积）"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — 演示幻灯片（每秒 1 帧，最小体积）"
+  },
+  "popupRightClickHint": {
+    "message": "在网页任意位置右键点击，即可使用区域屏幕录制（视频/GIF）与屏幕取色。",
+    "description": "Hint informing user to use right-click context menu for recording and color picker"
+  }
+}

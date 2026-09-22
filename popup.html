@@ -10,12 +10,22 @@
     <header class="popup__header">
       <img class="popup__logo" src="icons/icon32.png" alt="">
       <h1>Source Download</h1>
+      <select id="popup-lang" class="popup__lang-select" title="Language" data-i18n-title="popupLanguage">
+        <option value="auto">Auto</option>
+        <option value="en">English (EN)</option>
+        <option value="tr">Türkçe (TR)</option>
+        <option value="de">Deutsch (DE)</option>
+        <option value="es">Español (ES)</option>
+        <option value="zh_CN">简体中文 (ZH)</option>
+        <option value="ja">日本語 (JA)</option>
+        <option value="ru">Русский (RU)</option>
+      </select>
       <span id="badge-preview" class="popup__badge" hidden></span>
     </header>
 
     <div class="popup__body">
       <section class="popup__col popup__col--tracking">
-        <p class="popup__intro">
+        <p class="popup__intro" data-i18n-html="popupIntro">
           Categories counted by the <strong>toolbar badge</strong>.
           Toggle one off to stop counting it — the badge instantly reflects only what you track.
         </p>
@@ -23,12 +33,22 @@
       </section>
 
       <section class="popup__col">
+        <div class="popup__actions">
+          <button type="button" id="popup-btn-area-screenshot" class="popup__action-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span data-i18n="btnPopupCaptureArea">Area Screenshot</span>
+          </button>
+        </div>
+        <div class="popup__info-bar">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span data-i18n="popupRightClickHint">Right-click anywhere on the webpage for Screen Recording (Video/GIF) and Color Picker.</span>
+        </div>
         <div class="popup__help">
-          <h2 class="popup__help-title">How to use the full panel</h2>
+          <h2 class="popup__help-title" data-i18n="popupHelpTitle">How to use the full panel</h2>
           <ol class="popup__steps">
             <li>
               <span class="step-num">1</span>
-              <div>
+              <div data-i18n-html="popupStep1">
                 Open DevTools for the page you want to inspect
                 <div class="hint">
                   <kbd>F12</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS:
@@ -38,27 +58,33 @@
             </li>
             <li>
               <span class="step-num">2</span>
-              Click the <strong>Source Download</strong> tab in the DevTools toolbar
+              <div data-i18n-html="popupStep2">
+                Click the <strong>Source Download</strong> tab in the DevTools toolbar
+              </div>
             </li>
             <li>
               <span class="step-num">3</span>
-              Browse, inspect and download resources — individually or all at once as a ZIP.
+              <div data-i18n="popupStep3">
+                Browse, inspect and download resources — individually or all at once as a ZIP.
+              </div>
             </li>
           </ol>
-          <p class="popup__note">
+          <p class="popup__note" data-i18n="popupNote">
             Note: Chrome does not allow extensions to programmatically open DevTools, which is why the
-            full panel is reached through the DevTools toolbar.
+            full engineering suite is reached through the DevTools toolbar.
           </p>
         </div>
       </section>
     </div>
 
     <footer class="popup__footer">
-      <span>v1.11.0</span>
+      <span>v1.14.0</span>
+      <a href="https://2run.dev" target="_blank" rel="noopener" style="color: #4f8cff; text-decoration: none; font-weight: 500;">2run.dev</a>
       <span>Manifest V3</span>
     </footer>
   </div>
 
+  <script src="lib/i18n.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

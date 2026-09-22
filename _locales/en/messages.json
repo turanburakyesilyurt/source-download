@@ -1,0 +1,1394 @@
+{
+  "appName": {
+    "message": "Source Download",
+    "description": "The name of the extension"
+  },
+  "appDesc": {
+    "message": "Inspect, browse and download any web asset seamlessly as a ZIP. Full page screenshots, live table capture & developer workbench.",
+    "description": "The description of the extension"
+  },
+  "actionTitle": {
+    "message": "Source Download — Open panel & track resources",
+    "description": "Tooltip for toolbar action icon"
+  },
+  "contextMenuZap": {
+    "message": "Zap / Hide this element",
+    "description": "Context menu item to hide selected element"
+  },
+  "contextMenuUndoZap": {
+    "message": "Restore last hidden element",
+    "description": "Context menu item to undo element hide"
+  },
+  "contextMenuResetZap": {
+    "message": "Reset all hidden elements",
+    "description": "Context menu item to restore all hidden elements"
+  },
+  "contextMenuCapturePage": {
+    "message": "Capture full page screenshot",
+    "description": "Context menu item to capture full page"
+  },
+  "contextMenuPageArchive": {
+    "message": "Download offline page archive",
+    "description": "Context menu item to save complete page archive"
+  },
+  "catAll": {
+    "message": "All"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Images"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Videos"
+  },
+  "catAudio": {
+    "message": "Audio"
+  },
+  "catCaptions": {
+    "message": "Captions"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Source maps"
+  },
+  "catFonts": {
+    "message": "Fonts"
+  },
+  "catDocuments": {
+    "message": "Documents"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifests"
+  },
+  "catText": {
+    "message": "Text"
+  },
+  "catOther": {
+    "message": "Other"
+  },
+  "catScreenshot": {
+    "message": "Screenshot"
+  },
+  "catArchive": {
+    "message": "Page Archive"
+  },
+  "btnRefresh": {
+    "message": "Refresh"
+  },
+  "btnExport": {
+    "message": "Export"
+  },
+  "btnDownloadSelected": {
+    "message": "Download Selected"
+  },
+  "btnDownloadView": {
+    "message": "Download View"
+  },
+  "btnDownloadAll": {
+    "message": "Download All"
+  },
+  "btnDownloadFiltered": {
+    "message": "Download Filtered"
+  },
+  "btnTheme": {
+    "message": "Switch theme"
+  },
+  "btnGuide": {
+    "message": "User Guide"
+  },
+  "btnOpenSidePanel": {
+    "message": "Open Side Panel"
+  },
+  "btnCaptureFullPage": {
+    "message": "Full Page Screenshot"
+  },
+  "btnOfflineArchive": {
+    "message": "Save Single HTML"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Max KB"
+  },
+  "filterMinWidth": {
+    "message": "Min width px"
+  },
+  "filterMinHeight": {
+    "message": "Min height px"
+  },
+  "filterSortName": {
+    "message": "Sort by name"
+  },
+  "filterSortSize": {
+    "message": "Sort by size"
+  },
+  "filterSortType": {
+    "message": "Sort by type"
+  },
+  "filterSortTime": {
+    "message": "Sort by time"
+  },
+  "filterHideDupes": {
+    "message": "Hide duplicates"
+  },
+  "filterClear": {
+    "message": "Clear"
+  },
+  "textModeContains": {
+    "message": "Contains"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS selector"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filter page text or query live DOM…"
+  },
+  "textAllElements": {
+    "message": "All elements"
+  },
+  "textLiveOn": {
+    "message": "Live on"
+  },
+  "textLiveOff": {
+    "message": "Live off"
+  },
+  "textScanNow": {
+    "message": "Scan now"
+  },
+  "textReading": {
+    "message": "Reading"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Select a resource to inspect its details"
+  },
+  "inspectorDetails": {
+    "message": "Details"
+  },
+  "inspectorOpenTab": {
+    "message": "Open in new tab"
+  },
+  "inspectorCopyUrl": {
+    "message": "Copy URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Download this file"
+  },
+  "inspectorClose": {
+    "message": "Close"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Type"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Size"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Source"
+  },
+  "metaTitle": {
+    "message": "Title"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Enjoying Source Download? Support our open-source vision with a review on Chrome Web Store or a star on GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Leave a Review"
+  },
+  "ratingStar": {
+    "message": "★ Star on GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Dismiss"
+  },
+  "toastElementZapped": {
+    "message": "Element hidden for this session."
+  },
+  "toastElementRestored": {
+    "message": "Element restored."
+  },
+  "toastAllElementsRestored": {
+    "message": "All hidden elements restored."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Capturing full page screenshot…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Full page screenshot saved."
+  },
+  "toastArchiveCreated": {
+    "message": "Single-file HTML archive saved."
+  },
+  "brandSignature": {
+    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Images & SVG"
+  },
+  "tabMedia": {
+    "message": "Media & Audio"
+  },
+  "tabFonts": {
+    "message": "Fonts"
+  },
+  "tabTextScraper": {
+    "message": "Text & Tables"
+  },
+  "heroScreenshotTitle": {
+    "message": "Full Page Screenshot"
+  },
+  "heroScreenshotDesc": {
+    "message": "Seamless multi-viewport stitch with sticky-header suppression"
+  },
+  "heroArchiveTitle": {
+    "message": "Single-File HTML Archive"
+  },
+  "heroArchiveDesc": {
+    "message": "Inlines CSS & Base64 images, offline-safe snapshot"
+  },
+  "sidePanelDevToolsTitle": {
+    "message": "Chrome DevTools Inspection"
+  },
+  "sidePanelDevToolsDesc": {
+    "message": "Live network traffic, API endpoints, JavaScript bundles, CSS rules, and source maps are available in Chrome DevTools."
+  },
+  "sidePanelDevToolsHint": {
+    "message": "Press F12 (macOS: ⌥⌘I) → Source Download"
+  },
+  "copyDataUri": {
+    "message": "Copy Data-URI"
+  },
+  "copyUrl": {
+    "message": "Copy URL"
+  },
+  "downloadSingle": {
+    "message": "Download"
+  },
+  "searchPlaceholder": {
+    "message": "Filter by name, URL, tag, MIME or /regex/…"
+  },
+  "viewGrid": {
+    "message": "Grid view"
+  },
+  "viewList": {
+    "message": "List view"
+  },
+  "btnScreenshot": {
+    "message": "Screenshot"
+  },
+  "btnArchive": {
+    "message": "Save HTML"
+  },
+  "exportJson": {
+    "message": "Visible list as JSON"
+  },
+  "exportCsv": {
+    "message": "Visible list as CSV"
+  },
+  "exportHar": {
+    "message": "Network log as HAR"
+  },
+  "exportScreenshot": {
+    "message": "Full page screenshot (PNG)"
+  },
+  "exportArchive": {
+    "message": "Offline page archive (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "All methods"
+  },
+  "filterTypeAll": {
+    "message": "All types"
+  },
+  "filterSortDir": {
+    "message": "Toggle ascending / descending"
+  },
+  "emptyTitle": {
+    "message": "No resources found"
+  },
+  "emptySubtitle": {
+    "message": "Reload the page while this panel is open to capture network requests, or click Refresh to scan the current DOM."
+  },
+  "statusResources": {
+    "message": "resources"
+  },
+  "statusFiltered": {
+    "message": "filtered"
+  },
+  "statusSelected": {
+    "message": "selected"
+  },
+  "statusDupes": {
+    "message": "duplicates hidden"
+  },
+  "statusSize": {
+    "message": "size"
+  },
+  "langAuto": {
+    "message": "Auto (Browser)"
+  },
+  "langSelectorTitle": {
+    "message": "Select Language"
+  },
+  "textPillAll": {
+    "message": "All Content"
+  },
+  "textPillText": {
+    "message": "📄 Text & Articles"
+  },
+  "textPillTables": {
+    "message": "📊 Tables Only"
+  },
+  "textSelectAll": {
+    "message": "Select All"
+  },
+  "textDeselectAll": {
+    "message": "Deselect All"
+  },
+  "textClearSelection": {
+    "message": "Clear"
+  },
+  "toastRefreshComplete": {
+    "message": "Page scan complete: $COUNT$ new resources",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Copied $COUNT$ block(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Copied to clipboard"
+  },
+  "toastTableCopied": {
+    "message": "Table copied to clipboard"
+  },
+  "toastNothingToExport": {
+    "message": "Nothing to export"
+  },
+  "toastExportedTxt": {
+    "message": "Exported $COUNT$ block(s) as TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Exported $COUNT$ block(s) as Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "No table rows captured"
+  },
+  "toastExportedCsv": {
+    "message": "Exported table as CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Exported table as XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Exported $COUNT$ table(s) as $FORMAT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Exported $COUNT$ sheet(s) as XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "No resources to download."
+  },
+  "toastNoVisibleResources": {
+    "message": "No visible resources to download."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Select at least one resource first."
+  },
+  "toastZipSaved": {
+    "message": "ZIP saved: $FETCHED$ of $TOTAL$ resources",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP failed: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR exported ($COUNT$ entries)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL copied to clipboard"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools inspected window not available."
+  },
+  "toastScreenshotError": {
+    "message": "Screenshot error: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Creating offline page archive…"
+  },
+  "toastArchiveError": {
+    "message": "Archive error: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Formatting timed out — showing original file."
+  },
+  "toastFormatFailed": {
+    "message": "Could not format file — showing original."
+  },
+  "emptySearchTitle": {
+    "message": "No matches for \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Try a different search term, or switch to another category."
+  },
+  "emptyFiltersTitle": {
+    "message": "No resources match the current filters"
+  },
+  "emptyFiltersSub": {
+    "message": "Loosen the size or dimension filters above, or press Clear."
+  },
+  "textEmptyQueryReject": {
+    "message": "The page rejected that query. Fix it above and the results will come straight back."
+  },
+  "textEmptyNoMatch": {
+    "message": "No element on the page matches this query. Try a looser selector, or switch the mode next to the box."
+  },
+  "textEmptyInitial": {
+    "message": "Nothing captured yet. Live capture is running — the whole page will appear here as readable text."
+  },
+  "textEmptyFiltered": {
+    "message": "Nothing matches the current query and element filter."
+  },
+  "textSummaryBlocks": {
+    "message": "$COUNT$ blocks",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$COUNT$ words",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$COUNT$ characters",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$TABLES$ table(s) · $ROWS$ unique rows",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$COUNT$ selected — exports use these only",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Table — $COUNT$ row(s) on screen",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Table — all $COUNT$ unique row(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$COUNT$ snapshot(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "updated $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Show all $COUNT$ rows",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Showing all rows"
+  },
+  "textTableHistory": {
+    "message": "History ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Hide history"
+  },
+  "textTableNoRows": {
+    "message": "No rows captured yet."
+  },
+  "textBtnCopy": {
+    "message": "Copy text"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Copy"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$COUNT$ duplicate image(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Export"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Loading SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG content could not be retrieved."
+  },
+  "inspectorLoadingFont": {
+    "message": "Loading font preview…"
+  },
+  "inspectorFontSample": {
+    "message": "Font Preview"
+  },
+  "inspectorBeautify": {
+    "message": "Beautify"
+  },
+  "inspectorOriginal": {
+    "message": "Original"
+  },
+  "inspectorHeaders": {
+    "message": "Headers"
+  },
+  "inspectorResponse": {
+    "message": "Response"
+  },
+  "inspectorRequest": {
+    "message": "Request"
+  },
+  "inspectorQueryParams": {
+    "message": "Query parameters"
+  },
+  "inspectorRequestBody": {
+    "message": "Request body"
+  },
+  "textHintHtml": {
+    "message": "A live, readable copy of the page. Every element holding text is captured in DOM order and kept here as the page changes. Query it with plain text, a regular expression, a <strong>CSS selector</strong> or an <strong>XPath</strong> expression, then export what matched. See the <a href=\"#\" id=\"text-hint-guide\">guide</a> for details."
+  },
+  "textHeadings": {
+    "message": "Headings"
+  },
+  "textAllLevels": {
+    "message": "All levels"
+  },
+  "textMatches": {
+    "message": "matches"
+  },
+  "textMatch": {
+    "message": "match"
+  },
+  "textReadingOn": {
+    "message": "Reading on"
+  },
+  "toastDownloadStarted": {
+    "message": "Download started: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Could not fetch this resource (CORS or unsupported type)."
+  },
+  "ratingBannerText": {
+    "message": "Enjoying Source Download? Support our open-source vision with a review on Chrome Web Store or a star on GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Review"
+  },
+  "ratingBannerStar": {
+    "message": "★ Star"
+  },
+  "textTableUniqueRows": {
+    "message": "$COUNT$ unique row(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$COUNT$s ago",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$COUNT$m ago",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Capture area screenshot"
+  },
+  "btnAreaDownload": {
+    "message": "Download"
+  },
+  "btnAreaCopy": {
+    "message": "Copy to clipboard"
+  },
+  "btnAreaCancel": {
+    "message": "Cancel"
+  },
+  "toastAreaCopied": {
+    "message": "Area screenshot copied to clipboard"
+  },
+  "toastAreaDownloaded": {
+    "message": "Area screenshot saved"
+  },
+  "statusFoundCssResources": {
+    "message": "Found $COUNT$ resource(s) referenced from CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM scan failed: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Indexing file contents…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Checking image duplicates…"
+  },
+  "statusWorking": {
+    "message": "Working…"
+  },
+  "filterMethodTitle": {
+    "message": "Filter by HTTP method"
+  },
+  "filterTypeTitle": {
+    "message": "Filter by request type"
+  },
+  "filterSortTitle": {
+    "message": "Sort resources"
+  },
+  "textModeTitle": {
+    "message": "How the query box is interpreted"
+  },
+  "textKindTitle": {
+    "message": "Restrict to one element type"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Heading level"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+  — JavaScript regular expression"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — any CSS selector"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Search the guide…"
+  },
+  "popupIntro": {
+    "message": "Categories counted by the <strong>toolbar badge</strong>. Toggle one off to stop counting it — the badge instantly reflects only what you track."
+  },
+  "popupHelpTitle": {
+    "message": "How to use the full panel"
+  },
+  "popupStep1": {
+    "message": "Open DevTools for the page you want to inspect <div class=\"hint\"><kbd>F12</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Click the <strong>Source Download</strong> tab in the DevTools toolbar"
+  },
+  "popupStep3": {
+    "message": "Browse, inspect and download resources — individually or all at once as a ZIP."
+  },
+  "popupNote": {
+    "message": "Note: Chrome does not allow extensions to programmatically open DevTools, which is why the full engineering suite is reached through the DevTools toolbar."
+  },
+  "popupTrackAll": {
+    "message": "Track all categories"
+  },
+  "popupLanguage": {
+    "message": "Language"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Binary response — download to view it"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Loading response…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "No response preview — the content could not be retrieved."
+  },
+  "inspectorLoadingContent": {
+    "message": "Loading content…"
+  },
+  "inspectorNoPreview": {
+    "message": "No preview available — the content could not be retrieved."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Close all"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Close all open tabs"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Click to enlarge"
+  },
+  "inspectorViewSource": {
+    "message": "View source"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Show the SVG markup with syntax highlighting"
+  },
+  "inspectorFormatting": {
+    "message": "Formatting…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Find in content…"
+  },
+  "findPreviousMatch": {
+    "message": "Previous match"
+  },
+  "findNextMatch": {
+    "message": "Next match"
+  },
+  "findClose": {
+    "message": "Close"
+  },
+  "findShowRaw": {
+    "message": "Show original (unformatted) content"
+  },
+  "findBeautify": {
+    "message": "Format / beautify this content"
+  },
+  "btnRaw": {
+    "message": "Raw"
+  },
+  "btnBeautify": {
+    "message": "Beautify"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) stream detected"
+  },
+  "videoCannotPlay": {
+    "message": "This video cannot be played in the browser"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome cannot play HLS streams directly. You can merge all segments of <b>$NAME$</b> into a single MP4/TS video file.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "The browser does not support this format"
+  },
+  "btnMergeHls": {
+    "message": "Merge segments & download"
+  },
+  "toastHlsMerged": {
+    "message": "Merged $COUNT$ segment(s) into $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "size unknown"
+  },
+  "progressFetching": {
+    "message": "Fetching $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Creating ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP saved: $FETCHED$ of $TOTAL$ resources ($SKIPPED$ failed)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Retry $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Retry download"
+  },
+  "searchRegexHint": {
+    "message": "Regex search active — wrap your query in /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Include in exports"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Combine every snapshot into one deduplicated table — this is what gets exported"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Browse earlier snapshots of this table"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Download this table as CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Snapshot $INDEX$ — $TIME$ ($COUNT$ rows)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Toggle selection for batch download"
+  },
+  "cardDownloadTitle": {
+    "message": "Download file"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Previous download failed — click to retry"
+  },
+  "btnThemeLight": {
+    "message": "Switch to light theme"
+  },
+  "btnThemeDark": {
+    "message": "Switch to dark theme"
+  },
+  "guideTitle": {
+    "message": "Source Download — User Guide"
+  },
+  "guideEmpty": {
+    "message": "No guide sections match your search."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% dependency-free.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Zoom out (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Zoom in (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Reset zoom (0)"
+  },
+  "lightboxClose": {
+    "message": "Close (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Drag to resize"
+  },
+  "ratingDismissTitle": {
+    "message": "Dismiss"
+  },
+  "inspectorResourceTitle": {
+    "message": "Resource"
+  },
+  "guideSecGettingStarted": {
+    "message": "Getting started"
+  },
+  "guideSecCategories": {
+    "message": "Categories"
+  },
+  "guideSecSearchFilters": {
+    "message": "Search & filters"
+  },
+  "guideSecGridView": {
+    "message": "Grid & list view"
+  },
+  "guideSecInspect": {
+    "message": "Inspect a resource"
+  },
+  "guideSecDownloading": {
+    "message": "Downloading"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Text & tables"
+  },
+  "guideSecCaptions": {
+    "message": "Captions & subtitles"
+  },
+  "guideSecSourceMaps": {
+    "message": "Source maps"
+  },
+  "guideSecDupes": {
+    "message": "Duplicate images"
+  },
+  "guideSecVideoHls": {
+    "message": "Video fallback & HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Power tips"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Click the <strong>Source Download</strong> tab in the DevTools toolbar (press <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, then the tab in the DevTools toolbar). Chrome does not allow extensions to open DevTools automatically, which is why the panel lives there. The toolbar icon popup lets you choose which categories feed the badge counter on the icon. The sun/moon button in the panel toolbar locks a light or dark theme independently of Chrome; that choice is remembered."
+  },
+  "guideSecCategoriesContent": {
+    "message": "The vertical tabs on the left group every captured resource by type: Images, Videos, Audio, Captions, Documents, Fonts, Source maps, WASM, SVG, APIs, and more. Each tab shows a live count. Only one category is shown at a time; switching resets all filters, so what you see always matches the tab."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "The search bar filters by name, URL, type, alt text or title. Enclose your query in <kbd>/…/</kbd> to use a regular expression, e.g. <code>/\\.(png|jpg)$/</code>. Below the toolbar, the filter bar changes per category: size and dimension ranges for media, HTTP method and request type for APIs, plus sorting and direction."
+  },
+  "guideSecGridViewContent": {
+    "message": "Toggle between a compact grid (small thumbnails) and a detailed list with the buttons next to the search bar. Your choice is remembered between sessions. In list view, checkboxes let you select individual resources for a bulk download."
+  },
+  "guideSecInspectContent": {
+    "message": "Click any resource to open it in the inspect pane on the right. Each opened file becomes a tab, so you can compare several resources side by side — the newest opens on the left. Specialized viewers exist for images, video, audio, fonts, SVG, and text/code (with a Beautify toggle). APIs show a split view: response on the left, request details (method, status, headers, query parameters and body) on the right."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Download View</strong> saves the currently visible resources (active category + search + filters) as a ZIP; it relabels to <em>Download Filtered (N)</em> when filters are active. Hover any download button to see an estimated archive size before you click. <strong>Download Selected</strong> downloads only the checked items. <strong>Download All</strong> captures every discovered resource into a folder-structured ZIP. Failed downloads are retried automatically and can be retried again from the context menu. <strong>Export</strong> writes the visible list as JSON or CSV, or dumps Chrome's network log as a HAR file."
+  },
+  "guideSecLightboxContent": {
+    "message": "The zoom button opens media in a full-size lightbox where you can pan by dragging, zoom with the mouse wheel, the on-screen buttons or the keyboard (<kbd>+</kbd>/<kbd>-</kbd> to zoom, <kbd>0</kbd> to reset, <kbd>Esc</kbd> to close)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>The <strong>Text</strong> category is a live, readable copy of the page. It captures every element that holds text — headings, paragraphs, list items, buttons, <code>div</code>/<code>span</code> and more — in DOM order, and keeps scanning while <strong>Live</strong> is on.</p><p>The <strong>Query</strong> box works four ways, picked from the dropdown beside it: <strong>Contains</strong> and <strong>Regex</strong> filter the text already captured, while <strong>CSS selector</strong> and <strong>XPath</strong> are run against the live page so they can reach anything in the DOM. XPath also accepts expressions that return a value rather than elements, such as <code>count(//a)</code> or <code>//@href</code>. Whatever the page says about a broken query is shown next to the box. <strong>Element</strong> narrows the result to a single tag, with the count of each tag found on the page. Clearing the query box (or pressing <strong>Clear</strong>) returns you to <em>All elements</em> and recaptures the page — you never have to reset the dropdown by hand.</p><p><strong>Reading</strong> hides tags, checkboxes and location crumbs so the stream reads like a document. Tables store a bounded history of snapshots so dynamic (SPA) tables are never lost. Press <strong>Show all rows</strong> on a table to merge every snapshot into one deduplicated view — that is exactly what an export contains. Export as <strong>TXT</strong> (the readable page), <strong>MD</strong> (Markdown, tables included), or tables as CSV, HTML or a real multi-sheet <strong>XLSX</strong> workbook. Checked items win; otherwise everything currently visible is exported.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML and other caption files — including <code>&lt;track&gt;</code> sources — land in their own <strong>Captions</strong> tab instead of mixing with documents."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> files and JSON bodies that look like source maps (they contain <code>mappings</code> and <code>sources</code>) are grouped under <strong>Source maps</strong>, with the JSON viewer and Beautify, so they no longer clutter the JSON tab."
+  },
+  "guideSecDupesContent": {
+    "message": "On the Images tab the panel hashes captured bytes and marks identical files. A <strong>Hide duplicates</strong> filter keeps the first copy of each set so a ZIP of the view does not ship the same thumbnail twice."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Streams the browser cannot play natively (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, unknown codecs) show a fallback instead of a black player. For HLS you can merge the segments into a single video file right from the panel, or download the original manifest."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dynamic <strong>API</strong> responses (XHR/fetch) are not deduplicated by URL — each reply stays in the list (capped FIFO) so you can compare repeated requests. Static assets are deduplicated. Use <strong>Refresh</strong> to re-scan the current DOM, and reload the page while the panel is open to capture every network request, including ones triggered before you switched tabs."
+  },
+  "toolArrow": {
+    "message": "Arrow tool"
+  },
+  "toolRect": {
+    "message": "Rectangle tool"
+  },
+  "toolText": {
+    "message": "Text tool"
+  },
+  "toolUndo": {
+    "message": "Undo (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Redo (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Color"
+  },
+  "badgeStrokeSize": {
+    "message": "Size: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Font size: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Record Regional Video / GIF"
+  },
+  "btnRecStart": {
+    "message": "Start recording"
+  },
+  "btnRecPause": {
+    "message": "Pause"
+  },
+  "btnRecResume": {
+    "message": "Resume"
+  },
+  "btnRecStop": {
+    "message": "Finish & download"
+  },
+  "btnRecCancel": {
+    "message": "Cancel"
+  },
+  "toastRecSaved": {
+    "message": "Regional recording saved"
+  },
+  "toastRecCancelled": {
+    "message": "Video recording cancelled"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Screen recording permission was not granted"
+  },
+  "btnPopupRecordArea": {
+    "message": "Regional Video / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Area Screenshot"
+  },
+  "contextMenuPickColor": {
+    "message": "Pick color from screen"
+  },
+  "btnPopupPickColor": {
+    "message": "Pick Color"
+  },
+  "colorPickerTitle": {
+    "message": "Color Picker"
+  },
+  "btnColorPickAgain": {
+    "message": "Pick Another Color"
+  },
+  "toastColorCopied": {
+    "message": "Color copied to clipboard"
+  },
+  "toastProgressCapturing": {
+    "message": "Capturing full page... $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Stitching image..."
+  },
+  "modalExportTitle": {
+    "message": "Full Page Screenshot Ready"
+  },
+  "btnExportPng": {
+    "message": "Download PNG"
+  },
+  "btnExportJpg": {
+    "message": "Download JPG"
+  },
+  "btnExportPdf": {
+    "message": "Save as PDF"
+  },
+  "btnExportCopy": {
+    "message": "Copy to Clipboard"
+  },
+  "btnExportGenerating": {
+    "message": "Generating..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF document saved."
+  },
+  "settingNamingPatterns": {
+    "message": "File Naming Patterns"
+  },
+  "settingVideoFormat": {
+    "message": "Default Video Format"
+  },
+  "settingNamingPreview": {
+    "message": "Preview:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Generating GIF, please wait..."
+  },
+  "settingGifResolution": {
+    "message": "Default GIF Resolution"
+  },
+  "optGifOriginal": {
+    "message": "Original (1:1 Native Resolution — Full 3K/4K, No downscaling)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (Max 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (Max 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (Max 854px — Faster & smaller size)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF format supports a maximum recording duration of 1 minute (60s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Screen recording (Video & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Record any screen region as MP4, WebM, or animated GIF. GIF recordings feature 1:1 native resolution, 1080p, 720p, and 480p profiles with live estimated file sizes. The maximum GIF recording duration is 1 minute (60s) for optimal browser performance."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Maximum GIF duration of 1 minute (60s) reached. Generating GIF..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Max 1 min (60s)"
+  },
+  "settingGifFps": {
+    "message": "Default GIF Frame Rate (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Smooth (High fluidity, larger size)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standard (Recommended for web & balance)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Compact / Meme (Stepped motion, small size)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-Motion / Slow (\"Click-click\" step-by-step, tiny size)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Presentation (1 frame per sec, minimal size)"
+  },
+  "popupRightClickHint": {
+    "message": "Right-click anywhere on the webpage for Screen Recording (Video/GIF) and Color Picker.",
+    "description": "Hint informing user to use right-click context menu for recording and color picker"
+  }
+}

@@ -1,10 +1,15 @@
 {
   "name": "source-download",
-  "version": "1.11.0",
+  "version": "1.14.0",
   "description": "Chrome DevTools panel to browse, inspect and download every resource (API calls, images, SVG, videos, audio, captions, JS, CSS, source maps, fonts, JSON, WASM, manifests, documents, …) loaded by a web page, plus a live page-text/table capture tool. Zero third-party dependencies — 100% hand-written code, no build step required.",
   "author": {
     "name": "Turan Burak Yeşilyurt",
     "url": "https://www.linkedin.com/in/turan-burak-yesilyurt/"
+  },
+  "homepage": "https://2run.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turanburakyesilyurt/source-download.git"
   },
   "license": "MIT",
   "private": true,

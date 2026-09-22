@@ -1,0 +1,1394 @@
+{
+  "appName": {
+    "message": "Source Download",
+    "description": "Eklentinin adı"
+  },
+  "appDesc": {
+    "message": "Web kaynaklarını, videoları, SVG ve tabloları ZIP olarak indirin. Dikişsiz tam sayfa ekran görüntüsü ve video/GIF kaydedin.",
+    "description": "The description of the extension (strictly <= 132 chars)"
+  },
+  "actionTitle": {
+    "message": "Source Download — Paneli aç ve kaynakları izle",
+    "description": "Araç çubuğu ikonu ipucu"
+  },
+  "contextMenuZap": {
+    "message": "Bu öğeyi gizle (Zap)",
+    "description": "Seçilen öğeyi gizleme sağ tık menüsü"
+  },
+  "contextMenuUndoZap": {
+    "message": "Son gizlenen öğeyi geri getir",
+    "description": "Son gizlenen öğeyi geri alma menüsü"
+  },
+  "contextMenuResetZap": {
+    "message": "Gizlenen tüm öğeleri sıfırla",
+    "description": "Tüm gizlenen öğeleri geri yükleme menüsü"
+  },
+  "contextMenuCapturePage": {
+    "message": "Tam sayfa ekran görüntüsü al",
+    "description": "Tam sayfa ekran görüntüsü alma sağ tık menüsü"
+  },
+  "contextMenuPageArchive": {
+    "message": "Sayfayı çevrimdışı arşiv olarak indir",
+    "description": "Çevrimdışı sayfa arşivi indirme menüsü"
+  },
+  "catAll": {
+    "message": "Tümü"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Görseller"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Videolar"
+  },
+  "catAudio": {
+    "message": "Sesler"
+  },
+  "catCaptions": {
+    "message": "Altyazılar"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Kaynak Haritaları"
+  },
+  "catFonts": {
+    "message": "Yazı Tipleri"
+  },
+  "catDocuments": {
+    "message": "Belgeler"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifestler"
+  },
+  "catText": {
+    "message": "Metin & Tablo"
+  },
+  "catOther": {
+    "message": "Diğer"
+  },
+  "catScreenshot": {
+    "message": "Ekran Görüntüsü"
+  },
+  "catArchive": {
+    "message": "Sayfa Arşivi"
+  },
+  "btnRefresh": {
+    "message": "Yenile"
+  },
+  "btnExport": {
+    "message": "Dışa Aktar"
+  },
+  "btnDownloadSelected": {
+    "message": "Seçilenleri İndir"
+  },
+  "btnDownloadView": {
+    "message": "Görünümü İndir"
+  },
+  "btnDownloadAll": {
+    "message": "Tümünü İndir"
+  },
+  "btnDownloadFiltered": {
+    "message": "Filtrelenenleri İndir"
+  },
+  "btnTheme": {
+    "message": "Temayı değiştir"
+  },
+  "btnGuide": {
+    "message": "Kullanım Kılavuzu"
+  },
+  "btnOpenSidePanel": {
+    "message": "Yan Paneli Aç"
+  },
+  "btnCaptureFullPage": {
+    "message": "Tam Sayfa Ekran Görüntüsü"
+  },
+  "btnOfflineArchive": {
+    "message": "Tek Dosya HTML Kaydet"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Maks KB"
+  },
+  "filterMinWidth": {
+    "message": "Min genişlik px"
+  },
+  "filterMinHeight": {
+    "message": "Min yükseklik px"
+  },
+  "filterSortName": {
+    "message": "Ada göre sırala"
+  },
+  "filterSortSize": {
+    "message": "Boyuta göre sırala"
+  },
+  "filterSortType": {
+    "message": "Türe göre sırala"
+  },
+  "filterSortTime": {
+    "message": "Zamana göre sırala"
+  },
+  "filterHideDupes": {
+    "message": "Kopyaları gizle"
+  },
+  "filterClear": {
+    "message": "Temizle"
+  },
+  "textModeContains": {
+    "message": "İçerir"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS seçici"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Sayfa metnini filtrele veya canlı DOM sorgula…"
+  },
+  "textAllElements": {
+    "message": "Tüm öğeler"
+  },
+  "textLiveOn": {
+    "message": "Canlı açık"
+  },
+  "textLiveOff": {
+    "message": "Canlı kapalı"
+  },
+  "textScanNow": {
+    "message": "Şimdi tara"
+  },
+  "textReading": {
+    "message": "Okuma modu"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Ayrıntılarını incelemek için bir kaynak seçin"
+  },
+  "inspectorDetails": {
+    "message": "Ayrıntılar"
+  },
+  "inspectorOpenTab": {
+    "message": "Yeni sekmede aç"
+  },
+  "inspectorCopyUrl": {
+    "message": "URL'yi Kopyala"
+  },
+  "inspectorDownloadFile": {
+    "message": "Bu dosyayı indir"
+  },
+  "inspectorClose": {
+    "message": "Kapat"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Tür"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Boyut"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Kaynak"
+  },
+  "metaTitle": {
+    "message": "Başlık"
+  },
+  "metaAlt": {
+    "message": "Alt Metin"
+  },
+  "ratingPrompt": {
+    "message": "Source Download işinizi kolaylaştırdı mı? Chrome Web Store'da yorum bırakarak veya GitHub'da yıldız vererek açık kaynak vizyonumuza destek olun!"
+  },
+  "ratingReview": {
+    "message": "★ Yorum Yap"
+  },
+  "ratingStar": {
+    "message": "★ GitHub'da Yıldız Ver"
+  },
+  "ratingDismiss": {
+    "message": "Kapat"
+  },
+  "toastElementZapped": {
+    "message": "Öğe bu oturum boyunca gizlendi."
+  },
+  "toastElementRestored": {
+    "message": "Öğe geri getirildi."
+  },
+  "toastAllElementsRestored": {
+    "message": "Tüm gizlenen öğeler geri getirildi."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Tam sayfa ekran görüntüsü alınıyor…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Tam sayfa ekran görüntüsü kaydedildi."
+  },
+  "toastArchiveCreated": {
+    "message": "Tek dosya HTML arşivi kaydedildi."
+  },
+  "brandSignature": {
+    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Görseller & SVG"
+  },
+  "tabMedia": {
+    "message": "Medya & Ses"
+  },
+  "tabFonts": {
+    "message": "Yazı Tipleri"
+  },
+  "tabTextScraper": {
+    "message": "Metin & Tablolar"
+  },
+  "heroScreenshotTitle": {
+    "message": "Tam Sayfa Ekran Görüntüsü"
+  },
+  "heroScreenshotDesc": {
+    "message": "Kusursuz birleştirme • Başlık gizleme"
+  },
+  "heroArchiveTitle": {
+    "message": "Tek Dosya HTML Arşivle"
+  },
+  "heroArchiveDesc": {
+    "message": "Gömülü CSS & görseller • Çevrimdışı hazır"
+  },
+  "sidePanelDevToolsTitle": {
+    "message": "DevTools Derin Analiz"
+  },
+  "sidePanelDevToolsDesc": {
+    "message": "Canlı ağ trafiği, API uç noktaları, JavaScript ayrıştırıcı, CSS kuralları ve kaynak haritaları için Chrome DevTools'u açın."
+  },
+  "sidePanelDevToolsHint": {
+    "message": "F12 (macOS: ⌥⌘I) tuşuna basın → Source Download"
+  },
+  "copyDataUri": {
+    "message": "Data-URI Kopyala"
+  },
+  "copyUrl": {
+    "message": "URL Kopyala"
+  },
+  "downloadSingle": {
+    "message": "İndir"
+  },
+  "searchPlaceholder": {
+    "message": "Ada, URL'ye, türe veya /regex/'e göre filtrele…"
+  },
+  "viewGrid": {
+    "message": "Izgara görünümü"
+  },
+  "viewList": {
+    "message": "Liste görünümü"
+  },
+  "btnScreenshot": {
+    "message": "Ekran Görüntüsü"
+  },
+  "btnArchive": {
+    "message": "HTML Kaydet"
+  },
+  "exportJson": {
+    "message": "Görünen liste (JSON)"
+  },
+  "exportCsv": {
+    "message": "Görünen liste (CSV)"
+  },
+  "exportHar": {
+    "message": "Ağ kaydı (HAR)"
+  },
+  "exportScreenshot": {
+    "message": "Tam sayfa ekran görüntüsü (PNG)"
+  },
+  "exportArchive": {
+    "message": "Çevrimdışı sayfa arşivi (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Tüm metodlar"
+  },
+  "filterTypeAll": {
+    "message": "Tüm tipler"
+  },
+  "filterSortDir": {
+    "message": "Artan / azalan sırala"
+  },
+  "emptyTitle": {
+    "message": "Kaynak bulunamadı"
+  },
+  "emptySubtitle": {
+    "message": "Ağ isteklerini yakalamak için panel açıkken sayfayı yenileyin veya mevcut DOM'u taramak için Yenile'ye tıklayın."
+  },
+  "statusResources": {
+    "message": "kaynak"
+  },
+  "statusFiltered": {
+    "message": "filtrelendi"
+  },
+  "statusSelected": {
+    "message": "seçildi"
+  },
+  "statusDupes": {
+    "message": "yinelenen gizlendi"
+  },
+  "statusSize": {
+    "message": "boyut"
+  },
+  "langAuto": {
+    "message": "Otomatik (Tarayıcı)"
+  },
+  "langSelectorTitle": {
+    "message": "Dil Seçimi"
+  },
+  "textPillAll": {
+    "message": "Tüm İçerik"
+  },
+  "textPillText": {
+    "message": "📄 Metinler ve Makaleler"
+  },
+  "textPillTables": {
+    "message": "📊 Yalnızca Tablolar"
+  },
+  "textSelectAll": {
+    "message": "Tümünü Seç"
+  },
+  "textDeselectAll": {
+    "message": "Seçimi Kaldır"
+  },
+  "textClearSelection": {
+    "message": "Temizle"
+  },
+  "toastRefreshComplete": {
+    "message": "Sayfa taraması tamamlandı: $COUNT$ yeni kaynak",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$COUNT$ blok panoya kopyalandı",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Panoya kopyalandı"
+  },
+  "toastTableCopied": {
+    "message": "Tablo panoya kopyalandı"
+  },
+  "toastNothingToExport": {
+    "message": "Dışa aktarılacak içerik yok"
+  },
+  "toastExportedTxt": {
+    "message": "$COUNT$ blok TXT olarak dışa aktarıldı",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$COUNT$ blok Markdown olarak dışa aktarıldı",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Tablo satırı yakalanmadı"
+  },
+  "toastExportedCsv": {
+    "message": "Tablo CSV olarak dışa aktarıldı"
+  },
+  "toastExportedXlsx": {
+    "message": "Tablo XLSX olarak dışa aktarıldı"
+  },
+  "toastExportedTablesZip": {
+    "message": "$COUNT$ tablo $FORMAT$ olarak dışa aktarıldı",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$COUNT$ sayfa XLSX olarak dışa aktarıldı",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "İndirilecek kaynak yok."
+  },
+  "toastNoVisibleResources": {
+    "message": "İndirilecek görünür kaynak yok."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Önce en az bir kaynak seçin."
+  },
+  "toastZipSaved": {
+    "message": "ZIP kaydedildi: $TOTAL$ kaynaktan $FETCHED$ tanesi",
+    "placeholders": {
+      "total": {
+        "content": "$1",
+        "example": "10"
+      },
+      "fetched": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP oluşturulamadı: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR dışa aktarıldı ($COUNT$ kayıt)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL panoya kopyalandı"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools incelenen pencere kullanılamıyor."
+  },
+  "toastScreenshotError": {
+    "message": "Ekran görüntüsü hatası: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Çevrimdışı sayfa arşivi oluşturuluyor…"
+  },
+  "toastArchiveError": {
+    "message": "Arşiv hatası: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Biçimlendirme zaman aşımına uğradı — orijinal dosya gösteriliyor."
+  },
+  "toastFormatFailed": {
+    "message": "Dosya biçimlendirilemedi — orijinal dosya gösteriliyor."
+  },
+  "emptySearchTitle": {
+    "message": "\"$QUERY$\" için eşleşme bulunamadı",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Farklı bir arama terimi deneyin veya başka bir kategoriye geçin."
+  },
+  "emptyFiltersTitle": {
+    "message": "Mevcut filtrelerle eşleşen kaynak yok"
+  },
+  "emptyFiltersSub": {
+    "message": "Boyut veya ölçü filtrelerini gevşetin veya Temizle'ye basın."
+  },
+  "textEmptyQueryReject": {
+    "message": "Sayfa bu sorguyu reddetti. Yukarıdan düzeltin, sonuçlar hemen gelecektir."
+  },
+  "textEmptyNoMatch": {
+    "message": "Sayfadaki hiçbir öğe bu sorguyla eşleşmiyor. Daha esnek bir seçici deneyin veya modunu değiştirin."
+  },
+  "textEmptyInitial": {
+    "message": "Henüz hiçbir şey yakalanmadı. Canlı yakalama çalışıyor — tüm sayfa okunabilir metin olarak burada görünecektir."
+  },
+  "textEmptyFiltered": {
+    "message": "Mevcut sorgu ve öğe filtresiyle eşleşen içerik yok."
+  },
+  "textSummaryBlocks": {
+    "message": "$COUNT$ blok",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$COUNT$ kelime",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$COUNT$ karakter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$TABLES$ tablo · $ROWS$ benzersiz satır",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$COUNT$ seçildi — yalnızca bunlar dışa aktarılır",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Tablo — ekranda $COUNT$ satır",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Tablo — toplam $COUNT$ benzersiz satır",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$COUNT$ anlık görüntü",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "güncellendi $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Tüm $COUNT$ satırı göster",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Tüm satırlar gösteriliyor"
+  },
+  "textTableHistory": {
+    "message": "Geçmiş ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Geçmişi gizle"
+  },
+  "textTableNoRows": {
+    "message": "Henüz satır yakalanmadı."
+  },
+  "textBtnCopy": {
+    "message": "Metni kopyala"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Kopyala"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$COUNT$ yinelenen resim",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Dışa Aktar"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG yükleniyor…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG içeriği alınamadı."
+  },
+  "inspectorLoadingFont": {
+    "message": "Yazı tipi önizlemesi yükleniyor…"
+  },
+  "inspectorFontSample": {
+    "message": "Yazı Tipi Önizlemesi"
+  },
+  "inspectorBeautify": {
+    "message": "Biçimlendir"
+  },
+  "inspectorOriginal": {
+    "message": "Orijinal"
+  },
+  "inspectorHeaders": {
+    "message": "Başlıklar"
+  },
+  "inspectorResponse": {
+    "message": "Yanıt"
+  },
+  "inspectorRequest": {
+    "message": "İstek"
+  },
+  "inspectorQueryParams": {
+    "message": "Sorgu parametreleri"
+  },
+  "inspectorRequestBody": {
+    "message": "İstek gövdesi"
+  },
+  "textHintHtml": {
+    "message": "Sayfanın canlı, okunabilir bir kopyası. Metin içeren her öge DOM sırasına göre yakalanır ve sayfa değiştikçe güncellenir. Düz metin, normal ifade (regex), <strong>CSS seçici</strong> veya <strong>XPath</strong> ifadesi ile sorgulayın, ardından eşleşenleri dışa aktarın. Ayrıntılar için <a href=\"#\" id=\"text-hint-guide\">kılavuza</a> bakın."
+  },
+  "textHeadings": {
+    "message": "Başlıklar"
+  },
+  "textAllLevels": {
+    "message": "Tüm düzeyler"
+  },
+  "textMatches": {
+    "message": "eşleşme"
+  },
+  "textMatch": {
+    "message": "eşleşme"
+  },
+  "textReadingOn": {
+    "message": "Okuma açık"
+  },
+  "toastDownloadStarted": {
+    "message": "İndirme başladı: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Bu kaynak indirilemedi (CORS veya desteklenmeyen tür)."
+  },
+  "ratingBannerText": {
+    "message": "Source Download'ı beğendiniz mi? Açık kaynak vizyonumuza Chrome Web Mağazası'nda bir inceleme veya GitHub'da yıldız vererek destek olun!"
+  },
+  "ratingBannerReview": {
+    "message": "★ İnceleme Yaz"
+  },
+  "ratingBannerStar": {
+    "message": "★ Yıldız Ver"
+  },
+  "textTableUniqueRows": {
+    "message": "$COUNT$ benzersiz satır",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$COUNT$ sn önce",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$COUNT$ dk önce",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Bölgesel ekran görüntüsü al"
+  },
+  "btnAreaDownload": {
+    "message": "İndir"
+  },
+  "btnAreaCopy": {
+    "message": "Panoya kopyala"
+  },
+  "btnAreaCancel": {
+    "message": "İptal"
+  },
+  "toastAreaCopied": {
+    "message": "Bölgesel ekran görüntüsü panoya kopyalandı"
+  },
+  "toastAreaDownloaded": {
+    "message": "Bölgesel ekran görüntüsü kaydedildi"
+  },
+  "statusFoundCssResources": {
+    "message": "CSS'ten başvurulan $COUNT$ kaynak bulundu",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM taraması başarısız: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Dosya içerikleri dizinleniyor…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Yinelenen görseller kontrol ediliyor…"
+  },
+  "statusWorking": {
+    "message": "Çalışıyor…"
+  },
+  "filterMethodTitle": {
+    "message": "HTTP yöntemine göre filtrele"
+  },
+  "filterTypeTitle": {
+    "message": "İstek türüne göre filtrele"
+  },
+  "filterSortTitle": {
+    "message": "Kaynakları sırala"
+  },
+  "textModeTitle": {
+    "message": "Sorgu kutusunun yorumlanma şekli"
+  },
+  "textKindTitle": {
+    "message": "Tek bir öge türüyle sınırla"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Başlık düzeyi"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Fiyat:\\s*\\d+  — JavaScript düzenli ifadesi"
+  },
+  "textPlaceholderCss": {
+    "message": ".urun-karti .fiyat, article h2 — herhangi bir CSS seçici"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Rehberde ara…"
+  },
+  "popupIntro": {
+    "message": "<strong>Araç çubuğu rozetinde</strong> sayılan kategoriler. Sayılmasını istemediğiniz kategoriyi kapatın — rozet yalnızca takip ettiklerinizi yansıtır."
+  },
+  "popupHelpTitle": {
+    "message": "Tam paneli nasıl kullanabilirsiniz?"
+  },
+  "popupStep1": {
+    "message": "İncelemek istediğiniz sayfada Geliştirici Araçlarını (DevTools) açın <div class=\"hint\"><kbd>F12</kbd> veya <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "DevTools araç çubuğundaki <strong>Source Download</strong> sekmesine tıklayın"
+  },
+  "popupStep3": {
+    "message": "Kaynakları inceleyin, önizleyin ve tek tek ya da topluca ZIP olarak indirin."
+  },
+  "popupNote": {
+    "message": "Not: Chrome güvenlik kuralları gereği uzantıların DevTools'u doğrudan kodla açmasına izin vermez; bu sebeple tüm gelişmiş araçlar DevTools paneli üzerinden çalışır."
+  },
+  "popupTrackAll": {
+    "message": "Tüm kategorileri takip et"
+  },
+  "popupLanguage": {
+    "message": "Dil"
+  },
+  "inspectorBinaryResponse": {
+    "message": "İkili yanıt — görüntülemek için indirin"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Yanıt yükleniyor…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Yanıt önizlemesi yok — içerik alınamadı."
+  },
+  "inspectorLoadingContent": {
+    "message": "İçerik yükleniyor…"
+  },
+  "inspectorNoPreview": {
+    "message": "Önizleme mevcut değil — içerik alınamadı."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Tümünü kapat"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Tüm açık sekmeleri kapat"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Büyütmek için tıklayın"
+  },
+  "inspectorViewSource": {
+    "message": "Kaynağı görüntüle"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Sözdizimi vurgulamalı SVG işaretlemesini göster"
+  },
+  "inspectorFormatting": {
+    "message": "Biçimlendiriliyor…"
+  },
+  "findInContentPlaceholder": {
+    "message": "İçerikte bul…"
+  },
+  "findPreviousMatch": {
+    "message": "Önceki eşleşme"
+  },
+  "findNextMatch": {
+    "message": "Sonraki eşleşme"
+  },
+  "findClose": {
+    "message": "Kapat"
+  },
+  "findShowRaw": {
+    "message": "Orijinal (biçimlendirilmemiş) içeriği göster"
+  },
+  "findBeautify": {
+    "message": "Bu içeriği biçimlendir / güzelleştir"
+  },
+  "btnRaw": {
+    "message": "Ham"
+  },
+  "btnBeautify": {
+    "message": "Güzelleştir"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) akışı algılandı"
+  },
+  "videoCannotPlay": {
+    "message": "Bu video tarayıcıda oynatılamıyor"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome HLS akışlarını doğrudan oynatamaz. <b>$NAME$</b> parçalarını tek bir MP4/TS video dosyası olarak birleştirebilirsiniz.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Tarayıcı bu biçimi desteklemiyor"
+  },
+  "btnMergeHls": {
+    "message": "Parçaları birleştir ve indir"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ parça $NAME$ olarak birleştirildi",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "boyut bilinmiyor"
+  },
+  "progressFetching": {
+    "message": "$DONE$/$TOTAL$ alınıyor · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP oluşturuluyor %$PERCENT$…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP kaydedildi: $FETCHED$ / $TOTAL$ kaynak ($SKIPPED$ başarısız)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Tekrar dene: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "İndirmeyi tekrar dene"
+  },
+  "searchRegexHint": {
+    "message": "Regex arama aktif — sorgunuzu /desen/i içine alın"
+  },
+  "textIncludeInExports": {
+    "message": "Dışa aktarmalara dahil et"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Tüm anlık görüntüleri tek bir tekilleştirilmiş tabloda birleştirin — dışa aktarılan içerik budur"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Bu tablonun önceki anlık görüntülerine göz atın"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Bu tabloyu CSV olarak indir"
+  },
+  "tableSnapshotLabel": {
+    "message": "Anlık görüntü $INDEX$ — $TIME$ ($COUNT$ satır)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Toplu indirme için seçimi değiştir"
+  },
+  "cardDownloadTitle": {
+    "message": "Dosyayı indir"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Önceki indirme başarısız oldu — tekrar denemek için tıklayın"
+  },
+  "btnThemeLight": {
+    "message": "Açık temaya geç"
+  },
+  "btnThemeDark": {
+    "message": "Koyu temaya geç"
+  },
+  "guideTitle": {
+    "message": "Source Download — Kullanıcı Kılavuzu"
+  },
+  "guideEmpty": {
+    "message": "Aramanızla eşleşen kılavuz bölümü bulunamadı."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — %100 bağımsız ve hafif.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Uzaklaştır (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Yakınlaştır (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Yakınlaştırmayı sıfırla (0)"
+  },
+  "lightboxClose": {
+    "message": "Kapat (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Boyutlandırmak için sürükleyin"
+  },
+  "ratingDismissTitle": {
+    "message": "Kapat"
+  },
+  "inspectorResourceTitle": {
+    "message": "Kaynak"
+  },
+  "guideSecGettingStarted": {
+    "message": "Başlarken"
+  },
+  "guideSecCategories": {
+    "message": "Kategoriler"
+  },
+  "guideSecSearchFilters": {
+    "message": "Arama ve filtreler"
+  },
+  "guideSecGridView": {
+    "message": "Izgara ve liste görünümü"
+  },
+  "guideSecInspect": {
+    "message": "Kaynak inceleme"
+  },
+  "guideSecDownloading": {
+    "message": "İndirme seçenekleri"
+  },
+  "guideSecLightbox": {
+    "message": "Medya büyütme (Lightbox)"
+  },
+  "guideSecTextTables": {
+    "message": "Metinler ve tablolar"
+  },
+  "guideSecCaptions": {
+    "message": "Altyazılar"
+  },
+  "guideSecSourceMaps": {
+    "message": "Kaynak haritaları"
+  },
+  "guideSecDupes": {
+    "message": "Yinelenen görseller"
+  },
+  "guideSecVideoHls": {
+    "message": "Video ve HLS akışları"
+  },
+  "guideSecPowerTips": {
+    "message": "Gelişmiş ipuçları"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Geliştirici Araçları (DevTools) araç çubuğundaki <strong>Source Download</strong> sekmesine tıklayın (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> tuşlayın ve DevTools sekmesini seçin). Chrome eklentilerin DevTools'u otomatik açmasına izin vermez, bu yüzden panel orada bulunur. Eklenti simgesi açılır penceresinden (popup) hangi kategorilerin simge rozet sayacını besleyeceğini belirleyebilirsiniz. Panel araç çubuğundaki güneş/ay simgesi açık veya koyu temayı Chrome'dan bağımsız olarak sabitler; bu tercih hatırlanır."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Soldaki dikey sekmeler yakalanan her kaynağı türüne göre gruplar: Görseller, Videolar, Sesler, Altyazılar, Belgeler, Yazı Tipleri, Kaynak Haritaları, WASM, SVG, API'ler ve daha fazlası. Her sekme canlı bir sayaç gösterir. Aynı anda yalnızca bir kategori görüntülenir; geçiş yapmak tüm filtreleri sıfırlar, böylece gördükleriniz her zaman sekmeyle eşleşir."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Arama çubuğu ada, URL'ye, türe, alt metne veya başlığa göre filtreleme yapar. Düzenli ifade (regex) kullanmak için sorgunuzu <kbd>/…/</kbd> içine alın, örneğin <code>/\\.(png|jpg)$/</code>. Araç çubuğunun altında, filtre çubuğu kategoriye göre değişir: medya için boyut ve çözünürlük aralıkları, API'ler için HTTP yöntemi ve istek türü, ayrıca sıralama ve yön seçenekleri."
+  },
+  "guideSecGridViewContent": {
+    "message": "Arama çubuğunun yanındaki butonlarla kompakt ızgara (küçük önizlemeler) ile ayrıntılı liste görünümü arasında geçiş yapın. Tercihiniz oturumlar arasında korunur. Liste görünümünde, onay kutuları toplu indirme için tek tek kaynakları seçmenizi sağlar."
+  },
+  "guideSecInspectContent": {
+    "message": "Sağdaki inceleme bölmesinde açmak için herhangi bir kaynağa tıklayın. Açılan her dosya bir sekmeye dönüşür, böylece birden fazla kaynağı yan yana karşılaştırabilirsiniz — en yeni sekme solda açılır. Görseller, video, ses, yazı tipleri, SVG ve metin/kod (Güzelleştir/Formatla düğmeli) için özel görüntüleyiciler mevcuttur. API'ler bölünmüş görünüm sunar: solda yanıt, sağda istek ayrıntıları (yöntem, durum, başlıklar, sorgu parametreleri ve gövde)."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Görünümü İndir</strong> o anda görünür olan kaynakları (aktif kategori + arama + filtreler) ZIP olarak kaydeder; filtreler etkinken <em>Filtrelenenleri İndir (N)</em> olarak yeniden adlandırılır. Tıklamadan önce tahmini arşiv boyutunu görmek için indirme butonunun üzerine gelin. <strong>Seçilenleri İndir</strong> yalnızca işaretli öğeleri indirir. <strong>Tümünü İndir</strong> keşfedilen her kaynağı klasör yapısına sahip bir ZIP içine kaydeder. Başarısız indirmeler otomatik olarak yeniden denenir ve sağ tık menüsünden tekrar denenebilir. <strong>Dışa Aktar</strong> görünür listeyi JSON veya CSV olarak yazar ya da Chrome ağ günlüğünü HAR dosyası olarak döker."
+  },
+  "guideSecLightboxContent": {
+    "message": "Büyüteç butonu, medyayı sürükleyerek kaydırabileceğiniz, fare tekerleğiyle, ekran butonlarıyla veya klavyeyle (<kbd>+</kbd>/<kbd>-</kbd> yakınlaştırma, <kbd>0</kbd> sıfırlama, <kbd>Esc</kbd> kapatma) yakınlaştırabileceğiniz tam boyutlu bir lightbox içinde açar."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>Metin</strong> kategorisi sayfanın canlı, okunabilir bir kopyasıdır. Metin barındıran her öğeyi — başlıklar, paragraflar, liste öğeleri, butonlar, <code>div</code>/<code>span</code> ve daha fazlasını — DOM sırasına göre yakalar ve <strong>Canlı</strong> açıkken taramaya devam eder.</p><p><strong>Sorgu</strong> kutusu, yanındaki açılır menüden seçilen dört şekilde çalışır: <strong>İçerir</strong> ve <strong>Regex</strong> önceden yakalanan metni filtreler; <strong>CSS seçici</strong> ve <strong>XPath</strong> ise doğrudan canlı sayfa üzerinde çalışarak DOM'daki her şeye ulaşabilir. XPath ayrıca öğeler yerine değer döndüren ifadeleri de kabul eder (örneğin <code>count(//a)</code> veya <code>//@href</code>). Hatalı bir sorgu hakkında sayfanın bildirdiği hata kutunun yanında gösterilir. <strong>Öğe</strong>, sonucu tek bir etikete ve sayfada bulunan o etiketin sayısına daraltır. Sorgu kutusunu temizlemek (veya <strong>Temizle</strong>'ye basmak) sizi <em>Tüm öğeler</em> görünümüne döndürür ve sayfayı yeniden yakalar — açılır menüyü asla elle sıfırlamanız gerekmez.</p><p><strong>Okuma</strong> modu akışın bir belge gibi okunabilmesi için etiketleri, onay kutularını ve konum kırıntılarını gizler. Tablolar anlık görüntü geçmişi saklar, böylece dinamik (SPA) tablolar asla kaybolmaz. Her anlık görüntüyü tek bir tekilleştirilmiş görünümde birleştirmek için bir tablodaki <strong>Tüm satırları göster</strong>'e basın — dışa aktarma tam olarak bunu içerir. <strong>TXT</strong> (okunabilir sayfa), <strong>MD</strong> (tablolar dahil Markdown) veya tabloları CSV, HTML veya çok sayfalı gerçek bir <strong>XLSX</strong> çalışma kitabı olarak dışa aktarın. İşaretli öğeler önceliklidir; aksi takdirde o an görünür olan her şey dışa aktarılır.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML ve diğer altyazı dosyaları — <code>&lt;track&gt;</code> kaynakları dahil — belgelere karışmak yerine kendi <strong>Altyazılar</strong> sekmesinde toplanır."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> dosyaları ve kaynak haritasına benzeyen JSON gövdeleri (<code>mappings</code> ve <code>sources</code> içerenler), JSON sekmesini kalabalıklaştırmaması için JSON görüntüleyici ve Güzelleştir özelliğiyle birlikte <strong>Kaynak Haritaları</strong> altında gruplanır."
+  },
+  "guideSecDupesContent": {
+    "message": "Görseller sekmesinde panel, yakalanan baytları hash'ler ve birebir aynı dosyaları işaretler. <strong>Yinelenenleri gizle</strong> filtresi her kümenin ilk kopyasını tutar, böylece görünümün ZIP'i aynı küçük resmi iki kez içermez."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Tarayıcının yerel olarak oynatamadığı akışlar (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, bilinmeyen codec'ler) siyah bir oynatıcı yerine yedek bir bilgilendirme ekranı gösterir. HLS için parçaları doğrudan panelden tek bir video dosyasında birleştirebilir veya orijinal manifesti indirebilirsiniz."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dinamik <strong>API</strong> yanıtları (XHR/fetch) URL'ye göre tekilleştirilmez — tekrarlanan istekleri karşılaştırabilmeniz için her yanıt listede kalır (sınırlı FIFO). Statik varlıklar tekilleştirilir. Geçerli DOM'u yeniden taramak için <strong>Yenile</strong>'yi kullanın ve sekmeleri değiştirmeden önce tetiklenenler dahil tüm ağ isteklerini yakalamak için panel açıkken sayfayı yeniden yükleyin."
+  },
+  "toolArrow": {
+    "message": "Ok çiz"
+  },
+  "toolRect": {
+    "message": "Kutu çiz"
+  },
+  "toolText": {
+    "message": "Yazı yaz"
+  },
+  "toolUndo": {
+    "message": "Geri al (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "İleri al (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Renk"
+  },
+  "badgeStrokeSize": {
+    "message": "Kalınlık: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Yazı boyutu: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Bölgesel Video / GIF Kaydı Al"
+  },
+  "btnRecStart": {
+    "message": "Kaydı başlat"
+  },
+  "btnRecPause": {
+    "message": "Duraklat"
+  },
+  "btnRecResume": {
+    "message": "Devam ettir"
+  },
+  "btnRecStop": {
+    "message": "Kaydı bitir & indir"
+  },
+  "btnRecCancel": {
+    "message": "İptal"
+  },
+  "toastRecSaved": {
+    "message": "Bölgesel kayıt indirildi"
+  },
+  "toastRecCancelled": {
+    "message": "Video kaydı iptal edildi"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Ekran kaydı izni verilmedi"
+  },
+  "btnPopupRecordArea": {
+    "message": "Bölgesel Video / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Bölgesel Ekran Görüntüsü"
+  },
+  "contextMenuPickColor": {
+    "message": "Ekrandan renk seç"
+  },
+  "btnPopupPickColor": {
+    "message": "Renk Seç"
+  },
+  "colorPickerTitle": {
+    "message": "Renk Seçici"
+  },
+  "btnColorPickAgain": {
+    "message": "Yeniden Seç"
+  },
+  "toastColorCopied": {
+    "message": "Renk panoya kopyalandı"
+  },
+  "toastProgressCapturing": {
+    "message": "Tam sayfa yakalanıyor... %$PERCENT$ ($CURRENT$/$TOTAL$)",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Görüntü birleştiriliyor..."
+  },
+  "modalExportTitle": {
+    "message": "Tam Sayfa Ekran Görüntüsü Hazır"
+  },
+  "btnExportPng": {
+    "message": "PNG İndir"
+  },
+  "btnExportJpg": {
+    "message": "JPG İndir"
+  },
+  "btnExportPdf": {
+    "message": "PDF Olarak Kaydet"
+  },
+  "btnExportCopy": {
+    "message": "Panoya Kopyala"
+  },
+  "btnExportGenerating": {
+    "message": "Oluşturuluyor..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF belgesi kaydedildi."
+  },
+  "settingNamingPatterns": {
+    "message": "Dosya İsimlendirme Şablonları"
+  },
+  "settingVideoFormat": {
+    "message": "Varsayılan Video Formatı"
+  },
+  "settingNamingPreview": {
+    "message": "Önizleme:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF oluşturuluyor, lütfen bekleyin..."
+  },
+  "settingGifResolution": {
+    "message": "Varsayılan GIF Çözünürlüğü"
+  },
+  "optGifOriginal": {
+    "message": "Orijinal (1:1 Birebir — Tam 3K/4K Çözünürlük, Ölçekleme Yok)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (Maks. 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (Maks. 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (Maks. 854px — Hızlı & düşük boyut)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF formatı için maksimum kayıt süresi 1 dakikadır (60 sn)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Bölgesel ekran kaydı (Video ve GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Ekrandan seçtiğiniz herhangi bir alanı MP4, WebM veya hareketli GIF olarak kaydedin. GIF kayıtları 1:1 orijinal çözünürlük, 1080p, 720p ve 480p profilleri ile anlık tahmini boyut göstergesi sunar. Tarayıcı belleği ve yüksek performans için maksimum GIF süresi 1 dakikadır (60 sn)."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Maksimum GIF süresi olan 1 dakikaya (60 sn) ulaşıldı. GIF oluşturuluyor..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Maks 1 dk (60 sn)"
+  },
+  "settingGifFps": {
+    "message": "Varsayılan GIF Kare Hızı (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Akıcı (Yüksek akıcılık, büyük dosya)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standart (Web için önerilen dengeli hız)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Kompakt / Meme (Hafif kademeli, küçük boyut)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-Motion / Yavaş (\"Tık-tık\" adım adım, minik boyut)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Sunum / Slayt (Saniyede 1 kare, minimum boyut)"
+  },
+  "popupRightClickHint": {
+    "message": "Ekran kaydı (Video/GIF) ve Renk Seçici için sayfada herhangi bir yere sağ tıklayın.",
+    "description": "Hint informing user to use right-click context menu for recording and color picker"
+  }
+}

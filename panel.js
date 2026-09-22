@@ -28,24 +28,201 @@ const THEME_STORAGE = 'sourceDownloadTheme';
  * 1. Constants & helpers
  * ============================================================ */
 
+const SUPPORTED_LOCALES = ['en', 'tr', 'es', 'zh_CN', 'ja', 'de', 'ru'];
+let currentLocale = 'auto';
+let currentMessages = {};
+const localeCache = {};
+
+function resolveLocale(pref) {
+  if (pref && pref !== 'auto') {
+    if (SUPPORTED_LOCALES.includes(pref)) return pref;
+    const norm = String(pref).replace('-', '_');
+    if (SUPPORTED_LOCALES.includes(norm)) return norm;
+    const prefix = String(pref).split(/[-_]/)[0];
+    if (SUPPORTED_LOCALES.includes(prefix)) return prefix;
+  }
+  const nav = (typeof navigator !== 'undefined' && navigator.language) || 'en';
+  const normNav = nav.replace('-', '_');
+  if (SUPPORTED_LOCALES.includes(normNav)) return normNav;
+  const prefixNav = nav.split(/[-_]/)[0];
+  if (SUPPORTED_LOCALES.includes(prefixNav)) return prefixNav;
+  return 'en';
+}
+
+function loadLocaleMessages(loc) {
+  if (localeCache[loc]) return localeCache[loc];
+  if (typeof window !== 'undefined' && window.SourceDownloadI18n && window.SourceDownloadI18n[loc]) {
+    localeCache[loc] = window.SourceDownloadI18n[loc];
+    return localeCache[loc];
+  }
+  try {
+    if (typeof require === 'function') {
+      const fs = require('fs');
+      const path = require('path');
+      const p = path.resolve(__dirname, '_locales', loc, 'messages.json');
+      if (fs.existsSync(p)) {
+        const raw = JSON.parse(fs.readFileSync(p, 'utf8'));
+        const msgs = {};
+        for (const [k, v] of Object.entries(raw)) {
+          msgs[k] = (v && v.message) || '';
+        }
+        localeCache[loc] = msgs;
+        return msgs;
+      }
+    }
+  } catch { /* noop */ }
+  return null;
+}
+
+function t(key, fallback, subs) {
+  let res = '';
+  if (currentMessages && currentMessages[key] != null) {
+    res = currentMessages[key];
+  } else {
+    try {
+      if (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getMessage) {
+        const m = chrome.i18n.getMessage(key);
+        if (m) res = m;
+      }
+    } catch { /* noop */ }
+  }
+  if (!res && fallback !== undefined) res = fallback;
+  if (res && subs && typeof subs === 'object') {
+    for (const [k, v] of Object.entries(subs)) {
+      res = res.replaceAll('$' + k.toUpperCase() + '$', v);
+    }
+  }
+  return res;
+}
+
+function getI18nMsg(key, fallback) {
+  const v = t(key, fallback);
+  return v || fallback;
+}
+
+const CAT_KEY_MAP = {
+  all: 'catAll',
+  api: 'catApi',
+  image: 'catImages',
+  svg: 'catSvg',
+  video: 'catVideos',
+  audio: 'catAudio',
+  caption: 'catCaptions',
+  css: 'catCss',
+  js: 'catJs',
+  sourcemap: 'catSourcemaps',
+  font: 'catFonts',
+  document: 'catDocuments',
+  json: 'catJson',
+  wasm: 'catWasm',
+  manifest: 'catManifests',
+  text: 'catText',
+  other: 'catOther',
+};
+
+function setLanguage(lang) {
+  const targetLang = lang || 'auto';
+  const resolved = resolveLocale(targetLang);
+  const msgs = loadLocaleMessages(resolved);
+  if (msgs) {
+    currentMessages = msgs;
+  }
+  currentLocale = targetLang;
+  panelPrefs.lang = targetLang;
+  savePrefs();
+
+  for (const [typeKey, msgKey] of Object.entries(CAT_KEY_MAP)) {
+    if (TYPES[typeKey]) {
+      TYPES[typeKey].label = t(msgKey, TYPES[typeKey].label) || TYPES[typeKey].label;
+    }
+  }
+
+  let extVersion = '1.14.0';
+  try {
+    if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getManifest) {
+      extVersion = chrome.runtime.getManifest().version || '1.14.0';
+    }
+  } catch { /* noop */ }
+
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.getAttribute('data-i18n');
+    const msg = t(key, undefined, { VERSION: extVersion });
+    if (msg) el.textContent = msg;
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-title');
+    const msg = t(key, undefined, { VERSION: extVersion });
+    if (msg) el.title = msg;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const msg = t(key, undefined, { VERSION: extVersion });
+    if (msg) el.placeholder = msg;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-html');
+    const msg = t(key, undefined, { VERSION: extVersion });
+    if (msg) {
+      el.innerHTML = msg;
+      const hintGuide = el.querySelector('#text-hint-guide');
+      if (hintGuide) {
+        hintGuide.addEventListener('click', (e) => {
+          e.preventDefault();
+          openGuide();
+          const input = document.getElementById('guide-search');
+          if (input) {
+            input.value = t('catText', 'Text');
+            filterGuide(input.value);
+          }
+        });
+      }
+    }
+  });
+
+  const langMenu = document.getElementById('lang-menu');
+  if (langMenu) {
+    langMenu.querySelectorAll('[data-lang]').forEach((btn) => {
+      const btnLang = btn.getAttribute('data-lang');
+      const isActive = (btnLang === targetLang);
+      btn.classList.toggle('context-menu__item--active', isActive);
+      btn.style.fontWeight = isActive ? '700' : 'normal';
+    });
+  }
+
+  const currentLabel = document.getElementById('lang-current-label');
+  if (currentLabel) {
+    const code = resolved === 'zh_CN' ? 'ZH' : resolved.toUpperCase();
+    currentLabel.textContent = code;
+  }
+
+  if (typeof renderTabs === 'function') renderTabs();
+  if (typeof renderStatus === 'function') renderStatus();
+  if (typeof syncTextToolbar === 'function') syncTextToolbar();
+  if (typeof renderInspector === 'function') renderInspector();
+  if (typeof render === 'function') render();
+}
+
+window.setLanguage = setLanguage;
+window.t = t;
+
 const TYPES = {
-  all:      { label: 'All',         folder: null },
-  api:      { label: 'API',         folder: 'api' },
-  image:    { label: 'Images',      folder: 'images' },
-  svg:      { label: 'SVG',         folder: 'svg' },
-  video:    { label: 'Videos',      folder: 'videos' },
-  audio:    { label: 'Audio',       folder: 'audio' },
-  caption:  { label: 'Captions',    folder: 'captions' },
-  css:      { label: 'CSS',         folder: 'css' },
-  js:       { label: 'JS',          folder: 'js' },
-  sourcemap:{ label: 'Source maps', folder: 'sourcemaps' },
-  font:     { label: 'Fonts',       folder: 'fonts' },
-  document: { label: 'Documents',   folder: 'documents' },
-  json:     { label: 'JSON',        folder: 'json' },
-  wasm:     { label: 'WASM',        folder: 'wasm' },
-  manifest: { label: 'Manifests',   folder: 'manifests' },
-  text:     { label: 'Text',        folder: 'text' },
-  other:    { label: 'Other',       folder: 'other' },
+  all:      { label: getI18nMsg('catAll', 'All'),               folder: null },
+  api:      { label: getI18nMsg('catApi', 'API'),               folder: 'api' },
+  image:    { label: getI18nMsg('catImages', 'Images'),         folder: 'images' },
+  svg:      { label: getI18nMsg('catSvg', 'SVG'),               folder: 'svg' },
+  video:    { label: getI18nMsg('catVideos', 'Videos'),         folder: 'videos' },
+  audio:    { label: getI18nMsg('catAudio', 'Audio'),           folder: 'audio' },
+  caption:  { label: getI18nMsg('catCaptions', 'Captions'),     folder: 'captions' },
+  css:      { label: getI18nMsg('catCss', 'CSS'),               folder: 'css' },
+  js:       { label: getI18nMsg('catJs', 'JS'),                 folder: 'js' },
+  sourcemap:{ label: getI18nMsg('catSourcemaps', 'Source maps'),folder: 'sourcemaps' },
+  font:     { label: getI18nMsg('catFonts', 'Fonts'),           folder: 'fonts' },
+  document: { label: getI18nMsg('catDocuments', 'Documents'),   folder: 'documents' },
+  json:     { label: getI18nMsg('catJson', 'JSON'),             folder: 'json' },
+  wasm:     { label: getI18nMsg('catWasm', 'WASM'),             folder: 'wasm' },
+  manifest: { label: getI18nMsg('catManifests', 'Manifests'),   folder: 'manifests' },
+  text:     { label: getI18nMsg('catText', 'Text'),             folder: 'text' },
+  other:    { label: getI18nMsg('catOther', 'Other'),           folder: 'other' },
 };
 
 const EXT_TYPES = {
@@ -468,6 +645,7 @@ const state = {
     live: true,
     sel: new Set(),
     lastSig: '',
+    pill: 'all',         // all | text | tables
     // One query box, four ways to read it. `text` and `regex` filter what was
     // captured; `css` and `xpath` are resolved against the live page instead,
     // so they can reach elements the readable-text walk skips.
@@ -735,9 +913,10 @@ function scanDom() {
     return out;
   })()`;
 
+  if (typeof chrome === 'undefined' || !chrome.devtools || !chrome.devtools.inspectedWindow) return;
   chrome.devtools.inspectedWindow.eval(expr, {}, (result, info) => {
     if (info && info.isException) {
-      setStatusMessage('DOM scan failed: ' + (info.value || 'unknown error'));
+      setStatusMessage(t('statusDomScanFailed', 'DOM scan failed: $ERROR$').replace('$ERROR$', (info.value || 'unknown error')));
       return;
     }
     let added = 0;
@@ -755,7 +934,11 @@ function scanDom() {
     });
     render();
     syncPanelCounts();
-    toast(`Page scan complete: ${added} new resources`, 'success');
+    toast(
+      t('toastRefreshComplete', 'Page scan complete: $COUNT$ new resources')
+        .replace('$COUNT$', added),
+      'success'
+    );
   });
 }
 
@@ -808,7 +991,7 @@ async function scanCssResources() {
     }
   }
   if (added) {
-    setStatusMessage(`Found ${added} resource(s) referenced from CSS`);
+    setStatusMessage(t('statusFoundCssResources', 'Found $COUNT$ resource(s) referenced from CSS').replace('$COUNT$', added));
     render();
     syncPanelCounts();
   }
@@ -874,7 +1057,7 @@ async function scanContentForSearch() {
     return null;
   }
   state.searching = true;
-  setStatusMessage('Indexing file contents…');
+  setStatusMessage(t('statusIndexing', 'Indexing file contents…'));
   let i = 0;
   const worker = async () => {
     while (i < targets.length) {
@@ -1331,6 +1514,8 @@ function filteredTextBlocks() {
   const t = state.text;
   const { test } = compileTextQuery();
   return t.blocks.filter((b) => {
+    if (t.pill === 'tables' && b.kind !== 'table') return false;
+    if (t.pill === 'text' && b.kind === 'table') return false;
     if (t.tag === 'heading') {
       if (!/^h[1-6]$/.test(b.kind)) return false;
       if (t.level !== 'all' && b.kind !== t.level) return false;
@@ -1345,9 +1530,9 @@ function filteredTextBlocks() {
 function timeAgo(ts) {
   if (!ts) return '—';
   const s = Math.max(1, Math.round((Date.now() - ts) / 1000));
-  if (s < 60) return s + 's ago';
+  if (s < 60) return t('timeSecondsAgo', '$COUNT$s ago').replace('$COUNT$', s);
   const m = Math.round(s / 60);
-  if (m < 60) return m + 'm ago';
+  if (m < 60) return t('timeMinutesAgo', '$COUNT$m ago').replace('$COUNT$', m);
   return new Date(ts).toLocaleTimeString();
 }
 
@@ -1362,8 +1547,10 @@ function syncTextTagOptions() {
     if (/^h[1-6]$/.test(b.kind)) headings++;
     counts.set(b.kind, (counts.get(b.kind) || 0) + 1);
   }
-  const opts = [['all', 'All elements (' + state.text.blocks.length + ')']];
-  if (headings) opts.push(['heading', 'Headings (' + headings + ')']);
+  const allLabel = t('textAllElements', 'All elements') || 'All elements';
+  const headingsLabel = t('textHeadings', 'Headings') || 'Headings';
+  const opts = [['all', `${allLabel} (${state.text.blocks.length})`]];
+  if (headings) opts.push(['heading', `${headingsLabel} (${headings})`]);
   for (const tag of [...counts.keys()].sort()) {
     if (/^h[1-6]$/.test(tag)) continue;
     opts.push([tag, tag.toUpperCase() + ' (' + counts.get(tag) + ')']);
@@ -1391,18 +1578,46 @@ function syncTextTagOptions() {
   if (sel.value !== state.text.tag) sel.value = state.text.tag;
 }
 
-const QUERY_PLACEHOLDERS = {
-  text: 'Filter the page text…',
-  regex: '^Price:\\s*\\d+  — JavaScript regular expression',
-  css: '.product-card .price, article h2 — any CSS selector',
-  xpath: '//div[@class="row"]//td[2]  ·  count(//a)  ·  //@href',
-};
+function getQueryPlaceholder(mode) {
+  switch (mode) {
+    case 'regex':
+      return t('textPlaceholderRegex', '^Price:\\s*\\d+  — JavaScript regular expression');
+    case 'css':
+      return t('textPlaceholderCss', '.product-card .price, article h2 — any CSS selector');
+    case 'xpath':
+      return t('textPlaceholderXpath', '//div[@class="row"]//td[2]  ·  count(//a)  ·  //@href');
+    case 'text':
+    default:
+      return t('textPlaceholder', 'Filter page text or query live DOM…');
+  }
+}
+
+function updateTextSelectionUI() {
+  const count = state.text.sel.size;
+  const badge = document.getElementById('tf-sel-badge');
+  if (badge) {
+    badge.hidden = count === 0;
+    badge.textContent = count + ' ' + (t('statusSelected', 'selected') || 'selected');
+  }
+  const clearBtn = document.getElementById('tf-clear-sel');
+  if (clearBtn) {
+    clearBtn.hidden = count === 0;
+  }
+  const selectAllBtn = document.getElementById('tf-select-all');
+  if (selectAllBtn) {
+    const visible = filteredTextBlocks();
+    const allSelected = visible.length > 0 && visible.every((b) => state.text.sel.has(b.id));
+    selectAllBtn.textContent = allSelected ? t('textDeselectAll', 'Deselect All') : t('textSelectAll', 'Select All');
+  }
+}
 
 function syncTextToolbar() {
   const liveBtn = document.getElementById('tf-live');
   if (liveBtn) {
     liveBtn.classList.toggle('btn--primary', state.text.live);
-    liveBtn.textContent = state.text.live ? 'Live on' : 'Live off';
+    liveBtn.textContent = state.text.live
+      ? (t('textLiveOn', 'Live on') || 'Live on')
+      : (t('textLiveOff', 'Live off') || 'Live off');
   }
   const mode = document.getElementById('tf-mode');
   if (mode && mode.value !== state.text.query.mode) mode.value = state.text.query.mode;
@@ -1411,7 +1626,7 @@ function syncTextToolbar() {
     if (document.activeElement !== input && input.value !== state.text.query.value) {
       input.value = state.text.query.value;
     }
-    input.placeholder = QUERY_PLACEHOLDERS[state.text.query.mode] || '';
+    input.placeholder = getQueryPlaceholder(state.text.query.mode);
   }
   const levelSel = document.getElementById('tf-level');
   if (levelSel) {
@@ -1423,8 +1638,22 @@ function syncTextToolbar() {
   const readBtn = document.getElementById('tf-read');
   if (readBtn) {
     readBtn.classList.toggle('btn--primary', !!state.text.readMode);
-    readBtn.textContent = state.text.readMode ? 'Reading on' : 'Reading';
+    readBtn.textContent = state.text.readMode
+      ? (t('textReadingOn', 'Reading on') || 'Reading on')
+      : (t('textReading', 'Reading') || 'Reading');
   }
+
+  const pill = state.text.pill || 'all';
+  const pillAll = document.getElementById('tf-pill-all');
+  if (pillAll) pillAll.classList.toggle('tf-pill--active', pill === 'all');
+  const pillText = document.getElementById('tf-pill-text');
+  if (pillText) pillText.classList.toggle('tf-pill--active', pill === 'text');
+  const pillTables = document.getElementById('tf-pill-tables');
+  if (pillTables) pillTables.classList.toggle('tf-pill--active', pill === 'tables');
+  const groupTag = document.getElementById('tf-group-tag');
+  if (groupTag) groupTag.hidden = pill === 'tables';
+
+  updateTextSelectionUI();
   syncTextTagOptions();
 }
 
@@ -1446,7 +1675,7 @@ function renderTextStatus(shown) {
     el.textContent = '';
     return;
   }
-  el.textContent = shown + ' match' + (shown === 1 ? '' : 'es');
+  el.textContent = shown + ' ' + (shown === 1 ? (t('textMatch', 'match') || 'match') : (t('textMatches', 'matches') || 'matches'));
 }
 
 // The captured document is rendered in windows too — a content-heavy page can
@@ -1496,18 +1725,18 @@ function renderTextView() {
     const empty = document.createElement('div');
     empty.className = 'text-empty';
     empty.innerHTML = state.text.queryError
-      ? '<p><b>The page rejected that query.</b> Fix it above and the results will come straight back.</p>'
+      ? `<p>${t('textEmptyQueryReject', 'The page rejected that query. Fix it above and the results will come straight back.')}</p>`
       : queryActive
-        ? '<p><b>No element on the page matches this query.</b> Try a looser selector, or switch the mode next to the box.</p>'
+        ? `<p>${t('textEmptyNoMatch', 'No element on the page matches this query. Try a looser selector, or switch the mode next to the box.')}</p>`
         : '<svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5V3h14v2M12 3v18M9 21h6"/></svg>' +
-          '<p><b>Nothing captured yet.</b> Live capture is running — the whole page will appear here as readable text. Press <em>Scan now</em> or wait a moment for the first snapshot.</p>';
+          `<p>${t('textEmptyInitial', 'Nothing captured yet. Live capture is running — the whole page will appear here as readable text.')}</p>`;
     stream.appendChild(empty);
     return;
   }
   if (!blocks.length) {
     const empty = document.createElement('div');
     empty.className = 'text-empty';
-    empty.innerHTML = '<p>Nothing matches the current query and element filter.</p>';
+    empty.innerHTML = `<p>${t('textEmptyFiltered', 'Nothing matches the current query and element filter.')}</p>`;
     stream.appendChild(empty);
     return;
   }
@@ -1545,24 +1774,33 @@ function renderTextSummary(shown) {
   let chars = 0;
   for (const b of shown) {
     if (b.kind === 'table') continue;
-    const t = b.text || '';
-    chars += t.length;
-    if (t.trim()) words += t.trim().split(/\s+/).length;
+    const blockText = b.text || '';
+    chars += blockText.length;
+    if (blockText.trim()) words += blockText.trim().split(/\s+/).length;
   }
 
   const chips = [
-    shown.length + ' block' + (shown.length === 1 ? '' : 's'),
-    words.toLocaleString() + ' words',
-    chars.toLocaleString() + ' characters',
+    t('textSummaryBlocks', '$COUNT$ blocks').replace('$COUNT$', shown.length),
+    t('textSummaryWords', '$COUNT$ words').replace('$COUNT$', words.toLocaleString()),
+    t('textSummaryChars', '$COUNT$ characters').replace('$COUNT$', chars.toLocaleString()),
   ];
   if (tables.length) {
     const rows = tables.reduce(
       (n, b) => n + dedupeRows(b.hist.snapshots.flatMap((s) => s.rows)).length,
       0
     );
-    chips.push(tables.length + ' table' + (tables.length === 1 ? '' : 's') + ' · ' + rows + ' unique rows');
+    chips.push(
+      t('textSummaryTables', '$TABLES$ table(s) · $ROWS$ unique rows')
+        .replace('$TABLES$', tables.length)
+        .replace('$ROWS$', rows)
+    );
   }
-  if (state.text.sel.size) chips.push(state.text.sel.size + ' selected — exports use these only');
+  if (state.text.sel.size) {
+    chips.push(
+      t('textSummarySelected', '$COUNT$ selected — exports use these only')
+        .replace('$COUNT$', state.text.sel.size)
+    );
+  }
 
   for (const text of chips) {
     const chip = document.createElement('span');
@@ -1573,11 +1811,14 @@ function renderTextSummary(shown) {
 
   const copy = document.createElement('button');
   copy.className = 'btn btn--sm text-summary__copy';
-  copy.textContent = 'Copy text';
-  copy.title = 'Copy everything shown below to the clipboard';
+  copy.textContent = t('textBtnCopy', 'Copy text');
+  copy.title = t('textBtnCopy', 'Copy text');
   copy.addEventListener('click', () => {
     copyText(plainTextOf(shown));
-    toast('Copied ' + shown.length + ' block' + (shown.length === 1 ? '' : 's'), 'success');
+    toast(
+      t('toastCopiedBlocks', 'Copied $COUNT$ block(s)').replace('$COUNT$', shown.length),
+      'success'
+    );
   });
   summary.appendChild(copy);
   return summary;
@@ -1588,12 +1829,13 @@ function blockCheckbox(b, container) {
   check.type = 'checkbox';
   check.className = 'txt-block__check';
   check.checked = state.text.sel.has(b.id);
-  check.title = 'Include in exports';
+  check.title = t('textIncludeInExports', 'Include in exports');
   check.addEventListener('click', (e) => e.stopPropagation());
   check.addEventListener('change', () => {
     if (check.checked) state.text.sel.add(b.id);
     else state.text.sel.delete(b.id);
     container.classList.toggle('txt-block--sel', check.checked);
+    updateTextSelectionUI();
   });
   return check;
 }
@@ -1656,6 +1898,18 @@ function renderTextBlock(b) {
     where.title = 'Matched element: ' + b.where;
     el.appendChild(where);
   }
+
+  const copyBtn = document.createElement('button');
+  copyBtn.className = 'txt-block__copy-btn';
+  copyBtn.title = t('textBtnCopy', 'Copy text');
+  copyBtn.textContent = '📋';
+  copyBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    copyText(b.text || '');
+    toast(t('toastCopiedToClipboard', 'Copied to clipboard'), 'success');
+  });
+  el.appendChild(copyBtn);
+
   return el;
 }
 
@@ -1684,16 +1938,16 @@ function renderTextTable(el, b) {
   const title = document.createElement('span');
   title.className = 'txt-table__title';
   title.textContent = b.hist.merged
-    ? 'Table — all ' + unique + ' unique row' + (unique === 1 ? '' : 's')
-    : 'Table — ' + b.rowCount + ' row' + (b.rowCount === 1 ? '' : 's') + ' on screen';
+    ? t('textTableAllRows', 'Table — all $COUNT$ unique row(s)').replace('$COUNT$', unique)
+    : t('textTableOnScreen', 'Table — $COUNT$ row(s) on screen').replace('$COUNT$', b.rowCount);
   head.appendChild(title);
 
   const meta = document.createElement('span');
   meta.className = 'txt-table__meta';
   const parts = [
-    b.hist.snapshots.length + ' snapshot' + (b.hist.snapshots.length === 1 ? '' : 's'),
-    unique + ' unique row' + (unique === 1 ? '' : 's'),
-    'updated ' + timeAgo(b.ts),
+    t('textTableSnapshots', '$COUNT$ snapshot(s)').replace('$COUNT$', b.hist.snapshots.length),
+    t('textTableUniqueRows', '$COUNT$ unique row(s)').replace('$COUNT$', unique),
+    t('textTableUpdated', 'updated $TIME$').replace('$TIME$', timeAgo(b.ts)),
   ];
   if (b.hist.snapshots.length > 1) parts.push('since ' + timeAgo(b.firstSeen));
   meta.textContent = parts.join(' · ');
@@ -1704,8 +1958,10 @@ function renderTextTable(el, b) {
   if (unique > (b.rows ? b.rows.length : 0) || b.hist.merged) {
     const mergeBtn = document.createElement('button');
     mergeBtn.className = 'btn btn--sm' + (b.hist.merged ? ' btn--primary' : '');
-    mergeBtn.textContent = b.hist.merged ? 'Showing all rows' : 'Show all ' + unique + ' rows';
-    mergeBtn.title = 'Combine every snapshot into one deduplicated table — this is what gets exported';
+    mergeBtn.textContent = b.hist.merged
+      ? t('textTableShowingAll', 'Showing all rows')
+      : t('textTableShowAll', 'Show all $COUNT$ rows').replace('$COUNT$', unique);
+    mergeBtn.title = t('tableMergeSnapshotsTitle', 'Combine every snapshot into one deduplicated table — this is what gets exported');
     mergeBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       b.hist.merged = !b.hist.merged;
@@ -1717,8 +1973,10 @@ function renderTextTable(el, b) {
   if (b.hist.snapshots.length > 1) {
     const histBtn = document.createElement('button');
     histBtn.className = 'btn btn--sm txt-table__history';
-    histBtn.textContent = b.hist.expanded ? 'Hide history' : 'History (' + (b.hist.snapshots.length - 1) + ')';
-    histBtn.title = 'Browse earlier snapshots of this table';
+    histBtn.textContent = b.hist.expanded
+      ? t('textTableHideHistory', 'Hide history')
+      : t('textTableHistory', 'History ($COUNT$)').replace('$COUNT$', b.hist.snapshots.length - 1);
+    histBtn.title = t('tableBrowseSnapshotsTitle', 'Browse earlier snapshots of this table');
     histBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       b.hist.expanded = !b.hist.expanded;
@@ -1726,6 +1984,43 @@ function renderTextTable(el, b) {
     });
     head.appendChild(histBtn);
   }
+
+  const actions = document.createElement('div');
+  actions.className = 'txt-table__actions';
+
+  const xlsxBtn = document.createElement('button');
+  xlsxBtn.className = 'btn btn--sm btn--primary';
+  xlsxBtn.textContent = t('textBtnExportXlsx', '⬇ XLSX');
+  xlsxBtn.title = 'Download this table as Excel (.xlsx)';
+  xlsxBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    exportSingleTable(b, 'xlsx');
+  });
+  actions.appendChild(xlsxBtn);
+
+  const csvBtn = document.createElement('button');
+  csvBtn.className = 'btn btn--sm';
+  csvBtn.textContent = t('textBtnExportCsv', '⬇ CSV');
+  csvBtn.title = t('tableDownloadCsvTitle', 'Download this table as CSV');
+  csvBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    exportSingleTable(b, 'csv');
+  });
+  actions.appendChild(csvBtn);
+
+  const copyTableBtn = document.createElement('button');
+  copyTableBtn.className = 'btn btn--sm';
+  copyTableBtn.textContent = t('textBtnCopyTable', '📋 Copy');
+  copyTableBtn.title = 'Copy table rows (TSV) to clipboard';
+  copyTableBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const rows = tableRowsFor(b);
+    copyText(rows.map((r) => r.join('\t')).join('\n'));
+    toast(t('toastTableCopied', 'Table copied to clipboard'), 'success');
+  });
+  actions.appendChild(copyTableBtn);
+
+  head.appendChild(actions);
   el.appendChild(head);
 
   const wrap = document.createElement('div');
@@ -1746,7 +2041,7 @@ function renderTextTable(el, b) {
   } else {
     const tr = document.createElement('tr');
     const td = document.createElement('td');
-    td.textContent = 'No rows captured yet.';
+    td.textContent = t('textTableNoRows', 'No rows captured yet.');
     tr.appendChild(td);
     tbl.appendChild(tr);
   }
@@ -1758,7 +2053,10 @@ function renderTextTable(el, b) {
       const snap = b.hist.snapshots[s];
       const st = document.createElement('div');
       st.className = 'txt-table__snap-title';
-      st.textContent = 'Snapshot ' + (s + 1) + ' — ' + timeAgo(snap.ts) + ' (' + snap.rows.length + ' rows)';
+      st.textContent = t('tableSnapshotLabel', 'Snapshot $INDEX$ — $TIME$ ($COUNT$ rows)')
+        .replace('$INDEX$', s + 1)
+        .replace('$TIME$', timeAgo(snap.ts))
+        .replace('$COUNT$', snap.rows.length);
       el.appendChild(st);
       if (snap.rows.length) {
         const sw = document.createElement('div');
@@ -1834,17 +2132,17 @@ function exportTableItems() {
 function exportTextPlain() {
   const blocks = exportTextSelection();
   if (!blocks.length) {
-    toast('Nothing to export');
+    toast(t('toastNothingToExport', 'Nothing to export'));
     return;
   }
   saveBlob(new Blob([plainTextOf(blocks)], { type: 'text/plain' }), 'text/page-text.txt');
-  toast('Exported ' + blocks.length + ' block' + (blocks.length === 1 ? '' : 's') + ' as TXT');
+  toast(t('toastExportedTxt', 'Exported $COUNT$ block(s) as TXT').replace('$COUNT$', blocks.length));
 }
 
 function exportTextMarkdown() {
   const blocks = exportTextSelection();
   if (!blocks.length) {
-    toast('Nothing to export');
+    toast(t('toastNothingToExport', 'Nothing to export'));
     return;
   }
   const lines = [];
@@ -1868,18 +2166,36 @@ function exportTextMarkdown() {
     }
   }
   if (!lines.length) {
-    toast('Nothing to export');
+    toast(t('toastNothingToExport', 'Nothing to export'));
     return;
   }
   const blob = new Blob([lines.join('\n\n')], { type: 'text/markdown' });
   saveBlob(blob, 'text/page-content.md');
-  toast('Exported ' + lines.length + ' block' + (lines.length === 1 ? '' : 's') + ' as Markdown');
+  toast(t('toastExportedMd', 'Exported $COUNT$ block(s) as Markdown').replace('$COUNT$', lines.length));
+}
+
+async function exportSingleTable(b, format) {
+  const rows = tableRowsFor(b);
+  if (!rows || !rows.length) {
+    toast(t('toastNoTableRows', 'No table rows captured'), 'error');
+    return;
+  }
+  const cleanTitle = (b.title || 'table').replace(/[^a-z0-9_-]/gi, '_').toLowerCase();
+  if (format === 'csv') {
+    const csv = rows.map((r) => r.map(csvEscape).join(',')).join('\r\n');
+    saveBlob(new Blob([csv], { type: 'text/csv' }), 'text/' + cleanTitle + '.csv');
+    toast(t('toastExportedCsv', 'Exported table as CSV'), 'success');
+  } else if (format === 'xlsx') {
+    const blob = await buildXlsx([{ name: 'Table', rows }]);
+    saveBlob(blob, 'text/' + cleanTitle + '.xlsx');
+    toast(t('toastExportedXlsx', 'Exported table as XLSX'), 'success');
+  }
 }
 
 async function exportTablesAs(format) {
   const tables = exportTableItems();
   if (!tables.length) {
-    toast('No table data captured');
+    toast(t('toastNoTableRows', 'No table data captured'));
     return;
   }
   const entries = [];
@@ -1899,19 +2215,19 @@ async function exportTablesAs(format) {
   }
   const zip = await buildZip(entries);
   saveBlob(zip, format === 'csv' ? 'text/tables.csv.zip' : 'text/tables.html.zip');
-  toast('Exported ' + entries.length + ' table' + (entries.length === 1 ? '' : 's') + ' as ' + format.toUpperCase());
+  toast(t('toastExportedTablesZip', 'Exported $COUNT$ table(s) as $FORMAT$').replace('$COUNT$', entries.length).replace('$FORMAT$', format.toUpperCase()));
 }
 
 async function exportTextXlsx() {
   const tables = exportTableItems();
   if (!tables.length) {
-    toast('No table data captured');
+    toast(t('toastNoTableRows', 'No table data captured'));
     return;
   }
   const sheets = tables.map((t, i) => ({ name: ('Table ' + (i + 1)).slice(0, 31), rows: t.rows }));
   const blob = await buildXlsx(sheets);
   saveBlob(blob, 'text/tables.xlsx');
-  toast('Exported ' + sheets.length + ' sheet' + (sheets.length === 1 ? '' : 's') + ' as XLSX');
+  toast(t('toastExportedSheetsXlsx', 'Exported $COUNT$ sheet(s) as XLSX').replace('$COUNT$', sheets.length));
 }
 
 function render() {
@@ -2067,11 +2383,11 @@ async function scanImageDupes() {
     const el = document.getElementById('status-dupes');
     if (el) {
       el.hidden = extra === 0;
-      if (extra) el.textContent = extra + ' duplicate image' + (extra === 1 ? '' : 's');
+      if (extra) el.textContent = t('statusDuplicateImages', '$COUNT$ duplicate images').replace('$COUNT$', extra);
     }
     return null;
   }
-  setStatusMessage('Checking image duplicates…');
+  setStatusMessage(t('statusCheckingDuplicates', 'Checking image duplicates…'));
   let i = 0;
   const worker = async () => {
     while (i < targets.length) {
@@ -2141,6 +2457,7 @@ function renderTabs() {
   for (const r of state.resources) counts[r.type] = (counts[r.type] || 0) + 1;
   for (const key of Object.keys(TYPES)) {
     const t = TYPES[key];
+    if (!t) continue;
     const tab = document.createElement('button');
     tab.className = 'vtab' + (key === state.activeTab ? ' vtab--active' : '');
     tab.dataset.tab = key;
@@ -2223,7 +2540,7 @@ function renderCard(res) {
   check.type = 'checkbox';
   check.className = 'card__check';
   check.checked = state.selected.has(res.id);
-  check.title = 'Toggle selection for batch download';
+  check.title = t('cardToggleBatchTitle', 'Toggle selection for batch download');
   check.addEventListener('click', (e) => e.stopPropagation());
   check.addEventListener('change', () => toggleSelect(res.id, check.checked));
 
@@ -2248,7 +2565,7 @@ function renderCard(res) {
 
   const dl = document.createElement('button');
   dl.className = 'card__download';
-  dl.title = 'Download file';
+  dl.title = t('cardDownloadTitle', 'Download file');
   dl.innerHTML = ICONS.download;
   dl.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -2258,7 +2575,7 @@ function renderCard(res) {
   if (state.failed.has(res.id)) {
     const warn = document.createElement('button');
     warn.className = 'card__warn';
-    warn.title = 'Previous download failed — click to retry';
+    warn.title = t('cardRetryFailedTitle', 'Previous download failed — click to retry');
     warn.textContent = '!';
     warn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -2307,14 +2624,14 @@ function renderTile(res) {
   check.type = 'checkbox';
   check.className = 'tile__check';
   check.checked = state.selected.has(res.id);
-  check.title = 'Toggle selection for batch download';
+  check.title = t('cardToggleBatchTitle', 'Toggle selection for batch download');
   check.addEventListener('click', (e) => e.stopPropagation());
   check.addEventListener('change', () => toggleSelect(res.id, check.checked));
   tile.appendChild(check);
 
   const dl = document.createElement('button');
   dl.className = 'tile__dl';
-  dl.title = 'Download file';
+  dl.title = t('cardDownloadTitle', 'Download file');
   dl.innerHTML = ICONS.download;
   dl.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -2340,7 +2657,7 @@ function renderTile(res) {
   if (state.failed.has(res.id)) {
     const warn = document.createElement('button');
     warn.className = 'tile__warn';
-    warn.title = 'Previous download failed — click to retry';
+    warn.title = t('cardRetryFailedTitle', 'Previous download failed — click to retry');
     warn.textContent = '!';
     warn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -2465,16 +2782,14 @@ function renderList() {
   if (filtered.length === 0) {
     empty.hidden = false;
     if (state.search.trim()) {
-      emptyTitle.textContent = 'No matches for "' + state.search.trim() + '"';
-      emptySub.textContent = 'Try a different search term, or switch to another category.';
+      emptyTitle.textContent = t('emptySearchTitle', 'No matches for "$QUERY$"').replace('$QUERY$', state.search.trim());
+      emptySub.textContent = t('emptySearchSub', 'Try a different search term, or switch to another category.');
     } else if (hasActiveFilters()) {
-      emptyTitle.textContent = 'No resources match the current filters';
-      emptySub.textContent = 'Loosen the size or dimension filters above, or press Clear.';
+      emptyTitle.textContent = t('emptyFiltersTitle', 'No resources match the current filters');
+      emptySub.textContent = t('emptyFiltersSub', 'Loosen the size or dimension filters above, or press Clear.');
     } else {
-      emptyTitle.textContent = 'No resources found';
-      emptySub.textContent =
-        'Reload the page while this panel is open to capture network requests, ' +
-        'or click Refresh to scan the current DOM.';
+      emptyTitle.textContent = t('emptyTitle', 'No resources found');
+      emptySub.textContent = t('emptySubtitle', 'Reload the page while this panel is open to capture network requests, or click Refresh to scan the current DOM.');
     }
     return;
   }
@@ -2513,13 +2828,14 @@ function renderList() {
 
 function renderStatus() {
   const total = state.resources.length;
+  const resLabel = t('statusResources', 'resources');
   document.getElementById('status-resources').textContent =
-    total + ' resource' + (total === 1 ? '' : 's');
+    total + ' ' + (resLabel || 'resources');
 
   const sel = state.selected.size;
   const selEl = document.getElementById('status-selected');
   selEl.hidden = sel === 0;
-  if (sel) selEl.textContent = sel + ' selected';
+  if (sel) selEl.textContent = sel + ' ' + (t('statusSelected', 'selected') || 'selected');
 
   let size = 0;
   for (const r of state.resources) if (r.size) size += r.size;
@@ -2529,37 +2845,42 @@ function renderStatus() {
   const dupeEl = document.getElementById('status-dupes');
   if (dupeEl) {
     dupeEl.hidden = extraDupes === 0;
-    if (extraDupes) dupeEl.textContent = extraDupes + ' duplicate image' + (extraDupes === 1 ? '' : 's');
+    if (extraDupes) dupeEl.textContent = extraDupes + ' ' + (t('statusDupes', 'duplicates hidden') || 'duplicates hidden');
   }
 
   const badge = document.getElementById('btn-download-selected-count');
-  badge.hidden = sel === 0;
-  badge.textContent = sel;
-  document.getElementById('btn-download-selected').disabled = state.busy || sel === 0;
-  document.getElementById('btn-download-all').disabled = state.busy;
+  if (badge) {
+    badge.hidden = sel === 0;
+    badge.textContent = sel;
+  }
+  const btnSel = document.getElementById('btn-download-selected');
+  if (btnSel) btnSel.disabled = state.busy || sel === 0;
+  const btnAll = document.getElementById('btn-download-all');
+  if (btnAll) btnAll.disabled = state.busy;
 
   const allEst = estimateArchiveBytes(state.resources);
   const viewList = filteredResources();
   const viewEst = estimateArchiveBytes(viewList);
   const selList = selectedResources();
   const selEst = estimateArchiveBytes(selList);
-  const btnAll = document.getElementById('btn-download-all');
-  const btnView = document.getElementById('btn-download-view');
-  const btnSel = document.getElementById('btn-download-selected');
-  if (btnAll) btnAll.title = 'Download every captured resource as a folder-structured ZIP' +
+
+  if (btnAll) btnAll.title = (t('btnDownloadAll', 'Download All') || 'Download All') +
     (state.resources.length ? ' (' + formatEstimate(allEst) + ')' : '');
-  if (btnSel) btnSel.title = 'Download the resources you checked as a ZIP' +
+  if (btnSel) btnSel.title = (t('btnDownloadSelected', 'Download Selected') || 'Download Selected') +
     (sel ? ' (' + formatEstimate(selEst) + ')' : '');
 
-  btnView.disabled = state.busy || viewList.length === 0;
-  const label = btnView.querySelector('span');
-  if (label) label.textContent = hasActiveFilters()
-    ? ' Download Filtered (' + viewList.length + ')'
-    : ' Download View';
+  const btnView = document.getElementById('btn-download-view');
   if (btnView) {
+    btnView.disabled = state.busy || viewList.length === 0;
+    const label = btnView.querySelector('span');
+    if (label) {
+      label.textContent = hasActiveFilters()
+        ? ' ' + (t('btnDownloadFiltered', 'Download Filtered') || 'Download Filtered') + ' (' + viewList.length + ')'
+        : ' ' + (t('btnDownloadView', 'Download View') || 'Download View');
+    }
     btnView.title = (hasActiveFilters()
-      ? 'Download the visible filtered resources as a ZIP'
-      : 'Download only the visible resources (current category + search)') +
+      ? (t('btnDownloadFiltered', 'Download Filtered') || 'Download Filtered')
+      : (t('btnDownloadView', 'Download View') || 'Download View')) +
       (viewList.length ? ' (' + formatEstimate(viewEst) + ')' : '');
   }
 }
@@ -2716,14 +3037,14 @@ async function beautifyAsync(res, text) {
       return await runCpuJob({ kind: 'beautify', lang, text }, null, 25000);
     } catch (err) {
       if (err && err.timeout) {
-        toast('Formatting timed out — showing the original file.', 'error');
+        toast(t('toastFormatTimeout', 'Formatting timed out — showing original file.'), 'error');
         return text;
       }
       if (err && err.workerUnavailable) {
-        toast('Could not format off-thread — showing the original file.', 'error');
+        toast(t('toastFormatFailed', 'Could not format file — showing original.'), 'error');
         return text;
       }
-      toast('Could not format this file — showing the original.', 'error');
+      toast(t('toastFormatFailed', 'Could not format file — showing original.'), 'error');
       return text;
     }
   })();
@@ -2924,14 +3245,14 @@ function setupContentSearch(scroller, body, text, lang, opts) {
   const bar = document.createElement('div');
   bar.className = 'content-find';
   bar.innerHTML =
-    '<input type="text" class="content-find__input" placeholder="Find in content…" spellcheck="false">' +
+    '<input type="text" class="content-find__input" placeholder="' + escapeHtml(t('findInContentPlaceholder', 'Find in content…')) + '" spellcheck="false">' +
     '<span class="content-find__count">0/0</span>' +
-    '<button class="content-find__btn" data-dir="-1" title="Previous match">▲</button>' +
-    '<button class="content-find__btn" data-dir="1" title="Next match">▼</button>' +
+    '<button class="content-find__btn" data-dir="-1" title="' + escapeHtml(t('findPreviousMatch', 'Previous match')) + '">▲</button>' +
+    '<button class="content-find__btn" data-dir="1" title="' + escapeHtml(t('findNextMatch', 'Next match')) + '">▼</button>' +
     (opts
-      ? '<button class="content-find__beautify" title="' + (opts.beautified ? 'Show original (unformatted) content' : 'Format / beautify this content') + '">' + (opts.beautified ? 'Raw' : 'Beautify') + '</button>'
+      ? '<button class="content-find__beautify" title="' + (opts.beautified ? escapeHtml(t('findShowRaw', 'Show original (unformatted) content')) : escapeHtml(t('findBeautify', 'Format / beautify this content'))) + '">' + (opts.beautified ? escapeHtml(t('btnRaw', 'Raw')) : escapeHtml(t('btnBeautify', 'Beautify'))) + '</button>'
       : '') +
-    '<button class="content-find__close" title="Close">✕</button>';
+    '<button class="content-find__close" title="' + escapeHtml(t('findClose', 'Close')) + '">✕</button>';
   const input = bar.querySelector('input');
   const count = bar.querySelector('.content-find__count');
   const rows = buildCodeRows(text);
@@ -3039,7 +3360,7 @@ function renderTextPreview(res, container) {
   mount(text);
   const btn = wrap.querySelector('.content-find__beautify');
   if (btn) {
-    btn.textContent = 'Formatting…';
+    btn.textContent = t('inspectorFormatting', 'Formatting…');
     btn.disabled = true;
   }
   beautifyAsync(res, text).then((formatted) => {
@@ -3081,7 +3402,7 @@ function renderRequestPreview(res) {
   if (req.query && req.query.length) {
     html +=
       '<div class="request-preview__section">' +
-      '<div class="request-preview__label">Query parameters</div>' +
+      '<div class="request-preview__label">' + escapeHtml(t('inspectorQueryParams', 'Query parameters')) + '</div>' +
       '<table class="request-preview__table"><tbody>';
     for (const p of req.query) {
       html += '<tr><td class="request-preview__key">' + escapeHtml(p.name) + '</td><td>' + escapeHtml(p.value) + '</td></tr>';
@@ -3096,7 +3417,7 @@ function renderRequestPreview(res) {
       const clipped = pdText.length > 20000 ? pdText.slice(0, 20000) + '…' : pdText;
       html +=
         '<div class="request-preview__section">' +
-        '<div class="request-preview__label">Request body</div>' +
+        '<div class="request-preview__label">' + escapeHtml(t('inspectorRequestBody', 'Request body')) + '</div>' +
         '<pre class="request-preview__body">' + escapeHtml(clipped) + '</pre></div>';
     }
   }
@@ -3129,15 +3450,15 @@ function renderApiPreview(res) {
     main.innerHTML =
       '<div class="preview-fallback">' +
       (ICONS[res.type] || ICONS.other) +
-      '<span>Binary response — download to view it</span></div>';
+      '<span>' + escapeHtml(t('inspectorBinaryResponse', 'Binary response — download to view it')) + '</span></div>';
   } else {
     const pre = document.createElement('pre');
-    pre.textContent = 'Loading response…';
+    pre.textContent = t('inspectorLoadingResponse', 'Loading response…');
     main.appendChild(pre);
     getContent(res).then((content) => {
       if (!state.current || state.current.id !== res.id) return;
       if (content === null || content === undefined || content === '') {
-        pre.textContent = 'No response preview — the content could not be retrieved.';
+        pre.textContent = t('inspectorNoResponsePreview', 'No response preview — the content could not be retrieved.');
         return;
       }
       res._text = clampPreviewText(contentToText(content));
@@ -3178,13 +3499,13 @@ function renderFontPreview(res) {
   pv.innerHTML = '';
   const wrap = document.createElement('div');
   wrap.className = 'font-preview';
-  wrap.innerHTML = '<div class="font-preview__status">Loading font…</div>';
+  wrap.innerHTML = '<div class="font-preview__status">' + escapeHtml(t('inspectorLoadingFont', 'Loading font preview…')) + '</div>';
   pv.appendChild(wrap);
 
   getContent(res).then((content) => {
     if (!state.current || state.current.id !== res.id) return;
     if (!content || (typeof content === 'string' && !content.trim())) {
-      wrap.innerHTML = '<div class="font-preview__status">Font content could not be retrieved.</div>';
+      wrap.innerHTML = '<div class="font-preview__status">' + escapeHtml(t('inspectorFontSample', 'Font content could not be retrieved.')) + '</div>';
       return;
     }
     const blob = toBlob(content, fontMimeOf(res));
@@ -3258,13 +3579,13 @@ function renderSvgPreview(res) {
   pv.innerHTML = '';
   const wrap = document.createElement('div');
   wrap.className = 'svg-preview';
-  wrap.innerHTML = '<div class="font-preview__status">Loading SVG…</div>';
+  wrap.innerHTML = '<div class="font-preview__status">' + escapeHtml(t('inspectorLoadingSvg', 'Loading SVG…')) + '</div>';
   pv.appendChild(wrap);
 
   getContent(res).then((content) => {
     if (!state.current || state.current.id !== res.id) return;
     if (!content || (typeof content === 'string' && !content.trim())) {
-      wrap.innerHTML = '<div class="font-preview__status">SVG content could not be retrieved.</div>';
+      wrap.innerHTML = '<div class="font-preview__status">' + escapeHtml(t('inspectorSvgError', 'SVG content could not be retrieved.')) + '</div>';
       return;
     }
     const text = contentToText(content);
@@ -3274,7 +3595,7 @@ function renderSvgPreview(res) {
     const img = document.createElement('img');
     img.alt = '';
     img.className = 'svg-preview__img';
-    img.title = 'Click to enlarge';
+    img.title = t('inspectorClickToEnlarge', 'Click to enlarge');
 
     const size = svgIntrinsicSize(text);
     if (size.width) img.width = size.width;
@@ -3314,8 +3635,8 @@ function renderSvgPreview(res) {
     actions.className = 'svg-preview__actions';
     const srcBtn = document.createElement('button');
     srcBtn.className = 'btn btn--sm';
-    srcBtn.textContent = 'View source';
-    srcBtn.title = 'Show the SVG markup with syntax highlighting';
+    srcBtn.textContent = t('inspectorViewSource', 'View source');
+    srcBtn.title = t('inspectorViewSourceTitle', 'Show the SVG markup with syntax highlighting');
     srcBtn.addEventListener('click', () => renderTextPreview(res));
     actions.appendChild(srcBtn);
     wrap.appendChild(actions);
@@ -3383,7 +3704,9 @@ function closeInspector() {
   releasePreviewUrls();
   const inspector = document.getElementById('inspector');
   inspector.hidden = true;
-  document.getElementById('inspector-tabs').hidden = true;
+  const tabsEl = document.getElementById('inspector-tabs');
+  tabsEl.hidden = true;
+  tabsEl.innerHTML = '';
   document.getElementById('inspector-empty').hidden = false;
   document.getElementById('inspector-body').hidden = true;
   render();
@@ -3411,11 +3734,11 @@ function renderInspectorTabs() {
   if (state.open.length > 1) {
     const closeAll = document.createElement('button');
     closeAll.className = 'itab-closeall';
-    closeAll.title = 'Close all open tabs';
+    closeAll.title = t('inspectorCloseAllTabsTitle', 'Close all open tabs');
     closeAll.innerHTML =
       '<svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">' +
       '<path d="M3 3l10 10M13 3L3 13"/></svg>' +
-      '<span>Close all</span>';
+      '<span>' + escapeHtml(t('inspectorCloseAllTabs', 'Close all')) + '</span>';
     closeAll.addEventListener('click', () => closeInspector());
     tabsEl.appendChild(closeAll);
   }
@@ -3456,7 +3779,7 @@ function renderActiveResource() {
     const img = document.createElement('img');
     img.alt = '';
     img.className = 'media-preview';
-    img.title = 'Click to enlarge';
+    img.title = t('inspectorClickToEnlarge', 'Click to enlarge');
     pv.appendChild(img);
     img.addEventListener('click', () => {
       openLightbox();
@@ -3477,7 +3800,7 @@ function renderActiveResource() {
       const video = document.createElement('video');
       video.controls = true;
       video.className = 'media-preview';
-      video.title = 'Click to enlarge';
+      video.title = t('inspectorClickToEnlarge', 'Click to enlarge');
       if (res.mimeType) video.type = res.mimeType;
       pv.appendChild(video);
       video.addEventListener('click', () => {
@@ -3495,8 +3818,8 @@ function renderActiveResource() {
           if (!bigVideo.isConnected) return;
           big.innerHTML =
             '<div class="media-fallback media-fallback--lightbox">' +
-            '<p>This video cannot be played in the browser.</p>' +
-            '<p class="media-fallback__note">Download the file and open it with VLC or another media player.</p>' +
+            '<p>' + escapeHtml(t('videoCannotPlay', 'This video cannot be played in the browser.')) + '</p>' +
+            '<p class="media-fallback__note">' + escapeHtml(t('videoFallbackVlcNote', 'Download the file and open it with VLC or another media player.')) + '</p>' +
             '</div>';
         });
       });
@@ -3516,12 +3839,12 @@ function renderActiveResource() {
     renderApiPreview(res);
   } else if (isTextType(res)) {
     const pre = document.createElement('pre');
-    pre.textContent = 'Loading content…';
+    pre.textContent = t('inspectorLoadingContent', 'Loading content…');
     pv.appendChild(pre);
     getContent(res).then((content) => {
       if (!state.current || state.current.id !== res.id) return;
       if (content === null || content === undefined || content === '') {
-        pre.textContent = 'No preview available — the content could not be retrieved.';
+        pre.textContent = t('inspectorNoPreview', 'No preview available — the content could not be retrieved.');
         return;
       }
       res._text = clampPreviewText(contentToText(content));
@@ -3534,7 +3857,7 @@ function renderActiveResource() {
     pv.innerHTML =
       '<div class="preview-fallback">' +
       (ICONS[res.type] || ICONS.other) +
-      '<span>No preview for this resource type</span></div>';
+      '<span>' + escapeHtml(t('emptyPreviewUnknown', 'No preview for this resource type')) + '</span></div>';
   }
 
   setInspectorMeta('meta-url', res.url, true);
@@ -3664,7 +3987,7 @@ function syncThemeButton() {
   const btn = document.getElementById('btn-theme');
   if (!btn) return;
   const light = isLightTheme();
-  btn.title = light ? 'Switch to dark theme' : 'Switch to light theme';
+  btn.title = light ? t('btnThemeDark', 'Switch to dark theme') : t('btnThemeLight', 'Switch to light theme');
   btn.setAttribute('aria-label', btn.title);
   btn.setAttribute('aria-pressed', light ? 'false' : 'true');
 }
@@ -3712,14 +4035,151 @@ function setupGuide() {
     e.preventDefault();
     openGuide();
     const input = document.getElementById('guide-search');
-    input.value = 'Text';
-    filterGuide('Text');
+    const q = t('catText', 'Text');
+    input.value = q;
+    filterGuide(q);
+  });
+}
+
+/* ---------- Settings Modal (File Naming Patterns & Video Format) ---------- */
+function openSettings() {
+  const modal = document.getElementById('settings-modal');
+  if (!modal) return;
+  modal.hidden = false;
+  loadSettingsUI();
+}
+
+function closeSettings() {
+  const modal = document.getElementById('settings-modal');
+  if (modal) modal.hidden = true;
+}
+
+function updateNamingPreview() {
+  const previewEl = document.getElementById('setting-naming-preview');
+  if (!previewEl) return;
+  const patternInput = document.getElementById('setting-naming-screenshot');
+  const pattern = (patternInput && patternInput.value) || '{domain}-{type}-{date}_{time}';
+  const namingHelper = (typeof SourceDownloadNaming !== 'undefined') ? SourceDownloadNaming : (typeof window !== 'undefined' && window.SourceDownloadNaming);
+  if (namingHelper && typeof namingHelper.formatFilename === 'function') {
+    previewEl.textContent = namingHelper.formatFilename(pattern, {
+      domain: 'example-com',
+      title: 'awesome-page',
+      type: 'screenshot-area'
+    }, '.png');
+  } else {
+    previewEl.textContent = 'example-com-screenshot-area-2026-09-22_12-00-00.png';
+  }
+}
+
+function loadSettingsUI() {
+  const namingHelper = (typeof SourceDownloadNaming !== 'undefined') ? SourceDownloadNaming : (typeof window !== 'undefined' && window.SourceDownloadNaming);
+  const defPatterns = (namingHelper && namingHelper.DEFAULT_PATTERNS) || {
+    screenshot: '{domain}-{type}-{date}_{time}',
+    recording: '{domain}-{type}-{date}_{time}',
+    archive: '{domain}-archive-{date}'
+  };
+
+  chrome.storage.local.get({ namingPatterns: defPatterns, videoFormat: 'mp4', gifResolution: 'original', gifFps: 10 }, (data) => {
+    const patterns = data.namingPatterns || defPatterns;
+    const inpSc = document.getElementById('setting-naming-screenshot');
+    const inpRec = document.getElementById('setting-naming-recording');
+    const inpArc = document.getElementById('setting-naming-archive');
+    const selVf = document.getElementById('setting-video-format');
+    const selGr = document.getElementById('setting-gif-resolution');
+    const selGf = document.getElementById('setting-gif-fps');
+
+    if (inpSc) inpSc.value = patterns.screenshot || defPatterns.screenshot;
+    if (inpRec) inpRec.value = patterns.recording || defPatterns.recording;
+    if (inpArc) inpArc.value = patterns.archive || defPatterns.archive;
+    if (selVf) selVf.value = data.videoFormat || 'mp4';
+    if (selGr) selGr.value = data.gifResolution || 'original';
+    if (selGf) selGf.value = String(data.gifFps || 10);
+
+    updateNamingPreview();
+  });
+}
+
+function setupSettings() {
+  const btnSettings = document.getElementById('btn-settings');
+  const btnClose = document.getElementById('settings-close');
+  const backdrop = document.getElementById('settings-backdrop');
+  const btnSave = document.getElementById('setting-btn-save');
+  const btnReset = document.getElementById('setting-btn-reset');
+
+  if (btnSettings) btnSettings.addEventListener('click', openSettings);
+  if (btnClose) btnClose.addEventListener('click', closeSettings);
+  if (backdrop) backdrop.addEventListener('click', closeSettings);
+
+  const inpSc = document.getElementById('setting-naming-screenshot');
+  const inpRec = document.getElementById('setting-naming-recording');
+  const inpArc = document.getElementById('setting-naming-archive');
+
+  if (inpSc) inpSc.addEventListener('input', updateNamingPreview);
+  if (inpRec) inpRec.addEventListener('input', updateNamingPreview);
+  if (inpArc) inpArc.addEventListener('input', updateNamingPreview);
+
+  document.querySelectorAll('#settings-modal .token-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.dataset.target;
+      const token = btn.dataset.token;
+      const targetInput = document.getElementById(targetId);
+      if (targetInput && token) {
+        const start = targetInput.selectionStart || targetInput.value.length;
+        const end = targetInput.selectionEnd || targetInput.value.length;
+        const val = targetInput.value;
+        targetInput.value = val.slice(0, start) + token + val.slice(end);
+        targetInput.selectionStart = targetInput.selectionEnd = start + token.length;
+        targetInput.focus();
+        updateNamingPreview();
+      }
+    });
   });
 
-  if (!panelPrefs.guideSeen) {
-    panelPrefs.guideSeen = true;
-    savePrefs();
-    setTimeout(openGuide, 400);
+  if (btnSave) {
+    btnSave.addEventListener('click', () => {
+      const screenshot = (inpSc && inpSc.value.trim()) || '{domain}-{type}-{date}_{time}';
+      const recording = (inpRec && inpRec.value.trim()) || '{domain}-{type}-{date}_{time}';
+      const archive = (inpArc && inpArc.value.trim()) || '{domain}-archive-{date}';
+      const selVf = document.getElementById('setting-video-format');
+      const videoFormat = (selVf && selVf.value) || 'mp4';
+      const selGr = document.getElementById('setting-gif-resolution');
+      const gifResolution = (selGr && selGr.value) || 'original';
+      const selGf = document.getElementById('setting-gif-fps');
+      const gifFps = parseInt((selGf && selGf.value) || '10', 10) || 10;
+
+      chrome.storage.local.set({
+        namingPatterns: { screenshot, recording, archive },
+        videoFormat,
+        gifResolution,
+        gifFps
+      }, () => {
+        closeSettings();
+        if (typeof toast === 'function') {
+          toast(t('toastCopied', 'Settings saved'));
+        }
+      });
+    });
+  }
+
+  if (btnReset) {
+    btnReset.addEventListener('click', () => {
+      const namingHelper = (typeof SourceDownloadNaming !== 'undefined') ? SourceDownloadNaming : (typeof window !== 'undefined' && window.SourceDownloadNaming);
+      const defPatterns = (namingHelper && namingHelper.DEFAULT_PATTERNS) || {
+        screenshot: '{domain}-{type}-{date}_{time}',
+        recording: '{domain}-{type}-{date}_{time}',
+        archive: '{domain}-archive-{date}'
+      };
+      if (inpSc) inpSc.value = defPatterns.screenshot;
+      if (inpRec) inpRec.value = defPatterns.recording;
+      if (inpArc) inpArc.value = defPatterns.archive;
+      const selVf = document.getElementById('setting-video-format');
+      if (selVf) selVf.value = 'mp4';
+      const selGr = document.getElementById('setting-gif-resolution');
+      if (selGr) selGr.value = 'original';
+      const selGf = document.getElementById('setting-gif-fps');
+      if (selGf) selGf.value = '10';
+      updateNamingPreview();
+    });
   }
 }
 
@@ -3948,20 +4408,20 @@ function renderUnplayableVideo(res) {
   wrap.innerHTML =
     '<div class="media-fallback__icon">' + ICONS.video + '</div>' +
     '<div class="media-fallback__title">' +
-    (isHls ? 'HLS (m3u8) stream detected' : 'This video cannot be played in the browser') +
+    (isHls ? escapeHtml(t('videoHlsDetected', 'HLS (m3u8) stream detected')) : escapeHtml(t('videoCannotPlay', 'This video cannot be played in the browser'))) +
     '</div>' +
     '<div class="media-fallback__desc">' +
     (isHls
-      ? 'Chrome cannot play HLS streams directly. You can merge all segments of <b>' + escapeHtml(res.filename) + '</b> into one video file, or download the raw stream.'
-      : 'The browser does not support this format' +
+      ? t('videoHlsNotice', 'Chrome cannot play HLS streams directly. You can merge all segments of <b>$NAME$</b> into a single MP4/TS video file.').replace('$NAME$', escapeHtml(res.filename))
+      : escapeHtml(t('videoFormatUnsupported', 'The browser does not support this format')) +
         (res.mimeType ? ' (' + escapeHtml(res.mimeType) + ')' : '') +
-        '. Download the file and open it with a desktop media player.') +
+        '. ' + escapeHtml(t('videoFallbackVlcNote', 'Download the file and open it with VLC or another media player.'))) +
     '</div>' +
     '<div class="media-fallback__actions">' +
-    (isHls ? '<button id="mfa-merge" class="btn btn--primary">Merge segments & download</button>' : '') +
-    '<button id="mfa-download" class="btn">Download original</button>' +
+    (isHls ? '<button id="mfa-merge" class="btn btn--primary">' + escapeHtml(t('btnMergeHls', 'Merge segments & download')) + '</button>' : '') +
+    '<button id="mfa-download" class="btn">' + escapeHtml(t('videoDownloadOriginal', 'Download original')) + '</button>' +
     '</div>' +
-    '<div class="media-fallback__note">Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format.</div>';
+    '<div class="media-fallback__note">' + escapeHtml(t('videoTipVlc', 'Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format.')) + '</div>';
   pv.appendChild(wrap);
   const mergeBtn = document.getElementById('mfa-merge');
   if (mergeBtn) mergeBtn.addEventListener('click', () => mergeHlsAndDownload(res));
@@ -4279,14 +4739,14 @@ async function downloadSingle(res) {
   try {
     const content = await getContent(res);
     if (content === null || content === undefined || content === '') {
-      toast('Could not fetch this resource (CORS or unsupported type).', 'error');
+      toast(t('toastDownloadFailed', 'Could not fetch this resource (CORS or unsupported type).'), 'error');
       return;
     }
     const name = downloadName(res, content);
     saveBlob(toBlob(content, res.mimeType || undefined), name);
     state.failed.delete(res.id);
     render();
-    toast('Download started: ' + name, 'success');
+    toast(t('toastDownloadStarted', 'Download started: $NAME$').replace('$NAME$', name), 'success');
   } finally {
     hideProgress();
     setBusy(false);
@@ -4299,12 +4759,12 @@ async function downloadZip(resources, baseName) {
     return;
   }
   if (!resources.length) {
-    toast('No resources to download.', 'error');
+    toast(t('toastNoResourcesToDownload', 'No resources to download.'), 'error');
     return;
   }
   setBusy(true);
   const est = estimateArchiveBytes(resources);
-  showProgress('Fetching 0/' + resources.length + ' · ZIP ' + formatEstimate(est) + '…');
+  showProgress(t('progressFetching', 'Fetching $DONE$/$TOTAL$ · ZIP $EST$…').replace('$DONE$', '0').replace('$TOTAL$', resources.length).replace('$EST$', formatEstimate(est)));
   try {
     const used = new Map();
     const total = resources.length;
@@ -4322,7 +4782,7 @@ async function downloadZip(resources, baseName) {
         }
         const done = i + 1;
         if (done % 5 === 0 || done === total) {
-          updateProgress(done / total, 'Fetching ' + done + '/' + total + ' · ZIP ' + formatEstimate(est) + '…');
+          updateProgress(done / total, t('progressFetching', 'Fetching $DONE$/$TOTAL$ · ZIP $EST$…').replace('$DONE$', done).replace('$TOTAL$', total).replace('$EST$', formatEstimate(est)));
         }
       }
     };
@@ -4351,9 +4811,9 @@ async function downloadZip(resources, baseName) {
       }
     }
 
-    updateProgress(1, 'Creating ZIP archive…');
+    updateProgress(1, t('progressCreatingZipArchive', 'Creating ZIP archive…'));
     const blob = await buildZip(entries, (fraction) => {
-      updateProgress(0.5 + 0.5 * fraction, 'Creating ZIP ' + Math.round(fraction * 100) + '%…');
+      updateProgress(0.5 + 0.5 * fraction, t('progressCreatingZip', 'Creating ZIP $PERCENT$%…').replace('$PERCENT$', Math.round(fraction * 100)));
     });
     hideProgress();
 
@@ -4361,10 +4821,13 @@ async function downloadZip(resources, baseName) {
     saveBlob(blob, baseName + '.zip');
     if (skipped > 0) {
       toast(
-        'ZIP saved: ' + fetched + ' of ' + total + ' resources (' + skipped + ' failed)',
+        t('toastZipSavedWithFailed', 'ZIP saved: $FETCHED$ of $TOTAL$ resources ($SKIPPED$ failed)')
+          .replace('$FETCHED$', fetched)
+          .replace('$TOTAL$', total)
+          .replace('$SKIPPED$', skipped),
         'error',
         {
-          label: 'Retry ' + skipped,
+          label: t('btnRetryFailed', 'Retry $COUNT$').replace('$COUNT$', skipped),
           fn: () => downloadZip(
             state.resources.filter((r) => failedNow.includes(r.id)),
             baseName + '-retry'
@@ -4372,12 +4835,12 @@ async function downloadZip(resources, baseName) {
         }
       );
     } else {
-      toast('ZIP saved: ' + fetched + ' of ' + total + ' resources', 'success');
+      toast(t('toastZipSaved', 'ZIP saved: $FETCHED$ of $TOTAL$ resources').replace('$FETCHED$', fetched).replace('$TOTAL$', total), 'success');
     }
     render();
   } catch (err) {
     hideProgress();
-    toast('ZIP failed: ' + (err && err.message ? err.message : 'unknown error'), 'error');
+    toast(t('toastZipFailed', 'ZIP failed: $ERROR$').replace('$ERROR$', (err && err.message ? err.message : 'unknown error')), 'error');
   } finally {
     setBusy(false);
   }
@@ -4389,7 +4852,7 @@ function setBusy(busy) {
     const el = document.getElementById(id);
     if (el) el.disabled = busy;
   }
-  setStatusMessage(busy ? 'Working…' : '');
+  setStatusMessage(busy ? t('statusWorking', 'Working…') : '');
 }
 
 function selectedResources() {
@@ -4416,7 +4879,7 @@ function zipBaseName() {
 function exportResourceList(format) {
   const list = filteredResources();
   if (!list.length) {
-    toast('No resources to export.', 'error');
+    toast(t('toastNothingToExport', 'No resources to export.'), 'error');
     return;
   }
   const rows = list.map((r) => ({
@@ -4443,13 +4906,13 @@ function exportResourceList(format) {
     );
     saveBlob(new Blob([lines.join('\r\n')], { type: 'text/csv' }), name);
   }
-  toast('Exported ' + rows.length + ' resource' + (rows.length === 1 ? '' : 's') + ' as ' + format.toUpperCase(), 'success');
+  toast(t('toastExportedTablesZip', 'Exported $COUNT$ resource(s) as $FORMAT$').replace('$COUNT$', rows.length).replace('$FORMAT$', format.toUpperCase()), 'success');
 }
 
 function exportHar() {
   chrome.devtools.network.getHAR((har) => {
     if (!har) {
-      toast('Could not read the network log.', 'error');
+      toast(t('toastDevToolsNotAvailable', 'Could not read the network log.'), 'error');
       return;
     }
     const log = har.log ? har.log : har;
@@ -4461,7 +4924,7 @@ function exportHar() {
     const file = { log };
     saveBlob(new Blob([JSON.stringify(file, null, 2)], { type: 'application/json' }), zipBaseName() + '.har');
     const n = (log.entries || []).length;
-    toast('HAR exported (' + n + ' ' + (n === 1 ? 'entry' : 'entries') + ')', 'success');
+    toast(t('toastHarExported', 'HAR exported ($COUNT$ entries)').replace('$COUNT$', n), 'success');
   });
 }
 
@@ -4474,6 +4937,7 @@ function openExportMenu(e) {
   e.preventDefault();
   e.stopPropagation();
   closeContextMenu();
+  closeLangMenu();
   const menu = document.getElementById('export-menu');
   const btn = document.getElementById('btn-export');
   if (!menu || !btn) return;
@@ -4481,6 +4945,28 @@ function openExportMenu(e) {
   if (menu.hidden) return;
   const rect = btn.getBoundingClientRect();
   menu.style.left = Math.max(8, rect.right - 220) + 'px';
+  menu.style.top = (rect.bottom + 4) + 'px';
+}
+
+function closeLangMenu() {
+  const menu = document.getElementById('lang-menu');
+  if (menu) menu.hidden = true;
+}
+
+function openLangMenu(e) {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  closeContextMenu();
+  closeExportMenu();
+  const menu = document.getElementById('lang-menu');
+  const btn = document.getElementById('btn-lang');
+  if (!menu || !btn) return;
+  menu.hidden = !menu.hidden;
+  if (menu.hidden) return;
+  const rect = btn.getBoundingClientRect();
+  menu.style.left = Math.max(8, rect.right - 165) + 'px';
   menu.style.top = (rect.bottom + 4) + 'px';
 }
 
@@ -4492,6 +4978,7 @@ function resetTextFilters(opts) {
   const recapture = !opts || opts.recapture !== false;
   state.text.tag = 'all';
   state.text.level = 'all';
+  state.text.pill = 'all';
   state.text.query = { mode: 'text', value: '' };
   state.text.queryError = '';
   state.text.lastSig = '';
@@ -4512,25 +4999,33 @@ function resetTextFilters(opts) {
 
 function openContextMenu(e, res) {
   e.preventDefault();
+  e.stopPropagation();
   closeExportMenu();
-  const menu = document.getElementById('context-menu');
-  menu.innerHTML = '';
+  closeLangMenu();
+  closeContextMenu();
+
+  const menu = document.createElement('div');
+  menu.id = 'context-menu';
+  menu.className = 'context-menu';
+  const existing = document.getElementById('context-menu');
+  if (existing) existing.remove();
+  document.body.appendChild(menu);
 
   const items = [
-    { label: 'Download', icon: ICONS.download, action: () => downloadSingle(res) },
-    { label: 'Open in new tab', icon: ICONS.open, action: () => openResourceTab(res) },
+    { label: t('inspectorDownloadFile', 'Download'), icon: ICONS.download, action: () => downloadSingle(res) },
+    { label: t('inspectorOpenTab', 'Open in new tab'), icon: ICONS.open, action: () => openResourceTab(res) },
     {
-      label: 'Copy URL',
+      label: t('inspectorCopyUrl', 'Copy URL'),
       icon: ICONS.copy,
       action: () => {
         copyText(res.url);
-        toast('URL copied to clipboard', 'success');
+        toast(t('toastUrlCopied', 'URL copied to clipboard'), 'success');
       },
     },
   ];
   if (state.failed.has(res.id)) {
     items.splice(1, 0, {
-      label: 'Retry download',
+      label: t('contextMenuRetryDownload', 'Retry download'),
       icon: '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 8A5.5 5.5 0 1 1 11 3.7"/><path d="M13.5 2v2.5H11"/></svg>',
       action: () => downloadSingle(res),
     });
@@ -4619,13 +5114,18 @@ function setStatusMessage(msg) {
  * ============================================================ */
 
 const PREFS_KEY = 'panelPrefs';
-let panelPrefs = { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false, readMode: false, theme: null };
+let panelPrefs = { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false, readMode: false, theme: null, lang: 'auto' };
 
 function loadPrefs() {
   return new Promise((resolve) => {
-    chrome.storage.local.get({ panelPrefs: { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false, readMode: false, theme: null } }, (data) => {
+    if (typeof chrome === 'undefined' || !chrome.storage || !chrome.storage.local) {
+      resolve();
+      return;
+    }
+    chrome.storage.local.get({ lang: null, panelPrefs: { view: 'list', activeTab: 'all', inspectorWidth: null, guideSeen: false, readMode: false, theme: null, lang: 'auto' } }, (data) => {
       const p = data.panelPrefs || {};
       const stored = (p.theme === 'light' || p.theme === 'dark') ? p.theme : null;
+      const savedLang = data.lang || p.lang || 'auto';
       panelPrefs = {
         view: p.view === 'grid' ? 'grid' : 'list',
         activeTab: TYPES[p.activeTab] ? p.activeTab : 'all',
@@ -4633,6 +5133,7 @@ function loadPrefs() {
         guideSeen: p.guideSeen === true,
         readMode: p.readMode === true,
         theme: stored,
+        lang: savedLang,
       };
       if (stored) {
         try { localStorage.setItem(THEME_STORAGE, stored); } catch { /* noop */ }
@@ -4646,7 +5147,20 @@ function loadPrefs() {
 }
 
 function savePrefs() {
-  chrome.storage.local.set({ panelPrefs });
+  if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
+    chrome.storage.local.set({ lang: panelPrefs.lang, panelPrefs });
+  }
+}
+
+if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.onChanged) {
+  chrome.storage.onChanged.addListener((changes, area) => {
+    if (area === 'local') {
+      const newLang = changes.lang ? changes.lang.newValue : (changes.panelPrefs && changes.panelPrefs.newValue ? changes.panelPrefs.newValue.lang : null);
+      if (newLang && newLang !== currentLocale) {
+        setLanguage(newLang);
+      }
+    }
+  });
 }
 
 function applyInspectorWidth() {
@@ -4672,8 +5186,8 @@ function bindEvents() {
     state.search = searchInput.value;
     searchClear.hidden = !state.search;
     searchInput.title = isRegexSearch()
-      ? 'Regex search active — wrap your query in /pattern/i'
-      : 'Search by name, URL, type, alt text or title…';
+      ? t('searchRegexHint', 'Regex search active — wrap your query in /pattern/i')
+      : t('searchPlaceholder', 'Search by name, URL, type, alt text or title…');
     render();
     clearTimeout(searchTimer);
     if (!state.search.trim()) {
@@ -4739,15 +5253,56 @@ function bindEvents() {
   }
 
   // Text capture controls
-  document.getElementById('tf-kind').addEventListener('change', (e) => {
-    state.text.tag = e.target.value;
-    if (state.text.tag !== 'heading') state.text.level = 'all';
+  const tfKind = document.getElementById('tf-kind');
+  if (tfKind) {
+    tfKind.addEventListener('change', (e) => {
+      state.text.tag = e.target.value;
+      if (state.text.tag !== 'heading') state.text.level = 'all';
+      renderTextView();
+    });
+  }
+  const tfLevel = document.getElementById('tf-level');
+  if (tfLevel) {
+    tfLevel.addEventListener('change', (e) => {
+      state.text.level = e.target.value;
+      renderTextView();
+    });
+  }
+
+  // Text category pills
+  const setPill = (pill) => {
+    state.text.pill = pill;
     renderTextView();
-  });
-  document.getElementById('tf-level').addEventListener('change', (e) => {
-    state.text.level = e.target.value;
-    renderTextView();
-  });
+  };
+  const pillAll = document.getElementById('tf-pill-all');
+  if (pillAll) pillAll.addEventListener('click', () => setPill('all'));
+  const pillText = document.getElementById('tf-pill-text');
+  if (pillText) pillText.addEventListener('click', () => setPill('text'));
+  const pillTables = document.getElementById('tf-pill-tables');
+  if (pillTables) pillTables.addEventListener('click', () => setPill('tables'));
+
+  // Text selection controls
+  const selectAllBtn = document.getElementById('tf-select-all');
+  if (selectAllBtn) {
+    selectAllBtn.addEventListener('click', () => {
+      const visible = filteredTextBlocks();
+      const allSelected = visible.length > 0 && visible.every((b) => state.text.sel.has(b.id));
+      if (allSelected) {
+        for (const b of visible) state.text.sel.delete(b.id);
+      } else {
+        for (const b of visible) state.text.sel.add(b.id);
+      }
+      renderTextView();
+    });
+  }
+
+  const clearSelBtn = document.getElementById('tf-clear-sel');
+  if (clearSelBtn) {
+    clearSelBtn.addEventListener('click', () => {
+      state.text.sel.clear();
+      renderTextView();
+    });
+  }
 
   // CSS and XPath queries have to run inside the page, so those two modes
   // trigger a fresh capture; text and regex just re-filter what is already
@@ -4758,59 +5313,81 @@ function bindEvents() {
       pollTextOnce().catch(() => {});
     }
   };
-  document.getElementById('tf-mode').addEventListener('change', (e) => {
-    state.text.query.mode = e.target.value;
-    state.text.queryError = '';
-    state.text.lastSig = '';
-    applyTextQuery();
-  });
-  let tfQueryTimer = null;
-  const tfQuery = document.getElementById('tf-query');
-  tfQuery.addEventListener('input', (e) => {
-    if (tfQueryTimer) clearTimeout(tfQueryTimer);
-    const wait = state.text.query.mode === 'css' || state.text.query.mode === 'xpath' ? 450 : 180;
-    tfQueryTimer = setTimeout(() => {
-      tfQueryTimer = null;
-      state.text.query.value = e.target.value;
+  const tfMode = document.getElementById('tf-mode');
+  if (tfMode) {
+    tfMode.addEventListener('change', (e) => {
+      state.text.query.mode = e.target.value;
       state.text.queryError = '';
       state.text.lastSig = '';
-      if (!e.target.value.trim()) {
+      applyTextQuery();
+    });
+  }
+  let tfQueryTimer = null;
+  const tfQuery = document.getElementById('tf-query');
+  if (tfQuery) {
+    tfQuery.addEventListener('input', (e) => {
+      if (tfQueryTimer) clearTimeout(tfQueryTimer);
+      const wait = state.text.query.mode === 'css' || state.text.query.mode === 'xpath' ? 450 : 180;
+      tfQueryTimer = setTimeout(() => {
+        tfQueryTimer = null;
+        state.text.query.value = e.target.value;
+        state.text.queryError = '';
+        state.text.lastSig = '';
+        if (!e.target.value.trim()) {
+          state.text.tag = 'all';
+          state.text.level = 'all';
+        }
+        applyTextQuery();
+      }, wait);
+    });
+    tfQuery.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        tfQuery.value = '';
+        state.text.query.value = '';
+        state.text.queryError = '';
+        state.text.lastSig = '';
+        applyTextQuery();
+        return;
+      }
+      if (e.key !== 'Enter') return;
+      if (tfQueryTimer) clearTimeout(tfQueryTimer);
+      tfQueryTimer = null;
+      state.text.query.value = tfQuery.value;
+      state.text.lastSig = '';
+      if (!tfQuery.value.trim()) {
         state.text.tag = 'all';
         state.text.level = 'all';
       }
       applyTextQuery();
-    }, wait);
-  });
-  tfQuery.addEventListener('keydown', (e) => {
-    if (e.key !== 'Enter') return;
-    if (tfQueryTimer) clearTimeout(tfQueryTimer);
-    tfQueryTimer = null;
-    state.text.query.value = tfQuery.value;
-    state.text.lastSig = '';
-    if (!tfQuery.value.trim()) {
-      state.text.tag = 'all';
-      state.text.level = 'all';
-    }
-    applyTextQuery();
-  });
-  document.getElementById('tf-live').addEventListener('click', () => {
-    state.text.live = !state.text.live;
-    if (!state.text.live) {
-      stopTextPoll();
-      stopBgTextPoll();
-    }
-    renderTextView();
-    ensureTextPoll();
-    ensureBgTextPoll();
-  });
-  document.getElementById('tf-refresh').addEventListener('click', () => {
-    pollTextOnce().catch(() => {});
-  });
-  document.getElementById('tf-clear').addEventListener('click', () => {
-    resetTextFilters({ recapture: true });
-    renderTextView();
-    pollTextOnce().catch(() => {});
-  });
+    });
+  }
+  const tfLive = document.getElementById('tf-live');
+  if (tfLive) {
+    tfLive.addEventListener('click', () => {
+      state.text.live = !state.text.live;
+      if (!state.text.live) {
+        stopTextPoll();
+        stopBgTextPoll();
+      }
+      renderTextView();
+      ensureTextPoll();
+      ensureBgTextPoll();
+    });
+  }
+  const tfRefresh = document.getElementById('tf-refresh');
+  if (tfRefresh) {
+    tfRefresh.addEventListener('click', () => {
+      pollTextOnce().catch(() => {});
+    });
+  }
+  const tfClear = document.getElementById('tf-clear');
+  if (tfClear) {
+    tfClear.addEventListener('click', () => {
+      resetTextFilters({ recapture: true });
+      renderTextView();
+      pollTextOnce().catch(() => {});
+    });
+  }
   const readBtn = document.getElementById('tf-read');
   if (readBtn) {
     readBtn.addEventListener('click', () => {
@@ -4820,11 +5397,16 @@ function bindEvents() {
       renderTextView();
     });
   }
-  document.getElementById('tf-export-txt').addEventListener('click', exportTextPlain);
-  document.getElementById('tf-export-md').addEventListener('click', exportTextMarkdown);
-  document.getElementById('tf-export-csv').addEventListener('click', () => exportTablesAs('csv'));
-  document.getElementById('tf-export-html').addEventListener('click', () => exportTablesAs('html'));
-  document.getElementById('tf-export-xlsx').addEventListener('click', exportTextXlsx);
+  const expTxt = document.getElementById('tf-export-txt');
+  if (expTxt) expTxt.addEventListener('click', exportTextPlain);
+  const expMd = document.getElementById('tf-export-md');
+  if (expMd) expMd.addEventListener('click', exportTextMarkdown);
+  const expCsv = document.getElementById('tf-export-csv');
+  if (expCsv) expCsv.addEventListener('click', () => exportTablesAs('csv'));
+  const expHtml = document.getElementById('tf-export-html');
+  if (expHtml) expHtml.addEventListener('click', () => exportTablesAs('html'));
+  const expXlsx = document.getElementById('tf-export-xlsx');
+  if (expXlsx) expXlsx.addEventListener('click', exportTextXlsx);
 
   document.getElementById('btn-refresh').addEventListener('click', () => {
     scanDom();
@@ -4852,7 +5434,7 @@ function bindEvents() {
 
   document.getElementById('btn-download-all').addEventListener('click', () => {
     if (!state.resources.length) {
-      toast('No resources to download.', 'error');
+      toast(t('toastNoResourcesToDownload', 'No resources to download.'), 'error');
       return;
     }
     downloadZip(state.resources, zipBaseName() + '-all');
@@ -4861,7 +5443,7 @@ function bindEvents() {
   document.getElementById('btn-download-view').addEventListener('click', () => {
     const list = filteredResources();
     if (!list.length) {
-      toast('No visible resources to download.', 'error');
+      toast(t('toastNoVisibleResources', 'No visible resources to download.'), 'error');
       return;
     }
     downloadZip(list, zipBaseName() + '-view');
@@ -4870,7 +5452,7 @@ function bindEvents() {
   document.getElementById('btn-download-selected').addEventListener('click', () => {
     const list = selectedResources();
     if (!list.length) {
-      toast('Select at least one resource first.', 'error');
+      toast(t('toastSelectAtLeastOne', 'Select at least one resource first.'), 'error');
       return;
     }
     downloadZip(list, zipBaseName());
@@ -4887,6 +5469,8 @@ function bindEvents() {
       const kind = item.getAttribute('data-export');
       if (kind === 'json' || kind === 'csv') exportResourceList(kind);
       else if (kind === 'har') exportHar();
+      else if (kind === 'screenshot') captureFullPageDevTools();
+      else if (kind === 'archive') captureOfflineArchiveDevTools();
     });
   }
   document.addEventListener('click', (e) => {
@@ -4898,6 +5482,106 @@ function bindEvents() {
     closeExportMenu();
   });
 
+  const btnLang = document.getElementById('btn-lang');
+  if (btnLang) btnLang.addEventListener('click', openLangMenu);
+
+  const langMenu = document.getElementById('lang-menu');
+  if (langMenu) {
+    langMenu.addEventListener('click', (e) => {
+      const item = e.target.closest('[data-lang]');
+      if (!item) return;
+      const lang = item.getAttribute('data-lang');
+      closeLangMenu();
+      setLanguage(lang);
+    });
+  }
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById('lang-menu');
+    if (!menu || menu.hidden) return;
+    const btn = document.getElementById('btn-lang');
+    if (btn && btn.contains(e.target)) return;
+    if (menu.contains(e.target)) return;
+    closeLangMenu();
+  });
+
+  const shotBtn = document.getElementById('btn-screenshot');
+  if (shotBtn) shotBtn.addEventListener('click', captureFullPageDevTools);
+
+  const archiveBtn = document.getElementById('btn-archive');
+  if (archiveBtn) archiveBtn.addEventListener('click', captureOfflineArchiveDevTools);
+
+  function captureFullPageDevTools() {
+    if (typeof chrome === 'undefined' || !chrome.devtools || !chrome.devtools.inspectedWindow) {
+      toast(t('toastDevToolsNotAvailable', 'DevTools inspected window not available.'), 'error');
+      return;
+    }
+    const tabId = chrome.devtools.inspectedWindow.tabId;
+    showProgress(t('toastScreenshotCapturing', 'Capturing full page screenshot…'));
+    chrome.runtime.sendMessage({ type: 'captureFullPage', tabId });
+  }
+
+  function captureOfflineArchiveDevTools() {
+    if (typeof chrome === 'undefined' || !chrome.devtools || !chrome.devtools.inspectedWindow) {
+      toast(t('toastDevToolsNotAvailable', 'DevTools inspected window not available.'), 'error');
+      return;
+    }
+    const tabId = chrome.devtools.inspectedWindow.tabId;
+    showProgress(t('toastArchiveCreating', 'Creating offline page archive…'));
+    chrome.runtime.sendMessage({ type: 'capturePageArchive', tabId });
+  }
+
+  if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onMessage) {
+    chrome.runtime.onMessage.addListener((msg) => {
+      if (!msg || typeof msg !== 'object') return;
+      if (msg.type === 'screenshotProgress') {
+        const pct = Math.round((msg.current / msg.total) * 100);
+        let pText = t('toastProgressCapturing', 'Capturing full page... $PERCENT$%')
+          .replace(/\$PERCENT\$/gi, String(pct))
+          .replace(/\$CURRENT\$/gi, String(msg.current))
+          .replace(/\$TOTAL\$/gi, String(msg.total));
+        if (!pText.includes(String(msg.current))) {
+          pText = pText.trim() + ` (${msg.current}/${msg.total})`;
+        }
+        showProgress(pText);
+        updateProgress(msg.current / msg.total, pText);
+      } else if (msg.type === 'screenshotDone') {
+        hideProgress();
+        toast(t('toastScreenshotCaptured', 'Full page screenshot saved.'));
+      } else if (msg.type === 'screenshotError') {
+        hideProgress();
+        toast(t('toastScreenshotError', 'Screenshot error: $ERROR$').replace('$ERROR$', (msg.message || 'failed')), 'error');
+      } else if (msg.type === 'archiveDone') {
+        hideProgress();
+        toast(t('toastArchiveCreated', 'Single-file HTML archive saved.'));
+      } else if (msg.type === 'archiveError') {
+        hideProgress();
+        toast(t('toastArchiveError', 'Archive error: $ERROR$').replace('$ERROR$', (msg.message || 'failed')), 'error');
+      }
+    });
+  }
+
+  async function checkRatingMilestone() {
+    try {
+      if (typeof chrome === 'undefined' || !chrome.storage || !chrome.storage.local) return;
+      const data = await chrome.storage.local.get({ downloadMilestone: 0, ratingDismissed: false });
+      if (data.downloadMilestone >= 3 && !data.ratingDismissed) {
+        const b = document.getElementById('panel-rating-banner');
+        if (b) b.hidden = false;
+      }
+    } catch { /* noop */ }
+  }
+
+  const ratingDismiss = document.getElementById('panel-rating-dismiss');
+  if (ratingDismiss) {
+    ratingDismiss.addEventListener('click', () => {
+      const b = document.getElementById('panel-rating-banner');
+      if (b) b.hidden = true;
+      chrome.storage.local.set({ ratingDismissed: true });
+    });
+  }
+
+  checkRatingMilestone();
+
   document.getElementById('inspector-close').addEventListener('click', closeActiveResource);
   document.getElementById('inspector-details').addEventListener('click', toggleInspectorDetails);
   document.addEventListener('keydown', (e) => {
@@ -4905,7 +5589,9 @@ function bindEvents() {
       closeLightbox();
       closeContextMenu();
       closeExportMenu();
+      closeLangMenu();
       closeGuide();
+      closeSettings();
     }
     const lightboxOpen = !document.getElementById('lightbox').hidden;
     if (!lightboxOpen) return;
@@ -4928,7 +5614,7 @@ function bindEvents() {
   document.getElementById('inspector-copy').addEventListener('click', () => {
     if (!state.current) return;
     copyText(state.current.url);
-    toast('URL copied to clipboard', 'success');
+    toast(t('toastUrlCopied', 'URL copied to clipboard'), 'success');
   });
   document.getElementById('meta-url').addEventListener('click', (e) => {
     e.preventDefault();
@@ -4987,66 +5673,80 @@ function setupResizer() {
   });
 }
 
-function init() {
+async function init() {
   bindEvents();
   updateViewToggle();
   setupResizer();
   setupLightbox();
   setupGuide();
+  setupSettings();
   applyInspectorWidth();
   applyDevtoolsTheme();
-  if (chrome.devtools.panels.onThemeChanged) {
+  if (typeof chrome !== 'undefined' && chrome.devtools && chrome.devtools.panels && chrome.devtools.panels.onThemeChanged) {
     chrome.devtools.panels.onThemeChanged.addListener(applyDevtoolsTheme);
   }
+  await setLanguage(panelPrefs.lang || 'auto');
   render();
 
-  chrome.devtools.network.getHAR((har) => {
-    if (har && har.entries) {
-      for (const entry of har.entries) addResource(fromHarEntry(entry));
-    }
-    render();
-    scanCssResources();
-    syncPanelCounts();
-    scheduleSniff();
-  });
+  if (typeof chrome !== 'undefined' && chrome.devtools && chrome.devtools.network) {
+    chrome.devtools.network.getHAR((har) => {
+      if (har && har.entries) {
+        for (const entry of har.entries) addResource(fromHarEntry(entry));
+      }
+      render();
+      scanCssResources();
+      syncPanelCounts();
+      scheduleSniff();
+    });
 
-  chrome.devtools.network.onRequestFinished.addListener((entry) => {
-    const r = addResource(fromHarEntry(entry));
-    scheduleRender();
-    if (r && r.type === 'css') scanCssResources();
-    scheduleSniff();
-  });
+    chrome.devtools.network.onRequestFinished.addListener((entry) => {
+      const r = addResource(fromHarEntry(entry));
+      scheduleRender();
+      if (r && r.type === 'css') scanCssResources();
+      scheduleSniff();
+    });
 
-  chrome.devtools.network.onNavigated.addListener(() => {
-    state.resources = [];
-    state.byUrl.clear();
-    state.selected.clear();
-    state.current = null;
-    state.open = [];
-    state.failed.clear();
-    state.contentIndex.clear();
-    apiCount = 0;
-    state.text.blocks = [];
-    state.text.tables.clear();
-    state.text.sel.clear();
-    state.text.lastSig = '';
-    state.text.query = { mode: 'text', value: '' };
-    state.text.queryError = '';
-    state.text.tag = 'all';
-    state.text.level = 'all';
-    closeInspector();
-    render();
-    syncPanelCounts();
-    scanDom();
-    scanCssResources();
-    scheduleSniff();
-  });
+    chrome.devtools.network.onNavigated.addListener(() => {
+      state.resources = [];
+      state.byUrl.clear();
+      state.selected.clear();
+      state.current = null;
+      state.open = [];
+      state.failed.clear();
+      state.contentIndex.clear();
+      apiCount = 0;
+      state.text.blocks = [];
+      state.text.tables.clear();
+      state.text.sel.clear();
+      state.text.lastSig = '';
+      state.text.query = { mode: 'text', value: '' };
+      state.text.queryError = '';
+      state.text.tag = 'all';
+      state.text.level = 'all';
+      closeInspector();
+      render();
+      syncPanelCounts();
+      scanDom();
+      scanCssResources();
+      scheduleSniff();
+    });
+  }
 
   scanDom();
   scanCssResources();
   scheduleSniff();
 }
 
+window.SourceDownload = {
+  I18n: { t, setLanguage, resolveLocale, loadLocaleMessages },
+  UI: { toast, showProgress, updateProgress, hideProgress, toggleTheme, applyTheme, openGuide, closeGuide },
+  Resources: { addResource, filteredResources, selectedResources, scanDom, scanCssResources },
+  TextView: { renderTextView, syncTextToolbar, exportTextPlain, exportTextMarkdown, exportSingleTable, exportTablesAs, exportTextXlsx },
+  Inspector: { renderInspector, openResource, closeResource, beautifyAsync },
+  Exporter: { downloadSingle, downloadZip, exportResourceList, exportHar },
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   loadPrefs().then(init);
 });
+

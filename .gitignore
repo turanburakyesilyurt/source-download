@@ -1,3 +1,12 @@
+# Dependencies
 node_modules/
 package-lock.json
+
+# Operating System Files
 .DS_Store
+*/.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Logs
+*.log

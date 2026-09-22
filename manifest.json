@@ -1,13 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Source Download",
-  "version": "1.11.0",
+  "name": "__MSG_appName__",
+  "version": "1.14.0",
+  "default_locale": "en",
   "author": "Turan Burak Yeşilyurt",
-  "description": "Browse, inspect and download every web asset a page loads seamlessly as a ZIP.",
-  "minimum_chrome_version": "114",
+  "homepage_url": "https://2run.dev",
+  "description": "__MSG_appDesc__",
+  "minimum_chrome_version": "116",
   "devtools_page": "devtools.html",
   "action": {
-    "default_title": "Source Download — track resources & open DevTools",
+    "default_title": "__MSG_actionTitle__",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/icon16.png",
@@ -28,10 +30,10 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
+      "js": ["lib/i18n.js", "lib/naming.js", "lib/pdf.js", "lib/gif.js", "content.js"],
       "run_at": "document_idle"
     }
   ],
-  "permissions": ["storage", "clipboardWrite"],
+  "permissions": ["storage", "clipboardWrite", "contextMenus", "activeTab", "scripting", "downloads"],
   "host_permissions": ["<all_urls>"]
 }

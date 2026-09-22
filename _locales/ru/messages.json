@@ -1,0 +1,1394 @@
+{
+  "appName": {
+    "message": "Source Download",
+    "description": "Название расширения"
+  },
+  "appDesc": {
+    "message": "Инспектируйте и скачивайте любые веб-ресурсы в ZIP. Скриншот всей страницы, извлечение таблиц и инструменты разработчика.",
+    "description": "Описание расширения"
+  },
+  "actionTitle": {
+    "message": "Source Download — Открыть панель и отслеживать ресурсы",
+    "description": "Подсказка на панели инструментов"
+  },
+  "contextMenuZap": {
+    "message": "Скрыть этот элемент (Zap)",
+    "description": "Контекстное меню скрытия элемента"
+  },
+  "contextMenuUndoZap": {
+    "message": "Восстановить последний скрытый элемент",
+    "description": "Восстановить элемент"
+  },
+  "contextMenuResetZap": {
+    "message": "Восстановить все скрытые элементы",
+    "description": "Восстановить все элементы"
+  },
+  "contextMenuCapturePage": {
+    "message": "Скриншот всей страницы",
+    "description": "Скриншот всей страницы"
+  },
+  "contextMenuPageArchive": {
+    "message": "Скачать автономный архив страницы",
+    "description": "Скачать архив страницы"
+  },
+  "catAll": {
+    "message": "Все"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Изображения"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Видео"
+  },
+  "catAudio": {
+    "message": "Аудио"
+  },
+  "catCaptions": {
+    "message": "Субтитры"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Карты кода (Source Maps)"
+  },
+  "catFonts": {
+    "message": "Шрифты"
+  },
+  "catDocuments": {
+    "message": "Документы"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Манифесты"
+  },
+  "catText": {
+    "message": "Текст и таблицы"
+  },
+  "catOther": {
+    "message": "Другое"
+  },
+  "catScreenshot": {
+    "message": "Скриншот"
+  },
+  "catArchive": {
+    "message": "Архив страницы"
+  },
+  "btnRefresh": {
+    "message": "Обновить"
+  },
+  "btnExport": {
+    "message": "Экспорт"
+  },
+  "btnDownloadSelected": {
+    "message": "Скачать выбранные"
+  },
+  "btnDownloadView": {
+    "message": "Скачать видимые"
+  },
+  "btnDownloadAll": {
+    "message": "Скачать все"
+  },
+  "btnDownloadFiltered": {
+    "message": "Скачать отфильтрованное"
+  },
+  "btnTheme": {
+    "message": "Сменить тему"
+  },
+  "btnGuide": {
+    "message": "Справка"
+  },
+  "btnOpenSidePanel": {
+    "message": "Открыть боковую панель"
+  },
+  "btnCaptureFullPage": {
+    "message": "Снимок всей страницы"
+  },
+  "btnOfflineArchive": {
+    "message": "Сохранить одним HTML"
+  },
+  "filterMinKb": {
+    "message": "Мин КБ"
+  },
+  "filterMaxKb": {
+    "message": "Макс КБ"
+  },
+  "filterMinWidth": {
+    "message": "Мин ширина px"
+  },
+  "filterMinHeight": {
+    "message": "Мин высота px"
+  },
+  "filterSortName": {
+    "message": "По имени"
+  },
+  "filterSortSize": {
+    "message": "По размеру"
+  },
+  "filterSortType": {
+    "message": "По типу"
+  },
+  "filterSortTime": {
+    "message": "По времени"
+  },
+  "filterHideDupes": {
+    "message": "Скрыть дубликаты"
+  },
+  "filterClear": {
+    "message": "Очистить"
+  },
+  "textModeContains": {
+    "message": "Содержит"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS селектор"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Фильтр текста или запрос к живому DOM…"
+  },
+  "textAllElements": {
+    "message": "Все элементы"
+  },
+  "textLiveOn": {
+    "message": "Автоскан Вкл"
+  },
+  "textLiveOff": {
+    "message": "Авто выкл"
+  },
+  "textScanNow": {
+    "message": "Сканировать"
+  },
+  "textReading": {
+    "message": "Режим чтения"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Выберите ресурс для просмотра подробностей"
+  },
+  "inspectorDetails": {
+    "message": "Подробности"
+  },
+  "inspectorOpenTab": {
+    "message": "Открыть в новой вкладке"
+  },
+  "inspectorCopyUrl": {
+    "message": "Копировать URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Скачать этот файл"
+  },
+  "inspectorClose": {
+    "message": "Закрыть"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Тип"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Размер"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Источник"
+  },
+  "metaTitle": {
+    "message": "Заголовок"
+  },
+  "metaAlt": {
+    "message": "Alt текст"
+  },
+  "ratingPrompt": {
+    "message": "Нравится Source Download? Поддержите наш проект открытого исходного кода отзывом в Chrome Web Store или звездой на GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Оставить отзыв"
+  },
+  "ratingStar": {
+    "message": "★ Поставить звезду на GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Позже"
+  },
+  "toastElementZapped": {
+    "message": "Элемент скрыт на время текущей сессии."
+  },
+  "toastElementRestored": {
+    "message": "Элемент восстановлен."
+  },
+  "toastAllElementsRestored": {
+    "message": "Все скрытые элементы восстановлены."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Создание снимка всей страницы…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Снимок всей страницы сохранен."
+  },
+  "toastArchiveCreated": {
+    "message": "Один файл HTML-архива сохранен."
+  },
+  "brandSignature": {
+    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Изображения и SVG"
+  },
+  "tabMedia": {
+    "message": "Медиа и аудио"
+  },
+  "tabFonts": {
+    "message": "Шрифты"
+  },
+  "tabTextScraper": {
+    "message": "Текст и таблицы"
+  },
+  "heroScreenshotTitle": {
+    "message": "Снимок всей страницы"
+  },
+  "heroScreenshotDesc": {
+    "message": "Бесшовное сшивание • Скрытие плавающих шапок"
+  },
+  "heroArchiveTitle": {
+    "message": "Один автономный HTML-файл"
+  },
+  "heroArchiveDesc": {
+    "message": "Встроенный CSS и Base64-графика • Просмотр офлайн"
+  },
+  "sidePanelDevToolsTitle": {
+    "message": "Инженерный анализ в DevTools"
+  },
+  "sidePanelDevToolsDesc": {
+    "message": "Для отслеживания живого трафика API, форматирования скриптов, анализа CSS и Source Maps откройте Chrome DevTools."
+  },
+  "sidePanelDevToolsHint": {
+    "message": "Нажмите F12 (macOS: ⌥⌘I) → Source Download"
+  },
+  "copyDataUri": {
+    "message": "Копировать Data-URI"
+  },
+  "copyUrl": {
+    "message": "Копировать URL"
+  },
+  "downloadSingle": {
+    "message": "Скачать"
+  },
+  "searchPlaceholder": {
+    "message": "Фильтр по имени, URL, типу или /regex/…"
+  },
+  "viewGrid": {
+    "message": "Сетка"
+  },
+  "viewList": {
+    "message": "Список"
+  },
+  "btnScreenshot": {
+    "message": "Скриншот"
+  },
+  "btnArchive": {
+    "message": "Сохранить HTML"
+  },
+  "exportJson": {
+    "message": "Видимый список как JSON"
+  },
+  "exportCsv": {
+    "message": "Видимый список как CSV"
+  },
+  "exportHar": {
+    "message": "Сетевой журнал как HAR"
+  },
+  "exportScreenshot": {
+    "message": "Скриншот всей страницы (PNG)"
+  },
+  "exportArchive": {
+    "message": "Офлайн-архив страницы (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Все методы"
+  },
+  "filterTypeAll": {
+    "message": "Все типы"
+  },
+  "filterSortDir": {
+    "message": "По возрастанию / убыванию"
+  },
+  "emptyTitle": {
+    "message": "Ресурсы не найдены"
+  },
+  "emptySubtitle": {
+    "message": "Перезагрузите страницу с открытой панелью или нажмите Обновить."
+  },
+  "statusResources": {
+    "message": "ресурсов"
+  },
+  "statusFiltered": {
+    "message": "отфильтровано"
+  },
+  "statusSelected": {
+    "message": "выбрано"
+  },
+  "statusDupes": {
+    "message": "дубликаты скрыты"
+  },
+  "statusSize": {
+    "message": "размер"
+  },
+  "langAuto": {
+    "message": "Авто (Браузер)"
+  },
+  "langSelectorTitle": {
+    "message": "Выбор языка"
+  },
+  "textPillAll": {
+    "message": "Весь контент"
+  },
+  "textPillText": {
+    "message": "📄 Текст и статьи"
+  },
+  "textPillTables": {
+    "message": "📊 Только таблицы"
+  },
+  "textSelectAll": {
+    "message": "Выбрать всё"
+  },
+  "textDeselectAll": {
+    "message": "Снять выделение"
+  },
+  "textClearSelection": {
+    "message": "Очистить"
+  },
+  "toastRefreshComplete": {
+    "message": "Сканирование страницы завершено: $COUNT$ новых ресурсов",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Скопировано $COUNT$ блоков",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Скопировано в буфер обмена"
+  },
+  "toastTableCopied": {
+    "message": "Таблица скопирована в буфер обмена"
+  },
+  "toastNothingToExport": {
+    "message": "Нечего экспортировать"
+  },
+  "toastExportedTxt": {
+    "message": "Экспортировано $COUNT$ блоков как TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Экспортировано $COUNT$ блоков как Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Строки таблицы не захвачены"
+  },
+  "toastExportedCsv": {
+    "message": "Таблица экспортирована как CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Таблица экспортирована как XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Экспортировано $COUNT$ таблиц как $FORMAT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Экспортировано $COUNT$ листов как XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Нет ресурсов для скачивания."
+  },
+  "toastNoVisibleResources": {
+    "message": "Нет видимых ресурсов для скачивания."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Сначала выберите хотя бы один ресурс."
+  },
+  "toastZipSaved": {
+    "message": "ZIP сохранен: $FETCHED$ из $TOTAL$ ресурсов",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Ошибка создания ZIP: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR экспортирован ($COUNT$ записей)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL скопирован в буфер обмена"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Окно инспектора DevTools недоступно."
+  },
+  "toastScreenshotError": {
+    "message": "Ошибка снимка: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Создание офлайн-архива страницы…"
+  },
+  "toastArchiveError": {
+    "message": "Ошибка архивации: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Время форматирования истекло — показан исходный файл."
+  },
+  "toastFormatFailed": {
+    "message": "Не удалось отформатировать — показан исходный файл."
+  },
+  "emptySearchTitle": {
+    "message": "Нет совпадений для \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Попробуйте другой поисковый запрос или переключите категорию."
+  },
+  "emptyFiltersTitle": {
+    "message": "Нет ресурсов, соответствующих фильтрам"
+  },
+  "emptyFiltersSub": {
+    "message": "Ослабьте фильтры или нажмите Очистить."
+  },
+  "textEmptyQueryReject": {
+    "message": "Страница отклонила этот запрос."
+  },
+  "textEmptyNoMatch": {
+    "message": "Ни один элемент не соответствует запросу."
+  },
+  "textEmptyInitial": {
+    "message": "Пока ничего не захвачено. Идет захват в реальном времени."
+  },
+  "textEmptyFiltered": {
+    "message": "Ничего не соответствует фильтрам."
+  },
+  "textSummaryBlocks": {
+    "message": "$COUNT$ блоков",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$COUNT$ слов",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$COUNT$ символов",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$TABLES$ таблиц · $ROWS$ уникальных строк",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$COUNT$ выбрано",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Таблица — $COUNT$ строк на экране",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Таблица — всего $COUNT$ строк",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$COUNT$ снимков",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "обновлено $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Показать все $COUNT$ строк",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Показаны все строки"
+  },
+  "textTableHistory": {
+    "message": "История ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Скрыть историю"
+  },
+  "textTableNoRows": {
+    "message": "Строки пока не захвачены."
+  },
+  "textBtnCopy": {
+    "message": "Копировать текст"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Копировать"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$COUNT$ дубликатов изображений",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Экспорт"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Загрузка SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Не удалось получить содержимое SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "Загрузка предпросмотра шрифта…"
+  },
+  "inspectorFontSample": {
+    "message": "Предпросмотр шрифта"
+  },
+  "inspectorBeautify": {
+    "message": "Форматировать"
+  },
+  "inspectorOriginal": {
+    "message": "Оригинал"
+  },
+  "inspectorHeaders": {
+    "message": "Заголовки"
+  },
+  "inspectorResponse": {
+    "message": "Ответ"
+  },
+  "inspectorRequest": {
+    "message": "Запрос"
+  },
+  "inspectorQueryParams": {
+    "message": "Параметры запроса"
+  },
+  "inspectorRequestBody": {
+    "message": "Тело запроса"
+  },
+  "textHintHtml": {
+    "message": "Живая, читаемая копия страницы. Каждый элемент с текстом фиксируется по порядку DOM. Ищите простым текстом, регулярным выражением, <strong>CSS-селектором</strong> или <strong>XPath</strong>, затем экспортируйте совпадения. См. <a href=\"#\" id=\"text-hint-guide\">руководство</a>."
+  },
+  "textHeadings": {
+    "message": "Заголовки"
+  },
+  "textAllLevels": {
+    "message": "Все уровни"
+  },
+  "textMatches": {
+    "message": "совпадений"
+  },
+  "textMatch": {
+    "message": "совпадение"
+  },
+  "textReadingOn": {
+    "message": "Чтение вкл"
+  },
+  "toastDownloadStarted": {
+    "message": "Загрузка началась: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Не удалось получить этот ресурс (CORS или неподдерживаемый тип)."
+  },
+  "ratingBannerText": {
+    "message": "Нравится Source Download? Поддержите наш open-source проект отзывом в Chrome Web Store или звездой на GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Оставить отзыв"
+  },
+  "ratingBannerStar": {
+    "message": "★ Поставить звезду"
+  },
+  "textTableUniqueRows": {
+    "message": "$COUNT$ уникальных строк",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$COUNT$ сек. назад",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$COUNT$ мин. назад",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Снимок выделенной области"
+  },
+  "btnAreaDownload": {
+    "message": "Скачать"
+  },
+  "btnAreaCopy": {
+    "message": "Скопировать в буфер"
+  },
+  "btnAreaCancel": {
+    "message": "Отмена"
+  },
+  "toastAreaCopied": {
+    "message": "Снимок области скопирован в буфер"
+  },
+  "toastAreaDownloaded": {
+    "message": "Снимок области сохранен"
+  },
+  "statusFoundCssResources": {
+    "message": "Найдено $COUNT$ ресурсов, указанных в CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Ошибка сканирования DOM: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Индексация содержимого файлов…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Проверка дубликатов изображений…"
+  },
+  "statusWorking": {
+    "message": "Обработка…"
+  },
+  "filterMethodTitle": {
+    "message": "Фильтр по методу HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Фильтр по типу запроса"
+  },
+  "filterSortTitle": {
+    "message": "Сортировка ресурсов"
+  },
+  "textModeTitle": {
+    "message": "Как интерпретировать строку запроса"
+  },
+  "textKindTitle": {
+    "message": "Ограничить одним типом элементов"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Уровень заголовка"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Цена:\\s*\\d+  — Регулярное выражение JS"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — любой CSS селектор"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Поиск по руководству…"
+  },
+  "popupIntro": {
+    "message": "Категории, отображаемые на <strong>значке панели</strong>. Отключите ненужные, чтобы значок показывал только выбранное."
+  },
+  "popupHelpTitle": {
+    "message": "Как открыть полную панель"
+  },
+  "popupStep1": {
+    "message": "Откройте DevTools на проверяемой странице <div class=\"hint\"><kbd>F12</kbd> или <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Нажмите на вкладку <strong>Source Download</strong> в панели DevTools"
+  },
+  "popupStep3": {
+    "message": "Просматривайте и скачивайте ресурсы — по отдельности или все сразу в одном ZIP-архиве."
+  },
+  "popupNote": {
+    "message": "Примечание: Chrome не позволяет расширениям программно открывать DevTools, поэтому полный набор инструментов доступен через панель DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Отслеживать все категории"
+  },
+  "popupLanguage": {
+    "message": "Язык"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Двоичный ответ — скачайте для просмотра"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Загрузка ответа…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Нет предпросмотра ответа — не удалось получить содержимое."
+  },
+  "inspectorLoadingContent": {
+    "message": "Загрузка содержимого…"
+  },
+  "inspectorNoPreview": {
+    "message": "Предпросмотр недоступен — не удалось получить содержимое."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Закрыть все"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Закрыть все открытые вкладки"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Нажмите для увеличения"
+  },
+  "inspectorViewSource": {
+    "message": "Просмотр исходного кода"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Показать разметку SVG с подсветкой синтаксиса"
+  },
+  "inspectorFormatting": {
+    "message": "Форматирование…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Найти в содержимом…"
+  },
+  "findPreviousMatch": {
+    "message": "Предыдущее совпадение"
+  },
+  "findNextMatch": {
+    "message": "Следующее совпадение"
+  },
+  "findClose": {
+    "message": "Закрыть"
+  },
+  "findShowRaw": {
+    "message": "Показать исходное (неформатированное) содержимое"
+  },
+  "findBeautify": {
+    "message": "Форматировать / украсить это содержимое"
+  },
+  "btnRaw": {
+    "message": "Исходный"
+  },
+  "btnBeautify": {
+    "message": "Форматировать"
+  },
+  "videoHlsDetected": {
+    "message": "Обнаружен поток HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "Это видео невозможно воспроизвести в браузере"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome не поддерживает прямое воспроизведение HLS. Вы можете объединить все сегменты <b>$NAME$</b> в один видеофайл MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Браузер не поддерживает этот формат"
+  },
+  "btnMergeHls": {
+    "message": "Объединить сегменты и скачать"
+  },
+  "toastHlsMerged": {
+    "message": "Объединено $COUNT$ сегментов в $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "размер неизвестен"
+  },
+  "progressFetching": {
+    "message": "Получение $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Создание ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP сохранен: $FETCHED$ из $TOTAL$ ресурсов ($SKIPPED$ не удалось)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Повторить $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Повторить загрузку"
+  },
+  "searchRegexHint": {
+    "message": "Поиск по регулярным выражениям активен — оберните запрос в /шаблон/i"
+  },
+  "textIncludeInExports": {
+    "message": "Включить в экспорт"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Объединить все снимки в одну дедуплицированную таблицу — именно она экспортируется"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Просмотреть более ранние снимки этой таблицы"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Скачать эту таблицу в формате CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Снимок $INDEX$ — $TIME$ ($COUNT$ строк)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Переключить выбор для пакетной загрузки"
+  },
+  "cardDownloadTitle": {
+    "message": "Скачать файл"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Предыдущая загрузка не удалась — нажмите, чтобы повторить"
+  },
+  "btnThemeLight": {
+    "message": "Переключиться на светлую тему"
+  },
+  "btnThemeDark": {
+    "message": "Переключиться на темную тему"
+  },
+  "guideTitle": {
+    "message": "Source Download — Руководство пользователя"
+  },
+  "guideEmpty": {
+    "message": "Разделы руководства, соответствующие поиску, не найдены."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% без зависимостей.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Уменьшить (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Увеличить (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Сбросить масштаб (0)"
+  },
+  "lightboxClose": {
+    "message": "Закрыть (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Перетащите для изменения размера"
+  },
+  "ratingDismissTitle": {
+    "message": "Закрыть"
+  },
+  "inspectorResourceTitle": {
+    "message": "Ресурс"
+  },
+  "guideSecGettingStarted": {
+    "message": "Начало работы"
+  },
+  "guideSecCategories": {
+    "message": "Категории"
+  },
+  "guideSecSearchFilters": {
+    "message": "Поиск и фильтры"
+  },
+  "guideSecGridView": {
+    "message": "Таблица и список"
+  },
+  "guideSecInspect": {
+    "message": "Просмотр ресурса"
+  },
+  "guideSecDownloading": {
+    "message": "Загрузка"
+  },
+  "guideSecLightbox": {
+    "message": "Просмотр медиа (Lightbox)"
+  },
+  "guideSecTextTables": {
+    "message": "Тексты и таблицы"
+  },
+  "guideSecCaptions": {
+    "message": "Субтитры"
+  },
+  "guideSecSourceMaps": {
+    "message": "Карты кода (Source Maps)"
+  },
+  "guideSecDupes": {
+    "message": "Дубликаты изображений"
+  },
+  "guideSecVideoHls": {
+    "message": "Видео и HLS-потоки"
+  },
+  "guideSecPowerTips": {
+    "message": "Полезные советы"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Откройте вкладку <strong>Source Download</strong> на панели DevTools (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>). Всплывающее окно значка позволяет выбрать категории для счетчика. Переключатель темы фиксирует светлый или темный интерфейс независимо от браузера."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Вертикальные вкладки группируют ресурсы: изображения, видео, аудио, субтитры, документы, шрифты, карты кода, WASM, SVG, API и др., с живым счетчиком количества."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Поиск фильтрует по имени, URL, типу и названию. Оберните запрос в <kbd>/…/</kbd> для регулярных выражений, например <code>/\\.(png|jpg)$/</code>."
+  },
+  "guideSecGridViewContent": {
+    "message": "Переключайтесь между сеткой миниатюр и подробным списком. В списке чекбоксы позволяют выбрать отдельные файлы для пакетного скачивания."
+  },
+  "guideSecInspectContent": {
+    "message": "Кликните на ресурс для открытия на панели инспектора. Файлы открываются как вкладки с профильными просмотрщиками для медиа, текста и API."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Скачать вид</strong> сохраняет текущие отфильтрованные ресурсы в ZIP. <strong>Скачать выбранное</strong> скачивает отмеченные. <strong>Скачать все</strong> архивирует все ресурсы страницы."
+  },
+  "guideSecLightboxContent": {
+    "message": "Лайтбокс открывает медиа на весь экран с масштабированием колесом мыши или клавиатурой (<kbd>+</kbd>/<kbd>-</kbd>, <kbd>0</kbd>, <kbd>Esc</kbd>)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Категория <strong>Текст</strong> собирает читаемый контент страницы. Поддерживаются фильтры Contains, Regex, CSS-селекторы и XPath.</p><p>Таблицы сохраняют историю моментальных снимков и экспортируются в TXT, Markdown, CSV или многостраничные книги <strong>XLSX</strong> Excel.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "Субтитры WebVTT, SRT, TTML группируются в отдельной вкладке."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Файлы <code>.map</code> и карты кода автоматически форматируются во встроенном JSON-просмотрщике."
+  },
+  "guideSecDupesContent": {
+    "message": "Хеширование байтов находит идентичные изображения, а фильтр дубликатов исключает лишние копии из архива."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Для HLS-потоков (.m3u8) доступно прямое объединение сегментов в единый видеофайл."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Динамические ответы API не дедуплицируются по URL, сохраняя последовательные запросы для детального анализа."
+  },
+  "toolArrow": {
+    "message": "Нарисовать стрелку"
+  },
+  "toolRect": {
+    "message": "Нарисовать прямоугольник"
+  },
+  "toolText": {
+    "message": "Добавить текст"
+  },
+  "toolUndo": {
+    "message": "Отменить (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Повторить (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Цвет"
+  },
+  "badgeStrokeSize": {
+    "message": "Толщина: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Размер шрифта: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Записать видео / GIF области"
+  },
+  "btnRecStart": {
+    "message": "Начать запись"
+  },
+  "btnRecPause": {
+    "message": "Пауза"
+  },
+  "btnRecResume": {
+    "message": "Продолжить"
+  },
+  "btnRecStop": {
+    "message": "Завершить и скачать"
+  },
+  "btnRecCancel": {
+    "message": "Отмена"
+  },
+  "toastRecSaved": {
+    "message": "Запись области сохранена"
+  },
+  "toastRecCancelled": {
+    "message": "Запись видео отменена"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Разрешение на запись экрана не предоставлено"
+  },
+  "btnPopupRecordArea": {
+    "message": "Видео / GIF области"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Снимок области"
+  },
+  "contextMenuPickColor": {
+    "message": "Выбрать цвет с экрана"
+  },
+  "btnPopupPickColor": {
+    "message": "Пипетка"
+  },
+  "colorPickerTitle": {
+    "message": "Выбор цвета"
+  },
+  "btnColorPickAgain": {
+    "message": "Выбрать другой цвет"
+  },
+  "toastColorCopied": {
+    "message": "Цвет скопирован в буфер обмена"
+  },
+  "toastProgressCapturing": {
+    "message": "Захват полной страницы... $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Объединение изображений..."
+  },
+  "modalExportTitle": {
+    "message": "Скриншот всей страницы готов"
+  },
+  "btnExportPng": {
+    "message": "Скачать PNG"
+  },
+  "btnExportJpg": {
+    "message": "Скачать JPG"
+  },
+  "btnExportPdf": {
+    "message": "Сохранить как PDF"
+  },
+  "btnExportCopy": {
+    "message": "Скопировать в буфер"
+  },
+  "btnExportGenerating": {
+    "message": "Создание..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF-документ сохранен."
+  },
+  "settingNamingPatterns": {
+    "message": "Шаблоны именования файлов"
+  },
+  "settingVideoFormat": {
+    "message": "Формат видео по умолчанию"
+  },
+  "settingNamingPreview": {
+    "message": "Предпросмотр:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Создание GIF, пожалуйста, подождите..."
+  },
+  "settingGifResolution": {
+    "message": "Разрешение GIF по умолчанию"
+  },
+  "optGifOriginal": {
+    "message": "Оригинал (1:1 родное разрешение — 3K/4K без масштабирования)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (Макс. 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (Макс. 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (Макс. 854px — Быстрее и меньший размер)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Формат GIF поддерживает максимальную продолжительность записи 1 минуту (60 с)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Запись экрана (Видео и GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Записывайте любую область экрана в формате MP4, WebM или анимированный GIF. Запись GIF поддерживает оригинальное разрешение 1:1, профили 1080p, 720p и 480p с расчетом примерного размера. Максимальная длительность GIF составляет 1 минуту (60 с) для оптимальной производительности."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Достигнута максимальная длительность GIF в 1 минуту (60 с). Создание GIF..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Макс 1 мин (60 с)"
+  },
+  "settingGifFps": {
+    "message": "Частота кадров GIF по умолчанию (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Плавный (Высокая плавность, больший размер)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Стандартный (Рекомендуется для сети и баланса)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Компактный / Мем (Ступенчатое движение, малый размер)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Покадровая анимация / Медленно (\"Тик-так\" по шагам, крошечный размер)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Презентация (1 кадр в секунду, минимальный размер)"
+  },
+  "popupRightClickHint": {
+    "message": "Нажмите правой кнопкой мыши на странице для записи экрана (видео/GIF) и пипетки.",
+    "description": "Hint informing user to use right-click context menu for recording and color picker"
+  }
+}

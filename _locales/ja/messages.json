@@ -1,0 +1,1394 @@
+{
+  "appName": {
+    "message": "Source Download",
+    "description": "拡張機能の名前"
+  },
+  "appDesc": {
+    "message": "WebページのあらゆるリソースをZIP形式で検査・ダウンロード。フルページスクリーンショット、テーブル抽出、開発者ワークベンチ。",
+    "description": "拡張機能の説明"
+  },
+  "actionTitle": {
+    "message": "Source Download — パネルを開きリソースを追跡",
+    "description": "ツールバーアイコンのヒント"
+  },
+  "contextMenuZap": {
+    "message": "この要素を非表示 (Zap)",
+    "description": "右クリックで要素を非表示"
+  },
+  "contextMenuUndoZap": {
+    "message": "最後に非表示にした要素を戻す",
+    "description": "直前の非表示要素を復元"
+  },
+  "contextMenuResetZap": {
+    "message": "すべての非表示要素をリセット",
+    "description": "すべての非表示要素を復元"
+  },
+  "contextMenuCapturePage": {
+    "message": "フルページスクリーンショットを撮影",
+    "description": "フルページキャプチャ"
+  },
+  "contextMenuPageArchive": {
+    "message": "オフラインページアーカイブを保存",
+    "description": "オフラインページ保存"
+  },
+  "catAll": {
+    "message": "すべて"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "画像"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "動画"
+  },
+  "catAudio": {
+    "message": "音声"
+  },
+  "catCaptions": {
+    "message": "字幕"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "ソースマップ"
+  },
+  "catFonts": {
+    "message": "フォント"
+  },
+  "catDocuments": {
+    "message": "ドキュメント"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "マニフェスト"
+  },
+  "catText": {
+    "message": "テキスト・表"
+  },
+  "catOther": {
+    "message": "その他"
+  },
+  "catScreenshot": {
+    "message": "スクリーンショット"
+  },
+  "catArchive": {
+    "message": "ページアーカイブ"
+  },
+  "btnRefresh": {
+    "message": "更新"
+  },
+  "btnExport": {
+    "message": "エクスポート"
+  },
+  "btnDownloadSelected": {
+    "message": "選択項目を保存"
+  },
+  "btnDownloadView": {
+    "message": "表示中を保存"
+  },
+  "btnDownloadAll": {
+    "message": "すべて一括保存"
+  },
+  "btnDownloadFiltered": {
+    "message": "絞り込み項目を保存"
+  },
+  "btnTheme": {
+    "message": "テーマ切替"
+  },
+  "btnGuide": {
+    "message": "使い方ガイド"
+  },
+  "btnOpenSidePanel": {
+    "message": "サイドパネルを開く"
+  },
+  "btnCaptureFullPage": {
+    "message": "フルページスクリーンショット"
+  },
+  "btnOfflineArchive": {
+    "message": "単一HTMLで保存"
+  },
+  "filterMinKb": {
+    "message": "最小 KB"
+  },
+  "filterMaxKb": {
+    "message": "最大 KB"
+  },
+  "filterMinWidth": {
+    "message": "最小幅 px"
+  },
+  "filterMinHeight": {
+    "message": "最小高 px"
+  },
+  "filterSortName": {
+    "message": "名前順"
+  },
+  "filterSortSize": {
+    "message": "サイズ順"
+  },
+  "filterSortType": {
+    "message": "種類順"
+  },
+  "filterSortTime": {
+    "message": "時間順"
+  },
+  "filterHideDupes": {
+    "message": "重複を隠す"
+  },
+  "filterClear": {
+    "message": "クリア"
+  },
+  "textModeContains": {
+    "message": "含む"
+  },
+  "textModeRegex": {
+    "message": "正規表現"
+  },
+  "textModeCss": {
+    "message": "CSSセレクタ"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "テキスト検索またはDOMクエリ…"
+  },
+  "textAllElements": {
+    "message": "すべての要素"
+  },
+  "textLiveOn": {
+    "message": "リアルタイム オン"
+  },
+  "textLiveOff": {
+    "message": "ライブオフ"
+  },
+  "textScanNow": {
+    "message": "今すぐスキャン"
+  },
+  "textReading": {
+    "message": "読書モード"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "詳細を表示するリソースを選択してください"
+  },
+  "inspectorDetails": {
+    "message": "詳細"
+  },
+  "inspectorOpenTab": {
+    "message": "新しいタブで開く"
+  },
+  "inspectorCopyUrl": {
+    "message": "URL をコピー"
+  },
+  "inspectorDownloadFile": {
+    "message": "このファイルをダウンロード"
+  },
+  "inspectorClose": {
+    "message": "閉じる"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "タイプ"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "サイズ"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "ソース"
+  },
+  "metaTitle": {
+    "message": "タイトル"
+  },
+  "metaAlt": {
+    "message": "Altテキスト"
+  },
+  "ratingPrompt": {
+    "message": "Source Downloadをお使いいただきありがとうございます。Chrome Web StoreのレビューやGitHubのStarでオープンソース開発を応援してください！"
+  },
+  "ratingReview": {
+    "message": "★ レビューを書く"
+  },
+  "ratingStar": {
+    "message": "★ GitHubでStarをつける"
+  },
+  "ratingDismiss": {
+    "message": "後で"
+  },
+  "toastElementZapped": {
+    "message": "このセッションで要素を非表示にしました。"
+  },
+  "toastElementRestored": {
+    "message": "要素を復元しました。"
+  },
+  "toastAllElementsRestored": {
+    "message": "非表示要素をすべて復元しました。"
+  },
+  "toastScreenshotCapturing": {
+    "message": "フルページスクリーンショットをキャプチャ中…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "フルページスクリーンショットを保存しました。"
+  },
+  "toastArchiveCreated": {
+    "message": "単一 HTML アーカイブを保存しました。"
+  },
+  "brandSignature": {
+    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "画像＆SVG"
+  },
+  "tabMedia": {
+    "message": "メディア＆音声"
+  },
+  "tabFonts": {
+    "message": "フォント"
+  },
+  "tabTextScraper": {
+    "message": "テキスト＆表抽出"
+  },
+  "heroScreenshotTitle": {
+    "message": "フルページスクリーンショット"
+  },
+  "heroScreenshotDesc": {
+    "message": "シームレス結合 • 固定ヘッダー自動抑制"
+  },
+  "heroArchiveTitle": {
+    "message": "単一ファイルHTML保存"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS・画像を完全インライン化 • オフライン閲覧可能"
+  },
+  "sidePanelDevToolsTitle": {
+    "message": "DevTools 詳細エンジニアリング解析"
+  },
+  "sidePanelDevToolsDesc": {
+    "message": "リアルタイムAPI通信、JSバンドル整形、CSSスタイル、ソースマップの解析はChrome DevToolsでご利用いただけます。"
+  },
+  "sidePanelDevToolsHint": {
+    "message": "F12 (macOS: ⌥⌘I) を押下 → Source Download"
+  },
+  "copyDataUri": {
+    "message": "Data-URIをコピー"
+  },
+  "copyUrl": {
+    "message": "URLをコピー"
+  },
+  "downloadSingle": {
+    "message": "ダウンロード"
+  },
+  "searchPlaceholder": {
+    "message": "名前、URL、タグ、MIME、/正規表現/ で検索…"
+  },
+  "viewGrid": {
+    "message": "グリッド表示"
+  },
+  "viewList": {
+    "message": "リスト表示"
+  },
+  "btnScreenshot": {
+    "message": "画面撮影"
+  },
+  "btnArchive": {
+    "message": "HTML保存"
+  },
+  "exportJson": {
+    "message": "表示中の一覧 (JSON)"
+  },
+  "exportCsv": {
+    "message": "表示中の一覧 (CSV)"
+  },
+  "exportHar": {
+    "message": "ネットワークログ (HAR)"
+  },
+  "exportScreenshot": {
+    "message": "フル長画面撮影 (PNG)"
+  },
+  "exportArchive": {
+    "message": "オフラインHTML保存 (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "全メソッド"
+  },
+  "filterTypeAll": {
+    "message": "全タイプ"
+  },
+  "filterSortDir": {
+    "message": "昇順 / 降順の切替"
+  },
+  "emptyTitle": {
+    "message": "リソースが見つかりません"
+  },
+  "emptySubtitle": {
+    "message": "パネルを開いた状態でページをリロードするか、更新をクリックしてください。"
+  },
+  "statusResources": {
+    "message": "個のリソース"
+  },
+  "statusFiltered": {
+    "message": "絞り込み"
+  },
+  "statusSelected": {
+    "message": "選択済み"
+  },
+  "statusDupes": {
+    "message": "重複を非表示"
+  },
+  "statusSize": {
+    "message": "サイズ"
+  },
+  "langAuto": {
+    "message": "自動（ブラウザ言語）"
+  },
+  "langSelectorTitle": {
+    "message": "言語切り替え"
+  },
+  "textPillAll": {
+    "message": "すべてのコンテンツ"
+  },
+  "textPillText": {
+    "message": "📄 テキストと記事"
+  },
+  "textPillTables": {
+    "message": "📊 テーブルのみ"
+  },
+  "textSelectAll": {
+    "message": "すべて選択"
+  },
+  "textDeselectAll": {
+    "message": "選択を解除"
+  },
+  "textClearSelection": {
+    "message": "クリア"
+  },
+  "toastRefreshComplete": {
+    "message": "ページスキャン完了: $COUNT$ 個の新しいリソース",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$COUNT$ ブロックをコピーしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "クリップボードにコピーしました"
+  },
+  "toastTableCopied": {
+    "message": "テーブルをクリップボードにコピーしました"
+  },
+  "toastNothingToExport": {
+    "message": "エクスポートするものがありません"
+  },
+  "toastExportedTxt": {
+    "message": "$COUNT$ ブロックを TXT としてエクスポートしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$COUNT$ ブロックを Markdown としてエクスポートしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "テーブル行がキャプチャされていません"
+  },
+  "toastExportedCsv": {
+    "message": "テーブルを CSV としてエクスポートしました"
+  },
+  "toastExportedXlsx": {
+    "message": "テーブルを XLSX としてエクスポートしました"
+  },
+  "toastExportedTablesZip": {
+    "message": "$COUNT$ 個のテーブルを $FORMAT$ としてエクスポートしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$COUNT$ シートを XLSX としてエクスポートしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "ダウンロードするリソースがありません。"
+  },
+  "toastNoVisibleResources": {
+    "message": "ダウンロード可能な表示リソースがありません。"
+  },
+  "toastSelectAtLeastOne": {
+    "message": "最初に少なくとも1つのリソースを選択してください。"
+  },
+  "toastZipSaved": {
+    "message": "ZIP 保存完了: $TOTAL$ 件中 $FETCHED$ 件",
+    "placeholders": {
+      "total": {
+        "content": "$1",
+        "example": "10"
+      },
+      "fetched": {
+        "content": "$2",
+        "example": "8"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP 作成失敗: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR をエクスポートしました（$COUNT$ 件）",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL をクリップボードにコピーしました"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools 検査ウィンドウが利用できません。"
+  },
+  "toastScreenshotError": {
+    "message": "スクリーンショットエラー: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "オフラインページアーカイブを作成中…"
+  },
+  "toastArchiveError": {
+    "message": "アーカイブエラー: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "フォーマットがタイムアウトしました — 元のファイルを表示します。"
+  },
+  "toastFormatFailed": {
+    "message": "フォーマットできませんでした — 元のファイルを表示します。"
+  },
+  "emptySearchTitle": {
+    "message": "\"$QUERY$\" に一致する結果はありません",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "別の検索語を試すか、別のカテゴリに切り替えてください。"
+  },
+  "emptyFiltersTitle": {
+    "message": "現在のフィルターに一致するリソースがありません"
+  },
+  "emptyFiltersSub": {
+    "message": "フィルター条件を緩和するか、クリアを押してください。"
+  },
+  "textEmptyQueryReject": {
+    "message": "クエリが拒否されました。修正してください。"
+  },
+  "textEmptyNoMatch": {
+    "message": "一致する要素がありません。"
+  },
+  "textEmptyInitial": {
+    "message": "まだキャプチャされていません。ライブキャプチャ実行中。"
+  },
+  "textEmptyFiltered": {
+    "message": "現在のフィルターに一致するコンテンツがありません。"
+  },
+  "textSummaryBlocks": {
+    "message": "$COUNT$ ブロック",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$COUNT$ 単語",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$COUNT$ 文字",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$TABLES$ テーブル · $ROWS$ 行",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$COUNT$ 件選択済み",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "テーブル — 画面上 $COUNT$ 行",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "テーブル — 全 $COUNT$ 行",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$COUNT$ スナップショット",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "$TIME$ に更新",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "全 $COUNT$ 行を表示",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "全行を表示中"
+  },
+  "textTableHistory": {
+    "message": "履歴 ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "履歴を非表示"
+  },
+  "textTableNoRows": {
+    "message": "行データはまだありません。"
+  },
+  "textBtnCopy": {
+    "message": "テキストをコピー"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 コピー"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$COUNT$ 件の重複画像",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "エクスポート"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG を読み込み中…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG コンテンツを取得できませんでした。"
+  },
+  "inspectorLoadingFont": {
+    "message": "フォントプレビューを読み込み中…"
+  },
+  "inspectorFontSample": {
+    "message": "フォントプレビュー"
+  },
+  "inspectorBeautify": {
+    "message": "コード整形"
+  },
+  "inspectorOriginal": {
+    "message": "オリジナル"
+  },
+  "inspectorHeaders": {
+    "message": "ヘッダー"
+  },
+  "inspectorResponse": {
+    "message": "レスポンス"
+  },
+  "inspectorRequest": {
+    "message": "リクエスト"
+  },
+  "inspectorQueryParams": {
+    "message": "クエリパラメータ"
+  },
+  "inspectorRequestBody": {
+    "message": "リクエスト本文"
+  },
+  "textHintHtml": {
+    "message": "ページのライブで読み取り可能なコピー。テキストを含むすべての要素がDOM順でキャプチャされます。プレーンテキスト、正規表現、<strong>CSSセレクター</strong>、または<strong>XPath</strong>でクエリを実行し、エクスポートします。詳細は<a href=\"#\" id=\"text-hint-guide\">ガイド</a>をご覧ください。"
+  },
+  "textHeadings": {
+    "message": "見出し"
+  },
+  "textAllLevels": {
+    "message": "すべてのレベル"
+  },
+  "textMatches": {
+    "message": "一致"
+  },
+  "textMatch": {
+    "message": "一致"
+  },
+  "textReadingOn": {
+    "message": "読書モード中"
+  },
+  "toastDownloadStarted": {
+    "message": "ダウンロードを開始しました: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "このリソースを取得できませんでした（CORSまたは未対応の形式）。"
+  },
+  "ratingBannerText": {
+    "message": "Source Downloadを気に入っていただけましたか？Chrome Web StoreでのレビューやGitHubでのスターでオープンソース活動を応援してください！"
+  },
+  "ratingBannerReview": {
+    "message": "★ レビューする"
+  },
+  "ratingBannerStar": {
+    "message": "★ スターを付ける"
+  },
+  "textTableUniqueRows": {
+    "message": "$COUNT$ 件の一意な行",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$COUNT$秒前",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$COUNT$分前",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "エリアスクリーンショットを撮影"
+  },
+  "btnAreaDownload": {
+    "message": "ダウンロード"
+  },
+  "btnAreaCopy": {
+    "message": "クリップボードにコピー"
+  },
+  "btnAreaCancel": {
+    "message": "キャンセル"
+  },
+  "toastAreaCopied": {
+    "message": "エリアスクリーンショットをクリップボードにコピーしました"
+  },
+  "toastAreaDownloaded": {
+    "message": "エリアスクリーンショットを保存しました"
+  },
+  "statusFoundCssResources": {
+    "message": "CSSから参照されたリソースを $COUNT$ 件検出",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOMスキャンに失敗しました: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "ファイル内容のインデックスを作成中…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "重複画像をチェック中…"
+  },
+  "statusWorking": {
+    "message": "処理中…"
+  },
+  "filterMethodTitle": {
+    "message": "HTTPメソッドでフィルター"
+  },
+  "filterTypeTitle": {
+    "message": "リクエストタイプでフィルター"
+  },
+  "filterSortTitle": {
+    "message": "リソースを並び替え"
+  },
+  "textModeTitle": {
+    "message": "クエリボックスの解釈方法"
+  },
+  "textKindTitle": {
+    "message": "1つの要素タイプに制限"
+  },
+  "textHeadingLevelTitle": {
+    "message": "見出しレベル"
+  },
+  "textPlaceholderRegex": {
+    "message": "^価格:\\s*\\d+  — JavaScript正規表現"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — CSSセレクタ"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "ガイドを検索…"
+  },
+  "popupIntro": {
+    "message": "<strong>ツールバーバッジ</strong>でカウントされるカテゴリ。追跡したくないカテゴリはオフにできます。"
+  },
+  "popupHelpTitle": {
+    "message": "フルパネルの使い方"
+  },
+  "popupStep1": {
+    "message": "検証したいページで開発者ツール（DevTools）を開きます <div class=\"hint\"><kbd>F12</kbd> または <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "DevToolsツールバーの <strong>Source Download</strong> タブをクリックします"
+  },
+  "popupStep3": {
+    "message": "リソースのプレビュー、個別ダウンロード、またはZIPでの一括保存が可能です。"
+  },
+  "popupNote": {
+    "message": "注：Chromeの仕様上、拡張機能からDevToolsを直接開くことはできないため、全機能はDevToolsタブからご利用いただけます。"
+  },
+  "popupTrackAll": {
+    "message": "全カテゴリを追跡"
+  },
+  "popupLanguage": {
+    "message": "言語"
+  },
+  "inspectorBinaryResponse": {
+    "message": "バイナリ応答 — 表示するにはダウンロードしてください"
+  },
+  "inspectorLoadingResponse": {
+    "message": "応答を読み込み中…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "応答プレビューなし — コンテンツを取得できませんでした。"
+  },
+  "inspectorLoadingContent": {
+    "message": "コンテンツを読み込み中…"
+  },
+  "inspectorNoPreview": {
+    "message": "プレビューは利用できません — コンテンツを取得できませんでした。"
+  },
+  "inspectorCloseAllTabs": {
+    "message": "すべて閉じる"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "開いているすべてのタブを閉じる"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "クリックして拡大"
+  },
+  "inspectorViewSource": {
+    "message": "ソースを表示"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "構文を強調表示して SVG マークアップを表示"
+  },
+  "inspectorFormatting": {
+    "message": "フォーマット中…"
+  },
+  "findInContentPlaceholder": {
+    "message": "コンテンツ内を検索…"
+  },
+  "findPreviousMatch": {
+    "message": "前のマッチ"
+  },
+  "findNextMatch": {
+    "message": "次のマッチ"
+  },
+  "findClose": {
+    "message": "閉じる"
+  },
+  "findShowRaw": {
+    "message": "元の（未フォーマットの）コンテンツを表示"
+  },
+  "findBeautify": {
+    "message": "このコンテンツをフォーマット / 整形"
+  },
+  "btnRaw": {
+    "message": "Raw"
+  },
+  "btnBeautify": {
+    "message": "整形"
+  },
+  "videoHlsDetected": {
+    "message": "HLS（m3u8）ストリームが検出されました"
+  },
+  "videoCannotPlay": {
+    "message": "この動画はブラウザで再生できません"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome は HLS ストリームを直接再生できません。<b>$NAME$</b> の全セグメントを単一の MP4/TS 動画ファイルに結合できます。",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "ブラウザはこの形式をサポートしていません"
+  },
+  "btnMergeHls": {
+    "message": "セグメントを結合してダウンロード"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ 個のセグメントを $NAME$ に結合しました",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "サイズ不明"
+  },
+  "progressFetching": {
+    "message": "$DONE$/$TOTAL$ を取得中 · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP を作成中 $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP 保存完了: $FETCHED$ / $TOTAL$ リソース（$SKIPPED$ 件失敗）",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "$COUNT$ 件を再試行",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "ダウンロードを再試行"
+  },
+  "searchRegexHint": {
+    "message": "正規表現検索が有効 — クエリを /pattern/i で囲んでください"
+  },
+  "textIncludeInExports": {
+    "message": "エクスポートに含める"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "すべてのスナップショットを1つの重複排除されたテーブルに結合します（エクスポート対象）"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "このテーブルの以前のスナップショットを参照"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "このテーブルを CSV としてダウンロード"
+  },
+  "tableSnapshotLabel": {
+    "message": "スナップショット $INDEX$ — $TIME$（$COUNT$ 行）",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "一括ダウンロードの選択を切り替える"
+  },
+  "cardDownloadTitle": {
+    "message": "ファイルをダウンロード"
+  },
+  "cardRetryFailedTitle": {
+    "message": "以前のダウンロードが失敗しました — クリックして再試行"
+  },
+  "btnThemeLight": {
+    "message": "ライトテーマに切り替え"
+  },
+  "btnThemeDark": {
+    "message": "ダークテーマに切り替え"
+  },
+  "guideTitle": {
+    "message": "Source Download — ユーザーガイド"
+  },
+  "guideEmpty": {
+    "message": "検索に一致するガイドセクションはありません。"
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% 依存関係なし。",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "縮小 (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "拡大 (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "ズームをリセット (0)"
+  },
+  "lightboxClose": {
+    "message": "閉じる (Esc)"
+  },
+  "resizerTitle": {
+    "message": "ドラッグしてサイズを変更"
+  },
+  "ratingDismissTitle": {
+    "message": "閉じる"
+  },
+  "inspectorResourceTitle": {
+    "message": "リソース"
+  },
+  "guideSecGettingStarted": {
+    "message": "はじめに"
+  },
+  "guideSecCategories": {
+    "message": "カテゴリー"
+  },
+  "guideSecSearchFilters": {
+    "message": "検索とフィルター"
+  },
+  "guideSecGridView": {
+    "message": "グリッドとリスト表示"
+  },
+  "guideSecInspect": {
+    "message": "リソースの検証"
+  },
+  "guideSecDownloading": {
+    "message": "ダウンロード"
+  },
+  "guideSecLightbox": {
+    "message": "ライトボックス"
+  },
+  "guideSecTextTables": {
+    "message": "テキストとテーブル"
+  },
+  "guideSecCaptions": {
+    "message": "字幕とキャプション"
+  },
+  "guideSecSourceMaps": {
+    "message": "ソースマップ"
+  },
+  "guideSecDupes": {
+    "message": "重複画像"
+  },
+  "guideSecVideoHls": {
+    "message": "動画フォールバックと HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "上級テクニック"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "DevToolsツールバーの <strong>Source Download</strong> タブをクリックします（<kbd>F12</kbd> または <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>）。ツールバーポップアップでバッジの対象カテゴリを設定できます。太陽/月ボタンでライト・ダークテーマを独立して切り替え可能です。"
+  },
+  "guideSecCategoriesContent": {
+    "message": "左側の垂直タブで画像、動画、音声、字幕、ドキュメント、フォント、ソースマップ、WASM、SVG、APIなどのリソースを分類し、リアルタイムで件数を表示します。"
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "検索バーは名前、URL、タイプ、代替テキスト等で絞り込めます。<kbd>/…/</kbd> で囲むと正規表現検索（例：<code>/\\.(png|jpg)$/</code>）が有効になります。"
+  },
+  "guideSecGridViewContent": {
+    "message": "コンパクトなグリッド表示と詳細なリスト表示をワンクリックで切り替えられます。リスト表示では個別選択が可能です。"
+  },
+  "guideSecInspectContent": {
+    "message": "リソースをクリックすると右側の検査ペインでタブ形式で開きます。画像、動画、音声、コード、API専用のビューアを搭載しています。"
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>表示中をダウンロード</strong>は現在の絞り込み結果をZIP保存します。<strong>選択項目をダウンロード</strong>や<strong>すべてダウンロード</strong>も利用可能です。"
+  },
+  "guideSecLightboxContent": {
+    "message": "拡大ボタンでフルスクリーンライトボックスが開き、ドラッグ移動やホイール・キーボード操作（<kbd>+</kbd>/<kbd>-</kbd> ズーム、<kbd>0</kbd> リセット、<kbd>Esc</kbd> 閉じる）に対応します。"
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>テキスト</strong>カテゴリはページの生きたテキストをキャプチャします。CSSセレクタやXPathによるリアルタイムクエリに対応。</p><p>テーブルはスナップショット履歴を保持し、TXT、Markdown、CSV、マルチシートの本格的な <strong>XLSX</strong> Excelワークブックとして出力できます。</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTTやSRTなどの字幕ファイルを独立したタブで整理します。"
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> ファイルをソースマップタブに集約し、JSON整形表示に対応します。"
+  },
+  "guideSecDupesContent": {
+    "message": "画像ハッシュにより完全に同一のファイルを検出し、重複を非表示にしてZIPサイズを削減します。"
+  },
+  "guideSecVideoHlsContent": {
+    "message": "HLS（.m3u8）ストリームのセグメントをパネル内で単一の動画ファイルへマージしてダウンロードできます。"
+  },
+  "guideSecPowerTipsContent": {
+    "message": "動的APIリクエストは重複排除されず履歴が維持されるため、同一エンドポイントへの複数リクエストを比較できます。"
+  },
+  "toolArrow": {
+    "message": "矢印を描く"
+  },
+  "toolRect": {
+    "message": "矩形を描く"
+  },
+  "toolText": {
+    "message": "テキストを入力"
+  },
+  "toolUndo": {
+    "message": "元に戻す (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "やり直し (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "色"
+  },
+  "badgeStrokeSize": {
+    "message": "太さ: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "フォントサイズ: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "地域ビデオ/GIFを録画"
+  },
+  "btnRecStart": {
+    "message": "録画を開始"
+  },
+  "btnRecPause": {
+    "message": "一時停止"
+  },
+  "btnRecResume": {
+    "message": "再開"
+  },
+  "btnRecStop": {
+    "message": "完了してダウンロード"
+  },
+  "btnRecCancel": {
+    "message": "キャンセル"
+  },
+  "toastRecSaved": {
+    "message": "地域の録画が保存されました"
+  },
+  "toastRecCancelled": {
+    "message": "ビデオ録画がキャンセルされました"
+  },
+  "toastRecPermissionDenied": {
+    "message": "画面録画の権限が許可されませんでした"
+  },
+  "btnPopupRecordArea": {
+    "message": "地域ビデオ/GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "エリアスクショ"
+  },
+  "contextMenuPickColor": {
+    "message": "画面から色を選択"
+  },
+  "btnPopupPickColor": {
+    "message": "スポイト"
+  },
+  "colorPickerTitle": {
+    "message": "カラーピッカー"
+  },
+  "btnColorPickAgain": {
+    "message": "別の色を選択"
+  },
+  "toastColorCopied": {
+    "message": "カラーコードをクリップボードにコピーしました"
+  },
+  "toastProgressCapturing": {
+    "message": "フルページをキャプチャ中... $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "画像を結合中..."
+  },
+  "modalExportTitle": {
+    "message": "フルページスクリーンショット準備完了"
+  },
+  "btnExportPng": {
+    "message": "PNGをダウンロード"
+  },
+  "btnExportJpg": {
+    "message": "JPGをダウンロード"
+  },
+  "btnExportPdf": {
+    "message": "PDFとして保存"
+  },
+  "btnExportCopy": {
+    "message": "クリップボードにコピー"
+  },
+  "btnExportGenerating": {
+    "message": "生成中..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDFドキュメントが保存されました。"
+  },
+  "settingNamingPatterns": {
+    "message": "ファイル命名パターン"
+  },
+  "settingVideoFormat": {
+    "message": "デフォルトの動画形式"
+  },
+  "settingNamingPreview": {
+    "message": "プレビュー:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIFを生成中、お待ちください..."
+  },
+  "settingGifResolution": {
+    "message": "デフォルトのGIF解像度"
+  },
+  "optGifOriginal": {
+    "message": "オリジナル (1:1 ネイティブ解像度 — 3K/4K、縮小なし)"
+  },
+  "optGif1080p": {
+    "message": "1080p フルHD (最大 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (最大 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (最大 854px — 高速・軽量)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF形式の最大録画時間は1分間（60秒）です。"
+  },
+  "guideSecScreenRecording": {
+    "message": "画面録画（動画＆GIF）"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "画面上の選択範囲をMP4、WebM、またはGIFアニメーションとして録画できます。GIF録画は1:1ネイティブ解像度、1080p、720p、480pプロファイルとリアルタイム予測ファイルサイズ表示に対応しています。ブラウザの最適なパフォーマンスのため、GIFの最大録画時間は1分（60秒）です。"
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIFの最大録画時間1分（60秒）に達しました。GIFを生成しています..."
+  },
+  "labelGifMaxDuration": {
+    "message": "最大1分 (60秒)"
+  },
+  "settingGifFps": {
+    "message": "デフォルトGIFフレームレート (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — スムーズ（高い滑らかさ、容量大）"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — 標準（Web推奨、バランス型）"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — コンパクト / ミーム（段階的、容量小）"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — コマ送り / スロー（「カタカタ」ステップ再生、超軽量）"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — プレゼンテーション（毎秒1フレーム、最小容量）"
+  },
+  "popupRightClickHint": {
+    "message": "画面録画（動画/GIF）とカラーピッカーは、Webページ上を右クリックしてご利用ください。",
+    "description": "Hint informing user to use right-click context menu for recording and color picker"
+  }
+}

@@ -1,0 +1,1382 @@
+{
+  "appName": {
+    "message": "Source Download",
+    "description": "The name of the extension"
+  },
+  "appDesc": {
+    "message": "웹 페이지의 모든 리소스를 손쉽게 ZIP으로 검사하고 다운로드하세요. 전체 페이지 스크린샷 및 화면 녹화 지원.",
+    "description": "The description of the extension"
+  },
+  "actionTitle": {
+    "message": "Source Download — 패널 열기 및 리소스 감지",
+    "description": "Tooltip for toolbar action icon"
+  },
+  "contextMenuZap": {
+    "message": "이 요소 숨기기 (Zap)",
+    "description": "Context menu item to hide selected element"
+  },
+  "contextMenuUndoZap": {
+    "message": "마지막 숨긴 요소 복원",
+    "description": "Context menu item to undo element hide"
+  },
+  "contextMenuResetZap": {
+    "message": "숨긴 모든 요소 다시 표시",
+    "description": "Context menu item to restore all hidden elements"
+  },
+  "contextMenuCapturePage": {
+    "message": "전체 페이지 스크린샷 캡처",
+    "description": "Context menu item to capture full page"
+  },
+  "contextMenuPageArchive": {
+    "message": "오프라인 페이지 아카이브 저장",
+    "description": "Context menu item to save complete page archive"
+  },
+  "catAll": {
+    "message": "전체"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "이미지"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "동영상"
+  },
+  "catAudio": {
+    "message": "오디오"
+  },
+  "catCaptions": {
+    "message": "자막"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "소스 맵"
+  },
+  "catFonts": {
+    "message": "글꼴"
+  },
+  "catDocuments": {
+    "message": "문서"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "매니페스트"
+  },
+  "catText": {
+    "message": "텍스트"
+  },
+  "catOther": {
+    "message": "기타"
+  },
+  "catScreenshot": {
+    "message": "스크린샷"
+  },
+  "catArchive": {
+    "message": "페이지 저장"
+  },
+  "btnRefresh": {
+    "message": "새로고침"
+  },
+  "btnExport": {
+    "message": "내보내기"
+  },
+  "btnDownloadSelected": {
+    "message": "선택 항목 다운로드"
+  },
+  "btnDownloadView": {
+    "message": "현재 화면 다운로드"
+  },
+  "btnDownloadAll": {
+    "message": "전체 다운로드"
+  },
+  "btnDownloadFiltered": {
+    "message": "필터 항목 다운로드"
+  },
+  "btnTheme": {
+    "message": "테마 전환"
+  },
+  "btnGuide": {
+    "message": "사용 가이드"
+  },
+  "btnCaptureFullPage": {
+    "message": "전체 페이지 스크린샷"
+  },
+  "btnOfflineArchive": {
+    "message": "단일 HTML로 저장"
+  },
+  "filterMinKb": {
+    "message": "최소 KB"
+  },
+  "filterMaxKb": {
+    "message": "최대 KB"
+  },
+  "filterMinWidth": {
+    "message": "최소 너비 px"
+  },
+  "filterMinHeight": {
+    "message": "최소 높이 px"
+  },
+  "filterSortName": {
+    "message": "이름순 정렬"
+  },
+  "filterSortSize": {
+    "message": "크기순 정렬"
+  },
+  "filterSortType": {
+    "message": "유형순 정렬"
+  },
+  "filterSortTime": {
+    "message": "시간순 정렬"
+  },
+  "filterHideDupes": {
+    "message": "중복 숨기기"
+  },
+  "filterClear": {
+    "message": "초기화"
+  },
+  "textModeContains": {
+    "message": "포함"
+  },
+  "textModeRegex": {
+    "message": "정규 표현식"
+  },
+  "textModeCss": {
+    "message": "CSS 선택자"
+  },
+  "textModeXpath": {
+    "message": "XPath 표현식"
+  },
+  "textPlaceholder": {
+    "message": "페이지 텍스트 필터링 또는 실시간 DOM 쿼리…"
+  },
+  "textAllElements": {
+    "message": "모든 요소"
+  },
+  "textLiveOn": {
+    "message": "실시간 켜짐"
+  },
+  "textLiveOff": {
+    "message": "실시간 꺼짐"
+  },
+  "textScanNow": {
+    "message": "지금 스캔"
+  },
+  "textReading": {
+    "message": "읽기 모드"
+  },
+  "textExportTxt": {
+    "message": "TXT로 내보내기"
+  },
+  "textExportMd": {
+    "message": "Markdown으로 내보내기"
+  },
+  "textExportCsv": {
+    "message": "CSV로 내보내기"
+  },
+  "textExportHtml": {
+    "message": "HTML로 내보내기"
+  },
+  "textExportXlsx": {
+    "message": "Excel로 내보내기"
+  },
+  "inspectorSelectPrompt": {
+    "message": "세부 정보를 검사할 리소스를 선택하세요"
+  },
+  "inspectorDetails": {
+    "message": "상세 정보"
+  },
+  "inspectorOpenTab": {
+    "message": "새 탭에서 열기"
+  },
+  "inspectorCopyUrl": {
+    "message": "URL 복사"
+  },
+  "inspectorDownloadFile": {
+    "message": "이 파일 다운로드"
+  },
+  "inspectorClose": {
+    "message": "닫기"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "유형"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "크기"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "소스"
+  },
+  "metaTitle": {
+    "message": "제목"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Source Download가 마음에 드시나요? Chrome 웹 스토어 리뷰나 GitHub 스타로 오픈 소스 프로젝트를 응원해 주세요!"
+  },
+  "ratingReview": {
+    "message": "★ 리뷰 남기기"
+  },
+  "ratingStar": {
+    "message": "★ GitHub 스타"
+  },
+  "ratingDismiss": {
+    "message": "닫기"
+  },
+  "toastElementZapped": {
+    "message": "요소가 숨겨졌습니다. 복원 메뉴에서 복구할 수 있습니다."
+  },
+  "toastElementRestored": {
+    "message": "요소가 복원되었습니다."
+  },
+  "toastAllElementsRestored": {
+    "message": "숨겨진 모든 요소가 다시 표시되었습니다."
+  },
+  "toastScreenshotCapturing": {
+    "message": "전체 페이지 스크린샷 캡처 중…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "전체 페이지 스크린샷이 저장되었습니다."
+  },
+  "toastArchiveCreated": {
+    "message": "단일 파일 HTML 아카이브가 저장되었습니다."
+  },
+  "brandSignature": {
+    "message": "개발자: Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "이미지 및 SVG"
+  },
+  "tabMedia": {
+    "message": "미디어 및 오디오"
+  },
+  "tabFonts": {
+    "message": "폰트"
+  },
+  "tabTextScraper": {
+    "message": "텍스트 및 표"
+  },
+  "heroScreenshotTitle": {
+    "message": "전체 페이지 스크린샷"
+  },
+  "heroScreenshotDesc": {
+    "message": "완벽한 프레임 병합 • 고정 헤더 숨김 처리"
+  },
+  "heroArchiveTitle": {
+    "message": "단일 파일 HTML 아카이브"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS 및 Base64 이미지 인라인 삽입 • 오프라인 저장"
+  },
+  "copyDataUri": {
+    "message": "Data-URI 복사"
+  },
+  "copyUrl": {
+    "message": "URL 복사"
+  },
+  "downloadSingle": {
+    "message": "다운로드"
+  },
+  "searchPlaceholder": {
+    "message": "이름, URL, 태그, MIME 또는 /regex/로 필터링…"
+  },
+  "viewGrid": {
+    "message": "그리드 뷰"
+  },
+  "viewList": {
+    "message": "리스트 뷰"
+  },
+  "btnScreenshot": {
+    "message": "스크린샷"
+  },
+  "btnArchive": {
+    "message": "HTML 저장"
+  },
+  "exportJson": {
+    "message": "Visible list as JSON"
+  },
+  "exportCsv": {
+    "message": "Visible list as CSV"
+  },
+  "exportHar": {
+    "message": "Network log as HAR"
+  },
+  "exportScreenshot": {
+    "message": "전체 페이지 스크린샷 (PNG)"
+  },
+  "exportArchive": {
+    "message": "오프라인 페이지 아카이브 (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "모든 메소드"
+  },
+  "filterTypeAll": {
+    "message": "모든 요청 유형"
+  },
+  "filterSortDir": {
+    "message": "오름차순 / 내림차순 전환"
+  },
+  "emptyTitle": {
+    "message": "리소스를 찾을 수 없습니다"
+  },
+  "emptySubtitle": {
+    "message": "네트워크 요청을 캡처하려면 이 패널이 열린 상태에서 페이지를 새로고침하거나 새로고침을 클릭하여 현재 DOM을 스캔하세요."
+  },
+  "statusResources": {
+    "message": "개 리소스"
+  },
+  "statusFiltered": {
+    "message": "필터링됨"
+  },
+  "statusSelected": {
+    "message": "개 선택됨"
+  },
+  "statusDupes": {
+    "message": "중복 숨김"
+  },
+  "statusSize": {
+    "message": "크기"
+  },
+  "langAuto": {
+    "message": "자동 (브라우저 기본값)"
+  },
+  "langSelectorTitle": {
+    "message": "언어 선택"
+  },
+  "textPillAll": {
+    "message": "전체 콘텐츠"
+  },
+  "textPillText": {
+    "message": "📄 텍스트 및 아티클"
+  },
+  "textPillTables": {
+    "message": "📊 표만 보기"
+  },
+  "textSelectAll": {
+    "message": "모두 선택"
+  },
+  "textDeselectAll": {
+    "message": "선택 해제"
+  },
+  "textClearSelection": {
+    "message": "선택 해제"
+  },
+  "toastRefreshComplete": {
+    "message": "검사 완료: $COUNT$개의 새 리소스 발견",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$COUNT$개 블록 복사됨",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "클립보드에 복사되었습니다"
+  },
+  "toastTableCopied": {
+    "message": "표가 클립보드에 복사되었습니다"
+  },
+  "toastNothingToExport": {
+    "message": "내보낼 데이터가 없습니다"
+  },
+  "toastExportedTxt": {
+    "message": "$COUNT$개 블록 TXT로 내보냄",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$COUNT$개 블록 Markdown으로 내보냄",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "캡처된 표 행이 없습니다"
+  },
+  "toastExportedCsv": {
+    "message": "표를 CSV로 내보냈습니다"
+  },
+  "toastExportedXlsx": {
+    "message": "표를 XLSX로 내보냈습니다"
+  },
+  "toastExportedTablesZip": {
+    "message": "$COUNT$개 표 $FORMAT$ 형식으로 내보냄",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$COUNT$개 시트 XLSX로 내보냄",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "다운로드할 리소스가 없습니다."
+  },
+  "toastNoVisibleResources": {
+    "message": "표시된 리소스 중 다운로드할 항목이 없습니다."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "먼저 하나 이상의 리소스를 선택하세요."
+  },
+  "toastZipSaved": {
+    "message": "ZIP 저장됨: $TOTAL$개 중 $FETCHED$개 리소스",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP 생성 실패: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR 파일 내보냄 ($COUNT$개 항목)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL이 클립보드에 복사되었습니다"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools 검사 창을 사용할 수 없습니다."
+  },
+  "toastScreenshotError": {
+    "message": "스크린샷 캡처 오류: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "오프라인 페이지 아카이브 생성 중…"
+  },
+  "toastArchiveError": {
+    "message": "페이지 저장 오류: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "서식 지정 시간 초과 — 원본 파일을 표시합니다."
+  },
+  "toastFormatFailed": {
+    "message": "파일 서식을 지정할 수 없어 원본을 표시합니다."
+  },
+  "emptySearchTitle": {
+    "message": "\"$QUERY$\"에 대한 검색 결과 없음",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "다른 검색어를 입력하거나 다른 카테고리를 선택해 보세요."
+  },
+  "emptyFiltersTitle": {
+    "message": "현재 필터와 일치하는 리소스가 없습니다"
+  },
+  "emptyFiltersSub": {
+    "message": "위의 크기 또는 치수 필터를 완화하거나 초기화를 누르세요."
+  },
+  "textEmptyQueryReject": {
+    "message": "페이지에서 쿼리를 거부했습니다. 상단에서 수정한 후 다시 시도하세요."
+  },
+  "textEmptyNoMatch": {
+    "message": "이 쿼리와 일치하는 페이지 요소가 없습니다. 검색 조건을 넓히거나 모드를 변경해 보세요."
+  },
+  "textEmptyInitial": {
+    "message": "아직 캡처된 내용이 없습니다. 실시간 캡처가 실행 중입니다 — 전체 페이지가 읽기 쉬운 텍스트로 표시됩니다."
+  },
+  "textEmptyFiltered": {
+    "message": "현재 쿼리 및 요소 필터와 일치하는 항목이 없습니다."
+  },
+  "textSummaryBlocks": {
+    "message": "$COUNT$개 블록",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$COUNT$개 단어",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$COUNT$자",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$TABLES$개 표 · $ROWS$개 고유 행",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$COUNT$개 선택됨 — 선택 항목만 내보냄",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "표 — 화면에 $COUNT$개 행",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "표 — 전체 $COUNT$개 고유 행",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$COUNT$개 스냅샷",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "$TIME$ 업데이트됨",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "전체 $COUNT$개 행 보기",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "모든 행 표시 중"
+  },
+  "textTableHistory": {
+    "message": "히스토리 ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "기록 숨기기"
+  },
+  "textTableNoRows": {
+    "message": "아직 캡처된 표 행이 없습니다."
+  },
+  "textBtnCopy": {
+    "message": "텍스트 복사"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 복사"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "중복 이미지 $COUNT$개",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "내보내기"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG 로드 중…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG 콘텐츠를 가져올 수 없습니다."
+  },
+  "inspectorLoadingFont": {
+    "message": "폰트 미리보기 로드 중…"
+  },
+  "inspectorFontSample": {
+    "message": "폰트 미리보기"
+  },
+  "inspectorBeautify": {
+    "message": "코드 정렬"
+  },
+  "inspectorOriginal": {
+    "message": "원본"
+  },
+  "inspectorHeaders": {
+    "message": "헤더"
+  },
+  "inspectorResponse": {
+    "message": "응답"
+  },
+  "inspectorRequest": {
+    "message": "요청"
+  },
+  "inspectorQueryParams": {
+    "message": "쿼리 매개변수"
+  },
+  "inspectorRequestBody": {
+    "message": "요청 본문"
+  },
+  "textHintHtml": {
+    "message": "페이지의 실시간 텍스트 사본입니다. 텍스트가 포함된 모든 요소는 DOM 순서대로 캡처됩니다. 일반 텍스트, 정규식, <strong>CSS 선택자</strong> 또는 <strong>XPath</strong> 표현식으로 쿼리한 후 일치하는 항목을 내보낼 수 있습니다. 자세한 내용은 <a href=\"#\" id=\"text-hint-guide\">가이드</a>를 참조하세요."
+  },
+  "textHeadings": {
+    "message": "제목 (Headings)"
+  },
+  "textAllLevels": {
+    "message": "모든 레벨"
+  },
+  "textMatches": {
+    "message": "개 일치"
+  },
+  "textMatch": {
+    "message": "개 일치"
+  },
+  "textReadingOn": {
+    "message": "읽기 켜짐"
+  },
+  "toastDownloadStarted": {
+    "message": "다운로드 시작: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "이 리소스를 가져올 수 없습니다 (CORS 제한 또는 지원되지 않는 형식)."
+  },
+  "ratingBannerText": {
+    "message": "Source Download가 마음에 드시나요? Chrome 웹 스토어 리뷰나 GitHub 스타로 오픈 소스 프로젝트를 응원해 주세요!"
+  },
+  "ratingBannerReview": {
+    "message": "★ 리뷰 작성"
+  },
+  "ratingBannerStar": {
+    "message": "★ Star"
+  },
+  "textTableUniqueRows": {
+    "message": "$COUNT$개 고유 행",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$COUNT$초 전",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$COUNT$분 전",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "영역 스크린샷 캡처"
+  },
+  "btnAreaDownload": {
+    "message": "다운로드"
+  },
+  "btnAreaCopy": {
+    "message": "클립보드 복사"
+  },
+  "btnAreaCancel": {
+    "message": "취소"
+  },
+  "toastAreaCopied": {
+    "message": "영역 스크린샷이 클립보드에 복사되었습니다"
+  },
+  "toastAreaDownloaded": {
+    "message": "영역 스크린샷이 저장되었습니다"
+  },
+  "statusFoundCssResources": {
+    "message": "CSS에서 참조된 리소스 $COUNT$개 발견",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM 검사 실패: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "파일 콘텐츠 색인 생성 중…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "중복 이미지 확인 중…"
+  },
+  "statusWorking": {
+    "message": "작업 진행 중…"
+  },
+  "filterMethodTitle": {
+    "message": "HTTP 메소드로 필터"
+  },
+  "filterTypeTitle": {
+    "message": "요청 유형으로 필터"
+  },
+  "filterSortTitle": {
+    "message": "리소스 정렬"
+  },
+  "textModeTitle": {
+    "message": "검색 모드"
+  },
+  "textKindTitle": {
+    "message": "요소 유형"
+  },
+  "textHeadingLevelTitle": {
+    "message": "제목 수준"
+  },
+  "textPlaceholderRegex": {
+    "message": "^가격:\\s*\\d+ — JavaScript 정규 표현식"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — 모든 CSS 선택자"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "사용자 가이드 검색…"
+  },
+  "popupIntro": {
+    "message": "<strong>툴바 뱃지</strong>로 카운트할 카테고리를 설정하세요. 스위치를 끄면 해당 카테고리는 카운트에서 제외됩니다."
+  },
+  "popupHelpTitle": {
+    "message": "전체 패널 사용 방법"
+  },
+  "popupStep1": {
+    "message": "웹페이지에서 F12 키를 눌러 개발자 도구를 엽니다."
+  },
+  "popupStep2": {
+    "message": "상단 메뉴에서 Source Download 탭을 클릭합니다."
+  },
+  "popupStep3": {
+    "message": "감지된 모든 리소스를 검색, 필터링 및 검사합니다."
+  },
+  "popupNote": {
+    "message": "참고: Chrome 보안 정책상 확장 프로그램이 개발자 도구를 자동으로 띄울 수 없으므로, F12 키를 눌러 Source Download 탭으로 진입하세요."
+  },
+  "popupTrackAll": {
+    "message": "모든 카테고리 추적"
+  },
+  "popupLanguage": {
+    "message": "언어 설정"
+  },
+  "inspectorBinaryResponse": {
+    "message": "바이너리 응답 — 확인하려면 다운로드하세요"
+  },
+  "inspectorLoadingResponse": {
+    "message": "응답 로드 중…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "미리보기 없음 — 콘텐츠를 가져올 수 없습니다."
+  },
+  "inspectorLoadingContent": {
+    "message": "콘텐츠 로드 중…"
+  },
+  "inspectorNoPreview": {
+    "message": "사용 가능한 미리보기가 없습니다."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "모두 닫기"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "열려 있는 모든 탭 닫기"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "클릭하여 확대"
+  },
+  "inspectorViewSource": {
+    "message": "소스 보기"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "구문 강조가 적용된 SVG 원본 코드 보기"
+  },
+  "inspectorFormatting": {
+    "message": "코드 정렬 중…"
+  },
+  "findInContentPlaceholder": {
+    "message": "내용에서 찾기…"
+  },
+  "findPreviousMatch": {
+    "message": "이전 일치"
+  },
+  "findNextMatch": {
+    "message": "다음 일치"
+  },
+  "findClose": {
+    "message": "닫기"
+  },
+  "findShowRaw": {
+    "message": "정렬되지 않은 원본 보기"
+  },
+  "findBeautify": {
+    "message": "코드 깔끔하게 정렬하기"
+  },
+  "btnRaw": {
+    "message": "원본"
+  },
+  "btnBeautify": {
+    "message": "정렬"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (.m3u8) 스트림 감지됨"
+  },
+  "videoCannotPlay": {
+    "message": "브라우저에서 직접 재생할 수 없는 비디오 형식입니다"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome에서는 HLS 스트림을 직접 재생할 수 없습니다. <b>$NAME$</b>의 세그먼트를 단일 MP4/TS 파일로 병합할 수 있습니다.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "브라우저가 지원하지 않는 미디어 포맷입니다"
+  },
+  "btnMergeHls": {
+    "message": "세그먼트 병합 및 다운로드"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$개 세그먼트를 $NAME$ 파일로 병합 완료",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "크기 알 수 없음"
+  },
+  "progressFetching": {
+    "message": "다운로드 중 $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP 파일 생성 중 $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP 저장됨: $TOTAL$개 중 $FETCHED$개 ($SKIPPED$개 실패)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "실패 항목 재시도 ($COUNT$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "다운로드 재시도"
+  },
+  "searchRegexHint": {
+    "message": "정규식 검색 활성 — /패턴/i 형식 사용"
+  },
+  "textIncludeInExports": {
+    "message": "내보내기에 포함"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "모든 스냅샷을 중복 없이 통합하여 내보냅니다"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "이 표의 이전 스냅샷 기록 탐색"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "이 표를 CSV로 다운로드"
+  },
+  "tableSnapshotLabel": {
+    "message": "스냅샷 $INDEX$ — $TIME$ ($COUNT$개 행)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "일괄 다운로드 선택 토글"
+  },
+  "cardDownloadTitle": {
+    "message": "파일 다운로드"
+  },
+  "cardRetryFailedTitle": {
+    "message": "다운로드 실패 — 클릭하여 재시도"
+  },
+  "btnThemeLight": {
+    "message": "밝은 테마로 변경"
+  },
+  "btnThemeDark": {
+    "message": "어두운 테마로 변경"
+  },
+  "guideTitle": {
+    "message": "Source Download — 사용자 가이드"
+  },
+  "guideEmpty": {
+    "message": "검색 조건과 일치하는 가이드 항목이 없습니다."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 외부 의존성 없는 100% 순수 구현.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "축소 (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "확대 (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "원래 크기 (0)"
+  },
+  "lightboxClose": {
+    "message": "닫기 (Esc)"
+  },
+  "resizerTitle": {
+    "message": "드래그하여 크기 조절"
+  },
+  "ratingDismissTitle": {
+    "message": "닫기"
+  },
+  "inspectorResourceTitle": {
+    "message": "리소스 상세"
+  },
+  "guideSecGettingStarted": {
+    "message": "시작하기"
+  },
+  "guideSecCategories": {
+    "message": "카테고리 분류"
+  },
+  "guideSecSearchFilters": {
+    "message": "검색 및 필터"
+  },
+  "guideSecGridView": {
+    "message": "그리드 및 리스트 뷰"
+  },
+  "guideSecInspect": {
+    "message": "리소스 검사"
+  },
+  "guideSecDownloading": {
+    "message": "다운로드"
+  },
+  "guideSecLightbox": {
+    "message": "라이트박스 뷰어"
+  },
+  "guideSecTextTables": {
+    "message": "텍스트 및 표"
+  },
+  "guideSecCaptions": {
+    "message": "자막 및 캡션"
+  },
+  "guideSecSourceMaps": {
+    "message": "소스 맵"
+  },
+  "guideSecDupes": {
+    "message": "중복 이미지 필터링"
+  },
+  "guideSecVideoHls": {
+    "message": "동영상 대체 화면 및 HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "고급 활용 팁"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "개발자 도구(DevTools) 툴바에서 <strong>Source Download</strong> 탭을 클릭하십시오(<kbd>F12</kbd> 또는 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> 키를 누른 후 DevTools 툴바의 탭을 선택하십시오). Chrome 보안 정책상 확장 프로그램이 DevTools를 자동으로 여는 것은 허용되지 않으므로 패널이 이곳에 상주합니다. 툴바 아이콘 팝업을 통해 아이콘 위의 배지 카운터에 반영할 카테고리를 선택할 수 있습니다. 패널 툴바의 해/달 버튼은 Chrome 테마 설정과 관계없이 라이트 또는 다크 테마를 고정하며, 이 설정은 다음 세션에도 유지됩니다."
+  },
+  "guideSecCategoriesContent": {
+    "message": "좌측의 수직 탭은 감지된 모든 리소스를 유형별로 17개의 전용 카테고리(이미지, 동영상, 오디오, 자막, 문서, 폰트, 소스 맵, WASM, SVG, API, 쿠키, 스토리지 등)로 분류합니다. 각 탭에는 실시간 리소스 수가 표시됩니다. 한 번에 하나의 카테고리만 표시되며, 탭을 전환하면 모든 필터가 초기화되므로 화면에 나타나는 항목은 항상 해당 탭의 유형과 정확히 일치합니다."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "검색창은 파일 이름, URL, 유형, alt 속성 텍스트 또는 제목을 기준으로 실시간 필터링을 수행합니다. 정규식을 사용하려면 검색어를 <kbd>/…/</kbd> 형태로 입력하십시오(예: <code>/\\.(png|jpg)$/</code>). 툴바 하단의 필터 바는 카테고리별로 동적으로 전환되어 미디어의 파일 크기 및 픽셀 해상도 범위, API의 HTTP 메서드와 요청 유형, 정렬 기준 및 방향 설정을 지원합니다."
+  },
+  "guideSecGridViewContent": {
+    "message": "검색창 옆의 전환 버튼을 사용하여 컴팩트한 그리드 뷰(작은 썸네일)와 상세한 리스트 뷰 사이를 자유롭게 전환할 수 있습니다. 선택하신 뷰 모드는 세션 간에 안전하게 보존됩니다. 리스트 뷰에서는 각 항목의 체크박스를 통해 대량 다운로드를 진행할 개별 리소스를 선별할 수 있습니다."
+  },
+  "guideSecInspectContent": {
+    "message": "임의의 리소스를 클릭하면 우측 검사 창에 상세 내용이 열립니다. 열린 파일은 각각 탭으로 추가되므로 여러 리소스를 나란히 비교할 수 있으며, 가장 최근에 열린 항목이 왼쪽에 배치됩니다. 이미지, 동영상, 오디오, 폰트, SVG 및 텍스트/코드(코드 정렬 Beautify 토글 지원)를 위한 전용 뷰어가 탑재되어 있습니다. API 리소스는 분할 뷰를 제공하여 좌측에는 응답 본문이, 우측에는 요청 세부 정보(메서드, 상태 코드, 헤더, 쿼리 매개변수 및 페이로드 본문)가 표시됩니다."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>현재 화면 다운로드</strong>는 현재 화면에 표시된 리소스(선택된 카테고리 + 검색어 + 필터 적용 상태)를 하나의 ZIP 아카이브로 압축하여 저장하며, 필터가 적용된 상태에서는 <em>필터 항목 다운로드 (N)</em>으로 버튼 명칭이 자동 변경됩니다. 다운로드 버튼 위에 마우스를 올리면 클릭하기 전에 예상 아카이브 파일 용량을 확인할 수 있습니다. <strong>선택 항목 다운로드</strong>는 체크박스로 지정한 파일만 선별 저장합니다. <strong>전체 다운로드</strong>는 감지된 모든 리소스를 체계적인 폴더 구조의 단일 ZIP 파일로 패키징합니다. 전송에 실패한 다운로드는 자동으로 재시도되며, 컨텍스트 메뉴에서 수동으로 다시 시도할 수도 있습니다. <strong>내보내기</strong>를 통해 현재 목록을 JSON 또는 CSV 형식으로 저장하거나 Chrome 네트워크 로그를 HAR 파일로 덤프할 수 있습니다."
+  },
+  "guideSecLightboxContent": {
+    "message": "확대 줌 버튼을 클릭하면 미디어를 전체 화면 라이트박스에서 열 수 있습니다. 마우스 드래그를 통한 이동 및 휠 스크롤, 화면 내 컨트롤 버튼 또는 단축키(<kbd>+</kbd>/<kbd>-</kbd> 확대/축소, <kbd>0</kbd> 기본 크기 초기화, <kbd>Esc</kbd> 닫기)를 사용하여 편리하게 확대 및 탐색할 수 있습니다."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>텍스트</strong> 카테고리는 웹페이지의 전체 콘텐츠를 읽기 쉬운 구조로 추출한 실시간 복사본입니다. 제목, 문단, 목록 항목, 버튼, <code>div</code>/<code>span</code> 등 텍스트를 포함하는 모든 요소를 DOM 순서대로 캡처하며, <strong>라이브</strong> 모드가 활성화되어 있는 동안 지속적으로 페이지를 스캔합니다.</p><p><strong>쿼리</strong> 입력 상자는 인접한 드롭다운을 통해 선택할 수 있는 네 가지 모드로 동작합니다. 「<strong>포함</strong>」 및 「<strong>정규식</strong>」은 이미 추출된 텍스트 목록 내에서 필터링을 수행하며, 「<strong>CSS 선택자</strong>」 및 「<strong>XPath</strong>」는 실제 웹페이지의 실시간 DOM을 대상으로 실행되므로 DOM 트리 내 모든 요소에 접근할 수 있습니다. XPath는 요소 노드뿐만 아니라 <code>count(//a)</code> 또는 <code>//@href</code>와 같이 연산된 값을 반환하는 표현식도 완벽히 지원합니다. 잘못된 쿼리가 입력되었을 때 발생하는 오류 정보는 입력 상자 바로 옆에 표시됩니다. 「<strong>태그 요소</strong>」 필터는 페이지에서 발견된 각 태그의 개수를 보여주며 단일 HTML 태그로 결과를 좁힙니다. 쿼리 상자를 비우거나 <strong>초기화</strong> 버튼을 누르면 즉시 <em>모든 요소</em> 모드로 복귀하여 페이지를 새로 고치므로 드롭다운을 수동으로 재설정할 필요가 없습니다.</p><p><strong>읽기 모드</strong>는 태그명, 체크박스 및 경로 표시를 숨겨 전체 내용을 한 편의 문서처럼 편안하게 읽을 수 있도록 합니다. 표(테이블) 기능은 스냅샷의 유한한 히스토리를 보존하여 단일 페이지 애플리케이션(SPA)의 동적 표 데이터가 유실되지 않도록 보호합니다. 표에서 <strong>모든 행 표시</strong> 버튼을 누르면 분산된 모든 스냅샷이 중복 없이 하나의 통합 데이터로 병합되며, 이는 파일 내보내기 시 저장되는 데이터와 완전히 동일합니다. <strong>TXT</strong>(가독 텍스트), <strong>MD</strong>(표 구조가 포함된 마크다운) 또는 표 데이터를 CSV, HTML 및 다중 시트를 지원하는 정통 <strong>XLSX</strong> 엑셀 통합 문서로 내보낼 수 있습니다. 체크박스로 선택된 항목이 우선적으로 처리되며, 선택 항목이 없을 경우 현재 화면의 전체 내용이 내보내집니다.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML 및 <code>&lt;track&gt;</code> 소스를 포함한 모든 자막 파일은 일반 문서와 섞이지 않고 전용 <strong>자막</strong> 탭에 독립적으로 분류됩니다."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> 파일 및 소스 맵 구조를 갖춘 JSON 본문(내부에 <code>mappings</code> 및 <code>sources</code>를 포함하는 데이터)은 JSON 뷰어 및 Beautify 코드 정렬 기능과 함께 <strong>소스 맵</strong> 탭으로 모여 일반 JSON 탭이 혼잡해지는 것을 방지합니다."
+  },
+  "guideSecDupesContent": {
+    "message": "이미지 탭에서는 패널이 수집된 바이너리 바이트의 해시값을 대조하여 완전히 동일한 파일을 식별합니다. <strong>중복 숨기기</strong> 필터는 중복된 세트 중 첫 번째 원본 사본만 유지하므로 ZIP 압축 시 동일한 썸네일이 중복으로 저장되는 낭비를 방지합니다."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "브라우저가 기본적으로 재생할 수 없는 스트리밍 미디어(HLS <code>.m3u8</code>, DASH <code>.mpd</code>, 미지원 코덱 등)의 경우 검은 플레이어 화면 대신 안내 화면을 표시합니다. HLS 스트림의 경우 패널 내에서 직접 세그먼트들을 단일 MP4 비디오 파일로 병합하거나 원본 매니페스트 파일을 즉시 다운로드할 수 있습니다."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "동적 <strong>API</strong> 응답(XHR/fetch)은 URL을 기준으로 중복 제거되지 않습니다. 반복되는 요청 간의 데이터 변화를 손쉽게 비교할 수 있도록 모든 응답이 목록에 누적 보존됩니다(용량 제한 FIFO 큐 방식). 정적 리소스는 중복 제거됩니다. 현재 DOM을 다시 스캔하려면 <strong>새로고침</strong>을 누르십시오. 패널을 열어둔 상태로 페이지를 새로고침하면 탭을 전환하기 전에 발생한 요청을 포함하여 모든 네트워크 트래픽을 완벽하게 캡처할 수 있습니다."
+  },
+  "toolArrow": {
+    "message": "화살표 도구"
+  },
+  "toolRect": {
+    "message": "사각형 도구"
+  },
+  "toolText": {
+    "message": "텍스트 도구"
+  },
+  "toolUndo": {
+    "message": "실행 취소 (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "다시 실행 (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "색상 선택"
+  },
+  "badgeStrokeSize": {
+    "message": "두께: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "글자 크기: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "선택 영역 화면 녹화 (비디오 / GIF)"
+  },
+  "btnRecStart": {
+    "message": "녹화 시작"
+  },
+  "btnRecPause": {
+    "message": "일시정지"
+  },
+  "btnRecResume": {
+    "message": "녹화 재개"
+  },
+  "btnRecStop": {
+    "message": "녹화 완료 및 저장"
+  },
+  "btnRecCancel": {
+    "message": "취소"
+  },
+  "toastRecSaved": {
+    "message": "녹화 파일이 저장되었습니다."
+  },
+  "toastRecCancelled": {
+    "message": "녹화가 취소되었습니다."
+  },
+  "toastRecPermissionDenied": {
+    "message": "화면 녹화 권한이 허용되지 않았습니다"
+  },
+  "btnPopupRecordArea": {
+    "message": "영역 비디오 / GIF 녹화"
+  },
+  "btnPopupCaptureArea": {
+    "message": "영역 캡처"
+  },
+  "contextMenuPickColor": {
+    "message": "화면에서 색상 추출"
+  },
+  "btnPopupPickColor": {
+    "message": "스포이트"
+  },
+  "colorPickerTitle": {
+    "message": "색상 추출기"
+  },
+  "btnColorPickAgain": {
+    "message": "다른 색상 선택"
+  },
+  "toastColorCopied": {
+    "message": "색상이 클립보드에 복사되었습니다"
+  },
+  "toastProgressCapturing": {
+    "message": "전체 페이지 캡처 중... $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "이미지 병합 중…"
+  },
+  "modalExportTitle": {
+    "message": "전체 페이지 스크린샷 캡처 완료"
+  },
+  "btnExportPng": {
+    "message": "PNG 다운로드"
+  },
+  "btnExportJpg": {
+    "message": "JPG 다운로드"
+  },
+  "btnExportPdf": {
+    "message": "PDF로 저장"
+  },
+  "btnExportCopy": {
+    "message": "클립보드에 복사"
+  },
+  "btnExportGenerating": {
+    "message": "생성 중…"
+  },
+  "toastPdfGenerated": {
+    "message": "PDF 문서가 저장되었습니다."
+  },
+  "settingNamingPatterns": {
+    "message": "파일 이름 지정 패턴"
+  },
+  "settingVideoFormat": {
+    "message": "기본 비디오 포맷"
+  },
+  "settingNamingPreview": {
+    "message": "미리보기:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF 인코딩 중입니다. 잠시만 기다려주세요…"
+  },
+  "settingGifResolution": {
+    "message": "기본 GIF 해상도"
+  },
+  "optGifOriginal": {
+    "message": "원본 (1:1 네이티브 해상도 — 3K/4K 무스케일링)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (최대 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (최대 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (최대 854px — 빠르고 가벼움)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF 형식은 시스템 자원 보호를 위해 최대 1분(60초) 녹화를 지원합니다."
+  },
+  "guideSecScreenRecording": {
+    "message": "화면 녹화 (동영상 및 GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "화면의 원하는 영역을 지정하여 MP4, WebM 또는 애니메이션 GIF로 녹화할 수 있습니다. GIF 녹화 모드는 1:1 원본 해상도, 1080p, 720p, 480p 화질 프로파일과 실시간 예상 파일 용량 계산을 지원합니다. 브라우저의 안정적인 성능을 위해 GIF 최대 녹화 시간은 1분(60초)으로 최적화되어 있습니다."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIF 최대 녹화 시간(1분)에 도달했습니다. GIF를 생성합니다…"
+  },
+  "labelGifMaxDuration": {
+    "message": "최대 1분 (60초)"
+  },
+  "settingGifFps": {
+    "message": "기본 GIF 프레임레이트 (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — 부드러움 (고품질 부드러운 움직임)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — 표준 (웹 공유 및 용량 최적 밸런스)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — 컴팩트 / 밈 (끊김 모션, 적은 용량)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — 스톱모션 / 단계별 (문서 작성용 초경량)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — 슬라이드쇼 (1초당 1프레임, 최소 용량)"
+  },
+  "popupRightClickHint": {
+    "message": "웹페이지에서 마우스 우클릭 시 화면 녹화 (비디오/GIF) 및 스포이트 색상 추출을 바로 사용할 수 있습니다.",
+    "description": "Hint informing user to use right-click context menu for recording and color picker"
+  }
+}

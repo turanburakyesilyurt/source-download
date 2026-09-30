@@ -473,13 +473,13 @@
   "toastZipSaved": {
     "message": "ZIP kaydedildi: $TOTAL$ kaynaktan $FETCHED$ tanesi",
     "placeholders": {
-      "total": {
-        "content": "$1",
-        "example": "10"
-      },
       "fetched": {
-        "content": "$2",
+        "content": "$1",
         "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
       }
     }
   },
@@ -872,7 +872,7 @@
     "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "Rehberde ara…"
+    "message": "Kılavuzda arayın…"
   },
   "popupIntro": {
     "message": "<strong>Araç çubuğu rozetinde</strong> sayılan kategoriler. Sayılmasını istemediğiniz kategoriyi kapatın — rozet yalnızca takip ettiklerinizi yansıtır."
@@ -1081,13 +1081,13 @@
     "message": "Koyu temaya geç"
   },
   "guideTitle": {
-    "message": "Source Download — Kullanıcı Kılavuzu"
+    "message": "Source Download — Kullanım Kılavuzu"
   },
   "guideEmpty": {
     "message": "Aramanızla eşleşen kılavuz bölümü bulunamadı."
   },
   "guideVersionNote": {
-    "message": "Source Download v$VERSION$ — %100 bağımsız ve hafif.",
+    "message": "Source Download v$VERSION$ — %100 bağımsız ve harici kütüphanesiz.",
     "placeholders": {
       "VERSION": {
         "content": "$1"
@@ -1131,67 +1131,67 @@
     "message": "Kaynak inceleme"
   },
   "guideSecDownloading": {
-    "message": "İndirme seçenekleri"
+    "message": "İndirme"
   },
   "guideSecLightbox": {
-    "message": "Medya büyütme (Lightbox)"
+    "message": "Büyük Görsel Görüntüleyici (Lightbox)"
   },
   "guideSecTextTables": {
-    "message": "Metinler ve tablolar"
+    "message": "Metin ve tablolar"
   },
   "guideSecCaptions": {
-    "message": "Altyazılar"
+    "message": "Altyazılar ve açıklamalar"
   },
   "guideSecSourceMaps": {
-    "message": "Kaynak haritaları"
+    "message": "Kaynak Haritaları (Source maps)"
   },
   "guideSecDupes": {
-    "message": "Yinelenen görseller"
+    "message": "Yinelenen resimler"
   },
   "guideSecVideoHls": {
-    "message": "Video ve HLS akışları"
+    "message": "Video alternatifleri ve HLS"
   },
   "guideSecPowerTips": {
-    "message": "Gelişmiş ipuçları"
+    "message": "İleri düzey ipuçları"
   },
   "guideSecGettingStartedContent": {
-    "message": "Geliştirici Araçları (DevTools) araç çubuğundaki <strong>Source Download</strong> sekmesine tıklayın (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> tuşlayın ve DevTools sekmesini seçin). Chrome eklentilerin DevTools'u otomatik açmasına izin vermez, bu yüzden panel orada bulunur. Eklenti simgesi açılır penceresinden (popup) hangi kategorilerin simge rozet sayacını besleyeceğini belirleyebilirsiniz. Panel araç çubuğundaki güneş/ay simgesi açık veya koyu temayı Chrome'dan bağımsız olarak sabitler; bu tercih hatırlanır."
+    "message": "Geliştirici Araçları (DevTools) araç çubuğundaki <strong>Source Download</strong> sekmesine tıklayın (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> tuşlarına basın ve ardından DevTools araç çubuğundaki sekmeye geçin). Chrome, eklentilerin DevTools panelini otomatik olarak açmasına izin vermez; panelin burada yer almasının nedeni budur. Araç çubuğu simgesi açılır penceresi, hangi kategorilerin simge üzerindeki sayaç rozetini besleyeceğini seçmenizi sağlar. Panel araç çubuğundaki güneş/ay düğmesi, Chrome temasından bağımsız olarak açık veya koyu temayı sabitler; bu tercihiniz kaydedilir."
   },
   "guideSecCategoriesContent": {
-    "message": "Soldaki dikey sekmeler yakalanan her kaynağı türüne göre gruplar: Görseller, Videolar, Sesler, Altyazılar, Belgeler, Yazı Tipleri, Kaynak Haritaları, WASM, SVG, API'ler ve daha fazlası. Her sekme canlı bir sayaç gösterir. Aynı anda yalnızca bir kategori görüntülenir; geçiş yapmak tüm filtreleri sıfırlar, böylece gördükleriniz her zaman sekmeyle eşleşir."
+    "message": "Sol taraftaki dikey sekmeler yakalanan her kaynağı türüne göre 17 özel kategoriye ayırır: Resimler, Videolar, Sesler, Altyazılar, Belgeler, Yazı Tipleri, Kaynak Haritaları (Source maps), WASM, SVG, API'ler, Çerezler, Depolama ve daha fazlası. Her sekme canlı bir sayaç gösterir. Aynı anda yalnızca bir kategori görüntülenir; sekmeler arasında geçiş yapmak tüm filtreleri sıfırlar, böylece gördüğünüz içerik her zaman geçerli sekmeyle tam olarak eşleşir."
   },
   "guideSecSearchFiltersContent": {
-    "message": "Arama çubuğu ada, URL'ye, türe, alt metne veya başlığa göre filtreleme yapar. Düzenli ifade (regex) kullanmak için sorgunuzu <kbd>/…/</kbd> içine alın, örneğin <code>/\\.(png|jpg)$/</code>. Araç çubuğunun altında, filtre çubuğu kategoriye göre değişir: medya için boyut ve çözünürlük aralıkları, API'ler için HTTP yöntemi ve istek türü, ayrıca sıralama ve yön seçenekleri."
+    "message": "Arama çubuğu ad, URL, tür, alt metin veya başlığa göre filtreleme yapar. Düzenli ifade (regex) kullanmak için sorgunuzu <kbd>/…/</kbd> içine alın, örneğin <code>/\\.(png|jpg)$/</code>. Araç çubuğunun altındaki filtre çubuğu her kategoriye göre dinamik olarak değişir: medya için dosya boyutu ve piksel çözünürlük aralıkları, API'ler için HTTP yöntemi ve istek türü, ayrıca sıralama kriteri ve yönü."
   },
   "guideSecGridViewContent": {
-    "message": "Arama çubuğunun yanındaki butonlarla kompakt ızgara (küçük önizlemeler) ile ayrıntılı liste görünümü arasında geçiş yapın. Tercihiniz oturumlar arasında korunur. Liste görünümünde, onay kutuları toplu indirme için tek tek kaynakları seçmenizi sağlar."
+    "message": "Arama çubuğunun yanındaki düğmelerle kompakt ızgara (küçük önizlemeler) ile ayrıntılı liste görünümü arasında geçiş yapabilirsiniz. Seçiminiz oturumlar arasında hatırlanır. Liste görünümünde, onay kutuları toplu indirme işlemi için bağımsız kaynakları tek tek seçmenize olanak tanır."
   },
   "guideSecInspectContent": {
-    "message": "Sağdaki inceleme bölmesinde açmak için herhangi bir kaynağa tıklayın. Açılan her dosya bir sekmeye dönüşür, böylece birden fazla kaynağı yan yana karşılaştırabilirsiniz — en yeni sekme solda açılır. Görseller, video, ses, yazı tipleri, SVG ve metin/kod (Güzelleştir/Formatla düğmeli) için özel görüntüleyiciler mevcuttur. API'ler bölünmüş görünüm sunar: solda yanıt, sağda istek ayrıntıları (yöntem, durum, başlıklar, sorgu parametreleri ve gövde)."
+    "message": "Herhangi bir kaynağa tıklayarak sağdaki inceleme bölmesinde açabilirsiniz. Açılan her dosya bir sekmeye dönüşür, böylece birden fazla kaynağı yan yana karşılaştırabilirsiniz — en yeni açılan dosya sol tarafta yer alır. Resimler, video, ses, yazı tipleri, SVG ve metin/kod için (Güzelleştirme/Beautify anahtarıyla birlikte) özel görüntüleyiciler mevcuttur. API'ler bölünmüş görünüm sunar: sol tarafta yanıt gövdesi, sağ tarafta ise istek detayları (yöntem, durum kodu, başlıklar, sorgu parametreleri ve gövde) yer alır."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Görünümü İndir</strong> o anda görünür olan kaynakları (aktif kategori + arama + filtreler) ZIP olarak kaydeder; filtreler etkinken <em>Filtrelenenleri İndir (N)</em> olarak yeniden adlandırılır. Tıklamadan önce tahmini arşiv boyutunu görmek için indirme butonunun üzerine gelin. <strong>Seçilenleri İndir</strong> yalnızca işaretli öğeleri indirir. <strong>Tümünü İndir</strong> keşfedilen her kaynağı klasör yapısına sahip bir ZIP içine kaydeder. Başarısız indirmeler otomatik olarak yeniden denenir ve sağ tık menüsünden tekrar denenebilir. <strong>Dışa Aktar</strong> görünür listeyi JSON veya CSV olarak yazar ya da Chrome ağ günlüğünü HAR dosyası olarak döker."
+    "message": "<strong>Görünümü İndir</strong> o anda görünür olan kaynakları (aktif kategori + arama + filtreler) bir ZIP arşivi olarak kaydeder; filtreler aktif olduğunda adı otomatik olarak <em>Filtrelenenleri İndir (N)</em> şeklinde değişir. Tıklamadan önce tahmini arşiv boyutunu görmek için herhangi bir indirme düğmesinin üzerine gelin. <strong>Seçilenleri İndir</strong> yalnızca onay kutusu işaretlenmiş ögeleri indirir. <strong>Tümünü İndir</strong> keşfedilen her kaynağı klasör yapısına göre düzenlenmiş tek bir ZIP içinde toplar. Başarısız olan indirmeler otomatik olarak yeniden denenir ve bağlam menüsünden manuel olarak tekrar başlatılabilir. <strong>Dışa Aktar</strong> görünür listeyi JSON veya CSV olarak kaydeder ya da Chrome'un ağ günlüğünü HAR dosyası olarak dışa aktarır."
   },
   "guideSecLightboxContent": {
-    "message": "Büyüteç butonu, medyayı sürükleyerek kaydırabileceğiniz, fare tekerleğiyle, ekran butonlarıyla veya klavyeyle (<kbd>+</kbd>/<kbd>-</kbd> yakınlaştırma, <kbd>0</kbd> sıfırlama, <kbd>Esc</kbd> kapatma) yakınlaştırabileceğiniz tam boyutlu bir lightbox içinde açar."
+    "message": "Yakınlaştırma düğmesi, medyayı sürükleyerek kaydırabileceğiniz, fare tekerleğiyle, ekran üzerindeki düğmelerle veya klavye kısayollarıyla (<kbd>+</kbd>/<kbd>-</kbd> yakınlaştırma, <kbd>0</kbd> sıfırlama, <kbd>Esc</kbd> kapatma) yakınlaştırıp uzaklaştırabileceğiniz tam boyutlu bir lightbox içinde açar."
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>Metin</strong> kategorisi sayfanın canlı, okunabilir bir kopyasıdır. Metin barındıran her öğeyi — başlıklar, paragraflar, liste öğeleri, butonlar, <code>div</code>/<code>span</code> ve daha fazlasını — DOM sırasına göre yakalar ve <strong>Canlı</strong> açıkken taramaya devam eder.</p><p><strong>Sorgu</strong> kutusu, yanındaki açılır menüden seçilen dört şekilde çalışır: <strong>İçerir</strong> ve <strong>Regex</strong> önceden yakalanan metni filtreler; <strong>CSS seçici</strong> ve <strong>XPath</strong> ise doğrudan canlı sayfa üzerinde çalışarak DOM'daki her şeye ulaşabilir. XPath ayrıca öğeler yerine değer döndüren ifadeleri de kabul eder (örneğin <code>count(//a)</code> veya <code>//@href</code>). Hatalı bir sorgu hakkında sayfanın bildirdiği hata kutunun yanında gösterilir. <strong>Öğe</strong>, sonucu tek bir etikete ve sayfada bulunan o etiketin sayısına daraltır. Sorgu kutusunu temizlemek (veya <strong>Temizle</strong>'ye basmak) sizi <em>Tüm öğeler</em> görünümüne döndürür ve sayfayı yeniden yakalar — açılır menüyü asla elle sıfırlamanız gerekmez.</p><p><strong>Okuma</strong> modu akışın bir belge gibi okunabilmesi için etiketleri, onay kutularını ve konum kırıntılarını gizler. Tablolar anlık görüntü geçmişi saklar, böylece dinamik (SPA) tablolar asla kaybolmaz. Her anlık görüntüyü tek bir tekilleştirilmiş görünümde birleştirmek için bir tablodaki <strong>Tüm satırları göster</strong>'e basın — dışa aktarma tam olarak bunu içerir. <strong>TXT</strong> (okunabilir sayfa), <strong>MD</strong> (tablolar dahil Markdown) veya tabloları CSV, HTML veya çok sayfalı gerçek bir <strong>XLSX</strong> çalışma kitabı olarak dışa aktarın. İşaretli öğeler önceliklidir; aksi takdirde o an görünür olan her şey dışa aktarılır.</p>"
+    "message": "<p><strong>Metin</strong> kategorisi sayfanın canlı ve okunabilir bir kopyasıdır. Metin barındıran tüm ögeleri — başlıklar, paragraflar, liste ögeleri, düğmeler, <code>div</code>/<code>span</code> ve daha fazlası — DOM hiyerarşisi sırasıyla yakalar ve <strong>Canlı</strong> modu açık olduğu sürece sayfayı taramaya devam eder.</p><p><strong>Sorgu</strong> kutusu, yanındaki açılır menüden seçilebilen dört farklı modda çalışır: <strong>İçerir</strong> ve <strong>Regex</strong> daha önce yakalanmış olan metni filtrelerken, <strong>CSS seçici</strong> ve <strong>XPath</strong> doğrudan canlı sayfa üzerinde çalıştırılır ve böylece DOM içerisindeki her noktaya erişebilir. XPath ayrıca ögelerin kendisi yerine değer döndüren <code>count(//a)</code> veya <code>//@href</code> gibi ifadeleri de destekler. Hatalı veya geçersiz bir sorguda sayfanın döndürdüğü hata doğrudan kutunun yanında gösterilir. <strong>Öge</strong> filtresi, sayfada bulunan her bir etiket sayısı ile birlikte sonucu tek bir HTML etiketine daraltır. Sorgu kutusunu temizlemek (veya <strong>Temizle</strong> düğmesine basmak) sizi <em>Tüm ögeler</em> görünümüne döndürür ve sayfayı yeniden yakalar — açılır menüyü elle sıfırlamanıza gerek kalmaz.</p><p><strong>Okuma</strong> modu etiketleri, onay kutularını ve konum izlerini gizler, böylece metin akışı bir belge gibi rahatça okunur. Tablolar, anlık görüntülerin sınırlandırılmış geçmişini saklar, bu sayede dinamik (SPA) tablolar hiçbir zaman kaybolmaz. Tüm anlık görüntüleri tek bir tekilleştirilmiş görünümde birleştirmek için tablodaki <strong>Tüm satırları göster</strong> düğmesine basın — dışa aktarma işlemi tam olarak bu içeriği kaydeder. <strong>TXT</strong> (okunabilir sayfa metni), <strong>MD</strong> (tablolar dahil Markdown) veya tabloları CSV, HTML ya da gerçek çok sayfalı <strong>XLSX</strong> çalışma kitabı olarak dışa aktarabilirsiniz. İşaretli ögeler önceliklidir; aksi takdirde o an görünür olan her şey dışa aktarılır.</p>"
   },
   "guideSecCaptionsContent": {
-    "message": "WebVTT, SRT, TTML ve diğer altyazı dosyaları — <code>&lt;track&gt;</code> kaynakları dahil — belgelere karışmak yerine kendi <strong>Altyazılar</strong> sekmesinde toplanır."
+    "message": "WebVTT, SRT, TTML ve <code>&lt;track&gt;</code> kaynakları dahil diğer tüm altyazı dosyaları belgelerle karışmak yerine kendilerine özel <strong>Altyazılar</strong> sekmesine toplanır."
   },
   "guideSecSourceMapsContent": {
-    "message": "<code>.map</code> dosyaları ve kaynak haritasına benzeyen JSON gövdeleri (<code>mappings</code> ve <code>sources</code> içerenler), JSON sekmesini kalabalıklaştırmaması için JSON görüntüleyici ve Güzelleştir özelliğiyle birlikte <strong>Kaynak Haritaları</strong> altında gruplanır."
+    "message": "<code>.map</code> dosyaları ve kaynak haritası biçimindeki JSON gövdeleri (içinde <code>mappings</code> ve <code>sources</code> barındıranlar), JSON görüntüleyici ve Güzelleştirme (Beautify) aracıyla birlikte <strong>Kaynak Haritaları</strong> altında toplanır; böylece genel JSON sekmesini doldurmazlar."
   },
   "guideSecDupesContent": {
-    "message": "Görseller sekmesinde panel, yakalanan baytları hash'ler ve birebir aynı dosyaları işaretler. <strong>Yinelenenleri gizle</strong> filtresi her kümenin ilk kopyasını tutar, böylece görünümün ZIP'i aynı küçük resmi iki kez içermez."
+    "message": "Resimler sekmesinde panel, yakalanan ikili baytları hash'leyerek birebir aynı dosyaları otomatik olarak tespit eder. <strong>Yinelenenleri gizle</strong> filtresi her kümenin yalnızca ilk kopyasını tutar, böylece geçerli görünümün ZIP çıktısı aynı küçük resmi iki kez içermez."
   },
   "guideSecVideoHlsContent": {
-    "message": "Tarayıcının yerel olarak oynatamadığı akışlar (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, bilinmeyen codec'ler) siyah bir oynatıcı yerine yedek bir bilgilendirme ekranı gösterir. HLS için parçaları doğrudan panelden tek bir video dosyasında birleştirebilir veya orijinal manifesti indirebilirsiniz."
+    "message": "Tarayıcının yerel olarak oynatamadığı medya akışları (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, bilinmeyen kodekler) siyah bir oynatıcı yerine akıllı bir yedek ekran gösterir. HLS akışlarında, parçaları doğrudan panel içerisinden tek bir MP4 video dosyası halinde birleştirebilir veya orijinal manifest dosyasını indirebilirsiniz."
   },
   "guideSecPowerTipsContent": {
-    "message": "Dinamik <strong>API</strong> yanıtları (XHR/fetch) URL'ye göre tekilleştirilmez — tekrarlanan istekleri karşılaştırabilmeniz için her yanıt listede kalır (sınırlı FIFO). Statik varlıklar tekilleştirilir. Geçerli DOM'u yeniden taramak için <strong>Yenile</strong>'yi kullanın ve sekmeleri değiştirmeden önce tetiklenenler dahil tüm ağ isteklerini yakalamak için panel açıkken sayfayı yeniden yükleyin."
+    "message": "Dinamik <strong>API</strong> yanıtları (XHR/fetch) URL'ye göre tekilleştirilmez — yinelenen istekleri karşılaştırabilmeniz için her yanıt listede (FIFO sınırlı) tutulur. Statik kaynaklar ise tekilleştirilir. Geçerli DOM'u yeniden taramak için <strong>Yenile</strong> düğmesini kullanın; sekmeyi değiştirmeden önce başlatılanlar dahil tüm ağ isteklerini yakalamak için paneli açıkken sayfayı yeniden yükleyin."
   },
   "toolArrow": {
     "message": "Ok çiz"
@@ -1346,10 +1346,10 @@
     "message": "GIF formatı için maksimum kayıt süresi 1 dakikadır (60 sn)."
   },
   "guideSecScreenRecording": {
-    "message": "Bölgesel ekran kaydı (Video ve GIF)"
+    "message": "Ekran kaydı (Video ve GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Ekrandan seçtiğiniz herhangi bir alanı MP4, WebM veya hareketli GIF olarak kaydedin. GIF kayıtları 1:1 orijinal çözünürlük, 1080p, 720p ve 480p profilleri ile anlık tahmini boyut göstergesi sunar. Tarayıcı belleği ve yüksek performans için maksimum GIF süresi 1 dakikadır (60 sn)."
+    "message": "Ekranın dilediğiniz bölgesini MP4, WebM veya animasyonlu GIF olarak kaydedin. GIF kayıtları 1:1 orijinal çözünürlük, 1080p, 720p ve 480p profilleri ile anlık tahmini dosya boyutu hesaplaması sunar. En yüksek tarayıcı performansı için maksimum GIF kayıt süresi 1 dakikadır (60 saniye)."
   },
   "msgGifMaxDurationReached": {
     "message": "Maksimum GIF süresi olan 1 dakikaya (60 sn) ulaşıldı. GIF oluşturuluyor..."

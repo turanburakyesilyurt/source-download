@@ -872,7 +872,7 @@
     "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "Leitfaden durchsuchen…"
+    "message": "Benutzerhandbuch durchsuchen…"
   },
   "popupIntro": {
     "message": "Kategorien, die vom <strong>Symbolleisten-Badge</strong> gezählt werden. Deaktivieren Sie eine, um sie nicht mehr zu zählen."
@@ -1084,10 +1084,10 @@
     "message": "Source Download — Benutzerhandbuch"
   },
   "guideEmpty": {
-    "message": "Keine Abschnitte entsprechen Ihrer Suche."
+    "message": "Keine Abschnitte des Handbuchs entsprechen Ihrer Suche."
   },
   "guideVersionNote": {
-    "message": "Source Download v$VERSION$ — 100% frei von Abhängigkeiten.",
+    "message": "Source Download v$VERSION$ — 100% ohne externe Abhängigkeiten.",
     "placeholders": {
       "VERSION": {
         "content": "$1"
@@ -1128,22 +1128,22 @@
     "message": "Raster- & Listenansicht"
   },
   "guideSecInspect": {
-    "message": "Ressource untersuchen"
+    "message": "Ressourcen untersuchen"
   },
   "guideSecDownloading": {
     "message": "Herunterladen"
   },
   "guideSecLightbox": {
-    "message": "Medienansicht (Lightbox)"
+    "message": "Lightbox-Betrachter"
   },
   "guideSecTextTables": {
-    "message": "Texte & Tabellen"
+    "message": "Text & Tabellen"
   },
   "guideSecCaptions": {
-    "message": "Untertitel"
+    "message": "Untertitel & Transkripte"
   },
   "guideSecSourceMaps": {
-    "message": "Quellcode-Karten (Source Maps)"
+    "message": "Source Maps"
   },
   "guideSecDupes": {
     "message": "Doppelte Bilder"
@@ -1155,43 +1155,43 @@
     "message": "Profi-Tipps"
   },
   "guideSecGettingStartedContent": {
-    "message": "Klicken Sie in der DevTools-Symbolleiste auf den Reiter <strong>Source Download</strong> (drücken Sie <kbd>F12</kbd> / <kbd>Strg</kbd>+<kbd>Umschalt</kbd>+<kbd>I</kbd>). Chrome erlaubt es Erweiterungen nicht, DevTools automatisch zu öffnen. Das Symbol-Popup ermöglicht die Auswahl der Kategorien für den Zähler. Das Sonnen-/Mond-Symbol sperrt unabhängig von Chrome ein helles oder dunkles Design."
+    "message": "Klicken Sie in der Symbolleiste der Entwicklertools (DevTools) auf die Registerkarte <strong>Source Download</strong> (drücken Sie <kbd>F12</kbd> / <kbd>Strg</kbd>+<kbd>Umschalt</kbd>+<kbd>I</kbd> und wählen Sie anschließend den Reiter in der DevTools-Leiste). Chrome erlaubt es Erweiterungen nicht, die DevTools automatisch zu öffnen; aus diesem Grund befindet sich das Panel dort. Über das Popup des Symbolleistensymbols können Sie auswählen, welche Kategorien den Zähler-Badge auf dem Symbol speisen. Die Sonne/Mond-Schaltfläche in der Symbolleiste des Panels fixiert unabhängig von Chrome ein helles oder dunkles Design; diese Auswahl bleibt dauerhaft gespeichert."
   },
   "guideSecCategoriesContent": {
-    "message": "Die vertikalen Reiter links gruppieren jede Ressource nach Typ: Bilder, Videos, Audio, Untertitel, Dokumente, Schriftarten, Quellcode-Karten, WASM, SVG, APIs und mehr. Jeder Reiter zeigt einen Live-Zähler. Beim Wechsel werden Filter zurückgesetzt."
+    "message": "Die vertikalen Reiter auf der linken Seite teilen jede erfasste Ressource nach Typ in 17 dedizierte Kategorien ein: Bilder, Videos, Audio, Untertitel, Dokumente, Schriftarten, Source Maps, WASM, SVG, APIs, Cookies, Speicher und mehr. Jeder Reiter zeigt einen Live-Zähler an. Es wird immer nur eine Kategorie gleichzeitig dargestellt; das Wechseln setzt alle Filter zurück, sodass die angezeigten Elemente stets exakt dem Reiter entsprechen."
   },
   "guideSecSearchFiltersContent": {
-    "message": "Die Suchleiste filtert nach Name, URL, Typ, Alt-Text oder Titel. Umschließen Sie Ihre Abfrage mit <kbd>/…/</kbd> für reguläre Ausdrücke, z. B. <code>/\\.(png|jpg)$/</code>. Darunter passt sich die Filterleiste dynamisch an die jeweilige Kategorie an."
+    "message": "Die Suchleiste filtert nach Name, URL, Typ, Alt-Text oder Titel. Setzen Sie Ihre Abfrage in <kbd>/…/</kbd>, um einen regulären Ausdruck zu verwenden, z. B. <code>/\\.(png|jpg)$/</code>. Unterhalb der Symbolleiste passt sich die Filterleiste an jede Kategorie an: Datei- und Abmessungsbereiche für Medien, HTTP-Methode und Anfragetyp für APIs sowie Sortierung und Sortierrichtung."
   },
   "guideSecGridViewContent": {
-    "message": "Wechseln Sie mit den Schaltflächen neben der Suchleiste zwischen kompakter Rasteransicht und detaillierter Listenansicht. Ihre Auswahl bleibt sitzungsübergreifend gespeichert."
+    "message": "Schalten Sie mit den Schaltflächen neben der Suchleiste zwischen einem kompakten Raster (kleine Miniaturansichten) und einer detaillierten Liste um. Ihre Auswahl wird sitzungsübergreifend gespeichert. In der Listenansicht ermöglichen Kontrollkästchen die gezielte Auswahl einzelner Ressourcen für einen Sammel-Download."
   },
   "guideSecInspectContent": {
-    "message": "Klicken Sie auf eine Ressource, um sie im Inspektionsbereich rechts zu öffnen. Jede Datei wird als eigener Tab geöffnet. Es stehen spezialisierte Viewer für Medien, Schriftarten, Code und APIs bereit."
+    "message": "Klicken Sie auf eine beliebige Ressource, um sie im rechten Inspektionsbereich zu öffnen. Jede geöffnete Datei wird zu einem Reiter, sodass Sie mehrere Ressourcen direkt nebeneinander vergleichen können — die neueste öffnet sich jeweils links. Es stehen spezialisierte Viewer für Bilder, Video, Audio, Schriftarten, SVG und Text/Code (inklusive Verschönerungs-Umschalter/Beautify) bereit. APIs bieten eine geteilte Ansicht: Antwortdaten links, Anfragedetails (Methode, Status, Header, Abfrageparameter und Nutzlast) rechts."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Ansicht herunterladen</strong> speichert alle sichtbaren Ressourcen als ZIP. <strong>Ausgewählte herunterladen</strong> lädt nur markierte Elemente. <strong>Alle herunterladen</strong> erfasst alle Ressourcen in einem strukturierten ZIP."
+    "message": "<strong>Ansicht herunterladen</strong> speichert die derzeit sichtbaren Ressourcen (aktive Kategorie + Suche + Filter) als ZIP-Archiv; die Schaltfläche wird zu <em>Gefilterte herunterladen (N)</em> umbenannt, sobald Filter aktiv sind. Bewegen Sie den Mauszeiger über eine Download-Schaltfläche, um vor dem Klick die geschätzte Archivgröße zu sehen. <strong>Ausgewählte herunterladen</strong> lädt nur die angekreuzten Elemente herunter. <strong>Alles herunterladen</strong> packt jede gefundene Ressource in ein ordnerstrukturiertes ZIP. Fehlgeschlagene Downloads werden automatisch wiederholt und können über das Kontextmenü erneut angestoßen werden. <strong>Exportieren</strong> gibt die sichtbare Liste als JSON oder CSV aus oder sichert das Chrome-Netzwerkprotokoll als HAR-Datei."
   },
   "guideSecLightboxContent": {
-    "message": "Die Zoom-Taste öffnet Medien in einer Vollbild-Lightbox mit Verschieben per Maus, Zoom per Rad oder Tastatur (<kbd>+</kbd>/<kbd>-</kbd> Zoom, <kbd>0</kbd> Zurücksetzen, <kbd>Esc</kbd> Schließen)."
+    "message": "Die Zoom-Schaltfläche öffnet Medien in einer vollflächigen Lightbox, in der Sie per Ziehen navigieren sowie mit dem Mausrad, den Schaltflächen auf dem Bildschirm oder Tastaturkürzeln (<kbd>+</kbd>/<kbd>-</kbd> zum Zoomen, <kbd>0</kbd> zum Zurücksetzen, <kbd>Esc</kbd> zum Schließen) vergrößern und verkleinern können."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Die Kategorie <strong>Text</strong> ist eine lesbare Live-Kopie der Seite in DOM-Reihenfolge.</p><p>Das <strong>Abfragefeld</strong> unterstützt Enthält, Regex, CSS-Selektoren und XPath direkt auf dem DOM.</p><p>Der <strong>Lesemodus</strong> blendet Tags aus. Tabellen erfassen eine Snapshot-Historie. Exportieren Sie als TXT, Markdown oder mehrseitige XLSX-Arbeitsmappen.</p>"
+    "message": "<p>Die Kategorie <strong>Text</strong> stellt eine dynamische, lesbare Kopie der Seite dar. Sie erfasst jedes Element, das Text enthält — Überschriften, Absätze, Listenelemente, Schaltflächen, <code>div</code>/<code>span</code> und mehr — in der exakten DOM-Reihenfolge und führt den Scan fort, solange der <strong>Live</strong>-Modus aktiv ist.</p><p>Das <strong>Abfrage</strong>-Feld bietet vier Modi, die über das Dropdown-Menü daneben gewählt werden: <strong>Enthält</strong> und <strong>Regex</strong> filtern den bereits erfassten Text, während <strong>CSS-Selektor</strong> und <strong>XPath</strong> direkt gegen die Live-Seite ausgeführt werden, um jeden Punkt im DOM zu erreichen. XPath unterstützt auch Ausdrücke, die Werte statt Elemente zurückgeben, wie etwa <code>count(//a)</code> oder <code>//@href</code>. Etwaige Fehler einer ungültigen Abfrage werden direkt neben dem Feld angezeigt. <strong>Element</strong> schränkt das Ergebnis auf ein bestimmtes HTML-Tag ein und weist die Anzahl der jeweils auf der Seite gefundenen Tags aus. Das Leeren des Abfragefelds (oder Klicken auf <strong>Löschen</strong>) führt Sie zu <em>Alle Elemente</em> zurück und erfasst die Seite neu — ein manuelles Zurücksetzen des Menüs ist nicht erforderlich.</p><p><strong>Leseansicht</strong> blendet Tags, Kontrollkästchen und Pfadangaben aus, sodass sich der Textfluss wie ein Dokument liest. Tabellen sichern eine begrenzte Chronik von Schnappschüssen, wodurch dynamische SPA-Tabellen niemals verloren gehen. Klicken Sie bei einer Tabelle auf <strong>Alle Zeilen anzeigen</strong>, um sämtliche Schnappschüsse zu einer bereinigten Gesamtsicht zu verschmelzen — genau dies wird beim Export gespeichert. Exportieren Sie als <strong>TXT</strong> (die lesbare Seite), <strong>MD</strong> (Markdown inklusive Tabellen) oder Tabellen als CSV, HTML oder als echtes mehrseitiges <strong>XLSX</strong>-Arbeitsblatt. Ausgewählte Elemente haben Vorrang; andernfalls wird alles aktuell Sichtbare exportiert.</p>"
   },
   "guideSecCaptionsContent": {
-    "message": "WebVTT-, SRT- und TTML-Dateien landen in einem eigenen Untertitel-Tab, getrennt von Dokumenten."
+    "message": "WebVTT-, SRT-, TTML- und sonstige Untertiteldateien — einschließlich <code>&lt;track&gt;</code>-Quellen — landen in ihrem eigenen Reiter <strong>Untertitel</strong>, anstatt sich mit herkömmlichen Dokumenten zu vermischen."
   },
   "guideSecSourceMapsContent": {
-    "message": "<code>.map</code>-Dateien und JSON-Quellcode-Karten werden unter Quellcode-Karten mit Formatierung übersichtlich zusammengefasst."
+    "message": "<code>.map</code>-Dateien sowie JSON-Inhalte, die Source Maps darstellen (sie enthalten <code>mappings</code> und <code>sources</code>), werden unter <strong>Source Maps</strong> mitsamt JSON-Viewer und Verschönerungsfunktion zusammengefasst, sodass sie den regulären JSON-Reiter nicht überladen."
   },
   "guideSecDupesContent": {
-    "message": "Im Reiter Bilder werden identische Dateien über Byte-Hashes erkannt. Ein Duplikate-Filter verhindert doppelte Downloads."
+    "message": "Im Reiter Bilder ermittelt das Panel die Hashwerte der erfassten Bytes und markiert identische Dateien. Ein Filter <strong>Duplikate ausblenden</strong> behält jeweils die erste Kopie jedes Satzes, damit ein ZIP-Archiv der Ansicht dieselbe Miniaturansicht nicht doppelt enthält."
   },
   "guideSecVideoHlsContent": {
-    "message": "Nicht nativ abspielbare Streams (HLS, DASH) zeigen eine Ausweichanzeige. HLS-Segmente können direkt im Panel zusammengeführt werden."
+    "message": "Streams, die der Browser nicht nativ wiedergeben kann (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, unbekannte Codecs), zeigen eine Ersatzanzeige statt eines schwarzen Players. Bei HLS können Sie die Segmente direkt im Panel zu einer einzigen MP4-Videodatei zusammenführen oder das originale Manifest herunterladen."
   },
   "guideSecPowerTipsContent": {
-    "message": "Dynamische API-Antworten werden nicht per URL dedupliziert, sodass Sie wiederholte Anfragen lückenlos analysieren können."
+    "message": "Dynamische <strong>API</strong>-Antworten (XHR/Fetch) werden nicht nach URL dedupliziert — jede Antwort verbleibt in der Liste (begrenztes FIFO-Prinzip), damit Sie wiederholte Anfragen vergleichen können. Statische Ressourcen werden hingegen dedupliziert. Nutzen Sie <strong>Aktualisieren</strong>, um das aktuelle DOM erneut zu scannen, und laden Sie die Seite bei geöffnetem Panel neu, um alle Netzwerkanfragen lückenlos zu erfassen, auch solche vor dem Tabwechsel."
   },
   "toolArrow": {
     "message": "Pfeil zeichnen"
@@ -1349,7 +1349,7 @@
     "message": "Bildschirmaufnahme (Video & GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Nehmen Sie einen beliebigen Bildschirmbereich als MP4, WebM oder animiertes GIF auf. GIF-Aufnahmen bieten 1:1-Originalauflösung, 1080p, 720p und 480p mit Live-Größenschätzung. Die maximale GIF-Dauer beträgt 1 Minute (60 s) für optimale Browserleistung."
+    "message": "Nehmen Sie jeden beliebigen Bildschirmbereich als MP4, WebM oder animiertes GIF auf. GIF-Aufnahmen bieten Profile mit nativer 1:1-Auflösung, 1080p, 720p und 480p sowie eine kontinuierliche Schätzung der Dateigröße. Die maximale GIF-Aufnahmedauer beträgt 1 Minute (60 s) für optimale Browser-Performance."
   },
   "msgGifMaxDurationReached": {
     "message": "Maximale GIF-Dauer von 1 Minute (60 s) erreicht. GIF wird erstellt..."

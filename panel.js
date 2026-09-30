@@ -28,7 +28,7 @@ const THEME_STORAGE = 'sourceDownloadTheme';
  * 1. Constants & helpers
  * ============================================================ */
 
-const SUPPORTED_LOCALES = ['en', 'tr', 'es', 'zh_CN', 'ja', 'de', 'ru'];
+const SUPPORTED_LOCALES = ['en', 'tr', 'es', 'zh_CN', 'ja', 'de', 'ru', 'fr', 'pt_BR', 'it', 'ko'];
 let currentLocale = 'auto';
 let currentMessages = {};
 const localeCache = {};
@@ -137,10 +137,10 @@ function setLanguage(lang) {
     }
   }
 
-  let extVersion = '1.14.0';
+  let extVersion = '1.15.0';
   try {
     if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getManifest) {
-      extVersion = chrome.runtime.getManifest().version || '1.14.0';
+      extVersion = chrome.runtime.getManifest().version || '1.15.0';
     }
   } catch { /* noop */ }
 
@@ -191,7 +191,7 @@ function setLanguage(lang) {
 
   const currentLabel = document.getElementById('lang-current-label');
   if (currentLabel) {
-    const code = resolved === 'zh_CN' ? 'ZH' : resolved.toUpperCase();
+    const code = resolved === 'zh_CN' ? 'ZH' : (resolved === 'pt_BR' ? 'PT' : resolved.toUpperCase());
     currentLabel.textContent = code;
   }
 

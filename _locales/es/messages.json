@@ -1081,13 +1081,13 @@
     "message": "Cambiar al tema oscuro"
   },
   "guideTitle": {
-    "message": "Source Download — Guía del usuario"
+    "message": "Source Download — Guía de usuario"
   },
   "guideEmpty": {
-    "message": "Ninguna sección de la guía coincide con su búsqueda."
+    "message": "No hay secciones de la guía que coincidan con su búsqueda."
   },
   "guideVersionNote": {
-    "message": "Source Download v$VERSION$ — 100% libre de dependencias.",
+    "message": "Source Download v$VERSION$ — 100% libre de dependencias externas.",
     "placeholders": {
       "VERSION": {
         "content": "$1"
@@ -1134,64 +1134,64 @@
     "message": "Descargas"
   },
   "guideSecLightbox": {
-    "message": "Visualizador (Lightbox)"
+    "message": "Visor Lightbox"
   },
   "guideSecTextTables": {
-    "message": "Textos y tablas"
+    "message": "Texto y tablas"
   },
   "guideSecCaptions": {
-    "message": "Subtítulos"
+    "message": "Subtítulos y transcripciones"
   },
   "guideSecSourceMaps": {
-    "message": "Mapas de código"
+    "message": "Mapas de origen (Source maps)"
   },
   "guideSecDupes": {
     "message": "Imágenes duplicadas"
   },
   "guideSecVideoHls": {
-    "message": "Vídeo alternativo y HLS"
+    "message": "Fallback de video y HLS"
   },
   "guideSecPowerTips": {
-    "message": "Consejos avanzados"
+    "message": "Consejos para usuarios avanzados"
   },
   "guideSecGettingStartedContent": {
-    "message": "Haga clic en la pestaña <strong>Source Download</strong> en la barra de DevTools (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>I</kbd>). El popup del icono le permite elegir qué categorías alimentan el contador. El botón sol/luna bloquea el tema claro u oscuro independientemente de Chrome."
+    "message": "Haga clic en la pestaña <strong>Source Download</strong> de la barra de herramientas de DevTools (presione <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> y seleccione la pestaña en las herramientas de desarrollo). Chrome no permite que las extensiones abran DevTools automáticamente, razón por la cual el panel se ubica allí. La ventana emergente del icono de la barra de herramientas le permite elegir qué categorías alimentan el contador insignia del icono. El botón sol/luna de la barra del panel fija un tema claro u oscuro con total independencia de Chrome; su elección se recuerda permanentemente."
   },
   "guideSecCategoriesContent": {
-    "message": "Las pestañas verticales agrupan los recursos por tipo: Imágenes, Vídeos, Audio, Subtítulos, Documentos, Fuentes, Mapas de código, WASM, SVG, APIs y más, con conteo en vivo."
+    "message": "Las pestañas verticales de la izquierda agrupan cada recurso capturado en 17 categorías dedicadas según su tipo: Imágenes, Videos, Audio, Subtítulos, Documentos, Fuentes, Mapas de origen (Source maps), WASM, SVG, APIs, Cookies, Almacenamiento y más. Cada pestaña muestra un recuento en tiempo real. Solo se visualiza una categoría a la vez; al cambiar de pestaña se restablecen todos los filtros, de modo que lo visible siempre coincida exactamente con la categoría."
   },
   "guideSecSearchFiltersContent": {
-    "message": "La barra de búsqueda filtra por nombre, URL, tipo o título. Encierre su consulta en <kbd>/…/</kbd> para usar expresiones regulares, ej. <code>/\\.(png|jpg)$/</code>."
+    "message": "La barra de búsqueda filtra por nombre, URL, tipo, texto alternativo o título. Escriba su consulta entre <kbd>/…/</kbd> para utilizar una expresión regular, por ejemplo <code>/\\.(png|jpg)$/</code>. Debajo de la barra de herramientas, la barra de filtros varía según la categoría: rangos de tamaño y dimensiones para contenido multimedia, método HTTP y tipo de solicitud para APIs, además de orden y dirección."
   },
   "guideSecGridViewContent": {
-    "message": "Alterne entre la vista en cuadrícula y la vista en lista detallada con las casillas de verificación para descargas masivas."
+    "message": "Alterne entre una cuadrícula compacta (miniaturas pequeñas) y una lista detallada mediante los botones situados junto a la barra de búsqueda. Su preferencia se mantiene entre sesiones. En la vista de lista, las casillas de verificación le permiten seleccionar recursos específicos para una descarga masiva."
   },
   "guideSecInspectContent": {
-    "message": "Haga clic en cualquier recurso para abrirlo en el panel de inspección. Cada archivo se convierte en una pestaña con visores especializados."
+    "message": "Haga clic en cualquier recurso para abrirlo en el panel de inspección de la derecha. Cada archivo abierto se convierte en una pestaña para que pueda comparar varios recursos en paralelo; el más reciente se abrirá a la izquierda. Existen visores especializados para imágenes, video, audio, fuentes, SVG y texto/código (con selector de formateo estético Beautify). Las APIs disponen de una vista dividida: respuesta a la izquierda y detalles de la solicitud (método, estado, cabeceras, parámetros de consulta y cuerpo) a la derecha."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Descargar vista</strong> guarda los recursos visibles como ZIP. <strong>Descargar seleccionados</strong> descarga solo los elementos marcados. <strong>Descargar todo</strong> captura todo en un ZIP estructurado."
+    "message": "<strong>Descargar vista</strong> guarda los recursos visibles actuales (categoría activa + búsqueda + filtros) en un archivo ZIP; su etiqueta cambia automáticamente a <em>Descargar filtrados (N)</em> si hay filtros activos. Pase el cursor sobre cualquier botón de descarga para consultar el tamaño estimado del archivo antes de hacer clic. <strong>Descargar seleccionados</strong> descarga exclusivamente los elementos marcados. <strong>Descargar todo</strong> recopila todos los recursos descubiertos en un ZIP estructurado por carpetas. Las descargas fallidas se reintentan automáticamente y pueden relanzarse desde el menú contextual. <strong>Exportar</strong> guarda la lista visible como JSON o CSV, o vuelca el registro de red de Chrome como un archivo HAR."
   },
   "guideSecLightboxContent": {
-    "message": "El botón de zoom abre los archivos en una mesa de luz interactiva con controles táctiles, de ratón y teclado (<kbd>+</kbd>/<kbd>-</kbd>, <kbd>0</kbd>, <kbd>Esc</kbd>)."
+    "message": "El botón de zoom abre el contenido multimedia en un lightbox a tamaño completo donde puede desplazarse arrastrando y hacer zoom con la rueda del ratón, los controles en pantalla o el teclado (<kbd>+</kbd>/<kbd>-</kbd> para zoom, <kbd>0</kbd> para restablecer, <kbd>Esc</kbd> para cerrar)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>La categoría <strong>Texto</strong> ofrece una copia viva y legible de la página en orden DOM.</p><p>El cuadro de consulta admite Contiene, Regex, selectores CSS y XPath directo.</p><p>El modo <strong>Lectura</strong> oculta etiquetas técnicas. Las tablas guardan un historial de instantáneas exportable a TXT, Markdown o libros XLSX multisuperficie.</p>"
+    "message": "<p>La categoría <strong>Texto</strong> constituye una réplica interactiva y legible de la página. Captura todos los elementos que contienen texto — títulos, párrafos, elementos de lista, botones, <code>div</code>/<code>span</code> y más — respetando el orden del DOM y continúa escaneando mientras el modo <strong>En vivo</strong> permanezca activado.</p><p>El campo de <strong>Consulta</strong> opera en cuatro modalidades seleccionables en el menú desplegable: <strong>Contiene</strong> y <strong>Regex</strong> filtran el texto previamente recopilado, mientras que <strong>Selector CSS</strong> y <strong>XPath</strong> se ejecutan sobre la página en vivo permitiendo alcanzar cualquier nodo del DOM. XPath también admite expresiones que devuelven un cálculo en vez de elementos, tales como <code>count(//a)</code> o <code>//@href</code>. Cualquier error devuelto ante una consulta no válida se muestra junto a la casilla. <strong>Elemento</strong> restringe los resultados a una etiqueta HTML concreta indicando el recuento total hallado en la página. Borrar el texto de consulta (o pulsar <strong>Limpiar</strong>) le devuelve a <em>Todos los elementos</em> y reescanea la página, sin necesidad de reiniciar manualmente el desplegable.</p><p>El modo <strong>Lectura</strong> oculta etiquetas, casillas y rutas para que la lectura resulte tan cómoda como la de un documento. Las tablas almacenan un historial acotado de instantáneas con el fin de evitar la pérdida de tablas dinámicas en aplicaciones SPA. Pulse <strong>Mostrar todas las filas</strong> en una tabla para unificar todas las instantáneas en una vista desduplicada consolidada, que es exactamente lo que incluirá la exportación. Exporte en <strong>TXT</strong> (texto legible de la página), <strong>MD</strong> (Markdown con tablas integradas) o tablas en CSV, HTML o como un auténtico libro multihoja de cálculo <strong>XLSX</strong>. Los elementos marcados tienen prioridad; en su defecto se exporta la totalidad de lo visible.</p>"
   },
   "guideSecCaptionsContent": {
-    "message": "Archivos WebVTT, SRT y subtítulos se agrupan en su propia pestaña dedicada."
+    "message": "Los archivos WebVTT, SRT, TTML y otros formatos de subtítulos —incluidas las fuentes <code>&lt;track&gt;</code>— se organizan en su propia pestaña <strong>Subtítulos</strong> en lugar de mezclarse con los documentos generales."
   },
   "guideSecSourceMapsContent": {
-    "message": "Los archivos <code>.map</code> y source maps se clasifican bajo Mapas de código con visor JSON y formateo."
+    "message": "Los archivos <code>.map</code> y las respuestas JSON estructuradas como mapas de origen (aquellas con <code>mappings</code> y <code>sources</code>) se agrupan en <strong>Mapas de origen</strong> con visor JSON y formateador Beautify, sin sobrecargar la pestaña general de JSON."
   },
   "guideSecDupesContent": {
-    "message": "En la pestaña Imágenes, el panel genera hashes de bytes para marcar archivos idénticos y ocultar duplicados."
+    "message": "En la pestaña Imágenes, el panel analiza los hashes de los bytes capturados y señala los archivos idénticos. El filtro <strong>Ocultar duplicados</strong> conserva la primera copia de cada grupo para que la descarga en ZIP no incluya miniaturas repetidas."
   },
   "guideSecVideoHlsContent": {
-    "message": "Los flujos de vídeo como HLS (.m3u8) permiten fusionar segmentos en un solo archivo descargable directamente."
+    "message": "Los flujos de transmisión que el navegador no puede reproducir de forma nativa (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, códecs no compatibles) presentan una pantalla alternativa en lugar de un reproductor en negro. En el caso de HLS, puede fusionar los segmentos en un único archivo de video MP4 directamente desde el panel o descargar el manifiesto original."
   },
   "guideSecPowerTipsContent": {
-    "message": "Las respuestas dinámicas de API no se deduplican por URL, permitiendo comparar peticiones sucesivas."
+    "message": "Las respuestas de <strong>APIs</strong> dinámicas (XHR/fetch) no se desduplican por URL: cada respuesta se conserva en la lista (cola FIFO con límite) para permitir comparar peticiones sucesivas. Los recursos estáticos sí se desduplican. Utilice <strong>Actualizar</strong> para escanear de nuevo el DOM actual y recargue la página con el panel abierto para registrar absolutamente todas las solicitudes de red, incluso las iniciadas antes de cambiar de pestaña."
   },
   "toolArrow": {
     "message": "Dibujar flecha"
@@ -1346,10 +1346,10 @@
     "message": "El formato GIF admite una duración máxima de grabación de 1 minuto (60 s)."
   },
   "guideSecScreenRecording": {
-    "message": "Grabación de pantalla (Vídeo y GIF)"
+    "message": "Grabación de pantalla (Video y GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Grabe cualquier región de la pantalla como MP4, WebM o GIF animado. Las grabaciones GIF cuentan con resolución nativa 1:1, 1080p, 720p y 480p con estimación de tamaño en vivo. La duración máxima de GIF es de 1 minuto (60 s) para un rendimiento óptimo."
+    "message": "Grabe cualquier región de la pantalla como MP4, WebM o GIF animado. Las grabaciones en GIF cuentan con resolución nativa 1:1, perfiles en 1080p, 720p y 480p, y estimación de tamaño de archivo en vivo. La duración máxima de grabación GIF es de 1 minuto (60 s) para un rendimiento óptimo del navegador."
   },
   "msgGifMaxDurationReached": {
     "message": "Se alcanzó la duración máxima de GIF de 1 minuto (60 s). Generando GIF..."

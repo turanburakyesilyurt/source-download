@@ -12,6 +12,10 @@
   <a href="docs/locales/README.ja.md"><img src="https://img.shields.io/badge/%E8%A8%80%E8%AA%9E-%E6%97%A5%E6%9C%AC%E8%AA%9E-dc2626?style=flat-square" alt="日本語"></a>
   <a href="docs/locales/README.ru.md"><img src="https://img.shields.io/badge/%D0%AF%D0%B7%D1%8B%D0%BA-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-0284c7?style=flat-square" alt="Русский"></a>
   <a href="docs/locales/README.zh-CN.md"><img src="https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-b91c1c?style=flat-square" alt="简体中文"></a>
+  <a href="docs/locales/README.fr.md"><img src="https://img.shields.io/badge/Langue-Fran%C3%A7ais-0055a5?style=flat-square" alt="Français"></a>
+  <a href="docs/locales/README.pt-BR.md"><img src="https://img.shields.io/badge/Idioma-Portugu%C3%AAs-009c3b?style=flat-square" alt="Português"></a>
+  <a href="docs/locales/README.it.md"><img src="https://img.shields.io/badge/Lingua-Italiano-008c45?style=flat-square" alt="Italiano"></a>
+  <a href="docs/locales/README.ko.md"><img src="https://img.shields.io/badge/%EC%96%B8%EC%96%B4-%ED%95%9C%EA%B5%AD%EC%96%B4-0f4c81?style=flat-square" alt="한국어"></a>
 </p>
 
 <p align="center">
@@ -21,7 +25,7 @@
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.14.0-4f8cff?style=flat-square" alt="Version 1.14.0">
+  <img src="https://img.shields.io/badge/version-1.15.0-4f8cff?style=flat-square" alt="Version 1.15.0">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero Dependencies">
   <img src="https://img.shields.io/badge/build--step-none-22c55e?style=flat-square" alt="No Build Step">
@@ -29,12 +33,6 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/language-Pure%20JavaScript-facc15?style=flat-square" alt="Pure JavaScript">
   <img src="https://img.shields.io/badge/browsers-Chrome%20%7C%20Edge%20%7C%20Brave%20%7C%20Opera-9333ea?style=flat-square" alt="Compatible Browsers">
-</p>
-
----
-
-<p align="center">
-  <img src="screenshots/en/cws-marquee-banner-1400x560.png" width="100%" alt="Source Download Banner">
 </p>
 
 ---
@@ -112,192 +110,107 @@ Explore the high-resolution interface modules built directly into Google Chrome 
 
 ---
 
-Source Download is the professional, all-in-one web asset inspection, extraction, screen capture, and recording studio built natively into Google Chrome. Engineered for web developers, UI/UX designers, QA engineers, digital archivists, and researchers, Source Download eliminates the friction of scraping resources, inspecting network streams, capturing long-scrolling pages, and recording high-definition screen clips.
+Browse, inspect and download every web asset a page loads seamlessly as a ZIP.
 
-Operating through an advanced DevTools Engineering Suite (F12), an intuitive right-click context menu, and a fast toolbar popup, Source Download detects, categorizes, formats, and archives everything a web page loads. From high-resolution media and vector graphics to HLS video streams, dynamic DOM tables, web fonts, and API responses, you can inspect every asset with deep technical metrics and export them individually or bundled into a clean, folder-structured ZIP archive.
+Source Download — every asset on a page, one click away
+Source Download is a Chrome DevTools panel that discovers, inspects and downloads every resource a web page loads. Whether you need media files, developer scripts, style assets, or network responses, you can save them as individual files or as a tidy, folder-structured ZIP.
 
+Built from scratch with zero third-party dependencies: the ZIP writer, the XLSX builder, the HLS merger and the code formatters are all hand-written vanilla JavaScript. No frameworks, no build step, no telemetry. Everything runs locally in your browser.
 
-## COMPLETE FEATURE OVERVIEW
+What's New in v1.15.0
+- Full-page stitched screenshots with automatic sticky header suppression.
+- Regional screen video recording (MP4 & WebM) and pure vanilla GIF studio.
+- Screen color eyedropper tool with instant 7-model hex/rgb format copying.
+- Expanded multi-language support: 4 new languages (French, Italian, Korean, Brazilian Portuguese) — now 11 fully localized languages across UI and user guide.
+- Upgraded to 17 live-count resource categories with dedicated tabs.
 
+Why you need it
+The screenshot won't cut it. Grab the real files — full-resolution images, actual video streams, original stylesheets and scripts — not a flattened picture.
 
+DevTools feels overwhelming. Source Download puts a clean, categorized gallery in front of the same network data, with search, filters and one-click downloads.
 
-### 1. COMPREHENSIVE ASSET DETECTION & EXTRACTION (17 CATEGORIES)
+SPAs hide everything. Dynamic apps create assets and API calls you never see in the page source. Source Download captures them as they happen, including intermediate states.
 
-Inspect, preview, and download every component loaded by any modern website across 17 dedicated resource categories:
-- **Images & Visual Media:** Filter and isolate high-resolution hero photography and interface graphics from tiny tracking pixels using custom width and height thresholds. Detect byte-identical duplicate files with instant hash matching. Inspect visual assets in a full-screen zoomable lightbox with transparent checkerboard background for alpha channels.
-- **SVG Vectors:** Extract inline SVG DOM elements, linked SVG files, and CSS background vectors. Inspect raw XML vector code, copy clean SVG markup directly to clipboard, or download standalone vector assets ready for Figma, Sketch, or Illustrator.
-- **Videos & Audio:** Detect HTML5 media elements, blob streams, and direct media links. Preview audio and video directly in the built-in media player with playback controls before saving.
-- **HLS Stream Sniffing & Merging:** Intercept HTTP Live Streaming manifests (.m3u8). Parse master and media playlists, inspect available bitrate variants (1080p, 720p, 480p), fetch stream segments in 6-way parallel queues, and stitch them into a clean, unified MP4 file without external software. Detects DRM/AES-128 encryption with immediate status notices.
-- **Web Typography:** Extract modern compressed web fonts and scalable typefaces. Test fonts dynamically in a live specimen waterfall view with editable pangrams, weight variations, and glyph inspections.
-- **Stylesheets & Scripts:** Download complete CSS and JavaScript files. Built-in unminifier/beautifier formats compressed code into clean syntax with syntax highlighting and instant regex search.
-- **API & JSON Responses:** Monitor REST API requests, GraphQL queries, and JSON responses. Inspect parsed JSON object trees, analyze URL query parameters, review request headers, and measure latency.
-- **Dynamic DOM Tables:** Real-time DOM table monitor capturing standard tables and ARIA grid components. Maintain snapshot histories across dynamic SPA pagination, merge multi-page states, and export directly to clean multi-sheet Excel (XLSX) workbooks, Markdown tables, or CSV spreadsheets.
-- **Live Text Extraction:** Walk the entire DOM text stream in natural reading order. Filter content in real time using plain text, Regular Expressions, CSS selectors, or complex XPath queries.
-- **Web App Manifest & Metadata:** Inspect PWA manifests (manifest.json), favicons, Apple touch icons, and social sharing preview meta tags (Open Graph, Twitter Cards).
-- **Documents & Binaries:** Extract digital publications, portable document files, compiled WebAssembly modules, compressed archive bundles, and structured text documents.
+What it does
+Discover everything
+Combines network capture (HAR + live requests) with a DOM scan for all visual and structural elements, including media files, scripts, stylesheets, and embedded frames.
 
+CSS-aware: assets inside url(...) and @import rules are followed recursively, so even fonts buried in imported stylesheets are found.
 
-### 2. REGIONAL SCREEN RECORDER & ANIMATED GIF STUDIO
+Content sniffing: unknown files are read back a few bytes and promoted to their actual file type category.
 
-Capture high-definition video and lightweight animated GIFs from any region of your screen:
-- **Interactive Crop Box:** Draw a crop box anywhere on the active tab or screen. Drag and resize smoothly with 8 grab handles and live coordinate readouts.
-- **Zero-Bleed Boundary Engineering:** Crop handles and drag headers are rendered strictly outside the active capture boundary. An external outline offset prevents red selection borders, handles, or toolbar elements from ever bleeding into your recorded footage.
-- **Non-Overlapping Floating Toolbar:** A draggable recording bar automatically docks above or below your crop box, preventing unwanted visual overlap with the recording area.
-- **Versatile Video & Animated Formats:** Export your screen captures in hardware-accelerated high-definition video, open web media streams, or lightweight animated GIFs.
-- **High-Performance Pure Vanilla GIF Encoder:** Built-in GIF89a encoding engine crafted in 100% pure vanilla JavaScript. Features 15-bit median-cut color quantization and integer-keyed LZW compression with zero external dependencies.
-- **Configurable GIF Frame Rates (FPS):** Choose from 5 tailored frame rate tiers:
-  - 15 FPS (Smooth): High fluidity for smooth UI animations, product demos, and web interactions.
-  - 10 FPS (Standard / Balanced): The industry standard for web memes and bug reports, offering an optimal balance between quality and compact file size.
-  - 5 FPS (Compact / Meme): Stepped motion with significantly reduced file size, ideal for lightweight tutorials.
-  - 2 FPS (Stop-Motion / "Tık-Tık" Step-by-Step): Half a second per frame. Perfect for step-by-step documentation, slide walkthroughs, and nostalgic stop-motion animations. Consumes 5x less memory and produces a 5x smaller file size than 10 FPS.
-  - 1 FPS (Slideshow / Presentation): Exactly 1 frame per second. Ideal for static page transitions, code walkthroughs, and minimal file footprints (10x smaller than 10 FPS).
-- **Real-Time File Size Estimator:** Live toolbar badge calculates estimated GIF file size (~X MB per 10s) based on your selected crop dimensions and chosen FPS before and during recording.
-- **4K UHD Safety Ceiling:** Protects browser memory by establishing a 3840px safety ceiling with proportional aspect ratio preservation, preventing out-of-memory tab crashes on retina displays.
-- **60-Second Safety Cap:** Enforces a maximum duration of 1 minute (60 seconds) for GIF recording with a live countdown display (00:00 / 01:00) and automatic encoding finalization.
+17 live-count categories: Captured assets are neatly organized into dedicated tabs for media, code, data, API calls, and documents.
 
+Filter, search, inspect
+Regex-powered search across filenames, URLs, MIME types, alt text and even file contents.
 
-### 3. PIXEL-PERFECT FULL-PAGE & REGIONAL SCREENSHOTS
+Per-category filters: min/max size, and for media also min/max width and height — for example "only hero images ≥ 1200px". API calls filter by HTTP method and request type.
 
-Capture flawless web page imagery without relying on cloud rendering:
-- **Seamless Full-Page Capture:** Scroll-and-stitch entire web pages into crystal-clear PNG images.
-- **Smart Sticky Header Suppression:** Automatically detects and suppresses fixed, sticky, and absolute floating elements during scrolling passes, eliminating repeated banner artifacts in long-page captures.
-- **Lazy-Load Synchronization:** Simulates viewport scroll pauses to ensure dynamic images and lazy-loaded components render fully before capturing.
-- **Precision Area Screenshot:** Select any custom rectangular section on the screen using crosshair guides with instant PNG download.
+List or grid view, sortable, with a live thumbnail wall.
 
+Multi-tab inspector with true previews: zoomable lightbox, video and audio playback, a live font specimen, an SVG viewer, syntax-highlighted code with line numbers and a Beautify toggle.
 
-### 4. SCREEN COLOR PICKER & INSPECTOR
+API split view: response on the left, method, status, query parameters and request body on the right.
 
-Sample colors from anywhere on your display with designer-grade precision:
-- **Native EyeDropper API:** Sample pixel colors directly from the web page or anywhere within your browser window.
-- **Comprehensive Color Inspection:** Floating inspector modal automatically converts sampled colors across digital and print color models, including standard hexadecimal notation, RGB color channels with alpha transparency, HSL representations, and print CMYK values.
-- **1-Click Clipboard Copy:** Instant copy buttons for every format make it seamless to paste color values straight into CSS files, design tools, or styling tokens.
+Download properly
+Download Selected — only the files you checked.
 
+Download View — everything visible after the current filters and search.
 
-### 5. ELEMENT ZAPPER (DISTRACTION & OVERLAY REMOVER)
+Download All — every captured resource into a folder-structured ZIP with automatic de-duplication.
 
-Clean up web pages before taking screenshots or archiving content:
-- **Context Menu Integration:** Right-click any annoying sticky banner, cookie consent popup, newsletter modal, or chat widget and select "Zap / Hide this element".
-- **Instant DOM Neutralization:** Immediately removes the targeted element from the DOM tree, restoring scrolling ability and ensuring clean, distraction-free page captures.
+Batch downloads run with bounded concurrency and a live progress bar; failures are retried automatically and from a context menu.
 
+HLS & tricky video
+Streams the browser can't play natively (HLS .m3u8, DASH .mpd, unknown codecs) show a smart fallback instead of a black player.
 
-### 6. SINGLE-FILE OFFLINE HTML ARCHIVING
+Merge segments & download turns an HLS stream into a single playable file, right in the panel.
 
-Preserve web pages permanently as independent, portable documents:
-- **Self-Contained Archive:** Bundles the entire web page into a single offline .html file.
-- **Resource Inlining:** Embeds external CSS stylesheets, converts visual assets into Base64 data URIs, and neutralizes live scripts to prevent hydration conflicts or execution errors when opened locally.
-- **Zero Cloud Dependencies:** Open and review your saved archives on any device or browser without an internet connection.
+The Text workbench (SPA content toolkit)
+The Text tab is a live content viewer: every element that carries text — headings, paragraphs, list items, buttons, divs, spans — is captured in DOM order.
 
+Dynamic tables keep a bounded snapshot history (e.g. "8 snapshots · 124 unique rows"), so auto-refreshing dashboards never lose intermediate states.
 
-### 7. DATA SCRAPING WORKBENCH: LIVE TABLES TO EXCEL (XLSX)
+Export as Markdown, or tables as CSV, HTML, or a real multi-sheet XLSX workbook built by our own hand-written XLSX writer.
 
-Turn web tables into structured business spreadsheets with zero coding:
-- **Multi-Sheet Excel (XLSX) Generator:** Built-in native XLSX builder that converts DOM tables into formatted Microsoft Excel workbooks with properly typed numeric and text cells.
-- **Dynamic Snapshot History:** Monitor live tables that update dynamically via AJAX or user interactions. Capture snapshots across multiple page states and merge them into a single export.
-- **Universal Formats:** Export captured tabular data to Excel (XLSX), Markdown tables, CSV, or formatted HTML.
+How to use it
+Install Source Download, then press F12 on any page.
 
+Click the Source Download tab in the DevTools toolbar (Chrome doesn't allow extensions to open DevTools automatically — that's why it lives there).
 
-### 8. DEVELOPER SUITE: CODE BEAUTIFIER & SYNTAX VIEWER
+Browse the category tabs, search, filter, inspect anything in the right-hand panel.
 
-Format and analyze messy web code directly inside your browser:
-- **Clean Unminification:** Format minified HTML, CSS, JavaScript, and JSON into beautifully indented code.
-- **Integrated Search:** Search through unminified source code with real-time text matching and Regular Expressions.
-- **Line Numbering & Syntax Styling:** Code viewer includes readable line numbers and clear syntax highlighting.
+Check the files you want and hit Download Selected, Download View or Download All.
 
+Keep the DevTools panel open while the page loads to capture every network request.
 
-### 9. CUSTOM TOKENIZED NAMING TEMPLATES
+Real-world use cases
+Competitor analysis: collect video thumbnails from any channel — with a minimum width filter — into one folder.
 
-Take complete control over your download organization with intelligent file naming:
-- **Configurable Filename Patterns:** Define custom naming structures using dynamic template tokens: {domain}, {title}, {type}, {date}, {time}, {ext}.
-- **Category-Specific Presets:** Assign distinct naming rules for screenshots, screen recordings, media downloads, and ZIP archives.
+Web scraping without code: watch a SPA's API calls, filter to the endpoint you need, download its exact JSON responses.
 
+Typography teardown: find out which font a site really uses and grab the actual font files.
 
-### 10. ADVANCED ZIP & ZIP64 PACKAGING
+Bug reproduction: keep the exact CSS/JS versions that shipped when a bug occurred.
 
-Bundle hundreds of files into an organized archive with one click:
-- **Pure Client-Side PKZIP Engine:** Compresses and packages downloaded assets locally in your browser memory.
-- **ZIP64 Architecture:** Seamlessly handles archives exceeding 4 GB in file size or containing more than 65,535 files, ensuring reliable bulk extraction.
-- **Organized Directory Structure:** Automatically sorts downloaded files into clean subdirectories (/images, /videos, /fonts, /css, /js, /documents).
-- **Compression Control:** Choose between standard Deflate compression for smaller archives or uncompressed Store mode for lightning-fast bundling.
+Dashboard data export: export an auto-refreshing table to a multi-sheet Excel workbook, history included.
 
+QA testing: verify which video/audio variant is served in each A/B configuration.
 
-## TARGET USERS & REAL-WORLD WORKFLOWS
+Privacy
+Runs 100% locally. No server, no analytics, no data leaves your machine.
 
+Only asks for the bare minimum: storage (your preferences), clipboard (copy URLs) and host access (to scan pages and fetch file bodies).
 
-- **Front-End Developers:** Inspect network assets, analyze API responses, extract SVGs and fonts, and debug CSS stylesheets without cluttered tabs.
-- **UI/UX Designers:** Extract vector icons, inspect palettes with EyeDropper, audit typography, and capture pixel-perfect layout references.
-- **QA & Test Engineers:** Record bug reproduction clips in MP4 or 2 FPS stop-motion GIF, capture long visual regression screenshots, and export DOM tables.
-- **Data Analysts:** Scrape live tabular data across interactive pagination and export directly to multi-sheet Excel workbooks or CSV files with zero manual work.
-- **Content Creators:** Create lightweight, looping animated GIFs of software features or memes for documentation, email newsletters, and changelogs.
-- **Digital Archivists:** Save complete single-file offline HTML snapshots of articles and documentation that remain readable forever.
+Files are saved through Chrome's normal download flow — no silent downloads.
 
+Requirements
+Chrome 114 or newer (Manifest V3).
 
-## PRIVACY, SECURITY & ZERO-DEPENDENCY MANIFESTO
+Best results when the panel is open while the page loads, since that's when network capture happens.
 
-
-Source Download is engineered under a strict privacy-first architecture:
-- **100% Local Processing:** All operations — network sniffing, video recording, GIF encoding, canvas stitching, and archive generation — occur strictly within your local browser sandbox.
-- **Zero External Network Requests:** The extension contains no analytics beacons, no tracking pixels, no telemetry endpoints, and no remote server connections.
-- **No Account Required:** No registration, no login credentials, and no subscriptions. All features are fully unlocked out of the box.
-- **Auditable Open Source:** Built entirely in pure vanilla JavaScript without third-party runtime dependencies, licensed under the MIT License.
-
-
-## SCOPED PERMISSIONS TRANSPARENCY
-
-
-Source Download requests only the minimal permissions required to deliver its functionality:
-- **activeTab:** Reads resources, captures screenshots, and records video on the active tab when invoked.
-- **storage:** Saves interface preferences, naming templates, and recording settings locally across browser sessions.
-- **downloads:** Saves captured screenshots, recordings, and ZIP bundles to your default downloads folder.
-- **contextMenus:** Adds quick right-click actions for Element Zapper, Area Screenshot, and Color Picker.
-- **clipboardWrite:** Copies color codes, dynamic tables, formatted code, and screenshots directly to your clipboard.
-- **scripting:** Executes Element Zapper and injects page-level capture and inspection utilities on active tabs.
-
-
-## KEYBOARD SHORTCUTS & PRO-TIPS
-
-
-- **Open DevTools Suite:** Press F12 or Ctrl+Shift+I (Cmd+Option+I on macOS) and navigate to the "Source Download" tab.
-- **Quick Right-Click Tools:** Right-click anywhere on the page to zap elements, sample colors, or record screen regions.
-- **Stop Recording:** Press ESC or click the Stop button on the floating recording toolbar.
-- **Cancel Capture / Overlay:** Press ESC at any time to immediately dismiss the recording box or area screenshot crosshairs.
-- **Cycle GIF Frame Rates:** When format is set to GIF, click the FPS badge on the floating toolbar to cycle between 10 -> 5 -> 2 -> 1 -> 15 FPS.
-- **Cycle GIF Resolutions:** Click the Resolution badge on the floating toolbar to switch between 1:1 (Original), 1080p, 720p, or 480p.
-
-
-## FREQUENTLY ASKED QUESTIONS (FAQ)
-
-
-
-#### Q: Does Source Download send any data to external servers?
-
-A: Absolutely not. Everything runs 100% locally in your browser sandbox. No images, videos, recordings, or URLs are ever transmitted to any third-party server.
-
-
-
-#### Q: How does the HLS stream merger work?
-
-A: Source Download intercepts HLS (.m3u8) manifests, downloads stream segments directly in your browser, and stitches them into a playable MP4 file without external software.
-
-
-
-#### Q: Why is GIF recording capped at 1 minute?
-
-A: High-resolution animated GIFs store uncompressed raster frames in memory. The 60-second cap and FPS presets prevent memory overload while ensuring fast, stable encoding in your browser.
-
-
-
-#### Q: Can I record only a specific portion of my screen?
-
-A: Yes. Draw an exact crop box anywhere on screen. Crop handles and floating toolbars remain outside the recording area to ensure clean, zero-bleed results.
-
-
-
-#### Q: Can I export dynamic SPA tables that update across pages?
-
-A: Yes. The Dynamic Table monitor captures snapshot histories. As you paginate or filter a table, Source Download records each state and lets you export the combined dataset to a multi-sheet Excel (.xlsx) workbook.
-
-
-Install Source Download today to experience the fastest, most comprehensive, and completely private web asset extraction and recording studio for Google Chrome!
+Source Download is an open-source project — feedback, ideas and pull requests are welcome.
+Connect on LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
 
 ---
 

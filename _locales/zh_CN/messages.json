@@ -473,13 +473,13 @@
   "toastZipSaved": {
     "message": "ZIP 已保存：共 $TOTAL$ 个资源中的 $FETCHED$ 个",
     "placeholders": {
-      "total": {
-        "content": "$1",
-        "example": "10"
-      },
       "fetched": {
-        "content": "$2",
+        "content": "$1",
         "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
       }
     }
   },
@@ -872,7 +872,7 @@
     "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "搜索指南…"
+    "message": "在指南中搜索…"
   },
   "popupIntro": {
     "message": "<strong>工具栏徽章</strong>统计的资源分类。关闭任一分类即可停止统计。"
@@ -1081,13 +1081,13 @@
     "message": "切换至深色主题"
   },
   "guideTitle": {
-    "message": "Source Download — 用户指南"
+    "message": "Source Download — 用户使用指南"
   },
   "guideEmpty": {
-    "message": "没有匹配您搜索的指南部分。"
+    "message": "未找到与搜索条件匹配的指南章节。"
   },
   "guideVersionNote": {
-    "message": "Source Download v$VERSION$ — 100% 无外部依赖。",
+    "message": "Source Download v$VERSION$ — 100%纯原生零外部依赖。",
     "placeholders": {
       "VERSION": {
         "content": "$1"
@@ -1116,82 +1116,82 @@
     "message": "资源"
   },
   "guideSecGettingStarted": {
-    "message": "快速入门"
+    "message": "使用入门"
   },
   "guideSecCategories": {
-    "message": "分类"
+    "message": "资源分类"
   },
   "guideSecSearchFilters": {
-    "message": "搜索与过滤"
+    "message": "搜索与筛选"
   },
   "guideSecGridView": {
     "message": "网格与列表视图"
   },
   "guideSecInspect": {
-    "message": "检查资源"
+    "message": "检查与预览资源"
   },
   "guideSecDownloading": {
-    "message": "下载"
+    "message": "文件下载"
   },
   "guideSecLightbox": {
-    "message": "灯箱预览"
+    "message": "全屏灯箱查看器"
   },
   "guideSecTextTables": {
-    "message": "文本与表格"
+    "message": "文本与表格抓取"
   },
   "guideSecCaptions": {
-    "message": "字幕"
+    "message": "字幕与旁白文件"
   },
   "guideSecSourceMaps": {
-    "message": "源映射 (Source Map)"
+    "message": "源码映射 (Source map)"
   },
   "guideSecDupes": {
-    "message": "重复图片"
+    "message": "重复图片智能过滤"
   },
   "guideSecVideoHls": {
-    "message": "视频回退与 HLS"
+    "message": "视频保底播放与 HLS 串流"
   },
   "guideSecPowerTips": {
-    "message": "高级提示"
+    "message": "高阶技巧"
   },
   "guideSecGettingStartedContent": {
-    "message": "在开发者工具 (DevTools) 工具栏中点击 <strong>Source Download</strong> 选项卡（按 <kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>）。扩展图标弹出窗口可配置角标统计分类。太阳/月亮按钮可独立锁定浅色或深色主题。"
+    "message": "点击开发者工具（DevTools）工具栏中的 <strong>Source Download</strong> 选项卡（按 <kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>，然后选择 DevTools 顶部栏中的选项卡）。由于 Chrome 浏览器安全规范禁止扩展程序自动唤起 DevTools，因此面板集成在此处。工具栏图标弹出窗口允许您自定义哪些分类的数据计入图标上的徽标计数器。面板工具栏上的太阳/月亮按钮可独立于 Chrome 浏览器锁定浅色或深色主题，该设置将被自动记忆。"
   },
   "guideSecCategoriesContent": {
-    "message": "左侧垂直标签按类型归类抓取的资源：图片、视频、音频、字幕、文档、字体、源映射、WASM、SVG、API 等，每个标签实时统计数量。"
+    "message": "左侧垂直选项卡将抓取到的所有资源按文件类型划分为 17 个专属分类：图片、视频、音频、字幕、文档、字体、Source map、WASM、SVG、API 接口、Cookie、存储等。每个选项卡均展示实时资源计数。每次仅显示一个分类；切换分类会自动重置所有筛选器，确保您所见的内容始终与当前选中的分类严格对应。"
   },
   "guideSecSearchFiltersContent": {
-    "message": "搜索栏支持按名称、URL、类型或标题过滤。使用 <kbd>/…/</kbd> 包裹以启用正则表达式，例如 <code>/\\.(png|jpg)$/</code>。"
+    "message": "搜索栏支持按名称、URL、文件类型、alt 替换文本或页面标题进行即时过滤。若要使用正则表达式，请将表达式包含在 <kbd>/…/</kbd> 中，例如 <code>/\\.(png|jpg)$/</code>。工具栏下方的筛选条会随所选分类动态调整：媒体分类提供文件体积与像素分辨率区间筛选，API 分类提供 HTTP 请求方法与请求类型筛选，并支持自定义排序字段与升降序。"
   },
   "guideSecGridViewContent": {
-    "message": "在紧凑网格与详细列表视图之间自由切换，列表视图支持多选框进行批量精准下载。"
+    "message": "通过搜索栏旁的切换按钮，您可以在紧凑网格视图（小缩略图）与详细列表视图之间自由切换。您的视图选择会在各次会话间自动保持。在列表视图中，复选框允许您自由勾选特定资源以进行针对性的批量下载。"
   },
   "guideSecInspectContent": {
-    "message": "点击任意资源可在右侧检查面板以多标签页形式打开对比。配备图片、音视频、字体、代码及 API 专用预览器。"
+    "message": "点击任何资源均可在右侧检查窗格中打开其详细信息。每个打开的文件都会以独立标签页呈现，便于您并排对比多项资源——最新打开的资源将排列在左侧。面板为图片、视频、音频、字体、SVG 以及文本/代码（配备 Beautify 代码美化格式化开关）提供了专属查看器。API 接口提供分屏视图：左侧为响应数据正文，右侧为完整的请求细节（请求方法、状态码、响应头、URL 查询参数及请求负载体）。"
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>下载视图</strong>将当前可见资源打包为 ZIP；<strong>下载选中</strong>仅下载勾选项目；<strong>全部下载</strong>将全部资源按分类目录打包。"
+    "message": "点击 <strong>下载当前视图</strong> 可将当前可见的所有资源（当前分类 + 搜索结果 + 筛选条件）打包保存为 ZIP 压缩文件；启用筛选条件时按钮会自动变为 <em>下载已筛选 (N)</em>。在点击前将鼠标悬停在任一下载按钮上，即可预览预估的压缩包体积。<strong>下载选中项</strong> 仅保存被复选框勾选的文件。<strong>下载全部</strong> 将把检测到的所有资源打包为一个带有清晰文件夹层级结构的 ZIP 压缩包。下载失败的项目会自动发起重试，您也可以通过右键上下文菜单手动重新触发。<strong>导出</strong> 功能可将当前列表导出为 JSON 或 CSV 文件，或将 Chrome 网络日志完整导出为 HAR 文件。"
   },
   "guideSecLightboxContent": {
-    "message": "放大镜可在全屏灯箱中查看媒体，支持滚轮缩放、拖拽平移与键盘快捷键 (<kbd>+</kbd>/<kbd>-</kbd> 缩放，<kbd>0</kbd> 重置，<kbd>Esc</kbd> 关闭)。"
+    "message": "缩放按钮可在全尺寸灯箱中打开媒体文件。您可以通过鼠标拖拽平移画面，并使用鼠标滚轮、屏幕控件按钮或键盘快捷键（<kbd>+</kbd>/<kbd>-</kbd> 缩放，<kbd>0</kbd> 恢复原始大小，<kbd>Esc</kbd> 退出）进行流畅的高精度缩放与查阅。"
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>文本</strong>分类实时捕获网页可读内容。支持包含、正则、CSS 选择器与 XPath 查询。</p><p>表格功能自动保存动态快照历史，支持一键合并并导出为 TXT、Markdown、CSV、HTML 或真正的多工作表 <strong>XLSX</strong> Excel 文件。</p>"
+    "message": "<p><strong>文本</strong> 分类是当前网页内容的一个实时、高可读性的结构化副本。它严格按照 DOM 节点顺序抓取所有包含文本的元素——包括标题、正文段落、列表项、按钮、<code>div</code>/<code>span</code> 等——并且在 <strong>实时监听</strong> 模式开启期间持续保持扫描。</p><p><strong>查询</strong> 输入框提供四种工作模式，可通过旁边的下拉菜单自由切换：「<strong>包含</strong>」与「<strong>正则</strong>」用于对已提取的文本内容进行二次筛选；「<strong>CSS 选择器</strong>」与「<strong>XPath</strong>」则直接对网页的实时 DOM 执行深层查询，能够定位到 DOM 树中的任何节点。XPath 同样支持计算数值型表达式（而非单纯返回节点），例如 <code>count(//a)</code> 或 <code>//@href</code>。若查询语句有误，输入框旁会即时提示具体错误原因。「<strong>元素标签</strong>」筛选器会展示页面中出现的所有标签名称及各标签的出现频次，方便快速收窄范围。清空查询框（或点击 <strong>清除</strong> 按钮）即可立刻恢复至 <em>所有元素</em> 并重新抓取页面，无需手动重置下拉菜单。</p><p><strong>阅读模式</strong> 会自动隐藏标签名、复选框和层级路径面包屑，使提取的内容如同一篇排版整洁的文章般易于阅读。表格提取模块内置了具有容量上限的历史快照机制，确保单页应用（SPA）中的动态表格数据永不丢失。点击表格上的 <strong>显示所有行</strong> 按钮，即可将所有快照去重合并为完整的统一数据视图——这与导出文件包含的内容完全一致。支持导出为 <strong>TXT</strong>（纯文本页面）、<strong>MD</strong>（包含表格的 Markdown）或将表格导出为 CSV、HTML 及支持多工作表的专业 <strong>XLSX</strong> Excel 工作簿。已勾选的条目享有最高导出优先级；若未勾选任何项，则默认导出当前视图中的全部内容。</p>"
   },
   "guideSecCaptionsContent": {
-    "message": "WebVTT、SRT、TTML 等字幕文件集中展示在专属字幕标签中。"
+    "message": "WebVTT、SRT、TTML 等常见字幕文件（包括 <code>&lt;track&gt;</code> 标签资源）均会自动归类至专属的 <strong>字幕</strong> 选项卡，不再与通用文档产生混淆。"
   },
   "guideSecSourceMapsContent": {
-    "message": "<code>.map</code> 源映射文件自动归类，内置 JSON 树形预览与美化工具。"
+    "message": "<code>.map</code> 文件以及符合源码映射结构的 JSON 数据（包含 <code>mappings</code> 和 <code>sources</code> 字段）均汇总于 <strong>Source map</strong> 选项卡下，并配备 JSON 视图与代码美化格式化工具，避免造成常规 JSON 选项卡的冗余混杂。"
   },
   "guideSecDupesContent": {
-    "message": "图片面板自动计算字节哈希识别相同内容，隐藏重复项可避免打包冗余图片。"
+    "message": "在图片选项卡中，面板通过对捕获资源的二进制字节进行哈希计算来自动标记完全一致的文件。开启 <strong>隐藏重复项</strong> 筛选器后，每组重复图片仅保留首个副本，确保下载的 ZIP 压缩包不会包含重复的缩略图文件。"
   },
   "guideSecVideoHlsContent": {
-    "message": "针对 HLS (.m3u8) 等流媒体提供片段合并下载功能，轻松转换为单个完整视频。"
+    "message": "对于浏览器无法原生播放的流媒体（如 HLS <code>.m3u8</code>、DASH <code>.mpd</code> 以及特殊编码格式），面板会显示智能替代提示画面而非黑屏播放器。针对 HLS 流媒体，您可以直接在面板内一键将各个音视频分片合并为完整的 MP4 视频文件，或直接下载原始播放清单文件。"
   },
   "guideSecPowerTipsContent": {
-    "message": "动态 API 请求保留完整历史记录，便于对比多次请求与响应报文。"
+    "message": "动态 <strong>API</strong> 响应（XHR/fetch）不会根据 URL 进行去重——每次请求交互都会保留在列表中（采用容量受限的 FIFO 队列），方便您实时对比连续请求的数据变更。静态资产则会自动执行去重。使用 <strong>刷新</strong> 按钮可重新扫描当前页面的 DOM；在面板处于打开状态时刷新网页，即可完整捕获包含标签页切换前触发的所有网络请求。"
   },
   "toolArrow": {
     "message": "绘制箭头"
@@ -1346,10 +1346,10 @@
     "message": "GIF 格式支持的最长录制时间为 1 分钟（60 秒）。"
   },
   "guideSecScreenRecording": {
-    "message": "屏幕录制（视频与 GIF）"
+    "message": "屏幕录制 (视频与 GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "将屏幕上的任意区域录制为 MP4、WebM 或动画 GIF。GIF 录制支持 1:1 原始分辨率、1080p、720p 和 480p 配置，并提供实时预估大小。为了获得最佳浏览器性能，GIF 最大录制时长为 1 分钟（60 秒）。"
+    "message": "自由选取屏幕的任意区域并录制为 MP4、WebM 或动态 GIF 格式。GIF 录制支持 1:1 原生分辨率，提供 1080p、720p 和 480p 预设画质配置文件，并支持实时文件体积预估。为确保浏览器稳定高效运行，GIF 录制单次最大时长上限为 1 分钟（60 秒）。"
   },
   "msgGifMaxDurationReached": {
     "message": "已达到 GIF 最大时长 1 分钟（60 秒）。正在生成 GIF..."

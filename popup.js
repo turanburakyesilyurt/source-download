@@ -63,6 +63,10 @@ function resolveLocale(code) {
   if (lower.startsWith('zh')) return 'zh_CN';
   if (lower.startsWith('ja')) return 'ja';
   if (lower.startsWith('ru')) return 'ru';
+  if (lower.startsWith('fr')) return 'fr';
+  if (lower.startsWith('pt')) return 'pt_BR';
+  if (lower.startsWith('it')) return 'it';
+  if (lower.startsWith('ko')) return 'ko';
   return 'en';
 }
 

@@ -1158,7 +1158,7 @@
     "message": "Click the <strong>Source Download</strong> tab in the DevTools toolbar (press <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, then the tab in the DevTools toolbar). Chrome does not allow extensions to open DevTools automatically, which is why the panel lives there. The toolbar icon popup lets you choose which categories feed the badge counter on the icon. The sun/moon button in the panel toolbar locks a light or dark theme independently of Chrome; that choice is remembered."
   },
   "guideSecCategoriesContent": {
-    "message": "The vertical tabs on the left group every captured resource by type: Images, Videos, Audio, Captions, Documents, Fonts, Source maps, WASM, SVG, APIs, and more. Each tab shows a live count. Only one category is shown at a time; switching resets all filters, so what you see always matches the tab."
+    "message": "The vertical tabs on the left group every captured resource into 17 dedicated categories by type: Images, Videos, Audio, Captions, Documents, Fonts, Source maps, WASM, SVG, APIs, Cookies, Storage, and more. Each tab shows a live count. Only one category is shown at a time; switching resets all filters, so what you see always matches the tab."
   },
   "guideSecSearchFiltersContent": {
     "message": "The search bar filters by name, URL, type, alt text or title. Enclose your query in <kbd>/…/</kbd> to use a regular expression, e.g. <code>/\\.(png|jpg)$/</code>. Below the toolbar, the filter bar changes per category: size and dimension ranges for media, HTTP method and request type for APIs, plus sorting and direction."

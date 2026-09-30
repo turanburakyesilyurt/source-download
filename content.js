@@ -648,6 +648,10 @@
       else if (navLang.startsWith('zh')) resolved = 'zh_CN';
       else if (navLang.startsWith('ja')) resolved = 'ja';
       else if (navLang.startsWith('ru')) resolved = 'ru';
+      else if (navLang.startsWith('fr')) resolved = 'fr';
+      else if (navLang.startsWith('pt')) resolved = 'pt_BR';
+      else if (navLang.startsWith('it')) resolved = 'it';
+      else if (navLang.startsWith('ko')) resolved = 'ko';
     } else {
       const code = String(langCode).toLowerCase().replace('-', '_');
       if (code.startsWith('tr')) resolved = 'tr';
@@ -656,6 +660,10 @@
       else if (code.startsWith('zh')) resolved = 'zh_CN';
       else if (code.startsWith('ja')) resolved = 'ja';
       else if (code.startsWith('ru')) resolved = 'ru';
+      else if (code.startsWith('fr')) resolved = 'fr';
+      else if (code.startsWith('pt')) resolved = 'pt_BR';
+      else if (code.startsWith('it')) resolved = 'it';
+      else if (code.startsWith('ko')) resolved = 'ko';
     }
     const dict = (i18n && i18n[resolved]) || (i18n && i18n['en']) || {};
     return { dict, lang: resolved };

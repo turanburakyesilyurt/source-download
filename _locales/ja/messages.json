@@ -473,13 +473,13 @@
   "toastZipSaved": {
     "message": "ZIP 保存完了: $TOTAL$ 件中 $FETCHED$ 件",
     "placeholders": {
-      "total": {
-        "content": "$1",
-        "example": "10"
-      },
       "fetched": {
-        "content": "$2",
+        "content": "$1",
         "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
       }
     }
   },
@@ -872,7 +872,7 @@
     "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "ガイドを検索…"
+    "message": "ユーザーガイド内を検索…"
   },
   "popupIntro": {
     "message": "<strong>ツールバーバッジ</strong>でカウントされるカテゴリ。追跡したくないカテゴリはオフにできます。"
@@ -1084,10 +1084,10 @@
     "message": "Source Download — ユーザーガイド"
   },
   "guideEmpty": {
-    "message": "検索に一致するガイドセクションはありません。"
+    "message": "検索条件に一致するガイドの項目は見つかりませんでした。"
   },
   "guideVersionNote": {
-    "message": "Source Download v$VERSION$ — 100% 依存関係なし。",
+    "message": "Source Download v$VERSION$ — 外部依存関係なしの100%ピュア設計。",
     "placeholders": {
       "VERSION": {
         "content": "$1"
@@ -1119,22 +1119,22 @@
     "message": "はじめに"
   },
   "guideSecCategories": {
-    "message": "カテゴリー"
+    "message": "カテゴリー分類"
   },
   "guideSecSearchFilters": {
     "message": "検索とフィルター"
   },
   "guideSecGridView": {
-    "message": "グリッドとリスト表示"
+    "message": "グリッド表示とリスト表示"
   },
   "guideSecInspect": {
-    "message": "リソースの検証"
+    "message": "リソースの検査"
   },
   "guideSecDownloading": {
     "message": "ダウンロード"
   },
   "guideSecLightbox": {
-    "message": "ライトボックス"
+    "message": "ライトボックス拡大ビューアー"
   },
   "guideSecTextTables": {
     "message": "テキストとテーブル"
@@ -1146,52 +1146,52 @@
     "message": "ソースマップ"
   },
   "guideSecDupes": {
-    "message": "重複画像"
+    "message": "重複画像の判定"
   },
   "guideSecVideoHls": {
-    "message": "動画フォールバックと HLS"
+    "message": "動画の代替表示とHLS"
   },
   "guideSecPowerTips": {
-    "message": "上級テクニック"
+    "message": "上級者向けヒント"
   },
   "guideSecGettingStartedContent": {
-    "message": "DevToolsツールバーの <strong>Source Download</strong> タブをクリックします（<kbd>F12</kbd> または <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>）。ツールバーポップアップでバッジの対象カテゴリを設定できます。太陽/月ボタンでライト・ダークテーマを独立して切り替え可能です。"
+    "message": "DevTools（開発者ツール）のツールバーにある<strong>Source Download</strong>タブをクリックしてください（<kbd>F12</kbd>または<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>を押し、DevToolsツールバー内のタブを選択します）。Chromeのセキュリティ仕様上、拡張機能がDevToolsを自動で開くことは許可されていないため、パネルはここに常駐しています。ツールバーアイコンのポップアップを使用すると、アイコン上のバッジカウンターにどのカテゴリーを集計するかを任意に選択できます。パネルツールバーの太陽／月アイコンをクリックすると、Chrome本体のテーマ設定とは独立してライトテーマまたはダークテーマを固定でき、その選択内容は記憶されます。"
   },
   "guideSecCategoriesContent": {
-    "message": "左側の垂直タブで画像、動画、音声、字幕、ドキュメント、フォント、ソースマップ、WASM、SVG、APIなどのリソースを分類し、リアルタイムで件数を表示します。"
+    "message": "左側の垂直タブは、検出されたすべてのリソースをファイル種別ごとに17の専用カテゴリー（画像、動画、音声、字幕、ドキュメント、フォント、ソースマップ、WASM、SVG、API、Cookie、ストレージなど）に分類します。各タブにはリアルタイムの検出数が表示されます。画面には一度に1つのカテゴリーのみが表示され、タブを切り替えるとすべてのフィルターがリセットされるため、常にタブの種別に一致したリソースのみが正確に表示されます。"
   },
   "guideSecSearchFiltersContent": {
-    "message": "検索バーは名前、URL、タイプ、代替テキスト等で絞り込めます。<kbd>/…/</kbd> で囲むと正規表現検索（例：<code>/\\.(png|jpg)$/</code>）が有効になります。"
+    "message": "検索バーを使用すると、名前、URL、ファイルタイプ、alt属性テキスト、またはタイトルによる絞り込みが可能です。正規表現を使用する場合は、検索文字列を<kbd>/…/</kbd>で囲んでください（例: <code>/\\.(png|jpg)$/</code>）。ツールバー直下のフィルターバーは選択中のカテゴリーに応じて動的に変化し、メディア向けのファイル容量や画像解像度の範囲指定、API向けのHTTPメソッドやリクエスト種別、並べ替え順序の設定が可能です。"
   },
   "guideSecGridViewContent": {
-    "message": "コンパクトなグリッド表示と詳細なリスト表示をワンクリックで切り替えられます。リスト表示では個別選択が可能です。"
+    "message": "検索バーの横にある切り替えボタンを使って、コンパクトなグリッド表示（サムネイル一覧）と詳細なリスト表示を自由に切り替えることができます。選択した表示形式はセッションをまたいで保持されます。リスト表示では、各行のチェックボックスを使って任意のリソースを選択し、一括ダウンロードの対象を指定できます。"
   },
   "guideSecInspectContent": {
-    "message": "リソースをクリックすると右側の検査ペインでタブ形式で開きます。画像、動画、音声、コード、API専用のビューアを搭載しています。"
+    "message": "任意のリソースをクリックすると、右側の検査ペインに詳細が開きます。開かれたファイルはそれぞれタブとして追加されるため、複数のリソースを並べて簡単に比較できます（常に最新のリソースが左側のタブに開きます）。画像、動画、音声、フォント、SVG、テキスト／ソースコード（コード整形 Beautify 切替機能付き）に対応した専用ビューアーを搭載しています。APIリクエストでは分割ビューが提供され、左側にレスポンス本文、右側にリクエスト詳細（メソッド、ステータス、HTTPヘッダー、クエリパラメータ、ペイロード本文）が表示されます。"
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>表示中をダウンロード</strong>は現在の絞り込み結果をZIP保存します。<strong>選択項目をダウンロード</strong>や<strong>すべてダウンロード</strong>も利用可能です。"
+    "message": "<strong>表示内容をダウンロード</strong>は、現在画面に表示されているリソース（選択中のカテゴリー＋検索絞り込み＋フィルター適用状態）をZIPアーカイブとして保存します。フィルター適用時は自動的に<em>フィルター済みをダウンロード (N)</em>という表示に切り替わります。ダウンロードボタンの上にマウスカーソルを合わせると、クリックする前にアーカイブの推定ファイル容量を確認できます。<strong>選択項目をダウンロード</strong>は、チェックボックスで選択したファイルのみを保存します。<strong>すべてダウンロード</strong>は、検出されたすべてのリソースをフォルダー階層構造のZIPにまとめて保存します。失敗したダウンロードは自動的に再試行されるほか、右クリックメニューから手動で再試行することも可能です。<strong>エクスポート</strong>を実行すると、表示中のリストをJSONまたはCSVとして保存したり、Chromeのネットワーク通信ログをHARファイルとして出力できます。"
   },
   "guideSecLightboxContent": {
-    "message": "拡大ボタンでフルスクリーンライトボックスが開き、ドラッグ移動やホイール・キーボード操作（<kbd>+</kbd>/<kbd>-</kbd> ズーム、<kbd>0</kbd> リセット、<kbd>Esc</kbd> 閉じる）に対応します。"
+    "message": "拡大ズームボタンをクリックすると、メディアがフルスクリーン表示のライトボックスで開きます。ドラッグ操作によるパン移動のほか、マウスホイール、画面上の操作ボタン、またはキーボードショートカット（拡大: <kbd>+</kbd>、縮小: <kbd>-</kbd>、リセット: <kbd>0</kbd>、閉じる: <kbd>Esc</kbd>）で拡大縮小や移動がスムーズに行えます。"
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>テキスト</strong>カテゴリはページの生きたテキストをキャプチャします。CSSセレクタやXPathによるリアルタイムクエリに対応。</p><p>テーブルはスナップショット履歴を保持し、TXT、Markdown、CSV、マルチシートの本格的な <strong>XLSX</strong> Excelワークブックとして出力できます。</p>"
+    "message": "<p><strong>テキスト</strong>カテゴリーは、ウェブページのコンテンツを人間が読みやすい構造でリアルタイムに複製したものです。見出し、段落、リスト項目、ボタン、<code>div</code>/<code>span</code>など、テキストを含むあらゆる要素をDOM構造の順序通りに抽出し、<strong>ライブ</strong>モードが有効な間は継続して走査を行います。</p><p><strong>クエリ</strong>入力ボックスは、横のドロップダウンから選択可能な4つのモードで動作します。「<strong>含む</strong>」および「<strong>正規表現</strong>」は既に抽出済みのテキスト内を検索し、「<strong>CSSセレクター</strong>」および「<strong>XPath</strong>」はライブページ上のDOMを直接走査するため、DOM内のあらゆるノードへアクセスできます。XPathでは要素そのものだけでなく、<code>count(//a)</code>や<code>//@href</code>のように計算値を返す式も利用可能です。無効なクエリが入力された場合のエラー詳細はボックスのすぐ隣に表示されます。「<strong>要素</strong>」フィルターはページ内に見つかった各タグの件数を表示し、特定のHTMLタグのみに結果を絞り込みます。クエリボックスを空にするか「<strong>クリア</strong>」ボタンを押すと、自動的に<em>すべての要素</em>に戻りページの再スキャンが行われます（ドロップダウンを手動で戻す必要はありません）。</p><p>「<strong>閲覧モード</strong>」を有効にすると、タグ名、チェックボックス、階層パスが非表示になり、1つのドキュメントとして自然に通読できます。テーブル機能はスナップショットの履歴を一定数保持するため、SPA（シングルページアプリ）などの動的な表データも消失しません。テーブル内の「<strong>すべての行を表示</strong>」をクリックすると、すべてのスナップショットが重複排除された1つの結合データとして表示されます（これはエクスポート出力と完全に一致します）。<strong>TXT</strong>（可読テキスト）、<strong>MD</strong>（表組みを含むMarkdown）、または表データをCSV、HTML、本格的なマルチシート対応の<strong>XLSX</strong>ブックとしてエクスポートできます。チェックした項目が存在する場合はそれが優先され、それ以外の場合は現在表示されている全内容が出力されます。</p>"
   },
   "guideSecCaptionsContent": {
-    "message": "WebVTTやSRTなどの字幕ファイルを独立したタブで整理します。"
+    "message": "WebVTT、SRT、TTMLなどの字幕ファイル（<code>&lt;track&gt;</code>要素のソースを含む）は、一般のドキュメントと混ざることなく専用の「<strong>字幕</strong>」タブに自動分類されます。"
   },
   "guideSecSourceMapsContent": {
-    "message": "<code>.map</code> ファイルをソースマップタブに集約し、JSON整形表示に対応します。"
+    "message": "<code>.map</code>ファイルおよびソースマップ形式のJSONデータ（<code>mappings</code>および<code>sources</code>を含むもの）は、JSONビューアーや整形機能を備えた「<strong>ソースマップ</strong>」タブにまとめられるため、一般のJSONタブを圧迫しません。"
   },
   "guideSecDupesContent": {
-    "message": "画像ハッシュにより完全に同一のファイルを検出し、重複を非表示にしてZIPサイズを削減します。"
+    "message": "画像タブでは、パネルが取得したバイナリデータのハッシュ値を計算して完全一致するファイルを自動検出します。「<strong>重複を非表示</strong>」フィルターをオンにすると、重複グループから先頭の1枚のみを残すため、ZIPダウンロード時に同一のサムネイルが重複して保存されるのを防ぎます。"
   },
   "guideSecVideoHlsContent": {
-    "message": "HLS（.m3u8）ストリームのセグメントをパネル内で単一の動画ファイルへマージしてダウンロードできます。"
+    "message": "ブラウザが標準で再生できない動画ストリーム（HLS形式の<code>.m3u8</code>、DASH形式の<code>.mpd</code>、未対応コーデックなど）に対しては、黒い画面の代わりに専用のフォールバック案内画面を表示します。HLS動画の場合は、パネル内から直接セグメントを結合して単一のMP4動画ファイルとして保存するか、元のマニフェストファイルをダウンロードできます。"
   },
   "guideSecPowerTipsContent": {
-    "message": "動的APIリクエストは重複排除されず履歴が維持されるため、同一エンドポイントへの複数リクエストを比較できます。"
+    "message": "動的な<strong>API</strong>レスポンス（XHR/fetch）はURLによる重複排除が行われません。連続するリクエストの差異を比較できるよう、すべての応答がリストに保持されます（上限付きFIFO方式）。静的リソースは重複排除されます。現在のDOMを再スキャンするには「<strong>更新</strong>」を使用してください。また、パネルを開いた状態でページをリロードすると、タブ切り替え前に発生した通信を含め、すべてのネットワークリクエストを漏れなくキャプチャできます。"
   },
   "toolArrow": {
     "message": "矢印を描く"
@@ -1346,10 +1346,10 @@
     "message": "GIF形式の最大録画時間は1分間（60秒）です。"
   },
   "guideSecScreenRecording": {
-    "message": "画面録画（動画＆GIF）"
+    "message": "画面録画（動画・GIFアニメーション）"
   },
   "guideSecScreenRecordingContent": {
-    "message": "画面上の選択範囲をMP4、WebM、またはGIFアニメーションとして録画できます。GIF録画は1:1ネイティブ解像度、1080p、720p、480pプロファイルとリアルタイム予測ファイルサイズ表示に対応しています。ブラウザの最適なパフォーマンスのため、GIFの最大録画時間は1分（60秒）です。"
+    "message": "画面の任意の領域を指定して、MP4、WebM、またはアニメーションGIFとして録画できます。GIF録画では1:1のネイティブ解像度、1080p、720p、480pの画質プロファイルに対応し、録画中にファイル容量のリアルタイム見積もりを表示します。ブラウザの安定した動作を確保するため、GIF録画の最大許容時間は1分間（60秒）です。"
   },
   "msgGifMaxDurationReached": {
     "message": "GIFの最大録画時間1分（60秒）に達しました。GIFを生成しています..."

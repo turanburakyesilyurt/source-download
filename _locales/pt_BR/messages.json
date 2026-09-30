@@ -1,0 +1,1382 @@
+{
+  "appName": {
+    "message": "Source Download",
+    "description": "The name of the extension"
+  },
+  "appDesc": {
+    "message": "Inspecione e baixe recursos da web em ZIP com facilidade. Capturas de tela de página inteira e gravação de vídeo/GIF.",
+    "description": "The description of the extension"
+  },
+  "actionTitle": {
+    "message": "Source Download — Abrir painel e rastrear recursos",
+    "description": "Tooltip for toolbar action icon"
+  },
+  "contextMenuZap": {
+    "message": "Ocultar este elemento (Zap)",
+    "description": "Context menu item to hide selected element"
+  },
+  "contextMenuUndoZap": {
+    "message": "Restaurar último elemento oculto",
+    "description": "Context menu item to undo element hide"
+  },
+  "contextMenuResetZap": {
+    "message": "Restaurar todos os elementos ocultos",
+    "description": "Context menu item to restore all hidden elements"
+  },
+  "contextMenuCapturePage": {
+    "message": "Captura de tela de página inteira",
+    "description": "Context menu item to capture full page"
+  },
+  "contextMenuPageArchive": {
+    "message": "Baixar arquivo de página offline",
+    "description": "Context menu item to save complete page archive"
+  },
+  "catAll": {
+    "message": "Tudo"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Imagens"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Vídeos"
+  },
+  "catAudio": {
+    "message": "Áudio"
+  },
+  "catCaptions": {
+    "message": "Legendas"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Source maps"
+  },
+  "catFonts": {
+    "message": "Fontes"
+  },
+  "catDocuments": {
+    "message": "Documentos"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifestos"
+  },
+  "catText": {
+    "message": "Texto"
+  },
+  "catOther": {
+    "message": "Outro"
+  },
+  "catScreenshot": {
+    "message": "Captura"
+  },
+  "catArchive": {
+    "message": "Arquivo"
+  },
+  "btnRefresh": {
+    "message": "Atualizar"
+  },
+  "btnExport": {
+    "message": "Exportar"
+  },
+  "btnDownloadSelected": {
+    "message": "Baixar selecionados"
+  },
+  "btnDownloadView": {
+    "message": "Baixar visualização"
+  },
+  "btnDownloadAll": {
+    "message": "Baixar tudo"
+  },
+  "btnDownloadFiltered": {
+    "message": "Baixar filtrados"
+  },
+  "btnTheme": {
+    "message": "Alternar tema"
+  },
+  "btnGuide": {
+    "message": "Guia do usuário"
+  },
+  "btnCaptureFullPage": {
+    "message": "Captura de página inteira"
+  },
+  "btnOfflineArchive": {
+    "message": "Salvar HTML único"
+  },
+  "filterMinKb": {
+    "message": "KB mín"
+  },
+  "filterMaxKb": {
+    "message": "KB máx"
+  },
+  "filterMinWidth": {
+    "message": "Largura mín px"
+  },
+  "filterMinHeight": {
+    "message": "Altura mín px"
+  },
+  "filterSortName": {
+    "message": "Ordenar por nome"
+  },
+  "filterSortSize": {
+    "message": "Ordenar por tamanho"
+  },
+  "filterSortType": {
+    "message": "Ordenar por tipo"
+  },
+  "filterSortTime": {
+    "message": "Ordenar por hora"
+  },
+  "filterHideDupes": {
+    "message": "Ocultar duplicatas"
+  },
+  "filterClear": {
+    "message": "Limpar"
+  },
+  "textModeContains": {
+    "message": "Contém"
+  },
+  "textModeRegex": {
+    "message": "Expressão regular"
+  },
+  "textModeCss": {
+    "message": "Seletor CSS"
+  },
+  "textModeXpath": {
+    "message": "Consulta XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filtrar texto da página ou consultar o DOM ao vivo…"
+  },
+  "textAllElements": {
+    "message": "Todos os elementos"
+  },
+  "textLiveOn": {
+    "message": "Ao vivo ligado"
+  },
+  "textLiveOff": {
+    "message": "Ao vivo desligado"
+  },
+  "textScanNow": {
+    "message": "Escanear agora"
+  },
+  "textReading": {
+    "message": "Lendo"
+  },
+  "textExportTxt": {
+    "message": "Exportar em TXT"
+  },
+  "textExportMd": {
+    "message": "Exportar em Markdown"
+  },
+  "textExportCsv": {
+    "message": "Exportar em CSV"
+  },
+  "textExportHtml": {
+    "message": "Exportar em HTML"
+  },
+  "textExportXlsx": {
+    "message": "Exportar em Excel"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Selecione um recurso para inspecionar seus detalhes"
+  },
+  "inspectorDetails": {
+    "message": "Detalhes"
+  },
+  "inspectorOpenTab": {
+    "message": "Abrir em nova aba"
+  },
+  "inspectorCopyUrl": {
+    "message": "Copiar URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Baixar este arquivo"
+  },
+  "inspectorClose": {
+    "message": "Fechar"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Tipo"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Tamanho"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Fonte"
+  },
+  "metaTitle": {
+    "message": "Título"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Gostando do Source Download? Apoie nossa visão de código aberto com uma avaliação na Chrome Web Store ou uma estrela no GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Avaliar"
+  },
+  "ratingStar": {
+    "message": "★ Estrela no GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Dispensar"
+  },
+  "toastElementZapped": {
+    "message": "Elemento oculto. Use o menu para restaurar."
+  },
+  "toastElementRestored": {
+    "message": "Elemento restaurado."
+  },
+  "toastAllElementsRestored": {
+    "message": "Todos os elementos ocultos foram restaurados."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Capturando página inteira…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Captura de tela de página inteira salva."
+  },
+  "toastArchiveCreated": {
+    "message": "Arquivo HTML único salvo."
+  },
+  "brandSignature": {
+    "message": "Desenvolvido por Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Imagens e SVG"
+  },
+  "tabMedia": {
+    "message": "Mídia e áudio"
+  },
+  "tabFonts": {
+    "message": "Fontes"
+  },
+  "tabTextScraper": {
+    "message": "Texto e tabelas"
+  },
+  "heroScreenshotTitle": {
+    "message": "Captura de página inteira"
+  },
+  "heroScreenshotDesc": {
+    "message": "Junção contínua • Supressão de cabeçalhos fixos"
+  },
+  "heroArchiveTitle": {
+    "message": "Arquivo HTML de arquivo único"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS e imagens incorporados • Seguro offline"
+  },
+  "copyDataUri": {
+    "message": "Copiar Data-URI"
+  },
+  "copyUrl": {
+    "message": "Copiar URL"
+  },
+  "downloadSingle": {
+    "message": "Baixar"
+  },
+  "searchPlaceholder": {
+    "message": "Filtrar por nome, URL, tag, MIME ou /regex/…"
+  },
+  "viewGrid": {
+    "message": "Visualização em grade"
+  },
+  "viewList": {
+    "message": "Visualização em lista"
+  },
+  "btnScreenshot": {
+    "message": "Captura de tela"
+  },
+  "btnArchive": {
+    "message": "Salvar HTML"
+  },
+  "exportJson": {
+    "message": "Visible list as JSON"
+  },
+  "exportCsv": {
+    "message": "Visible list as CSV"
+  },
+  "exportHar": {
+    "message": "Network log as HAR"
+  },
+  "exportScreenshot": {
+    "message": "Captura de tela de página inteira (PNG)"
+  },
+  "exportArchive": {
+    "message": "Arquivo de página offline (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Todos os métodos"
+  },
+  "filterTypeAll": {
+    "message": "Todos os tipos de requisição"
+  },
+  "filterSortDir": {
+    "message": "Alternar ordem crescente / decrescente"
+  },
+  "emptyTitle": {
+    "message": "Nenhum recurso encontrado"
+  },
+  "emptySubtitle": {
+    "message": "Recarregue a página com este painel aberto para capturar requisições de rede ou clique em Atualizar para escanear o DOM atual."
+  },
+  "statusResources": {
+    "message": "recursos"
+  },
+  "statusFiltered": {
+    "message": "filtrados"
+  },
+  "statusSelected": {
+    "message": "selecionado(s)"
+  },
+  "statusDupes": {
+    "message": "duplicatas ocultas"
+  },
+  "statusSize": {
+    "message": "tamanho"
+  },
+  "langAuto": {
+    "message": "Automático (Navegador)"
+  },
+  "langSelectorTitle": {
+    "message": "Selecionar idioma"
+  },
+  "textPillAll": {
+    "message": "Todo o conteúdo"
+  },
+  "textPillText": {
+    "message": "📄 Textos e artigos"
+  },
+  "textPillTables": {
+    "message": "📊 Apenas tabelas"
+  },
+  "textSelectAll": {
+    "message": "Selecionar tudo"
+  },
+  "textDeselectAll": {
+    "message": "Desmarcar tudo"
+  },
+  "textClearSelection": {
+    "message": "Limpar"
+  },
+  "toastRefreshComplete": {
+    "message": "Escaneamento concluído: $COUNT$ novo(s) recurso(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$COUNT$ bloco(s) copiado(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Copiado para a área de transferência"
+  },
+  "toastTableCopied": {
+    "message": "Tabela copiada para a área de transferência"
+  },
+  "toastNothingToExport": {
+    "message": "Nada para exportar"
+  },
+  "toastExportedTxt": {
+    "message": "$COUNT$ bloco(s) exportado(s) como TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$COUNT$ bloco(s) exportado(s) como Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Nenhuma linha de tabela capturada"
+  },
+  "toastExportedCsv": {
+    "message": "Tabela exportada como CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Tabela exportada como XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "$COUNT$ tabela(s) exportada(s) como $FORMAT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$COUNT$ planilha(s) exportada(s) como XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Nenhum recurso para baixar."
+  },
+  "toastNoVisibleResources": {
+    "message": "Nenhum recurso visível para baixar."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Selecione pelo menos um recurso primeiro."
+  },
+  "toastZipSaved": {
+    "message": "ZIP salvo: $FETCHED$ de $TOTAL$ recursos",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Falha no ZIP: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR exportado ($COUNT$ entradas)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL copiada para a área de transferência"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Janela inspecionada do DevTools não disponível."
+  },
+  "toastScreenshotError": {
+    "message": "Erro de captura: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Criando arquivo de página offline…"
+  },
+  "toastArchiveError": {
+    "message": "Erro de arquivo: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Tempo limite de formatação esgotado — exibindo arquivo original."
+  },
+  "toastFormatFailed": {
+    "message": "Não foi possível formatar o arquivo — exibindo original."
+  },
+  "emptySearchTitle": {
+    "message": "Nenhum resultado para \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Tente outro termo de pesquisa ou mude de categoria."
+  },
+  "emptyFiltersTitle": {
+    "message": "Nenhum recurso corresponde aos filtros atuais"
+  },
+  "emptyFiltersSub": {
+    "message": "Reduza os filtros de tamanho acima ou clique em Limpar."
+  },
+  "textEmptyQueryReject": {
+    "message": "A página rejeitou essa consulta. Ajuste-a acima para ver os resultados."
+  },
+  "textEmptyNoMatch": {
+    "message": "Nenhum elemento na página corresponde a esta consulta. Tente um seletor mais amplo."
+  },
+  "textEmptyInitial": {
+    "message": "Nada capturado ainda. A captura ao vivo está em execução — toda a página aparecerá aqui como texto legível."
+  },
+  "textEmptyFiltered": {
+    "message": "Nada corresponde à consulta e ao filtro de elementos atuais."
+  },
+  "textSummaryBlocks": {
+    "message": "$COUNT$ blocos",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$COUNT$ palavras",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$COUNT$ caracteres",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$TABLES$ tabela(s) · $ROWS$ linhas únicas",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$COUNT$ selecionado(s) — apenas estes serão exportados",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Tabela — $COUNT$ linha(s) na tela",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Tabela — todas as $COUNT$ linha(s) únicas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$COUNT$ captura(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "atualizado $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Mostrar todas as $COUNT$ linhas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Mostrando todas as linhas"
+  },
+  "textTableHistory": {
+    "message": "Histórico ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Ocultar histórico"
+  },
+  "textTableNoRows": {
+    "message": "Nenhuma linha de tabela capturada até o momento."
+  },
+  "textBtnCopy": {
+    "message": "Copiar texto"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Copiar"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$COUNT$ imagem(ns) duplicada(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Exportar"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Carregando SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Não foi possível recuperar o conteúdo SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "Carregando prévia da fonte…"
+  },
+  "inspectorFontSample": {
+    "message": "Prévia da fonte"
+  },
+  "inspectorBeautify": {
+    "message": "Formatar"
+  },
+  "inspectorOriginal": {
+    "message": "Original"
+  },
+  "inspectorHeaders": {
+    "message": "Cabeçalhos"
+  },
+  "inspectorResponse": {
+    "message": "Resposta"
+  },
+  "inspectorRequest": {
+    "message": "Requisição"
+  },
+  "inspectorQueryParams": {
+    "message": "Parâmetros de consulta"
+  },
+  "inspectorRequestBody": {
+    "message": "Corpo da requisição"
+  },
+  "textHintHtml": {
+    "message": "Uma cópia legível e em tempo real da página. Cada elemento com texto é capturado na ordem do DOM. Consulte usando texto simples, regex, <strong>seletor CSS</strong> ou expressão <strong>XPath</strong> e exporte as correspondências. Veja o <a href=\"#\" id=\"text-hint-guide\">guia</a>."
+  },
+  "textHeadings": {
+    "message": "Títulos"
+  },
+  "textAllLevels": {
+    "message": "Todos os níveis"
+  },
+  "textMatches": {
+    "message": "correspondências"
+  },
+  "textMatch": {
+    "message": "correspondência"
+  },
+  "textReadingOn": {
+    "message": "Leitura ativada"
+  },
+  "toastDownloadStarted": {
+    "message": "Download iniciado: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Não foi possível buscar este recurso (CORS ou tipo não suportado)."
+  },
+  "ratingBannerText": {
+    "message": "Gostando do Source Download? Apoie nossa visão de código aberto com uma avaliação na Chrome Web Store ou uma estrela no GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Avaliar"
+  },
+  "ratingBannerStar": {
+    "message": "★ Estrela"
+  },
+  "textTableUniqueRows": {
+    "message": "$COUNT$ linha(s) única(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "há $COUNT$s",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "há $COUNT$m",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Capturar área da tela"
+  },
+  "btnAreaDownload": {
+    "message": "Baixar"
+  },
+  "btnAreaCopy": {
+    "message": "Copiar"
+  },
+  "btnAreaCancel": {
+    "message": "Cancelar"
+  },
+  "toastAreaCopied": {
+    "message": "Captura da área copiada para a área de transferência"
+  },
+  "toastAreaDownloaded": {
+    "message": "Captura da área salva"
+  },
+  "statusFoundCssResources": {
+    "message": "Encontrado(s) $COUNT$ recurso(s) referenciado(s) no CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Falha no escaneamento DOM: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Indexando conteúdo dos arquivos…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Verificando imagens duplicadas…"
+  },
+  "statusWorking": {
+    "message": "Processando…"
+  },
+  "filterMethodTitle": {
+    "message": "Filtrar por método HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Filtrar por tipo de requisição"
+  },
+  "filterSortTitle": {
+    "message": "Ordenar recursos"
+  },
+  "textModeTitle": {
+    "message": "Modo de consulta"
+  },
+  "textKindTitle": {
+    "message": "Tipo de elemento"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Nível de título"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Preço:\\s*\\d+ — expressão regular JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — qualquer seletor CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Pesquisar no guia…"
+  },
+  "popupIntro": {
+    "message": "Categorias contabilizadas pelo <strong>ícone da barra de ferramentas</strong>. Desative uma para não contá-la."
+  },
+  "popupHelpTitle": {
+    "message": "Como usar o painel completo"
+  },
+  "popupStep1": {
+    "message": "Pressione F12 em qualquer página"
+  },
+  "popupStep2": {
+    "message": "Clique na aba Source Download"
+  },
+  "popupStep3": {
+    "message": "Pesquise, filtre e inspecione qualquer recurso"
+  },
+  "popupNote": {
+    "message": "Observação: O Chrome não permite abrir o DevTools via código, por isso o painel completo é acessado pela barra de ferramentas do DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Todas as categorias"
+  },
+  "popupLanguage": {
+    "message": "Idioma"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Resposta binária — baixe para visualizar"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Carregando resposta…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Sem pré-visualização — o conteúdo não pôde ser recuperado."
+  },
+  "inspectorLoadingContent": {
+    "message": "Carregando conteúdo…"
+  },
+  "inspectorNoPreview": {
+    "message": "Nenhuma pré-visualização disponível."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Fechar tudo"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Fechar todas as abas abertas"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Clique para ampliar"
+  },
+  "inspectorViewSource": {
+    "message": "Ver código fonte"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Mostrar código SVG com destaque de sintaxe"
+  },
+  "inspectorFormatting": {
+    "message": "Formatando…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Localizar no conteúdo…"
+  },
+  "findPreviousMatch": {
+    "message": "Ocorrência anterior"
+  },
+  "findNextMatch": {
+    "message": "Próxima ocorrência"
+  },
+  "findClose": {
+    "message": "Fechar"
+  },
+  "findShowRaw": {
+    "message": "Exibir conteúdo original (sem formatação)"
+  },
+  "findBeautify": {
+    "message": "Formatar / embelezar conteúdo"
+  },
+  "btnRaw": {
+    "message": "Original"
+  },
+  "btnBeautify": {
+    "message": "Formatar"
+  },
+  "videoHlsDetected": {
+    "message": "Stream HLS (m3u8) detectado"
+  },
+  "videoCannotPlay": {
+    "message": "Este vídeo não pode ser reproduzido no navegador"
+  },
+  "videoHlsNotice": {
+    "message": "O Chrome não reproduz streams HLS diretamente. Você pode mesclar os segmentos de <b>$NAME$</b> em um arquivo MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "O navegador não suporta este formato"
+  },
+  "btnMergeHls": {
+    "message": "Mesclar segmentos e baixar"
+  },
+  "toastHlsMerged": {
+    "message": "Mesclado(s) $COUNT$ segmento(s) em $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "tamanho desconhecido"
+  },
+  "progressFetching": {
+    "message": "Obtendo $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Criando ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP salvo: $FETCHED$ de $TOTAL$ recursos ($SKIPPED$ falharam)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Repetir $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Tentar download novamente"
+  },
+  "searchRegexHint": {
+    "message": "Busca por Regex ativa — use /padrão/i"
+  },
+  "textIncludeInExports": {
+    "message": "Incluir nas exportações"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Combinar todas as capturas em uma tabela sem duplicatas — isso é o que será exportado"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Navegar pelas capturas anteriores desta tabela"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Baixar esta tabela como CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Captura $INDEX$ — $TIME$ ($COUNT$ linhas)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Alternar seleção para download em lote"
+  },
+  "cardDownloadTitle": {
+    "message": "Baixar arquivo"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Download anterior falhou — clique para tentar novamente"
+  },
+  "btnThemeLight": {
+    "message": "Mudar para tema claro"
+  },
+  "btnThemeDark": {
+    "message": "Mudar para tema escuro"
+  },
+  "guideTitle": {
+    "message": "Source Download — Guia do Usuário"
+  },
+  "guideEmpty": {
+    "message": "Nenhuma seção do guia corresponde à sua pesquisa."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% livre de dependências externas.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Diminuir zoom (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Aumentar zoom (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Redefinir zoom (0)"
+  },
+  "lightboxClose": {
+    "message": "Fechar (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Arraste para redimensionar"
+  },
+  "ratingDismissTitle": {
+    "message": "Dispensar"
+  },
+  "inspectorResourceTitle": {
+    "message": "Recurso"
+  },
+  "guideSecGettingStarted": {
+    "message": "Primeiros passos"
+  },
+  "guideSecCategories": {
+    "message": "Categorias"
+  },
+  "guideSecSearchFilters": {
+    "message": "Busca e filtros"
+  },
+  "guideSecGridView": {
+    "message": "Visualização em grade e lista"
+  },
+  "guideSecInspect": {
+    "message": "Inspecionar um recurso"
+  },
+  "guideSecDownloading": {
+    "message": "Download"
+  },
+  "guideSecLightbox": {
+    "message": "Visualizador Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Texto e tabelas"
+  },
+  "guideSecCaptions": {
+    "message": "Legendas e transcrições"
+  },
+  "guideSecSourceMaps": {
+    "message": "Mapas de código (Source maps)"
+  },
+  "guideSecDupes": {
+    "message": "Imagens duplicadas"
+  },
+  "guideSecVideoHls": {
+    "message": "Vídeo alternativo e HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Dicas avançadas"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Clique na aba <strong>Source Download</strong> na barra de ferramentas do DevTools (pressione <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> e selecione a aba correspondente). O Chrome não permite que extensões abram o DevTools de forma automática, razão pela qual o painel reside lá. A janela pop-up do ícone na barra de ferramentas permite que você selecione quais categorias alimentam o contador no ícone. O botão sol/lua na barra de ferramentas do painel fixa um tema claro ou escuro com total independência do Chrome; essa preferência é gravada."
+  },
+  "guideSecCategoriesContent": {
+    "message": "As abas verticais à esquerda organizam cada recurso capturado em 17 categorias dedicadas de acordo com o tipo: Imagens, Vídeos, Áudio, Legendas, Documentos, Fontes, Mapas de código (Source maps), WASM, SVG, APIs, Cookies, Armazenamento e muito mais. Cada aba exibe uma contagem em tempo real. Apenas uma categoria é exibida por vez; a troca de abas redefine todos os filtros, garantindo que os dados visíveis sempre correspondam à categoria selecionada."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "A barra de pesquisa filtra por nome, URL, tipo, texto alt ou título. Delimite a sua consulta com <kbd>/…/</kbd> para utilizar expressões regulares, por exemplo <code>/\\.(png|jpg)$/</code>. Abaixo da barra de ferramentas, a barra de filtros se ajusta a cada categoria: faixas de tamanho e dimensões para mídias, método HTTP e tipo de requisição para APIs, além de critérios e direção de ordenação."
+  },
+  "guideSecGridViewContent": {
+    "message": "Alterne entre uma grade compacta (miniaturas menores) e uma lista detalhada por meio dos botões ao lado da barra de busca. A sua preferência é mantida entre as sessões. Na visualização em lista, caixas de seleção permitem marcar recursos específicos para downloads em lote."
+  },
+  "guideSecInspectContent": {
+    "message": "Clique em qualquer recurso para abri-lo no painel de inspeção à direita. Cada arquivo aberto se transforma em uma aba, permitindo que você compare diversos recursos lado a lado — o mais recente sempre se abre à esquerda. Há visualizadores dedicados para imagens, vídeo, áudio, fontes, SVG e texto/código (com botão de formatação estética Beautify). As APIs contam com uma visualização dividida: corpo da resposta à esquerda e detalhes da requisição (método, status, cabeçalhos, parâmetros de URL e corpo) à direita."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Baixar visualização</strong> salva os recursos visíveis atuais (categoria ativa + pesquisa + filtros) como um arquivo ZIP; o rótulo é renomeado para <em>Baixar filtrados (N)</em> quando filtros estão ativos. Passe o cursor sobre qualquer botão de download para conferir o tamanho estimado do pacote antes de clicar. <strong>Baixar selecionados</strong> grava apenas os itens marcados. <strong>Baixar tudo</strong> reúne todos os recursos descobertos em um único ZIP estruturado em pastas. Downloads interrompidos são repetidos de modo automático e podem ser reiniciados pelo menu de contexto. <strong>Exportar</strong> grava a lista visível em formato JSON ou CSV, ou exporta o log de rede do Chrome como arquivo HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "O botão de zoom abre as mídias em um lightbox em tela cheia, onde você pode deslocar arrastando o mouse e aplicar zoom com o scroll, botões na tela ou atalhos do teclado (<kbd>+</kbd>/<kbd>-</kbd> para zoom, <kbd>0</kbd> para redefinir, <kbd>Esc</kbd> para fechar)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>A categoria <strong>Texto</strong> representa uma réplica dinâmica e legível de toda a página. Ela extrai todos os elementos textuais — títulos, parágrafos, itens de lista, botões, <code>div</code>/<code>span</code> e outros — na ordem exata do DOM e prossegue com a varredura enquanto o modo <strong>Ao vivo</strong> permanecer ativado.</p><p>O campo de <strong>Consulta</strong> opera em quatro modos selecionáveis pelo menu suspenso adjacente: <strong>Contém</strong> e <strong>Regex</strong> filtram o texto já extraído, enquanto <strong>Seletor CSS</strong> e <strong>XPath</strong> são executados diretamente sobre o DOM da página em tempo real para alcançar qualquer ponto da estrutura. O XPath também aceita expressões que retornam valores calculados em vez de nós, como <code>count(//a)</code> ou <code>//@href</code>. Mensagens de erro relativas a consultas inválidas são exibidas ao lado da caixa. <strong>Elemento</strong> restringe o escopo a uma tag HTML específica acompanhada da quantidade total encontrada na página. Limpar o campo de consulta (ou clicar em <strong>Limpar</strong>) retorna a visualização para <em>Todos os elementos</em> e realiza uma nova captura — sem necessidade de redefinir o menu à mão.</p><p>O modo <strong>Leitura</strong> oculta tags, caixas de marcação e trilhas hierárquicas, tornando o fluxo de leitura agradável como o de um documento. As tabelas preservam um histórico delimitado de capturas (snapshots), impedindo a perda de tabelas dinâmicas em SPAs. Clique em <strong>Mostrar todas as linhas</strong> em uma tabela para mesclar todos os snapshots em uma visão unificada e desduplicada — que é exatamente o conteúdo exportado. Exporte em <strong>TXT</strong> (texto legível da página), <strong>MD</strong> (Markdown incluindo tabelas) ou tabelas como CSV, HTML ou uma pasta de trabalho com múltiplas planilhas em <strong>XLSX</strong>. Itens marcados têm prioridade; caso contrário, todo o conteúdo visível é exportado.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "Arquivos WebVTT, SRT, TTML e demais formatos de legendas — inclusive origens em elementos <code>&lt;track&gt;</code> — são organizados em sua própria aba <strong>Legendas</strong> para evitar poluir a seção de documentos."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Arquivos <code>.map</code> e estruturas JSON que correspondam a mapas de código (possuindo <code>mappings</code> e <code>sources</code>) são reunidos em <strong>Source maps</strong>, com visualizador JSON e formatação Beautify, impedindo a sobrecarga da aba geral de JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "Na aba Imagens, o painel processa os hashes dos bytes recebidos e sinaliza arquivos idênticos. O filtro <strong>Ocultar duplicatas</strong> preserva apenas a primeira cópia de cada conjunto para que o arquivo ZIP da visualização não transporte a mesma miniatura em dobro."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Transmissões de mídia que o navegador não reproduz nativamente (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, codecs desconhecidos) exibem uma tela de aviso informativo em vez de um player preto. Em transmissões HLS, você pode mesclar os fragmentos em um único arquivo de vídeo MP4 diretamente no painel ou baixar o manifesto original."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Respostas de <strong>APIs</strong> dinâmicas (XHR/fetch) não são desduplicadas por URL: cada resposta é preservada no histórico (fila FIFO limitada) para permitir a comparação entre requisições sucessivas. Recursos estáticos são desduplicados normalmente. Utilize <strong>Atualizar</strong> para reexaminar o DOM atual e recarregue a página com o painel aberto para interceptar todas as solicitações de rede, inclusive as disparadas antes da mudança de aba."
+  },
+  "toolArrow": {
+    "message": "Ferramenta Seta"
+  },
+  "toolRect": {
+    "message": "Ferramenta Retângulo"
+  },
+  "toolText": {
+    "message": "Ferramenta Texto"
+  },
+  "toolUndo": {
+    "message": "Desfazer (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Refazer (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Cor"
+  },
+  "badgeStrokeSize": {
+    "message": "Tamanho: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Tamanho da fonte: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Gravar área da tela (Vídeo / GIF)"
+  },
+  "btnRecStart": {
+    "message": "Iniciar gravação"
+  },
+  "btnRecPause": {
+    "message": "Pausar"
+  },
+  "btnRecResume": {
+    "message": "Retomar"
+  },
+  "btnRecStop": {
+    "message": "Finalizar e baixar"
+  },
+  "btnRecCancel": {
+    "message": "Cancelar"
+  },
+  "toastRecSaved": {
+    "message": "Gravação salva com sucesso."
+  },
+  "toastRecCancelled": {
+    "message": "Gravação cancelada."
+  },
+  "toastRecPermissionDenied": {
+    "message": "Permissão de gravação de tela não concedida"
+  },
+  "btnPopupRecordArea": {
+    "message": "Vídeo / GIF de área"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Captura de área"
+  },
+  "contextMenuPickColor": {
+    "message": "Capturar cor da tela"
+  },
+  "btnPopupPickColor": {
+    "message": "Conta-gotas"
+  },
+  "colorPickerTitle": {
+    "message": "Seletor de cor"
+  },
+  "btnColorPickAgain": {
+    "message": "Escolher outra cor"
+  },
+  "toastColorCopied": {
+    "message": "Cor copiada para a área de transferência"
+  },
+  "toastProgressCapturing": {
+    "message": "Capturando página inteira... $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Costurando imagem…"
+  },
+  "modalExportTitle": {
+    "message": "Captura de tela pronta"
+  },
+  "btnExportPng": {
+    "message": "Baixar PNG"
+  },
+  "btnExportJpg": {
+    "message": "Baixar JPG"
+  },
+  "btnExportPdf": {
+    "message": "Salvar como PDF"
+  },
+  "btnExportCopy": {
+    "message": "Copiar para a área de transferência"
+  },
+  "btnExportGenerating": {
+    "message": "Gerando…"
+  },
+  "toastPdfGenerated": {
+    "message": "Documento PDF salvo."
+  },
+  "settingNamingPatterns": {
+    "message": "Padrões de nomenclatura de arquivos"
+  },
+  "settingVideoFormat": {
+    "message": "Formato de vídeo padrão"
+  },
+  "settingNamingPreview": {
+    "message": "Pré-visualização:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Gerando GIF, aguarde um momento…"
+  },
+  "settingGifResolution": {
+    "message": "Resolução GIF padrão"
+  },
+  "optGifOriginal": {
+    "message": "Original (1:1 Nativa — 3K/4K sem escala)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (Máx. 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (Máx. 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (Máx 854px — Mais rápido e leve)"
+  },
+  "tipGifDurationLimit": {
+    "message": "O formato GIF suporta duração máxima de gravação de 1 minuto (60s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Gravação de tela (Vídeo e GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Grave qualquer região da tela como vídeo MP4, WebM ou GIF animado. As gravações em GIF oferecem resolução nativa 1:1, perfis em 1080p, 720p e 480p, além de cálculo em tempo real do tamanho estimado do arquivo. O tempo máximo de gravação em GIF é de 1 minuto (60 s) para máxima estabilidade do navegador."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Duração máxima de 1 minuto atingida. Gerando GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Máx. 1 min (60s)"
+  },
+  "settingGifFps": {
+    "message": "Taxa de quadros do GIF (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Fluido (Alta fluidez, arquivo maior)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Padrão (Recomendado para web e equilíbrio)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Compacto / Meme (Movimento pausado, arquivo leve)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-Motion / Passo a passo (Tamanho minúsculo, ótimo para tutoriais)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Apresentação (1 quadro por segundo, tamanho mínimo)"
+  },
+  "popupRightClickHint": {
+    "message": "Clique com o botão direito na página para Gravação de Tela (Vídeo/GIF) e Conta-gotas de Cor.",
+    "description": "Hint informing user to use right-click context menu for recording and color picker"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "default_locale": "en",
   "author": "Turan Burak Yeşilyurt",
   "homepage_url": "https://2run.dev",
@@ -29,11 +29,28 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["lib/i18n.js", "lib/naming.js", "lib/pdf.js", "lib/gif.js", "content.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "lib/i18n.js",
+        "lib/naming.js",
+        "lib/pdf.js",
+        "lib/gif.js",
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ],
-  "permissions": ["storage", "clipboardWrite", "contextMenus", "activeTab", "scripting", "downloads"],
-  "host_permissions": ["<all_urls>"]
+  "permissions": [
+    "storage",
+    "clipboardWrite",
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
 }

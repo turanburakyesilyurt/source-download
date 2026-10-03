@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Επιθεωρήστε και κατεβάστε στοιχεία ιστού ως ZIP. Στιγμιότυπα πλήρους σελίδας, live καταγραφή πινάκων, εργαλεία developer."
+  },
+  "actionTitle": {
+    "message": "Source Download — Άνοιγμα πίνακα και παρακολούθηση πόρων"
+  },
+  "contextMenuZap": {
+    "message": "Απόκρυψη αυτού του στοιχείου (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "Επαναφορά του τελευταίου κρυφού στοιχείου"
+  },
+  "contextMenuResetZap": {
+    "message": "Επαναφορά όλων των κρυφών στοιχείων"
+  },
+  "contextMenuCapturePage": {
+    "message": "Στιγμιότυπο ολόκληρης της σελίδας"
+  },
+  "contextMenuPageArchive": {
+    "message": "Λήψη αρχείου σελίδας για χρήση εκτός σύνδεσης"
+  },
+  "catAll": {
+    "message": "Όλα"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Εικόνες"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Βίντεο"
+  },
+  "catAudio": {
+    "message": "Ήχος"
+  },
+  "catCaptions": {
+    "message": "Υπότιτλοι"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Χάρτες πηγής"
+  },
+  "catFonts": {
+    "message": "Γραμματοσειρές"
+  },
+  "catDocuments": {
+    "message": "Έγγραφα"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifest"
+  },
+  "catText": {
+    "message": "Κείμενο"
+  },
+  "catOther": {
+    "message": "Άλλο"
+  },
+  "catScreenshot": {
+    "message": "Στιγμιότυπο οθόνης"
+  },
+  "catArchive": {
+    "message": "Αρχειοθήκη σελίδας"
+  },
+  "btnRefresh": {
+    "message": "Ανανέωση"
+  },
+  "btnExport": {
+    "message": "Εξαγωγή"
+  },
+  "btnDownloadSelected": {
+    "message": "Λήψη επιλεγμένων"
+  },
+  "btnDownloadView": {
+    "message": "Λήψη προβολής"
+  },
+  "btnDownloadAll": {
+    "message": "Λήψη όλων"
+  },
+  "btnDownloadFiltered": {
+    "message": "Λήψη φιλτραρισμένων"
+  },
+  "btnTheme": {
+    "message": "Εναλλαγή θέματος"
+  },
+  "btnGuide": {
+    "message": "Οδηγός χρήσης"
+  },
+  "btnCaptureFullPage": {
+    "message": "Στιγμιότυπο οθόνης πλήρους σελίδας"
+  },
+  "btnOfflineArchive": {
+    "message": "Αποθήκευση HTML σε ένα αρχείο"
+  },
+  "filterMinKb": {
+    "message": "Ελάχ. KB"
+  },
+  "filterMaxKb": {
+    "message": "Μέγ. KB"
+  },
+  "filterMinWidth": {
+    "message": "Ελάχιστο πλάτος px"
+  },
+  "filterMinHeight": {
+    "message": "Ελάχιστο ύψος px"
+  },
+  "filterSortName": {
+    "message": "Ταξινόμηση κατά όνομα"
+  },
+  "filterSortSize": {
+    "message": "Ταξινόμηση κατά μέγεθος"
+  },
+  "filterSortType": {
+    "message": "Ταξινόμηση κατά τύπο"
+  },
+  "filterSortTime": {
+    "message": "Ταξινόμηση κατά χρόνο"
+  },
+  "filterHideDupes": {
+    "message": "Απόκρυψη διπλότυπων"
+  },
+  "filterClear": {
+    "message": "Εκκαθάριση"
+  },
+  "textModeContains": {
+    "message": "Περιέχει"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "Επιλογέας CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Φιλτράρισμα κειμένου σελίδας ή ερώτημα στο ζωντανό DOM…"
+  },
+  "textAllElements": {
+    "message": "Όλα τα στοιχεία"
+  },
+  "textLiveOn": {
+    "message": "Ζωντανά: ενεργό"
+  },
+  "textLiveOff": {
+    "message": "Ζωντανά: ανενεργό"
+  },
+  "textScanNow": {
+    "message": "Σάρωση τώρα"
+  },
+  "textReading": {
+    "message": "Ανάγνωση"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Επιλέξτε έναν πόρο για να ελέγξετε τα στοιχεία του"
+  },
+  "inspectorDetails": {
+    "message": "Λεπτομέρειες"
+  },
+  "inspectorOpenTab": {
+    "message": "Άνοιγμα σε νέα καρτέλα"
+  },
+  "inspectorCopyUrl": {
+    "message": "Αντιγραφή διεύθυνσης URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Λήψη αυτού του αρχείου"
+  },
+  "inspectorClose": {
+    "message": "Κλείσιμο"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Τύπος"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Μέγεθος"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Πηγή"
+  },
+  "metaTitle": {
+    "message": "Τίτλος"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Σας αρέσει το Source Download; Υποστηρίξτε το όραμά μας για ανοιχτό κώδικα με μια κριτική στο Chrome Web Store ή ένα αστέρι στο GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Αφήστε μια κριτική"
+  },
+  "ratingStar": {
+    "message": "★ Star στο GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Απόρριψη"
+  },
+  "toastElementZapped": {
+    "message": "Το στοιχείο αποκρύφθηκε για αυτήν τη συνεδρία."
+  },
+  "toastElementRestored": {
+    "message": "Το στοιχείο επαναφέρθηκε."
+  },
+  "toastAllElementsRestored": {
+    "message": "Όλα τα κρυφά στοιχεία επαναφέρθηκαν."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Λήψη στιγμιοτύπου ολόκληρης της σελίδας…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Το στιγμιότυπο ολόκληρης της σελίδας αποθηκεύτηκε."
+  },
+  "toastArchiveCreated": {
+    "message": "Το αρχείο HTML ενός αρχείου αποθηκεύτηκε."
+  },
+  "brandSignature": {
+    "message": "Δημιουργήθηκε από τον Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Εικόνες & SVG"
+  },
+  "tabMedia": {
+    "message": "Μέσα & Ήχος"
+  },
+  "tabFonts": {
+    "message": "Γραμματοσειρές"
+  },
+  "tabTextScraper": {
+    "message": "Κείμενο & Πίνακες"
+  },
+  "heroScreenshotTitle": {
+    "message": "Στιγμιότυπο οθόνης πλήρους σελίδας"
+  },
+  "heroScreenshotDesc": {
+    "message": "Απρόσκοπτη συρραφή πολλαπλών τμημάτων προβολής με απόκρυψη κολλητικής κεφαλίδας"
+  },
+  "heroArchiveTitle": {
+    "message": "Αρχειοθήκη HTML σε ένα αρχείο"
+  },
+  "heroArchiveDesc": {
+    "message": "Ενσωματώνει CSS και εικόνες Base64, στιγμιότυπο ασφαλές για χρήση εκτός σύνδεσης"
+  },
+  "copyDataUri": {
+    "message": "Αντιγραφή Data URI"
+  },
+  "copyUrl": {
+    "message": "Αντιγραφή διεύθυνσης URL"
+  },
+  "downloadSingle": {
+    "message": "Λήψη"
+  },
+  "searchPlaceholder": {
+    "message": "Φιλτράρισμα κατά όνομα, διεύθυνση URL, ετικέτα, MIME ή /regex/…"
+  },
+  "viewGrid": {
+    "message": "Προβολή πλέγματος"
+  },
+  "viewList": {
+    "message": "Προβολή λίστας"
+  },
+  "btnScreenshot": {
+    "message": "Στιγμιότυπο οθόνης"
+  },
+  "btnArchive": {
+    "message": "Αποθήκευση HTML"
+  },
+  "exportJson": {
+    "message": "Ορατή λίστα ως JSON"
+  },
+  "exportCsv": {
+    "message": "Ορατή λίστα ως CSV"
+  },
+  "exportHar": {
+    "message": "Καταγραφή δικτύου ως HAR"
+  },
+  "exportScreenshot": {
+    "message": "Στιγμιότυπο οθόνης πλήρους σελίδας (PNG)"
+  },
+  "exportArchive": {
+    "message": "Αρχειοθήκη σελίδας εκτός σύνδεσης (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Όλες οι μέθοδοι"
+  },
+  "filterTypeAll": {
+    "message": "Όλοι οι τύποι"
+  },
+  "filterSortDir": {
+    "message": "Εναλλαγή αύξουσας / φθίνουσας"
+  },
+  "emptyTitle": {
+    "message": "Δεν βρέθηκαν πόροι"
+  },
+  "emptySubtitle": {
+    "message": "Φορτώστε ξανά τη σελίδα ενώ αυτός ο πίνακας είναι ανοιχτός για να καταγραφούν τα αιτήματα δικτύου ή κάντε κλικ στην Ανανέωση για σάρωση του τρέχοντος DOM."
+  },
+  "statusResources": {
+    "message": "πόρους"
+  },
+  "statusFiltered": {
+    "message": "φιλτραρισμένα"
+  },
+  "statusSelected": {
+    "message": "επιλεγμένα"
+  },
+  "statusDupes": {
+    "message": "διπλότυπα κρυφά"
+  },
+  "statusSize": {
+    "message": "μέγεθος"
+  },
+  "langAuto": {
+    "message": "Αυτόματο (Πρόγραμμα περιήγησης)"
+  },
+  "langSelectorTitle": {
+    "message": "Επιλέξτε Γλώσσα"
+  },
+  "textPillAll": {
+    "message": "Όλο το περιεχόμενο"
+  },
+  "textPillText": {
+    "message": "📄 Κείμενο και άρθρα"
+  },
+  "textPillTables": {
+    "message": "📊 Μόνο πίνακες"
+  },
+  "textSelectAll": {
+    "message": "Επιλογή όλων"
+  },
+  "textDeselectAll": {
+    "message": "Αποεπιλογή όλων"
+  },
+  "textClearSelection": {
+    "message": "Εκκαθάριση"
+  },
+  "toastRefreshComplete": {
+    "message": "Η σάρωση σελίδας ολοκληρώθηκε: $count$ νέοι πόροι",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Αντιγράφηκαν $count$ μπλοκ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Αντιγράφηκε στο πρόχειρο"
+  },
+  "toastTableCopied": {
+    "message": "Ο πίνακας αντιγράφηκε στο πρόχειρο"
+  },
+  "toastNothingToExport": {
+    "message": "Τίποτα για εξαγωγή"
+  },
+  "toastExportedTxt": {
+    "message": "Εξήχθησαν $count$ μπλοκ ως TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Εξήχθησαν $count$ μπλοκ ως Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Δεν καταγράφηκαν σειρές πίνακα"
+  },
+  "toastExportedCsv": {
+    "message": "Έγινε εξαγωγή πίνακα ως CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Έγινε εξαγωγή πίνακα ως XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Εξήχθησαν $count$ πίνακες ως $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Εξήχθησαν $count$ φύλλα ως XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Δεν υπάρχουν πόροι για λήψη."
+  },
+  "toastNoVisibleResources": {
+    "message": "Δεν υπάρχουν ορατοί πόροι για λήψη."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Επιλέξτε πρώτα τουλάχιστον έναν πόρο."
+  },
+  "toastZipSaved": {
+    "message": "Το ZIP αποθηκεύτηκε: $fetched$ από $total$ πόρους",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Το ZIP απέτυχε: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "Εξαγωγή HAR ($count$ καταχωρήσεις)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "Η διεύθυνση URL αντιγράφηκε στο πρόχειρο"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Το επιθεωρούμενο παράθυρο των DevTools δεν είναι διαθέσιμο."
+  },
+  "toastScreenshotError": {
+    "message": "Σφάλμα στιγμιότυπου οθόνης: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Δημιουργία αρχείου σελίδας για χρήση εκτός σύνδεσης…"
+  },
+  "toastArchiveError": {
+    "message": "Σφάλμα αρχειοθέτησης: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Λήξη χρονικού ορίου μορφοποίησης — εμφάνιση αρχικού αρχείου."
+  },
+  "toastFormatFailed": {
+    "message": "Δεν ήταν δυνατή η μορφοποίηση του αρχείου — εμφανίζεται το πρωτότυπο."
+  },
+  "emptySearchTitle": {
+    "message": "Δεν υπάρχουν αντιστοιχίες για \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Δοκιμάστε έναν διαφορετικό όρο αναζήτησης ή μεταβείτε σε άλλη κατηγορία."
+  },
+  "emptyFiltersTitle": {
+    "message": "Δεν υπάρχουν πόροι που να αντιστοιχούν στα τρέχοντα φίλτρα"
+  },
+  "emptyFiltersSub": {
+    "message": "Χαλαρώστε τα φίλτρα μεγέθους ή διαστάσεων παραπάνω ή πατήστε Εκκαθάριση."
+  },
+  "textEmptyQueryReject": {
+    "message": "Η σελίδα απέρριψε αυτό το ερώτημα. Διορθώστε το παραπάνω και τα αποτελέσματα θα επανέλθουν αμέσως."
+  },
+  "textEmptyNoMatch": {
+    "message": "Κανένα στοιχείο στη σελίδα δεν ταιριάζει με αυτό το ερώτημα. Δοκιμάστε έναν πιο χαλαρό επιλογέα ή αλλάξτε τη λειτουργία δίπλα στο πλαίσιο."
+  },
+  "textEmptyInitial": {
+    "message": "Τίποτα δεν έχει συλληφθεί ακόμα. Εκτελείται η ζωντανή λήψη — ολόκληρη η σελίδα θα εμφανίζεται εδώ ως αναγνώσιμο κείμενο."
+  },
+  "textEmptyFiltered": {
+    "message": "Τίποτα δεν ταιριάζει με το τρέχον ερώτημα και το φίλτρο στοιχείων."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ μπλοκ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ λέξεις",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ χαρακτήρες",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ πίνακες · $rows$ μοναδικές σειρές",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ επιλεγμένα — οι εξαγωγές χρησιμοποιούν μόνο αυτά",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Πίνακας — $count$ σειρές στην οθόνη",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Πίνακας — και οι $count$ μοναδικές σειρές",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ στιγμιότυπα",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "ενημερώθηκε $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Εμφάνιση και των $count$ σειρών",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Εμφάνιση όλων των σειρών"
+  },
+  "textTableHistory": {
+    "message": "Ιστορικό ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Απόκρυψη ιστορικού"
+  },
+  "textTableNoRows": {
+    "message": "Δεν έχουν καταγραφεί ακόμη σειρές."
+  },
+  "textBtnCopy": {
+    "message": "Αντιγραφή κειμένου"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Αντιγραφή"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ διπλότυπες εικόνες",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Εξαγωγή"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Φόρτωση SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Δεν ήταν δυνατή η ανάκτηση του περιεχομένου SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "Φόρτωση προεπισκόπησης γραμματοσειράς…"
+  },
+  "inspectorFontSample": {
+    "message": "Προεπισκόπηση γραμματοσειράς"
+  },
+  "inspectorBeautify": {
+    "message": "Μορφοποίηση"
+  },
+  "inspectorOriginal": {
+    "message": "Πρωτότυπο"
+  },
+  "inspectorHeaders": {
+    "message": "Κεφαλίδες"
+  },
+  "inspectorResponse": {
+    "message": "Απόκριση"
+  },
+  "inspectorRequest": {
+    "message": "Αίτημα"
+  },
+  "inspectorQueryParams": {
+    "message": "Παράμετροι ερωτήματος"
+  },
+  "inspectorRequestBody": {
+    "message": "Σώμα αιτήματος"
+  },
+  "textHintHtml": {
+    "message": "Ένα ζωντανό, ευανάγνωστο αντίγραφο της σελίδας. Κάθε στοιχείο που περιέχει κείμενο καταγράφεται με σειρά DOM και διατηρείται εδώ καθώς αλλάζει η σελίδα. Αναζητήστε σε αυτό με απλό κείμενο, κανονική έκφραση, <strong>επιλογέα CSS</strong> ή έκφραση <strong>XPath</strong> και, στη συνέχεια, εξαγάγετε ό,τι ταιριάζει. Ανατρέξτε στον <a href=\"#\" id=\"text-hint-guide\">οδηγό</a> για λεπτομέρειες."
+  },
+  "textHeadings": {
+    "message": "Επικεφαλίδες"
+  },
+  "textAllLevels": {
+    "message": "Όλα τα επίπεδα"
+  },
+  "textMatches": {
+    "message": "αντιστοιχίες"
+  },
+  "textMatch": {
+    "message": "αντιστοιχία"
+  },
+  "textReadingOn": {
+    "message": "Ανάγνωση: ενεργή"
+  },
+  "toastDownloadStarted": {
+    "message": "Η λήψη ξεκίνησε: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Δεν ήταν δυνατή η ανάκτηση αυτού του πόρου (CORS ή μη υποστηριζόμενος τύπος)."
+  },
+  "ratingBannerText": {
+    "message": "Σας αρέσει το Source Download; Υποστηρίξτε το όραμά μας για ανοιχτό κώδικα με μια κριτική στο Chrome Web Store ή ένα αστέρι στο GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Κριτική"
+  },
+  "ratingBannerStar": {
+    "message": "★ Αστέρι"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ μοναδικές σειρές",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "πριν από $count$ δευτ.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "πριν από $count$ λ.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Στιγμιότυπο περιοχής"
+  },
+  "btnAreaDownload": {
+    "message": "Λήψη"
+  },
+  "btnAreaCopy": {
+    "message": "Αντιγραφή στο πρόχειρο"
+  },
+  "btnAreaCancel": {
+    "message": "Ακύρωση"
+  },
+  "toastAreaCopied": {
+    "message": "Το στιγμιότυπο της περιοχής αντιγράφηκε στο πρόχειρο"
+  },
+  "toastAreaDownloaded": {
+    "message": "Το στιγμιότυπο της περιοχής αποθηκεύτηκε"
+  },
+  "statusFoundCssResources": {
+    "message": "Βρέθηκαν $count$ πόροι που αναφέρονται από το CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Η σάρωση DOM απέτυχε: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Ευρετηρίαση περιεχομένων αρχείου…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Έλεγχος διπλότυπων εικόνων…"
+  },
+  "statusWorking": {
+    "message": "Εργασία…"
+  },
+  "filterMethodTitle": {
+    "message": "Φιλτράρισμα κατά μέθοδο HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Φιλτράρισμα κατά τύπο αιτήματος"
+  },
+  "filterSortTitle": {
+    "message": "Ταξινόμηση πόρων"
+  },
+  "textModeTitle": {
+    "message": "Πώς ερμηνεύεται το πλαίσιο ερωτήματος"
+  },
+  "textKindTitle": {
+    "message": "Περιορισμός σε έναν τύπο στοιχείου"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Επίπεδο επικεφαλίδας"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Τιμή:\\s*\\d+ — κανονική έκφραση JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — οποιοσδήποτε επιλογέας CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Αναζήτηση στον οδηγό…"
+  },
+  "popupIntro": {
+    "message": "Οι κατηγορίες μετρώνται από το <strong>σήμα της γραμμής εργαλείων</strong>. Απενεργοποιήστε ένα για να σταματήσετε να το μετράτε — το σήμα αντικατοπτρίζει αμέσως μόνο αυτό που παρακολουθείτε."
+  },
+  "popupHelpTitle": {
+    "message": "Πώς να χρησιμοποιήσετε τον πλήρη πίνακα"
+  },
+  "popupStep1": {
+    "message": "Ανοίξτε το DevTools για τη σελίδα που θέλετε να ελέγξετε <div class=\"hint\"><kbd>F12</kbd> ή <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Κάντε κλικ στην καρτέλα <strong>Source Download</strong> στη γραμμή εργαλείων DevTools"
+  },
+  "popupStep3": {
+    "message": "Περιηγηθείτε, επιθεωρήστε και κατεβάστε πόρους — μεμονωμένα ή ταυτόχρονα ως ZIP."
+  },
+  "popupNote": {
+    "message": "Σημείωση: Το Chrome δεν επιτρέπει στις επεκτάσεις να ανοίγουν μέσω προγραμματισμού τα DevTools, γι' αυτό και η πλήρης σουίτα μηχανικής προσεγγίζεται μέσω της γραμμής εργαλείων DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Παρακολούθηση όλων των κατηγοριών"
+  },
+  "popupLanguage": {
+    "message": "Γλώσσα"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Δυαδική απόκριση — κάντε λήψη για προβολή"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Φόρτωση απόκρισης…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Χωρίς προεπισκόπηση απόκρισης — δεν ήταν δυνατή η ανάκτηση του περιεχομένου."
+  },
+  "inspectorLoadingContent": {
+    "message": "Φόρτωση περιεχομένου…"
+  },
+  "inspectorNoPreview": {
+    "message": "Δεν υπάρχει διαθέσιμη προεπισκόπηση — δεν ήταν δυνατή η ανάκτηση του περιεχομένου."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Κλείσιμο όλων"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Κλείσιμο όλων των ανοιχτών καρτελών"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Κάντε κλικ για μεγέθυνση"
+  },
+  "inspectorViewSource": {
+    "message": "Προβολή πηγής"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Εμφάνιση της σήμανσης SVG με επισήμανση σύνταξης"
+  },
+  "inspectorFormatting": {
+    "message": "Μορφοποίηση…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Εύρεση στο περιεχόμενο…"
+  },
+  "findPreviousMatch": {
+    "message": "Προηγούμενη αντιστοίχιση"
+  },
+  "findNextMatch": {
+    "message": "Επόμενη αντιστοίχιση"
+  },
+  "findClose": {
+    "message": "Κλείσιμο"
+  },
+  "findShowRaw": {
+    "message": "Εμφάνιση αρχικού (χωρίς μορφοποίηση) περιεχομένου"
+  },
+  "findBeautify": {
+    "message": "Μορφοποίηση αυτού του περιεχομένου"
+  },
+  "btnRaw": {
+    "message": "Ακατέργαστο"
+  },
+  "btnBeautify": {
+    "message": "Μορφοποίηση"
+  },
+  "videoHlsDetected": {
+    "message": "Εντοπίστηκε ροή HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "Δεν είναι δυνατή η αναπαραγωγή αυτού του βίντεο στο πρόγραμμα περιήγησης"
+  },
+  "videoHlsNotice": {
+    "message": "Το Chrome δεν μπορεί να αναπαράγει απευθείας ροές HLS. Μπορείτε να συγχωνεύσετε όλα τα τμήματα του <b>$NAME$</b> σε ένα μόνο αρχείο βίντεο MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Το πρόγραμμα περιήγησης δεν υποστηρίζει αυτήν τη μορφή"
+  },
+  "btnMergeHls": {
+    "message": "Συγχώνευση τμημάτων και λήψη"
+  },
+  "toastHlsMerged": {
+    "message": "Συγχωνεύτηκαν $COUNT$ τμήμα(α) σε $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "άγνωστο μέγεθος"
+  },
+  "progressFetching": {
+    "message": "Ανάκτηση $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Δημιουργία ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "Το ZIP αποθηκεύτηκε: $FETCHED$ από $TOTAL$ πόρους ($SKIPPED$ απέτυχαν)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Επανάληψη $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Επανάληψη λήψης"
+  },
+  "searchRegexHint": {
+    "message": "Ενεργή αναζήτηση Regex — περικλείστε το ερώτημά σας σε /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Συμπερίληψη στις εξαγωγές"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Συνδυάστε όλα τα στιγμιότυπα σε έναν πίνακα χωρίς διπλότυπες σειρές — αυτός εξάγεται"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Περιηγηθείτε σε προηγούμενα στιγμιότυπα αυτού του πίνακα"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Λήψη αυτού του πίνακα ως CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Στιγμιότυπο $INDEX$ — $TIME$ ($COUNT$ σειρές)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Εναλλαγή επιλογής για μαζική λήψη"
+  },
+  "cardDownloadTitle": {
+    "message": "Λήψη αρχείου"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Η προηγούμενη λήψη απέτυχε — κάντε κλικ για επανάληψη"
+  },
+  "btnThemeLight": {
+    "message": "Εναλλαγή σε ανοιχτό θέμα"
+  },
+  "btnThemeDark": {
+    "message": "Εναλλαγή σε σκούρο θέμα"
+  },
+  "guideTitle": {
+    "message": "Source Download — Οδηγός χρήσης"
+  },
+  "guideEmpty": {
+    "message": "Δεν υπάρχουν ενότητες οδηγών που να αντιστοιχούν στην αναζήτησή σας."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% χωρίς εξαρτήσεις.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Σμίκρυνση (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "Μεγέθυνση (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Επαναφορά ζουμ (0)"
+  },
+  "lightboxClose": {
+    "message": "Κλείσιμο (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Σύρετε για αλλαγή μεγέθους"
+  },
+  "ratingDismissTitle": {
+    "message": "Απόρριψη"
+  },
+  "inspectorResourceTitle": {
+    "message": "Πόρος"
+  },
+  "guideSecGettingStarted": {
+    "message": "Ξεκινώντας"
+  },
+  "guideSecCategories": {
+    "message": "Κατηγορίες"
+  },
+  "guideSecSearchFilters": {
+    "message": "Αναζήτηση και φίλτρα"
+  },
+  "guideSecGridView": {
+    "message": "Προβολή πλέγματος και λίστας"
+  },
+  "guideSecInspect": {
+    "message": "Επιθεώρηση πόρου"
+  },
+  "guideSecDownloading": {
+    "message": "Λήψη"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Κείμενο & πίνακες"
+  },
+  "guideSecCaptions": {
+    "message": "Λεζάντες και υπότιτλοι"
+  },
+  "guideSecSourceMaps": {
+    "message": "Πηγές χάρτες"
+  },
+  "guideSecDupes": {
+    "message": "Διπλότυπες εικόνες"
+  },
+  "guideSecVideoHls": {
+    "message": "Εναλλακτικό βίντεο & HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Συμβουλές για προχωρημένους"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Κάντε κλικ στην καρτέλα <strong>Source Download</strong> στη γραμμή εργαλείων DevTools (πατήστε <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> και μετά επιλέξτε την καρτέλα στη γραμμή εργαλείων DevTools). Το Chrome δεν επιτρέπει στις επεκτάσεις να ανοίγουν αυτόματα τα DevTools, γι' αυτό ο πίνακας βρίσκεται εκεί. Το αναδυόμενο παράθυρο του εικονιδίου της γραμμής εργαλείων σάς επιτρέπει να επιλέξετε ποιες κατηγορίες τροφοδοτούν τον μετρητή στο εικονίδιο. Το κουμπί ήλιος/φεγγάρι στη γραμμή εργαλείων του πίνακα κλειδώνει ανοιχτό ή σκούρο θέμα ανεξάρτητα από το Chrome· η επιλογή σας διατηρείται."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Οι κάθετες καρτέλες στα αριστερά ομαδοποιούν κάθε καταγεγραμμένο πόρο σε 17 αποκλειστικές κατηγορίες ανά τύπο: Εικόνες, Βίντεο, Ήχος, Υπότιτλοι, Έγγραφα, Γραμματοσειρές, Χάρτες πηγής, WASM, SVG, API, Cookies, Αποθήκευση και άλλα. Κάθε καρτέλα δείχνει μια ζωντανή καταμέτρηση. Μόνο μία κατηγορία εμφανίζεται κάθε φορά. Η εναλλαγή επαναφέρει όλα τα φίλτρα, ώστε αυτό που βλέπετε να ταιριάζει πάντα με την καρτέλα."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Η γραμμή αναζήτησης φιλτράρει κατά όνομα, διεύθυνση URL, τύπο, εναλλακτικό κείμενο ή τίτλο. Εσωκλείστε το ερώτημά σας στο <kbd>/…/</kbd> για να χρησιμοποιήσετε μια τυπική έκφραση, π.χ. <code>/\\.(png|jpg)$/</code>. Κάτω από τη γραμμή εργαλείων, η γραμμή φίλτρου αλλάζει ανά κατηγορία: εύρη μεγέθους και διαστάσεων για μέσα, μέθοδος HTTP και τύπος αιτήματος για API, καθώς και ταξινόμηση και κατεύθυνση."
+  },
+  "guideSecGridViewContent": {
+    "message": "Κάντε εναλλαγή μεταξύ ενός συμπαγούς πλέγματος (μικρές μικρογραφίες) και μιας λεπτομερούς λίστας με τα κουμπιά δίπλα στη γραμμή αναζήτησης. Η επιλογή σας απομνημονεύεται μεταξύ των συνεδριών. Στην προβολή λίστας, τα πλαίσια ελέγχου σάς επιτρέπουν να επιλέξετε μεμονωμένους πόρους για μαζική λήψη."
+  },
+  "guideSecInspectContent": {
+    "message": "Κάντε κλικ σε οποιονδήποτε πόρο για να τον ανοίξετε στο παράθυρο επιθεώρησης στα δεξιά. Κάθε αρχείο που ανοίγει γίνεται καρτέλα, ώστε να μπορείτε να συγκρίνετε πολλούς πόρους δίπλα-δίπλα — ο νεότερος ανοίγει στα αριστερά. Υπάρχουν εξειδικευμένα προγράμματα προβολής για εικόνες, βίντεο, ήχο, γραμματοσειρές, SVG και κείμενο/κώδικα (με διακόπτη Μορφοποίηση). Τα API εμφανίζουν διαχωρισμένη προβολή: απόκριση στα αριστερά, λεπτομέρειες αιτήματος (μέθοδος, κατάσταση, κεφαλίδες, παράμετροι ερωτήματος και σώμα) στα δεξιά."
+  },
+  "guideSecDownloadingContent": {
+    "message": "Η <strong>Λήψη προβολής</strong> αποθηκεύει τους τρέχοντες ορατούς πόρους (ενεργή κατηγορία + αναζήτηση + φίλτρα) ως ZIP· όταν είναι ενεργά φίλτρα, μετονομάζεται σε <em>Λήψη φιλτραρισμένων (N)</em>. Τοποθετήστε το δείκτη του ποντικιού πάνω από οποιοδήποτε κουμπί λήψης για να δείτε το εκτιμώμενο μέγεθος του αρχείου ZIP πριν κάνετε κλικ. Η <strong>Λήψη επιλεγμένων</strong> κατεβάζει μόνο τα επιλεγμένα στοιχεία. Η <strong>Λήψη όλων</strong> συλλέγει κάθε πόρο που εντοπίστηκε σε ένα ZIP με δομή φακέλων. Οι αποτυχημένες λήψεις επαναλαμβάνονται αυτόματα και μπορούν να επαναληφθούν ξανά από το μενού περιβάλλοντος. Η <strong>Εξαγωγή</strong> αποθηκεύει την ορατή λίστα ως JSON ή CSV ή εξάγει το αρχείο καταγραφής δικτύου του Chrome ως αρχείο HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Το κουμπί ζουμ ανοίγει τα μέσα σε lightbox πλήρους μεγέθους, όπου μπορείτε να μετακινείστε σύροντας και να κάνετε ζουμ με τον τροχό του ποντικιού, τα κουμπιά στην οθόνη ή το πληκτρολόγιο (<kbd>+</kbd>/<kbd>-</kbd> για ζουμ, <kbd>0</kbd> για επαναφορά, <kbd>Esc</kbd> για κλείσιμο)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Η κατηγορία <strong>Κείμενο</strong> είναι ένα ζωντανό, αναγνώσιμο αντίγραφο της σελίδας. Καταγράφει κάθε στοιχείο που περιέχει κείμενο — επικεφαλίδες, παραγράφους, στοιχεία λίστας, κουμπιά, <code>div</code>/<code>span</code> και άλλα — με σειρά DOM και συνεχίζει να σαρώνει όσο είναι ενεργό το <strong>Ζωντανά</strong>.</p><p>Το πλαίσιο ερωτήματος λειτουργεί με τέσσερις τρόπους, που επιλέγονται από το αναπτυσσόμενο μενού δίπλα του: το <strong>Περιέχει</strong> και το <strong>Regex</strong> φιλτράρουν το κείμενο που έχει ήδη καταγραφεί, ενώ ο <strong>Επιλογέας CSS</strong> και το <strong>XPath</strong> εκτελούνται στη ζωντανή σελίδα, ώστε να φτάνουν σε οτιδήποτε υπάρχει στο DOM. Το XPath δέχεται επίσης εκφράσεις που επιστρέφουν τιμή αντί για στοιχεία, όπως <code>count(//a)</code> ή <code>//@href</code>. Το μήνυμα της σελίδας για ένα μη έγκυρο ερώτημα εμφανίζεται δίπλα στο πλαίσιο. Το <strong>Στοιχείο</strong> περιορίζει το αποτέλεσμα σε μία μόνο ετικέτα, με τον αριθμό κάθε ετικέτας που βρέθηκε στη σελίδα. Αν καθαρίσετε το πλαίσιο ερωτήματος (ή πατήσετε <strong>Εκκαθάριση</strong>), επιστρέφετε στην επιλογή <em>Όλα τα στοιχεία</em> και η σελίδα καταγράφεται ξανά — δεν χρειάζεται ποτέ να επαναφέρετε χειροκίνητα το αναπτυσσόμενο μενού.</p><p>Η <strong>Ανάγνωση</strong> κρύβει ετικέτες, πλαίσια ελέγχου και διαδρομές τοποθεσίας, ώστε η ροή να διαβάζεται σαν έγγραφο. Οι πίνακες αποθηκεύουν ένα περιορισμένο ιστορικό στιγμιοτύπων, ώστε οι δυναμικοί πίνακες (SPA) να μην χάνονται ποτέ. Πατήστε <strong>Εμφάνιση όλων των σειρών</strong> σε έναν πίνακα για να συγχωνεύσετε όλα τα στιγμιότυπα σε μία προβολή χωρίς διπλότυπα — αυτό ακριβώς περιέχει μια εξαγωγή. Εξαγωγή ως <strong>TXT</strong> (η αναγνώσιμη σελίδα), <strong>MD</strong> (Markdown, με πίνακες) ή πίνακες ως CSV, HTML ή πραγματικό βιβλίο εργασίας <strong>XLSX</strong> με πολλά φύλλα. Προτεραιότητα έχουν τα επιλεγμένα στοιχεία· διαφορετικά εξάγονται όλα όσα είναι ορατά εκείνη τη στιγμή.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "Τα WebVTT, SRT, TTML και άλλα αρχεία υποτίτλων — συμπεριλαμβανομένων των πηγών <code>&lt;track&gt;</code> — τοποθετούνται στη δική τους καρτέλα <strong>Υπότιτλοι</strong> αντί να αναμειγνύονται με τα έγγραφα."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Τα αρχεία <code>.map</code> και τα σώματα JSON που μοιάζουν με source maps (περιέχουν <code>mappings</code> και <code>sources</code>) ομαδοποιούνται στους <strong>Χάρτες πηγής</strong>, με το πρόγραμμα προβολής JSON και τη Μορφοποίηση, ώστε να μην γεμίζουν πλέον την καρτέλα JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "Στην καρτέλα Εικόνες, ο πίνακας υπολογίζει κατακερματισμό (hash) για τα καταγεγραμμένα byte και επισημαίνει τα πανομοιότυπα αρχεία. Το φίλτρο <strong>Απόκρυψη διπλότυπων</strong> διατηρεί το πρώτο αντίγραφο κάθε συνόλου, ώστε το ZIP της προβολής να μην περιέχει την ίδια μικρογραφία δύο φορές."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Οι ροές που το πρόγραμμα περιήγησης δεν μπορεί να αναπαράγει εγγενώς (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, άγνωστοι κωδικοποιητές) εμφανίζουν εναλλακτική προβολή αντί για μαύρο πρόγραμμα αναπαραγωγής. Για το HLS, μπορείτε να συγχωνεύσετε τα τμήματα σε ένα ενιαίο αρχείο βίντεο απευθείας από τον πίνακα ή να κατεβάσετε το αρχικό manifest."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Οι δυναμικές αποκρίσεις <strong>API</strong> (XHR/fetch) δεν αποδίδονται σε μία εγγραφή ανά URL — κάθε απόκριση παραμένει στη λίστα (με περιορισμένο FIFO), ώστε να μπορείτε να συγκρίνετε επαναλαμβανόμενα αιτήματα. Τα στατικά στοιχεία αφαιρούνται από διπλότυπα. Χρησιμοποιήστε την <strong>Ανανέωση</strong> για να σαρώσετε ξανά το τρέχον DOM και φορτώστε ξανά τη σελίδα ενώ ο πίνακας είναι ανοιχτός, για να καταγραφεί κάθε αίτημα δικτύου, συμπεριλαμβανομένων όσων ενεργοποιήθηκαν πριν αλλάξετε καρτέλα."
+  },
+  "toolArrow": {
+    "message": "Εργαλείο βέλους"
+  },
+  "toolRect": {
+    "message": "Εργαλείο ορθογωνίου"
+  },
+  "toolText": {
+    "message": "Εργαλείο κειμένου"
+  },
+  "toolUndo": {
+    "message": "Αναίρεση (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Επανάληψη (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Χρώμα"
+  },
+  "badgeStrokeSize": {
+    "message": "Μέγεθος: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Μέγεθος γραμματοσειράς: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Εγγραφή περιοχής ως βίντεο / GIF"
+  },
+  "btnRecStart": {
+    "message": "Έναρξη εγγραφής"
+  },
+  "btnRecPause": {
+    "message": "Παύση"
+  },
+  "btnRecResume": {
+    "message": "Συνέχεια"
+  },
+  "btnRecStop": {
+    "message": "Τέλος και λήψη"
+  },
+  "btnRecCancel": {
+    "message": "Ακύρωση"
+  },
+  "toastRecSaved": {
+    "message": "Η εγγραφή της περιοχής αποθηκεύτηκε"
+  },
+  "toastRecCancelled": {
+    "message": "Η εγγραφή βίντεο ακυρώθηκε"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Δεν δόθηκε άδεια εγγραφής οθόνης"
+  },
+  "btnPopupRecordArea": {
+    "message": "Βίντεο / GIF περιοχής"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Στιγμιότυπο οθόνης περιοχής"
+  },
+  "contextMenuPickColor": {
+    "message": "Επιλογή χρώματος από την οθόνη"
+  },
+  "btnPopupPickColor": {
+    "message": "Επιλογή χρώματος"
+  },
+  "colorPickerTitle": {
+    "message": "Επιλογέας χρώματος"
+  },
+  "btnColorPickAgain": {
+    "message": "Επιλογή άλλου χρώματος"
+  },
+  "toastColorCopied": {
+    "message": "Το χρώμα αντιγράφηκε στο πρόχειρο"
+  },
+  "toastProgressCapturing": {
+    "message": "Λήψη ολόκληρης της σελίδας… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Ένωση εικόνας…"
+  },
+  "modalExportTitle": {
+    "message": "Το στιγμιότυπο ολόκληρης της σελίδας είναι έτοιμο"
+  },
+  "btnExportPng": {
+    "message": "Λήψη PNG"
+  },
+  "btnExportJpg": {
+    "message": "Λήψη JPG"
+  },
+  "btnExportPdf": {
+    "message": "Αποθήκευση ως PDF"
+  },
+  "btnExportCopy": {
+    "message": "Αντιγραφή στο πρόχειρο"
+  },
+  "btnExportGenerating": {
+    "message": "Δημιουργία…"
+  },
+  "toastPdfGenerated": {
+    "message": "Το έγγραφο PDF αποθηκεύτηκε."
+  },
+  "settingNamingPatterns": {
+    "message": "Μοτίβα ονομασίας αρχείων"
+  },
+  "settingVideoFormat": {
+    "message": "Προεπιλεγμένη μορφή βίντεο"
+  },
+  "settingNamingPreview": {
+    "message": "Προεπισκόπηση:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Δημιουργία GIF, περιμένετε…"
+  },
+  "settingGifResolution": {
+    "message": "Προεπιλεγμένη ανάλυση GIF"
+  },
+  "optGifOriginal": {
+    "message": "Πρωτότυπο (εγγενής ανάλυση 1:1 — πλήρες 3K/4K, χωρίς σμίκρυνση)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (έως 1920 px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (έως 1280 px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (έως 854 px — ταχύτερο και μικρότερο μέγεθος)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Η μορφή GIF υποστηρίζει μέγιστη διάρκεια εγγραφής 1 λεπτό (60 δευτερόλεπτα)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Εγγραφή οθόνης (Βίντεο & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Καταγράψτε οποιαδήποτε περιοχή οθόνης ως MP4, WebM ή κινούμενο GIF. Οι εγγραφές GIF διαθέτουν εγγενή ανάλυση 1:1, προφίλ 1080p, 720p και 480p με ζωντανά εκτιμώμενα μεγέθη αρχείων. Η μέγιστη διάρκεια εγγραφής GIF είναι 1 λεπτό (60 δευτερόλεπτα) για βέλτιστη απόδοση του προγράμματος περιήγησης."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Συμπληρώθηκε η μέγιστη διάρκεια GIF του 1 λεπτού (60 s). Δημιουργία GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Μέγ. 1 λεπτό (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Προεπιλεγμένος ρυθμός καρέ GIF (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Ομαλό (υψηλή ευκινησία, μεγαλύτερο μέγεθος)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Στάνταρ (προτείνεται για το web και ισορροπία)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Συμπαγές / Meme (κίνηση με διακοπές, μικρό μέγεθος)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / Αργό (βήμα βήμα «κλικ-κλικ», ελάχιστο μέγεθος)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Παρουσίαση (1 καρέ ανά δευτερόλεπτο, ελάχιστο μέγεθος)"
+  },
+  "popupRightClickHint": {
+    "message": "Κάντε δεξί κλικ οπουδήποτε στην ιστοσελίδα για Εγγραφή οθόνης (Βίντεο/GIF) και Επιλογή χρώματος."
+  },
+  "toastElementZappedAd": {
+    "message": "Η διαφήμιση / το iframe αποκρύφθηκε για αυτήν τη συνεδρία.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Η εικόνα αντιγράφηκε στο πρόχειρο",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Κλείσιμο (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Οι ρυθμίσεις αποθηκεύτηκαν",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Κατεβάστε το αρχείο και ανοίξτε το με το VLC ή άλλο πρόγραμμα αναπαραγωγής πολυμέσων.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Δεν υπάρχει προεπισκόπηση για αυτόν τον τύπο πόρου",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Λήψη πρωτότυπου",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Συμβουλή: ανοίξτε το αρχείο που κατεβάσατε με το VLC ή οποιοδήποτε πρόγραμμα αναπαραγωγής πολυμέσων για υπολογιστή — παίζει σχεδόν κάθε μορφή.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Δημιουργία αρχείου ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Το πρόγραμμα περιήγησής σας δεν υποστηρίζει το EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Μετακίνηση γραμμής εργαλείων",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Εναλλαγή μορφής: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Ανάλυση GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Ρυθμός καρέ GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Εκτιμώμενο μέγεθος GIF: ~$size$ MB (για 10 s), έως ~$max$ MB για τη μέγιστη διάρκεια των 60 s.\nΡυθμός καρέ: $fps$ FPS.\nΗ εγγραφή GIF περιορίζεται σε μέγιστη διάρκεια 1 λεπτού (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Αντιγραφή $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Προεπισκόπηση στιγμιότυπου",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — καθολική αναπαραγωγή σε WhatsApp, Telegram, Jira, Apple και Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (κινούμενη εικόνα — ιδανικό για READMEs, Jira, τεκμηρίωση και μηνύματα)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — ανοικτή μορφή web)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Δεν βρέθηκε ενεργή καρτέλα.",
+    "description": "No active tab found."
+  }
+}

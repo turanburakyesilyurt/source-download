@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "ഏതൊരു വെബ് അസറ്റും പരിശോധിച്ച് ZIP ആയി ഡൗൺലോഡ് ചെയ്യൂ. ഫുൾ പേജ് സ്ക്രീൻഷോട്ട്, ലൈവ് ടേബിൾ ക്യാപ്ചർ, ഡെവലപ്പർ ടൂളുകൾ."
+  },
+  "actionTitle": {
+    "message": "Source Download — പാനൽ തുറന്ന് റിസോഴ്സുകൾ ട്രാക്ക് ചെയ്യുക"
+  },
+  "contextMenuZap": {
+    "message": "ഈ ഘടകം മറയ്ക്കുക"
+  },
+  "contextMenuUndoZap": {
+    "message": "അവസാനം മറച്ച ഘടകം പുനഃസ്ഥാപിക്കുക"
+  },
+  "contextMenuResetZap": {
+    "message": "മറച്ച എല്ലാ ഘടകങ്ങളും റീസെറ്റ് ചെയ്യുക"
+  },
+  "contextMenuCapturePage": {
+    "message": "പൂർണ്ണ പേജ് സ്ക്രീൻഷോട്ട് എടുക്കുക"
+  },
+  "contextMenuPageArchive": {
+    "message": "ഓഫ്‌ലൈൻ പേജ് ആർക്കൈവ് ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "catAll": {
+    "message": "എല്ലാം"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "ചിത്രങ്ങൾ"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "വീഡിയോകൾ"
+  },
+  "catAudio": {
+    "message": "ഓഡിയോ"
+  },
+  "catCaptions": {
+    "message": "അടിക്കുറിപ്പുകൾ"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "സോഴ്സ് മാപ്പുകൾ"
+  },
+  "catFonts": {
+    "message": "ഫോണ്ടുകൾ"
+  },
+  "catDocuments": {
+    "message": "ഡോക്യുമെന്റുകൾ"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "മാനിഫെസ്റ്റുകൾ"
+  },
+  "catText": {
+    "message": "ടെക്സ്റ്റ്"
+  },
+  "catOther": {
+    "message": "മറ്റുള്ളവ"
+  },
+  "catScreenshot": {
+    "message": "സ്ക്രീൻഷോട്ട്"
+  },
+  "catArchive": {
+    "message": "പേജ് ആർക്കൈവ്"
+  },
+  "btnRefresh": {
+    "message": "പുതുക്കുക"
+  },
+  "btnExport": {
+    "message": "കയറ്റുമതി"
+  },
+  "btnDownloadSelected": {
+    "message": "തിരഞ്ഞെടുത്തവ ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnDownloadView": {
+    "message": "നിലവിലെ കാഴ്ച ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnDownloadAll": {
+    "message": "എല്ലാം ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnDownloadFiltered": {
+    "message": "ഫിൽട്ടർ ചെയ്തവ ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnTheme": {
+    "message": "തീം മാറ്റുക"
+  },
+  "btnGuide": {
+    "message": "ഉപയോക്തൃ ഗൈഡ്"
+  },
+  "btnCaptureFullPage": {
+    "message": "മുഴുവൻ പേജ് സ്ക്രീൻഷോട്ട്"
+  },
+  "btnOfflineArchive": {
+    "message": "ഒറ്റ HTML സംരക്ഷിക്കുക"
+  },
+  "filterMinKb": {
+    "message": "കുറഞ്ഞ KB"
+  },
+  "filterMaxKb": {
+    "message": "പരമാവധി KB"
+  },
+  "filterMinWidth": {
+    "message": "കുറഞ്ഞ വീതി (px)"
+  },
+  "filterMinHeight": {
+    "message": "കുറഞ്ഞ ഉയരം (px)"
+  },
+  "filterSortName": {
+    "message": "പേര് പ്രകാരം അടുക്കുക"
+  },
+  "filterSortSize": {
+    "message": "വലിപ്പം അനുസരിച്ച് അടുക്കുക"
+  },
+  "filterSortType": {
+    "message": "തരം അനുസരിച്ച് അടുക്കുക"
+  },
+  "filterSortTime": {
+    "message": "സമയം അനുസരിച്ച് അടുക്കുക"
+  },
+  "filterHideDupes": {
+    "message": "തനിപ്പകർപ്പുകൾ മറയ്ക്കുക"
+  },
+  "filterClear": {
+    "message": "മായ്ക്കുക"
+  },
+  "textModeContains": {
+    "message": "അടങ്ങിയിരിക്കുന്നു"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS സെലക്ടർ"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "പേജ് ടെക്സ്റ്റ് ഫിൽട്ടർ ചെയ്യുക അല്ലെങ്കിൽ തത്സമയ DOM-ൽ അന്വേഷിക്കുക…"
+  },
+  "textAllElements": {
+    "message": "എല്ലാ എലമെന്റുകളും"
+  },
+  "textLiveOn": {
+    "message": "തത്സമയം ഓൺ"
+  },
+  "textLiveOff": {
+    "message": "തത്സമയം ഓഫ്"
+  },
+  "textScanNow": {
+    "message": "ഇപ്പോൾ സ്കാൻ ചെയ്യുക"
+  },
+  "textReading": {
+    "message": "വായനാ മോഡ്"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "വിശദാംശങ്ങൾ പരിശോധിക്കാൻ ഒരു റിസോഴ്സ് തിരഞ്ഞെടുക്കുക"
+  },
+  "inspectorDetails": {
+    "message": "വിശദാംശങ്ങൾ"
+  },
+  "inspectorOpenTab": {
+    "message": "പുതിയ ടാബിൽ തുറക്കുക"
+  },
+  "inspectorCopyUrl": {
+    "message": "URL പകർത്തുക"
+  },
+  "inspectorDownloadFile": {
+    "message": "ഈ ഫയൽ ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "inspectorClose": {
+    "message": "അടയ്ക്കുക"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "തരം"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "വലിപ്പം"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "ഉറവിടം"
+  },
+  "metaTitle": {
+    "message": "തലക്കെട്ട്"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Source Download ഇഷ്ടമായോ? Chrome വെബ് സ്റ്റോറിൽ ഒരു റിവ്യൂ എഴുതിയോ GitHub-ൽ സ്റ്റാർ നൽകിയോ ഞങ്ങളുടെ ഓപ്പൺ സോഴ്സ് പദ്ധതിയെ പിന്തുണയ്ക്കൂ!"
+  },
+  "ratingReview": {
+    "message": "★ റിവ്യൂ എഴുതുക"
+  },
+  "ratingStar": {
+    "message": "★ GitHub-ൽ സ്റ്റാർ നൽകുക"
+  },
+  "ratingDismiss": {
+    "message": "അടയ്ക്കുക"
+  },
+  "toastElementZapped": {
+    "message": "ഈ സെഷനിൽ ഘടകം മറച്ചിരിക്കുന്നു."
+  },
+  "toastElementRestored": {
+    "message": "ഘടകം പുനഃസ്ഥാപിച്ചു."
+  },
+  "toastAllElementsRestored": {
+    "message": "മറച്ച എല്ലാ ഘടകങ്ങളും പുനഃസ്ഥാപിച്ചു."
+  },
+  "toastScreenshotCapturing": {
+    "message": "പൂർണ്ണ പേജ് സ്ക്രീൻഷോട്ട് എടുക്കുന്നു…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "പൂർണ്ണ പേജ് സ്ക്രീൻഷോട്ട് സംരക്ഷിച്ചു."
+  },
+  "toastArchiveCreated": {
+    "message": "സിംഗിൾ-ഫയൽ HTML ആർക്കൈവ് സംരക്ഷിച്ചു."
+  },
+  "brandSignature": {
+    "message": "നിർമ്മാണം: Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "ചിത്രങ്ങളും SVG-യും"
+  },
+  "tabMedia": {
+    "message": "മീഡിയയും ഓഡിയോയും"
+  },
+  "tabFonts": {
+    "message": "ഫോണ്ടുകൾ"
+  },
+  "tabTextScraper": {
+    "message": "ടെക്സ്റ്റും പട്ടികകളും"
+  },
+  "heroScreenshotTitle": {
+    "message": "മുഴുവൻ പേജ് സ്ക്രീൻഷോട്ട്"
+  },
+  "heroScreenshotDesc": {
+    "message": "സ്റ്റിക്കി ഹെഡർ ഒഴിവാക്കി, ഒന്നിലധികം വ്യൂപോർട്ടുകൾ തടസ്സമില്ലാതെ ചേർത്തെടുക്കുന്ന സ്ക്രീൻഷോട്ട്"
+  },
+  "heroArchiveTitle": {
+    "message": "ഒറ്റ-ഫയൽ HTML ആർക്കൈവ്"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS, Base64 ചിത്രങ്ങൾ എന്നിവ ഇൻലൈൻ ചെയ്ത, ഓഫ്‌ലൈനിൽ ഉപയോഗിക്കാവുന്ന സ്നാപ്പ്ഷോട്ട്"
+  },
+  "copyDataUri": {
+    "message": "Data-URI പകർത്തുക"
+  },
+  "copyUrl": {
+    "message": "URL പകർത്തുക"
+  },
+  "downloadSingle": {
+    "message": "ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "searchPlaceholder": {
+    "message": "പേര്, URL, ടാഗ്, MIME അല്ലെങ്കിൽ /regex/ ഉപയോഗിച്ച് ഫിൽട്ടർ ചെയ്യുക…"
+  },
+  "viewGrid": {
+    "message": "ഗ്രിഡ് കാഴ്ച"
+  },
+  "viewList": {
+    "message": "ലിസ്റ്റ് കാഴ്ച"
+  },
+  "btnScreenshot": {
+    "message": "സ്ക്രീൻഷോട്ട്"
+  },
+  "btnArchive": {
+    "message": "HTML സംരക്ഷിക്കുക"
+  },
+  "exportJson": {
+    "message": "ദൃശ്യമായ ലിസ്റ്റ് JSON ആയി"
+  },
+  "exportCsv": {
+    "message": "ദൃശ്യമായ ലിസ്റ്റ് CSV ആയി"
+  },
+  "exportHar": {
+    "message": "നെറ്റ്‌വർക്ക് ലോഗ് HAR ആയി"
+  },
+  "exportScreenshot": {
+    "message": "മുഴുവൻ പേജ് സ്ക്രീൻഷോട്ട് (PNG)"
+  },
+  "exportArchive": {
+    "message": "ഓഫ്‌ലൈൻ പേജ് ആർക്കൈവ് (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "എല്ലാ രീതികളും"
+  },
+  "filterTypeAll": {
+    "message": "എല്ലാ തരങ്ങളും"
+  },
+  "filterSortDir": {
+    "message": "ആരോഹണം / അവരോഹണം മാറ്റുക"
+  },
+  "emptyTitle": {
+    "message": "റിസോഴ്സുകളൊന്നും കണ്ടെത്തിയില്ല"
+  },
+  "emptySubtitle": {
+    "message": "നെറ്റ്‌വർക്ക് അഭ്യർത്ഥനകൾ ക്യാപ്‌ചർ ചെയ്യാൻ ഈ പാനൽ തുറന്നിരിക്കുമ്പോൾ പേജ് റീലോഡ് ചെയ്യുക, അല്ലെങ്കിൽ നിലവിലെ DOM സ്കാൻ ചെയ്യാൻ പുതുക്കുക ക്ലിക്ക് ചെയ്യുക."
+  },
+  "statusResources": {
+    "message": "റിസോഴ്സുകൾ"
+  },
+  "statusFiltered": {
+    "message": "ഫിൽട്ടർ ചെയ്തു"
+  },
+  "statusSelected": {
+    "message": "തിരഞ്ഞെടുത്തു"
+  },
+  "statusDupes": {
+    "message": "തനിപ്പകർപ്പുകൾ മറച്ചിരിക്കുന്നു"
+  },
+  "statusSize": {
+    "message": "വലിപ്പം"
+  },
+  "langAuto": {
+    "message": "സ്വയമേവ (ബ്രൗസർ)"
+  },
+  "langSelectorTitle": {
+    "message": "ഭാഷ തിരഞ്ഞെടുക്കുക"
+  },
+  "textPillAll": {
+    "message": "എല്ലാ ഉള്ളടക്കവും"
+  },
+  "textPillText": {
+    "message": "📄 ടെക്സ്റ്റും ലേഖനങ്ങളും"
+  },
+  "textPillTables": {
+    "message": "📊 പട്ടികകൾ മാത്രം"
+  },
+  "textSelectAll": {
+    "message": "എല്ലാം തിരഞ്ഞെടുക്കുക"
+  },
+  "textDeselectAll": {
+    "message": "എല്ലാ തിരഞ്ഞെടുപ്പും നീക്കുക"
+  },
+  "textClearSelection": {
+    "message": "മായ്ക്കുക"
+  },
+  "toastRefreshComplete": {
+    "message": "പേജ് സ്കാൻ പൂർത്തിയായി: $count$ പുതിയ റിസോഴ്സുകൾ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$ ബ്ലോക്ക്(കൾ) പകർത്തി",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി"
+  },
+  "toastTableCopied": {
+    "message": "പട്ടിക ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി"
+  },
+  "toastNothingToExport": {
+    "message": "കയറ്റുമതി ചെയ്യാൻ ഒന്നുമില്ല"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ ബ്ലോക്ക്(കൾ) TXT ആയി കയറ്റുമതി ചെയ്തു",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$ ബ്ലോക്ക്(കൾ) Markdown ആയി കയറ്റുമതി ചെയ്തു",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "പട്ടിക വരികളൊന്നും ക്യാപ്‌ചർ ചെയ്തിട്ടില്ല"
+  },
+  "toastExportedCsv": {
+    "message": "പട്ടിക CSV ആയി കയറ്റുമതി ചെയ്തു"
+  },
+  "toastExportedXlsx": {
+    "message": "പട്ടിക XLSX ആയി കയറ്റുമതി ചെയ്തു"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ പട്ടിക(കൾ) $format$ ആയി കയറ്റുമതി ചെയ്തു",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ ഷീറ്റ്(കൾ) XLSX ആയി കയറ്റുമതി ചെയ്തു",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "ഡൗൺലോഡ് ചെയ്യാൻ റിസോഴ്സുകളൊന്നുമില്ല."
+  },
+  "toastNoVisibleResources": {
+    "message": "ഡൗൺലോഡ് ചെയ്യാൻ ദൃശ്യമായ റിസോഴ്സുകളൊന്നുമില്ല."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "ആദ്യം കുറഞ്ഞത് ഒരു റിസോഴ്സ് എങ്കിലും തിരഞ്ഞെടുക്കുക."
+  },
+  "toastZipSaved": {
+    "message": "ZIP സംരക്ഷിച്ചു: $total$ റിസോഴ്സുകളിൽ $fetched$",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP പരാജയപ്പെട്ടു: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR കയറ്റുമതി ചെയ്തു ($count$ എൻട്രികൾ)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools പരിശോധിക്കുന്ന വിൻഡോ ലഭ്യമല്ല."
+  },
+  "toastScreenshotError": {
+    "message": "സ്ക്രീൻഷോട്ട് പിശക്: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "ഓഫ്‌ലൈൻ പേജ് ആർക്കൈവ് സൃഷ്ടിക്കുന്നു…"
+  },
+  "toastArchiveError": {
+    "message": "ആർക്കൈവ് പിശക്: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "ഫോർമാറ്റിംഗ് സമയപരിധി കഴിഞ്ഞു — യഥാർത്ഥ ഫയൽ കാണിക്കുന്നു."
+  },
+  "toastFormatFailed": {
+    "message": "ഫയൽ ഫോർമാറ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല — യഥാർത്ഥ ഫയൽ കാണിക്കുന്നു."
+  },
+  "emptySearchTitle": {
+    "message": "\"$query$\" എന്നതിന് ഫലങ്ങളൊന്നുമില്ല",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "മറ്റൊരു തിരയൽ പദം പരീക്ഷിക്കുക, അല്ലെങ്കിൽ മറ്റൊരു വിഭാഗത്തിലേക്ക് മാറുക."
+  },
+  "emptyFiltersTitle": {
+    "message": "നിലവിലെ ഫിൽട്ടറുകളുമായി പൊരുത്തപ്പെടുന്ന റിസോഴ്സുകളൊന്നുമില്ല"
+  },
+  "emptyFiltersSub": {
+    "message": "മുകളിലുള്ള വലിപ്പ/അളവ് ഫിൽട്ടറുകൾ അയവുള്ളതാക്കുക, അല്ലെങ്കിൽ മായ്ക്കുക അമർത്തുക."
+  },
+  "textEmptyQueryReject": {
+    "message": "പേജ് ആ അന്വേഷണം നിരസിച്ചു. മുകളിൽ അത് ശരിയാക്കിയാൽ ഫലങ്ങൾ ഉടൻ തിരികെ വരും."
+  },
+  "textEmptyNoMatch": {
+    "message": "പേജിലെ ഒരു എലമെന്റും ഈ അന്വേഷണവുമായി പൊരുത്തപ്പെടുന്നില്ല. കൂടുതൽ അയവുള്ള സെലക്ടർ പരീക്ഷിക്കുക, അല്ലെങ്കിൽ ബോക്സിന് അടുത്തുള്ള മോഡ് മാറ്റുക."
+  },
+  "textEmptyInitial": {
+    "message": "ഇതുവരെ ഒന്നും ക്യാപ്‌ചർ ചെയ്തിട്ടില്ല. തത്സമയ ക്യാപ്‌ചർ പ്രവർത്തിക്കുന്നു — മുഴുവൻ പേജും വായിക്കാവുന്ന ടെക്സ്റ്റായി ഇവിടെ ദൃശ്യമാകും."
+  },
+  "textEmptyFiltered": {
+    "message": "നിലവിലെ അന്വേഷണത്തോടും എലമെന്റ് ഫിൽട്ടറിനോടും ഒന്നും പൊരുത്തപ്പെടുന്നില്ല."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ ബ്ലോക്കുകൾ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ വാക്കുകൾ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ പ്രതീകങ്ങൾ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ പട്ടിക(കൾ) · $rows$ വ്യത്യസ്ത വരികൾ",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ തിരഞ്ഞെടുത്തു - കയറ്റുമതി ഇവ മാത്രം ഉപയോഗിക്കുന്നു",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "പട്ടിക — സ്ക്രീനിൽ $count$ വരി(കൾ)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "പട്ടിക — എല്ലാ $count$ വ്യത്യസ്ത വരി(കൾ)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ സ്നാപ്പ്ഷോട്ട്(കൾ)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "അപ്ഡേറ്റ് ചെയ്തത്: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "എല്ലാ $count$ വരികളും കാണിക്കുക",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "എല്ലാ വരികളും കാണിക്കുന്നു"
+  },
+  "textTableHistory": {
+    "message": "ചരിത്രം ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "ചരിത്രം മറയ്ക്കുക"
+  },
+  "textTableNoRows": {
+    "message": "ഇതുവരെ വരികളൊന്നും ക്യാപ്‌ചർ ചെയ്തിട്ടില്ല."
+  },
+  "textBtnCopy": {
+    "message": "ടെക്സ്റ്റ് പകർത്തുക"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 പകർത്തുക"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ തനിപ്പകർപ്പ് ചിത്രം(ങ്ങൾ)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "കയറ്റുമതി"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG ലോഡ് ചെയ്യുന്നു..."
+  },
+  "inspectorSvgError": {
+    "message": "SVG ഉള്ളടക്കം വീണ്ടെടുക്കാൻ കഴിഞ്ഞില്ല."
+  },
+  "inspectorLoadingFont": {
+    "message": "ഫോണ്ട് പ്രിവ്യൂ ലോഡ് ചെയ്യുന്നു…"
+  },
+  "inspectorFontSample": {
+    "message": "ഫോണ്ട് പ്രിവ്യൂ"
+  },
+  "inspectorBeautify": {
+    "message": "ഭംഗിയാക്കുക"
+  },
+  "inspectorOriginal": {
+    "message": "യഥാർത്ഥം"
+  },
+  "inspectorHeaders": {
+    "message": "ഹെഡറുകൾ"
+  },
+  "inspectorResponse": {
+    "message": "പ്രതികരണം"
+  },
+  "inspectorRequest": {
+    "message": "അഭ്യർത്ഥന"
+  },
+  "inspectorQueryParams": {
+    "message": "ക്വറി പാരാമീറ്ററുകൾ"
+  },
+  "inspectorRequestBody": {
+    "message": "അഭ്യർത്ഥന ബോഡി"
+  },
+  "textHintHtml": {
+    "message": "പേജിന്റെ തത്സമയ, വായിക്കാവുന്ന പകർപ്പ്. ടെക്സ്റ്റ് ഉള്ള എല്ലാ എലമെന്റുകളും DOM ക്രമത്തിൽ ക്യാപ്‌ചർ ചെയ്യുകയും പേജ് മാറുന്നതിനനുസരിച്ച് ഇവിടെ പുതുക്കുകയും ചെയ്യുന്നു. സാധാരണ ടെക്സ്റ്റ്, റെഗുലർ എക്സ്പ്രഷൻ, <strong>CSS സെലക്ടർ</strong> അല്ലെങ്കിൽ <strong>XPath</strong> എക്സ്പ്രഷൻ ഉപയോഗിച്ച് അന്വേഷിക്കുക, തുടർന്ന് പൊരുത്തപ്പെട്ടവ കയറ്റുമതി ചെയ്യുക. വിശദാംശങ്ങൾക്ക് <a href=\"#\" id=\"text-hint-guide\">ഗൈഡ്</a> കാണുക."
+  },
+  "textHeadings": {
+    "message": "തലക്കെട്ടുകൾ"
+  },
+  "textAllLevels": {
+    "message": "എല്ലാ തലങ്ങളും"
+  },
+  "textMatches": {
+    "message": "പൊരുത്തങ്ങൾ"
+  },
+  "textMatch": {
+    "message": "പൊരുത്തം"
+  },
+  "textReadingOn": {
+    "message": "വായനാ മോഡ് ഓൺ"
+  },
+  "toastDownloadStarted": {
+    "message": "ഡൗൺലോഡ് ആരംഭിച്ചു: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "ഈ റിസോഴ്സ് ലഭ്യമാക്കാൻ കഴിഞ്ഞില്ല (CORS അല്ലെങ്കിൽ പിന്തുണയില്ലാത്ത തരം)."
+  },
+  "ratingBannerText": {
+    "message": "Source Download ഇഷ്ടമായോ? Chrome വെബ് സ്റ്റോറിൽ ഒരു റിവ്യൂ എഴുതിയോ GitHub-ൽ സ്റ്റാർ നൽകിയോ ഞങ്ങളുടെ ഓപ്പൺ സോഴ്സ് പദ്ധതിയെ പിന്തുണയ്ക്കൂ!"
+  },
+  "ratingBannerReview": {
+    "message": "★ റിവ്യൂ"
+  },
+  "ratingBannerStar": {
+    "message": "★ സ്റ്റാർ"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ വ്യത്യസ്ത വരി(കൾ)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ സെക്കന്റ് മുമ്പ്",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ മിനിറ്റ് മുമ്പ്",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "ഏരിയ സ്ക്രീൻഷോട്ട് എടുക്കുക"
+  },
+  "btnAreaDownload": {
+    "message": "ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnAreaCopy": {
+    "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
+  },
+  "btnAreaCancel": {
+    "message": "റദ്ദാക്കുക"
+  },
+  "toastAreaCopied": {
+    "message": "ഏരിയ സ്ക്രീൻഷോട്ട് ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി"
+  },
+  "toastAreaDownloaded": {
+    "message": "ഏരിയ സ്ക്രീൻഷോട്ട് സംരക്ഷിച്ചു"
+  },
+  "statusFoundCssResources": {
+    "message": "CSS-ൽ പരാമർശിക്കുന്ന $count$ റിസോഴ്സ്(കൾ) കണ്ടെത്തി",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM സ്കാൻ പരാജയപ്പെട്ടു: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "ഫയൽ ഉള്ളടക്കം ഇൻഡെക്സ് ചെയ്യുന്നു…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "ചിത്രത്തിൻ്റെ തനിപ്പകർപ്പുകൾ പരിശോധിക്കുന്നു..."
+  },
+  "statusWorking": {
+    "message": "പ്രവർത്തിക്കുന്നു..."
+  },
+  "filterMethodTitle": {
+    "message": "HTTP രീതി പ്രകാരം ഫിൽട്ടർ ചെയ്യുക"
+  },
+  "filterTypeTitle": {
+    "message": "അഭ്യർത്ഥന തരം അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക"
+  },
+  "filterSortTitle": {
+    "message": "റിസോഴ്സുകൾ അടുക്കുക"
+  },
+  "textModeTitle": {
+    "message": "ക്വറി ബോക്സ് എങ്ങനെ വ്യാഖ്യാനിക്കണം"
+  },
+  "textKindTitle": {
+    "message": "ഒരു എലമെൻ്റ് തരത്തിലേക്ക് പരിമിതപ്പെടുത്തുക"
+  },
+  "textHeadingLevelTitle": {
+    "message": "തലക്കെട്ടിന്റെ ലെവൽ"
+  },
+  "textPlaceholderRegex": {
+    "message": "^വില:\\s*\\d+ — JavaScript റെഗുലർ എക്സ്പ്രഷൻ"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — ഏതെങ്കിലും CSS സെലക്ടർ"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "ഗൈഡിൽ തിരയുക…"
+  },
+  "popupIntro": {
+    "message": "<strong>ടൂൾബാർ ബാഡ്ജ്</strong> എണ്ണുന്ന വിഭാഗങ്ങൾ. എണ്ണുന്നത് നിർത്താൻ ഒരു വിഭാഗം ഓഫ് ചെയ്യുക — നിങ്ങൾ ട്രാക്ക് ചെയ്യുന്നവ മാത്രം ബാഡ്ജ് ഉടൻ കാണിക്കും."
+  },
+  "popupHelpTitle": {
+    "message": "മുഴുവൻ പാനൽ എങ്ങനെ ഉപയോഗിക്കാം"
+  },
+  "popupStep1": {
+    "message": "നിങ്ങൾ പരിശോധിക്കാൻ ആഗ്രഹിക്കുന്ന പേജിൽ DevTools തുറക്കുക <div class=\"hint\"><kbd>F12</kbd> അല്ലെങ്കിൽ <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "DevTools ടൂൾബാറിലെ <strong>Source Download</strong> ടാബിൽ ക്ലിക്ക് ചെയ്യുക"
+  },
+  "popupStep3": {
+    "message": "റിസോഴ്സുകൾ ബ്രൗസ് ചെയ്യുക, പരിശോധിക്കുക, ഡൗൺലോഡ് ചെയ്യുക — ഓരോന്നായോ എല്ലാം ഒരുമിച്ച് ZIP ആയോ."
+  },
+  "popupNote": {
+    "message": "ശ്രദ്ധിക്കുക: എക്സ്റ്റൻഷനുകൾക്ക് DevTools പ്രോഗ്രാം വഴി തുറക്കാൻ Chrome അനുവദിക്കുന്നില്ല, അതുകൊണ്ടാണ് പൂർണ്ണ സൗകര്യങ്ങൾ DevTools ടൂൾബാർ വഴി ലഭ്യമാകുന്നത്."
+  },
+  "popupTrackAll": {
+    "message": "എല്ലാ വിഭാഗങ്ങളും ട്രാക്ക് ചെയ്യുക"
+  },
+  "popupLanguage": {
+    "message": "ഭാഷ"
+  },
+  "inspectorBinaryResponse": {
+    "message": "ബൈനറി പ്രതികരണം — കാണാൻ ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "inspectorLoadingResponse": {
+    "message": "പ്രതികരണം ലോഡ് ചെയ്യുന്നു…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "പ്രതികരണ പ്രിവ്യൂ ഇല്ല - ഉള്ളടക്കം വീണ്ടെടുക്കാൻ കഴിഞ്ഞില്ല."
+  },
+  "inspectorLoadingContent": {
+    "message": "ഉള്ളടക്കം ലോഡ് ചെയ്യുന്നു..."
+  },
+  "inspectorNoPreview": {
+    "message": "പ്രിവ്യൂ ലഭ്യമല്ല - ഉള്ളടക്കം വീണ്ടെടുക്കാൻ കഴിഞ്ഞില്ല."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "എല്ലാം അടയ്ക്കുക"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "തുറന്നിരിക്കുന്ന എല്ലാ ടാബുകളും അടയ്ക്കുക"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "വലുതാക്കാൻ ക്ലിക്ക് ചെയ്യുക"
+  },
+  "inspectorViewSource": {
+    "message": "ഉറവിടം കാണുക"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "സിന്റാക്സ് ഹൈലൈറ്റിംഗോടെ SVG മാർക്ക്അപ്പ് കാണിക്കുക"
+  },
+  "inspectorFormatting": {
+    "message": "ഫോർമാറ്റ് ചെയ്യുന്നു..."
+  },
+  "findInContentPlaceholder": {
+    "message": "ഉള്ളടക്കത്തിൽ തിരയുക…"
+  },
+  "findPreviousMatch": {
+    "message": "മുമ്പത്തെ പൊരുത്തം"
+  },
+  "findNextMatch": {
+    "message": "അടുത്ത പൊരുത്തം"
+  },
+  "findClose": {
+    "message": "അടയ്ക്കുക"
+  },
+  "findShowRaw": {
+    "message": "യഥാർത്ഥ (ഫോർമാറ്റ് ചെയ്യാത്ത) ഉള്ളടക്കം കാണിക്കുക"
+  },
+  "findBeautify": {
+    "message": "ഈ ഉള്ളടക്കം ഫോർമാറ്റ് ചെയ്യുക / മനോഹരമാക്കുക"
+  },
+  "btnRaw": {
+    "message": "യഥാർത്ഥം"
+  },
+  "btnBeautify": {
+    "message": "ഭംഗിയാക്കുക"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) സ്ട്രീം കണ്ടെത്തി"
+  },
+  "videoCannotPlay": {
+    "message": "ഈ വീഡിയോ ബ്രൗസറിൽ പ്ലേ ചെയ്യാൻ കഴിയില്ല"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome-ന് HLS സ്ട്രീമുകൾ നേരിട്ട് പ്ലേ ചെയ്യാൻ കഴിയില്ല. <b>$NAME$</b>-ന്റെ എല്ലാ സെഗ്മെന്റുകളും ഒരൊറ്റ MP4/TS വീഡിയോ ഫയലായി ലയിപ്പിക്കാം.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "ബ്രൗസർ ഈ ഫോർമാറ്റിനെ പിന്തുണയ്ക്കുന്നില്ല"
+  },
+  "btnMergeHls": {
+    "message": "സെഗ്മെന്റുകൾ ലയിപ്പിച്ച് ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ സെഗ്മെന്റ്(കൾ) $NAME$ ആയി ലയിപ്പിച്ചു",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "വലിപ്പം അറിയില്ല"
+  },
+  "progressFetching": {
+    "message": "$DONE$/$TOTAL$ · ZIP $EST$ ലഭ്യമാക്കുന്നു...",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP സൃഷ്‌ടിക്കുന്നു $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP സംരക്ഷിച്ചു: $TOTAL$ റിസോഴ്സുകളിൽ $FETCHED$ ($SKIPPED$ പരാജയപ്പെട്ടു)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "വീണ്ടും ശ്രമിക്കുക: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "ഡൗൺലോഡ് വീണ്ടും ശ്രമിക്കുക"
+  },
+  "searchRegexHint": {
+    "message": "Regex തിരയൽ സജീവമാണ് — നിങ്ങളുടെ അന്വേഷണം /pattern/i എന്ന രൂപത്തിൽ എഴുതുക"
+  },
+  "textIncludeInExports": {
+    "message": "കയറ്റുമതിയിൽ ഉൾപ്പെടുത്തുക"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "എല്ലാ സ്നാപ്പ്ഷോട്ടുകളും ഡ്യൂപ്ലിക്കേറ്റുകളില്ലാത്ത ഒറ്റ പട്ടികയായി സംയോജിപ്പിക്കുക — ഇതാണ് കയറ്റുമതി ചെയ്യുന്നത്"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "ഈ പട്ടികയുടെ മുമ്പത്തെ സ്നാപ്പ്ഷോട്ടുകൾ ബ്രൗസ് ചെയ്യുക"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "ഈ പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "tableSnapshotLabel": {
+    "message": "സ്നാപ്പ്ഷോട്ട് $INDEX$ — $TIME$ ($COUNT$ വരികൾ)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "ബാച്ച് ഡൗൺലോഡിനായി തിരഞ്ഞെടുക്കൽ ടോഗിൾ ചെയ്യുക"
+  },
+  "cardDownloadTitle": {
+    "message": "ഫയൽ ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "cardRetryFailedTitle": {
+    "message": "മുമ്പത്തെ ഡൗൺലോഡ് പരാജയപ്പെട്ടു - വീണ്ടും ശ്രമിക്കാൻ ക്ലിക്ക് ചെയ്യുക"
+  },
+  "btnThemeLight": {
+    "message": "ലൈറ്റ് തീമിലേക്ക് മാറുക"
+  },
+  "btnThemeDark": {
+    "message": "ഇരുണ്ട തീമിലേക്ക് മാറുക"
+  },
+  "guideTitle": {
+    "message": "Source Download — ഉപയോക്തൃ ഗൈഡ്"
+  },
+  "guideEmpty": {
+    "message": "ഗൈഡ് വിഭാഗങ്ങളൊന്നും നിങ്ങളുടെ തിരയലുമായി പൊരുത്തപ്പെടുന്നില്ല."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% ഡിപൻഡൻസി-രഹിതം.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "സൂം ഔട്ട് (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "സൂം ഇൻ ചെയ്യുക (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "സൂം റീസെറ്റ് ചെയ്യുക (0)"
+  },
+  "lightboxClose": {
+    "message": "അടയ്ക്കുക (Esc)"
+  },
+  "resizerTitle": {
+    "message": "വലുപ്പം മാറ്റാൻ വലിച്ചിടുക"
+  },
+  "ratingDismissTitle": {
+    "message": "അടയ്ക്കുക"
+  },
+  "inspectorResourceTitle": {
+    "message": "റിസോഴ്സ്"
+  },
+  "guideSecGettingStarted": {
+    "message": "തുടങ്ങാം"
+  },
+  "guideSecCategories": {
+    "message": "വിഭാഗങ്ങൾ"
+  },
+  "guideSecSearchFilters": {
+    "message": "തിരയലും ഫിൽട്ടറുകളും"
+  },
+  "guideSecGridView": {
+    "message": "ഗ്രിഡും ലിസ്റ്റ് കാഴ്ചയും"
+  },
+  "guideSecInspect": {
+    "message": "ഒരു റിസോഴ്സ് പരിശോധിക്കുക"
+  },
+  "guideSecDownloading": {
+    "message": "ഡൗൺലോഡ് ചെയ്യുന്നു"
+  },
+  "guideSecLightbox": {
+    "message": "ലൈറ്റ്ബോക്സ്"
+  },
+  "guideSecTextTables": {
+    "message": "ടെക്സ്റ്റും പട്ടികകളും"
+  },
+  "guideSecCaptions": {
+    "message": "അടിക്കുറിപ്പുകളും സബ്‌ടൈറ്റിലുകളും"
+  },
+  "guideSecSourceMaps": {
+    "message": "സോഴ്സ് മാപ്പുകൾ"
+  },
+  "guideSecDupes": {
+    "message": "തനിപ്പകർപ്പ് ചിത്രങ്ങൾ"
+  },
+  "guideSecVideoHls": {
+    "message": "വീഡിയോ ഫാൾബാക്കും HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "പവർ ടിപ്പുകൾ"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "DevTools ടൂൾബാറിലെ <strong>Source Download</strong> ടാബിൽ ക്ലിക്ക് ചെയ്യുക (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> അമർത്തി, DevTools ടൂൾബാറിലെ ടാബ് തിരഞ്ഞെടുക്കുക). DevTools സ്വയമേവ തുറക്കാൻ എക്സ്റ്റൻഷനുകളെ Chrome അനുവദിക്കുന്നില്ല, അതിനാലാണ് പാനൽ അവിടെ നൽകിയിരിക്കുന്നത്. ടൂൾബാർ ഐക്കൺ പോപ്പ്അപ്പിൽ, ഐക്കണിലെ ബാഡ്ജ് കൗണ്ടർ ഏതെല്ലാം വിഭാഗങ്ങൾ എണ്ണണമെന്ന് തിരഞ്ഞെടുക്കാം. പാനൽ ടൂൾബാറിലെ സൂര്യൻ/ചന്ദ്രൻ ബട്ടൺ Chrome-ൽ നിന്ന് സ്വതന്ത്രമായി ലൈറ്റ് അല്ലെങ്കിൽ ഡാർക്ക് തീം ഉറപ്പിക്കുന്നു; ആ തിരഞ്ഞെടുപ്പ് ഓർമ്മിക്കപ്പെടും."
+  },
+  "guideSecCategoriesContent": {
+    "message": "ഇടതുവശത്തെ ലംബ ടാബുകൾ ക്യാപ്‌ചർ ചെയ്ത ഓരോ റിസോഴ്സിനെയും തരം അനുസരിച്ച് 17 പ്രത്യേക വിഭാഗങ്ങളായി തിരിക്കുന്നു: ചിത്രങ്ങൾ, വീഡിയോകൾ, ഓഡിയോ, അടിക്കുറിപ്പുകൾ, ഡോക്യുമെന്റുകൾ, ഫോണ്ടുകൾ, സോഴ്സ് മാപ്പുകൾ, WASM, SVG, API-കൾ, കുക്കികൾ, സ്റ്റോറേജ് എന്നിവയും മറ്റും. ഓരോ ടാബും തത്സമയ എണ്ണം കാണിക്കുന്നു. ഒരു സമയം ഒരു വിഭാഗം മാത്രമേ കാണിക്കൂ; വിഭാഗം മാറ്റുമ്പോൾ എല്ലാ ഫിൽട്ടറുകളും റീസെറ്റ് ആകുന്നു, അതിനാൽ നിങ്ങൾ കാണുന്നത് എല്ലായ്പ്പോഴും ടാബുമായി പൊരുത്തപ്പെടും."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "തിരയൽ ബാർ പേര്, URL, തരം, alt ടെക്സ്റ്റ് അല്ലെങ്കിൽ തലക്കെട്ട് അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുന്നു. റെഗുലർ എക്സ്പ്രഷൻ ഉപയോഗിക്കാൻ നിങ്ങളുടെ അന്വേഷണം <kbd>/…/</kbd> ഉള്ളിൽ എഴുതുക, ഉദാ. <code>/\\.(png|jpg)$/</code>. ടൂൾബാറിന് താഴെയുള്ള ഫിൽട്ടർ ബാർ വിഭാഗം അനുസരിച്ച് മാറുന്നു: മീഡിയയ്ക്ക് വലിപ്പ/അളവ് പരിധികൾ, API-കൾക്ക് HTTP രീതിയും അഭ്യർത്ഥന തരവും, കൂടാതെ അടുക്കലും ദിശയും."
+  },
+  "guideSecGridViewContent": {
+    "message": "തിരയൽ ബാറിന് അടുത്തുള്ള ബട്ടണുകൾ ഉപയോഗിച്ച് ചെറിയ ലഘുചിത്രങ്ങളുള്ള കോംപാക്റ്റ് ഗ്രിഡിനും വിശദമായ ലിസ്റ്റിനും ഇടയിൽ മാറാം. നിങ്ങളുടെ തിരഞ്ഞെടുപ്പ് സെഷനുകൾക്കിടയിൽ ഓർമ്മിക്കപ്പെടും. ലിസ്റ്റ് കാഴ്ചയിൽ, ചെക്ക്ബോക്സുകൾ ഉപയോഗിച്ച് ഓരോ റിസോഴ്സും തിരഞ്ഞെടുത്ത് ഒരുമിച്ച് ഡൗൺലോഡ് ചെയ്യാം."
+  },
+  "guideSecInspectContent": {
+    "message": "വലതുവശത്തെ പരിശോധന പാളിയിൽ തുറക്കാൻ ഏതെങ്കിലും റിസോഴ്സിൽ ക്ലിക്ക് ചെയ്യുക. തുറക്കുന്ന ഓരോ ഫയലും ഒരു ടാബായി മാറുന്നു, അതിനാൽ നിരവധി റിസോഴ്സുകൾ അടുത്തടുത്തായി താരതമ്യം ചെയ്യാം — ഏറ്റവും പുതിയത് ഇടതുവശത്ത് തുറക്കുന്നു. ചിത്രങ്ങൾ, വീഡിയോ, ഓഡിയോ, ഫോണ്ടുകൾ, SVG, ടെക്സ്റ്റ്/കോഡ് എന്നിവയ്ക്ക് (ഭംഗിയാക്കുക ടോഗിൾ സഹിതം) പ്രത്യേക വ്യൂവറുകളുണ്ട്. API-കൾ സ്പ്ലിറ്റ് കാഴ്ച കാണിക്കുന്നു: ഇടതുവശത്ത് പ്രതികരണം, വലതുവശത്ത് അഭ്യർത്ഥനയുടെ വിശദാംശങ്ങൾ (രീതി, സ്റ്റാറ്റസ്, ഹെഡറുകൾ, ക്വറി പാരാമീറ്ററുകൾ, ബോഡി)."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>നിലവിലെ കാഴ്ച ഡൗൺലോഡ് ചെയ്യുക</strong> നിലവിൽ ദൃശ്യമാകുന്ന റിസോഴ്സുകളെ (സജീവ വിഭാഗം + തിരയൽ + ഫിൽട്ടറുകൾ) ഒരു ZIP ആയി സംരക്ഷിക്കുന്നു; ഫിൽട്ടറുകൾ സജീവമാകുമ്പോൾ ഇത് <em>ഫിൽട്ടർ ചെയ്തവ ഡൗൺലോഡ് ചെയ്യുക (N)</em> എന്നായി മാറുന്നു. ക്ലിക്ക് ചെയ്യുന്നതിന് മുമ്പ് ഏകദേശ ആർക്കൈവ് വലിപ്പം കാണാൻ ഏതെങ്കിലും ഡൗൺലോഡ് ബട്ടണിന് മുകളിൽ മൗസ് വയ്ക്കുക. <strong>തിരഞ്ഞെടുത്തവ ഡൗൺലോഡ് ചെയ്യുക</strong> ടിക്ക് ചെയ്ത ഇനങ്ങൾ മാത്രം ഡൗൺലോഡ് ചെയ്യുന്നു. <strong>എല്ലാം ഡൗൺലോഡ് ചെയ്യുക</strong> കണ്ടെത്തിയ എല്ലാ റിസോഴ്സുകളും ഫോൾഡർ ഘടനയുള്ള ZIP-ലേക്ക് ചേർക്കുന്നു. പരാജയപ്പെട്ട ഡൗൺലോഡുകൾ സ്വയമേവ വീണ്ടും ശ്രമിക്കും, കോൺടെക്സ്റ്റ് മെനുവിൽ നിന്നും വീണ്ടും ശ്രമിക്കാം. <strong>കയറ്റുമതി</strong> ദൃശ്യമായ ലിസ്റ്റ് JSON അല്ലെങ്കിൽ CSV ആയി എഴുതുന്നു, അല്ലെങ്കിൽ Chrome-ന്റെ നെറ്റ്‌വർക്ക് ലോഗ് HAR ഫയലായി സംരക്ഷിക്കുന്നു."
+  },
+  "guideSecLightboxContent": {
+    "message": "സൂം ബട്ടൺ മീഡിയയെ പൂർണ്ണ വലിപ്പമുള്ള ലൈറ്റ്ബോക്സിൽ തുറക്കുന്നു; അവിടെ വലിച്ച് പാൻ ചെയ്യാം, മൗസ് വീൽ, സ്ക്രീനിലെ ബട്ടണുകൾ, അല്ലെങ്കിൽ കീബോർഡ് ഉപയോഗിച്ച് സൂം ചെയ്യാം (സൂം ചെയ്യാൻ <kbd>+</kbd>/<kbd>-</kbd>, റീസെറ്റ് ചെയ്യാൻ <kbd>0</kbd>, അടയ്ക്കാൻ <kbd>Esc</kbd>)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>ടെക്സ്റ്റ്</strong> വിഭാഗം പേജിന്റെ തത്സമയവും വായിക്കാവുന്നതുമായ പകർപ്പാണ്. ടെക്സ്റ്റ് ഉള്ള എല്ലാ എലമെന്റുകളും — തലക്കെട്ടുകൾ, ഖണ്ഡികകൾ, ലിസ്റ്റ് ഇനങ്ങൾ, ബട്ടണുകൾ, <code>div</code>/<code>span</code> എന്നിവയും മറ്റും — DOM ക്രമത്തിൽ ഇത് ക്യാപ്‌ചർ ചെയ്യുന്നു, <strong>തത്സമയം</strong> ഓൺ ആയിരിക്കുമ്പോൾ സ്കാൻ ചെയ്തുകൊണ്ടിരിക്കുകയും ചെയ്യും.</p><p><strong>ക്വറി</strong> ബോക്സ് നാല് രീതിയിൽ പ്രവർത്തിക്കുന്നു, അതിന് അടുത്തുള്ള ഡ്രോപ്പ്ഡൗണിൽ നിന്ന് തിരഞ്ഞെടുക്കാം: <strong>അടങ്ങിയിരിക്കുന്നു</strong>, <strong>Regex</strong> എന്നിവ ഇതിനകം ക്യാപ്‌ചർ ചെയ്ത ടെക്സ്റ്റിനെ ഫിൽട്ടർ ചെയ്യുന്നു, എന്നാൽ <strong>CSS സെലക്ടർ</strong>, <strong>XPath</strong> എന്നിവ തത്സമയ പേജിൽ പ്രവർത്തിക്കുന്നതിനാൽ DOM-ലെ എന്തിലും എത്താൻ കഴിയും. എലമെന്റുകൾക്ക് പകരം മൂല്യം നൽകുന്ന <code>count(//a)</code> അല്ലെങ്കിൽ <code>//@href</code> പോലുള്ള എക്സ്പ്രഷനുകളും XPath സ്വീകരിക്കും. തെറ്റായ ക്വറിയെക്കുറിച്ച് പേജ് പറയുന്നത് ബോക്സിന് അടുത്ത് കാണിക്കും. <strong>എലമെന്റ്</strong> ഫലത്തെ ഒരൊറ്റ ടാഗിലേക്ക് ചുരുക്കുന്നു, പേജിൽ കണ്ട ഓരോ ടാഗിന്റെയും എണ്ണത്തോടൊപ്പം. ക്വറി ബോക്സ് ഒഴിവാക്കിയാൽ (അല്ലെങ്കിൽ <strong>മായ്ക്കുക</strong> അമർത്തിയാൽ) <em>എല്ലാ എലമെന്റുകളും</em> എന്നതിലേക്ക് തിരികെ പോകുകയും പേജ് വീണ്ടും ക്യാപ്‌ചർ ചെയ്യുകയും ചെയ്യും — ഡ്രോപ്പ്ഡൗൺ സ്വയം റീസെറ്റ് ചെയ്യേണ്ടതില്ല.</p><p><strong>വായനാ മോഡ്</strong> ടാഗുകൾ, ചെക്ക്ബോക്സുകൾ, ലൊക്കേഷൻ സൂചനകൾ എന്നിവ മറയ്ക്കുന്നതിനാൽ ഉള്ളടക്കം ഒരു ഡോക്യുമെന്റ് പോലെ വായിക്കാം. ഡൈനാമിക് (SPA) പട്ടികകൾ നഷ്ടപ്പെടാതിരിക്കാൻ പട്ടികകൾ സ്നാപ്പ്ഷോട്ടുകളുടെ പരിമിതമായ ചരിത്രം സൂക്ഷിക്കുന്നു. ഒരു പട്ടികയിൽ <strong>എല്ലാ വരികളും കാണിക്കുക</strong> അമർത്തിയാൽ എല്ലാ സ്നാപ്പ്ഷോട്ടുകളും ഡ്യൂപ്ലിക്കേറ്റുകളില്ലാത്ത ഒറ്റ കാഴ്ചയായി ലയിക്കും — കയറ്റുമതിയിൽ ഉണ്ടാകുന്നത് ഇതുതന്നെയാണ്. <strong>TXT</strong> (വായിക്കാവുന്ന പേജ്), <strong>MD</strong> (Markdown, പട്ടികകൾ ഉൾപ്പെടെ) ആയി, അല്ലെങ്കിൽ പട്ടികകൾ CSV, HTML അല്ലെങ്കിൽ യഥാർത്ഥ മൾട്ടി-ഷീറ്റ് <strong>XLSX</strong> വർക്ക്ബുക്ക് ആയി കയറ്റുമതി ചെയ്യാം. ടിക്ക് ചെയ്ത ഇനങ്ങൾക്കാണ് മുൻഗണന; ഇല്ലെങ്കിൽ നിലവിൽ ദൃശ്യമാകുന്നതെല്ലാം കയറ്റുമതി ചെയ്യും.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML എന്നിവയും മറ്റ് അടിക്കുറിപ്പ് ഫയലുകളും — <code>&lt;track&gt;</code> ഉറവിടങ്ങൾ ഉൾപ്പെടെ — ഡോക്യുമെന്റുകളുമായി കലരാതെ സ്വന്തം <strong>അടിക്കുറിപ്പുകൾ</strong> ടാബിൽ എത്തുന്നു."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> ഫയലുകളും സോഴ്സ് മാപ്പുകൾ പോലെ തോന്നിക്കുന്ന JSON ബോഡികളും (അവയിൽ <code>mappings</code>, <code>sources</code> എന്നിവ ഉണ്ടാകും) JSON വ്യൂവർ, ഭംഗിയാക്കൽ സൗകര്യങ്ങളോടെ <strong>സോഴ്സ് മാപ്പുകൾ</strong> എന്നതിന് കീഴിൽ ഗ്രൂപ്പ് ചെയ്യപ്പെടുന്നു, അതിനാൽ അവ ഇനി JSON ടാബിൽ തിരക്കുണ്ടാക്കില്ല."
+  },
+  "guideSecDupesContent": {
+    "message": "ചിത്രങ്ങൾ ടാബിൽ പാനൽ ക്യാപ്‌ചർ ചെയ്ത ബൈറ്റുകൾ ഹാഷ് ചെയ്ത് സമാനമായ ഫയലുകൾ അടയാളപ്പെടുത്തുന്നു. <strong>തനിപ്പകർപ്പുകൾ മറയ്ക്കുക</strong> ഫിൽട്ടർ ഓരോ കൂട്ടത്തിലെയും ആദ്യ പകർപ്പ് മാത്രം നിലനിർത്തുന്നു, അതിനാൽ കാഴ്ചയുടെ ZIP-ൽ ഒരേ ലഘുചിത്രം രണ്ടുതവണ ഉണ്ടാകില്ല."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "ബ്രൗസറിന് നേരിട്ട് പ്ലേ ചെയ്യാൻ കഴിയാത്ത സ്ട്രീമുകൾ (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, അജ്ഞാത കോഡെക്കുകൾ) കറുത്ത പ്ലേയറിന് പകരം ഒരു ഫാൾബാക്ക് കാണിക്കുന്നു. HLS-ന്, പാനലിൽ നിന്ന് തന്നെ സെഗ്മെന്റുകൾ ഒരൊറ്റ വീഡിയോ ഫയലായി ലയിപ്പിക്കാം, അല്ലെങ്കിൽ യഥാർത്ഥ മാനിഫെസ്റ്റ് ഡൗൺലോഡ് ചെയ്യാം."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "ഡൈനാമിക് <strong>API</strong> പ്രതികരണങ്ങൾ (XHR/fetch) URL അടിസ്ഥാനമാക്കി ഡ്യൂപ്ലിക്കേറ്റ് ഒഴിവാക്കുന്നില്ല — ഓരോ മറുപടിയും ലിസ്റ്റിൽ നിലനിൽക്കും (പരിമിതമായ FIFO), അതിനാൽ ആവർത്തിച്ചുള്ള അഭ്യർത്ഥനകൾ താരതമ്യം ചെയ്യാം. സ്റ്റാറ്റിക് അസറ്റുകളിൽ ഡ്യൂപ്ലിക്കേറ്റുകൾ ഒഴിവാക്കപ്പെടുന്നു. നിലവിലെ DOM വീണ്ടും സ്കാൻ ചെയ്യാൻ <strong>പുതുക്കുക</strong> ഉപയോഗിക്കുക, നിങ്ങൾ ടാബുകൾ മാറുന്നതിന് മുമ്പ് ആരംഭിച്ചവ ഉൾപ്പെടെ എല്ലാ നെറ്റ്‌വർക്ക് അഭ്യർത്ഥനകളും ക്യാപ്‌ചർ ചെയ്യാൻ പാനൽ തുറന്നിരിക്കുമ്പോൾ പേജ് റീലോഡ് ചെയ്യുക."
+  },
+  "toolArrow": {
+    "message": "ആരോ ടൂൾ"
+  },
+  "toolRect": {
+    "message": "ചതുരം ടൂൾ"
+  },
+  "toolText": {
+    "message": "ടെക്സ്റ്റ് ടൂൾ"
+  },
+  "toolUndo": {
+    "message": "പഴയപടിയാക്കുക (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "വീണ്ടും ചെയ്യുക (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "നിറം"
+  },
+  "badgeStrokeSize": {
+    "message": "വലുപ്പം: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "ഫോണ്ട് വലുപ്പം: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "ഏരിയ വീഡിയോ / GIF ആയി റെക്കോർഡ് ചെയ്യുക"
+  },
+  "btnRecStart": {
+    "message": "റെക്കോർഡിംഗ് ആരംഭിക്കുക"
+  },
+  "btnRecPause": {
+    "message": "താൽക്കാലികമായി നിർത്തുക"
+  },
+  "btnRecResume": {
+    "message": "തുടരുക"
+  },
+  "btnRecStop": {
+    "message": "പൂർത്തിയാക്കി ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnRecCancel": {
+    "message": "റദ്ദാക്കുക"
+  },
+  "toastRecSaved": {
+    "message": "ഏരിയ റെക്കോർഡിംഗ് സംരക്ഷിച്ചു"
+  },
+  "toastRecCancelled": {
+    "message": "വീഡിയോ റെക്കോർഡിംഗ് റദ്ദാക്കി"
+  },
+  "toastRecPermissionDenied": {
+    "message": "സ്ക്രീൻ റെക്കോർഡിംഗിനുള്ള അനുമതി നൽകിയിട്ടില്ല"
+  },
+  "btnPopupRecordArea": {
+    "message": "തിരഞ്ഞെടുത്ത ഭാഗത്തിന്റെ വീഡിയോ / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "തിരഞ്ഞെടുത്ത ഭാഗത്തിന്റെ സ്ക്രീൻഷോട്ട്"
+  },
+  "contextMenuPickColor": {
+    "message": "സ്ക്രീനിൽ നിന്ന് നിറം തിരഞ്ഞെടുക്കുക"
+  },
+  "btnPopupPickColor": {
+    "message": "നിറം തിരഞ്ഞെടുക്കുക"
+  },
+  "colorPickerTitle": {
+    "message": "കളർ പിക്കർ"
+  },
+  "btnColorPickAgain": {
+    "message": "മറ്റൊരു നിറം തിരഞ്ഞെടുക്കുക"
+  },
+  "toastColorCopied": {
+    "message": "നിറം ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി"
+  },
+  "toastProgressCapturing": {
+    "message": "പൂർണ്ണ പേജ് ക്യാപ്ചർ ചെയ്യുന്നു... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "ചിത്രം കൂട്ടിച്ചേർക്കുന്നു..."
+  },
+  "modalExportTitle": {
+    "message": "പൂർണ്ണ പേജ് സ്ക്രീൻഷോട്ട് തയ്യാറാണ്"
+  },
+  "btnExportPng": {
+    "message": "PNG ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnExportJpg": {
+    "message": "JPG ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "btnExportPdf": {
+    "message": "PDF ആയി സംരക്ഷിക്കുക"
+  },
+  "btnExportCopy": {
+    "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
+  },
+  "btnExportGenerating": {
+    "message": "സൃഷ്ടിക്കുന്നു..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF ഡോക്യുമെന്റ് സംരക്ഷിച്ചു."
+  },
+  "settingNamingPatterns": {
+    "message": "ഫയൽ പേരിടൽ പാറ്റേണുകൾ"
+  },
+  "settingVideoFormat": {
+    "message": "ഡിഫോൾട്ട് വീഡിയോ ഫോർമാറ്റ്"
+  },
+  "settingNamingPreview": {
+    "message": "പ്രിവ്യൂ:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF സൃഷ്ടിക്കുന്നു, ദയവായി കാത്തിരിക്കുക..."
+  },
+  "settingGifResolution": {
+    "message": "ഡിഫോൾട്ട് GIF റെസല്യൂഷൻ"
+  },
+  "optGifOriginal": {
+    "message": "ഒറിജിനൽ (1:1 നേറ്റീവ് റെസല്യൂഷൻ — പൂർണ്ണ 3K/4K, വലുപ്പം കുറയ്ക്കാതെ)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (പരമാവധി 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (പരമാവധി 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (പരമാവധി 854px — വേഗത്തിലും ചെറിയ വലുപ്പത്തിലും)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF ഫോർമാറ്റ് പരമാവധി 1 മിനിറ്റ് (60 സെ) റെക്കോർഡിംഗ് ദൈർഘ്യം പിന്തുണയ്ക്കുന്നു."
+  },
+  "guideSecScreenRecording": {
+    "message": "സ്ക്രീൻ റെക്കോർഡിംഗ് (വീഡിയോ & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "സ്ക്രീനിലെ ഏത് ഭാഗവും MP4, WebM അല്ലെങ്കിൽ ആനിമേറ്റഡ് GIF ആയി റെക്കോർഡ് ചെയ്യാം. GIF റെക്കോർഡിംഗുകളിൽ 1:1 നേറ്റീവ് റെസല്യൂഷൻ, 1080p, 720p, 480p പ്രൊഫൈലുകളും തത്സമയ ഏകദേശ ഫയൽ വലിപ്പവും ലഭ്യമാണ്. മികച്ച ബ്രൗസർ പ്രകടനത്തിനായി GIF റെക്കോർഡിംഗിന്റെ പരമാവധി ദൈർഘ്യം 1 മിനിറ്റ് (60 സെ) ആണ്."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIF-ന്റെ പരമാവധി ദൈർഘ്യമായ 1 മിനിറ്റ് (60 സെ) എത്തി. GIF സൃഷ്ടിക്കുന്നു..."
+  },
+  "labelGifMaxDuration": {
+    "message": "പരമാവധി 1 മിനിറ്റ് (60 സെ)"
+  },
+  "settingGifFps": {
+    "message": "ഡിഫോൾട്ട് GIF ഫ്രെയിം റേറ്റ് (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — സുഗമം (വളരെ സുഗമമായ ചലനം, വലിയ വലുപ്പം)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — സ്റ്റാൻഡേർഡ് (വെബിനും സന്തുലനത്തിനും ശുപാർശ ചെയ്യുന്നു)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — കോംപാക്റ്റ് / മീം (ഇടവിട്ടുള്ള ചലനം, ചെറിയ വലുപ്പം)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — സ്റ്റോപ്പ്-മോഷൻ / സാവധാനം (ഘട്ടം ഘട്ടമായുള്ള \"ക്ലിക്ക്-ക്ലിക്ക്\", വളരെ ചെറിയ വലുപ്പം)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — പ്രസന്റേഷൻ (സെക്കൻഡിൽ 1 ഫ്രെയിം, ഏറ്റവും ചെറിയ വലുപ്പം)"
+  },
+  "popupRightClickHint": {
+    "message": "സ്ക്രീൻ റെക്കോർഡിംഗിനും (വീഡിയോ/GIF) കളർ പിക്കറിനും വെബ്പേജിൽ എവിടെയും റൈറ്റ്-ക്ലിക്ക് ചെയ്യുക."
+  },
+  "toastElementZappedAd": {
+    "message": "ഈ സെഷനിൽ പരസ്യം / iframe മറച്ചിരിക്കുന്നു.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "ചിത്രം ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "അടയ്ക്കുക (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "ക്രമീകരണങ്ങൾ സംരക്ഷിച്ചു",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "ഫയൽ ഡൗൺലോഡ് ചെയ്ത് VLC അല്ലെങ്കിൽ മറ്റൊരു മീഡിയ പ്ലെയറിൽ തുറക്കുക.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "ഈ റിസോഴ്സ് തരത്തിന് പ്രിവ്യൂ ലഭ്യമല്ല",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "ഒറിജിനൽ ഡൗൺലോഡ് ചെയ്യുക",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "നുറുങ്ങ്: ഡൗൺലോഡ് ചെയ്ത ഫയൽ VLC അല്ലെങ്കിൽ ഏതെങ്കിലും ഡെസ്ക്ടോപ്പ് മീഡിയ പ്ലെയറിൽ തുറക്കുക — മിക്കവാറും എല്ലാ ഫോർമാറ്റുകളും അത് പ്ലേ ചെയ്യും.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP ആർക്കൈവ് സൃഷ്ടിക്കുന്നു…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "നിങ്ങളുടെ ബ്രൗസർ EyeDropper API പിന്തുണയ്ക്കുന്നില്ല.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "ടൂൾബാർ വലിച്ചിടുക",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "ഫോർമാറ്റ് മാറ്റുക: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF റെസല്യൂഷൻ: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF ഫ്രെയിം നിരക്ക്: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "കണക്കാക്കിയ GIF വലുപ്പം: ~$size$ MB (10 സെക്കൻഡിന്), 60 സെക്കൻഡ് പരമാവധിക്ക് ~$max$ MB വരെ.\nഫ്രെയിം നിരക്ക്: $fps$ FPS.\nGIF റെക്കോർഡിംഗ് പരമാവധി 1 മിനിറ്റായി (60 സെ) പരിമിതപ്പെടുത്തിയിരിക്കുന്നു.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ പകർത്തുക",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "സ്ക്രീൻഷോട്ട് പ്രിവ്യൂ",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — WhatsApp, Telegram, Jira, Apple, Windows എന്നിവയിൽ എല്ലായിടത്തും പ്ലേ ചെയ്യാം)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (ആനിമേറ്റഡ് ചിത്രം — READMEകൾ, Jira, ഡോക്യുമെന്റേഷൻ, മെസേജിംഗ് എന്നിവയ്ക്ക് അനുയോജ്യം)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — ഓപ്പൺ വെബ് ഫോർമാറ്റ്)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "സജീവ ടാബ് കണ്ടെത്തിയില്ല.",
+    "description": "No active tab found."
+  }
+}

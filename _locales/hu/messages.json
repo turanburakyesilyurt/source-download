@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Vizsgálj és tölts le bármilyen webes elemet ZIP-ben. Teljes oldalas képernyőkép, élő táblázatrögzítés, fejlesztői eszközök."
+  },
+  "actionTitle": {
+    "message": "Source Download — Panel megnyitása és erőforrások követése"
+  },
+  "contextMenuZap": {
+    "message": "Elem elrejtése"
+  },
+  "contextMenuUndoZap": {
+    "message": "Utoljára elrejtett elem visszaállítása"
+  },
+  "contextMenuResetZap": {
+    "message": "Az összes elrejtett elem visszaállítása"
+  },
+  "contextMenuCapturePage": {
+    "message": "Teljes oldalas képernyőkép készítése"
+  },
+  "contextMenuPageArchive": {
+    "message": "Offline oldalarchívum letöltése"
+  },
+  "catAll": {
+    "message": "Mind"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Képek"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Videók"
+  },
+  "catAudio": {
+    "message": "Hang"
+  },
+  "catCaptions": {
+    "message": "Feliratok"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Forrástérképek"
+  },
+  "catFonts": {
+    "message": "Betűtípusok"
+  },
+  "catDocuments": {
+    "message": "Dokumentumok"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifesztek"
+  },
+  "catText": {
+    "message": "Szöveg"
+  },
+  "catOther": {
+    "message": "Egyéb"
+  },
+  "catScreenshot": {
+    "message": "Képernyőkép"
+  },
+  "catArchive": {
+    "message": "Oldalarchívum"
+  },
+  "btnRefresh": {
+    "message": "Frissítés"
+  },
+  "btnExport": {
+    "message": "Exportálás"
+  },
+  "btnDownloadSelected": {
+    "message": "Kijelöltek letöltése"
+  },
+  "btnDownloadView": {
+    "message": "Nézet letöltése"
+  },
+  "btnDownloadAll": {
+    "message": "Az összes letöltése"
+  },
+  "btnDownloadFiltered": {
+    "message": "Szűrtek letöltése"
+  },
+  "btnTheme": {
+    "message": "Téma váltása"
+  },
+  "btnGuide": {
+    "message": "Felhasználói kézikönyv"
+  },
+  "btnCaptureFullPage": {
+    "message": "Teljes oldalas képernyőkép"
+  },
+  "btnOfflineArchive": {
+    "message": "Egyfájlos HTML mentése"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Max KB"
+  },
+  "filterMinWidth": {
+    "message": "Min. szélesség px"
+  },
+  "filterMinHeight": {
+    "message": "Min. magasság px"
+  },
+  "filterSortName": {
+    "message": "Rendezés név szerint"
+  },
+  "filterSortSize": {
+    "message": "Rendezés méret szerint"
+  },
+  "filterSortType": {
+    "message": "Rendezés típus szerint"
+  },
+  "filterSortTime": {
+    "message": "Rendezés idő szerint"
+  },
+  "filterHideDupes": {
+    "message": "Ismétlődések elrejtése"
+  },
+  "filterClear": {
+    "message": "Törlés"
+  },
+  "textModeContains": {
+    "message": "Tartalmaz"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS-választó"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Oldalszöveg szűrése vagy élő DOM lekérdezése…"
+  },
+  "textAllElements": {
+    "message": "Minden elem"
+  },
+  "textLiveOn": {
+    "message": "Élő mód: be"
+  },
+  "textLiveOff": {
+    "message": "Élő mód: ki"
+  },
+  "textScanNow": {
+    "message": "Beolvasás most"
+  },
+  "textReading": {
+    "message": "Olvasás"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Válasszon ki egy erőforrást a részleteinek megtekintéséhez"
+  },
+  "inspectorDetails": {
+    "message": "Részletek"
+  },
+  "inspectorOpenTab": {
+    "message": "Megnyitás új lapon"
+  },
+  "inspectorCopyUrl": {
+    "message": "URL másolása"
+  },
+  "inspectorDownloadFile": {
+    "message": "Fájl letöltése"
+  },
+  "inspectorClose": {
+    "message": "Bezárás"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Típus"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Méret"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Forrás"
+  },
+  "metaTitle": {
+    "message": "Cím"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Tetszik a Source Download? Támogassa nyílt forráskódú elképzelésünket értékeléssel a Chrome Internetes áruházban vagy csillaggal a GitHubon!"
+  },
+  "ratingReview": {
+    "message": "★ Hagyjon véleményt"
+  },
+  "ratingStar": {
+    "message": "★ Csillag a GitHubon"
+  },
+  "ratingDismiss": {
+    "message": "Elvetés"
+  },
+  "toastElementZapped": {
+    "message": "Az elem el van rejtve erre a munkamenetre."
+  },
+  "toastElementRestored": {
+    "message": "Az elem visszaállítva."
+  },
+  "toastAllElementsRestored": {
+    "message": "Az összes elrejtett elem visszaállítva."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Teljes oldalas képernyőkép készítése…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "A teljes oldalas képernyőkép mentve."
+  },
+  "toastArchiveCreated": {
+    "message": "Az egyfájlos HTML-archívum mentve."
+  },
+  "brandSignature": {
+    "message": "Készítette: Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Képek és SVG"
+  },
+  "tabMedia": {
+    "message": "Média és hang"
+  },
+  "tabFonts": {
+    "message": "Betűtípusok"
+  },
+  "tabTextScraper": {
+    "message": "Szöveg és táblázatok"
+  },
+  "heroScreenshotTitle": {
+    "message": "Teljes oldalas képernyőkép"
+  },
+  "heroScreenshotDesc": {
+    "message": "Hézagmentes, többképernyős összefűzés a rögzített fejlécek elrejtésével"
+  },
+  "heroArchiveTitle": {
+    "message": "Egyfájlos HTML archívum"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS és Base64 képek beágyazása, offline is használható pillanatkép"
+  },
+  "copyDataUri": {
+    "message": "Adat-URI másolása"
+  },
+  "copyUrl": {
+    "message": "URL másolása"
+  },
+  "downloadSingle": {
+    "message": "Letöltés"
+  },
+  "searchPlaceholder": {
+    "message": "Szűrés név, URL, címke, MIME vagy /regex/…"
+  },
+  "viewGrid": {
+    "message": "Rácsnézet"
+  },
+  "viewList": {
+    "message": "Listanézet"
+  },
+  "btnScreenshot": {
+    "message": "Képernyőkép"
+  },
+  "btnArchive": {
+    "message": "HTML mentése"
+  },
+  "exportJson": {
+    "message": "Látható lista JSON-ként"
+  },
+  "exportCsv": {
+    "message": "Látható lista CSV-ként"
+  },
+  "exportHar": {
+    "message": "Hálózati napló HAR-ként"
+  },
+  "exportScreenshot": {
+    "message": "Teljes oldalas képernyőkép (PNG)"
+  },
+  "exportArchive": {
+    "message": "Offline oldalarchívum (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Minden metódus"
+  },
+  "filterTypeAll": {
+    "message": "Minden típus"
+  },
+  "filterSortDir": {
+    "message": "Növekvő/csökkenő váltás"
+  },
+  "emptyTitle": {
+    "message": "Nem található forrás"
+  },
+  "emptySubtitle": {
+    "message": "Töltse be újra az oldalt, amíg ez a panel nyitva van a hálózati kérések rögzítéséhez, vagy kattintson a Frissítés gombra az aktuális DOM vizsgálatához."
+  },
+  "statusResources": {
+    "message": "erőforrás"
+  },
+  "statusFiltered": {
+    "message": "szűrt"
+  },
+  "statusSelected": {
+    "message": "kijelölt"
+  },
+  "statusDupes": {
+    "message": "ismétlődések elrejtve"
+  },
+  "statusSize": {
+    "message": "méret"
+  },
+  "langAuto": {
+    "message": "Automatikus (böngésző)"
+  },
+  "langSelectorTitle": {
+    "message": "Nyelv kiválasztása"
+  },
+  "textPillAll": {
+    "message": "Minden tartalom"
+  },
+  "textPillText": {
+    "message": "📄 Szöveg és cikkek"
+  },
+  "textPillTables": {
+    "message": "📊 Csak táblázatok"
+  },
+  "textSelectAll": {
+    "message": "Összes kijelölése"
+  },
+  "textDeselectAll": {
+    "message": "Kijelölés megszüntetése"
+  },
+  "textClearSelection": {
+    "message": "Törlés"
+  },
+  "toastRefreshComplete": {
+    "message": "Oldal beolvasása kész: $count$ új erőforrás",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$ blokk másolva",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Vágólapra másolva"
+  },
+  "toastTableCopied": {
+    "message": "A táblázat a vágólapra másolva"
+  },
+  "toastNothingToExport": {
+    "message": "Nincs mit exportálni"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ blokk exportálva TXT-ként",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$ blokk exportálva Markdown néven",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Nincs rögzítve táblázatsor"
+  },
+  "toastExportedCsv": {
+    "message": "A táblázat CSV-ként exportálva"
+  },
+  "toastExportedXlsx": {
+    "message": "A táblázat XLSX-ként exportálva"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ táblázat exportálva $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ lap exportálva XLSX formátumban",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Nincs letölthető erőforrás."
+  },
+  "toastNoVisibleResources": {
+    "message": "Nincs látható, letölthető erőforrás."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Először válasszon ki legalább egy erőforrást."
+  },
+  "toastZipSaved": {
+    "message": "ZIP mentve: $fetched$/$total$ erőforrás",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "A ZIP nem sikerült: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR exportálva ($count$ bejegyzés)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "Az URL a vágólapra másolva"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "A DevTools által vizsgált ablak nem érhető el."
+  },
+  "toastScreenshotError": {
+    "message": "Képernyőkép-hiba: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Offline oldalarchívum létrehozása…"
+  },
+  "toastArchiveError": {
+    "message": "Archiválási hiba: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "A formázás időtúllépés miatt megszakadt — az eredeti fájl látható."
+  },
+  "toastFormatFailed": {
+    "message": "A fájl nem formázható – az eredeti látható."
+  },
+  "emptySearchTitle": {
+    "message": "Nincs találat a következőre: \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Próbálkozzon másik keresési kifejezéssel, vagy váltson másik kategóriára."
+  },
+  "emptyFiltersTitle": {
+    "message": "Egyetlen erőforrás sem felel meg a jelenlegi szűrőknek"
+  },
+  "emptyFiltersSub": {
+    "message": "Lazítsa a fenti méret- vagy dimenziószűrőket, vagy kattintson a Törlés gombra."
+  },
+  "textEmptyQueryReject": {
+    "message": "Az oldal elutasította ezt a lekérdezést. Javítsa ki fent, és az eredmények azonnal visszajönnek."
+  },
+  "textEmptyNoMatch": {
+    "message": "Az oldalon egyetlen elem sem felel meg ennek a lekérdezésnek. Próbáljon általánosabb választót, vagy váltson módot a mező mellett."
+  },
+  "textEmptyInitial": {
+    "message": "Még semmi sem lett rögzítve. Az élő rögzítés fut — a teljes oldal olvasható szövegként jelenik meg itt."
+  },
+  "textEmptyFiltered": {
+    "message": "Semmi sem egyezik az aktuális lekérdezéssel és elemszűrővel."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ blokk",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ szó",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ karakter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ táblázat · $rows$ egyedi sor",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ kiválasztva – az exportálás csak ezeket használja",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Táblázat – $count$ sor a képernyőn",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Táblázat – mind a $count$ egyedi sor",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ pillanatkép",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "frissítve: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Mind a $count$ sor megjelenítése",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Összes sor megjelenítve"
+  },
+  "textTableHistory": {
+    "message": "Előzmények ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Előzmények elrejtése"
+  },
+  "textTableNoRows": {
+    "message": "Még nincs rögzített sor."
+  },
+  "textBtnCopy": {
+    "message": "Szöveg másolása"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Másolás"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ ismétlődő kép",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Exportálás"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG betöltése…"
+  },
+  "inspectorSvgError": {
+    "message": "Az SVG-tartalom nem kérhető le."
+  },
+  "inspectorLoadingFont": {
+    "message": "Betűtípus előnézetének betöltése…"
+  },
+  "inspectorFontSample": {
+    "message": "Betűtípus előnézete"
+  },
+  "inspectorBeautify": {
+    "message": "Formázás"
+  },
+  "inspectorOriginal": {
+    "message": "Eredeti"
+  },
+  "inspectorHeaders": {
+    "message": "Fejlécek"
+  },
+  "inspectorResponse": {
+    "message": "Válasz"
+  },
+  "inspectorRequest": {
+    "message": "Kérés"
+  },
+  "inspectorQueryParams": {
+    "message": "Lekérdezési paraméterek"
+  },
+  "inspectorRequestBody": {
+    "message": "Kérés törzse"
+  },
+  "textHintHtml": {
+    "message": "Az oldal élő, olvasható másolata. Minden szöveget tartalmazó elem DOM-rendben kerül rögzítésre, és az oldal változásaival itt marad. Kérdezze le egyszerű szöveggel, reguláris kifejezéssel, <strong>CSS-választóval</strong> vagy <strong>XPath</strong>-kifejezéssel, majd exportálja a megfelelőt. A részletekért tekintse meg az <a href=\"#\" id=\"text-hint-guide\">útmutatót</a>."
+  },
+  "textHeadings": {
+    "message": "Címsorok"
+  },
+  "textAllLevels": {
+    "message": "Minden szint"
+  },
+  "textMatches": {
+    "message": "találat"
+  },
+  "textMatch": {
+    "message": "találat"
+  },
+  "textReadingOn": {
+    "message": "Olvasás be"
+  },
+  "toastDownloadStarted": {
+    "message": "Letöltés megkezdődött: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Nem sikerült lekérni ezt az erőforrást (CORS vagy nem támogatott típus)."
+  },
+  "ratingBannerText": {
+    "message": "Tetszik a Source Download? Támogassa nyílt forráskódú elképzelésünket értékeléssel a Chrome Internetes áruházban vagy csillaggal a GitHubon!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Értékelés"
+  },
+  "ratingBannerStar": {
+    "message": "★ Csillag"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ egyedi sor",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ s ezelőtt",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ perce",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Képernyőkép készítése a kijelölt területről"
+  },
+  "btnAreaDownload": {
+    "message": "Letöltés"
+  },
+  "btnAreaCopy": {
+    "message": "Másolás a vágólapra"
+  },
+  "btnAreaCancel": {
+    "message": "Mégse"
+  },
+  "toastAreaCopied": {
+    "message": "A képernyőkép a vágólapra másolva"
+  },
+  "toastAreaDownloaded": {
+    "message": "A képernyőkép mentve"
+  },
+  "statusFoundCssResources": {
+    "message": "$count$ CSS-ből hivatkozott erőforrást találtunk",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "A DOM beolvasása nem sikerült: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Fájltartalom indexelése…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Ismétlődő képek keresése…"
+  },
+  "statusWorking": {
+    "message": "Feldolgozás…"
+  },
+  "filterMethodTitle": {
+    "message": "Szűrés HTTP-metódus szerint"
+  },
+  "filterTypeTitle": {
+    "message": "Szűrés kérés típusa szerint"
+  },
+  "filterSortTitle": {
+    "message": "Erőforrások rendezése"
+  },
+  "textModeTitle": {
+    "message": "A lekérdezőmező értelmezési módja"
+  },
+  "textKindTitle": {
+    "message": "Korlátozás egy elemtípusra"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Címsor szintje"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+ — JavaScript reguláris kifejezés"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — bármilyen CSS-választó"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Keresés az útmutatóban…"
+  },
+  "popupIntro": {
+    "message": "Az <strong>eszköztár jelvénye</strong> által számolt kategóriák. Kapcsolja ki az egyiket a számolás leállításához – a jelvény azonnal csak azt tükrözi, amit követ."
+  },
+  "popupHelpTitle": {
+    "message": "A teljes panel használata"
+  },
+  "popupStep1": {
+    "message": "Nyissa meg a DevTools alkalmazást a vizsgálni kívánt oldalhoz <div class=\"hint\"><kbd>F12</kbd> vagy <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Kattintson a <strong>Source Download</strong> fülre a DevTools eszköztárában"
+  },
+  "popupStep3": {
+    "message": "Böngésszen, ellenőrizze és töltse le az erőforrásokat – egyenként vagy egyszerre ZIP-fájlként."
+  },
+  "popupNote": {
+    "message": "Megjegyzés: a Chrome nem engedi, hogy a bővítmények programozottan megnyissák a DevTools eszközt, ezért a teljes eszközkészlet a DevTools eszköztárán keresztül érhető el."
+  },
+  "popupTrackAll": {
+    "message": "Minden kategória követése"
+  },
+  "popupLanguage": {
+    "message": "Nyelv"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Bináris válasz – töltse le a megtekintéséhez"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Válasz betöltése…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Nincs válasz előnézete – a tartalom nem tölthető le."
+  },
+  "inspectorLoadingContent": {
+    "message": "Tartalom betöltése…"
+  },
+  "inspectorNoPreview": {
+    "message": "Nem érhető el előnézet – a tartalom nem tölthető le."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Összes bezárása"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Az összes megnyitott fül bezárása"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Kattintson a nagyításhoz"
+  },
+  "inspectorViewSource": {
+    "message": "Forrás megtekintése"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Az SVG jelölés megjelenítése szintaktikai kiemeléssel"
+  },
+  "inspectorFormatting": {
+    "message": "Formázás…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Keresés a tartalomban…"
+  },
+  "findPreviousMatch": {
+    "message": "Előző találat"
+  },
+  "findNextMatch": {
+    "message": "Következő találat"
+  },
+  "findClose": {
+    "message": "Bezárás"
+  },
+  "findShowRaw": {
+    "message": "Eredeti (formázatlan) tartalom megjelenítése"
+  },
+  "findBeautify": {
+    "message": "Tartalom formázása"
+  },
+  "btnRaw": {
+    "message": "Nyers"
+  },
+  "btnBeautify": {
+    "message": "Formázás"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) adatfolyam észlelve"
+  },
+  "videoCannotPlay": {
+    "message": "Ez a videó nem játszható le a böngészőben"
+  },
+  "videoHlsNotice": {
+    "message": "A Chrome nem tudja közvetlenül lejátszani a HLS adatfolyamokat. A <b>$NAME$</b> összes szegmensét egyetlen MP4/TS-videófájlba egyesítheti.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "A böngésző nem támogatja ezt a formátumot"
+  },
+  "btnMergeHls": {
+    "message": "Szegmensek egyesítése és letöltés"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ szegmens egyesítve: $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "mérete ismeretlen"
+  },
+  "progressFetching": {
+    "message": "Lekérés $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP $PERCENT$% létrehozása…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP mentve: $FETCHED$/$TOTAL$ erőforrás ($SKIPPED$ sikertelen)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Újrapróbálás: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Letöltés újrapróbálása"
+  },
+  "searchRegexHint": {
+    "message": "Regex-keresés aktív — tegye a lekérdezést /minta/i közé"
+  },
+  "textIncludeInExports": {
+    "message": "Szerepeljen az exportokban"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Az összes pillanatkép egyesítése egyetlen, ismétlődésmentes táblázatba — ez kerül exportálásra"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Böngésszen a táblázat korábbi pillanatképei között"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Töltse le ezt a táblázatot CSV-ként"
+  },
+  "tableSnapshotLabel": {
+    "message": "Pillanatkép $INDEX$ – $TIME$ ($COUNT$ sor)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Kapcsolja be a kiválasztást a kötegelt letöltéshez"
+  },
+  "cardDownloadTitle": {
+    "message": "Fájl letöltése"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Az előző letöltés sikertelen – kattintson az újrapróbálkozáshoz"
+  },
+  "btnThemeLight": {
+    "message": "Váltás világos témára"
+  },
+  "btnThemeDark": {
+    "message": "Váltás sötét témára"
+  },
+  "guideTitle": {
+    "message": "Source Download — Felhasználói kézikönyv"
+  },
+  "guideEmpty": {
+    "message": "Egyetlen útmutatószakasz sem felel meg a keresésnek."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100%-ban függőségmentes.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Kicsinyítés (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "Nagyítás (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Nagyítás visszaállítása (0)"
+  },
+  "lightboxClose": {
+    "message": "Bezárás (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Húzza az átméretezéshez"
+  },
+  "ratingDismissTitle": {
+    "message": "Elvetés"
+  },
+  "inspectorResourceTitle": {
+    "message": "Erőforrás"
+  },
+  "guideSecGettingStarted": {
+    "message": "Kezdő lépések"
+  },
+  "guideSecCategories": {
+    "message": "Kategóriák"
+  },
+  "guideSecSearchFilters": {
+    "message": "Keresés és szűrők"
+  },
+  "guideSecGridView": {
+    "message": "Rács és lista nézet"
+  },
+  "guideSecInspect": {
+    "message": "Erőforrás vizsgálata"
+  },
+  "guideSecDownloading": {
+    "message": "Letöltés"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Szöveg és táblázatok"
+  },
+  "guideSecCaptions": {
+    "message": "Feliratok"
+  },
+  "guideSecSourceMaps": {
+    "message": "Forrástérképek"
+  },
+  "guideSecDupes": {
+    "message": "Ismétlődő képek"
+  },
+  "guideSecVideoHls": {
+    "message": "Videó-tartalék és HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Haladó tippek"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Kattintson a <strong>Source Download</strong> fülre a DevTools eszköztárában (nyomja meg az <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> billentyűt, majd válassza a fület a DevTools eszköztárában). A Chrome nem engedi, hogy a bővítmények automatikusan megnyissák a DevTools eszközt, ezért a panel ott található. Az eszköztárikon felugró ablakában kiválaszthatja, mely kategóriák számítsanak bele az ikon jelvényszámlálójába. A panel eszköztárában lévő nap/hold gomb a Chrome-tól függetlenül rögzít egy világos vagy sötét témát; a választás megmarad."
+  },
+  "guideSecCategoriesContent": {
+    "message": "A bal oldali függőleges fülek minden rögzített erőforrást 17 külön kategóriába csoportosítanak típus szerint: képek, videók, hang, feliratok, dokumentumok, betűtípusok, forrástérképek, WASM, SVG, API-k, cookie-k, tárhely és egyebek. Minden fülön élő számláló látható. Egyszerre csak egy kategória jelenik meg; váltáskor minden szűrő visszaáll, így a látott lista mindig megegyezik a füllel."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "A keresősáv név, URL, típus, alternatív szöveg vagy cím alapján szűr. Zárja be a lekérdezést a <kbd>/…/</kbd> közé, ha reguláris kifejezést szeretne használni, pl. <code>/\\.(png|jpg)$/</code>. Az eszköztár alatt a szűrősáv kategóriánként változik: a média mérete és mérettartománya, az API-k HTTP-módszere és kérésének típusa, valamint a rendezés és az irány."
+  },
+  "guideSecGridViewContent": {
+    "message": "A keresősáv melletti gombokkal válthat a kompakt rács (kis miniatűrök) és a részletes lista között. A választás megmarad a munkamenetek között. Listanézetben a jelölőnégyzetekkel kiválaszthat egyes erőforrásokat a tömeges letöltéshez."
+  },
+  "guideSecInspectContent": {
+    "message": "Kattintson bármelyik erőforrásra, hogy megnyissa a jobb oldali vizsgálópanelen. Minden megnyitott fájl külön fület kap, így több erőforrást is összehasonlíthat egymás mellett — a legújabb balra nyílik. Képekhez, videóhoz, hanghoz, betűtípusokhoz, SVG-hez és szöveghez/kódhoz külön megjelenítők állnak rendelkezésre (Beautify kapcsolóval). Az API-k osztott nézetet mutatnak: a válasz balra, a kérés részletei (metódus, állapot, fejlécek, lekérdezési paraméterek és törzs) jobbra."
+  },
+  "guideSecDownloadingContent": {
+    "message": "A <strong>Nézet letöltése</strong> az éppen látható erőforrásokat (aktív kategória + keresés + szűrők) ZIP-fájlként menti; aktív szűrők esetén a felirata <em>Szűrtek letöltése (N)</em> lesz. Vigye az egérmutatót bármelyik letöltés gombra, hogy kattintás előtt megtekinthesse az archívum becsült méretét. A <strong>Kijelöltek letöltése</strong> csak a bejelölt elemeket tölti le. Az <strong>Az összes letöltése</strong> minden felfedezett erőforrást mappaszerkezetű ZIP-fájlba gyűjt. A sikertelen letöltéseket a rendszer automatikusan újrapróbálja, és a helyi menüből újra megpróbálhatók. Az <strong>Exportálás</strong> a látható listát JSON- vagy CSV-fájlba írja, vagy a Chrome hálózati naplóját HAR-fájlként menti."
+  },
+  "guideSecLightboxContent": {
+    "message": "A nagyítás gomb teljes méretű lightboxban nyitja meg a médiát, ahol húzással mozgathatja a képet, nagyíthat az egérgörgővel, a képernyőn lévő gombokkal vagy a billentyűzettel (<kbd>+</kbd>/<kbd>-</kbd> a nagyításhoz, <kbd>0</kbd> az alaphelyzethez, <kbd>Esc</kbd> a bezáráshoz)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>A <strong>Szöveg</strong> kategória az oldal élő, olvasható másolata. Minden szöveget tartalmazó elemet rögzít — címsorokat, bekezdéseket, listaelemeket, gombokat, <code>div</code>/<code>span</code> elemeket és egyebeket — DOM-sorrendben, és folyamatosan figyel, amíg az <strong>Élő</strong> mód be van kapcsolva.</p><p>A <strong>Lekérdezés</strong> mező négyféleképpen működik, a mellette lévő legördülő menüből választva: a <strong>Tartalmaz</strong> és a <strong>Regex</strong> a már rögzített szöveget szűri, míg a <strong>CSS-választó</strong> és az <strong>XPath</strong> az élő oldalon fut, így a DOM bármely részét elérheti. Az XPath olyan kifejezéseket is elfogad, amelyek elemek helyett értéket adnak vissza, például <code>count(//a)</code> vagy <code>//@href</code>. Ha az oldal hibásnak ítél egy lekérdezést, az üzenet a mező mellett jelenik meg. Az <strong>Elem</strong> az eredményt egyetlen címkére szűkíti, az oldalon talált címkék számával együtt. A lekérdezőmező törlésével (vagy a <strong>Törlés</strong> megnyomásával) visszatér az <em>Minden elem</em> nézethez, és az oldal újra rögzítésre kerül — soha nem kell kézzel visszaállítania a legördülő listát.</p><p>Az <strong>Olvasás</strong> mód elrejti a címkéket, jelölőnégyzeteket és a helyjelzőket, így a folyam úgy olvasható, mint egy dokumentum. A táblázatok korlátozott számú pillanatképet tárolnak, így a dinamikus (SPA) táblázatok sosem vesznek el. Nyomja meg a táblázat <strong>Összes sor megjelenítése</strong> gombját, hogy minden pillanatképet egyetlen, ismétlődésmentes nézetbe egyesítsen — az exportálás pontosan ezt tartalmazza. Exportálhat <strong>TXT</strong> (az olvasható oldal), <strong>MD</strong> (Markdown, táblázatokkal) formátumban, illetve táblázatokat CSV-, HTML- vagy valódi, többlapos <strong>XLSX</strong>-munkafüzetként. A bejelölt elemek élveznek elsőbbséget; ha nincs jelölés, minden látható elem exportálásra kerül.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "A WebVTT, SRT, TTML és más feliratfájlok — beleértve a <code>&lt;track&gt;</code> forrásokat is — a saját <strong>Feliratok</strong> fülükön jelennek meg, ahelyett hogy a dokumentumok közé keverednének."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "A <code>.map</code> fájlok és a forrástérképnek tűnő JSON-törzsek (<code>mappings</code> és <code>sources</code> mezőt tartalmaznak) a <strong>Forrástérképek</strong> alatt jelennek meg, a JSON-megjelenítővel és a Beautify funkcióval, így már nem zsúfolják tele a JSON fület."
+  },
+  "guideSecDupesContent": {
+    "message": "A Képek fülön a panel kivonatot készít a rögzített bájtokról, és megjelöli az azonos fájlokat. Az <strong>Ismétlődések elrejtése</strong> szűrő minden csoportból az első példányt tartja meg, így a nézet ZIP-fájlja nem tartalmazza kétszer ugyanazt a miniatűrt."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Azok az adatfolyamok, amelyeket a böngésző natívan nem tud lejátszani (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, ismeretlen kodekek), fekete lejátszó helyett tartalékmegoldást mutatnak. HLS esetén a szegmenseket közvetlenül a panelen egyesítheti egyetlen videófájlba, vagy letöltheti az eredeti manifestet."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "A dinamikus <strong>API</strong>-válaszokat (XHR/fetch) a rendszer nem szűri ki URL alapján — minden válasz a listában marad (korlátozott, FIFO), így összehasonlíthatja az ismétlődő kéréseket. A statikus erőforrásokat a rendszer deduplikálja. A <strong>Frissítés</strong> az aktuális DOM újraolvasására szolgál; töltse be újra az oldalt nyitott panellel, hogy minden hálózati kérést rögzítsen, a fülváltás előtt indítottakat is."
+  },
+  "toolArrow": {
+    "message": "Nyíl eszköz"
+  },
+  "toolRect": {
+    "message": "Téglalap eszköz"
+  },
+  "toolText": {
+    "message": "Szöveg eszköz"
+  },
+  "toolUndo": {
+    "message": "Visszavonás (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Újra (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Szín"
+  },
+  "badgeStrokeSize": {
+    "message": "Méret: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Betűméret: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Kijelölt terület felvétele videóként / GIF-ként"
+  },
+  "btnRecStart": {
+    "message": "Felvétel indítása"
+  },
+  "btnRecPause": {
+    "message": "Szünet"
+  },
+  "btnRecResume": {
+    "message": "Folytatás"
+  },
+  "btnRecStop": {
+    "message": "Befejezés és letöltés"
+  },
+  "btnRecCancel": {
+    "message": "Mégse"
+  },
+  "toastRecSaved": {
+    "message": "A kijelölt terület felvétele mentve"
+  },
+  "toastRecCancelled": {
+    "message": "A videófelvétel megszakítva"
+  },
+  "toastRecPermissionDenied": {
+    "message": "A képernyőfelvételi engedély nincs megadva"
+  },
+  "btnPopupRecordArea": {
+    "message": "Videó / GIF (terület)"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Képernyőkép (terület)"
+  },
+  "contextMenuPickColor": {
+    "message": "Szín kiválasztása a képernyőről"
+  },
+  "btnPopupPickColor": {
+    "message": "Színválasztás"
+  },
+  "colorPickerTitle": {
+    "message": "Színválasztó"
+  },
+  "btnColorPickAgain": {
+    "message": "Másik szín választása"
+  },
+  "toastColorCopied": {
+    "message": "A szín a vágólapra másolva"
+  },
+  "toastProgressCapturing": {
+    "message": "Teljes oldal rögzítése… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Kép összefűzése…"
+  },
+  "modalExportTitle": {
+    "message": "A teljes oldalas képernyőkép elkészült"
+  },
+  "btnExportPng": {
+    "message": "PNG letöltése"
+  },
+  "btnExportJpg": {
+    "message": "JPG letöltése"
+  },
+  "btnExportPdf": {
+    "message": "Mentés PDF-ként"
+  },
+  "btnExportCopy": {
+    "message": "Másolás a vágólapra"
+  },
+  "btnExportGenerating": {
+    "message": "Létrehozás…"
+  },
+  "toastPdfGenerated": {
+    "message": "A PDF-dokumentum mentve."
+  },
+  "settingNamingPatterns": {
+    "message": "Fájl elnevezési minták"
+  },
+  "settingVideoFormat": {
+    "message": "Alapértelmezett videó formátum"
+  },
+  "settingNamingPreview": {
+    "message": "Előnézet:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF létrehozása, kérjük, várj…"
+  },
+  "settingGifResolution": {
+    "message": "Alapértelmezett GIF felbontás"
+  },
+  "optGifOriginal": {
+    "message": "Eredeti (1:1 natív felbontás — teljes 3K/4K, átméretezés nélkül)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (legfeljebb 1920 px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (legfeljebb 1280 px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (legfeljebb 854 px — gyorsabb és kisebb méret)"
+  },
+  "tipGifDurationLimit": {
+    "message": "A GIF formátum legfeljebb 1 perces (60 mp) felvételi időtartamot támogat."
+  },
+  "guideSecScreenRecording": {
+    "message": "Képernyőfelvétel (videó és GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Rögzítsen bármely képernyőterületet MP4, WebM vagy animált GIF formátumban. A GIF-felvételek 1:1-es natív felbontású, 1080p, 720p és 480p profilokkal rendelkeznek élő becsült fájlmérettel. A GIF-felvétel maximális időtartama 1 perc (60 mp) az optimális böngészőteljesítmény érdekében."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Elérted a GIF 1 perces (60 mp) maximális hosszát. GIF létrehozása…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Legfeljebb 1 perc (60 mp)"
+  },
+  "settingGifFps": {
+    "message": "Alapértelmezett GIF képkockasebesség (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Folyamatos (nagyon sima, nagyobb méret)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Szabványos (webhez és egyensúlyhoz ajánlott)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Kompakt / mém (lépcsőzetes mozgás, kis méret)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / lassú (lépésenkénti „katt-katt”, apró méret)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Prezentáció (másodpercenként 1 képkocka, minimális méret)"
+  },
+  "popupRightClickHint": {
+    "message": "Kattintson a jobb gombbal a weboldal bármely pontján a Képernyőfelvétel (videó/GIF) és a Színválasztó használatához."
+  },
+  "toastElementZappedAd": {
+    "message": "A hirdetés / iframe el van rejtve erre a munkamenetre.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "A kép a vágólapra másolva",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Bezárás (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Beállítások mentve",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Töltsd le a fájlt, és nyisd meg VLC-vel vagy másik médialejátszóval.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Ehhez az erőforrástípushoz nincs előnézet",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Eredeti letöltése",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Tipp: a letöltött fájlt nyisd meg VLC-vel vagy bármely asztali médialejátszóval — gyakorlatilag minden formátumot lejátszik.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP-archívum létrehozása…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "A böngésződ nem támogatja az EyeDropper API-t.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Eszköztár áthúzása",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Formátum váltása: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF felbontása: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF képkockasebesség: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Becsült GIF-méret: ~$size$ MB (10 mp-hez), a 60 mp-es maximumnál legfeljebb ~$max$ MB.\nKépkockasebesség: $fps$ FPS.\nA GIF-felvétel legfeljebb 1 percig (60 mp) tarthat.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ másolása",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Képernyőkép előnézete",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — univerzális lejátszás: WhatsApp, Telegram, Jira, Apple és Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animált kép — ideális README-khez, Jirához, dokumentációhoz és üzenetküldéshez)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — nyílt webes formátum)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Nem található aktív lap.",
+    "description": "No active tab found."
+  }
+}

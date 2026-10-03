@@ -49,24 +49,37 @@ for (const c of CATS) state.tracking[c.key] = true;
 let currentLocale = 'auto';
 let currentMessages = null;
 
+const SUPPORTED_LOCALES = ["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt_PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
+
 function resolveLocale(code) {
   if (!code || code === 'auto') {
     const browserLang = (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getUILanguage)
       ? chrome.i18n.getUILanguage()
-      : (navigator.language || 'en');
+      : (typeof navigator !== 'undefined' ? navigator.language : 'en');
     code = browserLang;
   }
-  const lower = String(code).toLowerCase().replace('-', '_');
-  if (lower.startsWith('tr')) return 'tr';
-  if (lower.startsWith('de')) return 'de';
-  if (lower.startsWith('es')) return 'es';
+  const raw = String(code).trim();
+  const lower = raw.toLowerCase().replace('-', '_');
+
+  if (SUPPORTED_LOCALES.includes(raw)) return raw;
+  for (const loc of SUPPORTED_LOCALES) {
+    if (loc.toLowerCase() === lower) return loc;
+  }
+
+  if (lower.startsWith('zh_tw') || lower.startsWith('zh_hk') || lower.startsWith('zh_mo')) return 'zh_TW';
   if (lower.startsWith('zh')) return 'zh_CN';
-  if (lower.startsWith('ja')) return 'ja';
-  if (lower.startsWith('ru')) return 'ru';
-  if (lower.startsWith('fr')) return 'fr';
+  if (lower.startsWith('pt_pt')) return 'pt_PT';
   if (lower.startsWith('pt')) return 'pt_BR';
-  if (lower.startsWith('it')) return 'it';
-  if (lower.startsWith('ko')) return 'ko';
+  if (lower.startsWith('es_419')) return 'es_419';
+  if (lower.startsWith('es')) return 'es';
+  if (lower.startsWith('en_gb')) return 'en_GB';
+  if (lower.startsWith('en_us')) return 'en_US';
+  if (lower.startsWith('en')) return 'en';
+
+  const prefix = lower.split('_')[0];
+  for (const loc of SUPPORTED_LOCALES) {
+    if (loc.toLowerCase() === prefix) return loc;
+  }
   return 'en';
 }
 
@@ -89,6 +102,11 @@ function setPopupLanguage(lang) {
   const dict = (typeof globalScope !== 'undefined' && globalScope.SourceDownloadI18n) || (typeof window !== 'undefined' && window.SourceDownloadI18n);
   if (dict && dict[resolved]) {
     currentMessages = dict[resolved];
+  }
+
+  const isRtl = ['ar', 'he', 'fa'].includes(resolved);
+  if (document.documentElement) {
+    document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
   }
 
   const langSelect = document.getElementById('popup-lang');
@@ -115,6 +133,9 @@ function setPopupLanguage(lang) {
   });
 
   renderList();
+}
+if (typeof window !== 'undefined') {
+  window.setPopupLanguage = setPopupLanguage;
 }
 
 function allEnabled() {

@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Inspectați și descărcați resurse web ca ZIP. Capturi de ecran complete, tabele live și instrumente pentru dezvoltatori."
+  },
+  "actionTitle": {
+    "message": "Source Download — Deschideți panoul și urmăriți resursele"
+  },
+  "contextMenuZap": {
+    "message": "Ascunde acest element"
+  },
+  "contextMenuUndoZap": {
+    "message": "Restaurează ultimul element ascuns"
+  },
+  "contextMenuResetZap": {
+    "message": "Resetează toate elementele ascunse"
+  },
+  "contextMenuCapturePage": {
+    "message": "Captează pagina întreagă"
+  },
+  "contextMenuPageArchive": {
+    "message": "Descarcă arhiva paginii pentru offline"
+  },
+  "catAll": {
+    "message": "Toate"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Imagini"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Videoclipuri"
+  },
+  "catAudio": {
+    "message": "Audio"
+  },
+  "catCaptions": {
+    "message": "Subtitrări"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Hărți sursă"
+  },
+  "catFonts": {
+    "message": "Fonturi"
+  },
+  "catDocuments": {
+    "message": "Documente"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifeste"
+  },
+  "catText": {
+    "message": "Text"
+  },
+  "catOther": {
+    "message": "Altele"
+  },
+  "catScreenshot": {
+    "message": "Captură de ecran"
+  },
+  "catArchive": {
+    "message": "Arhiva paginii"
+  },
+  "btnRefresh": {
+    "message": "Reîmprospătați"
+  },
+  "btnExport": {
+    "message": "Exportați"
+  },
+  "btnDownloadSelected": {
+    "message": "Descărcați selecția"
+  },
+  "btnDownloadView": {
+    "message": "Descărcați vizualizarea"
+  },
+  "btnDownloadAll": {
+    "message": "Descărcați tot"
+  },
+  "btnDownloadFiltered": {
+    "message": "Descărcați cele filtrate"
+  },
+  "btnTheme": {
+    "message": "Schimbați tema"
+  },
+  "btnGuide": {
+    "message": "Ghidul utilizatorului"
+  },
+  "btnCaptureFullPage": {
+    "message": "Captură de ecran completă"
+  },
+  "btnOfflineArchive": {
+    "message": "Salvați un singur HTML"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Max KB"
+  },
+  "filterMinWidth": {
+    "message": "Lățime min. px"
+  },
+  "filterMinHeight": {
+    "message": "Înălțime min. px"
+  },
+  "filterSortName": {
+    "message": "Sortați după nume"
+  },
+  "filterSortSize": {
+    "message": "Sortați după mărime"
+  },
+  "filterSortType": {
+    "message": "Sortați după tip"
+  },
+  "filterSortTime": {
+    "message": "Sortați după timp"
+  },
+  "filterHideDupes": {
+    "message": "Ascunde duplicatele"
+  },
+  "filterClear": {
+    "message": "Ștergeți"
+  },
+  "textModeContains": {
+    "message": "Conține"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "Selector CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filtrați textul paginii sau interogați DOM live..."
+  },
+  "textAllElements": {
+    "message": "Toate elementele"
+  },
+  "textLiveOn": {
+    "message": "Live activ"
+  },
+  "textLiveOff": {
+    "message": "Live inactiv"
+  },
+  "textScanNow": {
+    "message": "Scanează acum"
+  },
+  "textReading": {
+    "message": "Citire"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Selectați o resursă pentru a-i inspecta detaliile"
+  },
+  "inspectorDetails": {
+    "message": "Detalii"
+  },
+  "inspectorOpenTab": {
+    "message": "Deschide într-o filă nouă"
+  },
+  "inspectorCopyUrl": {
+    "message": "Copiați adresa URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Descărcați acest fișier"
+  },
+  "inspectorClose": {
+    "message": "Închide"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Tip"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Dimensiune"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Sursă"
+  },
+  "metaTitle": {
+    "message": "Titlu"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Vă place Source Download? Susțineți viziunea noastră open-source cu o recenzie în Chrome Web Store sau cu o stea pe GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Lăsați o recenzie"
+  },
+  "ratingStar": {
+    "message": "★ Stea pe GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Închideți"
+  },
+  "toastElementZapped": {
+    "message": "Elementul a fost ascuns pentru această sesiune."
+  },
+  "toastElementRestored": {
+    "message": "Elementul a fost restaurat."
+  },
+  "toastAllElementsRestored": {
+    "message": "Toate elementele ascunse au fost restaurate."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Se captează pagina întreagă…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Captura de ecran a paginii întregi a fost salvată."
+  },
+  "toastArchiveCreated": {
+    "message": "Arhiva HTML într-un singur fișier a fost salvată."
+  },
+  "brandSignature": {
+    "message": "Realizat de Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Imagini și SVG"
+  },
+  "tabMedia": {
+    "message": "Media și audio"
+  },
+  "tabFonts": {
+    "message": "Fonturi"
+  },
+  "tabTextScraper": {
+    "message": "Text și tabele"
+  },
+  "heroScreenshotTitle": {
+    "message": "Captură de ecran completă"
+  },
+  "heroScreenshotDesc": {
+    "message": "Îmbinare perfectă a mai multor zone vizibile, cu suprimarea antetelor fixe"
+  },
+  "heroArchiveTitle": {
+    "message": "Arhivă HTML cu un singur fișier"
+  },
+  "heroArchiveDesc": {
+    "message": "Integrează CSS și imagini Base64, instantaneu sigur offline"
+  },
+  "copyDataUri": {
+    "message": "Copiați Data-URI"
+  },
+  "copyUrl": {
+    "message": "Copiați adresa URL"
+  },
+  "downloadSingle": {
+    "message": "Descărcați"
+  },
+  "searchPlaceholder": {
+    "message": "Filtrați după nume, URL, etichetă, MIME sau /regex/..."
+  },
+  "viewGrid": {
+    "message": "Vizualizare grilă"
+  },
+  "viewList": {
+    "message": "Vizualizare listă"
+  },
+  "btnScreenshot": {
+    "message": "Captură de ecran"
+  },
+  "btnArchive": {
+    "message": "Salvați HTML"
+  },
+  "exportJson": {
+    "message": "Lista vizibilă ca JSON"
+  },
+  "exportCsv": {
+    "message": "Lista vizibilă ca CSV"
+  },
+  "exportHar": {
+    "message": "Jurnal de rețea ca HAR"
+  },
+  "exportScreenshot": {
+    "message": "Captură de ecran completă (PNG)"
+  },
+  "exportArchive": {
+    "message": "Arhiva offline a paginii (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Toate metodele"
+  },
+  "filterTypeAll": {
+    "message": "Toate tipurile"
+  },
+  "filterSortDir": {
+    "message": "Comutați crescător / descrescător"
+  },
+  "emptyTitle": {
+    "message": "Nu au fost găsite resurse"
+  },
+  "emptySubtitle": {
+    "message": "Reîncărcați pagina în timp ce acest panou este deschis pentru a captura cererile de rețea sau faceți clic pe Reîmprospătați pentru a scana DOM-ul curent."
+  },
+  "statusResources": {
+    "message": "resurse"
+  },
+  "statusFiltered": {
+    "message": "filtrate"
+  },
+  "statusSelected": {
+    "message": "selectate"
+  },
+  "statusDupes": {
+    "message": "duplicate ascunse"
+  },
+  "statusSize": {
+    "message": "dimensiune"
+  },
+  "langAuto": {
+    "message": "Auto (browser)"
+  },
+  "langSelectorTitle": {
+    "message": "Selectați limba"
+  },
+  "textPillAll": {
+    "message": "Tot conținutul"
+  },
+  "textPillText": {
+    "message": "📄 Text și articole"
+  },
+  "textPillTables": {
+    "message": "📊 Numai tabele"
+  },
+  "textSelectAll": {
+    "message": "Selectați tot"
+  },
+  "textDeselectAll": {
+    "message": "Deselectați tot"
+  },
+  "textClearSelection": {
+    "message": "Ștergeți"
+  },
+  "toastRefreshComplete": {
+    "message": "Scanarea paginii finalizată: $count$ resurse noi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "S-au copiat $count$ blocuri",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Copiat în clipboard"
+  },
+  "toastTableCopied": {
+    "message": "Tabelul a fost copiat în clipboard"
+  },
+  "toastNothingToExport": {
+    "message": "Nimic de exportat"
+  },
+  "toastExportedTxt": {
+    "message": "S-au exportat $count$ blocuri ca TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "S-au exportat $count$ blocuri ca Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Nu au fost capturate rânduri de tabel"
+  },
+  "toastExportedCsv": {
+    "message": "Tabelul a fost exportat ca CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Tabelul exportat ca XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "S-au exportat $count$ tabel(e) ca $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "S-au exportat $count$ foi ca XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Nu există resurse de descărcat."
+  },
+  "toastNoVisibleResources": {
+    "message": "Nu există resurse vizibile de descărcat."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Selectați mai întâi cel puțin o resursă."
+  },
+  "toastZipSaved": {
+    "message": "ZIP salvat: $fetched$ din $total$ resurse",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Crearea ZIP a eșuat: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR exportat ($count$ intrări)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "Adresa URL a fost copiată în clipboard"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Fereastra inspectată DevTools nu este disponibilă."
+  },
+  "toastScreenshotError": {
+    "message": "Eroare de captură de ecran: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Se creează arhiva paginii pentru offline…"
+  },
+  "toastArchiveError": {
+    "message": "Eroare de arhivare: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Formatarea a expirat — se afișează fișierul original."
+  },
+  "toastFormatFailed": {
+    "message": "Nu s-a putut formata fișierul — afișează originalul."
+  },
+  "emptySearchTitle": {
+    "message": "Nu există potriviri pentru „$query$”",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Încercați un alt termen de căutare sau comutați la o altă categorie."
+  },
+  "emptyFiltersTitle": {
+    "message": "Nicio resursă nu se potrivește cu filtrele actuale"
+  },
+  "emptyFiltersSub": {
+    "message": "Relaxați filtrele de dimensiune de mai sus sau apăsați Ștergeți."
+  },
+  "textEmptyQueryReject": {
+    "message": "Pagina a respins această interogare. Corectați-o mai sus și rezultatele vor reveni imediat."
+  },
+  "textEmptyNoMatch": {
+    "message": "Niciun element din pagină nu se potrivește cu această interogare. Încercați un selector mai general sau schimbați modul de lângă casetă."
+  },
+  "textEmptyInitial": {
+    "message": "Nimic capturat încă. Captura live rulează — întreaga pagină va apărea aici ca text care poate fi citit."
+  },
+  "textEmptyFiltered": {
+    "message": "Nimic nu se potrivește cu interogarea curentă și cu filtrul de elemente."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ blocuri",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ cuvinte",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ caractere",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ tabel(e) · $rows$ rânduri unice",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ selectate — exporturile le folosesc doar pe acestea",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Tabel — $count$ rând(e) pe ecran",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Tabel — toate cele $count$ rânduri unice",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ instantanee",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "actualizat $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Afișați toate cele $count$ rânduri",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Se afișează toate rândurile"
+  },
+  "textTableHistory": {
+    "message": "Istoric ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Ascundeți istoricul"
+  },
+  "textTableNoRows": {
+    "message": "Încă nu au fost capturate rânduri."
+  },
+  "textBtnCopy": {
+    "message": "Copiați textul"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Copiați"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ imagini duplicat(e)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Exportați"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Se încarcă SVG..."
+  },
+  "inspectorSvgError": {
+    "message": "Conținutul SVG nu a putut fi preluat."
+  },
+  "inspectorLoadingFont": {
+    "message": "Se încarcă previzualizarea fontului..."
+  },
+  "inspectorFontSample": {
+    "message": "Previzualizare font"
+  },
+  "inspectorBeautify": {
+    "message": "Formatați"
+  },
+  "inspectorOriginal": {
+    "message": "Original"
+  },
+  "inspectorHeaders": {
+    "message": "Anteturi"
+  },
+  "inspectorResponse": {
+    "message": "Răspuns"
+  },
+  "inspectorRequest": {
+    "message": "Cerere"
+  },
+  "inspectorQueryParams": {
+    "message": "Parametrii de interogare"
+  },
+  "inspectorRequestBody": {
+    "message": "Corpul cererii"
+  },
+  "textHintHtml": {
+    "message": "O copie live, lizibilă a paginii. Fiecare element care conține text este capturat în ordinea DOM și păstrat aici pe măsură ce pagina se schimbă. Interogați-l cu text simplu, o expresie regulată, un <strong>selector CSS</strong> sau o expresie <strong>XPath</strong>, apoi exportați ceea ce s-a potrivit. Consultați <a href=\"#\" id=\"text-hint-guide\">ghidul</a> pentru detalii."
+  },
+  "textHeadings": {
+    "message": "Titluri"
+  },
+  "textAllLevels": {
+    "message": "Toate nivelurile"
+  },
+  "textMatches": {
+    "message": "potriviri"
+  },
+  "textMatch": {
+    "message": "potrivire"
+  },
+  "textReadingOn": {
+    "message": "Citire activă"
+  },
+  "toastDownloadStarted": {
+    "message": "Descărcarea a început: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Nu s-a putut prelua această resursă (CORS sau tip neacceptat)."
+  },
+  "ratingBannerText": {
+    "message": "Vă place Source Download? Susțineți viziunea noastră open-source cu o recenzie în Chrome Web Store sau cu o stea pe GitHub"
+  },
+  "ratingBannerReview": {
+    "message": "★ Recenzie"
+  },
+  "ratingBannerStar": {
+    "message": "★ Stea"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ rânduri unice",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "acum $count$ s",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "acum $count$ min",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Captează zona de pe ecran"
+  },
+  "btnAreaDownload": {
+    "message": "Descarcă"
+  },
+  "btnAreaCopy": {
+    "message": "Copiază în clipboard"
+  },
+  "btnAreaCancel": {
+    "message": "Anulează"
+  },
+  "toastAreaCopied": {
+    "message": "Captura de ecran a zonei a fost copiată în clipboard"
+  },
+  "toastAreaDownloaded": {
+    "message": "Captura de ecran a zonei a fost salvată"
+  },
+  "statusFoundCssResources": {
+    "message": "S-au găsit $count$ resurse la care se face referire din CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Scanarea DOM a eșuat: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Se indexează conținutul fișierului..."
+  },
+  "statusCheckingDuplicates": {
+    "message": "Se verifică duplicatele imaginilor..."
+  },
+  "statusWorking": {
+    "message": "Se procesează…"
+  },
+  "filterMethodTitle": {
+    "message": "Filtrați după metoda HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Filtrați după tipul cererii"
+  },
+  "filterSortTitle": {
+    "message": "Sortați resursele"
+  },
+  "textModeTitle": {
+    "message": "Cum este interpretată caseta de interogare"
+  },
+  "textKindTitle": {
+    "message": "Restricționați la un tip de element"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Nivel de titlu"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Preț:\\s*\\d+ — expresie regulată JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, articol h2 — orice selector CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Cauta in ghid..."
+  },
+  "popupIntro": {
+    "message": "Categoriile numărate de <strong>insigna barei de instrumente</strong>. Dezactivați una pentru a nu o mai număra — insigna reflectă instantaneu doar ceea ce urmăriți."
+  },
+  "popupHelpTitle": {
+    "message": "Cum se utilizează panoul complet"
+  },
+  "popupStep1": {
+    "message": "Deschideți DevTools pentru pagina pe care doriți să o inspectați <div class=\"hint\"><kbd>F12</kbd> sau <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>Eu</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Faceți clic pe fila <strong>Descărcare sursă</strong> din bara de instrumente DevTools"
+  },
+  "popupStep3": {
+    "message": "Răsfoiți, inspectați și descărcați resurse - individual sau toate deodată ca fișier ZIP."
+  },
+  "popupNote": {
+    "message": "Notă: Chrome nu permite extensiilor să deschidă programatic DevTools, motiv pentru care se ajunge la suita completă de inginerie prin bara de instrumente DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Urmăriți toate categoriile"
+  },
+  "popupLanguage": {
+    "message": "Limba"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Răspuns binar — descărcați pentru a-l vizualiza"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Se încarcă răspunsul..."
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Previzualizare fără răspuns — conținutul nu a putut fi preluat."
+  },
+  "inspectorLoadingContent": {
+    "message": "Se încarcă conținutul..."
+  },
+  "inspectorNoPreview": {
+    "message": "Nicio previzualizare disponibilă — conținutul nu a putut fi preluat."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Închideți totul"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Închideți toate filele deschise"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Click pentru a mari"
+  },
+  "inspectorViewSource": {
+    "message": "Vizualizați sursa"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Afișați marcajul SVG cu evidențierea sintaxelor"
+  },
+  "inspectorFormatting": {
+    "message": "Se formatează..."
+  },
+  "findInContentPlaceholder": {
+    "message": "Găsiți în conținut..."
+  },
+  "findPreviousMatch": {
+    "message": "Potrivirea anterioară"
+  },
+  "findNextMatch": {
+    "message": "Următoarea potrivire"
+  },
+  "findClose": {
+    "message": "Închide"
+  },
+  "findShowRaw": {
+    "message": "Afișați conținutul original (neformatat)"
+  },
+  "findBeautify": {
+    "message": "Formatați acest conținut"
+  },
+  "btnRaw": {
+    "message": "Brut"
+  },
+  "btnBeautify": {
+    "message": "Formatați"
+  },
+  "videoHlsDetected": {
+    "message": "Fluxul HLS (m3u8) a fost detectat"
+  },
+  "videoCannotPlay": {
+    "message": "Acest videoclip nu poate fi redat în browser"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome nu poate reda direct fluxuri HLS. Puteți îmbina toate segmentele <b>$NAME$</b> într-un singur fișier video MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Browserul nu acceptă acest format"
+  },
+  "btnMergeHls": {
+    "message": "Îmbinați segmente și descărcați"
+  },
+  "toastHlsMerged": {
+    "message": "Au fost îmbinate $COUNT$ segmente în $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "dimensiune necunoscută"
+  },
+  "progressFetching": {
+    "message": "Se preiau $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Se creează ZIP $PERCENT$%...",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP salvat: $FETCHED$ din $TOTAL$ resurse ($SKIPPED$ nu au reușit)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Reîncercați $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Reîncearcă descărcarea"
+  },
+  "searchRegexHint": {
+    "message": "Căutare de expresii regulate activă — includeți interogarea în /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Includeți în exporturi"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Combinați fiecare instantaneu într-un singur tabel deduplicat - acesta este ceea ce este exportat"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Răsfoiți instantaneele anterioare ale acestui tabel"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Descărcați acest tabel ca CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Instantaneu $INDEX$ — $TIME$ ($COUNT$ rânduri)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Comutați selecția pentru descărcarea în lot"
+  },
+  "cardDownloadTitle": {
+    "message": "Descărcați fișierul"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Descărcarea anterioară a eșuat - faceți clic pentru a reîncerca"
+  },
+  "btnThemeLight": {
+    "message": "Comutați la tema luminoasă"
+  },
+  "btnThemeDark": {
+    "message": "Comutați la tema întunecată"
+  },
+  "guideTitle": {
+    "message": "Source Download — Ghidul utilizatorului"
+  },
+  "guideEmpty": {
+    "message": "Nicio secțiune de ghid nu corespunde căutării dvs."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% fără dependențe.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Micșorați (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Măriți (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Resetați zoomul (0)"
+  },
+  "lightboxClose": {
+    "message": "Închidere (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Trageți pentru a redimensiona"
+  },
+  "ratingDismissTitle": {
+    "message": "Închideți"
+  },
+  "inspectorResourceTitle": {
+    "message": "Resursă"
+  },
+  "guideSecGettingStarted": {
+    "message": "Pentru început"
+  },
+  "guideSecCategories": {
+    "message": "Categorii"
+  },
+  "guideSecSearchFilters": {
+    "message": "Căutare și filtre"
+  },
+  "guideSecGridView": {
+    "message": "Vizualizare grilă și listă"
+  },
+  "guideSecInspect": {
+    "message": "Inspectați o resursă"
+  },
+  "guideSecDownloading": {
+    "message": "Descărcare"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Text și tabele"
+  },
+  "guideSecCaptions": {
+    "message": "Subtitrări și legende"
+  },
+  "guideSecSourceMaps": {
+    "message": "Hărți sursă"
+  },
+  "guideSecDupes": {
+    "message": "Imagini duplicate"
+  },
+  "guideSecVideoHls": {
+    "message": "Alternativă video și HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Sfaturi pentru utilizatori avansați"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Faceți clic pe fila <strong>Source Download</strong> din bara de instrumente DevTools (apăsați <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, apoi pe fila din bara de instrumente DevTools). Chrome nu permite extensiilor să deschidă automat DevTools, motiv pentru care panoul se află acolo. Fereastra pop-up a pictogramei din bara de instrumente vă permite să alegeți ce categorii alimentează contorul de pe insigna pictogramei. Butonul soare/lună din bara de instrumente a panoului fixează o temă luminoasă sau întunecată, independent de Chrome; alegerea este reținută."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Filele verticale din stânga grupează fiecare resursă capturată în 17 categorii dedicate după tip: imagini, videoclipuri, audio, subtitrări, documente, fonturi, hărți sursă, WASM, SVG, API-uri, cookie-uri, stocare și multe altele. Fiecare filă arată un număr live. Este afișată o singură categorie odată; comutarea resetează toate filtrele, astfel încât ceea ce vedeți se potrivește întotdeauna cu fila."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Bara de căutare filtrează după nume, URL, tip, text alternativ sau titlu. Încadrați interogarea între <kbd>/…/</kbd> pentru a utiliza o expresie regulată, de ex. <code>/\\.(png|jpg)$/</code>. Sub bara de instrumente, bara de filtre se modifică în funcție de categorie: intervale de dimensiune a fișierului și de dimensiuni pentru media, metoda HTTP și tipul cererii pentru API-uri, plus sortarea și direcția."
+  },
+  "guideSecGridViewContent": {
+    "message": "Comutați între o grilă compactă (miniaturi mici) și o listă detaliată cu butoanele de lângă bara de căutare. Alegerea dvs. este reținută între sesiuni. În vizualizarea listă, casetele de selectare vă permit să selectați resurse individuale pentru descărcare în lot."
+  },
+  "guideSecInspectContent": {
+    "message": "Faceți clic pe orice resursă pentru a o deschide în panoul de inspecție din dreapta. Fiecare fișier deschis devine o filă, astfel încât să puteți compara mai multe resurse una lângă alta — cea mai nouă se deschide în stânga. Există vizualizatoare specializate pentru imagini, video, audio, fonturi, SVG și text/cod (cu comutator de formatare). API-urile afișează o vizualizare împărțită: răspunsul în stânga, detaliile cererii (metodă, stare, anteturi, parametri de interogare și corp) în dreapta."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Descărcați vizualizarea</strong> salvează resursele vizibile în prezent (categoria activă + căutare + filtre) ca ZIP; eticheta devine <em>Descărcați cele filtrate (N)</em> când filtrele sunt active. Treceți cu mouse-ul peste orice buton de descărcare pentru a vedea dimensiunea estimată a arhivei înainte de a face clic. <strong>Descărcați selecția</strong> descarcă numai elementele bifate. <strong>Descărcați tot</strong> captează fiecare resursă descoperită într-un ZIP structurat pe foldere. Descărcările eșuate sunt reîncercate automat și pot fi reîncercate din meniul contextual. <strong>Exportați</strong> salvează lista vizibilă ca JSON sau CSV sau exportă jurnalul de rețea din Chrome ca fișier HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Butonul de zoom deschide fișierul media într-un lightbox pe toată dimensiunea, în care puteți deplasa imaginea prin glisare și puteți mări cu rotița mouse-ului, cu butoanele de pe ecran sau de la tastatură (<kbd>+</kbd>/<kbd>-</kbd> pentru zoom, <kbd>0</kbd> pentru resetare, <kbd>Esc</kbd> pentru închidere)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Categoria <strong>Text</strong> este o copie live, lizibilă a paginii. Captează fiecare element care conține text — titluri, paragrafe, elemente de listă, butoane, <code>div</code>/<code>span</code> și altele — în ordinea DOM și continuă să scaneze cât timp <strong>Live</strong> este activ.</p><p>Caseta <strong>Interogare</strong> funcționează în patru moduri, alese din lista derulantă de lângă ea: <strong>Conține</strong> și <strong>Regex</strong> filtrează textul deja capturat, în timp ce <strong>Selector CSS</strong> și <strong>XPath</strong> se execută pe pagina live, deci pot ajunge la orice element din DOM. XPath acceptă și expresii care returnează o valoare în loc de elemente, cum ar fi <code>count(//a)</code> sau <code>//@href</code>. Orice mesaj afișat de pagină despre o interogare incorectă apare lângă casetă. <strong>Element</strong> restrânge rezultatul la o singură etichetă, cu numărul fiecărei etichete găsite pe pagină. Golirea casetei de interogare (sau apăsarea pe <strong>Ștergeți</strong>) vă readuce la <em>Toate elementele</em> și recapturează pagina — nu trebuie să resetați niciodată manual lista derulantă.</p><p><strong>Citire</strong> ascunde etichetele, casetele de selectare și indicatorii de locație, astfel încât fluxul să se citească ca un document. Tabelele păstrează un istoric limitat de instantanee, astfel încât tabelele dinamice (SPA) să nu se piardă niciodată. Apăsați pe <strong>Afișați toate rândurile</strong> pentru un tabel pentru a îmbina toate instantaneele într-o singură vizualizare deduplicată — exact ceea ce conține un export. Exportați ca <strong>TXT</strong> (pagina lizibilă), <strong>MD</strong> (Markdown, cu tabele incluse) sau tabelele ca CSV, HTML ori ca registru real <strong>XLSX</strong> cu mai multe foi. Elementele bifate au prioritate; în caz contrar, se exportă tot ce este vizibil în prezent.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "Fișierele WebVTT, SRT, TTML și alte fișiere de subtitrări — inclusiv sursele <code>&lt;track&gt;</code> — ajung în propria filă <strong>Subtitrări</strong>, în loc să fie amestecate cu documentele."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Fișierele <code>.map</code> și corpurile JSON care arată ca hărți sursă (conțin <code>mappings</code> și <code>sources</code>) sunt grupate la <strong>Hărți sursă</strong>, cu vizualizatorul JSON și formatare, astfel încât să nu mai aglomereze fila JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "În fila Imagini, panoul calculează hash-ul octeților capturați și marchează fișierele identice. Un filtru <strong>Ascunde duplicatele</strong> păstrează prima copie din fiecare set, astfel încât un ZIP al vizualizării să nu includă aceeași miniatură de două ori."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Fluxurile pe care browserul nu le poate reda nativ (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, codecuri necunoscute) afișează o alternativă în loc de un player negru. Pentru HLS puteți îmbina segmentele într-un singur fișier video direct din panou sau puteți descărca manifestul original."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Răspunsurile <strong>API</strong> dinamice (XHR/fetch) nu sunt deduplicate după URL — fiecare răspuns rămâne în listă (limitat, FIFO), astfel încât să puteți compara cererile repetate. Resursele statice sunt deduplicate. Folosiți <strong>Reîmprospătați</strong> pentru a scana din nou DOM-ul curent și reîncărcați pagina cât timp panoul este deschis pentru a captura fiecare cerere de rețea, inclusiv pe cele declanșate înainte de a schimba filele."
+  },
+  "toolArrow": {
+    "message": "Instrument săgeată"
+  },
+  "toolRect": {
+    "message": "Instrument dreptunghi"
+  },
+  "toolText": {
+    "message": "Instrument text"
+  },
+  "toolUndo": {
+    "message": "Anulează (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Refă (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Culoare"
+  },
+  "badgeStrokeSize": {
+    "message": "Dimensiune: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Dimensiune font: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Înregistrează video / GIF dintr-o zonă"
+  },
+  "btnRecStart": {
+    "message": "Începe înregistrarea"
+  },
+  "btnRecPause": {
+    "message": "Pauză"
+  },
+  "btnRecResume": {
+    "message": "Reia"
+  },
+  "btnRecStop": {
+    "message": "Finalizează și descarcă"
+  },
+  "btnRecCancel": {
+    "message": "Anulează"
+  },
+  "toastRecSaved": {
+    "message": "Înregistrarea zonei a fost salvată"
+  },
+  "toastRecCancelled": {
+    "message": "Înregistrarea video a fost anulată"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Permisiunea de înregistrare a ecranului nu a fost acordată"
+  },
+  "btnPopupRecordArea": {
+    "message": "Video / GIF din zonă"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Captură de ecran din zonă"
+  },
+  "contextMenuPickColor": {
+    "message": "Alege o culoare de pe ecran"
+  },
+  "btnPopupPickColor": {
+    "message": "Alegeți culoarea"
+  },
+  "colorPickerTitle": {
+    "message": "Selector de culori"
+  },
+  "btnColorPickAgain": {
+    "message": "Alege altă culoare"
+  },
+  "toastColorCopied": {
+    "message": "Culoarea a fost copiată în clipboard"
+  },
+  "toastProgressCapturing": {
+    "message": "Se captează pagina întreagă... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Se îmbină imaginea..."
+  },
+  "modalExportTitle": {
+    "message": "Captura de ecran a paginii întregi este gata"
+  },
+  "btnExportPng": {
+    "message": "Descarcă PNG"
+  },
+  "btnExportJpg": {
+    "message": "Descarcă JPG"
+  },
+  "btnExportPdf": {
+    "message": "Salvează ca PDF"
+  },
+  "btnExportCopy": {
+    "message": "Copiază în clipboard"
+  },
+  "btnExportGenerating": {
+    "message": "Se generează..."
+  },
+  "toastPdfGenerated": {
+    "message": "Documentul PDF a fost salvat."
+  },
+  "settingNamingPatterns": {
+    "message": "Modele de denumire a fișierelor"
+  },
+  "settingVideoFormat": {
+    "message": "Format video implicit"
+  },
+  "settingNamingPreview": {
+    "message": "Previzualizare:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Se generează GIF-ul, vă rugăm așteptați..."
+  },
+  "settingGifResolution": {
+    "message": "Rezoluție GIF implicită"
+  },
+  "optGifOriginal": {
+    "message": "Original (rezoluție nativă 1:1 — 3K/4K complet, fără reducere)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (max. 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (max. 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (max. 854px — mai rapid și mai mic)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Formatul GIF acceptă o durată maximă de înregistrare de 1 minut (60s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Înregistrare ecran (video și GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Înregistrați orice zonă a ecranului ca MP4, WebM sau GIF animat. Înregistrările GIF oferă profiluri cu rezoluție nativă 1:1, 1080p, 720p și 480p, cu dimensiuni estimate ale fișierelor în timp real. Durata maximă a unei înregistrări GIF este de 1 minut (60s) pentru performanță optimă a browserului."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "S-a atins durata maximă a GIF-ului de 1 minut (60 s). Se generează GIF-ul..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Max. 1 min (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Rata de cadre GIF implicită (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Fluid (fluiditate ridicată, dimensiune mai mare)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standard (recomandat pentru web și echilibru)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Compact / meme (mișcare în trepte, dimensiune mică)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / lent (pas cu pas, „clic-clic”, dimensiune foarte mică)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Prezentare (1 cadru pe secundă, dimensiune minimă)"
+  },
+  "popupRightClickHint": {
+    "message": "Faceți clic dreapta oriunde pe pagina web pentru Înregistrare ecran (Video/GIF) și Selector de culori."
+  },
+  "toastElementZappedAd": {
+    "message": "Reclama / iframe-ul a fost ascuns pentru această sesiune.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Imaginea a fost copiată în clipboard",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Închide (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Setările au fost salvate",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Descarcă fișierul și deschide-l cu VLC sau cu alt player multimedia.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Nu există previzualizare pentru acest tip de resursă",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Descarcă originalul",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Sfat: deschide fișierul descărcat cu VLC sau cu orice player multimedia pentru desktop — redă practic orice format.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Se creează arhiva ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Browserul tău nu acceptă API-ul EyeDropper.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Trage bara de instrumente",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Schimbă formatul: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Rezoluție GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Rată de cadre GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Dimensiune estimată a GIF-ului: ~$size$ MB (pentru 10 s), până la ~$max$ MB la maximum 60 s.\nRată de cadre: $fps$ FPS.\nÎnregistrarea GIF este limitată la maximum 1 minut (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Copiază $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Previzualizare captură de ecran",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — redare universală pe WhatsApp, Telegram, Jira, Apple și Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (imagine animată — ideal pentru READMEs, Jira, documentație și mesagerie)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — format web deschis)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Nu a fost găsită nicio filă activă.",
+    "description": "No active tab found."
+  }
+}

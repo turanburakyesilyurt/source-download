@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Uuri ja laadi veebiressursid alla ZIP-failina. Kogu lehe ekraanipildid, tabelite otsejäädvustus ja arendaja tööriistad."
+  },
+  "actionTitle": {
+    "message": "Source Download – ava paneel ja jälgi ressursse"
+  },
+  "contextMenuZap": {
+    "message": "Peida see element (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "Taasta viimati peidetud element"
+  },
+  "contextMenuResetZap": {
+    "message": "Lähtesta kõik peidetud elemendid"
+  },
+  "contextMenuCapturePage": {
+    "message": "Jäädvusta kogu lehe ekraanipilt"
+  },
+  "contextMenuPageArchive": {
+    "message": "Laadi alla lehe võrguühenduseta arhiiv"
+  },
+  "catAll": {
+    "message": "Kõik"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Pildid"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Videod"
+  },
+  "catAudio": {
+    "message": "Heli"
+  },
+  "catCaptions": {
+    "message": "Subtiitrid"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Allikakaardid"
+  },
+  "catFonts": {
+    "message": "Fondid"
+  },
+  "catDocuments": {
+    "message": "Dokumendid"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifestid"
+  },
+  "catText": {
+    "message": "Tekst"
+  },
+  "catOther": {
+    "message": "Muud"
+  },
+  "catScreenshot": {
+    "message": "Ekraanipilt"
+  },
+  "catArchive": {
+    "message": "Lehekülje arhiiv"
+  },
+  "btnRefresh": {
+    "message": "Värskenda"
+  },
+  "btnExport": {
+    "message": "Ekspordi"
+  },
+  "btnDownloadSelected": {
+    "message": "Laadi valitud alla"
+  },
+  "btnDownloadView": {
+    "message": "Laadi vaade alla"
+  },
+  "btnDownloadAll": {
+    "message": "Laadi kõik alla"
+  },
+  "btnDownloadFiltered": {
+    "message": "Laadi filtreeritud alla"
+  },
+  "btnTheme": {
+    "message": "Vaheta teemat"
+  },
+  "btnGuide": {
+    "message": "Kasutusjuhend"
+  },
+  "btnCaptureFullPage": {
+    "message": "Terve lehe ekraanipilt"
+  },
+  "btnOfflineArchive": {
+    "message": "Salvesta ühe HTML-failina"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Max KB"
+  },
+  "filterMinWidth": {
+    "message": "Minim laius px"
+  },
+  "filterMinHeight": {
+    "message": "Min kõrgus px"
+  },
+  "filterSortName": {
+    "message": "Sorteeri nime järgi"
+  },
+  "filterSortSize": {
+    "message": "Sorteeri suuruse järgi"
+  },
+  "filterSortType": {
+    "message": "Sorteeri tüübi järgi"
+  },
+  "filterSortTime": {
+    "message": "Sorteeri aja järgi"
+  },
+  "filterHideDupes": {
+    "message": "Peida duplikaadid"
+  },
+  "filterClear": {
+    "message": "Tühjenda"
+  },
+  "textModeContains": {
+    "message": "Sisaldab"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS-valija"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filtreeri lehe teksti või päri reaalajas DOM-i…"
+  },
+  "textAllElements": {
+    "message": "Kõik elemendid"
+  },
+  "textLiveOn": {
+    "message": "Reaalaeg sees"
+  },
+  "textLiveOff": {
+    "message": "Reaalaeg väljas"
+  },
+  "textScanNow": {
+    "message": "Skaneeri kohe"
+  },
+  "textReading": {
+    "message": "Lugemine"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Vali ressurss, et näha selle üksikasju"
+  },
+  "inspectorDetails": {
+    "message": "Üksikasjad"
+  },
+  "inspectorOpenTab": {
+    "message": "Ava uuel vahelehel"
+  },
+  "inspectorCopyUrl": {
+    "message": "Kopeeri URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Laadi see fail alla"
+  },
+  "inspectorClose": {
+    "message": "Sule"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Tüüp"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Suurus"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Allikas"
+  },
+  "metaTitle": {
+    "message": "Pealkiri"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Kas Source Download meeldib? Toeta meie avatud lähtekoodiga projekti arvustusega Chrome'i veebipoes või tärniga GitHubis!"
+  },
+  "ratingReview": {
+    "message": "★ Jäta arvustus"
+  },
+  "ratingStar": {
+    "message": "★ Anna GitHubis tärn"
+  },
+  "ratingDismiss": {
+    "message": "Loobu"
+  },
+  "toastElementZapped": {
+    "message": "Element on selleks seansiks peidetud."
+  },
+  "toastElementRestored": {
+    "message": "Element taastati."
+  },
+  "toastAllElementsRestored": {
+    "message": "Kõik peidetud elemendid taastati."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Kogu lehe ekraanipildi jäädvustamine…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Kogu lehe ekraanipilt salvestati."
+  },
+  "toastArchiveCreated": {
+    "message": "Ühe failina HTML-arhiiv salvestati."
+  },
+  "brandSignature": {
+    "message": "Loonud Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Pildid ja SVG"
+  },
+  "tabMedia": {
+    "message": "Meedia ja heli"
+  },
+  "tabFonts": {
+    "message": "Fondid"
+  },
+  "tabTextScraper": {
+    "message": "Tekst ja tabelid"
+  },
+  "heroScreenshotTitle": {
+    "message": "Terve lehe ekraanipilt"
+  },
+  "heroScreenshotDesc": {
+    "message": "Sujuv mitme vaateava ühendamine • Kleepuvate päiste peitmine"
+  },
+  "heroArchiveTitle": {
+    "message": "Ühefaililine HTML-arhiiv"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS ja Base64-pildid manustatakse • Töötab võrguühenduseta"
+  },
+  "copyDataUri": {
+    "message": "Kopeeri Data-URI"
+  },
+  "copyUrl": {
+    "message": "Kopeeri URL"
+  },
+  "downloadSingle": {
+    "message": "Laadi alla"
+  },
+  "searchPlaceholder": {
+    "message": "Filtreeri nime, URL-i, sildi, MIME-tüübi või /regex/ järgi…"
+  },
+  "viewGrid": {
+    "message": "Ruudustikuvaade"
+  },
+  "viewList": {
+    "message": "Loendivaade"
+  },
+  "btnScreenshot": {
+    "message": "Ekraanipilt"
+  },
+  "btnArchive": {
+    "message": "Salvesta HTML"
+  },
+  "exportJson": {
+    "message": "Nähtav loend JSON-vormingus"
+  },
+  "exportCsv": {
+    "message": "Nähtav loend CSV-vormingus"
+  },
+  "exportHar": {
+    "message": "Võrgulogi HAR-vormingus"
+  },
+  "exportScreenshot": {
+    "message": "Terve lehe ekraanipilt (PNG)"
+  },
+  "exportArchive": {
+    "message": "Võrguühenduseta lehearhiiv (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Kõik meetodid"
+  },
+  "filterTypeAll": {
+    "message": "Kõik tüübid"
+  },
+  "filterSortDir": {
+    "message": "Lülita kasvav / kahanev järjestus"
+  },
+  "emptyTitle": {
+    "message": "Ressursse ei leitud"
+  },
+  "emptySubtitle": {
+    "message": "Kui paneel on avatud, laadi leht uuesti, et jäädvustada võrgupäringud, või klõpsa nuppu Värskenda, et praegune DOM uuesti skannida."
+  },
+  "statusResources": {
+    "message": "ressursse"
+  },
+  "statusFiltered": {
+    "message": "filtreeritud"
+  },
+  "statusSelected": {
+    "message": "valitud"
+  },
+  "statusDupes": {
+    "message": "duplikaadid peidetud"
+  },
+  "statusSize": {
+    "message": "suurus"
+  },
+  "langAuto": {
+    "message": "Automaatne (brauser)"
+  },
+  "langSelectorTitle": {
+    "message": "Valige keel"
+  },
+  "textPillAll": {
+    "message": "Kogu sisu"
+  },
+  "textPillText": {
+    "message": "📄 Tekst ja artiklid"
+  },
+  "textPillTables": {
+    "message": "📊 Ainult tabelid"
+  },
+  "textSelectAll": {
+    "message": "Vali kõik"
+  },
+  "textDeselectAll": {
+    "message": "Tühista kõigi valik"
+  },
+  "textClearSelection": {
+    "message": "Tühjenda"
+  },
+  "toastRefreshComplete": {
+    "message": "Lehekülje skannimine lõpetatud: $count$ uut ressurssi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Kopeeriti $count$ plokki",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Kopeeriti lõikelauale"
+  },
+  "toastTableCopied": {
+    "message": "Tabel kopeeriti lõikelauale"
+  },
+  "toastNothingToExport": {
+    "message": "Pole midagi eksportida"
+  },
+  "toastExportedTxt": {
+    "message": "Eksporditi $count$ plokki TXT-vormingus",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Eksporditi $count$ plokki Markdown-vormingus",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Tabeliridu ei jäädvustatud"
+  },
+  "toastExportedCsv": {
+    "message": "Tabel eksporditi CSV-vormingus"
+  },
+  "toastExportedXlsx": {
+    "message": "Tabel eksporditi XLSX-vormingus"
+  },
+  "toastExportedTablesZip": {
+    "message": "Eksporditi $count$ tabelit vormingus $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Eksporditi $count$ lehte XLSX-vormingus",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Allalaadimiseks pole ressursse."
+  },
+  "toastNoVisibleResources": {
+    "message": "Allalaadimiseks pole nähtavaid ressursse."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Vali esmalt vähemalt üks ressurss."
+  },
+  "toastZipSaved": {
+    "message": "ZIP salvestatud: $fetched$ / $total$ ressursist",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP ebaõnnestus: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR eksporditud ($count$ kirjet)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL on lõikelauale kopeeritud"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevToolsi uuritav aken pole saadaval."
+  },
+  "toastScreenshotError": {
+    "message": "Ekraanipildi viga: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Lehe võrguühenduseta arhiivi loomine…"
+  },
+  "toastArchiveError": {
+    "message": "Arhiivi viga: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Vormindamine aegus – kuvatakse algne fail."
+  },
+  "toastFormatFailed": {
+    "message": "Faili ei saanud vormindada – kuvatakse originaal."
+  },
+  "emptySearchTitle": {
+    "message": "Päringule \"$query$\" pole vasteid",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Proovi teist otsinguterminit või lülitu teisele kategooriale."
+  },
+  "emptyFiltersTitle": {
+    "message": "Ükski ressurss ei vasta praegustele filtritele"
+  },
+  "emptyFiltersSub": {
+    "message": "Lõdvenda ülaltoodud suuruse või mõõtmete filtreid või vajuta Tühjenda."
+  },
+  "textEmptyQueryReject": {
+    "message": "Leht lükkas selle päringu tagasi. Paranda see ülal ja tulemused ilmuvad kohe tagasi."
+  },
+  "textEmptyNoMatch": {
+    "message": "Ükski lehel olev element sellele päringule ei vasta. Proovi lõdvemat valijat või vaheta välja kõrval olevat režiimi."
+  },
+  "textEmptyInitial": {
+    "message": "Midagi pole veel tabatud. Reaalajas jäädvustamine töötab — kogu leht kuvatakse siin loetava tekstina."
+  },
+  "textEmptyFiltered": {
+    "message": "Miski ei vasta praegusele päringule ja elemendifiltrile."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ plokki",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ sõna",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ tähemärki",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ tabelit · $rows$ unikaalset rida",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ valitud – ekspordid kasutavad ainult neid",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Tabel – $count$ rida ekraanil",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Tabel – kõik $count$ unikaalset rida",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ hetktõmmist",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "värskendatud $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Kuva kõik $count$ rida",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Kuvatakse kõik read"
+  },
+  "textTableHistory": {
+    "message": "Ajalugu ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Peida ajalugu"
+  },
+  "textTableNoRows": {
+    "message": "Ühtegi rida pole veel jäädvustatud."
+  },
+  "textBtnCopy": {
+    "message": "Kopeeri tekst"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Kopeeri"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ duplikaatpilti",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Ekspordi"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG laadimine…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG-sisu ei õnnestunud hankida."
+  },
+  "inspectorLoadingFont": {
+    "message": "Fondi eelvaate laadimine…"
+  },
+  "inspectorFontSample": {
+    "message": "Fondi eelvaade"
+  },
+  "inspectorBeautify": {
+    "message": "Vorminda"
+  },
+  "inspectorOriginal": {
+    "message": "Originaal"
+  },
+  "inspectorHeaders": {
+    "message": "Päised"
+  },
+  "inspectorResponse": {
+    "message": "Vastus"
+  },
+  "inspectorRequest": {
+    "message": "Päring"
+  },
+  "inspectorQueryParams": {
+    "message": "Päringu parameetrid"
+  },
+  "inspectorRequestBody": {
+    "message": "Päringu sisu"
+  },
+  "textHintHtml": {
+    "message": "Lehe reaalajas loetav koopia. Iga teksti sisaldav element jäädvustatakse DOM-i järjekorras ja seda hoitakse siin, kui leht muutub. Esitage päring lihtteksti, regulaaravaldise, <strong>CSS-i valija</strong> või <strong>XPath</strong>-avaldise abil ja seejärel eksportige sobiv. Üksikasju vaadake <a href=\"#\" id=\"text-hint-guide\">juhendist</a>."
+  },
+  "textHeadings": {
+    "message": "Pealkirjad"
+  },
+  "textAllLevels": {
+    "message": "Kõik tasemed"
+  },
+  "textMatches": {
+    "message": "vastet"
+  },
+  "textMatch": {
+    "message": "vaste"
+  },
+  "textReadingOn": {
+    "message": "Lugemine sees"
+  },
+  "toastDownloadStarted": {
+    "message": "Allalaadimine algas: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Seda ressurssi ei õnnestunud hankida (CORS või toetamata tüüp)."
+  },
+  "ratingBannerText": {
+    "message": "Kas Source Download meeldib? Toeta meie avatud lähtekoodiga projekti arvustusega Chrome'i veebipoes või tärniga GitHubis!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Arvustus"
+  },
+  "ratingBannerStar": {
+    "message": "★ Tärn"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ unikaalset rida",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ s tagasi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$min tagasi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Jäädvusta piirkonna ekraanipilt"
+  },
+  "btnAreaDownload": {
+    "message": "Laadi alla"
+  },
+  "btnAreaCopy": {
+    "message": "Kopeeri lõikelauale"
+  },
+  "btnAreaCancel": {
+    "message": "Tühista"
+  },
+  "toastAreaCopied": {
+    "message": "Piirkonna ekraanipilt kopeeriti lõikelauale"
+  },
+  "toastAreaDownloaded": {
+    "message": "Piirkonna ekraanipilt salvestati"
+  },
+  "statusFoundCssResources": {
+    "message": "Leiti CSS-ist viidatud $count$ ressurssi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM-i skannimine ebaõnnestus: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Faili sisu indekseerimine…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Piltide duplikaatide kontrollimine…"
+  },
+  "statusWorking": {
+    "message": "Töötab…"
+  },
+  "filterMethodTitle": {
+    "message": "Filtreeri HTTP-meetodi järgi"
+  },
+  "filterTypeTitle": {
+    "message": "Filtreeri päringu tüübi järgi"
+  },
+  "filterSortTitle": {
+    "message": "Sorteeri ressursse"
+  },
+  "textModeTitle": {
+    "message": "Kuidas päringukasti tõlgendatakse"
+  },
+  "textKindTitle": {
+    "message": "Piira ühe elemenditüübiga"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Pealkirja tase"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Hind:\\s*\\d+ — JavaScripti regulaaravaldis"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — mis tahes CSS-valija"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Otsi juhendist…"
+  },
+  "popupIntro": {
+    "message": "Kategooriad, mida loendab <strong>tööriistariba märk</strong>. Lülita kategooria välja, et seda mitte loendada – märk näitab kohe ainult seda, mida jälgid."
+  },
+  "popupHelpTitle": {
+    "message": "Kuidas kasutada täispaneeli"
+  },
+  "popupStep1": {
+    "message": "Ava DevTools lehel, mida soovid uurida <div class=\"hint\"><kbd>F12</kbd> või <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Klõpsa DevToolsi tööriistaribal vahekaarti <strong>Source Download</strong>"
+  },
+  "popupStep3": {
+    "message": "Sirvi, uuri ja laadi ressursse alla – eraldi või kõik korraga ZIP-failina."
+  },
+  "popupNote": {
+    "message": "Märkus. Chrome ei luba laiendustel DevToolsi programmiliselt avada, mistõttu avaneb täispaneel DevToolsi tööriistariba kaudu."
+  },
+  "popupTrackAll": {
+    "message": "Jälgi kõiki kategooriaid"
+  },
+  "popupLanguage": {
+    "message": "Keel"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Binaarne vastus – vaatamiseks laadi see alla"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Vastuse laadimine…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Vastuse eelvaade puudub – sisu ei õnnestunud hankida."
+  },
+  "inspectorLoadingContent": {
+    "message": "Sisu laadimine…"
+  },
+  "inspectorNoPreview": {
+    "message": "Eelvaade pole saadaval – sisu ei õnnestunud hankida."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Sulge kõik"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Sulge kõik avatud vahelehed"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Suurendamiseks klõpsa"
+  },
+  "inspectorViewSource": {
+    "message": "Vaata allikat"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Kuva SVG märgistus süntaksi esiletõstmisega"
+  },
+  "inspectorFormatting": {
+    "message": "Vormindamine…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Leia sisust…"
+  },
+  "findPreviousMatch": {
+    "message": "Eelmine vaste"
+  },
+  "findNextMatch": {
+    "message": "Järgmine vaste"
+  },
+  "findClose": {
+    "message": "Sule"
+  },
+  "findShowRaw": {
+    "message": "Kuva originaal (vormindamata) sisu"
+  },
+  "findBeautify": {
+    "message": "Vorminda see sisu"
+  },
+  "btnRaw": {
+    "message": "Algne"
+  },
+  "btnBeautify": {
+    "message": "Vorminda"
+  },
+  "videoHlsDetected": {
+    "message": "Tuvastati HLS (m3u8) voog"
+  },
+  "videoCannotPlay": {
+    "message": "Seda videot ei saa brauseris esitada"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome ei saa HLS-i vooge otse esitada. Saate liita kõik <b>$NAME$</b> segmendid üheks MP4/TS-videofailiks.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Brauser seda vormingut ei toeta"
+  },
+  "btnMergeHls": {
+    "message": "Ühenda segmendid ja laadi alla"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ segmenti liideti failiks $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "suurus teadmata"
+  },
+  "progressFetching": {
+    "message": "Hankimine $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP-i loomine $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP salvestatud: $FETCHED$ / $TOTAL$ ressursist ($SKIPPED$ ebaõnnestus)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Proovi uuesti $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Proovi allalaadimist uuesti"
+  },
+  "searchRegexHint": {
+    "message": "Regulaaravaldise otsing on aktiivne – ümbritse päring kujul /muster/i"
+  },
+  "textIncludeInExports": {
+    "message": "Kaasa ekspordi hulka"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Kombineeri kõik hetktõmmised üheks duplikaatideta tabeliks – see eksporditakse"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Sirvi selle tabeli varasemaid hetktõmmiseid"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Laadi see tabel alla CSV-vormingus"
+  },
+  "tableSnapshotLabel": {
+    "message": "Hetktõmmis $INDEX$ – $TIME$ ($COUNT$ rida)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Lülita valik hulgiallalaadimiseks"
+  },
+  "cardDownloadTitle": {
+    "message": "Laadi fail alla"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Eelmine allalaadimine ebaõnnestus – klõpsa uuesti proovimiseks"
+  },
+  "btnThemeLight": {
+    "message": "Lülitu heledale teemale"
+  },
+  "btnThemeDark": {
+    "message": "Lülitu tumedale teemale"
+  },
+  "guideTitle": {
+    "message": "Source Download — kasutusjuhend"
+  },
+  "guideEmpty": {
+    "message": "Otsingule ei vasta ükski juhendi jaotis."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ – 100% sõltuvusvaba.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Suumi välja (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Suumi sisse (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Lähtesta suum (0)"
+  },
+  "lightboxClose": {
+    "message": "Sule (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Suuruse muutmiseks lohista"
+  },
+  "ratingDismissTitle": {
+    "message": "Loobu"
+  },
+  "inspectorResourceTitle": {
+    "message": "Ressurss"
+  },
+  "guideSecGettingStarted": {
+    "message": "Alustamine"
+  },
+  "guideSecCategories": {
+    "message": "Kategooriad"
+  },
+  "guideSecSearchFilters": {
+    "message": "Otsing ja filtrid"
+  },
+  "guideSecGridView": {
+    "message": "Ruudustik ja loendivaade"
+  },
+  "guideSecInspect": {
+    "message": "Uuri ressurssi"
+  },
+  "guideSecDownloading": {
+    "message": "Allalaadimine"
+  },
+  "guideSecLightbox": {
+    "message": "Valguskast"
+  },
+  "guideSecTextTables": {
+    "message": "Tekst ja tabelid"
+  },
+  "guideSecCaptions": {
+    "message": "Subtiitrid ja kirjeldustiitrid"
+  },
+  "guideSecSourceMaps": {
+    "message": "Allikakaardid"
+  },
+  "guideSecDupes": {
+    "message": "Duplikaatpildid"
+  },
+  "guideSecVideoHls": {
+    "message": "Video varuvariant ja HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Näpunäited kogenud kasutajatele"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Klõpsa DevToolsi tööriistaribal vahekaarti <strong>Source Download</strong> (vajuta <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, seejärel vali DevToolsi tööriistaribal vahekaart). Chrome ei luba laiendustel DevToolsi automaatselt avada, mistõttu paneel asub seal. Tööriistariba ikooni hüpikaknas saad valida, millised kategooriad ikooni märgiloendurisse arvestatakse. Päikese/kuu nupp paneeli tööriistaribal lukustab heleda või tumeda teema Chrome'ist sõltumatult; valik jääb meelde."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Vasakpoolsed vertikaalsed vahekaardid rühmitavad kõik jäädvustatud ressursid tüübi järgi 17 spetsiaalsesse kategooriasse: pildid, videod, heli, subtiitrid, dokumendid, fondid, allikakaardid, WASM, SVG, API-d, küpsised, salvestusruum ja palju muud. Iga vahekaart näitab reaalajas loendust. Korraga kuvatakse ainult üks kategooria; vahetamine lähtestab kõik filtrid, nii et see, mida näete, vastab alati vahekaardile."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Otsinguriba filtreerib nime, URL-i, tüübi, alt-teksti või pealkirja järgi. Regulaaravaldise kasutamiseks ümbritse päring märkidega <kbd>/…/</kbd>, nt <code>/\\.(png|jpg)$/</code>. Tööriistariba all olev filtririba muutub kategooriati: meedia suuruse ja mõõtmete vahemikud, API-de HTTP-meetod ja päringu tüüp ning lisaks sorteerimine ja suund."
+  },
+  "guideSecGridViewContent": {
+    "message": "Lülitage kompaktse ruudustiku (väikesed pisipildid) ja üksikasjaliku loendi vahel otsinguriba kõrval olevate nuppudega. Teie valik jääb seansside vahel meelde. Loendivaates võimaldavad märkeruudud valida hulgiallalaadimiseks üksikuid ressursse."
+  },
+  "guideSecInspectContent": {
+    "message": "Klõpsake mis tahes ressurssi, et avada see parempoolsel kontrollipaanil. Igast avatud failist saab vahekaart, nii et saate võrrelda mitut ressurssi kõrvuti – uusim avaneb vasakul. Piltide, video, heli, fontide, SVG ja teksti/koodi jaoks on olemas spetsiaalsed vaatajad (koos lülitiga Beautify). API-d näitavad jagatud vaadet: vastus vasakul, päringu üksikasjad (meetod, olek, päised, päringu parameetrid ja sisu) paremal."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Laadi vaade alla</strong> salvestab praegu nähtavad ressursid (aktiivne kategooria + otsing + filtrid) ZIP-failina; kui filtrid on aktiivsed, muutub nupu nimeks <em>Laadi filtreeritud alla (N)</em>. Hoia kursorit mis tahes allalaadimisnupu kohal, et enne klõpsamist näha arhiivi hinnangulist suurust. <strong>Laadi valitud alla</strong> laadib alla ainult märgitud üksused. <strong>Laadi kõik alla</strong> salvestab iga avastatud ressursi kaustastruktuuriga ZIP-faili. Ebaõnnestunud allalaadimisi proovitakse automaatselt uuesti ja neid saab uuesti proovida ka kontekstimenüüst. <strong>Ekspordi</strong> salvestab nähtava loendi JSON- või CSV-vormingus või Chrome'i võrgulogi HAR-failina."
+  },
+  "guideSecLightboxContent": {
+    "message": "Suuminupp avab meedia täissuuruses valguskastis, kus saate panoraamida lohistades, suumida hiireratta, ekraaninuppude või klaviatuuriga (<kbd>+</kbd>/<kbd>-</kbd> suumimiseks, <kbd>0</kbd> lähtestamiseks, <kbd>Esc</kbd> sulgemiseks)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Kategooria <strong>Tekst</strong> on lehe reaalajas loetav koopia. See jäädvustab kõik teksti sisaldavad elemendid – pealkirjad, lõigud, loendiüksused, nupud, <code>div</code>/<code>span</code> ja palju muud – DOM-i järjekorras ning jätkab skannimist, kui <strong>Reaalaeg</strong> on sisse lülitatud.</p><p>Kast <strong>Päring</strong> töötab nelja režiimiga, mida valid selle kõrval olevast rippmenüüst: <strong>Sisaldab</strong> ja <strong>Regex</strong> filtreerivad juba jäädvustatud teksti, samas kui <strong>CSS-valija</strong> ja <strong>XPath</strong> käivitatakse reaalajas lehel, et jõuda DOM-is ükskõik milleni. XPath aktsepteerib ka avaldisi, mis tagastavad elementide asemel väärtuse, näiteks <code>count(//a)</code> või <code>//@href</code>. Kõik, mida leht vigase päringu kohta ütleb, kuvatakse kasti kõrval. <strong>Element</strong> kitsendab tulemuse ühele märgendile, näidates iga lehelt leitud märgendi arvu. Päringukasti tühjendamine (või nupu <strong>Tühjenda</strong> vajutamine) viib sind tagasi vaatesse <em>Kõik elemendid</em> ja jäädvustab lehe uuesti – rippmenüüd ei pea kunagi käsitsi lähtestama.</p><p><strong>Lugemine</strong> peidab sildid, märkeruudud ja asukohamärgid, nii et voogu saab lugeda nagu dokumenti. Tabelid salvestavad hetktõmmiste piiratud ajaloo, nii et dünaamilised (SPA) tabelid ei lähe kunagi kaduma. Vajuta tabelis nuppu <strong>Kuva kõik read</strong>, et liita kõik hetktõmmised üheks duplikaatideta vaateks – just seda sisaldab eksport. Ekspordi <strong>TXT</strong> (loetav leht), <strong>MD</strong> (Markdown, tabelid kaasa arvatud) või tabelid CSV-, HTML- või tõelise mitmelehelise <strong>XLSX</strong>-töövihikuna. Märgitud üksused on ülimuslikud; muidu eksporditakse kõik hetkel nähtav.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML ja muud subtiitrifailid – sealhulgas <code>&lt;track&gt;</code>-allikad – jõuavad dokumentidega segamise asemel oma vahekaardile <strong>Subtiitrid</strong>."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code>-failid ja JSON-sisu, mis näeb välja nagu allikakaardid (sisaldavad välju <code>mappings</code> ja <code>sources</code>), rühmitatakse jaotisse <strong>Allikakaardid</strong> koos JSON-vaaturi ja funktsiooniga Beautify, nii et need ei risusta enam JSON-i vahekaarti."
+  },
+  "guideSecDupesContent": {
+    "message": "Vahekaardil Pildid paneel räsib jäädvustatud baite ja tähistab identseid faile. Filter <strong>Peida duplikaadid</strong> säilitab iga komplekti esimese koopia, nii et vaate ZIP-fail ei saadaks sama pisipilti kaks korda."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Vooged, mida brauser ei saa natiivselt esitada (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, tundmatud koodekid) näitavad musta pleieri asemel varuvarianti. HLS-i puhul saate liita segmendid üheks videofailiks otse paneelilt või alla laadida algse manifesti."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dünaamilistest <strong>API</strong> vastustest (XHR/fetch) ei eemaldata duplikaate URL-i järgi – iga vastus jääb loendisse (piiratud FIFO), et saaksid korduvaid päringuid võrrelda. Staatilistest ressurssidest duplikaadid eemaldatakse. Kasuta nuppu <strong>Värskenda</strong>, et praegune DOM uuesti skannida, ja laadi leht uuesti, kui paneel on avatud, et jäädvustada kõik võrgupäringud, sealhulgas need, mis käivitati enne vahekaardile lülitumist."
+  },
+  "toolArrow": {
+    "message": "Noolevahend"
+  },
+  "toolRect": {
+    "message": "Ristkülikuvahend"
+  },
+  "toolText": {
+    "message": "Tekstivahend"
+  },
+  "toolUndo": {
+    "message": "Võta tagasi (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Tee uuesti (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Värv"
+  },
+  "badgeStrokeSize": {
+    "message": "Suurus: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Fondi suurus: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Salvesta piirkonna video / GIF"
+  },
+  "btnRecStart": {
+    "message": "Alusta salvestamist"
+  },
+  "btnRecPause": {
+    "message": "Peata"
+  },
+  "btnRecResume": {
+    "message": "Jätka"
+  },
+  "btnRecStop": {
+    "message": "Lõpeta ja laadi alla"
+  },
+  "btnRecCancel": {
+    "message": "Tühista"
+  },
+  "toastRecSaved": {
+    "message": "Piirkonna salvestis salvestati"
+  },
+  "toastRecCancelled": {
+    "message": "Videosalvestus tühistati"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Ekraanisalvestuse luba ei antud"
+  },
+  "btnPopupRecordArea": {
+    "message": "Ala video / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Ala ekraanipilt"
+  },
+  "contextMenuPickColor": {
+    "message": "Vali ekraanilt värv"
+  },
+  "btnPopupPickColor": {
+    "message": "Vali värv"
+  },
+  "colorPickerTitle": {
+    "message": "Värvivalija"
+  },
+  "btnColorPickAgain": {
+    "message": "Vali uus värv"
+  },
+  "toastColorCopied": {
+    "message": "Värv kopeeriti lõikelauale"
+  },
+  "toastProgressCapturing": {
+    "message": "Kogu lehe jäädvustamine... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Pildi kokkuliitmine..."
+  },
+  "modalExportTitle": {
+    "message": "Kogu lehe ekraanipilt on valmis"
+  },
+  "btnExportPng": {
+    "message": "Laadi alla PNG"
+  },
+  "btnExportJpg": {
+    "message": "Laadi alla JPG"
+  },
+  "btnExportPdf": {
+    "message": "Salvesta PDF-ina"
+  },
+  "btnExportCopy": {
+    "message": "Kopeeri lõikelauale"
+  },
+  "btnExportGenerating": {
+    "message": "Loomine..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF-dokument salvestati."
+  },
+  "settingNamingPatterns": {
+    "message": "Failide nimetamise mustrid"
+  },
+  "settingVideoFormat": {
+    "message": "Vaikimisi videovorming"
+  },
+  "settingNamingPreview": {
+    "message": "Eelvaade:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF-i loomine, palun oota..."
+  },
+  "settingGifResolution": {
+    "message": "GIF-i vaikeeraldusvõime"
+  },
+  "optGifOriginal": {
+    "message": "Originaal (1:1 algne eraldusvõime — täielik 3K/4K, ilma vähendamiseta)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (maks 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (maks 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (maks 854px — kiirem ja väiksem maht)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF-vorming toetab maksimaalset salvestamise kestust 1 minut (60 s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Ekraani salvestamine (video ja GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Salvesta mis tahes ekraaniala MP4, WebM või animeeritud GIF-ina. GIF-salvestuste jaoks on 1:1 algne eraldusvõime ning 1080p, 720p ja 480p profiilid koos reaalajas hinnatud failisuurustega. GIF-i maksimaalne salvestuse kestus on 1 minut (60 s), et brauser töötaks optimaalselt."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIF-i maksimaalne kestus 1 minut (60 s) on täis. GIF-i loomine..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Maks 1 min (60 s)"
+  },
+  "settingGifFps": {
+    "message": "GIF-i vaikekaadrisagedus (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — sujuv (suur sujuvus, suurem maht)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — standard (soovitatav veebi jaoks ja tasakaalu hoidmiseks)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — kompaktne / meem (katkendlik liikumine, väike maht)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — stop-motion / aeglane (samm-sammuline „klõps-klõps“, väga väike maht)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — esitlus (1 kaader sekundis, minimaalne maht)"
+  },
+  "popupRightClickHint": {
+    "message": "Paremklõpsa mis tahes veebilehel, et avada ekraanisalvestus (video/GIF) ja värvivalija."
+  },
+  "toastElementZappedAd": {
+    "message": "Reklaam / iframe on selleks seansiks peidetud.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Pilt kopeeriti lõikelauale",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Sulge (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Seaded salvestati",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Laadi fail alla ja ava see VLC-ga või mõne muu meediumipleieriga.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Seda tüüpi ressursi eelvaadet pole",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Laadi alla originaal",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Nõuanne: ava allalaaditud fail VLC-ga või mõne muu arvutimeediumipleieriga — see esitab praktiliselt kõiki vorminguid.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP-arhiivi loomine…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Teie brauser ei toeta EyeDropperi API-t.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Lohista tööriistariba",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Vaheta vormingut: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF-i eraldusvõime: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF-i kaadrisagedus: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "GIF-i hinnanguline maht: ~$size$ MB (10 s kohta), kuni ~$max$ MB 60 s maksimumi korral.\nKaadrisagedus: $fps$ FPS.\nGIF-i salvestus on piiratud maksimaalselt 1 minutiga (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Kopeeri $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Ekraanipildi eelvaade",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — universaalne esitus WhatsAppis, Telegramis, Jiras, Apple’i ja Windowsi seadmetes)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animeeritud pilt — ideaalne READMEde, Jira, dokumentatsiooni ja sõnumside jaoks)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — avatud veebivorming)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Aktiivset vahekaarti ei leitud.",
+    "description": "No active tab found."
+  }
+}

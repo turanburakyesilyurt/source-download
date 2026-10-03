@@ -198,6 +198,9 @@
       document.documentElement.appendChild(toast);
     }
     toast.textContent = text;
+    try {
+      toast.dir = SD_RTL_LOCALES.includes(resolveDict().lang) ? 'rtl' : 'ltr';
+    } catch { /* noop */ }
     toast.style.opacity = '1';
     toast.style.transform = 'translateX(-50%) translateY(0)';
     if (toast.__timer) clearTimeout(toast.__timer);
@@ -305,10 +308,9 @@
 
     try {
       const isAd = Boolean(adWrapper || finalTarget.tagName === 'IFRAME');
-      const msg = isAd
-        ? (chrome.i18n.getMessage('toastElementZappedAd') || 'Ad / iframe hidden for this session.')
-        : (chrome.i18n.getMessage('toastElementZapped') || 'Element hidden for this session.');
-      showToast(msg);
+      showToast(isAd
+        ? sdMsg('toastElementZappedAd', 'Ad / iframe hidden for this session.')
+        : sdMsg('toastElementZapped', 'Element hidden for this session.'));
     } catch {
       showToast('Element hidden for this session.');
     }
@@ -323,7 +325,7 @@
       item.el.style.display = item.prevDisplay || '';
       item.el.removeAttribute('data-sd-zapped');
       try {
-        showToast(chrome.i18n.getMessage('toastElementRestored') || 'Element restored.');
+        showToast(sdMsg('toastElementRestored', 'Element restored.'));
       } catch {
         showToast('Element restored.');
       }
@@ -341,7 +343,7 @@
       }
     }
     try {
-      showToast(chrome.i18n.getMessage('toastAllElementsRestored') || 'All hidden elements restored.');
+      showToast(sdMsg('toastAllElementsRestored', 'All hidden elements restored.'));
     } catch {
       showToast('All hidden elements restored.');
     }
@@ -637,36 +639,81 @@
     }, 200);
   }
 
+  const SD_LOCALES = ["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt_PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
+  const SD_RTL_LOCALES = ['ar', 'he', 'fa'];
+  let sdStoredLang = 'auto';
+
+  try {
+    chrome.storage.local.get({ lang: 'auto' }, (data) => {
+      void chrome.runtime.lastError;
+      sdStoredLang = (data && data.lang) || 'auto';
+    });
+    chrome.storage.onChanged.addListener((changes, area) => {
+      if (area === 'local' && changes.lang) sdStoredLang = changes.lang.newValue || 'auto';
+    });
+  } catch { /* noop */ }
+
+  function sdNormalizeLocale(code) {
+    const raw = String(code || '').trim();
+    const lower = raw.toLowerCase().replace(/-/g, '_');
+    if (!lower) return 'en';
+    for (const loc of SD_LOCALES) {
+      if (loc.toLowerCase() === lower) return loc;
+    }
+    if (lower.startsWith('zh_tw') || lower.startsWith('zh_hk') || lower.startsWith('zh_mo') || lower.startsWith('zh_hant')) return 'zh_TW';
+    if (lower.startsWith('zh')) return 'zh_CN';
+    if (lower.startsWith('pt_pt')) return 'pt_PT';
+    if (lower.startsWith('pt')) return 'pt_BR';
+    if (lower.startsWith('es_419') || /^es_(mx|ar|co|cl|pe|ve|uy|ec|bo|py|cr|pa|do|gt|hn|ni|sv|pr|cu|us)/.test(lower)) return 'es_419';
+    if (lower.startsWith('es')) return 'es';
+    if (lower.startsWith('en_gb') || /^en_(au|nz|ie|za|in)/.test(lower)) return 'en_GB';
+    if (lower.startsWith('en_us')) return 'en_US';
+    if (lower.startsWith('nb') || lower.startsWith('nn')) return 'no';
+    if (lower.startsWith('tl')) return 'fil';
+    const prefix = lower.split('_')[0];
+    for (const loc of SD_LOCALES) {
+      if (loc.toLowerCase() === prefix) return loc;
+    }
+    return 'en';
+  }
+
   function resolveDict(langCode) {
     const i18n = (typeof window !== 'undefined' && window.SourceDownloadI18n) || (typeof globalScope !== 'undefined' && globalScope.SourceDownloadI18n);
-    let resolved = 'en';
-    if (langCode === 'auto' || !langCode) {
-      const navLang = (navigator.language || 'en').toLowerCase().replace('-', '_');
-      if (navLang.startsWith('tr')) resolved = 'tr';
-      else if (navLang.startsWith('de')) resolved = 'de';
-      else if (navLang.startsWith('es')) resolved = 'es';
-      else if (navLang.startsWith('zh')) resolved = 'zh_CN';
-      else if (navLang.startsWith('ja')) resolved = 'ja';
-      else if (navLang.startsWith('ru')) resolved = 'ru';
-      else if (navLang.startsWith('fr')) resolved = 'fr';
-      else if (navLang.startsWith('pt')) resolved = 'pt_BR';
-      else if (navLang.startsWith('it')) resolved = 'it';
-      else if (navLang.startsWith('ko')) resolved = 'ko';
-    } else {
-      const code = String(langCode).toLowerCase().replace('-', '_');
-      if (code.startsWith('tr')) resolved = 'tr';
-      else if (code.startsWith('de')) resolved = 'de';
-      else if (code.startsWith('es')) resolved = 'es';
-      else if (code.startsWith('zh')) resolved = 'zh_CN';
-      else if (code.startsWith('ja')) resolved = 'ja';
-      else if (code.startsWith('ru')) resolved = 'ru';
-      else if (code.startsWith('fr')) resolved = 'fr';
-      else if (code.startsWith('pt')) resolved = 'pt_BR';
-      else if (code.startsWith('it')) resolved = 'it';
-      else if (code.startsWith('ko')) resolved = 'ko';
+    let code = langCode;
+    if (!code || code === 'auto') code = sdStoredLang;
+    if (!code || code === 'auto') {
+      try {
+        code = (chrome.i18n && chrome.i18n.getUILanguage && chrome.i18n.getUILanguage()) || navigator.language || 'en';
+      } catch {
+        code = navigator.language || 'en';
+      }
     }
-    const dict = (i18n && i18n[resolved]) || (i18n && i18n['en']) || {};
+    const resolved = sdNormalizeLocale(code);
+    const base = (i18n && i18n.en) || {};
+    const own = (i18n && i18n[resolved]) || {};
+    const dict = Object.assign({}, base, own);
     return { dict, lang: resolved };
+  }
+
+  function sdFill(template, vars) {
+    let out = String(template == null ? '' : template);
+    for (const [k, v] of Object.entries(vars || {})) {
+      out = out.replace(new RegExp('\\$' + k + '\\$', 'gi'), () => String(v));
+    }
+    return out;
+  }
+
+  function sdEsc(v) {
+    return String(v == null ? '' : v)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  function sdMsg(key, fallback, vars) {
+    const { dict } = resolveDict();
+    return sdFill(dict[key] || fallback, vars);
   }
 
   function drawArrow(targetCtx, x1, y1, x2, y2, color, strokeWidth) {
@@ -790,29 +837,29 @@
 
     bar.innerHTML = `
       <div style="display:flex;align-items:center;gap:3px;">
-        <button type="button" id="__sd_tool_arrow" title="${labelArrow}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_arrow" title="${sdEsc(labelArrow)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
         </button>
-        <button type="button" id="__sd_tool_rect" title="${labelRect}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_rect" title="${sdEsc(labelRect)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect></svg>
         </button>
-        <button type="button" id="__sd_tool_text" title="${labelText}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_text" title="${sdEsc(labelText)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
         </button>
       </div>
 
       <div style="position:relative;display:flex;align-items:center;margin:0 2px;">
-        <button type="button" id="__sd_tool_color" title="${labelColor}" style="display:flex;align-items:center;justify-content:center;width:22px;height:22px;padding:0;background:transparent;border:2px solid #ffffff;border-radius:50%;cursor:pointer;box-shadow:0 0 4px rgba(0,0,0,0.5);">
+        <button type="button" id="__sd_tool_color" title="${sdEsc(labelColor)}" style="display:flex;align-items:center;justify-content:center;width:22px;height:22px;padding:0;background:transparent;border:2px solid #ffffff;border-radius:50%;cursor:pointer;box-shadow:0 0 4px rgba(0,0,0,0.5);">
           <span id="__sd_color_preview" style="width:14px;height:14px;border-radius:50%;background:#ff3b30;display:block;"></span>
         </button>
         <input type="color" id="__sd_color_input" value="#ff3b30" style="opacity:0;position:absolute;left:0;top:0;width:100%;height:100%;cursor:pointer;">
       </div>
 
       <div style="display:flex;align-items:center;gap:3px;">
-        <button type="button" id="__sd_tool_undo" title="${labelUndo}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_undo" title="${sdEsc(labelUndo)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"></path><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path></svg>
         </button>
-        <button type="button" id="__sd_tool_redo" title="${labelRedo}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_redo" title="${sdEsc(labelRedo)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7v6h-6"></path><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3L21 13"></path></svg>
         </button>
       </div>
@@ -827,10 +874,11 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         <span>${labelCopy}</span>
       </button>
-      <button type="button" id="__sd_btn_cancel" title="${labelCancel}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
+      <button type="button" id="__sd_btn_cancel" title="${sdEsc(labelCancel)}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
         ✕
       </button>
     `;
+    if (SD_RTL_LOCALES.includes(lang)) bar.dir = 'rtl';
     overlay.appendChild(bar);
 
     // Dimension badge
@@ -1187,7 +1235,7 @@
           if (activeTool === 'text' || activeTextarea) {
             const delta = e.deltaY < 0 ? 2 : -2;
             currentFontSize = Math.max(12, Math.min(72, currentFontSize + delta));
-            const textMsg = (dict.badgeFontSize || 'Font: $SIZE$px').replace('$SIZE$', currentFontSize);
+            const textMsg = sdFill(dict.badgeFontSize || 'Font size: $size$px', { size: currentFontSize });
             showWheelBadge(textMsg, e.clientX, e.clientY);
             if (activeTextarea) {
               activeTextarea.el.style.fontSize = `${currentFontSize}px`;
@@ -1196,7 +1244,7 @@
           } else {
             const delta = e.deltaY < 0 ? 1 : -1;
             currentStrokeWidth = Math.max(1, Math.min(32, currentStrokeWidth + delta));
-            const strokeMsg = (dict.badgeStrokeSize || 'Stroke: $SIZE$px').replace('$SIZE$', currentStrokeWidth);
+            const strokeMsg = sdFill(dict.badgeStrokeSize || 'Stroke size: $size$px', { size: currentStrokeWidth });
             showWheelBadge(strokeMsg, e.clientX, e.clientY);
           }
         }
@@ -1608,7 +1656,7 @@
     bar.style.cssText = 'position:absolute;display:flex;align-items:center;gap:8px;padding:6px 12px;background:rgba(26,27,34,0.96);border:1px solid rgba(255,255,255,0.18);border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.6);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:2147483647;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:12.5px;color:#fff;user-select:none;';
 
     bar.innerHTML = `
-      <div id="__sd_rec_bar_drag" title="Drag toolbar" style="cursor:move;padding:2px 4px;color:#9aa0ae;display:flex;align-items:center;">
+      <div id="__sd_rec_bar_drag" title="${sdEsc(dict.tipRecDragToolbar || 'Drag toolbar')}" style="cursor:move;padding:2px 4px;color:#9aa0ae;display:flex;align-items:center;">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><circle cx="8" cy="6" r="2"/><circle cx="16" cy="6" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="8" cy="18" r="2"/><circle cx="16" cy="18" r="2"/></svg>
       </div>
       <span id="__sd_rec_timer" style="display:none;align-items:center;gap:5px;font-variant-numeric:tabular-nums;font-weight:700;color:#ff4d4f;background:rgba(255,77,79,0.18);padding:3px 8px;border-radius:5px;font-size:12px;letter-spacing:0.5px;">
@@ -1631,22 +1679,23 @@
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
         <span>${labelStop}</span>
       </button>
-      <button type="button" id="__sd_rec_btn_format" title="Toggle format: MP4 / GIF / WebM" style="display:flex;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#93c5fd;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
+      <button type="button" id="__sd_rec_btn_format" title="${sdEsc(dict.tipRecToggleFormat || 'Toggle format: MP4 / GIF / WebM')}" style="display:flex;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#93c5fd;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
         <span id="__sd_rec_format_text">MP4</span>
       </button>
-      <button type="button" id="__sd_rec_btn_res" title="GIF Resolution: 1:1 / 1080p / 720p / 480p" style="display:none;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#a7f3d0;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
+      <button type="button" id="__sd_rec_btn_res" title="${sdEsc(dict.tipRecGifResolution || 'GIF resolution: 1:1 / 1080p / 720p / 480p')}" style="display:none;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#a7f3d0;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
         <span id="__sd_rec_res_text">1:1</span>
       </button>
-      <button type="button" id="__sd_rec_btn_fps" title="GIF Frame Rate: 15 / 10 / 5 / 2 / 1 FPS" style="display:none;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#fcd34d;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
+      <button type="button" id="__sd_rec_btn_fps" title="${sdEsc(dict.tipRecGifFps || 'GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS')}" style="display:none;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#fcd34d;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
         <span id="__sd_rec_fps_text">10 FPS</span>
       </button>
       <span id="__sd_rec_gif_estimate" style="display:none;align-items:center;padding:3px 7px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:5px;color:#e2e8f0;font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap;cursor:help;">
-        <span id="__sd_rec_estimate_text">~12 MB (Maks 1 dk)</span>
+        <span id="__sd_rec_estimate_text">~12 MB</span>
       </span>
-      <button type="button" id="__sd_rec_btn_cancel" title="${labelCancel}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
+      <button type="button" id="__sd_rec_btn_cancel" title="${sdEsc(labelCancel)}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
         ✕
       </button>
     `;
+    if (SD_RTL_LOCALES.includes(lang)) bar.dir = 'rtl';
     overlay.appendChild(bar);
 
     let curRect = null;
@@ -1711,9 +1760,10 @@
 
       const labelMax1Min = dict.labelGifMaxDuration || (lang === 'tr' ? 'Maks 1 dk (60 sn)' : 'Max 1 min (60s)');
       estimateTextEl.textContent = `~${mb10s} MB/10s (${labelMax1Min})`;
-      gifEstimateEl.title = lang === 'tr'
-        ? `Tahmini GIF boyutu: ~${mb10s} MB (10 sn için), maksimum 60 sn için ~${maxMb} MB.\nSeçilen Kare Hızı: ${fps} FPS.\nGIF kayıt süresi en fazla 1 dakika (60 sn) ile sınırlıdır.`
-        : `Estimated GIF size: ~${mb10s} MB (for 10s), up to ~${maxMb} MB for max 60s.\nFrame rate: ${fps} FPS.\nGIF recording duration is limited to a maximum of 1 minute (60s).`;
+      gifEstimateEl.title = sdFill(
+        dict.tipGifEstimate || 'Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).',
+        { size: mb10s, max: maxMb, fps }
+      );
     }
 
     function updateResDisplay() {
@@ -1770,7 +1820,7 @@
     });
 
     if (btnFormat) {
-      btnFormat.title = 'Toggle format: MP4 / GIF / WebM';
+      btnFormat.title = dict.tipRecToggleFormat || 'Toggle format: MP4 / GIF / WebM';
       const fmtText = bar.querySelector('#__sd_rec_format_text');
       if (fmtText) fmtText.textContent = selectedFormat.toUpperCase();
       btnFormat.addEventListener('click', () => {
@@ -2461,7 +2511,7 @@
     const { dict, lang } = resolveDict(langCode);
 
     if (!('EyeDropper' in window)) {
-      showToast(lang === 'tr' ? 'Tarayıcınız renk damlalığı özelliğini desteklemiyor.' : 'EyeDropper API is not supported in this browser.');
+      showToast(dict.toastEyeDropperUnsupported || 'Your browser does not support the EyeDropper API.');
       return;
     }
 
@@ -2566,6 +2616,7 @@
       </div>
       <button type="button" id="__sd_ci_close" style="display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:transparent;border:none;color:#9aa0ae;cursor:pointer;border-radius:4px;font-size:16px;line-height:1;transition:color 0.15s;">✕</button>
     `;
+    if (SD_RTL_LOCALES.includes(lang)) inspector.dir = 'rtl';
     inspector.appendChild(header);
 
     // Hero Swatch & Hex
@@ -2593,8 +2644,8 @@
 
       row.innerHTML = `
         <span style="width:46px;font-size:11px;font-weight:700;color:#9aa0ae;letter-spacing:0.3px;flex-shrink:0;">${fmt.name}</span>
-        <span style="flex:1;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:#e8eaf0;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${fmt.val}">${fmt.val}</span>
-        <button type="button" class="__sd_ci_copy" title="Copy ${fmt.name}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:5px;color:#e8eaf0;cursor:pointer;flex-shrink:0;transition:all 0.15s;">
+        <span style="flex:1;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:#e8eaf0;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${sdEsc(fmt.val)}">${fmt.val}</span>
+        <button type="button" class="__sd_ci_copy" title="${sdEsc(sdFill(dict.tipColorCopyFormat || 'Copy $format$', { format: fmt.name }))}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:5px;color:#e8eaf0;cursor:pointer;flex-shrink:0;transition:all 0.15s;">
           ${copySvg}
         </button>
       `;
@@ -2720,7 +2771,7 @@
       .replace(/\$PERCENT\$/gi, String(percent))
       .replace(/\$CURRENT\$/gi, String(current))
       .replace(/\$TOTAL\$/gi, String(total));
-    if (!msgTemplate.includes('$CURRENT$')) {
+    if (!/\$CURRENT\$/i.test(msgTemplate)) {
       text = text.trim() + ` (${current}/${total})`;
     }
 
@@ -2730,6 +2781,7 @@
       el.style.cssText = 'position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:2147483647;background:rgba(26,27,34,0.95);color:#fff;padding:10px 22px;border-radius:12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:13px;font-weight:600;box-shadow:0 12px 36px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;gap:14px;pointer-events:none;transition:all 0.2s ease;';
       document.body.appendChild(el);
     }
+    if (SD_RTL_LOCALES.includes(lang)) el.dir = 'rtl';
     el.style.setProperty('display', 'flex', 'important');
     el.style.setProperty('visibility', 'visible', 'important');
     el.innerHTML = `
@@ -2802,16 +2854,16 @@
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4f8cff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
           <span>${titleText}</span>
         </div>
-        <button type="button" id="__sd_modal_close" title="${labelClose}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:transparent;border:none;color:#9aa0ae;cursor:pointer;border-radius:6px;font-size:17px;line-height:1;transition:color 0.15s;">✕</button>
+        <button type="button" id="__sd_modal_close" title="${sdEsc(labelClose)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:transparent;border:none;color:#9aa0ae;cursor:pointer;border-radius:6px;font-size:17px;line-height:1;transition:color 0.15s;">✕</button>
       </div>
 
       <div style="padding:16px 18px 12px;display:flex;flex-direction:column;gap:12px;background:rgba(0,0,0,0.25);">
         <div style="width:100%;height:200px;background:#0d0e12;border:1px solid rgba(255,255,255,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:inset 0 2px 8px rgba(0,0,0,0.5);">
-          <img src="${dataUrl}" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" alt="Screenshot preview">
+          <img src="${dataUrl}" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" alt="${sdEsc(dict.altScreenshotPreview || 'Screenshot preview')}">
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#9aa0ae;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">
           <span>${width} × ${height} px</span>
-          <span style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${title || domain}">${title || domain}</span>
+          <span style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${sdEsc(title || domain)}">${sdEsc(title || domain)}</span>
         </div>
       </div>
 
@@ -2835,6 +2887,7 @@
       </div>
     `;
 
+    if (SD_RTL_LOCALES.includes(lang)) modal.dir = 'rtl';
     backdrop.appendChild(modal);
 
     function closeModal() {

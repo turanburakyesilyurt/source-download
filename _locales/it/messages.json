@@ -12,7 +12,7 @@
     "description": "Tooltip for toolbar action icon"
   },
   "contextMenuZap": {
-    "message": "Nascondi questo elemento (Zap)",
+    "message": "Nascondi questo elemento",
     "description": "Context menu item to hide selected element"
   },
   "contextMenuUndoZap": {
@@ -24,7 +24,7 @@
     "description": "Context menu item to restore all hidden elements"
   },
   "contextMenuCapturePage": {
-    "message": "Cattura screenshot di tutta la pagina",
+    "message": "Cattura screenshot dell'intera pagina",
     "description": "Context menu item to capture full page"
   },
   "contextMenuPageArchive": {
@@ -248,7 +248,7 @@
     "message": "Chiudi"
   },
   "toastElementZapped": {
-    "message": "Elemento nascosto. Usa il menu per ripristinare."
+    "message": "Elemento nascosto per questa sessione."
   },
   "toastElementRestored": {
     "message": "Elemento ripristinato."
@@ -257,13 +257,13 @@
     "message": "Tutti gli elementi nascosti sono stati ripristinati."
   },
   "toastScreenshotCapturing": {
-    "message": "Cattura della pagina intera in corso…"
+    "message": "Cattura dello screenshot dell'intera pagina…"
   },
   "toastScreenshotCaptured": {
-    "message": "Screenshot della pagina intera salvato."
+    "message": "Screenshot dell'intera pagina salvato."
   },
   "toastArchiveCreated": {
-    "message": "Archivio HTML a file singolo salvato."
+    "message": "Archivio HTML in un singolo file salvato."
   },
   "brandSignature": {
     "message": "Creato da Turan Burak Yeşilyurt (2run.dev)"
@@ -317,13 +317,13 @@
     "message": "Salva HTML"
   },
   "exportJson": {
-    "message": "Visible list as JSON"
+    "message": "Elenco visibile come JSON"
   },
   "exportCsv": {
-    "message": "Visible list as CSV"
+    "message": "Elenco visibile come CSV"
   },
   "exportHar": {
-    "message": "Network log as HAR"
+    "message": "Registro di rete come HAR"
   },
   "exportScreenshot": {
     "message": "Screenshot pagina intera (PNG)"
@@ -386,7 +386,7 @@
     "message": "Cancella"
   },
   "toastRefreshComplete": {
-    "message": "Scansione completata: $COUNT$ nuova/e risorsa/e",
+    "message": "Scansione completata: $count$ nuova/e risorsa/e",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "$COUNT$ blocco/hi copiato/i",
+    "message": "$count$ blocco/hi copiato/i",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "Niente da esportare"
   },
   "toastExportedTxt": {
-    "message": "$COUNT$ blocco/hi esportato/i come TXT",
+    "message": "$count$ blocco/hi esportato/i come TXT",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "$COUNT$ blocco/hi esportato/i come Markdown",
+    "message": "$count$ blocco/hi esportato/i come Markdown",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "Tabella esportata come XLSX"
   },
   "toastExportedTablesZip": {
-    "message": "$COUNT$ tabella/e esportata/e in $FORMAT$",
+    "message": "$count$ tabella/e esportata/e in $format$",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "$COUNT$ foglio/i esportato/i in XLSX",
+    "message": "$count$ foglio/i esportato/i in XLSX",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -471,7 +471,7 @@
     "message": "Seleziona prima almeno una risorsa."
   },
   "toastZipSaved": {
-    "message": "ZIP salvato: $FETCHED$ di $TOTAL$ risorse",
+    "message": "ZIP salvato: $fetched$ di $total$ risorse",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "Errore creazione ZIP: $ERROR$",
+    "message": "Errore creazione ZIP: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR esportato ($COUNT$ voci)",
+    "message": "HAR esportato ($count$ voci)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "Finestra ispezionata da DevTools non disponibile."
   },
   "toastScreenshotError": {
-    "message": "Errore screenshot: $ERROR$",
+    "message": "Errore screenshot: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -520,7 +520,7 @@
     "message": "Creazione dell'archivio offline della pagina…"
   },
   "toastArchiveError": {
-    "message": "Errore archivio pagina: $ERROR$",
+    "message": "Errore archivio pagina: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "Impossibile formattare il file — visualizzazione dell'originale."
   },
   "emptySearchTitle": {
-    "message": "Nessun risultato per \"$QUERY$\"",
+    "message": "Nessun risultato per \"$query$\"",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -556,7 +556,7 @@
     "message": "La pagina ha rifiutato la query. Modificala sopra per visualizzare i risultati."
   },
   "textEmptyNoMatch": {
-    "message": "Nessun elemento nella pagina corrisponde a questa query. Prova un selettore più ampio."
+    "message": "Nessun elemento della pagina corrisponde a questa query. Prova un selettore più ampio o cambia modalità accanto alla casella."
   },
   "textEmptyInitial": {
     "message": "Ancora nulla acquisito. L'acquisizione live è attiva — l'intera pagina apparirà qui come testo leggibile."
@@ -565,7 +565,7 @@
     "message": "Nessun risultato per la query e il filtro correnti."
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ blocchi",
+    "message": "$count$ blocchi",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ parole",
+    "message": "$count$ parole",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ caratteri",
+    "message": "$count$ caratteri",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ tabella/e · $ROWS$ righe uniche",
+    "message": "$tables$ tabella/e · $rows$ righe uniche",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "$COUNT$ selezionati — esportazione mirata",
+    "message": "$count$ selezionati — le esportazioni useranno solo questi",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "Tabella — $COUNT$ riga/he sullo schermo",
+    "message": "Tabella — $count$ riga/he sullo schermo",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "Tabella — tutte le $COUNT$ righe uniche",
+    "message": "Tabella — tutte le $count$ righe uniche",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ istantanea/e",
+    "message": "$count$ istantanea/e",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "aggiornato $TIME$",
+    "message": "aggiornato $time$",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "Mostra tutte le $COUNT$ righe",
+    "message": "Mostra tutte le $count$ righe",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "Visualizzazione di tutte le righe"
   },
   "textTableHistory": {
-    "message": "Cronologia ($COUNT$)",
+    "message": "Cronologia ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ immagine/i duplicata/e",
+    "message": "$count$ immagine/i duplicata/e",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -752,7 +752,7 @@
     "message": "Lettura attiva"
   },
   "toastDownloadStarted": {
-    "message": "Download avviato: $NAME$",
+    "message": "Download avviato: $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -773,7 +773,7 @@
     "message": "★ Stella"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ riga/he unica/he",
+    "message": "$count$ riga/he unica/he",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "$COUNT$s fa",
+    "message": "$count$s fa",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "$COUNT$m fa",
+    "message": "$count$m fa",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,13 +800,13 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "Cattura area dello schermo"
+    "message": "Cattura screenshot di un'area"
   },
   "btnAreaDownload": {
     "message": "Scarica"
   },
   "btnAreaCopy": {
-    "message": "Copia"
+    "message": "Copia negli appunti"
   },
   "btnAreaCancel": {
     "message": "Annulla"
@@ -818,7 +818,7 @@
     "message": "Screenshot dell'area salvato"
   },
   "statusFoundCssResources": {
-    "message": "Trovata/e $COUNT$ risorsa/e referenziata/e nel CSS",
+    "message": "Trovata/e $count$ risorsa/e referenziata/e nel CSS",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "Scansione DOM non riuscita: $ERROR$",
+    "message": "Scansione DOM non riuscita: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -881,16 +881,16 @@
     "message": "Come utilizzare il pannello completo"
   },
   "popupStep1": {
-    "message": "Premi F12 su qualsiasi pagina web"
+    "message": "Apri DevTools nella pagina che vuoi ispezionare <div class=\"hint\"><kbd>F12</kbd> oppure <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
   },
   "popupStep2": {
-    "message": "Fai clic sulla scheda Source Download"
+    "message": "Fai clic sulla scheda <strong>Source Download</strong> nella barra degli strumenti di DevTools"
   },
   "popupStep3": {
-    "message": "Cerca, filtra ed esamina qualsiasi risorsa"
+    "message": "Sfoglia, ispeziona e scarica le risorse, singolarmente o tutte insieme in un file ZIP."
   },
   "popupNote": {
-    "message": "Nota: Chrome non consente alle estensioni di aprire automaticamente gli Strumenti per sviluppatori; la suite completa è accessibile premendo F12."
+    "message": "Nota: Chrome non consente alle estensioni di aprire DevTools in modo automatico, quindi la suite completa è accessibile dalla barra degli strumenti di DevTools."
   },
   "popupTrackAll": {
     "message": "Tutte le categorie"
@@ -1034,7 +1034,7 @@
     }
   },
   "contextMenuRetryDownload": {
-    "message": "Riprova download"
+    "message": "Riprova il download"
   },
   "searchRegexHint": {
     "message": "Ricerca Regex attiva — usa /modello/i"
@@ -1158,7 +1158,7 @@
     "message": "Fai clic sulla scheda <strong>Source Download</strong> nella barra degli strumenti di DevTools (premi <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, quindi seleziona la scheda nella barra di DevTools). Chrome non consente alle estensioni di aprire automaticamente DevTools, motivo per cui il pannello risiede lì. Il popup dell'icona sulla barra degli strumenti ti consente di scegliere quali categorie alimentano il badge numerico. Il pulsante sole/luna nella barra del pannello imposta un tema chiaro o scuro in modo indipendente da Chrome; tale preferenza viene memorizzata stabilmente."
   },
   "guideSecCategoriesContent": {
-    "message": "Le schede verticali a sinistra raggruppano ogni risorsa acquisita in 17 categorie dedicate in base al tipo: Immagini, Video, Audio, Sottotitoli, Documenti, Font, Source map, WASM, SVG, API, Cookie, Archiviazione e altro ancora. Ciascuna scheda mostra un conteggio in tempo reale. Viene mostrata una sola categoria alla volta; il cambio di scheda azzera tutti i filtri, in modo che gli elementi visibili corrispondano sempre fedelmente alla scheda."
+    "message": "Le schede verticali a sinistra raggruppano ogni risorsa acquisita in 17 categorie dedicate in base al tipo: Immagini, Video, Audio, Sottotitoli, Documenti, Caratteri, Source map, WASM, SVG, API, Cookie, Archiviazione e altro ancora. Ciascuna scheda mostra un conteggio in tempo reale. Viene mostrata una sola categoria alla volta; il cambio di scheda azzera tutti i filtri, in modo che gli elementi visibili corrispondano sempre fedelmente alla scheda."
   },
   "guideSecSearchFiltersContent": {
     "message": "La barra di ricerca filtra per nome, URL, tipo, testo alternativo o titolo. Racchiudi la query tra <kbd>/…/</kbd> per usare un'espressione regolare, ad esempio <code>/\\.(png|jpg)$/</code>. Sotto la barra degli strumenti, la barra dei filtri varia per ciascuna categoria: intervalli di peso e dimensioni per i media, metodo HTTP e tipo di richiesta per le API, oltre a ordinamento e direzione."
@@ -1167,7 +1167,7 @@
     "message": "Passa da una griglia compatta (anteprime piccole) a un elenco dettagliato tramite i pulsanti accanto alla barra di ricerca. La scelta viene ricordata tra le sessioni. Nella vista a elenco, le caselle di controllo ti consentono di selezionare singole risorse per un download combinato."
   },
   "guideSecInspectContent": {
-    "message": "Fai clic su qualsiasi risorsa per aprirla nel riquadro di ispezione a destra. Ciascun file aperto diventa una scheda, consentendoti di confrontare più risorse affiancate — la più recente si apre a sinistra. Sono disponibili visualizzatori dedicati per immagini, video, audio, font, SVG e testo/codice (con pulsante di formattazione Beautify). Le API mostrano una visualizzazione divisa: corpo della risposta a sinistra e dettagli della richiesta (metodo, stato, intestazioni, parametri di query e payload) a destra."
+    "message": "Fai clic su qualsiasi risorsa per aprirla nel riquadro di ispezione a destra. Ciascun file aperto diventa una scheda, consentendoti di confrontare più risorse affiancate — la più recente si apre a sinistra. Sono disponibili visualizzatori dedicati per immagini, video, audio, caratteri, SVG e testo/codice (con pulsante di formattazione Beautify). Le API mostrano una visualizzazione divisa: corpo della risposta a sinistra e dettagli della richiesta (metodo, stato, intestazioni, parametri di query e payload) a destra."
   },
   "guideSecDownloadingContent": {
     "message": "<strong>Scarica visualizzati</strong> salva le risorse attualmente visibili (categoria attiva + ricerca + filtri) in un archivio ZIP; il pulsante si rinomina in <em>Scarica filtrati (N)</em> quando i filtri sono attivi. Passa il cursore su qualunque pulsante di download per visualizzare la dimensione stimata dell'archivio prima di fare clic. <strong>Scarica selezionati</strong> preleva unicamente gli elementi contrassegnati da spunta. <strong>Scarica tutto</strong> raccoglie tutte le risorse individuate in uno ZIP organizzato in cartelle. I download non riusciti vengono ripetuti automaticamente e possono essere riavviati dal menu contestuale. <strong>Esporta</strong> salva l'elenco visibile in formato JSON o CSV, oppure esporta il registro di rete di Chrome come file HAR."
@@ -1194,13 +1194,13 @@
     "message": "Le risposte delle <strong>API</strong> dinamiche (XHR/fetch) non vengono deduplicate per URL: ogni risposta viene mantenuta nell'elenco (coda FIFO limitata) per consentirti di confrontare chiamate successive. Le risorse statiche vengono invece deduplicate. Utilizza <strong>Aggiorna</strong> per eseguire nuovamente la scansione del DOM e ricarica la pagina con il pannello aperto per registrare l'insieme delle richieste di rete, comprese quelle avviate prima del passaggio di scheda."
   },
   "toolArrow": {
-    "message": "Strumento Freccia"
+    "message": "Strumento freccia"
   },
   "toolRect": {
-    "message": "Strumento Rettangolo"
+    "message": "Strumento rettangolo"
   },
   "toolText": {
-    "message": "Strumento Testo"
+    "message": "Strumento testo"
   },
   "toolUndo": {
     "message": "Annulla (Ctrl+Z)"
@@ -1212,7 +1212,7 @@
     "message": "Colore"
   },
   "badgeStrokeSize": {
-    "message": "Dimensione: $SIZE$px",
+    "message": "Dimensione: $size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "Dimensione carattere: $SIZE$px",
+    "message": "Dimensione carattere: $size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,7 +1230,7 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "Registra area schermo (Video / GIF)"
+    "message": "Registra un'area come video / GIF"
   },
   "btnRecStart": {
     "message": "Avvia registrazione"
@@ -1248,28 +1248,28 @@
     "message": "Annulla"
   },
   "toastRecSaved": {
-    "message": "Registrazione salvata con successo."
+    "message": "Registrazione dell'area salvata"
   },
   "toastRecCancelled": {
-    "message": "Registrazione annullata."
+    "message": "Registrazione video annullata"
   },
   "toastRecPermissionDenied": {
-    "message": "Autorizzazione per la registrazione schermo negata"
+    "message": "Autorizzazione per la registrazione dello schermo non concessa"
   },
   "btnPopupRecordArea": {
-    "message": "Video / GIF di zona"
+    "message": "Registra area in video / GIF"
   },
   "btnPopupCaptureArea": {
     "message": "Cattura area"
   },
   "contextMenuPickColor": {
-    "message": "Campiona colore dallo schermo"
+    "message": "Scegli un colore dallo schermo"
   },
   "btnPopupPickColor": {
     "message": "Prelievo colore"
   },
   "colorPickerTitle": {
-    "message": "Campionatore colore"
+    "message": "Selettore colore"
   },
   "btnColorPickAgain": {
     "message": "Scegli un altro colore"
@@ -1278,7 +1278,7 @@
     "message": "Colore copiato negli appunti"
   },
   "toastProgressCapturing": {
-    "message": "Cattura pagina intera... $PERCENT$%",
+    "message": "Acquisizione dell'intera pagina... $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,10 +1292,10 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Unione immagini in corso…"
+    "message": "Unione dell'immagine in corso..."
   },
   "modalExportTitle": {
-    "message": "Screenshot pagina intera pronto"
+    "message": "Screenshot dell'intera pagina pronto"
   },
   "btnExportPng": {
     "message": "Scarica PNG"
@@ -1304,13 +1304,13 @@
     "message": "Scarica JPG"
   },
   "btnExportPdf": {
-    "message": "Salva in PDF"
+    "message": "Salva come PDF"
   },
   "btnExportCopy": {
     "message": "Copia negli appunti"
   },
   "btnExportGenerating": {
-    "message": "Generazione in corso…"
+    "message": "Creazione in corso..."
   },
   "toastPdfGenerated": {
     "message": "Documento PDF salvato."
@@ -1325,22 +1325,22 @@
     "message": "Anteprima:"
   },
   "toastRecGeneratingGif": {
-    "message": "Generazione GIF in corso, attendere…"
+    "message": "Creazione della GIF in corso, attendi..."
   },
   "settingGifResolution": {
     "message": "Risoluzione GIF predefinita"
   },
   "optGifOriginal": {
-    "message": "Originale (1:1 Nativa — 3K/4K senza ridimensionamento)"
+    "message": "Originale (risoluzione nativa 1:1 — 3K/4K completa, senza ridimensionamento)"
   },
   "optGif1080p": {
-    "message": "1080p Full HD (Max 1920px)"
+    "message": "1080p Full HD (max 1920px)"
   },
   "optGif720p": {
-    "message": "720p HD (Max 1280px)"
+    "message": "720p HD (max 1280px)"
   },
   "optGif480p": {
-    "message": "480p SD (Max 854px — Più veloce e leggero)"
+    "message": "480p SD (max 854px — più veloce e più leggero)"
   },
   "tipGifDurationLimit": {
     "message": "Il formato GIF supporta una durata massima di registrazione di 1 minuto (60s)."
@@ -1352,31 +1352,135 @@
     "message": "Registra qualsiasi porzione dello schermo in formato MP4, WebM o GIF animata. Le registrazioni GIF supportano la risoluzione nativa 1:1, profili a 1080p, 720p e 480p, con stima in tempo reale della dimensione del file. La durata massima di registrazione per le GIF è di 1 minuto (60 s) per garantire prestazioni ottimali del browser."
   },
   "msgGifMaxDurationReached": {
-    "message": "Raggiunta la durata massima di 1 minuto. Generazione GIF in corso…"
+    "message": "Raggiunta la durata massima della GIF di 1 minuto (60 s). Creazione della GIF in corso..."
   },
   "labelGifMaxDuration": {
-    "message": "Max 1 min (60s)"
+    "message": "Max 1 min (60 s)"
   },
   "settingGifFps": {
     "message": "Frequenza fotogrammi GIF (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — Fluido (Massima fluidità, file più pesante)"
+    "message": "15 FPS — Fluido (alta fluidità, dimensioni maggiori)"
   },
   "optGifFps10": {
-    "message": "10 FPS — Standard (Consigliato per il web e bilanciato)"
+    "message": "10 FPS — Standard (consigliato per il web e per un buon equilibrio)"
   },
   "optGifFps5": {
-    "message": "5 FPS — Compatto / Meme (Movimento a scatti, file leggero)"
+    "message": "5 FPS — Compatto / Meme (movimento a scatti, dimensioni ridotte)"
   },
   "optGifFps2": {
-    "message": "2 FPS — Stop-Motion / Passo passo (Dimensione minima, perfetto per guide)"
+    "message": "2 FPS — Stop-motion / Lento (passo dopo passo \"clic-clic\", dimensioni minime)"
   },
   "optGifFps1": {
-    "message": "1 FPS — Presentazione (1 fotogramma al secondo, dimensione minima)"
+    "message": "1 FPS — Presentazione (1 fotogramma al secondo, dimensioni minime)"
   },
   "popupRightClickHint": {
     "message": "Fai clic destro sulla pagina per Registrazione Schermo (Video/GIF) e Prelievo Colore.",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "Annuncio / iframe nascosto per questa sessione.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Immagine copiata negli appunti",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Chiudi (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Impostazioni salvate",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Scarica il file e aprilo con VLC o un altro lettore multimediale.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Nessuna anteprima per questo tipo di risorsa",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Scarica originale",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Suggerimento: apri il file scaricato con VLC o con qualsiasi lettore multimediale desktop — riproduce praticamente ogni formato.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Creazione dell'archivio ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Il tuo browser non supporta l'API EyeDropper.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Trascina la barra degli strumenti",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Cambia formato: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Risoluzione GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Frequenza fotogrammi GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Dimensione stimata della GIF: ~$size$ MB (per 10 s), fino a ~$max$ MB per il massimo di 60 s.\nFrequenza fotogrammi: $fps$ FPS.\nLa registrazione GIF è limitata a un massimo di 1 minuto (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Copia $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Anteprima screenshot",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — Riproduzione universale su WhatsApp, Telegram, Jira, Apple e Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (immagine animata — Ideale per README, Jira, documentazione e messaggistica)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — formato web aperto)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Nessuna scheda attiva trovata.",
+    "description": "No active tab found."
   }
 }

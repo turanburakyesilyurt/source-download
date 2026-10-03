@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Tutki ja lataa verkkosisältöä ZIP-tiedostona. Koko sivun kuvakaappaukset, taulukoiden live-tallennus ja kehittäjätyökalut."
+  },
+  "actionTitle": {
+    "message": "Source Download — Avaa paneeli ja seuraa resursseja"
+  },
+  "contextMenuZap": {
+    "message": "Piilota tämä elementti (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "Palauta viimeksi piilotettu elementti"
+  },
+  "contextMenuResetZap": {
+    "message": "Nollaa kaikki piilotetut elementit"
+  },
+  "contextMenuCapturePage": {
+    "message": "Ota koko sivun kuvakaappaus"
+  },
+  "contextMenuPageArchive": {
+    "message": "Lataa sivun offline-arkisto"
+  },
+  "catAll": {
+    "message": "Kaikki"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Kuvat"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Videot"
+  },
+  "catAudio": {
+    "message": "Ääni"
+  },
+  "catCaptions": {
+    "message": "Kuvatekstit"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Lähdekartat"
+  },
+  "catFonts": {
+    "message": "Fontit"
+  },
+  "catDocuments": {
+    "message": "Asiakirjat"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifestit"
+  },
+  "catText": {
+    "message": "Teksti"
+  },
+  "catOther": {
+    "message": "Muu"
+  },
+  "catScreenshot": {
+    "message": "Kuvakaappaus"
+  },
+  "catArchive": {
+    "message": "Sivun arkisto"
+  },
+  "btnRefresh": {
+    "message": "Päivitä"
+  },
+  "btnExport": {
+    "message": "Vie"
+  },
+  "btnDownloadSelected": {
+    "message": "Lataa valitut"
+  },
+  "btnDownloadView": {
+    "message": "Lataa näkymä"
+  },
+  "btnDownloadAll": {
+    "message": "Lataa kaikki"
+  },
+  "btnDownloadFiltered": {
+    "message": "Lataa suodatetut"
+  },
+  "btnTheme": {
+    "message": "Vaihda teemaa"
+  },
+  "btnGuide": {
+    "message": "Käyttöopas"
+  },
+  "btnCaptureFullPage": {
+    "message": "Koko sivun kuvakaappaus"
+  },
+  "btnOfflineArchive": {
+    "message": "Tallenna yhtenä HTML-tiedostona"
+  },
+  "filterMinKb": {
+    "message": "Väh. KB"
+  },
+  "filterMaxKb": {
+    "message": "Enint. KB"
+  },
+  "filterMinWidth": {
+    "message": "Min. leveys px"
+  },
+  "filterMinHeight": {
+    "message": "Min. korkeus px"
+  },
+  "filterSortName": {
+    "message": "Lajittele nimen mukaan"
+  },
+  "filterSortSize": {
+    "message": "Lajittele koon mukaan"
+  },
+  "filterSortType": {
+    "message": "Lajittele tyypin mukaan"
+  },
+  "filterSortTime": {
+    "message": "Lajittele ajan mukaan"
+  },
+  "filterHideDupes": {
+    "message": "Piilota kaksoiskappaleet"
+  },
+  "filterClear": {
+    "message": "Tyhjennä"
+  },
+  "textModeContains": {
+    "message": "Sisältää"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS-valitsin"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Suodata sivun tekstiä tai tee kysely live DOM:sta…"
+  },
+  "textAllElements": {
+    "message": "Kaikki elementit"
+  },
+  "textLiveOn": {
+    "message": "Live päällä"
+  },
+  "textLiveOff": {
+    "message": "Live pois"
+  },
+  "textScanNow": {
+    "message": "Skannaa nyt"
+  },
+  "textReading": {
+    "message": "Lukutila"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Valitse resurssi nähdäksesi sen tiedot"
+  },
+  "inspectorDetails": {
+    "message": "Tiedot"
+  },
+  "inspectorOpenTab": {
+    "message": "Avaa uudessa välilehdessä"
+  },
+  "inspectorCopyUrl": {
+    "message": "Kopioi URL-osoite"
+  },
+  "inspectorDownloadFile": {
+    "message": "Lataa tämä tiedosto"
+  },
+  "inspectorClose": {
+    "message": "Sulje"
+  },
+  "metaUrl": {
+    "message": "URL-osoite"
+  },
+  "metaType": {
+    "message": "Tyyppi"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Koko"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Lähde"
+  },
+  "metaTitle": {
+    "message": "Otsikko"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Tykkäätkö Source Downloadista? Tue avoimen lähdekoodin visiotamme arvostelulla Chrome Web Storessa tai tähdellä GitHubissa!"
+  },
+  "ratingReview": {
+    "message": "★ Jätä arvostelu"
+  },
+  "ratingStar": {
+    "message": "★ Tähti GitHubissa"
+  },
+  "ratingDismiss": {
+    "message": "Hylkää"
+  },
+  "toastElementZapped": {
+    "message": "Elementti piilotettu tämän istunnon ajaksi."
+  },
+  "toastElementRestored": {
+    "message": "Elementti palautettu."
+  },
+  "toastAllElementsRestored": {
+    "message": "Kaikki piilotetut elementit palautettu."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Otetaan koko sivun kuvakaappausta…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Koko sivun kuvakaappaus tallennettu."
+  },
+  "toastArchiveCreated": {
+    "message": "Yksittäisenä tiedostona oleva HTML-arkisto tallennettu."
+  },
+  "brandSignature": {
+    "message": "Tekijä: Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Kuvat ja SVG"
+  },
+  "tabMedia": {
+    "message": "Media ja ääni"
+  },
+  "tabFonts": {
+    "message": "Fontit"
+  },
+  "tabTextScraper": {
+    "message": "Teksti ja taulukot"
+  },
+  "heroScreenshotTitle": {
+    "message": "Koko sivun kuvakaappaus"
+  },
+  "heroScreenshotDesc": {
+    "message": "Saumaton usean näkymän yhdistäminen, kiinnitetyt ylätunnisteet piilotetaan"
+  },
+  "heroArchiveTitle": {
+    "message": "Yksitiedostoinen HTML-arkisto"
+  },
+  "heroArchiveDesc": {
+    "message": "Sisällyttää CSS:n ja Base64-kuvat mukaan, offline-käyttöön sopiva tilannekuva"
+  },
+  "copyDataUri": {
+    "message": "Kopioi Data-URI"
+  },
+  "copyUrl": {
+    "message": "Kopioi URL-osoite"
+  },
+  "downloadSingle": {
+    "message": "Lataa"
+  },
+  "searchPlaceholder": {
+    "message": "Suodata nimen, URL-osoitteen, tunnisteen, MIME:n tai /regex/…"
+  },
+  "viewGrid": {
+    "message": "Ruudukkonäkymä"
+  },
+  "viewList": {
+    "message": "Luettelonäkymä"
+  },
+  "btnScreenshot": {
+    "message": "Kuvakaappaus"
+  },
+  "btnArchive": {
+    "message": "Tallenna HTML"
+  },
+  "exportJson": {
+    "message": "Näkyvä luettelo JSON-muodossa"
+  },
+  "exportCsv": {
+    "message": "Näkyvä luettelo CSV-muodossa"
+  },
+  "exportHar": {
+    "message": "Verkkoloki HAR-muodossa"
+  },
+  "exportScreenshot": {
+    "message": "Koko sivun kuvakaappaus (PNG)"
+  },
+  "exportArchive": {
+    "message": "Offline-sivuarkisto (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Kaikki menetelmät"
+  },
+  "filterTypeAll": {
+    "message": "Kaikki tyypit"
+  },
+  "filterSortDir": {
+    "message": "Vaihda nouseva/laskeva"
+  },
+  "emptyTitle": {
+    "message": "Resursseja ei löytynyt"
+  },
+  "emptySubtitle": {
+    "message": "Lataa sivu uudelleen, kun tämä paneeli on auki, jotta verkkopyynnöt tallentuvat, tai napsauta Päivitä skannataksesi nykyisen DOM:n."
+  },
+  "statusResources": {
+    "message": "resursseja"
+  },
+  "statusFiltered": {
+    "message": "suodatettu"
+  },
+  "statusSelected": {
+    "message": "valittu"
+  },
+  "statusDupes": {
+    "message": "kaksoiskappaleet piilotettu"
+  },
+  "statusSize": {
+    "message": "koko"
+  },
+  "langAuto": {
+    "message": "Automaattinen (selain)"
+  },
+  "langSelectorTitle": {
+    "message": "Valitse kieli"
+  },
+  "textPillAll": {
+    "message": "Kaikki sisältö"
+  },
+  "textPillText": {
+    "message": "📄 Tekstiä ja artikkeleita"
+  },
+  "textPillTables": {
+    "message": "📊 Vain taulukot"
+  },
+  "textSelectAll": {
+    "message": "Valitse kaikki"
+  },
+  "textDeselectAll": {
+    "message": "Poista kaikki valinta"
+  },
+  "textClearSelection": {
+    "message": "Tyhjennä"
+  },
+  "toastRefreshComplete": {
+    "message": "Sivun skannaus valmis: $count$ uutta resurssia",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Kopioitu $count$ lohko(a)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Kopioitu leikepöydälle"
+  },
+  "toastTableCopied": {
+    "message": "Taulukko kopioitu leikepöydälle"
+  },
+  "toastNothingToExport": {
+    "message": "Ei mitään vietävää"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ lohkoa vietiin TXT-muodossa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$ lohkoa vietiin Markdown-muodossa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Taulukon rivejä ei kaapattu"
+  },
+  "toastExportedCsv": {
+    "message": "Taulukko viety CSV-muodossa"
+  },
+  "toastExportedXlsx": {
+    "message": "Taulukko vietiin XLSX-muodossa"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ taulukkoa vietiin muodossa $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ arkkia vietiin XLSX-muodossa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Ei ladattavia resursseja."
+  },
+  "toastNoVisibleResources": {
+    "message": "Ei näkyviä ladattavia resursseja."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Valitse ensin vähintään yksi resurssi."
+  },
+  "toastZipSaved": {
+    "message": "ZIP tallennettu: $fetched$/$total$ resurssista",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP epäonnistui: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR viety ($count$ merkintää)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL-osoite kopioitu leikepöydälle"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevToolsin tarkastettu ikkuna ei ole käytettävissä."
+  },
+  "toastScreenshotError": {
+    "message": "Kuvakaappausvirhe: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Luodaan sivun offline-arkistoa…"
+  },
+  "toastArchiveError": {
+    "message": "Arkistovirhe: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Muotoilu aikakatkaistiin — näytetään alkuperäinen tiedosto."
+  },
+  "toastFormatFailed": {
+    "message": "Tiedostoa ei voitu muotoilla – näytetään alkuperäinen."
+  },
+  "emptySearchTitle": {
+    "message": "Ei osumia haulle \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Kokeile toista hakutermiä tai vaihda toiseen luokkaan."
+  },
+  "emptyFiltersTitle": {
+    "message": "Yksikään resurssi ei vastaa nykyisiä suodattimia"
+  },
+  "emptyFiltersSub": {
+    "message": "Löysää yllä olevia koko- tai mittasuodattimia tai paina Tyhjennä."
+  },
+  "textEmptyQueryReject": {
+    "message": "Sivu hylkäsi kyselyn. Korjaa se yllä ja tulokset tulevat heti takaisin."
+  },
+  "textEmptyNoMatch": {
+    "message": "Mikään sivun elementti ei vastaa tätä kyselyä. Kokeile väljempää valitsinta tai vaihda tilaa kentän vierestä."
+  },
+  "textEmptyInitial": {
+    "message": "Mitään ei ole vielä kaapattu. Live-kaappaus on käynnissä – koko sivu näkyy tässä luettavana tekstinä."
+  },
+  "textEmptyFiltered": {
+    "message": "Mikään ei vastaa nykyistä kyselyä ja elementtisuodatinta."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ lohkoa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ sanaa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ merkkiä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ taulukko(a) · $rows$ yksilöllistä riviä",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ valittu – vienti käyttää vain näitä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Taulukko — $count$ rivi(ä) näytöllä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Taulukko — kaikki $count$ yksilöllistä riviä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ tilannekuvaa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "päivitetty $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Näytä kaikki $count$ riviä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Näytetään kaikki rivit"
+  },
+  "textTableHistory": {
+    "message": "Historia ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Piilota historia"
+  },
+  "textTableNoRows": {
+    "message": "Rivejä ei ole vielä kaapattu."
+  },
+  "textBtnCopy": {
+    "message": "Kopioi teksti"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Kopioi"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ kaksoiskuvaa",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Vie"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Ladataan SVG:tä…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG-sisältöä ei voitu hakea."
+  },
+  "inspectorLoadingFont": {
+    "message": "Ladataan fontin esikatselua…"
+  },
+  "inspectorFontSample": {
+    "message": "Fontin esikatselu"
+  },
+  "inspectorBeautify": {
+    "message": "Muotoile"
+  },
+  "inspectorOriginal": {
+    "message": "Alkuperäinen"
+  },
+  "inspectorHeaders": {
+    "message": "Otsakkeet"
+  },
+  "inspectorResponse": {
+    "message": "Vastaus"
+  },
+  "inspectorRequest": {
+    "message": "Pyyntö"
+  },
+  "inspectorQueryParams": {
+    "message": "Kyselyparametrit"
+  },
+  "inspectorRequestBody": {
+    "message": "Pyynnön runko"
+  },
+  "textHintHtml": {
+    "message": "Live, luettavissa oleva kopio sivusta. Jokainen tekstiä sisältävä elementti kaapataan DOM-järjestyksessä ja säilytetään täällä sivun muuttuessa. Tee kysely pelkällä tekstillä, säännöllisellä lausekkeella, <strong>CSS-valitsimella</strong> tai <strong>XPath</strong>-lausekkeella ja vie sitten vastaava. Katso lisätietoja <a href=\"#\" id=\"text-hint-guide\">oppaasta</a>."
+  },
+  "textHeadings": {
+    "message": "Otsikot"
+  },
+  "textAllLevels": {
+    "message": "Kaikki tasot"
+  },
+  "textMatches": {
+    "message": "osumaa"
+  },
+  "textMatch": {
+    "message": "osuma"
+  },
+  "textReadingOn": {
+    "message": "Lukutila päällä"
+  },
+  "toastDownloadStarted": {
+    "message": "Lataus aloitettu: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Tätä resurssia ei voitu noutaa (CORS tai ei-tuettu tyyppi)."
+  },
+  "ratingBannerText": {
+    "message": "Tykkäätkö Source Downloadista? Tue avoimen lähdekoodin visiotamme arvostelulla Chrome Web Storessa tai tähdellä GitHubissa!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Arvostele"
+  },
+  "ratingBannerStar": {
+    "message": "★ Tähti"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ yksilöllistä riviä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$s sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$min sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Ota alueen kuvakaappaus"
+  },
+  "btnAreaDownload": {
+    "message": "Lataa"
+  },
+  "btnAreaCopy": {
+    "message": "Kopioi leikepöydälle"
+  },
+  "btnAreaCancel": {
+    "message": "Peruuta"
+  },
+  "toastAreaCopied": {
+    "message": "Alueen kuvakaappaus kopioitu leikepöydälle"
+  },
+  "toastAreaDownloaded": {
+    "message": "Alueen kuvakaappaus tallennettu"
+  },
+  "statusFoundCssResources": {
+    "message": "Löytyi $count$ resurssia, joihin viitataan CSS:stä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM-skannaus epäonnistui: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Indeksoidaan tiedoston sisältöä…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Tarkistetaan kuvien kaksoiskappaleita…"
+  },
+  "statusWorking": {
+    "message": "Käsitellään…"
+  },
+  "filterMethodTitle": {
+    "message": "Suodata HTTP-menetelmällä"
+  },
+  "filterTypeTitle": {
+    "message": "Suodata pyyntötyypin mukaan"
+  },
+  "filterSortTitle": {
+    "message": "Lajittele resurssit"
+  },
+  "textModeTitle": {
+    "message": "Miten kyselykenttä tulkitaan"
+  },
+  "textKindTitle": {
+    "message": "Rajaa yhteen elementtityyppiin"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Otsikkotaso"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Hinta:\\s*\\d+ — JavaScriptin säännöllinen lauseke"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, artikkeli h2 — mikä tahansa CSS-valitsin"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Hae oppaasta…"
+  },
+  "popupIntro": {
+    "message": "Kategoriat, jotka <strong>työkalupalkin merkki</strong> laskee. Poista yksi käytöstä lopettaaksesi sen laskemisen — merkki näyttää heti vain seuraamasi kategoriat."
+  },
+  "popupHelpTitle": {
+    "message": "Näin käytät koko paneelia"
+  },
+  "popupStep1": {
+    "message": "Avaa DevTools sivulle, jota haluat tarkastaa <div class=\"hint\"><kbd>F12</kbd> tai <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Napsauta DevTools-työkalupalkin <strong>Source Download</strong> -välilehteä"
+  },
+  "popupStep3": {
+    "message": "Selaa, tarkasta ja lataa resursseja – yksitellen tai kaikki kerralla ZIP-tiedostona."
+  },
+  "popupNote": {
+    "message": "Huomaa: Chrome ei salli laajennusten avata ohjelmallisesti DevToolsia, minkä vuoksi koko suunnittelupaketti saavutetaan DevTools-työkalupalkin kautta."
+  },
+  "popupTrackAll": {
+    "message": "Seuraa kaikkia luokkia"
+  },
+  "popupLanguage": {
+    "message": "Kieli"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Binäärivaste – lataa nähdäksesi sen"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Ladataan vastausta…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Ei vastauksen esikatselua – sisältöä ei voitu hakea."
+  },
+  "inspectorLoadingContent": {
+    "message": "Ladataan sisältöä…"
+  },
+  "inspectorNoPreview": {
+    "message": "Esikatselua ei ole saatavilla – sisältöä ei voitu hakea."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Sulje kaikki"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Sulje kaikki avoimet välilehdet"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Suurenna napsauttamalla"
+  },
+  "inspectorViewSource": {
+    "message": "Näytä lähde"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Näytä SVG-merkintä syntaksin korostuksella"
+  },
+  "inspectorFormatting": {
+    "message": "Muotoilee…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Hae sisällöstä…"
+  },
+  "findPreviousMatch": {
+    "message": "Edellinen osuma"
+  },
+  "findNextMatch": {
+    "message": "Seuraava osuma"
+  },
+  "findClose": {
+    "message": "Sulje"
+  },
+  "findShowRaw": {
+    "message": "Näytä alkuperäinen (muotoilematon) sisältö"
+  },
+  "findBeautify": {
+    "message": "Muotoile tämä sisältö"
+  },
+  "btnRaw": {
+    "message": "Raaka"
+  },
+  "btnBeautify": {
+    "message": "Muotoile"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) -virta havaittu"
+  },
+  "videoCannotPlay": {
+    "message": "Tätä videota ei voi toistaa selaimessa"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome ei voi toistaa HLS-streameja suoraan. Voit yhdistää kaikki kohteen <b>$NAME$</b> segmentit yhdeksi MP4/TS-videotiedostoksi.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Selain ei tue tätä muotoa"
+  },
+  "btnMergeHls": {
+    "message": "Yhdistä segmentit ja lataa"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ segmenttiä yhdistetty tiedostoon $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "koko tuntematon"
+  },
+  "progressFetching": {
+    "message": "Haetaan $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Luodaan ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP tallennettu: $FETCHED$/$TOTAL$ resurssista ($SKIPPED$ epäonnistui)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Yritä uudelleen $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Yritä latausta uudelleen"
+  },
+  "searchRegexHint": {
+    "message": "Regex-haku aktiivinen — kirjoita kysely muodossa /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Sisällytä vientiin"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Yhdistä jokainen tilannekuva yhdeksi taulukoksi, josta on poistettu kaksoiskappaleet – tämä viedään"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Selaa aiempia tilannekuvia tästä taulukosta"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Lataa tämä taulukko CSV-muodossa"
+  },
+  "tableSnapshotLabel": {
+    "message": "Tilannekuva $INDEX$ – $TIME$ ($COUNT$ riviä)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Valitse tai poista valinta erälatausta varten"
+  },
+  "cardDownloadTitle": {
+    "message": "Lataa tiedosto"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Edellinen lataus epäonnistui – yritä uudelleen napsauttamalla"
+  },
+  "btnThemeLight": {
+    "message": "Vaihda vaaleaan teemaan"
+  },
+  "btnThemeDark": {
+    "message": "Vaihda tummaan teemaan"
+  },
+  "guideTitle": {
+    "message": "Source Download — Käyttöopas"
+  },
+  "guideEmpty": {
+    "message": "Mikään oppaan osio ei vastaa hakuasi."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100 % ilman riippuvuuksia.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Loitonna (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Lähennä (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Palauta zoomaus (0)"
+  },
+  "lightboxClose": {
+    "message": "Sulje (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Muuta kokoa vetämällä"
+  },
+  "ratingDismissTitle": {
+    "message": "Hylkää"
+  },
+  "inspectorResourceTitle": {
+    "message": "Resurssi"
+  },
+  "guideSecGettingStarted": {
+    "message": "Aloittaminen"
+  },
+  "guideSecCategories": {
+    "message": "Luokat"
+  },
+  "guideSecSearchFilters": {
+    "message": "Haku ja suodattimet"
+  },
+  "guideSecGridView": {
+    "message": "Ruudukko- ja luettelonäkymä"
+  },
+  "guideSecInspect": {
+    "message": "Tarkastele resurssia"
+  },
+  "guideSecDownloading": {
+    "message": "Lataaminen"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Teksti ja taulukot"
+  },
+  "guideSecCaptions": {
+    "message": "Kuvatekstit ja tekstitykset"
+  },
+  "guideSecSourceMaps": {
+    "message": "Lähdekartat"
+  },
+  "guideSecDupes": {
+    "message": "Kaksoiskuvat"
+  },
+  "guideSecVideoHls": {
+    "message": "Varavideo ja HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Tehovinkkejä"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Napsauta DevTools-työkalupalkin <strong>Source Download</strong> -välilehteä (paina <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> ja valitse sitten välilehti DevTools-työkalupalkista). Chrome ei salli laajennusten avata DevToolsia automaattisesti, minkä vuoksi paneeli sijaitsee siellä. Työkalupalkin kuvakkeen ponnahdusikkunassa voit valita, mitkä kategoriat lasketaan kuvakkeen merkkilaskuriin. Paneelin työkalupalkin aurinko/kuu-painike lukitsee vaalean tai tumman teeman Chromesta riippumatta; valinta muistetaan."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Vasemmanpuoleiset pystyvälilehdet ryhmittelevät kaikki kaapatut resurssit 17 erilliseen kategoriaan tyypin mukaan: kuvat, videot, ääni, kuvatekstit, asiakirjat, fontit, lähdekartat, WASM, SVG, API:t, evästeet, tallennustila ja paljon muuta. Jokainen välilehti näyttää reaaliaikaisen määrän. Kerrallaan näytetään vain yksi kategoria; vaihtaminen nollaa kaikki suodattimet, joten näkemäsi vastaa aina välilehteä."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Hakupalkki suodattaa nimen, URL-osoitteen, tyypin, vaihtoehtoisen tekstin tai otsikon mukaan. Liitä kyselysi <kbd>/…/</kbd>-kenttään, jos haluat käyttää säännöllistä lauseketta, esim. <code>/\\.(png|jpg)$/</code>. Työkalurivin alapuolella oleva suodatinpalkki muuttuu luokittain: median koko- ja mittaalueet, API-menetelmä ja pyyntötyyppi sekä lajittelu ja suunta."
+  },
+  "guideSecGridViewContent": {
+    "message": "Vaihda kompaktin ruudukon (pienet pikkukuvat) ja yksityiskohtaisen luettelon välillä hakupalkin vieressä olevilla painikkeilla. Valintasi muistetaan istuntojen välillä. Luettelonäkymässä valintaruutujen avulla voit valita yksittäisiä resursseja joukkolatausta varten."
+  },
+  "guideSecInspectContent": {
+    "message": "Napsauta mitä tahansa resurssia avataksesi sen oikeanpuoleisessa tarkastusruudussa. Jokaisesta avatusta tiedostosta tulee välilehti, joten voit vertailla useita resursseja vierekkäin – uusin avautuu vasemmalle. Kuville, videoille, äänelle, fonteille, SVG:lle sekä tekstille/koodille on omat katseluohjelmansa (muotoilukytkimellä). API:t näyttävät jaetun näkymän: vastaus vasemmalla ja pyynnön tiedot (metodi, tila, otsakkeet, kyselyparametrit ja runko) oikealla."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Lataa näkymä</strong> tallentaa tällä hetkellä näkyvät resurssit (aktiivinen kategoria + haku + suodattimet) ZIP-tiedostona; kun suodattimet ovat käytössä, painikkeen nimeksi tulee <em>Lataa suodatetut (N)</em>. Vie hiiren osoitin minkä tahansa latauspainikkeen päälle nähdäksesi arvioidun arkistokoon ennen napsautusta. <strong>Lataa valitut</strong> lataa vain valitut kohteet. <strong>Lataa kaikki</strong> tallentaa kaikki löydetyt resurssit kansiorakenteiseen ZIP-tiedostoon. Epäonnistuneita latauksia yritetään automaattisesti uudelleen, ja ne voi yrittää uudelleen pikavalikosta. <strong>Vie</strong> kirjoittaa näkyvän luettelon JSON- tai CSV-muodossa tai vie Chromen verkkolokin HAR-tiedostona."
+  },
+  "guideSecLightboxContent": {
+    "message": "Zoomauspainike avaa median täysikokoiseen lightboxiin, jossa voit panoroida vetämällä, zoomata hiiren rullalla, näytön painikkeilla tai näppäimistöllä (<kbd>+</kbd>/<kbd>-</kbd> zoomata, <kbd>0</kbd> nollaus, <kbd>Esc</kbd> sulkeaksesi)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>Teksti</strong>-kategoria on reaaliaikainen, luettava kopio sivusta. Se kaappaa kaikki tekstiä sisältävät elementit – otsikot, kappaleet, luettelokohteet, painikkeet, <code>div</code>/<code>span</code> ja paljon muuta – DOM-järjestyksessä ja jatkaa skannausta, kun <strong>Live</strong> on päällä.</p><p><strong>Kysely</strong>-kenttä toimii neljällä tavalla, jotka valitaan sen vieressä olevasta avattavasta valikosta: <strong>Sisältää</strong> ja <strong>Regex</strong> suodattavat jo kaapattua tekstiä, kun taas <strong>CSS-valitsin</strong> ja <strong>XPath</strong> ajetaan live-sivua vastaan, joten ne tavoittavat mitä tahansa DOM:ssa. XPath hyväksyy myös lausekkeet, jotka palauttavat arvon elementtien sijaan, kuten <code>count(//a)</code> tai <code>//@href</code>. Sivun ilmoittama virhe virheellisestä kyselystä näkyy kentän vieressä. <strong>Elementti</strong> rajaa tuloksen yhteen tunnisteeseen ja näyttää sivulta löytyvien tunnisteiden määrät. Kyselykentän tyhjentäminen (tai <strong>Tyhjennä</strong>-painikkeen painaminen) palauttaa tilaan <em>Kaikki elementit</em> ja kaappaa sivun uudelleen – avattavaa valikkoa ei tarvitse koskaan nollata käsin.</p><p><strong>Lukutila</strong> piilottaa tunnisteet, valintaruudut ja sijaintipolut, joten sisältö luetaan kuin asiakirja. Taulukot tallentavat rajatun historian tilannekuvista, joten dynaamiset (SPA) taulukot eivät koskaan katoa. Paina taulukossa <strong>Näytä kaikki rivit</strong> yhdistääksesi kaikki tilannekuvat yhdeksi näkymäksi, josta on poistettu kaksoiskappaleet – juuri sen vienti sisältää. Vie <strong>TXT</strong>-muodossa (luettava sivu), <strong>MD</strong>-muodossa (Markdown, taulukot mukaan lukien) tai taulukot CSV-, HTML- tai monisivuisena <strong>XLSX</strong>-työkirjana. Valitut kohteet ovat etusijalla; muuten viedään kaikki tällä hetkellä näkyvä.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT-, SRT-, TTML- ja muut kuvatekstitiedostot – mukaan lukien <code>&lt;track&gt;</code>-lähteet – päätyvät omalle <strong>Kuvatekstit</strong>-välilehdelleen sen sijaan, että ne sekoittuisivat asiakirjoihin."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code>-tiedostot ja lähdekartoilta näyttävä JSON-sisältö (ne sisältävät <code>mappings</code> ja <code>sources</code>) ryhmitellään kohtaan <strong>Lähdekartat</strong>, ja niihin on käytettävissä JSON-katselu ja muotoilu, joten ne eivät enää sotke JSON-välilehteä."
+  },
+  "guideSecDupesContent": {
+    "message": "Kuvat-välilehdellä paneeli laskee kaapattujen tavujen tiivisteet ja merkitsee identtiset tiedostot. <strong>Piilota kaksoiskappaleet</strong> -suodatin säilyttää jokaisen joukon ensimmäisen kopion, joten näkymän ZIP-tiedosto ei sisällä samaa pikkukuvaa kahdesti."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Streamit, joita selain ei voi toistaa natiivisti (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, tuntemattomat koodekit), näyttävät mustan soittimen sijaan varanäkymän. HLS:ssä voit yhdistää segmentit yhdeksi videotiedostoksi suoraan paneelista tai ladata alkuperäisen manifestin."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dynaamisista <strong>API</strong>-vastauksista (XHR/fetch) ei poisteta kaksoiskappaleita URL-osoitteen perusteella – jokainen vastaus pysyy luettelossa (rajoitettu FIFO), joten voit verrata toistuvia pyyntöjä. Staattisista resursseista kaksoiskappaleet poistetaan. Skannaa nykyinen DOM uudelleen <strong>Päivitä</strong>-toiminnolla ja lataa sivu uudelleen paneelin ollessa auki, jotta kaikki verkkopyynnöt tallentuvat, myös ennen välilehden vaihtamista käynnistetyt."
+  },
+  "toolArrow": {
+    "message": "Nuolityökalu"
+  },
+  "toolRect": {
+    "message": "Suorakulmiotyökalu"
+  },
+  "toolText": {
+    "message": "Tekstityökalu"
+  },
+  "toolUndo": {
+    "message": "Kumoa (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Tee uudelleen (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Väri"
+  },
+  "badgeStrokeSize": {
+    "message": "Koko: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Fonttikoko: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Tallenna alue videona / GIF-kuvana"
+  },
+  "btnRecStart": {
+    "message": "Aloita tallennus"
+  },
+  "btnRecPause": {
+    "message": "Tauko"
+  },
+  "btnRecResume": {
+    "message": "Jatka"
+  },
+  "btnRecStop": {
+    "message": "Lopeta ja lataa"
+  },
+  "btnRecCancel": {
+    "message": "Peruuta"
+  },
+  "toastRecSaved": {
+    "message": "Alueen tallenne tallennettu"
+  },
+  "toastRecCancelled": {
+    "message": "Videon tallennus peruutettu"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Näytön tallennuksen lupaa ei myönnetty"
+  },
+  "btnPopupRecordArea": {
+    "message": "Alueen video / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Alueen kuvakaappaus"
+  },
+  "contextMenuPickColor": {
+    "message": "Valitse väri näytöltä"
+  },
+  "btnPopupPickColor": {
+    "message": "Valitse väri"
+  },
+  "colorPickerTitle": {
+    "message": "Värinvalitsin"
+  },
+  "btnColorPickAgain": {
+    "message": "Valitse toinen väri"
+  },
+  "toastColorCopied": {
+    "message": "Väri kopioitu leikepöydälle"
+  },
+  "toastProgressCapturing": {
+    "message": "Tallennetaan koko sivua... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Yhdistetään kuvaa..."
+  },
+  "modalExportTitle": {
+    "message": "Koko sivun kuvakaappaus valmis"
+  },
+  "btnExportPng": {
+    "message": "Lataa PNG"
+  },
+  "btnExportJpg": {
+    "message": "Lataa JPG"
+  },
+  "btnExportPdf": {
+    "message": "Tallenna PDF-tiedostona"
+  },
+  "btnExportCopy": {
+    "message": "Kopioi leikepöydälle"
+  },
+  "btnExportGenerating": {
+    "message": "Luodaan..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF-asiakirja tallennettu."
+  },
+  "settingNamingPatterns": {
+    "message": "Tiedostojen nimeämismallit"
+  },
+  "settingVideoFormat": {
+    "message": "Oletusvideomuoto"
+  },
+  "settingNamingPreview": {
+    "message": "Esikatselu:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Luodaan GIF-kuvaa, odota hetki..."
+  },
+  "settingGifResolution": {
+    "message": "GIF-oletustarkkuus"
+  },
+  "optGifOriginal": {
+    "message": "Alkuperäinen (1:1 natiiviresoluutio — täysi 3K/4K, ei skaalausta)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (enintään 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (enintään 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (enintään 854px — nopeampi ja pienempi koko)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF-muoto tukee enintään 1 minuutin (60 s) tallennusaikaa."
+  },
+  "guideSecScreenRecording": {
+    "message": "Näytön tallennus (video ja GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Tallenna mikä tahansa näytön alue MP4-, WebM- tai animoituna GIF-muodossa. GIF-tallenteissa on 1:1-natiiviresoluutio sekä 1080p-, 720p- ja 480p-profiilit reaaliaikaisilla arvioiduilla tiedostokooilla. GIF-tallennuksen enimmäiskesto on 1 minuutti (60 s), jotta selain toimii optimaalisesti."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIF-kuvan enimmäiskesto 1 minuutti (60 s) saavutettu. Luodaan GIF-kuvaa..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Enintään 1 min (60 s)"
+  },
+  "settingGifFps": {
+    "message": "GIF-oletuskehysnopeus (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — sulava (erittäin sulava, suurempi koko)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — vakio (suositus verkkoon ja tasapainoon)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — kompakti / meemi (nykivä liike, pieni koko)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — pysäytysanimaatio / hidas (askel askeleelta ”klik-klik”, erittäin pieni koko)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — esitys (1 kuva sekunnissa, minimikoko)"
+  },
+  "popupRightClickHint": {
+    "message": "Napsauta verkkosivua hiiren kakkospainikkeella missä tahansa saadaksesi käyttöön näytön tallennuksen (video/GIF) ja värivalitsimen."
+  },
+  "toastElementZappedAd": {
+    "message": "Mainos / iframe piilotettu tämän istunnon ajaksi.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Kuva kopioitu leikepöydälle",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Sulje (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Asetukset tallennettu",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Lataa tiedosto ja avaa se VLC:llä tai muulla mediasoittimella.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Tämän resurssityypin esikatselua ei ole",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Lataa alkuperäinen",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Vinkki: avaa ladattu tiedosto VLC:llä tai millä tahansa työpöydän mediasoittimella – se toistaa lähes kaikki muodot.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Luodaan ZIP-arkistoa…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Selaimesi ei tue EyeDropper-ohjelmointirajapintaa.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Siirrä työkalupalkkia",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Vaihda muotoa: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF-kuvan resoluutio: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF-kuvan kuvataajuus: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "GIF-kuvan arvioitu koko: ~$size$ MB (10 s:n osalta), enintään ~$max$ MB 60 s:n enimmäiskestolla.\nKuvataajuus: $fps$ FPS.\nGIF-tallennus on rajattu enintään 1 minuuttiin (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Kopioi $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Kuvakaappauksen esikatselu",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — toimii kaikkialla: WhatsApp, Telegram, Jira, Apple ja Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animoitu kuva — ihanteellinen README-tiedostoihin, Jiraan, dokumentaatioon ja viestittelyyn)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — avoin verkkomuoto)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Aktiivista välilehteä ei löytynyt.",
+    "description": "No active tab found."
+  }
+}

@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "যেকোনো ওয়েব অ্যাসেট দেখুন ও ZIP হিসেবে ডাউনলোড করুন। পুরো পেজের স্ক্রিনশট, লাইভ টেবিল ক্যাপচার ও ডেভেলপার ওয়ার্কবেঞ্চ।"
+  },
+  "actionTitle": {
+    "message": "Source Download — প্যানেল খুলুন এবং রিসোর্স ট্র্যাক করুন"
+  },
+  "contextMenuZap": {
+    "message": "এই এলিমেন্টটি লুকান (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "সর্বশেষ লুকানো এলিমেন্ট ফিরিয়ে আনুন"
+  },
+  "contextMenuResetZap": {
+    "message": "সব লুকানো এলিমেন্ট রিসেট করুন"
+  },
+  "contextMenuCapturePage": {
+    "message": "পুরো পেজের স্ক্রিনশট নিন"
+  },
+  "contextMenuPageArchive": {
+    "message": "অফলাইন পেজ আর্কাইভ ডাউনলোড করুন"
+  },
+  "catAll": {
+    "message": "সব"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "ছবি"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "ভিডিও"
+  },
+  "catAudio": {
+    "message": "অডিও"
+  },
+  "catCaptions": {
+    "message": "ক্যাপশন"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "সোর্স ম্যাপ"
+  },
+  "catFonts": {
+    "message": "ফন্ট"
+  },
+  "catDocuments": {
+    "message": "ডকুমেন্ট"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "ম্যানিফেস্ট"
+  },
+  "catText": {
+    "message": "টেক্সট"
+  },
+  "catOther": {
+    "message": "অন্যান্য"
+  },
+  "catScreenshot": {
+    "message": "স্ক্রিনশট"
+  },
+  "catArchive": {
+    "message": "পৃষ্ঠা সংরক্ষণাগার"
+  },
+  "btnRefresh": {
+    "message": "রিফ্রেশ"
+  },
+  "btnExport": {
+    "message": "রপ্তানি"
+  },
+  "btnDownloadSelected": {
+    "message": "নির্বাচিতগুলো ডাউনলোড করুন"
+  },
+  "btnDownloadView": {
+    "message": "বর্তমান ভিউ ডাউনলোড করুন"
+  },
+  "btnDownloadAll": {
+    "message": "সব ডাউনলোড করুন"
+  },
+  "btnDownloadFiltered": {
+    "message": "ফিল্টার করা ফাইল ডাউনলোড করুন"
+  },
+  "btnTheme": {
+    "message": "থিম পরিবর্তন করুন"
+  },
+  "btnGuide": {
+    "message": "ব্যবহারকারীর নির্দেশিকা"
+  },
+  "btnCaptureFullPage": {
+    "message": "সম্পূর্ণ পৃষ্ঠার স্ক্রিনশট"
+  },
+  "btnOfflineArchive": {
+    "message": "একক HTML সংরক্ষণ করুন"
+  },
+  "filterMinKb": {
+    "message": "ন্যূনতম KB"
+  },
+  "filterMaxKb": {
+    "message": "সর্বোচ্চ KB"
+  },
+  "filterMinWidth": {
+    "message": "ন্যূনতম প্রস্থ (px)"
+  },
+  "filterMinHeight": {
+    "message": "ন্যূনতম উচ্চতা (px)"
+  },
+  "filterSortName": {
+    "message": "নাম অনুসারে সাজান"
+  },
+  "filterSortSize": {
+    "message": "আকার অনুসারে সাজান"
+  },
+  "filterSortType": {
+    "message": "প্রকার অনুসারে সাজান"
+  },
+  "filterSortTime": {
+    "message": "সময় অনুসারে সাজান"
+  },
+  "filterHideDupes": {
+    "message": "ডুপ্লিকেট লুকান"
+  },
+  "filterClear": {
+    "message": "মুছুন"
+  },
+  "textModeContains": {
+    "message": "ধারণ করে"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS সিলেক্টর"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "পেজের টেক্সট ফিল্টার করুন বা লাইভ DOM কোয়েরি করুন…"
+  },
+  "textAllElements": {
+    "message": "সব এলিমেন্ট"
+  },
+  "textLiveOn": {
+    "message": "লাইভ চালু"
+  },
+  "textLiveOff": {
+    "message": "লাইভ বন্ধ"
+  },
+  "textScanNow": {
+    "message": "এখন স্ক্যান করুন"
+  },
+  "textReading": {
+    "message": "পাঠযোগ্য"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "বিবরণ দেখতে একটি রিসোর্স নির্বাচন করুন"
+  },
+  "inspectorDetails": {
+    "message": "বিস্তারিত"
+  },
+  "inspectorOpenTab": {
+    "message": "নতুন ট্যাবে খুলুন"
+  },
+  "inspectorCopyUrl": {
+    "message": "URL কপি করুন"
+  },
+  "inspectorDownloadFile": {
+    "message": "এই ফাইলটি ডাউনলোড করুন"
+  },
+  "inspectorClose": {
+    "message": "বন্ধ করুন"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "ধরন"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "আকার"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "উৎস"
+  },
+  "metaTitle": {
+    "message": "শিরোনাম"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Source Download উপভোগ করছেন? Chrome Web Store-এ একটি রিভিউ দিয়ে বা GitHub-এ স্টার দিয়ে আমাদের ওপেন-সোর্স উদ্যোগকে সমর্থন করুন!"
+  },
+  "ratingReview": {
+    "message": "★ রিভিউ দিন"
+  },
+  "ratingStar": {
+    "message": "★ GitHub-এ স্টার দিন"
+  },
+  "ratingDismiss": {
+    "message": "বাতিল করুন"
+  },
+  "toastElementZapped": {
+    "message": "এই সেশনের জন্য এলিমেন্টটি লুকানো হয়েছে।"
+  },
+  "toastElementRestored": {
+    "message": "এলিমেন্ট ফিরিয়ে আনা হয়েছে।"
+  },
+  "toastAllElementsRestored": {
+    "message": "সব লুকানো এলিমেন্ট ফিরিয়ে আনা হয়েছে।"
+  },
+  "toastScreenshotCapturing": {
+    "message": "পুরো পেজের স্ক্রিনশট নেওয়া হচ্ছে…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "পুরো পেজের স্ক্রিনশট সংরক্ষিত হয়েছে।"
+  },
+  "toastArchiveCreated": {
+    "message": "একক ফাইলের HTML আর্কাইভ সংরক্ষিত হয়েছে।"
+  },
+  "brandSignature": {
+    "message": "তৈরি করেছেন Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "ছবি ও SVG"
+  },
+  "tabMedia": {
+    "message": "মিডিয়া ও অডিও"
+  },
+  "tabFonts": {
+    "message": "ফন্ট"
+  },
+  "tabTextScraper": {
+    "message": "টেক্সট ও টেবিল"
+  },
+  "heroScreenshotTitle": {
+    "message": "সম্পূর্ণ পৃষ্ঠার স্ক্রিনশট"
+  },
+  "heroScreenshotDesc": {
+    "message": "স্টিকি হেডার বাদ দিয়ে একাধিক ভিউপোর্ট নিখুঁতভাবে জুড়ে স্ক্রিনশট"
+  },
+  "heroArchiveTitle": {
+    "message": "একক ফাইলের HTML সংরক্ষণাগার"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS ও Base64 ছবি ইনলাইন করে অফলাইন-নিরাপদ স্ন্যাপশট"
+  },
+  "copyDataUri": {
+    "message": "Data-URI কপি করুন"
+  },
+  "copyUrl": {
+    "message": "URL কপি করুন"
+  },
+  "downloadSingle": {
+    "message": "ডাউনলোড করুন"
+  },
+  "searchPlaceholder": {
+    "message": "নাম, URL, ট্যাগ, MIME বা /regex/ দিয়ে ফিল্টার করুন…"
+  },
+  "viewGrid": {
+    "message": "গ্রিড ভিউ"
+  },
+  "viewList": {
+    "message": "তালিকা ভিউ"
+  },
+  "btnScreenshot": {
+    "message": "স্ক্রিনশট"
+  },
+  "btnArchive": {
+    "message": "HTML সংরক্ষণ করুন"
+  },
+  "exportJson": {
+    "message": "দৃশ্যমান তালিকা JSON হিসেবে"
+  },
+  "exportCsv": {
+    "message": "দৃশ্যমান তালিকা CSV হিসেবে"
+  },
+  "exportHar": {
+    "message": "নেটওয়ার্ক লগ HAR হিসেবে"
+  },
+  "exportScreenshot": {
+    "message": "সম্পূর্ণ পৃষ্ঠার স্ক্রিনশট (PNG)"
+  },
+  "exportArchive": {
+    "message": "অফলাইন পৃষ্ঠা সংরক্ষণাগার (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "সব মেথড"
+  },
+  "filterTypeAll": {
+    "message": "সব ধরন"
+  },
+  "filterSortDir": {
+    "message": "ঊর্ধ্বক্রম / নিম্নক্রম পরিবর্তন করুন"
+  },
+  "emptyTitle": {
+    "message": "কোনো রিসোর্স পাওয়া যায়নি"
+  },
+  "emptySubtitle": {
+    "message": "নেটওয়ার্ক রিকুয়েস্ট ক্যাপচার করতে প্যানেল খোলা রেখে পেজটি রিলোড করুন, অথবা বর্তমান DOM স্ক্যান করতে রিফ্রেশ-এ ক্লিক করুন।"
+  },
+  "statusResources": {
+    "message": "রিসোর্স"
+  },
+  "statusFiltered": {
+    "message": "ফিল্টার করা"
+  },
+  "statusSelected": {
+    "message": "নির্বাচিত"
+  },
+  "statusDupes": {
+    "message": "ডুপ্লিকেট লুকানো"
+  },
+  "statusSize": {
+    "message": "আকার"
+  },
+  "langAuto": {
+    "message": "স্বয়ংক্রিয় (ব্রাউজার)"
+  },
+  "langSelectorTitle": {
+    "message": "ভাষা নির্বাচন করুন"
+  },
+  "textPillAll": {
+    "message": "সব কনটেন্ট"
+  },
+  "textPillText": {
+    "message": "📄 টেক্সট ও আর্টিকেল"
+  },
+  "textPillTables": {
+    "message": "📊 শুধু টেবিল"
+  },
+  "textSelectAll": {
+    "message": "সব নির্বাচন করুন"
+  },
+  "textDeselectAll": {
+    "message": "সব নির্বাচন বাতিল করুন"
+  },
+  "textClearSelection": {
+    "message": "মুছুন"
+  },
+  "toastRefreshComplete": {
+    "message": "পেজ স্ক্যান সম্পূর্ণ: $count$টি নতুন রিসোর্স",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$টি ব্লক কপি করা হয়েছে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "ক্লিপবোর্ডে কপি করা হয়েছে"
+  },
+  "toastTableCopied": {
+    "message": "টেবিল ক্লিপবোর্ডে কপি করা হয়েছে"
+  },
+  "toastNothingToExport": {
+    "message": "রপ্তানি করার মতো কিছু নেই"
+  },
+  "toastExportedTxt": {
+    "message": "$count$টি ব্লক TXT হিসেবে রপ্তানি করা হয়েছে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$টি ব্লক Markdown হিসেবে রপ্তানি করা হয়েছে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "কোনো টেবিল সারি ক্যাপচার করা হয়নি"
+  },
+  "toastExportedCsv": {
+    "message": "টেবিল CSV হিসেবে রপ্তানি করা হয়েছে"
+  },
+  "toastExportedXlsx": {
+    "message": "টেবিল XLSX হিসেবে রপ্তানি করা হয়েছে"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$টি টেবিল $format$ হিসেবে রপ্তানি করা হয়েছে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$টি শীট XLSX হিসেবে রপ্তানি করা হয়েছে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "ডাউনলোড করার মতো কোনো রিসোর্স নেই।"
+  },
+  "toastNoVisibleResources": {
+    "message": "ডাউনলোড করার মতো কোনো দৃশ্যমান রিসোর্স নেই।"
+  },
+  "toastSelectAtLeastOne": {
+    "message": "আগে অন্তত একটি রিসোর্স নির্বাচন করুন।"
+  },
+  "toastZipSaved": {
+    "message": "ZIP সংরক্ষিত: $total$টির মধ্যে $fetched$টি রিসোর্স",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP ব্যর্থ হয়েছে: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR রপ্তানি করা হয়েছে ($count$টি এন্ট্রি)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL ক্লিপবোর্ডে কপি করা হয়েছে"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools-এর পরিদর্শিত উইন্ডো উপলব্ধ নেই।"
+  },
+  "toastScreenshotError": {
+    "message": "স্ক্রিনশট ত্রুটি: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "অফলাইন পেজ আর্কাইভ তৈরি হচ্ছে…"
+  },
+  "toastArchiveError": {
+    "message": "সংরক্ষণাগার ত্রুটি: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "ফরম্যাট করতে সময় শেষ হয়ে গেছে — আসল ফাইল দেখানো হচ্ছে।"
+  },
+  "toastFormatFailed": {
+    "message": "ফাইল ফরম্যাট করা যায়নি — আসল ফাইল দেখানো হচ্ছে।"
+  },
+  "emptySearchTitle": {
+    "message": "\"$query$\"-এর জন্য কোনো ফলাফল নেই",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "অন্য কোনো শব্দ দিয়ে অনুসন্ধান করুন, অথবা অন্য বিভাগে যান।"
+  },
+  "emptyFiltersTitle": {
+    "message": "বর্তমান ফিল্টারের সাথে কোনো রিসোর্স মেলেনি"
+  },
+  "emptyFiltersSub": {
+    "message": "উপরের আকার বা মাত্রার ফিল্টার শিথিল করুন, অথবা মুছুন চাপুন।"
+  },
+  "textEmptyQueryReject": {
+    "message": "পেজটি এই কোয়েরি গ্রহণ করেনি। উপরে এটি ঠিক করুন, ফলাফল সঙ্গে সঙ্গে ফিরে আসবে।"
+  },
+  "textEmptyNoMatch": {
+    "message": "পেজের কোনো এলিমেন্ট এই কোয়েরির সাথে মেলেনি। আরও শিথিল সিলেক্টর চেষ্টা করুন, অথবা বক্সের পাশের মোড পরিবর্তন করুন।"
+  },
+  "textEmptyInitial": {
+    "message": "এখনও কিছু ক্যাপচার হয়নি। লাইভ ক্যাপচার চলছে — পুরো পেজ পাঠযোগ্য টেক্সট হিসেবে এখানে দেখা যাবে।"
+  },
+  "textEmptyFiltered": {
+    "message": "বর্তমান কোয়েরি ও এলিমেন্ট ফিল্টারের সাথে কিছুই মেলেনি।"
+  },
+  "textSummaryBlocks": {
+    "message": "$count$টি ব্লক",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$টি শব্দ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$টি অক্ষর",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$টি টেবিল · $rows$টি অনন্য সারি",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$টি নির্বাচিত — রপ্তানিতে শুধু এগুলো ব্যবহার হবে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "টেবিল — স্ক্রিনে $count$টি সারি",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "টেবিল — মোট $count$টি অনন্য সারি",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$টি স্ন্যাপশট",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "আপডেট: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "সব $count$টি সারি দেখান",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "সব সারি দেখাচ্ছে"
+  },
+  "textTableHistory": {
+    "message": "ইতিহাস ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "ইতিহাস লুকান"
+  },
+  "textTableNoRows": {
+    "message": "এখনও কোনো সারি ক্যাপচার করা হয়নি।"
+  },
+  "textBtnCopy": {
+    "message": "টেক্সট কপি করুন"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 কপি"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$টি ডুপ্লিকেট ছবি",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "রপ্তানি"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG লোড হচ্ছে..."
+  },
+  "inspectorSvgError": {
+    "message": "SVG কনটেন্ট আনা যায়নি।"
+  },
+  "inspectorLoadingFont": {
+    "message": "ফন্ট প্রিভিউ লোড হচ্ছে..."
+  },
+  "inspectorFontSample": {
+    "message": "ফন্ট প্রিভিউ"
+  },
+  "inspectorBeautify": {
+    "message": "সুন্দর করুন"
+  },
+  "inspectorOriginal": {
+    "message": "আসল"
+  },
+  "inspectorHeaders": {
+    "message": "হেডার"
+  },
+  "inspectorResponse": {
+    "message": "রেসপন্স"
+  },
+  "inspectorRequest": {
+    "message": "রিকুয়েস্ট"
+  },
+  "inspectorQueryParams": {
+    "message": "কোয়েরি প্যারামিটার"
+  },
+  "inspectorRequestBody": {
+    "message": "রিকুয়েস্ট বডি"
+  },
+  "textHintHtml": {
+    "message": "পেজের একটি লাইভ, পাঠযোগ্য কপি। টেক্সট আছে এমন প্রতিটি এলিমেন্ট DOM ক্রমে ক্যাপচার করা হয় এবং পেজ বদলালে এখানেও আপডেট হয়। সাধারণ টেক্সট, রেগুলার এক্সপ্রেশন, <strong>CSS সিলেক্টর</strong> বা <strong>XPath</strong> এক্সপ্রেশন দিয়ে কোয়েরি করুন, তারপর যা মিলেছে তা রপ্তানি করুন। বিস্তারিত জানতে <a href=\"#\" id=\"text-hint-guide\">গাইড</a> দেখুন।"
+  },
+  "textHeadings": {
+    "message": "হেডিং"
+  },
+  "textAllLevels": {
+    "message": "সব স্তর"
+  },
+  "textMatches": {
+    "message": "মিল"
+  },
+  "textMatch": {
+    "message": "মিল"
+  },
+  "textReadingOn": {
+    "message": "পাঠযোগ্য মোড চালু"
+  },
+  "toastDownloadStarted": {
+    "message": "ডাউনলোড শুরু হয়েছে: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "এই রিসোর্সটি আনা যায়নি (CORS বা অসমর্থিত ধরন)।"
+  },
+  "ratingBannerText": {
+    "message": "Source Download উপভোগ করছেন? Chrome Web Store-এ একটি রিভিউ দিয়ে বা GitHub-এ স্টার দিয়ে আমাদের ওপেন-সোর্স উদ্যোগকে সমর্থন করুন!"
+  },
+  "ratingBannerReview": {
+    "message": "★ রিভিউ"
+  },
+  "ratingBannerStar": {
+    "message": "★ স্টার"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$টি অনন্য সারি",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ সেকেন্ড আগে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ মিনিট আগে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "এলাকার স্ক্রিনশট নিন"
+  },
+  "btnAreaDownload": {
+    "message": "ডাউনলোড"
+  },
+  "btnAreaCopy": {
+    "message": "ক্লিপবোর্ডে কপি করুন"
+  },
+  "btnAreaCancel": {
+    "message": "বাতিল করুন"
+  },
+  "toastAreaCopied": {
+    "message": "এলাকার স্ক্রিনশট ক্লিপবোর্ডে কপি হয়েছে"
+  },
+  "toastAreaDownloaded": {
+    "message": "এলাকার স্ক্রিনশট সংরক্ষিত হয়েছে"
+  },
+  "statusFoundCssResources": {
+    "message": "CSS থেকে রেফার করা $count$টি রিসোর্স পাওয়া গেছে",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM স্ক্যান ব্যর্থ হয়েছে: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "ফাইলের কনটেন্ট ইনডেক্স করা হচ্ছে…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "ছবির ডুপ্লিকেট যাচাই করা হচ্ছে…"
+  },
+  "statusWorking": {
+    "message": "কাজ চলছে…"
+  },
+  "filterMethodTitle": {
+    "message": "HTTP মেথড অনুযায়ী ফিল্টার করুন"
+  },
+  "filterTypeTitle": {
+    "message": "অনুরোধের ধরন অনুসারে ফিল্টার করুন"
+  },
+  "filterSortTitle": {
+    "message": "রিসোর্স সাজান"
+  },
+  "textModeTitle": {
+    "message": "কোয়েরি বক্স কীভাবে ব্যাখ্যা করা হবে"
+  },
+  "textKindTitle": {
+    "message": "একটি এলিমেন্টের ধরনে সীমাবদ্ধ করুন"
+  },
+  "textHeadingLevelTitle": {
+    "message": "হেডিং স্তর"
+  },
+  "textPlaceholderRegex": {
+    "message": "^মূল্য:\\s*\\d+  — JavaScript রেগুলার এক্সপ্রেশন"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — যেকোনো CSS সিলেক্টর"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "গাইডে অনুসন্ধান করুন…"
+  },
+  "popupIntro": {
+    "message": "<strong>টুলবার ব্যাজ</strong> যে বিভাগগুলো গণনা করে। কোনো বিভাগের গণনা বন্ধ করতে সেটি বন্ধ করুন — ব্যাজে শুধু আপনার ট্র্যাক করা বিভাগগুলোই তাৎক্ষণিকভাবে দেখা যাবে।"
+  },
+  "popupHelpTitle": {
+    "message": "সম্পূর্ণ প্যানেল কীভাবে ব্যবহার করবেন"
+  },
+  "popupStep1": {
+    "message": "যে পেজ পরিদর্শন করতে চান সেটির DevTools খুলুন <div class=\"hint\"><kbd>F12</kbd> বা <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "DevTools টুলবারে <strong>Source Download</strong> ট্যাবে ক্লিক করুন"
+  },
+  "popupStep3": {
+    "message": "রিসোর্স ব্রাউজ করুন, পরিদর্শন করুন এবং ডাউনলোড করুন — একটি একটি করে অথবা একসাথে ZIP হিসেবে।"
+  },
+  "popupNote": {
+    "message": "দ্রষ্টব্য: Chrome এক্সটেনশনকে প্রোগ্রামের মাধ্যমে DevTools খুলতে দেয় না, তাই সম্পূর্ণ সুবিধা DevTools টুলবার থেকে ব্যবহার করতে হয়।"
+  },
+  "popupTrackAll": {
+    "message": "সব বিভাগ ট্র্যাক করুন"
+  },
+  "popupLanguage": {
+    "message": "ভাষা"
+  },
+  "inspectorBinaryResponse": {
+    "message": "বাইনারি রেসপন্স — দেখতে ডাউনলোড করুন"
+  },
+  "inspectorLoadingResponse": {
+    "message": "রেসপন্স লোড হচ্ছে…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "রেসপন্সের প্রিভিউ নেই — কনটেন্ট আনা যায়নি।"
+  },
+  "inspectorLoadingContent": {
+    "message": "কনটেন্ট লোড হচ্ছে…"
+  },
+  "inspectorNoPreview": {
+    "message": "প্রিভিউ উপলব্ধ নেই — কনটেন্ট আনা যায়নি।"
+  },
+  "inspectorCloseAllTabs": {
+    "message": "সব বন্ধ করুন"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "খোলা সব ট্যাব বন্ধ করুন"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "বড় করতে ক্লিক করুন"
+  },
+  "inspectorViewSource": {
+    "message": "সোর্স দেখুন"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "সিনট্যাক্স হাইলাইটিং সহ SVG মার্কআপ দেখান"
+  },
+  "inspectorFormatting": {
+    "message": "ফরম্যাট করা হচ্ছে…"
+  },
+  "findInContentPlaceholder": {
+    "message": "সামগ্রীতে খুঁজুন…"
+  },
+  "findPreviousMatch": {
+    "message": "আগের মিল"
+  },
+  "findNextMatch": {
+    "message": "পরের মিল"
+  },
+  "findClose": {
+    "message": "বন্ধ করুন"
+  },
+  "findShowRaw": {
+    "message": "আসল (ফরম্যাট না করা) কনটেন্ট দেখান"
+  },
+  "findBeautify": {
+    "message": "এই কনটেন্ট ফরম্যাট / সুন্দর করুন"
+  },
+  "btnRaw": {
+    "message": "আসল"
+  },
+  "btnBeautify": {
+    "message": "সুন্দর করুন"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) স্ট্রিম শনাক্ত হয়েছে"
+  },
+  "videoCannotPlay": {
+    "message": "এই ভিডিওটি ব্রাউজারে চালানো যাবে না"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome সরাসরি HLS স্ট্রিম চালাতে পারে না। আপনি <b>$NAME$</b>-এর সব সেগমেন্ট একটি MP4/TS ভিডিও ফাইলে মার্জ করতে পারেন।",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "ব্রাউজার এই ফরম্যাট সমর্থন করে না"
+  },
+  "btnMergeHls": {
+    "message": "সেগমেন্ট মার্জ করে ডাউনলোড করুন"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$টি সেগমেন্ট $NAME$-এ মার্জ করা হয়েছে",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "আকার অজানা"
+  },
+  "progressFetching": {
+    "message": "আনা হচ্ছে $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP তৈরি হচ্ছে $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP সংরক্ষিত: $TOTAL$টির মধ্যে $FETCHED$টি রিসোর্স ($SKIPPED$টি ব্যর্থ)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "$COUNT$টি আবার চেষ্টা করুন",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "আবার ডাউনলোড করার চেষ্টা করুন"
+  },
+  "searchRegexHint": {
+    "message": "Regex অনুসন্ধান সক্রিয় — কোয়েরি /pattern/i আকারে লিখুন"
+  },
+  "textIncludeInExports": {
+    "message": "রপ্তানিতে অন্তর্ভুক্ত করুন"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "সব স্ন্যাপশট একটি ডুপ্লিকেটমুক্ত টেবিলে একত্র করুন — এটিই রপ্তানি করা হয়"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "এই টেবিলের আগের স্ন্যাপশট দেখুন"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "এই টেবিলটি CSV হিসাবে ডাউনলোড করুন"
+  },
+  "tableSnapshotLabel": {
+    "message": "স্ন্যাপশট $INDEX$ — $TIME$ ($COUNT$ সারি)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "ব্যাচ ডাউনলোডের জন্য নির্বাচন টগল করুন"
+  },
+  "cardDownloadTitle": {
+    "message": "ফাইল ডাউনলোড করুন"
+  },
+  "cardRetryFailedTitle": {
+    "message": "আগের ডাউনলোড ব্যর্থ হয়েছে — আবার চেষ্টা করতে ক্লিক করুন"
+  },
+  "btnThemeLight": {
+    "message": "লাইট থিমে পরিবর্তন করুন"
+  },
+  "btnThemeDark": {
+    "message": "ডার্ক থিমে পরিবর্তন করুন"
+  },
+  "guideTitle": {
+    "message": "Source Download — ব্যবহারকারীর নির্দেশিকা"
+  },
+  "guideEmpty": {
+    "message": "কোনো গাইড বিভাগ আপনার অনুসন্ধানের সাথে মেলে না।"
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — ১০০% ডিপেন্ডেন্সি-মুক্ত।",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "জুম আউট (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "জুম ইন (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "জুম রিসেট করুন (0)"
+  },
+  "lightboxClose": {
+    "message": "বন্ধ করুন (Esc)"
+  },
+  "resizerTitle": {
+    "message": "আকার পরিবর্তন করতে টেনে আনুন"
+  },
+  "ratingDismissTitle": {
+    "message": "বাতিল করুন"
+  },
+  "inspectorResourceTitle": {
+    "message": "রিসোর্স"
+  },
+  "guideSecGettingStarted": {
+    "message": "শুরু করা"
+  },
+  "guideSecCategories": {
+    "message": "বিভাগ"
+  },
+  "guideSecSearchFilters": {
+    "message": "অনুসন্ধান এবং ফিল্টার"
+  },
+  "guideSecGridView": {
+    "message": "গ্রিড ও তালিকা ভিউ"
+  },
+  "guideSecInspect": {
+    "message": "একটি রিসোর্স পরিদর্শন করুন"
+  },
+  "guideSecDownloading": {
+    "message": "ডাউনলোড করা"
+  },
+  "guideSecLightbox": {
+    "message": "লাইটবক্স"
+  },
+  "guideSecTextTables": {
+    "message": "টেক্সট ও টেবিল"
+  },
+  "guideSecCaptions": {
+    "message": "ক্যাপশন ও সাবটাইটেল"
+  },
+  "guideSecSourceMaps": {
+    "message": "সোর্স ম্যাপ"
+  },
+  "guideSecDupes": {
+    "message": "ডুপ্লিকেট ছবি"
+  },
+  "guideSecVideoHls": {
+    "message": "ভিডিও ফলব্যাক ও HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "কার্যকর টিপস"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "DevTools টুলবারে <strong>Source Download</strong> ট্যাবে ক্লিক করুন (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> চাপুন, তারপর DevTools টুলবারের ট্যাবটি বেছে নিন)। Chrome এক্সটেনশনকে স্বয়ংক্রিয়ভাবে DevTools খুলতে দেয় না, তাই প্যানেলটি সেখানেই থাকে। টুলবার আইকনের পপআপ থেকে বেছে নিতে পারেন আইকনের ব্যাজ কাউন্টারে কোন বিভাগগুলো গণনা হবে। প্যানেল টুলবারের সূর্য/চাঁদ বোতাম Chrome থেকে স্বাধীনভাবে লাইট বা ডার্ক থিম নির্ধারণ করে; আপনার পছন্দ মনে রাখা হয়।"
+  },
+  "guideSecCategoriesContent": {
+    "message": "বাম দিকের উল্লম্ব ট্যাবগুলো ক্যাপচার করা প্রতিটি রিসোর্সকে ধরন অনুযায়ী ১৭টি নির্দিষ্ট বিভাগে ভাগ করে: ছবি, ভিডিও, অডিও, ক্যাপশন, ডকুমেন্ট, ফন্ট, সোর্স ম্যাপ, WASM, SVG, API, কুকি, স্টোরেজ এবং আরও অনেক কিছু। প্রতিটি ট্যাবে লাইভ সংখ্যা দেখানো হয়। একবারে শুধু একটি বিভাগ দেখানো হয়; বিভাগ বদলালে সব ফিল্টার রিসেট হয়, ফলে আপনি যা দেখছেন তা সবসময় ট্যাবের সাথে মিলে যায়।"
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "সার্চ বার নাম, URL, ধরন, alt টেক্সট বা শিরোনাম অনুযায়ী ফিল্টার করে। রেগুলার এক্সপ্রেশন ব্যবহার করতে কোয়েরি <kbd>/…/</kbd>-এর মধ্যে লিখুন, যেমন <code>/\\.(png|jpg)$/</code>। টুলবারের নিচে ফিল্টার বার বিভাগ অনুযায়ী বদলায়: মিডিয়ার জন্য আকার ও মাত্রার সীমা, API-এর জন্য HTTP মেথড ও রিকুয়েস্টের ধরন, সাথে সাজানো ও ক্রমের দিক।"
+  },
+  "guideSecGridViewContent": {
+    "message": "সার্চ বারের পাশের বোতাম দিয়ে ছোট থাম্বনেইলের কমপ্যাক্ট গ্রিড এবং বিস্তারিত তালিকার মধ্যে পরিবর্তন করুন। আপনার পছন্দ সেশনগুলোর মধ্যে মনে রাখা হয়। তালিকা ভিউতে চেকবক্স দিয়ে আলাদা আলাদা রিসোর্স বেছে একসাথে ডাউনলোড করতে পারেন।"
+  },
+  "guideSecInspectContent": {
+    "message": "ডান দিকের পরিদর্শন প্যানেলে খুলতে যেকোনো রিসোর্সে ক্লিক করুন। খোলা প্রতিটি ফাইল একটি ট্যাব হয়ে যায়, ফলে একাধিক রিসোর্স পাশাপাশি তুলনা করা যায় — নতুনটি বাম দিকে খোলে। ছবি, ভিডিও, অডিও, ফন্ট, SVG এবং টেক্সট/কোডের জন্য বিশেষ ভিউয়ার আছে (সাথে সুন্দর করার টগল)। API-র ক্ষেত্রে বিভক্ত ভিউ দেখায়: বাম দিকে রেসপন্স, ডান দিকে রিকুয়েস্টের বিবরণ (মেথড, স্ট্যাটাস, হেডার, কোয়েরি প্যারামিটার ও বডি)।"
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>বর্তমান ভিউ ডাউনলোড করুন</strong> বর্তমানে দৃশ্যমান রিসোর্সগুলো (সক্রিয় বিভাগ + অনুসন্ধান + ফিল্টার) ZIP হিসেবে সংরক্ষণ করে; ফিল্টার সক্রিয় থাকলে এর নাম বদলে <em>ফিল্টার করা ফাইল ডাউনলোড করুন (N)</em> হয়। ক্লিক করার আগে যেকোনো ডাউনলোড বোতামের ওপর কার্সার রাখলে আনুমানিক আর্কাইভের আকার দেখা যায়। <strong>নির্বাচিতগুলো ডাউনলোড করুন</strong> শুধু টিক দেওয়া আইটেম ডাউনলোড করে। <strong>সব ডাউনলোড করুন</strong> আবিষ্কৃত প্রতিটি রিসোর্স ফোল্ডার কাঠামোসহ একটি ZIP-এ সংগ্রহ করে। ব্যর্থ ডাউনলোড স্বয়ংক্রিয়ভাবে আবার চেষ্টা করা হয় এবং প্রসঙ্গ মেনু থেকেও আবার চেষ্টা করা যায়। <strong>রপ্তানি</strong> দৃশ্যমান তালিকা JSON বা CSV হিসেবে লেখে, অথবা Chrome-এর নেটওয়ার্ক লগ HAR ফাইল হিসেবে সংরক্ষণ করে।"
+  },
+  "guideSecLightboxContent": {
+    "message": "জুম বোতাম মিডিয়াকে পূর্ণ আকারের লাইটবক্সে খোলে, যেখানে টেনে প্যান করা, মাউস হুইল, স্ক্রিনের বোতাম বা কীবোর্ড দিয়ে জুম করা যায় (জুম করতে <kbd>+</kbd>/<kbd>-</kbd>, রিসেট করতে <kbd>0</kbd>, বন্ধ করতে <kbd>Esc</kbd>)।"
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>টেক্সট</strong> বিভাগ পেজের একটি লাইভ, পাঠযোগ্য কপি। এটি টেক্সট আছে এমন প্রতিটি এলিমেন্ট — হেডিং, অনুচ্ছেদ, তালিকা আইটেম, বোতাম, <code>div</code>/<code>span</code> এবং আরও অনেক কিছু — DOM ক্রমে ক্যাপচার করে, এবং <strong>লাইভ</strong> চালু থাকলে স্ক্যান করতে থাকে।</p><p><strong>কোয়েরি</strong> বক্স চারভাবে কাজ করে, পাশের ড্রপডাউন থেকে বেছে নিন: <strong>ধারণ করে</strong> ও <strong>Regex</strong> ইতিমধ্যে ক্যাপচার করা টেক্সট ফিল্টার করে, আর <strong>CSS সিলেক্টর</strong> ও <strong>XPath</strong> লাইভ পেজে চালানো হয়, ফলে DOM-এর যেকোনো কিছুতে পৌঁছানো যায়। XPath এলিমেন্টের বদলে মান ফেরত দেয় এমন এক্সপ্রেশনও গ্রহণ করে, যেমন <code>count(//a)</code> বা <code>//@href</code>। ভুল কোয়েরি নিয়ে পেজ যা জানায় তা বক্সের পাশে দেখানো হয়। <strong>এলিমেন্ট</strong> ফলাফলকে একটি ট্যাগে সীমিত করে, সাথে পেজে পাওয়া প্রতিটি ট্যাগের সংখ্যা দেখায়। কোয়েরি বক্স খালি করলে (বা <strong>মুছুন</strong> চাপলে) আপনি <em>সব এলিমেন্ট</em>-এ ফিরে যান এবং পেজ আবার ক্যাপচার হয় — ড্রপডাউন নিজে রিসেট করতে হয় না।</p><p><strong>পাঠযোগ্য</strong> মোড ট্যাগ, চেকবক্স ও অবস্থানের সূত্র লুকিয়ে দেয়, যাতে পুরোটা একটি ডকুমেন্টের মতো পড়া যায়। টেবিল স্ন্যাপশটের একটি সীমিত ইতিহাস রাখে, ফলে ডায়নামিক (SPA) টেবিল কখনো হারায় না। কোনো টেবিলে <strong>সব সারি দেখান</strong> চাপলে সব স্ন্যাপশট একটি ডুপ্লিকেটমুক্ত ভিউতে মার্জ হয় — রপ্তানিতে ঠিক এটিই থাকে। <strong>TXT</strong> (পাঠযোগ্য পেজ), <strong>MD</strong> (Markdown, টেবিলসহ), অথবা টেবিল CSV, HTML বা প্রকৃত মাল্টি-শীট <strong>XLSX</strong> ওয়ার্কবুক হিসেবে রপ্তানি করুন। টিক দেওয়া আইটেম অগ্রাধিকার পায়; না থাকলে বর্তমানে দৃশ্যমান সবকিছু রপ্তানি হয়।</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML এবং অন্যান্য ক্যাপশন ফাইল — <code>&lt;track&gt;</code> সোর্সসহ — ডকুমেন্টের সাথে মিশে না গিয়ে নিজস্ব <strong>ক্যাপশন</strong> ট্যাবে থাকে।"
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> ফাইল এবং সোর্স ম্যাপের মতো দেখতে JSON বডি (যেগুলোতে <code>mappings</code> ও <code>sources</code> থাকে) <strong>সোর্স ম্যাপ</strong>-এর অধীনে JSON ভিউয়ার ও সুন্দর করার সুবিধাসহ গোষ্ঠীবদ্ধ হয়, ফলে সেগুলো আর JSON ট্যাবে ভিড় করে না।"
+  },
+  "guideSecDupesContent": {
+    "message": "ছবি ট্যাবে প্যানেল ক্যাপচার করা বাইটের হ্যাশ বের করে অভিন্ন ফাইল চিহ্নিত করে। <strong>ডুপ্লিকেট লুকান</strong> ফিল্টার প্রতিটি সেটের প্রথম কপিটি রাখে, ফলে ভিউয়ের ZIP-এ একই থাম্বনেইল দুইবার থাকে না।"
+  },
+  "guideSecVideoHlsContent": {
+    "message": "ব্রাউজার সরাসরি চালাতে পারে না এমন স্ট্রিম (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, অজানা কোডেক) কালো প্লেয়ারের বদলে একটি ফলব্যাক দেখায়। HLS-এর ক্ষেত্রে প্যানেল থেকেই সেগমেন্টগুলো একটি ভিডিও ফাইলে মার্জ করতে পারেন, অথবা আসল ম্যানিফেস্ট ডাউনলোড করতে পারেন।"
+  },
+  "guideSecPowerTipsContent": {
+    "message": "ডায়নামিক <strong>API</strong> রেসপন্স (XHR/fetch) URL দিয়ে ডুপ্লিকেট বাদ দেওয়া হয় না — প্রতিটি উত্তর তালিকায় থাকে (সীমিত FIFO), ফলে বারবার করা রিকুয়েস্ট তুলনা করা যায়। স্ট্যাটিক অ্যাসেটের ডুপ্লিকেট বাদ দেওয়া হয়। বর্তমান DOM আবার স্ক্যান করতে <strong>রিফ্রেশ</strong> ব্যবহার করুন, এবং ট্যাব পরিবর্তনের আগে শুরু হওয়া রিকুয়েস্টসহ সব নেটওয়ার্ক রিকুয়েস্ট ক্যাপচার করতে প্যানেল খোলা রেখে পেজ রিলোড করুন।"
+  },
+  "toolArrow": {
+    "message": "তির টুল"
+  },
+  "toolRect": {
+    "message": "আয়তক্ষেত্র টুল"
+  },
+  "toolText": {
+    "message": "টেক্সট টুল"
+  },
+  "toolUndo": {
+    "message": "পূর্বাবস্থায় ফিরুন (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "আবার করুন (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "রং"
+  },
+  "badgeStrokeSize": {
+    "message": "আকার: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "ফন্টের আকার: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "এলাকা ভিডিও / GIF হিসেবে রেকর্ড করুন"
+  },
+  "btnRecStart": {
+    "message": "রেকর্ডিং শুরু করুন"
+  },
+  "btnRecPause": {
+    "message": "বিরতি"
+  },
+  "btnRecResume": {
+    "message": "আবার শুরু করুন"
+  },
+  "btnRecStop": {
+    "message": "শেষ করে ডাউনলোড করুন"
+  },
+  "btnRecCancel": {
+    "message": "বাতিল করুন"
+  },
+  "toastRecSaved": {
+    "message": "এলাকার রেকর্ডিং সংরক্ষিত হয়েছে"
+  },
+  "toastRecCancelled": {
+    "message": "ভিডিও রেকর্ডিং বাতিল করা হয়েছে"
+  },
+  "toastRecPermissionDenied": {
+    "message": "স্ক্রিন রেকর্ড করার অনুমতি দেওয়া হয়নি"
+  },
+  "btnPopupRecordArea": {
+    "message": "নির্বাচিত এলাকার ভিডিও / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "এলাকার স্ক্রিনশট"
+  },
+  "contextMenuPickColor": {
+    "message": "স্ক্রিন থেকে রং বাছুন"
+  },
+  "btnPopupPickColor": {
+    "message": "রং বেছে নিন"
+  },
+  "colorPickerTitle": {
+    "message": "কালার পিকার"
+  },
+  "btnColorPickAgain": {
+    "message": "আরেকটি রং বাছুন"
+  },
+  "toastColorCopied": {
+    "message": "রং ক্লিপবোর্ডে কপি হয়েছে"
+  },
+  "toastProgressCapturing": {
+    "message": "পুরো পেজ ক্যাপচার করা হচ্ছে… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "ছবি জোড়া লাগানো হচ্ছে…"
+  },
+  "modalExportTitle": {
+    "message": "পুরো পেজের স্ক্রিনশট প্রস্তুত"
+  },
+  "btnExportPng": {
+    "message": "PNG ডাউনলোড করুন"
+  },
+  "btnExportJpg": {
+    "message": "JPG ডাউনলোড করুন"
+  },
+  "btnExportPdf": {
+    "message": "PDF হিসেবে সংরক্ষণ করুন"
+  },
+  "btnExportCopy": {
+    "message": "ক্লিপবোর্ডে কপি করুন"
+  },
+  "btnExportGenerating": {
+    "message": "তৈরি হচ্ছে…"
+  },
+  "toastPdfGenerated": {
+    "message": "PDF নথি সংরক্ষিত হয়েছে।"
+  },
+  "settingNamingPatterns": {
+    "message": "ফাইলের নামকরণের প্যাটার্ন"
+  },
+  "settingVideoFormat": {
+    "message": "ডিফল্ট ভিডিও ফরম্যাট"
+  },
+  "settingNamingPreview": {
+    "message": "প্রিভিউ:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF তৈরি হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন…"
+  },
+  "settingGifResolution": {
+    "message": "ডিফল্ট GIF রেজোলিউশন"
+  },
+  "optGifOriginal": {
+    "message": "আসল (১:১ নেটিভ রেজোলিউশন — পূর্ণ 3K/4K, ছোট না করে)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (সর্বোচ্চ 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (সর্বোচ্চ 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (সর্বোচ্চ 854px — দ্রুত ও ছোট ফাইল)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF ফরম্যাট সর্বোচ্চ ১ মিনিট (60s) রেকর্ডিং সময় সমর্থন করে।"
+  },
+  "guideSecScreenRecording": {
+    "message": "স্ক্রিন রেকর্ডিং (ভিডিও ও GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "স্ক্রিনের যেকোনো এলাকা MP4, WebM বা অ্যানিমেটেড GIF হিসেবে রেকর্ড করুন। GIF রেকর্ডিংয়ে ১:১ নেটিভ রেজোলিউশন, 1080p, 720p ও 480p প্রোফাইল এবং লাইভ আনুমানিক ফাইলের আকার পাওয়া যায়। ব্রাউজারের সর্বোত্তম পারফরম্যান্সের জন্য GIF রেকর্ডিংয়ের সর্বোচ্চ সময় ১ মিনিট (60s)।"
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIF-এর সর্বোচ্চ সময়সীমা ১ মিনিট (৬০ সেকেন্ড) পূর্ণ হয়েছে। GIF তৈরি হচ্ছে…"
+  },
+  "labelGifMaxDuration": {
+    "message": "সর্বোচ্চ ১ মিনিট (৬০ সেকেন্ড)"
+  },
+  "settingGifFps": {
+    "message": "ডিফল্ট GIF ফ্রেম রেট (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — মসৃণ (অত্যন্ত স্বাভাবিক গতি, বড় ফাইল)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — স্ট্যান্ডার্ড (ওয়েব ও ভারসাম্যের জন্য প্রস্তাবিত)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — কমপ্যাক্ট / মিম (ঝাঁকুনি দেওয়া গতি, ছোট ফাইল)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — স্টপ-মোশন / ধীর (ধাপে ধাপে «ক্লিক-ক্লিক», খুব ছোট ফাইল)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — প্রেজেন্টেশন (প্রতি সেকেন্ডে ১টি ফ্রেম, সবচেয়ে ছোট ফাইল)"
+  },
+  "popupRightClickHint": {
+    "message": "স্ক্রিন রেকর্ডিং (ভিডিও/GIF) ও কালার পিকারের জন্য ওয়েবপেজের যেকোনো জায়গায় রাইট-ক্লিক করুন।"
+  },
+  "toastElementZappedAd": {
+    "message": "এই সেশনের জন্য বিজ্ঞাপন / iframe লুকানো হয়েছে।",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "ছবি ক্লিপবোর্ডে কপি হয়েছে",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "বন্ধ করুন (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "সেটিংস সংরক্ষিত হয়েছে",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "ফাইলটি ডাউনলোড করে VLC বা অন্য কোনো মিডিয়া প্লেয়ারে খুলুন।",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "এই ধরনের রিসোর্সের প্রিভিউ নেই",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "আসল ফাইল ডাউনলোড করুন",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "টিপ: ডাউনলোড করা ফাইলটি VLC বা যেকোনো ডেস্কটপ মিডিয়া প্লেয়ারে খুলুন — এটি প্রায় সব ফরম্যাট চালাতে পারে।",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP আর্কাইভ তৈরি হচ্ছে…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "আপনার ব্রাউজার EyeDropper API সমর্থন করে না।",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "টুলবার টেনে সরান",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "ফরম্যাট পাল্টান: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF রেজোলিউশন: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF ফ্রেম রেট: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "GIF-এর আনুমানিক আকার: ~$size$ MB (১০ সেকেন্ডের জন্য), সর্বোচ্চ ৬০ সেকেন্ডে ~$max$ MB পর্যন্ত।\nফ্রেম রেট: $fps$ FPS।\nGIF রেকর্ডিং সর্বোচ্চ ১ মিনিট (৬০ সেকেন্ড) পর্যন্ত সীমিত।",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ কপি করুন",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "স্ক্রিনশটের প্রিভিউ",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — WhatsApp, Telegram, Jira, Apple ও Windows-এ সর্বত্র চালানো যায়)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (অ্যানিমেটেড ছবি — README, Jira, ডকুমেন্টেশন ও মেসেজিংয়ের জন্য আদর্শ)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — ওপেন ওয়েব ফরম্যাট)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "কোনো সক্রিয় ট্যাব পাওয়া যায়নি।",
+    "description": "No active tab found."
+  }
+}

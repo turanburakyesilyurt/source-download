@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "I-inspect at i-download ang web asset bilang ZIP. Screenshot ng buong page, live na table capture at developer workbench."
+  },
+  "actionTitle": {
+    "message": "Source Download — Buksan ang panel at subaybayan ang mga mapagkukunan"
+  },
+  "contextMenuZap": {
+    "message": "Itago ang elementong ito (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "Ibalik ang huling itinagong elemento"
+  },
+  "contextMenuResetZap": {
+    "message": "I-reset ang lahat ng itinagong elemento"
+  },
+  "contextMenuCapturePage": {
+    "message": "Kunin ang screenshot ng buong page"
+  },
+  "contextMenuPageArchive": {
+    "message": "I-download ang offline na archive ng page"
+  },
+  "catAll": {
+    "message": "Lahat"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Mga larawan"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Mga video"
+  },
+  "catAudio": {
+    "message": "Audio"
+  },
+  "catCaptions": {
+    "message": "Mga caption"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Mga source map"
+  },
+  "catFonts": {
+    "message": "Mga font"
+  },
+  "catDocuments": {
+    "message": "Mga dokumento"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Mga manifest"
+  },
+  "catText": {
+    "message": "Text"
+  },
+  "catOther": {
+    "message": "Iba pa"
+  },
+  "catScreenshot": {
+    "message": "Screenshot"
+  },
+  "catArchive": {
+    "message": "Archive ng Pahina"
+  },
+  "btnRefresh": {
+    "message": "I-refresh"
+  },
+  "btnExport": {
+    "message": "I-export"
+  },
+  "btnDownloadSelected": {
+    "message": "I-download ang Napili"
+  },
+  "btnDownloadView": {
+    "message": "I-download ang Kasalukuyang View"
+  },
+  "btnDownloadAll": {
+    "message": "I-download Lahat"
+  },
+  "btnDownloadFiltered": {
+    "message": "I-download ang Na-filter"
+  },
+  "btnTheme": {
+    "message": "Lumipat ng tema"
+  },
+  "btnGuide": {
+    "message": "Gabay sa Gumagamit"
+  },
+  "btnCaptureFullPage": {
+    "message": "Screenshot ng Buong Pahina"
+  },
+  "btnOfflineArchive": {
+    "message": "I-save bilang Single HTML"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Max KB"
+  },
+  "filterMinWidth": {
+    "message": "Min na lapad px"
+  },
+  "filterMinHeight": {
+    "message": "Min na taas px"
+  },
+  "filterSortName": {
+    "message": "Pagbukud-bukurin ayon sa pangalan"
+  },
+  "filterSortSize": {
+    "message": "Pagbukud-bukurin ayon sa laki"
+  },
+  "filterSortType": {
+    "message": "Pagbukud-bukurin ayon sa uri"
+  },
+  "filterSortTime": {
+    "message": "Pagbukud-bukurin ayon sa oras"
+  },
+  "filterHideDupes": {
+    "message": "Itago ang mga duplicate"
+  },
+  "filterClear": {
+    "message": "I-clear"
+  },
+  "textModeContains": {
+    "message": "Naglalaman"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS selector"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "I-filter ang text ng page o mag-query ng live na DOM..."
+  },
+  "textAllElements": {
+    "message": "Lahat ng elemento"
+  },
+  "textLiveOn": {
+    "message": "Naka-on ang Live"
+  },
+  "textLiveOff": {
+    "message": "Naka-off ang Live"
+  },
+  "textScanNow": {
+    "message": "I-scan ngayon"
+  },
+  "textReading": {
+    "message": "Mode ng pagbasa"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Pumili ng mapagkukunan upang siyasatin ang mga detalye nito"
+  },
+  "inspectorDetails": {
+    "message": "Mga Detalye"
+  },
+  "inspectorOpenTab": {
+    "message": "Buksan sa bagong tab"
+  },
+  "inspectorCopyUrl": {
+    "message": "Kopyahin ang URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "I-download ang file na ito"
+  },
+  "inspectorClose": {
+    "message": "Isara"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Uri"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Sukat"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Pinagmulan"
+  },
+  "metaTitle": {
+    "message": "Pamagat"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Nagugustuhan mo ba ang Source Download? Suportahan ang aming open-source na bisyon sa pamamagitan ng review sa Chrome Web Store o star sa GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Mag-iwan ng Review"
+  },
+  "ratingStar": {
+    "message": "★ Star sa GitHub"
+  },
+  "ratingDismiss": {
+    "message": "I-dismiss"
+  },
+  "toastElementZapped": {
+    "message": "Naitago ang elemento para sa session na ito."
+  },
+  "toastElementRestored": {
+    "message": "Naibalik ang elemento."
+  },
+  "toastAllElementsRestored": {
+    "message": "Naibalik ang lahat ng itinagong elemento."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Kinukuha ang screenshot ng buong page…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Na-save ang screenshot ng buong page."
+  },
+  "toastArchiveCreated": {
+    "message": "Na-save ang single-file na HTML archive."
+  },
+  "brandSignature": {
+    "message": "Ginawa ni Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Mga Larawan at SVG"
+  },
+  "tabMedia": {
+    "message": "Media at Audio"
+  },
+  "tabFonts": {
+    "message": "Mga font"
+  },
+  "tabTextScraper": {
+    "message": "Teksto at Talahanayan"
+  },
+  "heroScreenshotTitle": {
+    "message": "Screenshot ng Buong Pahina"
+  },
+  "heroScreenshotDesc": {
+    "message": "Seamless na pagtatahi ng maraming viewport na may pagtatago ng sticky header"
+  },
+  "heroArchiveTitle": {
+    "message": "Single-File HTML Archive"
+  },
+  "heroArchiveDesc": {
+    "message": "Isinasama sa loob ang CSS at mga larawang Base64; offline-safe na snapshot"
+  },
+  "copyDataUri": {
+    "message": "Kopyahin ang Data-URI"
+  },
+  "copyUrl": {
+    "message": "Kopyahin ang URL"
+  },
+  "downloadSingle": {
+    "message": "I-download"
+  },
+  "searchPlaceholder": {
+    "message": "I-filter ayon sa pangalan, URL, tag, MIME o /regex/…"
+  },
+  "viewGrid": {
+    "message": "View ng grid"
+  },
+  "viewList": {
+    "message": "View ng listahan"
+  },
+  "btnScreenshot": {
+    "message": "Screenshot"
+  },
+  "btnArchive": {
+    "message": "I-save ang HTML"
+  },
+  "exportJson": {
+    "message": "Nakikitang listahan bilang JSON"
+  },
+  "exportCsv": {
+    "message": "Nakikitang listahan bilang CSV"
+  },
+  "exportHar": {
+    "message": "Network log bilang HAR"
+  },
+  "exportScreenshot": {
+    "message": "Screenshot ng buong pahina (PNG)"
+  },
+  "exportArchive": {
+    "message": "Offline na archive ng pahina (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Lahat ng pamamaraan"
+  },
+  "filterTypeAll": {
+    "message": "Lahat ng uri"
+  },
+  "filterSortDir": {
+    "message": "I-toggle ang pataas / pababa"
+  },
+  "emptyTitle": {
+    "message": "Walang nakitang mapagkukunan"
+  },
+  "emptySubtitle": {
+    "message": "I-reload ang page habang bukas ang panel na ito para makuha ang mga kahilingan sa network, o i-click ang I-refresh para i-scan ang kasalukuyang DOM."
+  },
+  "statusResources": {
+    "message": "mapagkukunan"
+  },
+  "statusFiltered": {
+    "message": "sinala"
+  },
+  "statusSelected": {
+    "message": "pinili"
+  },
+  "statusDupes": {
+    "message": "nakatago ang mga duplicate"
+  },
+  "statusSize": {
+    "message": "laki"
+  },
+  "langAuto": {
+    "message": "Auto (Browser)"
+  },
+  "langSelectorTitle": {
+    "message": "Piliin ang Wika"
+  },
+  "textPillAll": {
+    "message": "Lahat ng Nilalaman"
+  },
+  "textPillText": {
+    "message": "📄 Teksto at Mga Artikulo"
+  },
+  "textPillTables": {
+    "message": "📊 Mga Talahanayan Lang"
+  },
+  "textSelectAll": {
+    "message": "Piliin ang Lahat"
+  },
+  "textDeselectAll": {
+    "message": "Alisin sa pagkakapili ang Lahat"
+  },
+  "textClearSelection": {
+    "message": "I-clear"
+  },
+  "toastRefreshComplete": {
+    "message": "Nakumpleto ang pag-scan ng pahina: $count$ bagong mapagkukunan",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Kinopya ang $count$ block",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Kinopya sa clipboard"
+  },
+  "toastTableCopied": {
+    "message": "Kinopya ang talahanayan sa clipboard"
+  },
+  "toastNothingToExport": {
+    "message": "Walang mai-export"
+  },
+  "toastExportedTxt": {
+    "message": "Na-export ang $count$ block bilang TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Na-export ang $count$ block bilang Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Walang nakuhang mga row ng talahanayan"
+  },
+  "toastExportedCsv": {
+    "message": "Na-export ang talahanayan bilang CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Na-export ang talahanayan bilang XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Na-export ang $count$ talahanayan bilang $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Na-export ang $count$ sheet bilang XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Walang mga mapagkukunan upang i-download."
+  },
+  "toastNoVisibleResources": {
+    "message": "Walang nakikitang mapagkukunan upang i-download."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Pumili muna ng kahit isang mapagkukunan."
+  },
+  "toastZipSaved": {
+    "message": "Na-save ang ZIP: $fetched$ sa $total$ na mapagkukunan",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Nabigo ang ZIP: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "Na-export ang HAR ($count$ na entry)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "Nakopya ang URL sa clipboard"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Hindi available ang sinisiyasat na window ng DevTools."
+  },
+  "toastScreenshotError": {
+    "message": "Error sa screenshot: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Ginagawa ang offline na archive ng page…"
+  },
+  "toastArchiveError": {
+    "message": "Error sa pag-archive: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Nag-time out ang pag-format — ipinapakita ang orihinal na file."
+  },
+  "toastFormatFailed": {
+    "message": "Hindi ma-format ang file — ipinapakita ang orihinal."
+  },
+  "emptySearchTitle": {
+    "message": "Walang mga tugma para sa \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Subukan ang ibang termino para sa paghahanap, o lumipat sa ibang kategorya."
+  },
+  "emptyFiltersTitle": {
+    "message": "Walang mapagkukunang tumutugma sa kasalukuyang mga filter"
+  },
+  "emptyFiltersSub": {
+    "message": "Paluwagin ang mga filter ng laki o dimensyon sa itaas, o pindutin ang I-clear."
+  },
+  "textEmptyQueryReject": {
+    "message": "Tinanggihan ng page ang query na iyon. Ayusin ito sa itaas at ang mga resulta ay babalik."
+  },
+  "textEmptyNoMatch": {
+    "message": "Walang elemento sa page ang tumutugma sa query na ito. Subukan ang mas maluwag na selector, o lumipat ng mode sa tabi ng kahon."
+  },
+  "textEmptyInitial": {
+    "message": "Wala pang nakuha. Tumatakbo ang live capture — ang buong page ay lalabas dito bilang nababasang teksto."
+  },
+  "textEmptyFiltered": {
+    "message": "Walang tumutugma sa kasalukuyang query at filter ng elemento."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ na bloke",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ salita",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ na character",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ talahanayan · $rows$ natatanging row",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ ang napili — ginagamit lang ng mga export ang mga ito",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Talahanayan — $count$ row sa screen",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Talahanayan — lahat ng $count$ natatanging row",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ snapshot",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "na-update $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Ipakita ang lahat ng $count$ na row",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Ipinapakita ang lahat ng row"
+  },
+  "textTableHistory": {
+    "message": "Kasaysayan ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Itago ang kasaysayan"
+  },
+  "textTableNoRows": {
+    "message": "Wala pang nakuhang row."
+  },
+  "textBtnCopy": {
+    "message": "Kopyahin ang text"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Kopyahin"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ duplicate na larawan",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "I-export"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Nilo-load ang SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Hindi makuha ang nilalamang SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "Nilo-load ang preview ng font..."
+  },
+  "inspectorFontSample": {
+    "message": "Preview ng Font"
+  },
+  "inspectorBeautify": {
+    "message": "I-format"
+  },
+  "inspectorOriginal": {
+    "message": "Orihinal"
+  },
+  "inspectorHeaders": {
+    "message": "Mga header"
+  },
+  "inspectorResponse": {
+    "message": "Tugon"
+  },
+  "inspectorRequest": {
+    "message": "Kahilingan"
+  },
+  "inspectorQueryParams": {
+    "message": "Mga parameter ng query"
+  },
+  "inspectorRequestBody": {
+    "message": "Body ng request"
+  },
+  "textHintHtml": {
+    "message": "Isang live, nababasang kopya ng page. Ang bawat elementong may hawak na text ay kinukuha sa DOM order at pinananatili dito habang nagbabago ang page. I-query ito gamit ang plain text, isang regular na expression, isang <strong>CSS selector</strong> o isang <strong>XPath</strong> na expression, pagkatapos ay i-export kung ano ang tumugma. Tingnan ang <a href=\"#\" id=\"text-hint-guide\">gabay</a> para sa mga detalye."
+  },
+  "textHeadings": {
+    "message": "Mga pamagat"
+  },
+  "textAllLevels": {
+    "message": "Lahat ng antas"
+  },
+  "textMatches": {
+    "message": "mga tugma"
+  },
+  "textMatch": {
+    "message": "tugma"
+  },
+  "textReadingOn": {
+    "message": "Naka-on ang mode ng pagbasa"
+  },
+  "toastDownloadStarted": {
+    "message": "Nagsimula ang pag-download: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Hindi makuha ang mapagkukunang ito (CORS o hindi sinusuportahang uri)."
+  },
+  "ratingBannerText": {
+    "message": "Nagugustuhan mo ba ang Source Download? Suportahan ang aming open-source na bisyon sa pamamagitan ng review sa Chrome Web Store o star sa GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Review"
+  },
+  "ratingBannerStar": {
+    "message": "★ Star"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ natatanging row",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$s ang nakalipas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$m ang nakalipas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Kunin ang screenshot ng isang area"
+  },
+  "btnAreaDownload": {
+    "message": "I-download"
+  },
+  "btnAreaCopy": {
+    "message": "Kopyahin sa clipboard"
+  },
+  "btnAreaCancel": {
+    "message": "Kanselahin"
+  },
+  "toastAreaCopied": {
+    "message": "Nakopya sa clipboard ang screenshot ng area"
+  },
+  "toastAreaDownloaded": {
+    "message": "Na-save ang screenshot ng area"
+  },
+  "statusFoundCssResources": {
+    "message": "Nakakita ng $count$ mapagkukunang na-reference mula sa CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Nabigo ang pag-scan ng DOM: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Ini-index ang mga nilalaman ng file..."
+  },
+  "statusCheckingDuplicates": {
+    "message": "Sinusuri ang mga duplicate ng larawan..."
+  },
+  "statusWorking": {
+    "message": "Pinoproseso…"
+  },
+  "filterMethodTitle": {
+    "message": "I-filter ayon sa pamamaraan ng HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "I-filter ayon sa uri ng kahilingan"
+  },
+  "filterSortTitle": {
+    "message": "Pagbukud-bukurin ang mga mapagkukunan"
+  },
+  "textModeTitle": {
+    "message": "Paano binibigyang kahulugan ang kahon ng query"
+  },
+  "textKindTitle": {
+    "message": "Limitahan sa isang uri ng elemento"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Antas ng heading"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+ — Regular na expression ng JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — anumang CSS selector"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Hanapin ang gabay…"
+  },
+  "popupIntro": {
+    "message": "Mga kategorya na binibilang ng <strong>toolbar badge</strong>. I-toggle ang isa upang ihinto ang pagbibilang nito — ang badge ay agad na sumasalamin lamang sa kung ano ang iyong sinusubaybayan."
+  },
+  "popupHelpTitle": {
+    "message": "Paano gamitin ang buong panel"
+  },
+  "popupStep1": {
+    "message": "Buksan ang DevTools para sa page na gusto mong suriin <div class=\"hint\"><kbd>F12</kbd> o <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "I-click ang tab na <strong>Source Download</strong> sa toolbar ng DevTools"
+  },
+  "popupStep3": {
+    "message": "Mag-browse, siyasatin at mag-download ng mga mapagkukunan — isa-isa o lahat nang sabay-sabay bilang isang ZIP."
+  },
+  "popupNote": {
+    "message": "Tandaan: Hindi pinapayagan ng Chrome ang mga extension na buksan ang DevTools gamit ang program, kaya naman naabot ang buong engineering suite sa pamamagitan ng toolbar ng DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Subaybayan ang lahat ng kategorya"
+  },
+  "popupLanguage": {
+    "message": "Wika"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Binary response — i-download para tingnan ito"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Nilo-load ang tugon..."
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Walang preview ng tugon — hindi makuha ang nilalaman."
+  },
+  "inspectorLoadingContent": {
+    "message": "Naglo-load ng content…"
+  },
+  "inspectorNoPreview": {
+    "message": "Walang magagamit na preview — hindi makuha ang nilalaman."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Isara lahat"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Isara ang lahat ng bukas na tab"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "I-click upang palakihin"
+  },
+  "inspectorViewSource": {
+    "message": "Tingnan ang pinagmulan"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Ipakita ang SVG markup na may pag-highlight ng syntax"
+  },
+  "inspectorFormatting": {
+    "message": "Pino-format…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Hanapin sa nilalaman…"
+  },
+  "findPreviousMatch": {
+    "message": "Nakaraang tugma"
+  },
+  "findNextMatch": {
+    "message": "Susunod na tugma"
+  },
+  "findClose": {
+    "message": "Isara"
+  },
+  "findShowRaw": {
+    "message": "Ipakita ang orihinal (hindi naka-format) na nilalaman"
+  },
+  "findBeautify": {
+    "message": "I-format ang nilalamang ito"
+  },
+  "btnRaw": {
+    "message": "Raw"
+  },
+  "btnBeautify": {
+    "message": "I-format"
+  },
+  "videoHlsDetected": {
+    "message": "Nakita ang HLS (m3u8) stream"
+  },
+  "videoCannotPlay": {
+    "message": "Ang video na ito ay hindi maaaring i-play sa browser"
+  },
+  "videoHlsNotice": {
+    "message": "Hindi maaaring direktang i-play ng Chrome ang mga stream ng HLS. Maaari mong pagsamahin ang lahat ng mga segment ng <b>$NAME$</b> sa isang MP4/TS video file.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Hindi sinusuportahan ng browser ang format na ito"
+  },
+  "btnMergeHls": {
+    "message": "Pagsamahin ang mga segment at i-download"
+  },
+  "toastHlsMerged": {
+    "message": "Pinagsama ang $COUNT$ segment sa $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "hindi alam ang laki"
+  },
+  "progressFetching": {
+    "message": "Kinukuha ang $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Gumagawa ng ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "Na-save ang ZIP: $FETCHED$ sa $TOTAL$ na mapagkukunan ($SKIPPED$ ang nabigo)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Subukan muli $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Subukang muli ang pag-download"
+  },
+  "searchRegexHint": {
+    "message": "Aktibo ang paghahanap sa regex — ilagay ang iyong query sa loob ng /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Isama sa pag-export"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Pagsamahin ang bawat snapshot sa isang deduplicated na talahanayan — ito ang nae-export"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Mag-browse ng mga naunang snapshot ng talahanayang ito"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "I-download ang talahanayang ito bilang CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Snapshot $INDEX$ — $TIME$ ($COUNT$ row)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "I-toggle ang pagpili para sa batch download"
+  },
+  "cardDownloadTitle": {
+    "message": "Mag-download ng file"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Nabigo ang nakaraang pag-download — i-click upang subukang muli"
+  },
+  "btnThemeLight": {
+    "message": "Lumipat sa maliwanag na tema"
+  },
+  "btnThemeDark": {
+    "message": "Lumipat sa madilim na tema"
+  },
+  "guideTitle": {
+    "message": "Source Download — Gabay sa Gumagamit"
+  },
+  "guideEmpty": {
+    "message": "Walang mga seksyon ng gabay na tumutugma sa iyong paghahanap."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% walang dependency.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Mag-zoom out (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Mag-zoom in (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "I-reset ang zoom (0)"
+  },
+  "lightboxClose": {
+    "message": "Isara (Esc)"
+  },
+  "resizerTitle": {
+    "message": "I-drag upang baguhin ang laki"
+  },
+  "ratingDismissTitle": {
+    "message": "I-dismiss"
+  },
+  "inspectorResourceTitle": {
+    "message": "Mapagkukunan"
+  },
+  "guideSecGettingStarted": {
+    "message": "Pagsisimula"
+  },
+  "guideSecCategories": {
+    "message": "Mga kategorya"
+  },
+  "guideSecSearchFilters": {
+    "message": "Maghanap at mga filter"
+  },
+  "guideSecGridView": {
+    "message": "Grid at view ng listahan"
+  },
+  "guideSecInspect": {
+    "message": "Suriin ang isang mapagkukunan"
+  },
+  "guideSecDownloading": {
+    "message": "Nagda-download"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Teksto at mga talahanayan"
+  },
+  "guideSecCaptions": {
+    "message": "Mga caption at subtitle"
+  },
+  "guideSecSourceMaps": {
+    "message": "Mga source map"
+  },
+  "guideSecDupes": {
+    "message": "Mga dobleng larawan"
+  },
+  "guideSecVideoHls": {
+    "message": "Video fallback at HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Mga power tip"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "I-click ang tab na <strong>Source Download</strong> sa toolbar ng DevTools (pindutin ang <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, pagkatapos ay hanapin ang tab sa toolbar ng DevTools). Hindi pinapayagan ng Chrome ang mga extension na awtomatikong buksan ang DevTools, kaya naman doon matatagpuan ang panel. Sa popup ng icon ng toolbar, mapipili mo kung aling mga kategorya ang isasama sa badge counter sa icon. Ang sun/moon button sa toolbar ng panel ay nagla-lock ng maliwanag o madilim na tema nang hiwalay sa Chrome; naaalala ang pinili mo."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Pinagpapangkat ng mga patayong tab sa kaliwa ang bawat nakuhang mapagkukunan sa 17 nakalaang kategorya ayon sa uri: Mga Larawan, Video, Audio, Mga Caption, Dokumento, Mga Font, Source map, WASM, SVG, mga API, Cookies, Storage, at higit pa. Ang bawat tab ay nagpapakita ng live na bilang. Isang kategorya lamang ang ipinapakita sa isang pagkakataon; nire-reset ng paglipat ng tab ang lahat ng filter, kaya laging tumutugma sa tab ang nakikita mo."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Ang search bar ay nagsasala ayon sa pangalan, URL, uri, alt text o pamagat. Ilakip ang iyong query sa <kbd>/…/</kbd> para gumamit ng regular na expression, hal. <code>/\\.(png|jpg)$/</code>. Sa ibaba ng toolbar, nagbabago ang filter bar bawat kategorya: laki at mga hanay ng dimensyon para sa media, pamamaraan ng HTTP at uri ng kahilingan para sa mga API, kasama ang pag-uuri at direksyon."
+  },
+  "guideSecGridViewContent": {
+    "message": "Mag-toggle sa pagitan ng compact grid (maliit na thumbnail) at isang detalyadong listahan na may mga button sa tabi ng search bar. Ang iyong pinili ay naaalala sa pagitan ng mga session. Sa view ng listahan, hinahayaan ka ng mga checkbox na pumili ng mga indibidwal na mapagkukunan para sa maramihang pag-download."
+  },
+  "guideSecInspectContent": {
+    "message": "I-click ang anumang mapagkukunan upang buksan ito sa inspect pane sa kanan. Ang bawat binuksang file ay nagiging tab, kaya maaari mong paghambingin ang ilang mapagkukunan nang magkatabi — ang pinakabago ay bubukas sa kaliwa. May mga espesyal na viewer para sa mga larawan, video, audio, font, SVG, at text/code (na may toggle na I-format). Nagpapakita ang mga API ng split view: tugon sa kaliwa, mga detalye ng request (method, status, mga header, mga parameter ng query at body) sa kanan."
+  },
+  "guideSecDownloadingContent": {
+    "message": "Sine-save ng <strong>I-download ang Kasalukuyang View</strong> ang kasalukuyang nakikitang mga mapagkukunan (aktibong kategorya + paghahanap + mga filter) bilang isang ZIP; nagiging <em>I-download ang Na-filter (N)</em> ang label nito kapag aktibo ang mga filter. I-hover ang anumang button sa pag-download upang makita ang tinatayang laki ng archive bago ka mag-click. Dina-download lamang ng <strong>I-download ang Napili</strong> ang mga may check na item. Kinukuha ng <strong>I-download Lahat</strong> ang bawat natuklasang mapagkukunan sa isang ZIP na may istruktura ng folder. Awtomatikong sinusubukan muli ang mga nabigong pag-download at maaaring subukang muli mula sa context menu. Isinusulat ng <strong>I-export</strong> ang nakikitang listahan bilang JSON o CSV, o ine-export ang network log ng Chrome bilang HAR file."
+  },
+  "guideSecLightboxContent": {
+    "message": "Binubuksan ng zoom button ang media sa isang full-size na lightbox kung saan maaari kang mag-pan sa pamamagitan ng pag-drag, pag-zoom gamit ang gulong ng mouse, ang mga on-screen na button o ang keyboard (<kbd>+</kbd>/<kbd>-</kbd> para mag-zoom, <kbd>0</kbd> para i-reset, <kbd>Esc</kbd> para isara)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Ang kategoryang <strong>Text</strong> ay isang live, nababasang kopya ng pahina. Kinukuha nito ang bawat elementong naglalaman ng text — mga heading, talata, item sa listahan, mga button, <code>div</code>/<code>span</code> at higit pa — sa DOM order, at patuloy na nag-i-scan habang naka-on ang <strong>Live</strong>.</p><p>Ang kahon ng <strong>Query</strong> ay gumagana sa apat na paraan, na pinipili mula sa dropdown sa tabi nito: ang <strong>Naglalaman</strong> at <strong>Regex</strong> ay nagfi-filter ng tekstong nakuha na, habang ang <strong>CSS selector</strong> at <strong>XPath</strong> ay pinapatakbo laban sa live na pahina upang maabot nila ang anuman sa DOM. Tumatanggap din ang XPath ng mga expression na nagbabalik ng value sa halip na mga elemento, gaya ng <code>count(//a)</code> o <code>//@href</code>. Anuman ang sinasabi ng pahina tungkol sa isang sirang query ay ipinapakita sa tabi ng kahon. Pinaliliit ng <strong>Element</strong> ang resulta sa iisang tag, kasama ang bilang ng bawat tag na makikita sa pahina. Ang pag-clear sa query box (o ang pagpindot sa <strong>I-clear</strong>) ay magbabalik sa iyo sa <em>Lahat ng elemento</em> at muling kukunin ang pahina — hindi mo na kailangang i-reset nang mano-mano ang dropdown.</p><p>Itinatago ng <strong>Mode ng pagbasa</strong> ang mga tag, checkbox at location crumb para mabasa ang stream na parang dokumento. Nag-iimbak ang mga talahanayan ng limitadong kasaysayan ng mga snapshot upang hindi kailanman mawala ang mga dynamic (SPA) na talahanayan. Pindutin ang <strong>Ipakita ang lahat ng row</strong> sa isang talahanayan upang pagsamahin ang bawat snapshot sa isang deduplicated na view — iyon mismo ang laman ng isang export. Mag-export bilang <strong>TXT</strong> (ang nababasang pahina), <strong>MD</strong> (Markdown, kasama ang mga talahanayan), o mga talahanayan bilang CSV, HTML o isang tunay na multi-sheet na <strong>XLSX</strong> workbook. Inuuna ang mga naka-check na item; kung wala, ine-export ang lahat ng kasalukuyang nakikita.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "Ang WebVTT, SRT, TTML at iba pang mga caption file — kabilang ang mga source ng <code>&lt;track&gt;</code> — ay napupunta sa sarili nilang tab na <strong>Mga caption</strong> sa halip na ihalo sa mga dokumento."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Ang mga <code>.map</code> file at JSON na mukhang source map (naglalaman ang mga ito ng <code>mappings</code> at <code>sources</code>) ay naka-grupo sa ilalim ng <strong>Mga source map</strong>, kasama ang JSON viewer at I-format, kaya hindi na sila nakakalat sa tab na JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "Sa tab na Mga Larawan, kinukuwenta ng panel ang hash ng mga nakuhang byte at minamarkahan ang magkaparehong mga file. Pinapanatili ng filter na <strong>Itago ang mga duplicate</strong> ang unang kopya ng bawat hanay upang hindi maglaman ang ZIP ng view ng parehong thumbnail nang dalawang beses."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Ang mga stream na hindi native na mapapatugtog ng browser (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, hindi kilalang codec) ay nagpapakita ng fallback sa halip na isang itim na player. Para sa HLS, maaari mong pagsamahin ang mga segment sa isang video file mula mismo sa panel, o i-download ang orihinal na manifest."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Ang mga dynamic na <strong>API</strong> na tugon (XHR/fetch) ay hindi dina-deduplicate ayon sa URL — mananatili sa listahan ang bawat tugon (limitadong FIFO) upang maihambing mo ang mga paulit-ulit na request. Dina-deduplicate ang mga static na asset. Gamitin ang <strong>I-refresh</strong> upang muling i-scan ang kasalukuyang DOM, at i-reload ang pahina habang bukas ang panel upang makuha ang bawat request sa network, kabilang ang mga na-trigger bago ka lumipat ng tab."
+  },
+  "toolArrow": {
+    "message": "Arrow tool"
+  },
+  "toolRect": {
+    "message": "Rectangle tool"
+  },
+  "toolText": {
+    "message": "Text tool"
+  },
+  "toolUndo": {
+    "message": "I-undo (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "I-redo (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Kulay"
+  },
+  "badgeStrokeSize": {
+    "message": "Laki: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Laki ng font: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Mag-record ng area bilang video / GIF"
+  },
+  "btnRecStart": {
+    "message": "Simulan ang pag-record"
+  },
+  "btnRecPause": {
+    "message": "I-pause"
+  },
+  "btnRecResume": {
+    "message": "Ituloy"
+  },
+  "btnRecStop": {
+    "message": "Tapusin at i-download"
+  },
+  "btnRecCancel": {
+    "message": "Kanselahin"
+  },
+  "toastRecSaved": {
+    "message": "Na-save ang recording ng area"
+  },
+  "toastRecCancelled": {
+    "message": "Nakansela ang pag-record ng video"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Hindi ibinigay ang pahintulot sa pag-record ng screen"
+  },
+  "btnPopupRecordArea": {
+    "message": "Video / GIF ng Lugar"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Screenshot ng Lugar"
+  },
+  "contextMenuPickColor": {
+    "message": "Pumili ng kulay mula sa screen"
+  },
+  "btnPopupPickColor": {
+    "message": "Pumili ng Kulay"
+  },
+  "colorPickerTitle": {
+    "message": "Color Picker"
+  },
+  "btnColorPickAgain": {
+    "message": "Pumili ng Ibang Kulay"
+  },
+  "toastColorCopied": {
+    "message": "Nakopya sa clipboard ang kulay"
+  },
+  "toastProgressCapturing": {
+    "message": "Kinukuha ang buong page... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Pinagdurugtong ang mga bahagi ng larawan..."
+  },
+  "modalExportTitle": {
+    "message": "Handa na ang Screenshot ng Buong Page"
+  },
+  "btnExportPng": {
+    "message": "I-download ang PNG"
+  },
+  "btnExportJpg": {
+    "message": "I-download ang JPG"
+  },
+  "btnExportPdf": {
+    "message": "I-save bilang PDF"
+  },
+  "btnExportCopy": {
+    "message": "Kopyahin sa Clipboard"
+  },
+  "btnExportGenerating": {
+    "message": "Ginagawa..."
+  },
+  "toastPdfGenerated": {
+    "message": "Na-save ang PDF document."
+  },
+  "settingNamingPatterns": {
+    "message": "Mga Pattern ng Pagpangalan ng File"
+  },
+  "settingVideoFormat": {
+    "message": "Default na Format ng Video"
+  },
+  "settingNamingPreview": {
+    "message": "Preview:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Ginagawa ang GIF, pakihintay..."
+  },
+  "settingGifResolution": {
+    "message": "Default na Resolution ng GIF"
+  },
+  "optGifOriginal": {
+    "message": "Original (1:1 native na resolution — buong 3K/4K, walang pagliit)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (hanggang 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (hanggang 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (hanggang 854px — mas mabilis at mas maliit na size)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Sinusuportahan ng GIF format ang maximum na tagal ng pag-record na 1 minuto (60s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Pag-record ng screen (Video at GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "I-record ang anumang lugar ng screen bilang MP4, WebM, o animated na GIF. Nagtatampok ang mga GIF recording ng 1:1 native na resolution, 1080p, 720p, at 480p na mga profile na may live na tinatayang laki ng file. Ang maximum na tagal ng pag-record ng GIF ay 1 minuto (60s) para sa pinakamainam na performance ng browser."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Naabot na ang maximum na haba ng GIF na 1 minuto (60 s). Ginagawa ang GIF..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Hanggang 1 min (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Default na GIF Frame Rate (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Smooth (napakakinis, mas malaking size)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standard (inirerekomenda para sa web at balanse)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Compact / Meme (putol-putol na galaw, maliit na size)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / Mabagal (hakbang-hakbang na \"click-click\", napakaliit na size)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Presentasyon (1 frame bawat segundo, pinakamaliit na size)"
+  },
+  "popupRightClickHint": {
+    "message": "Mag-right-click saanman sa webpage para sa Screen Recording (Video/GIF) at Color Picker."
+  },
+  "toastElementZappedAd": {
+    "message": "Naitago ang ad / iframe para sa session na ito.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Nakopya sa clipboard ang larawan",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Isara (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Na-save ang mga setting",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "I-download ang file at buksan ito gamit ang VLC o ibang media player.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Walang preview para sa ganitong uri ng resource",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "I-download ang original",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Tip: buksan ang na-download na file gamit ang VLC o anumang desktop media player — halos lahat ng format ay napapatugtog nito.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Ginagawa ang ZIP archive…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Hindi sinusuportahan ng iyong browser ang EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "I-drag ang toolbar",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Palitan ang format: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Resolution ng GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Frame rate ng GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Tinatayang size ng GIF: ~$size$ MB (para sa 10 s), hanggang ~$max$ MB sa maximum na 60 s.\nFrame rate: $fps$ FPS.\nAng pag-record ng GIF ay limitado sa maximum na 1 minuto (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Kopyahin ang $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Preview ng screenshot",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — mapapanood kahit saan sa WhatsApp, Telegram, Jira, Apple at Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animated na larawan — mainam para sa mga README, Jira, dokumentasyon at pagmemensahe)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — bukas na format para sa web)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Walang nakitang aktibong tab.",
+    "description": "No active tab found."
+  }
+}

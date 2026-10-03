@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Tikrinkite ir atsisiųskite svetainės išteklius kaip ZIP. Viso puslapio ekrano kopijos, lentelių fiksavimas, įrankiai."
+  },
+  "actionTitle": {
+    "message": "Source Download – atidarykite skydelį ir stebėkite išteklius"
+  },
+  "contextMenuZap": {
+    "message": "Paslėpti šį elementą"
+  },
+  "contextMenuUndoZap": {
+    "message": "Atkurti paskutinį paslėptą elementą"
+  },
+  "contextMenuResetZap": {
+    "message": "Atkurti visus paslėptus elementus"
+  },
+  "contextMenuCapturePage": {
+    "message": "Daryti viso puslapio ekrano kopiją"
+  },
+  "contextMenuPageArchive": {
+    "message": "Atsisiųsti neprisijungus veikiantį puslapio archyvą"
+  },
+  "catAll": {
+    "message": "Visi"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Vaizdai"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Vaizdo įrašai"
+  },
+  "catAudio": {
+    "message": "Garsas"
+  },
+  "catCaptions": {
+    "message": "Subtitrai"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Šaltinių žemėlapiai"
+  },
+  "catFonts": {
+    "message": "Šriftai"
+  },
+  "catDocuments": {
+    "message": "Dokumentai"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifestai"
+  },
+  "catText": {
+    "message": "Tekstas"
+  },
+  "catOther": {
+    "message": "Kita"
+  },
+  "catScreenshot": {
+    "message": "Ekrano kopija"
+  },
+  "catArchive": {
+    "message": "Puslapio archyvas"
+  },
+  "btnRefresh": {
+    "message": "Atnaujinti"
+  },
+  "btnExport": {
+    "message": "Eksportuoti"
+  },
+  "btnDownloadSelected": {
+    "message": "Atsisiųsti pasirinktą"
+  },
+  "btnDownloadView": {
+    "message": "Atsisiųsti rodinį"
+  },
+  "btnDownloadAll": {
+    "message": "Atsisiųsti viską"
+  },
+  "btnDownloadFiltered": {
+    "message": "Atsisiųsti filtruotus"
+  },
+  "btnTheme": {
+    "message": "Perjungti temą"
+  },
+  "btnGuide": {
+    "message": "Vartotojo vadovas"
+  },
+  "btnCaptureFullPage": {
+    "message": "Viso puslapio ekrano kopija"
+  },
+  "btnOfflineArchive": {
+    "message": "Išsaugoti kaip vieną HTML"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Maks. KB"
+  },
+  "filterMinWidth": {
+    "message": "Minimalus plotis px"
+  },
+  "filterMinHeight": {
+    "message": "Minimalus aukštis px"
+  },
+  "filterSortName": {
+    "message": "Rūšiuoti pagal pavadinimą"
+  },
+  "filterSortSize": {
+    "message": "Rūšiuoti pagal dydį"
+  },
+  "filterSortType": {
+    "message": "Rūšiuoti pagal tipą"
+  },
+  "filterSortTime": {
+    "message": "Rūšiuoti pagal laiką"
+  },
+  "filterHideDupes": {
+    "message": "Slėpti dublikatus"
+  },
+  "filterClear": {
+    "message": "Išvalyti"
+  },
+  "textModeContains": {
+    "message": "Sudėtyje yra"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS parinkiklis"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filtruoti puslapio tekstą arba pateikti tiesioginio DOM užklausą…"
+  },
+  "textAllElements": {
+    "message": "Visi elementai"
+  },
+  "textLiveOn": {
+    "message": "Tiesioginis įjungtas"
+  },
+  "textLiveOff": {
+    "message": "Tiesioginis išjungtas"
+  },
+  "textScanNow": {
+    "message": "Nuskaityti dabar"
+  },
+  "textReading": {
+    "message": "Skaitymas"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Pasirinkite išteklį, kad peržiūrėtumėte jo informaciją"
+  },
+  "inspectorDetails": {
+    "message": "Detalės"
+  },
+  "inspectorOpenTab": {
+    "message": "Atidaryti naujame skirtuke"
+  },
+  "inspectorCopyUrl": {
+    "message": "Kopijuoti URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Atsisiųsti šį failą"
+  },
+  "inspectorClose": {
+    "message": "Uždaryti"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Tipas"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Dydis"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Šaltinis"
+  },
+  "metaTitle": {
+    "message": "Pavadinimas"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Mėgaukitės Source Download? Palaikykite mūsų atvirojo kodo viziją pateikdami atsiliepimą „Chrome“ internetinėje parduotuvėje arba pažymėdami žvaigždute „GitHub“!"
+  },
+  "ratingReview": {
+    "message": "★ Palikite atsiliepimą"
+  },
+  "ratingStar": {
+    "message": "★ Pažymėti žvaigždute „GitHub“"
+  },
+  "ratingDismiss": {
+    "message": "Atsisakyti"
+  },
+  "toastElementZapped": {
+    "message": "Elementas paslėptas šiam seansui."
+  },
+  "toastElementRestored": {
+    "message": "Elementas atkurtas."
+  },
+  "toastAllElementsRestored": {
+    "message": "Visi paslėpti elementai atkurti."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Fiksuojama viso puslapio ekrano kopija…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Viso puslapio ekrano kopija išsaugota."
+  },
+  "toastArchiveCreated": {
+    "message": "Vieno failo HTML archyvas išsaugotas."
+  },
+  "brandSignature": {
+    "message": "Sukūrė Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Vaizdai ir SVG"
+  },
+  "tabMedia": {
+    "message": "Medija ir garsas"
+  },
+  "tabFonts": {
+    "message": "Šriftai"
+  },
+  "tabTextScraper": {
+    "message": "Tekstas ir lentelės"
+  },
+  "heroScreenshotTitle": {
+    "message": "Viso puslapio ekrano kopija"
+  },
+  "heroScreenshotDesc": {
+    "message": "Sklandus kelių peržiūros zonų sujungimas, nuslopinant prilipusias antraštes"
+  },
+  "heroArchiveTitle": {
+    "message": "Vieno failo HTML archyvas"
+  },
+  "heroArchiveDesc": {
+    "message": "Įterpia CSS ir Base64 vaizdus, saugi neprisijungus momentinė nuotrauka"
+  },
+  "copyDataUri": {
+    "message": "Kopijuoti Data-URI"
+  },
+  "copyUrl": {
+    "message": "Kopijuoti URL"
+  },
+  "downloadSingle": {
+    "message": "Atsisiųsti"
+  },
+  "searchPlaceholder": {
+    "message": "Filtruoti pagal pavadinimą, URL, žymą, MIME arba /regex/…"
+  },
+  "viewGrid": {
+    "message": "Tinklelio rodinys"
+  },
+  "viewList": {
+    "message": "Sąrašo rodinys"
+  },
+  "btnScreenshot": {
+    "message": "Ekrano kopija"
+  },
+  "btnArchive": {
+    "message": "Išsaugoti HTML"
+  },
+  "exportJson": {
+    "message": "Matomas sąrašas kaip JSON"
+  },
+  "exportCsv": {
+    "message": "Matomas sąrašas kaip CSV"
+  },
+  "exportHar": {
+    "message": "Tinklo žurnalas kaip HAR"
+  },
+  "exportScreenshot": {
+    "message": "Viso puslapio ekrano kopija (PNG)"
+  },
+  "exportArchive": {
+    "message": "Puslapio archyvas neprisijungus (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Visi metodai"
+  },
+  "filterTypeAll": {
+    "message": "Visų tipų"
+  },
+  "filterSortDir": {
+    "message": "Perjungti didėjančią / mažėjančią"
+  },
+  "emptyTitle": {
+    "message": "Nerasta jokių išteklių"
+  },
+  "emptySubtitle": {
+    "message": "Iš naujo įkelkite puslapį, kol šis skydelis atidarytas, kad užfiksuotumėte tinklo užklausas, arba spustelėkite Atnaujinti, kad nuskaitytumėte dabartinį DOM."
+  },
+  "statusResources": {
+    "message": "išteklių"
+  },
+  "statusFiltered": {
+    "message": "filtruojamas"
+  },
+  "statusSelected": {
+    "message": "pasirinktas"
+  },
+  "statusDupes": {
+    "message": "dublikatai paslėpti"
+  },
+  "statusSize": {
+    "message": "dydis"
+  },
+  "langAuto": {
+    "message": "Automatinis (naršyklė)"
+  },
+  "langSelectorTitle": {
+    "message": "Pasirinkite kalbą"
+  },
+  "textPillAll": {
+    "message": "Visas turinys"
+  },
+  "textPillText": {
+    "message": "📄 Tekstas ir straipsniai"
+  },
+  "textPillTables": {
+    "message": "📊 Tik lentelės"
+  },
+  "textSelectAll": {
+    "message": "Pasirinkti viską"
+  },
+  "textDeselectAll": {
+    "message": "Panaikinkite visų pasirinkimą"
+  },
+  "textClearSelection": {
+    "message": "Išvalyti"
+  },
+  "toastRefreshComplete": {
+    "message": "Puslapio nuskaitymas baigtas: $count$ naujų išteklių",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Nukopijuota $count$ blokų",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Nukopijuota į mainų sritį"
+  },
+  "toastTableCopied": {
+    "message": "Lentelė nukopijuota į mainų sritį"
+  },
+  "toastNothingToExport": {
+    "message": "Nėra ko eksportuoti"
+  },
+  "toastExportedTxt": {
+    "message": "Eksportuota $count$ blokų kaip TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Eksportuota $count$ blokų kaip Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Neužfiksuota jokių lentelės eilučių"
+  },
+  "toastExportedCsv": {
+    "message": "Lentelė eksportuota kaip CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Lentelė eksportuota kaip XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Eksportuota $count$ lentelė (-ės) kaip $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Eksportuota $count$ lapas (-ai) kaip XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Nėra išteklių, kuriuos būtų galima atsisiųsti."
+  },
+  "toastNoVisibleResources": {
+    "message": "Nėra matomų išteklių, kuriuos būtų galima atsisiųsti."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Pirmiausia pasirinkite bent vieną išteklį."
+  },
+  "toastZipSaved": {
+    "message": "ZIP išsaugotas: $fetched$ iš $total$ išteklių",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP nepavyko: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR eksportuota ($count$ įrašų)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL nukopijuotas į mainų sritį"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools patikrintas langas nepasiekiamas."
+  },
+  "toastScreenshotError": {
+    "message": "Ekrano kopijos klaida: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Kuriamas puslapio archyvas neprisijungus…"
+  },
+  "toastArchiveError": {
+    "message": "Archyvo klaida: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Baigėsi formatavimo laikas – rodomas originalus failas."
+  },
+  "toastFormatFailed": {
+    "message": "Nepavyko suformatuoti failo – rodomas originalas."
+  },
+  "emptySearchTitle": {
+    "message": "Nėra atitikmenų pagal „$query$“",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Išbandykite kitą paieškos terminą arba perjunkite į kitą kategoriją."
+  },
+  "emptyFiltersTitle": {
+    "message": "Nėra išteklių, atitinkančių dabartinius filtrus"
+  },
+  "emptyFiltersSub": {
+    "message": "Sušvelninkite aukščiau esančius dydžio ar matmenų filtrus arba paspauskite „Išvalyti“."
+  },
+  "textEmptyQueryReject": {
+    "message": "Puslapis atmetė šią užklausą. Pataisykite aukščiau esančią problemą ir rezultatai grįš iš karto."
+  },
+  "textEmptyNoMatch": {
+    "message": "Joks elementas puslapyje neatitinka šios užklausos. Išbandykite bendresnį parinkiklį arba perjunkite režimą šalia langelio."
+  },
+  "textEmptyInitial": {
+    "message": "Dar nieko neužfiksuota. Vykdomas tiesioginis fiksavimas – visas puslapis čia bus rodomas kaip skaitomas tekstas."
+  },
+  "textEmptyFiltered": {
+    "message": "Niekas neatitinka dabartinės užklausos ir elementų filtro."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ blokų",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ žodžių",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ simbolių",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ lentelė (-ės) · $rows$ unikalios eilutės",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "Pasirinkta $count$ – tik tai naudojami eksportuojant",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Lentelė – $count$ eilutė (-ės) ekrane",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Lentelė – visos $count$ unikalios eilutės",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ momentinės nuotraukos",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "atnaujinta $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Rodyti visas $count$ eilutes",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Rodomos visos eilutės"
+  },
+  "textTableHistory": {
+    "message": "Istorija ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Slėpti istoriją"
+  },
+  "textTableNoRows": {
+    "message": "Dar neužfiksuota jokių eilučių."
+  },
+  "textBtnCopy": {
+    "message": "Kopijuoti tekstą"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Kopijuoti"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "Pasikartojančių vaizdų: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Eksportuoti"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Įkeliamas SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Nepavyko gauti SVG turinio."
+  },
+  "inspectorLoadingFont": {
+    "message": "Įkeliama šrifto peržiūra…"
+  },
+  "inspectorFontSample": {
+    "message": "Šrifto peržiūra"
+  },
+  "inspectorBeautify": {
+    "message": "Formatuoti"
+  },
+  "inspectorOriginal": {
+    "message": "Originalus"
+  },
+  "inspectorHeaders": {
+    "message": "Antraštės"
+  },
+  "inspectorResponse": {
+    "message": "Atsakymas"
+  },
+  "inspectorRequest": {
+    "message": "Užklausa"
+  },
+  "inspectorQueryParams": {
+    "message": "Užklausos parametrai"
+  },
+  "inspectorRequestBody": {
+    "message": "Užklausos turinys"
+  },
+  "textHintHtml": {
+    "message": "Tiesioginė, skaitoma puslapio kopija. Kiekvienas elementas, kuriame yra tekstas, yra fiksuojamas DOM tvarka ir laikomas čia, kai puslapis keičiasi. Pateikite užklausą naudodami paprastą tekstą, reguliarųjį posakį, <strong>CSS parinkiklį</strong> arba <strong>XPath</strong> išraišką, tada eksportuokite tai, kas atitiko. Norėdami gauti daugiau informacijos, žr. <a href=\"#\" id=\"text-hint-guide\">gidą</a>."
+  },
+  "textHeadings": {
+    "message": "Antraštės"
+  },
+  "textAllLevels": {
+    "message": "Visi lygiai"
+  },
+  "textMatches": {
+    "message": "atitikmenų"
+  },
+  "textMatch": {
+    "message": "atitikmuo"
+  },
+  "textReadingOn": {
+    "message": "Skaitymas įjungtas"
+  },
+  "toastDownloadStarted": {
+    "message": "Atsisiuntimas pradėtas: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Nepavyko gauti šio išteklio (CORS arba nepalaikomo tipo)."
+  },
+  "ratingBannerText": {
+    "message": "Mėgaukitės Source Download? Palaikykite mūsų atvirojo kodo viziją pateikdami atsiliepimą „Chrome“ internetinėje parduotuvėje arba pažymėdami žvaigždute „GitHub“!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Atsiliepimas"
+  },
+  "ratingBannerStar": {
+    "message": "★ Žvaigždutė"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ unikalios eilutės",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "prieš $count$ s",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "prieš $count$ min",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Daryti srities ekrano kopiją"
+  },
+  "btnAreaDownload": {
+    "message": "Atsisiųsti"
+  },
+  "btnAreaCopy": {
+    "message": "Kopijuoti į iškarpinę"
+  },
+  "btnAreaCancel": {
+    "message": "Atšaukti"
+  },
+  "toastAreaCopied": {
+    "message": "Srities ekrano kopija nukopijuota į iškarpinę"
+  },
+  "toastAreaDownloaded": {
+    "message": "Srities ekrano kopija išsaugota"
+  },
+  "statusFoundCssResources": {
+    "message": "Rasta $count$ šaltinių, nurodytų iš CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM nuskaitymas nepavyko: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Indeksuojamas failo turinys…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Tikrinami pasikartojantys vaizdai…"
+  },
+  "statusWorking": {
+    "message": "Vykdoma…"
+  },
+  "filterMethodTitle": {
+    "message": "Filtruoti pagal HTTP metodą"
+  },
+  "filterTypeTitle": {
+    "message": "Filtruoti pagal užklausos tipą"
+  },
+  "filterSortTitle": {
+    "message": "Rūšiuoti išteklius"
+  },
+  "textModeTitle": {
+    "message": "Kaip interpretuojamas užklausos laukelis"
+  },
+  "textKindTitle": {
+    "message": "Apriboti iki vieno elemento tipo"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Antraštės lygis"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Kaina:\\s*\\d+ – „JavaScript“ reguliarioji išraiška"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 – bet koks CSS parinkiklis"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Ieškoti vadove…"
+  },
+  "popupIntro": {
+    "message": "Kategorijos, skaičiuojamos pagal <strong>įrankių juostos ženklelį</strong>. Išjunkite vieną, kad nustotumėte skaičiuoti – ženklelis akimirksniu atspindi tik tai, ką stebite."
+  },
+  "popupHelpTitle": {
+    "message": "Kaip naudoti visą skydelį"
+  },
+  "popupStep1": {
+    "message": "Atidarykite puslapio, kurį norite patikrinti, kūrėjo įrankius <div class=\"hint\"><kbd>F12</kbd> arba <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> („macOS“: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "DevTools įrankių juostoje spustelėkite skirtuką <strong>Source Download</strong>"
+  },
+  "popupStep3": {
+    "message": "Naršykite, apžiūrėkite ir atsisiųskite išteklius – atskirai arba visus iš karto kaip ZIP."
+  },
+  "popupNote": {
+    "message": "Pastaba: Chrome neleidžia plėtiniams programiškai atidaryti DevTools, todėl visos funkcijos pasiekiamos per DevTools įrankių juostą."
+  },
+  "popupTrackAll": {
+    "message": "Stebėkite visas kategorijas"
+  },
+  "popupLanguage": {
+    "message": "Kalba"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Dvejetainis atsakymas – atsisiųskite, kad jį peržiūrėtumėte"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Įkeliamas atsakymas…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Nėra atsakymo peržiūros – turinio nepavyko nuskaityti."
+  },
+  "inspectorLoadingContent": {
+    "message": "Įkeliamas turinys…"
+  },
+  "inspectorNoPreview": {
+    "message": "Peržiūra nepasiekiama – turinio nepavyko nuskaityti."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Uždaryti visus"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Uždarykite visus atidarytus skirtukus"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Spustelėkite norėdami padidinti"
+  },
+  "inspectorViewSource": {
+    "message": "Rodyti šaltinį"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Rodyti SVG žymėjimą su sintaksės paryškinimu"
+  },
+  "inspectorFormatting": {
+    "message": "Formatuojama…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Rasti turinyje…"
+  },
+  "findPreviousMatch": {
+    "message": "Ankstesnis atitikmuo"
+  },
+  "findNextMatch": {
+    "message": "Kitas atitikmuo"
+  },
+  "findClose": {
+    "message": "Uždaryti"
+  },
+  "findShowRaw": {
+    "message": "Rodyti originalų (nesuformatuotą) turinį"
+  },
+  "findBeautify": {
+    "message": "Formatuoti šį turinį"
+  },
+  "btnRaw": {
+    "message": "Neapdorotas"
+  },
+  "btnBeautify": {
+    "message": "Formatuoti"
+  },
+  "videoHlsDetected": {
+    "message": "Aptiktas HLS (m3u8) srautas"
+  },
+  "videoCannotPlay": {
+    "message": "Šio vaizdo įrašo negalima leisti naršyklėje"
+  },
+  "videoHlsNotice": {
+    "message": "„Chrome“ negali tiesiogiai leisti HLS srautų. Galite sujungti visus <b>$NAME$</b> segmentus į vieną MP4/TS vaizdo failą.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Naršyklė nepalaiko šio formato"
+  },
+  "btnMergeHls": {
+    "message": "Sujungti segmentus ir atsisiųsti"
+  },
+  "toastHlsMerged": {
+    "message": "Sujungta $COUNT$ segmentų į $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "dydis nežinomas"
+  },
+  "progressFetching": {
+    "message": "Gaunama $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Kuriamas ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP išsaugotas: $FETCHED$ iš $TOTAL$ išteklių ($SKIPPED$ nepavyko)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Bandyti dar kartą: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Bandyti atsisiųsti dar kartą"
+  },
+  "searchRegexHint": {
+    "message": "Aktyvi reguliariosios išraiškos paieška – įrašykite užklausą kaip /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Įtraukti į eksportą"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Sujunkite kiekvieną momentinę nuotrauką į vieną lentelę be dublikatų – tai ir eksportuojama"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Naršykite ankstesnes šios lentelės momentines nuotraukas"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Atsisiųskite šią lentelę kaip CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Momentinė nuotrauka $INDEX$ – $TIME$ ($COUNT$ eilučių)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Perjungti paketinio atsisiuntimo pasirinkimą"
+  },
+  "cardDownloadTitle": {
+    "message": "Atsisiųsti failą"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Ankstesnis atsisiuntimas nepavyko – spustelėkite ir bandykite dar kartą"
+  },
+  "btnThemeLight": {
+    "message": "Perjungti į šviesią temą"
+  },
+  "btnThemeDark": {
+    "message": "Perjungti į tamsią temą"
+  },
+  "guideTitle": {
+    "message": "Source Download – vartotojo vadovas"
+  },
+  "guideEmpty": {
+    "message": "Jokia vadovo dalis neatitinka jūsų paieškos."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ – 100 % be priklausomybės.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Nutolinti (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "Priartinti (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Iš naujo nustatyti mastelį (0)"
+  },
+  "lightboxClose": {
+    "message": "Uždaryti (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Vilkite, kad pakeistumėte dydį"
+  },
+  "ratingDismissTitle": {
+    "message": "Atsisakyti"
+  },
+  "inspectorResourceTitle": {
+    "message": "Išteklius"
+  },
+  "guideSecGettingStarted": {
+    "message": "Darbo pradžia"
+  },
+  "guideSecCategories": {
+    "message": "Kategorijos"
+  },
+  "guideSecSearchFilters": {
+    "message": "Paieška ir filtrai"
+  },
+  "guideSecGridView": {
+    "message": "Tinklelio ir sąrašo rodinys"
+  },
+  "guideSecInspect": {
+    "message": "Išteklio tikrinimas"
+  },
+  "guideSecDownloading": {
+    "message": "Atsisiunčiama"
+  },
+  "guideSecLightbox": {
+    "message": "Šviesdėžė"
+  },
+  "guideSecTextTables": {
+    "message": "Tekstas ir lentelės"
+  },
+  "guideSecCaptions": {
+    "message": "Subtitrai ir titrai"
+  },
+  "guideSecSourceMaps": {
+    "message": "Šaltinių žemėlapiai"
+  },
+  "guideSecDupes": {
+    "message": "Pasikartojantys vaizdai"
+  },
+  "guideSecVideoHls": {
+    "message": "Atsarginis vaizdo įrašas ir HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Pažengusiųjų patarimai"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "DevTools įrankių juostoje spustelėkite skirtuką <strong>Source Download</strong> (paspauskite <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, tada DevTools įrankių juostos skirtuką). „Chrome“ neleidžia plėtiniams automatiškai atidaryti DevTools, todėl skydelis ten yra. Įrankių juostos piktogramos iššokantis langas leidžia pasirinkti, kurios kategorijos pateikia piktogramos ženklelių skaitiklį. Saulės / mėnulio mygtukas skydelio įrankių juostoje užrakina šviesią arba tamsią temą nepriklausomai nuo Chrome; tas pasirinkimas prisimenamas."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Kairėje esantys vertikalūs skirtukai sugrupuoja visus užfiksuotus išteklius į 17 tam skirtų kategorijų pagal tipą: vaizdai, vaizdo įrašai, garsas, antraštės, dokumentai, šriftai, šaltinio žemėlapiai, WASM, SVG, API, slapukai, saugykla ir kt. Kiekviename skirtuke rodomas tiesioginis skaičius. Vienu metu rodoma tik viena kategorija; perjungimas iš naujo nustato visus filtrus, todėl tai, ką matote, visada atitinka skirtuką."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Paieškos juosta filtruoja pagal pavadinimą, URL, tipą, alternatyvųjį tekstą arba pavadinimą. Įdėkite užklausą į <kbd>/…/</kbd>, kad galėtumėte naudoti reguliarųjį reiškinį, pvz. <code>/\\.(png|jpg)$/</code>. Po įrankių juosta filtrų juosta keičiasi pagal kategoriją: medijos dydis ir matmenų diapazonas, HTTP metodas ir API užklausos tipas, taip pat rūšiavimas ir kryptis."
+  },
+  "guideSecGridViewContent": {
+    "message": "Perjunkite kompaktišką tinklelį (mažas miniatiūras) ir išsamų sąrašą naudodami šalia paieškos juostos esančius mygtukus. Jūsų pasirinkimas įsimenamas tarp seansų. Sąrašo rodinyje žymimieji laukeliai leidžia pasirinkti atskirus išteklius masiniam atsisiuntimui."
+  },
+  "guideSecInspectContent": {
+    "message": "Spustelėkite bet kurį išteklį, kad atidarytumėte jį tikrinimo srityje dešinėje. Kiekvienas atidarytas failas tampa skirtuku, todėl galite palyginti kelis išteklius vienas šalia kito – naujausias atidaromas kairėje. Yra specializuotų vaizdų, vaizdo įrašų, garso įrašų, šriftų, SVG ir teksto / kodo peržiūros programos (su perjungimu „Pagražinti“). API rodomas padalintas vaizdas: atsakymas kairėje, užklausos informacija (metodas, būsena, antraštės, užklausos parametrai ir turinys) dešinėje."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Atsisiųsti rodinį</strong> išsaugo šiuo metu matomus išteklius (aktyvi kategorija + paieška + filtrai) kaip ZIP; kai filtrai aktyvūs, mygtuko pavadinimas pasikeičia į <em>Atsisiųsti filtruotus (N)</em>. Užveskite pelės žymeklį ant bet kurio atsisiuntimo mygtuko, kad pamatytumėte numatomą archyvo dydį prieš spustelėdami. <strong>Atsisiųsti pasirinktus</strong> atsisiunčia tik pažymėtus elementus. <strong>Atsisiųsti viską</strong> užfiksuoja kiekvieną aptiktą išteklį į ZIP su aplankų struktūra. Nepavykę atsisiuntimai automatiškai bandomi iš naujo, o vėliau juos galima bandyti dar kartą per kontekstinį meniu. <strong>Eksportavimas</strong> įrašo matomą sąrašą kaip JSON arba CSV arba išsaugo „Chrome“ tinklo žurnalą kaip HAR failą."
+  },
+  "guideSecLightboxContent": {
+    "message": "Paspaudus mastelio keitimo mygtuką atidaroma medija viso dydžio šviesdėžėje, kurioje galite slinkti vilkdami, keisti mastelį pelės ratuku, ekrano mygtukais arba klaviatūra (<kbd>+</kbd>/<kbd>-</kbd>, kad padidintumėte mastelį, <kbd>0</kbd>, kad nustatytumėte iš naujo, <kbd>Esc</kbd>, kad uždarytumėte)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Kategorija <strong>Tekstas</strong> yra tiesioginė, skaitoma puslapio kopija. Ji užfiksuoja kiekvieną elementą, kuriame yra tekstas – antraštes, pastraipas, sąrašo elementus, mygtukus, <code>div</code>/<code>span</code> ir kt. – DOM tvarka ir toliau nuskaito, kol įjungtas <strong>Tiesioginis</strong>.</p><p>Laukelis <strong>Užklausa</strong> veikia keturiais būdais, pasirenkamais šalia esančiame išskleidžiamajame meniu: <strong>Turi</strong> ir <strong>Regex</strong> filtruoja jau užfiksuotą tekstą, o <strong>CSS parinkiklis</strong> ir <strong>XPath</strong> veikia tiesioginiame puslapyje, kad galėtų pasiekti bet ką DOM. XPath taip pat priima išraiškas, kurios grąžina vertę, o ne elementus, pvz., <code>count(//a)</code> arba <code>//@href</code>. Visa, kas puslapyje sakoma apie neveikiančią užklausą, rodoma šalia laukelio. <strong>Elementas</strong> susiaurina rezultatą iki vienos žymos su kiekvienos puslapyje rastos žymos skaičiumi. Išvalius užklausos laukelį (arba paspaudus <strong>Išvalyti</strong>), grįšite į <em>Visus elementus</em> ir vėl užfiksuojate puslapį – jums niekada nereikės ranka iš naujo nustatyti išskleidžiamojo meniu.</p><p><strong>Skaitant</strong> paslepiamos žymos, žymimieji laukeliai ir vietos trupiniai, todėl srautas skaitomas kaip dokumentas. Lentelėse saugoma ribota momentinių vaizdų istorija, todėl dinaminės (SPA) lentelės niekada neprarandamos. Lentelėje paspauskite <strong>Rodyti visas eilutes</strong>, kad kiekviena momentinė nuotrauka būtų sujungta į vieną rodinį, kurio pasikartojimai panaikinti – būtent tai yra eksportuojamame dokumente. Eksportuokite kaip <strong>TXT</strong> (skaitomas puslapis), <strong>MD</strong> (žymėjimas, įtrauktos lentelės) arba lenteles kaip CSV, HTML arba tikrą kelių lapų <strong>XLSX</strong> darbaknygę. Pažymėti elementai turi pirmenybę; kitu atveju eksportuojama viskas, kas šiuo metu matoma.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML ir kiti antraščių failai, įskaitant <code>&lt;track&gt;</code> šaltinius, patenka į savo skirtuką <strong>Subtitrai</strong>, o ne maišomi su dokumentais."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> failai ir JSON turiniai, kurie atrodo kaip šaltinio žemėlapiai (juose yra <code>mappings</code> ir <code>sources</code>), yra sugrupuoti į <strong>Šaltinio žemėlapius</strong>, naudojant JSON peržiūros priemonę ir funkciją „Formatuoti“, todėl jie nebeužgriozdina JSON skirtuko."
+  },
+  "guideSecDupesContent": {
+    "message": "Skirtuke Vaizdai skydelis apskaičiuoja užfiksuotų baitų maišos reikšmes ir pažymi identiškus failus. Filtras <strong>Slėpti dublikatus</strong> išsaugo pirmąją kiekvieno rinkinio kopiją, todėl rodinio ZIP failas nesiunčia tos pačios miniatiūros du kartus."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Srautai, kurių naršyklė negali paleisti savaime (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, nežinomi kodekai) rodo atsarginį variantą, o ne juodą grotuvą. Jei naudojate HLS, galite sujungti segmentus į vieną vaizdo failą tiesiai iš skydelio arba atsisiųsti originalų aprašą."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dinaminiai <strong>API</strong> atsakymai (XHR / fetch) nepašalinami kaip dublikatai pagal URL – kiekvienas atsakymas lieka sąraše (apribotas FIFO), kad galėtumėte palyginti pasikartojančias užklausas. Statiniai ištekliai pašalinami kaip dublikatai. Naudokite <strong>Atnaujinti</strong>, kad iš naujo nuskaitytumėte dabartinį DOM ir iš naujo įkeltumėte puslapį, kol skydelis atidarytas, kad užfiksuotumėte visas tinklo užklausas, įskaitant tas, kurios buvo suaktyvintos prieš perjungiant skirtukus."
+  },
+  "toolArrow": {
+    "message": "Rodyklės įrankis"
+  },
+  "toolRect": {
+    "message": "Stačiakampio įrankis"
+  },
+  "toolText": {
+    "message": "Teksto įrankis"
+  },
+  "toolUndo": {
+    "message": "Anuliuoti (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Pakartoti (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Spalva"
+  },
+  "badgeStrokeSize": {
+    "message": "Dydis: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Šrifto dydis: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Įrašyti sritį kaip vaizdo įrašą / GIF"
+  },
+  "btnRecStart": {
+    "message": "Pradėti įrašymą"
+  },
+  "btnRecPause": {
+    "message": "Pristabdyti"
+  },
+  "btnRecResume": {
+    "message": "Tęsti"
+  },
+  "btnRecStop": {
+    "message": "Baigti ir atsisiųsti"
+  },
+  "btnRecCancel": {
+    "message": "Atšaukti"
+  },
+  "toastRecSaved": {
+    "message": "Srities įrašas išsaugotas"
+  },
+  "toastRecCancelled": {
+    "message": "Vaizdo įrašymas atšauktas"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Ekrano įrašymo leidimas nesuteiktas"
+  },
+  "btnPopupRecordArea": {
+    "message": "Srities vaizdo įrašas / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Srities ekrano kopija"
+  },
+  "contextMenuPickColor": {
+    "message": "Pasirinkti spalvą iš ekrano"
+  },
+  "btnPopupPickColor": {
+    "message": "Pasirinkite spalvą"
+  },
+  "colorPickerTitle": {
+    "message": "Spalvų parinkiklis"
+  },
+  "btnColorPickAgain": {
+    "message": "Pasirinkti kitą spalvą"
+  },
+  "toastColorCopied": {
+    "message": "Spalva nukopijuota į iškarpinę"
+  },
+  "toastProgressCapturing": {
+    "message": "Fiksuojamas visas puslapis… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Vaizdas sujungiamas…"
+  },
+  "modalExportTitle": {
+    "message": "Viso puslapio ekrano kopija paruošta"
+  },
+  "btnExportPng": {
+    "message": "Atsisiųsti PNG"
+  },
+  "btnExportJpg": {
+    "message": "Atsisiųsti JPG"
+  },
+  "btnExportPdf": {
+    "message": "Išsaugoti kaip PDF"
+  },
+  "btnExportCopy": {
+    "message": "Kopijuoti į iškarpinę"
+  },
+  "btnExportGenerating": {
+    "message": "Kuriama…"
+  },
+  "toastPdfGenerated": {
+    "message": "PDF dokumentas išsaugotas."
+  },
+  "settingNamingPatterns": {
+    "message": "Failų pavadinimo modeliai"
+  },
+  "settingVideoFormat": {
+    "message": "Numatytasis vaizdo įrašo formatas"
+  },
+  "settingNamingPreview": {
+    "message": "Peržiūra:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Kuriamas GIF, palaukite…"
+  },
+  "settingGifResolution": {
+    "message": "Numatytoji GIF raiška"
+  },
+  "optGifOriginal": {
+    "message": "Originalas (1:1 gimtoji skiriamoji geba — visa 3K/4K, be sumažinimo)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (maks. 1920 px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (maks. 1280 px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (maks. 854 px — greičiau ir mažesnis dydis)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF formatas palaiko maksimalią 1 minutės (60 s) įrašymo trukmę."
+  },
+  "guideSecScreenRecording": {
+    "message": "Ekrano įrašymas (vaizdo įrašas ir GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Įrašykite bet kurią ekrano sritį kaip MP4, WebM arba animuotą GIF. GIF įrašai turi 1:1 savąją skiriamąją gebą, 1080p, 720p ir 480p profilius su apskaičiuotais failų dydžiais. Maksimali GIF įrašymo trukmė yra 1 minutė (60 sek.), kad naršyklė veiktų optimaliai."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Pasiekta didžiausia GIF trukmė – 1 minutė (60 s). Kuriamas GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Maks. 1 min. (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Numatytasis GIF kadrų dažnis (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Sklandus (labai sklandus judesys, didesnis dydis)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standartinis (rekomenduojama internetui ir pusiausvyrai)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Kompaktiškas / memas (šuoliuojantis judesys, mažas dydis)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop kadrai / lėtas (žingsnis po žingsnio „spust-spust“, labai mažas dydis)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Pristatymas (1 kadras per sekundę, mažiausias dydis)"
+  },
+  "popupRightClickHint": {
+    "message": "Dešiniuoju pelės mygtuku spustelėkite bet kurią tinklalapio vietą, kad atidarytumėte ekrano įrašymą (vaizdo įrašą / GIF) ir spalvų parinkiklį."
+  },
+  "toastElementZappedAd": {
+    "message": "Skelbimas / iframe paslėptas šiam seansui.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Vaizdas nukopijuotas į iškarpinę",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Uždaryti (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Nustatymai išsaugoti",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Atsisiųskite failą ir atidarykite jį su VLC arba kita medijos leistuve.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Šio tipo ištekliui peržiūros nėra",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Atsisiųsti originalą",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Patarimas: atsisiųstą failą atidarykite su VLC ar bet kuriuo kompiuterio medijos leistuvu – jis atkuria beveik visus formatus.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Kuriamas ZIP archyvas…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Jūsų naršyklė nepalaiko EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Vilkti įrankių juostą",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Perjungti formatą: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF skiriamoji geba: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF kadrų dažnis: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Numatomas GIF dydis: ~$size$ MB (10 s), iki ~$max$ MB esant 60 s maksimumui.\nKadrų dažnis: $fps$ FPS.\nGIF įrašymas ribojamas iki 1 minutės (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Kopijuoti $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Ekrano kopijos peržiūra",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — universalus atkūrimas WhatsApp, Telegram, Jira, Apple ir Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animuotas vaizdas — idealus README, Jira, dokumentacijai ir žinutėms)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — atviras žiniatinklio formatas)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Aktyvus skirtukas nerastas.",
+    "description": "No active tab found."
+  }
+}

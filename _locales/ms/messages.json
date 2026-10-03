@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Periksa dan muat turun aset web sebagai ZIP. Tangkapan skrin halaman penuh, tangkap jadual langsung, alat pembangun."
+  },
+  "actionTitle": {
+    "message": "Source Download — Buka panel & jejak sumber"
+  },
+  "contextMenuZap": {
+    "message": "Sembunyikan elemen ini"
+  },
+  "contextMenuUndoZap": {
+    "message": "Pulihkan elemen tersembunyi terakhir"
+  },
+  "contextMenuResetZap": {
+    "message": "Set semula semua elemen tersembunyi"
+  },
+  "contextMenuCapturePage": {
+    "message": "Tangkap skrin halaman penuh"
+  },
+  "contextMenuPageArchive": {
+    "message": "Muat turun arkib halaman luar talian"
+  },
+  "catAll": {
+    "message": "Semua"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Imej"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Video"
+  },
+  "catAudio": {
+    "message": "Audio"
+  },
+  "catCaptions": {
+    "message": "Kapsyen"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Peta sumber"
+  },
+  "catFonts": {
+    "message": "Fon"
+  },
+  "catDocuments": {
+    "message": "Dokumen"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifes"
+  },
+  "catText": {
+    "message": "Teks"
+  },
+  "catOther": {
+    "message": "Lain-lain"
+  },
+  "catScreenshot": {
+    "message": "Tangkapan skrin"
+  },
+  "catArchive": {
+    "message": "Arkib Halaman"
+  },
+  "btnRefresh": {
+    "message": "Segarkan semula"
+  },
+  "btnExport": {
+    "message": "Eksport"
+  },
+  "btnDownloadSelected": {
+    "message": "Muat Turun yang Dipilih"
+  },
+  "btnDownloadView": {
+    "message": "Muat Turun Paparan"
+  },
+  "btnDownloadAll": {
+    "message": "Muat Turun Semua"
+  },
+  "btnDownloadFiltered": {
+    "message": "Muat Turun yang Ditapis"
+  },
+  "btnTheme": {
+    "message": "Tukar tema"
+  },
+  "btnGuide": {
+    "message": "Panduan Pengguna"
+  },
+  "btnCaptureFullPage": {
+    "message": "Tangkapan Skrin Halaman Penuh"
+  },
+  "btnOfflineArchive": {
+    "message": "Simpan HTML Tunggal"
+  },
+  "filterMinKb": {
+    "message": "Min KB"
+  },
+  "filterMaxKb": {
+    "message": "Maks KB"
+  },
+  "filterMinWidth": {
+    "message": "Lebar min. (px)"
+  },
+  "filterMinHeight": {
+    "message": "Tinggi min. (px)"
+  },
+  "filterSortName": {
+    "message": "Isih mengikut nama"
+  },
+  "filterSortSize": {
+    "message": "Isih mengikut saiz"
+  },
+  "filterSortType": {
+    "message": "Isih mengikut jenis"
+  },
+  "filterSortTime": {
+    "message": "Susun mengikut masa"
+  },
+  "filterHideDupes": {
+    "message": "Sembunyikan pendua"
+  },
+  "filterClear": {
+    "message": "Kosongkan"
+  },
+  "textModeContains": {
+    "message": "Mengandungi"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "Pemilih CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Tapis teks halaman atau tanya DOM langsung…"
+  },
+  "textAllElements": {
+    "message": "Semua elemen"
+  },
+  "textLiveOn": {
+    "message": "Langsung hidup"
+  },
+  "textLiveOff": {
+    "message": "Langsung mati"
+  },
+  "textScanNow": {
+    "message": "Imbas sekarang"
+  },
+  "textReading": {
+    "message": "Mod baca"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Pilih sumber untuk memeriksa butirannya"
+  },
+  "inspectorDetails": {
+    "message": "Butiran"
+  },
+  "inspectorOpenTab": {
+    "message": "Buka dalam tab baharu"
+  },
+  "inspectorCopyUrl": {
+    "message": "Salin URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Muat turun fail ini"
+  },
+  "inspectorClose": {
+    "message": "Tutup"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Jenis"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Saiz"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Sumber"
+  },
+  "metaTitle": {
+    "message": "Tajuk"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Menikmati Source Download? Sokong visi sumber terbuka kami dengan ulasan di Kedai Web Chrome atau bintang di GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Tinggalkan Ulasan"
+  },
+  "ratingStar": {
+    "message": "★ Bintang di GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Tutup"
+  },
+  "toastElementZapped": {
+    "message": "Elemen disembunyikan untuk sesi ini."
+  },
+  "toastElementRestored": {
+    "message": "Elemen dipulihkan."
+  },
+  "toastAllElementsRestored": {
+    "message": "Semua elemen tersembunyi dipulihkan."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Menangkap skrin halaman penuh…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Tangkapan skrin halaman penuh disimpan."
+  },
+  "toastArchiveCreated": {
+    "message": "Arkib HTML fail tunggal disimpan."
+  },
+  "brandSignature": {
+    "message": "Dicipta oleh Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Imej & SVG"
+  },
+  "tabMedia": {
+    "message": "Media & Audio"
+  },
+  "tabFonts": {
+    "message": "Fon"
+  },
+  "tabTextScraper": {
+    "message": "Teks & Jadual"
+  },
+  "heroScreenshotTitle": {
+    "message": "Tangkapan Skrin Halaman Penuh"
+  },
+  "heroScreenshotDesc": {
+    "message": "Cantuman lancar berbilang viewport dengan penyembunyian pengepala melekit"
+  },
+  "heroArchiveTitle": {
+    "message": "Arkib HTML Fail Tunggal"
+  },
+  "heroArchiveDesc": {
+    "message": "Memasukkan CSS & imej Base64 secara sebaris, syot kilat selamat luar talian"
+  },
+  "copyDataUri": {
+    "message": "Salin Data-URI"
+  },
+  "copyUrl": {
+    "message": "Salin URL"
+  },
+  "downloadSingle": {
+    "message": "Muat turun"
+  },
+  "searchPlaceholder": {
+    "message": "Tapis mengikut nama, URL, teg, MIME atau /regex/…"
+  },
+  "viewGrid": {
+    "message": "Paparan grid"
+  },
+  "viewList": {
+    "message": "Paparan senarai"
+  },
+  "btnScreenshot": {
+    "message": "Tangkapan skrin"
+  },
+  "btnArchive": {
+    "message": "Simpan HTML"
+  },
+  "exportJson": {
+    "message": "Senarai kelihatan sebagai JSON"
+  },
+  "exportCsv": {
+    "message": "Senarai kelihatan sebagai CSV"
+  },
+  "exportHar": {
+    "message": "Log rangkaian sebagai HAR"
+  },
+  "exportScreenshot": {
+    "message": "Tangkapan skrin halaman penuh (PNG)"
+  },
+  "exportArchive": {
+    "message": "Arkib halaman luar talian (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Semua kaedah"
+  },
+  "filterTypeAll": {
+    "message": "Semua jenis"
+  },
+  "filterSortDir": {
+    "message": "Togol menaik / menurun"
+  },
+  "emptyTitle": {
+    "message": "Tiada sumber ditemui"
+  },
+  "emptySubtitle": {
+    "message": "Muat semula halaman semasa panel ini dibuka untuk menangkap permintaan rangkaian atau klik Segarkan semula untuk mengimbas DOM semasa."
+  },
+  "statusResources": {
+    "message": "sumber"
+  },
+  "statusFiltered": {
+    "message": "ditapis"
+  },
+  "statusSelected": {
+    "message": "dipilih"
+  },
+  "statusDupes": {
+    "message": "pendua disembunyikan"
+  },
+  "statusSize": {
+    "message": "saiz"
+  },
+  "langAuto": {
+    "message": "Auto (Penyemak imbas)"
+  },
+  "langSelectorTitle": {
+    "message": "Pilih Bahasa"
+  },
+  "textPillAll": {
+    "message": "Semua Kandungan"
+  },
+  "textPillText": {
+    "message": "📄 Teks & Artikel"
+  },
+  "textPillTables": {
+    "message": "📊 Jadual Sahaja"
+  },
+  "textSelectAll": {
+    "message": "Pilih Semua"
+  },
+  "textDeselectAll": {
+    "message": "Nyahpilih Semua"
+  },
+  "textClearSelection": {
+    "message": "Kosongkan"
+  },
+  "toastRefreshComplete": {
+    "message": "Imbasan halaman selesai: $count$ sumber baharu",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$ blok disalin",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Disalin ke papan keratan"
+  },
+  "toastTableCopied": {
+    "message": "Jadual disalin ke papan keratan"
+  },
+  "toastNothingToExport": {
+    "message": "Tiada apa-apa untuk dieksport"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ blok dieksport sebagai TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$ blok dieksport sebagai Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Tiada baris jadual ditangkap"
+  },
+  "toastExportedCsv": {
+    "message": "Jadual dieksport sebagai CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Jadual dieksport sebagai XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ jadual dieksport sebagai $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ helaian dieksport sebagai XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Tiada sumber untuk dimuat turun."
+  },
+  "toastNoVisibleResources": {
+    "message": "Tiada sumber yang boleh dilihat untuk dimuat turun."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Pilih sekurang-kurangnya satu sumber dahulu."
+  },
+  "toastZipSaved": {
+    "message": "ZIP disimpan: $fetched$ daripada $total$ sumber",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP gagal: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR dieksport ($count$ entri)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL disalin ke papan keratan"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Tetingkap DevTools yang diperiksa tidak tersedia."
+  },
+  "toastScreenshotError": {
+    "message": "Ralat tangkapan skrin: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Mencipta arkib halaman luar talian…"
+  },
+  "toastArchiveError": {
+    "message": "Ralat arkib: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Pemformatan tamat masa — menunjukkan fail asal."
+  },
+  "toastFormatFailed": {
+    "message": "Tidak dapat memformat fail — menunjukkan asal."
+  },
+  "emptySearchTitle": {
+    "message": "Tiada padanan untuk \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Cuba istilah carian lain atau tukar kepada kategori lain."
+  },
+  "emptyFiltersTitle": {
+    "message": "Tiada sumber yang sepadan dengan penapis semasa"
+  },
+  "emptyFiltersSub": {
+    "message": "Longgarkan penapis saiz atau dimensi di atas, atau tekan Kosongkan."
+  },
+  "textEmptyQueryReject": {
+    "message": "Halaman menolak pertanyaan itu. Betulkan pertanyaan di atas dan hasilnya akan kembali serta-merta."
+  },
+  "textEmptyNoMatch": {
+    "message": "Tiada elemen pada halaman yang sepadan dengan pertanyaan ini. Cuba pemilih yang lebih longgar atau tukar mod di sebelah kotak."
+  },
+  "textEmptyInitial": {
+    "message": "Tiada apa-apa yang ditangkap lagi. Tangkapan langsung sedang berjalan — seluruh halaman akan muncul di sini sebagai teks yang boleh dibaca."
+  },
+  "textEmptyFiltered": {
+    "message": "Tiada apa-apa yang sepadan dengan pertanyaan semasa dan penapis elemen."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ blok",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ perkataan",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ aksara",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ jadual · $rows$ baris unik",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ dipilih — hanya ini akan dieksport",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Jadual — $count$ baris pada skrin",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Jadual — semua $count$ baris unik",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ syot kilat",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "dikemas kini $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Tunjukkan semua $count$ baris",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Menunjukkan semua baris"
+  },
+  "textTableHistory": {
+    "message": "Sejarah ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Sembunyikan sejarah"
+  },
+  "textTableNoRows": {
+    "message": "Tiada baris yang ditangkap lagi."
+  },
+  "textBtnCopy": {
+    "message": "Salin teks"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Salin"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ imej pendua",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Eksport"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Memuatkan SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Kandungan SVG tidak dapat diambil semula."
+  },
+  "inspectorLoadingFont": {
+    "message": "Memuatkan pratonton fon…"
+  },
+  "inspectorFontSample": {
+    "message": "Pratonton Fon"
+  },
+  "inspectorBeautify": {
+    "message": "Cantikkan"
+  },
+  "inspectorOriginal": {
+    "message": "Asal"
+  },
+  "inspectorHeaders": {
+    "message": "Pengepala"
+  },
+  "inspectorResponse": {
+    "message": "Respons"
+  },
+  "inspectorRequest": {
+    "message": "Permintaan"
+  },
+  "inspectorQueryParams": {
+    "message": "Parameter pertanyaan"
+  },
+  "inspectorRequestBody": {
+    "message": "Kandungan permintaan"
+  },
+  "textHintHtml": {
+    "message": "Salinan halaman yang boleh dibaca secara langsung. Setiap elemen yang mengandungi teks ditangkap mengikut tertib DOM dan disimpan di sini apabila halaman berubah. Buat pertanyaan dengan teks biasa, ungkapan biasa, <strong>pemilih CSS</strong> atau ungkapan <strong>XPath</strong>, kemudian eksport hasil yang sepadan. Lihat <a href=\"#\" id=\"text-hint-guide\">panduan</a> untuk mendapatkan butiran."
+  },
+  "textHeadings": {
+    "message": "Tajuk"
+  },
+  "textAllLevels": {
+    "message": "Semua peringkat"
+  },
+  "textMatches": {
+    "message": "padanan"
+  },
+  "textMatch": {
+    "message": "padanan"
+  },
+  "textReadingOn": {
+    "message": "Mod baca dihidupkan"
+  },
+  "toastDownloadStarted": {
+    "message": "Muat turun bermula: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Tidak dapat mengambil sumber ini (CORS atau jenis tidak disokong)."
+  },
+  "ratingBannerText": {
+    "message": "Menikmati Source Download? Sokong visi sumber terbuka kami dengan ulasan di Kedai Web Chrome atau bintang di GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Ulasan"
+  },
+  "ratingBannerStar": {
+    "message": "★ Bintang"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ baris unik",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$s yang lalu",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$m yang lalu",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Tangkap skrin kawasan"
+  },
+  "btnAreaDownload": {
+    "message": "Muat turun"
+  },
+  "btnAreaCopy": {
+    "message": "Salin ke papan keratan"
+  },
+  "btnAreaCancel": {
+    "message": "Batal"
+  },
+  "toastAreaCopied": {
+    "message": "Tangkapan skrin kawasan disalin ke papan keratan"
+  },
+  "toastAreaDownloaded": {
+    "message": "Tangkapan skrin kawasan disimpan"
+  },
+  "statusFoundCssResources": {
+    "message": "Menemui $count$ sumber yang dirujuk daripada CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Imbasan DOM gagal: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Mengindeks kandungan fail…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Menyemak pendua imej…"
+  },
+  "statusWorking": {
+    "message": "Sedang diproses…"
+  },
+  "filterMethodTitle": {
+    "message": "Tapis mengikut kaedah HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Tapis mengikut jenis permintaan"
+  },
+  "filterSortTitle": {
+    "message": "Isih sumber"
+  },
+  "textModeTitle": {
+    "message": "Bagaimana kotak pertanyaan ditafsirkan"
+  },
+  "textKindTitle": {
+    "message": "Hadkan kepada satu jenis elemen"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Tahap tajuk"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Harga:\\s*\\d+ — Ungkapan biasa JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — mana-mana pemilih CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Cari panduan…"
+  },
+  "popupIntro": {
+    "message": "Kategori dikira oleh <strong>lencana bar alat</strong>. Matikan satu untuk berhenti mengiranya — lencana serta-merta mencerminkan perkara yang anda jejaki sahaja."
+  },
+  "popupHelpTitle": {
+    "message": "Cara menggunakan panel penuh"
+  },
+  "popupStep1": {
+    "message": "Buka DevTools untuk halaman yang anda ingin periksa <div class=\"hint\"><kbd>F12</kbd> atau <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Klik tab <strong>Source Download</strong> dalam bar alat DevTools"
+  },
+  "popupStep3": {
+    "message": "Semak imbas, periksa dan muat turun sumber — secara individu atau sekaligus sebagai ZIP."
+  },
+  "popupNote": {
+    "message": "Nota: Chrome tidak membenarkan sambungan membuka DevTools secara pengaturcaraan, itulah sebabnya panel penuh boleh dicapai melalui bar alat DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Jejaki semua kategori"
+  },
+  "popupLanguage": {
+    "message": "Bahasa"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Respons binari — muat turun untuk melihatnya"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Memuatkan respons…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Tiada pratonton respons — kandungan tidak dapat diambil semula."
+  },
+  "inspectorLoadingContent": {
+    "message": "Memuatkan kandungan…"
+  },
+  "inspectorNoPreview": {
+    "message": "Tiada pratonton tersedia — kandungan tidak dapat diambil semula."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Tutup semua"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Tutup semua tab yang terbuka"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Klik untuk besarkan"
+  },
+  "inspectorViewSource": {
+    "message": "Lihat sumber"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Tunjukkan penanda SVG dengan penyerlahan sintaks"
+  },
+  "inspectorFormatting": {
+    "message": "Memformat…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Cari dalam kandungan…"
+  },
+  "findPreviousMatch": {
+    "message": "Padanan sebelumnya"
+  },
+  "findNextMatch": {
+    "message": "Padanan seterusnya"
+  },
+  "findClose": {
+    "message": "Tutup"
+  },
+  "findShowRaw": {
+    "message": "Tunjukkan kandungan asal (tidak diformat)"
+  },
+  "findBeautify": {
+    "message": "Format / cantikkan kandungan ini"
+  },
+  "btnRaw": {
+    "message": "Mentah"
+  },
+  "btnBeautify": {
+    "message": "Cantikkan"
+  },
+  "videoHlsDetected": {
+    "message": "Strim HLS (m3u8) dikesan"
+  },
+  "videoCannotPlay": {
+    "message": "Video ini tidak boleh dimainkan dalam penyemak imbas"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome tidak boleh memainkan strim HLS secara langsung. Anda boleh menggabungkan semua segmen <b>$NAME$</b> ke dalam satu fail video MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Penyemak imbas tidak menyokong format ini"
+  },
+  "btnMergeHls": {
+    "message": "Gabungkan segmen & muat turun"
+  },
+  "toastHlsMerged": {
+    "message": "Digabungkan $COUNT$ segmen menjadi $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "saiz tidak diketahui"
+  },
+  "progressFetching": {
+    "message": "Mengambil $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Mencipta ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP disimpan: $FETCHED$ daripada $TOTAL$ sumber ($SKIPPED$ gagal)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Cuba semula $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Cuba muat turun semula"
+  },
+  "searchRegexHint": {
+    "message": "Carian regex aktif — letakkan pertanyaan anda dalam /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Termasuk dalam eksport"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Gabungkan setiap syot kilat ke dalam satu jadual tanpa pendua — inilah yang akan dieksport"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Semak imbas syot kilat terdahulu jadual ini"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Muat turun jadual ini sebagai CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Syot kilat $INDEX$ — $TIME$ ($COUNT$ baris)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Togol pilihan untuk muat turun kelompok"
+  },
+  "cardDownloadTitle": {
+    "message": "Muat turun fail"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Muat turun sebelumnya gagal — klik untuk mencuba semula"
+  },
+  "btnThemeLight": {
+    "message": "Tukar kepada tema cerah"
+  },
+  "btnThemeDark": {
+    "message": "Tukar kepada tema gelap"
+  },
+  "guideTitle": {
+    "message": "Source Download — Panduan Pengguna"
+  },
+  "guideEmpty": {
+    "message": "Tiada bahagian panduan yang sepadan dengan carian anda."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% bebas pergantungan.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Zum keluar (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Zum masuk (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Tetapkan semula zum (0)"
+  },
+  "lightboxClose": {
+    "message": "Tutup (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Seret untuk mengubah saiz"
+  },
+  "ratingDismissTitle": {
+    "message": "Tutup"
+  },
+  "inspectorResourceTitle": {
+    "message": "Sumber"
+  },
+  "guideSecGettingStarted": {
+    "message": "Bermula"
+  },
+  "guideSecCategories": {
+    "message": "Kategori"
+  },
+  "guideSecSearchFilters": {
+    "message": "Cari & penapis"
+  },
+  "guideSecGridView": {
+    "message": "Paparan grid & senarai"
+  },
+  "guideSecInspect": {
+    "message": "Periksa sumber"
+  },
+  "guideSecDownloading": {
+    "message": "Memuat turun"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Teks & jadual"
+  },
+  "guideSecCaptions": {
+    "message": "Kapsyen & sari kata"
+  },
+  "guideSecSourceMaps": {
+    "message": "Peta sumber"
+  },
+  "guideSecDupes": {
+    "message": "Imej pendua"
+  },
+  "guideSecVideoHls": {
+    "message": "Video sandaran & HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Petua lanjutan"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Klik tab <strong>Source Download</strong> dalam bar alat DevTools (tekan <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, kemudian tab dalam bar alat DevTools). Chrome tidak membenarkan sambungan membuka DevTools secara automatik, itulah sebabnya panel diletakkan di sana. Pop timbul ikon bar alat membolehkan anda memilih kategori yang dikira oleh kaunter lencana pada ikon. Butang matahari/bulan dalam bar alat panel mengunci tema terang atau gelap secara bebas daripada Chrome; pilihan itu diingati."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Tab menegak di sebelah kiri mengumpulkan setiap sumber yang ditangkap ke dalam 17 kategori khusus mengikut jenis: Imej, Video, Audio, Kapsyen, Dokumen, Fon, Peta Sumber, WASM, SVG, API, Kuki, Storan dan banyak lagi. Setiap tab menunjukkan kiraan langsung. Hanya satu kategori ditunjukkan pada satu masa; penukaran menetapkan semula semua penapis, jadi perkara yang anda lihat sentiasa sepadan dengan tab."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Bar carian menapis mengikut nama, URL, jenis, teks alt atau tajuk. Sertakan pertanyaan anda dalam <kbd>/…/</kbd> untuk menggunakan ungkapan biasa, mis. <code>/\\.(png|jpg)$/</code>. Di bawah bar alat, bar penapis berubah mengikut kategori: saiz dan julat dimensi untuk media, kaedah HTTP dan jenis permintaan untuk API, serta pengisihan dan arah."
+  },
+  "guideSecGridViewContent": {
+    "message": "Tukar antara grid padat (imej kecil) dan senarai terperinci dengan butang di sebelah bar carian. Pilihan anda diingati antara sesi. Dalam paparan senarai, kotak pilihan membolehkan anda memilih sumber individu untuk muat turun pukal."
+  },
+  "guideSecInspectContent": {
+    "message": "Klik mana-mana sumber untuk membukanya dalam anak tetingkap periksa di sebelah kanan. Setiap fail yang dibuka menjadi tab, jadi anda boleh membandingkan beberapa sumber bersebelahan — yang terbaru dibuka di sebelah kiri. Pemapar khusus wujud untuk imej, video, audio, fon, SVG dan teks/kod (dengan togol Cantikkan). API menunjukkan pandangan berpecah: respons di sebelah kiri, butiran permintaan (kaedah, status, pengepala, parameter pertanyaan dan kandungan) di sebelah kanan."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Paparan Muat Turun</strong> menyimpan sumber yang boleh dilihat pada masa ini (kategori aktif + carian + penapis) sebagai ZIP; labelnya bertukar kepada <em>Muat Turun yang Ditapis (N)</em> apabila penapis aktif. Tuding mana-mana butang muat turun untuk melihat anggaran saiz arkib sebelum anda mengklik. <strong>Muat Turun yang Dipilih</strong> hanya memuat turun item yang ditandai. <strong>Muat Turun Semua</strong> menangkap setiap sumber yang ditemui ke dalam ZIP berstruktur folder. Muat turun yang gagal dicuba semula secara automatik dan boleh dicuba semula dari menu konteks. <strong>Eksport</strong> menulis senarai yang boleh dilihat sebagai JSON atau CSV, atau mengeksport log rangkaian Chrome sebagai fail HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Butang zum membuka media dalam lightbox bersaiz penuh di mana anda boleh menggeser dengan menyeret, zum dengan roda tetikus, butang pada skrin atau papan kekunci (<kbd>+</kbd>/<kbd>-</kbd> untuk zum, <kbd>0</kbd> untuk menetapkan semula, <kbd>Esc</kbd> untuk menutup)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Kategori <strong>Teks</strong> ialah salinan halaman yang boleh dibaca secara langsung. Ia menangkap setiap elemen yang mengandungi teks — tajuk, perenggan, item senarai, butang, <code>div</code>/<code>span</code> dan banyak lagi — mengikut tertib DOM, dan terus mengimbas semasa <strong>Langsung</strong> dihidupkan.</p><p>Kotak <strong>Pertanyaan</strong> berfungsi dalam empat cara, dipilih daripada lungsur turun di sebelahnya: <strong>Mengandungi</strong> dan <strong>Regex</strong> menapis teks yang telah ditangkap, manakala <strong>Pemilih CSS</strong> dan <strong>XPath</strong> dijalankan terhadap halaman langsung supaya boleh mencapai apa sahaja dalam DOM. XPath juga menerima ungkapan yang mengembalikan nilai dan bukannya elemen, seperti <code>count(//a)</code> atau <code>//@href</code>. Apa sahaja yang dikatakan halaman tentang pertanyaan yang tidak sah dipaparkan di sebelah kotak. <strong>Elemen</strong> mengecilkan hasil kepada satu teg, dengan kiraan setiap teg yang ditemui pada halaman. Mengosongkan kotak pertanyaan (atau menekan <strong>Kosongkan</strong>) mengembalikan anda ke <em>Semua elemen</em> dan menangkap semula halaman — anda tidak perlu menetapkan semula lungsur turun dengan tangan.</p><p><strong>Mod baca</strong> menyembunyikan teg, kotak pilihan dan laluan lokasi supaya aliran dibaca seperti dokumen. Jadual menyimpan sejarah syot kilat yang terhad supaya jadual dinamik (SPA) tidak pernah hilang. Tekan <strong>Tunjukkan semua baris</strong> pada jadual untuk menggabungkan setiap syot kilat ke dalam satu paparan tanpa pendua — itulah kandungan eksport. Eksport sebagai <strong>TXT</strong> (halaman boleh dibaca), <strong>MD</strong> (Markdown, termasuk jadual) atau jadual sebagai CSV, HTML atau buku kerja <strong>XLSX</strong> berbilang helaian sebenar. Item yang ditandai diutamakan; jika tidak, semua yang kelihatan pada masa ini dieksport.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML dan fail kapsyen lain — termasuk sumber <code>&lt;track&gt;</code> — tiba di tab <strong>Kapsyen</strong> mereka sendiri dan bukannya bercampur dengan dokumen."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Fail <code>.map</code> dan kandungan JSON yang kelihatan seperti peta sumber (ia mengandungi <code>mappings</code> dan <code>sources</code>) dikumpulkan di bawah <strong>Peta sumber</strong>, dengan pemapar JSON dan Cantikkan, supaya mereka tidak lagi mengacaukan tab JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "Pada tab Imej, panel mencincang bait yang ditangkap dan menandakan fail yang serupa. Penapis <strong>Sembunyikan pendua</strong> menyimpan salinan pertama bagi setiap set supaya ZIP paparan tidak mengandungi imej kecil yang sama dua kali."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Strim yang tidak dapat dimainkan secara asli oleh penyemak imbas (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, codec tidak diketahui) memaparkan sandaran dan bukannya pemain hitam. Untuk HLS, anda boleh menggabungkan segmen ke dalam satu fail video terus dari panel atau memuat turun manifes asal."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Respons <strong>API</strong> dinamik (XHR/fetch) tidak dinyahduplikasi mengikut URL — setiap balasan kekal dalam senarai (FIFO terhad) supaya anda boleh membandingkan permintaan berulang. Aset statik dinyahduplikasi. Gunakan <strong>Segarkan semula</strong> untuk mengimbas semula DOM semasa, dan muat semula halaman semasa panel dibuka untuk menangkap setiap permintaan rangkaian, termasuk permintaan yang dicetuskan sebelum anda menukar tab."
+  },
+  "toolArrow": {
+    "message": "Alat anak panah"
+  },
+  "toolRect": {
+    "message": "Alat segi empat tepat"
+  },
+  "toolText": {
+    "message": "Alat teks"
+  },
+  "toolUndo": {
+    "message": "Buat asal (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Buat semula (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Warna"
+  },
+  "badgeStrokeSize": {
+    "message": "Saiz: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Saiz fon: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Rakam Video / GIF Kawasan"
+  },
+  "btnRecStart": {
+    "message": "Mula merakam"
+  },
+  "btnRecPause": {
+    "message": "Jeda"
+  },
+  "btnRecResume": {
+    "message": "Sambung"
+  },
+  "btnRecStop": {
+    "message": "Selesai & muat turun"
+  },
+  "btnRecCancel": {
+    "message": "Batal"
+  },
+  "toastRecSaved": {
+    "message": "Rakaman kawasan disimpan"
+  },
+  "toastRecCancelled": {
+    "message": "Rakaman video dibatalkan"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Kebenaran rakaman skrin tidak diberikan"
+  },
+  "btnPopupRecordArea": {
+    "message": "Video / GIF Kawasan"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Tangkapan Skrin Kawasan"
+  },
+  "contextMenuPickColor": {
+    "message": "Pilih warna daripada skrin"
+  },
+  "btnPopupPickColor": {
+    "message": "Pilih Warna"
+  },
+  "colorPickerTitle": {
+    "message": "Pemilih Warna"
+  },
+  "btnColorPickAgain": {
+    "message": "Pilih Warna Lain"
+  },
+  "toastColorCopied": {
+    "message": "Warna disalin ke papan keratan"
+  },
+  "toastProgressCapturing": {
+    "message": "Menangkap halaman penuh... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Menyambung imej..."
+  },
+  "modalExportTitle": {
+    "message": "Tangkapan Skrin Halaman Penuh Sedia"
+  },
+  "btnExportPng": {
+    "message": "Muat turun PNG"
+  },
+  "btnExportJpg": {
+    "message": "Muat turun JPG"
+  },
+  "btnExportPdf": {
+    "message": "Simpan sebagai PDF"
+  },
+  "btnExportCopy": {
+    "message": "Salin ke Papan Keratan"
+  },
+  "btnExportGenerating": {
+    "message": "Menjana..."
+  },
+  "toastPdfGenerated": {
+    "message": "Dokumen PDF disimpan."
+  },
+  "settingNamingPatterns": {
+    "message": "Corak Penamaan Fail"
+  },
+  "settingVideoFormat": {
+    "message": "Format Video Lalai"
+  },
+  "settingNamingPreview": {
+    "message": "Pratonton:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Menjana GIF, sila tunggu..."
+  },
+  "settingGifResolution": {
+    "message": "Resolusi GIF Lalai"
+  },
+  "optGifOriginal": {
+    "message": "Asal (Resolusi Asli 1:1 — Penuh 3K/4K, tanpa pengecilan)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (Maks 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (Maks 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (Maks 854px — Lebih pantas & saiz lebih kecil)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Format GIF menyokong tempoh rakaman maksimum 1 minit (60s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Rakaman skrin (Video & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Rakam mana-mana kawasan skrin sebagai MP4, WebM atau GIF animasi. Rakaman GIF menampilkan profil resolusi asli 1:1, 1080p, 720p dan 480p dengan anggaran saiz fail secara langsung. Tempoh rakaman GIF maksimum ialah 1 minit (60s) untuk prestasi penyemak imbas yang optimum."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Tempoh maksimum GIF 1 minit (60s) dicapai. Menjana GIF..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Maks. 1 minit (60s)"
+  },
+  "settingGifFps": {
+    "message": "Kadar Bingkai GIF Lalai (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Lancar (pergerakan sangat licin, saiz lebih besar)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standard (Disyorkan untuk web & keseimbangan)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Padat / Meme (gerakan berperingkat, saiz kecil)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Gerak henti / Perlahan (langkah demi langkah \"klik-klik\", saiz sangat kecil)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Pembentangan (1 bingkai sesaat, saiz minimum)"
+  },
+  "popupRightClickHint": {
+    "message": "Klik kanan di mana-mana pada halaman web untuk Rakaman Skrin (Video/GIF) dan Pemilih Warna."
+  },
+  "toastElementZappedAd": {
+    "message": "Iklan / iframe disembunyikan untuk sesi ini.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Imej disalin ke papan keratan",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Tutup (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Tetapan disimpan",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Muat turun fail itu dan buka dengan VLC atau pemain media lain.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Tiada pratonton untuk jenis sumber ini",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Muat turun asal",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Petua: buka fail yang dimuat turun dengan VLC atau mana-mana pemain media desktop — ia memainkan hampir semua format.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Mencipta arkib ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Pelayar anda tidak menyokong API EyeDropper.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Seret bar alat",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Tukar format: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Resolusi GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Kadar bingkai GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Anggaran saiz GIF: ~$size$ MB (untuk 10 s), sehingga ~$max$ MB untuk maksimum 60 s.\nKadar bingkai: $fps$ FPS.\nRakaman GIF dihadkan kepada maksimum 1 minit (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Salin $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Pratonton tangkapan skrin",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — Dimainkan di mana-mana: WhatsApp, Telegram, Jira, Apple & Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (Imej animasi — Sesuai untuk README, Jira, dokumentasi & pemesejan)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — Format web terbuka)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Tiada tab aktif ditemui.",
+    "description": "No active tab found."
+  }
+}

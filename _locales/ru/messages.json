@@ -12,7 +12,7 @@
     "description": "Подсказка на панели инструментов"
   },
   "contextMenuZap": {
-    "message": "Скрыть этот элемент (Zap)",
+    "message": "Скрыть этот элемент",
     "description": "Контекстное меню скрытия элемента"
   },
   "contextMenuUndoZap": {
@@ -20,15 +20,15 @@
     "description": "Восстановить элемент"
   },
   "contextMenuResetZap": {
-    "message": "Восстановить все скрытые элементы",
+    "message": "Сбросить все скрытые элементы",
     "description": "Восстановить все элементы"
   },
   "contextMenuCapturePage": {
-    "message": "Скриншот всей страницы",
+    "message": "Снимок всей страницы",
     "description": "Скриншот всей страницы"
   },
   "contextMenuPageArchive": {
-    "message": "Скачать автономный архив страницы",
+    "message": "Скачать офлайн-архив страницы",
     "description": "Скачать архив страницы"
   },
   "catAll": {
@@ -59,7 +59,7 @@
     "message": "JS"
   },
   "catSourcemaps": {
-    "message": "Карты кода (Source Maps)"
+    "message": "Source maps"
   },
   "catFonts": {
     "message": "Шрифты"
@@ -77,7 +77,7 @@
     "message": "Манифесты"
   },
   "catText": {
-    "message": "Текст и таблицы"
+    "message": "Текст"
   },
   "catOther": {
     "message": "Другое"
@@ -155,7 +155,7 @@
     "message": "Regex"
   },
   "textModeCss": {
-    "message": "CSS селектор"
+    "message": "CSS-селектор"
   },
   "textModeXpath": {
     "message": "XPath"
@@ -167,16 +167,16 @@
     "message": "Все элементы"
   },
   "textLiveOn": {
-    "message": "Автоскан Вкл"
+    "message": "Живой режим вкл"
   },
   "textLiveOff": {
-    "message": "Авто выкл"
+    "message": "Живой режим выкл"
   },
   "textScanNow": {
     "message": "Сканировать"
   },
   "textReading": {
-    "message": "Режим чтения"
+    "message": "Чтение"
   },
   "textExportTxt": {
     "message": "TXT"
@@ -233,7 +233,7 @@
     "message": "Заголовок"
   },
   "metaAlt": {
-    "message": "Alt текст"
+    "message": "Alt-текст"
   },
   "ratingPrompt": {
     "message": "Нравится Source Download? Поддержите наш проект открытого исходного кода отзывом в Chrome Web Store или звездой на GitHub!"
@@ -248,7 +248,7 @@
     "message": "Позже"
   },
   "toastElementZapped": {
-    "message": "Элемент скрыт на время текущей сессии."
+    "message": "Элемент скрыт на время этого сеанса."
   },
   "toastElementRestored": {
     "message": "Элемент восстановлен."
@@ -260,10 +260,10 @@
     "message": "Создание снимка всей страницы…"
   },
   "toastScreenshotCaptured": {
-    "message": "Снимок всей страницы сохранен."
+    "message": "Снимок всей страницы сохранён."
   },
   "toastArchiveCreated": {
-    "message": "Один файл HTML-архива сохранен."
+    "message": "HTML-архив в одном файле сохранён."
   },
   "brandSignature": {
     "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
@@ -344,7 +344,7 @@
     "message": "Ресурсы не найдены"
   },
   "emptySubtitle": {
-    "message": "Перезагрузите страницу с открытой панелью или нажмите Обновить."
+    "message": "Перезагрузите страницу при открытой панели, чтобы перехватить сетевые запросы, или нажмите «Обновить», чтобы просканировать текущий DOM."
   },
   "statusResources": {
     "message": "ресурсов"
@@ -362,7 +362,7 @@
     "message": "размер"
   },
   "langAuto": {
-    "message": "Авто (Браузер)"
+    "message": "Авто (браузер)"
   },
   "langSelectorTitle": {
     "message": "Выбор языка"
@@ -386,7 +386,7 @@
     "message": "Очистить"
   },
   "toastRefreshComplete": {
-    "message": "Сканирование страницы завершено: $COUNT$ новых ресурсов",
+    "message": "Сканирование страницы завершено: $count$ новых ресурсов",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "Скопировано $COUNT$ блоков",
+    "message": "Скопировано $count$ блоков",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "Нечего экспортировать"
   },
   "toastExportedTxt": {
-    "message": "Экспортировано $COUNT$ блоков как TXT",
+    "message": "Экспортировано $count$ блоков как TXT",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "Экспортировано $COUNT$ блоков как Markdown",
+    "message": "Экспортировано $count$ блоков как Markdown",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "Таблица экспортирована как XLSX"
   },
   "toastExportedTablesZip": {
-    "message": "Экспортировано $COUNT$ таблиц как $FORMAT$",
+    "message": "Экспортировано $count$ таблиц как $format$",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "Экспортировано $COUNT$ листов как XLSX",
+    "message": "Экспортировано $count$ листов как XLSX",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -471,7 +471,7 @@
     "message": "Сначала выберите хотя бы один ресурс."
   },
   "toastZipSaved": {
-    "message": "ZIP сохранен: $FETCHED$ из $TOTAL$ ресурсов",
+    "message": "ZIP сохранен: $fetched$ из $total$ ресурсов",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "Ошибка создания ZIP: $ERROR$",
+    "message": "Ошибка создания ZIP: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR экспортирован ($COUNT$ записей)",
+    "message": "HAR экспортирован ($count$ записей)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "Окно инспектора DevTools недоступно."
   },
   "toastScreenshotError": {
-    "message": "Ошибка снимка: $ERROR$",
+    "message": "Ошибка снимка: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -520,7 +520,7 @@
     "message": "Создание офлайн-архива страницы…"
   },
   "toastArchiveError": {
-    "message": "Ошибка архивации: $ERROR$",
+    "message": "Ошибка архивации: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "Не удалось отформатировать — показан исходный файл."
   },
   "emptySearchTitle": {
-    "message": "Нет совпадений для \"$QUERY$\"",
+    "message": "Нет совпадений для \"$query$\"",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -550,22 +550,22 @@
     "message": "Нет ресурсов, соответствующих фильтрам"
   },
   "emptyFiltersSub": {
-    "message": "Ослабьте фильтры или нажмите Очистить."
+    "message": "Ослабьте фильтры размера и разрешения выше или нажмите «Очистить»."
   },
   "textEmptyQueryReject": {
-    "message": "Страница отклонила этот запрос."
+    "message": "Страница отклонила этот запрос. Исправьте его выше — результаты сразу появятся снова."
   },
   "textEmptyNoMatch": {
-    "message": "Ни один элемент не соответствует запросу."
+    "message": "На странице нет элементов, соответствующих запросу. Попробуйте более мягкий селектор или смените режим рядом с полем."
   },
   "textEmptyInitial": {
-    "message": "Пока ничего не захвачено. Идет захват в реальном времени."
+    "message": "Пока ничего не захвачено. Идёт захват в реальном времени — вся страница появится здесь в виде читаемого текста."
   },
   "textEmptyFiltered": {
-    "message": "Ничего не соответствует фильтрам."
+    "message": "Ничего не соответствует текущему запросу и фильтру элементов."
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ блоков",
+    "message": "$count$ блоков",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ слов",
+    "message": "$count$ слов",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ символов",
+    "message": "$count$ символов",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ таблиц · $ROWS$ уникальных строк",
+    "message": "$tables$ таблиц · $rows$ уникальных строк",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "$COUNT$ выбрано",
+    "message": "$count$ выбрано — в экспорт войдут только они",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "Таблица — $COUNT$ строк на экране",
+    "message": "Таблица — $count$ строк на экране",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "Таблица — всего $COUNT$ строк",
+    "message": "Таблица — всего $count$ строк",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ снимков",
+    "message": "$count$ снимков",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "обновлено $TIME$",
+    "message": "обновлено $time$",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "Показать все $COUNT$ строк",
+    "message": "Показать все $count$ строк",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "Показаны все строки"
   },
   "textTableHistory": {
-    "message": "История ($COUNT$)",
+    "message": "История ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ дубликатов изображений",
+    "message": "$count$ дубликатов изображений",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -752,7 +752,7 @@
     "message": "Чтение вкл"
   },
   "toastDownloadStarted": {
-    "message": "Загрузка началась: $NAME$",
+    "message": "Загрузка началась: $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -773,7 +773,7 @@
     "message": "★ Поставить звезду"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ уникальных строк",
+    "message": "$count$ уникальных строк",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "$COUNT$ сек. назад",
+    "message": "$count$ сек. назад",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "$COUNT$ мин. назад",
+    "message": "$count$ мин. назад",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,25 +800,25 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "Снимок выделенной области"
+    "message": "Снимок области экрана"
   },
   "btnAreaDownload": {
     "message": "Скачать"
   },
   "btnAreaCopy": {
-    "message": "Скопировать в буфер"
+    "message": "Копировать в буфер обмена"
   },
   "btnAreaCancel": {
     "message": "Отмена"
   },
   "toastAreaCopied": {
-    "message": "Снимок области скопирован в буфер"
+    "message": "Снимок области экрана скопирован в буфер обмена"
   },
   "toastAreaDownloaded": {
-    "message": "Снимок области сохранен"
+    "message": "Снимок области экрана сохранён"
   },
   "statusFoundCssResources": {
-    "message": "Найдено $COUNT$ ресурсов, указанных в CSS",
+    "message": "Найдено $count$ ресурсов, указанных в CSS",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "Ошибка сканирования DOM: $ERROR$",
+    "message": "Ошибка сканирования DOM: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -866,7 +866,7 @@
     "message": "^Цена:\\s*\\d+  — Регулярное выражение JS"
   },
   "textPlaceholderCss": {
-    "message": ".product-card .price, article h2 — любой CSS селектор"
+    "message": ".product-card .price, article h2 — любой CSS-селектор"
   },
   "textPlaceholderXpath": {
     "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
@@ -878,7 +878,7 @@
     "message": "Категории, отображаемые на <strong>значке панели</strong>. Отключите ненужные, чтобы значок показывал только выбранное."
   },
   "popupHelpTitle": {
-    "message": "Как открыть полную панель"
+    "message": "Как пользоваться полной панелью"
   },
   "popupStep1": {
     "message": "Откройте DevTools на проверяемой странице <div class=\"hint\"><kbd>F12</kbd> или <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
@@ -947,7 +947,7 @@
     "message": "Показать исходное (неформатированное) содержимое"
   },
   "findBeautify": {
-    "message": "Форматировать / украсить это содержимое"
+    "message": "Форматировать это содержимое"
   },
   "btnRaw": {
     "message": "Исходный"
@@ -1034,7 +1034,7 @@
     }
   },
   "contextMenuRetryDownload": {
-    "message": "Повторить загрузку"
+    "message": "Повторить скачивание"
   },
   "searchRegexHint": {
     "message": "Поиск по регулярным выражениям активен — оберните запрос в /шаблон/i"
@@ -1143,7 +1143,7 @@
     "message": "Субтитры и титры"
   },
   "guideSecSourceMaps": {
-    "message": "Карты исходников (Source maps)"
+    "message": "Source maps"
   },
   "guideSecDupes": {
     "message": "Дубликаты изображений"
@@ -1158,7 +1158,7 @@
     "message": "Откройте вкладку <strong>Source Download</strong> на панели инструментов разработчика DevTools (нажмите <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, затем выберите вкладку на панели DevTools). Политика безопасности Chrome запрещает расширениям открывать DevTools автоматически, поэтому панель размещена именно там. Всплывающее окно значка на панели инструментов позволяет выбрать категории, формирующие числовой бейдж на значке. Кнопка солнца/луны на панели инструментов фиксирует светлую или темную тему оформления независимо от настроек Chrome; этот выбор сохраняется."
   },
   "guideSecCategoriesContent": {
-    "message": "Вертикальные вкладки слева распределяют каждый перехваченный ресурс по 17 специальным категориям в зависимости от его типа: Изображения, Видео, Аудио, Субтитры, Документы, Шрифты, Карты исходников (Source maps), WASM, SVG, API, Cookie, Хранилище и другие. Каждая вкладка отображает счетчик в реальном времени. Одновременно отображается только одна категория; переключение между ними сбрасывает все фильтры, гарантируя строгое соответствие видимого контента активной вкладке."
+    "message": "Вертикальные вкладки слева распределяют каждый перехваченный ресурс по 17 специальным категориям в зависимости от его типа: Изображения, Видео, Аудио, Субтитры, Документы, Шрифты, Source maps, WASM, SVG, API, Cookie, Хранилище и другие. Каждая вкладка отображает счетчик в реальном времени. Одновременно отображается только одна категория; переключение между ними сбрасывает все фильтры, гарантируя строгое соответствие видимого контента активной вкладке."
   },
   "guideSecSearchFiltersContent": {
     "message": "Строка поиска фильтрует ресурсы по имени, URL, типу, тексту alt или заголовку. Заключите поисковый запрос в <kbd>/…/</kbd> для использования регулярных выражений, например <code>/\\.(png|jpg)$/</code>. Под панелью инструментов панель фильтрации динамически подстраивается под каждую категорию: диапазоны размера файлов и разрешения для медиа, метод HTTP и тип запроса для API, а также параметры и направление сортировки."
@@ -1170,13 +1170,13 @@
     "message": "Нажмите на любой ресурс, чтобы открыть его в правой панели инспекции. Каждый открытый файл становится вкладкой, что позволяет сравнивать несколько ресурсов бок о бок — самый новый открывается слева. Предусмотрены специализированные просмотрщики для изображений, видео, аудио, шрифтов, SVG и текста/кода (с переключателем форматирования Beautify). Для API доступен разделенный экран: тело ответа слева и параметры запроса (метод, статус, заголовки, параметры запроса и тело) справа."
   },
   "guideSecDownloadingContent": {
-    "message": "Кнопка <strong>Скачать отображаемое</strong> сохраняет текущие видимые ресурсы (активная категория + поиск + фильтры) в ZIP-архив; при активных фильтрах название автоматически меняется на <em>Скачать отфильтрованное (N)</em>. Наведите курсор на любую кнопку загрузки, чтобы увидеть ориентировочный размер архива до нажатия. Кнопка <strong>Скачать выбранные</strong> сохраняет только отмеченные флажками файлы. <strong>Скачать все</strong> упаковывает абсолютно все обнаруженные ресурсы в ZIP-архив со структурой папок. Неудачные загрузки автоматически повторяются и могут быть запущены повторно из контекстного меню. <strong>Экспорт</strong> сохраняет видимый список в JSON или CSV либо выгружает сетевой журнал Chrome в виде файла HAR."
+    "message": "Кнопка <strong>Скачать видимые</strong> сохраняет текущие видимые ресурсы (активная категория + поиск + фильтры) в ZIP-архив; при активных фильтрах название автоматически меняется на <em>Скачать отфильтрованное (N)</em>. Наведите курсор на любую кнопку загрузки, чтобы увидеть ориентировочный размер архива до нажатия. Кнопка <strong>Скачать выбранные</strong> сохраняет только отмеченные флажками файлы. <strong>Скачать все</strong> упаковывает абсолютно все обнаруженные ресурсы в ZIP-архив со структурой папок. Неудачные загрузки автоматически повторяются и могут быть запущены повторно из контекстного меню. <strong>Экспорт</strong> сохраняет видимый список в JSON или CSV либо выгружает сетевой журнал Chrome в виде файла HAR."
   },
   "guideSecLightboxContent": {
     "message": "Кнопка масштабирования открывает медиафайлы в полноразмерном лайтбоксе, где можно перемещаться перетаскиванием, а также масштабировать колесиком мыши, экранными кнопками или горячими клавишами (<kbd>+</kbd>/<kbd>-</kbd> для масштабирования, <kbd>0</kbd> для сброса, <kbd>Esc</kbd> для закрытия)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Категория <strong>Текст</strong> представляет собой интерактивную, удобную для чтения копию страницы. Она извлекает абсолютно все содержащие текст элементы — заголовки, абзацы, списки, кнопки, <code>div</code>/<code>span</code> и другие — в порядке дерева DOM и продолжает сканирование, пока включен режим <strong>В эфире</strong>.</p><p>Поле <strong>Запрос</strong> работает в четырех режимах, выбираемых из выпадающего списка: <strong>Содержит</strong> и <strong>Regex</strong> фильтруют уже извлеченный текст, а <strong>CSS-селектор</strong> и <strong>XPath</strong> выполняются непосредственно по живому DOM веб-страницы, обеспечивая доступ к любому узлу. XPath также поддерживает выражения, вычисляющие значения вместо узлов, например <code>count(//a)</code> или <code>//@href</code>. Сообщения об ошибках некорректных запросов отображаются прямо рядом с полем. Фильтр <strong>Элемент</strong> сужает вывод до конкретного HTML-тега с указанием общего количества найденных тегов на странице. Очистка поля (или нажатие кнопки <strong>Очистить</strong>) мгновенно возвращает вас к режиму <em>Все элементы</em> и перезапускает сбор данных — сбрасывать меню вручную не требуется.</p><p>Режим <strong>Чтение</strong> скрывает технические теги, флажки и служебные пути, благодаря чему поток текста читается как аккуратный документ. Таблицы сохраняют историю моментальных снимков, предотвращая потерю динамических таблиц в одностраничных приложениях (SPA). Нажмите <strong>Показать все строки</strong> в таблице, чтобы объединить все снимки в единое представление без дубликатов — именно этот массив попадет в экспорт. Вы можете экспортировать данные в <strong>TXT</strong> (текст страницы), <strong>MD</strong> (Markdown с поддержкой таблиц) или таблицы в форматах CSV, HTML и полноценных многостраничных книг <strong>XLSX</strong>. Отмеченные флажками элементы имеют приоритет; если ничего не выбрано, экспортируется все видимое содержимое.</p>"
+    "message": "<p>Категория <strong>Текст</strong> представляет собой интерактивную, удобную для чтения копию страницы. Она извлекает абсолютно все содержащие текст элементы — заголовки, абзацы, списки, кнопки, <code>div</code>/<code>span</code> и другие — в порядке дерева DOM и продолжает сканирование, пока включен режим <strong>Живой режим</strong>.</p><p>Поле <strong>Запрос</strong> работает в четырех режимах, выбираемых из выпадающего списка: <strong>Содержит</strong> и <strong>Regex</strong> фильтруют уже извлеченный текст, а <strong>CSS-селектор</strong> и <strong>XPath</strong> выполняются непосредственно по живому DOM веб-страницы, обеспечивая доступ к любому узлу. XPath также поддерживает выражения, вычисляющие значения вместо узлов, например <code>count(//a)</code> или <code>//@href</code>. Сообщения об ошибках некорректных запросов отображаются прямо рядом с полем. Фильтр <strong>Элемент</strong> сужает вывод до конкретного HTML-тега с указанием общего количества найденных тегов на странице. Очистка поля (или нажатие кнопки <strong>Очистить</strong>) мгновенно возвращает вас к режиму <em>Все элементы</em> и перезапускает сбор данных — сбрасывать меню вручную не требуется.</p><p>Режим <strong>Чтение</strong> скрывает технические теги, флажки и служебные пути, благодаря чему поток текста читается как аккуратный документ. Таблицы сохраняют историю моментальных снимков, предотвращая потерю динамических таблиц в одностраничных приложениях (SPA). Нажмите <strong>Показать все строки</strong> в таблице, чтобы объединить все снимки в единое представление без дубликатов — именно этот массив попадет в экспорт. Вы можете экспортировать данные в <strong>TXT</strong> (текст страницы), <strong>MD</strong> (Markdown с поддержкой таблиц) или таблицы в форматах CSV, HTML и полноценных многостраничных книг <strong>XLSX</strong>. Отмеченные флажками элементы имеют приоритет; если ничего не выбрано, экспортируется все видимое содержимое.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "Файлы WebVTT, SRT, TTML и другие форматы субтитров — включая исходники <code>&lt;track&gt;</code> — группируются на отдельной вкладке <strong>Субтитры</strong>, не смешиваясь с обычными документами."
@@ -1194,13 +1194,13 @@
     "message": "Динамические ответы <strong>API</strong> (XHR/fetch) не дедуплицируются по URL: каждый ответ сохраняется в списке (ограниченная FIFO-очередь), что позволяет сравнивать результаты повторяющихся запросов. Статические ресурсы дедуплицируются. Используйте кнопку <strong>Обновить</strong> для повторного сканирования текущего DOM и перезагружайте страницу при открытой панели, чтобы зафиксировать абсолютно все сетевые запросы, включая сработавшие до переключения вкладки."
   },
   "toolArrow": {
-    "message": "Нарисовать стрелку"
+    "message": "Инструмент «Стрелка»"
   },
   "toolRect": {
-    "message": "Нарисовать прямоугольник"
+    "message": "Инструмент «Прямоугольник»"
   },
   "toolText": {
-    "message": "Добавить текст"
+    "message": "Инструмент «Текст»"
   },
   "toolUndo": {
     "message": "Отменить (Ctrl+Z)"
@@ -1212,7 +1212,7 @@
     "message": "Цвет"
   },
   "badgeStrokeSize": {
-    "message": "Толщина: $SIZE$px",
+    "message": "Размер: $size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "Размер шрифта: $SIZE$px",
+    "message": "Размер шрифта: $size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,7 +1230,7 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "Записать видео / GIF области"
+    "message": "Записать видео / GIF области экрана"
   },
   "btnRecStart": {
     "message": "Начать запись"
@@ -1248,7 +1248,7 @@
     "message": "Отмена"
   },
   "toastRecSaved": {
-    "message": "Запись области сохранена"
+    "message": "Запись области экрана сохранена"
   },
   "toastRecCancelled": {
     "message": "Запись видео отменена"
@@ -1263,13 +1263,13 @@
     "message": "Снимок области"
   },
   "contextMenuPickColor": {
-    "message": "Выбрать цвет с экрана"
+    "message": "Выбрать цвет на экране"
   },
   "btnPopupPickColor": {
     "message": "Пипетка"
   },
   "colorPickerTitle": {
-    "message": "Выбор цвета"
+    "message": "Пипетка"
   },
   "btnColorPickAgain": {
     "message": "Выбрать другой цвет"
@@ -1278,7 +1278,7 @@
     "message": "Цвет скопирован в буфер обмена"
   },
   "toastProgressCapturing": {
-    "message": "Захват полной страницы... $PERCENT$%",
+    "message": "Захват всей страницы... $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,10 +1292,10 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Объединение изображений..."
+    "message": "Склейка изображения..."
   },
   "modalExportTitle": {
-    "message": "Скриншот всей страницы готов"
+    "message": "Снимок всей страницы готов"
   },
   "btnExportPng": {
     "message": "Скачать PNG"
@@ -1307,13 +1307,13 @@
     "message": "Сохранить как PDF"
   },
   "btnExportCopy": {
-    "message": "Скопировать в буфер"
+    "message": "Копировать в буфер обмена"
   },
   "btnExportGenerating": {
     "message": "Создание..."
   },
   "toastPdfGenerated": {
-    "message": "PDF-документ сохранен."
+    "message": "PDF-документ сохранён."
   },
   "settingNamingPatterns": {
     "message": "Шаблоны именования файлов"
@@ -1325,22 +1325,22 @@
     "message": "Предпросмотр:"
   },
   "toastRecGeneratingGif": {
-    "message": "Создание GIF, пожалуйста, подождите..."
+    "message": "Создание GIF, подождите..."
   },
   "settingGifResolution": {
     "message": "Разрешение GIF по умолчанию"
   },
   "optGifOriginal": {
-    "message": "Оригинал (1:1 родное разрешение — 3K/4K без масштабирования)"
+    "message": "Оригинал (1:1, исходное разрешение — полное 3K/4K, без уменьшения)"
   },
   "optGif1080p": {
-    "message": "1080p Full HD (Макс. 1920px)"
+    "message": "1080p Full HD (макс. 1920px)"
   },
   "optGif720p": {
-    "message": "720p HD (Макс. 1280px)"
+    "message": "720p HD (макс. 1280px)"
   },
   "optGif480p": {
-    "message": "480p SD (Макс. 854px — Быстрее и меньший размер)"
+    "message": "480p SD (макс. 854px — быстрее и меньше размер)"
   },
   "tipGifDurationLimit": {
     "message": "Формат GIF поддерживает максимальную продолжительность записи 1 минуту (60 с)."
@@ -1352,25 +1352,25 @@
     "message": "Записывайте любую область экрана в формате MP4, WebM или анимированного GIF. Для GIF доступны профили нативного разрешения 1:1, 1080p, 720p и 480p с динамическим расчетом размера файла. Максимальная длительность GIF-записи составляет 1 минуту (60 с) для оптимальной производительности браузера."
   },
   "msgGifMaxDurationReached": {
-    "message": "Достигнута максимальная длительность GIF в 1 минуту (60 с). Создание GIF..."
+    "message": "Достигнута максимальная длительность GIF — 1 минута (60 с). Создание GIF..."
   },
   "labelGifMaxDuration": {
-    "message": "Макс 1 мин (60 с)"
+    "message": "Макс. 1 мин (60 с)"
   },
   "settingGifFps": {
     "message": "Частота кадров GIF по умолчанию (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — Плавный (Высокая плавность, больший размер)"
+    "message": "15 FPS — Плавно (высокая плавность, больший размер)"
   },
   "optGifFps10": {
-    "message": "10 FPS — Стандартный (Рекомендуется для сети и баланса)"
+    "message": "10 FPS — Стандарт (рекомендуется для веба и баланса)"
   },
   "optGifFps5": {
-    "message": "5 FPS — Компактный / Мем (Ступенчатое движение, малый размер)"
+    "message": "5 FPS — Компактно / мемы (ступенчатое движение, малый размер)"
   },
   "optGifFps2": {
-    "message": "2 FPS — Покадровая анимация / Медленно (\"Тик-так\" по шагам, крошечный размер)"
+    "message": "2 FPS — Покадровая анимация / медленно (пошагово, «клик-клик», крошечный размер)"
   },
   "optGifFps1": {
     "message": "1 FPS — Презентация (1 кадр в секунду, минимальный размер)"
@@ -1378,5 +1378,109 @@
   "popupRightClickHint": {
     "message": "Нажмите правой кнопкой мыши на странице для записи экрана (видео/GIF) и пипетки.",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "Реклама / iframe скрыты на время этого сеанса.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Изображение скопировано в буфер обмена",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Закрыть (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Настройки сохранены",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Скачайте файл и откройте его в VLC или другом медиаплеере.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Предпросмотр для этого типа ресурса недоступен",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Скачать оригинал",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Совет: откройте скачанный файл в VLC или любом другом десктопном медиаплеере — он воспроизводит практически любые форматы.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Создание ZIP-архива…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Ваш браузер не поддерживает API EyeDropper.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Перетащить панель инструментов",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Сменить формат: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Разрешение GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Частота кадров GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Оценочный размер GIF: ~$size$ МБ (для 10 с), до ~$max$ МБ при максимальной длительности 60 с.\nЧастота кадров: $fps$ FPS.\nДлительность записи GIF ограничена 1 минутой (60 с).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Копировать $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Предпросмотр снимка экрана",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — универсальное воспроизведение в WhatsApp, Telegram, Jira, Apple и Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (анимированное изображение — идеально для README, Jira, документации и мессенджеров)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — открытый веб-формат)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Активная вкладка не найдена.",
+    "description": "No active tab found."
   }
 }

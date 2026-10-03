@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "هر دارایی وب را بررسی و به‌صورت ZIP دانلود کنید. اسکرین‌شات کل صفحه، ثبت زنده جدول‌ها و میز کار توسعه‌دهندگان."
+  },
+  "actionTitle": {
+    "message": "Source Download — باز کردن پنل و ردیابی منابع"
+  },
+  "contextMenuZap": {
+    "message": "پنهان کردن این عنصر (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "بازیابی آخرین عنصر پنهان‌شده"
+  },
+  "contextMenuResetZap": {
+    "message": "بازنشانی همه عناصر پنهان‌شده"
+  },
+  "contextMenuCapturePage": {
+    "message": "ثبت اسکرین‌شات کل صفحه"
+  },
+  "contextMenuPageArchive": {
+    "message": "دانلود بایگانی آفلاین صفحه"
+  },
+  "catAll": {
+    "message": "همه"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "تصاویر"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "ویدیوها"
+  },
+  "catAudio": {
+    "message": "صوتی"
+  },
+  "catCaptions": {
+    "message": "زیرنویس‌ها"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "نقشه‌های منبع"
+  },
+  "catFonts": {
+    "message": "فونت‌ها"
+  },
+  "catDocuments": {
+    "message": "اسناد"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "مانیفست‌ها"
+  },
+  "catText": {
+    "message": "متن"
+  },
+  "catOther": {
+    "message": "سایر"
+  },
+  "catScreenshot": {
+    "message": "اسکرین شات"
+  },
+  "catArchive": {
+    "message": "آرشیو صفحه"
+  },
+  "btnRefresh": {
+    "message": "تازه کردن"
+  },
+  "btnExport": {
+    "message": "برون‌بری"
+  },
+  "btnDownloadSelected": {
+    "message": "دانلود موارد انتخاب‌شده"
+  },
+  "btnDownloadView": {
+    "message": "دانلود نمای فعلی"
+  },
+  "btnDownloadAll": {
+    "message": "دانلود همه"
+  },
+  "btnDownloadFiltered": {
+    "message": "دانلود موارد فیلترشده"
+  },
+  "btnTheme": {
+    "message": "تغییر تم"
+  },
+  "btnGuide": {
+    "message": "راهنمای کاربر"
+  },
+  "btnCaptureFullPage": {
+    "message": "اسکرین‌شات کامل صفحه"
+  },
+  "btnOfflineArchive": {
+    "message": "ذخیره HTML در یک فایل"
+  },
+  "filterMinKb": {
+    "message": "حداقل (KB)"
+  },
+  "filterMaxKb": {
+    "message": "حداکثر (KB)"
+  },
+  "filterMinWidth": {
+    "message": "حداقل عرض px"
+  },
+  "filterMinHeight": {
+    "message": "حداقل ارتفاع px"
+  },
+  "filterSortName": {
+    "message": "مرتب‌سازی بر اساس نام"
+  },
+  "filterSortSize": {
+    "message": "مرتب‌سازی بر اساس اندازه"
+  },
+  "filterSortType": {
+    "message": "مرتب‌سازی بر اساس نوع"
+  },
+  "filterSortTime": {
+    "message": "مرتب‌سازی بر اساس زمان"
+  },
+  "filterHideDupes": {
+    "message": "پنهان کردن موارد تکراری"
+  },
+  "filterClear": {
+    "message": "پاک کردن"
+  },
+  "textModeContains": {
+    "message": "حاوی"
+  },
+  "textModeRegex": {
+    "message": "عبارت منظم"
+  },
+  "textModeCss": {
+    "message": "انتخابگر CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "متن صفحه را فیلتر کنید یا DOM زنده را پرس‌وجو کنید…"
+  },
+  "textAllElements": {
+    "message": "همه عناصر"
+  },
+  "textLiveOn": {
+    "message": "زنده: روشن"
+  },
+  "textLiveOff": {
+    "message": "زنده: خاموش"
+  },
+  "textScanNow": {
+    "message": "اسکن اکنون"
+  },
+  "textReading": {
+    "message": "خواندن"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "یک منبع را برای بررسی جزئیات آن انتخاب کنید"
+  },
+  "inspectorDetails": {
+    "message": "جزئیات"
+  },
+  "inspectorOpenTab": {
+    "message": "باز کردن در برگه جدید"
+  },
+  "inspectorCopyUrl": {
+    "message": "کپی URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "دانلود این فایل"
+  },
+  "inspectorClose": {
+    "message": "بستن"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "نوع"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "اندازه"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "منبع"
+  },
+  "metaTitle": {
+    "message": "عنوان"
+  },
+  "metaAlt": {
+    "message": "متن جایگزین"
+  },
+  "ratingPrompt": {
+    "message": "از Source Download راضی هستید؟ با ثبت نظر در فروشگاه وب Chrome یا دادن یک ستاره در GitHub از چشم‌انداز متن‌باز ما حمایت کنید!"
+  },
+  "ratingReview": {
+    "message": "★ ثبت نظر"
+  },
+  "ratingStar": {
+    "message": "★ ستاره در GitHub"
+  },
+  "ratingDismiss": {
+    "message": "بستن"
+  },
+  "toastElementZapped": {
+    "message": "عنصر برای این نشست پنهان شد."
+  },
+  "toastElementRestored": {
+    "message": "عنصر بازیابی شد."
+  },
+  "toastAllElementsRestored": {
+    "message": "همه عناصر پنهان‌شده بازیابی شدند."
+  },
+  "toastScreenshotCapturing": {
+    "message": "در حال ثبت اسکرین‌شات کل صفحه…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "اسکرین‌شات کل صفحه ذخیره شد."
+  },
+  "toastArchiveCreated": {
+    "message": "بایگانی HTML تک‌فایلی ذخیره شد."
+  },
+  "brandSignature": {
+    "message": "ساخته شده توسط Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "تصاویر و SVG"
+  },
+  "tabMedia": {
+    "message": "رسانه و صدا"
+  },
+  "tabFonts": {
+    "message": "فونت‌ها"
+  },
+  "tabTextScraper": {
+    "message": "متن و جداول"
+  },
+  "heroScreenshotTitle": {
+    "message": "اسکرین‌شات کامل صفحه"
+  },
+  "heroScreenshotDesc": {
+    "message": "دوخت بدون درز چند نماگر با حذف سربرگ‌های چسبان"
+  },
+  "heroArchiveTitle": {
+    "message": "آرشیو HTML تک‌فایلی"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS و تصاویر Base64 را درون‌خطی می‌کند؛ نسخه ایمن برای استفاده آفلاین"
+  },
+  "copyDataUri": {
+    "message": "کپی Data-URI"
+  },
+  "copyUrl": {
+    "message": "کپی URL"
+  },
+  "downloadSingle": {
+    "message": "دانلود"
+  },
+  "searchPlaceholder": {
+    "message": "فیلتر بر اساس نام، URL، برچسب، MIME یا /regex/…"
+  },
+  "viewGrid": {
+    "message": "نمای شبکه‌ای"
+  },
+  "viewList": {
+    "message": "نمای فهرستی"
+  },
+  "btnScreenshot": {
+    "message": "اسکرین شات"
+  },
+  "btnArchive": {
+    "message": "ذخیره HTML"
+  },
+  "exportJson": {
+    "message": "فهرست قابل مشاهده به‌صورت JSON"
+  },
+  "exportCsv": {
+    "message": "فهرست قابل مشاهده به‌صورت CSV"
+  },
+  "exportHar": {
+    "message": "گزارش شبکه به‌صورت HAR"
+  },
+  "exportScreenshot": {
+    "message": "اسکرین‌شات کامل صفحه (PNG)"
+  },
+  "exportArchive": {
+    "message": "آرشیو صفحه برای استفاده آفلاین (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "همه روش ها"
+  },
+  "filterTypeAll": {
+    "message": "همه انواع"
+  },
+  "filterSortDir": {
+    "message": "جابه‌جایی بین صعودی / نزولی"
+  },
+  "emptyTitle": {
+    "message": "هیچ منبعی پیدا نشد"
+  },
+  "emptySubtitle": {
+    "message": "هنگامی که این پنل باز است صفحه را دوباره بارگذاری کنید تا درخواست‌های شبکه ثبت شوند، یا برای اسکن DOM فعلی روی «تازه کردن» کلیک کنید."
+  },
+  "statusResources": {
+    "message": "منابع"
+  },
+  "statusFiltered": {
+    "message": "فیلتر شده"
+  },
+  "statusSelected": {
+    "message": "انتخاب‌شده"
+  },
+  "statusDupes": {
+    "message": "موارد تکراری پنهان شد"
+  },
+  "statusSize": {
+    "message": "اندازه"
+  },
+  "langAuto": {
+    "message": "خودکار (مرورگر)"
+  },
+  "langSelectorTitle": {
+    "message": "زبان را انتخاب کنید"
+  },
+  "textPillAll": {
+    "message": "همه مطالب"
+  },
+  "textPillText": {
+    "message": "📄 متن و مقاله‌ها"
+  },
+  "textPillTables": {
+    "message": "📊 فقط جدول‌ها"
+  },
+  "textSelectAll": {
+    "message": "انتخاب همه"
+  },
+  "textDeselectAll": {
+    "message": "لغو انتخاب همه"
+  },
+  "textClearSelection": {
+    "message": "پاک کردن"
+  },
+  "toastRefreshComplete": {
+    "message": "اسکن صفحه کامل شد: $count$ منبع جدید",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$ بلوک کپی شد",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "در کلیپ‌بورد کپی شد"
+  },
+  "toastTableCopied": {
+    "message": "جدول در کلیپ‌بورد کپی شد"
+  },
+  "toastNothingToExport": {
+    "message": "چیزی برای برون‌بری وجود ندارد"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ بلوک به‌صورت TXT برون‌بری شد",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$ بلوک به‌صورت Markdown برون‌بری شد",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "هیچ ردیف جدولی ثبت نشد"
+  },
+  "toastExportedCsv": {
+    "message": "جدول به‌صورت CSV برون‌بری شد"
+  },
+  "toastExportedXlsx": {
+    "message": "جدول به‌صورت XLSX برون‌بری شد"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ جدول به‌صورت $format$ برون‌بری شد",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ برگه به‌صورت XLSX برون‌بری شد",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "هیچ منبعی برای دانلود وجود ندارد."
+  },
+  "toastNoVisibleResources": {
+    "message": "هیچ منبع قابل مشاهده‌ای برای دانلود وجود ندارد."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "ابتدا حداقل یک منبع را انتخاب کنید."
+  },
+  "toastZipSaved": {
+    "message": "فایل ZIP ذخیره شد: $fetched$ از $total$ منبع",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ساخت فایل ZIP ناموفق بود: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR برون‌بری شد ($count$ ورودی)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL در کلیپ‌بورد کپی شد"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "پنجره بازرسی‌شده DevTools در دسترس نیست."
+  },
+  "toastScreenshotError": {
+    "message": "خطای اسکرین‌شات: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "در حال ساخت بایگانی آفلاین صفحه…"
+  },
+  "toastArchiveError": {
+    "message": "خطای بایگانی: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "زمان قالب‌بندی به پایان رسید — فایل اصلی نمایش داده می‌شود."
+  },
+  "toastFormatFailed": {
+    "message": "قالب‌بندی فایل ممکن نشد — فایل اصلی نمایش داده می‌شود."
+  },
+  "emptySearchTitle": {
+    "message": "هیچ نتیجه‌ای برای «$query$» پیدا نشد",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "عبارت جستجوی دیگری را امتحان کنید یا به دسته دیگری بروید."
+  },
+  "emptyFiltersTitle": {
+    "message": "هیچ منبعی با فیلترهای فعلی مطابقت ندارد"
+  },
+  "emptyFiltersSub": {
+    "message": "فیلترهای اندازه یا ابعاد بالا را سبک‌تر کنید یا روی «پاک کردن» بزنید."
+  },
+  "textEmptyQueryReject": {
+    "message": "صفحه این پرس‌وجو را رد کرد. آن را در بالا اصلاح کنید تا نتایج بلافاصله برگردند."
+  },
+  "textEmptyNoMatch": {
+    "message": "هیچ عنصری در صفحه با این پرس‌وجو مطابقت ندارد. یک انتخابگر منعطف‌تر را امتحان کنید یا حالت کنار کادر را تغییر دهید."
+  },
+  "textEmptyInitial": {
+    "message": "هنوز چیزی ثبت نشده است. ثبت زنده در حال اجراست — کل صفحه به‌صورت متن خواندنی در اینجا نمایش داده می‌شود."
+  },
+  "textEmptyFiltered": {
+    "message": "هیچ مورد با پرس‌وجو و فیلتر عنصر فعلی مطابقت ندارد."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ بلوک",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ کلمه",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ نویسه",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ جدول · $rows$ ردیف یکتا",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ مورد انتخاب شد — برون‌بری فقط از همین موارد استفاده می‌کند",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "جدول — $count$ ردیف روی صفحه",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "جدول — همه $count$ ردیف یکتا",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ اسنپ‌شات",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "به‌روزرسانی: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "نمایش همه $count$ ردیف",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "همه ردیف‌ها نمایش داده می‌شوند"
+  },
+  "textTableHistory": {
+    "message": "تاریخچه ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "پنهان کردن تاریخچه"
+  },
+  "textTableNoRows": {
+    "message": "هنوز هیچ ردیفی ثبت نشده است."
+  },
+  "textBtnCopy": {
+    "message": "کپی متن"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 کپی"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ تصویر تکراری",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "برون‌بری"
+  },
+  "inspectorLoadingSvg": {
+    "message": "در حال بارگذاری SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "محتوای SVG قابل بازیابی نیست."
+  },
+  "inspectorLoadingFont": {
+    "message": "در حال بارگذاری پیش‌نمایش فونت…"
+  },
+  "inspectorFontSample": {
+    "message": "پیش‌نمایش فونت"
+  },
+  "inspectorBeautify": {
+    "message": "قالب‌بندی"
+  },
+  "inspectorOriginal": {
+    "message": "اصلی"
+  },
+  "inspectorHeaders": {
+    "message": "سرآیندها"
+  },
+  "inspectorResponse": {
+    "message": "پاسخ"
+  },
+  "inspectorRequest": {
+    "message": "درخواست"
+  },
+  "inspectorQueryParams": {
+    "message": "پارامترهای پرس‌وجو"
+  },
+  "inspectorRequestBody": {
+    "message": "بدنه درخواست"
+  },
+  "textHintHtml": {
+    "message": "یک نسخه زنده و خواندنی از صفحه. هر عنصری که متن دارد به ترتیب DOM ثبت می‌شود و با تغییر صفحه، اینجا به‌روز می‌ماند. آن را با متن ساده، یک عبارت منظم، یک <strong>انتخابگر CSS</strong> یا یک عبارت <strong>XPath</strong> پرس‌وجو کنید و سپس موارد منطبق را برون‌بری کنید. برای جزئیات به <a href=\"#\" id=\"text-hint-guide\">راهنما</a> مراجعه کنید."
+  },
+  "textHeadings": {
+    "message": "سرفصل‌ها"
+  },
+  "textAllLevels": {
+    "message": "همه سطوح"
+  },
+  "textMatches": {
+    "message": "مورد منطبق"
+  },
+  "textMatch": {
+    "message": "مورد منطبق"
+  },
+  "textReadingOn": {
+    "message": "خواندن روشن"
+  },
+  "toastDownloadStarted": {
+    "message": "دانلود شروع شد: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "واکشی این منبع ممکن نشد (CORS یا نوع پشتیبانی‌نشده)."
+  },
+  "ratingBannerText": {
+    "message": "از Source Download راضی هستید؟ با ثبت نظر در فروشگاه وب Chrome یا دادن یک ستاره در GitHub از چشم‌انداز متن‌باز ما حمایت کنید!"
+  },
+  "ratingBannerReview": {
+    "message": "★ ثبت نظر"
+  },
+  "ratingBannerStar": {
+    "message": "★ ستاره"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ ردیف یکتا",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ ثانیه پیش",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ دقیقه پیش",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "ثبت اسکرین‌شات ناحیه"
+  },
+  "btnAreaDownload": {
+    "message": "دانلود"
+  },
+  "btnAreaCopy": {
+    "message": "کپی در کلیپ‌بورد"
+  },
+  "btnAreaCancel": {
+    "message": "لغو"
+  },
+  "toastAreaCopied": {
+    "message": "اسکرین‌شات ناحیه در کلیپ‌بورد کپی شد"
+  },
+  "toastAreaDownloaded": {
+    "message": "اسکرین‌شات ناحیه ذخیره شد"
+  },
+  "statusFoundCssResources": {
+    "message": "$count$ منبع ارجاع‌شده از CSS پیدا شد",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "اسکن DOM ناموفق بود: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "در حال نمایه‌سازی محتوای فایل…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "در حال بررسی تصاویر تکراری…"
+  },
+  "statusWorking": {
+    "message": "در حال انجام…"
+  },
+  "filterMethodTitle": {
+    "message": "فیلتر بر اساس روش HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "فیلتر بر اساس نوع درخواست"
+  },
+  "filterSortTitle": {
+    "message": "مرتب سازی منابع"
+  },
+  "textModeTitle": {
+    "message": "نحوه تفسیر کادر پرس‌وجو"
+  },
+  "textKindTitle": {
+    "message": "محدود کردن به یک نوع عنصر"
+  },
+  "textHeadingLevelTitle": {
+    "message": "سطح سرفصل"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+ — عبارت منظم جاوااسکریپت"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — هر انتخابگر CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "جستجو در راهنما…"
+  },
+  "popupIntro": {
+    "message": "دسته‌هایی که <strong>نشان نوار ابزار</strong> می‌شمارد. برای متوقف کردن شمارش یک دسته، آن را خاموش کنید — نشان بلافاصله فقط آنچه را ردیابی می‌کنید نشان می‌دهد."
+  },
+  "popupHelpTitle": {
+    "message": "نحوه استفاده از پنل کامل"
+  },
+  "popupStep1": {
+    "message": "DevTools را برای صفحه‌ای که می‌خواهید بازرسی کنید باز کنید <div class=\"hint\"><kbd>F12</kbd> یا <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "روی برگه <strong>Source Download</strong> در نوار ابزار DevTools کلیک کنید"
+  },
+  "popupStep3": {
+    "message": "منابع را مرور، بازرسی و دانلود کنید — تکی یا همه‌یکجا به‌صورت ZIP."
+  },
+  "popupNote": {
+    "message": "توجه: Chrome به افزونه‌ها اجازه نمی‌دهد DevTools را به‌صورت برنامه‌ای باز کنند؛ به همین دلیل پنل کامل از طریق نوار ابزار DevTools در دسترس است."
+  },
+  "popupTrackAll": {
+    "message": "ردیابی همه دسته ها"
+  },
+  "popupLanguage": {
+    "message": "زبان"
+  },
+  "inspectorBinaryResponse": {
+    "message": "پاسخ باینری — برای مشاهده آن را دانلود کنید"
+  },
+  "inspectorLoadingResponse": {
+    "message": "در حال بارگذاری پاسخ…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "پیش‌نمایش پاسخ در دسترس نیست — بازیابی محتوا ممکن نشد."
+  },
+  "inspectorLoadingContent": {
+    "message": "در حال بارگذاری محتوا…"
+  },
+  "inspectorNoPreview": {
+    "message": "پیش‌نمایشی در دسترس نیست — بازیابی محتوا ممکن نشد."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "همه را ببند"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "بستن همه برگه‌های باز"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "برای بزرگنمایی کلیک کنید"
+  },
+  "inspectorViewSource": {
+    "message": "مشاهده منبع"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "نمایش نشانه‌گذاری SVG با رنگ‌آمیزی نحو"
+  },
+  "inspectorFormatting": {
+    "message": "در حال قالب‌بندی…"
+  },
+  "findInContentPlaceholder": {
+    "message": "یافتن در محتوا…"
+  },
+  "findPreviousMatch": {
+    "message": "مورد منطبق قبلی"
+  },
+  "findNextMatch": {
+    "message": "مورد منطبق بعدی"
+  },
+  "findClose": {
+    "message": "بستن"
+  },
+  "findShowRaw": {
+    "message": "نمایش محتوای اصلی (بدون قالب‌بندی)"
+  },
+  "findBeautify": {
+    "message": "قالب‌بندی این محتوا"
+  },
+  "btnRaw": {
+    "message": "خام"
+  },
+  "btnBeautify": {
+    "message": "قالب‌بندی"
+  },
+  "videoHlsDetected": {
+    "message": "جریان HLS (m3u8) شناسایی شد"
+  },
+  "videoCannotPlay": {
+    "message": "این ویدیو در مرورگر قابل پخش نیست"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome نمی‌تواند مستقیماً جریان‌های HLS را پخش کند. می‌توانید همه بخش‌های <b>$NAME$</b> را در یک فایل ویدئویی MP4/TS ادغام کنید.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "مرورگر از این فرمت پشتیبانی نمی کند"
+  },
+  "btnMergeHls": {
+    "message": "ادغام بخش ها و دانلود"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ بخش در $NAME$ ادغام شد",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "اندازه ناشناخته"
+  },
+  "progressFetching": {
+    "message": "در حال واکشی $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "در حال ایجاد ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "فایل ZIP ذخیره شد: $FETCHED$ از $TOTAL$ منبع ($SKIPPED$ ناموفق)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "تلاش مجدد ($COUNT$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "تلاش مجدد برای دانلود"
+  },
+  "searchRegexHint": {
+    "message": "جستجوی عبارت منظم فعال است — پرس‌وجوی خود را بین /pattern/i قرار دهید"
+  },
+  "textIncludeInExports": {
+    "message": "گنجاندن در برون‌بری"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "همه اسنپ‌شات‌ها را در یک جدول بدون تکرار ترکیب کنید — همین جدول برون‌بری می‌شود"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "مرور اسنپ‌شات‌های قبلی این جدول"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "دانلود این جدول به‌صورت CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "اسنپ‌شات $INDEX$ — $TIME$ ($COUNT$ ردیف)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "تغییر انتخاب برای دانلود گروهی"
+  },
+  "cardDownloadTitle": {
+    "message": "دانلود فایل"
+  },
+  "cardRetryFailedTitle": {
+    "message": "دانلود قبلی ناموفق بود — برای تلاش مجدد کلیک کنید"
+  },
+  "btnThemeLight": {
+    "message": "تغییر به تم روشن"
+  },
+  "btnThemeDark": {
+    "message": "تغییر به تم تیره"
+  },
+  "guideTitle": {
+    "message": "Source Download — راهنمای کاربر"
+  },
+  "guideEmpty": {
+    "message": "هیچ بخش راهنما با جستجوی شما مطابقت ندارد."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — ۱۰۰٪ بدون وابستگی.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "کوچک‌نمایی (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "بزرگنمایی (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "بازنشانی بزرگنمایی (0)"
+  },
+  "lightboxClose": {
+    "message": "بستن (Esc)"
+  },
+  "resizerTitle": {
+    "message": "برای تغییر اندازه بکشید"
+  },
+  "ratingDismissTitle": {
+    "message": "بستن"
+  },
+  "inspectorResourceTitle": {
+    "message": "منبع"
+  },
+  "guideSecGettingStarted": {
+    "message": "شروع کار"
+  },
+  "guideSecCategories": {
+    "message": "دسته‌ها"
+  },
+  "guideSecSearchFilters": {
+    "message": "جستجو و فیلترها"
+  },
+  "guideSecGridView": {
+    "message": "نمای شبکه و فهرست"
+  },
+  "guideSecInspect": {
+    "message": "بازرسی یک منبع"
+  },
+  "guideSecDownloading": {
+    "message": "دانلود"
+  },
+  "guideSecLightbox": {
+    "message": "نمای تمام‌صفحه"
+  },
+  "guideSecTextTables": {
+    "message": "متن و جداول"
+  },
+  "guideSecCaptions": {
+    "message": "زیرنویس‌ها و ترجمه‌ها"
+  },
+  "guideSecSourceMaps": {
+    "message": "نقشه‌های منبع"
+  },
+  "guideSecDupes": {
+    "message": "تصاویر تکراری"
+  },
+  "guideSecVideoHls": {
+    "message": "جایگزین ویدیو و HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "نکات حرفه‌ای"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "روی برگه <strong>Source Download</strong> در نوار ابزار DevTools کلیک کنید (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> را فشار دهید، سپس برگه را در نوار ابزار DevTools انتخاب کنید). Chrome به افزونه‌ها اجازه نمی‌دهد DevTools را خودکار باز کنند؛ به همین دلیل پنل آنجا قرار دارد. پنجره بازشوی نماد نوار ابزار به شما امکان می‌دهد انتخاب کنید کدام دسته‌ها در شمارنده نشان روی نماد حساب شوند. دکمه خورشید/ماه در نوار ابزار پنل، تم روشن یا تیره را مستقل از Chrome ثابت می‌کند؛ این انتخاب به خاطر سپرده می‌شود."
+  },
+  "guideSecCategoriesContent": {
+    "message": "برگه‌های عمودی سمت چپ هر منبع ثبت‌شده را بر اساس نوع در ۱۷ دسته اختصاصی گروه‌بندی می‌کنند: تصاویر، ویدیوها، صوتی، زیرنویس‌ها، اسناد، فونت‌ها، نقشه‌های منبع، WASM، SVG، APIها، کوکی‌ها، فضای ذخیره‌سازی و غیره. هر برگه تعداد زنده را نشان می‌دهد. در هر زمان فقط یک دسته نمایش داده می‌شود؛ با تغییر دسته همه فیلترها بازنشانی می‌شوند، بنابراین آنچه می‌بینید همیشه با برگه مطابقت دارد."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "نوار جستجو بر اساس نام، URL، نوع، متن جایگزین یا عنوان فیلتر می‌کند. برای استفاده از عبارت منظم، پرس‌وجوی خود را بین <kbd>/…/</kbd> قرار دهید، مثلاً <code>/\\.(png|jpg)$/</code>. زیر نوار ابزار، نوار فیلتر در هر دسته تغییر می‌کند: بازه اندازه و ابعاد برای رسانه، روش HTTP و نوع درخواست برای APIها، به‌علاوه مرتب‌سازی و جهت آن."
+  },
+  "guideSecGridViewContent": {
+    "message": "با دکمه‌های کنار نوار جستجو بین شبکه فشرده (تصاویر بندانگشتی کوچک) و فهرست تفصیلی جابه‌جا شوید. انتخاب شما بین نشست‌ها به خاطر سپرده می‌شود. در نمای فهرست، با کادرهای انتخاب می‌توانید منابع مشخصی را برای دانلود گروهی انتخاب کنید."
+  },
+  "guideSecInspectContent": {
+    "message": "روی هر منبع کلیک کنید تا در پنل بازرسی سمت راست باز شود. هر فایل بازشده به یک برگه تبدیل می‌شود، بنابراین می‌توانید چند منبع را کنار هم مقایسه کنید — جدیدترین در سمت چپ باز می‌شود. نمایشگرهای اختصاصی برای تصاویر، ویدیو، صوت، فونت‌ها، SVG و متن/کد (با کلید قالب‌بندی) وجود دارد. APIها نمای دوبخشی نشان می‌دهند: پاسخ در سمت چپ و جزئیات درخواست (روش، وضعیت، سرآیندها، پارامترهای پرس‌وجو و بدنه) در سمت راست."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>دانلود نمای فعلی</strong> منابع قابل مشاهده فعلی (دسته فعال + جستجو + فیلترها) را به‌صورت ZIP ذخیره می‌کند؛ وقتی فیلترها فعال باشند، عنوان آن به <em>دانلود موارد فیلترشده (N)</em> تغییر می‌کند. نشانگر ماوس را روی هر دکمه دانلود نگه دارید تا پیش از کلیک، اندازه تقریبی آرشیو را ببینید. <strong>دانلود موارد انتخاب‌شده</strong> فقط موارد علامت‌زده را دانلود می‌کند. <strong>دانلود همه</strong> هر منبع کشف‌شده را در یک ZIP با ساختار پوشه‌ای ذخیره می‌کند. دانلودهای ناموفق خودکار دوباره تلاش می‌شوند و می‌توان آن‌ها را از منوی زمینه نیز دوباره امتحان کرد. <strong>برون‌بری</strong> فهرست قابل مشاهده را به‌صورت JSON یا CSV می‌نویسد، یا گزارش شبکه Chrome را به‌صورت فایل HAR ذخیره می‌کند."
+  },
+  "guideSecLightboxContent": {
+    "message": "دکمه بزرگ‌نمایی، رسانه را در یک نمای تمام‌صفحه باز می‌کند که در آن می‌توانید با کشیدن جابه‌جا شوید و با چرخ ماوس، دکمه‌های روی صفحه یا صفحه‌کلید بزرگ‌نمایی کنید (<kbd>+</kbd>/<kbd>-</kbd> برای بزرگ‌نمایی، <kbd>0</kbd> برای بازنشانی، <kbd>Esc</kbd> برای بستن)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>دسته <strong>متن</strong> یک نسخه زنده و خواندنی از صفحه است. هر عنصری را که متن دارد — سرفصل‌ها، پاراگراف‌ها، آیتم‌های فهرست، دکمه‌ها، <code>div</code>/<code>span</code> و موارد دیگر — به ترتیب DOM ثبت می‌کند و تا زمانی که <strong>زنده</strong> روشن باشد به اسکن ادامه می‌دهد.</p><p>کادر <strong>پرس‌وجو</strong> به چهار شیوه کار می‌کند که از فهرست کشویی کنار آن انتخاب می‌شود: <strong>حاوی</strong> و <strong>عبارت منظم</strong> متنِ ثبت‌شده را فیلتر می‌کنند، در حالی که <strong>انتخابگر CSS</strong> و <strong>XPath</strong> روی صفحه زنده اجرا می‌شوند و به هر چیزی در DOM دسترسی دارند. XPath عباراتی را هم می‌پذیرد که به‌جای عنصر، یک مقدار برمی‌گردانند، مانند <code>count(//a)</code> یا <code>//@href</code>. هر پیامی که صفحه درباره پرس‌وجوی نادرست بدهد، کنار کادر نمایش داده می‌شود. <strong>عنصر</strong> نتیجه را به یک تگ محدود می‌کند و تعداد هر تگ موجود در صفحه را نشان می‌دهد. با پاک کردن کادر پرس‌وجو (یا زدن <strong>پاک کردن</strong>) به <em>همه عناصر</em> برمی‌گردید و صفحه دوباره ثبت می‌شود — هرگز لازم نیست فهرست کشویی را دستی بازنشانی کنید.</p><p><strong>خواندن</strong> تگ‌ها، کادرهای انتخاب و مسیر مکان را پنهان می‌کند تا محتوا مانند یک سند خوانده شود. جدول‌ها تاریخچه‌ای محدود از اسنپ‌شات‌ها را نگه می‌دارند تا جدول‌های پویا (SPA) هرگز از دست نروند. روی یک جدول <strong>نمایش همه ردیف‌ها</strong> را بزنید تا همه اسنپ‌شات‌ها در یک نمای بدون تکرار ادغام شوند — دقیقاً همین چیزی است که برون‌بری شامل می‌شود. به‌صورت <strong>TXT</strong> (صفحه خواندنی)، <strong>MD</strong> (Markdown، همراه با جدول‌ها) یا جدول‌ها را به‌صورت CSV، HTML یا یک کتاب کار واقعی چندبرگه <strong>XLSX</strong> برون‌بری کنید. موارد علامت‌زده اولویت دارند؛ در غیر این صورت هر چیزی که اکنون قابل مشاهده است برون‌بری می‌شود.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT، SRT، TTML و سایر فایل‌های زیرنویس — از جمله منابع <code>&lt;track&gt;</code> — به‌جای آنکه با اسناد قاطی شوند، در برگه <strong>زیرنویس‌ها</strong> قرار می‌گیرند."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "فایل‌های <code>.map</code> و بدنه‌های JSON که شبیه نقشه‌های منبع هستند (شامل <code>mappings</code> و <code>sources</code>) زیر <strong>نقشه‌های منبع</strong> با نمایشگر JSON و قالب‌بندی گروه‌بندی می‌شوند، بنابراین دیگر برگه JSON را شلوغ نمی‌کنند."
+  },
+  "guideSecDupesContent": {
+    "message": "در برگه تصاویر، پنل بایت‌های ثبت‌شده را هش می‌کند و فایل‌های یکسان را علامت می‌زند. فیلتر <strong>پنهان کردن موارد تکراری</strong> اولین نسخه از هر مجموعه را نگه می‌دارد تا ZIP نمای فعلی یک تصویر بندانگشتی را دوبار شامل نشود."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "جریان‌هایی که مرورگر نمی‌تواند به‌صورت بومی پخش کند (HLS <code>.m3u8</code>، DASH <code>.mpd</code>، کدک‌های ناشناخته) به‌جای پخش‌کننده سیاه، نمای جایگزین نشان می‌دهند. برای HLS می‌توانید بخش‌ها را مستقیم از پنل در یک فایل ویدیویی ادغام کنید یا مانیفست اصلی را دانلود کنید."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "پاسخ‌های پویای <strong>API</strong> (XHR/fetch) بر اساس URL حذف تکرار نمی‌شوند — هر پاسخ در فهرست می‌ماند (با سقف محدود، FIFO) تا بتوانید درخواست‌های تکراری را مقایسه کنید. دارایی‌های ایستا حذف تکرار می‌شوند. از <strong>تازه کردن</strong> برای اسکن دوباره DOM فعلی استفاده کنید و هنگام باز بودن پنل صفحه را دوباره بارگذاری کنید تا همه درخواست‌های شبکه، از جمله درخواست‌هایی که پیش از تغییر برگه‌ها آغاز شده‌اند، ثبت شوند."
+  },
+  "toolArrow": {
+    "message": "ابزار فلش"
+  },
+  "toolRect": {
+    "message": "ابزار مستطیل"
+  },
+  "toolText": {
+    "message": "ابزار متن"
+  },
+  "toolUndo": {
+    "message": "واگرد (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "ازنو (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "رنگ"
+  },
+  "badgeStrokeSize": {
+    "message": "اندازه: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "اندازه قلم: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "ضبط ناحیه به‌صورت ویدیو / GIF"
+  },
+  "btnRecStart": {
+    "message": "شروع ضبط"
+  },
+  "btnRecPause": {
+    "message": "توقف موقت"
+  },
+  "btnRecResume": {
+    "message": "ادامه"
+  },
+  "btnRecStop": {
+    "message": "پایان و دانلود"
+  },
+  "btnRecCancel": {
+    "message": "لغو"
+  },
+  "toastRecSaved": {
+    "message": "ضبط ناحیه ذخیره شد"
+  },
+  "toastRecCancelled": {
+    "message": "ضبط ویدیو لغو شد"
+  },
+  "toastRecPermissionDenied": {
+    "message": "مجوز ضبط صفحه نمایش داده نشد"
+  },
+  "btnPopupRecordArea": {
+    "message": "ویدیو / GIF از ناحیه انتخابی"
+  },
+  "btnPopupCaptureArea": {
+    "message": "اسکرین‌شات از ناحیه انتخابی"
+  },
+  "contextMenuPickColor": {
+    "message": "انتخاب رنگ از صفحه نمایش"
+  },
+  "btnPopupPickColor": {
+    "message": "انتخاب رنگ"
+  },
+  "colorPickerTitle": {
+    "message": "انتخاب‌گر رنگ"
+  },
+  "btnColorPickAgain": {
+    "message": "انتخاب رنگ دیگر"
+  },
+  "toastColorCopied": {
+    "message": "رنگ در کلیپ‌بورد کپی شد"
+  },
+  "toastProgressCapturing": {
+    "message": "در حال ثبت کل صفحه... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "در حال به‌هم‌چسباندن تصویر..."
+  },
+  "modalExportTitle": {
+    "message": "اسکرین‌شات کل صفحه آماده است"
+  },
+  "btnExportPng": {
+    "message": "دانلود PNG"
+  },
+  "btnExportJpg": {
+    "message": "دانلود JPG"
+  },
+  "btnExportPdf": {
+    "message": "ذخیره به‌صورت PDF"
+  },
+  "btnExportCopy": {
+    "message": "کپی در کلیپ‌بورد"
+  },
+  "btnExportGenerating": {
+    "message": "در حال ساخت..."
+  },
+  "toastPdfGenerated": {
+    "message": "سند PDF ذخیره شد."
+  },
+  "settingNamingPatterns": {
+    "message": "الگوهای نام‌گذاری فایل"
+  },
+  "settingVideoFormat": {
+    "message": "قالب پیش‌فرض ویدیو"
+  },
+  "settingNamingPreview": {
+    "message": "پیش‌نمایش:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "در حال ساخت GIF، لطفاً صبر کنید..."
+  },
+  "settingGifResolution": {
+    "message": "وضوح پیش‌فرض GIF"
+  },
+  "optGifOriginal": {
+    "message": "اصلی (۱:۱ با وضوح اصلی — 3K/4K کامل، بدون کاهش اندازه)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (حداکثر 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (حداکثر 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (حداکثر 854px — سریع‌تر و کم‌حجم‌تر)"
+  },
+  "tipGifDurationLimit": {
+    "message": "قالب GIF حداکثر مدت ضبط ۱ دقیقه (۶۰ ثانیه) را پشتیبانی می‌کند."
+  },
+  "guideSecScreenRecording": {
+    "message": "ضبط صفحه (ویدیو و GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "هر ناحیه‌ای از صفحه را به‌صورت MP4، WebM یا GIF متحرک ضبط کنید. ضبط‌های GIF شامل پروفایل‌های وضوح اصلی ۱:۱، 1080p، 720p و 480p همراه با اندازه تقریبی زنده فایل هستند. حداکثر مدت ضبط GIF برای عملکرد بهینه مرورگر ۱ دقیقه (۶۰ ثانیه) است."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "به حداکثر مدت GIF یعنی ۱ دقیقه (۶۰ ثانیه) رسیدید. در حال ساخت GIF..."
+  },
+  "labelGifMaxDuration": {
+    "message": "حداکثر ۱ دقیقه (۶۰ ثانیه)"
+  },
+  "settingGifFps": {
+    "message": "نرخ فریم پیش‌فرض GIF (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — روان (روانی بالا، حجم بیشتر)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — استاندارد (پیشنهادی برای وب و تعادل کیفیت و حجم)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — فشرده / میم (حرکت پله‌ای، حجم کم)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — استاپ‌موشن / آهسته (گام‌به‌گام «کلیک‌کلیک»، حجم بسیار کم)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — ارائه (۱ فریم در ثانیه، حداقل حجم)"
+  },
+  "popupRightClickHint": {
+    "message": "برای ضبط صفحه (ویدیو/GIF) و انتخابگر رنگ، در هر نقطه از صفحه وب کلیک راست کنید."
+  },
+  "toastElementZappedAd": {
+    "message": "تبلیغ / iframe برای این نشست پنهان شد.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "تصویر در کلیپ‌بورد کپی شد",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "بستن (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "تنظیمات ذخیره شد",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "فایل را دانلود کنید و با VLC یا پخش‌کننده دیگری باز کنید.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "پیش‌نمایشی برای این نوع منبع وجود ندارد",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "دانلود نسخه اصلی",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "نکته: فایل دانلودشده را با VLC یا هر پخش‌کننده رسانه دسکتاپ باز کنید؛ تقریباً همه قالب‌ها را پخش می‌کند.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "در حال ساخت بایگانی ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "مرورگر شما از EyeDropper API پشتیبانی نمی‌کند.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "کشیدن نوار ابزار",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "تغییر قالب: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "وضوح GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "نرخ فریم GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "حجم تخمینی GIF: حدود $size$ MB (برای ۱۰ ثانیه)، تا حدود $max$ MB برای حداکثر ۶۰ ثانیه.\nنرخ فریم: $fps$ FPS.\nضبط GIF حداکثر به ۱ دقیقه (۶۰ ثانیه) محدود است.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "کپی $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "پیش‌نمایش اسکرین‌شات",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — پخش همه‌جا در WhatsApp، Telegram، Jira، Apple و Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (تصویر متحرک — مناسب READMEها، Jira، مستندات و پیام‌رسانی)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — قالب باز وب)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "هیچ زبانه فعالی پیدا نشد.",
+    "description": "No active tab found."
+  }
+}

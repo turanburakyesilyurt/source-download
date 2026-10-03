@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "فحص وتصفح وتنزيل أي أصل ويب بسلاسة كملف ZIP. لقطات شاشة كاملة للصفحة والتقاط الجدول المباشر وطاولة عمل المطور."
+  },
+  "actionTitle": {
+    "message": "Source Download — افتح اللوحة وتتبّع الموارد"
+  },
+  "contextMenuZap": {
+    "message": "إخفاء هذا العنصر (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "استعادة آخر عنصر مخفي"
+  },
+  "contextMenuResetZap": {
+    "message": "إعادة تعيين كل العناصر المخفية"
+  },
+  "contextMenuCapturePage": {
+    "message": "التقاط لقطة شاشة للصفحة كاملة"
+  },
+  "contextMenuPageArchive": {
+    "message": "تنزيل أرشيف الصفحة للاستخدام دون اتصال"
+  },
+  "catAll": {
+    "message": "الكل"
+  },
+  "catApi": {
+    "message": "واجهة برمجة التطبيقات"
+  },
+  "catImages": {
+    "message": "الصور"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "فيديوهات"
+  },
+  "catAudio": {
+    "message": "الصوت"
+  },
+  "catCaptions": {
+    "message": "التسميات التوضيحية"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "خرائط المصدر"
+  },
+  "catFonts": {
+    "message": "الخطوط"
+  },
+  "catDocuments": {
+    "message": "المستندات"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "ملفات البيان"
+  },
+  "catText": {
+    "message": "نص"
+  },
+  "catOther": {
+    "message": "أخرى"
+  },
+  "catScreenshot": {
+    "message": "لقطة الشاشة"
+  },
+  "catArchive": {
+    "message": "أرشيف الصفحة"
+  },
+  "btnRefresh": {
+    "message": "تحديث"
+  },
+  "btnExport": {
+    "message": "تصدير"
+  },
+  "btnDownloadSelected": {
+    "message": "تنزيل المحدد"
+  },
+  "btnDownloadView": {
+    "message": "تنزيل العرض الحالي"
+  },
+  "btnDownloadAll": {
+    "message": "تنزيل الكل"
+  },
+  "btnDownloadFiltered": {
+    "message": "تنزيل المُصفّى"
+  },
+  "btnTheme": {
+    "message": "تبديل المظهر"
+  },
+  "btnGuide": {
+    "message": "دليل المستخدم"
+  },
+  "btnCaptureFullPage": {
+    "message": "لقطة شاشة كاملة للصفحة"
+  },
+  "btnOfflineArchive": {
+    "message": "حفظ HTML في ملف واحد"
+  },
+  "filterMinKb": {
+    "message": "الحد الأدنى (KB)"
+  },
+  "filterMaxKb": {
+    "message": "الحد الأقصى (KB)"
+  },
+  "filterMinWidth": {
+    "message": "الحد الأدنى للعرض بكسل"
+  },
+  "filterMinHeight": {
+    "message": "الحد الأدنى للارتفاع بكسل"
+  },
+  "filterSortName": {
+    "message": "الترتيب حسب الاسم"
+  },
+  "filterSortSize": {
+    "message": "الترتيب حسب الحجم"
+  },
+  "filterSortType": {
+    "message": "الترتيب حسب النوع"
+  },
+  "filterSortTime": {
+    "message": "الترتيب حسب الوقت"
+  },
+  "filterHideDupes": {
+    "message": "إخفاء التكرارات"
+  },
+  "filterClear": {
+    "message": "مسح"
+  },
+  "textModeContains": {
+    "message": "يحتوي على"
+  },
+  "textModeRegex": {
+    "message": "التعبير العادي"
+  },
+  "textModeCss": {
+    "message": "محدد CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "تصفية نص الصفحة أو الاستعلام عن DOM المباشر..."
+  },
+  "textAllElements": {
+    "message": "جميع العناصر"
+  },
+  "textLiveOn": {
+    "message": "مباشر: يعمل"
+  },
+  "textLiveOff": {
+    "message": "مباشر: متوقف"
+  },
+  "textScanNow": {
+    "message": "مسح الآن"
+  },
+  "textReading": {
+    "message": "القراءة"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "حدد موردًا لفحص تفاصيله"
+  },
+  "inspectorDetails": {
+    "message": "التفاصيل"
+  },
+  "inspectorOpenTab": {
+    "message": "افتح في علامة تبويب جديدة"
+  },
+  "inspectorCopyUrl": {
+    "message": "انسخ عنوان URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "تنزيل هذا الملف"
+  },
+  "inspectorClose": {
+    "message": "إغلاق"
+  },
+  "metaUrl": {
+    "message": "عنوان URL"
+  },
+  "metaType": {
+    "message": "النوع"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "الحجم"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "المصدر"
+  },
+  "metaTitle": {
+    "message": "العنوان"
+  },
+  "metaAlt": {
+    "message": "بديل"
+  },
+  "ratingPrompt": {
+    "message": "هل يعجبك Source Download؟ ادعم رؤيتنا مفتوحة المصدر بتقييم على سوق Chrome الإلكتروني أو بنجمة على GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ اترك تقييمًا"
+  },
+  "ratingStar": {
+    "message": "★ نجمة على GitHub"
+  },
+  "ratingDismiss": {
+    "message": "تجاهل"
+  },
+  "toastElementZapped": {
+    "message": "تم إخفاء العنصر لهذه الجلسة."
+  },
+  "toastElementRestored": {
+    "message": "تمت استعادة العنصر."
+  },
+  "toastAllElementsRestored": {
+    "message": "تمت استعادة كل العناصر المخفية."
+  },
+  "toastScreenshotCapturing": {
+    "message": "جارٍ التقاط لقطة شاشة للصفحة كاملة…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "تم حفظ لقطة شاشة للصفحة كاملة."
+  },
+  "toastArchiveCreated": {
+    "message": "تم حفظ أرشيف HTML في ملف واحد."
+  },
+  "brandSignature": {
+    "message": "من تصميم Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "الصور وSVG"
+  },
+  "tabMedia": {
+    "message": "الوسائط والصوت"
+  },
+  "tabFonts": {
+    "message": "الخطوط"
+  },
+  "tabTextScraper": {
+    "message": "النص والجداول"
+  },
+  "heroScreenshotTitle": {
+    "message": "لقطة شاشة كاملة للصفحة"
+  },
+  "heroScreenshotDesc": {
+    "message": "دمج سلس للقطات منافذ العرض المتعددة مع إخفاء الرؤوس الثابتة"
+  },
+  "heroArchiveTitle": {
+    "message": "أرشيف HTML في ملف واحد"
+  },
+  "heroArchiveDesc": {
+    "message": "يدمج CSS وصور Base64 داخل الملف، للحصول على نسخة آمنة للعرض دون اتصال"
+  },
+  "copyDataUri": {
+    "message": "نسخ Data URI"
+  },
+  "copyUrl": {
+    "message": "انسخ عنوان URL"
+  },
+  "downloadSingle": {
+    "message": "تنزيل"
+  },
+  "searchPlaceholder": {
+    "message": "التصفية حسب الاسم أو عنوان URL أو العلامة أو MIME أو /regex/..."
+  },
+  "viewGrid": {
+    "message": "عرض الشبكة"
+  },
+  "viewList": {
+    "message": "عرض القائمة"
+  },
+  "btnScreenshot": {
+    "message": "لقطة الشاشة"
+  },
+  "btnArchive": {
+    "message": "حفظ HTML"
+  },
+  "exportJson": {
+    "message": "قائمة مرئية كـ JSON"
+  },
+  "exportCsv": {
+    "message": "قائمة مرئية كملف CSV"
+  },
+  "exportHar": {
+    "message": "سجل الشبكة كـ HAR"
+  },
+  "exportScreenshot": {
+    "message": "لقطة شاشة لكامل الصفحة (PNG)"
+  },
+  "exportArchive": {
+    "message": "أرشيف الصفحة للعرض دون اتصال (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "جميع الأساليب"
+  },
+  "filterTypeAll": {
+    "message": "جميع الأنواع"
+  },
+  "filterSortDir": {
+    "message": "تبديل تصاعدي / تنازلي"
+  },
+  "emptyTitle": {
+    "message": "لم يتم العثور على الموارد"
+  },
+  "emptySubtitle": {
+    "message": "أعد تحميل الصفحة عندما تكون هذه اللوحة مفتوحة لالتقاط طلبات الشبكة، أو انقر فوق \"تحديث\" لفحص DOM الحالي."
+  },
+  "statusResources": {
+    "message": "الموارد"
+  },
+  "statusFiltered": {
+    "message": "مُصفّاة"
+  },
+  "statusSelected": {
+    "message": "محددة"
+  },
+  "statusDupes": {
+    "message": "التكرارات مخفية"
+  },
+  "statusSize": {
+    "message": "الحجم"
+  },
+  "langAuto": {
+    "message": "تلقائي (المتصفح)"
+  },
+  "langSelectorTitle": {
+    "message": "اختر اللغة"
+  },
+  "textPillAll": {
+    "message": "كل المحتوى"
+  },
+  "textPillText": {
+    "message": "📄 النصوص والمقالات"
+  },
+  "textPillTables": {
+    "message": "📊 الجداول فقط"
+  },
+  "textSelectAll": {
+    "message": "تحديد الكل"
+  },
+  "textDeselectAll": {
+    "message": "إلغاء تحديد الكل"
+  },
+  "textClearSelection": {
+    "message": "مسح"
+  },
+  "toastRefreshComplete": {
+    "message": "اكتمل فحص الصفحة: $count$ من الموارد الجديدة",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "تم نسخ $count$ من الكتل",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "تم النسخ إلى الحافظة"
+  },
+  "toastTableCopied": {
+    "message": "تم نسخ الجدول إلى الحافظة"
+  },
+  "toastNothingToExport": {
+    "message": "لا شيء للتصدير"
+  },
+  "toastExportedTxt": {
+    "message": "تم تصدير $count$ من الكتل بتنسيق TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "تم تصدير $count$ من الكتل بتنسيق Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "لم يتم التقاط أي صفوف جدول"
+  },
+  "toastExportedCsv": {
+    "message": "تم تصدير الجدول بتنسيق CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "تم تصدير الجدول بتنسيق XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "تم تصدير $count$ من الجداول بتنسيق $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "تم تصدير $count$ من الأوراق بتنسيق XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "لا توجد موارد للتنزيل."
+  },
+  "toastNoVisibleResources": {
+    "message": "لا توجد موارد مرئية للتنزيل."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "حدد موردًا واحدًا على الأقل أولاً."
+  },
+  "toastZipSaved": {
+    "message": "تم حفظ ملف ZIP: $fetched$ من $total$ من الموارد",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "فشل إنشاء ملف ZIP: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "تم تصدير HAR ($count$ من الإدخالات)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "تم نسخ عنوان URL إلى الحافظة"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "نافذة DevTools المفحوصة غير متاحة."
+  },
+  "toastScreenshotError": {
+    "message": "خطأ في لقطة الشاشة: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "جارٍ إنشاء أرشيف الصفحة للاستخدام دون اتصال…"
+  },
+  "toastArchiveError": {
+    "message": "خطأ في الأرشيف: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "انتهت مهلة التنسيق — يتم عرض الملف الأصلي."
+  },
+  "toastFormatFailed": {
+    "message": "تعذر تنسيق الملف — يتم عرض الملف الأصلي."
+  },
+  "emptySearchTitle": {
+    "message": "لا توجد تطابقات لـ \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "جرّب مصطلح بحث مختلفًا، أو انتقل إلى فئة أخرى."
+  },
+  "emptyFiltersTitle": {
+    "message": "لا توجد موارد تطابق المرشحات الحالية"
+  },
+  "emptyFiltersSub": {
+    "message": "خفّف مرشحات الحجم أو الأبعاد أعلاه، أو اضغط على «مسح»."
+  },
+  "textEmptyQueryReject": {
+    "message": "رفضت الصفحة هذا الاستعلام. صحّحه أعلاه وستعود النتائج فورًا."
+  },
+  "textEmptyNoMatch": {
+    "message": "لا يوجد أي عنصر في الصفحة يطابق هذا الاستعلام. جرّب محددًا أكثر مرونة، أو غيّر الوضع المجاور للمربع."
+  },
+  "textEmptyInitial": {
+    "message": "لم يتم التقاط شيء بعد. الالتقاط المباشر قيد التشغيل — ستظهر الصفحة بأكملها هنا كنص قابل للقراءة."
+  },
+  "textEmptyFiltered": {
+    "message": "لا شيء يطابق الاستعلام الحالي ومرشح العناصر."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ من الكتل",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ من الكلمات",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ حرفًا",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ من الجداول · $rows$ من الصفوف الفريدة",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "تم تحديد $count$ — تستخدم عمليات التصدير هذه العناصر فقط",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "جدول — $count$ من الصفوف على الشاشة",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "جدول — جميع الصفوف الفريدة ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ من اللقطات",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "آخر تحديث: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "إظهار كل الصفوف ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "يتم عرض كل الصفوف"
+  },
+  "textTableHistory": {
+    "message": "السجل ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "إخفاء السجل"
+  },
+  "textTableNoRows": {
+    "message": "لم يتم التقاط أي صفوف حتى الآن."
+  },
+  "textBtnCopy": {
+    "message": "نسخ النص"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 نسخ"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ من الصور المكررة",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "تصدير"
+  },
+  "inspectorLoadingSvg": {
+    "message": "جارٍ تحميل SVG..."
+  },
+  "inspectorSvgError": {
+    "message": "تعذر استرداد محتوى SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "جارٍ تحميل معاينة الخط…"
+  },
+  "inspectorFontSample": {
+    "message": "معاينة الخط"
+  },
+  "inspectorBeautify": {
+    "message": "تنسيق"
+  },
+  "inspectorOriginal": {
+    "message": "الأصلي"
+  },
+  "inspectorHeaders": {
+    "message": "الترويسات"
+  },
+  "inspectorResponse": {
+    "message": "الاستجابة"
+  },
+  "inspectorRequest": {
+    "message": "الطلب"
+  },
+  "inspectorQueryParams": {
+    "message": "معلمات الاستعلام"
+  },
+  "inspectorRequestBody": {
+    "message": "نص الطلب"
+  },
+  "textHintHtml": {
+    "message": "نسخة حية ومقروءة من الصفحة. يتم التقاط كل عنصر يحتوي على نص بترتيب DOM ويتم الاحتفاظ به هنا مع تغير الصفحة. استعلم عنه باستخدام نص عادي، أو تعبير عادي، أو <strong>محدد CSS</strong> أو تعبير <strong>XPath</strong>، ثم قم بتصدير ما يطابقه. راجع <a href=\"#\" id=\"text-hint-guide\">الدليل</a> للحصول على التفاصيل."
+  },
+  "textHeadings": {
+    "message": "العناوين"
+  },
+  "textAllLevels": {
+    "message": "جميع المستويات"
+  },
+  "textMatches": {
+    "message": "تطابقات"
+  },
+  "textMatch": {
+    "message": "تطابق"
+  },
+  "textReadingOn": {
+    "message": "القراءة مفعّلة"
+  },
+  "toastDownloadStarted": {
+    "message": "بدأ التنزيل: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "تعذر جلب هذا المورد (CORS أو نوع غير مدعوم)."
+  },
+  "ratingBannerText": {
+    "message": "هل يعجبك Source Download؟ ادعم رؤيتنا مفتوحة المصدر بتقييم على سوق Chrome الإلكتروني أو بنجمة على GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ تقييم"
+  },
+  "ratingBannerStar": {
+    "message": "★ نجمة"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ من الصفوف الفريدة",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "منذ $count$ ث",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "منذ $count$ د",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "التقاط لقطة شاشة لمنطقة"
+  },
+  "btnAreaDownload": {
+    "message": "تنزيل"
+  },
+  "btnAreaCopy": {
+    "message": "نسخ إلى الحافظة"
+  },
+  "btnAreaCancel": {
+    "message": "إلغاء"
+  },
+  "toastAreaCopied": {
+    "message": "تم نسخ لقطة شاشة المنطقة إلى الحافظة"
+  },
+  "toastAreaDownloaded": {
+    "message": "تم حفظ لقطة شاشة المنطقة"
+  },
+  "statusFoundCssResources": {
+    "message": "تم العثور على $count$ من الموارد المشار إليها في CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "فشل فحص DOM: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "فهرسة محتويات الملف..."
+  },
+  "statusCheckingDuplicates": {
+    "message": "جارٍ التحقق من تكرارات الصور..."
+  },
+  "statusWorking": {
+    "message": "جارٍ العمل…"
+  },
+  "filterMethodTitle": {
+    "message": "التصفية حسب طريقة HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "التصفية حسب نوع الطلب"
+  },
+  "filterSortTitle": {
+    "message": "فرز الموارد"
+  },
+  "textModeTitle": {
+    "message": "كيف يتم تفسير مربع الاستعلام"
+  },
+  "textKindTitle": {
+    "message": "التقييد بنوع عنصر واحد"
+  },
+  "textHeadingLevelTitle": {
+    "message": "مستوى العنوان"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+ — تعبير JavaScript العادي"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — أي محدد CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "ابحث في الدليل…"
+  },
+  "popupIntro": {
+    "message": "الفئات التي تحتسبها <strong>شارة شريط الأدوات</strong>. أوقف تشغيل فئة لإيقاف احتسابها — تعكس الشارة فورًا ما تتتبّعه فقط."
+  },
+  "popupHelpTitle": {
+    "message": "كيفية استخدام اللوحة الكاملة"
+  },
+  "popupStep1": {
+    "message": "افتح DevTools للصفحة التي تريد فحصها <div class=\"hint\"><kbd>F12</kbd> أو <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "انقر علامة التبويب <strong>Source Download</strong> في شريط أدوات DevTools"
+  },
+  "popupStep3": {
+    "message": "تصفّح الموارد وافحصها ونزّلها — فرديًا أو دفعة واحدة كملف ZIP."
+  },
+  "popupNote": {
+    "message": "ملاحظة: لا يسمح Chrome للإضافات بفتح DevTools برمجيًا، ولذلك تتوفر اللوحة الكاملة عبر شريط أدوات DevTools."
+  },
+  "popupTrackAll": {
+    "message": "تتبع جميع الفئات"
+  },
+  "popupLanguage": {
+    "message": "اللغة"
+  },
+  "inspectorBinaryResponse": {
+    "message": "استجابة ثنائية — نزّلها لعرضها"
+  },
+  "inspectorLoadingResponse": {
+    "message": "جارٍ تحميل الاستجابة…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "لا توجد معاينة للاستجابة — تعذر استرداد المحتوى."
+  },
+  "inspectorLoadingContent": {
+    "message": "جارٍ تحميل المحتوى…"
+  },
+  "inspectorNoPreview": {
+    "message": "لا تتوفر معاينة — تعذر استرداد المحتوى."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "إغلاق الكل"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "أغلق كافة علامات التبويب المفتوحة"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "انقر للتكبير"
+  },
+  "inspectorViewSource": {
+    "message": "عرض المصدر"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "إظهار ترميز SVG مع تمييز بناء الجملة"
+  },
+  "inspectorFormatting": {
+    "message": "جارٍ التنسيق…"
+  },
+  "findInContentPlaceholder": {
+    "message": "البحث في المحتوى…"
+  },
+  "findPreviousMatch": {
+    "message": "التطابق السابق"
+  },
+  "findNextMatch": {
+    "message": "التطابق التالي"
+  },
+  "findClose": {
+    "message": "إغلاق"
+  },
+  "findShowRaw": {
+    "message": "إظهار المحتوى الأصلي (غير المنسّق)"
+  },
+  "findBeautify": {
+    "message": "تنسيق هذا المحتوى"
+  },
+  "btnRaw": {
+    "message": "خام"
+  },
+  "btnBeautify": {
+    "message": "تنسيق"
+  },
+  "videoHlsDetected": {
+    "message": "تم اكتشاف تدفق HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "لا يمكن تشغيل هذا الفيديو في المتصفح"
+  },
+  "videoHlsNotice": {
+    "message": "لا يستطيع Chrome تشغيل تدفقات HLS مباشرة. يمكنك دمج جميع مقاطع <b>$NAME$</b> في ملف فيديو MP4/TS واحد.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "المتصفح لا يدعم هذا التنسيق"
+  },
+  "btnMergeHls": {
+    "message": "دمج المقاطع والتنزيل"
+  },
+  "toastHlsMerged": {
+    "message": "تم دمج $COUNT$ من المقاطع في $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "الحجم غير معروف"
+  },
+  "progressFetching": {
+    "message": "جارٍ جلب $DONE$/$TOTAL$ · ZIP $EST$...",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "جارٍ إنشاء ملف ZIP $PERCENT$%...",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "تم حفظ ملف ZIP: $FETCHED$ من $TOTAL$ من الموارد (فشل $SKIPPED$)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "إعادة المحاولة ($COUNT$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "إعادة محاولة التنزيل"
+  },
+  "searchRegexHint": {
+    "message": "بحث بالتعبير العادي نشط — ضع استعلامك بين /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "تضمين في عمليات التصدير"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "ادمج كل اللقطات في جدول واحد خالٍ من التكرار — هذا هو ما يتم تصديره"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "تصفح اللقطات السابقة لهذا الجدول"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "تنزيل هذا الجدول كملف CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "لقطة $INDEX$ — $TIME$ ($COUNT$ من الصفوف)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "تبديل التحديد للتنزيل الدفعي"
+  },
+  "cardDownloadTitle": {
+    "message": "تنزيل الملف"
+  },
+  "cardRetryFailedTitle": {
+    "message": "فشل التنزيل السابق — انقر لإعادة المحاولة"
+  },
+  "btnThemeLight": {
+    "message": "التبديل إلى المظهر الفاتح"
+  },
+  "btnThemeDark": {
+    "message": "التبديل إلى المظهر الداكن"
+  },
+  "guideTitle": {
+    "message": "Source Download — دليل المستخدم"
+  },
+  "guideEmpty": {
+    "message": "لا توجد أقسام دليل تطابق بحثك."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — دون أي تبعيات بنسبة 100%.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "تصغير (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "تكبير (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "إعادة ضبط التكبير (0)"
+  },
+  "lightboxClose": {
+    "message": "إغلاق (Esc)"
+  },
+  "resizerTitle": {
+    "message": "اسحب لتغيير الحجم"
+  },
+  "ratingDismissTitle": {
+    "message": "تجاهل"
+  },
+  "inspectorResourceTitle": {
+    "message": "المورد"
+  },
+  "guideSecGettingStarted": {
+    "message": "البدء"
+  },
+  "guideSecCategories": {
+    "message": "الفئات"
+  },
+  "guideSecSearchFilters": {
+    "message": "البحث والتصفية"
+  },
+  "guideSecGridView": {
+    "message": "عرض الشبكة والقائمة"
+  },
+  "guideSecInspect": {
+    "message": "فحص أحد الموارد"
+  },
+  "guideSecDownloading": {
+    "message": "التنزيل"
+  },
+  "guideSecLightbox": {
+    "message": "العرض المبسط"
+  },
+  "guideSecTextTables": {
+    "message": "النص والجداول"
+  },
+  "guideSecCaptions": {
+    "message": "التسميات التوضيحية والعناوين الفرعية"
+  },
+  "guideSecSourceMaps": {
+    "message": "خرائط المصدر"
+  },
+  "guideSecDupes": {
+    "message": "صور مكررة"
+  },
+  "guideSecVideoHls": {
+    "message": "احتياطي الفيديو وHLS"
+  },
+  "guideSecPowerTips": {
+    "message": "نصائح متقدمة"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "انقر علامة التبويب <strong>Source Download</strong> في شريط أدوات DevTools (اضغط <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>، ثم علامة التبويب في شريط أدوات DevTools). لا يسمح Chrome للإضافات بفتح DevTools تلقائيًا، ولهذا السبب توجد اللوحة هناك. تتيح لك النافذة المنبثقة لأيقونة شريط الأدوات اختيار الفئات التي تغذي عدّاد الشارة على الأيقونة. يثبّت زر الشمس/القمر في شريط أدوات اللوحة المظهر الفاتح أو الداكن بشكل مستقل عن Chrome؛ ويتم تذكّر هذا الاختيار."
+  },
+  "guideSecCategoriesContent": {
+    "message": "تقوم علامات التبويب الرأسية على اليسار بتجميع كل مورد تم التقاطه في 17 فئة مخصصة حسب النوع: الصور ومقاطع الفيديو والصوت والتسميات التوضيحية والمستندات والخطوط وخرائط المصدر وWASM وSVG وواجهات برمجة التطبيقات وملفات تعريف الارتباط والتخزين والمزيد. تعرض كل علامة تبويب عددًا حيًا. يتم عرض فئة واحدة فقط في كل مرة؛ يؤدي التبديل إلى إعادة تعيين جميع المرشحات، لذا فإن ما تراه يتطابق دائمًا مع علامة التبويب."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "يقوم شريط البحث بالتصفية حسب الاسم أو عنوان URL أو النوع أو النص البديل أو العنوان. ضع استعلامك بين <kbd>/…/</kbd> لاستخدام تعبير عادي، مثل <code>/\\.(png|jpg)$/</code>. أسفل شريط الأدوات، يتغير شريط المرشحات حسب الفئة: نطاقات الحجم والأبعاد للوسائط، وطريقة HTTP ونوع الطلب لواجهات برمجة التطبيقات، بالإضافة إلى الفرز والاتجاه."
+  },
+  "guideSecGridViewContent": {
+    "message": "قم بالتبديل بين شبكة مدمجة (صور مصغرة صغيرة) وقائمة مفصلة بالأزرار الموجودة بجوار شريط البحث. يتم تذكر اختيارك بين الجلسات. في عرض القائمة، تتيح لك مربعات الاختيار تحديد موارد فردية للتنزيل المجمع."
+  },
+  "guideSecInspectContent": {
+    "message": "انقر أي مورد لفتحه في جزء الفحص. يتحول كل ملف مفتوح إلى علامة تبويب، حتى تتمكن من مقارنة عدة موارد جنبًا إلى جنب — ويُفتح الأحدث أولًا. تتوفر عارضات متخصصة للصور والفيديو والصوت والخطوط وSVG والنص/الشيفرة (مع مفتاح التنسيق). تعرض واجهات برمجة التطبيقات عرضًا مقسمًا: الاستجابة في جانب، وتفاصيل الطلب (الطريقة، والحالة، والترويسات، ومعلمات الاستعلام، والنص) في الجانب الآخر."
+  },
+  "guideSecDownloadingContent": {
+    "message": "يحفظ <strong>تنزيل العرض الحالي</strong> الموارد المرئية حاليًا (الفئة النشطة + البحث + المرشحات) كملف ZIP؛ ويتغير اسمه إلى <em>تنزيل المُصفّى (N)</em> عندما تكون المرشحات نشطة. مرّر مؤشر الماوس فوق أي زر تنزيل لرؤية الحجم المقدّر للأرشيف قبل النقر عليه. يقوم <strong>تنزيل المحدد</strong> بتنزيل العناصر المحددة فقط. يجمع <strong>تنزيل الكل</strong> كل الموارد المكتشفة في ملف ZIP منظّم في مجلدات. تتم إعادة محاولة التنزيلات الفاشلة تلقائيًا، ويمكن إعادة محاولتها مرة أخرى من قائمة السياق. يكتب <strong>تصدير</strong> القائمة المرئية بتنسيق JSON أو CSV، أو يُصدّر سجل شبكة Chrome كملف HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "يفتح زر التكبير/التصغير الوسائط في مربع مبسط بالحجم الكامل حيث يمكنك التحريك عن طريق السحب أو التكبير/التصغير باستخدام عجلة الماوس أو الأزرار التي تظهر على الشاشة أو لوحة المفاتيح (<kbd>+</kbd>/<kbd>-</kbd> للتكبير/التصغير، <kbd>0</kbd> لإعادة التعيين، <kbd>Esc</kbd> للإغلاق)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>فئة <strong>النص</strong> هي نسخة مباشرة وقابلة للقراءة من الصفحة. تلتقط كل عنصر يحتوي على نص — العناوين والفقرات وعناصر القوائم والأزرار و<code>div</code>/<code>span</code> وغيرها — بترتيب DOM، وتواصل الفحص ما دام وضع <strong>المباشر</strong> قيد التشغيل.</p><p>يعمل مربع <strong>الاستعلام</strong> بأربع طرق، يتم اختيارها من القائمة المنسدلة بجانبه: يقوم <strong>يحتوي على</strong> و<strong>التعبير العادي</strong> بتصفية النص الذي تم التقاطه بالفعل، بينما يتم تنفيذ <strong>محدد CSS</strong> و<strong>XPath</strong> على الصفحة المباشرة، فيصلان إلى أي شيء في DOM. يقبل XPath أيضًا تعبيرات تُرجع قيمة بدلًا من عناصر، مثل <code>count(//a)</code> أو <code>//@href</code>. يظهر بجوار المربع أي خطأ تُبلغ عنه الصفحة بشأن استعلام غير صالح. يضيّق <strong>العنصر</strong> النتيجة إلى وسم واحد، مع عدد كل وسم موجود في الصفحة. يؤدي مسح مربع الاستعلام (أو الضغط على <strong>مسح</strong>) إلى إعادتك إلى <em>جميع العناصر</em> وإعادة التقاط الصفحة — ولن تضطر أبدًا إلى إعادة ضبط القائمة المنسدلة يدويًا.</p><p>يخفي وضع <strong>القراءة</strong> الوسوم ومربعات الاختيار ومسارات الموقع بحيث يبدو التدفق كمستند. تحتفظ الجداول بسجل محدود من اللقطات حتى لا تضيع الجداول الديناميكية (SPA) أبدًا. اضغط <strong>إظهار كل الصفوف</strong> في أحد الجداول لدمج كل اللقطات في عرض واحد خالٍ من التكرار — وهذا بالضبط ما يتضمنه التصدير. صدّر بتنسيق <strong>TXT</strong> (الصفحة القابلة للقراءة)، أو <strong>MD</strong> (Markdown، بما في ذلك الجداول)، أو الجداول بتنسيق CSV أو HTML أو كمصنف <strong>XLSX</strong> حقيقي متعدد الأوراق. تكون الأولوية للعناصر المحددة؛ وإلا فسيتم تصدير كل ما هو مرئي حاليًا.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "تظهر ملفات WebVTT وSRT وTTML وغيرها من ملفات التسميات التوضيحية — بما في ذلك مصادر <code>&lt;track&gt;</code> — في علامة تبويب <strong>التسميات التوضيحية</strong> الخاصة بها بدلًا من الاختلاط بالمستندات."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "يتم تجميع ملفات <code>.map</code> وأجسام JSON التي تبدو مثل خرائط المصدر (تحتوي على <code>mappings</code> و<code>sources</code>) ضمن <strong>خرائط المصدر</strong>، مع عارض JSON وخيار التنسيق، بحيث لا تزدحم بها علامة تبويب JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "في علامة التبويب «الصور»، تحسب اللوحة تجزئة البايتات الملتقطة وتضع علامة على الملفات المتطابقة. يحتفظ مرشح <strong>إخفاء التكرارات</strong> بالنسخة الأولى من كل مجموعة، فلا يتضمن ملف ZIP الخاص بالعرض الصورة المصغرة نفسها مرتين."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "تُظهر التدفقات التي لا يستطيع المتصفح تشغيلها محليًا (HLS <code>.m3u8</code>، وDASH <code>.mpd</code>، وبرامج الترميز غير المعروفة) عرضًا احتياطيًا بدلًا من مشغّل أسود. بالنسبة لـ HLS، يمكنك دمج المقاطع في ملف فيديو واحد مباشرة من اللوحة، أو تنزيل ملف البيان الأصلي."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "لا يتم إلغاء تكرار استجابات <strong>API</strong> الديناميكية (XHR/fetch) بحسب عنوان URL — يظل كل رد في القائمة (بحد أقصى، بنظام FIFO) لتتمكن من مقارنة الطلبات المتكررة. أما الأصول الثابتة فيتم إلغاء تكرارها. استخدم <strong>تحديث</strong> لإعادة فحص DOM الحالي، وأعد تحميل الصفحة واللوحة مفتوحة لالتقاط كل طلبات الشبكة، بما في ذلك الطلبات التي بدأت قبل تبديل علامات التبويب."
+  },
+  "toolArrow": {
+    "message": "أداة السهم"
+  },
+  "toolRect": {
+    "message": "أداة المستطيل"
+  },
+  "toolText": {
+    "message": "أداة النص"
+  },
+  "toolUndo": {
+    "message": "تراجع (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "إعادة (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "اللون"
+  },
+  "badgeStrokeSize": {
+    "message": "الحجم: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "حجم الخط: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "تسجيل منطقة كفيديو / GIF"
+  },
+  "btnRecStart": {
+    "message": "بدء التسجيل"
+  },
+  "btnRecPause": {
+    "message": "إيقاف مؤقت"
+  },
+  "btnRecResume": {
+    "message": "استئناف"
+  },
+  "btnRecStop": {
+    "message": "إنهاء وتنزيل"
+  },
+  "btnRecCancel": {
+    "message": "إلغاء"
+  },
+  "toastRecSaved": {
+    "message": "تم حفظ تسجيل المنطقة"
+  },
+  "toastRecCancelled": {
+    "message": "تم إلغاء تسجيل الفيديو"
+  },
+  "toastRecPermissionDenied": {
+    "message": "لم يتم منح إذن تسجيل الشاشة"
+  },
+  "btnPopupRecordArea": {
+    "message": "فيديو / GIF لمنطقة محددة"
+  },
+  "btnPopupCaptureArea": {
+    "message": "لقطة شاشة لمنطقة محددة"
+  },
+  "contextMenuPickColor": {
+    "message": "اختيار لون من الشاشة"
+  },
+  "btnPopupPickColor": {
+    "message": "اختر اللون"
+  },
+  "colorPickerTitle": {
+    "message": "منتقي الألوان"
+  },
+  "btnColorPickAgain": {
+    "message": "اختيار لون آخر"
+  },
+  "toastColorCopied": {
+    "message": "تم نسخ اللون إلى الحافظة"
+  },
+  "toastProgressCapturing": {
+    "message": "جارٍ التقاط الصفحة كاملة… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "جارٍ دمج الصورة…"
+  },
+  "modalExportTitle": {
+    "message": "لقطة الشاشة للصفحة كاملة جاهزة"
+  },
+  "btnExportPng": {
+    "message": "تنزيل PNG"
+  },
+  "btnExportJpg": {
+    "message": "تنزيل JPG"
+  },
+  "btnExportPdf": {
+    "message": "حفظ بصيغة PDF"
+  },
+  "btnExportCopy": {
+    "message": "نسخ إلى الحافظة"
+  },
+  "btnExportGenerating": {
+    "message": "جارٍ الإنشاء…"
+  },
+  "toastPdfGenerated": {
+    "message": "تم حفظ مستند PDF."
+  },
+  "settingNamingPatterns": {
+    "message": "أنماط تسمية الملفات"
+  },
+  "settingVideoFormat": {
+    "message": "تنسيق الفيديو الافتراضي"
+  },
+  "settingNamingPreview": {
+    "message": "معاينة:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "جارٍ إنشاء GIF، يُرجى الانتظار…"
+  },
+  "settingGifResolution": {
+    "message": "دقة GIF الافتراضية"
+  },
+  "optGifOriginal": {
+    "message": "الأصلية (دقة 1:1 الأصلية — 3K/4K كاملة، دون تصغير)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (بحد أقصى 1920 px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (بحد أقصى 1280 px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (بحد أقصى 854 px — أسرع وبحجم أصغر)"
+  },
+  "tipGifDurationLimit": {
+    "message": "يدعم تنسيق GIF مدة تسجيل أقصاها دقيقة واحدة (60 ثانية)."
+  },
+  "guideSecScreenRecording": {
+    "message": "تسجيل الشاشة (فيديو وGIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "سجّل أي منطقة من الشاشة بصيغة MP4 أو WebM أو GIF متحرك. تتوفر لتسجيلات GIF إعدادات بدقة أصلية 1:1 و1080p و720p و480p مع عرض مباشر لأحجام الملفات المقدّرة. الحد الأقصى لمدة تسجيل GIF هو دقيقة واحدة (60 ثانية) للحصول على أفضل أداء للمتصفح."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "تم بلوغ الحد الأقصى لمدة GIF وهو دقيقة واحدة (60 ثانية). جارٍ إنشاء GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "الحد الأقصى دقيقة واحدة (60 ثانية)"
+  },
+  "settingGifFps": {
+    "message": "معدل إطارات GIF الافتراضي (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — سلس (انسيابية عالية، حجم أكبر)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — قياسي (موصى به للويب وللتوازن)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — مضغوط / ميم (حركة متقطعة، حجم صغير)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — تحريك بالإطارات / بطيء (خطوة بخطوة «نقرة بنقرة»، حجم صغير جدًا)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — عرض تقديمي (إطار واحد في الثانية، أصغر حجم)"
+  },
+  "popupRightClickHint": {
+    "message": "انقر بزر الماوس الأيمن في أي مكان على صفحة الويب لتسجيل الشاشة (فيديو/GIF) ومنتقي الألوان."
+  },
+  "toastElementZappedAd": {
+    "message": "تم إخفاء الإعلان / iframe لهذه الجلسة.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "تم نسخ الصورة إلى الحافظة",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "إغلاق (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "تم حفظ الإعدادات",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "نزّل الملف وافتحه باستخدام VLC أو مشغّل وسائط آخر.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "لا تتوفر معاينة لهذا النوع من الموارد",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "تنزيل الأصل",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "نصيحة: افتح الملف الذي نزّلته باستخدام VLC أو أي مشغّل وسائط لسطح المكتب — فهو يشغّل معظم الصيغ تقريبًا.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "جارٍ إنشاء أرشيف ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "متصفحك لا يدعم EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "سحب شريط الأدوات",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "تبديل الصيغة: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "دقة GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "معدل إطارات GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "الحجم التقديري لـ GIF: ~$size$ MB (لمدة 10 ثوانٍ)، وحتى ~$max$ MB عند الحد الأقصى 60 ثانية.\nمعدل الإطارات: $fps$ FPS.\nتسجيل GIF محدود بحد أقصى دقيقة واحدة (60 ثانية).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "نسخ $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "معاينة لقطة الشاشة",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — تشغيل شامل على WhatsApp وTelegram وJira وApple وWindows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (صورة متحركة — مثالية لملفات README وJira والتوثيق والمراسلة)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — صيغة ويب مفتوحة)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "لم يتم العثور على علامة تبويب نشطة.",
+    "description": "No active tab found."
+  }
+}

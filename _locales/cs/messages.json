@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Prohlížejte a stahujte jakékoli webové prvky jako ZIP. Snímky celé stránky, záznam tabulek naživo a vývojářské nástroje."
+  },
+  "actionTitle": {
+    "message": "Source Download — otevřít panel a sledovat zdroje"
+  },
+  "contextMenuZap": {
+    "message": "Skrýt tento prvek (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "Obnovit naposledy skrytý prvek"
+  },
+  "contextMenuResetZap": {
+    "message": "Obnovit všechny skryté prvky"
+  },
+  "contextMenuCapturePage": {
+    "message": "Pořídit snímek celé stránky"
+  },
+  "contextMenuPageArchive": {
+    "message": "Stáhnout offline archiv stránky"
+  },
+  "catAll": {
+    "message": "Vše"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Obrázky"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Videa"
+  },
+  "catAudio": {
+    "message": "Zvuk"
+  },
+  "catCaptions": {
+    "message": "Titulky"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Zdrojové mapy"
+  },
+  "catFonts": {
+    "message": "Písma"
+  },
+  "catDocuments": {
+    "message": "Dokumenty"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifesty"
+  },
+  "catText": {
+    "message": "Text"
+  },
+  "catOther": {
+    "message": "Jiné"
+  },
+  "catScreenshot": {
+    "message": "Snímek obrazovky"
+  },
+  "catArchive": {
+    "message": "Archiv stránek"
+  },
+  "btnRefresh": {
+    "message": "Obnovit"
+  },
+  "btnExport": {
+    "message": "Exportovat"
+  },
+  "btnDownloadSelected": {
+    "message": "Stáhnout vybrané"
+  },
+  "btnDownloadView": {
+    "message": "Stáhnout zobrazené"
+  },
+  "btnDownloadAll": {
+    "message": "Stáhnout vše"
+  },
+  "btnDownloadFiltered": {
+    "message": "Stáhnout filtrované"
+  },
+  "btnTheme": {
+    "message": "Přepnout téma"
+  },
+  "btnGuide": {
+    "message": "Uživatelská příručka"
+  },
+  "btnCaptureFullPage": {
+    "message": "Snímek celé stránky"
+  },
+  "btnOfflineArchive": {
+    "message": "Uložit jako jeden soubor HTML"
+  },
+  "filterMinKb": {
+    "message": "Min. KB"
+  },
+  "filterMaxKb": {
+    "message": "Max KB"
+  },
+  "filterMinWidth": {
+    "message": "Min. šířka px"
+  },
+  "filterMinHeight": {
+    "message": "Min. výška px"
+  },
+  "filterSortName": {
+    "message": "Seřadit podle názvu"
+  },
+  "filterSortSize": {
+    "message": "Seřadit podle velikosti"
+  },
+  "filterSortType": {
+    "message": "Seřadit podle typu"
+  },
+  "filterSortTime": {
+    "message": "Seřadit podle času"
+  },
+  "filterHideDupes": {
+    "message": "Skrýt duplikáty"
+  },
+  "filterClear": {
+    "message": "Vymazat"
+  },
+  "textModeContains": {
+    "message": "Obsahuje"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "Selektor CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filtrovat text stránky nebo dotazovat živý DOM…"
+  },
+  "textAllElements": {
+    "message": "Všechny prvky"
+  },
+  "textLiveOn": {
+    "message": "Živě zapnuto"
+  },
+  "textLiveOff": {
+    "message": "Živě vypnuto"
+  },
+  "textScanNow": {
+    "message": "Skenovat nyní"
+  },
+  "textReading": {
+    "message": "Čtení"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Vyberte zdroj a zkontrolujte jeho podrobnosti"
+  },
+  "inspectorDetails": {
+    "message": "Podrobnosti"
+  },
+  "inspectorOpenTab": {
+    "message": "Otevřít na nové kartě"
+  },
+  "inspectorCopyUrl": {
+    "message": "Kopírovat URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Stáhnout tento soubor"
+  },
+  "inspectorClose": {
+    "message": "Zavřít"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Typ"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Velikost"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Zdroj"
+  },
+  "metaTitle": {
+    "message": "Název"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Líbí se vám Source Download? Podpořte naši open-source vizi recenzí v Internetovém obchodě Chrome nebo hvězdičkou na GitHubu!"
+  },
+  "ratingReview": {
+    "message": "★ Zanechat recenzi"
+  },
+  "ratingStar": {
+    "message": "★ Hvězda na GitHubu"
+  },
+  "ratingDismiss": {
+    "message": "Zavřít"
+  },
+  "toastElementZapped": {
+    "message": "Prvek je skrytý pro tuto relaci."
+  },
+  "toastElementRestored": {
+    "message": "Prvek obnoven."
+  },
+  "toastAllElementsRestored": {
+    "message": "Všechny skryté prvky byly obnoveny."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Snímání celé stránky…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Snímek celé stránky uložen."
+  },
+  "toastArchiveCreated": {
+    "message": "Archiv HTML v jednom souboru uložen."
+  },
+  "brandSignature": {
+    "message": "Vytvořil Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Obrázky a SVG"
+  },
+  "tabMedia": {
+    "message": "Média a zvuk"
+  },
+  "tabFonts": {
+    "message": "Písma"
+  },
+  "tabTextScraper": {
+    "message": "Text a tabulky"
+  },
+  "heroScreenshotTitle": {
+    "message": "Snímek celé stránky"
+  },
+  "heroScreenshotDesc": {
+    "message": "Plynulé sešití více výřezů s potlačením ukotvených záhlaví"
+  },
+  "heroArchiveTitle": {
+    "message": "Jednosouborový HTML archiv"
+  },
+  "heroArchiveDesc": {
+    "message": "Vloží CSS a obrázky Base64, snímek pro offline použití"
+  },
+  "copyDataUri": {
+    "message": "Kopírovat data-URI"
+  },
+  "copyUrl": {
+    "message": "Kopírovat URL"
+  },
+  "downloadSingle": {
+    "message": "Stáhnout"
+  },
+  "searchPlaceholder": {
+    "message": "Filtrujte podle názvu, adresy URL, značky, MIME nebo /regex/…"
+  },
+  "viewGrid": {
+    "message": "Zobrazení mřížky"
+  },
+  "viewList": {
+    "message": "Zobrazení seznamu"
+  },
+  "btnScreenshot": {
+    "message": "Snímek obrazovky"
+  },
+  "btnArchive": {
+    "message": "Uložit HTML"
+  },
+  "exportJson": {
+    "message": "Viditelný seznam jako JSON"
+  },
+  "exportCsv": {
+    "message": "Viditelný seznam jako CSV"
+  },
+  "exportHar": {
+    "message": "Síťový protokol jako HAR"
+  },
+  "exportScreenshot": {
+    "message": "Snímek celé stránky (PNG)"
+  },
+  "exportArchive": {
+    "message": "Offline archiv stránek (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Všechny metody"
+  },
+  "filterTypeAll": {
+    "message": "Všechny typy"
+  },
+  "filterSortDir": {
+    "message": "Přepnout vzestupně / sestupně"
+  },
+  "emptyTitle": {
+    "message": "Nebyly nalezeny žádné zdroje"
+  },
+  "emptySubtitle": {
+    "message": "Znovu načtěte stránku, když je tento panel otevřený, aby se zachytily síťové požadavky, nebo klikněte na Obnovit a naskenujte aktuální DOM."
+  },
+  "statusResources": {
+    "message": "zdrojů"
+  },
+  "statusFiltered": {
+    "message": "filtrováno"
+  },
+  "statusSelected": {
+    "message": "vybráno"
+  },
+  "statusDupes": {
+    "message": "duplikáty skryty"
+  },
+  "statusSize": {
+    "message": "velikost"
+  },
+  "langAuto": {
+    "message": "Auto (prohlížeč)"
+  },
+  "langSelectorTitle": {
+    "message": "Vyberte jazyk"
+  },
+  "textPillAll": {
+    "message": "Veškerý obsah"
+  },
+  "textPillText": {
+    "message": "📄 Texty a články"
+  },
+  "textPillTables": {
+    "message": "📊 Pouze tabulky"
+  },
+  "textSelectAll": {
+    "message": "Vybrat vše"
+  },
+  "textDeselectAll": {
+    "message": "Zrušit výběr"
+  },
+  "textClearSelection": {
+    "message": "Vymazat"
+  },
+  "toastRefreshComplete": {
+    "message": "Skenování stránky dokončeno: $count$ nových zdrojů",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Zkopírováno $count$ bloků",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Zkopírováno do schránky"
+  },
+  "toastTableCopied": {
+    "message": "Tabulka zkopírována do schránky"
+  },
+  "toastNothingToExport": {
+    "message": "Nic k exportu"
+  },
+  "toastExportedTxt": {
+    "message": "Exportováno $count$ bloků jako TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Exportováno $count$ bloků jako Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Nebyly zachyceny žádné řádky tabulky"
+  },
+  "toastExportedCsv": {
+    "message": "Tabulka exportována jako CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Tabulka exportována jako XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Exportováno $count$ tabulek jako $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Exportováno $count$ listů jako XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Žádné zdroje ke stažení."
+  },
+  "toastNoVisibleResources": {
+    "message": "Žádné viditelné zdroje ke stažení."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Nejprve vyberte alespoň jeden zdroj."
+  },
+  "toastZipSaved": {
+    "message": "ZIP uložen: $fetched$ z $total$ zdrojů",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP se nezdařil: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "Exportováno HAR ($count$ záznamů)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "Adresa URL zkopírována do schránky"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Okno zkontrolované nástrojem DevTools není k dispozici."
+  },
+  "toastScreenshotError": {
+    "message": "Chyba snímku obrazovky: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Vytváří se offline archiv stránky…"
+  },
+  "toastArchiveError": {
+    "message": "Chyba archivu: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Časový limit formátování vypršel – zobrazení původního souboru."
+  },
+  "toastFormatFailed": {
+    "message": "Soubor nelze naformátovat – zobrazuje se originál."
+  },
+  "emptySearchTitle": {
+    "message": "Žádné shody pro dotaz „$query$“",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Zkuste jiný hledaný výraz nebo přepněte do jiné kategorie."
+  },
+  "emptyFiltersTitle": {
+    "message": "Aktuálním filtrům neodpovídají žádné zdroje"
+  },
+  "emptyFiltersSub": {
+    "message": "Uvolněte výše uvedené filtry velikosti nebo rozměrů nebo stiskněte Vymazat."
+  },
+  "textEmptyQueryReject": {
+    "message": "Stránka tento dotaz odmítla. Opravte to výše a výsledky se dostaví přímo zpět."
+  },
+  "textEmptyNoMatch": {
+    "message": "Tomuto dotazu neodpovídá žádný prvek na stránce. Zkuste obecnější selektor nebo přepněte režim vedle pole."
+  },
+  "textEmptyInitial": {
+    "message": "Zatím nic nezachyceno. Probíhá živé zachytávání — celá stránka se zde zobrazí jako čitelný text."
+  },
+  "textEmptyFiltered": {
+    "message": "Nic neodpovídá aktuálnímu dotazu a filtru prvků."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ bloků",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ slov",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ znaků",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "Tabulky: $tables$ · jedinečné řádky: $rows$",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "Vybráno $count$ – exporty používají pouze tyto",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Tabulka — $count$ řádků na obrazovce",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Tabulka – všechny jedinečné řádky ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "Snímky: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "aktualizováno $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Zobrazit všechny řádky ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Zobrazují se všechny řádky"
+  },
+  "textTableHistory": {
+    "message": "Historie ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Skrýt historii"
+  },
+  "textTableNoRows": {
+    "message": "Dosud nebyly zachyceny žádné řádky."
+  },
+  "textBtnCopy": {
+    "message": "Kopírovat text"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Kopírovat"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "Duplicitní obrázky: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Exportovat"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Načítání SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Obsah SVG nelze načíst."
+  },
+  "inspectorLoadingFont": {
+    "message": "Načítání náhledu písma…"
+  },
+  "inspectorFontSample": {
+    "message": "Náhled písma"
+  },
+  "inspectorBeautify": {
+    "message": "Formátovat"
+  },
+  "inspectorOriginal": {
+    "message": "Původní"
+  },
+  "inspectorHeaders": {
+    "message": "Hlavičky"
+  },
+  "inspectorResponse": {
+    "message": "Odpověď"
+  },
+  "inspectorRequest": {
+    "message": "Požadavek"
+  },
+  "inspectorQueryParams": {
+    "message": "Parametry dotazu"
+  },
+  "inspectorRequestBody": {
+    "message": "Tělo požadavku"
+  },
+  "textHintHtml": {
+    "message": "Živá, čitelná kopie stránky. Každý prvek obsahující text je zachycen v pořadí DOM a zde je uchováván při změně stránky. Dotazujte se pomocí prostého textu, regulárního výrazu, <strong>selektoru CSS</strong> nebo výrazu <strong>XPath</strong> a poté exportujte nalezené položky. Podrobnosti naleznete v <a href=\"#\" id=\"text-hint-guide\">průvodci</a>."
+  },
+  "textHeadings": {
+    "message": "Nadpisy"
+  },
+  "textAllLevels": {
+    "message": "Všechny úrovně"
+  },
+  "textMatches": {
+    "message": "shody"
+  },
+  "textMatch": {
+    "message": "shoda"
+  },
+  "textReadingOn": {
+    "message": "Čtení zapnuto"
+  },
+  "toastDownloadStarted": {
+    "message": "Stahování zahájeno: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Tento zdroj se nepodařilo načíst (CORS nebo nepodporovaný typ)."
+  },
+  "ratingBannerText": {
+    "message": "Líbí se vám Source Download? Podpořte naši open-source vizi recenzí v Internetovém obchodě Chrome nebo hvězdičkou na GitHubu!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Recenze"
+  },
+  "ratingBannerStar": {
+    "message": "★ Hvězda"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ jedinečných řádků",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "před $count$s",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "před $count$m",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Pořídit snímek oblasti"
+  },
+  "btnAreaDownload": {
+    "message": "Stáhnout"
+  },
+  "btnAreaCopy": {
+    "message": "Kopírovat do schránky"
+  },
+  "btnAreaCancel": {
+    "message": "Zrušit"
+  },
+  "toastAreaCopied": {
+    "message": "Snímek oblasti zkopírován do schránky"
+  },
+  "toastAreaDownloaded": {
+    "message": "Snímek oblasti uložen"
+  },
+  "statusFoundCssResources": {
+    "message": "Nalezeno $count$ zdrojů, na které odkazuje CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Kontrola DOM se nezdařila: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Indexování obsahu souboru…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Kontrola duplicitních obrázků…"
+  },
+  "statusWorking": {
+    "message": "Pracuji…"
+  },
+  "filterMethodTitle": {
+    "message": "Filtrujte podle metody HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Filtrujte podle typu požadavku"
+  },
+  "filterSortTitle": {
+    "message": "Třídit zdroje"
+  },
+  "textModeTitle": {
+    "message": "Jak je interpretováno pole dotazu"
+  },
+  "textKindTitle": {
+    "message": "Omezit na jeden typ prvku"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Úroveň nadpisu"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Cena:\\s*\\d+ — Regulární výraz JavaScriptu"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — libovolný selektor CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Prohledejte průvodce…"
+  },
+  "popupIntro": {
+    "message": "Kategorie počítané podle <strong>odznaku panelu nástrojů</strong>. Přepnutím jednoho vypnete, abyste jej přestali počítat – odznak okamžitě odráží pouze to, co sledujete."
+  },
+  "popupHelpTitle": {
+    "message": "Jak používat celý panel"
+  },
+  "popupStep1": {
+    "message": "Otevřete DevTools pro stránku, kterou chcete zkontrolovat <div class=\"hint\"><kbd>F12</kbd> nebo <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Klikněte na kartu <strong>Source Download</strong> na panelu nástrojů DevTools"
+  },
+  "popupStep3": {
+    "message": "Procházejte, kontrolujte a stahujte zdroje – jednotlivě nebo všechny najednou jako ZIP."
+  },
+  "popupNote": {
+    "message": "Poznámka: Chrome neumožňuje rozšířením programově otevírat nástroje DevTools, a proto je celá technická sada dostupná prostřednictvím panelu nástrojů DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Sledovat všechny kategorie"
+  },
+  "popupLanguage": {
+    "message": "Jazyk"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Binární odpověď – stáhněte si ji pro zobrazení"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Načítání odpovědi…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Náhled bez odpovědi – obsah nelze načíst."
+  },
+  "inspectorLoadingContent": {
+    "message": "Načítání obsahu…"
+  },
+  "inspectorNoPreview": {
+    "message": "Náhled není k dispozici – obsah nelze načíst."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Zavřít vše"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Zavřít všechny otevřené karty"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Kliknutím zvětšíte"
+  },
+  "inspectorViewSource": {
+    "message": "Zobrazit zdroj"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Zobrazit kód SVG se zvýrazněním syntaxe"
+  },
+  "inspectorFormatting": {
+    "message": "Formátování…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Najít v obsahu…"
+  },
+  "findPreviousMatch": {
+    "message": "Předchozí shoda"
+  },
+  "findNextMatch": {
+    "message": "Další shoda"
+  },
+  "findClose": {
+    "message": "Zavřít"
+  },
+  "findShowRaw": {
+    "message": "Zobrazit původní (neformátovaný) obsah"
+  },
+  "findBeautify": {
+    "message": "Naformátovat tento obsah"
+  },
+  "btnRaw": {
+    "message": "Nezpracovaný"
+  },
+  "btnBeautify": {
+    "message": "Formátovat"
+  },
+  "videoHlsDetected": {
+    "message": "Zjištěn stream HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "Toto video nelze přehrát v prohlížeči"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome nemůže přímo přehrávat streamy HLS. Všechny segmenty <b>$NAME$</b> můžete sloučit do jednoho video souboru MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Prohlížeč tento formát nepodporuje"
+  },
+  "btnMergeHls": {
+    "message": "Sloučit segmenty a stáhnout"
+  },
+  "toastHlsMerged": {
+    "message": "Sloučeno $COUNT$ segmentů do $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "velikost neznámá"
+  },
+  "progressFetching": {
+    "message": "Načítání $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Vytváření ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP uložen: $FETCHED$ z $TOTAL$ zdrojů ($SKIPPED$ se nezdařilo)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Opakovat $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Zkusit stažení znovu"
+  },
+  "searchRegexHint": {
+    "message": "Vyhledávání regulárním výrazem je aktivní — zadejte dotaz ve tvaru /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Zahrnout do exportu"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Sloučí všechny snímky do jedné tabulky bez duplicit — přesně ta se exportuje"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Prohlédněte si dřívější snímky této tabulky"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Stáhněte si tuto tabulku jako CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Snímek $INDEX$ — $TIME$ ($COUNT$ řádků)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Přepnout výběr pro hromadné stahování"
+  },
+  "cardDownloadTitle": {
+    "message": "Stáhnout soubor"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Předchozí stahování se nezdařilo – kliknutím to zkuste znovu"
+  },
+  "btnThemeLight": {
+    "message": "Přepnout na světlé téma"
+  },
+  "btnThemeDark": {
+    "message": "Přepnout na tmavé téma"
+  },
+  "guideTitle": {
+    "message": "Source Download — Uživatelská příručka"
+  },
+  "guideEmpty": {
+    "message": "Vašemu vyhledávání neodpovídají žádné sekce průvodce."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% bez závislostí.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Oddálit (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "Přiblížit (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Obnovit přiblížení (0)"
+  },
+  "lightboxClose": {
+    "message": "Zavřít (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Přetažením změníte velikost"
+  },
+  "ratingDismissTitle": {
+    "message": "Zavřít"
+  },
+  "inspectorResourceTitle": {
+    "message": "Zdroj"
+  },
+  "guideSecGettingStarted": {
+    "message": "Začínáme"
+  },
+  "guideSecCategories": {
+    "message": "Kategorie"
+  },
+  "guideSecSearchFilters": {
+    "message": "Vyhledávání a filtry"
+  },
+  "guideSecGridView": {
+    "message": "Zobrazení mřížky a seznamu"
+  },
+  "guideSecInspect": {
+    "message": "Kontrola zdroje"
+  },
+  "guideSecDownloading": {
+    "message": "Stahování"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Text a tabulky"
+  },
+  "guideSecCaptions": {
+    "message": "Titulky"
+  },
+  "guideSecSourceMaps": {
+    "message": "Zdrojové mapy"
+  },
+  "guideSecDupes": {
+    "message": "Duplicitní obrázky"
+  },
+  "guideSecVideoHls": {
+    "message": "Záložní video a HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Tipy pro pokročilé"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Klikněte na kartu <strong>Source Download</strong> na panelu nástrojů DevTools (stiskněte <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> a poté vyberte kartu na panelu nástrojů DevTools). Chrome neumožňuje rozšířením automaticky otevírat DevTools, a proto je panel umístěn právě tam. Vyskakovací okno ikony na panelu nástrojů umožňuje vybrat, které kategorie se započítávají do počítadla na odznaku ikony. Tlačítko slunce/měsíc na panelu nástrojů zamkne světlé nebo tmavé téma nezávisle na Chrome; tato volba se zapamatuje."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Vertikální záložky na levé straně seskupují každý zachycený zdroj do 17 vyhrazených kategorií podle typu: obrázky, videa, zvuk, titulky, dokumenty, písma, zdrojové mapy, WASM, SVG, rozhraní API, soubory cookie, úložiště a další. Každá karta zobrazuje aktuální počet. Najednou je zobrazena pouze jedna kategorie; přepnutím se resetují všechny filtry, takže to, co vidíte, vždy odpovídá kartě."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Panel vyhledávání filtruje podle názvu, adresy URL, typu, alternativního textu nebo názvu. Chcete-li použít regulární výraz, uzavřete svůj dotaz do <kbd>/…/</kbd>, např. <code>/\\.(png|jpg)$/</code>. Pod panelem nástrojů se panel filtrů mění podle kategorie: velikost a rozsahy rozměrů pro média, metoda HTTP a typ požadavku pro rozhraní API, plus řazení a směr."
+  },
+  "guideSecGridViewContent": {
+    "message": "Mezi kompaktní mřížkou (malé náhledy) a podrobným seznamem můžete přepínat pomocí tlačítek vedle vyhledávací lišty. Vaše volba je zapamatována mezi relacemi. V zobrazení seznamu vám zaškrtávací políčka umožňují vybrat jednotlivé zdroje pro hromadné stahování."
+  },
+  "guideSecInspectContent": {
+    "message": "Kliknutím na libovolný zdroj jej otevřete v podokně kontroly vpravo. Každý otevřený soubor se stane kartou, takže můžete porovnávat několik zdrojů vedle sebe — nejnovější se otevře vlevo. Pro obrázky, video, zvuk, písma, SVG a text/kód existují specializované prohlížeče (s přepínačem Formátovat). Rozhraní API zobrazují rozdělený pohled: odpověď vlevo, podrobnosti požadavku (metoda, stav, hlavičky, parametry dotazu a tělo) vpravo."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Stáhnout zobrazené</strong> uloží aktuálně viditelné zdroje (aktivní kategorie + vyhledávání + filtry) jako ZIP; když jsou filtry aktivní, přejmenuje se na <em>Stáhnout filtrované (N)</em>. Když najedete na libovolné tlačítko stažení, zobrazí se odhadovaná velikost archivu. <strong>Stáhnout vybrané</strong> stáhne pouze zaškrtnuté položky. <strong>Stáhnout vše</strong> uloží každý nalezený zdroj do ZIP se strukturou složek. Neúspěšná stahování se automaticky opakují a lze je zopakovat i z kontextové nabídky. <strong>Exportovat</strong> zapíše viditelný seznam jako JSON nebo CSV, případně vypíše síťový protokol Chrome jako soubor HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Tlačítko přiblížení otevírá média v lightboxu plné velikosti, kde můžete posouvat tažením, přibližovat pomocí kolečka myši, tlačítek na obrazovce nebo klávesnice (<kbd>+</kbd>/<kbd>-</kbd> pro přiblížení, <kbd>0</kbd> pro resetování, <kbd>Esc</kbd> pro zavření)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Kategorie <strong>Text</strong> je živá a čitelná kopie stránky. Zachycuje každý prvek, který obsahuje text — nadpisy, odstavce, položky seznamu, tlačítka, <code>div</code>/<code>span</code> a další — v pořadí DOM a pokračuje ve skenování, dokud je zapnuto <strong>Živě</strong>.</p><p>Pole <strong>Dotaz</strong> funguje čtyřmi způsoby, které se vybírají z rozbalovací nabídky vedle něj: <strong>Obsahuje</strong> a <strong>Regex</strong> filtrují již zachycený text, zatímco <strong>Selektor CSS</strong> a <strong>XPath</strong> se spouštějí na živé stránce, takže dosáhnou na cokoli v DOM. XPath také přijímá výrazy, které vracejí hodnotu místo prvků, například <code>count(//a)</code> nebo <code>//@href</code>. Případnou chybu v dotazu hlášenou stránkou uvidíte vedle pole. <strong>Prvek</strong> zúží výsledek na jednu značku a zobrazí počet jednotlivých značek nalezených na stránce. Vymazáním pole dotazu (nebo stisknutím <strong>Vymazat</strong>) se vrátíte na <em>Všechny prvky</em> a stránka se znovu zachytí — rozbalovací nabídku nikdy nemusíte vracet ručně.</p><p><strong>Čtení</strong> skryje značky, zaškrtávací políčka a drobečkovou navigaci, takže se obsah čte jako dokument. Tabulky uchovávají omezenou historii snímků, takže dynamické (SPA) tabulky se nikdy neztratí. Stisknutím <strong>Zobrazit všechny řádky</strong> u tabulky sloučíte všechny snímky do jednoho pohledu bez duplicit — přesně to obsahuje export. Exportovat lze jako <strong>TXT</strong> (čitelná stránka), <strong>MD</strong> (Markdown včetně tabulek) nebo tabulky jako CSV, HTML či skutečný vícelistový sešit <strong>XLSX</strong>. Zaškrtnuté položky mají přednost; jinak se exportuje vše, co je aktuálně viditelné.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "Soubory titulků WebVTT, SRT, TTML a další — včetně zdrojů <code>&lt;track&gt;</code> — se zobrazují na vlastní kartě <strong>Titulky</strong> místo toho, aby se mísily s dokumenty."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Soubory <code>.map</code> a těla JSON, která vypadají jako zdrojové mapy (obsahují <code>mappings</code> a <code>sources</code>), jsou seskupeny v části <strong>Zdrojové mapy</strong> s prohlížečem JSON a funkcí Formátovat, takže již nezaplňují kartu JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "Na kartě Obrázky panel počítá hash zachycených dat a označuje shodné soubory. Filtr <strong>Skrýt duplikáty</strong> ponechá první kopii z každé skupiny, takže ZIP zobrazení neobsahuje stejnou miniaturu dvakrát."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Streamy, které prohlížeč nedokáže přehrát nativně (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, neznámé kodeky), zobrazí náhradní zobrazení místo černého přehrávače. U HLS můžete segmenty sloučit do jednoho videosouboru přímo z panelu nebo si stáhnout původní manifest."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dynamické odpovědi <strong>API</strong> (XHR/fetch) se nededuplikují podle adresy URL — každá odpověď zůstane v seznamu (s omezením FIFO), takže můžete porovnávat opakované požadavky. Statické soubory se deduplikují. Pomocí <strong>Obnovit</strong> znovu naskenujete aktuální DOM a stránku znovu načtěte při otevřeném panelu, aby se zachytily všechny síťové požadavky, včetně těch spuštěných před přepnutím karet."
+  },
+  "toolArrow": {
+    "message": "Nástroj Šipka"
+  },
+  "toolRect": {
+    "message": "Nástroj Obdélník"
+  },
+  "toolText": {
+    "message": "Nástroj Text"
+  },
+  "toolUndo": {
+    "message": "Zpět (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Znovu (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Barva"
+  },
+  "badgeStrokeSize": {
+    "message": "Velikost: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Velikost písma: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Nahrát oblast jako video / GIF"
+  },
+  "btnRecStart": {
+    "message": "Spustit nahrávání"
+  },
+  "btnRecPause": {
+    "message": "Pozastavit"
+  },
+  "btnRecResume": {
+    "message": "Pokračovat"
+  },
+  "btnRecStop": {
+    "message": "Dokončit a stáhnout"
+  },
+  "btnRecCancel": {
+    "message": "Zrušit"
+  },
+  "toastRecSaved": {
+    "message": "Nahrávka oblasti uložena"
+  },
+  "toastRecCancelled": {
+    "message": "Nahrávání videa zrušeno"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Oprávnění k nahrávání obrazovky nebylo uděleno"
+  },
+  "btnPopupRecordArea": {
+    "message": "Video / GIF oblasti"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Snímek oblasti"
+  },
+  "contextMenuPickColor": {
+    "message": "Vybrat barvu z obrazovky"
+  },
+  "btnPopupPickColor": {
+    "message": "Vybrat barvu"
+  },
+  "colorPickerTitle": {
+    "message": "Výběr barvy"
+  },
+  "btnColorPickAgain": {
+    "message": "Vybrat jinou barvu"
+  },
+  "toastColorCopied": {
+    "message": "Barva zkopírována do schránky"
+  },
+  "toastProgressCapturing": {
+    "message": "Snímání celé stránky… $percent$ %",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Skládání obrázku…"
+  },
+  "modalExportTitle": {
+    "message": "Snímek celé stránky je hotový"
+  },
+  "btnExportPng": {
+    "message": "Stáhnout PNG"
+  },
+  "btnExportJpg": {
+    "message": "Stáhnout JPG"
+  },
+  "btnExportPdf": {
+    "message": "Uložit jako PDF"
+  },
+  "btnExportCopy": {
+    "message": "Kopírovat do schránky"
+  },
+  "btnExportGenerating": {
+    "message": "Vytváří se…"
+  },
+  "toastPdfGenerated": {
+    "message": "Dokument PDF uložen."
+  },
+  "settingNamingPatterns": {
+    "message": "Vzory pojmenování souborů"
+  },
+  "settingVideoFormat": {
+    "message": "Výchozí formát videa"
+  },
+  "settingNamingPreview": {
+    "message": "Náhled:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Vytváří se GIF, čekejte prosím…"
+  },
+  "settingGifResolution": {
+    "message": "Výchozí rozlišení GIF"
+  },
+  "optGifOriginal": {
+    "message": "Originál (nativní rozlišení 1:1 — plné 3K/4K, bez zmenšení)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (max. 1920 px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (max. 1280 px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (max. 854 px — rychlejší a menší soubor)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Formát GIF podporuje maximální délku záznamu 1 minutu (60 s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Záznam obrazovky (video a GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Nahrajte jakoukoli oblast obrazovky jako MP4, WebM nebo animovaný GIF. Nahrávky GIF mají nativní rozlišení 1:1, profily 1080p, 720p a 480p s odhadovanou velikostí souborů v reálném čase. Maximální doba záznamu GIF je 1 minuta (60 s) pro optimální výkon prohlížeče."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Bylo dosaženo maximální délky GIFu 1 minuta (60 s). Vytváří se GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Max. 1 min (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Výchozí snímková frekvence GIF (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Plynulé (vysoká plynulost, větší velikost)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standardní (doporučeno pro web a vyvážený poměr)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Kompaktní / Meme (trhaný pohyb, malá velikost)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / Pomalé („klik-klik“ krok za krokem, drobná velikost)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Prezentace (1 snímek za sekundu, minimální velikost)"
+  },
+  "popupRightClickHint": {
+    "message": "Klikněte pravým tlačítkem kamkoli na webové stránce pro nahrávání obrazovky (video/GIF) a výběr barvy."
+  },
+  "toastElementZappedAd": {
+    "message": "Reklama / iframe skryta pro tuto relaci.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Obrázek zkopírován do schránky",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Zavřít (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Nastavení uloženo",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Stáhněte soubor a otevřete ho ve VLC nebo jiném přehrávači médií.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Pro tento typ zdroje není k dispozici náhled",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Stáhnout originál",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Tip: stažený soubor otevřete ve VLC nebo v libovolném stolním přehrávači médií — přehraje prakticky každý formát.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Vytváří se archiv ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Váš prohlížeč nepodporuje rozhraní EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Přesunout panel nástrojů",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Přepnout formát: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Rozlišení GIFu: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Snímková frekvence GIFu: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Odhadovaná velikost GIFu: ~$size$ MB (pro 10 s), až ~$max$ MB při maximální délce 60 s.\nSnímková frekvence: $fps$ FPS.\nNahrávání GIFu je omezeno na maximálně 1 minutu (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Kopírovat $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Náhled snímku",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — univerzální přehrávání ve WhatsApp, Telegramu, Jiře, Applu a Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animovaný obrázek — ideální pro README, Jiru, dokumentaci a zasílání zpráv)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — otevřený webový formát)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Nebyla nalezena žádná aktivní karta.",
+    "description": "No active tab found."
+  }
+}

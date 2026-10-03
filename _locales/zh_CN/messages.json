@@ -12,7 +12,7 @@
     "description": "工具栏操作提示"
   },
   "contextMenuZap": {
-    "message": "隐藏此元素 (Zap)",
+    "message": "隐藏此元素",
     "description": "右键隐藏元素"
   },
   "contextMenuUndoZap": {
@@ -20,15 +20,15 @@
     "description": "恢复上一个隐藏元素"
   },
   "contextMenuResetZap": {
-    "message": "恢复所有隐藏的元素",
+    "message": "重置所有隐藏的元素",
     "description": "恢复所有隐藏元素"
   },
   "contextMenuCapturePage": {
-    "message": "捕获全页长截图",
+    "message": "截取整页截图",
     "description": "全页截图右键菜单"
   },
   "contextMenuPageArchive": {
-    "message": "下载完整离线页面归档",
+    "message": "下载离线网页存档",
     "description": "下载离线网页"
   },
   "catAll": {
@@ -59,7 +59,7 @@
     "message": "JS"
   },
   "catSourcemaps": {
-    "message": "源映射 (Source Map)"
+    "message": "源码映射 (Source Map)"
   },
   "catFonts": {
     "message": "字体"
@@ -74,7 +74,7 @@
     "message": "WASM"
   },
   "catManifests": {
-    "message": "Manifest"
+    "message": "清单文件"
   },
   "catText": {
     "message": "文本与表格"
@@ -83,7 +83,7 @@
     "message": "其他"
   },
   "catScreenshot": {
-    "message": "网页截图"
+    "message": "截图"
   },
   "catArchive": {
     "message": "页面归档"
@@ -104,7 +104,7 @@
     "message": "下载全部"
   },
   "btnDownloadFiltered": {
-    "message": "下载过滤项"
+    "message": "下载已筛选项"
   },
   "btnTheme": {
     "message": "切换主题"
@@ -113,7 +113,7 @@
     "message": "使用指南"
   },
   "btnCaptureFullPage": {
-    "message": "整页完整截图"
+    "message": "整页截图"
   },
   "btnOfflineArchive": {
     "message": "保存单文件 HTML"
@@ -146,7 +146,7 @@
     "message": "隐藏重复项"
   },
   "filterClear": {
-    "message": "重置"
+    "message": "清除"
   },
   "textModeContains": {
     "message": "包含"
@@ -161,16 +161,16 @@
     "message": "XPath"
   },
   "textPlaceholder": {
-    "message": "过滤页面文本或实时查询 DOM…"
+    "message": "筛选页面文本或实时查询 DOM…"
   },
   "textAllElements": {
     "message": "所有元素"
   },
   "textLiveOn": {
-    "message": "实时捕获 开"
+    "message": "实时捕获：开"
   },
   "textLiveOff": {
-    "message": "实时关闭"
+    "message": "实时捕获：关"
   },
   "textScanNow": {
     "message": "立即扫描"
@@ -236,7 +236,7 @@
     "message": "Alt 文本"
   },
   "ratingPrompt": {
-    "message": "觉得 Source Download 对你有帮助吗？欢迎在 Chrome Web Store 评分或在 GitHub 给我们一颗 Star 支持开源！"
+    "message": "觉得 Source Download 对你有帮助吗？欢迎在 Chrome 网上应用店评分或在 GitHub 给我们一颗 Star 支持开源！"
   },
   "ratingReview": {
     "message": "★ 前往评价"
@@ -248,16 +248,16 @@
     "message": "稍后再说"
   },
   "toastElementZapped": {
-    "message": "元素已在当前会话中隐藏。"
+    "message": "该元素已在本次会话中隐藏。"
   },
   "toastElementRestored": {
     "message": "元素已恢复。"
   },
   "toastAllElementsRestored": {
-    "message": "所有已隐藏元素已全部恢复。"
+    "message": "所有隐藏的元素已恢复。"
   },
   "toastScreenshotCapturing": {
-    "message": "正在捕获整页截图…"
+    "message": "正在截取整页截图…"
   },
   "toastScreenshotCaptured": {
     "message": "整页截图已保存。"
@@ -281,7 +281,7 @@
     "message": "文本与表格抓取"
   },
   "heroScreenshotTitle": {
-    "message": "整页完整截图"
+    "message": "整页截图"
   },
   "heroScreenshotDesc": {
     "message": "无缝多屏拼接 • 自动抑制吸顶浮窗"
@@ -302,7 +302,7 @@
     "message": "下载"
   },
   "searchPlaceholder": {
-    "message": "按名称、URL、标签、类型或 /正则/ 过滤…"
+    "message": "按名称、URL、标签、类型或 /正则/ 筛选…"
   },
   "viewGrid": {
     "message": "网格视图"
@@ -311,10 +311,10 @@
     "message": "列表视图"
   },
   "btnScreenshot": {
-    "message": "长截图"
+    "message": "截图"
   },
   "btnArchive": {
-    "message": "保存HTML"
+    "message": "保存 HTML"
   },
   "exportJson": {
     "message": "可见列表 (JSON)"
@@ -326,10 +326,10 @@
     "message": "网络日志 (HAR)"
   },
   "exportScreenshot": {
-    "message": "全页长截图 (PNG)"
+    "message": "整页截图 (PNG)"
   },
   "exportArchive": {
-    "message": "离线网页归档 (HTML)"
+    "message": "离线页面归档 (HTML)"
   },
   "filterMethodAll": {
     "message": "所有方法"
@@ -350,7 +350,7 @@
     "message": "个资源"
   },
   "statusFiltered": {
-    "message": "已过滤"
+    "message": "已筛选"
   },
   "statusSelected": {
     "message": "已选择"
@@ -386,7 +386,7 @@
     "message": "清空"
   },
   "toastRefreshComplete": {
-    "message": "页面扫描完成：新增 $COUNT$ 个资源",
+    "message": "页面扫描完成：新增 $count$ 个资源",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "已复制 $COUNT$ 个区块",
+    "message": "已复制 $count$ 个区块",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "没有可导出的内容"
   },
   "toastExportedTxt": {
-    "message": "已导出 $COUNT$ 个区块为 TXT",
+    "message": "已导出 $count$ 个区块为 TXT",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "已导出 $COUNT$ 个区块为 Markdown",
+    "message": "已导出 $count$ 个区块为 Markdown",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "表格已导出为 XLSX"
   },
   "toastExportedTablesZip": {
-    "message": "已导出 $COUNT$ 个表格为 $FORMAT$",
+    "message": "已导出 $count$ 个表格为 $format$",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "已导出 $COUNT$ 个工作表为 XLSX",
+    "message": "已导出 $count$ 个工作表为 XLSX",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -471,7 +471,7 @@
     "message": "请先选择至少一个资源。"
   },
   "toastZipSaved": {
-    "message": "ZIP 已保存：共 $TOTAL$ 个资源中的 $FETCHED$ 个",
+    "message": "ZIP 已保存：共 $total$ 个资源中的 $fetched$ 个",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "ZIP 生成失败：$ERROR$",
+    "message": "ZIP 生成失败：$error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR 已导出（$COUNT$ 条记录）",
+    "message": "HAR 已导出（$count$ 条记录）",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "DevTools 检查窗口不可用。"
   },
   "toastScreenshotError": {
-    "message": "截图错误：$ERROR$",
+    "message": "截图错误：$error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -517,10 +517,10 @@
     }
   },
   "toastArchiveCreating": {
-    "message": "正在创建离线页面存档…"
+    "message": "正在创建离线网页存档…"
   },
   "toastArchiveError": {
-    "message": "存档错误：$ERROR$",
+    "message": "归档错误：$error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "无法格式化文件 — 显示原始文件。"
   },
   "emptySearchTitle": {
-    "message": "未找到匹配 \"$QUERY$\" 的结果",
+    "message": "未找到匹配 \"$query$\" 的结果",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -553,19 +553,19 @@
     "message": "请放宽上方的尺寸限制或点击清除。"
   },
   "textEmptyQueryReject": {
-    "message": "页面拒绝了该查询。请在上方修改。"
+    "message": "页面拒绝了该查询。请在上方修正，结果会立即恢复。"
   },
   "textEmptyNoMatch": {
-    "message": "页面上没有元素匹配此查询。"
+    "message": "页面上没有元素匹配此查询。请尝试更宽松的选择器，或切换输入框旁的模式。"
   },
   "textEmptyInitial": {
-    "message": "尚未捕获任何内容。实时捕获运行中。"
+    "message": "尚未捕获任何内容。实时捕获运行中 — 整个页面将以可读文本形式显示在此处。"
   },
   "textEmptyFiltered": {
     "message": "没有内容匹配当前查询和元素筛选。"
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ 个区块",
+    "message": "$count$ 个区块",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ 个词",
+    "message": "$count$ 个词",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ 个字符",
+    "message": "$count$ 个字符",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ 个表格 · $ROWS$ 行唯一数据",
+    "message": "$tables$ 个表格 · $rows$ 行唯一数据",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "已选择 $COUNT$ 项 — 仅导出这些项",
+    "message": "已选择 $count$ 项 — 仅导出这些项",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "表格 — 屏幕上 $COUNT$ 行",
+    "message": "表格 — 屏幕上 $count$ 行",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "表格 — 全部 $COUNT$ 行",
+    "message": "表格 — 全部 $count$ 行",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ 次快照",
+    "message": "$count$ 次快照",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "更新于 $TIME$",
+    "message": "更新于 $time$",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "显示全部 $COUNT$ 行",
+    "message": "显示全部 $count$ 行",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "正在显示全部行"
   },
   "textTableHistory": {
-    "message": "历史快照 ($COUNT$)",
+    "message": "历史快照 ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ 个重复图片",
+    "message": "$count$ 个重复图片",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -752,7 +752,7 @@
     "message": "阅读模式开启"
   },
   "toastDownloadStarted": {
-    "message": "开始下载: $NAME$",
+    "message": "开始下载: $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -773,7 +773,7 @@
     "message": "★ Star"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ 个唯一行",
+    "message": "$count$ 个唯一行",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "$COUNT$秒前",
+    "message": "$count$秒前",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "$COUNT$分钟前",
+    "message": "$count$分钟前",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,7 +800,7 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "区域截图"
+    "message": "截取区域截图"
   },
   "btnAreaDownload": {
     "message": "下载"
@@ -818,7 +818,7 @@
     "message": "区域截图已保存"
   },
   "statusFoundCssResources": {
-    "message": "从 CSS 中发现 $COUNT$ 个引用的资源",
+    "message": "从 CSS 中发现 $count$ 个引用的资源",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "DOM 扫描失败: $ERROR$",
+    "message": "DOM 扫描失败: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -845,10 +845,10 @@
     "message": "正在处理…"
   },
   "filterMethodTitle": {
-    "message": "按 HTTP 方法过滤"
+    "message": "按 HTTP 方法筛选"
   },
   "filterTypeTitle": {
-    "message": "按请求类型过滤"
+    "message": "按请求类型筛选"
   },
   "filterSortTitle": {
     "message": "排序资源"
@@ -875,7 +875,7 @@
     "message": "在指南中搜索…"
   },
   "popupIntro": {
-    "message": "<strong>工具栏徽章</strong>统计的资源分类。关闭任一分类即可停止统计。"
+    "message": "<strong>工具栏徽章</strong>统计的资源分类。关闭任一分类即可停止统计 — 徽章会立即只反映你所跟踪的内容。"
   },
   "popupHelpTitle": {
     "message": "如何使用完整面板"
@@ -1143,7 +1143,7 @@
     "message": "字幕与旁白文件"
   },
   "guideSecSourceMaps": {
-    "message": "源码映射 (Source map)"
+    "message": "源码映射 (Source Map)"
   },
   "guideSecDupes": {
     "message": "重复图片智能过滤"
@@ -1158,7 +1158,7 @@
     "message": "点击开发者工具（DevTools）工具栏中的 <strong>Source Download</strong> 选项卡（按 <kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>，然后选择 DevTools 顶部栏中的选项卡）。由于 Chrome 浏览器安全规范禁止扩展程序自动唤起 DevTools，因此面板集成在此处。工具栏图标弹出窗口允许您自定义哪些分类的数据计入图标上的徽标计数器。面板工具栏上的太阳/月亮按钮可独立于 Chrome 浏览器锁定浅色或深色主题，该设置将被自动记忆。"
   },
   "guideSecCategoriesContent": {
-    "message": "左侧垂直选项卡将抓取到的所有资源按文件类型划分为 17 个专属分类：图片、视频、音频、字幕、文档、字体、Source map、WASM、SVG、API 接口、Cookie、存储等。每个选项卡均展示实时资源计数。每次仅显示一个分类；切换分类会自动重置所有筛选器，确保您所见的内容始终与当前选中的分类严格对应。"
+    "message": "左侧垂直选项卡将抓取到的所有资源按文件类型划分为 17 个专属分类：图片、视频、音频、字幕、文档、字体、源码映射、WASM、SVG、API 接口、Cookie、存储等。每个选项卡均展示实时资源计数。每次仅显示一个分类；切换分类会自动重置所有筛选器，确保您所见的内容始终与当前选中的分类严格对应。"
   },
   "guideSecSearchFiltersContent": {
     "message": "搜索栏支持按名称、URL、文件类型、alt 替换文本或页面标题进行即时过滤。若要使用正则表达式，请将表达式包含在 <kbd>/…/</kbd> 中，例如 <code>/\\.(png|jpg)$/</code>。工具栏下方的筛选条会随所选分类动态调整：媒体分类提供文件体积与像素分辨率区间筛选，API 分类提供 HTTP 请求方法与请求类型筛选，并支持自定义排序字段与升降序。"
@@ -1170,7 +1170,7 @@
     "message": "点击任何资源均可在右侧检查窗格中打开其详细信息。每个打开的文件都会以独立标签页呈现，便于您并排对比多项资源——最新打开的资源将排列在左侧。面板为图片、视频、音频、字体、SVG 以及文本/代码（配备 Beautify 代码美化格式化开关）提供了专属查看器。API 接口提供分屏视图：左侧为响应数据正文，右侧为完整的请求细节（请求方法、状态码、响应头、URL 查询参数及请求负载体）。"
   },
   "guideSecDownloadingContent": {
-    "message": "点击 <strong>下载当前视图</strong> 可将当前可见的所有资源（当前分类 + 搜索结果 + 筛选条件）打包保存为 ZIP 压缩文件；启用筛选条件时按钮会自动变为 <em>下载已筛选 (N)</em>。在点击前将鼠标悬停在任一下载按钮上，即可预览预估的压缩包体积。<strong>下载选中项</strong> 仅保存被复选框勾选的文件。<strong>下载全部</strong> 将把检测到的所有资源打包为一个带有清晰文件夹层级结构的 ZIP 压缩包。下载失败的项目会自动发起重试，您也可以通过右键上下文菜单手动重新触发。<strong>导出</strong> 功能可将当前列表导出为 JSON 或 CSV 文件，或将 Chrome 网络日志完整导出为 HAR 文件。"
+    "message": "点击 <strong>下载当前视图</strong> 可将当前可见的所有资源（当前分类 + 搜索结果 + 筛选条件）打包保存为 ZIP 压缩文件；启用筛选条件时按钮会自动变为 <em>下载已筛选项 (N)</em>。在点击前将鼠标悬停在任一下载按钮上，即可预览预估的压缩包体积。<strong>下载选中项</strong> 仅保存被复选框勾选的文件。<strong>下载全部</strong> 将把检测到的所有资源打包为一个带有清晰文件夹层级结构的 ZIP 压缩包。下载失败的项目会自动发起重试，您也可以通过右键上下文菜单手动重新触发。<strong>导出</strong> 功能可将当前列表导出为 JSON 或 CSV 文件，或将 Chrome 网络日志完整导出为 HAR 文件。"
   },
   "guideSecLightboxContent": {
     "message": "缩放按钮可在全尺寸灯箱中打开媒体文件。您可以通过鼠标拖拽平移画面，并使用鼠标滚轮、屏幕控件按钮或键盘快捷键（<kbd>+</kbd>/<kbd>-</kbd> 缩放，<kbd>0</kbd> 恢复原始大小，<kbd>Esc</kbd> 退出）进行流畅的高精度缩放与查阅。"
@@ -1182,7 +1182,7 @@
     "message": "WebVTT、SRT、TTML 等常见字幕文件（包括 <code>&lt;track&gt;</code> 标签资源）均会自动归类至专属的 <strong>字幕</strong> 选项卡，不再与通用文档产生混淆。"
   },
   "guideSecSourceMapsContent": {
-    "message": "<code>.map</code> 文件以及符合源码映射结构的 JSON 数据（包含 <code>mappings</code> 和 <code>sources</code> 字段）均汇总于 <strong>Source map</strong> 选项卡下，并配备 JSON 视图与代码美化格式化工具，避免造成常规 JSON 选项卡的冗余混杂。"
+    "message": "<code>.map</code> 文件以及符合源码映射结构的 JSON 数据（包含 <code>mappings</code> 和 <code>sources</code> 字段）均汇总于 <strong>源码映射</strong> 选项卡下，并配备 JSON 视图与代码美化格式化工具，避免造成常规 JSON 选项卡的冗余混杂。"
   },
   "guideSecDupesContent": {
     "message": "在图片选项卡中，面板通过对捕获资源的二进制字节进行哈希计算来自动标记完全一致的文件。开启 <strong>隐藏重复项</strong> 筛选器后，每组重复图片仅保留首个副本，确保下载的 ZIP 压缩包不会包含重复的缩略图文件。"
@@ -1194,13 +1194,13 @@
     "message": "动态 <strong>API</strong> 响应（XHR/fetch）不会根据 URL 进行去重——每次请求交互都会保留在列表中（采用容量受限的 FIFO 队列），方便您实时对比连续请求的数据变更。静态资产则会自动执行去重。使用 <strong>刷新</strong> 按钮可重新扫描当前页面的 DOM；在面板处于打开状态时刷新网页，即可完整捕获包含标签页切换前触发的所有网络请求。"
   },
   "toolArrow": {
-    "message": "绘制箭头"
+    "message": "箭头工具"
   },
   "toolRect": {
-    "message": "绘制矩形"
+    "message": "矩形工具"
   },
   "toolText": {
-    "message": "添加文字"
+    "message": "文字工具"
   },
   "toolUndo": {
     "message": "撤销 (Ctrl+Z)"
@@ -1212,7 +1212,7 @@
     "message": "颜色"
   },
   "badgeStrokeSize": {
-    "message": "粗细: $SIZE$px",
+    "message": "粗细：$size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "字号: $SIZE$px",
+    "message": "字号：$size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,7 +1230,7 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "录制区域视频/GIF"
+    "message": "录制所选区域为视频 / GIF"
   },
   "btnRecStart": {
     "message": "开始录制"
@@ -1248,13 +1248,13 @@
     "message": "取消"
   },
   "toastRecSaved": {
-    "message": "区域录制已保存"
+    "message": "所选区域录制已保存"
   },
   "toastRecCancelled": {
     "message": "视频录制已取消"
   },
   "toastRecPermissionDenied": {
-    "message": "未授予屏幕录制权限"
+    "message": "未获得屏幕录制权限"
   },
   "btnPopupRecordArea": {
     "message": "区域视频/GIF"
@@ -1269,16 +1269,16 @@
     "message": "屏幕取色"
   },
   "colorPickerTitle": {
-    "message": "颜色选取器"
+    "message": "取色器"
   },
   "btnColorPickAgain": {
-    "message": "再次取色"
+    "message": "重新取色"
   },
   "toastColorCopied": {
     "message": "颜色已复制到剪贴板"
   },
   "toastProgressCapturing": {
-    "message": "正在捕获整页... $PERCENT$%",
+    "message": "正在截取整页… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,7 +1292,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "正在拼接图片..."
+    "message": "正在拼接图片…"
   },
   "modalExportTitle": {
     "message": "整页截图已就绪"
@@ -1310,7 +1310,7 @@
     "message": "复制到剪贴板"
   },
   "btnExportGenerating": {
-    "message": "生成中..."
+    "message": "正在生成…"
   },
   "toastPdfGenerated": {
     "message": "PDF 文档已保存。"
@@ -1325,22 +1325,22 @@
     "message": "预览:"
   },
   "toastRecGeneratingGif": {
-    "message": "正在生成 GIF，请稍候..."
+    "message": "正在生成 GIF，请稍候…"
   },
   "settingGifResolution": {
     "message": "默认GIF分辨率"
   },
   "optGifOriginal": {
-    "message": "原始 (1:1 原始分辨率 — 完整 3K/4K 无缩放)"
+    "message": "原始（1:1 原生分辨率 — 完整 3K/4K，不缩小）"
   },
   "optGif1080p": {
-    "message": "1080p 全高清 (最大 1920px)"
+    "message": "1080p Full HD（最大 1920px）"
   },
   "optGif720p": {
-    "message": "720p 高清 (最大 1280px)"
+    "message": "720p HD（最大 1280px）"
   },
   "optGif480p": {
-    "message": "480p 标清 (最大 854px — 更快且文件更小)"
+    "message": "480p SD（最大 854px — 更快、体积更小）"
   },
   "tipGifDurationLimit": {
     "message": "GIF 格式支持的最长录制时间为 1 分钟（60 秒）。"
@@ -1352,31 +1352,135 @@
     "message": "自由选取屏幕的任意区域并录制为 MP4、WebM 或动态 GIF 格式。GIF 录制支持 1:1 原生分辨率，提供 1080p、720p 和 480p 预设画质配置文件，并支持实时文件体积预估。为确保浏览器稳定高效运行，GIF 录制单次最大时长上限为 1 分钟（60 秒）。"
   },
   "msgGifMaxDurationReached": {
-    "message": "已达到 GIF 最大时长 1 分钟（60 秒）。正在生成 GIF..."
+    "message": "已达到 GIF 最长时长 1 分钟（60 秒），正在生成 GIF…"
   },
   "labelGifMaxDuration": {
-    "message": "最多 1 分钟 (60秒)"
+    "message": "最长 1 分钟（60 秒）"
   },
   "settingGifFps": {
     "message": "默认 GIF 帧率 (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — 流畅（高流畅度，文件较大）"
+    "message": "15 FPS — 流畅（画面非常流畅，体积较大）"
   },
   "optGifFps10": {
-    "message": "10 FPS — 标准（网页推荐，兼顾体积与流畅）"
+    "message": "10 FPS — 标准（网页场景推荐，兼顾画质与体积）"
   },
   "optGifFps5": {
-    "message": "5 FPS — 紧凑 / 表情包（低帧率，小体积）"
+    "message": "5 FPS — 精简 / 表情包（动作有顿挫感，体积较小）"
   },
   "optGifFps2": {
-    "message": "2 FPS — 定格动画 / 慢速（逐帧卡顿风，极小体积）"
+    "message": "2 FPS — 定格动画 / 慢速（逐步播放，体积极小）"
   },
   "optGifFps1": {
-    "message": "1 FPS — 演示幻灯片（每秒 1 帧，最小体积）"
+    "message": "1 FPS — 演示文稿（每秒 1 帧，体积最小）"
   },
   "popupRightClickHint": {
     "message": "在网页任意位置右键点击，即可使用区域屏幕录制（视频/GIF）与屏幕取色。",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "广告 / iframe 已在本次会话中隐藏。",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "图片已复制到剪贴板",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "关闭 (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "设置已保存",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "请下载文件，并使用 VLC 或其他媒体播放器打开。",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "此资源类型无法预览",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "下载原始文件",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "提示：请使用 VLC 或任意桌面媒体播放器打开下载的文件，它几乎支持所有格式。",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "正在创建 ZIP 压缩包…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "您的浏览器不支持 EyeDropper API。",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "拖动工具栏",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "切换格式：MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF 分辨率：1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF 帧率：15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "预计 GIF 大小：约 $size$ MB（10 秒），最长 60 秒时最大约 $max$ MB。\n帧率：$fps$ FPS。\nGIF 录制最长限制为 1 分钟（60 秒）。",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "复制 $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "截图预览",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4（H.264 / AVC1 — 在 WhatsApp、Telegram、Jira、Apple 和 Windows 上均可通用播放）",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF（动态图片 — 适合 README、Jira、文档和即时通讯）",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM（VP9 — 开放的网络格式）",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "未找到活动标签页。",
+    "description": "No active tab found."
   }
 }

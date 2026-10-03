@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "எந்த இணைய வளத்தையும் ஆய்வு செய்து ZIP ஆக பதிவிறக்குங்கள். முழுப்பக்க ஸ்கிரீன்ஷாட், நேரடி அட்டவணைப் பிடிப்பு, டெவ் கருவிகள்."
+  },
+  "actionTitle": {
+    "message": "Source Download — பேனலைத் திறந்து ஆதாரங்களைக் கண்காணிக்கவும்"
+  },
+  "contextMenuZap": {
+    "message": "இந்த உறுப்பை மறை"
+  },
+  "contextMenuUndoZap": {
+    "message": "கடைசியாக மறைத்த உறுப்பை மீட்டெடு"
+  },
+  "contextMenuResetZap": {
+    "message": "மறைத்த அனைத்து உறுப்புகளையும் மீட்டமை"
+  },
+  "contextMenuCapturePage": {
+    "message": "முழுப் பக்க ஸ்கிரீன்ஷாட் எடு"
+  },
+  "contextMenuPageArchive": {
+    "message": "ஆஃப்லைன் பக்கக் காப்பகத்தைப் பதிவிறக்கு"
+  },
+  "catAll": {
+    "message": "அனைத்து"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "படங்கள்"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "வீடியோக்கள்"
+  },
+  "catAudio": {
+    "message": "ஆடியோ"
+  },
+  "catCaptions": {
+    "message": "கேப்ஷன்கள்"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "மூல வரைபடங்கள்"
+  },
+  "catFonts": {
+    "message": "எழுத்துருக்கள்"
+  },
+  "catDocuments": {
+    "message": "ஆவணங்கள்"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "மேனிஃபெஸ்ட்கள்"
+  },
+  "catText": {
+    "message": "உரை"
+  },
+  "catOther": {
+    "message": "மற்றவை"
+  },
+  "catScreenshot": {
+    "message": "ஸ்கிரீன்ஷாட்"
+  },
+  "catArchive": {
+    "message": "பக்கக் காப்பகம்"
+  },
+  "btnRefresh": {
+    "message": "புதுப்பிக்கவும்"
+  },
+  "btnExport": {
+    "message": "ஏற்றுமதி"
+  },
+  "btnDownloadSelected": {
+    "message": "தேர்ந்தெடுத்தவற்றைப் பதிவிறக்கு"
+  },
+  "btnDownloadView": {
+    "message": "தற்போதைய காட்சியைப் பதிவிறக்கு"
+  },
+  "btnDownloadAll": {
+    "message": "அனைத்தையும் பதிவிறக்கு"
+  },
+  "btnDownloadFiltered": {
+    "message": "வடிகட்டியவற்றைப் பதிவிறக்கு"
+  },
+  "btnTheme": {
+    "message": "தீமை மாற்றவும்"
+  },
+  "btnGuide": {
+    "message": "பயனர் வழிகாட்டி"
+  },
+  "btnCaptureFullPage": {
+    "message": "முழு பக்க ஸ்கிரீன்ஷாட்"
+  },
+  "btnOfflineArchive": {
+    "message": "ஒற்றை HTML ஐ சேமிக்கவும்"
+  },
+  "filterMinKb": {
+    "message": "குறைந்தபட்சம் KB"
+  },
+  "filterMaxKb": {
+    "message": "அதிகபட்சம் KB"
+  },
+  "filterMinWidth": {
+    "message": "குறைந்தபட்ச அகலம் px"
+  },
+  "filterMinHeight": {
+    "message": "குறைந்தபட்ச உயரம் px"
+  },
+  "filterSortName": {
+    "message": "பெயரின்படி வரிசைப்படுத்தவும்"
+  },
+  "filterSortSize": {
+    "message": "அளவின்படி வரிசைப்படுத்தவும்"
+  },
+  "filterSortType": {
+    "message": "வகையின்படி வரிசைப்படுத்தவும்"
+  },
+  "filterSortTime": {
+    "message": "நேரத்தின்படி வரிசைப்படுத்தவும்"
+  },
+  "filterHideDupes": {
+    "message": "நகல்களை மறை"
+  },
+  "filterClear": {
+    "message": "அழி"
+  },
+  "textModeContains": {
+    "message": "கொண்டுள்ளது"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS தேர்வி"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "பக்க உரையை வடிகட்டவும் அல்லது நேரலை DOM ஐ வினவவும்…"
+  },
+  "textAllElements": {
+    "message": "அனைத்து கூறுகளும்"
+  },
+  "textLiveOn": {
+    "message": "நேரலை: இயக்கம்"
+  },
+  "textLiveOff": {
+    "message": "நேரலை: முடக்கம்"
+  },
+  "textScanNow": {
+    "message": "இப்போது ஸ்கேன் செய்யவும்"
+  },
+  "textReading": {
+    "message": "படித்தல்"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "விவரங்களைப் பார்க்க ஒரு ஆதாரத்தைத் தேர்ந்தெடுக்கவும்"
+  },
+  "inspectorDetails": {
+    "message": "விவரங்கள்"
+  },
+  "inspectorOpenTab": {
+    "message": "புதிய தாவலில் திறக்கவும்"
+  },
+  "inspectorCopyUrl": {
+    "message": "URL ஐ நகலெடுக்கவும்"
+  },
+  "inspectorDownloadFile": {
+    "message": "இந்தக் கோப்பைப் பதிவிறக்கு"
+  },
+  "inspectorClose": {
+    "message": "மூடு"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "வகை"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "அளவு"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "மூலம்"
+  },
+  "metaTitle": {
+    "message": "தலைப்பு"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Source Download பிடித்திருக்கிறதா? Chrome இணைய அங்காடியில் மதிப்பாய்வு அல்லது GitHub இல் நட்சத்திரம் வழங்கி எங்கள் திறந்த மூல முயற்சிக்கு ஆதரவளியுங்கள்!"
+  },
+  "ratingReview": {
+    "message": "★ மதிப்பாய்வு எழுதுங்கள்"
+  },
+  "ratingStar": {
+    "message": "★ GitHub இல் நட்சத்திரம்"
+  },
+  "ratingDismiss": {
+    "message": "நிராகரி"
+  },
+  "toastElementZapped": {
+    "message": "இந்த அமர்வுக்கு உறுப்பு மறைக்கப்பட்டது."
+  },
+  "toastElementRestored": {
+    "message": "உறுப்பு மீட்டெடுக்கப்பட்டது."
+  },
+  "toastAllElementsRestored": {
+    "message": "மறைத்த அனைத்து உறுப்புகளும் மீட்டெடுக்கப்பட்டன."
+  },
+  "toastScreenshotCapturing": {
+    "message": "முழுப் பக்க ஸ்கிரீன்ஷாட் எடுக்கப்படுகிறது…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "முழுப் பக்க ஸ்கிரீன்ஷாட் சேமிக்கப்பட்டது."
+  },
+  "toastArchiveCreated": {
+    "message": "ஒற்றைக் கோப்பு HTML காப்பகம் சேமிக்கப்பட்டது."
+  },
+  "brandSignature": {
+    "message": "Turan Burak Yeşilyurt (2run.dev) உருவாக்கியது"
+  },
+  "tabImages": {
+    "message": "படங்கள் & SVG"
+  },
+  "tabMedia": {
+    "message": "மீடியா & ஆடியோ"
+  },
+  "tabFonts": {
+    "message": "எழுத்துருக்கள்"
+  },
+  "tabTextScraper": {
+    "message": "உரை & அட்டவணைகள்"
+  },
+  "heroScreenshotTitle": {
+    "message": "முழு பக்க ஸ்கிரீன்ஷாட்"
+  },
+  "heroScreenshotDesc": {
+    "message": "ஸ்டிக்கி ஹெடரை மறைத்து, பல வியூபோர்ட்களைத் தடையின்றி இணைக்கிறது"
+  },
+  "heroArchiveTitle": {
+    "message": "ஒற்றை கோப்பு HTML காப்பகம்"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS & Base64 படங்கள் உள்ளிணைக்கப்படும், ஆஃப்லைனில் பாதுகாப்பான ஸ்னாப்ஷாட்"
+  },
+  "copyDataUri": {
+    "message": "Data URI ஐ நகலெடுக்கவும்"
+  },
+  "copyUrl": {
+    "message": "URL ஐ நகலெடுக்கவும்"
+  },
+  "downloadSingle": {
+    "message": "பதிவிறக்கு"
+  },
+  "searchPlaceholder": {
+    "message": "பெயர், URL, குறிச்சொல், MIME அல்லது /regex/ மூலம் வடிகட்டவும்…"
+  },
+  "viewGrid": {
+    "message": "கட்டக் காட்சி"
+  },
+  "viewList": {
+    "message": "பட்டியல் காட்சி"
+  },
+  "btnScreenshot": {
+    "message": "ஸ்கிரீன்ஷாட்"
+  },
+  "btnArchive": {
+    "message": "HTML ஐ சேமிக்கவும்"
+  },
+  "exportJson": {
+    "message": "JSON ஆக தெரியும் பட்டியல்"
+  },
+  "exportCsv": {
+    "message": "CSV ஆக தெரியும் பட்டியல்"
+  },
+  "exportHar": {
+    "message": "நெட்வொர்க் பதிவு HAR ஆக"
+  },
+  "exportScreenshot": {
+    "message": "முழு பக்க ஸ்கிரீன்ஷாட் (PNG)"
+  },
+  "exportArchive": {
+    "message": "ஆஃப்லைன் பக்க காப்பகம் (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "அனைத்து முறைகள்"
+  },
+  "filterTypeAll": {
+    "message": "அனைத்து வகைகளும்"
+  },
+  "filterSortDir": {
+    "message": "ஏறுவரிசை / இறங்குவரிசையை மாற்றவும்"
+  },
+  "emptyTitle": {
+    "message": "ஆதாரங்கள் எதுவும் கிடைக்கவில்லை"
+  },
+  "emptySubtitle": {
+    "message": "நெட்வொர்க் கோரிக்கைகளைக் கைப்பற்ற இந்தப் பேனல் திறந்திருக்கும் போது பக்கத்தை மீண்டும் ஏற்றவும் அல்லது தற்போதைய DOM ஐ ஸ்கேன் செய்ய புதுப்பி என்பதைக் கிளிக் செய்யவும்."
+  },
+  "statusResources": {
+    "message": "ஆதாரங்கள்"
+  },
+  "statusFiltered": {
+    "message": "வடிகட்டிய"
+  },
+  "statusSelected": {
+    "message": "தேர்ந்தெடுக்கப்பட்டது"
+  },
+  "statusDupes": {
+    "message": "நகல்கள் மறைக்கப்பட்டுள்ளன"
+  },
+  "statusSize": {
+    "message": "அளவு"
+  },
+  "langAuto": {
+    "message": "தானியங்கு (உலாவி)"
+  },
+  "langSelectorTitle": {
+    "message": "மொழியைத் தேர்ந்தெடுக்கவும்"
+  },
+  "textPillAll": {
+    "message": "அனைத்து உள்ளடக்கம்"
+  },
+  "textPillText": {
+    "message": "📄 உரை & கட்டுரைகள்"
+  },
+  "textPillTables": {
+    "message": "📊 அட்டவணைகள் மட்டும்"
+  },
+  "textSelectAll": {
+    "message": "அனைத்தையும் தேர்ந்தெடுக்கவும்"
+  },
+  "textDeselectAll": {
+    "message": "அனைத்தையும் தேர்வுநீக்கவும்"
+  },
+  "textClearSelection": {
+    "message": "அழி"
+  },
+  "toastRefreshComplete": {
+    "message": "பக்க ஸ்கேன் முடிந்தது: $count$ புதிய ஆதாரங்கள்",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$ தொகுதி(கள்) நகலெடுக்கப்பட்டது",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+  },
+  "toastTableCopied": {
+    "message": "அட்டவணை கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+  },
+  "toastNothingToExport": {
+    "message": "ஏற்றுமதி செய்ய எதுவும் இல்லை"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ தொகுதி(கள்) TXT ஆக ஏற்றுமதி செய்யப்பட்டது",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$ தொகுதி(கள்) மார்க் டவுனாக ஏற்றுமதி செய்யப்பட்டது",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "அட்டவணை வரிசைகள் எதுவும் கைப்பற்றப்படவில்லை"
+  },
+  "toastExportedCsv": {
+    "message": "அட்டவணை CSV ஆக ஏற்றுமதி செய்யப்பட்டது"
+  },
+  "toastExportedXlsx": {
+    "message": "அட்டவணை XLSX ஆக ஏற்றுமதி செய்யப்பட்டது"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ அட்டவணை(கள்) $format$ ஆக ஏற்றுமதி செய்யப்பட்டது",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ தாள்(கள்) XLSX ஆக ஏற்றுமதி செய்யப்பட்டது",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "பதிவிறக்குவதற்கு ஆதாரங்கள் இல்லை."
+  },
+  "toastNoVisibleResources": {
+    "message": "பதிவிறக்குவதற்குத் தெரியும் ஆதாரங்கள் எதுவும் இல்லை."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "முதலில் குறைந்தபட்சம் ஒரு ஆதாரத்தைத் தேர்ந்தெடுக்கவும்."
+  },
+  "toastZipSaved": {
+    "message": "ZIP சேமிக்கப்பட்டது: $total$ ஆதாரங்களில் $fetched$",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP தோல்வியடைந்தது: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR ஏற்றுமதி செய்யப்பட்டது ($count$ உள்ளீடுகள்)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools ஆய்வு செய்யும் சாளரம் கிடைக்கவில்லை."
+  },
+  "toastScreenshotError": {
+    "message": "ஸ்கிரீன்ஷாட் பிழை: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "ஆஃப்லைன் பக்கக் காப்பகம் உருவாக்கப்படுகிறது…"
+  },
+  "toastArchiveError": {
+    "message": "காப்பகப் பிழை: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "வடிவமைப்பு நேரம் முடிந்தது — அசல் கோப்பைக் காட்டுகிறது."
+  },
+  "toastFormatFailed": {
+    "message": "கோப்பை வடிவமைக்க முடியவில்லை — அசல் கோப்பைக் காட்டுகிறது."
+  },
+  "emptySearchTitle": {
+    "message": "\"$query$\"க்கு எந்தப் பொருத்தமும் இல்லை",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "வேறு தேடல் சொல்லை முயற்சிக்கவும் அல்லது வேறு வகைக்கு மாறவும்."
+  },
+  "emptyFiltersTitle": {
+    "message": "தற்போதைய வடிப்பான்களுடன் எந்த ஆதாரமும் பொருந்தவில்லை"
+  },
+  "emptyFiltersSub": {
+    "message": "மேலே உள்ள அளவு அல்லது பரிமாண வடிப்பான்களைத் தளர்த்தவும் அல்லது அழி என்பதை அழுத்தவும்."
+  },
+  "textEmptyQueryReject": {
+    "message": "அந்த வினவலைப் பக்கம் நிராகரித்தது. மேலே அதைச் சரிசெய்தால் முடிவுகள் உடனே திரும்பும்."
+  },
+  "textEmptyNoMatch": {
+    "message": "பக்கத்தில் உள்ள எந்த உறுப்பும் இந்த வினவலுடன் பொருந்தவில்லை. மேலும் பொதுவான தேர்வியை முயற்சிக்கவும் அல்லது பெட்டிக்கு அடுத்துள்ள பயன்முறையை மாற்றவும்."
+  },
+  "textEmptyInitial": {
+    "message": "இதுவரை எதுவும் கைப்பற்றப்படவில்லை. லைவ் கேப்சர் இயங்குகிறது — முழுப் பக்கமும் படிக்கக்கூடிய உரையாக இங்கே தோன்றும்."
+  },
+  "textEmptyFiltered": {
+    "message": "தற்போதைய வினவல் மற்றும் உறுப்பு வடிப்பானுடன் எதுவும் பொருந்தவில்லை."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ தொகுதிகள்",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ வார்த்தைகள்",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ எழுத்துகள்",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ அட்டவணை(கள்) · $rows$ தனித்துவமான வரிசைகள்",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ தேர்ந்தெடுக்கப்பட்டது — ஏற்றுமதிகள் இவற்றை மட்டுமே பயன்படுத்துகின்றன",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "அட்டவணை — திரையில் $count$ வரிசை(கள்)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "அட்டவணை — அனைத்து $count$ தனித்துவமான வரிசை(கள்)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ ஸ்னாப்ஷாட்(கள்)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "புதுப்பிக்கப்பட்டது $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "அனைத்து $count$ வரிசைகளையும் காட்டு",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "அனைத்து வரிசைகளையும் காட்டுகிறது"
+  },
+  "textTableHistory": {
+    "message": "வரலாறு ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "வரலாற்றை மறை"
+  },
+  "textTableNoRows": {
+    "message": "இதுவரை வரிசைகள் எதுவும் கைப்பற்றப்படவில்லை."
+  },
+  "textBtnCopy": {
+    "message": "உரையை நகலெடுக்கவும்"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 நகல்"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ நகல் படம்(கள்)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "ஏற்றுமதி"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG ஐ ஏற்றுகிறது…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG உள்ளடக்கத்தை மீட்டெடுக்க முடியவில்லை."
+  },
+  "inspectorLoadingFont": {
+    "message": "எழுத்துரு முன்னோட்டத்தை ஏற்றுகிறது…"
+  },
+  "inspectorFontSample": {
+    "message": "எழுத்துரு முன்னோட்டம்"
+  },
+  "inspectorBeautify": {
+    "message": "வடிவமை"
+  },
+  "inspectorOriginal": {
+    "message": "அசல்"
+  },
+  "inspectorHeaders": {
+    "message": "ஹெடர்கள்"
+  },
+  "inspectorResponse": {
+    "message": "பதில்"
+  },
+  "inspectorRequest": {
+    "message": "கோரிக்கை"
+  },
+  "inspectorQueryParams": {
+    "message": "வினவல் அளவுருக்கள்"
+  },
+  "inspectorRequestBody": {
+    "message": "கோரிக்கை பாடி"
+  },
+  "textHintHtml": {
+    "message": "பக்கத்தின் நேரடி, படிக்கக்கூடிய நகல். ஒவ்வொரு உறுப்பு வைத்திருக்கும் உரையும் DOM வரிசையில் கைப்பற்றப்பட்டு, பக்கம் மாறும்போது இங்கே வைக்கப்படும். எளிய உரை, வழக்கமான வெளிப்பாடு, <strong>CSS தேர்வி</strong> அல்லது <strong>XPath</strong> வெளிப்பாடு ஆகியவற்றைக் கொண்டு வினவவும், பின்னர் பொருந்துவதை ஏற்றுமதி செய்யவும். விவரங்களுக்கு <a href=\"#\" id=\"text-hint-guide\">வழிகாட்டியைப்</a> பார்க்கவும்."
+  },
+  "textHeadings": {
+    "message": "தலைப்புகள்"
+  },
+  "textAllLevels": {
+    "message": "அனைத்து நிலைகள்"
+  },
+  "textMatches": {
+    "message": "பொருத்தங்கள்"
+  },
+  "textMatch": {
+    "message": "பொருத்தம்"
+  },
+  "textReadingOn": {
+    "message": "படித்தல்: இயக்கம்"
+  },
+  "toastDownloadStarted": {
+    "message": "பதிவிறக்கம் தொடங்கியது: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "இந்த ஆதாரத்தைப் பெற முடியவில்லை (CORS அல்லது ஆதரிக்கப்படாத வகை)."
+  },
+  "ratingBannerText": {
+    "message": "Source Download பிடித்திருக்கிறதா? Chrome இணைய அங்காடியில் மதிப்பாய்வு அல்லது GitHub இல் நட்சத்திரம் வழங்கி எங்கள் திறந்த மூல முயற்சிக்கு ஆதரவளியுங்கள்!"
+  },
+  "ratingBannerReview": {
+    "message": "★ மதிப்பாய்வு"
+  },
+  "ratingBannerStar": {
+    "message": "★ நட்சத்திரம்"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ தனித்துவமான வரிசை(கள்)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ விநாடி முன்பு",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ நிமி முன்பு",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "பகுதி ஸ்கிரீன்ஷாட் எடு"
+  },
+  "btnAreaDownload": {
+    "message": "பதிவிறக்கு"
+  },
+  "btnAreaCopy": {
+    "message": "கிளிப்போர்டுக்கு நகலெடு"
+  },
+  "btnAreaCancel": {
+    "message": "ரத்துசெய்"
+  },
+  "toastAreaCopied": {
+    "message": "பகுதி ஸ்கிரீன்ஷாட் கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+  },
+  "toastAreaDownloaded": {
+    "message": "பகுதி ஸ்கிரீன்ஷாட் சேமிக்கப்பட்டது"
+  },
+  "statusFoundCssResources": {
+    "message": "CSS இலிருந்து குறிப்பிடப்பட்ட $count$ ஆதாரம்(கள்) கண்டறியப்பட்டன",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM ஸ்கேன் தோல்வி: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "கோப்பு உள்ளடக்கங்களை இன்டெக்ஸ் செய்கிறது…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "படத்தின் நகல்களைச் சரிபார்க்கிறது…"
+  },
+  "statusWorking": {
+    "message": "வேலை செய்கிறது…"
+  },
+  "filterMethodTitle": {
+    "message": "HTTP முறையின்படி வடிகட்டவும்"
+  },
+  "filterTypeTitle": {
+    "message": "கோரிக்கை வகையின்படி வடிகட்டவும்"
+  },
+  "filterSortTitle": {
+    "message": "ஆதாரங்களை வரிசைப்படுத்தவும்"
+  },
+  "textModeTitle": {
+    "message": "வினவல் பெட்டி எவ்வாறு விளக்கப்படுகிறது"
+  },
+  "textKindTitle": {
+    "message": "ஒரு உறுப்பு வகைக்கு வரம்பிடவும்"
+  },
+  "textHeadingLevelTitle": {
+    "message": "தலைப்பு நிலை"
+  },
+  "textPlaceholderRegex": {
+    "message": "^விலை:\\s*\\d+ — JavaScript வழக்கமான வெளிப்பாடு"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — ஏதேனும் CSS தேர்வி"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "வழிகாட்டியில் தேடவும்…"
+  },
+  "popupIntro": {
+    "message": "<strong>கருவிப்பட்டி பேட்ஜ்</strong> எண்ணும் வகைகள். ஒன்றை முடக்கினால் அதன் எண்ணிக்கை நிறுத்தப்படும் — பேட்ஜ் நீங்கள் கண்காணிப்பவற்றை மட்டும் உடனடியாகக் காட்டும்."
+  },
+  "popupHelpTitle": {
+    "message": "முழு பேனலை எவ்வாறு பயன்படுத்துவது"
+  },
+  "popupStep1": {
+    "message": "நீங்கள் ஆய்வு செய்ய விரும்பும் பக்கத்திற்கு DevTools ஐத் திறக்கவும் <div class=\"hint\"><kbd>F12</kbd> அல்லது <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "DevTools கருவிப்பட்டியில் உள்ள <strong>Source Download</strong> தாவலைக் கிளிக் செய்யவும்"
+  },
+  "popupStep3": {
+    "message": "ஆதாரங்களை உலாவவும், ஆய்வு செய்யவும் மற்றும் பதிவிறக்கவும் — தனித்தனியாக அல்லது ஒரே நேரத்தில் ஒரு ZIP ஆக."
+  },
+  "popupNote": {
+    "message": "குறிப்பு: DevToolsஐ நிரல்ரீதியாகத் திறக்க Chrome நீட்டிப்புகளை அனுமதிக்காது, அதனால்தான் முழு கருவித்தொகுப்பும் DevTools கருவிப்பட்டி வழியாகக் கிடைக்கிறது."
+  },
+  "popupTrackAll": {
+    "message": "அனைத்து வகைகளையும் கண்காணிக்கவும்"
+  },
+  "popupLanguage": {
+    "message": "மொழி"
+  },
+  "inspectorBinaryResponse": {
+    "message": "பைனரி பதில் — அதைப் பார்க்க பதிவிறக்கவும்"
+  },
+  "inspectorLoadingResponse": {
+    "message": "பதிலை ஏற்றுகிறது…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "பதில் முன்னோட்டம் இல்லை — உள்ளடக்கத்தை மீட்டெடுக்க முடியவில்லை."
+  },
+  "inspectorLoadingContent": {
+    "message": "உள்ளடக்கத்தை ஏற்றுகிறது…"
+  },
+  "inspectorNoPreview": {
+    "message": "முன்னோட்டம் இல்லை — உள்ளடக்கத்தை மீட்டெடுக்க முடியவில்லை."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "அனைத்தையும் மூடு"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "திறந்திருக்கும் அனைத்து தாவல்களையும் மூடு"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "பெரிதாக்க கிளிக் செய்யவும்"
+  },
+  "inspectorViewSource": {
+    "message": "மூலத்தைப் பார்க்கவும்"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "தொடரியல் சிறப்பம்சத்துடன் SVG மார்க்அப்பைக் காட்டு"
+  },
+  "inspectorFormatting": {
+    "message": "வடிவமைக்கிறது…"
+  },
+  "findInContentPlaceholder": {
+    "message": "உள்ளடக்கத்தில் கண்டறிக..."
+  },
+  "findPreviousMatch": {
+    "message": "முந்தைய பொருத்தம்"
+  },
+  "findNextMatch": {
+    "message": "அடுத்த பொருத்தம்"
+  },
+  "findClose": {
+    "message": "மூடு"
+  },
+  "findShowRaw": {
+    "message": "அசல் (வடிவமைக்கப்படாத) உள்ளடக்கத்தைக் காட்டு"
+  },
+  "findBeautify": {
+    "message": "இந்த உள்ளடக்கத்தை வடிவமைக்கவும்"
+  },
+  "btnRaw": {
+    "message": "ரா"
+  },
+  "btnBeautify": {
+    "message": "வடிவமை"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) ஸ்ட்ரீம் கண்டறியப்பட்டது"
+  },
+  "videoCannotPlay": {
+    "message": "இந்த வீடியோவை உலாவியில் இயக்க முடியாது"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome ஆல் HLS ஸ்ட்ரீம்களை நேரடியாக இயக்க முடியாது. நீங்கள் <b>$NAME$</b> இன் அனைத்து பிரிவுகளையும் ஒரே MP4/TS வீடியோ கோப்பில் இணைக்கலாம்.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "உலாவி இந்த வடிவமைப்பை ஆதரிக்கவில்லை"
+  },
+  "btnMergeHls": {
+    "message": "பிரிவுகளை ஒன்றிணைத்து பதிவிறக்கவும்"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ பிரிவு(கள்) $NAME$ இல் இணைக்கப்பட்டது",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "அளவு தெரியவில்லை"
+  },
+  "progressFetching": {
+    "message": "பெறுகிறது $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP உருவாக்குகிறது $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP சேமிக்கப்பட்டது: $TOTAL$ ஆதாரங்களில் $FETCHED$ ($SKIPPED$ தோல்வி)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "மீண்டும் முயலவும் ($COUNT$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "பதிவிறக்கத்தை மீண்டும் முயற்சி"
+  },
+  "searchRegexHint": {
+    "message": "Regex தேடல் செயலில் உள்ளது — உங்கள் வினவலை /pattern/i வடிவில் உள்ளிடவும்"
+  },
+  "textIncludeInExports": {
+    "message": "ஏற்றுமதியில் அடங்கும்"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "ஒவ்வொரு ஸ்னாப்ஷாட்டையும் நகல்கள் இல்லாத ஒரே அட்டவணையாக இணைக்கவும் — இதுவே ஏற்றுமதி செய்யப்படும்"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "இந்த அட்டவணையின் முந்தைய ஸ்னாப்ஷாட்களை உலாவவும்"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "இந்த அட்டவணையை CSV ஆகப் பதிவிறக்கவும்"
+  },
+  "tableSnapshotLabel": {
+    "message": "ஸ்னாப்ஷாட் $INDEX$ — $TIME$ ($COUNT$ வரிசைகள்)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "தொகுதி பதிவிறக்கத்திற்குத் தேர்ந்தெடு / தேர்வை நீக்கு"
+  },
+  "cardDownloadTitle": {
+    "message": "கோப்பைப் பதிவிறக்கவும்"
+  },
+  "cardRetryFailedTitle": {
+    "message": "முந்தைய பதிவிறக்கம் தோல்வியடைந்தது — மீண்டும் முயற்சிக்க கிளிக் செய்யவும்"
+  },
+  "btnThemeLight": {
+    "message": "லைட் தீமுக்கு மாறவும்"
+  },
+  "btnThemeDark": {
+    "message": "டார்க் தீமுக்கு மாறவும்"
+  },
+  "guideTitle": {
+    "message": "Source Download — பயனர் கையேடு"
+  },
+  "guideEmpty": {
+    "message": "உங்கள் தேடலுக்கு எந்த வழிகாட்டி பிரிவுகளும் பொருந்தவில்லை."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% சார்பு இல்லாதது.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "சிறிதாக்கு (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "பெரிதாக்கு (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "பெரிதாக்கலை மீட்டமை (0)"
+  },
+  "lightboxClose": {
+    "message": "மூடு (Esc)"
+  },
+  "resizerTitle": {
+    "message": "அளவை மாற்ற இழுக்கவும்"
+  },
+  "ratingDismissTitle": {
+    "message": "நிராகரி"
+  },
+  "inspectorResourceTitle": {
+    "message": "ஆதாரம்"
+  },
+  "guideSecGettingStarted": {
+    "message": "தொடங்குதல்"
+  },
+  "guideSecCategories": {
+    "message": "வகைகள்"
+  },
+  "guideSecSearchFilters": {
+    "message": "தேடல் & வடிப்பான்கள்"
+  },
+  "guideSecGridView": {
+    "message": "கட்டம் & பட்டியல் காட்சி"
+  },
+  "guideSecInspect": {
+    "message": "ஒரு ஆதாரத்தை ஆய்வு செய்யுங்கள்"
+  },
+  "guideSecDownloading": {
+    "message": "பதிவிறக்குதல்"
+  },
+  "guideSecLightbox": {
+    "message": "லைட்பாக்ஸ்"
+  },
+  "guideSecTextTables": {
+    "message": "உரை & அட்டவணைகள்"
+  },
+  "guideSecCaptions": {
+    "message": "கேப்ஷன்கள் & வசனங்கள்"
+  },
+  "guideSecSourceMaps": {
+    "message": "மூல வரைபடங்கள்"
+  },
+  "guideSecDupes": {
+    "message": "நகல் படங்கள்"
+  },
+  "guideSecVideoHls": {
+    "message": "வீடியோ ஃபால்பேக் & HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "மேம்பட்ட குறிப்புகள்"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "DevTools கருவிப்பட்டியில் உள்ள <strong>Source Download</strong> தாவலைக் கிளிக் செய்யவும் (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> ஐ அழுத்தி, பின்னர் DevTools கருவிப்பட்டியில் உள்ள தாவலைக் கிளிக் செய்யவும்). DevTools ஐத் தானாகத் திறக்க நீட்டிப்புகளை Chrome அனுமதிக்காது, அதனால்தான் பேனல் அங்கு உள்ளது. கருவிப்பட்டி ஐகான் பாப்அப்பில், ஐகானில் உள்ள பேட்ஜ் கவுண்டரில் எந்த வகைகளை எண்ண வேண்டும் என்பதைத் தேர்வு செய்யலாம். பேனல் கருவிப்பட்டியில் உள்ள சூரியன்/சந்திரன் பொத்தான் Chrome-இலிருந்து சுயாதீனமாக லைட் அல்லது டார்க் தீமைப் பூட்டுகிறது; அந்தத் தேர்வு நினைவில் வைக்கப்படும்."
+  },
+  "guideSecCategoriesContent": {
+    "message": "இடதுபுறத்தில் உள்ள செங்குத்து தாவல்கள் கைப்பற்றப்பட்ட ஒவ்வொரு ஆதாரத்தையும் வகையின்படி 17 பிரத்யேக வகைகளாகப் பிரிக்கின்றன: படங்கள், வீடியோக்கள், ஆடியோ, கேப்ஷன்கள், ஆவணங்கள், எழுத்துருக்கள், மூல வரைபடங்கள், WASM, SVG, APIகள், குக்கீகள், சேமிப்பு மற்றும் பல. ஒவ்வொரு தாவலும் நேரலை எண்ணிக்கையைக் காட்டுகிறது. ஒரு நேரத்தில் ஒரு வகை மட்டுமே காட்டப்படும்; வகையை மாற்றும்போது அனைத்து வடிப்பான்களும் மீட்டமைக்கப்படும், எனவே நீங்கள் பார்ப்பது எப்போதும் தாவலுடன் பொருந்தும்."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "தேடல் பட்டி பெயர், URL, வகை, மாற்று உரை (alt) அல்லது தலைப்பின் அடிப்படையில் வடிகட்டுகிறது. வழக்கமான வெளிப்பாட்டைப் பயன்படுத்த உங்கள் வினவலை <kbd>/…/</kbd> க்குள் எழுதவும், எ.கா. <code>/\\.(png|jpg)$/</code>. கருவிப்பட்டியின் கீழே, வடிகட்டி பட்டி ஒவ்வொரு வகைக்கும் மாறுகிறது: மீடியாவுக்கு அளவு மற்றும் பரிமாண வரம்புகள், APIகளுக்கு HTTP முறை மற்றும் கோரிக்கை வகை, மேலும் வரிசைப்படுத்துதல் மற்றும் திசை."
+  },
+  "guideSecGridViewContent": {
+    "message": "ஒரு சிறிய கட்டம் (சிறிய சிறுபடங்கள்) மற்றும் தேடல் பட்டிக்கு அடுத்துள்ள பொத்தான்கள் கொண்ட விரிவான பட்டியலுக்கு இடையில் மாறவும். உங்கள் தேர்வு அமர்வுகளுக்கு இடையில் நினைவில் வைக்கப்படும். பட்டியல் பார்வையில், தேர்வுப்பெட்டிகள் மொத்தப் பதிவிறக்கத்திற்கான தனிப்பட்ட ஆதாரங்களைத் தேர்ந்தெடுக்க உங்களை அனுமதிக்கின்றன."
+  },
+  "guideSecInspectContent": {
+    "message": "வலதுபுறத்தில் உள்ள ஆய்வுப் பலகத்தில் திறக்க எந்த ஆதாரத்தையும் கிளிக் செய்யவும். திறக்கப்பட்ட ஒவ்வொரு கோப்பும் ஒரு தாவலாக மாறும், எனவே நீங்கள் பல ஆதாரங்களை அருகருகே ஒப்பிடலாம் — புதியது இடதுபுறத்தில் திறக்கும். படங்கள், வீடியோ, ஆடியோ, எழுத்துருக்கள், SVG மற்றும் உரை/குறியீட்டுக்கு (வடிவமைப்பு மாற்றியுடன்) சிறப்புப் பார்வையாளர்கள் உள்ளனர். APIகளுக்குப் பிளவுக் காட்சி தெரியும்: இடதுபுறத்தில் பதில், வலதுபுறத்தில் கோரிக்கை விவரங்கள் (முறை, நிலை, ஹெடர்கள், வினவல் அளவுருக்கள் மற்றும் பாடி)."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>தற்போதைய காட்சியைப் பதிவிறக்கு</strong> தற்போது தெரியும் ஆதாரங்களை (செயலில் உள்ள வகை + தேடல் + வடிப்பான்கள்) ZIP ஆகச் சேமிக்கிறது; வடிப்பான்கள் செயலில் இருக்கும்போது இந்தப் பொத்தான் <em>வடிகட்டியவற்றைப் பதிவிறக்கு (N)</em> என மாறும். கிளிக் செய்வதற்கு முன் மதிப்பிடப்பட்ட காப்பக அளவைப் பார்க்க, எந்தப் பதிவிறக்கப் பொத்தானிலும் கர்சரை வைக்கவும். <strong>தேர்ந்தெடுத்தவற்றைப் பதிவிறக்கு</strong> டிக் செய்த உருப்படிகளை மட்டுமே பதிவிறக்கும். <strong>அனைத்தையும் பதிவிறக்கு</strong> கண்டறியப்பட்ட ஒவ்வொரு ஆதாரத்தையும் கோப்புறை அமைப்புடன் ஒரு ZIP-இல் சேமிக்கிறது. தோல்வியுற்ற பதிவிறக்கங்கள் தானாகவே மீண்டும் முயற்சிக்கப்படும்; சூழல் மெனுவிலிருந்தும் மீண்டும் முயற்சி செய்யலாம். <strong>ஏற்றுமதி</strong> தெரியும் பட்டியலை JSON அல்லது CSV ஆக எழுதுகிறது, அல்லது Chrome இன் நெட்வொர்க் பதிவை HAR கோப்பாகச் சேமிக்கிறது."
+  },
+  "guideSecLightboxContent": {
+    "message": "ஜூம் பொத்தான் மீடியாவை முழு அளவிலான லைட்பாக்ஸில் திறக்கும்; அங்கு நீங்கள் இழுத்து நகர்த்தலாம், மவுஸ் வீல், திரையில் உள்ள பொத்தான்கள் அல்லது விசைப்பலகை மூலம் பெரிதாக்கலாம் (பெரிதாக்க/சிறிதாக்க <kbd>+</kbd>/<kbd>-</kbd>, மீட்டமைக்க <kbd>0</kbd>, மூட <kbd>Esc</kbd>)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>உரை</strong> வகை என்பது பக்கத்தின் நேரலை, படிக்கக்கூடிய நகலாகும். உரையைக் கொண்ட ஒவ்வொரு உறுப்பையும் — தலைப்புகள், பத்திகள், பட்டியல் உருப்படிகள், பொத்தான்கள், <code>div</code>/<code>span</code> மற்றும் பலவற்றை — DOM வரிசையில் கைப்பற்றுகிறது; <strong>நேரலை</strong> இயக்கத்தில் இருக்கும் வரை ஸ்கேன் செய்துகொண்டே இருக்கும்.</p><p><strong>வினவல்</strong> பெட்டி நான்கு வழிகளில் செயல்படுகிறது; அதன் அருகில் உள்ள கீழ்தோன்றும் பட்டியலிலிருந்து தேர்வு செய்யலாம்: <strong>கொண்டுள்ளது</strong> மற்றும் <strong>Regex</strong> ஏற்கனவே கைப்பற்றப்பட்ட உரையை வடிகட்டுகின்றன, <strong>CSS தேர்வி</strong> மற்றும் <strong>XPath</strong> நேரலைப் பக்கத்தில் இயக்கப்படுகின்றன, எனவே அவை DOM இல் உள்ள எதையும் அடைய முடியும். உறுப்புகளுக்குப் பதிலாக மதிப்பைத் தரும் வெளிப்பாடுகளையும் XPath ஏற்கிறது, எ.கா. <code>count(//a)</code> அல்லது <code>//@href</code>. தவறான வினவலைப் பற்றி பக்கம் தெரிவிப்பது பெட்டியின் அருகில் காட்டப்படும். <strong>உறுப்பு</strong> முடிவை ஒரே குறிச்சொல்லாகக் குறைக்கிறது; பக்கத்தில் காணப்படும் ஒவ்வொரு குறிச்சொல்லின் எண்ணிக்கையும் காட்டப்படும். வினவல் பெட்டியை அழிப்பது (அல்லது <strong>அழி</strong> என்பதை அழுத்துவது) உங்களை <em>அனைத்து கூறுகளும்</em> என்பதற்குத் திருப்பி, பக்கத்தை மீண்டும் கைப்பற்றும் — கீழ்தோன்றும் பட்டியலைக் கைமுறையாக மீட்டமைக்க வேண்டியதில்லை.</p><p><strong>படித்தல்</strong> குறிச்சொற்கள், தேர்வுப்பெட்டிகள் மற்றும் இருப்பிடத் தடங்களை மறைக்கும், எனவே உரை ஒரு ஆவணம் போல் படிக்கும். அட்டவணைகள் ஸ்னாப்ஷாட்களின் வரம்புக்குட்பட்ட வரலாற்றைச் சேமிக்கின்றன, எனவே டைனமிக் (SPA) அட்டவணைகள் ஒருபோதும் இழக்கப்படாது. ஒவ்வொரு ஸ்னாப்ஷாட்டையும் நகல்கள் இல்லாத ஒரே காட்சியாக ஒன்றிணைக்க அட்டவணையில் <strong>அனைத்து வரிசைகளையும் காட்டு</strong> என்பதை அழுத்தவும் — ஏற்றுமதியில் இருப்பது சரியாக அதுவே. <strong>TXT</strong> (படிக்கக்கூடிய பக்கம்), <strong>MD</strong> (மார்க்டவுன், அட்டவணைகள் உட்பட) ஆக, அல்லது அட்டவணைகளை CSV, HTML அல்லது உண்மையான பல-தாள் <strong>XLSX</strong> பணிப்புத்தகமாக ஏற்றுமதி செய்யவும். டிக் செய்த உருப்படிகளுக்கு முன்னுரிமை; இல்லையெனில் தற்போது தெரியும் அனைத்தும் ஏற்றுமதி செய்யப்படும்.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML மற்றும் பிற கேப்ஷன் கோப்புகள் — <code>&lt;track&gt;</code> மூலங்கள் உட்பட — ஆவணங்களுடன் கலக்காமல் அவற்றின் சொந்த <strong>கேப்ஷன்கள்</strong> தாவலில் தோன்றும்."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> கோப்புகள் மற்றும் மூல வரைபடங்கள் போலத் தோன்றும் JSON உள்ளடக்கங்கள் (அவற்றில் <code>mappings</code> மற்றும் <code>sources</code> இருக்கும்) JSON வியூவர் மற்றும் வடிவமைப்பு வசதியுடன் <strong>மூல வரைபடங்கள்</strong> என்பதன் கீழ் குழுவாக்கப்படுகின்றன, எனவே அவை இனி JSON தாவலை நிரப்பாது."
+  },
+  "guideSecDupesContent": {
+    "message": "படங்கள் தாவலில் பேனல் கைப்பற்றப்பட்ட பைட்டுகளை ஹாஷ் செய்து ஒரே மாதிரியான கோப்புகளைக் குறிக்கும். <strong>நகல்களை மறை</strong> வடிப்பான் ஒவ்வொரு தொகுப்பின் முதல் நகலை மட்டும் வைத்திருப்பதால், தற்போதைய காட்சியின் ZIP-இல் ஒரே சிறுபடம் இரண்டு முறை வராது."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "உலாவியால் நேரடியாக இயக்க முடியாத ஸ்ட்ரீம்கள் (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, அறியப்படாத கோடெக்குகள்) கருப்பு பிளேயருக்குப் பதிலாக மாற்றுக் காட்சியைக் காட்டுகின்றன. HLS-க்கு, பேனலிலிருந்தே பிரிவுகளை ஒரே வீடியோ கோப்பாக இணைக்கலாம் அல்லது அசல் மேனிஃபெஸ்டைப் பதிவிறக்கலாம்."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "டைனமிக் <strong>API</strong> பதில்கள் (XHR/fetch) URL அடிப்படையில் நகல் நீக்கப்படுவதில்லை — ஒவ்வொரு பதிலும் பட்டியலில் இருக்கும் (வரம்புடைய FIFO), எனவே மீண்டும் மீண்டும் வரும் கோரிக்கைகளை ஒப்பிடலாம். நிலையான ஆதாரங்கள் நகல் நீக்கப்படும். தற்போதைய DOM ஐ மீண்டும் ஸ்கேன் செய்ய <strong>புதுப்பிக்கவும்</strong> பயன்படுத்தவும், மேலும் நீங்கள் தாவல்களை மாற்றுவதற்கு முன் தூண்டப்பட்டவை உட்பட ஒவ்வொரு நெட்வொர்க் கோரிக்கையையும் கைப்பற்ற பேனல் திறந்திருக்கும் போது பக்கத்தை மீண்டும் ஏற்றவும்."
+  },
+  "toolArrow": {
+    "message": "அம்புக்குறி கருவி"
+  },
+  "toolRect": {
+    "message": "செவ்வகக் கருவி"
+  },
+  "toolText": {
+    "message": "உரைக் கருவி"
+  },
+  "toolUndo": {
+    "message": "செயல்தவிர் (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "மீண்டும் செய் (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "நிறம்"
+  },
+  "badgeStrokeSize": {
+    "message": "அளவு: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "எழுத்துரு அளவு: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "தேர்ந்தெடுத்த பகுதியை வீடியோ / GIF ஆகப் பதிவுசெய்"
+  },
+  "btnRecStart": {
+    "message": "பதிவைத் தொடங்கு"
+  },
+  "btnRecPause": {
+    "message": "இடைநிறுத்து"
+  },
+  "btnRecResume": {
+    "message": "தொடரு"
+  },
+  "btnRecStop": {
+    "message": "முடித்துப் பதிவிறக்கு"
+  },
+  "btnRecCancel": {
+    "message": "ரத்துசெய்"
+  },
+  "toastRecSaved": {
+    "message": "தேர்ந்தெடுத்த பகுதியின் பதிவு சேமிக்கப்பட்டது"
+  },
+  "toastRecCancelled": {
+    "message": "வீடியோ பதிவு ரத்துசெய்யப்பட்டது"
+  },
+  "toastRecPermissionDenied": {
+    "message": "திரைப் பதிவுக்கான அனுமதி வழங்கப்படவில்லை"
+  },
+  "btnPopupRecordArea": {
+    "message": "பகுதி வீடியோ / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "பகுதி ஸ்கிரீன்ஷாட்"
+  },
+  "contextMenuPickColor": {
+    "message": "திரையிலிருந்து நிறத்தைத் தேர்ந்தெடு"
+  },
+  "btnPopupPickColor": {
+    "message": "நிறத்தைத் தேர்ந்தெடுக்கவும்"
+  },
+  "colorPickerTitle": {
+    "message": "வண்ணத் தேர்வி"
+  },
+  "btnColorPickAgain": {
+    "message": "வேறொரு நிறத்தைத் தேர்ந்தெடு"
+  },
+  "toastColorCopied": {
+    "message": "நிறம் கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+  },
+  "toastProgressCapturing": {
+    "message": "முழுப் பக்கமும் படமெடுக்கப்படுகிறது… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "படம் இணைக்கப்படுகிறது…"
+  },
+  "modalExportTitle": {
+    "message": "முழுப் பக்க ஸ்கிரீன்ஷாட் தயார்"
+  },
+  "btnExportPng": {
+    "message": "PNG பதிவிறக்கு"
+  },
+  "btnExportJpg": {
+    "message": "JPG பதிவிறக்கு"
+  },
+  "btnExportPdf": {
+    "message": "PDF ஆகச் சேமி"
+  },
+  "btnExportCopy": {
+    "message": "கிளிப்போர்டுக்கு நகலெடு"
+  },
+  "btnExportGenerating": {
+    "message": "உருவாக்கப்படுகிறது…"
+  },
+  "toastPdfGenerated": {
+    "message": "PDF ஆவணம் சேமிக்கப்பட்டது."
+  },
+  "settingNamingPatterns": {
+    "message": "கோப்பு பெயரிடும் வடிவங்கள்"
+  },
+  "settingVideoFormat": {
+    "message": "இயல்புநிலை வீடியோ வடிவம்"
+  },
+  "settingNamingPreview": {
+    "message": "முன்னோட்டம்:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF உருவாக்கப்படுகிறது, காத்திருக்கவும்…"
+  },
+  "settingGifResolution": {
+    "message": "இயல்புநிலை GIF தெளிவுத்திறன்"
+  },
+  "optGifOriginal": {
+    "message": "அசல் (1:1 சொந்தத் தெளிவுத்திறன் — முழு 3K/4K, அளவு குறைப்பு இல்லை)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (அதிகபட்சம் 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (அதிகபட்சம் 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (அதிகபட்சம் 854px — வேகமானது, சிறிய அளவு)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF வடிவம் 1 நிமிடம் (60வி) அதிகபட்ச பதிவு காலத்தை ஆதரிக்கிறது."
+  },
+  "guideSecScreenRecording": {
+    "message": "திரைப் பதிவு (வீடியோ & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "திரையில் எந்தப் பகுதியையும் MP4, WebM அல்லது அனிமேஷன் GIF ஆகப் பதிவு செய்யவும். GIF பதிவுகளுக்கு 1:1 நேட்டிவ் தெளிவுத்திறன், 1080p, 720p மற்றும் 480p சுயவிவரங்கள் உள்ளன, மதிப்பிடப்பட்ட கோப்பு அளவுகள் நேரடியாகத் தெரியும். உலாவியின் சிறந்த செயல்திறனுக்காக GIF பதிவின் அதிகபட்ச காலம் 1 நிமிடம் (60வி) ஆகும்."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIF-இன் அதிகபட்ச கால அளவான 1 நிமிடம் (60 வி) எட்டப்பட்டது. GIF உருவாக்கப்படுகிறது…"
+  },
+  "labelGifMaxDuration": {
+    "message": "அதிகபட்சம் 1 நிமிடம் (60 வி)"
+  },
+  "settingGifFps": {
+    "message": "இயல்புநிலை GIF பிரேம் வீதம் (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — சீரானது (மிகவும் மென்மையானது, பெரிய அளவு)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — நிலையானது (இணையத்திற்கும் சமநிலைக்கும் பரிந்துரைக்கப்படுகிறது)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — சிறியது / மீம் (தடுமாறும் இயக்கம், சிறிய அளவு)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — ஸ்டாப்-மோஷன் / மெதுவானது (படிப்படியாக, மிகச் சிறிய அளவு)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — விளக்கக்காட்சி (வினாடிக்கு 1 பிரேம், குறைந்தபட்ச அளவு)"
+  },
+  "popupRightClickHint": {
+    "message": "திரைப் பதிவு (வீடியோ/GIF) மற்றும் கலர் பிக்கருக்கு வலைப்பக்கத்தில் எங்கு வேண்டுமானாலும் வலது கிளிக் செய்யவும்."
+  },
+  "toastElementZappedAd": {
+    "message": "விளம்பரம் / iframe இந்த அமர்வுக்கு மறைக்கப்பட்டது.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "படம் கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "மூடு (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "அமைப்புகள் சேமிக்கப்பட்டன",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "கோப்பைப் பதிவிறக்கி VLC அல்லது வேறொரு மீடியா பிளேயரில் திறக்கவும்.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "இந்த வகை வளத்திற்கு முன்னோட்டம் இல்லை",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "அசலைப் பதிவிறக்கு",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "குறிப்பு: பதிவிறக்கிய கோப்பை VLC அல்லது ஏதேனும் டெஸ்க்டாப் மீடியா பிளேயரில் திறக்கவும் — அது கிட்டத்தட்ட எல்லா வடிவங்களையும் இயக்கும்.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP காப்பகம் உருவாக்கப்படுகிறது…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "உங்கள் உலாவி EyeDropper API-ஐ ஆதரிக்கவில்லை.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "கருவிப்பட்டியை இழுக்கவும்",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "வடிவத்தை மாற்று: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF தெளிவுத்திறன்: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF பிரேம் வீதம்: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "மதிப்பிடப்பட்ட GIF அளவு: ~$size$ MB (10 வி-க்கு), அதிகபட்சமான 60 வி-க்கு ~$max$ MB வரை.\nபிரேம் வீதம்: $fps$ FPS.\nGIF பதிவு அதிகபட்சம் 1 நிமிடத்திற்கு (60 வி) வரம்பிடப்பட்டுள்ளது.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ நகலெடு",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "ஸ்கிரீன்ஷாட் முன்னோட்டம்",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — WhatsApp, Telegram, Jira, Apple, Windows என எங்கும் இயங்கும்)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (அசைவூட்டப் படம் — README, Jira, ஆவணங்கள், செய்திகளுக்கு ஏற்றது)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — திறந்த வலை வடிவம்)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "செயலில் உள்ள தாவல் எதுவும் இல்லை.",
+    "description": "No active tab found."
+  }
+}

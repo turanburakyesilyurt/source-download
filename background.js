@@ -203,24 +203,37 @@ async function ensureContentScriptInjected(tabId) {
 
 let currentBackgroundLang = 'auto';
 
+const SUPPORTED_LOCALES = ["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt_PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
+
 function resolveLocale(code) {
   if (!code || code === 'auto') {
     const browserLang = (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getUILanguage)
       ? chrome.i18n.getUILanguage()
-      : 'en';
+      : (typeof navigator !== 'undefined' ? navigator.language : 'en');
     code = browserLang;
   }
-  const lower = String(code).toLowerCase().replace('-', '_');
-  if (lower.startsWith('tr')) return 'tr';
-  if (lower.startsWith('de')) return 'de';
-  if (lower.startsWith('es')) return 'es';
+  const raw = String(code).trim();
+  const lower = raw.toLowerCase().replace('-', '_');
+
+  if (SUPPORTED_LOCALES.includes(raw)) return raw;
+  for (const loc of SUPPORTED_LOCALES) {
+    if (loc.toLowerCase() === lower) return loc;
+  }
+
+  if (lower.startsWith('zh_tw') || lower.startsWith('zh_hk') || lower.startsWith('zh_mo')) return 'zh_TW';
   if (lower.startsWith('zh')) return 'zh_CN';
-  if (lower.startsWith('ja')) return 'ja';
-  if (lower.startsWith('ru')) return 'ru';
-  if (lower.startsWith('fr')) return 'fr';
+  if (lower.startsWith('pt_pt')) return 'pt_PT';
   if (lower.startsWith('pt')) return 'pt_BR';
-  if (lower.startsWith('it')) return 'it';
-  if (lower.startsWith('ko')) return 'ko';
+  if (lower.startsWith('es_419')) return 'es_419';
+  if (lower.startsWith('es')) return 'es';
+  if (lower.startsWith('en_gb')) return 'en_GB';
+  if (lower.startsWith('en_us')) return 'en_US';
+  if (lower.startsWith('en')) return 'en';
+
+  const prefix = lower.split('_')[0];
+  for (const loc of SUPPORTED_LOCALES) {
+    if (loc.toLowerCase() === prefix) return loc;
+  }
   return 'en';
 }
 
@@ -237,6 +250,15 @@ function getMenuTitle(key, fallback, lang) {
     }
   } catch { /* noop */ }
   return fallback;
+}
+
+async function getLocalizedMessage(key, fallback) {
+  try {
+    const stored = await chrome.storage.local.get({ lang: 'auto' });
+    return getMenuTitle(key, fallback, stored.lang || 'auto');
+  } catch {
+    return getMenuTitle(key, fallback, currentBackgroundLang);
+  }
 }
 
 let isSettingUpMenus = false;
@@ -458,7 +480,7 @@ async function runFullPageCapture(tab) {
     tab = activeTab;
   }
   if (!tab || !tab.id) {
-    chrome.runtime.sendMessage({ type: 'screenshotError', message: 'No active tab found.' }).catch(() => {});
+    chrome.runtime.sendMessage({ type: 'screenshotError', message: await getLocalizedMessage('errNoActiveTab', 'No active tab found.') }).catch(() => {});
     return;
   }
 
@@ -608,7 +630,7 @@ async function runOfflinePageArchive(tab) {
     tab = activeTab;
   }
   if (!tab || !tab.id) {
-    chrome.runtime.sendMessage({ type: 'archiveError', message: 'No active tab found.' }).catch(() => {});
+    chrome.runtime.sendMessage({ type: 'archiveError', message: await getLocalizedMessage('errNoActiveTab', 'No active tab found.') }).catch(() => {});
     return;
   }
 
@@ -617,7 +639,7 @@ async function runOfflinePageArchive(tab) {
 
     chrome.tabs.sendMessage(tab.id, {
       type: 'showToast',
-      text: 'Building self-contained offline archive…',
+      text: await getLocalizedMessage('toastArchiveCreating', 'Creating offline page archive…'),
     }).catch(() => {});
 
     const data = await chrome.tabs.sendMessage(tab.id, { type: 'getDomAndAssets' });
@@ -660,7 +682,7 @@ async function runOfflinePageArchive(tab) {
 
     chrome.tabs.sendMessage(tab.id, {
       type: 'showToast',
-      text: chrome.i18n.getMessage('toastArchiveCreated') || 'Single-file HTML archive saved.',
+      text: await getLocalizedMessage('toastArchiveCreated', 'Single-file HTML archive saved.'),
     });
 
     chrome.runtime.sendMessage({ type: 'archiveDone' }).catch(() => {});

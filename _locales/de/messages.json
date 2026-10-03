@@ -20,11 +20,11 @@
     "description": "Element wiederherstellen"
   },
   "contextMenuResetZap": {
-    "message": "Alle ausgeblendeten Elemente wiederherstellen",
+    "message": "Alle ausgeblendeten Elemente zurücksetzen",
     "description": "Alle Elemente wiederherstellen"
   },
   "contextMenuCapturePage": {
-    "message": "Vollständigen Seiten-Screenshot erstellen",
+    "message": "Screenshot der gesamten Seite aufnehmen",
     "description": "Ganze Seite aufnehmen"
   },
   "contextMenuPageArchive": {
@@ -59,7 +59,7 @@
     "message": "JS"
   },
   "catSourcemaps": {
-    "message": "Quellcode-Karten (Source Maps)"
+    "message": "Source Maps"
   },
   "catFonts": {
     "message": "Schriftarten"
@@ -77,7 +77,7 @@
     "message": "Manifeste"
   },
   "catText": {
-    "message": "Text & Tabellen"
+    "message": "Text"
   },
   "catOther": {
     "message": "Sonstige"
@@ -95,16 +95,16 @@
     "message": "Exportieren"
   },
   "btnDownloadSelected": {
-    "message": "Auswahl laden"
+    "message": "Auswahl herunterladen"
   },
   "btnDownloadView": {
-    "message": "Ansicht laden"
+    "message": "Ansicht herunterladen"
   },
   "btnDownloadAll": {
-    "message": "Alles laden"
+    "message": "Alles herunterladen"
   },
   "btnDownloadFiltered": {
-    "message": "Gefilterte laden"
+    "message": "Gefilterte herunterladen"
   },
   "btnTheme": {
     "message": "Design wechseln"
@@ -113,10 +113,10 @@
     "message": "Anleitung"
   },
   "btnCaptureFullPage": {
-    "message": "Vollständiger Screenshot"
+    "message": "Screenshot der gesamten Seite"
   },
   "btnOfflineArchive": {
-    "message": "Als Einzeldatei-HTML speichern"
+    "message": "Als einzelne HTML-Datei speichern"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -125,10 +125,10 @@
     "message": "Max KB"
   },
   "filterMinWidth": {
-    "message": "Min Breite px"
+    "message": "Min. Breite (px)"
   },
   "filterMinHeight": {
-    "message": "Min Höhe px"
+    "message": "Min. Höhe (px)"
   },
   "filterSortName": {
     "message": "Nach Name sortieren"
@@ -167,7 +167,7 @@
     "message": "Alle Elemente"
   },
   "textLiveOn": {
-    "message": "Live Ein"
+    "message": "Live an"
   },
   "textLiveOff": {
     "message": "Live aus"
@@ -257,16 +257,16 @@
     "message": "Alle ausgeblendeten Elemente wiederhergestellt."
   },
   "toastScreenshotCapturing": {
-    "message": "Vollständiger Screenshot wird erstellt…"
+    "message": "Screenshot der gesamten Seite wird erfasst …"
   },
   "toastScreenshotCaptured": {
-    "message": "Vollständiger Screenshot gespeichert."
+    "message": "Screenshot der gesamten Seite gespeichert."
   },
   "toastArchiveCreated": {
-    "message": "Einzeldatei-HTML-Archiv gespeichert."
+    "message": "HTML-Archiv in einer Datei gespeichert."
   },
   "brandSignature": {
-    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+    "message": "Entwickelt von Turan Burak Yeşilyurt (2run.dev)"
   },
   "tabImages": {
     "message": "Bilder & SVG"
@@ -281,7 +281,7 @@
     "message": "Text & Tabellen"
   },
   "heroScreenshotTitle": {
-    "message": "Vollständiger Screenshot"
+    "message": "Screenshot der gesamten Seite"
   },
   "heroScreenshotDesc": {
     "message": "Nahtloser Bildaufbau • Sticky-Header-Unterdrückung"
@@ -326,7 +326,7 @@
     "message": "Netzwerkprotokoll als HAR"
   },
   "exportScreenshot": {
-    "message": "Gesamte-Seite-Screenshot (PNG)"
+    "message": "Screenshot der gesamten Seite (PNG)"
   },
   "exportArchive": {
     "message": "Offline-Seitenarchiv (HTML)"
@@ -386,7 +386,7 @@
     "message": "Löschen"
   },
   "toastRefreshComplete": {
-    "message": "Seitenscan abgeschlossen: $COUNT$ neue Ressourcen",
+    "message": "Seitenscan abgeschlossen: $count$ neue Ressourcen",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "$COUNT$ Block/Blöcke kopiert",
+    "message": "$count$ Block/Blöcke kopiert",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "Nichts zu exportieren"
   },
   "toastExportedTxt": {
-    "message": "$COUNT$ Block/Blöcke als TXT exportiert",
+    "message": "$count$ Block/Blöcke als TXT exportiert",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "$COUNT$ Block/Blöcke als Markdown exportiert",
+    "message": "$count$ Block/Blöcke als Markdown exportiert",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "Tabelle als XLSX exportiert"
   },
   "toastExportedTablesZip": {
-    "message": "$COUNT$ Tabelle(n) als $FORMAT$ exportiert",
+    "message": "$count$ Tabelle(n) als $format$ exportiert",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "$COUNT$ Tabellenblatt/-blätter als XLSX exportiert",
+    "message": "$count$ Tabellenblatt/-blätter als XLSX exportiert",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -471,7 +471,7 @@
     "message": "Wählen Sie zuerst mindestens eine Ressource aus."
   },
   "toastZipSaved": {
-    "message": "ZIP gespeichert: $FETCHED$ von $TOTAL$ Ressourcen",
+    "message": "ZIP gespeichert: $fetched$ von $total$ Ressourcen",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "ZIP fehlgeschlagen: $ERROR$",
+    "message": "ZIP fehlgeschlagen: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR exportiert ($COUNT$ Einträge)",
+    "message": "HAR exportiert ($count$ Einträge)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "DevTools-Inspektionsfenster nicht verfügbar."
   },
   "toastScreenshotError": {
-    "message": "Screenshot-Fehler: $ERROR$",
+    "message": "Screenshot-Fehler: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -517,10 +517,10 @@
     }
   },
   "toastArchiveCreating": {
-    "message": "Offline-Seitenarchiv wird erstellt…"
+    "message": "Offline-Seitenarchiv wird erstellt …"
   },
   "toastArchiveError": {
-    "message": "Archivierungsfehler: $ERROR$",
+    "message": "Archivierungsfehler: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "Formatierung fehlgeschlagen — Originaldatei wird angezeigt."
   },
   "emptySearchTitle": {
-    "message": "Keine Treffer für \"$QUERY$\"",
+    "message": "Keine Treffer für \"$query$\"",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -559,13 +559,13 @@
     "message": "Kein Element entspricht dieser Abfrage."
   },
   "textEmptyInitial": {
-    "message": "Noch nichts erfasst. Live-Erfassung läuft."
+    "message": "Noch nichts erfasst. Die Live-Erfassung läuft — die gesamte Seite erscheint hier als lesbarer Text."
   },
   "textEmptyFiltered": {
     "message": "Keine Treffer für den aktuellen Filter."
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ Blöcke",
+    "message": "$count$ Blöcke",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ Wörter",
+    "message": "$count$ Wörter",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ Zeichen",
+    "message": "$count$ Zeichen",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ Tabelle(n) · $ROWS$ Zeilen",
+    "message": "$tables$ Tabelle(n) · $rows$ eindeutige Zeilen",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "$COUNT$ ausgewählt",
+    "message": "$count$ ausgewählt — nur diese werden exportiert",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "Tabelle — $COUNT$ Zeilen auf dem Bildschirm",
+    "message": "Tabelle — $count$ Zeilen auf dem Bildschirm",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "Tabelle — alle $COUNT$ Zeilen",
+    "message": "Tabelle — alle $count$ eindeutigen Zeilen",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ Schnappschüsse",
+    "message": "$count$ Schnappschüsse",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "aktualisiert $TIME$",
+    "message": "aktualisiert $time$",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "Alle $COUNT$ Zeilen anzeigen",
+    "message": "Alle $count$ Zeilen anzeigen",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "Alle Zeilen werden angezeigt"
   },
   "textTableHistory": {
-    "message": "Verlauf ($COUNT$)",
+    "message": "Verlauf ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ doppelte Bilder",
+    "message": "$count$ doppelte Bilder",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -749,10 +749,10 @@
     "message": "Treffer"
   },
   "textReadingOn": {
-    "message": "Lesen an"
+    "message": "Lesemodus an"
   },
   "toastDownloadStarted": {
-    "message": "Download gestartet: $NAME$",
+    "message": "Download gestartet: $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -773,7 +773,7 @@
     "message": "★ Stern vergeben"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ eindeutige Zeile(n)",
+    "message": "$count$ eindeutige Zeile(n)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "vor $COUNT$s",
+    "message": "vor $count$s",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "vor $COUNT$m",
+    "message": "vor $count$m",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,25 +800,25 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "Bereichs-Screenshot aufnehmen"
+    "message": "Screenshot eines Bereichs aufnehmen"
   },
   "btnAreaDownload": {
     "message": "Herunterladen"
   },
   "btnAreaCopy": {
-    "message": "In Zwischenablage kopieren"
+    "message": "In die Zwischenablage kopieren"
   },
   "btnAreaCancel": {
     "message": "Abbrechen"
   },
   "toastAreaCopied": {
-    "message": "Bereichs-Screenshot in die Zwischenablage kopiert"
+    "message": "Screenshot des Bereichs in die Zwischenablage kopiert"
   },
   "toastAreaDownloaded": {
-    "message": "Bereichs-Screenshot gespeichert"
+    "message": "Screenshot des Bereichs gespeichert"
   },
   "statusFoundCssResources": {
-    "message": "$COUNT$ aus CSS referenzierte Ressource(n) gefunden",
+    "message": "$count$ aus CSS referenzierte Ressource(n) gefunden",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "DOM-Scan fehlgeschlagen: $ERROR$",
+    "message": "DOM-Scan fehlgeschlagen: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -947,7 +947,7 @@
     "message": "Originalen (unformatierten) Inhalt anzeigen"
   },
   "findBeautify": {
-    "message": "Diesen Inhalt formatieren / verschönern"
+    "message": "Diesen Inhalt formatieren"
   },
   "btnRaw": {
     "message": "Roh"
@@ -1026,7 +1026,7 @@
     }
   },
   "btnRetryFailed": {
-    "message": "$COUNT$ wiederholen",
+    "message": "$COUNT$ erneut versuchen",
     "placeholders": {
       "COUNT": {
         "content": "$1"
@@ -1043,7 +1043,7 @@
     "message": "In Exporte einbeziehen"
   },
   "tableMergeSnapshotsTitle": {
-    "message": "Fassen Sie jeden Schnappschuss zu einer deduplizierten Tabelle zusammen — das wird exportiert"
+    "message": "Alle Schnappschüsse zu einer deduplizierten Tabelle zusammenfassen — diese wird exportiert"
   },
   "tableBrowseSnapshotsTitle": {
     "message": "Frühere Schnappschüsse dieser Tabelle durchsuchen"
@@ -1066,7 +1066,7 @@
     }
   },
   "cardToggleBatchTitle": {
-    "message": "Auswahl für Batch-Download umschalten"
+    "message": "Auswahl für Sammel-Download umschalten"
   },
   "cardDownloadTitle": {
     "message": "Datei herunterladen"
@@ -1140,7 +1140,7 @@
     "message": "Text & Tabellen"
   },
   "guideSecCaptions": {
-    "message": "Untertitel & Transkripte"
+    "message": "Untertitel & Captions"
   },
   "guideSecSourceMaps": {
     "message": "Source Maps"
@@ -1155,7 +1155,7 @@
     "message": "Profi-Tipps"
   },
   "guideSecGettingStartedContent": {
-    "message": "Klicken Sie in der Symbolleiste der Entwicklertools (DevTools) auf die Registerkarte <strong>Source Download</strong> (drücken Sie <kbd>F12</kbd> / <kbd>Strg</kbd>+<kbd>Umschalt</kbd>+<kbd>I</kbd> und wählen Sie anschließend den Reiter in der DevTools-Leiste). Chrome erlaubt es Erweiterungen nicht, die DevTools automatisch zu öffnen; aus diesem Grund befindet sich das Panel dort. Über das Popup des Symbolleistensymbols können Sie auswählen, welche Kategorien den Zähler-Badge auf dem Symbol speisen. Die Sonne/Mond-Schaltfläche in der Symbolleiste des Panels fixiert unabhängig von Chrome ein helles oder dunkles Design; diese Auswahl bleibt dauerhaft gespeichert."
+    "message": "Klicken Sie in der DevTools-Leiste auf den Reiter <strong>Source Download</strong> (drücken Sie <kbd>F12</kbd> / <kbd>Strg</kbd>+<kbd>Umschalt</kbd>+<kbd>I</kbd> und wählen Sie anschließend den Reiter). Chrome erlaubt es Erweiterungen nicht, die DevTools automatisch zu öffnen; aus diesem Grund befindet sich das Panel dort. Über das Popup des Symbolleistensymbols können Sie auswählen, welche Kategorien den Zähler-Badge auf dem Symbol speisen. Die Sonne/Mond-Schaltfläche in der Symbolleiste des Panels fixiert unabhängig von Chrome ein helles oder dunkles Design; diese Auswahl bleibt dauerhaft gespeichert."
   },
   "guideSecCategoriesContent": {
     "message": "Die vertikalen Reiter auf der linken Seite teilen jede erfasste Ressource nach Typ in 17 dedizierte Kategorien ein: Bilder, Videos, Audio, Untertitel, Dokumente, Schriftarten, Source Maps, WASM, SVG, APIs, Cookies, Speicher und mehr. Jeder Reiter zeigt einen Live-Zähler an. Es wird immer nur eine Kategorie gleichzeitig dargestellt; das Wechseln setzt alle Filter zurück, sodass die angezeigten Elemente stets exakt dem Reiter entsprechen."
@@ -1167,7 +1167,7 @@
     "message": "Schalten Sie mit den Schaltflächen neben der Suchleiste zwischen einem kompakten Raster (kleine Miniaturansichten) und einer detaillierten Liste um. Ihre Auswahl wird sitzungsübergreifend gespeichert. In der Listenansicht ermöglichen Kontrollkästchen die gezielte Auswahl einzelner Ressourcen für einen Sammel-Download."
   },
   "guideSecInspectContent": {
-    "message": "Klicken Sie auf eine beliebige Ressource, um sie im rechten Inspektionsbereich zu öffnen. Jede geöffnete Datei wird zu einem Reiter, sodass Sie mehrere Ressourcen direkt nebeneinander vergleichen können — die neueste öffnet sich jeweils links. Es stehen spezialisierte Viewer für Bilder, Video, Audio, Schriftarten, SVG und Text/Code (inklusive Verschönerungs-Umschalter/Beautify) bereit. APIs bieten eine geteilte Ansicht: Antwortdaten links, Anfragedetails (Methode, Status, Header, Abfrageparameter und Nutzlast) rechts."
+    "message": "Klicken Sie auf eine beliebige Ressource, um sie im rechten Inspektionsbereich zu öffnen. Jede geöffnete Datei wird zu einem Reiter, sodass Sie mehrere Ressourcen direkt nebeneinander vergleichen können — die neueste öffnet sich jeweils links. Es stehen spezialisierte Viewer für Bilder, Video, Audio, Schriftarten, SVG und Text/Code (inklusive Umschalter zum Formatieren) bereit. APIs bieten eine geteilte Ansicht: Antwortdaten links, Anfragedetails (Methode, Status, Header, Abfrageparameter und Nutzlast) rechts."
   },
   "guideSecDownloadingContent": {
     "message": "<strong>Ansicht herunterladen</strong> speichert die derzeit sichtbaren Ressourcen (aktive Kategorie + Suche + Filter) als ZIP-Archiv; die Schaltfläche wird zu <em>Gefilterte herunterladen (N)</em> umbenannt, sobald Filter aktiv sind. Bewegen Sie den Mauszeiger über eine Download-Schaltfläche, um vor dem Klick die geschätzte Archivgröße zu sehen. <strong>Ausgewählte herunterladen</strong> lädt nur die angekreuzten Elemente herunter. <strong>Alles herunterladen</strong> packt jede gefundene Ressource in ein ordnerstrukturiertes ZIP. Fehlgeschlagene Downloads werden automatisch wiederholt und können über das Kontextmenü erneut angestoßen werden. <strong>Exportieren</strong> gibt die sichtbare Liste als JSON oder CSV aus oder sichert das Chrome-Netzwerkprotokoll als HAR-Datei."
@@ -1176,13 +1176,13 @@
     "message": "Die Zoom-Schaltfläche öffnet Medien in einer vollflächigen Lightbox, in der Sie per Ziehen navigieren sowie mit dem Mausrad, den Schaltflächen auf dem Bildschirm oder Tastaturkürzeln (<kbd>+</kbd>/<kbd>-</kbd> zum Zoomen, <kbd>0</kbd> zum Zurücksetzen, <kbd>Esc</kbd> zum Schließen) vergrößern und verkleinern können."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Die Kategorie <strong>Text</strong> stellt eine dynamische, lesbare Kopie der Seite dar. Sie erfasst jedes Element, das Text enthält — Überschriften, Absätze, Listenelemente, Schaltflächen, <code>div</code>/<code>span</code> und mehr — in der exakten DOM-Reihenfolge und führt den Scan fort, solange der <strong>Live</strong>-Modus aktiv ist.</p><p>Das <strong>Abfrage</strong>-Feld bietet vier Modi, die über das Dropdown-Menü daneben gewählt werden: <strong>Enthält</strong> und <strong>Regex</strong> filtern den bereits erfassten Text, während <strong>CSS-Selektor</strong> und <strong>XPath</strong> direkt gegen die Live-Seite ausgeführt werden, um jeden Punkt im DOM zu erreichen. XPath unterstützt auch Ausdrücke, die Werte statt Elemente zurückgeben, wie etwa <code>count(//a)</code> oder <code>//@href</code>. Etwaige Fehler einer ungültigen Abfrage werden direkt neben dem Feld angezeigt. <strong>Element</strong> schränkt das Ergebnis auf ein bestimmtes HTML-Tag ein und weist die Anzahl der jeweils auf der Seite gefundenen Tags aus. Das Leeren des Abfragefelds (oder Klicken auf <strong>Löschen</strong>) führt Sie zu <em>Alle Elemente</em> zurück und erfasst die Seite neu — ein manuelles Zurücksetzen des Menüs ist nicht erforderlich.</p><p><strong>Leseansicht</strong> blendet Tags, Kontrollkästchen und Pfadangaben aus, sodass sich der Textfluss wie ein Dokument liest. Tabellen sichern eine begrenzte Chronik von Schnappschüssen, wodurch dynamische SPA-Tabellen niemals verloren gehen. Klicken Sie bei einer Tabelle auf <strong>Alle Zeilen anzeigen</strong>, um sämtliche Schnappschüsse zu einer bereinigten Gesamtsicht zu verschmelzen — genau dies wird beim Export gespeichert. Exportieren Sie als <strong>TXT</strong> (die lesbare Seite), <strong>MD</strong> (Markdown inklusive Tabellen) oder Tabellen als CSV, HTML oder als echtes mehrseitiges <strong>XLSX</strong>-Arbeitsblatt. Ausgewählte Elemente haben Vorrang; andernfalls wird alles aktuell Sichtbare exportiert.</p>"
+    "message": "<p>Die Kategorie <strong>Text</strong> stellt eine dynamische, lesbare Kopie der Seite dar. Sie erfasst jedes Element, das Text enthält — Überschriften, Absätze, Listenelemente, Schaltflächen, <code>div</code>/<code>span</code> und mehr — in der exakten DOM-Reihenfolge und führt den Scan fort, solange der <strong>Live</strong>-Modus aktiv ist.</p><p>Das <strong>Abfrage</strong>-Feld bietet vier Modi, die über das Dropdown-Menü daneben gewählt werden: <strong>Enthält</strong> und <strong>Regex</strong> filtern den bereits erfassten Text, während <strong>CSS-Selektor</strong> und <strong>XPath</strong> direkt gegen die Live-Seite ausgeführt werden, um jeden Punkt im DOM zu erreichen. XPath unterstützt auch Ausdrücke, die Werte statt Elemente zurückgeben, wie etwa <code>count(//a)</code> oder <code>//@href</code>. Etwaige Fehler einer ungültigen Abfrage werden direkt neben dem Feld angezeigt. <strong>Element</strong> schränkt das Ergebnis auf ein bestimmtes HTML-Tag ein und weist die Anzahl der jeweils auf der Seite gefundenen Tags aus. Das Leeren des Abfragefelds (oder Klicken auf <strong>Zurücksetzen</strong>) führt Sie zu <em>Alle Elemente</em> zurück und erfasst die Seite neu — ein manuelles Zurücksetzen des Menüs ist nicht erforderlich.</p><p><strong>Lesemodus</strong> blendet Tags, Kontrollkästchen und Pfadangaben aus, sodass sich der Textfluss wie ein Dokument liest. Tabellen sichern eine begrenzte Verlauf von Schnappschüssen, wodurch dynamische SPA-Tabellen niemals verloren gehen. Klicken Sie bei einer Tabelle auf <strong>Alle Zeilen anzeigen</strong>, um sämtliche Schnappschüsse zu einer bereinigten Gesamtsicht zu verschmelzen — genau dies wird beim Export gespeichert. Exportieren Sie als <strong>TXT</strong> (die lesbare Seite), <strong>MD</strong> (Markdown inklusive Tabellen) oder Tabellen als CSV, HTML oder als echtes mehrblättrige <strong>XLSX</strong>-Arbeitsmappe. Ausgewählte Elemente haben Vorrang; andernfalls wird alles aktuell Sichtbare exportiert.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT-, SRT-, TTML- und sonstige Untertiteldateien — einschließlich <code>&lt;track&gt;</code>-Quellen — landen in ihrem eigenen Reiter <strong>Untertitel</strong>, anstatt sich mit herkömmlichen Dokumenten zu vermischen."
   },
   "guideSecSourceMapsContent": {
-    "message": "<code>.map</code>-Dateien sowie JSON-Inhalte, die Source Maps darstellen (sie enthalten <code>mappings</code> und <code>sources</code>), werden unter <strong>Source Maps</strong> mitsamt JSON-Viewer und Verschönerungsfunktion zusammengefasst, sodass sie den regulären JSON-Reiter nicht überladen."
+    "message": "<code>.map</code>-Dateien sowie JSON-Inhalte, die Source Maps darstellen (sie enthalten <code>mappings</code> und <code>sources</code>), werden unter <strong>Source Maps</strong> mitsamt JSON-Viewer und Formatierung zusammengefasst, sodass sie den regulären JSON-Reiter nicht überladen."
   },
   "guideSecDupesContent": {
     "message": "Im Reiter Bilder ermittelt das Panel die Hashwerte der erfassten Bytes und markiert identische Dateien. Ein Filter <strong>Duplikate ausblenden</strong> behält jeweils die erste Kopie jedes Satzes, damit ein ZIP-Archiv der Ansicht dieselbe Miniaturansicht nicht doppelt enthält."
@@ -1194,25 +1194,25 @@
     "message": "Dynamische <strong>API</strong>-Antworten (XHR/Fetch) werden nicht nach URL dedupliziert — jede Antwort verbleibt in der Liste (begrenztes FIFO-Prinzip), damit Sie wiederholte Anfragen vergleichen können. Statische Ressourcen werden hingegen dedupliziert. Nutzen Sie <strong>Aktualisieren</strong>, um das aktuelle DOM erneut zu scannen, und laden Sie die Seite bei geöffnetem Panel neu, um alle Netzwerkanfragen lückenlos zu erfassen, auch solche vor dem Tabwechsel."
   },
   "toolArrow": {
-    "message": "Pfeil zeichnen"
+    "message": "Pfeil-Werkzeug"
   },
   "toolRect": {
-    "message": "Rechteck zeichnen"
+    "message": "Rechteck-Werkzeug"
   },
   "toolText": {
-    "message": "Text schreiben"
+    "message": "Text-Werkzeug"
   },
   "toolUndo": {
-    "message": "Rückgängig (Strg+Z)"
+    "message": "Rückgängig (Ctrl+Z)"
   },
   "toolRedo": {
-    "message": "Wiederholen (Strg+Y)"
+    "message": "Wiederholen (Ctrl+Y)"
   },
   "toolColor": {
     "message": "Farbe"
   },
   "badgeStrokeSize": {
-    "message": "Größe: $SIZE$px",
+    "message": "Größe: $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "Schriftgröße: $SIZE$px",
+    "message": "Schriftgröße: $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,13 +1230,13 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "Regionalen Video-/GIF-Bereich aufnehmen"
+    "message": "Bereich als Video / GIF aufnehmen"
   },
   "btnRecStart": {
     "message": "Aufnahme starten"
   },
   "btnRecPause": {
-    "message": "Pausieren"
+    "message": "Pause"
   },
   "btnRecResume": {
     "message": "Fortsetzen"
@@ -1248,16 +1248,16 @@
     "message": "Abbrechen"
   },
   "toastRecSaved": {
-    "message": "Regionale Aufnahme gespeichert"
+    "message": "Aufnahme des Bereichs gespeichert"
   },
   "toastRecCancelled": {
     "message": "Videoaufnahme abgebrochen"
   },
   "toastRecPermissionDenied": {
-    "message": "Berechtigung zur Bildschirmaufnahme wurde nicht erteilt"
+    "message": "Die Berechtigung zur Bildschirmaufnahme wurde nicht erteilt"
   },
   "btnPopupRecordArea": {
-    "message": "Video / GIF Bereich"
+    "message": "Bereich aufnehmen (Video / GIF)"
   },
   "btnPopupCaptureArea": {
     "message": "Bereichs-Screenshot"
@@ -1269,7 +1269,7 @@
     "message": "Farbe wählen"
   },
   "colorPickerTitle": {
-    "message": "Farbauswahl"
+    "message": "Farbwähler"
   },
   "btnColorPickAgain": {
     "message": "Weitere Farbe wählen"
@@ -1278,7 +1278,7 @@
     "message": "Farbe in die Zwischenablage kopiert"
   },
   "toastProgressCapturing": {
-    "message": "Vollständige Seite wird erfasst... $PERCENT$%",
+    "message": "Gesamte Seite wird erfasst … $percent$ %",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,10 +1292,10 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Bild wird zusammengesetzt..."
+    "message": "Bild wird zusammengesetzt …"
   },
   "modalExportTitle": {
-    "message": "Vollständiger Screenshot bereit"
+    "message": "Screenshot der gesamten Seite fertig"
   },
   "btnExportPng": {
     "message": "PNG herunterladen"
@@ -1307,10 +1307,10 @@
     "message": "Als PDF speichern"
   },
   "btnExportCopy": {
-    "message": "In Zwischenablage kopieren"
+    "message": "In die Zwischenablage kopieren"
   },
   "btnExportGenerating": {
-    "message": "Wird erstellt..."
+    "message": "Wird erstellt …"
   },
   "toastPdfGenerated": {
     "message": "PDF-Dokument gespeichert."
@@ -1325,22 +1325,22 @@
     "message": "Vorschau:"
   },
   "toastRecGeneratingGif": {
-    "message": "GIF wird erstellt, bitte warten..."
+    "message": "GIF wird erstellt, bitte warten …"
   },
   "settingGifResolution": {
     "message": "Standard-GIF-Auflösung"
   },
   "optGifOriginal": {
-    "message": "Original (1:1 Native Auflösung — 3K/4K, keine Skalierung)"
+    "message": "Original (1:1 native Auflösung — volles 3K/4K, ohne Verkleinerung)"
   },
   "optGif1080p": {
-    "message": "1080p Full HD (Max. 1920px)"
+    "message": "1080p Full HD (max. 1920 px)"
   },
   "optGif720p": {
-    "message": "720p HD (Max. 1280px)"
+    "message": "720p HD (max. 1280 px)"
   },
   "optGif480p": {
-    "message": "480p SD (Max. 854px — Schneller & kleinere Datei)"
+    "message": "480p SD (max. 854 px — schneller & kleinere Datei)"
   },
   "tipGifDurationLimit": {
     "message": "Das GIF-Format unterstützt eine maximale Aufnahmedauer von 1 Minute (60 s)."
@@ -1349,10 +1349,10 @@
     "message": "Bildschirmaufnahme (Video & GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Nehmen Sie jeden beliebigen Bildschirmbereich als MP4, WebM oder animiertes GIF auf. GIF-Aufnahmen bieten Profile mit nativer 1:1-Auflösung, 1080p, 720p und 480p sowie eine kontinuierliche Schätzung der Dateigröße. Die maximale GIF-Aufnahmedauer beträgt 1 Minute (60 s) für optimale Browser-Performance."
+    "message": "Nehmen Sie jeden beliebigen Bildschirmbereich als MP4, WebM oder animiertes GIF auf. GIF-Aufnahmen bieten Profile mit nativer 1:1-Auflösung, 1080p, 720p und 480p sowie eine Live-Schätzung der Dateigröße. Die maximale GIF-Aufnahmedauer beträgt 1 Minute (60 s) für eine optimale Browserleistung."
   },
   "msgGifMaxDurationReached": {
-    "message": "Maximale GIF-Dauer von 1 Minute (60 s) erreicht. GIF wird erstellt..."
+    "message": "Die maximale GIF-Dauer von 1 Minute (60 s) wurde erreicht. GIF wird erstellt …"
   },
   "labelGifMaxDuration": {
     "message": "Max. 1 Min. (60 s)"
@@ -1361,22 +1361,126 @@
     "message": "Standard-GIF-Bildrate (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — Flüssig (Hohe Bildrate, größere Datei)"
+    "message": "15 FPS — Flüssig (sehr flüssige Bewegung, größere Datei)"
   },
   "optGifFps10": {
-    "message": "10 FPS — Standard (Empfohlen für Web & Balance)"
+    "message": "10 FPS — Standard (empfohlen für Web & ausgewogenes Verhältnis)"
   },
   "optGifFps5": {
-    "message": "5 FPS — Kompakt / Meme (Gestufte Bewegung, kleine Datei)"
+    "message": "5 FPS — Kompakt / Meme (abgehackte Bewegung, kleine Dateigröße)"
   },
   "optGifFps2": {
-    "message": "2 FPS — Stop-Motion / Langsam (\"Klick-Klick\" schrittweise, winzige Datei)"
+    "message": "2 FPS — Stop-Motion / Langsam (Schritt für Schritt mit „Klick-Klick“, winzige Dateigröße)"
   },
   "optGifFps1": {
-    "message": "1 FPS — Präsentation (1 Bild pro Sekunde, minimale Datei)"
+    "message": "1 FPS — Präsentation (1 Bild pro Sekunde, minimale Dateigröße)"
   },
   "popupRightClickHint": {
     "message": "Klicken Sie mit der rechten Maustaste auf die Seite für Bildschirmaufnahme (Video/GIF) und Farbauswahl.",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "Werbung / iframe für diese Sitzung ausgeblendet.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Bild in die Zwischenablage kopiert",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Schließen (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Einstellungen gespeichert",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Lade die Datei herunter und öffne sie mit VLC oder einem anderen Mediaplayer.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Keine Vorschau für diesen Ressourcentyp",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Original herunterladen",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Tipp: Öffne die heruntergeladene Datei mit VLC oder einem anderen Desktop-Mediaplayer — er spielt praktisch jedes Format ab.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP-Archiv wird erstellt …",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Dein Browser unterstützt die EyeDropper-API nicht.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Symbolleiste verschieben",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Format wechseln: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF-Auflösung: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF-Bildrate: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Geschätzte GIF-Größe: ca. $size$ MB (für 10 s), bis zu ca. $max$ MB bei der Höchstdauer von 60 s.\nBildrate: $fps$ FPS.\nGIF-Aufnahmen sind auf maximal 1 Minute (60 s) begrenzt.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ kopieren",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Screenshot-Vorschau",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — universelle Wiedergabe auf WhatsApp, Telegram, Jira, Apple & Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animiertes Bild — ideal für READMEs, Jira, Dokumentation & Messaging)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — offenes Webformat)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Kein aktiver Tab gefunden.",
+    "description": "No active tab found."
   }
 }

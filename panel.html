@@ -4,23 +4,6 @@
   <meta charset="UTF-8">
   <meta name="author" content="Turan Burak Yeşilyurt">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Source Download</title>
-  <script>
-    (function () {
-      var saved = null;
-      try { saved = localStorage.getItem('sourceDownloadTheme'); } catch (e) {}
-      if (saved === 'light' || saved === 'dark') {
-        document.documentElement.dataset.theme = saved;
-        return;
-      }
-      try {
-        document.documentElement.dataset.theme =
-          chrome.devtools.panels.themeName === 'dark' ? 'dark' : 'light';
-      } catch (e) {
-        document.documentElement.dataset.theme = 'dark';
-      }
-    })();
-  </script>
   <link rel="stylesheet" href="panel.css">
 </head>
 <body>
@@ -401,18 +384,61 @@
     <button type="button" class="context-menu__item" data-export="screenshot" data-i18n="exportScreenshot">Full page screenshot (PNG)</button>
     <button type="button" class="context-menu__item" data-export="archive" data-i18n="exportArchive">Offline page archive (HTML)</button>
   </div>
-  <div id="lang-menu" class="context-menu" hidden>
-    <button type="button" class="context-menu__item" data-lang="en">English (EN)</button>
-    <button type="button" class="context-menu__item" data-lang="tr">Türkçe (TR)</button>
-    <button type="button" class="context-menu__item" data-lang="es">Español (ES)</button>
-    <button type="button" class="context-menu__item" data-lang="zh_CN">简体中文 (ZH)</button>
-    <button type="button" class="context-menu__item" data-lang="ja">日本語 (JA)</button>
+    <div id="lang-menu" class="context-menu" style="max-height: 400px; overflow-y: auto;" hidden>
+    <button type="button" class="context-menu__item" data-lang="am">አማርኛ (AM)</button>
+    <button type="button" class="context-menu__item" data-lang="ar">العربية (AR)</button>
+    <button type="button" class="context-menu__item" data-lang="bg">Български (BG)</button>
+    <button type="button" class="context-menu__item" data-lang="bn">বাংলা (BN)</button>
+    <button type="button" class="context-menu__item" data-lang="ca">Català (CA)</button>
+    <button type="button" class="context-menu__item" data-lang="cs">Čeština (CS)</button>
+    <button type="button" class="context-menu__item" data-lang="da">Dansk (DA)</button>
     <button type="button" class="context-menu__item" data-lang="de">Deutsch (DE)</button>
-    <button type="button" class="context-menu__item" data-lang="ru">Русский (RU)</button>
+    <button type="button" class="context-menu__item" data-lang="el">Ελληνικά (EL)</button>
+    <button type="button" class="context-menu__item" data-lang="en">English (EN)</button>
+    <button type="button" class="context-menu__item" data-lang="en_GB">English UK (GB)</button>
+    <button type="button" class="context-menu__item" data-lang="en_US">English US (US)</button>
+    <button type="button" class="context-menu__item" data-lang="es">Español (ES)</button>
+    <button type="button" class="context-menu__item" data-lang="es_419">Español Latino (419)</button>
+    <button type="button" class="context-menu__item" data-lang="et">Eesti (ET)</button>
+    <button type="button" class="context-menu__item" data-lang="fa">فارسی (FA)</button>
+    <button type="button" class="context-menu__item" data-lang="fi">Suomi (FI)</button>
+    <button type="button" class="context-menu__item" data-lang="fil">Filipino (FIL)</button>
     <button type="button" class="context-menu__item" data-lang="fr">Français (FR)</button>
-    <button type="button" class="context-menu__item" data-lang="pt_BR">Português (PT)</button>
+    <button type="button" class="context-menu__item" data-lang="gu">ગુજરાતી (GU)</button>
+    <button type="button" class="context-menu__item" data-lang="he">עברית (HE)</button>
+    <button type="button" class="context-menu__item" data-lang="hi">हिन्दी (HI)</button>
+    <button type="button" class="context-menu__item" data-lang="hr">Hrvatski (HR)</button>
+    <button type="button" class="context-menu__item" data-lang="hu">Magyar (HU)</button>
+    <button type="button" class="context-menu__item" data-lang="id">Bahasa Indonesia (ID)</button>
     <button type="button" class="context-menu__item" data-lang="it">Italiano (IT)</button>
+    <button type="button" class="context-menu__item" data-lang="ja">日本語 (JA)</button>
+    <button type="button" class="context-menu__item" data-lang="kn">ಕನ್ನಡ (KN)</button>
     <button type="button" class="context-menu__item" data-lang="ko">한국어 (KO)</button>
+    <button type="button" class="context-menu__item" data-lang="lt">Lietuvių (LT)</button>
+    <button type="button" class="context-menu__item" data-lang="lv">Latviešu (LV)</button>
+    <button type="button" class="context-menu__item" data-lang="ml">മലയാളം (ML)</button>
+    <button type="button" class="context-menu__item" data-lang="mr">मराठी (MR)</button>
+    <button type="button" class="context-menu__item" data-lang="ms">Bahasa Melayu (MS)</button>
+    <button type="button" class="context-menu__item" data-lang="nl">Nederlands (NL)</button>
+    <button type="button" class="context-menu__item" data-lang="no">Norsk (NO)</button>
+    <button type="button" class="context-menu__item" data-lang="pl">Polski (PL)</button>
+    <button type="button" class="context-menu__item" data-lang="pt_BR">Português Brasil (BR)</button>
+    <button type="button" class="context-menu__item" data-lang="pt_PT">Português Portugal (PT)</button>
+    <button type="button" class="context-menu__item" data-lang="ro">Română (RO)</button>
+    <button type="button" class="context-menu__item" data-lang="ru">Русский (RU)</button>
+    <button type="button" class="context-menu__item" data-lang="sk">Slovenčina (SK)</button>
+    <button type="button" class="context-menu__item" data-lang="sl">Slovenščina (SL)</button>
+    <button type="button" class="context-menu__item" data-lang="sr">Српски (SR)</button>
+    <button type="button" class="context-menu__item" data-lang="sv">Svenska (SV)</button>
+    <button type="button" class="context-menu__item" data-lang="sw">Kiswahili (SW)</button>
+    <button type="button" class="context-menu__item" data-lang="ta">தமிழ் (TA)</button>
+    <button type="button" class="context-menu__item" data-lang="te">తెలుగు (TE)</button>
+    <button type="button" class="context-menu__item" data-lang="th">ไทย (TH)</button>
+    <button type="button" class="context-menu__item" data-lang="tr">Türkçe (TR)</button>
+    <button type="button" class="context-menu__item" data-lang="uk">Українська (UK)</button>
+    <button type="button" class="context-menu__item" data-lang="vi">Tiếng Việt (VI)</button>
+    <button type="button" class="context-menu__item" data-lang="zh_CN">简体中文 (ZH)</button>
+    <button type="button" class="context-menu__item" data-lang="zh_TW">繁體中文 (TW)</button>
     <div class="context-menu__sep"></div>
     <button type="button" class="context-menu__item" data-lang="auto" data-i18n="langAuto">Auto (Browser)</button>
   </div>
@@ -468,9 +494,9 @@
         <div>
           <label for="setting-video-format" style="font-weight: 600; font-size: 12.5px; display: block; margin-bottom: 6px;" data-i18n="settingVideoFormat">Default Video Format</label>
           <select id="setting-video-format" class="filterbar__select" style="width: 100%; padding: 7px 10px; border-radius: 6px; font-size: 12.5px;">
-            <option value="mp4">MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple &amp; Windows)</option>
-            <option value="gif">GIF (Animated image — Ideal for READMEs, Jira, documentation &amp; messaging)</option>
-            <option value="webm">WebM (VP9 — Open Web format)</option>
+            <option value="mp4" data-i18n="optVideoMp4">MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple &amp; Windows)</option>
+            <option value="gif" data-i18n="optVideoGif">GIF (Animated image — Ideal for READMEs, Jira, documentation &amp; messaging)</option>
+            <option value="webm" data-i18n="optVideoWebm">WebM (VP9 — Open Web format)</option>
           </select>
         </div>
 
@@ -720,7 +746,7 @@
       </div>
       <div class="guide__empty" id="guide-empty" data-i18n="guideEmpty">No guide sections match your search.</div>
       <footer class="guide__footer">
-        <span id="guide-version-note" data-i18n="guideVersionNote">Source Download v1.15.0 — 100% dependency-free.</span>
+        <span id="guide-version-note" data-i18n="guideVersionNote">Source Download v1.16.0 — 100% dependency-free.</span>
       </footer>
     </div>
   </div>

@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Разгледайте и свалете уеб ресурси като ZIP. Екранни снимки на цяла страница, таблици на живо и инструменти за разработчици."
+  },
+  "actionTitle": {
+    "message": "Source Download — Отворете панела и проследявайте ресурсите"
+  },
+  "contextMenuZap": {
+    "message": "Скриване на този елемент (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "Връщане на последния скрит елемент"
+  },
+  "contextMenuResetZap": {
+    "message": "Връщане на всички скрити елементи"
+  },
+  "contextMenuCapturePage": {
+    "message": "Екранна снимка на цялата страница"
+  },
+  "contextMenuPageArchive": {
+    "message": "Изтегляне на офлайн архив на страницата"
+  },
+  "catAll": {
+    "message": "Всички"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Изображения"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Видеоклипове"
+  },
+  "catAudio": {
+    "message": "Аудио"
+  },
+  "catCaptions": {
+    "message": "Надписи"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Изходни карти"
+  },
+  "catFonts": {
+    "message": "Шрифтове"
+  },
+  "catDocuments": {
+    "message": "Документи"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Манифести"
+  },
+  "catText": {
+    "message": "Текст"
+  },
+  "catOther": {
+    "message": "Други"
+  },
+  "catScreenshot": {
+    "message": "Екранна снимка"
+  },
+  "catArchive": {
+    "message": "Архив на страницата"
+  },
+  "btnRefresh": {
+    "message": "Опресняване"
+  },
+  "btnExport": {
+    "message": "Експортиране"
+  },
+  "btnDownloadSelected": {
+    "message": "Изтегли избраните"
+  },
+  "btnDownloadView": {
+    "message": "Изтегли изгледа"
+  },
+  "btnDownloadAll": {
+    "message": "Изтегли всички"
+  },
+  "btnDownloadFiltered": {
+    "message": "Изтегли филтрираните"
+  },
+  "btnTheme": {
+    "message": "Превключване на темата"
+  },
+  "btnGuide": {
+    "message": "Ръководство за потребителя"
+  },
+  "btnCaptureFullPage": {
+    "message": "Екранна снимка на цяла страница"
+  },
+  "btnOfflineArchive": {
+    "message": "Запазване като един HTML файл"
+  },
+  "filterMinKb": {
+    "message": "Мин. KB"
+  },
+  "filterMaxKb": {
+    "message": "Макс. KB"
+  },
+  "filterMinWidth": {
+    "message": "Минимална ширина px"
+  },
+  "filterMinHeight": {
+    "message": "Минимална височина px"
+  },
+  "filterSortName": {
+    "message": "Сортиране по име"
+  },
+  "filterSortSize": {
+    "message": "Сортиране по размер"
+  },
+  "filterSortType": {
+    "message": "Сортиране по вид"
+  },
+  "filterSortTime": {
+    "message": "Сортиране по време"
+  },
+  "filterHideDupes": {
+    "message": "Скриване на дубликати"
+  },
+  "filterClear": {
+    "message": "Изчисти"
+  },
+  "textModeContains": {
+    "message": "Съдържа"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS селектор"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Филтрирайте текста на страницата или потърсете DOM на живо..."
+  },
+  "textAllElements": {
+    "message": "Всички елементи"
+  },
+  "textLiveOn": {
+    "message": "На живо: вкл."
+  },
+  "textLiveOff": {
+    "message": "На живо: изкл."
+  },
+  "textScanNow": {
+    "message": "Сканирай сега"
+  },
+  "textReading": {
+    "message": "Четене"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Изберете ресурс, за да проверите неговите подробности"
+  },
+  "inspectorDetails": {
+    "message": "Подробности"
+  },
+  "inspectorOpenTab": {
+    "message": "Отворете в нов раздел"
+  },
+  "inspectorCopyUrl": {
+    "message": "Копиране на URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Изтеглете този файл"
+  },
+  "inspectorClose": {
+    "message": "Затвори"
+  },
+  "metaUrl": {
+    "message": "URL адрес"
+  },
+  "metaType": {
+    "message": "Тип"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Размер"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Източник"
+  },
+  "metaTitle": {
+    "message": "Заглавие"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Харесва ли ви Source Download? Подкрепете нашата визия за отворен код с отзив в уеб магазина на Chrome или звезда в GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Оставете отзив"
+  },
+  "ratingStar": {
+    "message": "★ Звезда в GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Затвори"
+  },
+  "toastElementZapped": {
+    "message": "Елементът е скрит за тази сесия."
+  },
+  "toastElementRestored": {
+    "message": "Елементът е върнат."
+  },
+  "toastAllElementsRestored": {
+    "message": "Всички скрити елементи са върнати."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Заснемане на цялата страница…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Екранната снимка на цялата страница е запазена."
+  },
+  "toastArchiveCreated": {
+    "message": "HTML архивът в един файл е запазен."
+  },
+  "brandSignature": {
+    "message": "Изработено от Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Изображения и SVG"
+  },
+  "tabMedia": {
+    "message": "Медия и аудио"
+  },
+  "tabFonts": {
+    "message": "Шрифтове"
+  },
+  "tabTextScraper": {
+    "message": "Текст и таблици"
+  },
+  "heroScreenshotTitle": {
+    "message": "Екранна снимка на цяла страница"
+  },
+  "heroScreenshotDesc": {
+    "message": "Безпроблемно съединяване на няколко области на изгледа с потискане на залепващи заглавки"
+  },
+  "heroArchiveTitle": {
+    "message": "Еднофайлов HTML архив"
+  },
+  "heroArchiveDesc": {
+    "message": "Вгражда CSS и Base64 изображения, снимка за офлайн употреба"
+  },
+  "copyDataUri": {
+    "message": "Копиране на Data URI"
+  },
+  "copyUrl": {
+    "message": "Копиране на URL"
+  },
+  "downloadSingle": {
+    "message": "Изтегляне"
+  },
+  "searchPlaceholder": {
+    "message": "Филтрирайте по име, URL, етикет, MIME или /regex/…"
+  },
+  "viewGrid": {
+    "message": "Мрежов изглед"
+  },
+  "viewList": {
+    "message": "Списъчен изглед"
+  },
+  "btnScreenshot": {
+    "message": "Екранна снимка"
+  },
+  "btnArchive": {
+    "message": "Запазване на HTML"
+  },
+  "exportJson": {
+    "message": "Видим списък като JSON"
+  },
+  "exportCsv": {
+    "message": "Видим списък като CSV"
+  },
+  "exportHar": {
+    "message": "Мрежов регистър като HAR"
+  },
+  "exportScreenshot": {
+    "message": "Екранна снимка на цяла страница (PNG)"
+  },
+  "exportArchive": {
+    "message": "Офлайн архив на страницата (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Всички методи"
+  },
+  "filterTypeAll": {
+    "message": "Всички видове"
+  },
+  "filterSortDir": {
+    "message": "Превключване между възходящ и низходящ ред"
+  },
+  "emptyTitle": {
+    "message": "Няма намерени ресурси"
+  },
+  "emptySubtitle": {
+    "message": "Презаредете страницата, докато този панел е отворен, за да заснемете мрежови заявки, или щракнете върху Опресняване, за да сканирате текущия DOM."
+  },
+  "statusResources": {
+    "message": "ресурси"
+  },
+  "statusFiltered": {
+    "message": "филтрирани"
+  },
+  "statusSelected": {
+    "message": "избрани"
+  },
+  "statusDupes": {
+    "message": "скрити дубликати"
+  },
+  "statusSize": {
+    "message": "размер"
+  },
+  "langAuto": {
+    "message": "Автоматично (браузър)"
+  },
+  "langSelectorTitle": {
+    "message": "Изберете език"
+  },
+  "textPillAll": {
+    "message": "Цялото съдържание"
+  },
+  "textPillText": {
+    "message": "📄 Текст и статии"
+  },
+  "textPillTables": {
+    "message": "📊 Само таблици"
+  },
+  "textSelectAll": {
+    "message": "Избери всички"
+  },
+  "textDeselectAll": {
+    "message": "Отмени избора"
+  },
+  "textClearSelection": {
+    "message": "Изчисти"
+  },
+  "toastRefreshComplete": {
+    "message": "Сканирането на страницата е завършено: $count$ нови ресурси",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Копирани $count$ блок(ове)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Копирано в клипборда"
+  },
+  "toastTableCopied": {
+    "message": "Таблицата е копирана в клипборда"
+  },
+  "toastNothingToExport": {
+    "message": "Няма какво да се експортира"
+  },
+  "toastExportedTxt": {
+    "message": "Експортирани $count$ блок(ове) като TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Експортирани $count$ блок(ове) като Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Няма заснети редове в таблицата"
+  },
+  "toastExportedCsv": {
+    "message": "Таблицата е експортирана като CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Таблицата е експортирана като XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Експортирани $count$ таблици като $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Експортирани са $count$ лист(ове) като XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Няма ресурси за изтегляне."
+  },
+  "toastNoVisibleResources": {
+    "message": "Няма видими ресурси за изтегляне."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Първо изберете поне един ресурс."
+  },
+  "toastZipSaved": {
+    "message": "ZIP запазен: $fetched$ от $total$ ресурси",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Грешка при ZIP: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "Експортиран HAR ($count$ записа)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL адресът е копиран в клипборда"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Прозорецът, проверен от DevTools, не е наличен."
+  },
+  "toastScreenshotError": {
+    "message": "Грешка в екранната снимка: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Създаване на офлайн архив на страницата…"
+  },
+  "toastArchiveError": {
+    "message": "Грешка в архива: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Времето за изчакване на форматирането изтече — показва се оригиналният файл."
+  },
+  "toastFormatFailed": {
+    "message": "Файлът не може да се форматира — показва се оригиналът."
+  },
+  "emptySearchTitle": {
+    "message": "Няма съвпадения за „$query$“",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Опитайте с друга дума за търсене или превключете към друга категория."
+  },
+  "emptyFiltersTitle": {
+    "message": "Няма ресурси, които да съответстват на текущите филтри"
+  },
+  "emptyFiltersSub": {
+    "message": "Облекчете филтрите за размер или габарити по-горе или натиснете Изчисти."
+  },
+  "textEmptyQueryReject": {
+    "message": "Страницата отхвърли тази заявка. Коригирайте я по-горе и резултатите ще се върнат веднага."
+  },
+  "textEmptyNoMatch": {
+    "message": "Нито един елемент на страницата не отговаря на тази заявка. Опитайте с по-общ селектор или превключете режима до полето."
+  },
+  "textEmptyInitial": {
+    "message": "Все още нищо не е заснето. Заснемането на живо се изпълнява — цялата страница ще се покаже тук като четим текст."
+  },
+  "textEmptyFiltered": {
+    "message": "Нищо не съответства на текущата заявка и филтър на елементи."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ блока",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ думи",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ знака",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ таблица(и) · $rows$ уникални редове",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ избрани — експортите използват само тях",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Таблица — $count$ ред(а) на екрана",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Таблица — всичките $count$ уникални редове",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ снимка(и)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "актуализиран $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Показване на всички $count$ редове",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Показани са всички редове"
+  },
+  "textTableHistory": {
+    "message": "История ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Скриване на историята"
+  },
+  "textTableNoRows": {
+    "message": "Все още няма заснети редове."
+  },
+  "textBtnCopy": {
+    "message": "Копиране на текст"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Копирай"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ дублирани изображения",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Експортиране"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG се зарежда…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG съдържанието не можа да бъде извлечено."
+  },
+  "inspectorLoadingFont": {
+    "message": "Визуализацията на шрифта се зарежда..."
+  },
+  "inspectorFontSample": {
+    "message": "Визуализация на шрифта"
+  },
+  "inspectorBeautify": {
+    "message": "Форматирай"
+  },
+  "inspectorOriginal": {
+    "message": "Оригинален"
+  },
+  "inspectorHeaders": {
+    "message": "Заглавки"
+  },
+  "inspectorResponse": {
+    "message": "Отговор"
+  },
+  "inspectorRequest": {
+    "message": "Заявка"
+  },
+  "inspectorQueryParams": {
+    "message": "Параметри на заявката"
+  },
+  "inspectorRequestBody": {
+    "message": "Тяло на заявката"
+  },
+  "textHintHtml": {
+    "message": "Живо, четимо копие на страницата. Всеки елемент, съдържащ текст, се улавя в реда на DOM и се съхранява тук, докато страницата се променя. Заявете го с обикновен текст, регулярен израз, <strong>CSS селектор</strong> или <strong>XPath</strong> израз, след което експортирайте това, което съвпада. Вижте <a href=\"#\" id=\"text-hint-guide\">ръководството</a> за подробности."
+  },
+  "textHeadings": {
+    "message": "Заглавия"
+  },
+  "textAllLevels": {
+    "message": "Всички нива"
+  },
+  "textMatches": {
+    "message": "съвпадения"
+  },
+  "textMatch": {
+    "message": "съвпадение"
+  },
+  "textReadingOn": {
+    "message": "Четене: вкл."
+  },
+  "toastDownloadStarted": {
+    "message": "Изтеглянето започна: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Този ресурс не можа да бъде извлечен (CORS или неподдържан тип)."
+  },
+  "ratingBannerText": {
+    "message": "Харесва ли ви Source Download? Подкрепете нашата визия за отворен код с отзив в уеб магазина на Chrome или звезда в GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Отзив"
+  },
+  "ratingBannerStar": {
+    "message": "★ Звезда"
+  },
+  "textTableUniqueRows": {
+    "message": "Уникални редове: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "преди $count$ сек",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "преди $count$ мин",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Екранна снимка на област"
+  },
+  "btnAreaDownload": {
+    "message": "Изтегляне"
+  },
+  "btnAreaCopy": {
+    "message": "Копиране в клипборда"
+  },
+  "btnAreaCancel": {
+    "message": "Отказ"
+  },
+  "toastAreaCopied": {
+    "message": "Екранната снимка на областта е копирана в клипборда"
+  },
+  "toastAreaDownloaded": {
+    "message": "Екранната снимка на областта е запазена"
+  },
+  "statusFoundCssResources": {
+    "message": "Намерени са $count$ ресурс(а), посочени от CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Неуспешно сканиране на DOM: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Съдържанието на файла се индексира..."
+  },
+  "statusCheckingDuplicates": {
+    "message": "Проверяват се дубликати на изображения..."
+  },
+  "statusWorking": {
+    "message": "Обработка…"
+  },
+  "filterMethodTitle": {
+    "message": "Филтриране по HTTP метод"
+  },
+  "filterTypeTitle": {
+    "message": "Филтриране по тип заявка"
+  },
+  "filterSortTitle": {
+    "message": "Сортиране на ресурси"
+  },
+  "textModeTitle": {
+    "message": "Как се интерпретира полето за заявка"
+  },
+  "textKindTitle": {
+    "message": "Ограничете до един тип елемент"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Ниво на заглавие"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Цена:\\s*\\d+ — регулярен израз на JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — произволен CSS селектор"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Търсене в ръководството..."
+  },
+  "popupIntro": {
+    "message": "Категориите, отчетени от <strong>значката на лентата с инструменти</strong>. Изключете едно, за да спрете да го броите — значката незабавно отразява само това, което проследявате."
+  },
+  "popupHelpTitle": {
+    "message": "Как да използвате пълния панел"
+  },
+  "popupStep1": {
+    "message": "Отворете DevTools за страницата, която искате да проверите <div class=\"hint\"><kbd>F12</kbd> или <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Щракнете върху раздела <strong>Source Download</strong> в лентата с инструменти на DevTools"
+  },
+  "popupStep3": {
+    "message": "Преглеждайте, проверявайте и изтегляйте ресурси - поотделно или всички наведнъж като ZIP."
+  },
+  "popupNote": {
+    "message": "Забележка: Chrome не позволява на разширенията да отварят програмно DevTools, поради което пълният инженерен пакет се достига през лентата с инструменти DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Проследяване на всички категории"
+  },
+  "popupLanguage": {
+    "message": "Език"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Двоичен отговор — изтеглете, за да го видите"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Отговорът се зарежда..."
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Няма преглед на отговора — съдържанието не може да бъде извлечено."
+  },
+  "inspectorLoadingContent": {
+    "message": "Съдържанието се зарежда..."
+  },
+  "inspectorNoPreview": {
+    "message": "Няма наличен преглед — съдържанието не може да бъде извлечено."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Затвори всички"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Затворете всички отворени раздели"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Кликнете за уголемяване"
+  },
+  "inspectorViewSource": {
+    "message": "Преглед на кода"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Показване на SVG кода с оцветяване на синтаксиса"
+  },
+  "inspectorFormatting": {
+    "message": "Форматиране..."
+  },
+  "findInContentPlaceholder": {
+    "message": "Намерете в съдържанието..."
+  },
+  "findPreviousMatch": {
+    "message": "Предишно съвпадение"
+  },
+  "findNextMatch": {
+    "message": "Следващо съвпадение"
+  },
+  "findClose": {
+    "message": "Затвори"
+  },
+  "findShowRaw": {
+    "message": "Показване на оригинално (неформатирано) съдържание"
+  },
+  "findBeautify": {
+    "message": "Форматиране на това съдържание"
+  },
+  "btnRaw": {
+    "message": "Без форматиране"
+  },
+  "btnBeautify": {
+    "message": "Форматирай"
+  },
+  "videoHlsDetected": {
+    "message": "Открит е HLS (m3u8) поток"
+  },
+  "videoCannotPlay": {
+    "message": "Този видеоклип не може да се възпроизведе в браузъра"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome не може да възпроизвежда HLS потоци директно. Можете да обедините всички сегменти от <b>$NAME$</b> в един MP4/TS видео файл.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Браузърът не поддържа този формат"
+  },
+  "btnMergeHls": {
+    "message": "Обединяване на сегменти и изтегляне"
+  },
+  "toastHlsMerged": {
+    "message": "Обединени са $COUNT$ сегмент(и) в $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "неизвестен размер"
+  },
+  "progressFetching": {
+    "message": "Извлича се $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Създава се ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP запазен: $FETCHED$ от $TOTAL$ ресурси ($SKIPPED$ неуспешно)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Опитайте отново $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Повторно изтегляне"
+  },
+  "searchRegexHint": {
+    "message": "Търсенето с регулярен израз е активно — поставете заявката във формат /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Включване в експортите"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Обединява всички снимки в една таблица без дубликати — това се експортира"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Прегледайте по-ранни моментни снимки на тази таблица"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Изтеглете тази таблица като CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Моментна снимка $INDEX$ — $TIME$ ($COUNT$ реда)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Превключване на избора за пакетно изтегляне"
+  },
+  "cardDownloadTitle": {
+    "message": "Изтегляне на файл"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Предишното изтегляне е неуспешно — щракнете, за да опитате отново"
+  },
+  "btnThemeLight": {
+    "message": "Превключете към светла тема"
+  },
+  "btnThemeDark": {
+    "message": "Превключете към тъмна тема"
+  },
+  "guideTitle": {
+    "message": "Source Download — Ръководство за потребителя"
+  },
+  "guideEmpty": {
+    "message": "Няма раздели на ръководството, които отговарят на вашето търсене."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% без зависимости.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Намаляване на мащаба (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Увеличете мащаба (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Нулиране на мащаба (0)"
+  },
+  "lightboxClose": {
+    "message": "Затваряне (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Плъзнете, за да преоразмерите"
+  },
+  "ratingDismissTitle": {
+    "message": "Затвори"
+  },
+  "inspectorResourceTitle": {
+    "message": "Ресурс"
+  },
+  "guideSecGettingStarted": {
+    "message": "Първи стъпки"
+  },
+  "guideSecCategories": {
+    "message": "Категории"
+  },
+  "guideSecSearchFilters": {
+    "message": "Търсене и филтри"
+  },
+  "guideSecGridView": {
+    "message": "Изглед на мрежа и списък"
+  },
+  "guideSecInspect": {
+    "message": "Проверка на ресурс"
+  },
+  "guideSecDownloading": {
+    "message": "Изтегляне"
+  },
+  "guideSecLightbox": {
+    "message": "Лайтбокс"
+  },
+  "guideSecTextTables": {
+    "message": "Текст и таблици"
+  },
+  "guideSecCaptions": {
+    "message": "Надписи и субтитри"
+  },
+  "guideSecSourceMaps": {
+    "message": "Изходни карти"
+  },
+  "guideSecDupes": {
+    "message": "Дублирани изображения"
+  },
+  "guideSecVideoHls": {
+    "message": "Резервно видео и HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Съвети за напреднали"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Щракнете върху раздела <strong>Source Download</strong> в лентата с инструменти на DevTools (натиснете <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, след това изберете раздела в лентата с инструменти на DevTools). Chrome не позволява на разширенията да отварят DevTools автоматично, затова панелът е там. Изскачащият прозорец на иконата в лентата с инструменти ви позволява да изберете кои категории се отчитат в брояча върху значката на иконата. Бутонът със слънце/луна в лентата с инструменти на панела заключва светла или тъмна тема независимо от Chrome; изборът се запомня."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Вертикалните раздели отляво групират всеки заснет ресурс в 17 специални категории по тип: изображения, видеоклипове, аудио, надписи, документи, шрифтове, изходни карти, WASM, SVG, API, бисквитки, хранилище и др. Всеки раздел показва брояч на живо. В даден момент се показва само една категория; превключването нулира всички филтри, така че видяното винаги съответства на раздела."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Лентата за търсене филтрира по име, URL, тип, алтернативен текст или заглавие. Оградете заявката в <kbd>/…/</kbd>, за да използвате регулярен израз, напр. <code>/\\.(png|jpg)$/</code>. Под лентата с инструменти лентата с филтри се променя според категорията: диапазони на размер и габарити за медийните файлове, HTTP метод и тип заявка за API, плюс сортиране и посока."
+  },
+  "guideSecGridViewContent": {
+    "message": "Превключвайте между компактна мрежа (малки миниатюри) и подробен списък с бутоните до лентата за търсене. Вашият избор се запомня между сесиите. В списъчния изглед квадратчетата за отметка ви позволяват да изберете отделни ресурси за групово изтегляне."
+  },
+  "guideSecInspectContent": {
+    "message": "Щракнете върху произволен ресурс, за да го отворите в панела за проверка вдясно. Всеки отворен файл се превръща в раздел, така че можете да сравнявате няколко ресурса един до друг — най-новият се отваря отляво. Има специализирани визуализатори за изображения, видео, аудио, шрифтове, SVG и текст/код (с бутон Форматирай). API ресурсите показват разделен изглед: отговор вляво, подробности за заявката (метод, състояние, заглавки, параметри на заявката и тяло) вдясно."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Изтегли изгледа</strong> запазва видимите в момента ресурси (активна категория + търсене + филтри) като ZIP; когато филтрите са активни, бутонът се преименува на <em>Изтегли филтрираните (N)</em>. Задръжте курсора върху който и да е бутон за изтегляне, за да видите приблизителния размер на архива, преди да щракнете. <strong>Изтегли избраните</strong> изтегля само маркираните елементи. <strong>Изтегли всички</strong> събира всеки открит ресурс в ZIP със структура на папки. Неуспешните изтегляния се повтарят автоматично и могат да бъдат опитани отново от контекстното меню. <strong>Експортиране</strong> записва видимия списък като JSON или CSV или изхвърля мрежовия регистър на Chrome като HAR файл."
+  },
+  "guideSecLightboxContent": {
+    "message": "Бутонът за мащабиране отваря мултимедия в лайтбокс в пълен размер, където можете да панорамирате чрез плъзгане, мащабиране с колелцето на мишката, бутоните на екрана или клавиатурата (<kbd>+</kbd>/<kbd>-</kbd> за мащабиране, <kbd>0</kbd> за нулиране, <kbd>Esc</kbd> за затваряне)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Категорията <strong>Текст</strong> е живо, четимо копие на страницата. Тя улавя всеки елемент, който съдържа текст — заглавия, абзаци, елементи от списъци, бутони, <code>div</code>/<code>span</code> и други — в реда на DOM и продължава да сканира, докато е включено <strong>На живо</strong>.</p><p>Полето за <strong>заявка</strong> работи по четири начина, избирани от падащото меню до него: <strong>Съдържа</strong> и <strong>Regex</strong> филтрират вече заснетия текст, докато <strong>CSS селектор</strong> и <strong>XPath</strong> се изпълняват спрямо активната страница, така че могат да достигнат до всичко в DOM. XPath приема и изрази, които връщат стойност, а не елементи, като <code>count(//a)</code> или <code>//@href</code>. Каквото и да съобщи страницата за невалидна заявка, се показва до полето. <strong>Елемент</strong> стеснява резултата до един таг, с броя на всеки таг, открит на страницата. Изчистването на полето за заявка (или натискането на <strong>Изчисти</strong>) ви връща към <em>Всички елементи</em> и заснема страницата отново — никога не се налага да нулирате падащото меню на ръка.</p><p><strong>Четене</strong> скрива таговете, квадратчетата за отметка и пътеките до местоположението, така че съдържанието да се чете като документ. Таблиците съхраняват ограничена история на снимки, така че динамичните (SPA) таблици никога не се губят. Натиснете <strong>Показване на всички редове</strong> в таблица, за да обедините всички снимки в един изглед без дубликати — точно това съдържа експортът. Експортирайте като <strong>TXT</strong> (четимата страница), <strong>MD</strong> (Markdown, включително таблици) или таблици като CSV, HTML или истинска многолистова работна книга <strong>XLSX</strong>. Маркираните елементи имат предимство; в противен случай се експортира всичко, което се вижда в момента.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "Файловете с надписи WebVTT, SRT, TTML и други — включително източници на <code>&lt;track&gt;</code> — се показват в собствен раздел <strong>Надписи</strong>, вместо да се смесват с документите."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Файловете <code>.map</code> и JSON тела, които изглеждат като изходни карти (съдържат <code>mappings</code> и <code>sources</code>), се групират под <strong>Изходни карти</strong>, с JSON визуализатор и Форматирай, така че вече не затрупват раздела JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "В раздела Изображения панелът изчислява хеш на заснетите байтове и маркира идентичните файлове. Филтърът <strong>Скриване на дубликати</strong> запазва първото копие от всеки набор, така че ZIP на изгледа да не съдържа една и съща миниатюра два пъти."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Потоците, които браузърът не може да възпроизвежда нативно (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, неизвестни кодеци), показват резервен изглед вместо черен плейър. За HLS можете да обедините сегментите в един видео файл направо от панела или да изтеглите оригиналния манифест."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Динамичните <strong>API</strong> отговори (XHR/fetch) не се дедупликират по URL адрес — всеки отговор остава в списъка (ограничен FIFO), така че можете да сравнявате повтарящи се заявки. Статичните ресурси се дедупликират. Използвайте <strong>Опресняване</strong>, за да сканирате повторно текущия DOM, и презаредете страницата, докато панелът е отворен, за да заснемете всяка мрежова заявка, включително задействаните преди превключването на разделите."
+  },
+  "toolArrow": {
+    "message": "Инструмент „Стрелка“"
+  },
+  "toolRect": {
+    "message": "Инструмент „Правоъгълник“"
+  },
+  "toolText": {
+    "message": "Инструмент „Текст“"
+  },
+  "toolUndo": {
+    "message": "Отмяна (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Повтаряне (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Цвят"
+  },
+  "badgeStrokeSize": {
+    "message": "Размер: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Размер на шрифта: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Запис на област като видео / GIF"
+  },
+  "btnRecStart": {
+    "message": "Начало на записа"
+  },
+  "btnRecPause": {
+    "message": "Пауза"
+  },
+  "btnRecResume": {
+    "message": "Продължаване"
+  },
+  "btnRecStop": {
+    "message": "Край и изтегляне"
+  },
+  "btnRecCancel": {
+    "message": "Отказ"
+  },
+  "toastRecSaved": {
+    "message": "Записът на областта е запазен"
+  },
+  "toastRecCancelled": {
+    "message": "Видеозаписът е отменен"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Не е предоставено разрешение за запис на екрана"
+  },
+  "btnPopupRecordArea": {
+    "message": "Видео / GIF на област"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Екранна снимка на област"
+  },
+  "contextMenuPickColor": {
+    "message": "Избор на цвят от екрана"
+  },
+  "btnPopupPickColor": {
+    "message": "Изберете цвят"
+  },
+  "colorPickerTitle": {
+    "message": "Избор на цвят"
+  },
+  "btnColorPickAgain": {
+    "message": "Избери друг цвят"
+  },
+  "toastColorCopied": {
+    "message": "Цветът е копиран в клипборда"
+  },
+  "toastProgressCapturing": {
+    "message": "Заснемане на цялата страница… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Съединяване на изображението…"
+  },
+  "modalExportTitle": {
+    "message": "Екранната снимка на цялата страница е готова"
+  },
+  "btnExportPng": {
+    "message": "Изтегляне на PNG"
+  },
+  "btnExportJpg": {
+    "message": "Изтегляне на JPG"
+  },
+  "btnExportPdf": {
+    "message": "Запазване като PDF"
+  },
+  "btnExportCopy": {
+    "message": "Копиране в клипборда"
+  },
+  "btnExportGenerating": {
+    "message": "Създаване…"
+  },
+  "toastPdfGenerated": {
+    "message": "PDF документът е запазен."
+  },
+  "settingNamingPatterns": {
+    "message": "Модели за именуване на файлове"
+  },
+  "settingVideoFormat": {
+    "message": "Видео формат по подразбиране"
+  },
+  "settingNamingPreview": {
+    "message": "Преглед:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF файлът се създава, моля, изчакайте…"
+  },
+  "settingGifResolution": {
+    "message": "Разделителна способност на GIF по подразбиране"
+  },
+  "optGifOriginal": {
+    "message": "Оригинал (1:1 собствена разделителна способност — пълно 3K/4K, без намаляване)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (макс. 1920 px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (макс. 1280 px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (макс. 854 px — по-бързо и по-малък размер)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF форматът поддържа максимална продължителност на запис от 1 минута (60 секунди)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Запис на екрана (видео и GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Запишете всяка област на екрана като MP4, WebM или анимиран GIF. GIF записите включват естествена разделителна способност 1:1, 1080p, 720p и 480p профили с приблизителни размери на файлове на живо. Максималната продължителност на запис на GIF е 1 минута (60 секунди) за оптимална работа на браузъра."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Достигната е максималната продължителност на GIF от 1 минута (60 s). GIF файлът се създава…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Макс. 1 мин (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Скорост на кадрите на GIF по подразбиране (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Плавно (висока плавност, по-голям размер)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Стандартно (препоръчително за уеб и баланс)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Компактно / Мем (накъсано движение, малък размер)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Стоп-моушън / Бавно (стъпка по стъпка „клик-клик“, много малък размер)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Презентация (1 кадър в секунда, минимален размер)"
+  },
+  "popupRightClickHint": {
+    "message": "Щракнете с десния бутон където и да е на уеб страницата за запис на екрана (видео/GIF) и избор на цвят."
+  },
+  "toastElementZappedAd": {
+    "message": "Реклама / iframe е скрита за тази сесия.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Изображението е копирано в клипборда",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Затваряне (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Настройките са запазени",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Изтеглете файла и го отворете с VLC или друг медиен плейър.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Няма преглед за този тип ресурс",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Изтегляне на оригинала",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Съвет: отворете изтегления файл с VLC или друг медиен плейър за настолен компютър — възпроизвежда почти всеки формат.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Създаване на ZIP архив…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Браузърът ви не поддържа EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Преместване на лентата с инструменти",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Смяна на формата: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Резолюция на GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Кадрова честота на GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Приблизителен размер на GIF: ~$size$ MB (за 10 s), до ~$max$ MB при максимума от 60 s.\nКадрова честота: $fps$ FPS.\nЗаписът на GIF е ограничен до максимум 1 минута (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Копиране на $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Преглед на екранната снимка",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — универсално възпроизвеждане в WhatsApp, Telegram, Jira, Apple и Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (анимирано изображение — идеално за READMEs, Jira, документация и съобщения)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — отворен уеб формат)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Не е намерен активен раздел.",
+    "description": "No active tab found."
+  }
+}

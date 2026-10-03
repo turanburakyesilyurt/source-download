@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Pobieraj zasoby stron jako ZIP. Zrzuty ekranu całych stron, przechwytywanie tabel na żywo i narzędzia dla deweloperów."
+  },
+  "actionTitle": {
+    "message": "Source Download — otwórz panel i śledź zasoby"
+  },
+  "contextMenuZap": {
+    "message": "Ukryj ten element"
+  },
+  "contextMenuUndoZap": {
+    "message": "Przywróć ostatnio ukryty element"
+  },
+  "contextMenuResetZap": {
+    "message": "Zresetuj wszystkie ukryte elementy"
+  },
+  "contextMenuCapturePage": {
+    "message": "Zrób zrzut ekranu całej strony"
+  },
+  "contextMenuPageArchive": {
+    "message": "Pobierz archiwum strony offline"
+  },
+  "catAll": {
+    "message": "Wszystko"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Obrazy"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Wideo"
+  },
+  "catAudio": {
+    "message": "Dźwięk"
+  },
+  "catCaptions": {
+    "message": "Napisy"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Mapy źródłowe"
+  },
+  "catFonts": {
+    "message": "Czcionki"
+  },
+  "catDocuments": {
+    "message": "Dokumenty"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifesty"
+  },
+  "catText": {
+    "message": "Tekst"
+  },
+  "catOther": {
+    "message": "Inne"
+  },
+  "catScreenshot": {
+    "message": "Zrzut ekranu"
+  },
+  "catArchive": {
+    "message": "Archiwum strony"
+  },
+  "btnRefresh": {
+    "message": "Odśwież"
+  },
+  "btnExport": {
+    "message": "Eksportuj"
+  },
+  "btnDownloadSelected": {
+    "message": "Pobierz wybrane"
+  },
+  "btnDownloadView": {
+    "message": "Pobierz widok"
+  },
+  "btnDownloadAll": {
+    "message": "Pobierz wszystko"
+  },
+  "btnDownloadFiltered": {
+    "message": "Pobierz przefiltrowane"
+  },
+  "btnTheme": {
+    "message": "Zmień motyw"
+  },
+  "btnGuide": {
+    "message": "Podręcznik użytkownika"
+  },
+  "btnCaptureFullPage": {
+    "message": "Zrzut ekranu pełnej strony"
+  },
+  "btnOfflineArchive": {
+    "message": "Zapisz jako jeden plik HTML"
+  },
+  "filterMinKb": {
+    "message": "Min. KB"
+  },
+  "filterMaxKb": {
+    "message": "Maks. KB"
+  },
+  "filterMinWidth": {
+    "message": "Min. szerokość (px)"
+  },
+  "filterMinHeight": {
+    "message": "Min. wysokość (px)"
+  },
+  "filterSortName": {
+    "message": "Sortuj według nazwy"
+  },
+  "filterSortSize": {
+    "message": "Sortuj według rozmiaru"
+  },
+  "filterSortType": {
+    "message": "Sortuj według typu"
+  },
+  "filterSortTime": {
+    "message": "Sortuj według czasu"
+  },
+  "filterHideDupes": {
+    "message": "Ukryj duplikaty"
+  },
+  "filterClear": {
+    "message": "Wyczyść"
+  },
+  "textModeContains": {
+    "message": "Zawiera"
+  },
+  "textModeRegex": {
+    "message": "Wyrażenie regularne"
+  },
+  "textModeCss": {
+    "message": "Selektor CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filtruj tekst strony lub zapytaj DOM na żywo…"
+  },
+  "textAllElements": {
+    "message": "Wszystkie elementy"
+  },
+  "textLiveOn": {
+    "message": "Na żywo: wł."
+  },
+  "textLiveOff": {
+    "message": "Na żywo: wył."
+  },
+  "textScanNow": {
+    "message": "Zeskanuj teraz"
+  },
+  "textReading": {
+    "message": "Czytanie"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Wybierz zasób, aby sprawdzić jego szczegóły"
+  },
+  "inspectorDetails": {
+    "message": "Szczegóły"
+  },
+  "inspectorOpenTab": {
+    "message": "Otwórz w nowej karcie"
+  },
+  "inspectorCopyUrl": {
+    "message": "Skopiuj adres URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Pobierz ten plik"
+  },
+  "inspectorClose": {
+    "message": "Zamknij"
+  },
+  "metaUrl": {
+    "message": "Adres URL"
+  },
+  "metaType": {
+    "message": "Typ"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Rozmiar"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Źródło"
+  },
+  "metaTitle": {
+    "message": "Tytuł"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Podoba Ci się Source Download? Wesprzyj naszą wizję open source recenzją w Chrome Web Store lub gwiazdką na GitHubie!"
+  },
+  "ratingReview": {
+    "message": "★ Zostaw recenzję"
+  },
+  "ratingStar": {
+    "message": "★ Gwiazda na GitHubie"
+  },
+  "ratingDismiss": {
+    "message": "Odrzuć"
+  },
+  "toastElementZapped": {
+    "message": "Element ukryty na czas tej sesji."
+  },
+  "toastElementRestored": {
+    "message": "Element przywrócony."
+  },
+  "toastAllElementsRestored": {
+    "message": "Wszystkie ukryte elementy zostały przywrócone."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Wykonywanie zrzutu ekranu całej strony…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Zrzut ekranu całej strony zapisany."
+  },
+  "toastArchiveCreated": {
+    "message": "Archiwum HTML w jednym pliku zapisane."
+  },
+  "brandSignature": {
+    "message": "Stworzone przez Turana Buraka Yeşilyurta (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Obrazy i SVG"
+  },
+  "tabMedia": {
+    "message": "Multimedia i dźwięk"
+  },
+  "tabFonts": {
+    "message": "Czcionki"
+  },
+  "tabTextScraper": {
+    "message": "Tekst i tabele"
+  },
+  "heroScreenshotTitle": {
+    "message": "Zrzut ekranu pełnej strony"
+  },
+  "heroScreenshotDesc": {
+    "message": "Płynne zszywanie wielu widoków z pominięciem przyklejonych nagłówków"
+  },
+  "heroArchiveTitle": {
+    "message": "Jednoplikowe archiwum HTML"
+  },
+  "heroArchiveDesc": {
+    "message": "Wbudowany CSS i obrazy Base64, migawka działająca offline"
+  },
+  "copyDataUri": {
+    "message": "Skopiuj Data-URI"
+  },
+  "copyUrl": {
+    "message": "Skopiuj adres URL"
+  },
+  "downloadSingle": {
+    "message": "Pobierz"
+  },
+  "searchPlaceholder": {
+    "message": "Filtruj według nazwy, adresu URL, tagu, MIME lub /regex/…"
+  },
+  "viewGrid": {
+    "message": "Widok siatki"
+  },
+  "viewList": {
+    "message": "Widok listy"
+  },
+  "btnScreenshot": {
+    "message": "Zrzut ekranu"
+  },
+  "btnArchive": {
+    "message": "Zapisz HTML"
+  },
+  "exportJson": {
+    "message": "Widoczna lista w formacie JSON"
+  },
+  "exportCsv": {
+    "message": "Widoczna lista w formacie CSV"
+  },
+  "exportHar": {
+    "message": "Dziennik sieciowy jako HAR"
+  },
+  "exportScreenshot": {
+    "message": "Zrzut ekranu całej strony (PNG)"
+  },
+  "exportArchive": {
+    "message": "Archiwum strony offline (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Wszystkie metody"
+  },
+  "filterTypeAll": {
+    "message": "Wszystkie typy"
+  },
+  "filterSortDir": {
+    "message": "Przełącz rosnąco/malejąco"
+  },
+  "emptyTitle": {
+    "message": "Nie znaleziono zasobów"
+  },
+  "emptySubtitle": {
+    "message": "Załaduj ponownie stronę, gdy ten panel jest otwarty, aby przechwycić żądania sieciowe, lub kliknij Odśwież, aby przeskanować bieżący DOM."
+  },
+  "statusResources": {
+    "message": "zasoby"
+  },
+  "statusFiltered": {
+    "message": "filtrowane"
+  },
+  "statusSelected": {
+    "message": "wybrane"
+  },
+  "statusDupes": {
+    "message": "duplikaty ukryte"
+  },
+  "statusSize": {
+    "message": "rozmiar"
+  },
+  "langAuto": {
+    "message": "Automatycznie (przeglądarka)"
+  },
+  "langSelectorTitle": {
+    "message": "Wybierz język"
+  },
+  "textPillAll": {
+    "message": "Cała zawartość"
+  },
+  "textPillText": {
+    "message": "📄 Teksty i artykuły"
+  },
+  "textPillTables": {
+    "message": "📊 Tylko tabele"
+  },
+  "textSelectAll": {
+    "message": "Wybierz wszystko"
+  },
+  "textDeselectAll": {
+    "message": "Odznacz wszystko"
+  },
+  "textClearSelection": {
+    "message": "Wyczyść"
+  },
+  "toastRefreshComplete": {
+    "message": "Skanowanie strony zakończone: $count$ nowych zasobów",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Skopiowano $count$ bloków",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Skopiowano do schowka"
+  },
+  "toastTableCopied": {
+    "message": "Tabela skopiowana do schowka"
+  },
+  "toastNothingToExport": {
+    "message": "Nic do eksportu"
+  },
+  "toastExportedTxt": {
+    "message": "Wyeksportowano $count$ bloków jako TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Wyeksportowano $count$ bloków jako Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Nie przechwycono żadnych wierszy tabeli"
+  },
+  "toastExportedCsv": {
+    "message": "Wyeksportowano tabelę jako CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Wyeksportowano tabelę jako XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Wyeksportowano $count$ tabel jako $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Wyeksportowano $count$ arkuszy w formacie XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Brak zasobów do pobrania."
+  },
+  "toastNoVisibleResources": {
+    "message": "Brak widocznych zasobów do pobrania."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Najpierw wybierz co najmniej jeden zasób."
+  },
+  "toastZipSaved": {
+    "message": "Zapisano ZIP: $fetched$ z $total$ zasobów",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP nie powiódł się: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "Wyeksportowano HAR ($count$ wpisów)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "Adres URL skopiowany do schowka"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Okno sprawdzane przez DevTools jest niedostępne."
+  },
+  "toastScreenshotError": {
+    "message": "Błąd zrzutu ekranu: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Tworzenie archiwum strony offline…"
+  },
+  "toastArchiveError": {
+    "message": "Błąd archiwum: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Upłynął limit czasu formatowania — wyświetlanie oryginalnego pliku."
+  },
+  "toastFormatFailed": {
+    "message": "Nie można sformatować pliku — wyświetla się oryginał."
+  },
+  "emptySearchTitle": {
+    "message": "Brak dopasowań dla „$query$”",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Wypróbuj inne wyszukiwane hasło lub przejdź do innej kategorii."
+  },
+  "emptyFiltersTitle": {
+    "message": "Żadne zasoby nie pasują do bieżących filtrów"
+  },
+  "emptyFiltersSub": {
+    "message": "Zmniejsz ograniczenia filtrów rozmiaru lub wymiarów powyżej albo naciśnij Wyczyść."
+  },
+  "textEmptyQueryReject": {
+    "message": "Strona odrzuciła to zapytanie. Napraw to powyżej, a wyniki przyjdą od razu."
+  },
+  "textEmptyNoMatch": {
+    "message": "Żaden element na stronie nie pasuje do tego zapytania. Wypróbuj luźniejszy selektor lub zmień tryb obok pola."
+  },
+  "textEmptyInitial": {
+    "message": "Jeszcze nic nie przechwycono. Trwa przechwytywanie na żywo — cała strona pojawi się tutaj jako czytelny tekst."
+  },
+  "textEmptyFiltered": {
+    "message": "Nic nie pasuje do bieżącego zapytania i filtra elementów."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ bloków",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ słów",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ znaków",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "Tabele: $tables$ · unikalne wiersze: $rows$",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "Wybrano $count$ — eksport używa tylko tych",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Tabela — $count$ wierszy na ekranie",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Tabela — wszystkie $count$ unikalnych wierszy",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "Migawki: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "zaktualizowano $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Pokaż wszystkie $count$ wierszy",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Wyświetlanie wszystkich wierszy"
+  },
+  "textTableHistory": {
+    "message": "Historia ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Ukryj historię"
+  },
+  "textTableNoRows": {
+    "message": "Nie przechwycono jeszcze żadnych wierszy."
+  },
+  "textBtnCopy": {
+    "message": "Skopiuj tekst"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Skopiuj"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "Zduplikowane obrazy: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Eksportuj"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Ładowanie SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Nie można pobrać zawartości SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "Ładowanie podglądu czcionki…"
+  },
+  "inspectorFontSample": {
+    "message": "Podgląd czcionki"
+  },
+  "inspectorBeautify": {
+    "message": "Formatuj"
+  },
+  "inspectorOriginal": {
+    "message": "Oryginał"
+  },
+  "inspectorHeaders": {
+    "message": "Nagłówki"
+  },
+  "inspectorResponse": {
+    "message": "Odpowiedź"
+  },
+  "inspectorRequest": {
+    "message": "Żądanie"
+  },
+  "inspectorQueryParams": {
+    "message": "Parametry zapytania"
+  },
+  "inspectorRequestBody": {
+    "message": "Treść żądania"
+  },
+  "textHintHtml": {
+    "message": "Żywa, czytelna kopia strony. Każdy element zawierający tekst jest przechwytywany w kolejności DOM i przechowywany tutaj, gdy strona się zmienia. Zapytaj o niego za pomocą zwykłego tekstu, wyrażenia regularnego, <strong>selektora CSS</strong> lub wyrażenia <strong>XPath</strong>, a następnie wyeksportuj pasujące elementy. Więcej szczegółów znajdziesz w <a href=\"#\" id=\"text-hint-guide\">przewodniku</a>."
+  },
+  "textHeadings": {
+    "message": "Nagłówki"
+  },
+  "textAllLevels": {
+    "message": "Wszystkie poziomy"
+  },
+  "textMatches": {
+    "message": "dopasowania"
+  },
+  "textMatch": {
+    "message": "dopasowanie"
+  },
+  "textReadingOn": {
+    "message": "Czytanie włączone"
+  },
+  "toastDownloadStarted": {
+    "message": "Pobieranie rozpoczęte: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Nie można pobrać tego zasobu (CORS lub nieobsługiwany typ)."
+  },
+  "ratingBannerText": {
+    "message": "Podoba Ci się Source Download? Wesprzyj naszą wizję open source recenzją w Chrome Web Store lub gwiazdką na GitHubie!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Recenzja"
+  },
+  "ratingBannerStar": {
+    "message": "★ Gwiazda"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ unikalnych wierszy",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ s temu",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ min temu",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Zrób zrzut ekranu obszaru"
+  },
+  "btnAreaDownload": {
+    "message": "Pobierz"
+  },
+  "btnAreaCopy": {
+    "message": "Kopiuj do schowka"
+  },
+  "btnAreaCancel": {
+    "message": "Anuluj"
+  },
+  "toastAreaCopied": {
+    "message": "Zrzut ekranu obszaru skopiowany do schowka"
+  },
+  "toastAreaDownloaded": {
+    "message": "Zrzut ekranu obszaru zapisany"
+  },
+  "statusFoundCssResources": {
+    "message": "Znaleziono $count$ zasobów, do których odwołuje się CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Skanowanie DOM nie powiodło się: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Indeksowanie zawartości pliku…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Sprawdzanie duplikatów obrazów…"
+  },
+  "statusWorking": {
+    "message": "Przetwarzanie…"
+  },
+  "filterMethodTitle": {
+    "message": "Filtruj według metody HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Filtruj według typu żądania"
+  },
+  "filterSortTitle": {
+    "message": "Sortuj zasoby"
+  },
+  "textModeTitle": {
+    "message": "Jak interpretowane jest pole zapytania"
+  },
+  "textKindTitle": {
+    "message": "Ogranicz do jednego typu elementu"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Poziom nagłówka"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+ — Wyrażenie regularne JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — dowolny selektor CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Przeszukaj przewodnik…"
+  },
+  "popupIntro": {
+    "message": "Kategorie liczone według <strong>plakietki paska narzędzi</strong>. Wyłącz jedną, aby przestać ją zliczać — plakietka natychmiast odzwierciedla tylko to, co śledzisz."
+  },
+  "popupHelpTitle": {
+    "message": "Jak korzystać z pełnego panelu"
+  },
+  "popupStep1": {
+    "message": "Otwórz DevTools dla strony, którą chcesz sprawdzić <div class=\"hint\"><kbd>F12</kbd> lub <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Kliknij kartę <strong>Source Download</strong> na pasku narzędzi DevTools"
+  },
+  "popupStep3": {
+    "message": "Przeglądaj, sprawdzaj i pobieraj zasoby — pojedynczo lub wszystkie na raz w formacie ZIP."
+  },
+  "popupNote": {
+    "message": "Uwaga: Chrome nie pozwala rozszerzeniom programowo otwierać DevTools, dlatego pełny zestaw narzędzi jest dostępny na pasku narzędzi DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Śledź wszystkie kategorie"
+  },
+  "popupLanguage": {
+    "message": "Język"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Odpowiedź binarna — pobierz, aby zobaczyć"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Ładowanie odpowiedzi…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Brak podglądu odpowiedzi — nie można pobrać treści."
+  },
+  "inspectorLoadingContent": {
+    "message": "Ładowanie treści…"
+  },
+  "inspectorNoPreview": {
+    "message": "Brak podglądu — nie można pobrać zawartości."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Zamknij wszystko"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Zamknij wszystkie otwarte karty"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Kliknij, aby powiększyć"
+  },
+  "inspectorViewSource": {
+    "message": "Zobacz źródło"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Pokaż znaczniki SVG z podświetlaniem składni"
+  },
+  "inspectorFormatting": {
+    "message": "Formatowanie…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Znajdź w treści…"
+  },
+  "findPreviousMatch": {
+    "message": "Poprzednie dopasowanie"
+  },
+  "findNextMatch": {
+    "message": "Następne dopasowanie"
+  },
+  "findClose": {
+    "message": "Zamknij"
+  },
+  "findShowRaw": {
+    "message": "Pokaż oryginalną (niesformatowaną) treść"
+  },
+  "findBeautify": {
+    "message": "Sformatuj/upiększ tę treść"
+  },
+  "btnRaw": {
+    "message": "Surowy"
+  },
+  "btnBeautify": {
+    "message": "Formatuj"
+  },
+  "videoHlsDetected": {
+    "message": "Wykryto strumień HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "Tego wideo nie można odtworzyć w przeglądarce"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome nie może bezpośrednio odtwarzać strumieni HLS. Możesz połączyć wszystkie segmenty <b>$NAME$</b> w jeden plik wideo MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Przeglądarka nie obsługuje tego formatu"
+  },
+  "btnMergeHls": {
+    "message": "Połącz segmenty i pobierz"
+  },
+  "toastHlsMerged": {
+    "message": "Połączono $COUNT$ segmentów w $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "rozmiar nieznany"
+  },
+  "progressFetching": {
+    "message": "Pobieranie $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Tworzę ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "Zapisano ZIP: $FETCHED$ z $TOTAL$ zasobów ($SKIPPED$ nie powiodło się)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Ponów: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Ponów pobieranie"
+  },
+  "searchRegexHint": {
+    "message": "Wyszukiwanie regex aktywne — ujmij zapytanie w /wzorzec/i"
+  },
+  "textIncludeInExports": {
+    "message": "Uwzględnij w eksporcie"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Połącz każdą migawkę w jedną zdeduplikowaną tabelę — to właśnie jest eksportowane"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Przeglądaj wcześniejsze migawki tej tabeli"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Pobierz tę tabelę w formacie CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Migawka $INDEX$ — $TIME$ ($COUNT$ wierszy)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Przełącz zaznaczenie do pobierania zbiorczego"
+  },
+  "cardDownloadTitle": {
+    "message": "Pobierz plik"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Poprzednie pobieranie nie powiodło się — kliknij, aby spróbować ponownie"
+  },
+  "btnThemeLight": {
+    "message": "Przełącz na jasny motyw"
+  },
+  "btnThemeDark": {
+    "message": "Przełącz na ciemny motyw"
+  },
+  "guideTitle": {
+    "message": "Source Download — podręcznik użytkownika"
+  },
+  "guideEmpty": {
+    "message": "Żadne sekcje przewodnika nie pasują do Twojego wyszukiwania."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — w 100% bez zależności.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Pomniejsz (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "Powiększ (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Zresetuj powiększenie (0)"
+  },
+  "lightboxClose": {
+    "message": "Zamknij (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Przeciągnij, aby zmienić rozmiar"
+  },
+  "ratingDismissTitle": {
+    "message": "Odrzuć"
+  },
+  "inspectorResourceTitle": {
+    "message": "Zasób"
+  },
+  "guideSecGettingStarted": {
+    "message": "Pierwsze kroki"
+  },
+  "guideSecCategories": {
+    "message": "Kategorie"
+  },
+  "guideSecSearchFilters": {
+    "message": "Wyszukiwanie i filtry"
+  },
+  "guideSecGridView": {
+    "message": "Widok siatki i listy"
+  },
+  "guideSecInspect": {
+    "message": "Sprawdź zasób"
+  },
+  "guideSecDownloading": {
+    "message": "Pobieranie"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Tekst i tabele"
+  },
+  "guideSecCaptions": {
+    "message": "Napisy i napisy dialogowe"
+  },
+  "guideSecSourceMaps": {
+    "message": "Mapy źródłowe"
+  },
+  "guideSecDupes": {
+    "message": "Zduplikowane obrazy"
+  },
+  "guideSecVideoHls": {
+    "message": "Wideo: tryb zastępczy i HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Wskazówki dla zaawansowanych"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Kliknij kartę <strong>Source Download</strong> na pasku narzędzi DevTools (naciśnij <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, a następnie wybierz kartę na pasku narzędzi DevTools). Chrome nie pozwala rozszerzeniom na automatyczne otwieranie DevTools, dlatego panel znajduje się właśnie tam. Wyskakujące okienko ikony na pasku narzędzi pozwala wybrać, które kategorie zasilają licznik na plakietce ikony. Przycisk słońca/księżyca na pasku narzędzi panelu przypina jasny lub ciemny motyw niezależnie od Chrome; ten wybór jest zapamiętywany."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Pionowe karty po lewej stronie grupują każdy przechwycony zasób w 17 dedykowanych kategoriach według typu: Obrazy, Wideo, Dźwięk, Napisy, Dokumenty, Czcionki, Mapy źródłowe, WASM, SVG, API, Pliki cookie, Pamięć i inne. Każda karta pokazuje licznik na żywo. Jednocześnie wyświetlana jest tylko jedna kategoria; przełączenie resetuje wszystkie filtry, więc to, co widzisz, zawsze odpowiada karcie."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Pasek wyszukiwania filtruje według nazwy, adresu URL, typu, tekstu alternatywnego lub tytułu. Umieść zapytanie między <kbd>/…/</kbd>, aby użyć wyrażenia regularnego, np. <code>/\\.(png|jpg)$/</code>. Pod paskiem narzędzi pasek filtrów zmienia się w zależności od kategorii: zakresy rozmiarów i wymiarów dla multimediów, metoda HTTP i typ żądania dla API, a także sortowanie i kierunek."
+  },
+  "guideSecGridViewContent": {
+    "message": "Przełączaj między zwartą siatką (małe miniatury) a szczegółową listą za pomocą przycisków obok paska wyszukiwania. Twój wybór jest zapamiętywany pomiędzy sesjami. W widoku listy pola wyboru umożliwiają wybranie poszczególnych zasobów do pobrania zbiorczego."
+  },
+  "guideSecInspectContent": {
+    "message": "Kliknij dowolny zasób, aby otworzyć go w panelu inspekcji po prawej stronie. Każdy otwarty plik staje się kartą, dzięki czemu możesz porównać kilka zasobów obok siebie — najnowszy otwiera się po lewej stronie. Dostępne są wyspecjalizowane przeglądarki obrazów, wideo, dźwięku, czcionek, SVG oraz tekstu/kodu (z przełącznikiem Formatuj). API pokazują podzielony widok: odpowiedź po lewej, szczegóły żądania (metoda, status, nagłówki, parametry zapytania i treść) po prawej."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Pobierz widok</strong> zapisuje aktualnie widoczne zasoby (aktywna kategoria + wyszukiwanie + filtry) jako ZIP; gdy filtry są aktywne, przycisk zmienia nazwę na <em>Pobierz przefiltrowane (N)</em>. Najedź kursorem na dowolny przycisk pobierania, aby przed kliknięciem zobaczyć szacowany rozmiar archiwum. <strong>Pobierz wybrane</strong> pobiera tylko zaznaczone elementy. <strong>Pobierz wszystko</strong> zbiera każdy wykryty zasób do pliku ZIP o strukturze folderów. Nieudane pobierania są automatycznie ponawiane i można je ponowić z menu kontekstowego. <strong>Eksportuj</strong> zapisuje widoczną listę jako JSON lub CSV albo zapisuje dziennik sieciowy Chrome jako plik HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Przycisk powiększania otwiera multimedia w pełnowymiarowym lightboxie, w którym możesz przesuwać, przeciągając, powiększać za pomocą kółka myszy, przycisków ekranowych lub klawiatury (<kbd>+</kbd>/<kbd>-</kbd>, aby powiększyć, <kbd>0</kbd>, aby zresetować, <kbd>Esc</kbd>, aby zamknąć)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Kategoria <strong>Tekst</strong> to czytelna kopia strony aktualizowana na żywo. Przechwytuje każdy element zawierający tekst — nagłówki, akapity, elementy list, przyciski, <code>div</code>/<code>span</code> i inne — w kolejności DOM i kontynuuje skanowanie, gdy tryb <strong>Na żywo</strong> jest włączony.</p><p>Pole <strong>Zapytanie</strong> działa na cztery sposoby, wybierane z menu obok: <strong>Zawiera</strong> i <strong>Wyrażenie regularne</strong> filtrują już przechwycony tekst, a <strong>Selektor CSS</strong> i <strong>XPath</strong> są uruchamiane na aktywnej stronie, dzięki czemu mogą dotrzeć do wszystkiego w DOM. XPath akceptuje także wyrażenia zwracające wartość zamiast elementów, takie jak <code>count(//a)</code> lub <code>//@href</code>. Komunikat strony o błędnym zapytaniu jest wyświetlany obok pola. <strong>Element</strong> zawęża wynik do pojedynczego tagu i pokazuje liczbę każdego tagu znalezionego na stronie. Wyczyszczenie pola zapytania (lub naciśnięcie <strong>Wyczyść</strong>) powoduje powrót do <em>Wszystkich elementów</em> i ponowne przechwycenie strony — nigdy nie musisz ręcznie resetować listy rozwijanej.</p><p>Tryb <strong>Czytanie</strong> ukrywa tagi, pola wyboru i ścieżki lokalizacji, dzięki czemu strumień czyta się jak dokument. Tabele przechowują ograniczoną historię migawek, dzięki czemu tabele dynamiczne (SPA) nigdy nie zostaną utracone. Naciśnij <strong>Pokaż wszystkie wiersze</strong> w tabeli, aby połączyć każdą migawkę w jeden zdeduplikowany widok — dokładnie to zawiera eksport. Eksportuj jako <strong>TXT</strong> (czytelna strona), <strong>MD</strong> (Markdown, wraz z tabelami) lub tabele jako CSV, HTML albo prawdziwy wieloarkuszowy skoroszyt <strong>XLSX</strong>. Zaznaczone elementy mają pierwszeństwo; w przeciwnym razie eksportowane jest wszystko, co aktualnie widoczne.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML i inne pliki napisów — w tym źródła <code>&lt;track&gt;</code> — trafiają na własną kartę <strong>Napisy</strong> zamiast mieszać się z dokumentami."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Pliki <code>.map</code> i treści JSON wyglądające jak mapy źródłowe (zawierają <code>mappings</code> i <code>sources</code>) są pogrupowane w sekcji <strong>Mapy źródłowe</strong>, z przeglądarką JSON i funkcją Formatuj, więc nie zaśmiecają już karty JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "Na karcie Obrazy panel oblicza skróty przechwyconych bajtów i oznacza identyczne pliki. Filtr <strong>Ukryj duplikaty</strong> zachowuje pierwszą kopię z każdego zestawu, dzięki czemu plik ZIP widoku nie zawiera dwukrotnie tej samej miniatury."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Strumienie, których przeglądarka nie może odtwarzać natywnie (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, nieznane kodeki), pokazują rozwiązanie zastępcze zamiast czarnego odtwarzacza. W przypadku HLS możesz połączyć segmenty w jeden plik wideo bezpośrednio z panelu lub pobrać oryginalny manifest."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dynamiczne odpowiedzi <strong>API</strong> (XHR/fetch) nie są deduplikowane według adresu URL — każda odpowiedź pozostaje na liście (z limitem FIFO), dzięki czemu można porównywać powtarzające się żądania. Zasoby statyczne są deduplikowane. Użyj <strong>Odśwież</strong>, aby ponownie przeskanować bieżący DOM, i załaduj stronę ponownie przy otwartym panelu, aby przechwycić wszystkie żądania sieciowe, także te wywołane przed przełączeniem kart."
+  },
+  "toolArrow": {
+    "message": "Narzędzie strzałki"
+  },
+  "toolRect": {
+    "message": "Narzędzie prostokąta"
+  },
+  "toolText": {
+    "message": "Narzędzie tekstu"
+  },
+  "toolUndo": {
+    "message": "Cofnij (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Ponów (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Kolor"
+  },
+  "badgeStrokeSize": {
+    "message": "Rozmiar: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Rozmiar czcionki: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Nagraj wideo / GIF obszaru"
+  },
+  "btnRecStart": {
+    "message": "Rozpocznij nagrywanie"
+  },
+  "btnRecPause": {
+    "message": "Wstrzymaj"
+  },
+  "btnRecResume": {
+    "message": "Wznów"
+  },
+  "btnRecStop": {
+    "message": "Zakończ i pobierz"
+  },
+  "btnRecCancel": {
+    "message": "Anuluj"
+  },
+  "toastRecSaved": {
+    "message": "Nagranie obszaru zapisane"
+  },
+  "toastRecCancelled": {
+    "message": "Anulowano nagrywanie wideo"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Nie przyznano uprawnień do nagrywania ekranu"
+  },
+  "btnPopupRecordArea": {
+    "message": "Wideo / GIF z obszaru"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Zrzut ekranu obszaru"
+  },
+  "contextMenuPickColor": {
+    "message": "Wybierz kolor z ekranu"
+  },
+  "btnPopupPickColor": {
+    "message": "Próbnik kolorów"
+  },
+  "colorPickerTitle": {
+    "message": "Próbnik kolorów"
+  },
+  "btnColorPickAgain": {
+    "message": "Wybierz inny kolor"
+  },
+  "toastColorCopied": {
+    "message": "Kolor skopiowany do schowka"
+  },
+  "toastProgressCapturing": {
+    "message": "Przechwytywanie całej strony... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Łączenie obrazu..."
+  },
+  "modalExportTitle": {
+    "message": "Zrzut ekranu całej strony jest gotowy"
+  },
+  "btnExportPng": {
+    "message": "Pobierz PNG"
+  },
+  "btnExportJpg": {
+    "message": "Pobierz JPG"
+  },
+  "btnExportPdf": {
+    "message": "Zapisz jako PDF"
+  },
+  "btnExportCopy": {
+    "message": "Kopiuj do schowka"
+  },
+  "btnExportGenerating": {
+    "message": "Generowanie..."
+  },
+  "toastPdfGenerated": {
+    "message": "Dokument PDF zapisany."
+  },
+  "settingNamingPatterns": {
+    "message": "Wzorce nazewnictwa plików"
+  },
+  "settingVideoFormat": {
+    "message": "Domyślny format wideo"
+  },
+  "settingNamingPreview": {
+    "message": "Podgląd:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Generowanie GIF-a, proszę czekać..."
+  },
+  "settingGifResolution": {
+    "message": "Domyślna rozdzielczość GIF"
+  },
+  "optGifOriginal": {
+    "message": "Oryginał (1:1 rozdzielczość natywna — pełne 3K/4K, bez skalowania w dół)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (maks. 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (maks. 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (maks. 854px — szybciej i mniejszy rozmiar)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Format GIF obsługuje maksymalny czas trwania nagrania wynoszący 1 minutę (60 s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Nagrywanie ekranu (wideo i GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Nagraj dowolny obszar ekranu jako MP4, WebM lub animowany GIF. Nagrania GIF oferują natywną rozdzielczość 1:1 oraz profile 1080p, 720p i 480p z szacunkowymi rozmiarami plików na żywo. Maksymalny czas nagrywania GIF to 1 minuta (60 s), aby zapewnić optymalną wydajność przeglądarki."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Osiągnięto maksymalny czas GIF-a wynoszący 1 minutę (60 s). Generowanie GIF-a..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Maks. 1 min (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Domyślna liczba klatek GIF (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Płynnie (bardzo płynny ruch, większy rozmiar)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standardowo (zalecane dla sieci i równowagi)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Kompaktowo / mem (ruch skokowy, mały rozmiar)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Poklatkowo / wolno (krok po kroku „klik-klik”, bardzo mały rozmiar)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Prezentacja (1 klatka na sekundę, minimalny rozmiar)"
+  },
+  "popupRightClickHint": {
+    "message": "Kliknij prawym przyciskiem myszy w dowolnym miejscu strony internetowej, aby włączyć opcję Nagrywanie ekranu (wideo/GIF) i Próbnik kolorów."
+  },
+  "toastElementZappedAd": {
+    "message": "Reklama / element iframe ukryty na czas tej sesji.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Obraz skopiowany do schowka",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Zamknij (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Ustawienia zapisane",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Pobierz plik i otwórz go w programie VLC lub innym odtwarzaczu multimediów.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Brak podglądu dla tego typu zasobu",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Pobierz oryginał",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Wskazówka: otwórz pobrany plik w programie VLC lub dowolnym odtwarzaczu na komputer — odtwarza praktycznie każdy format.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Tworzenie archiwum ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Twoja przeglądarka nie obsługuje interfejsu API EyeDropper.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Przeciągnij pasek narzędzi",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Przełącz format: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Rozdzielczość GIF-a: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Liczba klatek GIF-a: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Szacowany rozmiar GIF-a: ok. $size$ MB (dla 10 s), do ok. $max$ MB przy maksymalnym czasie 60 s.\nLiczba klatek: $fps$ FPS.\nNagrywanie GIF-ów jest ograniczone do maksymalnie 1 minuty (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Kopiuj $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Podgląd zrzutu ekranu",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — uniwersalne odtwarzanie w WhatsApp, Telegram, Jira, Apple i Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (animowany obraz — idealny do README, Jira, dokumentacji i komunikatorów)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — otwarty format internetowy)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Nie znaleziono aktywnej karty.",
+    "description": "No active tab found."
+  }
+}

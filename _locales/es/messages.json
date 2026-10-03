@@ -16,19 +16,19 @@
     "description": "Ocultar elemento contextual"
   },
   "contextMenuUndoZap": {
-    "message": "Restaurar último elemento oculto",
+    "message": "Restaurar el último elemento oculto",
     "description": "Restaurar elemento oculto"
   },
   "contextMenuResetZap": {
-    "message": "Restaurar todos los elementos ocultos",
+    "message": "Restablecer todos los elementos ocultos",
     "description": "Restaurar todos los elementos ocultos"
   },
   "contextMenuCapturePage": {
-    "message": "Captura de pantalla de página completa",
+    "message": "Capturar la página completa",
     "description": "Captura de pantalla de página completa"
   },
   "contextMenuPageArchive": {
-    "message": "Descargar archivo de página sin conexión",
+    "message": "Descargar archivo de la página sin conexión",
     "description": "Descargar archivo de página"
   },
   "catAll": {
@@ -59,7 +59,7 @@
     "message": "JS"
   },
   "catSourcemaps": {
-    "message": "Mapas de código"
+    "message": "Mapas de origen"
   },
   "catFonts": {
     "message": "Fuentes"
@@ -77,7 +77,7 @@
     "message": "Manifiestos"
   },
   "catText": {
-    "message": "Texto y Tablas"
+    "message": "Texto"
   },
   "catOther": {
     "message": "Otros"
@@ -113,22 +113,22 @@
     "message": "Guía de uso"
   },
   "btnCaptureFullPage": {
-    "message": "Captura de Página Completa"
+    "message": "Captura de página completa"
   },
   "btnOfflineArchive": {
-    "message": "Guardar HTML Único"
+    "message": "Guardar como un solo archivo HTML"
   },
   "filterMinKb": {
-    "message": "Mín KB"
+    "message": "Mín. KB"
   },
   "filterMaxKb": {
-    "message": "Máx KB"
+    "message": "Máx. KB"
   },
   "filterMinWidth": {
-    "message": "Ancho mín px"
+    "message": "Ancho mín. (px)"
   },
   "filterMinHeight": {
-    "message": "Alto mín px"
+    "message": "Alto mín. (px)"
   },
   "filterSortName": {
     "message": "Ordenar por nombre"
@@ -170,7 +170,7 @@
     "message": "En vivo activado"
   },
   "textLiveOff": {
-    "message": "En vivo desc."
+    "message": "En vivo desactivado"
   },
   "textScanNow": {
     "message": "Escanear ahora"
@@ -236,7 +236,7 @@
     "message": "Texto alternativo"
   },
   "ratingPrompt": {
-    "message": "¿Te resulta útil Source Download? ¡Apoya nuestra visión de código abierto dejando una reseña o una estrella en GitHub!"
+    "message": "¿Le resulta útil Source Download? Apoye nuestra visión de código abierto dejando una reseña en Chrome Web Store o una estrella en GitHub."
   },
   "ratingReview": {
     "message": "★ Dejar reseña"
@@ -248,25 +248,25 @@
     "message": "Descartar"
   },
   "toastElementZapped": {
-    "message": "Elemento oculto para esta sesión."
+    "message": "Elemento oculto durante esta sesión."
   },
   "toastElementRestored": {
     "message": "Elemento restaurado."
   },
   "toastAllElementsRestored": {
-    "message": "Todos los elementos ocultos han sido restaurados."
+    "message": "Todos los elementos ocultos se han restaurado."
   },
   "toastScreenshotCapturing": {
-    "message": "Capturando captura de pantalla completa…"
+    "message": "Capturando la página completa…"
   },
   "toastScreenshotCaptured": {
-    "message": "Captura de pantalla completa guardada."
+    "message": "Captura de la página completa guardada."
   },
   "toastArchiveCreated": {
-    "message": "Archivo HTML de un solo archivo guardado."
+    "message": "Archivo HTML de un solo fichero guardado."
   },
   "brandSignature": {
-    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+    "message": "Creado por Turan Burak Yeşilyurt (2run.dev)"
   },
   "tabImages": {
     "message": "Imágenes y SVG"
@@ -281,13 +281,13 @@
     "message": "Texto y Tablas"
   },
   "heroScreenshotTitle": {
-    "message": "Captura de Página Completa"
+    "message": "Captura de página completa"
   },
   "heroScreenshotDesc": {
     "message": "Unión fluida • Ocultación de cabeceras fijas"
   },
   "heroArchiveTitle": {
-    "message": "HTML de Archivo Único"
+    "message": "Archivo HTML único"
   },
   "heroArchiveDesc": {
     "message": "CSS e imágenes incrustadas • Listo sin conexión"
@@ -302,7 +302,7 @@
     "message": "Descargar"
   },
   "searchPlaceholder": {
-    "message": "Filtrar por nombre, URL, tipo o /regex/…"
+    "message": "Filtrar por nombre, URL, etiqueta, MIME o /regex/…"
   },
   "viewGrid": {
     "message": "Vista de cuadrícula"
@@ -353,7 +353,7 @@
     "message": "filtrados"
   },
   "statusSelected": {
-    "message": "seleccionado"
+    "message": "seleccionados"
   },
   "statusDupes": {
     "message": "duplicados ocultos"
@@ -386,7 +386,7 @@
     "message": "Limpiar"
   },
   "toastRefreshComplete": {
-    "message": "Escaneo de página completado: $COUNT$ nuevos recursos",
+    "message": "Escaneo de página completado: $count$ nuevos recursos",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "$COUNT$ bloque(s) copiado(s)",
+    "message": "$count$ bloque(s) copiado(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "Nada para exportar"
   },
   "toastExportedTxt": {
-    "message": "$COUNT$ bloque(s) exportado(s) como TXT",
+    "message": "$count$ bloque(s) exportado(s) como TXT",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "$COUNT$ bloque(s) exportado(s) como Markdown",
+    "message": "$count$ bloque(s) exportado(s) como Markdown",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "Tabla exportada como XLSX"
   },
   "toastExportedTablesZip": {
-    "message": "$COUNT$ tabla(s) exportada(s) como $FORMAT$",
+    "message": "$count$ tabla(s) exportada(s) como $format$",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "$COUNT$ hoja(s) exportada(s) como XLSX",
+    "message": "$count$ hoja(s) exportada(s) como XLSX",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -471,7 +471,7 @@
     "message": "Seleccione al menos un recurso primero."
   },
   "toastZipSaved": {
-    "message": "ZIP guardado: $FETCHED$ de $TOTAL$ recursos",
+    "message": "ZIP guardado: $fetched$ de $total$ recursos",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "Error en ZIP: $ERROR$",
+    "message": "Error en ZIP: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR exportado ($COUNT$ entradas)",
+    "message": "HAR exportado ($count$ entradas)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "Ventana de inspección de DevTools no disponible."
   },
   "toastScreenshotError": {
-    "message": "Error en captura: $ERROR$",
+    "message": "Error en captura: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -517,10 +517,10 @@
     }
   },
   "toastArchiveCreating": {
-    "message": "Creando archivo de página sin conexión…"
+    "message": "Creando el archivo de la página sin conexión…"
   },
   "toastArchiveError": {
-    "message": "Error de archivo: $ERROR$",
+    "message": "Error de archivado: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "No se pudo dar formato — mostrando original."
   },
   "emptySearchTitle": {
-    "message": "Sin coincidencias para \"$QUERY$\"",
+    "message": "Sin coincidencias para \"$query$\"",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -565,7 +565,7 @@
     "message": "Nada coincide con los filtros actuales."
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ bloques",
+    "message": "$count$ bloques",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ palabras",
+    "message": "$count$ palabras",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ caracteres",
+    "message": "$count$ caracteres",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ tabla(s) · $ROWS$ filas",
+    "message": "$tables$ tabla(s) · $rows$ filas",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "$COUNT$ seleccionados",
+    "message": "$count$ seleccionados — solo se exportan estos",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "Tabla — $COUNT$ fila(s) en pantalla",
+    "message": "Tabla — $count$ fila(s) en pantalla",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "Tabla — todas las $COUNT$ filas",
+    "message": "Tabla — todas las $count$ filas",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ capturas",
+    "message": "$count$ instantánea(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "actualizado $TIME$",
+    "message": "actualizado $time$",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "Mostrar las $COUNT$ filas",
+    "message": "Mostrar las $count$ filas",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "Mostrando todas las filas"
   },
   "textTableHistory": {
-    "message": "Historial ($COUNT$)",
+    "message": "Historial ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ imágenes duplicadas",
+    "message": "$count$ imágenes duplicadas",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -713,7 +713,7 @@
     "message": "Vista previa de fuente"
   },
   "inspectorBeautify": {
-    "message": "Embellecer"
+    "message": "Formatear"
   },
   "inspectorOriginal": {
     "message": "Original"
@@ -749,10 +749,10 @@
     "message": "coincidencia"
   },
   "textReadingOn": {
-    "message": "Lectura act."
+    "message": "Lectura activada"
   },
   "toastDownloadStarted": {
-    "message": "Descarga iniciada: $NAME$",
+    "message": "Descarga iniciada: $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -764,7 +764,7 @@
     "message": "No se pudo obtener este recurso (CORS o tipo no compatible)."
   },
   "ratingBannerText": {
-    "message": "¿Te gusta Source Download? ¡Apoya nuestro proyecto de código abierto con una reseña en Chrome Web Store o una estrella en GitHub!"
+    "message": "¿Le gusta Source Download? Apoye nuestro proyecto de código abierto con una reseña en Chrome Web Store o una estrella en GitHub."
   },
   "ratingBannerReview": {
     "message": "★ Calificar"
@@ -773,7 +773,7 @@
     "message": "★ Dar estrella"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ fila(s) única(s)",
+    "message": "$count$ fila(s) única(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "hace $COUNT$s",
+    "message": "hace $count$s",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "hace $COUNT$m",
+    "message": "hace $count$m",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,7 +800,7 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "Capturar captura de área"
+    "message": "Capturar un área de la pantalla"
   },
   "btnAreaDownload": {
     "message": "Descargar"
@@ -812,13 +812,13 @@
     "message": "Cancelar"
   },
   "toastAreaCopied": {
-    "message": "Captura de área copiada al portapapeles"
+    "message": "Captura del área copiada al portapapeles"
   },
   "toastAreaDownloaded": {
-    "message": "Captura de área guardada"
+    "message": "Captura del área guardada"
   },
   "statusFoundCssResources": {
-    "message": "Se encontraron $COUNT$ recurso(s) referenciados desde CSS",
+    "message": "Se encontraron $count$ recurso(s) referenciados desde CSS",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "Fallo en el escaneo DOM: $ERROR$",
+    "message": "Fallo en el escaneo DOM: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -875,19 +875,19 @@
     "message": "Buscar en la guía…"
   },
   "popupIntro": {
-    "message": "Categorías contadas por la <strong>insignia de la barra</strong>. Desactiva una para dejar de contarla."
+    "message": "Categorías contadas por la <strong>insignia de la barra</strong>. Desactive una para dejar de contarla."
   },
   "popupHelpTitle": {
     "message": "Cómo usar el panel completo"
   },
   "popupStep1": {
-    "message": "Abre DevTools en la página que deseas inspeccionar <div class=\"hint\"><kbd>F12</kbd> o <kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+    "message": "Abra DevTools en la página que desee inspeccionar <div class=\"hint\"><kbd>F12</kbd> o <kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
   },
   "popupStep2": {
-    "message": "Haz clic en la pestaña <strong>Source Download</strong> en la barra de DevTools"
+    "message": "Haga clic en la pestaña <strong>Source Download</strong> en la barra de DevTools"
   },
   "popupStep3": {
-    "message": "Explora, inspecciona y descarga recursos, individualmente o todos juntos en ZIP."
+    "message": "Explore, inspeccione y descargue recursos, de forma individual o todos juntos en un ZIP."
   },
   "popupNote": {
     "message": "Nota: Chrome no permite que las extensiones abran DevTools mediante código; por eso se accede a la suite completa desde la barra de DevTools."
@@ -920,10 +920,10 @@
     "message": "Cerrar todas las pestañas abiertas"
   },
   "inspectorClickToEnlarge": {
-    "message": "Haz clic para ampliar"
+    "message": "Haga clic para ampliar"
   },
   "inspectorViewSource": {
-    "message": "Ver fuente"
+    "message": "Ver código fuente"
   },
   "inspectorViewSourceTitle": {
     "message": "Mostrar el marcado SVG con resaltado de sintaxis"
@@ -947,19 +947,19 @@
     "message": "Mostrar contenido original (sin formato)"
   },
   "findBeautify": {
-    "message": "Formatear / embellecer este contenido"
+    "message": "Formatear este contenido"
   },
   "btnRaw": {
     "message": "Sin formato"
   },
   "btnBeautify": {
-    "message": "Embellecer"
+    "message": "Formatear"
   },
   "videoHlsDetected": {
     "message": "Transmisión HLS (m3u8) detectada"
   },
   "videoCannotPlay": {
-    "message": "Este video no se puede reproducir en el navegador"
+    "message": "Este vídeo no se puede reproducir en el navegador"
   },
   "videoHlsNotice": {
     "message": "Chrome no puede reproducir transmisiones HLS directamente. Puede combinar todos los segmentos de <b>$NAME$</b> en un solo archivo MP4/TS.",
@@ -1043,10 +1043,10 @@
     "message": "Incluir en las exportaciones"
   },
   "tableMergeSnapshotsTitle": {
-    "message": "Combina cada captura en una sola tabla sin duplicados; esto es lo que se exporta"
+    "message": "Combinar todas las instantáneas en una sola tabla sin duplicados; esta es la que se exporta"
   },
   "tableBrowseSnapshotsTitle": {
-    "message": "Examinar capturas anteriores de esta tabla"
+    "message": "Examinar instantáneas anteriores de esta tabla"
   },
   "tableDownloadCsvTitle": {
     "message": "Descargar esta tabla como CSV"
@@ -1072,7 +1072,7 @@
     "message": "Descargar archivo"
   },
   "cardRetryFailedTitle": {
-    "message": "Falló la descarga anterior: haz clic para reintentar"
+    "message": "Falló la descarga anterior: haga clic para reintentar"
   },
   "btnThemeLight": {
     "message": "Cambiar al tema claro"
@@ -1107,7 +1107,7 @@
     "message": "Cerrar (Esc)"
   },
   "resizerTitle": {
-    "message": "Arrastra para cambiar el tamaño"
+    "message": "Arrastre para cambiar el tamaño"
   },
   "ratingDismissTitle": {
     "message": "Descartar"
@@ -1140,7 +1140,7 @@
     "message": "Texto y tablas"
   },
   "guideSecCaptions": {
-    "message": "Subtítulos y transcripciones"
+    "message": "Subtítulos y leyendas"
   },
   "guideSecSourceMaps": {
     "message": "Mapas de origen (Source maps)"
@@ -1149,25 +1149,25 @@
     "message": "Imágenes duplicadas"
   },
   "guideSecVideoHls": {
-    "message": "Fallback de video y HLS"
+    "message": "Alternativa de vídeo y HLS"
   },
   "guideSecPowerTips": {
     "message": "Consejos para usuarios avanzados"
   },
   "guideSecGettingStartedContent": {
-    "message": "Haga clic en la pestaña <strong>Source Download</strong> de la barra de herramientas de DevTools (presione <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> y seleccione la pestaña en las herramientas de desarrollo). Chrome no permite que las extensiones abran DevTools automáticamente, razón por la cual el panel se ubica allí. La ventana emergente del icono de la barra de herramientas le permite elegir qué categorías alimentan el contador insignia del icono. El botón sol/luna de la barra del panel fija un tema claro u oscuro con total independencia de Chrome; su elección se recuerda permanentemente."
+    "message": "Haga clic en la pestaña <strong>Source Download</strong> de la barra de herramientas de DevTools (presione <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>I</kbd> y luego seleccione la pestaña). Chrome no permite que las extensiones abran DevTools automáticamente, razón por la cual el panel se ubica allí. La ventana emergente del icono de la barra de herramientas le permite elegir qué categorías alimentan el contador de la insignia del icono. El botón sol/luna de la barra del panel fija un tema claro u oscuro con total independencia de Chrome; su elección se recuerda permanentemente."
   },
   "guideSecCategoriesContent": {
-    "message": "Las pestañas verticales de la izquierda agrupan cada recurso capturado en 17 categorías dedicadas según su tipo: Imágenes, Videos, Audio, Subtítulos, Documentos, Fuentes, Mapas de origen (Source maps), WASM, SVG, APIs, Cookies, Almacenamiento y más. Cada pestaña muestra un recuento en tiempo real. Solo se visualiza una categoría a la vez; al cambiar de pestaña se restablecen todos los filtros, de modo que lo visible siempre coincida exactamente con la categoría."
+    "message": "Las pestañas verticales de la izquierda agrupan cada recurso capturado en 17 categorías dedicadas según su tipo: Imágenes, Vídeos, Audio, Subtítulos, Documentos, Fuentes, Mapas de origen (Source maps), WASM, SVG, APIs, Cookies, Almacenamiento y más. Cada pestaña muestra un recuento en tiempo real. Solo se visualiza una categoría a la vez; al cambiar de pestaña se restablecen todos los filtros, de modo que lo visible siempre coincida exactamente con la categoría."
   },
   "guideSecSearchFiltersContent": {
     "message": "La barra de búsqueda filtra por nombre, URL, tipo, texto alternativo o título. Escriba su consulta entre <kbd>/…/</kbd> para utilizar una expresión regular, por ejemplo <code>/\\.(png|jpg)$/</code>. Debajo de la barra de herramientas, la barra de filtros varía según la categoría: rangos de tamaño y dimensiones para contenido multimedia, método HTTP y tipo de solicitud para APIs, además de orden y dirección."
   },
   "guideSecGridViewContent": {
-    "message": "Alterne entre una cuadrícula compacta (miniaturas pequeñas) y una lista detallada mediante los botones situados junto a la barra de búsqueda. Su preferencia se mantiene entre sesiones. En la vista de lista, las casillas de verificación le permiten seleccionar recursos específicos para una descarga masiva."
+    "message": "Alterne entre una cuadrícula compacta (miniaturas pequeñas) y una lista detallada mediante los botones situados junto a la barra de búsqueda. Su preferencia se mantiene entre sesiones. En la vista de lista, las casillas de verificación le permiten seleccionar recursos específicos para una descarga por lotes."
   },
   "guideSecInspectContent": {
-    "message": "Haga clic en cualquier recurso para abrirlo en el panel de inspección de la derecha. Cada archivo abierto se convierte en una pestaña para que pueda comparar varios recursos en paralelo; el más reciente se abrirá a la izquierda. Existen visores especializados para imágenes, video, audio, fuentes, SVG y texto/código (con selector de formateo estético Beautify). Las APIs disponen de una vista dividida: respuesta a la izquierda y detalles de la solicitud (método, estado, cabeceras, parámetros de consulta y cuerpo) a la derecha."
+    "message": "Haga clic en cualquier recurso para abrirlo en el panel de inspección de la derecha. Cada archivo abierto se convierte en una pestaña para que pueda comparar varios recursos en paralelo; el más reciente se abrirá a la izquierda. Existen visores especializados para imágenes, vídeo, audio, fuentes, SVG y texto/código (con opción para formatear). Las APIs disponen de una vista dividida: respuesta a la izquierda y detalles de la solicitud (método, estado, cabeceras, parámetros de consulta y cuerpo) a la derecha."
   },
   "guideSecDownloadingContent": {
     "message": "<strong>Descargar vista</strong> guarda los recursos visibles actuales (categoría activa + búsqueda + filtros) en un archivo ZIP; su etiqueta cambia automáticamente a <em>Descargar filtrados (N)</em> si hay filtros activos. Pase el cursor sobre cualquier botón de descarga para consultar el tamaño estimado del archivo antes de hacer clic. <strong>Descargar seleccionados</strong> descarga exclusivamente los elementos marcados. <strong>Descargar todo</strong> recopila todos los recursos descubiertos en un ZIP estructurado por carpetas. Las descargas fallidas se reintentan automáticamente y pueden relanzarse desde el menú contextual. <strong>Exportar</strong> guarda la lista visible como JSON o CSV, o vuelca el registro de red de Chrome como un archivo HAR."
@@ -1182,25 +1182,25 @@
     "message": "Los archivos WebVTT, SRT, TTML y otros formatos de subtítulos —incluidas las fuentes <code>&lt;track&gt;</code>— se organizan en su propia pestaña <strong>Subtítulos</strong> en lugar de mezclarse con los documentos generales."
   },
   "guideSecSourceMapsContent": {
-    "message": "Los archivos <code>.map</code> y las respuestas JSON estructuradas como mapas de origen (aquellas con <code>mappings</code> y <code>sources</code>) se agrupan en <strong>Mapas de origen</strong> con visor JSON y formateador Beautify, sin sobrecargar la pestaña general de JSON."
+    "message": "Los archivos <code>.map</code> y las respuestas JSON estructuradas como mapas de origen (aquellas con <code>mappings</code> y <code>sources</code>) se agrupan en <strong>Mapas de origen</strong> con visor JSON y formateador, sin sobrecargar la pestaña general de JSON."
   },
   "guideSecDupesContent": {
     "message": "En la pestaña Imágenes, el panel analiza los hashes de los bytes capturados y señala los archivos idénticos. El filtro <strong>Ocultar duplicados</strong> conserva la primera copia de cada grupo para que la descarga en ZIP no incluya miniaturas repetidas."
   },
   "guideSecVideoHlsContent": {
-    "message": "Los flujos de transmisión que el navegador no puede reproducir de forma nativa (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, códecs no compatibles) presentan una pantalla alternativa en lugar de un reproductor en negro. En el caso de HLS, puede fusionar los segmentos en un único archivo de video MP4 directamente desde el panel o descargar el manifiesto original."
+    "message": "Los flujos de transmisión que el navegador no puede reproducir de forma nativa (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, códecs no compatibles) presentan una pantalla alternativa en lugar de un reproductor en negro. En el caso de HLS, puede fusionar los segmentos en un único archivo de vídeo MP4 directamente desde el panel o descargar el manifiesto original."
   },
   "guideSecPowerTipsContent": {
-    "message": "Las respuestas de <strong>APIs</strong> dinámicas (XHR/fetch) no se desduplican por URL: cada respuesta se conserva en la lista (cola FIFO con límite) para permitir comparar peticiones sucesivas. Los recursos estáticos sí se desduplican. Utilice <strong>Actualizar</strong> para escanear de nuevo el DOM actual y recargue la página con el panel abierto para registrar absolutamente todas las solicitudes de red, incluso las iniciadas antes de cambiar de pestaña."
+    "message": "Las respuestas de <strong>APIs</strong> dinámicas (XHR/fetch) no se desduplican por URL: cada respuesta se conserva en la lista (cola FIFO con límite) para permitir comparar solicitudes sucesivas. Los recursos estáticos sí se desduplican. Utilice <strong>Actualizar</strong> para escanear de nuevo el DOM actual y recargue la página con el panel abierto para registrar absolutamente todas las solicitudes de red, incluso las iniciadas antes de cambiar de pestaña."
   },
   "toolArrow": {
-    "message": "Dibujar flecha"
+    "message": "Herramienta de flecha"
   },
   "toolRect": {
-    "message": "Dibujar rectángulo"
+    "message": "Herramienta de rectángulo"
   },
   "toolText": {
-    "message": "Escribir texto"
+    "message": "Herramienta de texto"
   },
   "toolUndo": {
     "message": "Deshacer (Ctrl+Z)"
@@ -1212,7 +1212,7 @@
     "message": "Color"
   },
   "badgeStrokeSize": {
-    "message": "Grosor: $SIZE$px",
+    "message": "Tamaño: $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "Tamaño de fuente: $SIZE$px",
+    "message": "Tamaño de fuente: $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,7 +1230,7 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "Grabar video / GIF regional"
+    "message": "Grabar un área como vídeo / GIF"
   },
   "btnRecStart": {
     "message": "Iniciar grabación"
@@ -1248,22 +1248,22 @@
     "message": "Cancelar"
   },
   "toastRecSaved": {
-    "message": "Grabación regional guardada"
+    "message": "Grabación del área guardada"
   },
   "toastRecCancelled": {
     "message": "Grabación de vídeo cancelada"
   },
   "toastRecPermissionDenied": {
-    "message": "No se concedió permiso para grabar la pantalla"
+    "message": "No se concedió el permiso de grabación de pantalla"
   },
   "btnPopupRecordArea": {
-    "message": "Video / GIF regional"
+    "message": "Grabar área (vídeo / GIF)"
   },
   "btnPopupCaptureArea": {
     "message": "Captura de área"
   },
   "contextMenuPickColor": {
-    "message": "Seleccionar color de la pantalla"
+    "message": "Elegir un color de la pantalla"
   },
   "btnPopupPickColor": {
     "message": "Selector de color"
@@ -1272,13 +1272,13 @@
     "message": "Selector de color"
   },
   "btnColorPickAgain": {
-    "message": "Seleccionar otro color"
+    "message": "Elegir otro color"
   },
   "toastColorCopied": {
     "message": "Color copiado al portapapeles"
   },
   "toastProgressCapturing": {
-    "message": "Capturando página completa... $PERCENT$%",
+    "message": "Capturando la página completa… $percent$ %",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,10 +1292,10 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Combinando imagen..."
+    "message": "Uniendo la imagen…"
   },
   "modalExportTitle": {
-    "message": "Captura de página completa lista"
+    "message": "Captura de la página completa lista"
   },
   "btnExportPng": {
     "message": "Descargar PNG"
@@ -1310,7 +1310,7 @@
     "message": "Copiar al portapapeles"
   },
   "btnExportGenerating": {
-    "message": "Generando..."
+    "message": "Generando…"
   },
   "toastPdfGenerated": {
     "message": "Documento PDF guardado."
@@ -1319,40 +1319,40 @@
     "message": "Patrones de nombres de archivo"
   },
   "settingVideoFormat": {
-    "message": "Formato de video predeterminado"
+    "message": "Formato de vídeo predeterminado"
   },
   "settingNamingPreview": {
     "message": "Vista previa:"
   },
   "toastRecGeneratingGif": {
-    "message": "Generando GIF, por favor espere..."
+    "message": "Generando GIF, espera un momento…"
   },
   "settingGifResolution": {
     "message": "Resolución GIF predeterminada"
   },
   "optGifOriginal": {
-    "message": "Original (Resolución nativa 1:1 — 3K/4K, sin reducción)"
+    "message": "Original (resolución nativa 1:1 — 3K/4K completo, sin reducción)"
   },
   "optGif1080p": {
-    "message": "1080p Full HD (Máx. 1920px)"
+    "message": "1080p Full HD (máx. 1920 px)"
   },
   "optGif720p": {
-    "message": "720p HD (Máx. 1280px)"
+    "message": "720p HD (máx. 1280 px)"
   },
   "optGif480p": {
-    "message": "480p SD (Máx. 854px — Más rápido y menor tamaño)"
+    "message": "480p SD (máx. 854 px — más rápido y de menor tamaño)"
   },
   "tipGifDurationLimit": {
     "message": "El formato GIF admite una duración máxima de grabación de 1 minuto (60 s)."
   },
   "guideSecScreenRecording": {
-    "message": "Grabación de pantalla (Video y GIF)"
+    "message": "Grabación de pantalla (Vídeo y GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Grabe cualquier región de la pantalla como MP4, WebM o GIF animado. Las grabaciones en GIF cuentan con resolución nativa 1:1, perfiles en 1080p, 720p y 480p, y estimación de tamaño de archivo en vivo. La duración máxima de grabación GIF es de 1 minuto (60 s) para un rendimiento óptimo del navegador."
+    "message": "Grabe cualquier área de la pantalla como MP4, WebM o GIF animado. Las grabaciones en GIF cuentan con resolución nativa 1:1, perfiles en 1080p, 720p y 480p, y estimación de tamaño de archivo en vivo. La duración máxima de grabación GIF es de 1 minuto (60 s) para un rendimiento óptimo del navegador."
   },
   "msgGifMaxDurationReached": {
-    "message": "Se alcanzó la duración máxima de GIF de 1 minuto (60 s). Generando GIF..."
+    "message": "Se alcanzó la duración máxima del GIF de 1 minuto (60 s). Generando GIF…"
   },
   "labelGifMaxDuration": {
     "message": "Máx. 1 min (60 s)"
@@ -1361,22 +1361,126 @@
     "message": "Velocidad de fotogramas GIF predeterminada (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — Fluido (Alta fluidez, tamaño mayor)"
+    "message": "15 FPS — Fluido (gran fluidez, mayor tamaño)"
   },
   "optGifFps10": {
-    "message": "10 FPS — Estándar (Recomendado para web y equilibrio)"
+    "message": "10 FPS — Estándar (recomendado para la web y un buen equilibrio)"
   },
   "optGifFps5": {
-    "message": "5 FPS — Compacto / Meme (Paso a paso, tamaño pequeño)"
+    "message": "5 FPS — Compacto / Meme (movimiento entrecortado, tamaño reducido)"
   },
   "optGifFps2": {
-    "message": "2 FPS — Stop-Motion / Lento (\"Clic-clic\" paso a paso, tamaño mínimo)"
+    "message": "2 FPS — Stop motion / Lento (paso a paso «clic-clic», tamaño mínimo)"
   },
   "optGifFps1": {
     "message": "1 FPS — Presentación (1 fotograma por segundo, tamaño mínimo)"
   },
   "popupRightClickHint": {
-    "message": "Haz clic derecho en cualquier parte de la página para Grabar pantalla (Video/GIF) y Selector de color.",
+    "message": "Haga clic con el botón derecho en cualquier parte de la página para Grabar pantalla (Vídeo/GIF) y Selector de color.",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "Anuncio / iframe oculto durante esta sesión.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Imagen copiada al portapapeles",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Cerrar (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Ajustes guardados",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Descarga el archivo y ábrelo con VLC u otro reproductor multimedia.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "No hay vista previa para este tipo de recurso",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Descargar original",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Consejo: abre el archivo descargado con VLC o cualquier reproductor multimedia de escritorio; reproduce prácticamente todos los formatos.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Creando archivo ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Tu navegador no admite la API EyeDropper.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Arrastrar la barra de herramientas",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Cambiar formato: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Resolución del GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Velocidad de fotogramas del GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Tamaño estimado del GIF: ~$size$ MB (para 10 s), hasta ~$max$ MB con el máximo de 60 s.\nVelocidad de fotogramas: $fps$ FPS.\nLa grabación de GIF está limitada a un máximo de 1 minuto (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Copiar $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Vista previa de la captura",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — reproducción universal en WhatsApp, Telegram, Jira, Apple y Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (imagen animada — ideal para READMEs, Jira, documentación y mensajería)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — formato web abierto)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "No se encontró ninguna pestaña activa.",
+    "description": "No active tab found."
   }
 }

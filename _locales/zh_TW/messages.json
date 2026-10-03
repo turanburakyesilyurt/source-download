@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "無縫瀏覽、檢查並以ZIP格式下載網頁所有資源。全頁長截圖、動態表格提取與開發者工作臺。"
+  },
+  "actionTitle": {
+    "message": "Source Download — 開啟面板並追蹤資源"
+  },
+  "contextMenuZap": {
+    "message": "隱藏此元素"
+  },
+  "contextMenuUndoZap": {
+    "message": "還原上一個隱藏的元素"
+  },
+  "contextMenuResetZap": {
+    "message": "重設所有隱藏的元素"
+  },
+  "contextMenuCapturePage": {
+    "message": "擷取整頁螢幕截圖"
+  },
+  "contextMenuPageArchive": {
+    "message": "下載離線網頁封存檔"
+  },
+  "catAll": {
+    "message": "全部"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "圖片"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "影片"
+  },
+  "catAudio": {
+    "message": "音訊"
+  },
+  "catCaptions": {
+    "message": "字幕"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "原始碼對應 (Source Map)"
+  },
+  "catFonts": {
+    "message": "字型"
+  },
+  "catDocuments": {
+    "message": "文件"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "資訊清單"
+  },
+  "catText": {
+    "message": "文字與表格"
+  },
+  "catOther": {
+    "message": "其他"
+  },
+  "catScreenshot": {
+    "message": "截圖"
+  },
+  "catArchive": {
+    "message": "頁面封存"
+  },
+  "btnRefresh": {
+    "message": "重新整理"
+  },
+  "btnExport": {
+    "message": "匯出"
+  },
+  "btnDownloadSelected": {
+    "message": "下載所選項目"
+  },
+  "btnDownloadView": {
+    "message": "下載目前檢視"
+  },
+  "btnDownloadAll": {
+    "message": "下載全部"
+  },
+  "btnDownloadFiltered": {
+    "message": "下載已篩選項目"
+  },
+  "btnTheme": {
+    "message": "切換主題"
+  },
+  "btnGuide": {
+    "message": "使用指南"
+  },
+  "btnCaptureFullPage": {
+    "message": "整頁截圖"
+  },
+  "btnOfflineArchive": {
+    "message": "儲存單檔案 HTML"
+  },
+  "filterMinKb": {
+    "message": "最小 KB"
+  },
+  "filterMaxKb": {
+    "message": "最大 KB"
+  },
+  "filterMinWidth": {
+    "message": "最小寬度 px"
+  },
+  "filterMinHeight": {
+    "message": "最小高度 px"
+  },
+  "filterSortName": {
+    "message": "依名稱排序"
+  },
+  "filterSortSize": {
+    "message": "依大小排序"
+  },
+  "filterSortType": {
+    "message": "依類型排序"
+  },
+  "filterSortTime": {
+    "message": "依時間排序"
+  },
+  "filterHideDupes": {
+    "message": "隱藏重複項"
+  },
+  "filterClear": {
+    "message": "清除"
+  },
+  "textModeContains": {
+    "message": "包含"
+  },
+  "textModeRegex": {
+    "message": "正則"
+  },
+  "textModeCss": {
+    "message": "CSS 選取器"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "篩選頁面文字或即時查詢 DOM…"
+  },
+  "textAllElements": {
+    "message": "所有元素"
+  },
+  "textLiveOn": {
+    "message": "即時擷取：開"
+  },
+  "textLiveOff": {
+    "message": "即時擷取：關"
+  },
+  "textScanNow": {
+    "message": "立即掃描"
+  },
+  "textReading": {
+    "message": "閱讀模式"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "選擇一個資源以檢視詳細資訊"
+  },
+  "inspectorDetails": {
+    "message": "詳細資料"
+  },
+  "inspectorOpenTab": {
+    "message": "在新分頁中開啟"
+  },
+  "inspectorCopyUrl": {
+    "message": "複製 URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "下載此檔案"
+  },
+  "inspectorClose": {
+    "message": "關閉"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "類型"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "大小"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "來源"
+  },
+  "metaTitle": {
+    "message": "標題"
+  },
+  "metaAlt": {
+    "message": "Alt 文字"
+  },
+  "ratingPrompt": {
+    "message": "覺得 Source Download 對你有幫助嗎？歡迎在 Chrome 線上應用程式商店評分，或在 GitHub 給我們一顆 Star 支持開源！"
+  },
+  "ratingReview": {
+    "message": "★ 前往評價"
+  },
+  "ratingStar": {
+    "message": "★ GitHub Star"
+  },
+  "ratingDismiss": {
+    "message": "稍後再說"
+  },
+  "toastElementZapped": {
+    "message": "已在本次工作階段中隱藏該元素。"
+  },
+  "toastElementRestored": {
+    "message": "已還原元素。"
+  },
+  "toastAllElementsRestored": {
+    "message": "已還原所有隱藏的元素。"
+  },
+  "toastScreenshotCapturing": {
+    "message": "正在擷取整頁螢幕截圖…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "已儲存整頁螢幕截圖。"
+  },
+  "toastArchiveCreated": {
+    "message": "已儲存單一檔案 HTML 封存檔。"
+  },
+  "brandSignature": {
+    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "影像與向量 SVG"
+  },
+  "tabMedia": {
+    "message": "媒體與音訊"
+  },
+  "tabFonts": {
+    "message": "字型檔案"
+  },
+  "tabTextScraper": {
+    "message": "文字與表格擷取"
+  },
+  "heroScreenshotTitle": {
+    "message": "整頁截圖"
+  },
+  "heroScreenshotDesc": {
+    "message": "無縫多螢幕拼接 • 自動抑制吸頂浮窗"
+  },
+  "heroArchiveTitle": {
+    "message": "單檔案離線 HTML"
+  },
+  "heroArchiveDesc": {
+    "message": "內嵌樣式與 Base64 影像 • 離線即開可用"
+  },
+  "copyDataUri": {
+    "message": "複製 Data-URI"
+  },
+  "copyUrl": {
+    "message": "複製 URL"
+  },
+  "downloadSingle": {
+    "message": "下載"
+  },
+  "searchPlaceholder": {
+    "message": "依名稱、URL、標籤、類型或 /正則/ 篩選…"
+  },
+  "viewGrid": {
+    "message": "格狀檢視"
+  },
+  "viewList": {
+    "message": "清單檢視"
+  },
+  "btnScreenshot": {
+    "message": "截圖"
+  },
+  "btnArchive": {
+    "message": "儲存 HTML"
+  },
+  "exportJson": {
+    "message": "可見清單 (JSON)"
+  },
+  "exportCsv": {
+    "message": "可見清單 (CSV)"
+  },
+  "exportHar": {
+    "message": "網路記錄 (HAR)"
+  },
+  "exportScreenshot": {
+    "message": "整頁截圖 (PNG)"
+  },
+  "exportArchive": {
+    "message": "離線頁面封存 (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "所有方法"
+  },
+  "filterTypeAll": {
+    "message": "所有類型"
+  },
+  "filterSortDir": {
+    "message": "切換正序/倒序"
+  },
+  "emptyTitle": {
+    "message": "未找到任何資源"
+  },
+  "emptySubtitle": {
+    "message": "請在面板開啟的狀態下重新整理頁面以擷取網路請求，或點擊重新整理以掃描目前 DOM。"
+  },
+  "statusResources": {
+    "message": "個資源"
+  },
+  "statusFiltered": {
+    "message": "已篩選"
+  },
+  "statusSelected": {
+    "message": "已選擇"
+  },
+  "statusDupes": {
+    "message": "重複已隱藏"
+  },
+  "statusSize": {
+    "message": "大小"
+  },
+  "langAuto": {
+    "message": "自動（瀏覽器預設）"
+  },
+  "langSelectorTitle": {
+    "message": "語言選擇"
+  },
+  "textPillAll": {
+    "message": "全部內容"
+  },
+  "textPillText": {
+    "message": "📄 文字與文章"
+  },
+  "textPillTables": {
+    "message": "📊 僅表格"
+  },
+  "textSelectAll": {
+    "message": "全選"
+  },
+  "textDeselectAll": {
+    "message": "取消全選"
+  },
+  "textClearSelection": {
+    "message": "清空"
+  },
+  "toastRefreshComplete": {
+    "message": "頁面掃描完成：新增 $count$ 個資源",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "已複製 $count$ 個區塊",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "已複製到剪貼簿"
+  },
+  "toastTableCopied": {
+    "message": "表格已複製到剪貼簿"
+  },
+  "toastNothingToExport": {
+    "message": "沒有可匯出的內容"
+  },
+  "toastExportedTxt": {
+    "message": "已匯出 $count$ 個區塊為 TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "已匯出 $count$ 個區塊為 Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "未擷取到表格列"
+  },
+  "toastExportedCsv": {
+    "message": "表格已匯出為 CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "表格已匯出為 XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "已匯出 $count$ 個表格為 $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "已匯出 $count$ 個工作表為 XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "沒有可下載的資源。"
+  },
+  "toastNoVisibleResources": {
+    "message": "沒有可見的資源可供下載。"
+  },
+  "toastSelectAtLeastOne": {
+    "message": "請先選擇至少一個資源。"
+  },
+  "toastZipSaved": {
+    "message": "ZIP 已儲存：共 $total$ 個資源中的 $fetched$ 個",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP 產生失敗：$error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR 已匯出（$count$ 條記錄）",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL 已複製到剪貼簿"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools 檢查視窗不可用。"
+  },
+  "toastScreenshotError": {
+    "message": "截圖錯誤：$error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "正在建立離線網頁封存檔…"
+  },
+  "toastArchiveError": {
+    "message": "封存錯誤：$error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "格式化逾時 — 顯示原始檔案。"
+  },
+  "toastFormatFailed": {
+    "message": "無法格式化檔案 — 顯示原始檔案。"
+  },
+  "emptySearchTitle": {
+    "message": "未找到符合 \"$query$\" 的結果",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "請嘗試其他搜尋詞，或切換到其他分類。"
+  },
+  "emptyFiltersTitle": {
+    "message": "沒有資源符合目前篩選列件"
+  },
+  "emptyFiltersSub": {
+    "message": "請放寬上方的尺寸限制或點擊清除。"
+  },
+  "textEmptyQueryReject": {
+    "message": "頁面拒絕了該查詢。請在上方修正，結果會立即恢復。"
+  },
+  "textEmptyNoMatch": {
+    "message": "頁面上沒有元素符合此查詢。請嘗試更寬鬆的選取器，或切換輸入框旁的模式。"
+  },
+  "textEmptyInitial": {
+    "message": "尚未擷取任何內容。即時擷取執行中 — 整個頁面將以可讀文字形式顯示在此處。"
+  },
+  "textEmptyFiltered": {
+    "message": "沒有內容符合目前查詢和元素篩選。"
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ 個區塊",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ 個詞",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ 個字元",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ 個表格 · $rows$ 列唯一資料",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "已選擇 $count$ 項 — 僅匯出這些項",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "表格 — 螢幕上 $count$ 列",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "表格 — 全部 $count$ 列",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ 次快照",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "更新於 $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "顯示全部 $count$ 列",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "正在顯示全部列"
+  },
+  "textTableHistory": {
+    "message": "歷史快照 ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "隱藏歷史"
+  },
+  "textTableNoRows": {
+    "message": "尚未擷取到列資料。"
+  },
+  "textBtnCopy": {
+    "message": "複製文字"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 複製"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ 個重複圖片",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "匯出"
+  },
+  "inspectorLoadingSvg": {
+    "message": "正在載入 SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "無法取得 SVG 內容。"
+  },
+  "inspectorLoadingFont": {
+    "message": "正在載入字型預覽…"
+  },
+  "inspectorFontSample": {
+    "message": "字型預覽"
+  },
+  "inspectorBeautify": {
+    "message": "美化程式碼"
+  },
+  "inspectorOriginal": {
+    "message": "原始內容"
+  },
+  "inspectorHeaders": {
+    "message": "標頭"
+  },
+  "inspectorResponse": {
+    "message": "回應"
+  },
+  "inspectorRequest": {
+    "message": "請求"
+  },
+  "inspectorQueryParams": {
+    "message": "查詢參數"
+  },
+  "inspectorRequestBody": {
+    "message": "請求正文"
+  },
+  "textHintHtml": {
+    "message": "頁面的即時可讀副本。包含文字的每個元素均按DOM順序擷取。透過純文字、正規表示式、<strong>CSS選取器</strong>或<strong>XPath</strong>表示式進行查詢，然後匯出符合內容。詳見<a href=\"#\" id=\"text-hint-guide\">指南</a>。"
+  },
+  "textHeadings": {
+    "message": "標題"
+  },
+  "textAllLevels": {
+    "message": "所有層級"
+  },
+  "textMatches": {
+    "message": "個符合"
+  },
+  "textMatch": {
+    "message": "個符合"
+  },
+  "textReadingOn": {
+    "message": "閱讀模式開啟"
+  },
+  "toastDownloadStarted": {
+    "message": "開始下載: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "無法取得此資源（CORS 或不受支援的類型）。"
+  },
+  "ratingBannerText": {
+    "message": "喜歡 Source Download 嗎？歡迎在 Chrome 線上應用程式商店撰寫評價或在 GitHub 上按讚支援我們的開源願景！"
+  },
+  "ratingBannerReview": {
+    "message": "★ 評價"
+  },
+  "ratingBannerStar": {
+    "message": "★ Star"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ 個唯一列",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$秒前",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$分鐘前",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "擷取區域螢幕截圖"
+  },
+  "btnAreaDownload": {
+    "message": "下載"
+  },
+  "btnAreaCopy": {
+    "message": "複製到剪貼簿"
+  },
+  "btnAreaCancel": {
+    "message": "取消"
+  },
+  "toastAreaCopied": {
+    "message": "已將區域螢幕截圖複製到剪貼簿"
+  },
+  "toastAreaDownloaded": {
+    "message": "已儲存區域螢幕截圖"
+  },
+  "statusFoundCssResources": {
+    "message": "從 CSS 中發現 $count$ 個引用的資源",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM 掃描失敗: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "正在索引檔案內容…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "正在檢查重複圖片…"
+  },
+  "statusWorking": {
+    "message": "正在處理…"
+  },
+  "filterMethodTitle": {
+    "message": "按 HTTP 方法篩選"
+  },
+  "filterTypeTitle": {
+    "message": "依請求類型篩選"
+  },
+  "filterSortTitle": {
+    "message": "排序資源"
+  },
+  "textModeTitle": {
+    "message": "查詢框解析模式"
+  },
+  "textKindTitle": {
+    "message": "限制為特定元素類型"
+  },
+  "textHeadingLevelTitle": {
+    "message": "標題層級"
+  },
+  "textPlaceholderRegex": {
+    "message": "^價格:\\s*\\d+  — JavaScript 正規表示式"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — CSS 選取器"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "在指南中搜索…"
+  },
+  "popupIntro": {
+    "message": "<strong>工具列徽章</strong>統計的資源分類。關閉任一分類即可停止統計 — 徽章會立即只反映你所追蹤的內容。"
+  },
+  "popupHelpTitle": {
+    "message": "如何使用完整面板"
+  },
+  "popupStep1": {
+    "message": "在需要檢查的頁面上開啟開發人員工具 <div class=\"hint\"><kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "點擊 DevTools 工具列中的 <strong>Source Download</strong> 分頁"
+  },
+  "popupStep3": {
+    "message": "瀏覽、檢查並下載資源 — 可單獨下載或打包為 ZIP 統一匯出。"
+  },
+  "popupNote": {
+    "message": "注意：Chrome 安全機制不允許擴充功能透過程式碼直接開啟 DevTools，因此完整功能需透過 DevTools 面板使用。"
+  },
+  "popupTrackAll": {
+    "message": "追蹤所有分類"
+  },
+  "popupLanguage": {
+    "message": "語言"
+  },
+  "inspectorBinaryResponse": {
+    "message": "二進位回應 — 下載後檢視"
+  },
+  "inspectorLoadingResponse": {
+    "message": "正在載入回應…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "無回應預覽 — 無法取得內容。"
+  },
+  "inspectorLoadingContent": {
+    "message": "正在載入內容…"
+  },
+  "inspectorNoPreview": {
+    "message": "無可用預覽 — 無法取得內容。"
+  },
+  "inspectorCloseAllTabs": {
+    "message": "全部關閉"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "關閉所有開啟的分頁"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "點擊放大"
+  },
+  "inspectorViewSource": {
+    "message": "檢視原始碼"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "顯示帶語法醒目提示的 SVG 標記"
+  },
+  "inspectorFormatting": {
+    "message": "正在格式化…"
+  },
+  "findInContentPlaceholder": {
+    "message": "在內容中查詢…"
+  },
+  "findPreviousMatch": {
+    "message": "上一個相符項"
+  },
+  "findNextMatch": {
+    "message": "下一個相符項"
+  },
+  "findClose": {
+    "message": "關閉"
+  },
+  "findShowRaw": {
+    "message": "顯示原始內容（未格式化）"
+  },
+  "findBeautify": {
+    "message": "格式化 / 美化此內容"
+  },
+  "btnRaw": {
+    "message": "原始"
+  },
+  "btnBeautify": {
+    "message": "美化"
+  },
+  "videoHlsDetected": {
+    "message": "偵測到 HLS (m3u8) 流"
+  },
+  "videoCannotPlay": {
+    "message": "無法在瀏覽器中播放此影片"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome 無法直接播放 HLS 流。您可以將 <b>$NAME$</b> 的所有分段合併為一個 MP4/TS 影片檔案。",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "瀏覽器不支援此格式"
+  },
+  "btnMergeHls": {
+    "message": "合併分段並下載"
+  },
+  "toastHlsMerged": {
+    "message": "已將 $COUNT$ 個分段合併為 $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "大小未知"
+  },
+  "progressFetching": {
+    "message": "正在取得 $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "正在建立 ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP 已儲存：$FETCHED$ / $TOTAL$ 個資源（$SKIPPED$ 個失敗）",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "重試 $COUNT$ 項",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "重試下載"
+  },
+  "searchRegexHint": {
+    "message": "正規表示式搜尋已啟用 — 請將查詢包裹在 /pattern/i 中"
+  },
+  "textIncludeInExports": {
+    "message": "包含在匯出中"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "將每個快照合併為一個已去除重複的表格 — 這就是匯出的內容"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "瀏覽此表格的早期快照"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "將此表格下載為 CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "快照 $INDEX$ — $TIME$（$COUNT$ 列）",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "切換批次下載的選擇"
+  },
+  "cardDownloadTitle": {
+    "message": "下載檔案"
+  },
+  "cardRetryFailedTitle": {
+    "message": "上次下載失敗 — 點擊重試"
+  },
+  "btnThemeLight": {
+    "message": "切換至淺色主題"
+  },
+  "btnThemeDark": {
+    "message": "切換至深色主題"
+  },
+  "guideTitle": {
+    "message": "Source Download — 使用指南"
+  },
+  "guideEmpty": {
+    "message": "未找到與搜尋條件符合的指南章節。"
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% 無外部相依性。",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "縮小 (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "放大 (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "重設縮放 (0)"
+  },
+  "lightboxClose": {
+    "message": "關閉 (Esc)"
+  },
+  "resizerTitle": {
+    "message": "拖曳以調整大小"
+  },
+  "ratingDismissTitle": {
+    "message": "關閉"
+  },
+  "inspectorResourceTitle": {
+    "message": "資源"
+  },
+  "guideSecGettingStarted": {
+    "message": "使用入門"
+  },
+  "guideSecCategories": {
+    "message": "資源分類"
+  },
+  "guideSecSearchFilters": {
+    "message": "搜尋與篩選"
+  },
+  "guideSecGridView": {
+    "message": "格狀與清單檢視"
+  },
+  "guideSecInspect": {
+    "message": "檢查與預覽資源"
+  },
+  "guideSecDownloading": {
+    "message": "檔案下載"
+  },
+  "guideSecLightbox": {
+    "message": "全螢幕燈箱檢視器"
+  },
+  "guideSecTextTables": {
+    "message": "文字與表格擷取"
+  },
+  "guideSecCaptions": {
+    "message": "字幕與旁白檔案"
+  },
+  "guideSecSourceMaps": {
+    "message": "原始碼對應 (Source Map)"
+  },
+  "guideSecDupes": {
+    "message": "重複圖片智慧篩選"
+  },
+  "guideSecVideoHls": {
+    "message": "影片保底播放與 HLS 串流"
+  },
+  "guideSecPowerTips": {
+    "message": "進階技巧"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "點擊開發人員工具（DevTools）工具列中的 <strong>Source Download</strong> 分頁（按 <kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>，然後選擇 DevTools 頂端列中的分頁）。由於 Chrome 瀏覽器安全規範禁止擴充功能自動喚起 DevTools，因此面板整合在此處。工具列圖示彈出視窗允許您自訂哪些分類的資料計入圖示上的徽標計數器。面板工具列上的太陽/月亮按鈕可獨立於 Chrome 瀏覽器鎖定淺色或深色主題，該設定將被自動記憶。"
+  },
+  "guideSecCategoriesContent": {
+    "message": "左側垂直分頁將擷取到的所有資源按檔案類型劃分為 17 個專屬分類：圖片、影片、音訊、字幕、文件、字型、原始碼對應、WASM、SVG、API、Cookie、儲存等。每個分頁均顯示即時資源計數。每次僅顯示一個分類；切換分類會自動重設所有篩選器，確保您所見的內容始終與目前選中的分類嚴格對應。"
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "搜尋列支援依名稱、URL、檔案類型、alt 替換文字或頁面標題進行即時篩選。若要使用正規表示式，請將表示式包含在 <kbd>/…/</kbd> 中，例如 <code>/\\.(png|jpg)$/</code>。工具列下方的篩選列會隨所選分類動態調整：媒體分類提供檔案大小與像素解析度區間篩選，API 分類提供 HTTP 請求方法與請求類型篩選，並支援自訂排序欄位與升降序。"
+  },
+  "guideSecGridViewContent": {
+    "message": "透過搜尋列旁的切換按鈕，您可以在緊湊格狀檢視（小縮圖）與詳細清單檢視之間自由切換。您的檢視選擇會在各次工作階段間自動保持。在清單檢視中，核取方塊允許您自由勾選特定資源以進行針對性的批次下載。"
+  },
+  "guideSecInspectContent": {
+    "message": "點擊任何資源均可在右側檢查窗格中開啟其詳細資訊。每個開啟的檔案都會以獨立分頁呈現，便於您並排比較多項資源——最新開啟的資源將排列在左側。面板為圖片、影片、音訊、字型、SVG 以及文字/程式碼（配備 Beautify 程式碼美化格式化開關）提供了專屬檢視器。API 提供分割檢視：左側為回應資料正文，右側為完整的請求細節（請求方法、狀態碼、回應標頭、URL 查詢參數及請求酬載）。"
+  },
+  "guideSecDownloadingContent": {
+    "message": "點擊 <strong>下載目前檢視</strong> 可將目前可見的所有資源（目前分類 + 搜尋結果 + 篩選列件）打包儲存為 ZIP 壓縮檔案；啟用篩選列件時按鈕會自動變為 <em>下載已篩選項目 (N)</em>。在點擊前將滑鼠游標停留在任一下載按鈕上，即可預覽預估的壓縮檔大小。<strong>下載所選項目</strong> 僅儲存被核取方塊勾選的檔案。<strong>下載全部</strong> 將把偵測到的所有資源打包為一個帶有清晰資料夾層級結構的 ZIP 壓縮檔。下載失敗的專案會自動發起重試，您也可以透過右鍵上下文選單手動重新觸發。<strong>匯出</strong> 功能可將目前清單匯出為 JSON 或 CSV 檔案，或將 Chrome 網路記錄完整匯出為 HAR 檔案。"
+  },
+  "guideSecLightboxContent": {
+    "message": "縮放按鈕可在全尺寸燈箱中開啟媒體檔案。您可以透過滑鼠拖曳平移畫面，並使用滑鼠滾輪、螢幕控制項按鈕或鍵盤快捷鍵（<kbd>+</kbd>/<kbd>-</kbd> 縮放，<kbd>0</kbd> 恢復原始大小，<kbd>Esc</kbd> 退出）進行流暢的高精度縮放與查閱。"
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>文字</strong> 分類是目前網頁內容的一個即時、高可讀性的結構化副本。它嚴格按照 DOM 節點順序擷取所有包含文字的元素——包括標題、正文段落、清單項、按鈕、<code>div</code>/<code>span</code> 等——並且在 <strong>即時監聽</strong> 模式開啟期間持續保持掃描。</p><p><strong>查詢</strong> 輸入框提供四種工作模式，可透過旁邊的下拉選單自由切換：「<strong>包含</strong>」與「<strong>正則</strong>」用於對已提取的文字內容進行二次篩選；「<strong>CSS 選取器</strong>」與「<strong>XPath</strong>」則直接對網頁的即時 DOM 執行深層查詢，能夠定位到 DOM 樹中的任何節點。XPath 同樣支援計算數值型表示式（而非單純返回節點），例如 <code>count(//a)</code> 或 <code>//@href</code>。若查詢語句有誤，輸入框旁會即時提示具體錯誤原因。「<strong>元素標籤</strong>」篩選器會顯示頁面中出現的所有標籤名稱及各標籤的出現頻次，方便快速收窄範圍。清空查詢框（或點擊 <strong>清除</strong> 按鈕）即可立刻恢復至 <em>所有元素</em> 並重新擷取頁面，無需手動重設下拉選單。</p><p><strong>閱讀模式</strong> 會自動隱藏標籤名、核取方塊和層級路徑麵包屑，使提取的內容如同一篇排版整潔的文章般易於閱讀。表格提取模組內建了具有容量上限的歷史快照機制，確保單頁應用（SPA）中的動態表格資料永不丟失。點擊表格上的 <strong>顯示所有行</strong> 按鈕，即可將所有快照去除重複項合併為完整的統一資料檢視——這與匯出檔案包含的內容完全一致。支援匯出為 <strong>TXT</strong>（純文字頁面）、<strong>MD</strong>（包含表格的 Markdown）或將表格匯出為 CSV、HTML 及支援多工作表的專業 <strong>XLSX</strong> Excel 工作簿。已勾選的條目享有最高匯出優先順序；若未勾選任何項，則預設匯出目前檢視中的全部內容。</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT、SRT、TTML 等常見字幕檔案（包括 <code>&lt;track&gt;</code> 標籤資源）均會自動歸類至專屬的 <strong>字幕</strong> 分頁，不再與通用文件產生混淆。"
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> 檔案以及符合原始碼對應結構的 JSON 資料（包含 <code>mappings</code> 和 <code>sources</code> 欄位）均彙總於 <strong>原始碼對應</strong> 分頁下，並配備 JSON 檢視與程式碼美化格式化工具，避免造成一般 JSON 分頁的冗餘混雜。"
+  },
+  "guideSecDupesContent": {
+    "message": "在圖片分頁中，面板透過對擷取資源的位元組進行雜湊計算來自動標記完全一致的檔案。開啟 <strong>隱藏重複項</strong> 篩選器後，每組重複圖片僅保留首個副本，確保下載的 ZIP 壓縮檔不會包含重複的縮圖檔案。"
+  },
+  "guideSecVideoHlsContent": {
+    "message": "對於瀏覽器無法原生播放的串流媒體（如 HLS <code>.m3u8</code>、DASH <code>.mpd</code> 以及特殊編碼格式），面板會顯示智慧替代提示畫面而非黑畫面播放器。針對 HLS 串流媒體，您可以直接在面板內一鍵將各個影音分片合併為完整的 MP4 影片檔案，或直接下載原始播放清單檔案。"
+  },
+  "guideSecPowerTipsContent": {
+    "message": "動態 <strong>API</strong> 回應（XHR/fetch）不會根據 URL 去除重複項——每次請求互動都會保留在清單中（採用容量受限的 FIFO 佇列），方便您即時比較連續請求的資料變更。靜態資源則會自動去除重複項。使用 <strong>重新整理</strong> 按鈕可重新掃描目前頁面的 DOM；在面板處於開啟狀態時重新整理網頁，即可完整擷取包含分頁切換前觸發的所有網路請求。"
+  },
+  "toolArrow": {
+    "message": "箭頭工具"
+  },
+  "toolRect": {
+    "message": "矩形工具"
+  },
+  "toolText": {
+    "message": "文字工具"
+  },
+  "toolUndo": {
+    "message": "復原 (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "取消復原 (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "顏色"
+  },
+  "badgeStrokeSize": {
+    "message": "粗細：$size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "字型大小：$size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "錄製所選區域為影片 / GIF"
+  },
+  "btnRecStart": {
+    "message": "開始錄製"
+  },
+  "btnRecPause": {
+    "message": "暫停"
+  },
+  "btnRecResume": {
+    "message": "繼續"
+  },
+  "btnRecStop": {
+    "message": "完成並下載"
+  },
+  "btnRecCancel": {
+    "message": "取消"
+  },
+  "toastRecSaved": {
+    "message": "已儲存所選區域的錄製內容"
+  },
+  "toastRecCancelled": {
+    "message": "已取消影片錄製"
+  },
+  "toastRecPermissionDenied": {
+    "message": "未取得螢幕錄製權限"
+  },
+  "btnPopupRecordArea": {
+    "message": "區域影片/GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "區域截圖"
+  },
+  "contextMenuPickColor": {
+    "message": "從螢幕選取顏色"
+  },
+  "btnPopupPickColor": {
+    "message": "螢幕取色"
+  },
+  "colorPickerTitle": {
+    "message": "網頁檢色器"
+  },
+  "btnColorPickAgain": {
+    "message": "重新選取顏色"
+  },
+  "toastColorCopied": {
+    "message": "已將顏色複製到剪貼簿"
+  },
+  "toastProgressCapturing": {
+    "message": "正在擷取整頁… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "正在拼接圖片…"
+  },
+  "modalExportTitle": {
+    "message": "整頁螢幕截圖已完成"
+  },
+  "btnExportPng": {
+    "message": "下載 PNG"
+  },
+  "btnExportJpg": {
+    "message": "下載 JPG"
+  },
+  "btnExportPdf": {
+    "message": "另存為 PDF"
+  },
+  "btnExportCopy": {
+    "message": "複製到剪貼簿"
+  },
+  "btnExportGenerating": {
+    "message": "正在產生…"
+  },
+  "toastPdfGenerated": {
+    "message": "已儲存 PDF 文件。"
+  },
+  "settingNamingPatterns": {
+    "message": "檔案命名模式"
+  },
+  "settingVideoFormat": {
+    "message": "預設影片格式"
+  },
+  "settingNamingPreview": {
+    "message": "預覽:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "正在產生 GIF，請稍候…"
+  },
+  "settingGifResolution": {
+    "message": "預設GIF解析度"
+  },
+  "optGifOriginal": {
+    "message": "原始（1:1 原生解析度 — 完整 3K/4K，不縮小）"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD（最大 1920px）"
+  },
+  "optGif720p": {
+    "message": "720p HD（最大 1280px）"
+  },
+  "optGif480p": {
+    "message": "480p SD（最大 854px — 速度更快、檔案更小）"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF 格式支援的最長錄製時間為 1 分鐘（60 秒）。"
+  },
+  "guideSecScreenRecording": {
+    "message": "螢幕錄製 (影片與 GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "自由選取螢幕的任意區域並錄製為 MP4、WebM 或動態 GIF 格式。GIF 錄製支援 1:1 原生解析度，提供 1080p、720p 和 480p 預設畫質設定檔，並支援即時檔案大小預估。為確保瀏覽器穩定高效執行，GIF 錄製單次最大時長上限為 1 分鐘（60 秒）。"
+  },
+  "msgGifMaxDurationReached": {
+    "message": "已達到 GIF 最長時間 1 分鐘（60 秒），正在產生 GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "最長 1 分鐘（60 秒）"
+  },
+  "settingGifFps": {
+    "message": "預設 GIF 影格率 (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — 流暢（畫面非常流暢，檔案較大）"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — 標準（網頁用途建議選項，兼顧畫質與檔案大小）"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — 精簡 / 迷因（動作較為跳動，檔案較小）"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — 定格動畫 / 慢速（逐步播放，檔案極小）"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — 簡報（每秒 1 幀，檔案最小）"
+  },
+  "popupRightClickHint": {
+    "message": "在網頁任意位置右鍵點擊，即可使用區域螢幕錄製（影片/GIF）與螢幕取色。"
+  },
+  "toastElementZappedAd": {
+    "message": "已在本次工作階段中隱藏廣告 / iframe。",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "已將圖片複製到剪貼簿",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "關閉 (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "已儲存設定",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "請下載檔案，並使用 VLC 或其他媒體播放器開啟。",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "此資源類型無法預覽",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "下載原始檔案",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "提示：請使用 VLC 或任何桌面媒體播放器開啟下載的檔案，幾乎支援所有格式。",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "正在建立 ZIP 壓縮檔…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "您的瀏覽器不支援 EyeDropper API。",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "拖曳工具列",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "切換格式：MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF 解析度：1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF 影格率：15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "預估 GIF 大小：約 $size$ MB（10 秒），最長 60 秒時最大約 $max$ MB。\n影格率：$fps$ FPS。\nGIF 錄製最長限制為 1 分鐘（60 秒）。",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "複製 $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "螢幕截圖預覽",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4（H.264 / AVC1 — 可在 WhatsApp、Telegram、Jira、Apple 和 Windows 上通用播放）",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF（動態圖片 — 適合 README、Jira、文件和即時通訊）",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM（VP9 — 開放式網路格式）",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "找不到使用中的分頁。",
+    "description": "No active tab found."
+  }
+}

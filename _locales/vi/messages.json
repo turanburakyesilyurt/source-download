@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Kiểm tra, duyệt và tải mọi tài nguyên web dạng ZIP. Chụp toàn trang, bắt bảng trực tiếp và bộ công cụ cho nhà phát triển."
+  },
+  "actionTitle": {
+    "message": "Source Download — Mở bảng điều khiển và theo dõi tài nguyên"
+  },
+  "contextMenuZap": {
+    "message": "Ẩn phần tử này"
+  },
+  "contextMenuUndoZap": {
+    "message": "Khôi phục phần tử đã ẩn gần nhất"
+  },
+  "contextMenuResetZap": {
+    "message": "Đặt lại tất cả phần tử đã ẩn"
+  },
+  "contextMenuCapturePage": {
+    "message": "Chụp ảnh màn hình toàn trang"
+  },
+  "contextMenuPageArchive": {
+    "message": "Tải xuống bản lưu trang ngoại tuyến"
+  },
+  "catAll": {
+    "message": "Tất cả"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Hình ảnh"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Video"
+  },
+  "catAudio": {
+    "message": "Âm thanh"
+  },
+  "catCaptions": {
+    "message": "Phụ đề"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Bản đồ nguồn"
+  },
+  "catFonts": {
+    "message": "Phông chữ"
+  },
+  "catDocuments": {
+    "message": "Tài liệu"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifest"
+  },
+  "catText": {
+    "message": "Văn bản"
+  },
+  "catOther": {
+    "message": "Khác"
+  },
+  "catScreenshot": {
+    "message": "Ảnh chụp màn hình"
+  },
+  "catArchive": {
+    "message": "Lưu trữ trang"
+  },
+  "btnRefresh": {
+    "message": "Làm mới"
+  },
+  "btnExport": {
+    "message": "Xuất"
+  },
+  "btnDownloadSelected": {
+    "message": "Tải xuống mục đã chọn"
+  },
+  "btnDownloadView": {
+    "message": "Tải xuống mục đang hiển thị"
+  },
+  "btnDownloadAll": {
+    "message": "Tải xuống tất cả"
+  },
+  "btnDownloadFiltered": {
+    "message": "Tải xuống mục đã lọc"
+  },
+  "btnTheme": {
+    "message": "Chuyển giao diện"
+  },
+  "btnGuide": {
+    "message": "Hướng dẫn sử dụng"
+  },
+  "btnCaptureFullPage": {
+    "message": "Ảnh chụp màn hình toàn trang"
+  },
+  "btnOfflineArchive": {
+    "message": "Lưu thành một tệp HTML"
+  },
+  "filterMinKb": {
+    "message": "KB tối thiểu"
+  },
+  "filterMaxKb": {
+    "message": "KB tối đa"
+  },
+  "filterMinWidth": {
+    "message": "Chiều rộng tối thiểu px"
+  },
+  "filterMinHeight": {
+    "message": "Chiều cao tối thiểu px"
+  },
+  "filterSortName": {
+    "message": "Sắp xếp theo tên"
+  },
+  "filterSortSize": {
+    "message": "Sắp xếp theo kích thước"
+  },
+  "filterSortType": {
+    "message": "Sắp xếp theo loại"
+  },
+  "filterSortTime": {
+    "message": "Sắp xếp theo thời gian"
+  },
+  "filterHideDupes": {
+    "message": "Ẩn bản trùng lặp"
+  },
+  "filterClear": {
+    "message": "Xóa"
+  },
+  "textModeContains": {
+    "message": "Chứa"
+  },
+  "textModeRegex": {
+    "message": "Biểu thức chính quy"
+  },
+  "textModeCss": {
+    "message": "Bộ chọn CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Lọc văn bản trang hoặc truy vấn DOM trực tiếp…"
+  },
+  "textAllElements": {
+    "message": "Tất cả các phần tử"
+  },
+  "textLiveOn": {
+    "message": "Trực tiếp: bật"
+  },
+  "textLiveOff": {
+    "message": "Trực tiếp: tắt"
+  },
+  "textScanNow": {
+    "message": "Quét ngay"
+  },
+  "textReading": {
+    "message": "Chế độ đọc"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Chọn một tài nguyên để kiểm tra chi tiết của nó"
+  },
+  "inspectorDetails": {
+    "message": "Chi tiết"
+  },
+  "inspectorOpenTab": {
+    "message": "Mở trong tab mới"
+  },
+  "inspectorCopyUrl": {
+    "message": "Sao chép URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Tải tệp này xuống"
+  },
+  "inspectorClose": {
+    "message": "Đóng"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Loại"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Kích thước"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Nguồn"
+  },
+  "metaTitle": {
+    "message": "Tiêu đề"
+  },
+  "metaAlt": {
+    "message": "Văn bản thay thế"
+  },
+  "ratingPrompt": {
+    "message": "Bạn thích Source Download? Hãy ủng hộ dự án mã nguồn mở của chúng tôi bằng một đánh giá trên Chrome Web Store hoặc một ngôi sao trên GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Viết đánh giá"
+  },
+  "ratingStar": {
+    "message": "★ Gắn dấu sao trên GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Bỏ qua"
+  },
+  "toastElementZapped": {
+    "message": "Đã ẩn phần tử trong phiên này."
+  },
+  "toastElementRestored": {
+    "message": "Đã khôi phục phần tử."
+  },
+  "toastAllElementsRestored": {
+    "message": "Đã khôi phục tất cả phần tử đã ẩn."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Đang chụp ảnh màn hình toàn trang…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Đã lưu ảnh chụp màn hình toàn trang."
+  },
+  "toastArchiveCreated": {
+    "message": "Đã lưu bản lưu HTML một tệp."
+  },
+  "brandSignature": {
+    "message": "Được tạo bởi Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Hình ảnh & SVG"
+  },
+  "tabMedia": {
+    "message": "Phương tiện & Âm thanh"
+  },
+  "tabFonts": {
+    "message": "Phông chữ"
+  },
+  "tabTextScraper": {
+    "message": "Văn bản & Bảng"
+  },
+  "heroScreenshotTitle": {
+    "message": "Ảnh chụp màn hình toàn trang"
+  },
+  "heroScreenshotDesc": {
+    "message": "Ghép nhiều khung nhìn liền mạch, tự động ẩn tiêu đề cố định"
+  },
+  "heroArchiveTitle": {
+    "message": "Lưu trữ HTML một tệp"
+  },
+  "heroArchiveDesc": {
+    "message": "Nhúng CSS và ảnh Base64 vào tệp, bản chụp an toàn để xem ngoại tuyến"
+  },
+  "copyDataUri": {
+    "message": "Sao chép Data URI"
+  },
+  "copyUrl": {
+    "message": "Sao chép URL"
+  },
+  "downloadSingle": {
+    "message": "Tải xuống"
+  },
+  "searchPlaceholder": {
+    "message": "Lọc theo tên, URL, thẻ, MIME hoặc /regex/…"
+  },
+  "viewGrid": {
+    "message": "Chế độ xem lưới"
+  },
+  "viewList": {
+    "message": "Chế độ xem danh sách"
+  },
+  "btnScreenshot": {
+    "message": "Ảnh chụp màn hình"
+  },
+  "btnArchive": {
+    "message": "Lưu HTML"
+  },
+  "exportJson": {
+    "message": "Danh sách hiển thị dưới dạng JSON"
+  },
+  "exportCsv": {
+    "message": "Danh sách hiển thị dưới dạng CSV"
+  },
+  "exportHar": {
+    "message": "Nhật ký mạng dưới dạng HAR"
+  },
+  "exportScreenshot": {
+    "message": "Ảnh chụp màn hình toàn trang (PNG)"
+  },
+  "exportArchive": {
+    "message": "Lưu trữ trang ngoại tuyến (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Tất cả phương thức"
+  },
+  "filterTypeAll": {
+    "message": "Tất cả các loại"
+  },
+  "filterSortDir": {
+    "message": "Chuyển đổi tăng dần/giảm dần"
+  },
+  "emptyTitle": {
+    "message": "Không tìm thấy tài nguyên nào"
+  },
+  "emptySubtitle": {
+    "message": "Tải lại trang trong khi bảng này mở để nắm bắt các yêu cầu mạng hoặc nhấp vào Làm mới để quét DOM hiện tại."
+  },
+  "statusResources": {
+    "message": "tài nguyên"
+  },
+  "statusFiltered": {
+    "message": "đã lọc"
+  },
+  "statusSelected": {
+    "message": "đã chọn"
+  },
+  "statusDupes": {
+    "message": "bản trùng lặp bị ẩn"
+  },
+  "statusSize": {
+    "message": "kích thước"
+  },
+  "langAuto": {
+    "message": "Tự động (Trình duyệt)"
+  },
+  "langSelectorTitle": {
+    "message": "Chọn ngôn ngữ"
+  },
+  "textPillAll": {
+    "message": "Tất cả nội dung"
+  },
+  "textPillText": {
+    "message": "📄 Văn bản & Bài viết"
+  },
+  "textPillTables": {
+    "message": "📊 Chỉ bảng"
+  },
+  "textSelectAll": {
+    "message": "Chọn tất cả"
+  },
+  "textDeselectAll": {
+    "message": "Bỏ chọn tất cả"
+  },
+  "textClearSelection": {
+    "message": "Xóa"
+  },
+  "toastRefreshComplete": {
+    "message": "Quét trang hoàn tất: $count$ tài nguyên mới",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Đã sao chép $count$ khối",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Đã sao chép vào bảng nhớ tạm"
+  },
+  "toastTableCopied": {
+    "message": "Đã sao chép bảng vào bảng nhớ tạm"
+  },
+  "toastNothingToExport": {
+    "message": "Không có gì để xuất"
+  },
+  "toastExportedTxt": {
+    "message": "Đã xuất $count$ khối dưới dạng TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Đã xuất $count$ khối dưới dạng Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Không có hàng nào trong bảng được chụp"
+  },
+  "toastExportedCsv": {
+    "message": "Bảng đã xuất dưới dạng CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Bảng đã xuất dưới dạng XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Đã xuất $count$ bảng dưới dạng $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Đã xuất $count$ trang tính dưới dạng XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Không có tài nguyên để tải xuống."
+  },
+  "toastNoVisibleResources": {
+    "message": "Không có tài nguyên hiển thị để tải xuống."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Trước tiên, hãy chọn ít nhất một tài nguyên."
+  },
+  "toastZipSaved": {
+    "message": "Đã lưu ZIP: $fetched$ trong tổng số $total$ tài nguyên",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Tạo ZIP không thành công: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "Đã xuất HAR ($count$ mục nhập)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "Đã sao chép URL vào bảng nhớ tạm"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Cửa sổ kiểm tra DevTools không có sẵn."
+  },
+  "toastScreenshotError": {
+    "message": "Lỗi ảnh chụp màn hình: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Đang tạo bản lưu trang ngoại tuyến…"
+  },
+  "toastArchiveError": {
+    "message": "Lỗi lưu trữ: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Đã hết thời gian định dạng - hiển thị tệp gốc."
+  },
+  "toastFormatFailed": {
+    "message": "Không thể định dạng tệp - hiển thị bản gốc."
+  },
+  "emptySearchTitle": {
+    "message": "Không có kết quả phù hợp cho \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Hãy thử cụm từ tìm kiếm khác hoặc chuyển sang danh mục khác."
+  },
+  "emptyFiltersTitle": {
+    "message": "Không có tài nguyên nào phù hợp với bộ lọc hiện tại"
+  },
+  "emptyFiltersSub": {
+    "message": "Nới lỏng các bộ lọc kích thước ở trên hoặc nhấn Xóa."
+  },
+  "textEmptyQueryReject": {
+    "message": "Trang đã từ chối truy vấn đó. Hãy sửa nó ở trên và kết quả sẽ quay lại ngay."
+  },
+  "textEmptyNoMatch": {
+    "message": "Không có phần tử nào trên trang phù hợp với truy vấn này. Hãy thử bộ chọn lỏng hơn hoặc chuyển chế độ bên cạnh hộp."
+  },
+  "textEmptyInitial": {
+    "message": "Chưa thu thập được gì. Tính năng thu thập trực tiếp đang chạy — toàn bộ trang sẽ xuất hiện ở đây dưới dạng văn bản có thể đọc được."
+  },
+  "textEmptyFiltered": {
+    "message": "Không có gì phù hợp với bộ lọc phần tử và truy vấn hiện tại."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ khối",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ từ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ ký tự",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ bảng · $rows$ hàng duy nhất",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ đã chọn — chỉ xuất các mục này",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Bảng — $count$ hàng trên màn hình",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Bảng — tất cả $count$ hàng duy nhất",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ ảnh chụp nhanh",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "đã cập nhật $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Hiển thị tất cả $count$ hàng",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Hiển thị tất cả các hàng"
+  },
+  "textTableHistory": {
+    "message": "Lịch sử ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Ẩn lịch sử"
+  },
+  "textTableNoRows": {
+    "message": "Chưa có hàng nào được ghi lại."
+  },
+  "textBtnCopy": {
+    "message": "Sao chép văn bản"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Sao chép"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ hình ảnh trùng lặp",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Xuất"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Đang tải SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Không thể truy xuất nội dung SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "Đang tải bản xem trước phông chữ…"
+  },
+  "inspectorFontSample": {
+    "message": "Xem trước phông chữ"
+  },
+  "inspectorBeautify": {
+    "message": "Định dạng"
+  },
+  "inspectorOriginal": {
+    "message": "Bản gốc"
+  },
+  "inspectorHeaders": {
+    "message": "Header"
+  },
+  "inspectorResponse": {
+    "message": "Phản hồi"
+  },
+  "inspectorRequest": {
+    "message": "Yêu cầu"
+  },
+  "inspectorQueryParams": {
+    "message": "Tham số truy vấn"
+  },
+  "inspectorRequestBody": {
+    "message": "Nội dung yêu cầu"
+  },
+  "textHintHtml": {
+    "message": "Một bản sao trực tiếp, có thể đọc được của trang. Mọi phần tử chứa văn bản đều được ghi lại theo thứ tự DOM và được giữ ở đây khi trang thay đổi. Truy vấn nó bằng văn bản thuần túy, biểu thức chính quy, <strong>bộ chọn CSS</strong> hoặc biểu thức <strong>XPath</strong>, sau đó xuất nội dung phù hợp. Xem <a href=\"#\" id=\"text-hint-guide\">hướng dẫn</a> để biết chi tiết."
+  },
+  "textHeadings": {
+    "message": "Tiêu đề"
+  },
+  "textAllLevels": {
+    "message": "Tất cả các cấp"
+  },
+  "textMatches": {
+    "message": "kết quả khớp"
+  },
+  "textMatch": {
+    "message": "kết quả khớp"
+  },
+  "textReadingOn": {
+    "message": "Chế độ đọc: bật"
+  },
+  "toastDownloadStarted": {
+    "message": "Đã bắt đầu tải xuống: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Không thể tìm nạp tài nguyên này (CORS hoặc loại không được hỗ trợ)."
+  },
+  "ratingBannerText": {
+    "message": "Bạn thích Source Download? Hãy ủng hộ dự án mã nguồn mở của chúng tôi bằng một đánh giá trên Chrome Web Store hoặc một ngôi sao trên GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Đánh giá"
+  },
+  "ratingBannerStar": {
+    "message": "★ Gắn sao"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ hàng duy nhất",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ giây trước",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ phút trước",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Chụp ảnh màn hình vùng chọn"
+  },
+  "btnAreaDownload": {
+    "message": "Tải xuống"
+  },
+  "btnAreaCopy": {
+    "message": "Sao chép vào khay nhớ tạm"
+  },
+  "btnAreaCancel": {
+    "message": "Hủy"
+  },
+  "toastAreaCopied": {
+    "message": "Đã sao chép ảnh chụp màn hình vùng chọn vào khay nhớ tạm"
+  },
+  "toastAreaDownloaded": {
+    "message": "Đã lưu ảnh chụp màn hình vùng chọn"
+  },
+  "statusFoundCssResources": {
+    "message": "Đã tìm thấy $count$ tài nguyên được tham chiếu từ CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Quét DOM không thành công: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Đang lập chỉ mục nội dung tệp…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Đang kiểm tra các hình ảnh trùng lặp…"
+  },
+  "statusWorking": {
+    "message": "Đang xử lý…"
+  },
+  "filterMethodTitle": {
+    "message": "Lọc theo phương thức HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Lọc theo loại yêu cầu"
+  },
+  "filterSortTitle": {
+    "message": "Sắp xếp tài nguyên"
+  },
+  "textModeTitle": {
+    "message": "Hộp truy vấn được diễn giải như thế nào"
+  },
+  "textKindTitle": {
+    "message": "Giới hạn ở một loại phần tử"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Cấp độ tiêu đề"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Giá:\\s*\\d+ — Biểu thức chính quy JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — bất kỳ bộ chọn CSS nào"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Tìm kiếm hướng dẫn…"
+  },
+  "popupIntro": {
+    "message": "Danh mục được tính bằng <strong>huy hiệu trên thanh công cụ</strong>. Tắt một danh mục để ngừng đếm — huy hiệu sẽ lập tức chỉ phản ánh những gì bạn theo dõi."
+  },
+  "popupHelpTitle": {
+    "message": "Cách sử dụng bảng điều khiển đầy đủ"
+  },
+  "popupStep1": {
+    "message": "Mở DevTools cho trang bạn muốn kiểm tra <div class=\"hint\"><kbd>F12</kbd> hoặc <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Nhấp vào tab <strong>Source Download</strong> trên thanh công cụ DevTools"
+  },
+  "popupStep3": {
+    "message": "Duyệt, kiểm tra và tải xuống các tài nguyên — riêng lẻ hoặc tất cả cùng một lúc dưới dạng ZIP."
+  },
+  "popupNote": {
+    "message": "Lưu ý: Chrome không cho phép các tiện ích mở DevTools theo chương trình, đó là lý do tại sao bạn có thể truy cập bộ kỹ thuật đầy đủ thông qua thanh công cụ DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Theo dõi tất cả danh mục"
+  },
+  "popupLanguage": {
+    "message": "Ngôn ngữ"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Phản hồi nhị phân - tải xuống để xem"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Đang tải phản hồi…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Không có bản xem trước phản hồi - không thể truy xuất nội dung."
+  },
+  "inspectorLoadingContent": {
+    "message": "Đang tải nội dung…"
+  },
+  "inspectorNoPreview": {
+    "message": "Không có bản xem trước nào - không thể truy xuất nội dung."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Đóng tất cả"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Đóng tất cả các tab đang mở"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Bấm vào để phóng to"
+  },
+  "inspectorViewSource": {
+    "message": "Xem nguồn"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Hiển thị đánh dấu SVG bằng cách tô sáng cú pháp"
+  },
+  "inspectorFormatting": {
+    "message": "Đang định dạng…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Tìm trong nội dung…"
+  },
+  "findPreviousMatch": {
+    "message": "Kết quả khớp trước"
+  },
+  "findNextMatch": {
+    "message": "Kết quả khớp tiếp theo"
+  },
+  "findClose": {
+    "message": "Đóng"
+  },
+  "findShowRaw": {
+    "message": "Hiển thị nội dung gốc (chưa được định dạng)"
+  },
+  "findBeautify": {
+    "message": "Định dạng nội dung này"
+  },
+  "btnRaw": {
+    "message": "Thô"
+  },
+  "btnBeautify": {
+    "message": "Định dạng"
+  },
+  "videoHlsDetected": {
+    "message": "Đã phát hiện luồng HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "Video này không thể phát trên trình duyệt"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome không thể phát trực tiếp luồng HLS. Bạn có thể hợp nhất tất cả các phân đoạn của <b>$NAME$</b> thành một tệp video MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Trình duyệt không hỗ trợ định dạng này"
+  },
+  "btnMergeHls": {
+    "message": "Hợp nhất các phân đoạn và tải xuống"
+  },
+  "toastHlsMerged": {
+    "message": "Đã hợp nhất $COUNT$ phân đoạn thành $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "kích thước không rõ"
+  },
+  "progressFetching": {
+    "message": "Đang tìm nạp $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Đang tạo ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "Đã lưu ZIP: $FETCHED$ trong số $TOTAL$ tài nguyên ($SKIPPED$ không thành công)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Thử lại $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Thử tải xuống lại"
+  },
+  "searchRegexHint": {
+    "message": "Đang bật tìm kiếm regex — đặt truy vấn của bạn trong /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Bao gồm khi xuất"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Gộp mọi ảnh chụp nhanh vào một bảng đã loại bỏ trùng lặp — đây là nội dung sẽ được xuất"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Duyệt các ảnh chụp nhanh trước đó của bảng này"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Tải xuống bảng này dưới dạng CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Ảnh chụp nhanh $INDEX$ — $TIME$ ($COUNT$ hàng)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Chuyển đổi lựa chọn để tải xuống hàng loạt"
+  },
+  "cardDownloadTitle": {
+    "message": "Tải tệp xuống"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Tải xuống trước không thành công — nhấp để thử lại"
+  },
+  "btnThemeLight": {
+    "message": "Chuyển sang giao diện sáng"
+  },
+  "btnThemeDark": {
+    "message": "Chuyển sang giao diện tối"
+  },
+  "guideTitle": {
+    "message": "Source Download — Hướng dẫn sử dụng"
+  },
+  "guideEmpty": {
+    "message": "Không có phần hướng dẫn nào phù hợp với tìm kiếm của bạn."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% không phụ thuộc.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Thu nhỏ (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "Phóng to (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Đặt lại thu phóng (0)"
+  },
+  "lightboxClose": {
+    "message": "Đóng (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Kéo để thay đổi kích thước"
+  },
+  "ratingDismissTitle": {
+    "message": "Bỏ qua"
+  },
+  "inspectorResourceTitle": {
+    "message": "Tài nguyên"
+  },
+  "guideSecGettingStarted": {
+    "message": "Bắt đầu"
+  },
+  "guideSecCategories": {
+    "message": "Danh mục"
+  },
+  "guideSecSearchFilters": {
+    "message": "Tìm kiếm & bộ lọc"
+  },
+  "guideSecGridView": {
+    "message": "Chế độ xem lưới & danh sách"
+  },
+  "guideSecInspect": {
+    "message": "Kiểm tra tài nguyên"
+  },
+  "guideSecDownloading": {
+    "message": "Tải xuống"
+  },
+  "guideSecLightbox": {
+    "message": "Trình xem phóng to"
+  },
+  "guideSecTextTables": {
+    "message": "Văn bản & bảng"
+  },
+  "guideSecCaptions": {
+    "message": "Phụ đề"
+  },
+  "guideSecSourceMaps": {
+    "message": "Bản đồ nguồn"
+  },
+  "guideSecDupes": {
+    "message": "Hình ảnh trùng lặp"
+  },
+  "guideSecVideoHls": {
+    "message": "Dự phòng video & HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Mẹo nâng cao"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Nhấp vào tab <strong>Source Download</strong> trong thanh công cụ DevTools (nhấn <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, sau đó chọn tab trong thanh công cụ DevTools). Chrome không cho phép các tiện ích mở rộng tự động mở DevTools, đó là lý do bảng điều khiển nằm ở đó. Cửa sổ bật lên của biểu tượng trên thanh công cụ cho phép bạn chọn danh mục nào được tính vào bộ đếm huy hiệu trên biểu tượng. Nút mặt trời/mặt trăng trên thanh công cụ của bảng điều khiển sẽ cố định giao diện sáng hoặc tối độc lập với Chrome; lựa chọn đó được ghi nhớ."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Các tab dọc ở bên trái nhóm mọi tài nguyên đã thu thập thành 17 danh mục chuyên dụng theo loại: Hình ảnh, Video, Âm thanh, Phụ đề, Tài liệu, Phông chữ, Bản đồ nguồn, WASM, SVG, API, Cookie, Bộ nhớ, v.v. Mỗi tab hiển thị số lượng trực tiếp. Mỗi lần chỉ có một danh mục được hiển thị; chuyển danh mục sẽ đặt lại tất cả các bộ lọc, vì vậy những gì bạn nhìn thấy luôn khớp với tab."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Thanh tìm kiếm lọc theo tên, URL, loại, văn bản thay thế hoặc tiêu đề. Đặt truy vấn của bạn trong cặp <kbd>/…/</kbd> để dùng biểu thức chính quy, ví dụ: <code>/\\.(png|jpg)$/</code>. Bên dưới thanh công cụ, thanh bộ lọc thay đổi theo danh mục: phạm vi dung lượng và kích thước cho phương tiện, phương thức HTTP và loại yêu cầu cho API, cùng với sắp xếp và chiều sắp xếp."
+  },
+  "guideSecGridViewContent": {
+    "message": "Chuyển đổi giữa lưới thu gọn (hình thu nhỏ) và danh sách chi tiết bằng các nút bên cạnh thanh tìm kiếm. Sự lựa chọn của bạn được ghi nhớ giữa các phiên. Trong chế độ xem danh sách, các hộp kiểm cho phép bạn chọn các tài nguyên riêng lẻ để tải xuống hàng loạt."
+  },
+  "guideSecInspectContent": {
+    "message": "Bấm vào bất kỳ tài nguyên nào để mở nó trong khung kiểm tra ở bên phải. Mỗi tệp được mở sẽ trở thành một tab, do đó bạn có thể so sánh nhiều tài nguyên cạnh nhau — tệp mới nhất sẽ mở ở bên trái. Có các trình xem chuyên dụng cho hình ảnh, video, âm thanh, phông chữ, SVG và văn bản/mã (với nút Định dạng). API hiển thị chế độ xem chia đôi: phản hồi ở bên trái, chi tiết yêu cầu (phương thức, trạng thái, header, tham số truy vấn và nội dung) ở bên phải."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Tải xuống mục đang hiển thị</strong> lưu các tài nguyên hiện đang hiển thị (danh mục đang chọn + tìm kiếm + bộ lọc) dưới dạng ZIP; nút đổi nhãn thành <em>Tải xuống mục đã lọc (N)</em> khi có bộ lọc đang bật. Di chuột vào bất kỳ nút tải xuống nào để xem dung lượng tệp nén ước tính trước khi bạn nhấp. <strong>Tải xuống mục đã chọn</strong> chỉ tải xuống các mục đã đánh dấu. <strong>Tải xuống tất cả</strong> gom mọi tài nguyên được phát hiện vào một ZIP có cấu trúc thư mục. Các lượt tải xuống không thành công sẽ được thử lại tự động và có thể được thử lại từ menu ngữ cảnh. <strong>Xuất</strong> ghi danh sách hiển thị dưới dạng JSON hoặc CSV, hoặc xuất nhật ký mạng của Chrome dưới dạng tệp HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Nút phóng to sẽ mở phương tiện trong trình xem phóng to toàn kích thước, nơi bạn có thể kéo để di chuyển, thu phóng bằng con lăn chuột, các nút trên màn hình hoặc bàn phím (<kbd>+</kbd>/<kbd>-</kbd> để thu phóng, <kbd>0</kbd> để đặt lại, <kbd>Esc</kbd> để đóng)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Danh mục <strong>Văn bản</strong> là bản sao trực tiếp, có thể đọc được của trang. Nó thu thập mọi phần tử chứa văn bản — tiêu đề, đoạn văn, mục danh sách, nút, <code>div</code>/<code>span</code> và hơn thế nữa — theo thứ tự DOM và tiếp tục quét khi <strong>Trực tiếp</strong> được bật.</p><p>Hộp <strong>Truy vấn</strong> hoạt động theo bốn cách, chọn từ danh sách thả xuống bên cạnh: <strong>Chứa</strong> và <strong>Regex</strong> lọc văn bản đã thu thập, trong khi <strong>Bộ chọn CSS</strong> và <strong>XPath</strong> được chạy trên trang trực tiếp nên có thể truy cập mọi thứ trong DOM. XPath cũng chấp nhận các biểu thức trả về một giá trị thay vì các phần tử, chẳng hạn như <code>count(//a)</code> hoặc <code>//@href</code>. Mọi thông báo của trang về truy vấn bị lỗi đều được hiển thị bên cạnh hộp. <strong>Phần tử</strong> thu hẹp kết quả về một thẻ duy nhất, kèm số lượng của từng thẻ được tìm thấy trên trang. Việc xóa hộp truy vấn (hoặc nhấn <strong>Xóa</strong>) sẽ đưa bạn trở lại <em>Tất cả các phần tử</em> và thu thập lại trang — bạn không bao giờ phải tự đặt lại danh sách thả xuống.</p><p><strong>Chế độ đọc</strong> ẩn các thẻ, hộp kiểm và đường dẫn vị trí để luồng nội dung đọc giống như một tài liệu. Các bảng lưu một lịch sử ảnh chụp nhanh có giới hạn để bảng động (SPA) không bao giờ bị mất. Nhấn <strong>Hiển thị tất cả các hàng</strong> trên một bảng để gộp mọi ảnh chụp nhanh vào một chế độ xem đã loại bỏ trùng lặp — đó chính xác là nội dung của bản xuất. Xuất dưới dạng <strong>TXT</strong> (trang có thể đọc được), <strong>MD</strong> (Markdown, bao gồm bảng), hoặc bảng dưới dạng CSV, HTML hoặc sổ làm việc <strong>XLSX</strong> nhiều trang thực thụ. Các mục đã chọn được ưu tiên; nếu không, mọi thứ đang hiển thị sẽ được xuất.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML và các tệp phụ đề khác — bao gồm các nguồn <code>&lt;track&gt;</code> — nằm trong tab <strong>Phụ đề</strong> riêng thay vì trộn lẫn với các tài liệu."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Các tệp <code>.map</code> và nội dung JSON trông giống source map (chứa <code>mappings</code> và <code>sources</code>) được nhóm trong <strong>Bản đồ nguồn</strong>, với trình xem JSON và Định dạng, để chúng không còn làm lộn xộn tab JSON nữa."
+  },
+  "guideSecDupesContent": {
+    "message": "Trên tab Hình ảnh, bảng điều khiển băm các byte đã thu thập và đánh dấu các tệp giống hệt nhau. Bộ lọc <strong>Ẩn bản trùng lặp</strong> giữ lại bản đầu tiên của mỗi nhóm để tệp ZIP của chế độ xem không chứa cùng một hình thu nhỏ hai lần."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Các luồng mà trình duyệt không thể phát trực tiếp (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, codec không xác định) sẽ hiển thị giao diện thay thế thay vì trình phát màu đen. Đối với HLS, bạn có thể hợp nhất các phân đoạn thành một tệp video ngay từ bảng điều khiển, hoặc tải xuống tệp manifest gốc."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Phản hồi <strong>API</strong> động (XHR/fetch) không bị loại trùng theo URL — mỗi phản hồi vẫn nằm trong danh sách (giới hạn theo FIFO) để bạn có thể so sánh các yêu cầu lặp lại. Tài nguyên tĩnh được loại bỏ trùng lặp. Dùng <strong>Làm mới</strong> để quét lại DOM hiện tại, và tải lại trang khi bảng điều khiển đang mở để thu thập mọi yêu cầu mạng, bao gồm cả những yêu cầu được kích hoạt trước khi bạn chuyển tab."
+  },
+  "toolArrow": {
+    "message": "Công cụ mũi tên"
+  },
+  "toolRect": {
+    "message": "Công cụ hình chữ nhật"
+  },
+  "toolText": {
+    "message": "Công cụ văn bản"
+  },
+  "toolUndo": {
+    "message": "Hoàn tác (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Làm lại (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Màu"
+  },
+  "badgeStrokeSize": {
+    "message": "Kích thước: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Cỡ chữ: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Quay vùng chọn thành video / GIF"
+  },
+  "btnRecStart": {
+    "message": "Bắt đầu quay"
+  },
+  "btnRecPause": {
+    "message": "Tạm dừng"
+  },
+  "btnRecResume": {
+    "message": "Tiếp tục"
+  },
+  "btnRecStop": {
+    "message": "Kết thúc và tải xuống"
+  },
+  "btnRecCancel": {
+    "message": "Hủy"
+  },
+  "toastRecSaved": {
+    "message": "Đã lưu video quay vùng chọn"
+  },
+  "toastRecCancelled": {
+    "message": "Đã hủy quay video"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Chưa được cấp quyền quay màn hình"
+  },
+  "btnPopupRecordArea": {
+    "message": "Quay video / GIF vùng chọn"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Chụp ảnh màn hình vùng chọn"
+  },
+  "contextMenuPickColor": {
+    "message": "Chọn màu từ màn hình"
+  },
+  "btnPopupPickColor": {
+    "message": "Chọn màu"
+  },
+  "colorPickerTitle": {
+    "message": "Công cụ chọn màu"
+  },
+  "btnColorPickAgain": {
+    "message": "Chọn màu khác"
+  },
+  "toastColorCopied": {
+    "message": "Đã sao chép màu vào khay nhớ tạm"
+  },
+  "toastProgressCapturing": {
+    "message": "Đang chụp toàn trang… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Đang ghép ảnh…"
+  },
+  "modalExportTitle": {
+    "message": "Ảnh chụp toàn trang đã sẵn sàng"
+  },
+  "btnExportPng": {
+    "message": "Tải xuống PNG"
+  },
+  "btnExportJpg": {
+    "message": "Tải xuống JPG"
+  },
+  "btnExportPdf": {
+    "message": "Lưu dưới dạng PDF"
+  },
+  "btnExportCopy": {
+    "message": "Sao chép vào khay nhớ tạm"
+  },
+  "btnExportGenerating": {
+    "message": "Đang tạo…"
+  },
+  "toastPdfGenerated": {
+    "message": "Đã lưu tài liệu PDF."
+  },
+  "settingNamingPatterns": {
+    "message": "Mẫu đặt tên tệp"
+  },
+  "settingVideoFormat": {
+    "message": "Định dạng video mặc định"
+  },
+  "settingNamingPreview": {
+    "message": "Xem trước:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Đang tạo GIF, vui lòng chờ…"
+  },
+  "settingGifResolution": {
+    "message": "Độ phân giải GIF mặc định"
+  },
+  "optGifOriginal": {
+    "message": "Gốc (1:1 độ phân giải gốc — đủ 3K/4K, không thu nhỏ)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (tối đa 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (tối đa 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (tối đa 854px — nhanh hơn, dung lượng nhỏ hơn)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Định dạng GIF hỗ trợ thời lượng ghi tối đa là 1 phút (60 giây)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Ghi màn hình (Video & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Ghi lại bất kỳ vùng màn hình nào dưới dạng MP4, WebM hoặc GIF động. Bản ghi GIF có độ phân giải gốc 1:1, cấu hình 1080p, 720p và 480p với kích thước tệp ước tính trực tiếp. Thời lượng ghi GIF tối đa là 1 phút (60 giây) để có hiệu suất trình duyệt tối ưu."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Đã đạt thời lượng GIF tối đa 1 phút (60 giây). Đang tạo GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Tối đa 1 phút (60 giây)"
+  },
+  "settingGifFps": {
+    "message": "Tốc độ khung hình GIF mặc định (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Mượt (rất mượt, dung lượng lớn hơn)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Tiêu chuẩn (khuyên dùng cho web, cân bằng tốt)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Gọn nhẹ / Meme (chuyển động giật, dung lượng nhỏ)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / Chậm (từng bước, dung lượng rất nhỏ)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Trình chiếu (1 khung hình/giây, dung lượng tối thiểu)"
+  },
+  "popupRightClickHint": {
+    "message": "Nhấp chuột phải vào bất kỳ đâu trên trang web để Ghi màn hình (Video/GIF) và Bộ chọn màu."
+  },
+  "toastElementZappedAd": {
+    "message": "Đã ẩn quảng cáo / iframe trong phiên này.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Đã sao chép hình ảnh vào khay nhớ tạm",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Đóng (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Đã lưu cài đặt",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Tải tệp xuống và mở bằng VLC hoặc trình phát đa phương tiện khác.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Không có bản xem trước cho loại tài nguyên này",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Tải xuống bản gốc",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Mẹo: mở tệp đã tải xuống bằng VLC hoặc bất kỳ trình phát đa phương tiện máy tính nào — hầu như mọi định dạng đều phát được.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Đang tạo tệp nén ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Trình duyệt của bạn không hỗ trợ EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Kéo thanh công cụ",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Chuyển định dạng: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Độ phân giải GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Tốc độ khung hình GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Dung lượng GIF ước tính: ~$size$ MB (cho 10 giây), tối đa ~$max$ MB với thời lượng tối đa 60 giây.\nTốc độ khung hình: $fps$ FPS.\nBản quay GIF bị giới hạn tối đa 1 phút (60 giây).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Sao chép $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Xem trước ảnh chụp màn hình",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — phát được ở mọi nơi, gồm WhatsApp, Telegram, Jira, Apple và Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (ảnh động — lý tưởng cho README, Jira, tài liệu và tin nhắn)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — định dạng web mở)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Không tìm thấy tab đang hoạt động.",
+    "description": "No active tab found."
+  }
+}

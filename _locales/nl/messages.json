@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Inspecteer en download elk webbestand als ZIP. Screenshots van volledige pagina's, live tabelopname en ontwikkelaarstools."
+  },
+  "actionTitle": {
+    "message": "Source Download — Open paneel en volg bronnen"
+  },
+  "contextMenuZap": {
+    "message": "Dit element verbergen"
+  },
+  "contextMenuUndoZap": {
+    "message": "Laatst verborgen element herstellen"
+  },
+  "contextMenuResetZap": {
+    "message": "Alle verborgen elementen herstellen"
+  },
+  "contextMenuCapturePage": {
+    "message": "Schermafbeelding van volledige pagina maken"
+  },
+  "contextMenuPageArchive": {
+    "message": "Offline pagina-archief downloaden"
+  },
+  "catAll": {
+    "message": "Alle"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Afbeeldingen"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Video's"
+  },
+  "catAudio": {
+    "message": "Audio"
+  },
+  "catCaptions": {
+    "message": "Ondertitels"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Bronkaarten"
+  },
+  "catFonts": {
+    "message": "Lettertypen"
+  },
+  "catDocuments": {
+    "message": "Documenten"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifesten"
+  },
+  "catText": {
+    "message": "Tekst"
+  },
+  "catOther": {
+    "message": "Overig"
+  },
+  "catScreenshot": {
+    "message": "Schermafbeelding"
+  },
+  "catArchive": {
+    "message": "Paginaarchief"
+  },
+  "btnRefresh": {
+    "message": "Vernieuwen"
+  },
+  "btnExport": {
+    "message": "Exporteren"
+  },
+  "btnDownloadSelected": {
+    "message": "Geselecteerd downloaden"
+  },
+  "btnDownloadView": {
+    "message": "Weergave downloaden"
+  },
+  "btnDownloadAll": {
+    "message": "Alles downloaden"
+  },
+  "btnDownloadFiltered": {
+    "message": "Gefilterd downloaden"
+  },
+  "btnTheme": {
+    "message": "Thema wisselen"
+  },
+  "btnGuide": {
+    "message": "Gebruikershandleiding"
+  },
+  "btnCaptureFullPage": {
+    "message": "Schermafbeelding van volledige pagina"
+  },
+  "btnOfflineArchive": {
+    "message": "Opslaan als één HTML-bestand"
+  },
+  "filterMinKb": {
+    "message": "Min. KB"
+  },
+  "filterMaxKb": {
+    "message": "Max. KB"
+  },
+  "filterMinWidth": {
+    "message": "Min. breedte (px)"
+  },
+  "filterMinHeight": {
+    "message": "Min. hoogte (px)"
+  },
+  "filterSortName": {
+    "message": "Sorteer op naam"
+  },
+  "filterSortSize": {
+    "message": "Sorteer op grootte"
+  },
+  "filterSortType": {
+    "message": "Sorteer op type"
+  },
+  "filterSortTime": {
+    "message": "Sorteer op tijd"
+  },
+  "filterHideDupes": {
+    "message": "Duplicaten verbergen"
+  },
+  "filterClear": {
+    "message": "Wissen"
+  },
+  "textModeContains": {
+    "message": "Bevat"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS-selector"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Filter paginatekst of bevraag de live DOM…"
+  },
+  "textAllElements": {
+    "message": "Alle elementen"
+  },
+  "textLiveOn": {
+    "message": "Live aan"
+  },
+  "textLiveOff": {
+    "message": "Live uit"
+  },
+  "textScanNow": {
+    "message": "Nu scannen"
+  },
+  "textReading": {
+    "message": "Leesmodus"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Selecteer een bron om de details te bekijken"
+  },
+  "inspectorDetails": {
+    "message": "Details"
+  },
+  "inspectorOpenTab": {
+    "message": "Openen in nieuw tabblad"
+  },
+  "inspectorCopyUrl": {
+    "message": "Kopieer URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Download dit bestand"
+  },
+  "inspectorClose": {
+    "message": "Sluiten"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Typ"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Grootte"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Bron"
+  },
+  "metaTitle": {
+    "message": "Titel"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Bevalt Source Download? Steun onze open-sourcevisie met een recensie in de Chrome Web Store of een ster op GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Laat een recensie achter"
+  },
+  "ratingStar": {
+    "message": "★ Ster op GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Negeren"
+  },
+  "toastElementZapped": {
+    "message": "Element verborgen voor deze sessie."
+  },
+  "toastElementRestored": {
+    "message": "Element hersteld."
+  },
+  "toastAllElementsRestored": {
+    "message": "Alle verborgen elementen hersteld."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Schermafbeelding van volledige pagina wordt gemaakt…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Schermafbeelding van volledige pagina opgeslagen."
+  },
+  "toastArchiveCreated": {
+    "message": "HTML-archief in één bestand opgeslagen."
+  },
+  "brandSignature": {
+    "message": "Gemaakt door Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Afbeeldingen en SVG"
+  },
+  "tabMedia": {
+    "message": "Media en audio"
+  },
+  "tabFonts": {
+    "message": "Lettertypen"
+  },
+  "tabTextScraper": {
+    "message": "Tekst en tabellen"
+  },
+  "heroScreenshotTitle": {
+    "message": "Schermafbeelding van volledige pagina"
+  },
+  "heroScreenshotDesc": {
+    "message": "Naadloze samenvoeging van meerdere viewports met onderdrukking van sticky headers"
+  },
+  "heroArchiveTitle": {
+    "message": "HTML-archief met één bestand"
+  },
+  "heroArchiveDesc": {
+    "message": "Sluit CSS en Base64-afbeeldingen in; veilige offline momentopname"
+  },
+  "copyDataUri": {
+    "message": "Kopieer data-URI"
+  },
+  "copyUrl": {
+    "message": "Kopieer URL"
+  },
+  "downloadSingle": {
+    "message": "Downloaden"
+  },
+  "searchPlaceholder": {
+    "message": "Filter op naam, URL, tag, MIME of /regex/…"
+  },
+  "viewGrid": {
+    "message": "Rasterweergave"
+  },
+  "viewList": {
+    "message": "Lijstweergave"
+  },
+  "btnScreenshot": {
+    "message": "Schermafbeelding"
+  },
+  "btnArchive": {
+    "message": "HTML opslaan"
+  },
+  "exportJson": {
+    "message": "Zichtbare lijst als JSON"
+  },
+  "exportCsv": {
+    "message": "Zichtbare lijst als CSV"
+  },
+  "exportHar": {
+    "message": "Netwerklogboek als HAR"
+  },
+  "exportScreenshot": {
+    "message": "Schermafbeelding van volledige pagina (PNG)"
+  },
+  "exportArchive": {
+    "message": "Offline pagina-archief (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Alle methoden"
+  },
+  "filterTypeAll": {
+    "message": "Alle soorten"
+  },
+  "filterSortDir": {
+    "message": "Schakel oplopend/aflopend"
+  },
+  "emptyTitle": {
+    "message": "Geen bronnen gevonden"
+  },
+  "emptySubtitle": {
+    "message": "Laad de pagina opnieuw terwijl dit paneel geopend is om netwerkverzoeken vast te leggen, of klik op Vernieuwen om de huidige DOM te scannen."
+  },
+  "statusResources": {
+    "message": "bronnen"
+  },
+  "statusFiltered": {
+    "message": "gefilterd"
+  },
+  "statusSelected": {
+    "message": "geselecteerd"
+  },
+  "statusDupes": {
+    "message": "duplicaten verborgen"
+  },
+  "statusSize": {
+    "message": "grootte"
+  },
+  "langAuto": {
+    "message": "Automatisch (browser)"
+  },
+  "langSelectorTitle": {
+    "message": "Selecteer taal"
+  },
+  "textPillAll": {
+    "message": "Alle inhoud"
+  },
+  "textPillText": {
+    "message": "📄 Tekst en artikelen"
+  },
+  "textPillTables": {
+    "message": "📊 Alleen tabellen"
+  },
+  "textSelectAll": {
+    "message": "Alles selecteren"
+  },
+  "textDeselectAll": {
+    "message": "Alles deselecteren"
+  },
+  "textClearSelection": {
+    "message": "Wissen"
+  },
+  "toastRefreshComplete": {
+    "message": "Paginascan voltooid: $count$ nieuwe bronnen",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$ blok(ken) gekopieerd",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Gekopieerd naar klembord"
+  },
+  "toastTableCopied": {
+    "message": "Tabel gekopieerd naar klembord"
+  },
+  "toastNothingToExport": {
+    "message": "Niets om te exporteren"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ blok(ken) geëxporteerd als TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "$count$ blok(ken) geëxporteerd als Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Geen tabelrijen vastgelegd"
+  },
+  "toastExportedCsv": {
+    "message": "Tabel geëxporteerd als CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Tabel geëxporteerd als XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ tabel(len) geëxporteerd als $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ blad(en) geëxporteerd als XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Geen bronnen om te downloaden."
+  },
+  "toastNoVisibleResources": {
+    "message": "Geen zichtbare bronnen om te downloaden."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Selecteer eerst minimaal één bron."
+  },
+  "toastZipSaved": {
+    "message": "ZIP opgeslagen: $fetched$ van $total$ bronnen",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP mislukt: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR geëxporteerd ($count$ vermeldingen)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL gekopieerd naar klembord"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Het geïnspecteerde DevTools-venster is niet beschikbaar."
+  },
+  "toastScreenshotError": {
+    "message": "Fout bij schermafbeelding: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Offline pagina-archief wordt gemaakt…"
+  },
+  "toastArchiveError": {
+    "message": "Archieffout: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Er is een time-out opgetreden bij het formatteren: het originele bestand wordt weergegeven."
+  },
+  "toastFormatFailed": {
+    "message": "Kan het bestand niet formatteren; het origineel wordt weergegeven."
+  },
+  "emptySearchTitle": {
+    "message": "Geen overeenkomsten voor \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Probeer een andere zoekterm, of schakel over naar een andere categorie."
+  },
+  "emptyFiltersTitle": {
+    "message": "Er zijn geen bronnen die overeenkomen met de huidige filters"
+  },
+  "emptyFiltersSub": {
+    "message": "Versoepel de bovenstaande grootte- of afmetingsfilters of druk op Wissen."
+  },
+  "textEmptyQueryReject": {
+    "message": "De pagina heeft die zoekopdracht afgewezen. Corrigeer de query hierboven en de resultaten verschijnen meteen weer."
+  },
+  "textEmptyNoMatch": {
+    "message": "Geen enkel element op de pagina komt overeen met deze zoekopdracht. Probeer een ruimere selector of wijzig de modus naast het vak."
+  },
+  "textEmptyInitial": {
+    "message": "Nog niets vastgelegd. Live-opname is actief: de hele pagina verschijnt hier als leesbare tekst."
+  },
+  "textEmptyFiltered": {
+    "message": "Niets komt overeen met de huidige query en het elementfilter."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ blokken",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ woorden",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ tekens",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ tabel(len) · $rows$ unieke rijen",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ geselecteerd: alleen deze worden geëxporteerd",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Tabel — $count$ rij(en) op scherm",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Tabel — alle $count$ unieke rij(en)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ momentopname(n)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "bijgewerkt $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Toon alle $count$ rijen",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Alle rijen weergeven"
+  },
+  "textTableHistory": {
+    "message": "Geschiedenis ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Geschiedenis verbergen"
+  },
+  "textTableNoRows": {
+    "message": "Nog geen rijen vastgelegd."
+  },
+  "textBtnCopy": {
+    "message": "Kopieer tekst"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Kopiëren"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ dubbele afbeelding(en)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Exporteren"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG laden…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG-inhoud kan niet worden opgehaald."
+  },
+  "inspectorLoadingFont": {
+    "message": "Lettertypevoorbeeld laden…"
+  },
+  "inspectorFontSample": {
+    "message": "Lettertypevoorbeeld"
+  },
+  "inspectorBeautify": {
+    "message": "Opmaken"
+  },
+  "inspectorOriginal": {
+    "message": "Origineel"
+  },
+  "inspectorHeaders": {
+    "message": "Kopteksten"
+  },
+  "inspectorResponse": {
+    "message": "Antwoord"
+  },
+  "inspectorRequest": {
+    "message": "Verzoek"
+  },
+  "inspectorQueryParams": {
+    "message": "Queryparameters"
+  },
+  "inspectorRequestBody": {
+    "message": "Verzoekbody"
+  },
+  "textHintHtml": {
+    "message": "Een live, leesbare kopie van de pagina. Elk element met tekst wordt in DOM-volgorde vastgelegd en hier bewaard als de pagina verandert. Voer een query uit met platte tekst, een reguliere expressie, een <strong>CSS-selector</strong> of een <strong>XPath</strong>-expressie en exporteer vervolgens wat overeenkomt. Zie de <a href=\"#\" id=\"text-hint-guide\">gids</a> voor details."
+  },
+  "textHeadings": {
+    "message": "Koppen"
+  },
+  "textAllLevels": {
+    "message": "Alle niveaus"
+  },
+  "textMatches": {
+    "message": "overeenkomsten"
+  },
+  "textMatch": {
+    "message": "overeenkomst"
+  },
+  "textReadingOn": {
+    "message": "Leesmodus aan"
+  },
+  "toastDownloadStarted": {
+    "message": "Download gestart: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Kan deze bron niet ophalen (CORS of niet-ondersteund type)."
+  },
+  "ratingBannerText": {
+    "message": "Bevalt Source Download? Steun onze open-sourcevisie met een recensie in de Chrome Web Store of een ster op GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Beoordeling"
+  },
+  "ratingBannerStar": {
+    "message": "★ Ster"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ unieke rij(en)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$s geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$m geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Schermafbeelding van gebied maken"
+  },
+  "btnAreaDownload": {
+    "message": "Downloaden"
+  },
+  "btnAreaCopy": {
+    "message": "Kopiëren naar klembord"
+  },
+  "btnAreaCancel": {
+    "message": "Annuleren"
+  },
+  "toastAreaCopied": {
+    "message": "Schermafbeelding van gebied gekopieerd naar klembord"
+  },
+  "toastAreaDownloaded": {
+    "message": "Schermafbeelding van gebied opgeslagen"
+  },
+  "statusFoundCssResources": {
+    "message": "$count$ bron(nen) gevonden waarnaar wordt verwezen vanuit CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM-scan mislukt: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Bestandsinhoud indexeren…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Dubbele afbeeldingen controleren…"
+  },
+  "statusWorking": {
+    "message": "Bezig…"
+  },
+  "filterMethodTitle": {
+    "message": "Filter op HTTP-methode"
+  },
+  "filterTypeTitle": {
+    "message": "Filter op verzoektype"
+  },
+  "filterSortTitle": {
+    "message": "Sorteer bronnen"
+  },
+  "textModeTitle": {
+    "message": "Hoe het queryvak wordt geïnterpreteerd"
+  },
+  "textKindTitle": {
+    "message": "Beperken tot één elementtype"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Kopniveau"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Prijs:\\s*\\d+ — Reguliere JavaScript-expressie"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — elke CSS-selector"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Zoek in de gids…"
+  },
+  "popupIntro": {
+    "message": "Categorieën die door de <strong>werkbalkbadge</strong> worden geteld. Schakel er één uit om te stoppen met tellen. De badge geeft direct alleen weer wat u bijhoudt."
+  },
+  "popupHelpTitle": {
+    "message": "Hoe het volledige paneel te gebruiken"
+  },
+  "popupStep1": {
+    "message": "Open DevTools voor de pagina die u wilt inspecteren <div class=\"hint\"><kbd>F12</kbd> of <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Klik op het tabblad <strong>Source Download</strong> in de DevTools-werkbalk"
+  },
+  "popupStep3": {
+    "message": "Blader, inspecteer en download bronnen – afzonderlijk of allemaal tegelijk als ZIP."
+  },
+  "popupNote": {
+    "message": "Opmerking: Chrome staat niet toe dat extensies DevTools programmatisch openen. Daarom is het volledige paneel bereikbaar via de DevTools-werkbalk."
+  },
+  "popupTrackAll": {
+    "message": "Volg alle categorieën"
+  },
+  "popupLanguage": {
+    "message": "Taal"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Binair antwoord - download om het te bekijken"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Antwoord laden…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Geen antwoordvoorbeeld: de inhoud kan niet worden opgehaald."
+  },
+  "inspectorLoadingContent": {
+    "message": "Inhoud laden…"
+  },
+  "inspectorNoPreview": {
+    "message": "Geen voorbeeld beschikbaar: de inhoud kan niet worden opgehaald."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Sluit alles"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Sluit alle geopende tabbladen"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Klik om te vergroten"
+  },
+  "inspectorViewSource": {
+    "message": "Bron bekijken"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Toon de SVG-opmaak met syntaxisaccentuering"
+  },
+  "inspectorFormatting": {
+    "message": "Opmaken…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Zoek in inhoud…"
+  },
+  "findPreviousMatch": {
+    "message": "Vorige overeenkomst"
+  },
+  "findNextMatch": {
+    "message": "Volgende overeenkomst"
+  },
+  "findClose": {
+    "message": "Sluiten"
+  },
+  "findShowRaw": {
+    "message": "Toon originele (ongeformatteerde) inhoud"
+  },
+  "findBeautify": {
+    "message": "Deze inhoud opmaken"
+  },
+  "btnRaw": {
+    "message": "Onbewerkt"
+  },
+  "btnBeautify": {
+    "message": "Opmaken"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8)-stream gedetecteerd"
+  },
+  "videoCannotPlay": {
+    "message": "Deze video kan niet in de browser worden afgespeeld"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome kan HLS-streams niet rechtstreeks afspelen. U kunt alle segmenten van <b>$NAME$</b> samenvoegen tot één MP4/TS-videobestand.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "De browser ondersteunt dit formaat niet"
+  },
+  "btnMergeHls": {
+    "message": "Segmenten samenvoegen en downloaden"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ segment(en) samengevoegd in $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "grootte onbekend"
+  },
+  "progressFetching": {
+    "message": "Ophalen $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP maken $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP opgeslagen: $FETCHED$ van $TOTAL$ bronnen ($SKIPPED$ mislukt)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Opnieuw proberen $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Download opnieuw proberen"
+  },
+  "searchRegexHint": {
+    "message": "Regex-zoekopdracht actief: plaats uw zoekopdracht in /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Opnemen in de export"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Combineer elke momentopname in één gededupliceerde tabel: dit is wat wordt geëxporteerd"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Blader door eerdere momentopnamen van deze tabel"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Download deze tabel als CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Momentopname $INDEX$ — $TIME$ ($COUNT$ rijen)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Selectie voor batchdownload aan- of uitzetten"
+  },
+  "cardDownloadTitle": {
+    "message": "Bestand downloaden"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Vorige download mislukt. Klik om het opnieuw te proberen"
+  },
+  "btnThemeLight": {
+    "message": "Schakel over naar het lichtthema"
+  },
+  "btnThemeDark": {
+    "message": "Schakel over naar het donkere thema"
+  },
+  "guideTitle": {
+    "message": "Source Download — Gebruikershandleiding"
+  },
+  "guideEmpty": {
+    "message": "Er zijn geen gidssecties die overeenkomen met uw zoekopdracht."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% afhankelijkheidsvrij.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Uitzoomen (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "Inzoomen (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Zoom resetten (0)"
+  },
+  "lightboxClose": {
+    "message": "Sluiten (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Sleep om het formaat te wijzigen"
+  },
+  "ratingDismissTitle": {
+    "message": "Negeren"
+  },
+  "inspectorResourceTitle": {
+    "message": "Bron"
+  },
+  "guideSecGettingStarted": {
+    "message": "Aan de slag"
+  },
+  "guideSecCategories": {
+    "message": "Categorieën"
+  },
+  "guideSecSearchFilters": {
+    "message": "Zoeken en filteren"
+  },
+  "guideSecGridView": {
+    "message": "Raster- en lijstweergave"
+  },
+  "guideSecInspect": {
+    "message": "Inspecteer een bron"
+  },
+  "guideSecDownloading": {
+    "message": "Downloaden"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Tekst en tabellen"
+  },
+  "guideSecCaptions": {
+    "message": "Ondertitels en bijschriften"
+  },
+  "guideSecSourceMaps": {
+    "message": "Bronkaarten"
+  },
+  "guideSecDupes": {
+    "message": "Dubbele afbeeldingen"
+  },
+  "guideSecVideoHls": {
+    "message": "Video-fallback en HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Krachttips"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Klik op het tabblad <strong>Source Download</strong> in de DevTools-werkbalk (druk op <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> en vervolgens op het tabblad in de DevTools-werkbalk). Chrome staat niet toe dat extensies DevTools automatisch openen, daarom bevindt het paneel zich daar. Via het pop-uppictogram op de werkbalk kunt u kiezen welke categorieën de badgeteller op het pictogram voeden. De zon/maan-knop in de paneelwerkbalk vergrendelt een licht of donker thema, onafhankelijk van Chrome; die keuze wordt onthouden."
+  },
+  "guideSecCategoriesContent": {
+    "message": "De verticale tabbladen aan de linkerkant groeperen elke vastgelegde bron in 17 speciale categorieën op type: afbeeldingen, video's, audio, bijschriften, documenten, lettertypen, bronkaarten, WASM, SVG, API's, cookies, opslag en meer. Op elk tabblad wordt een livetelling weergegeven. Er wordt slechts één categorie tegelijk getoond; als u overschakelt, worden alle filters opnieuw ingesteld, zodat wat u ziet altijd overeenkomt met het tabblad."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "De zoekbalk filtert op naam, URL, type, alt-tekst of titel. Plaats uw zoekopdracht in <kbd>/…/</kbd> om een reguliere expressie te gebruiken, bijv. <code>/\\.(png|jpg)$/</code>. Onder de werkbalk verandert de filterbalk per categorie: grootte en dimensiebereik voor media, HTTP-methode en verzoektype voor API's, plus sortering en richting."
+  },
+  "guideSecGridViewContent": {
+    "message": "Schakel tussen een compact raster (kleine miniaturen) en een gedetailleerde lijst met de knoppen naast de zoekbalk. Uw keuze wordt tussen de sessies door onthouden. In de lijstweergave kunt u met selectievakjes individuele bronnen selecteren voor een bulkdownload."
+  },
+  "guideSecInspectContent": {
+    "message": "Klik op een bron om deze te openen in het inspectievenster aan de rechterkant. Elk geopend bestand wordt een tabblad, zodat u verschillende bronnen naast elkaar kunt vergelijken; de nieuwste wordt aan de linkerkant geopend. Er zijn gespecialiseerde viewers voor afbeeldingen, video, audio, lettertypen, SVG en tekst/code (met een Opmaken-schakelaar). API's tonen een gesplitste weergave: antwoord aan de linkerkant, verzoekdetails (methode, status, kopteksten, queryparameters en body) aan de rechterkant."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Weergave downloaden</strong> slaat de momenteel zichtbare bronnen (actieve categorie + zoeken + filters) op als een ZIP; de knop wordt omgedoopt tot <em>Gefilterd downloaden (N)</em> wanneer filters actief zijn. Beweeg de muis over een downloadknop om een geschatte archiefgrootte te zien voordat u klikt. <strong>Geselecteerde downloaden</strong> downloadt alleen de aangevinkte items. <strong>Alles downloaden</strong> legt elke ontdekte bron vast in een ZIP met mapstructuur. Mislukte downloads worden automatisch opnieuw geprobeerd en kunnen opnieuw worden geprobeerd via het contextmenu. <strong>Exporteren</strong> schrijft de zichtbare lijst als JSON of CSV, of exporteert het netwerklogboek van Chrome als HAR-bestand."
+  },
+  "guideSecLightboxContent": {
+    "message": "De zoomknop opent media in een lightbox op volledige grootte waar u kunt verschuiven door te slepen, zoomen met het muiswiel, de knoppen op het scherm of het toetsenbord (<kbd>+</kbd>/<kbd>-</kbd> om in te zoomen, <kbd>0</kbd> om te resetten, <kbd>Esc</kbd> om te sluiten)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>De categorie <strong>Tekst</strong> is een live, leesbare kopie van de pagina. Het legt elk element vast dat tekst bevat (koppen, alinea's, lijstitems, knoppen, <code>div</code>/<code>span</code> en meer) in DOM-volgorde, en blijft scannen terwijl <strong>Live aan</strong> staat.</p><p>Het vak <strong>Query</strong> werkt op vier manieren, gekozen uit de vervolgkeuzelijst ernaast: <strong>Bevat</strong> en <strong>Regex</strong> filteren de tekst die al is vastgelegd, terwijl <strong>CSS-selector</strong> en <strong>XPath</strong> worden uitgevoerd op de livepagina, zodat ze alles in de DOM kunnen bereiken. XPath accepteert ook expressies die een waarde retourneren in plaats van elementen, zoals <code>count(//a)</code> of <code>//@href</code>. Wat de pagina ook zegt over een ongeldige zoekopdracht, wordt naast het vak weergegeven. <strong>Element</strong> beperkt het resultaat tot één enkele tag, waarbij het aantal van elke tag op de pagina wordt vermeld. Als u het zoekvak leegmaakt (of op <strong>Wissen</strong> drukt) keert u terug naar <em>Alle elementen</em> en wordt de pagina opnieuw vastgelegd. U hoeft de vervolgkeuzelijst nooit handmatig opnieuw in te stellen.</p><p><strong>Leesmodus</strong> verbergt tags, selectievakjes en locatie-aanduidingen, zodat de stream leest als een document. Tabellen slaan een beperkte geschiedenis van momentopnamen op, zodat dynamische (SPA) tabellen nooit verloren gaan. Druk op <strong>Alle rijen weergeven</strong> in een tabel om elke momentopname samen te voegen tot één gededupliceerde weergave; dat is precies wat een export bevat. Exporteer als <strong>TXT</strong> (de leesbare pagina), <strong>MD</strong> (Markdown, inclusief tabellen) of tabellen als CSV, HTML of een echte <strong>XLSX</strong>-werkmap met meerdere bladen. Aangevinkte items hebben voorrang; anders wordt alles wat momenteel zichtbaar is geëxporteerd.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML en andere ondertitelingsbestanden (inclusief <code>&lt;track&gt;</code>-bronnen) komen terecht op hun eigen <strong>Ondertitels</strong>-tabblad in plaats van te worden gemengd met documenten."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code>-bestanden en JSON-inhoud die op bronkaarten lijken (ze bevatten <code>mappings</code> en <code>sources</code>) worden gegroepeerd onder <strong>Bronkaarten</strong>, met de JSON-viewer en Opmaken, zodat ze het JSON-tabblad niet langer onoverzichtelijk maken."
+  },
+  "guideSecDupesContent": {
+    "message": "Op het tabblad Afbeeldingen hasht het paneel vastgelegde bytes en markeert identieke bestanden. Een <strong>Duplicaten verbergen</strong>-filter bewaart het eerste exemplaar van elke set, zodat een ZIP van de weergave niet twee keer dezelfde thumbnail bevat."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Streams die de browser niet native kan afspelen (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, onbekende codecs) tonen een fallback in plaats van een zwarte speler. Voor HLS kunt u de segmenten rechtstreeks vanuit het paneel samenvoegen tot één videobestand, of het originele manifest downloaden."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Dynamische <strong>API</strong>-antwoorden (XHR/fetch) worden niet gededupliceerd per URL: elk antwoord blijft in de lijst (beperkte FIFO), zodat u herhaalde verzoeken kunt vergelijken. Statische bestanden worden gededupliceerd. Gebruik <strong>Vernieuwen</strong> om de huidige DOM opnieuw te scannen en laad de pagina opnieuw terwijl het paneel open is om elk netwerkverzoek vast te leggen, inclusief verzoeken die zijn geactiveerd voordat u van tabblad wisselde."
+  },
+  "toolArrow": {
+    "message": "Pijltool"
+  },
+  "toolRect": {
+    "message": "Rechthoektool"
+  },
+  "toolText": {
+    "message": "Teksttool"
+  },
+  "toolUndo": {
+    "message": "Ongedaan maken (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Opnieuw (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Kleur"
+  },
+  "badgeStrokeSize": {
+    "message": "Grootte: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Lettergrootte: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Video / GIF van gebied opnemen"
+  },
+  "btnRecStart": {
+    "message": "Opname starten"
+  },
+  "btnRecPause": {
+    "message": "Pauzeren"
+  },
+  "btnRecResume": {
+    "message": "Hervatten"
+  },
+  "btnRecStop": {
+    "message": "Voltooien en downloaden"
+  },
+  "btnRecCancel": {
+    "message": "Annuleren"
+  },
+  "toastRecSaved": {
+    "message": "Opname van gebied opgeslagen"
+  },
+  "toastRecCancelled": {
+    "message": "Video-opname geannuleerd"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Toestemming voor schermopname is niet verleend"
+  },
+  "btnPopupRecordArea": {
+    "message": "Video / GIF van gebied"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Schermafbeelding van gebied"
+  },
+  "contextMenuPickColor": {
+    "message": "Kleur van scherm kiezen"
+  },
+  "btnPopupPickColor": {
+    "message": "Kies kleur"
+  },
+  "colorPickerTitle": {
+    "message": "Kleurkiezer"
+  },
+  "btnColorPickAgain": {
+    "message": "Nog een kleur kiezen"
+  },
+  "toastColorCopied": {
+    "message": "Kleur gekopieerd naar klembord"
+  },
+  "toastProgressCapturing": {
+    "message": "Volledige pagina vastleggen... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Afbeelding samenvoegen..."
+  },
+  "modalExportTitle": {
+    "message": "Schermafbeelding van volledige pagina gereed"
+  },
+  "btnExportPng": {
+    "message": "PNG downloaden"
+  },
+  "btnExportJpg": {
+    "message": "JPG downloaden"
+  },
+  "btnExportPdf": {
+    "message": "Opslaan als PDF"
+  },
+  "btnExportCopy": {
+    "message": "Kopiëren naar klembord"
+  },
+  "btnExportGenerating": {
+    "message": "Bezig met maken..."
+  },
+  "toastPdfGenerated": {
+    "message": "PDF-document opgeslagen."
+  },
+  "settingNamingPatterns": {
+    "message": "Patronen voor bestandsnaamgeving"
+  },
+  "settingVideoFormat": {
+    "message": "Standaard videoformaat"
+  },
+  "settingNamingPreview": {
+    "message": "Voorbeeld:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF wordt gemaakt, even geduld..."
+  },
+  "settingGifResolution": {
+    "message": "Standaard GIF-resolutie"
+  },
+  "optGifOriginal": {
+    "message": "Origineel (1:1 oorspronkelijke resolutie — volledig 3K/4K, geen verkleining)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (max. 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (max. 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (max. 854px — sneller en kleiner bestand)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Het GIF-formaat ondersteunt een maximale opnameduur van 1 minuut (60s)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Schermopname (Video & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Neem elk schermgebied op als MP4, WebM of geanimeerde GIF. GIF-opnamen bieden profielen met 1:1 native resolutie, 1080p, 720p en 480p, met live geschatte bestandsgroottes. De maximale GIF-opnameduur is 1 minuut (60s) voor optimale browserprestaties."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "De maximale GIF-duur van 1 minuut (60 s) is bereikt. GIF wordt gemaakt..."
+  },
+  "labelGifMaxDuration": {
+    "message": "Max. 1 min (60 s)"
+  },
+  "settingGifFps": {
+    "message": "Standaard GIF-framesnelheid (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Vloeiend (zeer soepele beweging, groter bestand)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Standaard (aanbevolen voor web en een goede balans)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Compact / meme (schokkerige beweging, klein bestand)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / langzaam (stap voor stap \"klik-klik\", zeer klein bestand)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Presentatie (1 frame per seconde, minimale grootte)"
+  },
+  "popupRightClickHint": {
+    "message": "Klik met de rechtermuisknop ergens op de webpagina voor Schermopname (Video/GIF) en Kleurkiezer."
+  },
+  "toastElementZappedAd": {
+    "message": "Advertentie / iframe verborgen voor deze sessie.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Afbeelding gekopieerd naar klembord",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Sluiten (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Instellingen opgeslagen",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Download het bestand en open het met VLC of een andere mediaspeler.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Geen voorbeeld beschikbaar voor dit brontype",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Origineel downloaden",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Tip: open het gedownloade bestand met VLC of een andere desktopmediaspeler — die speelt vrijwel elk formaat af.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP-archief wordt gemaakt…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Je browser ondersteunt de EyeDropper-API niet.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Werkbalk verslepen",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Formaat wisselen: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF-resolutie: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF-framerate: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Geschatte GIF-grootte: ~$size$ MB (voor 10 s), tot ~$max$ MB bij het maximum van 60 s.\nFramerate: $fps$ FPS.\nGIF-opnamen zijn beperkt tot maximaal 1 minuut (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ kopiëren",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Voorbeeld van schermafbeelding",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — universeel af te spelen op WhatsApp, Telegram, Jira, Apple en Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (geanimeerde afbeelding — ideaal voor READMEs, Jira, documentatie en berichten)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — open webformaat)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Geen actief tabblad gevonden.",
+    "description": "No active tab found."
+  }
+}

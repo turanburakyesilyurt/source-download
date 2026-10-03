@@ -12,23 +12,23 @@
     "description": "ツールバーアイコンのヒント"
   },
   "contextMenuZap": {
-    "message": "この要素を非表示 (Zap)",
+    "message": "この要素を非表示にする",
     "description": "右クリックで要素を非表示"
   },
   "contextMenuUndoZap": {
-    "message": "最後に非表示にした要素を戻す",
+    "message": "最後に非表示にした要素を元に戻す",
     "description": "直前の非表示要素を復元"
   },
   "contextMenuResetZap": {
-    "message": "すべての非表示要素をリセット",
+    "message": "非表示にした要素をすべて元に戻す",
     "description": "すべての非表示要素を復元"
   },
   "contextMenuCapturePage": {
-    "message": "フルページスクリーンショットを撮影",
+    "message": "ページ全体のスクリーンショットを撮影",
     "description": "フルページキャプチャ"
   },
   "contextMenuPageArchive": {
-    "message": "オフラインページアーカイブを保存",
+    "message": "オフラインページアーカイブをダウンロード",
     "description": "オフラインページ保存"
   },
   "catAll": {
@@ -77,7 +77,7 @@
     "message": "マニフェスト"
   },
   "catText": {
-    "message": "テキスト・表"
+    "message": "テキスト"
   },
   "catOther": {
     "message": "その他"
@@ -95,16 +95,16 @@
     "message": "エクスポート"
   },
   "btnDownloadSelected": {
-    "message": "選択項目を保存"
+    "message": "選択項目をダウンロード"
   },
   "btnDownloadView": {
-    "message": "表示中を保存"
+    "message": "表示内容をダウンロード"
   },
   "btnDownloadAll": {
-    "message": "すべて一括保存"
+    "message": "すべてダウンロード"
   },
   "btnDownloadFiltered": {
-    "message": "絞り込み項目を保存"
+    "message": "フィルター済みをダウンロード"
   },
   "btnTheme": {
     "message": "テーマ切替"
@@ -128,7 +128,7 @@
     "message": "最小幅 px"
   },
   "filterMinHeight": {
-    "message": "最小高 px"
+    "message": "最小高さ px"
   },
   "filterSortName": {
     "message": "名前順"
@@ -143,7 +143,7 @@
     "message": "時間順"
   },
   "filterHideDupes": {
-    "message": "重複を隠す"
+    "message": "重複を非表示"
   },
   "filterClear": {
     "message": "クリア"
@@ -155,7 +155,7 @@
     "message": "正規表現"
   },
   "textModeCss": {
-    "message": "CSSセレクタ"
+    "message": "CSSセレクター"
   },
   "textModeXpath": {
     "message": "XPath"
@@ -167,16 +167,16 @@
     "message": "すべての要素"
   },
   "textLiveOn": {
-    "message": "リアルタイム オン"
+    "message": "ライブ オン"
   },
   "textLiveOff": {
-    "message": "ライブオフ"
+    "message": "ライブ オフ"
   },
   "textScanNow": {
     "message": "今すぐスキャン"
   },
   "textReading": {
-    "message": "読書モード"
+    "message": "閲覧モード"
   },
   "textExportTxt": {
     "message": "TXT"
@@ -248,25 +248,25 @@
     "message": "後で"
   },
   "toastElementZapped": {
-    "message": "このセッションで要素を非表示にしました。"
+    "message": "この要素をこのセッション中は非表示にしました。"
   },
   "toastElementRestored": {
-    "message": "要素を復元しました。"
+    "message": "要素を元に戻しました。"
   },
   "toastAllElementsRestored": {
-    "message": "非表示要素をすべて復元しました。"
+    "message": "非表示にした要素をすべて元に戻しました。"
   },
   "toastScreenshotCapturing": {
-    "message": "フルページスクリーンショットをキャプチャ中…"
+    "message": "ページ全体のスクリーンショットを撮影中…"
   },
   "toastScreenshotCaptured": {
-    "message": "フルページスクリーンショットを保存しました。"
+    "message": "ページ全体のスクリーンショットを保存しました。"
   },
   "toastArchiveCreated": {
-    "message": "単一 HTML アーカイブを保存しました。"
+    "message": "単一ファイルのHTMLアーカイブを保存しました。"
   },
   "brandSignature": {
-    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+    "message": "制作: Turan Burak Yeşilyurt (2run.dev)"
   },
   "tabImages": {
     "message": "画像＆SVG"
@@ -278,7 +278,7 @@
     "message": "フォント"
   },
   "tabTextScraper": {
-    "message": "テキスト＆表抽出"
+    "message": "テキスト＆テーブル"
   },
   "heroScreenshotTitle": {
     "message": "フルページスクリーンショット"
@@ -311,7 +311,7 @@
     "message": "リスト表示"
   },
   "btnScreenshot": {
-    "message": "画面撮影"
+    "message": "スクリーンショット"
   },
   "btnArchive": {
     "message": "HTML保存"
@@ -326,10 +326,10 @@
     "message": "ネットワークログ (HAR)"
   },
   "exportScreenshot": {
-    "message": "フル長画面撮影 (PNG)"
+    "message": "フルページスクリーンショット (PNG)"
   },
   "exportArchive": {
-    "message": "オフラインHTML保存 (HTML)"
+    "message": "オフライン用ページアーカイブ (HTML)"
   },
   "filterMethodAll": {
     "message": "全メソッド"
@@ -386,7 +386,7 @@
     "message": "クリア"
   },
   "toastRefreshComplete": {
-    "message": "ページスキャン完了: $COUNT$ 個の新しいリソース",
+    "message": "ページスキャン完了: $count$ 個の新しいリソース",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "$COUNT$ ブロックをコピーしました",
+    "message": "$count$ ブロックをコピーしました",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "エクスポートするものがありません"
   },
   "toastExportedTxt": {
-    "message": "$COUNT$ ブロックを TXT としてエクスポートしました",
+    "message": "$count$ ブロックを TXT としてエクスポートしました",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "$COUNT$ ブロックを Markdown としてエクスポートしました",
+    "message": "$count$ ブロックを Markdown としてエクスポートしました",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "テーブルを XLSX としてエクスポートしました"
   },
   "toastExportedTablesZip": {
-    "message": "$COUNT$ 個のテーブルを $FORMAT$ としてエクスポートしました",
+    "message": "$count$ 個のテーブルを $format$ としてエクスポートしました",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "$COUNT$ シートを XLSX としてエクスポートしました",
+    "message": "$count$ シートを XLSX としてエクスポートしました",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -465,13 +465,13 @@
     "message": "ダウンロードするリソースがありません。"
   },
   "toastNoVisibleResources": {
-    "message": "ダウンロード可能な表示リソースがありません。"
+    "message": "ダウンロードできる表示中のリソースがありません。"
   },
   "toastSelectAtLeastOne": {
-    "message": "最初に少なくとも1つのリソースを選択してください。"
+    "message": "先にリソースを1つ以上選択してください。"
   },
   "toastZipSaved": {
-    "message": "ZIP 保存完了: $TOTAL$ 件中 $FETCHED$ 件",
+    "message": "ZIP 保存完了: $total$ 件中 $fetched$ 件",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "ZIP 作成失敗: $ERROR$",
+    "message": "ZIP 作成失敗: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR をエクスポートしました（$COUNT$ 件）",
+    "message": "HAR をエクスポートしました（$count$ 件）",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "DevTools 検査ウィンドウが利用できません。"
   },
   "toastScreenshotError": {
-    "message": "スクリーンショットエラー: $ERROR$",
+    "message": "スクリーンショットエラー: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -520,7 +520,7 @@
     "message": "オフラインページアーカイブを作成中…"
   },
   "toastArchiveError": {
-    "message": "アーカイブエラー: $ERROR$",
+    "message": "アーカイブエラー: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "フォーマットできませんでした — 元のファイルを表示します。"
   },
   "emptySearchTitle": {
-    "message": "\"$QUERY$\" に一致する結果はありません",
+    "message": "\"$query$\" に一致する結果はありません",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -553,19 +553,19 @@
     "message": "フィルター条件を緩和するか、クリアを押してください。"
   },
   "textEmptyQueryReject": {
-    "message": "クエリが拒否されました。修正してください。"
+    "message": "ページがこのクエリを拒否しました。上で修正すると、結果がすぐに表示されます。"
   },
   "textEmptyNoMatch": {
-    "message": "一致する要素がありません。"
+    "message": "このクエリに一致する要素がページ上にありません。セレクターの条件を緩めるか、入力ボックス横のモードを切り替えてください。"
   },
   "textEmptyInitial": {
-    "message": "まだキャプチャされていません。ライブキャプチャ実行中。"
+    "message": "まだキャプチャされていません。ライブキャプチャを実行中です — ページ全体が読みやすいテキストとしてここに表示されます。"
   },
   "textEmptyFiltered": {
     "message": "現在のフィルターに一致するコンテンツがありません。"
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ ブロック",
+    "message": "$count$ ブロック",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ 単語",
+    "message": "$count$ 単語",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ 文字",
+    "message": "$count$ 文字",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ テーブル · $ROWS$ 行",
+    "message": "$tables$ テーブル · $rows$ 行（重複なし）",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "$COUNT$ 件選択済み",
+    "message": "$count$ 件選択済み — エクスポートは選択項目のみ対象",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "テーブル — 画面上 $COUNT$ 行",
+    "message": "テーブル — 画面上 $count$ 行",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "テーブル — 全 $COUNT$ 行",
+    "message": "テーブル — 全 $count$ 行",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ スナップショット",
+    "message": "$count$ スナップショット",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "$TIME$ に更新",
+    "message": "$time$ に更新",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "全 $COUNT$ 行を表示",
+    "message": "全 $count$ 行を表示",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "全行を表示中"
   },
   "textTableHistory": {
-    "message": "履歴 ($COUNT$)",
+    "message": "履歴 ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ 件の重複画像",
+    "message": "$count$ 件の重複画像",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -749,10 +749,10 @@
     "message": "一致"
   },
   "textReadingOn": {
-    "message": "読書モード中"
+    "message": "閲覧モード オン"
   },
   "toastDownloadStarted": {
-    "message": "ダウンロードを開始しました: $NAME$",
+    "message": "ダウンロードを開始しました: $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -773,7 +773,7 @@
     "message": "★ スターを付ける"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ 件の一意な行",
+    "message": "$count$ 件の一意な行",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "$COUNT$秒前",
+    "message": "$count$秒前",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "$COUNT$分前",
+    "message": "$count$分前",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,7 +800,7 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "エリアスクリーンショットを撮影"
+    "message": "範囲を指定してスクリーンショットを撮影"
   },
   "btnAreaDownload": {
     "message": "ダウンロード"
@@ -812,13 +812,13 @@
     "message": "キャンセル"
   },
   "toastAreaCopied": {
-    "message": "エリアスクリーンショットをクリップボードにコピーしました"
+    "message": "範囲スクリーンショットをクリップボードにコピーしました"
   },
   "toastAreaDownloaded": {
-    "message": "エリアスクリーンショットを保存しました"
+    "message": "範囲スクリーンショットを保存しました"
   },
   "statusFoundCssResources": {
-    "message": "CSSから参照されたリソースを $COUNT$ 件検出",
+    "message": "CSSから参照されたリソースを $count$ 件検出",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "DOMスキャンに失敗しました: $ERROR$",
+    "message": "DOMスキャンに失敗しました: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -866,7 +866,7 @@
     "message": "^価格:\\s*\\d+  — JavaScript正規表現"
   },
   "textPlaceholderCss": {
-    "message": ".product-card .price, article h2 — CSSセレクタ"
+    "message": ".product-card .price, article h2 — 任意のCSSセレクター"
   },
   "textPlaceholderXpath": {
     "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
@@ -899,13 +899,13 @@
     "message": "言語"
   },
   "inspectorBinaryResponse": {
-    "message": "バイナリ応答 — 表示するにはダウンロードしてください"
+    "message": "バイナリレスポンス — 表示するにはダウンロードしてください"
   },
   "inspectorLoadingResponse": {
-    "message": "応答を読み込み中…"
+    "message": "レスポンスを読み込み中…"
   },
   "inspectorNoResponsePreview": {
-    "message": "応答プレビューなし — コンテンツを取得できませんでした。"
+    "message": "レスポンスのプレビューなし — コンテンツを取得できませんでした。"
   },
   "inspectorLoadingContent": {
     "message": "コンテンツを読み込み中…"
@@ -935,10 +935,10 @@
     "message": "コンテンツ内を検索…"
   },
   "findPreviousMatch": {
-    "message": "前のマッチ"
+    "message": "前の一致"
   },
   "findNextMatch": {
-    "message": "次のマッチ"
+    "message": "次の一致"
   },
   "findClose": {
     "message": "閉じる"
@@ -950,7 +950,7 @@
     "message": "このコンテンツをフォーマット / 整形"
   },
   "btnRaw": {
-    "message": "Raw"
+    "message": "元データ"
   },
   "btnBeautify": {
     "message": "整形"
@@ -1191,16 +1191,16 @@
     "message": "ブラウザが標準で再生できない動画ストリーム（HLS形式の<code>.m3u8</code>、DASH形式の<code>.mpd</code>、未対応コーデックなど）に対しては、黒い画面の代わりに専用のフォールバック案内画面を表示します。HLS動画の場合は、パネル内から直接セグメントを結合して単一のMP4動画ファイルとして保存するか、元のマニフェストファイルをダウンロードできます。"
   },
   "guideSecPowerTipsContent": {
-    "message": "動的な<strong>API</strong>レスポンス（XHR/fetch）はURLによる重複排除が行われません。連続するリクエストの差異を比較できるよう、すべての応答がリストに保持されます（上限付きFIFO方式）。静的リソースは重複排除されます。現在のDOMを再スキャンするには「<strong>更新</strong>」を使用してください。また、パネルを開いた状態でページをリロードすると、タブ切り替え前に発生した通信を含め、すべてのネットワークリクエストを漏れなくキャプチャできます。"
+    "message": "動的な<strong>API</strong>レスポンス（XHR/fetch）はURLによる重複排除が行われません。連続するリクエストの差異を比較できるよう、すべてのレスポンスがリストに保持されます（上限付きFIFO方式）。静的リソースは重複排除されます。現在のDOMを再スキャンするには「<strong>更新</strong>」を使用してください。また、パネルを開いた状態でページをリロードすると、タブ切り替え前に発生した通信を含め、すべてのネットワークリクエストを漏れなくキャプチャできます。"
   },
   "toolArrow": {
-    "message": "矢印を描く"
+    "message": "矢印ツール"
   },
   "toolRect": {
-    "message": "矩形を描く"
+    "message": "四角形ツール"
   },
   "toolText": {
-    "message": "テキストを入力"
+    "message": "テキストツール"
   },
   "toolUndo": {
     "message": "元に戻す (Ctrl+Z)"
@@ -1212,7 +1212,7 @@
     "message": "色"
   },
   "badgeStrokeSize": {
-    "message": "太さ: $SIZE$px",
+    "message": "サイズ: $size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "フォントサイズ: $SIZE$px",
+    "message": "フォントサイズ: $size$px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,7 +1230,7 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "地域ビデオ/GIFを録画"
+    "message": "範囲を指定して動画 / GIFを録画"
   },
   "btnRecStart": {
     "message": "録画を開始"
@@ -1242,25 +1242,25 @@
     "message": "再開"
   },
   "btnRecStop": {
-    "message": "完了してダウンロード"
+    "message": "終了してダウンロード"
   },
   "btnRecCancel": {
     "message": "キャンセル"
   },
   "toastRecSaved": {
-    "message": "地域の録画が保存されました"
+    "message": "範囲の録画を保存しました"
   },
   "toastRecCancelled": {
-    "message": "ビデオ録画がキャンセルされました"
+    "message": "動画の録画をキャンセルしました"
   },
   "toastRecPermissionDenied": {
     "message": "画面録画の権限が許可されませんでした"
   },
   "btnPopupRecordArea": {
-    "message": "地域ビデオ/GIF"
+    "message": "領域を録画（動画/GIF）"
   },
   "btnPopupCaptureArea": {
-    "message": "エリアスクショ"
+    "message": "領域をスクリーンショット"
   },
   "contextMenuPickColor": {
     "message": "画面から色を選択"
@@ -1275,10 +1275,10 @@
     "message": "別の色を選択"
   },
   "toastColorCopied": {
-    "message": "カラーコードをクリップボードにコピーしました"
+    "message": "色をクリップボードにコピーしました"
   },
   "toastProgressCapturing": {
-    "message": "フルページをキャプチャ中... $PERCENT$%",
+    "message": "ページ全体をキャプチャ中... $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1295,7 +1295,7 @@
     "message": "画像を結合中..."
   },
   "modalExportTitle": {
-    "message": "フルページスクリーンショット準備完了"
+    "message": "ページ全体のスクリーンショットの準備ができました"
   },
   "btnExportPng": {
     "message": "PNGをダウンロード"
@@ -1313,7 +1313,7 @@
     "message": "生成中..."
   },
   "toastPdfGenerated": {
-    "message": "PDFドキュメントが保存されました。"
+    "message": "PDFドキュメントを保存しました。"
   },
   "settingNamingPatterns": {
     "message": "ファイル命名パターン"
@@ -1325,22 +1325,22 @@
     "message": "プレビュー:"
   },
   "toastRecGeneratingGif": {
-    "message": "GIFを生成中、お待ちください..."
+    "message": "GIFを生成しています。しばらくお待ちください..."
   },
   "settingGifResolution": {
     "message": "デフォルトのGIF解像度"
   },
   "optGifOriginal": {
-    "message": "オリジナル (1:1 ネイティブ解像度 — 3K/4K、縮小なし)"
+    "message": "オリジナル (1:1 ネイティブ解像度 — フル3K/4K、縮小なし)"
   },
   "optGif1080p": {
-    "message": "1080p フルHD (最大 1920px)"
+    "message": "1080p フルHD (最大1920px)"
   },
   "optGif720p": {
-    "message": "720p HD (最大 1280px)"
+    "message": "720p HD (最大1280px)"
   },
   "optGif480p": {
-    "message": "480p SD (最大 854px — 高速・軽量)"
+    "message": "480p SD (最大854px — 高速で軽量)"
   },
   "tipGifDurationLimit": {
     "message": "GIF形式の最大録画時間は1分間（60秒）です。"
@@ -1352,7 +1352,7 @@
     "message": "画面の任意の領域を指定して、MP4、WebM、またはアニメーションGIFとして録画できます。GIF録画では1:1のネイティブ解像度、1080p、720p、480pの画質プロファイルに対応し、録画中にファイル容量のリアルタイム見積もりを表示します。ブラウザの安定した動作を確保するため、GIF録画の最大許容時間は1分間（60秒）です。"
   },
   "msgGifMaxDurationReached": {
-    "message": "GIFの最大録画時間1分（60秒）に達しました。GIFを生成しています..."
+    "message": "GIFの最大時間である1分 (60秒) に達しました。GIFを生成しています..."
   },
   "labelGifMaxDuration": {
     "message": "最大1分 (60秒)"
@@ -1361,22 +1361,126 @@
     "message": "デフォルトGIFフレームレート (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — スムーズ（高い滑らかさ、容量大）"
+    "message": "15 FPS — なめらか (高い滑らかさ、大きめのサイズ)"
   },
   "optGifFps10": {
-    "message": "10 FPS — 標準（Web推奨、バランス型）"
+    "message": "10 FPS — 標準 (Web用途とバランスに最適)"
   },
   "optGifFps5": {
-    "message": "5 FPS — コンパクト / ミーム（段階的、容量小）"
+    "message": "5 FPS — コンパクト / ミーム (カクカクした動き、小サイズ)"
   },
   "optGifFps2": {
-    "message": "2 FPS — コマ送り / スロー（「カタカタ」ステップ再生、超軽量）"
+    "message": "2 FPS — コマ撮り / スロー (「カチカチ」とコマ送り、極小サイズ)"
   },
   "optGifFps1": {
-    "message": "1 FPS — プレゼンテーション（毎秒1フレーム、最小容量）"
+    "message": "1 FPS — プレゼン用 (1秒に1フレーム、最小サイズ)"
   },
   "popupRightClickHint": {
     "message": "画面録画（動画/GIF）とカラーピッカーは、Webページ上を右クリックしてご利用ください。",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "広告 / iframeをこのセッション中は非表示にしました。",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "画像をクリップボードにコピーしました",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "閉じる (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "設定を保存しました",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "ファイルをダウンロードして、VLCなどのメディアプレーヤーで開いてください。",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "このリソースタイプはプレビューできません",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "オリジナルをダウンロード",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "ヒント: ダウンロードしたファイルは、VLCなどのデスクトップ用メディアプレーヤーで開いてください。ほぼすべての形式を再生できます。",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIPアーカイブを作成中…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "お使いのブラウザはEyeDropper APIに対応していません。",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "ツールバーをドラッグ",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "形式を切り替え: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIFの解像度: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIFのフレームレート: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "GIFの推定サイズ: 約$size$ MB (10秒の場合)、最大60秒では最大約$max$ MB。\nフレームレート: $fps$ FPS。\nGIFの録画は最大1分 (60秒) までです。",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$をコピー",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "スクリーンショットのプレビュー",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — WhatsApp、Telegram、Jira、Apple、Windowsのどこでも再生可能)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (アニメーション画像 — README、Jira、ドキュメント、メッセージに最適)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — オープンなWeb形式)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "アクティブなタブが見つかりません。",
+    "description": "No active tab found."
   }
 }

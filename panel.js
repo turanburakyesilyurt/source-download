@@ -28,7 +28,7 @@ const THEME_STORAGE = 'sourceDownloadTheme';
  * 1. Constants & helpers
  * ============================================================ */
 
-const SUPPORTED_LOCALES = ['en', 'tr', 'es', 'zh_CN', 'ja', 'de', 'ru', 'fr', 'pt_BR', 'it', 'ko'];
+const SUPPORTED_LOCALES = ["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt_PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
 let currentLocale = 'auto';
 let currentMessages = {};
 const localeCache = {};
@@ -131,16 +131,23 @@ function setLanguage(lang) {
   panelPrefs.lang = targetLang;
   savePrefs();
 
+  const RTL_LOCALES = ['ar', 'he', 'fa'];
+  if (RTL_LOCALES.includes(resolved)) {
+    document.documentElement.setAttribute('dir', 'rtl');
+  } else {
+    document.documentElement.setAttribute('dir', 'ltr');
+  }
+
   for (const [typeKey, msgKey] of Object.entries(CAT_KEY_MAP)) {
     if (TYPES[typeKey]) {
       TYPES[typeKey].label = t(msgKey, TYPES[typeKey].label) || TYPES[typeKey].label;
     }
   }
 
-  let extVersion = '1.15.0';
+  let extVersion = '1.16.0';
   try {
     if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getManifest) {
-      extVersion = chrome.runtime.getManifest().version || '1.15.0';
+      extVersion = chrome.runtime.getManifest().version || '1.16.0';
     }
   } catch { /* noop */ }
 
@@ -4155,7 +4162,7 @@ function setupSettings() {
       }, () => {
         closeSettings();
         if (typeof toast === 'function') {
-          toast(t('toastCopied', 'Settings saved'));
+          toast(t('toastSettingsSaved', 'Settings saved'));
         }
       });
     });

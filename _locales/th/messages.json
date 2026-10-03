@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "ตรวจสอบ เรียกดู และดาวน์โหลดเนื้อหาเว็บเป็น ZIP พร้อมภาพหน้าจอเต็มหน้า การจับตารางสด และเครื่องมือนักพัฒนา"
+  },
+  "actionTitle": {
+    "message": "Source Download — เปิดแผงและติดตามทรัพยากร"
+  },
+  "contextMenuZap": {
+    "message": "ซ่อนองค์ประกอบนี้"
+  },
+  "contextMenuUndoZap": {
+    "message": "คืนค่าองค์ประกอบที่ซ่อนล่าสุด"
+  },
+  "contextMenuResetZap": {
+    "message": "รีเซ็ตองค์ประกอบที่ซ่อนทั้งหมด"
+  },
+  "contextMenuCapturePage": {
+    "message": "จับภาพหน้าจอทั้งหน้า"
+  },
+  "contextMenuPageArchive": {
+    "message": "ดาวน์โหลดไฟล์เก็บถาวรของหน้าเว็บสำหรับออฟไลน์"
+  },
+  "catAll": {
+    "message": "ทั้งหมด"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "รูปภาพ"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "วิดีโอ"
+  },
+  "catAudio": {
+    "message": "เสียง"
+  },
+  "catCaptions": {
+    "message": "คำบรรยายภาพ"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Source map"
+  },
+  "catFonts": {
+    "message": "แบบอักษร"
+  },
+  "catDocuments": {
+    "message": "เอกสาร"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Manifest"
+  },
+  "catText": {
+    "message": "ข้อความ"
+  },
+  "catOther": {
+    "message": "อื่นๆ"
+  },
+  "catScreenshot": {
+    "message": "ภาพหน้าจอ"
+  },
+  "catArchive": {
+    "message": "ไฟล์เก็บถาวรของหน้า"
+  },
+  "btnRefresh": {
+    "message": "รีเฟรช"
+  },
+  "btnExport": {
+    "message": "ส่งออก"
+  },
+  "btnDownloadSelected": {
+    "message": "ดาวน์โหลดที่เลือก"
+  },
+  "btnDownloadView": {
+    "message": "ดาวน์โหลดมุมมองปัจจุบัน"
+  },
+  "btnDownloadAll": {
+    "message": "ดาวน์โหลดทั้งหมด"
+  },
+  "btnDownloadFiltered": {
+    "message": "ดาวน์โหลดที่กรองแล้ว"
+  },
+  "btnTheme": {
+    "message": "สลับธีม"
+  },
+  "btnGuide": {
+    "message": "คู่มือการใช้งาน"
+  },
+  "btnCaptureFullPage": {
+    "message": "ภาพหน้าจอแบบเต็มหน้า"
+  },
+  "btnOfflineArchive": {
+    "message": "บันทึกเป็น HTML ไฟล์เดียว"
+  },
+  "filterMinKb": {
+    "message": "ขั้นต่ำ KB"
+  },
+  "filterMaxKb": {
+    "message": "สูงสุด KB"
+  },
+  "filterMinWidth": {
+    "message": "ความกว้างขั้นต่ำ px"
+  },
+  "filterMinHeight": {
+    "message": "ความสูงขั้นต่ำ px"
+  },
+  "filterSortName": {
+    "message": "เรียงตามชื่อ"
+  },
+  "filterSortSize": {
+    "message": "เรียงตามขนาด"
+  },
+  "filterSortType": {
+    "message": "เรียงตามประเภท"
+  },
+  "filterSortTime": {
+    "message": "เรียงตามเวลา"
+  },
+  "filterHideDupes": {
+    "message": "ซ่อนรายการที่ซ้ำกัน"
+  },
+  "filterClear": {
+    "message": "ล้าง"
+  },
+  "textModeContains": {
+    "message": "ประกอบด้วย"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "ตัวเลือก CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "กรองข้อความหน้าหรือค้นหา DOM แบบสด…"
+  },
+  "textAllElements": {
+    "message": "องค์ประกอบทั้งหมด"
+  },
+  "textLiveOn": {
+    "message": "เปิดโหมดสด"
+  },
+  "textLiveOff": {
+    "message": "ปิดโหมดสด"
+  },
+  "textScanNow": {
+    "message": "สแกนตอนนี้"
+  },
+  "textReading": {
+    "message": "โหมดอ่าน"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "เลือกทรัพยากรเพื่อตรวจสอบรายละเอียด"
+  },
+  "inspectorDetails": {
+    "message": "รายละเอียด"
+  },
+  "inspectorOpenTab": {
+    "message": "เปิดในแท็บใหม่"
+  },
+  "inspectorCopyUrl": {
+    "message": "คัดลอก URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "ดาวน์โหลดไฟล์นี้"
+  },
+  "inspectorClose": {
+    "message": "ปิด"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "ประเภท"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "ขนาด"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "แหล่งที่มา"
+  },
+  "metaTitle": {
+    "message": "ชื่อเรื่อง"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "ชอบ Source Download ไหม? สนับสนุนวิสัยทัศน์โอเพ่นซอร์สของเราด้วยการรีวิวบน Chrome เว็บสโตร์หรือติดดาวบน GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ เขียนรีวิว"
+  },
+  "ratingStar": {
+    "message": "★ ติดดาวบน GitHub"
+  },
+  "ratingDismiss": {
+    "message": "ปิด"
+  },
+  "toastElementZapped": {
+    "message": "ซ่อนองค์ประกอบสำหรับเซสชันนี้แล้ว"
+  },
+  "toastElementRestored": {
+    "message": "คืนค่าองค์ประกอบแล้ว"
+  },
+  "toastAllElementsRestored": {
+    "message": "คืนค่าองค์ประกอบที่ซ่อนทั้งหมดแล้ว"
+  },
+  "toastScreenshotCapturing": {
+    "message": "กำลังจับภาพหน้าจอทั้งหน้า…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "บันทึกภาพหน้าจอทั้งหน้าแล้ว"
+  },
+  "toastArchiveCreated": {
+    "message": "บันทึกไฟล์เก็บถาวร HTML แบบไฟล์เดียวแล้ว"
+  },
+  "brandSignature": {
+    "message": "สร้างสรรค์โดย Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "รูปภาพและ SVG"
+  },
+  "tabMedia": {
+    "message": "สื่อและเสียง"
+  },
+  "tabFonts": {
+    "message": "แบบอักษร"
+  },
+  "tabTextScraper": {
+    "message": "ข้อความและตาราง"
+  },
+  "heroScreenshotTitle": {
+    "message": "ภาพหน้าจอแบบเต็มหน้า"
+  },
+  "heroScreenshotDesc": {
+    "message": "เย็บต่อหลายวิวพอร์ตอย่างไร้รอยต่อ พร้อมซ่อนส่วนหัวแบบติดหน้าจอ"
+  },
+  "heroArchiveTitle": {
+    "message": "ไฟล์เก็บถาวร HTML ไฟล์เดียว"
+  },
+  "heroArchiveDesc": {
+    "message": "ฝัง CSS และรูปภาพ Base64 ไว้ในไฟล์ สแนปช็อตที่ใช้งานออฟไลน์ได้"
+  },
+  "copyDataUri": {
+    "message": "คัดลอก Data-URI"
+  },
+  "copyUrl": {
+    "message": "คัดลอก URL"
+  },
+  "downloadSingle": {
+    "message": "ดาวน์โหลด"
+  },
+  "searchPlaceholder": {
+    "message": "กรองตามชื่อ, URL, แท็ก, MIME หรือ /regex/…"
+  },
+  "viewGrid": {
+    "message": "มุมมองตาราง"
+  },
+  "viewList": {
+    "message": "มุมมองรายการ"
+  },
+  "btnScreenshot": {
+    "message": "ภาพหน้าจอ"
+  },
+  "btnArchive": {
+    "message": "บันทึก HTML"
+  },
+  "exportJson": {
+    "message": "รายการที่มองเห็นเป็น JSON"
+  },
+  "exportCsv": {
+    "message": "รายการที่มองเห็นเป็น CSV"
+  },
+  "exportHar": {
+    "message": "บันทึกเครือข่ายเป็น HAR"
+  },
+  "exportScreenshot": {
+    "message": "ภาพหน้าจอแบบเต็มหน้า (PNG)"
+  },
+  "exportArchive": {
+    "message": "ไฟล์เก็บถาวรหน้าแบบออฟไลน์ (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "ทุกเมธอด"
+  },
+  "filterTypeAll": {
+    "message": "ทุกประเภท"
+  },
+  "filterSortDir": {
+    "message": "สลับจากน้อยไปมาก / มากไปน้อย"
+  },
+  "emptyTitle": {
+    "message": "ไม่พบทรัพยากร"
+  },
+  "emptySubtitle": {
+    "message": "โหลดหน้านี้ซ้ำในขณะที่แผงนี้เปิดอยู่เพื่อบันทึกคำขอเครือข่าย หรือคลิกรีเฟรชเพื่อสแกน DOM ปัจจุบัน"
+  },
+  "statusResources": {
+    "message": "ทรัพยากร"
+  },
+  "statusFiltered": {
+    "message": "กรองแล้ว"
+  },
+  "statusSelected": {
+    "message": "เลือกแล้ว"
+  },
+  "statusDupes": {
+    "message": "รายการที่ซ้ำซ้อนซ่อนอยู่"
+  },
+  "statusSize": {
+    "message": "ขนาด"
+  },
+  "langAuto": {
+    "message": "อัตโนมัติ (เบราว์เซอร์)"
+  },
+  "langSelectorTitle": {
+    "message": "เลือกภาษา"
+  },
+  "textPillAll": {
+    "message": "เนื้อหาทั้งหมด"
+  },
+  "textPillText": {
+    "message": "📄 ข้อความและบทความ"
+  },
+  "textPillTables": {
+    "message": "📊 เฉพาะตาราง"
+  },
+  "textSelectAll": {
+    "message": "เลือกทั้งหมด"
+  },
+  "textDeselectAll": {
+    "message": "ยกเลิกการเลือกทั้งหมด"
+  },
+  "textClearSelection": {
+    "message": "ล้าง"
+  },
+  "toastRefreshComplete": {
+    "message": "การสแกนหน้าเสร็จสมบูรณ์: $count$ ทรัพยากรใหม่",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "คัดลอก $count$ บล็อกแล้ว",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "คัดลอกไปยังคลิปบอร์ดแล้ว"
+  },
+  "toastTableCopied": {
+    "message": "คัดลอกตารางไปยังคลิปบอร์ดแล้ว"
+  },
+  "toastNothingToExport": {
+    "message": "ไม่มีอะไรจะส่งออก"
+  },
+  "toastExportedTxt": {
+    "message": "ส่งออก $count$ บล็อกเป็น TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "ส่งออก $count$ บล็อกเป็น Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "ไม่มีการบันทึกแถวของตาราง"
+  },
+  "toastExportedCsv": {
+    "message": "ส่งออกตารางเป็น CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "ส่งออกตารางเป็น XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "ส่งออก $count$ ตารางเป็น $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "ส่งออก $count$ แผ่นงานเป็น XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "ไม่มีทรัพยากรให้ดาวน์โหลด"
+  },
+  "toastNoVisibleResources": {
+    "message": "ไม่มีทรัพยากรที่มองเห็นได้ให้ดาวน์โหลด"
+  },
+  "toastSelectAtLeastOne": {
+    "message": "เลือกทรัพยากรอย่างน้อยหนึ่งรายการก่อน"
+  },
+  "toastZipSaved": {
+    "message": "บันทึก ZIP แล้ว: $fetched$ จากทรัพยากร $total$ รายการ",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP ล้มเหลว: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "ส่งออก HAR แล้ว ($count$ รายการ)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "คัดลอก URL ไปยังคลิปบอร์ดแล้ว"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "หน้าต่างที่ตรวจสอบ DevTools ไม่พร้อมใช้งาน"
+  },
+  "toastScreenshotError": {
+    "message": "ข้อผิดพลาดของภาพหน้าจอ: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "กำลังสร้างไฟล์เก็บถาวรของหน้าเว็บสำหรับออฟไลน์…"
+  },
+  "toastArchiveError": {
+    "message": "ข้อผิดพลาดในการเก็บถาวร: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "หมดเวลาการจัดรูปแบบ — แสดงไฟล์ต้นฉบับ"
+  },
+  "toastFormatFailed": {
+    "message": "ไม่สามารถจัดรูปแบบไฟล์ — กำลังแสดงต้นฉบับ"
+  },
+  "emptySearchTitle": {
+    "message": "ไม่มีรายการที่ตรงกันสำหรับ \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "ลองใช้คำค้นหาอื่นหรือเปลี่ยนไปใช้หมวดหมู่อื่น"
+  },
+  "emptyFiltersTitle": {
+    "message": "ไม่มีทรัพยากรที่ตรงกับตัวกรองปัจจุบัน"
+  },
+  "emptyFiltersSub": {
+    "message": "คลายตัวกรองขนาดหรือมิติด้านบน หรือกดล้าง"
+  },
+  "textEmptyQueryReject": {
+    "message": "หน้าเว็บปฏิเสธคิวรีนั้น แก้ไขด้านบนแล้วผลลัพธ์จะกลับมาทันที"
+  },
+  "textEmptyNoMatch": {
+    "message": "ไม่มีองค์ประกอบใดบนหน้าเว็บที่ตรงกับคิวรีนี้ ลองใช้ตัวเลือกที่กว้างขึ้น หรือเปลี่ยนโหมดข้างช่องค้นหา"
+  },
+  "textEmptyInitial": {
+    "message": "ยังไม่มีอะไรจับได้ กำลังทำงานจับภาพสด — ทั้งหน้าจะปรากฏที่นี่เป็นข้อความที่อ่านได้"
+  },
+  "textEmptyFiltered": {
+    "message": "ไม่มีสิ่งใดที่ตรงกับการค้นหาและตัวกรององค์ประกอบปัจจุบัน"
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ บล็อก",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ คำ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ อักขระ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ ตาราง · $rows$ แถวที่ไม่ซ้ำ",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "เลือกแล้ว $count$ รายการ — การส่งออกจะใช้เฉพาะรายการเหล่านี้",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "ตาราง — $count$ แถวบนหน้าจอ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "ตาราง — แถวที่ไม่ซ้ำกันทั้งหมด $count$ แถว",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ สแนปช็อต",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "อัปเดต $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "แสดงทั้งหมด $count$ แถว",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "กำลังแสดงแถวทั้งหมด"
+  },
+  "textTableHistory": {
+    "message": "ประวัติ ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "ซ่อนประวัติ"
+  },
+  "textTableNoRows": {
+    "message": "ยังไม่มีแถวที่บันทึกไว้"
+  },
+  "textBtnCopy": {
+    "message": "คัดลอกข้อความ"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 คัดลอก"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ รูปภาพที่ซ้ำกัน",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "ส่งออก"
+  },
+  "inspectorLoadingSvg": {
+    "message": "กำลังโหลด SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "ไม่สามารถเรียกเนื้อหา SVG ได้"
+  },
+  "inspectorLoadingFont": {
+    "message": "กำลังโหลดตัวอย่างแบบอักษร…"
+  },
+  "inspectorFontSample": {
+    "message": "ดูตัวอย่างแบบอักษร"
+  },
+  "inspectorBeautify": {
+    "message": "จัดรูปแบบ"
+  },
+  "inspectorOriginal": {
+    "message": "ต้นฉบับ"
+  },
+  "inspectorHeaders": {
+    "message": "ส่วนหัว"
+  },
+  "inspectorResponse": {
+    "message": "การตอบกลับ"
+  },
+  "inspectorRequest": {
+    "message": "คำขอ"
+  },
+  "inspectorQueryParams": {
+    "message": "พารามิเตอร์คิวรี"
+  },
+  "inspectorRequestBody": {
+    "message": "เนื้อหาคำขอ"
+  },
+  "textHintHtml": {
+    "message": "สำเนาสดของหน้าเว็บที่อ่านง่าย องค์ประกอบทุกอย่างที่มีข้อความจะถูกบันทึกตามลำดับ DOM และอัปเดตที่นี่เมื่อหน้าเว็บเปลี่ยนแปลง ค้นหาด้วยข้อความธรรมดา นิพจน์ทั่วไป <strong>ตัวเลือก CSS</strong> หรือนิพจน์ <strong>XPath</strong> แล้วส่งออกสิ่งที่ตรงกัน ดู<a href=\"#\" id=\"text-hint-guide\">คู่มือ</a>สำหรับรายละเอียด"
+  },
+  "textHeadings": {
+    "message": "หัวเรื่อง"
+  },
+  "textAllLevels": {
+    "message": "ทุกระดับ"
+  },
+  "textMatches": {
+    "message": "ที่ตรงกัน"
+  },
+  "textMatch": {
+    "message": "ตรงกัน"
+  },
+  "textReadingOn": {
+    "message": "เปิดโหมดอ่าน"
+  },
+  "toastDownloadStarted": {
+    "message": "เริ่มการดาวน์โหลด: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "ไม่สามารถดึงข้อมูลทรัพยากรนี้ได้ (CORS หรือประเภทที่ไม่รองรับ)"
+  },
+  "ratingBannerText": {
+    "message": "ชอบ Source Download ไหม? สนับสนุนวิสัยทัศน์โอเพ่นซอร์สของเราด้วยการรีวิวบน Chrome เว็บสโตร์หรือติดดาวบน GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ รีวิว"
+  },
+  "ratingBannerStar": {
+    "message": "★ ดาว"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ แถวที่ไม่ซ้ำ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ วินาทีที่แล้ว",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ นาทีที่แล้ว",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "จับภาพหน้าจอของพื้นที่"
+  },
+  "btnAreaDownload": {
+    "message": "ดาวน์โหลด"
+  },
+  "btnAreaCopy": {
+    "message": "คัดลอกไปยังคลิปบอร์ด"
+  },
+  "btnAreaCancel": {
+    "message": "ยกเลิก"
+  },
+  "toastAreaCopied": {
+    "message": "คัดลอกภาพหน้าจอของพื้นที่ไปยังคลิปบอร์ดแล้ว"
+  },
+  "toastAreaDownloaded": {
+    "message": "บันทึกภาพหน้าจอของพื้นที่แล้ว"
+  },
+  "statusFoundCssResources": {
+    "message": "พบทรัพยากร $count$ รายการที่อ้างอิงจาก CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "การสแกน DOM ล้มเหลว: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "กำลังสร้างดัชนีเนื้อหาไฟล์…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "กำลังตรวจสอบรูปภาพที่ซ้ำกัน…"
+  },
+  "statusWorking": {
+    "message": "กำลังทำงาน…"
+  },
+  "filterMethodTitle": {
+    "message": "กรองตามวิธี HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "กรองตามประเภทคำขอ"
+  },
+  "filterSortTitle": {
+    "message": "จัดเรียงทรัพยากร"
+  },
+  "textModeTitle": {
+    "message": "วิธีการตีความกล่องแบบสอบถาม"
+  },
+  "textKindTitle": {
+    "message": "จำกัดเพียงประเภทองค์ประกอบเดียว"
+  },
+  "textHeadingLevelTitle": {
+    "message": "ระดับหัวเรื่อง"
+  },
+  "textPlaceholderRegex": {
+    "message": "^ราคา:\\s*\\d+ — นิพจน์ทั่วไปของ JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — ตัวเลือก CSS ใดๆ"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "ค้นหาคำแนะนำ…"
+  },
+  "popupIntro": {
+    "message": "หมวดหมู่ที่นับโดย <strong>ป้ายแถบเครื่องมือ</strong> สลับปิดหนึ่งรายการเพื่อหยุดนับ — ป้ายสถานะจะแสดงเฉพาะสิ่งที่คุณติดตามทันที"
+  },
+  "popupHelpTitle": {
+    "message": "วิธีใช้งานแบบเต็มแผง"
+  },
+  "popupStep1": {
+    "message": "เปิด DevTools สำหรับเพจที่คุณต้องการตรวจสอบ <div class=\"hint\"><kbd>F12</kbd> หรือ <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "คลิกแท็บ <strong>Source Download</strong> ในแถบเครื่องมือ DevTools"
+  },
+  "popupStep3": {
+    "message": "เรียกดู ตรวจสอบ และดาวน์โหลดทรัพยากร — ทีละรายการหรือทั้งหมดในครั้งเดียวในรูปแบบไฟล์ ZIP"
+  },
+  "popupNote": {
+    "message": "หมายเหตุ: Chrome ไม่อนุญาตให้ส่วนขยายเปิด DevTools โดยทางโปรแกรม ซึ่งเป็นเหตุผลว่าทำไมการเข้าถึงชุดเครื่องมือวิศวกรรมทั้งหมดผ่านแถบเครื่องมือ DevTools"
+  },
+  "popupTrackAll": {
+    "message": "ติดตามทุกหมวดหมู่"
+  },
+  "popupLanguage": {
+    "message": "ภาษา"
+  },
+  "inspectorBinaryResponse": {
+    "message": "การตอบกลับแบบไบนารี — ดาวน์โหลดเพื่อดู"
+  },
+  "inspectorLoadingResponse": {
+    "message": "กำลังโหลดการตอบกลับ…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "ไม่มีการแสดงตัวอย่างการตอบกลับ — ไม่สามารถเรียกเนื้อหาได้"
+  },
+  "inspectorLoadingContent": {
+    "message": "กำลังโหลดเนื้อหา…"
+  },
+  "inspectorNoPreview": {
+    "message": "ไม่มีการแสดงตัวอย่าง — ไม่สามารถเรียกเนื้อหาได้"
+  },
+  "inspectorCloseAllTabs": {
+    "message": "ปิดทั้งหมด"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "ปิดแท็บที่เปิดอยู่ทั้งหมด"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "คลิกเพื่อขยาย"
+  },
+  "inspectorViewSource": {
+    "message": "ดูแหล่งที่มา"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "แสดงมาร์กอัป SVG พร้อมการเน้นไวยากรณ์"
+  },
+  "inspectorFormatting": {
+    "message": "กำลังจัดรูปแบบ…"
+  },
+  "findInContentPlaceholder": {
+    "message": "ค้นหาในเนื้อหา…"
+  },
+  "findPreviousMatch": {
+    "message": "รายการที่ตรงกันก่อนหน้า"
+  },
+  "findNextMatch": {
+    "message": "รายการที่ตรงกันถัดไป"
+  },
+  "findClose": {
+    "message": "ปิด"
+  },
+  "findShowRaw": {
+    "message": "แสดงเนื้อหาต้นฉบับ (ไม่ได้จัดรูปแบบ)"
+  },
+  "findBeautify": {
+    "message": "จัดรูปแบบ/ตกแต่งเนื้อหานี้"
+  },
+  "btnRaw": {
+    "message": "ข้อมูลดิบ"
+  },
+  "btnBeautify": {
+    "message": "จัดรูปแบบ"
+  },
+  "videoHlsDetected": {
+    "message": "ตรวจพบสตรีม HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "วิดีโอนี้ไม่สามารถเล่นในเบราว์เซอร์ได้"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome ไม่สามารถเล่นสตรีม HLS ได้โดยตรง คุณสามารถรวมทุกเซกเมนต์ของ <b>$NAME$</b> ให้เป็นไฟล์วิดีโอ MP4/TS ไฟล์เดียวได้",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "เบราว์เซอร์ไม่รองรับรูปแบบนี้"
+  },
+  "btnMergeHls": {
+    "message": "รวมเซกเมนต์และดาวน์โหลด"
+  },
+  "toastHlsMerged": {
+    "message": "รวม $COUNT$ เซกเมนต์เป็น $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "ไม่ทราบขนาด"
+  },
+  "progressFetching": {
+    "message": "กำลังดึงข้อมูล $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "กำลังสร้าง ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "บันทึก ZIP แล้ว: $FETCHED$ จาก $TOTAL$ ทรัพยากร ($SKIPPED$ ล้มเหลว)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "ลองอีกครั้ง $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "ลองดาวน์โหลดอีกครั้ง"
+  },
+  "searchRegexHint": {
+    "message": "การค้นหาด้วย Regex ทำงานอยู่ — ครอบข้อความค้นหาด้วย /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "รวมไว้ในการส่งออก"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "รวมทุกสแนปช็อตไว้ในตารางเดียวที่ตัดข้อมูลซ้ำออก — นี่คือสิ่งที่จะถูกส่งออก"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "เรียกดูสแนปช็อตก่อนหน้าของตารางนี้"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "ดาวน์โหลดตารางนี้เป็น CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "สแนปช็อต $INDEX$ — $TIME$ ($COUNT$ แถว)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "สลับการเลือกสำหรับการดาวน์โหลดเป็นชุด"
+  },
+  "cardDownloadTitle": {
+    "message": "ดาวน์โหลดไฟล์"
+  },
+  "cardRetryFailedTitle": {
+    "message": "การดาวน์โหลดครั้งก่อนล้มเหลว — คลิกเพื่อลองอีกครั้ง"
+  },
+  "btnThemeLight": {
+    "message": "เปลี่ยนเป็นธีมสว่าง"
+  },
+  "btnThemeDark": {
+    "message": "เปลี่ยนเป็นธีมสีเข้ม"
+  },
+  "guideTitle": {
+    "message": "Source Download — คู่มือผู้ใช้"
+  },
+  "guideEmpty": {
+    "message": "ไม่มีส่วนคำแนะนำที่ตรงกับการค้นหาของคุณ"
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — ไม่มีการพึ่งพา 100%",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "ซูมออก (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "ซูมเข้า (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "รีเซ็ตการซูม (0)"
+  },
+  "lightboxClose": {
+    "message": "ปิด (Esc)"
+  },
+  "resizerTitle": {
+    "message": "ลากเพื่อปรับขนาด"
+  },
+  "ratingDismissTitle": {
+    "message": "ปิด"
+  },
+  "inspectorResourceTitle": {
+    "message": "ทรัพยากร"
+  },
+  "guideSecGettingStarted": {
+    "message": "เริ่มต้นใช้งาน"
+  },
+  "guideSecCategories": {
+    "message": "หมวดหมู่"
+  },
+  "guideSecSearchFilters": {
+    "message": "ค้นหาและตัวกรอง"
+  },
+  "guideSecGridView": {
+    "message": "มุมมองตารางและรายการ"
+  },
+  "guideSecInspect": {
+    "message": "ตรวจสอบทรัพยากร"
+  },
+  "guideSecDownloading": {
+    "message": "กำลังดาวน์โหลด"
+  },
+  "guideSecLightbox": {
+    "message": "ไลท์บ็อกซ์"
+  },
+  "guideSecTextTables": {
+    "message": "ข้อความและตาราง"
+  },
+  "guideSecCaptions": {
+    "message": "คำบรรยายและซับไตเติล"
+  },
+  "guideSecSourceMaps": {
+    "message": "Source map"
+  },
+  "guideSecDupes": {
+    "message": "รูปภาพที่ซ้ำกัน"
+  },
+  "guideSecVideoHls": {
+    "message": "วิดีโอสำรองและ HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "เคล็ดลับขั้นสูง"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "คลิกแท็บ <strong>Source Download</strong> ในแถบเครื่องมือ DevTools (กด <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> จากนั้นกดแท็บในแถบเครื่องมือ DevTools) Chrome ไม่อนุญาตให้ส่วนขยายเปิด DevTools โดยอัตโนมัติ ซึ่งเป็นเหตุผลว่าทำไมแผงควบคุมจึงอยู่ที่นั่น ป๊อปอัปไอคอนแถบเครื่องมือให้คุณเลือกหมวดหมู่ที่ป้อนตัวนับป้ายสถานะบนไอคอน ปุ่มพระอาทิตย์/พระจันทร์ในแถบเครื่องมือของแผงจะล็อกธีมสว่างหรือมืดโดยไม่ขึ้นอยู่กับ Chrome ทางเลือกนั้นจะถูกจดจำ"
+  },
+  "guideSecCategoriesContent": {
+    "message": "แท็บแนวตั้งทางด้านซ้ายจัดกลุ่มทรัพยากรที่บันทึกไว้ออกเป็น 17 หมวดหมู่เฉพาะตามประเภท: รูปภาพ วิดีโอ เสียง คำบรรยาย เอกสาร แบบอักษร Source map WASM SVG API คุกกี้ พื้นที่เก็บข้อมูล และอื่นๆ แต่ละแท็บจะแสดงจำนวนสด จะแสดงเพียงหมวดหมู่เดียวเท่านั้นในแต่ละครั้ง การสลับจะรีเซ็ตตัวกรองทั้งหมด ดังนั้นสิ่งที่คุณเห็นจะตรงกับแท็บเสมอ"
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "แถบค้นหาจะกรองตามชื่อ URL ประเภท ข้อความแสดงแทน หรือชื่อเรื่อง ใส่ข้อความค้นหาของคุณใน <kbd>/…/</kbd> เพื่อใช้นิพจน์ทั่วไป เช่น <code>/\\.(png|jpg)$/</code>. ใต้แถบเครื่องมือ แถบตัวกรองจะเปลี่ยนตามหมวดหมู่ ได้แก่ ขนาดและช่วงมิติข้อมูลสำหรับสื่อ วิธี HTTP และประเภทคำขอสำหรับ API รวมถึงการเรียงลำดับและทิศทาง"
+  },
+  "guideSecGridViewContent": {
+    "message": "สลับระหว่างตารางขนาดกะทัดรัด (ภาพขนาดย่อ) และรายการโดยละเอียดด้วยปุ่มที่อยู่ถัดจากแถบค้นหา ตัวเลือกของคุณจะถูกจดจำระหว่างเซสชัน ในมุมมองรายการ ช่องทำเครื่องหมายให้คุณเลือกทรัพยากรแต่ละรายการสำหรับการดาวน์โหลดจำนวนมาก"
+  },
+  "guideSecInspectContent": {
+    "message": "คลิกทรัพยากรใดก็ได้เพื่อเปิดในบานหน้าต่างตรวจสอบทางด้านขวา ไฟล์ที่เปิดแต่ละไฟล์จะกลายเป็นแท็บ ดังนั้นคุณจึงสามารถเปรียบเทียบทรัพยากรต่างๆ เคียงข้างกันได้ โดยไฟล์ใหม่ล่าสุดจะเปิดทางด้านซ้าย มีตัวแสดงเฉพาะทางสำหรับรูปภาพ วิดีโอ เสียง แบบอักษร SVG และข้อความ/โค้ด (พร้อมปุ่มสลับจัดรูปแบบ) API แสดงมุมมองแยก: การตอบสนองทางด้านซ้าย รายละเอียดคำขอ (วิธีการ สถานะ ส่วนหัว พารามิเตอร์การสืบค้น และเนื้อหา) ทางด้านขวา"
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>ดาวน์โหลดมุมมองปัจจุบัน</strong> บันทึกทรัพยากรที่มองเห็นได้ในปัจจุบัน (หมวดหมู่ที่ใช้งานอยู่ + การค้นหา + ตัวกรอง) เป็นไฟล์ ZIP โดยจะติดป้ายกำกับใหม่เป็น <em>ดาวน์โหลดที่กรองแล้ว (N)</em> เมื่อตัวกรองทำงานอยู่ วางเมาส์เหนือปุ่มดาวน์โหลดเพื่อดูขนาดไฟล์เก็บถาวรโดยประมาณก่อนที่คุณจะคลิก <strong>ดาวน์โหลดที่เลือก</strong> ดาวน์โหลดเฉพาะรายการที่เลือกเท่านั้น <strong>ดาวน์โหลดทั้งหมด</strong> รวบรวมทรัพยากรทั้งหมดที่ค้นพบไว้ใน ZIP ที่มีโครงสร้างโฟลเดอร์ การดาวน์โหลดที่ล้มเหลวจะถูกลองใหม่โดยอัตโนมัติและสามารถลองใหม่ได้อีกครั้งจากเมนูบริบท <strong>ส่งออก</strong> บันทึกรายการที่มองเห็นเป็น JSON หรือ CSV หรือส่งออกบันทึกเครือข่ายของ Chrome เป็นไฟล์ HAR"
+  },
+  "guideSecLightboxContent": {
+    "message": "ปุ่มซูมจะเปิดสื่อในไลท์บ็อกซ์ขนาดเต็มซึ่งคุณสามารถเลื่อนได้ด้วยการลาก ซูมด้วยล้อเลื่อนของเมาส์ ปุ่มบนหน้าจอ หรือแป้นพิมพ์ (<kbd>+</kbd>/<kbd>-</kbd> เพื่อซูม <kbd>0</kbd> เพื่อรีเซ็ต <kbd>Esc</kbd> เพื่อปิด)"
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>หมวดหมู่ <strong>ข้อความ</strong> เป็นสำเนาสดของหน้าเว็บที่อ่านง่าย โดยจะจับทุกองค์ประกอบที่เก็บข้อความ เช่น ส่วนหัว ย่อหน้า รายการ ปุ่ม <code>div</code>/<code>span</code> และอื่นๆ ตามลำดับ DOM และสแกนต่อไปในขณะที่ <strong>Live</strong> เปิดอยู่</p><p>ช่อง <strong>คำค้นหา</strong> ทำงานสี่วิธี โดยเลือกจากเมนูแบบเลื่อนลงข้างๆ: <strong>ประกอบด้วย</strong> และ <strong>Regex</strong> กรองข้อความที่บันทึกไว้แล้ว ขณะที่ <strong>ตัวเลือก CSS</strong> และ <strong>XPath</strong> ทำงานกับเพจที่ใช้งานอยู่ เพื่อให้สามารถเข้าถึงทุกสิ่งใน DOM XPath ยังยอมรับนิพจน์ที่ส่งคืนค่าแทนที่จะเป็นองค์ประกอบ เช่น <code>count(//a)</code> หรือ <code>//@href</code> ไม่ว่าหน้านั้นจะกล่าวถึงคำค้นหาที่ใช้งานไม่ได้ก็ตามจะแสดงอยู่ข้างๆ กล่อง <strong>องค์ประกอบ</strong> จะจำกัดผลลัพธ์ให้เหลือเพียงแท็กเดียว โดยนับจำนวนแท็กแต่ละแท็กที่พบในหน้าเว็บ การล้างช่องค้นหา (หรือกด <strong>ล้าง</strong>) จะทำให้คุณกลับไปที่ <em>องค์ประกอบทั้งหมด</em> และเรียกคืนหน้านั้น โดยคุณไม่จำเป็นต้องรีเซ็ตเมนูแบบเลื่อนลงด้วยตนเอง</p><p><strong>การอ่าน</strong>จะซ่อนแท็ก ช่องทำเครื่องหมาย และเส้นทางนำทาง (breadcrumb) เพื่อให้สตรีมอ่านได้เหมือนกับเอกสาร ตารางจะจัดเก็บประวัติที่มีขอบเขตของสแนปช็อต ดังนั้นตารางไดนามิก (SPA) จะไม่สูญหาย กด <strong>แสดงแถวทั้งหมด</strong> บนตารางเพื่อรวมทุกสแนปช็อตให้เป็นมุมมองเดียวที่กรองข้อมูลซ้ำออก ซึ่งก็คือสิ่งที่ส่งออกนั่นเอง ส่งออกเป็น <strong>TXT</strong> (หน้าที่อ่านได้), <strong>MD</strong> (Markdown, รวมตาราง) หรือตารางเป็น CSV, HTML หรือสมุดงาน <strong>XLSX</strong> หลายแผ่นจริง รายการที่เลือกไว้จะมีความสำคัญก่อน ไม่เช่นนั้นทุกสิ่งที่มองเห็นได้ในปัจจุบันจะถูกส่งออก</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML และไฟล์คำบรรยายอื่นๆ รวมถึงแหล่งที่มา <code>&lt;track&gt;</code> จะอยู่ในแท็บ <strong>คำบรรยาย</strong> ของตัวเองแทนที่จะรวมกับเอกสาร"
+  },
+  "guideSecSourceMapsContent": {
+    "message": "ไฟล์ <code>.map</code> และเนื้อหา JSON ที่ดูเหมือนSource map (ประกอบด้วย <code>mappings</code> และ <code>sources</code>) จะถูกจัดกลุ่มไว้ภายใต้ <strong>Source map</strong> โดยมีตัวแสดง JSON และ จัดรูปแบบ ดังนั้นจึงไม่ทำให้แท็บ JSON เกะกะอีกต่อไป"
+  },
+  "guideSecDupesContent": {
+    "message": "บนแท็บรูปภาพ แผงจะแฮชไบต์ที่บันทึกไว้และทำเครื่องหมายไฟล์ที่เหมือนกัน ตัวกรอง <strong>ซ่อนรายการที่ซ้ำกัน</strong> จะเก็บสำเนาแรกของแต่ละชุด ดังนั้น ZIP ของมุมมองจะไม่ส่งภาพขนาดย่อเดียวกันสองครั้ง"
+  },
+  "guideSecVideoHlsContent": {
+    "message": "สตรีมที่เบราว์เซอร์ไม่สามารถเล่นได้ตามปกติ (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, ตัวแปลงสัญญาณที่ไม่รู้จัก) แสดงทางเลือกแทนเครื่องเล่นสีดำ สำหรับ HLS คุณสามารถรวมเซกเมนต์ ให้เป็นไฟล์วิดีโอเดียวได้จากแผงควบคุม หรือดาวน์โหลดไฟล์ Manifest ดั้งเดิม"
+  },
+  "guideSecPowerTipsContent": {
+    "message": "การตอบสนองแบบไดนามิก <strong>API</strong> (XHR/fetch) จะไม่ถูกกรองข้อมูลที่ซ้ำกันโดย URL — การตอบกลับแต่ละรายการจะยังคงอยู่ในรายการ (จำกัด FIFO) เพื่อให้คุณสามารถเปรียบเทียบคำขอที่ซ้ำกัน ทรัพยากรแบบสแตติกจะถูกกรองข้อมูลที่ซ้ำกัน ใช้ <strong>รีเฟรช</strong> เพื่อสแกน DOM ปัจจุบันอีกครั้ง และโหลดหน้าเว็บซ้ำในขณะที่แผงเปิดอยู่เพื่อบันทึกคำขอเครือข่ายทั้งหมด รวมถึงคำขอที่เรียกใช้ก่อนที่คุณจะเปลี่ยนแท็บ"
+  },
+  "toolArrow": {
+    "message": "เครื่องมือลูกศร"
+  },
+  "toolRect": {
+    "message": "เครื่องมือสี่เหลี่ยม"
+  },
+  "toolText": {
+    "message": "เครื่องมือข้อความ"
+  },
+  "toolUndo": {
+    "message": "เลิกทำ (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "ทำซ้ำ (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "สี"
+  },
+  "badgeStrokeSize": {
+    "message": "ขนาด: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "ขนาดฟอนต์: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "บันทึกพื้นที่ที่เลือกเป็นวิดีโอ / GIF"
+  },
+  "btnRecStart": {
+    "message": "เริ่มบันทึก"
+  },
+  "btnRecPause": {
+    "message": "หยุดชั่วคราว"
+  },
+  "btnRecResume": {
+    "message": "ทำต่อ"
+  },
+  "btnRecStop": {
+    "message": "เสร็จสิ้นและดาวน์โหลด"
+  },
+  "btnRecCancel": {
+    "message": "ยกเลิก"
+  },
+  "toastRecSaved": {
+    "message": "บันทึกวิดีโอของพื้นที่ที่เลือกแล้ว"
+  },
+  "toastRecCancelled": {
+    "message": "ยกเลิกการบันทึกวิดีโอแล้ว"
+  },
+  "toastRecPermissionDenied": {
+    "message": "ไม่ได้รับอนุญาตให้บันทึกหน้าจอ"
+  },
+  "btnPopupRecordArea": {
+    "message": "วิดีโอ / GIF ตามพื้นที่"
+  },
+  "btnPopupCaptureArea": {
+    "message": "ภาพหน้าจอของพื้นที่"
+  },
+  "contextMenuPickColor": {
+    "message": "เลือกสีจากหน้าจอ"
+  },
+  "btnPopupPickColor": {
+    "message": "เลือกสี"
+  },
+  "colorPickerTitle": {
+    "message": "เครื่องมือเลือกสี"
+  },
+  "btnColorPickAgain": {
+    "message": "เลือกสีอื่น"
+  },
+  "toastColorCopied": {
+    "message": "คัดลอกสีไปยังคลิปบอร์ดแล้ว"
+  },
+  "toastProgressCapturing": {
+    "message": "กำลังจับภาพทั้งหน้า… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "กำลังต่อภาพ…"
+  },
+  "modalExportTitle": {
+    "message": "ภาพหน้าจอทั้งหน้าพร้อมแล้ว"
+  },
+  "btnExportPng": {
+    "message": "ดาวน์โหลด PNG"
+  },
+  "btnExportJpg": {
+    "message": "ดาวน์โหลด JPG"
+  },
+  "btnExportPdf": {
+    "message": "บันทึกเป็น PDF"
+  },
+  "btnExportCopy": {
+    "message": "คัดลอกไปยังคลิปบอร์ด"
+  },
+  "btnExportGenerating": {
+    "message": "กำลังสร้าง…"
+  },
+  "toastPdfGenerated": {
+    "message": "บันทึกเอกสาร PDF แล้ว"
+  },
+  "settingNamingPatterns": {
+    "message": "รูปแบบการตั้งชื่อไฟล์"
+  },
+  "settingVideoFormat": {
+    "message": "รูปแบบวิดีโอเริ่มต้น"
+  },
+  "settingNamingPreview": {
+    "message": "ตัวอย่าง:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "กำลังสร้าง GIF โปรดรอสักครู่…"
+  },
+  "settingGifResolution": {
+    "message": "ความละเอียด GIF เริ่มต้น"
+  },
+  "optGifOriginal": {
+    "message": "ต้นฉบับ (1:1 ความละเอียดเดิม — 3K/4K เต็มรูปแบบ ไม่ลดขนาด)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (สูงสุด 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (สูงสุด 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (สูงสุด 854px — เร็วขึ้นและขนาดเล็กลง)"
+  },
+  "tipGifDurationLimit": {
+    "message": "รูปแบบ GIF รองรับระยะเวลาการบันทึกสูงสุด 1 นาที (60 วินาที)"
+  },
+  "guideSecScreenRecording": {
+    "message": "การบันทึกหน้าจอ (วิดีโอและ GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "บันทึกพื้นที่ใดก็ได้บนหน้าจอเป็น MP4, WebM หรือ GIF แบบเคลื่อนไหว การบันทึก GIF มีความละเอียดดั้งเดิม 1:1, โปรไฟล์ 1080p, 720p และ 480p พร้อมขนาดไฟล์โดยประมาณแบบเรียลไทม์ ระยะเวลาการบันทึก GIF สูงสุดคือ 1 นาที (60 วินาที) เพื่อประสิทธิภาพเบราว์เซอร์ที่เหมาะสมที่สุด"
+  },
+  "msgGifMaxDurationReached": {
+    "message": "ถึงความยาว GIF สูงสุด 1 นาที (60 วินาที) แล้ว กำลังสร้าง GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "สูงสุด 1 นาที (60 วินาที)"
+  },
+  "settingGifFps": {
+    "message": "อัตราเฟรม GIF เริ่มต้น (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — ลื่นไหล (เคลื่อนไหวนุ่มนวลมาก ขนาดใหญ่ขึ้น)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — มาตรฐาน (แนะนำสำหรับเว็บและความสมดุล)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — กะทัดรัด / มีม (การเคลื่อนไหวเป็นขั้น ขนาดเล็ก)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — สต็อปโมชัน / ช้า (ทีละขั้น ขนาดเล็กมาก)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — งานนำเสนอ (1 เฟรมต่อวินาที ขนาดเล็กที่สุด)"
+  },
+  "popupRightClickHint": {
+    "message": "คลิกขวาที่ใดก็ได้บนหน้าเว็บเพื่อบันทึกหน้าจอ (วิดีโอ/GIF) และเครื่องมือเลือกสี"
+  },
+  "toastElementZappedAd": {
+    "message": "ซ่อนโฆษณา / iframe สำหรับเซสชันนี้แล้ว",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "คัดลอกรูปภาพไปยังคลิปบอร์ดแล้ว",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "ปิด (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "บันทึกการตั้งค่าแล้ว",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "ดาวน์โหลดไฟล์แล้วเปิดด้วย VLC หรือโปรแกรมเล่นสื่ออื่น",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "ไม่มีตัวอย่างสำหรับทรัพยากรประเภทนี้",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "ดาวน์โหลดไฟล์ต้นฉบับ",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "เคล็ดลับ: เปิดไฟล์ที่ดาวน์โหลดด้วย VLC หรือโปรแกรมเล่นสื่อบนเดสก์ท็อปใดก็ได้ เพราะเล่นได้เกือบทุกรูปแบบ",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "กำลังสร้างไฟล์เก็บถาวร ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "เบราว์เซอร์ของคุณไม่รองรับ EyeDropper API",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "ลากแถบเครื่องมือ",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "สลับรูปแบบ: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "ความละเอียด GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "อัตราเฟรม GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "ขนาด GIF โดยประมาณ: ~$size$ MB (สำหรับ 10 วินาที) สูงสุดประมาณ $max$ MB เมื่อยาวสุด 60 วินาที\nอัตราเฟรม: $fps$ FPS\nการบันทึก GIF จำกัดสูงสุด 1 นาที (60 วินาที)",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "คัดลอก $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "ตัวอย่างภาพหน้าจอ",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — เล่นได้ทุกที่ รวมถึง WhatsApp, Telegram, Jira, Apple และ Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (ภาพเคลื่อนไหว — เหมาะกับ README, Jira, เอกสาร และการส่งข้อความ)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — รูปแบบเว็บแบบเปิด)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "ไม่พบแท็บที่ใช้งานอยู่",
+    "description": "No active tab found."
+  }
+}

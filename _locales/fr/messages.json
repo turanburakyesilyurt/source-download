@@ -20,15 +20,15 @@
     "description": "Context menu item to undo element hide"
   },
   "contextMenuResetZap": {
-    "message": "Restaurer tous les éléments masqués",
+    "message": "Réinitialiser tous les éléments masqués",
     "description": "Context menu item to restore all hidden elements"
   },
   "contextMenuCapturePage": {
-    "message": "Capture d'écran pleine page",
+    "message": "Capturer la page entière",
     "description": "Context menu item to capture full page"
   },
   "contextMenuPageArchive": {
-    "message": "Télécharger l'archive hors ligne",
+    "message": "Télécharger l’archive hors ligne de la page",
     "description": "Context menu item to save complete page archive"
   },
   "catAll": {
@@ -248,7 +248,7 @@
     "message": "Ignorer"
   },
   "toastElementZapped": {
-    "message": "Élément masqué. Utilisez le menu pour restaurer."
+    "message": "Élément masqué pour cette session."
   },
   "toastElementRestored": {
     "message": "Élément restauré."
@@ -257,13 +257,13 @@
     "message": "Tous les éléments masqués ont été restaurés."
   },
   "toastScreenshotCapturing": {
-    "message": "Capture de la page complète en cours…"
+    "message": "Capture de la page entière en cours…"
   },
   "toastScreenshotCaptured": {
-    "message": "Capture d'écran pleine page enregistrée."
+    "message": "Capture d’écran de la page entière enregistrée."
   },
   "toastArchiveCreated": {
-    "message": "Archive HTML unique enregistrée."
+    "message": "Archive HTML en un seul fichier enregistrée."
   },
   "brandSignature": {
     "message": "Créé par Turan Burak Yeşilyurt (2run.dev)"
@@ -317,13 +317,13 @@
     "message": "Enregistrer HTML"
   },
   "exportJson": {
-    "message": "Visible list as JSON"
+    "message": "Liste visible en JSON"
   },
   "exportCsv": {
-    "message": "Visible list as CSV"
+    "message": "Liste visible en CSV"
   },
   "exportHar": {
-    "message": "Network log as HAR"
+    "message": "Journal réseau en HAR"
   },
   "exportScreenshot": {
     "message": "Capture d'écran pleine page (PNG)"
@@ -386,7 +386,7 @@
     "message": "Effacer"
   },
   "toastRefreshComplete": {
-    "message": "Analyse terminée : $COUNT$ nouvelle(s) ressource(s)",
+    "message": "Analyse terminée : $count$ nouvelle(s) ressource(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "$COUNT$ bloc(s) copié(s)",
+    "message": "$count$ bloc(s) copié(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "Rien à exporter"
   },
   "toastExportedTxt": {
-    "message": "$COUNT$ bloc(s) exporté(s) en TXT",
+    "message": "$count$ bloc(s) exporté(s) en TXT",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "$COUNT$ bloc(s) exporté(s) en Markdown",
+    "message": "$count$ bloc(s) exporté(s) en Markdown",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "Tableau exporté en XLSX"
   },
   "toastExportedTablesZip": {
-    "message": "$COUNT$ tableau(x) exporté(s) en $FORMAT$",
+    "message": "$count$ tableau(x) exporté(s) en $format$",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "$COUNT$ feuille(s) exportée(s) en XLSX",
+    "message": "$count$ feuille(s) exportée(s) en XLSX",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -471,7 +471,7 @@
     "message": "Sélectionnez au moins une ressource d'abord."
   },
   "toastZipSaved": {
-    "message": "ZIP enregistré : $FETCHED$ sur $TOTAL$ ressources",
+    "message": "ZIP enregistré : $fetched$ sur $total$ ressources",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "Échec du ZIP : $ERROR$",
+    "message": "Échec du ZIP : $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR exporté ($COUNT$ entrées)",
+    "message": "HAR exporté ($count$ entrées)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "Fenêtre inspectée par DevTools non disponible."
   },
   "toastScreenshotError": {
-    "message": "Erreur de capture : $ERROR$",
+    "message": "Erreur de capture : $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -517,10 +517,10 @@
     }
   },
   "toastArchiveCreating": {
-    "message": "Création de l'archive de page hors ligne…"
+    "message": "Création de l’archive hors ligne de la page…"
   },
   "toastArchiveError": {
-    "message": "Erreur d'archivage : $ERROR$",
+    "message": "Erreur d'archivage : $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "Impossible de formater le fichier — affichage de l'original."
   },
   "emptySearchTitle": {
-    "message": "Aucun résultat pour \"$QUERY$\"",
+    "message": "Aucun résultat pour \"$query$\"",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -556,7 +556,7 @@
     "message": "La page a rejeté cette requête. Modifiez-la ci-dessus pour afficher les résultats."
   },
   "textEmptyNoMatch": {
-    "message": "Aucun élément sur la page ne correspond à cette requête. Essayez un sélecteur plus large."
+    "message": "Aucun élément de la page ne correspond à cette requête. Essayez un sélecteur plus large ou changez de mode à côté du champ."
   },
   "textEmptyInitial": {
     "message": "Rien n'a encore été capturé. La capture directe s'exécute — toute la page apparaîtra ici sous forme de texte lisible."
@@ -565,7 +565,7 @@
     "message": "Rien ne correspond à la requête et au filtre d'éléments actuels."
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ blocs",
+    "message": "$count$ blocs",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ mots",
+    "message": "$count$ mots",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ caractères",
+    "message": "$count$ caractères",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ tableau(x) · $ROWS$ lignes uniques",
+    "message": "$tables$ tableau(x) · $rows$ lignes uniques",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "$COUNT$ sélectionné(s) — exports ciblés",
+    "message": "$count$ sélectionné(s) — exports ciblés",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "Tableau — $COUNT$ ligne(s) à l'écran",
+    "message": "Tableau — $count$ ligne(s) à l'écran",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "Tableau — $COUNT$ ligne(s) unique(s)",
+    "message": "Tableau — $count$ ligne(s) unique(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ instantané(s)",
+    "message": "$count$ instantané(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "mis à jour $TIME$",
+    "message": "mis à jour $time$",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "Afficher les $COUNT$ lignes",
+    "message": "Afficher les $count$ lignes",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "Affichage de toutes les lignes"
   },
   "textTableHistory": {
-    "message": "Historique ($COUNT$)",
+    "message": "Historique ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ image(s) en double",
+    "message": "$count$ image(s) en double",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -713,7 +713,7 @@
     "message": "Aperçu de la police"
   },
   "inspectorBeautify": {
-    "message": "Embellir"
+    "message": "Mettre en forme"
   },
   "inspectorOriginal": {
     "message": "Original"
@@ -752,7 +752,7 @@
     "message": "Lecture activée"
   },
   "toastDownloadStarted": {
-    "message": "Téléchargement démarré : $NAME$",
+    "message": "Téléchargement démarré : $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -773,7 +773,7 @@
     "message": "★ Étoile"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ ligne(s) unique(s)",
+    "message": "$count$ ligne(s) unique(s)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "il y a $COUNT$s",
+    "message": "il y a $count$ s",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "il y a $COUNT$m",
+    "message": "il y a $count$ min",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,25 +800,25 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "Capturer une zone d'écran"
+    "message": "Capturer une zone de l’écran"
   },
   "btnAreaDownload": {
     "message": "Télécharger"
   },
   "btnAreaCopy": {
-    "message": "Copier"
+    "message": "Copier dans le presse-papiers"
   },
   "btnAreaCancel": {
     "message": "Annuler"
   },
   "toastAreaCopied": {
-    "message": "Capture de zone copiée dans le presse-papiers"
+    "message": "Capture d’écran de la zone copiée dans le presse-papiers"
   },
   "toastAreaDownloaded": {
-    "message": "Capture de zone enregistrée"
+    "message": "Capture d’écran de la zone enregistrée"
   },
   "statusFoundCssResources": {
-    "message": "$COUNT$ ressource(s) référencée(s) dans le CSS",
+    "message": "$count$ ressource(s) référencée(s) dans le CSS",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "Échec de l'analyse DOM : $ERROR$",
+    "message": "Échec de l'analyse DOM : $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -875,19 +875,19 @@
     "message": "Rechercher dans le guide…"
   },
   "popupIntro": {
-    "message": "Catégories comptabilisées par le <strong>badge de la barre d'outils</strong>. Désactivez-en une pour ne plus la compter."
+    "message": "Catégories comptabilisées par le <strong>badge de la barre d'outils</strong>. Désactivez-en une pour ne plus la compter : le badge reflète aussitôt uniquement ce que vous suivez."
   },
   "popupHelpTitle": {
     "message": "Comment utiliser le panneau complet"
   },
   "popupStep1": {
-    "message": "Appuyez sur F12 sur n'importe quel site web"
+    "message": "Ouvrez les DevTools sur la page à inspecter <div class=\"hint\"><kbd>F12</kbd> ou <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>I</kbd> (macOS : <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
   },
   "popupStep2": {
-    "message": "Cliquez sur l'onglet Source Download"
+    "message": "Cliquez sur l'onglet <strong>Source Download</strong> dans la barre d'outils des DevTools"
   },
   "popupStep3": {
-    "message": "Recherchez, filtrez et inspectez chaque ressource"
+    "message": "Parcourez, inspectez et téléchargez les ressources, une par une ou toutes à la fois dans un ZIP."
   },
   "popupNote": {
     "message": "Remarque : Chrome n'autorise pas les extensions à ouvrir DevTools par programmation. Le panneau complet est accessible via la barre d'outils DevTools."
@@ -947,13 +947,13 @@
     "message": "Afficher le contenu brut (non formaté)"
   },
   "findBeautify": {
-    "message": "Mettre en forme / embellir ce contenu"
+    "message": "Mettre en forme ce contenu"
   },
   "btnRaw": {
     "message": "Brut"
   },
   "btnBeautify": {
-    "message": "Embellir"
+    "message": "Mettre en forme"
   },
   "videoHlsDetected": {
     "message": "Flux HLS (m3u8) détecté"
@@ -1034,7 +1034,7 @@
     }
   },
   "contextMenuRetryDownload": {
-    "message": "Réessayer le téléchargement"
+    "message": "Relancer le téléchargement"
   },
   "searchRegexHint": {
     "message": "Recherche Regex active — entourez de /motif/i"
@@ -1161,7 +1161,7 @@
     "message": "Les onglets verticaux situés sur la gauche regroupent chaque ressource capturée en 17 catégories dédiées selon son type : Images, Vidéos, Audio, Sous-titres, Documents, Polices, Source maps, WASM, SVG, APIs, Cookies, Stockage, et bien plus. Chaque onglet affiche un compteur en direct. Une seule catégorie est affichée à la fois ; changer d'onglet réinitialise l'ensemble des filtres, garantissant que les éléments visibles correspondent toujours fidèlement à la catégorie."
   },
   "guideSecSearchFiltersContent": {
-    "message": "La barre de recherche filtre par nom, URL, type, texte alternatif ou titre. Encadrez votre requête par <kbd>/…/</kbd> pour employer une expression régulière, par exemple <code>/\\.(png|jpg)$/</code>. Sous la barre d'outils, la barre de filtrage s'adapte à chaque catégorie : plages de taille et de dimensions pour les médias, méthode HTTP et type de requête pour les APIs, ainsi que tri et orientation."
+    "message": "La barre de recherche filtre par nom, URL, type, texte alternatif ou titre. Encadrez votre requête par <kbd>/…/</kbd> pour employer une expression régulière, par exemple <code>/\\.(png|jpg)$/</code>. Sous la barre d'outils, la barre de filtrage s'adapte à chaque catégorie : plages de taille et de dimensions pour les médias, méthode HTTP et type de requête pour les APIs, ainsi que le tri et son sens."
   },
   "guideSecGridViewContent": {
     "message": "Basculez entre une grille compacte (petites miniatures) et une liste détaillée à l'aide des boutons situés à côté de la barre de recherche. Votre choix est conservé d'une session à l'autre. En affichage liste, des cases à cocher vous permettent de sélectionner individuellement des ressources en vue d'un téléchargement groupé."
@@ -1170,7 +1170,7 @@
     "message": "Cliquez sur une ressource pour l'ouvrir dans le volet d'inspection à droite. Chaque fichier ouvert devient un onglet, ce qui vous permet de comparer plusieurs ressources côte à côte — le plus récent s'ouvrant sur la gauche. Des visualiseurs spécialisés sont intégrés pour les images, la vidéo, l'audio, les polices, le SVG et le texte/code (avec option de mise en forme Beautify). Les APIs bénéficient d'une vue fractionnée : réponse à gauche et détails de la requête (méthode, statut, en-têtes, paramètres d'URL et corps) à droite."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Télécharger la vue</strong> enregistre les ressources actuellement visibles (catégorie active + recherche + filtres) sous forme d'archive ZIP ; le bouton devient <em>Télécharger filtrés (N)</em> dès que des filtres sont actifs. Survolez n'importe quel bouton de téléchargement pour consulter la taille estimée de l'archive avant de cliquer. <strong>Télécharger la sélection</strong> ne télécharge que les éléments cochés. <strong>Tout télécharger</strong> rassemble l'ensemble des ressources découvertes dans un ZIP structuré en dossiers. Les téléchargements interrompus sont automatiquement relancés et peuvent être redéclenchés via le menu contextuel. <strong>Exporter</strong> enregistre la liste visible en JSON ou CSV, ou exporte le journal réseau de Chrome sous la forme d'un fichier HAR."
+    "message": "<strong>Télécharger la vue</strong> enregistre les ressources actuellement visibles (catégorie active + recherche + filtres) sous forme d'archive ZIP ; le bouton devient <em>Télécharger les filtrés (N)</em> dès que des filtres sont actifs. Survolez n'importe quel bouton de téléchargement pour consulter la taille estimée de l'archive avant de cliquer. <strong>Télécharger la sélection</strong> ne télécharge que les éléments cochés. <strong>Tout télécharger</strong> rassemble l'ensemble des ressources découvertes dans un ZIP structuré en dossiers. Les téléchargements interrompus sont automatiquement relancés et peuvent être redéclenchés via le menu contextuel. <strong>Exporter</strong> enregistre la liste visible en JSON ou CSV, ou exporte le journal réseau de Chrome sous la forme d'un fichier HAR."
   },
   "guideSecLightboxContent": {
     "message": "Le bouton de zoom ouvre les médias dans une lightbox plein format où vous pouvez naviguer par glisser-déposer, zoomer avec la molette de la souris, les commandes à l'écran ou les raccourcis clavier (<kbd>+</kbd>/<kbd>-</kbd> pour zoomer, <kbd>0</kbd> pour réinitialiser, <kbd>Échap</kbd> pour fermer)."
@@ -1194,13 +1194,13 @@
     "message": "Les réponses d'<strong>APIs</strong> dynamiques (XHR/fetch) ne sont pas dédoublonnées par URL : chaque échange demeure dans la liste (file FIFO limitée) pour vous permettre de comparer les requêtes successives. Les ressources statiques font quant à elles l'objet d'une déduplication. Utilisez <strong>Actualiser</strong> pour réanalyser le DOM courant et rechargez la page lorsque le panneau est ouvert afin d'intercepter la totalité des requêtes réseau, y compris celles émises avant le changement d'onglet."
   },
   "toolArrow": {
-    "message": "Outil Flèche"
+    "message": "Outil flèche"
   },
   "toolRect": {
-    "message": "Outil Rectangle"
+    "message": "Outil rectangle"
   },
   "toolText": {
-    "message": "Outil Texte"
+    "message": "Outil texte"
   },
   "toolUndo": {
     "message": "Annuler (Ctrl+Z)"
@@ -1212,7 +1212,7 @@
     "message": "Couleur"
   },
   "badgeStrokeSize": {
-    "message": "Taille : $SIZE$px",
+    "message": "Taille : $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "Taille police : $SIZE$px",
+    "message": "Taille de police : $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,10 +1230,10 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "Enregistrer la zone (Vidéo / GIF)"
+    "message": "Enregistrer une zone en vidéo / GIF"
   },
   "btnRecStart": {
-    "message": "Démarrer l'enregistrement"
+    "message": "Démarrer l’enregistrement"
   },
   "btnRecPause": {
     "message": "Pause"
@@ -1248,22 +1248,22 @@
     "message": "Annuler"
   },
   "toastRecSaved": {
-    "message": "Enregistrement sauvegardé."
+    "message": "Enregistrement de la zone sauvegardé"
   },
   "toastRecCancelled": {
-    "message": "Enregistrement annulé."
+    "message": "Enregistrement vidéo annulé"
   },
   "toastRecPermissionDenied": {
-    "message": "Autorisation d'enregistrement d'écran refusée"
+    "message": "L’autorisation d’enregistrer l’écran n’a pas été accordée"
   },
   "btnPopupRecordArea": {
-    "message": "Vidéo / GIF régional"
+    "message": "Vidéo / GIF d'une zone"
   },
   "btnPopupCaptureArea": {
-    "message": "Capture de zone"
+    "message": "Capture d'une zone"
   },
   "contextMenuPickColor": {
-    "message": "Prélever une couleur à l'écran"
+    "message": "Prélever une couleur à l’écran"
   },
   "btnPopupPickColor": {
     "message": "Prélever une couleur"
@@ -1278,7 +1278,7 @@
     "message": "Couleur copiée dans le presse-papiers"
   },
   "toastProgressCapturing": {
-    "message": "Capture de la page... $PERCENT$%",
+    "message": "Capture de la page entière... $percent$ %",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,10 +1292,10 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Assemblage de l'image…"
+    "message": "Assemblage de l’image..."
   },
   "modalExportTitle": {
-    "message": "Capture d'écran pleine page prête"
+    "message": "Capture d’écran de la page entière prête"
   },
   "btnExportPng": {
     "message": "Télécharger en PNG"
@@ -1310,7 +1310,7 @@
     "message": "Copier dans le presse-papiers"
   },
   "btnExportGenerating": {
-    "message": "Génération…"
+    "message": "Génération..."
   },
   "toastPdfGenerated": {
     "message": "Document PDF enregistré."
@@ -1325,22 +1325,22 @@
     "message": "Aperçu :"
   },
   "toastRecGeneratingGif": {
-    "message": "Génération du GIF en cours, veuillez patienter…"
+    "message": "Génération du GIF, veuillez patienter..."
   },
   "settingGifResolution": {
     "message": "Résolution GIF par défaut"
   },
   "optGifOriginal": {
-    "message": "Original (1:1 Résolution native — 3K/4K sans mise à l'échelle)"
+    "message": "Original (1:1, résolution native — 3K/4K complète, sans réduction)"
   },
   "optGif1080p": {
-    "message": "1080p Full HD (Max 1920px)"
+    "message": "1080p Full HD (max. 1920px)"
   },
   "optGif720p": {
-    "message": "720p HD (Max 1280px)"
+    "message": "720p HD (max. 1280px)"
   },
   "optGif480p": {
-    "message": "480p SD (Max 854px — Plus rapide et léger)"
+    "message": "480p SD (max. 854px — plus rapide et plus léger)"
   },
   "tipGifDurationLimit": {
     "message": "Le format GIF prend en charge une durée maximale d'enregistrement de 1 minute (60s)."
@@ -1352,31 +1352,135 @@
     "message": "Enregistrez n'importe quelle zone de votre écran en MP4, WebM ou GIF animé. Les enregistrements GIF prennent en charge la résolution native 1:1, des profils 1080p, 720p et 480p, ainsi qu'une estimation en direct du poids du fichier. La durée maximale d'enregistrement en GIF est de 1 minute (60 s) afin de garantir les meilleures performances du navigateur."
   },
   "msgGifMaxDurationReached": {
-    "message": "Durée maximale de 1 minute atteinte. Génération du GIF…"
+    "message": "Durée maximale du GIF de 1 minute (60 s) atteinte. Génération du GIF..."
   },
   "labelGifMaxDuration": {
-    "message": "Max 1 min (60s)"
+    "message": "Max. 1 min (60 s)"
   },
   "settingGifFps": {
-    "message": "Images par seconde GIF par défaut (FPS)"
+    "message": "Fréquence d'images GIF par défaut (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — Fluide (Grande fluidité, fichier plus lourd)"
+    "message": "15 FPS — Fluide (grande fluidité, taille plus importante)"
   },
   "optGifFps10": {
-    "message": "10 FPS — Standard (Recommandé pour le web et l'équilibre)"
+    "message": "10 FPS — Standard (recommandé pour le web, bon compromis)"
   },
   "optGifFps5": {
-    "message": "5 FPS — Compact / Mème (Mouvement saccadé, fichier léger)"
+    "message": "5 FPS — Compact / Mème (mouvement saccadé, petite taille)"
   },
   "optGifFps2": {
-    "message": "2 FPS — Stop-Motion / Pas à pas (Taille minuscule, idéal pour la doc)"
+    "message": "2 FPS — Stop motion / Lent (pas à pas « clic-clic », taille minuscule)"
   },
   "optGifFps1": {
-    "message": "1 FPS — Diaporama (1 image par seconde, taille minimale)"
+    "message": "1 FPS — Présentation (1 image par seconde, taille minimale)"
   },
   "popupRightClickHint": {
     "message": "Faites un clic droit sur la page pour l'enregistrement d'écran (Vidéo/GIF) et la pipette de couleur.",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "Publicité / iframe masquée pour cette session.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Image copiée dans le presse-papiers",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Fermer (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Paramètres enregistrés",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Téléchargez le fichier et ouvrez-le avec VLC ou un autre lecteur multimédia.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Aucun aperçu pour ce type de ressource",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Télécharger l’original",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Astuce : ouvrez le fichier téléchargé avec VLC ou n’importe quel lecteur multimédia de bureau, qui lit pratiquement tous les formats.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Création de l’archive ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Votre navigateur ne prend pas en charge l’API EyeDropper.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Déplacer la barre d’outils",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Changer de format : MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Résolution du GIF : 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Fréquence d’images du GIF : 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Taille estimée du GIF : ~$size$ Mo (pour 10 s), jusqu’à ~$max$ Mo pour le maximum de 60 s.\nFréquence d’images : $fps$ FPS.\nL’enregistrement GIF est limité à 1 minute maximum (60 s).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Copier $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Aperçu de la capture d’écran",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — lecture universelle sur WhatsApp, Telegram, Jira, Apple et Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (image animée — idéal pour les READMEs, Jira, la documentation et la messagerie)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — format web ouvert)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Aucun onglet actif trouvé.",
+    "description": "No active tab found."
   }
 }

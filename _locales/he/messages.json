@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "בדוק, דפדוף והורד כל נכס אינטרנט בצורה חלקה כ-ZIP. צילומי מסך של עמוד מלא, לכידת שולחן חי ושולחן עבודה למפתחים."
+  },
+  "actionTitle": {
+    "message": "Source Download — פתיחת החלונית ומעקב אחר משאבים"
+  },
+  "contextMenuZap": {
+    "message": "הסתרת רכיב זה (Zap)"
+  },
+  "contextMenuUndoZap": {
+    "message": "שחזור הרכיב המוסתר האחרון"
+  },
+  "contextMenuResetZap": {
+    "message": "איפוס כל הרכיבים המוסתרים"
+  },
+  "contextMenuCapturePage": {
+    "message": "צילום מסך של הדף המלא"
+  },
+  "contextMenuPageArchive": {
+    "message": "הורדת ארכיון לא מקוון של הדף"
+  },
+  "catAll": {
+    "message": "הכל"
+  },
+  "catApi": {
+    "message": "ממשק API"
+  },
+  "catImages": {
+    "message": "תמונות"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "סרטונים"
+  },
+  "catAudio": {
+    "message": "אודיו"
+  },
+  "catCaptions": {
+    "message": "כתוביות"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "מפות מקור"
+  },
+  "catFonts": {
+    "message": "גופנים"
+  },
+  "catDocuments": {
+    "message": "מסמכים"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "מניפסטים"
+  },
+  "catText": {
+    "message": "טקסט"
+  },
+  "catOther": {
+    "message": "אחר"
+  },
+  "catScreenshot": {
+    "message": "צילום מסך"
+  },
+  "catArchive": {
+    "message": "ארכיון עמוד"
+  },
+  "btnRefresh": {
+    "message": "רענן"
+  },
+  "btnExport": {
+    "message": "ייצוא"
+  },
+  "btnDownloadSelected": {
+    "message": "הורדת הנבחרים"
+  },
+  "btnDownloadView": {
+    "message": "הורדת התצוגה הנוכחית"
+  },
+  "btnDownloadAll": {
+    "message": "הורדת הכול"
+  },
+  "btnDownloadFiltered": {
+    "message": "הורדת המסוננים"
+  },
+  "btnTheme": {
+    "message": "החלפת ערכת נושא"
+  },
+  "btnGuide": {
+    "message": "מדריך למשתמש"
+  },
+  "btnCaptureFullPage": {
+    "message": "צילום מסך של עמוד מלא"
+  },
+  "btnOfflineArchive": {
+    "message": "שמירת HTML בקובץ יחיד"
+  },
+  "filterMinKb": {
+    "message": "מינימום KB"
+  },
+  "filterMaxKb": {
+    "message": "מקסימום KB"
+  },
+  "filterMinWidth": {
+    "message": "רוחב מינימלי (px)"
+  },
+  "filterMinHeight": {
+    "message": "גובה מינימלי (px)"
+  },
+  "filterSortName": {
+    "message": "מיין לפי שם"
+  },
+  "filterSortSize": {
+    "message": "מיין לפי גודל"
+  },
+  "filterSortType": {
+    "message": "מיין לפי סוג"
+  },
+  "filterSortTime": {
+    "message": "מיין לפי זמן"
+  },
+  "filterHideDupes": {
+    "message": "הסתר כפילויות"
+  },
+  "filterClear": {
+    "message": "נקה"
+  },
+  "textModeContains": {
+    "message": "מכיל"
+  },
+  "textModeRegex": {
+    "message": "ביטוי רגולרי"
+  },
+  "textModeCss": {
+    "message": "בורר CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "סינון טקסט הדף או שאילתה על ה-DOM החי…"
+  },
+  "textAllElements": {
+    "message": "כל האלמנטים"
+  },
+  "textLiveOn": {
+    "message": "חי: פעיל"
+  },
+  "textLiveOff": {
+    "message": "חי: כבוי"
+  },
+  "textScanNow": {
+    "message": "סרוק עכשיו"
+  },
+  "textReading": {
+    "message": "קריאה"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "בחר משאב כדי לבדוק את פרטיו"
+  },
+  "inspectorDetails": {
+    "message": "פרטים"
+  },
+  "inspectorOpenTab": {
+    "message": "פתח בכרטיסייה חדשה"
+  },
+  "inspectorCopyUrl": {
+    "message": "העתק כתובת URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "הורד את הקובץ הזה"
+  },
+  "inspectorClose": {
+    "message": "סגור"
+  },
+  "metaUrl": {
+    "message": "כתובת URL"
+  },
+  "metaType": {
+    "message": "סוג"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "גודל"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "מקור"
+  },
+  "metaTitle": {
+    "message": "כותרת"
+  },
+  "metaAlt": {
+    "message": "טקסט חלופי"
+  },
+  "ratingPrompt": {
+    "message": "נהנים מ-Source Download? תמכו בחזון הקוד הפתוח שלנו בכתיבת חוות דעת בחנות האינטרנט של Chrome או בכוכב ב-GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ השאירו חוות דעת"
+  },
+  "ratingStar": {
+    "message": "★ כוכב ב-GitHub"
+  },
+  "ratingDismiss": {
+    "message": "סגירה"
+  },
+  "toastElementZapped": {
+    "message": "הרכיב הוסתר למשך ההפעלה הנוכחית."
+  },
+  "toastElementRestored": {
+    "message": "הרכיב שוחזר."
+  },
+  "toastAllElementsRestored": {
+    "message": "כל הרכיבים המוסתרים שוחזרו."
+  },
+  "toastScreenshotCapturing": {
+    "message": "מצלם את הדף המלא…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "צילום המסך של הדף המלא נשמר."
+  },
+  "toastArchiveCreated": {
+    "message": "ארכיון HTML בקובץ יחיד נשמר."
+  },
+  "brandSignature": {
+    "message": "נוצר על ידי Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "תמונות ו-SVG"
+  },
+  "tabMedia": {
+    "message": "מדיה ואודיו"
+  },
+  "tabFonts": {
+    "message": "גופנים"
+  },
+  "tabTextScraper": {
+    "message": "טקסט וטבלאות"
+  },
+  "heroScreenshotTitle": {
+    "message": "צילום מסך של עמוד מלא"
+  },
+  "heroScreenshotDesc": {
+    "message": "חיבור חלק של כמה אזורי תצוגה, עם הסתרת כותרות דביקות"
+  },
+  "heroArchiveTitle": {
+    "message": "ארכיון HTML בקובץ יחיד"
+  },
+  "heroArchiveDesc": {
+    "message": "משלב CSS ותמונות Base64 בתוך הקובץ, תמונת מצב בטוחה לשימוש לא מקוון"
+  },
+  "copyDataUri": {
+    "message": "העתק Data-URI"
+  },
+  "copyUrl": {
+    "message": "העתק כתובת URL"
+  },
+  "downloadSingle": {
+    "message": "הורד"
+  },
+  "searchPlaceholder": {
+    "message": "סנן לפי שם, כתובת URL, תג, MIME או /regex/…"
+  },
+  "viewGrid": {
+    "message": "תצוגת רשת"
+  },
+  "viewList": {
+    "message": "תצוגת רשימה"
+  },
+  "btnScreenshot": {
+    "message": "צילום מסך"
+  },
+  "btnArchive": {
+    "message": "שמור HTML"
+  },
+  "exportJson": {
+    "message": "הרשימה הגלויה כ-JSON"
+  },
+  "exportCsv": {
+    "message": "הרשימה הגלויה כ-CSV"
+  },
+  "exportHar": {
+    "message": "יומן רשת כ-HAR"
+  },
+  "exportScreenshot": {
+    "message": "צילום מסך של עמוד מלא (PNG)"
+  },
+  "exportArchive": {
+    "message": "ארכיון עמוד לשימוש לא מקוון (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "כל השיטות"
+  },
+  "filterTypeAll": {
+    "message": "כל הסוגים"
+  },
+  "filterSortDir": {
+    "message": "החלפה בין סדר עולה / יורד"
+  },
+  "emptyTitle": {
+    "message": "לא נמצאו משאבים"
+  },
+  "emptySubtitle": {
+    "message": "טען מחדש את הדף בזמן שהחלונית הזו פתוחה כדי ללכוד בקשות רשת, או לחץ על רענן כדי לסרוק את ה-DOM הנוכחי."
+  },
+  "statusResources": {
+    "message": "משאבים"
+  },
+  "statusFiltered": {
+    "message": "מסונן"
+  },
+  "statusSelected": {
+    "message": "נבחר"
+  },
+  "statusDupes": {
+    "message": "כפילויות מוסתרות"
+  },
+  "statusSize": {
+    "message": "גודל"
+  },
+  "langAuto": {
+    "message": "אוטומטי (דפדפן)"
+  },
+  "langSelectorTitle": {
+    "message": "בחר שפה"
+  },
+  "textPillAll": {
+    "message": "כל התוכן"
+  },
+  "textPillText": {
+    "message": "📄 טקסט ומאמרים"
+  },
+  "textPillTables": {
+    "message": "📊 טבלאות בלבד"
+  },
+  "textSelectAll": {
+    "message": "בחר הכל"
+  },
+  "textDeselectAll": {
+    "message": "בטל את הבחירה בהכל"
+  },
+  "textClearSelection": {
+    "message": "נקה"
+  },
+  "toastRefreshComplete": {
+    "message": "סריקת העמוד הושלמה: $count$ משאבים חדשים",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "הועתקו $count$ בלוקים",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "הועתק ללוח"
+  },
+  "toastTableCopied": {
+    "message": "הטבלה הועתקה ללוח"
+  },
+  "toastNothingToExport": {
+    "message": "אין מה לייצא"
+  },
+  "toastExportedTxt": {
+    "message": "יוצאו $count$ בלוקים כ-TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "יוצאו $count$ בלוקים כ-Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "לא נתפסו שורות בטבלה"
+  },
+  "toastExportedCsv": {
+    "message": "הטבלה יוצאה כ-CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "הטבלה יוצאה כ-XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "יוצאו $count$ טבלאות כ-$format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "יוצאו $count$ גיליונות כ-XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "אין משאבים להורדה."
+  },
+  "toastNoVisibleResources": {
+    "message": "אין משאבים גלויים להורדה."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "תחילה בחר משאב אחד לפחות."
+  },
+  "toastZipSaved": {
+    "message": "קובץ ZIP נשמר: $fetched$ מתוך $total$ משאבים",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "יצירת קובץ ZIP נכשלה: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR יוצא ($count$ רשומות)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "כתובת ה-URL הועתקה ללוח"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "החלון הנבדק של DevTools אינו זמין."
+  },
+  "toastScreenshotError": {
+    "message": "שגיאת צילום מסך: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "יוצר ארכיון לא מקוון של הדף…"
+  },
+  "toastArchiveError": {
+    "message": "שגיאת ארכיון: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "זמן העיצוב הסתיים — מוצג הקובץ המקורי."
+  },
+  "toastFormatFailed": {
+    "message": "לא ניתן היה לעצב את הקובץ — מוצג הקובץ המקורי."
+  },
+  "emptySearchTitle": {
+    "message": "אין התאמות עבור \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "נסה מונח חיפוש אחר, או עבור לקטגוריה אחרת."
+  },
+  "emptyFiltersTitle": {
+    "message": "אין משאבים תואמים למסננים הנוכחיים"
+  },
+  "emptyFiltersSub": {
+    "message": "הקלו על מסנני הגודל או המידות שלמעלה, או לחצו על ״נקה״."
+  },
+  "textEmptyQueryReject": {
+    "message": "הדף דחה את השאילתה הזו. תקנו אותה למעלה והתוצאות יחזרו מיד."
+  },
+  "textEmptyNoMatch": {
+    "message": "אין אלמנט בדף שתואם לשאילתה הזו. נסו בורר גמיש יותר, או החליפו את המצב שליד התיבה."
+  },
+  "textEmptyInitial": {
+    "message": "עדיין לא נלכד דבר. הלכידה החיה פועלת — כל הדף יופיע כאן כטקסט קריא."
+  },
+  "textEmptyFiltered": {
+    "message": "אין התאמה לשאילתה ולמסנן האלמנטים הנוכחיים."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ בלוקים",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ מילים",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ תווים",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ טבלאות · $rows$ שורות ייחודיות",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ נבחרו — הייצוא ישתמש בהם בלבד",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "טבלה — $count$ שורות על המסך",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "טבלה — כל $count$ השורות הייחודיות",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ תמונות מצב",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "עודכן: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "הצג את כל $count$ השורות",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "מציג את כל השורות"
+  },
+  "textTableHistory": {
+    "message": "היסטוריה ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "הסתר היסטוריה"
+  },
+  "textTableNoRows": {
+    "message": "עדיין לא נלכדו שורות."
+  },
+  "textBtnCopy": {
+    "message": "העתק טקסט"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 העתק"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ תמונות כפולות",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "ייצוא"
+  },
+  "inspectorLoadingSvg": {
+    "message": "טוען SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "לא ניתן היה לאחזר תוכן SVG."
+  },
+  "inspectorLoadingFont": {
+    "message": "טוען תצוגה מקדימה של גופן…"
+  },
+  "inspectorFontSample": {
+    "message": "תצוגה מקדימה של גופן"
+  },
+  "inspectorBeautify": {
+    "message": "עיצוב קוד"
+  },
+  "inspectorOriginal": {
+    "message": "מקורי"
+  },
+  "inspectorHeaders": {
+    "message": "כותרות HTTP"
+  },
+  "inspectorResponse": {
+    "message": "תגובה"
+  },
+  "inspectorRequest": {
+    "message": "בקשה"
+  },
+  "inspectorQueryParams": {
+    "message": "פרמטרי שאילתה"
+  },
+  "inspectorRequestBody": {
+    "message": "גוף הבקשה"
+  },
+  "textHintHtml": {
+    "message": "עותק חי וקריא של העמוד. כל רכיב שמחזיק טקסט נקלט בסדר DOM ונשמר כאן כשהדף משתנה. בצע שאילתה באמצעות טקסט רגיל, ביטוי רגולרי, <strong>בורר CSS</strong> או ביטוי <strong>XPath</strong>, ולאחר מכן ייצא את מה שהתאים. עיין ב<a href=\"#\" id=\"text-hint-guide\">מדריך</a> לפרטים."
+  },
+  "textHeadings": {
+    "message": "כותרות"
+  },
+  "textAllLevels": {
+    "message": "כל הרמות"
+  },
+  "textMatches": {
+    "message": "התאמות"
+  },
+  "textMatch": {
+    "message": "התאמה"
+  },
+  "textReadingOn": {
+    "message": "קריאה: פעילה"
+  },
+  "toastDownloadStarted": {
+    "message": "ההורדה החלה: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "לא ניתן היה לאחזר את המשאב הזה (CORS או סוג לא נתמך)."
+  },
+  "ratingBannerText": {
+    "message": "נהנים מ-Source Download? תמכו בחזון הקוד הפתוח שלנו בכתיבת חוות דעת בחנות האינטרנט של Chrome או בכוכב ב-GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ חוות דעת"
+  },
+  "ratingBannerStar": {
+    "message": "★ כוכב"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ שורות ייחודיות",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "לפני $count$ שנ׳",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "לפני $count$ דק׳",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "צילום מסך של אזור"
+  },
+  "btnAreaDownload": {
+    "message": "הורדה"
+  },
+  "btnAreaCopy": {
+    "message": "העתקה ללוח"
+  },
+  "btnAreaCancel": {
+    "message": "ביטול"
+  },
+  "toastAreaCopied": {
+    "message": "צילום המסך של האזור הועתק ללוח"
+  },
+  "toastAreaDownloaded": {
+    "message": "צילום המסך של האזור נשמר"
+  },
+  "statusFoundCssResources": {
+    "message": "נמצאו $count$ משאבים שאליהם הפנה ה-CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "סריקת DOM נכשלה: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "מאנדקס את תוכן הקובץ…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "בודק כפילויות בתמונות…"
+  },
+  "statusWorking": {
+    "message": "בעבודה…"
+  },
+  "filterMethodTitle": {
+    "message": "סינון לפי שיטת HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "סינון לפי סוג בקשה"
+  },
+  "filterSortTitle": {
+    "message": "מיין משאבים"
+  },
+  "textModeTitle": {
+    "message": "כיצד מתפרשת תיבת השאילתה"
+  },
+  "textKindTitle": {
+    "message": "הגבלה לסוג אלמנט אחד"
+  },
+  "textHeadingLevelTitle": {
+    "message": "רמת כותרת"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+ — ביטוי רגולרי של JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — כל בורר CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "חפש במדריך…"
+  },
+  "popupIntro": {
+    "message": "הקטגוריות הנספרות על ידי <strong>תג סרגל הכלים</strong>. כבו קטגוריה כדי להפסיק לספור אותה — התג משקף מיד רק את מה שאתם עוקבים אחריו."
+  },
+  "popupHelpTitle": {
+    "message": "כיצד להשתמש בחלונית המלאה"
+  },
+  "popupStep1": {
+    "message": "פתח את DevTools עבור הדף שברצונך לבדוק <div class=\"hint\"><kbd>F12</kbd> או <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "לחצו על הכרטיסייה <strong>Source Download</strong> בסרגל הכלים של DevTools"
+  },
+  "popupStep3": {
+    "message": "עיינו במשאבים, בדקו אותם והורידו אותם — בנפרד או בבת אחת כקובץ ZIP."
+  },
+  "popupNote": {
+    "message": "הערה: Chrome אינו מאפשר להרחבות לפתוח את DevTools באופן אוטומטי, ולכן החלונית המלאה זמינה דרך סרגל הכלים של DevTools."
+  },
+  "popupTrackAll": {
+    "message": "עקוב אחר כל הקטגוריות"
+  },
+  "popupLanguage": {
+    "message": "שפה"
+  },
+  "inspectorBinaryResponse": {
+    "message": "תגובה בינארית - הורד כדי לצפות בה"
+  },
+  "inspectorLoadingResponse": {
+    "message": "טוען תגובה..."
+  },
+  "inspectorNoResponsePreview": {
+    "message": "אין תצוגה מקדימה של תגובה - לא ניתן היה לאחזר את התוכן."
+  },
+  "inspectorLoadingContent": {
+    "message": "טוען תוכן..."
+  },
+  "inspectorNoPreview": {
+    "message": "אין תצוגה מקדימה זמינה - לא ניתן היה לאחזר את התוכן."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "סגור הכל"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "סגור את כל הכרטיסיות הפתוחות"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "לחץ להגדלה"
+  },
+  "inspectorViewSource": {
+    "message": "צפה במקור"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "הצג את סימון ה-SVG עם הדגשת תחביר"
+  },
+  "inspectorFormatting": {
+    "message": "מעצב…"
+  },
+  "findInContentPlaceholder": {
+    "message": "מצא בתוכן..."
+  },
+  "findPreviousMatch": {
+    "message": "ההתאמה הקודמת"
+  },
+  "findNextMatch": {
+    "message": "ההתאמה הבאה"
+  },
+  "findClose": {
+    "message": "סגור"
+  },
+  "findShowRaw": {
+    "message": "הצג את התוכן המקורי (ללא עיצוב)"
+  },
+  "findBeautify": {
+    "message": "עיצוב התוכן הזה"
+  },
+  "btnRaw": {
+    "message": "גולמי"
+  },
+  "btnBeautify": {
+    "message": "עיצוב קוד"
+  },
+  "videoHlsDetected": {
+    "message": "זוהה זרם HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "לא ניתן להפעיל סרטון זה בדפדפן"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome אינו יכול להפעיל זרמי HLS ישירות. אפשר למזג את כל הקטעים של <b>$NAME$</b> לקובץ וידאו MP4/TS יחיד.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "הדפדפן אינו תומך בפורמט זה"
+  },
+  "btnMergeHls": {
+    "message": "מיזוג קטעים והורדה"
+  },
+  "toastHlsMerged": {
+    "message": "מוזגו $COUNT$ קטעים לתוך $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "גודל לא ידוע"
+  },
+  "progressFetching": {
+    "message": "מאחזר $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "יוצר קובץ ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "קובץ ZIP נשמר: $FETCHED$ מתוך $TOTAL$ משאבים ($SKIPPED$ נכשלו)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "נסה שוב ($COUNT$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "ניסיון הורדה חוזר"
+  },
+  "searchRegexHint": {
+    "message": "חיפוש בביטוי רגולרי פעיל — עטפו את השאילתה ב-/pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "כלול בייצוא"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "שלבו את כל תמונות המצב לטבלה אחת ללא כפילויות — זה מה שמיוצא"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "עיון בתמונות המצב הקודמות של הטבלה הזו"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "הורד טבלה זו כ-CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "תמונת מצב $INDEX$ — $TIME$ ($COUNT$ שורות)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "החלפת הבחירה להורדה מרוכזת"
+  },
+  "cardDownloadTitle": {
+    "message": "הורד קובץ"
+  },
+  "cardRetryFailedTitle": {
+    "message": "ההורדה הקודמת נכשלה - לחץ כדי לנסות שוב"
+  },
+  "btnThemeLight": {
+    "message": "מעבר לערכת נושא בהירה"
+  },
+  "btnThemeDark": {
+    "message": "מעבר לערכת נושא כהה"
+  },
+  "guideTitle": {
+    "message": "Source Download — מדריך למשתמש"
+  },
+  "guideEmpty": {
+    "message": "אין קטעי מדריך שתואמים לחיפוש שלך."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — ללא תלויות, 100%.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "הקטנה (-)"
+  },
+  "lightboxZoomIn": {
+    "message": "הגדלה (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "איפוס זום (0)"
+  },
+  "lightboxClose": {
+    "message": "סגור (Esc)"
+  },
+  "resizerTitle": {
+    "message": "גרור כדי לשנות את הגודל"
+  },
+  "ratingDismissTitle": {
+    "message": "סגירה"
+  },
+  "inspectorResourceTitle": {
+    "message": "משאב"
+  },
+  "guideSecGettingStarted": {
+    "message": "תחילת עבודה"
+  },
+  "guideSecCategories": {
+    "message": "קטגוריות"
+  },
+  "guideSecSearchFilters": {
+    "message": "חיפוש ומסננים"
+  },
+  "guideSecGridView": {
+    "message": "תצוגת רשת ורשימה"
+  },
+  "guideSecInspect": {
+    "message": "בדוק משאב"
+  },
+  "guideSecDownloading": {
+    "message": "הורדה"
+  },
+  "guideSecLightbox": {
+    "message": "תצוגת Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "טקסט וטבלאות"
+  },
+  "guideSecCaptions": {
+    "message": "כיתובים וכתוביות"
+  },
+  "guideSecSourceMaps": {
+    "message": "מפות מקור"
+  },
+  "guideSecDupes": {
+    "message": "תמונות כפולות"
+  },
+  "guideSecVideoHls": {
+    "message": "חלופת וידאו ו-HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "טיפים למתקדמים"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "לחצו על הכרטיסייה <strong>Source Download</strong> בסרגל הכלים של DevTools (הקישו <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, ואז בחרו בכרטיסייה בסרגל הכלים של DevTools). Chrome אינו מאפשר להרחבות לפתוח את DevTools באופן אוטומטי, ולכן החלונית נמצאת שם. החלון הקופץ של סמל סרגל הכלים מאפשר לבחור אילו קטגוריות יוזנו למונה התג שעל הסמל. הכפתור שמש/ירח בסרגל הכלים של החלונית נועל ערכת נושא בהירה או כהה, ללא תלות ב-Chrome; הבחירה נשמרת."
+  },
+  "guideSecCategoriesContent": {
+    "message": "הכרטיסיות האנכיות מימין מקבצות כל משאב שנלכד ל-17 קטגוריות ייעודיות לפי סוג: תמונות, סרטונים, אודיו, כיתובים, מסמכים, גופנים, מפות מקור, WASM, SVG, ממשקי API, קובצי Cookie, אחסון ועוד. כל כרטיסייה מציגה ספירה חיה. מוצגת קטגוריה אחת בכל פעם; החלפה מאפסת את כל המסננים, כך שמה שאתם רואים תמיד תואם לכרטיסייה."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "סרגל החיפוש מסנן לפי שם, כתובת URL, סוג, טקסט חלופי או כותרת. הקיפו את השאילתה ב-<kbd>/…/</kbd> כדי להשתמש בביטוי רגולרי, למשל <code>/\\.(png|jpg)$/</code>. מתחת לסרגל הכלים, סרגל המסננים משתנה לפי קטגוריה: טווחי גודל ומידות למדיה, שיטת HTTP וסוג בקשה עבור ממשקי API, וכן מיון וכיוון."
+  },
+  "guideSecGridViewContent": {
+    "message": "עברו בין רשת קומפקטית (תמונות ממוזערות קטנות) לרשימה מפורטת באמצעות הכפתורים שליד שורת החיפוש. הבחירה שלכם נשמרת בין הפעלות. בתצוגת רשימה, תיבות סימון מאפשרות לבחור משאבים בודדים להורדה מרוכזת."
+  },
+  "guideSecInspectContent": {
+    "message": "לחצו על משאב כלשהו כדי לפתוח אותו בחלונית הבדיקה מימין. כל קובץ שנפתח הופך לכרטיסייה, כך שאפשר להשוות כמה משאבים זה לצד זה — החדש ביותר נפתח משמאל. קיימים מציגים ייעודיים לתמונות, וידאו, אודיו, גופנים, SVG וטקסט/קוד (עם מתג עיצוב קוד). עבור ממשקי API מוצגת תצוגה מפוצלת: התגובה בצד שמאל, ופרטי הבקשה (שיטה, סטטוס, כותרות, פרמטרי שאילתה וגוף) בצד ימין."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>הורדת התצוגה הנוכחית</strong> שומרת את המשאבים הגלויים כעת (הקטגוריה הפעילה + חיפוש + מסננים) כקובץ ZIP; כשמסננים פעילים, שם הכפתור משתנה ל-<em>הורדת המסוננים (N)</em>. החזיקו את העכבר מעל כל כפתור הורדה כדי לראות גודל משוער של הארכיון לפני הלחיצה. <strong>הורדת הנבחרים</strong> מורידה רק את הפריטים המסומנים. <strong>הורדת הכול</strong> אוספת כל משאב שהתגלה לקובץ ZIP במבנה תיקיות. הורדות שנכשלו מנוסות מחדש אוטומטית, וניתן לנסות אותן שוב מתפריט ההקשר. <strong>ייצוא</strong> כותב את הרשימה הגלויה כ-JSON או CSV, או מייצא את יומן הרשת של Chrome כקובץ HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "כפתור הזום פותח את המדיה ב-Lightbox בגודל מלא, שבו אפשר להזיז בגרירה, ולשנות זום בגלגל העכבר, בכפתורים שעל המסך או במקלדת (<kbd>+</kbd>/<kbd>-</kbd> לזום, <kbd>0</kbd> לאיפוס, <kbd>Esc</kbd> לסגירה)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>קטגוריית <strong>טקסט</strong> היא עותק חי וקריא של הדף. היא לוכדת כל אלמנט שמכיל טקסט — כותרות, פסקאות, פריטי רשימה, כפתורים, <code>div</code>/<code>span</code> ועוד — בסדר DOM, וממשיכה לסרוק כל עוד <strong>חי</strong> פעיל.</p><p>תיבת <strong>השאילתה</strong> פועלת בארבע דרכים, הנבחרות מהתפריט הנפתח שלצידה: <strong>מכיל</strong> ו<strong>ביטוי רגולרי</strong> מסננים את הטקסט שכבר נלכד, ואילו <strong>בורר CSS</strong> ו-<strong>XPath</strong> מופעלים על הדף החי ולכן יכולים להגיע לכל דבר ב-DOM. XPath מקבל גם ביטויים שמחזירים ערך במקום אלמנטים, כגון <code>count(//a)</code> או <code>//@href</code>. כל מה שהדף מדווח על שאילתה שגויה מוצג ליד התיבה. <strong>אלמנט</strong> מצמצם את התוצאה לתג בודד, עם מספר ההופעות של כל תג בדף. ניקוי תיבת השאילתה (או לחיצה על <strong>נקה</strong>) מחזיר אתכם אל <em>כל האלמנטים</em> ולוכד את הדף מחדש — אין צורך לאפס את התפריט הנפתח ידנית.</p><p>מצב <strong>קריאה</strong> מסתיר תגים, תיבות סימון ופירורי מיקום, כך שהתוכן נקרא כמו מסמך. הטבלאות שומרות היסטוריה מוגבלת של תמונות מצב, כך שטבלאות דינמיות (SPA) לא הולכות לאיבוד. לחצו על <strong>הצג את כל השורות</strong> בטבלה כדי למזג את כל תמונות המצב לתצוגה אחת ללא כפילויות — זה בדיוק מה שהייצוא כולל. ייצאו כ-<strong>TXT</strong> (הדף הקריא), כ-<strong>MD</strong> (Markdown, כולל טבלאות), או טבלאות כ-CSV, HTML או כחוברת עבודה אמיתית מרובת גיליונות <strong>XLSX</strong>. פריטים מסומנים מקבלים עדיפות; אחרת מיוצא כל מה שגלוי כעת.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "קובצי WebVTT, SRT, TTML וקובצי כתוביות אחרים — כולל מקורות <code>&lt;track&gt;</code> — מוצגים בכרטיסייה <strong>כתוביות</strong> משלהם, ולא מעורבבים עם מסמכים."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "קובצי <code>.map</code> וגופי JSON שנראים כמו מפות מקור (הם מכילים <code>mappings</code> ו-<code>sources</code>) מקובצים תחת <strong>מפות מקור</strong>, עם מציג JSON ועיצוב קוד, כך שהם כבר לא עמוסים את הכרטיסייה JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "בכרטיסייה ״תמונות״ החלונית מחשבת גיבוב לבתים שנלכדו ומסמנת קבצים זהים. המסנן <strong>הסתר כפילויות</strong> שומר את העותק הראשון בכל קבוצה, כך שקובץ ה-ZIP של התצוגה לא יכלול את אותה תמונה ממוזערת פעמיים."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "זרמים שהדפדפן אינו יכול לנגן באופן מקורי (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, קודקים לא מוכרים) מציגים תצוגה חלופית במקום נגן שחור. עבור HLS אפשר למזג את הקטעים לקובץ וידאו יחיד ישירות מהחלונית, או להוריד את קובץ המניפסט המקורי."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "תגובות <strong>API</strong> דינמיות (XHR/fetch) אינן מסוננות לפי כתובת URL כדי להסיר כפילויות — כל תגובה נשארת ברשימה (מוגבלת, FIFO) כדי שאפשר יהיה להשוות בקשות חוזרות. נכסים סטטיים כן מסוננים מכפילויות. השתמשו ב-<strong>רענון</strong> כדי לסרוק מחדש את ה-DOM הנוכחי, וטענו מחדש את הדף בזמן שהחלונית פתוחה כדי ללכוד כל בקשת רשת, כולל בקשות שהופעלו לפני שעברתם בין כרטיסיות."
+  },
+  "toolArrow": {
+    "message": "כלי חץ"
+  },
+  "toolRect": {
+    "message": "כלי מלבן"
+  },
+  "toolText": {
+    "message": "כלי טקסט"
+  },
+  "toolUndo": {
+    "message": "ביטול פעולה (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "ביצוע חוזר (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "צבע"
+  },
+  "badgeStrokeSize": {
+    "message": "גודל: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "גודל גופן: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "הקלטת אזור כווידאו / GIF"
+  },
+  "btnRecStart": {
+    "message": "התחלת הקלטה"
+  },
+  "btnRecPause": {
+    "message": "השהיה"
+  },
+  "btnRecResume": {
+    "message": "המשך"
+  },
+  "btnRecStop": {
+    "message": "סיום והורדה"
+  },
+  "btnRecCancel": {
+    "message": "ביטול"
+  },
+  "toastRecSaved": {
+    "message": "הקלטת האזור נשמרה"
+  },
+  "toastRecCancelled": {
+    "message": "הקלטת הווידאו בוטלה"
+  },
+  "toastRecPermissionDenied": {
+    "message": "ההרשאה להקלטת המסך לא ניתנה"
+  },
+  "btnPopupRecordArea": {
+    "message": "וידאו / GIF של אזור נבחר"
+  },
+  "btnPopupCaptureArea": {
+    "message": "צילום מסך של אזור נבחר"
+  },
+  "contextMenuPickColor": {
+    "message": "בחירת צבע מהמסך"
+  },
+  "btnPopupPickColor": {
+    "message": "בחר צבע"
+  },
+  "colorPickerTitle": {
+    "message": "בורר צבעים"
+  },
+  "btnColorPickAgain": {
+    "message": "בחירת צבע נוסף"
+  },
+  "toastColorCopied": {
+    "message": "הצבע הועתק ללוח"
+  },
+  "toastProgressCapturing": {
+    "message": "מצלם את כל הדף... $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "מחבר את התמונה..."
+  },
+  "modalExportTitle": {
+    "message": "צילום המסך של הדף המלא מוכן"
+  },
+  "btnExportPng": {
+    "message": "הורדת PNG"
+  },
+  "btnExportJpg": {
+    "message": "הורדת JPG"
+  },
+  "btnExportPdf": {
+    "message": "שמירה כ-PDF"
+  },
+  "btnExportCopy": {
+    "message": "העתקה ללוח"
+  },
+  "btnExportGenerating": {
+    "message": "יוצר..."
+  },
+  "toastPdfGenerated": {
+    "message": "מסמך ה-PDF נשמר."
+  },
+  "settingNamingPatterns": {
+    "message": "תבניות שמות קבצים"
+  },
+  "settingVideoFormat": {
+    "message": "פורמט וידאו ברירת מחדל"
+  },
+  "settingNamingPreview": {
+    "message": "תצוגה מקדימה:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "יוצר GIF, אנא המתן..."
+  },
+  "settingGifResolution": {
+    "message": "רזולוציית GIF ברירת מחדל"
+  },
+  "optGifOriginal": {
+    "message": "מקורי (1:1 ברזולוציה מקורית — 3K/4K מלא, ללא הקטנה)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (עד 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (עד 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (עד 854px — מהיר וקטן יותר)"
+  },
+  "tipGifDurationLimit": {
+    "message": "פורמט GIF תומך באורך הקלטה מקסימלי של דקה אחת (60 שניות)."
+  },
+  "guideSecScreenRecording": {
+    "message": "הקלטת מסך (וידאו ו-GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "הקליטו כל אזור במסך כ-MP4, WebM או GIF מונפש. להקלטות GIF יש פרופילים ברזולוציה מקורית 1:1, 1080p, 720p ו-480p, עם גודלי קבצים משוערים בזמן אמת. משך ההקלטה המרבי של GIF הוא דקה אחת (60 שניות) לביצועי דפדפן מיטביים."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "הגעת למשך המרבי של GIF: דקה (60 שניות). יוצר GIF..."
+  },
+  "labelGifMaxDuration": {
+    "message": "עד דקה (60 שניות)"
+  },
+  "settingGifFps": {
+    "message": "קצב פריימים ברירת מחדל ל-GIF (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — חלק (חלקות גבוהה, גודל גדול יותר)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — רגיל (מומלץ לאינטרנט ולאיזון)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — קומפקטי / ממים (תנועה מקוטעת, גודל קטן)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — סטופ מושן / איטי (צעד אחר צעד, \"קליק-קליק\", גודל זעיר)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — מצגת (פריים אחד לשנייה, גודל מינימלי)"
+  },
+  "popupRightClickHint": {
+    "message": "לחצו לחיצה ימנית בכל מקום בדף האינטרנט להקלטת מסך (וידאו/GIF) ולבורר צבעים."
+  },
+  "toastElementZappedAd": {
+    "message": "המודעה / ה-iframe הוסתרו למשך ההפעלה הנוכחית.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "התמונה הועתקה ללוח",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "סגירה (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "ההגדרות נשמרו",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "הורד את הקובץ ופתח אותו באמצעות VLC או נגן מדיה אחר.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "אין תצוגה מקדימה לסוג משאב זה",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "הורדת המקור",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "טיפ: פתח את הקובץ שהורד באמצעות VLC או כל נגן מדיה לשולחן העבודה — הוא מנגן כמעט כל פורמט.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "יוצר ארכיון ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "הדפדפן שלך אינו תומך ב-EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "גרירת סרגל הכלים",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "החלפת פורמט: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "רזולוציית GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "קצב פריימים של GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "גודל GIF משוער: ~$size$ MB (ל-10 שניות), עד ~$max$ MB למשך המרבי של 60 שניות.\nקצב פריימים: $fps$ FPS.\nהקלטת GIF מוגבלת לדקה אחת (60 שניות) לכל היותר.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "העתקת $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "תצוגה מקדימה של צילום המסך",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — ניגון אוניברסלי ב-WhatsApp, Telegram, Jira, Apple ו-Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (תמונה מונפשת — מושלם ל-READMEs, Jira, תיעוד והודעות)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — פורמט אינטרנט פתוח)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "לא נמצאה לשונית פעילה.",
+    "description": "No active tab found."
+  }
+}

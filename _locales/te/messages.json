@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "ఏదైనా వెబ్ అసెట్‌ను పరిశీలించి ZIP గా డౌన్‌లోడ్ చేయండి. పూర్తి పేజీ స్క్రీన్‌షాట్‌లు, లైవ్ టేబుల్ క్యాప్చర్, డెవలపర్ టూల్స్."
+  },
+  "actionTitle": {
+    "message": "Source Download — ప్యానెల్ తెరవండి & వనరులను ట్రాక్ చేయండి"
+  },
+  "contextMenuZap": {
+    "message": "ఈ ఎలిమెంట్‌ను దాచు"
+  },
+  "contextMenuUndoZap": {
+    "message": "చివరిగా దాచిన ఎలిమెంట్‌ను పునరుద్ధరించు"
+  },
+  "contextMenuResetZap": {
+    "message": "దాచిన ఎలిమెంట్‌లన్నింటినీ రీసెట్ చేయి"
+  },
+  "contextMenuCapturePage": {
+    "message": "పూర్తి పేజీ స్క్రీన్‌షాట్ తీయి"
+  },
+  "contextMenuPageArchive": {
+    "message": "ఆఫ్‌లైన్ పేజీ ఆర్కైవ్‌ను డౌన్‌లోడ్ చేయి"
+  },
+  "catAll": {
+    "message": "అన్నీ"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "చిత్రాలు"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "వీడియోలు"
+  },
+  "catAudio": {
+    "message": "ఆడియో"
+  },
+  "catCaptions": {
+    "message": "క్యాప్షన్‌లు"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "సోర్స్ మ్యాప్‌లు"
+  },
+  "catFonts": {
+    "message": "ఫాంట్‌లు"
+  },
+  "catDocuments": {
+    "message": "పత్రాలు"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "మానిఫెస్ట్‌లు"
+  },
+  "catText": {
+    "message": "వచనం"
+  },
+  "catOther": {
+    "message": "ఇతర"
+  },
+  "catScreenshot": {
+    "message": "స్క్రీన్‌షాట్"
+  },
+  "catArchive": {
+    "message": "పేజీ ఆర్కైవ్"
+  },
+  "btnRefresh": {
+    "message": "రిఫ్రెష్ చేయండి"
+  },
+  "btnExport": {
+    "message": "ఎగుమతి చేయండి"
+  },
+  "btnDownloadSelected": {
+    "message": "ఎంచుకున్నవి డౌన్‌లోడ్ చేయండి"
+  },
+  "btnDownloadView": {
+    "message": "వీక్షణను డౌన్‌లోడ్ చేయండి"
+  },
+  "btnDownloadAll": {
+    "message": "అన్నీ డౌన్‌లోడ్ చేయండి"
+  },
+  "btnDownloadFiltered": {
+    "message": "ఫిల్టర్ చేసినవి డౌన్‌లోడ్ చేయండి"
+  },
+  "btnTheme": {
+    "message": "థీమ్‌ని మార్చండి"
+  },
+  "btnGuide": {
+    "message": "వినియోగదారు గైడ్"
+  },
+  "btnCaptureFullPage": {
+    "message": "పూర్తి పేజీ స్క్రీన్‌షాట్"
+  },
+  "btnOfflineArchive": {
+    "message": "ఒకే HTMLని సేవ్ చేయండి"
+  },
+  "filterMinKb": {
+    "message": "కనిష్ట KB"
+  },
+  "filterMaxKb": {
+    "message": "గరిష్ట KB"
+  },
+  "filterMinWidth": {
+    "message": "కనిష్ట వెడల్పు px"
+  },
+  "filterMinHeight": {
+    "message": "కనిష్ట ఎత్తు px"
+  },
+  "filterSortName": {
+    "message": "పేరు ప్రకారం క్రమబద్ధీకరించండి"
+  },
+  "filterSortSize": {
+    "message": "పరిమాణం ప్రకారం క్రమబద్ధీకరించండి"
+  },
+  "filterSortType": {
+    "message": "రకం ప్రకారం క్రమబద్ధీకరించండి"
+  },
+  "filterSortTime": {
+    "message": "సమయం ప్రకారం క్రమబద్ధీకరించండి"
+  },
+  "filterHideDupes": {
+    "message": "నకిలీలను దాచండి"
+  },
+  "filterClear": {
+    "message": "క్లియర్ చేయండి"
+  },
+  "textModeContains": {
+    "message": "కలిగి ఉంది"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "CSS సెలెక్టర్"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "పేజీ వచనాన్ని ఫిల్టర్ చేయండి లేదా లైవ్ DOMని ప్రశ్నించండి..."
+  },
+  "textAllElements": {
+    "message": "అన్ని మూలకాలు"
+  },
+  "textLiveOn": {
+    "message": "లైవ్: ఆన్"
+  },
+  "textLiveOff": {
+    "message": "లైవ్: ఆఫ్"
+  },
+  "textScanNow": {
+    "message": "ఇప్పుడు స్కాన్ చేయండి"
+  },
+  "textReading": {
+    "message": "చదవడం"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "వివరాలను చూడటానికి ఒక వనరును ఎంచుకోండి"
+  },
+  "inspectorDetails": {
+    "message": "వివరాలు"
+  },
+  "inspectorOpenTab": {
+    "message": "కొత్త ట్యాబ్‌లో తెరవండి"
+  },
+  "inspectorCopyUrl": {
+    "message": "URLని కాపీ చేయండి"
+  },
+  "inspectorDownloadFile": {
+    "message": "ఈ ఫైల్‌ని డౌన్‌లోడ్ చేయండి"
+  },
+  "inspectorClose": {
+    "message": "మూసివేయండి"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "రకం"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "పరిమాణం"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "మూలం"
+  },
+  "metaTitle": {
+    "message": "శీర్షిక"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Source Download నచ్చిందా? Chrome వెబ్ స్టోర్‌లో సమీక్ష లేదా GitHubలో స్టార్‌తో మా ఓపెన్ సోర్స్ లక్ష్యానికి మద్దతు ఇవ్వండి!"
+  },
+  "ratingReview": {
+    "message": "★ సమీక్ష రాయండి"
+  },
+  "ratingStar": {
+    "message": "★ GitHubలో స్టార్"
+  },
+  "ratingDismiss": {
+    "message": "మూసివేయండి"
+  },
+  "toastElementZapped": {
+    "message": "ఈ సెషన్ కోసం ఎలిమెంట్ దాచబడింది."
+  },
+  "toastElementRestored": {
+    "message": "ఎలిమెంట్ పునరుద్ధరించబడింది."
+  },
+  "toastAllElementsRestored": {
+    "message": "దాచిన ఎలిమెంట్‌లన్నీ పునరుద్ధరించబడ్డాయి."
+  },
+  "toastScreenshotCapturing": {
+    "message": "పూర్తి పేజీ స్క్రీన్‌షాట్ తీస్తోంది…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "పూర్తి పేజీ స్క్రీన్‌షాట్ సేవ్ అయింది."
+  },
+  "toastArchiveCreated": {
+    "message": "ఒకే ఫైల్ HTML ఆర్కైవ్ సేవ్ అయింది."
+  },
+  "brandSignature": {
+    "message": "Turan Burak Yeşilyurt (2run.dev) రూపొందించారు"
+  },
+  "tabImages": {
+    "message": "చిత్రాలు & SVG"
+  },
+  "tabMedia": {
+    "message": "మీడియా & ఆడియో"
+  },
+  "tabFonts": {
+    "message": "ఫాంట్‌లు"
+  },
+  "tabTextScraper": {
+    "message": "వచనం & పట్టికలు"
+  },
+  "heroScreenshotTitle": {
+    "message": "పూర్తి పేజీ స్క్రీన్‌షాట్"
+  },
+  "heroScreenshotDesc": {
+    "message": "స్టిక్కీ హెడర్‌ను దాచి, అనేక వ్యూపోర్ట్‌లను అతుకులు లేకుండా కలపడం"
+  },
+  "heroArchiveTitle": {
+    "message": "సింగిల్-ఫైల్ HTML ఆర్కైవ్"
+  },
+  "heroArchiveDesc": {
+    "message": "CSS & Base64 చిత్రాలు పొందుపరచబడతాయి, ఆఫ్‌లైన్‌లో సురక్షితమైన స్నాప్‌షాట్"
+  },
+  "copyDataUri": {
+    "message": "Data URIని కాపీ చేయండి"
+  },
+  "copyUrl": {
+    "message": "URLని కాపీ చేయండి"
+  },
+  "downloadSingle": {
+    "message": "డౌన్‌లోడ్ చేయండి"
+  },
+  "searchPlaceholder": {
+    "message": "పేరు, URL, ట్యాగ్, MIME లేదా /regex/... ద్వారా ఫిల్టర్ చేయండి"
+  },
+  "viewGrid": {
+    "message": "గ్రిడ్ వీక్షణ"
+  },
+  "viewList": {
+    "message": "జాబితా వీక్షణ"
+  },
+  "btnScreenshot": {
+    "message": "స్క్రీన్‌షాట్"
+  },
+  "btnArchive": {
+    "message": "HTMLని సేవ్ చేయండి"
+  },
+  "exportJson": {
+    "message": "కనిపించే జాబితా JSONగా"
+  },
+  "exportCsv": {
+    "message": "కనిపించే జాబితా CSVగా"
+  },
+  "exportHar": {
+    "message": "నెట్‌వర్క్ లాగ్ HARగా"
+  },
+  "exportScreenshot": {
+    "message": "పూర్తి పేజీ స్క్రీన్‌షాట్ (PNG)"
+  },
+  "exportArchive": {
+    "message": "ఆఫ్‌లైన్ పేజీ ఆర్కైవ్ (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "అన్ని పద్ధతులు"
+  },
+  "filterTypeAll": {
+    "message": "అన్ని రకాలు"
+  },
+  "filterSortDir": {
+    "message": "ఆరోహణ / అవరోహణ క్రమం మార్చండి"
+  },
+  "emptyTitle": {
+    "message": "వనరులు ఏవీ కనుగొనబడలేదు"
+  },
+  "emptySubtitle": {
+    "message": "నెట్‌వర్క్ అభ్యర్థనలను క్యాప్చర్ చేయడానికి ఈ ప్యానెల్ తెరిచి ఉన్నప్పుడు పేజీని రీలోడ్ చేయండి లేదా ప్రస్తుత DOMని స్కాన్ చేయడానికి రిఫ్రెష్ క్లిక్ చేయండి."
+  },
+  "statusResources": {
+    "message": "వనరులు"
+  },
+  "statusFiltered": {
+    "message": "ఫిల్టర్ చేయబడింది"
+  },
+  "statusSelected": {
+    "message": "ఎంపిక చేయబడింది"
+  },
+  "statusDupes": {
+    "message": "నకిలీలు దాచబడ్డాయి"
+  },
+  "statusSize": {
+    "message": "పరిమాణం"
+  },
+  "langAuto": {
+    "message": "ఆటో (బ్రౌజర్)"
+  },
+  "langSelectorTitle": {
+    "message": "భాషను ఎంచుకోండి"
+  },
+  "textPillAll": {
+    "message": "మొత్తం కంటెంట్"
+  },
+  "textPillText": {
+    "message": "📄 వచనం & కథనాలు"
+  },
+  "textPillTables": {
+    "message": "📊 పట్టికలు మాత్రమే"
+  },
+  "textSelectAll": {
+    "message": "అన్నీ ఎంచుకోండి"
+  },
+  "textDeselectAll": {
+    "message": "అన్ని ఎంపికలను తీసివేయండి"
+  },
+  "textClearSelection": {
+    "message": "క్లియర్ చేయండి"
+  },
+  "toastRefreshComplete": {
+    "message": "పేజీ స్కాన్ పూర్తయింది: $count$ కొత్త వనరులు",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "$count$ బ్లాక్(లు) కాపీ చేయబడింది",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది"
+  },
+  "toastTableCopied": {
+    "message": "పట్టిక క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది"
+  },
+  "toastNothingToExport": {
+    "message": "ఎగుమతి చేయడానికి ఏమీ లేదు"
+  },
+  "toastExportedTxt": {
+    "message": "$count$ బ్లాక్(లు) TXTగా ఎగుమతి చేయబడింది",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "మార్క్‌డౌన్‌గా $count$ బ్లాక్(లు) ఎగుమతి చేయబడింది",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "పట్టిక వరుసలు ఏవీ క్యాప్చర్ చేయబడలేదు"
+  },
+  "toastExportedCsv": {
+    "message": "పట్టిక CSVగా ఎగుమతి చేయబడింది"
+  },
+  "toastExportedXlsx": {
+    "message": "పట్టిక XLSXగా ఎగుమతి చేయబడింది"
+  },
+  "toastExportedTablesZip": {
+    "message": "$count$ పట్టిక(లు) $format$గా ఎగుమతి చేయబడింది",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "$count$ షీట్(లు) XLSXగా ఎగుమతి చేయబడింది",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "డౌన్‌లోడ్ చేయడానికి వనరులు లేవు."
+  },
+  "toastNoVisibleResources": {
+    "message": "డౌన్‌లోడ్ చేయడానికి కనిపించే వనరులు లేవు."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "ముందుగా కనీసం ఒక వనరును ఎంచుకోండి."
+  },
+  "toastZipSaved": {
+    "message": "ZIP సేవ్ చేయబడింది: $total$ వనరులలో $fetched$",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP విఫలమైంది: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR ఎగుమతి చేయబడింది ($count$ ఎంట్రీలు)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "DevTools తనిఖీ చేయబడిన విండో అందుబాటులో లేదు."
+  },
+  "toastScreenshotError": {
+    "message": "స్క్రీన్‌షాట్ లోపం: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "ఆఫ్‌లైన్ పేజీ ఆర్కైవ్‌ను సృష్టిస్తోంది…"
+  },
+  "toastArchiveError": {
+    "message": "ఆర్కైవ్ లోపం: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "ఫార్మాటింగ్ సమయం ముగిసింది — అసలు ఫైల్‌ని చూపుతోంది."
+  },
+  "toastFormatFailed": {
+    "message": "ఫైల్‌ను ఫార్మాట్ చేయడం సాధ్యపడలేదు — అసలు ఫైల్‌ను చూపుతోంది."
+  },
+  "emptySearchTitle": {
+    "message": "\"$query$\"కి సరిపోలికలు లేవు",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "వేరొక శోధన పదాన్ని ప్రయత్నించండి లేదా మరొక వర్గానికి మారండి."
+  },
+  "emptyFiltersTitle": {
+    "message": "ప్రస్తుత ఫిల్టర్‌లకు ఏ వనరులు సరిపోలడం లేదు"
+  },
+  "emptyFiltersSub": {
+    "message": "ఎగువ పరిమాణం లేదా కొలతల ఫిల్టర్‌లను సడలించండి లేదా క్లియర్ చేయండి నొక్కండి."
+  },
+  "textEmptyQueryReject": {
+    "message": "పేజీ ఆ ప్రశ్నను తిరస్కరించింది. పైన దాన్ని సరిచేస్తే ఫలితాలు వెంటనే తిరిగి వస్తాయి."
+  },
+  "textEmptyNoMatch": {
+    "message": "పేజీలోని ఏ మూలకమూ ఈ ప్రశ్నకు సరిపోలడం లేదు. మరింత సాధారణ సెలెక్టర్‌ను ప్రయత్నించండి లేదా బాక్స్ పక్కన మోడ్‌ను మార్చండి."
+  },
+  "textEmptyInitial": {
+    "message": "ఇంకా ఏదీ క్యాప్చర్ కాలేదు. లైవ్ క్యాప్చర్ నడుస్తోంది — మొత్తం పేజీ ఇక్కడ చదవగలిగే వచనంగా కనిపిస్తుంది."
+  },
+  "textEmptyFiltered": {
+    "message": "ప్రస్తుత ప్రశ్న మరియు మూలకం ఫిల్టర్‌తో ఏదీ సరిపోలలేదు."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ బ్లాక్‌లు",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ పదాలు",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ అక్షరాలు",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ పట్టికలు · $rows$ ప్రత్యేక వరుసలు",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "$count$ ఎంచుకోబడింది — ఎగుమతులు వీటిని మాత్రమే ఉపయోగిస్తాయి",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "పట్టిక — స్క్రీన్‌పై $count$ వరుసలు",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "పట్టిక — మొత్తం $count$ ప్రత్యేక వరుస(లు)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ స్నాప్‌షాట్(లు)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "నవీకరించబడింది $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "అన్ని $count$ వరుసలను చూపండి",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "అన్ని వరుసలను చూపుతోంది"
+  },
+  "textTableHistory": {
+    "message": "చరిత్ర ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "చరిత్రను దాచండి"
+  },
+  "textTableNoRows": {
+    "message": "ఇంకా వరుసలు క్యాప్చర్ చేయబడలేదు."
+  },
+  "textBtnCopy": {
+    "message": "వచనాన్ని కాపీ చేయండి"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 కాపీ"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ నకిలీ చిత్రం(లు)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "ఎగుమతి చేయండి"
+  },
+  "inspectorLoadingSvg": {
+    "message": "SVG లోడ్ అవుతోంది…"
+  },
+  "inspectorSvgError": {
+    "message": "SVG కంటెంట్‌ని తిరిగి పొందడం సాధ్యపడలేదు."
+  },
+  "inspectorLoadingFont": {
+    "message": "ఫాంట్ ప్రివ్యూ లోడ్ అవుతోంది..."
+  },
+  "inspectorFontSample": {
+    "message": "ఫాంట్ ప్రివ్యూ"
+  },
+  "inspectorBeautify": {
+    "message": "ఫార్మాట్ చేయండి"
+  },
+  "inspectorOriginal": {
+    "message": "అసలైనది"
+  },
+  "inspectorHeaders": {
+    "message": "హెడర్‌లు"
+  },
+  "inspectorResponse": {
+    "message": "ప్రతిస్పందన"
+  },
+  "inspectorRequest": {
+    "message": "అభ్యర్థన"
+  },
+  "inspectorQueryParams": {
+    "message": "ప్రశ్న పారామితులు"
+  },
+  "inspectorRequestBody": {
+    "message": "అభ్యర్థన బాడీ"
+  },
+  "textHintHtml": {
+    "message": "పేజీ యొక్క ప్రత్యక్ష, చదవగలిగే కాపీ. వచనాన్ని కలిగి ఉన్న ప్రతి మూలకం DOM క్రమంలో క్యాప్చర్ చేయబడుతుంది మరియు పేజీ మారినప్పుడు ఇక్కడ ఉంచబడుతుంది. సాదా వచనం, రెగ్యులర్ ఎక్స్‌ప్రెషన్, <strong>CSS సెలెక్టర్</strong> లేదా <strong>XPath</strong> ఎక్స్‌ప్రెషన్‌తో దీన్ని ప్రశ్నించండి, ఆపై సరిపోలిన వాటిని ఎగుమతి చేయండి. వివరాల కోసం <a href=\"#\" id=\"text-hint-guide\">గైడ్‌</a>ని చూడండి."
+  },
+  "textHeadings": {
+    "message": "శీర్షికలు"
+  },
+  "textAllLevels": {
+    "message": "అన్ని స్థాయిలు"
+  },
+  "textMatches": {
+    "message": "మ్యాచ్‌లు"
+  },
+  "textMatch": {
+    "message": "మ్యాచ్"
+  },
+  "textReadingOn": {
+    "message": "చదవడం ఆన్"
+  },
+  "toastDownloadStarted": {
+    "message": "డౌన్‌లోడ్ ప్రారంభించబడింది: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "ఈ వనరు (CORS లేదా మద్దతు లేని రకం) పొందడం సాధ్యపడలేదు."
+  },
+  "ratingBannerText": {
+    "message": "Source Download నచ్చిందా? Chrome వెబ్ స్టోర్‌లో సమీక్ష లేదా GitHubలో స్టార్‌తో మా ఓపెన్ సోర్స్ లక్ష్యానికి మద్దతు ఇవ్వండి!"
+  },
+  "ratingBannerReview": {
+    "message": "★ సమీక్ష"
+  },
+  "ratingBannerStar": {
+    "message": "★ స్టార్"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ ప్రత్యేక వరుస(లు)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$సె క్రితం",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$నిమి క్రితం",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "ప్రాంత స్క్రీన్‌షాట్ తీయి"
+  },
+  "btnAreaDownload": {
+    "message": "డౌన్‌లోడ్"
+  },
+  "btnAreaCopy": {
+    "message": "క్లిప్‌బోర్డ్‌కు కాపీ చేయి"
+  },
+  "btnAreaCancel": {
+    "message": "రద్దు చేయి"
+  },
+  "toastAreaCopied": {
+    "message": "ప్రాంత స్క్రీన్‌షాట్ క్లిప్‌బోర్డ్‌కు కాపీ అయింది"
+  },
+  "toastAreaDownloaded": {
+    "message": "ప్రాంత స్క్రీన్‌షాట్ సేవ్ అయింది"
+  },
+  "statusFoundCssResources": {
+    "message": "CSS నుండి సూచించబడిన $count$ వనరు(లు) కనుగొనబడ్డాయి",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "DOM స్కాన్ విఫలమైంది: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "ఫైల్ కంటెంట్‌లను ఇండెక్సింగ్ చేస్తోంది…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "చిత్రాల నకిలీలను తనిఖీ చేస్తోంది…"
+  },
+  "statusWorking": {
+    "message": "పని చేస్తోంది…"
+  },
+  "filterMethodTitle": {
+    "message": "HTTP పద్ధతి ద్వారా ఫిల్టర్ చేయండి"
+  },
+  "filterTypeTitle": {
+    "message": "అభ్యర్థన రకం ద్వారా ఫిల్టర్ చేయండి"
+  },
+  "filterSortTitle": {
+    "message": "వనరులను క్రమబద్ధీకరించండి"
+  },
+  "textModeTitle": {
+    "message": "ప్రశ్న పెట్టె ఎలా అన్వయించబడుతుంది"
+  },
+  "textKindTitle": {
+    "message": "ఒక మూలకం రకానికి పరిమితం చేయండి"
+  },
+  "textHeadingLevelTitle": {
+    "message": "శీర్షిక స్థాయి"
+  },
+  "textPlaceholderRegex": {
+    "message": "^ధర:\\s*\\d+ — JavaScript రెగ్యులర్ ఎక్స్‌ప్రెషన్"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — ఏదైనా CSS సెలెక్టర్"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "గైడ్‌ని వెతకండి..."
+  },
+  "popupIntro": {
+    "message": "<strong>టూల్‌బార్ బ్యాడ్జ్</strong> లెక్కించే వర్గాలు. ఒక వర్గాన్ని ఆఫ్ చేస్తే దాని లెక్కింపు ఆగుతుంది — బ్యాడ్జ్ మీరు ట్రాక్ చేసేవాటిని మాత్రమే తక్షణమే చూపుతుంది."
+  },
+  "popupHelpTitle": {
+    "message": "పూర్తి ప్యానెల్‌ను ఎలా ఉపయోగించాలి"
+  },
+  "popupStep1": {
+    "message": "మీరు తనిఖీ చేయాలనుకుంటున్న పేజీ కోసం DevToolsని తెరవండి <div class=\"hint\"><kbd>F12</kbd> లేదా <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "DevTools టూల్‌బార్‌లోని <strong>Source Download</strong> ట్యాబ్‌ను క్లిక్ చేయండి"
+  },
+  "popupStep3": {
+    "message": "వనరులను బ్రౌజ్ చేయండి, తనిఖీ చేయండి మరియు డౌన్‌లోడ్ చేయండి — ఒక్కొక్కటిగా లేదా అన్నింటినీ ఒకేసారి ZIPగా."
+  },
+  "popupNote": {
+    "message": "గమనిక: DevToolsని ప్రోగ్రామాటిక్‌గా తెరవడానికి పొడిగింపులను Chrome అనుమతించదు, అందుకే పూర్తి టూల్‌సెట్ DevTools టూల్‌బార్ ద్వారా అందుబాటులో ఉంటుంది."
+  },
+  "popupTrackAll": {
+    "message": "అన్ని వర్గాలను ట్రాక్ చేయండి"
+  },
+  "popupLanguage": {
+    "message": "భాష"
+  },
+  "inspectorBinaryResponse": {
+    "message": "బైనరీ ప్రతిస్పందన — దీన్ని వీక్షించడానికి డౌన్‌లోడ్ చేయండి"
+  },
+  "inspectorLoadingResponse": {
+    "message": "ప్రతిస్పందన లోడ్ అవుతోంది…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "ప్రతిస్పందన ప్రివ్యూ లేదు — కంటెంట్‌ని తిరిగి పొందడం సాధ్యం కాలేదు."
+  },
+  "inspectorLoadingContent": {
+    "message": "కంటెంట్ లోడ్ అవుతోంది…"
+  },
+  "inspectorNoPreview": {
+    "message": "ప్రివ్యూ అందుబాటులో లేదు — కంటెంట్‌ని తిరిగి పొందడం సాధ్యం కాలేదు."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "అన్నీ మూసివేయండి"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "అన్ని తెరిచిన ట్యాబ్‌లను మూసివేయండి"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "పెద్దది చేయడానికి క్లిక్ చేయండి"
+  },
+  "inspectorViewSource": {
+    "message": "మూలాన్ని వీక్షించండి"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "సింటాక్స్ హైలైటింగ్‌తో SVG మార్కప్‌ని చూపండి"
+  },
+  "inspectorFormatting": {
+    "message": "ఫార్మాటింగ్ చేస్తోంది..."
+  },
+  "findInContentPlaceholder": {
+    "message": "కంటెంట్‌లో కనుగొనండి…"
+  },
+  "findPreviousMatch": {
+    "message": "మునుపటి మ్యాచ్"
+  },
+  "findNextMatch": {
+    "message": "తదుపరి మ్యాచ్"
+  },
+  "findClose": {
+    "message": "మూసివేయండి"
+  },
+  "findShowRaw": {
+    "message": "అసలు (ఫార్మాట్ చేయని) కంటెంట్‌ని చూపండి"
+  },
+  "findBeautify": {
+    "message": "ఈ కంటెంట్‌ని ఫార్మాట్ చేయండి / అందంగా చేయండి"
+  },
+  "btnRaw": {
+    "message": "రా"
+  },
+  "btnBeautify": {
+    "message": "ఫార్మాట్ చేయండి"
+  },
+  "videoHlsDetected": {
+    "message": "HLS (m3u8) స్ట్రీమ్ కనుగొనబడింది"
+  },
+  "videoCannotPlay": {
+    "message": "ఈ వీడియో బ్రౌజర్‌లో ప్లే చేయబడదు"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome నేరుగా HLS స్ట్రీమ్‌లను ప్లే చేయదు. మీరు <b>$NAME$</b> యొక్క అన్ని సెగ్మెంట్‌లను ఒకే MP4/TS వీడియో ఫైల్‌లో విలీనం చేయవచ్చు.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "బ్రౌజర్ ఈ ఫార్మాట్‌కు మద్దతు ఇవ్వదు"
+  },
+  "btnMergeHls": {
+    "message": "సెగ్మెంట్‌లను విలీనం చేయండి & డౌన్‌లోడ్ చేయండి"
+  },
+  "toastHlsMerged": {
+    "message": "$COUNT$ సెగ్మెంట్(లు) $NAME$లో విలీనం చేయబడింది",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "పరిమాణం తెలియదు"
+  },
+  "progressFetching": {
+    "message": "పొందుతోంది $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "ZIP సృష్టిస్తోంది $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP సేవ్ చేయబడింది: $TOTAL$ వనరులలో $FETCHED$ ($SKIPPED$ విఫలమయ్యాయి)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "మళ్లీ ప్రయత్నించండి ($COUNT$)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "డౌన్‌లోడ్‌ను మళ్లీ ప్రయత్నించు"
+  },
+  "searchRegexHint": {
+    "message": "Regex శోధన సక్రియం — మీ ప్రశ్నను /pattern/i రూపంలో రాయండి"
+  },
+  "textIncludeInExports": {
+    "message": "ఎగుమతులలో చేర్చండి"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "ప్రతి స్నాప్‌షాట్‌ను నకిలీలు లేని ఒకే పట్టికగా కలపండి — ఇదే ఎగుమతి అవుతుంది"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "ఈ పట్టిక యొక్క మునుపటి స్నాప్‌షాట్‌లను బ్రౌజ్ చేయండి"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "ఈ పట్టికను CSVగా డౌన్‌లోడ్ చేయండి"
+  },
+  "tableSnapshotLabel": {
+    "message": "స్నాప్‌షాట్ $INDEX$ — $TIME$ ($COUNT$ వరుసలు)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "బ్యాచ్ డౌన్‌లోడ్ కోసం ఎంచుకోండి / ఎంపిక తీసివేయండి"
+  },
+  "cardDownloadTitle": {
+    "message": "ఫైల్‌ని డౌన్‌లోడ్ చేయండి"
+  },
+  "cardRetryFailedTitle": {
+    "message": "మునుపటి డౌన్‌లోడ్ విఫలమైంది — మళ్లీ ప్రయత్నించడానికి క్లిక్ చేయండి"
+  },
+  "btnThemeLight": {
+    "message": "లైట్ థీమ్‌కి మారండి"
+  },
+  "btnThemeDark": {
+    "message": "డార్క్ థీమ్‌కి మారండి"
+  },
+  "guideTitle": {
+    "message": "Source Download — వినియోగదారు గైడ్"
+  },
+  "guideEmpty": {
+    "message": "మీ శోధనకు ఏ గైడ్ విభాగాలు సరిపోలలేదు."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% డిపెండెన్సీ రహితం.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "జూమ్ అవుట్ (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "జూమ్ ఇన్ (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "జూమ్‌ని రీసెట్ చేయండి (0)"
+  },
+  "lightboxClose": {
+    "message": "మూసివేయండి (Esc)"
+  },
+  "resizerTitle": {
+    "message": "పరిమాణం మార్చడానికి లాగండి"
+  },
+  "ratingDismissTitle": {
+    "message": "మూసివేయండి"
+  },
+  "inspectorResourceTitle": {
+    "message": "వనరు"
+  },
+  "guideSecGettingStarted": {
+    "message": "ప్రారంభించడం"
+  },
+  "guideSecCategories": {
+    "message": "వర్గాలు"
+  },
+  "guideSecSearchFilters": {
+    "message": "శోధన & ఫిల్టర్‌లు"
+  },
+  "guideSecGridView": {
+    "message": "గ్రిడ్ & జాబితా వీక్షణ"
+  },
+  "guideSecInspect": {
+    "message": "ఒక వనరును తనిఖీ చేయండి"
+  },
+  "guideSecDownloading": {
+    "message": "డౌన్‌లోడ్ చేస్తోంది"
+  },
+  "guideSecLightbox": {
+    "message": "లైట్‌బాక్స్"
+  },
+  "guideSecTextTables": {
+    "message": "వచనం & పట్టికలు"
+  },
+  "guideSecCaptions": {
+    "message": "క్యాప్షన్‌లు & ఉపశీర్షికలు"
+  },
+  "guideSecSourceMaps": {
+    "message": "సోర్స్ మ్యాప్‌లు"
+  },
+  "guideSecDupes": {
+    "message": "నకిలీ చిత్రాలు"
+  },
+  "guideSecVideoHls": {
+    "message": "వీడియో ఫాల్‌బ్యాక్ & HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "అధునాతన చిట్కాలు"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "DevTools టూల్‌బార్‌లోని <strong>Source Download</strong> ట్యాబ్‌ను క్లిక్ చేయండి (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> నొక్కి, ఆపై DevTools టూల్‌బార్‌లోని ట్యాబ్‌ను ఎంచుకోండి). DevToolsని స్వయంచాలకంగా తెరవడానికి పొడిగింపులను Chrome అనుమతించదు, అందుకే ప్యానెల్ అక్కడ ఉంటుంది. టూల్‌బార్ చిహ్నం పాప్‌అప్‌లో, చిహ్నంపై ఉండే బ్యాడ్జ్ కౌంటర్‌లో ఏ వర్గాలను లెక్కించాలో ఎంచుకోవచ్చు. ప్యానెల్ టూల్‌బార్‌లోని సూర్యుడు/చంద్రుడు బటన్ Chromeతో సంబంధం లేకుండా లైట్ లేదా డార్క్ థీమ్‌ను స్థిరపరుస్తుంది; ఆ ఎంపిక గుర్తుంచుకోబడుతుంది."
+  },
+  "guideSecCategoriesContent": {
+    "message": "ఎడమవైపు ఉన్న నిలువు ట్యాబ్‌లు క్యాప్చర్ చేసిన ప్రతి వనరును రకం ప్రకారం 17 ప్రత్యేక వర్గాలుగా విభజిస్తాయి: చిత్రాలు, వీడియోలు, ఆడియో, క్యాప్షన్‌లు, పత్రాలు, ఫాంట్‌లు, సోర్స్ మ్యాప్‌లు, WASM, SVG, APIలు, కుక్కీలు, స్టోరేజ్ మరియు మరిన్ని. ప్రతి ట్యాబ్ లైవ్ సంఖ్యను చూపుతుంది. ఒక సమయంలో ఒక వర్గం మాత్రమే చూపబడుతుంది; వర్గం మారినప్పుడు అన్ని ఫిల్టర్‌లు రీసెట్ అవుతాయి, కాబట్టి మీరు చూసేది ఎల్లప్పుడూ ట్యాబ్‌కు సరిపోలుతుంది."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "శోధన పట్టీ పేరు, URL, రకం, ప్రత్యామ్నాయ వచనం (alt) లేదా శీర్షిక ఆధారంగా ఫిల్టర్ చేస్తుంది. రెగ్యులర్ ఎక్స్‌ప్రెషన్‌ను ఉపయోగించడానికి మీ ప్రశ్నను <kbd>/…/</kbd> మధ్య రాయండి, ఉదా. <code>/\\.(png|jpg)$/</code>. టూల్‌బార్ క్రింద, ఫిల్టర్ బార్ ప్రతి వర్గానికి మారుతుంది: మీడియా కోసం పరిమాణం మరియు కొలతల పరిధులు, APIల కోసం HTTP పద్ధతి మరియు అభ్యర్థన రకం, అలాగే క్రమబద్ధీకరణ మరియు దిశ."
+  },
+  "guideSecGridViewContent": {
+    "message": "కాంపాక్ట్ గ్రిడ్ (చిన్న సూక్ష్మచిత్రాలు) మరియు శోధన పట్టీ పక్కన ఉన్న బటన్‌లతో వివరణాత్మక జాబితా మధ్య టోగుల్ చేయండి. సెషన్‌ల మధ్య మీ ఎంపిక గుర్తుంచుకోబడుతుంది. జాబితా వీక్షణలో, చెక్‌బాక్స్‌లు బల్క్ డౌన్‌లోడ్ కోసం వ్యక్తిగత వనరులను ఎంచుకోవడానికి మిమ్మల్ని అనుమతిస్తాయి."
+  },
+  "guideSecInspectContent": {
+    "message": "కుడివైపు ఉన్న తనిఖీ పేన్‌లో తెరవడానికి ఏదైనా వనరును క్లిక్ చేయండి. తెరిచిన ప్రతి ఫైల్ ఒక ట్యాబ్‌గా మారుతుంది, కాబట్టి మీరు అనేక వనరులను పక్కపక్కనే పోల్చవచ్చు — సరికొత్తది ఎడమవైపు తెరవబడుతుంది. చిత్రాలు, వీడియో, ఆడియో, ఫాంట్‌లు, SVG మరియు టెక్స్ట్/కోడ్ కోసం (ఫార్మాట్ టోగుల్‌తో) ప్రత్యేక వ్యూయర్‌లు ఉన్నాయి. APIలకు స్ప్లిట్ వ్యూ కనిపిస్తుంది: ఎడమవైపు ప్రతిస్పందన, కుడివైపు అభ్యర్థన వివరాలు (పద్ధతి, స్థితి, హెడర్‌లు, ప్రశ్న పారామితులు మరియు బాడీ)."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>వీక్షణను డౌన్‌లోడ్ చేయండి</strong> ప్రస్తుతం కనిపించే వనరులను (యాక్టివ్ వర్గం + శోధన + ఫిల్టర్‌లు) ZIPగా సేవ్ చేస్తుంది; ఫిల్టర్‌లు సక్రియంగా ఉన్నప్పుడు ఈ బటన్ <em>ఫిల్టర్ చేసినవి డౌన్‌లోడ్ చేయండి (N)</em>గా మారుతుంది. క్లిక్ చేయడానికి ముందు అంచనా ఆర్కైవ్ పరిమాణాన్ని చూడటానికి ఏదైనా డౌన్‌లోడ్ బటన్‌పై కర్సర్‌ను ఉంచండి. <strong>ఎంచుకున్నవి డౌన్‌లోడ్ చేయండి</strong> టిక్ చేసిన అంశాలను మాత్రమే డౌన్‌లోడ్ చేస్తుంది. <strong>అన్నీ డౌన్‌లోడ్ చేయండి</strong> కనుగొనబడిన ప్రతి వనరును ఫోల్డర్ నిర్మాణంతో ఉన్న ZIPలో సేవ్ చేస్తుంది. విఫలమైన డౌన్‌లోడ్‌లు స్వయంచాలకంగా మళ్లీ ప్రయత్నించబడతాయి మరియు సందర్భ మెను నుండి మళ్లీ ప్రయత్నించవచ్చు. <strong>ఎగుమతి చేయండి</strong> కనిపించే జాబితాను JSON లేదా CSVగా రాస్తుంది, లేదా Chrome నెట్‌వర్క్ లాగ్‌ను HAR ఫైల్‌గా సేవ్ చేస్తుంది."
+  },
+  "guideSecLightboxContent": {
+    "message": "జూమ్ బటన్ మీడియాను పూర్తి-పరిమాణ లైట్‌బాక్స్‌లో తెరుస్తుంది; ఇక్కడ మీరు లాగి ప్యాన్ చేయవచ్చు, మౌస్ వీల్, ఆన్-స్క్రీన్ బటన్‌లు లేదా కీబోర్డ్‌తో జూమ్ చేయవచ్చు (జూమ్ చేయడానికి <kbd>+</kbd>/<kbd>-</kbd>, రీసెట్ చేయడానికి <kbd>0</kbd>, మూసివేయడానికి <kbd>Esc</kbd>)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p><strong>టెక్స్ట్</strong> వర్గం అనేది పేజీ యొక్క లైవ్, చదవగలిగే కాపీ. ఇది వచనాన్ని కలిగి ఉన్న ప్రతి మూలకాన్ని — హెడ్డింగ్‌లు, పేరాగ్రాఫ్‌లు, జాబితా అంశాలు, బటన్‌లు, <code>div</code>/<code>span</code> మరియు మరిన్ని — DOM క్రమంలో క్యాప్చర్ చేస్తుంది మరియు <strong>లైవ్</strong> ఆన్‌లో ఉన్నంత వరకు స్కాన్ చేస్తూనే ఉంటుంది.</p><p><strong>ప్రశ్న</strong> బాక్స్ నాలుగు విధాలుగా పని చేస్తుంది, దాని పక్కన ఉన్న డ్రాప్‌డౌన్ నుండి ఎంచుకోవచ్చు: <strong>కలిగి ఉంది</strong> మరియు <strong>Regex</strong> ఇప్పటికే క్యాప్చర్ చేసిన వచనాన్ని ఫిల్టర్ చేస్తాయి, అయితే <strong>CSS సెలెక్టర్</strong> మరియు <strong>XPath</strong> లైవ్ పేజీపై అమలవుతాయి, కాబట్టి అవి DOMలోని దేనినైనా చేరుకోగలవు. XPath మూలకాలకు బదులుగా విలువను అందించే ఎక్స్‌ప్రెషన్‌లను కూడా అంగీకరిస్తుంది, ఉదా. <code>count(//a)</code> లేదా <code>//@href</code>. తప్పుగా ఉన్న ప్రశ్న గురించి పేజీ ఏమి చెప్పినా అది బాక్స్ పక్కన చూపబడుతుంది. <strong>మూలకం</strong> ఫలితాన్ని ఒకే ట్యాగ్‌కు పరిమితం చేస్తుంది, పేజీలో కనుగొనబడిన ప్రతి ట్యాగ్ సంఖ్యతో సహా. ప్రశ్న బాక్స్‌ను క్లియర్ చేయడం (లేదా <strong>క్లియర్ చేయండి</strong> నొక్కడం) మిమ్మల్ని <em>అన్ని మూలకాలు</em>కు తిరిగి తీసుకెళ్లి పేజీని మళ్లీ క్యాప్చర్ చేస్తుంది — డ్రాప్‌డౌన్‌ను చేతితో రీసెట్ చేయాల్సిన అవసరం లేదు.</p><p><strong>చదవడం</strong> ట్యాగ్‌లు, చెక్‌బాక్స్‌లు మరియు లొకేషన్ బ్రెడ్‌క్రంబ్‌లను దాచిపెడుతుంది, కాబట్టి వచనం డాక్యుమెంట్ లాగా చదవగలిగేలా ఉంటుంది. పట్టికలు స్నాప్‌షాట్‌ల పరిమిత చరిత్రను నిల్వ చేస్తాయి కాబట్టి డైనమిక్ (SPA) పట్టికలు ఎప్పటికీ కోల్పోవు. ప్రతి స్నాప్‌షాట్‌ను నకిలీలు లేని ఒకే వీక్షణగా విలీనం చేయడానికి పట్టికపై <strong>అన్ని వరుసలను చూపండి</strong> నొక్కండి — ఎగుమతిలో ఉండేది సరిగ్గా అదే. <strong>TXT</strong> (చదవగలిగే పేజీ), <strong>MD</strong> (మార్క్‌డౌన్, పట్టికలతో సహా)గా, లేదా పట్టికలను CSV, HTML లేదా నిజమైన బహుళ-షీట్ <strong>XLSX</strong> వర్క్‌బుక్‌గా ఎగుమతి చేయండి. టిక్ చేసిన అంశాలకు ప్రాధాన్యత ఉంటుంది; లేకుంటే ప్రస్తుతం కనిపించే ప్రతిదీ ఎగుమతి చేయబడుతుంది.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML మరియు ఇతర క్యాప్షన్ ఫైల్‌లు — <code>&lt;track&gt;</code> మూలాలతో సహా — పత్రాలతో కలవకుండా వాటి స్వంత <strong>క్యాప్షన్‌లు</strong> ట్యాబ్‌లో ఉంటాయి."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "<code>.map</code> ఫైల్‌లు మరియు సోర్స్ మ్యాప్‌ల వలె కనిపించే JSON బాడీలు (వాటిలో <code>mappings</code> మరియు <code>sources</code> ఉంటాయి) JSON వ్యూయర్ మరియు ఫార్మాట్ సదుపాయంతో <strong>సోర్స్ మ్యాప్‌లు</strong> కింద సమూహం చేయబడతాయి, కాబట్టి అవి ఇకపై JSON ట్యాబ్‌ను అస్తవ్యస్తం చేయవు."
+  },
+  "guideSecDupesContent": {
+    "message": "చిత్రాల ట్యాబ్‌లో ప్యానెల్ క్యాప్చర్ చేసిన బైట్‌లను హ్యాష్ చేసి, ఒకేలాంటి ఫైల్‌లను గుర్తు పెడుతుంది. <strong>నకిలీలను దాచండి</strong> ఫిల్టర్ ప్రతి సెట్‌లో మొదటి కాపీని ఉంచుతుంది, కాబట్టి ప్రస్తుత వీక్షణ ZIPలో ఒకే థంబ్‌నెయిల్ రెండుసార్లు రాదు."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "బ్రౌజర్ స్థానికంగా ప్లే చేయలేని స్ట్రీమ్‌లు (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, తెలియని కోడెక్‌లు) బ్లాక్ ప్లేయర్‌కు బదులుగా ప్రత్యామ్నాయ వీక్షణను చూపుతాయి. HLS కోసం మీరు ప్యానెల్ నుండే సెగ్మెంట్‌లను ఒకే వీడియో ఫైల్‌లో విలీనం చేయవచ్చు లేదా అసలు మానిఫెస్ట్‌ను డౌన్‌లోడ్ చేసుకోవచ్చు."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "డైనమిక్ <strong>API</strong> ప్రతిస్పందనలు (XHR/fetch) URL ఆధారంగా నకిలీలు తొలగించబడవు — ప్రతి ప్రత్యుత్తరం జాబితాలోనే ఉంటుంది (పరిమిత FIFO), కాబట్టి మీరు పునరావృత అభ్యర్థనలను పోల్చవచ్చు. స్టాటిక్ ఆస్తుల నకిలీలు మాత్రం తొలగించబడతాయి. ప్రస్తుత DOMని మళ్లీ స్కాన్ చేయడానికి <strong>రిఫ్రెష్</strong>ని ఉపయోగించండి, మరియు మీరు ట్యాబ్‌లు మార్చడానికి ముందు ప్రారంభమైనవాటితో సహా ప్రతి నెట్‌వర్క్ అభ్యర్థనను క్యాప్చర్ చేయడానికి ప్యానెల్ తెరిచి ఉన్నప్పుడు పేజీని రీలోడ్ చేయండి."
+  },
+  "toolArrow": {
+    "message": "బాణం సాధనం"
+  },
+  "toolRect": {
+    "message": "దీర్ఘచతురస్ర సాధనం"
+  },
+  "toolText": {
+    "message": "టెక్స్ట్ సాధనం"
+  },
+  "toolUndo": {
+    "message": "చర్యరద్దు (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "మళ్లీ చేయి (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "రంగు"
+  },
+  "badgeStrokeSize": {
+    "message": "పరిమాణం: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "ఫాంట్ పరిమాణం: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "ఎంచుకున్న ప్రాంతాన్ని వీడియో / GIFగా రికార్డ్ చేయి"
+  },
+  "btnRecStart": {
+    "message": "రికార్డింగ్ ప్రారంభించు"
+  },
+  "btnRecPause": {
+    "message": "పాజ్ చేయి"
+  },
+  "btnRecResume": {
+    "message": "కొనసాగించు"
+  },
+  "btnRecStop": {
+    "message": "ముగించి డౌన్‌లోడ్ చేయి"
+  },
+  "btnRecCancel": {
+    "message": "రద్దు చేయి"
+  },
+  "toastRecSaved": {
+    "message": "ఎంచుకున్న ప్రాంతం రికార్డింగ్ సేవ్ అయింది"
+  },
+  "toastRecCancelled": {
+    "message": "వీడియో రికార్డింగ్ రద్దయింది"
+  },
+  "toastRecPermissionDenied": {
+    "message": "స్క్రీన్ రికార్డింగ్ అనుమతి ఇవ్వబడలేదు"
+  },
+  "btnPopupRecordArea": {
+    "message": "ప్రాంత వీడియో / GIF"
+  },
+  "btnPopupCaptureArea": {
+    "message": "ప్రాంత స్క్రీన్‌షాట్"
+  },
+  "contextMenuPickColor": {
+    "message": "స్క్రీన్ నుండి రంగును ఎంచుకో"
+  },
+  "btnPopupPickColor": {
+    "message": "రంగును ఎంచుకోండి"
+  },
+  "colorPickerTitle": {
+    "message": "రంగు ఎంపికకర్త"
+  },
+  "btnColorPickAgain": {
+    "message": "మరో రంగును ఎంచుకోండి"
+  },
+  "toastColorCopied": {
+    "message": "రంగు క్లిప్‌బోర్డ్‌కు కాపీ అయింది"
+  },
+  "toastProgressCapturing": {
+    "message": "పూర్తి పేజీని క్యాప్చర్ చేస్తోంది… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "చిత్రాన్ని కలుపుతోంది…"
+  },
+  "modalExportTitle": {
+    "message": "పూర్తి పేజీ స్క్రీన్‌షాట్ సిద్ధంగా ఉంది"
+  },
+  "btnExportPng": {
+    "message": "PNG డౌన్‌లోడ్ చేయి"
+  },
+  "btnExportJpg": {
+    "message": "JPG డౌన్‌లోడ్ చేయి"
+  },
+  "btnExportPdf": {
+    "message": "PDFగా సేవ్ చేయి"
+  },
+  "btnExportCopy": {
+    "message": "క్లిప్‌బోర్డ్‌కు కాపీ చేయి"
+  },
+  "btnExportGenerating": {
+    "message": "రూపొందిస్తోంది…"
+  },
+  "toastPdfGenerated": {
+    "message": "PDF పత్రం సేవ్ అయింది."
+  },
+  "settingNamingPatterns": {
+    "message": "ఫైల్ పేరు పెట్టే నమూనాలు"
+  },
+  "settingVideoFormat": {
+    "message": "డిఫాల్ట్ వీడియో ఫార్మాట్"
+  },
+  "settingNamingPreview": {
+    "message": "ప్రివ్యూ:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "GIF రూపొందిస్తోంది, దయచేసి వేచి ఉండండి…"
+  },
+  "settingGifResolution": {
+    "message": "డిఫాల్ట్ GIF రిజల్యూషన్"
+  },
+  "optGifOriginal": {
+    "message": "అసలు (1:1 స్థానిక రిజల్యూషన్ — పూర్తి 3K/4K, తగ్గింపు లేదు)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (గరిష్ఠం 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (గరిష్ఠం 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (గరిష్ఠం 854px — వేగంగా, చిన్న సైజు)"
+  },
+  "tipGifDurationLimit": {
+    "message": "GIF ఫార్మాట్ గరిష్టంగా 1 నిమిషం (60సె) రికార్డింగ్ వ్యవధికి మద్దతు ఇస్తుంది."
+  },
+  "guideSecScreenRecording": {
+    "message": "స్క్రీన్ రికార్డింగ్ (వీడియో & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "ఏదైనా స్క్రీన్ ప్రాంతాన్ని MP4, WebM లేదా యానిమేటెడ్ GIFగా రికార్డ్ చేయండి. GIF రికార్డింగ్‌లు 1:1 స్థానిక రిజల్యూషన్, 1080p, 720p మరియు 480p ప్రొఫైల్‌లను ప్రత్యక్ష అంచనా ఫైల్ పరిమాణాలతో కలిగి ఉంటాయి. ఉత్తమ బ్రౌజర్ పనితీరు కోసం గరిష్ట GIF రికార్డింగ్ వ్యవధి 1 నిమిషం (60సె)."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "GIF గరిష్ఠ నిడివి 1 నిమిషం (60 సె) చేరుకుంది. GIF రూపొందిస్తోంది…"
+  },
+  "labelGifMaxDuration": {
+    "message": "గరిష్ఠంగా 1 నిమిషం (60 సె)"
+  },
+  "settingGifFps": {
+    "message": "డిఫాల్ట్ GIF ఫ్రేమ్ రేట్ (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — స్మూత్ (చాలా సున్నితం, పెద్ద సైజు)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — ప్రామాణికం (వెబ్ మరియు సమతుల్యతకు సిఫార్సు)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — కాంపాక్ట్ / మీమ్ (తెగిపోయే కదలిక, చిన్న సైజు)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — స్టాప్-మోషన్ / నెమ్మది (దశలవారీగా, చాలా చిన్న సైజు)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — ప్రెజెంటేషన్ (సెకనుకు 1 ఫ్రేమ్, కనిష్ఠ సైజు)"
+  },
+  "popupRightClickHint": {
+    "message": "స్క్రీన్ రికార్డింగ్ (వీడియో/GIF) మరియు కలర్ పిక్కర్ కోసం వెబ్‌పేజీలో ఎక్కడైనా కుడి క్లిక్ చేయండి."
+  },
+  "toastElementZappedAd": {
+    "message": "ప్రకటన / iframe ఈ సెషన్ కోసం దాచబడింది.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "చిత్రం క్లిప్‌బోర్డ్‌కు కాపీ అయింది",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "మూసివేయి (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "సెట్టింగ్‌లు సేవ్ అయ్యాయి",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "ఫైల్‌ను డౌన్‌లోడ్ చేసి VLC లేదా మరొక మీడియా ప్లేయర్‌లో తెరవండి.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "ఈ రిసోర్స్ రకానికి ప్రివ్యూ లేదు",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "అసలును డౌన్‌లోడ్ చేయి",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "చిట్కా: డౌన్‌లోడ్ చేసిన ఫైల్‌ను VLC లేదా ఏదైనా డెస్క్‌టాప్ మీడియా ప్లేయర్‌లో తెరవండి — ఇది దాదాపు అన్ని ఫార్మాట్‌లను ప్లే చేస్తుంది.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP ఆర్కైవ్‌ను సృష్టిస్తోంది…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "మీ బ్రౌజర్ EyeDropper APIకి మద్దతు ఇవ్వదు.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "టూల్‌బార్‌ను లాగండి",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "ఫార్మాట్ మార్చు: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF రిజల్యూషన్: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF ఫ్రేమ్ రేట్: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "అంచనా GIF సైజు: ~$size$ MB (10 సెకన్లకు), గరిష్ఠ 60 సెకన్లకు ~$max$ MB వరకు.\nఫ్రేమ్ రేట్: $fps$ FPS.\nGIF రికార్డింగ్ గరిష్ఠంగా 1 నిమిషం (60 సె)కు పరిమితం.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ కాపీ చేయి",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "స్క్రీన్‌షాట్ ప్రివ్యూ",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — WhatsApp, Telegram, Jira, Apple, Windowsలో సహా ప్రతిచోటా ప్లే అవుతుంది)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (యానిమేటెడ్ చిత్రం — README, Jira, డాక్యుమెంటేషన్, మెసేజింగ్‌కు అనువైనది)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — ఓపెన్ వెబ్ ఫార్మాట్)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "యాక్టివ్ ట్యాబ్ కనుగొనబడలేదు.",
+    "description": "No active tab found."
+  }
+}

@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Kagua na pakua rasilimali za wavuti kama ZIP. Picha za skrini za ukurasa mzima, jedwali moja kwa moja, zana za wasanidi."
+  },
+  "actionTitle": {
+    "message": "Source Download — Fungua paneli na ufuatilie rasilimali"
+  },
+  "contextMenuZap": {
+    "message": "Ficha kipengele hiki"
+  },
+  "contextMenuUndoZap": {
+    "message": "Rejesha kipengele kilichofichwa mwisho"
+  },
+  "contextMenuResetZap": {
+    "message": "Weka upya vipengele vyote vilivyofichwa"
+  },
+  "contextMenuCapturePage": {
+    "message": "Nasa picha ya skrini ya ukurasa mzima"
+  },
+  "contextMenuPageArchive": {
+    "message": "Pakua hifadhi ya ukurasa kwa matumizi nje ya mtandao"
+  },
+  "catAll": {
+    "message": "Wote"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Picha"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Video"
+  },
+  "catAudio": {
+    "message": "Sauti"
+  },
+  "catCaptions": {
+    "message": "Manukuu"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Ramani za chanzo"
+  },
+  "catFonts": {
+    "message": "Fonti"
+  },
+  "catDocuments": {
+    "message": "Nyaraka"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Faili za Manifest"
+  },
+  "catText": {
+    "message": "Maandishi"
+  },
+  "catOther": {
+    "message": "Nyingine"
+  },
+  "catScreenshot": {
+    "message": "Picha ya skrini"
+  },
+  "catArchive": {
+    "message": "Kumbukumbu ya Ukurasa"
+  },
+  "btnRefresh": {
+    "message": "Onyesha upya"
+  },
+  "btnExport": {
+    "message": "Hamisha"
+  },
+  "btnDownloadSelected": {
+    "message": "Pakua Zilizochaguliwa"
+  },
+  "btnDownloadView": {
+    "message": "Pakua Mwonekano"
+  },
+  "btnDownloadAll": {
+    "message": "Pakua Zote"
+  },
+  "btnDownloadFiltered": {
+    "message": "Pakua Zilizochujwa"
+  },
+  "btnTheme": {
+    "message": "Badilisha mandhari"
+  },
+  "btnGuide": {
+    "message": "Mwongozo wa Mtumiaji"
+  },
+  "btnCaptureFullPage": {
+    "message": "Picha ya skrini ya Ukurasa Kamili"
+  },
+  "btnOfflineArchive": {
+    "message": "Hifadhi HTML Moja"
+  },
+  "filterMinKb": {
+    "message": "Kiwango cha chini cha KB"
+  },
+  "filterMaxKb": {
+    "message": "KB za juu zaidi"
+  },
+  "filterMinWidth": {
+    "message": "Upana wa chini px"
+  },
+  "filterMinHeight": {
+    "message": "Urefu wa chini px"
+  },
+  "filterSortName": {
+    "message": "Panga kwa jina"
+  },
+  "filterSortSize": {
+    "message": "Panga kwa ukubwa"
+  },
+  "filterSortType": {
+    "message": "Panga kwa aina"
+  },
+  "filterSortTime": {
+    "message": "Panga kwa wakati"
+  },
+  "filterHideDupes": {
+    "message": "Ficha nakala"
+  },
+  "filterClear": {
+    "message": "Futa"
+  },
+  "textModeContains": {
+    "message": "Inajumuisha"
+  },
+  "textModeRegex": {
+    "message": "Regex"
+  },
+  "textModeCss": {
+    "message": "Kiteuzi cha CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Chuja maandishi ya ukurasa au uulize moja kwa moja DOM..."
+  },
+  "textAllElements": {
+    "message": "Vipengele vyote"
+  },
+  "textLiveOn": {
+    "message": "Moja kwa moja: imewashwa"
+  },
+  "textLiveOff": {
+    "message": "Moja kwa moja: imezimwa"
+  },
+  "textScanNow": {
+    "message": "Changanua sasa"
+  },
+  "textReading": {
+    "message": "Hali ya kusoma"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Chagua nyenzo ili kukagua maelezo yake"
+  },
+  "inspectorDetails": {
+    "message": "Maelezo"
+  },
+  "inspectorOpenTab": {
+    "message": "Fungua kwenye kichupo kipya"
+  },
+  "inspectorCopyUrl": {
+    "message": "Nakili URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Pakua faili hii"
+  },
+  "inspectorClose": {
+    "message": "Funga"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Aina"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Ukubwa"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Chanzo"
+  },
+  "metaTitle": {
+    "message": "Kichwa"
+  },
+  "metaAlt": {
+    "message": "Alt"
+  },
+  "ratingPrompt": {
+    "message": "Je, unafurahia Source Download? Saidia maono yetu ya chanzo huria kwa kuacha maoni kwenye Chrome Web Store au kutoa nyota kwenye GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Acha Maoni"
+  },
+  "ratingStar": {
+    "message": "★ Toa Nyota kwenye GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Funga"
+  },
+  "toastElementZapped": {
+    "message": "Kipengele kimefichwa kwa kipindi hiki."
+  },
+  "toastElementRestored": {
+    "message": "Kipengele kimerejeshwa."
+  },
+  "toastAllElementsRestored": {
+    "message": "Vipengele vyote vilivyofichwa vimerejeshwa."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Inanasa picha ya skrini ya ukurasa mzima…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Picha ya skrini ya ukurasa mzima imehifadhiwa."
+  },
+  "toastArchiveCreated": {
+    "message": "Hifadhi ya HTML ya faili moja imehifadhiwa."
+  },
+  "brandSignature": {
+    "message": "Iliyoundwa na Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Picha na SVG"
+  },
+  "tabMedia": {
+    "message": "Midia na Sauti"
+  },
+  "tabFonts": {
+    "message": "Fonti"
+  },
+  "tabTextScraper": {
+    "message": "Maandishi na Majedwali"
+  },
+  "heroScreenshotTitle": {
+    "message": "Picha ya skrini ya Ukurasa Kamili"
+  },
+  "heroScreenshotDesc": {
+    "message": "Picha ya skrini inayounganisha skrini nyingi bila mshono, bila vichwa vinavyobaki juu"
+  },
+  "heroArchiveTitle": {
+    "message": "Kumbukumbu ya HTML ya Faili Moja"
+  },
+  "heroArchiveDesc": {
+    "message": "Inajumuisha CSS na picha za Base64 ndani ya faili; nakala salama ya kutumia nje ya mtandao"
+  },
+  "copyDataUri": {
+    "message": "Nakili Data-URI"
+  },
+  "copyUrl": {
+    "message": "Nakili URL"
+  },
+  "downloadSingle": {
+    "message": "Pakua"
+  },
+  "searchPlaceholder": {
+    "message": "Chuja kwa jina, URL, tagi, MIME au /regex/..."
+  },
+  "viewGrid": {
+    "message": "Mwonekano wa gridi"
+  },
+  "viewList": {
+    "message": "Mwonekano wa orodha"
+  },
+  "btnScreenshot": {
+    "message": "Picha ya skrini"
+  },
+  "btnArchive": {
+    "message": "Hifadhi HTML"
+  },
+  "exportJson": {
+    "message": "Orodha inayoonekana kama JSON"
+  },
+  "exportCsv": {
+    "message": "Orodha inayoonekana kama CSV"
+  },
+  "exportHar": {
+    "message": "Rekodi ya mtandao kama HAR"
+  },
+  "exportScreenshot": {
+    "message": "Picha ya skrini ya ukurasa mzima (PNG)"
+  },
+  "exportArchive": {
+    "message": "Kumbukumbu ya ukurasa wa nje ya mtandao (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Mbinu zote"
+  },
+  "filterTypeAll": {
+    "message": "Aina zote"
+  },
+  "filterSortDir": {
+    "message": "Badilisha kati ya kupanda / kushuka"
+  },
+  "emptyTitle": {
+    "message": "Hakuna nyenzo zilizopatikana"
+  },
+  "emptySubtitle": {
+    "message": "Pakia upya ukurasa huku paneli hii ikiwa wazi ili kunasa maombi ya mtandao, au bofya Onyesha upya ili kuchanganua DOM ya sasa."
+  },
+  "statusResources": {
+    "message": "rasilimali"
+  },
+  "statusFiltered": {
+    "message": "zilizochujwa"
+  },
+  "statusSelected": {
+    "message": "zilizochaguliwa"
+  },
+  "statusDupes": {
+    "message": "nakala zimefichwa"
+  },
+  "statusSize": {
+    "message": "ukubwa"
+  },
+  "langAuto": {
+    "message": "Otomatiki (Kivinjari)"
+  },
+  "langSelectorTitle": {
+    "message": "Chagua Lugha"
+  },
+  "textPillAll": {
+    "message": "Maudhui Yote"
+  },
+  "textPillText": {
+    "message": "📄 Maandishi na Makala"
+  },
+  "textPillTables": {
+    "message": "📊 Majedwali Pekee"
+  },
+  "textSelectAll": {
+    "message": "Chagua Zote"
+  },
+  "textDeselectAll": {
+    "message": "Ondoa Uteuzi Wote"
+  },
+  "textClearSelection": {
+    "message": "Futa"
+  },
+  "toastRefreshComplete": {
+    "message": "Uchanganuzi wa ukurasa umekamilika: rasilimali mpya $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Imenakili vipande $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Imenakiliwa kwenye ubao wa kunakili"
+  },
+  "toastTableCopied": {
+    "message": "Jedwali limenakiliwa kwenye ubao wa kunakili"
+  },
+  "toastNothingToExport": {
+    "message": "Hakuna cha kuhamisha"
+  },
+  "toastExportedTxt": {
+    "message": "Vipande $count$ vimehamishwa kama TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Vipande $count$ vimehamishwa kama Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Hakuna safu mlalo za jedwali zilizonaswa"
+  },
+  "toastExportedCsv": {
+    "message": "Jedwali limehamishwa kama CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Jedwali limehamishwa kama XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Majedwali $count$ yamehamishwa kama $format$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Laha $count$ zimehamishwa kama XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Hakuna rasilimali za kupakua."
+  },
+  "toastNoVisibleResources": {
+    "message": "Hakuna rasilimali zinazoonekana za kupakua."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Chagua angalau rasilimali moja kwanza."
+  },
+  "toastZipSaved": {
+    "message": "ZIP imehifadhiwa: rasilimali $fetched$ kati ya $total$",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "ZIP imeshindwa: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR imehamishwa (ingizo $count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL imenakiliwa kwenye ubao wa kunakili"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Dirisha lililokaguliwa la DevTools halipatikani."
+  },
+  "toastScreenshotError": {
+    "message": "Hitilafu ya picha ya skrini: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Inaunda hifadhi ya ukurasa kwa matumizi nje ya mtandao…"
+  },
+  "toastArchiveError": {
+    "message": "Hitilafu ya kumbukumbu: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Muda wa kuumbiza umekwisha — inaonyesha faili asili."
+  },
+  "toastFormatFailed": {
+    "message": "Imeshindwa kuumbiza faili — inaonyesha asili."
+  },
+  "emptySearchTitle": {
+    "message": "Hakuna kinacholingana na \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Jaribu neno tofauti la utafutaji, au ubadili hadi aina nyingine."
+  },
+  "emptyFiltersTitle": {
+    "message": "Hakuna rasilimali zinazolingana na vichujio vya sasa"
+  },
+  "emptyFiltersSub": {
+    "message": "Legeza vichujio vya ukubwa au vipimo hapo juu, au bonyeza Futa."
+  },
+  "textEmptyQueryReject": {
+    "message": "Ukurasa ulikataa hoja hiyo. Irekebishe hapo juu na matokeo yatarudi moja kwa moja."
+  },
+  "textEmptyNoMatch": {
+    "message": "Hakuna kipengele kwenye ukurasa kinacholingana na hoja hii. Jaribu kiteuzi pana zaidi, au badilisha hali iliyo kando ya kisanduku."
+  },
+  "textEmptyInitial": {
+    "message": "Bado hakuna kilichonaswa. Unasaji wa moja kwa moja unaendelea — ukurasa mzima utaonekana hapa kama maandishi yanayosomeka."
+  },
+  "textEmptyFiltered": {
+    "message": "Hakuna kitu kinacholingana na hoja ya sasa na kichujio cha kipengele."
+  },
+  "textSummaryBlocks": {
+    "message": "Vipande $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "Maneno $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "Herufi $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "Jedwali $tables$ · $rows$ safu mlalo za kipekee",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "Vilivyochaguliwa: $count$ — uhamishaji utatumia hivi pekee",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Jedwali — safu mlalo $count$ kwenye skrini",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Jedwali — safu mlalo zote za kipekee $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "Nakala-tazamo $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "imesasishwa $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Onyesha safu mlalo zote $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Inaonyesha safu mlalo zote"
+  },
+  "textTableHistory": {
+    "message": "Historia ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Ficha historia"
+  },
+  "textTableNoRows": {
+    "message": "Bado hakuna safu mlalo zilizonaswa."
+  },
+  "textBtnCopy": {
+    "message": "Nakili maandishi"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Nakili"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "Picha rudufu $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Hamisha"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Inapakia SVG..."
+  },
+  "inspectorSvgError": {
+    "message": "Maudhui ya SVG hayakuweza kupatikana."
+  },
+  "inspectorLoadingFont": {
+    "message": "Inapakia uhakiki wa fonti..."
+  },
+  "inspectorFontSample": {
+    "message": "Uhakiki wa Fonti"
+  },
+  "inspectorBeautify": {
+    "message": "Pamba msimbo"
+  },
+  "inspectorOriginal": {
+    "message": "Asili"
+  },
+  "inspectorHeaders": {
+    "message": "Vichwa (Headers)"
+  },
+  "inspectorResponse": {
+    "message": "Jibu"
+  },
+  "inspectorRequest": {
+    "message": "Ombi"
+  },
+  "inspectorQueryParams": {
+    "message": "Vigezo vya hoja"
+  },
+  "inspectorRequestBody": {
+    "message": "Mwili wa ombi"
+  },
+  "textHintHtml": {
+    "message": "Nakala ya moja kwa moja, inayosomeka ya ukurasa. Kila kipengele kilicho na maandishi hunaswa kwa mpangilio wa DOM na kuwekwa hapa ukurasa unapobadilika. Iulize kwa maandishi wazi, msemo wa kawaida, <strong>kiteuzi cha CSS</strong> au msemo wa <strong>XPath</strong>, kisha hamisha kile kinacholingana. Tazama <a href=\"#\" id=\"text-hint-guide\">mwongozo</a> kwa maelezo."
+  },
+  "textHeadings": {
+    "message": "Vichwa vya habari"
+  },
+  "textAllLevels": {
+    "message": "Ngazi zote"
+  },
+  "textMatches": {
+    "message": "zinazolingana"
+  },
+  "textMatch": {
+    "message": "inayolingana"
+  },
+  "textReadingOn": {
+    "message": "Kusoma: imewashwa"
+  },
+  "toastDownloadStarted": {
+    "message": "Upakuaji umeanza: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Imeshindwa kupata rasilimali hii (CORS au aina isiyotumika)."
+  },
+  "ratingBannerText": {
+    "message": "Je, unafurahia Source Download? Saidia maono yetu ya chanzo huria kwa kuacha maoni kwenye Chrome Web Store au kutoa nyota kwenye GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Maoni"
+  },
+  "ratingBannerStar": {
+    "message": "★ Nyota"
+  },
+  "textTableUniqueRows": {
+    "message": "Safu mlalo za kipekee $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "Sekunde $count$ zilizopita",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "Dakika $count$ zilizopita",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Nasa picha ya skrini ya eneo"
+  },
+  "btnAreaDownload": {
+    "message": "Pakua"
+  },
+  "btnAreaCopy": {
+    "message": "Nakili kwenye ubao wa kunakili"
+  },
+  "btnAreaCancel": {
+    "message": "Ghairi"
+  },
+  "toastAreaCopied": {
+    "message": "Picha ya skrini ya eneo imenakiliwa kwenye ubao wa kunakili"
+  },
+  "toastAreaDownloaded": {
+    "message": "Picha ya skrini ya eneo imehifadhiwa"
+  },
+  "statusFoundCssResources": {
+    "message": "Imepata rasilimali $count$ zilizorejelewa kutoka CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Imeshindwa kuchanganua DOM: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Inaorodhesha yaliyomo kwenye faili..."
+  },
+  "statusCheckingDuplicates": {
+    "message": "Inakagua nakala za picha..."
+  },
+  "statusWorking": {
+    "message": "Inafanya kazi..."
+  },
+  "filterMethodTitle": {
+    "message": "Chuja kwa mbinu ya HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Chuja kwa aina ya ombi"
+  },
+  "filterSortTitle": {
+    "message": "Panga rasilimali"
+  },
+  "textModeTitle": {
+    "message": "Jinsi kisanduku cha hoja kinafasiriwa"
+  },
+  "textKindTitle": {
+    "message": "Zuia kwa aina moja ya kipengele"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Kiwango cha kichwa"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Price:\\s*\\d+ — usemi wa kawaida wa JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — kiteuzi chochote cha CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Tafuta mwongozo..."
+  },
+  "popupIntro": {
+    "message": "Kategoria zinazohesabiwa na <strong>beji ya upau wa vidhibiti</strong>. Geuza moja ili uache kuihesabu - beji huakisi tu kile unachofuatilia."
+  },
+  "popupHelpTitle": {
+    "message": "Jinsi ya kutumia paneli kamili"
+  },
+  "popupStep1": {
+    "message": "Fungua DevTools kwa ukurasa unaotaka kukagua <div class=\"hint\"><kbd>F12</kbd> au <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Bofya kichupo cha <strong>Source Download</strong> kwenye upau wa zana wa DevTools"
+  },
+  "popupStep3": {
+    "message": "Vinjari, kagua na upakue rasilimali - kibinafsi au zote kwa wakati mmoja kama ZIP."
+  },
+  "popupNote": {
+    "message": "Kumbuka: Chrome hairuhusu viendelezi kufungua DevTools kiprogramu, ndiyo maana safu kamili ya uhandisi inafikiwa kupitia upau wa vidhibiti wa DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Fuatilia kategoria zote"
+  },
+  "popupLanguage": {
+    "message": "Lugha"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Jibu la binary — pakua iliulitazame"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Inapakia jibu..."
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Hakuna uhakiki wa jibu — maudhui hayakuweza kupatikana."
+  },
+  "inspectorLoadingContent": {
+    "message": "Inapakia maudhui..."
+  },
+  "inspectorNoPreview": {
+    "message": "Hakuna uhakiki unaopatikana — maudhui hayakuweza kupatikana."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Funga zote"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Funga vichupo vyote vilivyo wazi"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Bofya ili kupanua"
+  },
+  "inspectorViewSource": {
+    "message": "Tazama chanzo"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Onyesha msimbo wa SVG kwa uangaziaji wa sintaksia"
+  },
+  "inspectorFormatting": {
+    "message": "Inaumbiza..."
+  },
+  "findInContentPlaceholder": {
+    "message": "Tafuta katika maudhui..."
+  },
+  "findPreviousMatch": {
+    "message": "Mechi iliyotangulia"
+  },
+  "findNextMatch": {
+    "message": "Mechi inayofuata"
+  },
+  "findClose": {
+    "message": "Funga"
+  },
+  "findShowRaw": {
+    "message": "Onyesha maudhui asili (yasiyoumbizwa)"
+  },
+  "findBeautify": {
+    "message": "Umbiza / pamba maudhui haya"
+  },
+  "btnRaw": {
+    "message": "Asili"
+  },
+  "btnBeautify": {
+    "message": "Pamba"
+  },
+  "videoHlsDetected": {
+    "message": "Mtiririko wa HLS (m3u8) umetambuliwa"
+  },
+  "videoCannotPlay": {
+    "message": "Video hii haiwezi kuchezwa kwenye kivinjari"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome haiwezi kucheza mitiririko ya HLS moja kwa moja. Unaweza kuunganisha sehemu zote za <b>$NAME$</b> kuwa faili moja ya video ya MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Kivinjari hakitumii umbizo hili"
+  },
+  "btnMergeHls": {
+    "message": "Unganisha sehemu na upakue"
+  },
+  "toastHlsMerged": {
+    "message": "Sehemu $COUNT$ zimeunganishwa kuwa $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "ukubwa haujulikani"
+  },
+  "progressFetching": {
+    "message": "Inapakua $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Inaunda ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP imehifadhiwa: rasilimali $FETCHED$ kati ya $TOTAL$ ($SKIPPED$ zimeshindwa)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Jaribu tena $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Jaribu kupakua tena"
+  },
+  "searchRegexHint": {
+    "message": "Utafutaji wa Regex unatumika — weka hoja yako ndani ya /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Jumuisha kwenye uhamishaji"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Unganisha nakala-tazamo zote kuwa jedwali moja bila marudio — hiki ndicho kinachohamishwa"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Vinjari nakala-tazamo za awali za jedwali hili"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Pakua jedwali hili kama CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Nakala-tazamo $INDEX$ — $TIME$ (safu mlalo $COUNT$)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Badilisha uteuzi wa upakuaji wa pamoja"
+  },
+  "cardDownloadTitle": {
+    "message": "Pakua faili"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Upakuaji uliopita ulishindwa — bofya ili ujaribu tena"
+  },
+  "btnThemeLight": {
+    "message": "Badili hadi mandhari mepesi"
+  },
+  "btnThemeDark": {
+    "message": "Badili hadi mandhari meusi"
+  },
+  "guideTitle": {
+    "message": "Source Download — Mwongozo wa Mtumiaji"
+  },
+  "guideEmpty": {
+    "message": "Hakuna sehemu za mwongozo zinazolingana na utafutaji wako."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — bila utegemezi wowote 100%.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Punguza (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Kuza (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Weka upya ukuzaji (0)"
+  },
+  "lightboxClose": {
+    "message": "Funga (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Buruta ili kubadilisha ukubwa"
+  },
+  "ratingDismissTitle": {
+    "message": "Funga"
+  },
+  "inspectorResourceTitle": {
+    "message": "Rasilimali"
+  },
+  "guideSecGettingStarted": {
+    "message": "Kuanza"
+  },
+  "guideSecCategories": {
+    "message": "Kategoria"
+  },
+  "guideSecSearchFilters": {
+    "message": "Tafuta na vichujio"
+  },
+  "guideSecGridView": {
+    "message": "Mwonekano wa gridi na orodha"
+  },
+  "guideSecInspect": {
+    "message": "Kagua rasilimali"
+  },
+  "guideSecDownloading": {
+    "message": "Inapakua"
+  },
+  "guideSecLightbox": {
+    "message": "Lightbox"
+  },
+  "guideSecTextTables": {
+    "message": "Maandishi na majedwali"
+  },
+  "guideSecCaptions": {
+    "message": "Manukuu na tafsiri za maandishi"
+  },
+  "guideSecSourceMaps": {
+    "message": "Ramani za chanzo (Source maps)"
+  },
+  "guideSecDupes": {
+    "message": "Picha rudufu"
+  },
+  "guideSecVideoHls": {
+    "message": "Njia mbadala ya video na HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Vidokezo vya hali ya juu"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Bofya kichupo cha <strong>Source Download</strong> kwenye upau wa zana wa DevTools (bonyeza <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, kisha kichupo kwenye upau wa zana wa DevTools). Chrome hairuhusu viendelezi kufungua DevTools kiotomatiki, ndiyo maana paneli iko hapo. Dirisha ibukizi la aikoni ya upau wa zana hukuwezesha kuchagua ni kategoria zipi zinazohesabiwa kwenye beji ya aikoni. Kitufe cha jua/mwezi kwenye upau wa zana wa paneli hufunga mandhari angavu au meusi bila kutegemea Chrome; chaguo hilo hukumbukwa."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Vichupo vilivyo wima upande wa kushoto huweka kila rasilimali iliyonaswa katika kategoria 17 maalum kulingana na aina: Picha, Video, Sauti, Manukuu, Nyaraka, Fonti, Ramani za chanzo, WASM, SVG, API, Vidakuzi, Hifadhi, na zaidi. Kila kichupo huonyesha hesabu ya moja kwa moja. Kategoria moja pekee huonyeshwa kwa wakati mmoja; kubadili huweka upya vichujio vyote, kwa hivyo unachoona hulingana na kichupo kila wakati."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Upau wa kutafutia huchuja kwa jina, URL, aina, maandishi mbadala au kichwa. Weka hoja yako katika <kbd>/…/</kbd> ili kutumia usemi wa kawaida, k.m. <code>/\\.(png|jpg)$/</code>. Chini ya upau wa vidhibiti, upau wa kichujio hubadilika kwa kila kategoria: ukubwa na masafa ya midia, mbinu ya HTTP na aina ya ombi la API, pamoja na kupanga na mwelekeo."
+  },
+  "guideSecGridViewContent": {
+    "message": "Badilisha kati ya gridi ndogo (vijipicha vidogo) na orodha ya kina kwa vitufe vilivyo kando ya upau wa kutafutia. Chaguo lako hukumbukwa kati ya vipindi. Kwenye mwonekano wa orodha, visanduku vya kuteua hukuwezesha kuchagua rasilimali mahususi ili kuzipakua kwa pamoja."
+  },
+  "guideSecInspectContent": {
+    "message": "Bofya rasilimali yoyote ili kuifungua kwenye kidirisha cha ukaguzi upande wa kulia. Kila faili iliyofunguliwa huwa kichupo, kwa hivyo unaweza kulinganisha rasilimali kadhaa kando kwa kando — mpya zaidi hufunguka upande wa kushoto. Kuna vitazamaji maalum vya picha, video, sauti, fonti, SVG, na maandishi/msimbo (vyenye kitufe cha Beautify). API huonyesha mwonekano uliogawanywa: jibu upande wa kushoto, maelezo ya ombi (mbinu, hali, vichwa, vigezo vya hoja na mwili) upande wa kulia."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Pakua Mwonekano</strong> huhifadhi rasilimali zinazoonekana kwa sasa (kategoria inayotumika + utafutaji + vichujio) kama ZIP; huonekana kama <em>Pakua Zilizochujwa (N)</em> wakati vichujio vinatumika. Elea juu ya kitufe chochote cha kupakua ili uone makadirio ya ukubwa wa kumbukumbu kabla ya kubofya. <strong>Pakua Zilizochaguliwa</strong> hupakua vipengee vilivyoteuliwa pekee. <strong>Pakua Zote</strong> hunasa kila rasilimali iliyogunduliwa kwenye ZIP yenye muundo wa folda. Vipakuliwa vilivyoshindwa hujaribiwa tena kiotomatiki na vinaweza kujaribiwa tena kutoka kwenye menyu ya muktadha. <strong>Hamisha</strong> huandika orodha inayoonekana kama JSON au CSV, au huhifadhi rekodi ya mtandao ya Chrome kama faili ya HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Kitufe cha kukuza hufungua midia katika lightbox ya ukubwa kamili ambapo unaweza kusogeza kwa kuburuta, kukuza kwa gurudumu la kipanya, vitufe vya skrini au kibodi (<kbd>+</kbd>/<kbd>-</kbd> kukuza, <kbd>0</kbd> kuweka upya, <kbd>Esc</kbd> kufunga)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Kategoria ya <strong>Maandishi</strong> ni nakala ya moja kwa moja, inayosomeka ya ukurasa. Hunasa kila kipengele chenye maandishi — vichwa, aya, vipengee vya orodha, vitufe, <code>div</code>/<code>span</code> na zaidi — kwa mpangilio wa DOM, na huendelea kuchanganua wakati <strong>Live</strong> imewashwa.</p><p>Kisanduku cha <strong>Hoja</strong> hufanya kazi kwa njia nne, zinazochaguliwa kutoka kwenye menyu kunjuzi iliyo kando yake: <strong>Inajumuisha</strong> na <strong>Regex</strong> huchuja maandishi yaliyonaswa tayari, huku <strong>Kiteuzi cha CSS</strong> na <strong>XPath</strong> zikiendeshwa dhidi ya ukurasa wa moja kwa moja ili ziweze kufikia chochote kwenye DOM. XPath pia hukubali misemo inayorudisha thamani badala ya vipengele, kama vile <code>count(//a)</code> au <code>//@href</code>. Chochote ambacho ukurasa unasema kuhusu hoja iliyo na hitilafu huonyeshwa kando ya kisanduku. <strong>Kipengele</strong> hupunguza matokeo hadi lebo moja, pamoja na hesabu ya kila lebo iliyopo kwenye ukurasa. Kufuta kisanduku cha hoja (au kubonyeza <strong>Futa</strong>) hukurudisha kwenye <em>Vipengele vyote</em> na kunasa ukurasa upya — huhitaji kuweka upya menyu kunjuzi kwa mkono.</p><p><strong>Kusoma</strong> huficha lebo, visanduku vya kuteua na njia za mahali ili mtiririko usomeke kama hati. Majedwali huhifadhi historia yenye kikomo ya nakala-tazamo ili majedwali yanayobadilika (SPA) yasipotee kamwe. Bonyeza <strong>Onyesha safu mlalo zote</strong> kwenye jedwali ili kuunganisha kila nakala-tazamo kuwa mwonekano mmoja usio na marudio — hicho ndicho hasa kinachojumuishwa kwenye uhamishaji. Hamisha kama <strong>TXT</strong> (ukurasa unaosomeka), <strong>MD</strong> (Markdown, majedwali yakijumuishwa), au majedwali kama CSV, HTML au kitabu halisi cha kazi chenye laha nyingi cha <strong>XLSX</strong>. Vipengee vilivyoteuliwa hupewa kipaumbele; vinginevyo kila kinachoonekana kwa sasa huhamishwa.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML na faili nyingine za manukuu — pamoja na vyanzo vya <code>&lt;track&gt;</code> — huwekwa kwenye kichupo chake cha <strong>Manukuu</strong> badala ya kuchanganywa na nyaraka."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Faili za <code>.map</code> na miili ya JSON inayofanana na ramani za chanzo (zina <code>mappings</code> na <code>sources</code>) hupangwa chini ya <strong>Ramani za chanzo</strong>, pamoja na kitazamaji cha JSON na Beautify, ili zisichafue tena kichupo cha JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "Kwenye kichupo cha Picha, paneli huhesabu heshi ya baiti zilizonaswa na kuweka alama kwenye faili zinazofanana. Kichujio cha <strong>Ficha nakala</strong> huhifadhi nakala ya kwanza ya kila seti ili ZIP ya mwonekano isijumuishe kijipicha kimoja mara mbili."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Mitiririko ambayo kivinjari hakiwezi kucheza moja kwa moja (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, kodeki zisizojulikana) huonyesha mbadala badala ya kicheza cheusi. Kwa HLS unaweza kuunganisha sehemu kuwa faili moja ya video moja kwa moja kutoka kwenye paneli, au kupakua faili ya manifest asili."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Majibu ya <strong>API</strong> yanayobadilika (XHR/fetch) hayaondolewi marudio kwa URL — kila jibu hubaki kwenye orodha (kikomo cha FIFO) ili uweze kulinganisha maombi yanayojirudia. Rasilimali tuli huondolewa marudio. Tumia <strong>Onyesha upya</strong> ili kuchanganua DOM ya sasa tena, na pakia upya ukurasa huku paneli ikiwa wazi ili kunasa kila ombi la mtandao, ikiwemo yale yaliyoanzishwa kabla ya kubadili vichupo."
+  },
+  "toolArrow": {
+    "message": "Zana ya mshale"
+  },
+  "toolRect": {
+    "message": "Zana ya mstatili"
+  },
+  "toolText": {
+    "message": "Zana ya maandishi"
+  },
+  "toolUndo": {
+    "message": "Tendua (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Rudia (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Rangi"
+  },
+  "badgeStrokeSize": {
+    "message": "Ukubwa: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Ukubwa wa fonti: $size$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Rekodi eneo lililochaguliwa kama video / GIF"
+  },
+  "btnRecStart": {
+    "message": "Anza kurekodi"
+  },
+  "btnRecPause": {
+    "message": "Sitisha"
+  },
+  "btnRecResume": {
+    "message": "Endelea"
+  },
+  "btnRecStop": {
+    "message": "Maliza na upakue"
+  },
+  "btnRecCancel": {
+    "message": "Ghairi"
+  },
+  "toastRecSaved": {
+    "message": "Rekodi ya eneo lililochaguliwa imehifadhiwa"
+  },
+  "toastRecCancelled": {
+    "message": "Kurekodi video kumeghairiwa"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Ruhusa ya kurekodi skrini haikutolewa"
+  },
+  "btnPopupRecordArea": {
+    "message": "Video / GIF ya Eneo"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Picha ya skrini ya Eneo"
+  },
+  "contextMenuPickColor": {
+    "message": "Chagua rangi kutoka skrini"
+  },
+  "btnPopupPickColor": {
+    "message": "Chagua Rangi"
+  },
+  "colorPickerTitle": {
+    "message": "Kichagua rangi"
+  },
+  "btnColorPickAgain": {
+    "message": "Chagua rangi nyingine"
+  },
+  "toastColorCopied": {
+    "message": "Rangi imenakiliwa kwenye ubao wa kunakili"
+  },
+  "toastProgressCapturing": {
+    "message": "Inanasa ukurasa mzima… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Inaunganisha picha…"
+  },
+  "modalExportTitle": {
+    "message": "Picha ya skrini ya ukurasa mzima iko tayari"
+  },
+  "btnExportPng": {
+    "message": "Pakua PNG"
+  },
+  "btnExportJpg": {
+    "message": "Pakua JPG"
+  },
+  "btnExportPdf": {
+    "message": "Hifadhi kama PDF"
+  },
+  "btnExportCopy": {
+    "message": "Nakili kwenye ubao wa kunakili"
+  },
+  "btnExportGenerating": {
+    "message": "Inaunda…"
+  },
+  "toastPdfGenerated": {
+    "message": "Hati ya PDF imehifadhiwa."
+  },
+  "settingNamingPatterns": {
+    "message": "Miundo ya Majina ya Faili"
+  },
+  "settingVideoFormat": {
+    "message": "Umbizo Chaguomsingi la Video"
+  },
+  "settingNamingPreview": {
+    "message": "Uhakiki:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Inaunda GIF, tafadhali subiri…"
+  },
+  "settingGifResolution": {
+    "message": "Azimio Chaguomsingi la GIF"
+  },
+  "optGifOriginal": {
+    "message": "Asili (1:1 azimio asilia — 3K/4K kamili, bila kupunguza ukubwa)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (juu zaidi 1920px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (juu zaidi 1280px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (juu zaidi 854px — haraka zaidi na ukubwa mdogo)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Umbizo la GIF linaunga mkono muda wa juu zaidi wa kurekodi wa dakika 1 (sekunde 60)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Kurekodi skrini (Video & GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Rekodi eneo lolote la skrini kama MP4, WebM, au GIF yenye uhuishaji. Rekodi za GIF hutoa wasifu wa azimio asili 1:1, 1080p, 720p, na 480p pamoja na makadirio ya moja kwa moja ya ukubwa wa faili. Muda wa juu zaidi wa kurekodi GIF ni dakika 1 (sekunde 60) kwa utendaji bora wa kivinjari."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Muda wa juu zaidi wa GIF wa dakika 1 (sekunde 60) umefikiwa. Inaunda GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Upeo wa dakika 1 (sekunde 60)"
+  },
+  "settingGifFps": {
+    "message": "Kasi Chaguomsingi ya Fremu za GIF (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — Laini (mwendo laini sana, ukubwa mkubwa zaidi)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — Kawaida (inapendekezwa kwa wavuti na uwiano mzuri)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — Fupi / Meme (mwendo wa hatua, ukubwa mdogo)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — Stop-motion / Polepole (hatua kwa hatua, ukubwa mdogo sana)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — Wasilisho (fremu 1 kwa sekunde, ukubwa wa chini kabisa)"
+  },
+  "popupRightClickHint": {
+    "message": "Bofya kulia popote kwenye ukurasa wa wavuti ili kutumia Kurekodi Skrini (Video/GIF) na Kiteua Rangi."
+  },
+  "toastElementZappedAd": {
+    "message": "Tangazo / iframe limefichwa kwa kipindi hiki.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Picha imenakiliwa kwenye ubao wa kunakili",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Funga (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Mipangilio imehifadhiwa",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Pakua faili kisha ifungue kwa VLC au kicheza media kingine.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Hakuna onyesho la awali la aina hii ya rasilimali",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Pakua asili",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Kidokezo: fungua faili iliyopakuliwa kwa VLC au kicheza media chochote cha kompyuta — kinacheza karibu kila umbizo.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Inaunda hifadhi ya ZIP…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Kivinjari chako hakitumii EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Buruta upau wa zana",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Badilisha umbizo: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Azimio la GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Kasi ya fremu za GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Ukubwa unaokadiriwa wa GIF: ~$size$ MB (kwa sekunde 10), hadi ~$max$ MB kwa upeo wa sekunde 60.\nKasi ya fremu: $fps$ FPS.\nKurekodi GIF kunadhibitiwa hadi upeo wa dakika 1 (sekunde 60).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Nakili $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Onyesho la awali la picha ya skrini",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — inacheza kila mahali, ikiwemo WhatsApp, Telegram, Jira, Apple na Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (picha inayosogea — bora kwa README, Jira, nyaraka na ujumbe)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — umbizo huria la wavuti)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Hakuna kichupo amilifu kilichopatikana.",
+    "description": "No active tab found."
+  }
+}

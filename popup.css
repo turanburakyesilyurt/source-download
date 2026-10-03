@@ -326,3 +326,23 @@ kbd {
   padding-top: 10px;
 }
 
+
+/* ============================================================
+ * RTL Support (Arabic, Hebrew, Persian)
+ * ============================================================ */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .popup__footer {
+  direction: ltr;
+}
+
+html[dir="rtl"] .popup__lang-select {
+  direction: rtl;
+}
+
+html[dir="rtl"] .popup__badge {
+  direction: ltr;
+}

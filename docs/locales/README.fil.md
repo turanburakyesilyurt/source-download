@@ -1,0 +1,253 @@
+<p align="center">
+  <img src="../../icons/icon128.png" width="96" height="96" alt="Source Download">
+</p>
+
+<h1 align="center">Source Download</h1>
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Wika-Filipino-2563eb?style=for-the-badge" alt="Filipino"></a>
+</p>
+
+<p align="center">
+  <a href="../../README.md"><img src="https://img.shields.io/badge/Language-English-4f8cff?style=flat-square" alt="English"></a>
+  <a href="README.tr.md"><img src="https://img.shields.io/badge/Dil-T%C3%BCrk%C3%A7e-e11d48?style=flat-square" alt="Türkçe"></a>
+  <a href="README.de.md"><img src="https://img.shields.io/badge/Sprache-Deutsch-333333?style=flat-square" alt="Deutsch"></a>
+  <a href="README.es.md"><img src="https://img.shields.io/badge/Idioma-Espa%C3%B1ol-eab308?style=flat-square" alt="Español"></a>
+  <a href="README.fr.md"><img src="https://img.shields.io/badge/Langue-Fran%C3%A7ais-0055a5?style=flat-square" alt="Français"></a>
+  <a href="README.it.md"><img src="https://img.shields.io/badge/Lingua-Italiano-008c45?style=flat-square" alt="Italiano"></a>
+  <a href="README.ja.md"><img src="https://img.shields.io/badge/%E8%A8%80%E8%AA%9E-%E6%97%A5%E6%9C%AC%E8%AA%9E-dc2626?style=flat-square" alt="日本語"></a>
+  <a href="README.ko.md"><img src="https://img.shields.io/badge/%EC%96%B8%EC%96%B4-%ED%95%9C%EA%B5%AD%EC%96%B4-0f4c81?style=flat-square" alt="한국어"></a>
+  <a href="README.pt-BR.md"><img src="https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(BR)-009c3b?style=flat-square" alt="Português (BR)"></a>
+  <a href="README.ru.md"><img src="https://img.shields.io/badge/%D0%AF%D0%B7%D1%8B%D0%BA-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-0284c7?style=flat-square" alt="Русский"></a>
+  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-b91c1c?style=flat-square" alt="简体中文"></a>
+  <a href="README.en-US.md"><img src="https://img.shields.io/badge/Language-English%20(US)-4f8cff?style=flat-square" alt="English (US)"></a>
+  <a href="README.en-GB.md"><img src="https://img.shields.io/badge/Language-English%20(UK)-1d4ed8?style=flat-square" alt="English (UK)"></a>
+  <a href="README.es-419.md"><img src="https://img.shields.io/badge/Idioma-Espa%C3%B1ol%20(LatAm)-eab308?style=flat-square" alt="Español (LatAm)"></a>
+  <a href="README.pt-PT.md"><img src="https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(PT)-009c3b?style=flat-square" alt="Português (PT)"></a>
+  <a href="README.zh-TW.md"><img src="https://img.shields.io/badge/%E8%AA%9E%E8%A8%80-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-b91c1c?style=flat-square" alt="繁體中文"></a>
+  <a href="README.pl.md"><img src="https://img.shields.io/badge/J%C4%99zyk-Polski-dc2626?style=flat-square" alt="Polski"></a>
+  <a href="README.nl.md"><img src="https://img.shields.io/badge/Taal-Nederlands-f97316?style=flat-square" alt="Nederlands"></a>
+  <a href="README.cs.md"><img src="https://img.shields.io/badge/Jazyk-%C4%8Ce%C5%A1tina-1e40af?style=flat-square" alt="Čeština"></a>
+  <a href="README.sv.md"><img src="https://img.shields.io/badge/Spr%C3%A5k-Svenska-0284c7?style=flat-square" alt="Svenska"></a>
+  <a href="README.da.md"><img src="https://img.shields.io/badge/Sprog-Dansk-c2410c?style=flat-square" alt="Dansk"></a>
+  <a href="README.fi.md"><img src="https://img.shields.io/badge/Kieli-Suomi-2563eb?style=flat-square" alt="Suomi"></a>
+  <a href="README.no.md"><img src="https://img.shields.io/badge/Spr%C3%A5k-Norsk-b91c1c?style=flat-square" alt="Norsk"></a>
+  <a href="README.uk.md"><img src="https://img.shields.io/badge/%D0%9C%D0%BE%D0%B2%D0%B0-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0-0284c7?style=flat-square" alt="Українська"></a>
+  <a href="README.vi.md"><img src="https://img.shields.io/badge/Ng%C3%B4n%20ng%E1%BB%AF-Ti%E1%BA%BFng%20Vi%E1%BB%87t-ea580c?style=flat-square" alt="Tiếng Việt"></a>
+  <a href="README.id.md"><img src="https://img.shields.io/badge/Bahasa-Indonesia-dc2626?style=flat-square" alt="Indonesia"></a>
+  <a href="README.th.md"><img src="https://img.shields.io/badge/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-%E0%B9%84%E0%B8%97%E0%B8%A2-7c3aed?style=flat-square" alt="ไทย"></a>
+  <a href="README.fil.md"><img src="https://img.shields.io/badge/Wika-Filipino-2563eb?style=flat-square" alt="Filipino"></a>
+  <a href="README.ms.md"><img src="https://img.shields.io/badge/Bahasa-Melayu-d97706?style=flat-square" alt="Melayu"></a>
+  <a href="README.ar.md"><img src="https://img.shields.io/badge/%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-059669?style=flat-square" alt="العربية"></a>
+  <a href="README.he.md"><img src="https://img.shields.io/badge/%D7%A9%D7%A4%D7%94-%D7%A2%D7%91%D7%A8%D7%99%D7%AA-0284c7?style=flat-square" alt="עברית"></a>
+  <a href="README.fa.md"><img src="https://img.shields.io/badge/%D8%B2%D8%A8%D8%A7%D9%86-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-d97706?style=flat-square" alt="فارسی"></a>
+  <a href="README.el.md"><img src="https://img.shields.io/badge/%CE%93%CE%BB%CF%8E%CF%83%CF%83%CE%B1-%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC-0284c7?style=flat-square" alt="Ελληνικά"></a>
+  <a href="README.ro.md"><img src="https://img.shields.io/badge/Limb%C4%83-Rom%C3%A2n%C4%83-2563eb?style=flat-square" alt="Română"></a>
+  <a href="README.hu.md"><img src="https://img.shields.io/badge/Nyelv-Magyar-059669?style=flat-square" alt="Magyar"></a>
+  <a href="README.sk.md"><img src="https://img.shields.io/badge/Jazyk-Sloven%C4%8Dina-2563eb?style=flat-square" alt="Slovenčina"></a>
+  <a href="README.bg.md"><img src="https://img.shields.io/badge/%D0%95%D0%B7%D0%B8%D0%BA-%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8-059669?style=flat-square" alt="Български"></a>
+  <a href="README.hr.md"><img src="https://img.shields.io/badge/Jezik-Hrvatski-dc2626?style=flat-square" alt="Hrvatski"></a>
+  <a href="README.sr.md"><img src="https://img.shields.io/badge/%D0%88%D0%B5%D0%B7%D0%B8%D0%BA-%D0%A1%D1%80%D0%BF%D1%81%D0%BA%D0%B8-1d4ed8?style=flat-square" alt="Српски"></a>
+  <a href="README.sl.md"><img src="https://img.shields.io/badge/Jezik-Sloven%C5%A1%C4%8Dina-059669?style=flat-square" alt="Slovenščina"></a>
+  <a href="README.lt.md"><img src="https://img.shields.io/badge/Kalba-Lietuvi%C5%B3-d97706?style=flat-square" alt="Lietuvių"></a>
+  <a href="README.lv.md"><img src="https://img.shields.io/badge/Valoda-Latvie%C5%A1u-991b1b?style=flat-square" alt="Latviešu"></a>
+  <a href="README.et.md"><img src="https://img.shields.io/badge/Keel-Eesti-2563eb?style=flat-square" alt="Eesti"></a>
+  <a href="README.ca.md"><img src="https://img.shields.io/badge/Idioma-Catal%C3%A0-ea580c?style=flat-square" alt="Català"></a>
+  <a href="README.bn.md"><img src="https://img.shields.io/badge/%E0%A6%AD%E0%A6%BE%E0%A6%B7%E0%A6%BE-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE-059669?style=flat-square" alt="বাংলা"></a>
+  <a href="README.hi.md"><img src="https://img.shields.io/badge/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE-%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80-ea580c?style=flat-square" alt="हिन्दी"></a>
+  <a href="README.ta.md"><img src="https://img.shields.io/badge/%E0%AE%AE%E0%AF%8A%E0%AE%B4%E0%AE%BF-%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D-b45309?style=flat-square" alt="தமிழ்"></a>
+  <a href="README.te.md"><img src="https://img.shields.io/badge/%E0%B0%AD%E0%B0%BE%E0%B0%B7-%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81-7c3aed?style=flat-square" alt="తెలుగు"></a>
+  <a href="README.mr.md"><img src="https://img.shields.io/badge/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE-%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80-ea580c?style=flat-square" alt="मराठी"></a>
+  <a href="README.gu.md"><img src="https://img.shields.io/badge/%E0%AA%AD%E0%AA%BE%E0%AA%B7%E0%AA%BE-%E0%AA%97%E0%AB%81%E0%AA%9C%E0%AA%B0%E0%AA%BE%E0%AA%A4%E0%AB%80-d97706?style=flat-square" alt="ગુજરાતી"></a>
+  <a href="README.kn.md"><img src="https://img.shields.io/badge/%E0%B2%AD%E0%B2%BE%E0%B2%B7%E0%B3%86-%E0%B2%95%E0%B2%A8%E0%B3%8D%E0%B2%A8%E0%B2%A1-ca8a04?style=flat-square" alt="ಕನ್ನಡ"></a>
+  <a href="README.ml.md"><img src="https://img.shields.io/badge/%E0%B4%AD%E0%B4%BE%E0%B4%B7-%E0%B4%AE%E0%B4%B2%E0%B4%AF%E0%B4%BE%E0%B4%B3%E0%B4%82-059669?style=flat-square" alt="മലയാളം"></a>
+  <a href="README.sw.md"><img src="https://img.shields.io/badge/Lugha-Kiswahili-0284c7?style=flat-square" alt="Kiswahili"></a>
+  <a href="README.am.md"><img src="https://img.shields.io/badge/%E1%89%8B%E1%8A%95%E1%89%8B-%E1%8A%A0%E1%88%9B%E1%88%AD%E1%8A%9B-16a34a?style=flat-square" alt="አማርኛ"></a>
+</p>
+
+<p align="center">
+  <em>Mag-browse, mag-inspect at mag-download ng bawat web asset na nilo-load ng isang page nang tuloy-tuloy bilang ZIP.</em><br>
+  Source Download — bawat asset ng isang page, isang click lang
+</p>
+
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
+  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
+  <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
+  <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
+  <img src="https://img.shields.io/badge/build--step-none-22c55e?style=flat-square" alt="No build step">
+  <img src="https://img.shields.io/badge/privacy-100%25%20local%20%7C%20zero%20telemetry-22c55e?style=flat-square" alt="Zero telemetry">
+  <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
+  <img src="https://img.shields.io/badge/language-Pure%20JavaScript-facc15?style=flat-square" alt="Pure JavaScript">
+  <img src="https://img.shields.io/badge/browsers-Chrome%20%7C%20Edge%20%7C%20Brave%20%7C%20Opera-9333ea?style=flat-square" alt="Chrome, Edge, Brave, Opera">
+</p>
+
+---
+
+## Kumusta, ako si Turan Burak Yeşilyurt
+
+Sa loob ng maraming taon, gumawa ako ng mga automation para sa **web scraping**, **data analysis** at **QA workflow**. Tapos pinamahalaan ng mga SPA ang web — at paulit-ulit akong nababangga sa iisang pader: bilang end user, hindi madaling makuha ang mga bagay na *nakikita* mo sa screen, at bilang developer, madalas na pakiramdam na kulang o sobrang bigat ng Chrome DevTools. Ang pagkadismaya na iyon ang mismong dahilan kung bakit ko binuo ang **Source Download**.
+
+Ito ang **una kong open-source na proyekto**, kaya napakahalaga ng feedback mo — ito ang pinakamalaking tulong para mapabuti pa ito. At pakiusap, huwag kalimutang [**kumonekta sa akin sa LinkedIn**](https://www.linkedin.com/in/turan-burak-yesilyurt/) o bisitahin ang [**2run.dev**](https://2run.dev) — gusto kong marinig kung paano mo ito ginagamit at makipagkwentuhan tungkol sa kung ano pa ang mabubuo natin nang magkasama. Enjoy!
+
+> **Chrome Web Store:** [I-install ang Source Download mula sa Chrome Web Store](https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd)
+
+---
+
+> **Isang pag-amin at open-source na pangako:** Halos bawat tool na "i-download ang mga asset ng page na ito" sa store ay balot lang ng isang tambak na third-party na library. Naiiba ito. Bawat byte ng Source Download — kasama ang **ZIP writer**, ang **XLSX builder**, ang **HLS merger**, ang **GIF encoder** at ang mga **code formatter** — ay hand-written mula sa simula. Walang framework, walang external na dependency, walang build step, walang telemetry. Purong vanilla JavaScript, nababasa at nao-audit sa isang upuan lang.
+
+---
+
+## Visual Tour at Mga Pangunahing Module
+
+Tuklasin ang mga high-resolution na interface module na direktang nakapaloob sa Google Chrome DevTools, Right-Click Menu, at Toolbar Popup.
+
+### 1. I-capture at i-download ang lahat sa web
+> **★ DEVTOOLS ENGINEERING SUITE · F12**
+
+<p align="center">
+  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="I-capture at i-download ang lahat sa web">
+</p>
+
+---
+
+### 2. I-record ang anumang area bilang video at GIF
+> **★ REGIONAL NA SCREEN RECORDER · MP4, WEBM AT GIF**
+
+<p align="center">
+  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="I-record ang anumang area bilang video at GIF">
+</p>
+
+---
+
+### 3. Tuloy-tuloy na full-page na screenshot
+> **★ PIXEL-PERFECT NA SCREENSHOT · BUONG PAGE AT AREA**
+
+<p align="center">
+  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Tuloy-tuloy na full-page na screenshot">
+</p>
+
+---
+
+### 4. Mga live na DOM table papunta sa Excel (XLSX) at CSV
+> **★ PAGKUHA NG DATA AT ELEMENT REMOVER**
+
+<sub>Kunin ang mga dynamic na table, kasama ang snapshot history ng mga ito, bilang multi-sheet na XLSX o CSV file.</sub>
+
+<p align="center">
+  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Mga live na DOM table papunta sa Excel (XLSX) at CSV">
+</p>
+
+---
+
+### 5. Color eyedropper at code formatter
+> **★ WORKBENCH PARA SA DEVELOPER AT DESIGNER**
+
+<p align="center">
+  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Color eyedropper at code formatter">
+</p>
+
+---
+
+Ang Source Download ay isang Chrome DevTools panel na naghahanap, nag-i-inspect at nagda-download ng bawat resource na nilo-load ng isang web page. Media file man, developer script, style asset o network response ang kailangan mo, maaari mo itong i-save bilang hiwa-hiwalay na file o bilang maayos na ZIP na may istruktura ng folder.
+
+Binuo mula sa simula nang walang third-party na dependency: ang ZIP writer, ang XLSX builder, ang HLS merger at ang mga code formatter ay lahat hand-written na vanilla JavaScript. Walang framework, walang build step, walang telemetry. Lahat ay tumatakbo nang lokal sa iyong browser.
+
+## Ano'ng Bago sa v1.16.0
+- Buong suporta sa maraming wika sa 54 na wika, kasama ang kumpletong lokalisasyon ng DevTools at ng store.
+- 17 nakalaang kategorya ng asset na may live na bilang, na sumasaklaw sa lahat ng media, code, API, storage at dokumento.
+- Pinagtahing full-page na screenshot at custom na regional area capture na may matalinong pagtatago ng sticky header.
+- Pag-record ng video ng screen (MP4) at magaan na animated GIF export engine na walang edge bleed.
+- Live na DOM table extractor papunta sa multi-sheet na Microsoft Excel (.XLSX) at CSV, kasama ang DOM Zapper na element remover.
+- Color eyedropper sa screen na may instant na pagkopya ng hex/rgb/hsl at kasamang code beautifier.
+- Mas pinatatag na DevTools sniffer at high-concurrency na network pipeline.
+
+## Bakit mo ito kailangan
+Hindi sapat ang screenshot. Kunin ang mga totoong file — full-resolution na larawan, aktwal na video stream, orihinal na stylesheet at script — hindi isang patag na larawan.
+
+Nakakalito ang DevTools. Naglalagay ang Source Download ng malinis at nakakategoryang gallery sa harap ng parehong network data, na may search, mga filter at one-click na download.
+
+Itinatago ng mga SPA ang lahat. Gumagawa ang mga dynamic na app ng mga asset at API call na hindi mo nakikita sa source ng page. Kinukuha ng Source Download ang mga ito habang nangyayari, kasama ang mga intermediate na estado.
+
+## Ano ang ginagawa nito
+### Hanapin ang lahat
+- Pinagsasama ang network capture (HAR + mga live na request) at DOM scan para sa lahat ng visual at structural na elemento, kasama ang media file, script, stylesheet at embedded frame.
+- **CSS-aware:** sinusundan nang paulit-ulit ang mga asset sa loob ng url(...) at mga @import rule, kaya makikita pati ang mga font na nakabaon sa mga na-import na stylesheet.
+- **Content sniffing:** binabasa ang ilang byte ng mga hindi kilalang file at inililipat sa kanilang tunay na kategorya ng uri ng file.
+- **17 kategoryang may live na bilang:** maayos na inaayos ang mga na-capture na asset sa mga nakalaang tab para sa media, code, data, API call, cookie, storage at dokumento.
+
+### Mag-filter, maghanap, mag-inspect
+- Regex-powered na paghahanap sa mga filename, URL, MIME type, alt text at maging sa laman ng mga file.
+- **Mga filter bawat kategorya:** min/max na laki, at para sa media ay min/max din na lapad at taas — halimbawa "mga hero image lang na ≥ 1200px". Nagfi-filter ang mga API call ayon sa HTTP method at uri ng request.
+- List o grid view, maaaring i-sort, may live na thumbnail wall.
+- **Multi-tab na inspector na may totoong preview:** zoomable na lightbox, pag-play ng video at audio, live na font specimen, SVG viewer, syntax-highlighted na code na may line number at Beautify toggle.
+- **API split view:** ang response sa kaliwa; ang method, status, query parameter at request body sa kanan.
+
+### Mag-download nang maayos
+- I-download ang Napili — ang mga file lang na na-check mo.
+- I-download ang View — lahat ng nakikita matapos ang kasalukuyang mga filter at search.
+- I-download Lahat — bawat na-capture na resource sa ZIP na may istruktura ng folder at awtomatikong de-duplication.
+- Tumatakbo ang mga batch download na may limitadong concurrency at live na progress bar; awtomatikong inuulit ang mga nabigo, at maaari rin mula sa context menu.
+
+### HLS at mahihirap na video
+- Ang mga stream na hindi native na nape-play ng browser (HLS .m3u8, DASH .mpd, hindi kilalang codec) ay nagpapakita ng matalinong fallback sa halip na itim na player.
+- Ang Merge segments at download ay ginagawang isang playable na file ang HLS stream, mismo sa panel.
+
+### Ang Text workbench (SPA content toolkit)
+- **Ang Text tab ay isang live na content viewer:** bawat elementong may text — heading, talata, list item, button, div, span — ay kinukuha ayon sa pagkakasunod-sunod ng DOM.
+- Nagtatago ang mga dynamic na table ng limitadong snapshot history (hal. "8 snapshot · 124 natatanging row"), kaya hindi nawawalan ng intermediate na estado ang mga auto-refreshing na dashboard.
+- I-export bilang Markdown, o ang mga table bilang CSV, HTML, o totoong multi-sheet na XLSX workbook na gawa ng sarili naming hand-written na XLSX writer.
+
+## Paano gamitin
+1. I-install ang Source Download, pagkatapos ay pindutin ang F12 sa anumang page.
+2. I-click ang Source Download tab sa DevTools toolbar (hindi pinapayagan ng Chrome na awtomatikong buksan ng mga extension ang DevTools — kaya doon ito matatagpuan).
+3. I-browse ang mga category tab, maghanap, mag-filter, at mag-inspect ng kahit ano sa panel sa kanan.
+4. I-check ang mga file na gusto mo at i-click ang I-download ang Napili, I-download ang View o I-download Lahat.
+5. Panatilihing bukas ang DevTools panel habang nilo-load ang page para makuha ang bawat network request.
+
+## Mga totoong gamit
+- **Pagsusuri ng kakumpitensya:** mangolekta ng mga video thumbnail mula sa anumang channel — gamit ang minimum width filter — sa iisang folder.
+- **Web scraping nang walang code:** bantayan ang mga API call ng isang SPA, i-filter ang endpoint na kailangan mo, at i-download ang eksaktong JSON response nito.
+- **Pagsusuri ng typography:** alamin kung anong font talaga ang gamit ng isang site at kunin ang aktwal na font file.
+- **Pag-reproduce ng bug:** itago ang eksaktong bersyon ng CSS/JS na na-ship nang mangyari ang bug.
+- **Pag-export ng data ng dashboard:** i-export ang auto-refreshing na table sa multi-sheet na Excel workbook, kasama ang history.
+- **QA testing:** alamin kung aling video/audio variant ang inihahatid sa bawat A/B configuration.
+
+## Privacy
+- Tumatakbo nang 100% lokal. Walang server, walang analytics, walang data na umaalis sa iyong makina.
+- **Humihingi lang ng kailangan nito:** storage (ang iyong mga preference), clipboard (pagkopya ng mga URL at kulay), downloads (pag-save ng mga file sa pamamagitan ng Chrome), context menu, scripting at host access (para i-scan ang mga page at kunin ang laman ng mga file).
+- Sine-save ang mga file sa normal na download flow ng Chrome — walang palihim na download.
+
+## Mga kinakailangan
+- Chrome 116 o mas bago (Manifest V3).
+- Pinakamainam ang resulta kapag bukas ang panel habang nilo-load ang page, dahil iyon ang oras ng network capture.
+
+Ang Source Download ay isang open-source na proyekto — malugod na tinatanggap ang feedback, ideya at pull request.
+
+Kumonekta sa LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+
+---
+
+## Pag-install at Mabilis na Pagsisimula
+
+### Paraan 1: Direktang Pag-install mula sa Chrome Web Store (Inirerekomenda)
+1. Bisitahin ang opisyal na [Source Download sa Chrome Web Store](https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd).
+2. I-click ang **Add to Chrome** at ibigay ang mga pahintulot.
+3. Buksan ang Chrome DevTools (`F12` o `Ctrl+Shift+I` / `Cmd+Option+I` sa macOS) at i-click ang **Source Download** tab, o mag-right-click kahit saan sa page.
+
+### Paraan 2: I-load ang Unpacked na Extension mula sa Source (Developer Mode)
+1. I-clone ang opisyal na GitHub repository:
+```bash
+git clone https://github.com/turanburakyesilyurt/source-download.git
+cd source-download
+```
+2. Buksan ang Google Chrome at pumunta sa `chrome://extensions`.
+3. I-enable ang **Developer mode** toggle sa kanang itaas na sulok.
+4. I-click ang **Load unpacked** at piliin ang na-clone na folder ng proyektong `source-download`.
+
+---
+
+## Lisensya
+
+Inilabas sa ilalim ng [MIT License](../../LICENSE). Copyright © Turan Burak Yeşilyurt. Libreng gamitin, suriin, at i-fork.

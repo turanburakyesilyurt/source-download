@@ -1,0 +1,1477 @@
+{
+  "appName": {
+    "message": "Source Download"
+  },
+  "appDesc": {
+    "message": "Перегляньте та завантажте веб-ресурси як ZIP. Знімки всієї сторінки, захоплення таблиць наживо та інструменти розробника."
+  },
+  "actionTitle": {
+    "message": "Source Download — відкрийте панель і відстежуйте ресурси"
+  },
+  "contextMenuZap": {
+    "message": "Сховати цей елемент"
+  },
+  "contextMenuUndoZap": {
+    "message": "Відновити останній схований елемент"
+  },
+  "contextMenuResetZap": {
+    "message": "Відновити всі сховані елементи"
+  },
+  "contextMenuCapturePage": {
+    "message": "Зробити знімок усієї сторінки"
+  },
+  "contextMenuPageArchive": {
+    "message": "Завантажити офлайн-архів сторінки"
+  },
+  "catAll": {
+    "message": "Всі"
+  },
+  "catApi": {
+    "message": "API"
+  },
+  "catImages": {
+    "message": "Зображення"
+  },
+  "catSvg": {
+    "message": "SVG"
+  },
+  "catVideos": {
+    "message": "Відео"
+  },
+  "catAudio": {
+    "message": "Аудіо"
+  },
+  "catCaptions": {
+    "message": "Підписи"
+  },
+  "catCss": {
+    "message": "CSS"
+  },
+  "catJs": {
+    "message": "JS"
+  },
+  "catSourcemaps": {
+    "message": "Вихідні карти"
+  },
+  "catFonts": {
+    "message": "Шрифти"
+  },
+  "catDocuments": {
+    "message": "Документи"
+  },
+  "catJson": {
+    "message": "JSON"
+  },
+  "catWasm": {
+    "message": "WASM"
+  },
+  "catManifests": {
+    "message": "Маніфести"
+  },
+  "catText": {
+    "message": "Текст"
+  },
+  "catOther": {
+    "message": "Інше"
+  },
+  "catScreenshot": {
+    "message": "Скріншот"
+  },
+  "catArchive": {
+    "message": "Архів сторінки"
+  },
+  "btnRefresh": {
+    "message": "Оновити"
+  },
+  "btnExport": {
+    "message": "Експорт"
+  },
+  "btnDownloadSelected": {
+    "message": "Завантажити вибране"
+  },
+  "btnDownloadView": {
+    "message": "Завантажити поточний вигляд"
+  },
+  "btnDownloadAll": {
+    "message": "Завантажити все"
+  },
+  "btnDownloadFiltered": {
+    "message": "Завантажити відфільтроване"
+  },
+  "btnTheme": {
+    "message": "Змінити тему"
+  },
+  "btnGuide": {
+    "message": "Посібник користувача"
+  },
+  "btnCaptureFullPage": {
+    "message": "Скріншот повної сторінки"
+  },
+  "btnOfflineArchive": {
+    "message": "Зберегти в один HTML-файл"
+  },
+  "filterMinKb": {
+    "message": "Мін. КБ"
+  },
+  "filterMaxKb": {
+    "message": "Макс. КБ"
+  },
+  "filterMinWidth": {
+    "message": "Мін. ширина, px"
+  },
+  "filterMinHeight": {
+    "message": "Мін. висота, px"
+  },
+  "filterSortName": {
+    "message": "Сортувати за назвою"
+  },
+  "filterSortSize": {
+    "message": "Сортувати за розміром"
+  },
+  "filterSortType": {
+    "message": "Сортувати за типом"
+  },
+  "filterSortTime": {
+    "message": "Сортувати за часом"
+  },
+  "filterHideDupes": {
+    "message": "Приховати дублікати"
+  },
+  "filterClear": {
+    "message": "Очистити"
+  },
+  "textModeContains": {
+    "message": "Містить"
+  },
+  "textModeRegex": {
+    "message": "Регулярний вираз"
+  },
+  "textModeCss": {
+    "message": "Селектор CSS"
+  },
+  "textModeXpath": {
+    "message": "XPath"
+  },
+  "textPlaceholder": {
+    "message": "Відфільтрувати текст сторінки або запитати DOM у реальному часі…"
+  },
+  "textAllElements": {
+    "message": "Всі елементи"
+  },
+  "textLiveOn": {
+    "message": "Наживо: увімк."
+  },
+  "textLiveOff": {
+    "message": "Наживо: вимк."
+  },
+  "textScanNow": {
+    "message": "Сканувати зараз"
+  },
+  "textReading": {
+    "message": "Читання"
+  },
+  "textExportTxt": {
+    "message": "TXT"
+  },
+  "textExportMd": {
+    "message": "MD"
+  },
+  "textExportCsv": {
+    "message": "CSV"
+  },
+  "textExportHtml": {
+    "message": "HTML"
+  },
+  "textExportXlsx": {
+    "message": "XLSX"
+  },
+  "inspectorSelectPrompt": {
+    "message": "Виберіть ресурс, щоб переглянути його деталі"
+  },
+  "inspectorDetails": {
+    "message": "Подробиці"
+  },
+  "inspectorOpenTab": {
+    "message": "Відкрити в новій вкладці"
+  },
+  "inspectorCopyUrl": {
+    "message": "Копіювати URL"
+  },
+  "inspectorDownloadFile": {
+    "message": "Завантажити цей файл"
+  },
+  "inspectorClose": {
+    "message": "Закрити"
+  },
+  "metaUrl": {
+    "message": "URL"
+  },
+  "metaType": {
+    "message": "Тип"
+  },
+  "metaMime": {
+    "message": "MIME"
+  },
+  "metaSize": {
+    "message": "Розмір"
+  },
+  "metaHttp": {
+    "message": "HTTP"
+  },
+  "metaSource": {
+    "message": "Джерело"
+  },
+  "metaTitle": {
+    "message": "Назва"
+  },
+  "metaAlt": {
+    "message": "Alt-текст"
+  },
+  "ratingPrompt": {
+    "message": "Подобається Source Download? Підтримайте наш open-source проєкт відгуком у Chrome Web Store або зіркою на GitHub!"
+  },
+  "ratingReview": {
+    "message": "★ Залишити відгук"
+  },
+  "ratingStar": {
+    "message": "★ Зірка на GitHub"
+  },
+  "ratingDismiss": {
+    "message": "Закрити"
+  },
+  "toastElementZapped": {
+    "message": "Елемент сховано на час цього сеансу."
+  },
+  "toastElementRestored": {
+    "message": "Елемент відновлено."
+  },
+  "toastAllElementsRestored": {
+    "message": "Усі сховані елементи відновлено."
+  },
+  "toastScreenshotCapturing": {
+    "message": "Створення знімка всієї сторінки…"
+  },
+  "toastScreenshotCaptured": {
+    "message": "Знімок усієї сторінки збережено."
+  },
+  "toastArchiveCreated": {
+    "message": "Архів HTML в одному файлі збережено."
+  },
+  "brandSignature": {
+    "message": "Розробник: Turan Burak Yeşilyurt (2run.dev)"
+  },
+  "tabImages": {
+    "message": "Зображення та SVG"
+  },
+  "tabMedia": {
+    "message": "Медіа та аудіо"
+  },
+  "tabFonts": {
+    "message": "Шрифти"
+  },
+  "tabTextScraper": {
+    "message": "Текст і таблиці"
+  },
+  "heroScreenshotTitle": {
+    "message": "Скріншот повної сторінки"
+  },
+  "heroScreenshotDesc": {
+    "message": "Безшовне зшивання кількох екранів із приховуванням закріплених заголовків"
+  },
+  "heroArchiveTitle": {
+    "message": "HTML-архів в одному файлі"
+  },
+  "heroArchiveDesc": {
+    "message": "Вбудовує CSS і зображення Base64 — офлайн-знімок сторінки"
+  },
+  "copyDataUri": {
+    "message": "Копіювати Data-URI"
+  },
+  "copyUrl": {
+    "message": "Копіювати URL"
+  },
+  "downloadSingle": {
+    "message": "Завантажити"
+  },
+  "searchPlaceholder": {
+    "message": "Фільтрувати за назвою, URL-адресою, тегом, MIME або /regex/…"
+  },
+  "viewGrid": {
+    "message": "Вигляд сітки"
+  },
+  "viewList": {
+    "message": "Вигляд списку"
+  },
+  "btnScreenshot": {
+    "message": "Скріншот"
+  },
+  "btnArchive": {
+    "message": "Зберегти HTML"
+  },
+  "exportJson": {
+    "message": "Видимий список у форматі JSON"
+  },
+  "exportCsv": {
+    "message": "Видимий список у форматі CSV"
+  },
+  "exportHar": {
+    "message": "Журнал мережі у форматі HAR"
+  },
+  "exportScreenshot": {
+    "message": "Скріншот повної сторінки (PNG)"
+  },
+  "exportArchive": {
+    "message": "Офлайн-архів сторінки (HTML)"
+  },
+  "filterMethodAll": {
+    "message": "Всі методи"
+  },
+  "filterTypeAll": {
+    "message": "Всі типи"
+  },
+  "filterSortDir": {
+    "message": "Змінити напрямок: за зростанням / спаданням"
+  },
+  "emptyTitle": {
+    "message": "Ресурси не знайдено"
+  },
+  "emptySubtitle": {
+    "message": "Перезавантажте сторінку, коли ця панель відкрита, щоб отримати мережеві запити, або натисніть «Оновити», щоб просканувати поточний DOM."
+  },
+  "statusResources": {
+    "message": "ресурсів"
+  },
+  "statusFiltered": {
+    "message": "відфільтровано"
+  },
+  "statusSelected": {
+    "message": "вибрано"
+  },
+  "statusDupes": {
+    "message": "дублікатів приховано"
+  },
+  "statusSize": {
+    "message": "розмір"
+  },
+  "langAuto": {
+    "message": "Автоматично (браузер)"
+  },
+  "langSelectorTitle": {
+    "message": "Виберіть мову"
+  },
+  "textPillAll": {
+    "message": "Весь вміст"
+  },
+  "textPillText": {
+    "message": "📄 Текст і статті"
+  },
+  "textPillTables": {
+    "message": "📊 Лише таблиці"
+  },
+  "textSelectAll": {
+    "message": "Вибрати все"
+  },
+  "textDeselectAll": {
+    "message": "Зняти вибір"
+  },
+  "textClearSelection": {
+    "message": "Очистити"
+  },
+  "toastRefreshComplete": {
+    "message": "Сканування сторінки завершено: $count$ нових ресурсів",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedBlocks": {
+    "message": "Скопійовано $count$ блок(ів)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastCopiedToClipboard": {
+    "message": "Скопійовано в буфер обміну"
+  },
+  "toastTableCopied": {
+    "message": "Таблицю скопійовано в буфер обміну"
+  },
+  "toastNothingToExport": {
+    "message": "Нічого для експорту"
+  },
+  "toastExportedTxt": {
+    "message": "Експортовано $count$ блок(ів) як TXT",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastExportedMd": {
+    "message": "Експортовано $count$ блок(ів) як Markdown",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoTableRows": {
+    "message": "Рядків таблиці не знайдено"
+  },
+  "toastExportedCsv": {
+    "message": "Таблицю експортовано як CSV"
+  },
+  "toastExportedXlsx": {
+    "message": "Експортовано таблицю як XLSX"
+  },
+  "toastExportedTablesZip": {
+    "message": "Експортовано таблиць: $count$ ($format$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      },
+      "format": {
+        "content": "$2",
+        "example": "CSV"
+      }
+    }
+  },
+  "toastExportedSheetsXlsx": {
+    "message": "Експортовано $count$ аркушів як XLSX",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastNoResourcesToDownload": {
+    "message": "Немає ресурсів для завантаження."
+  },
+  "toastNoVisibleResources": {
+    "message": "Немає видимих ресурсів для завантаження."
+  },
+  "toastSelectAtLeastOne": {
+    "message": "Спочатку виберіть принаймні один ресурс."
+  },
+  "toastZipSaved": {
+    "message": "ZIP збережено: $fetched$ з $total$ ресурсів",
+    "placeholders": {
+      "fetched": {
+        "content": "$1",
+        "example": "8"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "toastZipFailed": {
+    "message": "Помилка ZIP: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastHarExported": {
+    "message": "HAR експортовано ($count$ записів)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL-адресу скопійовано в буфер обміну"
+  },
+  "toastDevToolsNotAvailable": {
+    "message": "Вікно, що перевіряється в DevTools, недоступне."
+  },
+  "toastScreenshotError": {
+    "message": "Помилка скріншота: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastArchiveCreating": {
+    "message": "Створення офлайн-архіву сторінки…"
+  },
+  "toastArchiveError": {
+    "message": "Помилка архіву: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "network error"
+      }
+    }
+  },
+  "toastFormatTimeout": {
+    "message": "Час очікування форматування минув — показано оригінальний файл."
+  },
+  "toastFormatFailed": {
+    "message": "Не вдалося відформатувати файл — показано оригінал."
+  },
+  "emptySearchTitle": {
+    "message": "Немає збігів для \"$query$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "search query"
+      }
+    }
+  },
+  "emptySearchSub": {
+    "message": "Спробуйте інший термін пошуку або перейдіть до іншої категорії."
+  },
+  "emptyFiltersTitle": {
+    "message": "Жоден ресурс не відповідає поточним фільтрам"
+  },
+  "emptyFiltersSub": {
+    "message": "Послабте фільтри розміру чи габаритів вище або натисніть «Очистити»."
+  },
+  "textEmptyQueryReject": {
+    "message": "Сторінка відхилила цей запит. Виправте це вище, і результати відразу з’являться."
+  },
+  "textEmptyNoMatch": {
+    "message": "Жоден елемент на сторінці не відповідає цьому запиту. Спробуйте вільніший селектор або перемкніть режим поруч із полем."
+  },
+  "textEmptyInitial": {
+    "message": "Ще нічого не захоплено. Йде захоплення наживо — вся сторінка з’явиться тут як читабельний текст."
+  },
+  "textEmptyFiltered": {
+    "message": "Нічого не відповідає поточному запиту та фільтру елементів."
+  },
+  "textSummaryBlocks": {
+    "message": "$count$ блоків",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryWords": {
+    "message": "$count$ слів",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryChars": {
+    "message": "$count$ символів",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textSummaryTables": {
+    "message": "$tables$ таблиць · $rows$ унікальних рядків",
+    "placeholders": {
+      "tables": {
+        "content": "$1",
+        "example": "2"
+      },
+      "rows": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "textSummarySelected": {
+    "message": "Вибрано $count$ — для експорту використовуються лише ці",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableOnScreen": {
+    "message": "Таблиця — $count$ рядків на екрані",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableAllRows": {
+    "message": "Таблиця — усі унікальні рядки ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableSnapshots": {
+    "message": "$count$ знімків",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableUpdated": {
+    "message": "оновлено $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "5s ago"
+      }
+    }
+  },
+  "textTableShowAll": {
+    "message": "Показати всі $count$ рядків",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableShowingAll": {
+    "message": "Показано всі рядки"
+  },
+  "textTableHistory": {
+    "message": "Історія ($count$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "textTableHideHistory": {
+    "message": "Приховати історію"
+  },
+  "textTableNoRows": {
+    "message": "Ще немає захоплених рядків."
+  },
+  "textBtnCopy": {
+    "message": "Копіювати текст"
+  },
+  "textBtnCopyTable": {
+    "message": "📋 Копіювати"
+  },
+  "textBtnExportXlsx": {
+    "message": "⬇ XLSX"
+  },
+  "textBtnExportCsv": {
+    "message": "⬇ CSV"
+  },
+  "statusDuplicateImages": {
+    "message": "$count$ повторюваних зображень",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "labelExport": {
+    "message": "Експорт"
+  },
+  "inspectorLoadingSvg": {
+    "message": "Завантаження SVG…"
+  },
+  "inspectorSvgError": {
+    "message": "Вміст SVG не вдалося отримати."
+  },
+  "inspectorLoadingFont": {
+    "message": "Завантаження попереднього перегляду шрифту…"
+  },
+  "inspectorFontSample": {
+    "message": "Попередній перегляд шрифту"
+  },
+  "inspectorBeautify": {
+    "message": "Форматувати"
+  },
+  "inspectorOriginal": {
+    "message": "Оригінал"
+  },
+  "inspectorHeaders": {
+    "message": "Заголовки"
+  },
+  "inspectorResponse": {
+    "message": "Відповідь"
+  },
+  "inspectorRequest": {
+    "message": "Запит"
+  },
+  "inspectorQueryParams": {
+    "message": "Параметри запиту"
+  },
+  "inspectorRequestBody": {
+    "message": "Тіло запиту"
+  },
+  "textHintHtml": {
+    "message": "Жива, читабельна копія сторінки. Кожен елемент, що містить текст, фіксується в порядку DOM і зберігається тут, коли сторінка змінюється. Запитуйте його за допомогою звичайного тексту, регулярного виразу, <strong>селектора CSS</strong> або виразу <strong>XPath</strong>, а потім експортуйте те, що відповідає. Докладніше див. у <a href=\"#\" id=\"text-hint-guide\">посібнику</a>."
+  },
+  "textHeadings": {
+    "message": "Заголовки"
+  },
+  "textAllLevels": {
+    "message": "Всі рівні"
+  },
+  "textMatches": {
+    "message": "збігів"
+  },
+  "textMatch": {
+    "message": "збіг"
+  },
+  "textReadingOn": {
+    "message": "Читання: увімк."
+  },
+  "toastDownloadStarted": {
+    "message": "Розпочато завантаження: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "file.png"
+      }
+    }
+  },
+  "toastDownloadFailed": {
+    "message": "Не вдалося отримати цей ресурс (CORS або непідтримуваний тип)."
+  },
+  "ratingBannerText": {
+    "message": "Подобається Source Download? Підтримайте наш open-source проєкт відгуком у Chrome Web Store або зіркою на GitHub!"
+  },
+  "ratingBannerReview": {
+    "message": "★ Відгук"
+  },
+  "ratingBannerStar": {
+    "message": "★ Зірка"
+  },
+  "textTableUniqueRows": {
+    "message": "$count$ унікальних рядків",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeSecondsAgo": {
+    "message": "$count$ с тому",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeMinutesAgo": {
+    "message": "$count$ хв тому",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "contextMenuCaptureArea": {
+    "message": "Зробити знімок області екрана"
+  },
+  "btnAreaDownload": {
+    "message": "Завантажити"
+  },
+  "btnAreaCopy": {
+    "message": "Копіювати в буфер обміну"
+  },
+  "btnAreaCancel": {
+    "message": "Скасувати"
+  },
+  "toastAreaCopied": {
+    "message": "Знімок екрана області скопійовано в буфер обміну"
+  },
+  "toastAreaDownloaded": {
+    "message": "Знімок екрана області збережено"
+  },
+  "statusFoundCssResources": {
+    "message": "Знайдено $count$ ресурсів, на які посилається CSS",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "statusDomScanFailed": {
+    "message": "Помилка сканування DOM: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "timeout"
+      }
+    }
+  },
+  "statusIndexing": {
+    "message": "Індексування вмісту файлу…"
+  },
+  "statusCheckingDuplicates": {
+    "message": "Перевірка дублікатів зображень…"
+  },
+  "statusWorking": {
+    "message": "Виконується…"
+  },
+  "filterMethodTitle": {
+    "message": "Фільтрувати за методом HTTP"
+  },
+  "filterTypeTitle": {
+    "message": "Фільтрувати за типом запиту"
+  },
+  "filterSortTitle": {
+    "message": "Сортувати ресурси"
+  },
+  "textModeTitle": {
+    "message": "Як інтерпретується поле запиту"
+  },
+  "textKindTitle": {
+    "message": "Обмежити одним типом елемента"
+  },
+  "textHeadingLevelTitle": {
+    "message": "Рівень заголовка"
+  },
+  "textPlaceholderRegex": {
+    "message": "^Ціна:\\s*\\d+ — регулярний вираз JavaScript"
+  },
+  "textPlaceholderCss": {
+    "message": ".product-card .price, article h2 — будь-який селектор CSS"
+  },
+  "textPlaceholderXpath": {
+    "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
+  },
+  "guideSearchPlaceholder": {
+    "message": "Пошук у посібнику…"
+  },
+  "popupIntro": {
+    "message": "Категорії, що підраховуються <strong>значком на панелі інструментів</strong>. Вимкніть категорію, щоб припинити її підрахунок — значок миттєво відображає лише те, що ви відстежуєте."
+  },
+  "popupHelpTitle": {
+    "message": "Як використовувати повну панель"
+  },
+  "popupStep1": {
+    "message": "Відкрийте DevTools для сторінки, яку хочете перевірити <div class=\"hint\"><kbd>F12</kbd> або <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
+  },
+  "popupStep2": {
+    "message": "Натисніть вкладку <strong>Source Download</strong> на панелі інструментів DevTools"
+  },
+  "popupStep3": {
+    "message": "Переглядайте, перевіряйте та завантажуйте ресурси — окремо або всі разом у форматі ZIP."
+  },
+  "popupNote": {
+    "message": "Примітка: Chrome не дозволяє розширенням програмно відкривати DevTools, тому повний інженерний пакет доступний через панель інструментів DevTools."
+  },
+  "popupTrackAll": {
+    "message": "Відстежувати всі категорії"
+  },
+  "popupLanguage": {
+    "message": "Мова"
+  },
+  "inspectorBinaryResponse": {
+    "message": "Двійкова відповідь — завантажте, щоб переглянути"
+  },
+  "inspectorLoadingResponse": {
+    "message": "Завантаження відповіді…"
+  },
+  "inspectorNoResponsePreview": {
+    "message": "Немає попереднього перегляду відповіді — вміст не вдалося отримати."
+  },
+  "inspectorLoadingContent": {
+    "message": "Завантаження вмісту…"
+  },
+  "inspectorNoPreview": {
+    "message": "Немає попереднього перегляду — вміст не вдалося отримати."
+  },
+  "inspectorCloseAllTabs": {
+    "message": "Закрити все"
+  },
+  "inspectorCloseAllTabsTitle": {
+    "message": "Закрити всі відкриті вкладки"
+  },
+  "inspectorClickToEnlarge": {
+    "message": "Натисніть, щоб збільшити"
+  },
+  "inspectorViewSource": {
+    "message": "Переглянути джерело"
+  },
+  "inspectorViewSourceTitle": {
+    "message": "Показати розмітку SVG із підсвічуванням синтаксису"
+  },
+  "inspectorFormatting": {
+    "message": "Форматування…"
+  },
+  "findInContentPlaceholder": {
+    "message": "Знайти у вмісті…"
+  },
+  "findPreviousMatch": {
+    "message": "Попередній збіг"
+  },
+  "findNextMatch": {
+    "message": "Наступний збіг"
+  },
+  "findClose": {
+    "message": "Закрити"
+  },
+  "findShowRaw": {
+    "message": "Показати оригінальний (неформатований) вміст"
+  },
+  "findBeautify": {
+    "message": "Форматувати цей вміст"
+  },
+  "btnRaw": {
+    "message": "Необроблений"
+  },
+  "btnBeautify": {
+    "message": "Форматувати"
+  },
+  "videoHlsDetected": {
+    "message": "Виявлено потік HLS (m3u8)"
+  },
+  "videoCannotPlay": {
+    "message": "Це відео не можна відтворити в браузері"
+  },
+  "videoHlsNotice": {
+    "message": "Chrome не може відтворювати потоки HLS безпосередньо. Ви можете об’єднати всі сегменти <b>$NAME$</b> в один відеофайл MP4/TS.",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "videoFormatUnsupported": {
+    "message": "Браузер не підтримує цей формат"
+  },
+  "btnMergeHls": {
+    "message": "Об’єднати сегменти та завантажити"
+  },
+  "toastHlsMerged": {
+    "message": "Об’єднано $COUNT$ сегмент(ів) у $NAME$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      },
+      "NAME": {
+        "content": "$2"
+      }
+    }
+  },
+  "sizeUnknown": {
+    "message": "розмір невідомий"
+  },
+  "progressFetching": {
+    "message": "Отримання $DONE$/$TOTAL$ · ZIP $EST$…",
+    "placeholders": {
+      "DONE": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "EST": {
+        "content": "$3"
+      }
+    }
+  },
+  "progressCreatingZip": {
+    "message": "Створення ZIP $PERCENT$%…",
+    "placeholders": {
+      "PERCENT": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastZipSavedWithFailed": {
+    "message": "ZIP збережено: $FETCHED$ з $TOTAL$ ресурсів ($SKIPPED$ не вдалося)",
+    "placeholders": {
+      "FETCHED": {
+        "content": "$1"
+      },
+      "TOTAL": {
+        "content": "$2"
+      },
+      "SKIPPED": {
+        "content": "$3"
+      }
+    }
+  },
+  "btnRetryFailed": {
+    "message": "Повторити $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextMenuRetryDownload": {
+    "message": "Повторити завантаження"
+  },
+  "searchRegexHint": {
+    "message": "Увімкнено пошук за регулярним виразом — візьміть запит у /pattern/i"
+  },
+  "textIncludeInExports": {
+    "message": "Включити в експорт"
+  },
+  "tableMergeSnapshotsTitle": {
+    "message": "Об’єднати всі знімки в одну таблицю без дублікатів — саме вона експортується"
+  },
+  "tableBrowseSnapshotsTitle": {
+    "message": "Переглянути попередні знімки цієї таблиці"
+  },
+  "tableDownloadCsvTitle": {
+    "message": "Завантажити цю таблицю як CSV"
+  },
+  "tableSnapshotLabel": {
+    "message": "Знімок $INDEX$ — $TIME$ ($COUNT$ рядків)",
+    "placeholders": {
+      "INDEX": {
+        "content": "$1"
+      },
+      "TIME": {
+        "content": "$2"
+      },
+      "COUNT": {
+        "content": "$3"
+      }
+    }
+  },
+  "cardToggleBatchTitle": {
+    "message": "Перемкнути вибір для пакетного завантаження"
+  },
+  "cardDownloadTitle": {
+    "message": "Завантажити файл"
+  },
+  "cardRetryFailedTitle": {
+    "message": "Помилка попереднього завантаження — натисніть, щоб повторити спробу"
+  },
+  "btnThemeLight": {
+    "message": "Перейти на світлу тему"
+  },
+  "btnThemeDark": {
+    "message": "Перейти на темну тему"
+  },
+  "guideTitle": {
+    "message": "Source Download — посібник користувача"
+  },
+  "guideEmpty": {
+    "message": "Немає розділів посібника, які відповідають вашому запиту."
+  },
+  "guideVersionNote": {
+    "message": "Source Download v$VERSION$ — 100% без залежностей.",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1"
+      }
+    }
+  },
+  "lightboxZoomOut": {
+    "message": "Зменшити масштаб (−)"
+  },
+  "lightboxZoomIn": {
+    "message": "Збільшити (+)"
+  },
+  "lightboxZoomReset": {
+    "message": "Скинути масштаб (0)"
+  },
+  "lightboxClose": {
+    "message": "Закрити (Esc)"
+  },
+  "resizerTitle": {
+    "message": "Перетягніть, щоб змінити розмір"
+  },
+  "ratingDismissTitle": {
+    "message": "Закрити"
+  },
+  "inspectorResourceTitle": {
+    "message": "Ресурс"
+  },
+  "guideSecGettingStarted": {
+    "message": "Початок роботи"
+  },
+  "guideSecCategories": {
+    "message": "Категорії"
+  },
+  "guideSecSearchFilters": {
+    "message": "Пошук і фільтри"
+  },
+  "guideSecGridView": {
+    "message": "Вигляд сітки та списку"
+  },
+  "guideSecInspect": {
+    "message": "Перегляд ресурсу"
+  },
+  "guideSecDownloading": {
+    "message": "Завантаження"
+  },
+  "guideSecLightbox": {
+    "message": "Лайтбокс"
+  },
+  "guideSecTextTables": {
+    "message": "Текст і таблиці"
+  },
+  "guideSecCaptions": {
+    "message": "Підписи та субтитри"
+  },
+  "guideSecSourceMaps": {
+    "message": "Вихідні карти"
+  },
+  "guideSecDupes": {
+    "message": "Дублікати зображень"
+  },
+  "guideSecVideoHls": {
+    "message": "Запасне відео та HLS"
+  },
+  "guideSecPowerTips": {
+    "message": "Поради для досвідчених"
+  },
+  "guideSecGettingStartedContent": {
+    "message": "Натисніть вкладку <strong>Source Download</strong> на панелі інструментів DevTools (натисніть <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, потім виберіть вкладку на панелі інструментів DevTools). Chrome не дозволяє розширенням відкривати DevTools автоматично, тому панель розташована саме там. У спливному вікні піктограми розширення можна вибрати, які категорії враховує лічильник на значку. Кнопка із сонцем/місяцем на панелі інструментів фіксує світлу або темну тему незалежно від Chrome; цей вибір запам’ятовується."
+  },
+  "guideSecCategoriesContent": {
+    "message": "Вертикальні вкладки ліворуч групують кожен отриманий ресурс у 17 спеціальних категорій за типом: зображення, відео, аудіо, підписи, документи, шрифти, вихідні карти, WASM, SVG, API, файли cookie, сховище тощо. Кожна вкладка показує поточний підрахунок. Одночасно відображається лише одна категорія; перемикання скидає всі фільтри, тож те, що ви бачите, завжди відповідає вкладці."
+  },
+  "guideSecSearchFiltersContent": {
+    "message": "Рядок пошуку фільтрує за назвою, URL-адресою, типом, alt-текстом або заголовком. Візьміть запит у <kbd>/…/</kbd>, щоб використати регулярний вираз, наприклад <code>/\\.(png|jpg)$/</code>. Під панеллю інструментів панель фільтрів змінюється залежно від категорії: діапазони розміру та габаритів для медіа, метод HTTP і тип запиту для API, а також сортування та його напрямок."
+  },
+  "guideSecGridViewContent": {
+    "message": "Перемикайтеся між компактною сіткою (маленькі ескізи) і детальним списком за допомогою кнопок поруч із рядком пошуку. Ваш вибір запам’ятовується між сеансами. У вигляді списку прапорці дають змогу вибрати окремі ресурси для пакетного завантаження."
+  },
+  "guideSecInspectContent": {
+    "message": "Натисніть будь-який ресурс, щоб відкрити його на панелі перегляду праворуч. Кожен відкритий файл стає вкладкою, тож можна порівнювати кілька ресурсів поруч — найновіший відкривається ліворуч. Для зображень, відео, аудіо, шрифтів, SVG і тексту/коду є спеціалізовані засоби перегляду (з перемикачем «Форматувати»). API показують розділений вигляд: відповідь ліворуч, деталі запиту (метод, статус, заголовки, параметри запиту та тіло) праворуч."
+  },
+  "guideSecDownloadingContent": {
+    "message": "<strong>Завантажити поточний вигляд</strong> зберігає наразі видимі ресурси (активна категорія + пошук + фільтри) як ZIP; коли фільтри активні, кнопка перейменовується на <em>Завантажити відфільтроване (N)</em>. Наведіть курсор на будь-яку кнопку завантаження, щоб до натискання побачити приблизний розмір архіву. <strong>Завантажити вибране</strong> завантажує лише позначені елементи. <strong>Завантажити все</strong> зберігає кожен знайдений ресурс у ZIP зі структурою папок. Невдалі завантаження повторюються автоматично, і їх можна повторити знову з контекстного меню. <strong>Експорт</strong> записує видимий список у форматі JSON або CSV чи створює дамп мережевого журналу Chrome як файл HAR."
+  },
+  "guideSecLightboxContent": {
+    "message": "Кнопка масштабування відкриває медіафайли в повнорозмірному лайтбоксі, де можна перетягувати, масштабувати колесом миші, екранними кнопками або клавіатурою (<kbd>+</kbd>/<kbd>-</kbd>, щоб масштабувати, <kbd>0</kbd>, щоб скинути, <kbd>Esc</kbd>, щоб закрити)."
+  },
+  "guideSecTextTablesContent": {
+    "message": "<p>Категорія <strong>Текст</strong> — це жива, читабельна копія сторінки. Вона захоплює кожен елемент, що містить текст — заголовки, абзаци, елементи списків, кнопки, <code>div</code>/<code>span</code> тощо — у порядку DOM і продовжує сканування, доки ввімкнено <strong>Наживо</strong>.</p><p>Поле <strong>Запит</strong> працює чотирма способами, які вибираються зі спадного списку поруч: <strong>Містить</strong> і <strong>Регулярний вираз</strong> фільтрують уже захоплений текст, а <strong>Селектор CSS</strong> і <strong>XPath</strong> виконуються на живій сторінці, тому можуть дістати будь-що в DOM. XPath також приймає вирази, які повертають значення, а не елементи, наприклад <code>count(//a)</code> або <code>//@href</code>. Усе, що сторінка повідомляє про помилковий запит, показується поруч із полем. <strong>Елемент</strong> звужує результат до одного тега з підрахунком кожного тега на сторінці. Очищення поля запиту (або натискання <strong>Очистити</strong>) повертає до <em>Всі елементи</em> і заново захоплює сторінку — вам ніколи не доведеться скидати список вручну.</p><p><strong>Читання</strong> приховує теги, прапорці та навігаційний ланцюжок розташування, щоб потік читався як документ. Таблиці зберігають обмежену історію знімків, тому динамічні (SPA) таблиці ніколи не втрачаються. Натисніть <strong>Показати всі рядки</strong> у таблиці, щоб об’єднати всі знімки в один вигляд без дублікатів — саме це міститься в експорті. Експортуйте як <strong>TXT</strong> (читабельна сторінка), <strong>MD</strong> (Markdown, разом із таблицями) або таблиці як CSV, HTML чи справжню багатоаркушеву книгу <strong>XLSX</strong>. Позначені елементи мають пріоритет; інакше експортується все, що зараз видно.</p>"
+  },
+  "guideSecCaptionsContent": {
+    "message": "WebVTT, SRT, TTML та інші файли підписів, зокрема джерела <code>&lt;track&gt;</code>, потрапляють на власну вкладку <strong>Підписи</strong> замість того, щоб змішуватися з документами."
+  },
+  "guideSecSourceMapsContent": {
+    "message": "Файли <code>.map</code> і тіла JSON, схожі на вихідні карти (вони містять <code>mappings</code> та <code>sources</code>), групуються у вкладці <strong>Вихідні карти</strong> із засобом перегляду JSON і форматуванням, тому більше не засмічують вкладку JSON."
+  },
+  "guideSecDupesContent": {
+    "message": "На вкладці «Зображення» панель хешує захоплені байти та позначає ідентичні файли. Фільтр <strong>Приховати дублікати</strong> залишає першу копію кожного набору, щоб ZIP поточного вигляду не містив одну й ту саму мініатюру двічі."
+  },
+  "guideSecVideoHlsContent": {
+    "message": "Потоки, які браузер не може відтворити нативно (HLS <code>.m3u8</code>, DASH <code>.mpd</code>, невідомі кодеки), показують запасний варіант замість чорного програвача. Для HLS можна об’єднати сегменти в один відеофайл прямо з панелі або завантажити оригінальний маніфест."
+  },
+  "guideSecPowerTipsContent": {
+    "message": "Відповіді динамічного <strong>API</strong> (XHR/fetch) не дедуплікуються за URL-адресою — кожна відповідь залишається в списку (обмежений FIFO), тож можна порівнювати повторювані запити. Статичні ресурси дедуплікуються. Використовуйте <strong>Оновити</strong>, щоб повторно просканувати поточний DOM, і перезавантажте сторінку, поки панель відкрита, щоб зафіксувати кожен мережевий запит, зокрема ті, що виконалися до переходу на цю вкладку."
+  },
+  "toolArrow": {
+    "message": "Інструмент «Стрілка»"
+  },
+  "toolRect": {
+    "message": "Інструмент «Прямокутник»"
+  },
+  "toolText": {
+    "message": "Інструмент «Текст»"
+  },
+  "toolUndo": {
+    "message": "Скасувати (Ctrl+Z)"
+  },
+  "toolRedo": {
+    "message": "Повторити (Ctrl+Y)"
+  },
+  "toolColor": {
+    "message": "Колір"
+  },
+  "badgeStrokeSize": {
+    "message": "Розмір: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeFontSize": {
+    "message": "Розмір шрифту: $size$ px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "contextMenuRecordArea": {
+    "message": "Записати вибрану область як відео / GIF"
+  },
+  "btnRecStart": {
+    "message": "Почати запис"
+  },
+  "btnRecPause": {
+    "message": "Призупинити"
+  },
+  "btnRecResume": {
+    "message": "Продовжити"
+  },
+  "btnRecStop": {
+    "message": "Завершити й завантажити"
+  },
+  "btnRecCancel": {
+    "message": "Скасувати"
+  },
+  "toastRecSaved": {
+    "message": "Запис вибраної області збережено"
+  },
+  "toastRecCancelled": {
+    "message": "Запис відео скасовано"
+  },
+  "toastRecPermissionDenied": {
+    "message": "Дозвіл на запис екрана не надано"
+  },
+  "btnPopupRecordArea": {
+    "message": "Відео / GIF області"
+  },
+  "btnPopupCaptureArea": {
+    "message": "Скріншот області"
+  },
+  "contextMenuPickColor": {
+    "message": "Вибрати колір з екрана"
+  },
+  "btnPopupPickColor": {
+    "message": "Вибрати колір"
+  },
+  "colorPickerTitle": {
+    "message": "Піпетка кольору"
+  },
+  "btnColorPickAgain": {
+    "message": "Вибрати інший колір"
+  },
+  "toastColorCopied": {
+    "message": "Колір скопійовано в буфер обміну"
+  },
+  "toastProgressCapturing": {
+    "message": "Захоплення всієї сторінки… $percent$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      },
+      "current": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastProgressStitching": {
+    "message": "Склеювання зображення…"
+  },
+  "modalExportTitle": {
+    "message": "Знімок усієї сторінки готовий"
+  },
+  "btnExportPng": {
+    "message": "Завантажити PNG"
+  },
+  "btnExportJpg": {
+    "message": "Завантажити JPG"
+  },
+  "btnExportPdf": {
+    "message": "Зберегти як PDF"
+  },
+  "btnExportCopy": {
+    "message": "Копіювати в буфер обміну"
+  },
+  "btnExportGenerating": {
+    "message": "Створення…"
+  },
+  "toastPdfGenerated": {
+    "message": "PDF-документ збережено."
+  },
+  "settingNamingPatterns": {
+    "message": "Шаблони іменування файлів"
+  },
+  "settingVideoFormat": {
+    "message": "Формат відео за замовчуванням"
+  },
+  "settingNamingPreview": {
+    "message": "Попередній перегляд:"
+  },
+  "toastRecGeneratingGif": {
+    "message": "Створення GIF, зачекайте…"
+  },
+  "settingGifResolution": {
+    "message": "Роздільна здатність GIF за замовчуванням"
+  },
+  "optGifOriginal": {
+    "message": "Оригінал (1:1, рідна роздільна здатність — повні 3K/4K, без зменшення)"
+  },
+  "optGif1080p": {
+    "message": "1080p Full HD (макс. 1920 px)"
+  },
+  "optGif720p": {
+    "message": "720p HD (макс. 1280 px)"
+  },
+  "optGif480p": {
+    "message": "480p SD (макс. 854 px — швидше й менший розмір)"
+  },
+  "tipGifDurationLimit": {
+    "message": "Формат GIF підтримує максимальну тривалість запису 1 хвилину (60 с)."
+  },
+  "guideSecScreenRecording": {
+    "message": "Запис екрана (відео та GIF)"
+  },
+  "guideSecScreenRecordingContent": {
+    "message": "Записуйте будь-яку область екрана як MP4, WebM або анімований GIF. Для записів GIF доступні профілі: оригінальна роздільна здатність 1:1, 1080p, 720p і 480p із приблизними розмірами файлів у реальному часі. Максимальна тривалість запису GIF — 1 хвилина (60 с) для оптимальної роботи браузера."
+  },
+  "msgGifMaxDurationReached": {
+    "message": "Досягнуто максимальної тривалості GIF — 1 хвилина (60 с). Створення GIF…"
+  },
+  "labelGifMaxDuration": {
+    "message": "Макс. 1 хв (60 с)"
+  },
+  "settingGifFps": {
+    "message": "Частота кадрів GIF за замовчуванням (FPS)"
+  },
+  "optGifFps15": {
+    "message": "15 FPS — плавно (дуже плавний рух, більший розмір)"
+  },
+  "optGifFps10": {
+    "message": "10 FPS — стандарт (рекомендовано для вебу, оптимальний баланс)"
+  },
+  "optGifFps5": {
+    "message": "5 FPS — компактно / мем (ривкий рух, малий розмір)"
+  },
+  "optGifFps2": {
+    "message": "2 FPS — стоп-моушн / повільно (крок за кроком, дуже малий розмір)"
+  },
+  "optGifFps1": {
+    "message": "1 FPS — презентація (1 кадр на секунду, мінімальний розмір)"
+  },
+  "popupRightClickHint": {
+    "message": "Клацніть правою кнопкою миші будь-де на веб-сторінці, щоб скористатися записом екрана (відео/GIF) і вибором кольору."
+  },
+  "toastElementZappedAd": {
+    "message": "Рекламу / iframe сховано на час цього сеансу.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Зображення скопійовано в буфер обміну",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Закрити (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Налаштування збережено",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Завантажте файл і відкрийте його у VLC або іншому медіаплеєрі.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Для цього типу ресурсу немає попереднього перегляду",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Завантажити оригінал",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "Порада: відкрийте завантажений файл у VLC або будь-якому настільному медіаплеєрі — він відтворює майже всі формати.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "Створення ZIP-архіву…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Ваш браузер не підтримує EyeDropper API.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Перетягнути панель інструментів",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Змінити формат: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "Роздільна здатність GIF: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "Частота кадрів GIF: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Орієнтовний розмір GIF: ~$size$ МБ (для 10 с), до ~$max$ МБ для максимальних 60 с.\nЧастота кадрів: $fps$ FPS.\nЗапис GIF обмежено максимум 1 хвилиною (60 с).",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "Копіювати $format$",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Попередній перегляд знімка екрана",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — відтворюється всюди, зокрема у WhatsApp, Telegram, Jira, Apple і Windows)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (анімоване зображення — ідеально для README, Jira, документації та повідомлень)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — відкритий веб-формат)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Активну вкладку не знайдено.",
+    "description": "No active tab found."
+  }
+}

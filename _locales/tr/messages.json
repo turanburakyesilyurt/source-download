@@ -12,11 +12,11 @@
     "description": "Araç çubuğu ikonu ipucu"
   },
   "contextMenuZap": {
-    "message": "Bu öğeyi gizle (Zap)",
+    "message": "Bu öğeyi gizle",
     "description": "Seçilen öğeyi gizleme sağ tık menüsü"
   },
   "contextMenuUndoZap": {
-    "message": "Son gizlenen öğeyi geri getir",
+    "message": "Son gizlenen öğeyi geri yükle",
     "description": "Son gizlenen öğeyi geri alma menüsü"
   },
   "contextMenuResetZap": {
@@ -28,7 +28,7 @@
     "description": "Tam sayfa ekran görüntüsü alma sağ tık menüsü"
   },
   "contextMenuPageArchive": {
-    "message": "Sayfayı çevrimdışı arşiv olarak indir",
+    "message": "Çevrimdışı sayfa arşivini indir",
     "description": "Çevrimdışı sayfa arşivi indirme menüsü"
   },
   "catAll": {
@@ -116,7 +116,7 @@
     "message": "Tam Sayfa Ekran Görüntüsü"
   },
   "btnOfflineArchive": {
-    "message": "Tek Dosya HTML Kaydet"
+    "message": "Tek HTML Dosyası Olarak Kaydet"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -248,13 +248,13 @@
     "message": "Kapat"
   },
   "toastElementZapped": {
-    "message": "Öğe bu oturum boyunca gizlendi."
+    "message": "Öğe bu oturum için gizlendi."
   },
   "toastElementRestored": {
-    "message": "Öğe geri getirildi."
+    "message": "Öğe geri yüklendi."
   },
   "toastAllElementsRestored": {
-    "message": "Tüm gizlenen öğeler geri getirildi."
+    "message": "Gizlenen tüm öğeler geri yüklendi."
   },
   "toastScreenshotCapturing": {
     "message": "Tam sayfa ekran görüntüsü alınıyor…"
@@ -263,10 +263,10 @@
     "message": "Tam sayfa ekran görüntüsü kaydedildi."
   },
   "toastArchiveCreated": {
-    "message": "Tek dosya HTML arşivi kaydedildi."
+    "message": "Tek dosyalı HTML arşivi kaydedildi."
   },
   "brandSignature": {
-    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
+    "message": "Turan Burak Yeşilyurt (2run.dev) tarafından geliştirildi"
   },
   "tabImages": {
     "message": "Görseller & SVG"
@@ -287,7 +287,7 @@
     "message": "Kusursuz birleştirme • Başlık gizleme"
   },
   "heroArchiveTitle": {
-    "message": "Tek Dosya HTML Arşivle"
+    "message": "Tek Dosyalı HTML Arşivi"
   },
   "heroArchiveDesc": {
     "message": "Gömülü CSS & görseller • Çevrimdışı hazır"
@@ -332,13 +332,13 @@
     "message": "Çevrimdışı sayfa arşivi (HTML)"
   },
   "filterMethodAll": {
-    "message": "Tüm metodlar"
+    "message": "Tüm yöntemler"
   },
   "filterTypeAll": {
-    "message": "Tüm tipler"
+    "message": "Tüm türler"
   },
   "filterSortDir": {
-    "message": "Artan / azalan sırala"
+    "message": "Artan / azalan sırayı değiştir"
   },
   "emptyTitle": {
     "message": "Kaynak bulunamadı"
@@ -386,7 +386,7 @@
     "message": "Temizle"
   },
   "toastRefreshComplete": {
-    "message": "Sayfa taraması tamamlandı: $COUNT$ yeni kaynak",
+    "message": "Sayfa taraması tamamlandı: $count$ yeni kaynak",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -395,7 +395,7 @@
     }
   },
   "toastCopiedBlocks": {
-    "message": "$COUNT$ blok panoya kopyalandı",
+    "message": "$count$ blok panoya kopyalandı",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -413,7 +413,7 @@
     "message": "Dışa aktarılacak içerik yok"
   },
   "toastExportedTxt": {
-    "message": "$COUNT$ blok TXT olarak dışa aktarıldı",
+    "message": "$count$ blok TXT olarak dışa aktarıldı",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -422,7 +422,7 @@
     }
   },
   "toastExportedMd": {
-    "message": "$COUNT$ blok Markdown olarak dışa aktarıldı",
+    "message": "$count$ blok Markdown olarak dışa aktarıldı",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -440,7 +440,7 @@
     "message": "Tablo XLSX olarak dışa aktarıldı"
   },
   "toastExportedTablesZip": {
-    "message": "$COUNT$ tablo $FORMAT$ olarak dışa aktarıldı",
+    "message": "$count$ tablo $format$ olarak dışa aktarıldı",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -453,7 +453,7 @@
     }
   },
   "toastExportedSheetsXlsx": {
-    "message": "$COUNT$ sayfa XLSX olarak dışa aktarıldı",
+    "message": "$count$ sayfa XLSX olarak dışa aktarıldı",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -471,7 +471,7 @@
     "message": "Önce en az bir kaynak seçin."
   },
   "toastZipSaved": {
-    "message": "ZIP kaydedildi: $TOTAL$ kaynaktan $FETCHED$ tanesi",
+    "message": "ZIP kaydedildi: $total$ kaynaktan $fetched$ tanesi",
     "placeholders": {
       "fetched": {
         "content": "$1",
@@ -484,7 +484,7 @@
     }
   },
   "toastZipFailed": {
-    "message": "ZIP oluşturulamadı: $ERROR$",
+    "message": "ZIP oluşturulamadı: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -493,7 +493,7 @@
     }
   },
   "toastHarExported": {
-    "message": "HAR dışa aktarıldı ($COUNT$ kayıt)",
+    "message": "HAR dışa aktarıldı ($count$ kayıt)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -508,7 +508,7 @@
     "message": "DevTools incelenen pencere kullanılamıyor."
   },
   "toastScreenshotError": {
-    "message": "Ekran görüntüsü hatası: $ERROR$",
+    "message": "Ekran görüntüsü hatası: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -520,7 +520,7 @@
     "message": "Çevrimdışı sayfa arşivi oluşturuluyor…"
   },
   "toastArchiveError": {
-    "message": "Arşiv hatası: $ERROR$",
+    "message": "Arşiv hatası: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -535,7 +535,7 @@
     "message": "Dosya biçimlendirilemedi — orijinal dosya gösteriliyor."
   },
   "emptySearchTitle": {
-    "message": "\"$QUERY$\" için eşleşme bulunamadı",
+    "message": "\"$query$\" için eşleşme bulunamadı",
     "placeholders": {
       "query": {
         "content": "$1",
@@ -550,13 +550,13 @@
     "message": "Mevcut filtrelerle eşleşen kaynak yok"
   },
   "emptyFiltersSub": {
-    "message": "Boyut veya ölçü filtrelerini gevşetin veya Temizle'ye basın."
+    "message": "Yukarıdaki boyut veya ölçü filtrelerini genişletin veya Temizle'ye basın."
   },
   "textEmptyQueryReject": {
     "message": "Sayfa bu sorguyu reddetti. Yukarıdan düzeltin, sonuçlar hemen gelecektir."
   },
   "textEmptyNoMatch": {
-    "message": "Sayfadaki hiçbir öğe bu sorguyla eşleşmiyor. Daha esnek bir seçici deneyin veya modunu değiştirin."
+    "message": "Sayfadaki hiçbir öğe bu sorguyla eşleşmiyor. Daha esnek bir seçici deneyin veya kutunun yanındaki modu değiştirin."
   },
   "textEmptyInitial": {
     "message": "Henüz hiçbir şey yakalanmadı. Canlı yakalama çalışıyor — tüm sayfa okunabilir metin olarak burada görünecektir."
@@ -565,7 +565,7 @@
     "message": "Mevcut sorgu ve öğe filtresiyle eşleşen içerik yok."
   },
   "textSummaryBlocks": {
-    "message": "$COUNT$ blok",
+    "message": "$count$ blok",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -574,7 +574,7 @@
     }
   },
   "textSummaryWords": {
-    "message": "$COUNT$ kelime",
+    "message": "$count$ kelime",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -583,7 +583,7 @@
     }
   },
   "textSummaryChars": {
-    "message": "$COUNT$ karakter",
+    "message": "$count$ karakter",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -592,7 +592,7 @@
     }
   },
   "textSummaryTables": {
-    "message": "$TABLES$ tablo · $ROWS$ benzersiz satır",
+    "message": "$tables$ tablo · $rows$ benzersiz satır",
     "placeholders": {
       "tables": {
         "content": "$1",
@@ -605,7 +605,7 @@
     }
   },
   "textSummarySelected": {
-    "message": "$COUNT$ seçildi — yalnızca bunlar dışa aktarılır",
+    "message": "$count$ seçildi — yalnızca bunlar dışa aktarılır",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -614,7 +614,7 @@
     }
   },
   "textTableOnScreen": {
-    "message": "Tablo — ekranda $COUNT$ satır",
+    "message": "Tablo — ekranda $count$ satır",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -623,7 +623,7 @@
     }
   },
   "textTableAllRows": {
-    "message": "Tablo — toplam $COUNT$ benzersiz satır",
+    "message": "Tablo — toplam $count$ benzersiz satır",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -632,7 +632,7 @@
     }
   },
   "textTableSnapshots": {
-    "message": "$COUNT$ anlık görüntü",
+    "message": "$count$ anlık görüntü",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -641,7 +641,7 @@
     }
   },
   "textTableUpdated": {
-    "message": "güncellendi $TIME$",
+    "message": "güncellendi $time$",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -650,7 +650,7 @@
     }
   },
   "textTableShowAll": {
-    "message": "Tüm $COUNT$ satırı göster",
+    "message": "Tüm $count$ satırı göster",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -662,7 +662,7 @@
     "message": "Tüm satırlar gösteriliyor"
   },
   "textTableHistory": {
-    "message": "Geçmiş ($COUNT$)",
+    "message": "Geçmiş ($count$)",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -689,7 +689,7 @@
     "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
-    "message": "$COUNT$ yinelenen resim",
+    "message": "$count$ yinelenen görsel",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -752,7 +752,7 @@
     "message": "Okuma açık"
   },
   "toastDownloadStarted": {
-    "message": "İndirme başladı: $NAME$",
+    "message": "İndirme başladı: $name$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -773,7 +773,7 @@
     "message": "★ Yıldız Ver"
   },
   "textTableUniqueRows": {
-    "message": "$COUNT$ benzersiz satır",
+    "message": "$count$ benzersiz satır",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -782,7 +782,7 @@
     }
   },
   "timeSecondsAgo": {
-    "message": "$COUNT$ sn önce",
+    "message": "$count$ sn önce",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -791,7 +791,7 @@
     }
   },
   "timeMinutesAgo": {
-    "message": "$COUNT$ dk önce",
+    "message": "$count$ dk önce",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -800,7 +800,7 @@
     }
   },
   "contextMenuCaptureArea": {
-    "message": "Bölgesel ekran görüntüsü al"
+    "message": "Alan ekran görüntüsü al"
   },
   "btnAreaDownload": {
     "message": "İndir"
@@ -812,13 +812,13 @@
     "message": "İptal"
   },
   "toastAreaCopied": {
-    "message": "Bölgesel ekran görüntüsü panoya kopyalandı"
+    "message": "Alan ekran görüntüsü panoya kopyalandı"
   },
   "toastAreaDownloaded": {
-    "message": "Bölgesel ekran görüntüsü kaydedildi"
+    "message": "Alan ekran görüntüsü kaydedildi"
   },
   "statusFoundCssResources": {
-    "message": "CSS'ten başvurulan $COUNT$ kaynak bulundu",
+    "message": "CSS'ten başvurulan $count$ kaynak bulundu",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -827,7 +827,7 @@
     }
   },
   "statusDomScanFailed": {
-    "message": "DOM taraması başarısız: $ERROR$",
+    "message": "DOM taraması başarısız: $error$",
     "placeholders": {
       "error": {
         "content": "$1",
@@ -947,13 +947,13 @@
     "message": "Orijinal (biçimlendirilmemiş) içeriği göster"
   },
   "findBeautify": {
-    "message": "Bu içeriği biçimlendir / güzelleştir"
+    "message": "Bu içeriği biçimlendir"
   },
   "btnRaw": {
     "message": "Ham"
   },
   "btnBeautify": {
-    "message": "Güzelleştir"
+    "message": "Biçimlendir"
   },
   "videoHlsDetected": {
     "message": "HLS (m3u8) akışı algılandı"
@@ -1034,7 +1034,7 @@
     }
   },
   "contextMenuRetryDownload": {
-    "message": "İndirmeyi tekrar dene"
+    "message": "İndirmeyi yeniden dene"
   },
   "searchRegexHint": {
     "message": "Regex arama aktif — sorgunuzu /desen/i içine alın"
@@ -1146,7 +1146,7 @@
     "message": "Kaynak Haritaları (Source maps)"
   },
   "guideSecDupes": {
-    "message": "Yinelenen resimler"
+    "message": "Yinelenen görseller"
   },
   "guideSecVideoHls": {
     "message": "Video alternatifleri ve HLS"
@@ -1194,25 +1194,25 @@
     "message": "Dinamik <strong>API</strong> yanıtları (XHR/fetch) URL'ye göre tekilleştirilmez — yinelenen istekleri karşılaştırabilmeniz için her yanıt listede (FIFO sınırlı) tutulur. Statik kaynaklar ise tekilleştirilir. Geçerli DOM'u yeniden taramak için <strong>Yenile</strong> düğmesini kullanın; sekmeyi değiştirmeden önce başlatılanlar dahil tüm ağ isteklerini yakalamak için paneli açıkken sayfayı yeniden yükleyin."
   },
   "toolArrow": {
-    "message": "Ok çiz"
+    "message": "Ok aracı"
   },
   "toolRect": {
-    "message": "Kutu çiz"
+    "message": "Dikdörtgen aracı"
   },
   "toolText": {
-    "message": "Yazı yaz"
+    "message": "Metin aracı"
   },
   "toolUndo": {
     "message": "Geri al (Ctrl+Z)"
   },
   "toolRedo": {
-    "message": "İleri al (Ctrl+Y)"
+    "message": "Yinele (Ctrl+Y)"
   },
   "toolColor": {
     "message": "Renk"
   },
   "badgeStrokeSize": {
-    "message": "Kalınlık: $SIZE$px",
+    "message": "Boyut: $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1221,7 +1221,7 @@
     }
   },
   "badgeFontSize": {
-    "message": "Yazı boyutu: $SIZE$px",
+    "message": "Yazı tipi boyutu: $size$ px",
     "placeholders": {
       "size": {
         "content": "$1",
@@ -1230,7 +1230,7 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "Bölgesel Video / GIF Kaydı Al"
+    "message": "Seçili alanı video / GIF olarak kaydet"
   },
   "btnRecStart": {
     "message": "Kaydı başlat"
@@ -1239,16 +1239,16 @@
     "message": "Duraklat"
   },
   "btnRecResume": {
-    "message": "Devam ettir"
+    "message": "Devam et"
   },
   "btnRecStop": {
-    "message": "Kaydı bitir & indir"
+    "message": "Bitir ve indir"
   },
   "btnRecCancel": {
     "message": "İptal"
   },
   "toastRecSaved": {
-    "message": "Bölgesel kayıt indirildi"
+    "message": "Seçili alanın kaydı kaydedildi"
   },
   "toastRecCancelled": {
     "message": "Video kaydı iptal edildi"
@@ -1257,10 +1257,10 @@
     "message": "Ekran kaydı izni verilmedi"
   },
   "btnPopupRecordArea": {
-    "message": "Bölgesel Video / GIF"
+    "message": "Alan Videosu / GIF"
   },
   "btnPopupCaptureArea": {
-    "message": "Bölgesel Ekran Görüntüsü"
+    "message": "Alan Ekran Görüntüsü"
   },
   "contextMenuPickColor": {
     "message": "Ekrandan renk seç"
@@ -1269,16 +1269,16 @@
     "message": "Renk Seç"
   },
   "colorPickerTitle": {
-    "message": "Renk Seçici"
+    "message": "Renk seçici"
   },
   "btnColorPickAgain": {
-    "message": "Yeniden Seç"
+    "message": "Başka renk seç"
   },
   "toastColorCopied": {
     "message": "Renk panoya kopyalandı"
   },
   "toastProgressCapturing": {
-    "message": "Tam sayfa yakalanıyor... %$PERCENT$ ($CURRENT$/$TOTAL$)",
+    "message": "Tüm sayfa yakalanıyor… %$percent$",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,25 +1292,25 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Görüntü birleştiriliyor..."
+    "message": "Görüntü birleştiriliyor…"
   },
   "modalExportTitle": {
-    "message": "Tam Sayfa Ekran Görüntüsü Hazır"
+    "message": "Tam sayfa ekran görüntüsü hazır"
   },
   "btnExportPng": {
-    "message": "PNG İndir"
+    "message": "PNG olarak indir"
   },
   "btnExportJpg": {
-    "message": "JPG İndir"
+    "message": "JPG olarak indir"
   },
   "btnExportPdf": {
-    "message": "PDF Olarak Kaydet"
+    "message": "PDF olarak kaydet"
   },
   "btnExportCopy": {
-    "message": "Panoya Kopyala"
+    "message": "Panoya kopyala"
   },
   "btnExportGenerating": {
-    "message": "Oluşturuluyor..."
+    "message": "Oluşturuluyor…"
   },
   "toastPdfGenerated": {
     "message": "PDF belgesi kaydedildi."
@@ -1325,22 +1325,22 @@
     "message": "Önizleme:"
   },
   "toastRecGeneratingGif": {
-    "message": "GIF oluşturuluyor, lütfen bekleyin..."
+    "message": "GIF oluşturuluyor, lütfen bekleyin…"
   },
   "settingGifResolution": {
     "message": "Varsayılan GIF Çözünürlüğü"
   },
   "optGifOriginal": {
-    "message": "Orijinal (1:1 Birebir — Tam 3K/4K Çözünürlük, Ölçekleme Yok)"
+    "message": "Orijinal (1:1 yerel çözünürlük — tam 3K/4K, küçültme yok)"
   },
   "optGif1080p": {
-    "message": "1080p Full HD (Maks. 1920px)"
+    "message": "1080p Full HD (en fazla 1920 px)"
   },
   "optGif720p": {
-    "message": "720p HD (Maks. 1280px)"
+    "message": "720p HD (en fazla 1280 px)"
   },
   "optGif480p": {
-    "message": "480p SD (Maks. 854px — Hızlı & düşük boyut)"
+    "message": "480p SD (en fazla 854 px — daha hızlı ve daha küçük boyut)"
   },
   "tipGifDurationLimit": {
     "message": "GIF formatı için maksimum kayıt süresi 1 dakikadır (60 sn)."
@@ -1352,31 +1352,135 @@
     "message": "Ekranın dilediğiniz bölgesini MP4, WebM veya animasyonlu GIF olarak kaydedin. GIF kayıtları 1:1 orijinal çözünürlük, 1080p, 720p ve 480p profilleri ile anlık tahmini dosya boyutu hesaplaması sunar. En yüksek tarayıcı performansı için maksimum GIF kayıt süresi 1 dakikadır (60 saniye)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Maksimum GIF süresi olan 1 dakikaya (60 sn) ulaşıldı. GIF oluşturuluyor..."
+    "message": "GIF için en fazla 1 dakikalık (60 sn) süreye ulaşıldı. GIF oluşturuluyor…"
   },
   "labelGifMaxDuration": {
-    "message": "Maks 1 dk (60 sn)"
+    "message": "En fazla 1 dk (60 sn)"
   },
   "settingGifFps": {
     "message": "Varsayılan GIF Kare Hızı (FPS)"
   },
   "optGifFps15": {
-    "message": "15 FPS — Akıcı (Yüksek akıcılık, büyük dosya)"
+    "message": "15 FPS — Akıcı (çok akıcı hareket, daha büyük boyut)"
   },
   "optGifFps10": {
-    "message": "10 FPS — Standart (Web için önerilen dengeli hız)"
+    "message": "10 FPS — Standart (web ve denge için önerilir)"
   },
   "optGifFps5": {
-    "message": "5 FPS — Kompakt / Meme (Hafif kademeli, küçük boyut)"
+    "message": "5 FPS — Kompakt / Meme (kesik hareket, küçük boyut)"
   },
   "optGifFps2": {
-    "message": "2 FPS — Stop-Motion / Yavaş (\"Tık-tık\" adım adım, minik boyut)"
+    "message": "2 FPS — Stop-motion / Yavaş (adım adım, çok küçük boyut)"
   },
   "optGifFps1": {
-    "message": "1 FPS — Sunum / Slayt (Saniyede 1 kare, minimum boyut)"
+    "message": "1 FPS — Sunum (saniyede 1 kare, en küçük boyut)"
   },
   "popupRightClickHint": {
     "message": "Ekran kaydı (Video/GIF) ve Renk Seçici için sayfada herhangi bir yere sağ tıklayın.",
     "description": "Hint informing user to use right-click context menu for recording and color picker"
+  },
+  "toastElementZappedAd": {
+    "message": "Reklam / iframe bu oturum için gizlendi.",
+    "description": "Ad / iframe hidden for this session."
+  },
+  "toastImageCopied": {
+    "message": "Görsel panoya kopyalandı",
+    "description": "Image copied to clipboard"
+  },
+  "guideClose": {
+    "message": "Kapat (Esc)",
+    "description": "Close (Esc)"
+  },
+  "toastSettingsSaved": {
+    "message": "Ayarlar kaydedildi",
+    "description": "Settings saved"
+  },
+  "videoFallbackVlcNote": {
+    "message": "Dosyayı indirin ve VLC veya başka bir medya oynatıcıyla açın.",
+    "description": "Download the file and open it with VLC or another media player."
+  },
+  "emptyPreviewUnknown": {
+    "message": "Bu kaynak türü için önizleme yok",
+    "description": "No preview for this resource type"
+  },
+  "videoDownloadOriginal": {
+    "message": "Orijinali indir",
+    "description": "Download original"
+  },
+  "videoTipVlc": {
+    "message": "İpucu: indirilen dosyayı VLC ya da herhangi bir masaüstü medya oynatıcısıyla açın; neredeyse tüm biçimleri oynatır.",
+    "description": "Tip: open the downloaded file with VLC or any desktop media player — it plays virtually every format."
+  },
+  "progressCreatingZipArchive": {
+    "message": "ZIP arşivi oluşturuluyor…",
+    "description": "Creating ZIP archive…"
+  },
+  "toastEyeDropperUnsupported": {
+    "message": "Tarayıcınız EyeDropper API'sini desteklemiyor.",
+    "description": "Your browser does not support the EyeDropper API."
+  },
+  "tipRecDragToolbar": {
+    "message": "Araç çubuğunu sürükle",
+    "description": "Drag toolbar"
+  },
+  "tipRecToggleFormat": {
+    "message": "Biçimi değiştir: MP4 / GIF / WebM",
+    "description": "Toggle format: MP4 / GIF / WebM"
+  },
+  "tipRecGifResolution": {
+    "message": "GIF çözünürlüğü: 1:1 / 1080p / 720p / 480p",
+    "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
+  },
+  "tipRecGifFps": {
+    "message": "GIF kare hızı: 15 / 10 / 5 / 2 / 1 FPS",
+    "description": "GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS"
+  },
+  "tipGifEstimate": {
+    "message": "Tahmini GIF boyutu: ~$size$ MB (10 sn için), en fazla 60 sn için ~$max$ MB'a kadar.\nKare hızı: $fps$ FPS.\nGIF kaydı en fazla 1 dakika (60 sn) ile sınırlıdır.",
+    "description": "Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "2.4"
+      },
+      "max": {
+        "content": "$2",
+        "example": "14"
+      },
+      "fps": {
+        "content": "$3",
+        "example": "10"
+      }
+    }
+  },
+  "tipColorCopyFormat": {
+    "message": "$format$ kopyala",
+    "description": "Copy $format$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "HEX"
+      }
+    }
+  },
+  "altScreenshotPreview": {
+    "message": "Ekran görüntüsü önizlemesi",
+    "description": "Screenshot preview"
+  },
+  "optVideoMp4": {
+    "message": "MP4 (H.264 / AVC1 — WhatsApp, Telegram, Jira, Apple ve Windows dahil her yerde oynatılır)",
+    "description": "MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple & Windows)"
+  },
+  "optVideoGif": {
+    "message": "GIF (hareketli görsel — README dosyaları, Jira, belgeler ve mesajlaşma için ideal)",
+    "description": "GIF (Animated image — Ideal for READMEs, Jira, documentation & messaging)"
+  },
+  "optVideoWebm": {
+    "message": "WebM (VP9 — açık web biçimi)",
+    "description": "WebM (VP9 — Open Web format)"
+  },
+  "errNoActiveTab": {
+    "message": "Etkin sekme bulunamadı.",
+    "description": "No active tab found."
   }
 }

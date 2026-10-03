@@ -2962,3 +2962,43 @@ html[data-theme="light"] .card--selected {
   border-color: var(--accent);
   background: rgba(26, 115, 232, 0.12);
 }
+
+/* ============================================================
+ * RTL Support (Arabic, Hebrew, Persian)
+ * ============================================================ */
+html[dir="rtl"] .guide__body,
+html[dir="rtl"] .guide__section-content,
+html[dir="rtl"] .guide__section-title,
+html[dir="rtl"] .guide__title,
+html[dir="rtl"] .guide__intro {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] .guide__search-box {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .toast {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Maintain LTR for code, keyboard shortcuts, URLs, and regexes */
+html[dir="rtl"] code,
+html[dir="rtl"] kbd,
+html[dir="rtl"] pre,
+html[dir="rtl"] .code,
+html[dir="rtl"] .url,
+html[dir="rtl"] .meta-value,
+html[dir="rtl"] .resource-item__url,
+html[dir="rtl"] .inspector-url,
+html[dir="rtl"] .method-chip,
+html[dir="rtl"] .guide__section-content code,
+html[dir="rtl"] .guide__section-content kbd {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block;
+  text-align: left;
+}

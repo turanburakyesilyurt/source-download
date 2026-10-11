@@ -1,98 +1,200 @@
 /* Source Download — background service worker.
  * Author: Turan Burak Yeşilyurt — https://www.linkedin.com/in/turan-burak-yesilyurt/
  *
- * Aggregates per-tab resource counts reported by
- * content scripts (and the DevTools panel when it is open) and maintains the
- * toolbar badge. Which categories count is controlled from the popup
- * ("tracking" toggles), persisted in storage. */
+ * Keeps the context menu and the full-page / archive capture pipeline.
+ * Nothing runs on web pages until the user asks: the capture tools
+ * (content.js) are injected only when one of them is used. */
 
 'use strict';
 
 try {
-  importScripts('lib/i18n.js', 'lib/naming.js');
+  importScripts('lib/locale.js', 'lib/naming.js');
 } catch (e) {
-  console.warn('Could not import lib/i18n.js or lib/naming.js in service worker:', e);
+  console.warn('Could not import lib/locale.js or lib/naming.js in service worker:', e);
 }
 
-const CATEGORIES = ['api', 'image', 'svg', 'video', 'audio', 'caption', 'css', 'js', 'sourcemap', 'font', 'document', 'json', 'wasm', 'manifest', 'other'];
-const DEFAULT_TRACKING = {};
-for (const k of CATEGORIES) DEFAULT_TRACKING[k] = true;
+/* ============================================================
+ * Per-tab state (only: how many elements were hidden in this tab)
+ * ============================================================ */
 
-// Content-script counts per tab; panel counts per tab (preferred while the
-// DevTools panel is open, because it also sees live network requests).
-const countsByTab = new Map();
-const panelCountsByTab = new Map();
+// The toolbar badge and page counting were removed in 1.18: counts are only
+// reliable inside the DevTools panel, which sees every network request.
+// One storage key per tab; writes for the same tab are queued.
+const tabKey = (tabId) => 'sdTab:' + tabId;
+const writeQueues = new Map();
 
-let tracking = { ...DEFAULT_TRACKING };
-
-function emptyCounts() {
-  const c = { all: 0 };
-  for (const k of CATEGORIES) c[k] = 0;
-  return c;
-}
-
-function aggregate() {
-  const totals = emptyCounts();
-  const tabIds = new Set([...countsByTab.keys(), ...panelCountsByTab.keys()]);
-  for (const tabId of tabIds) {
-    const counts = panelCountsByTab.get(tabId) || countsByTab.get(tabId);
-    if (!counts) continue;
-    for (const k of Object.keys(totals)) totals[k] += counts[k] || 0;
+async function readTab(tabId) {
+  try {
+    const key = tabKey(tabId);
+    return (await chrome.storage.session.get(key))[key] || null;
+  } catch {
+    return null;
   }
-  return totals;
 }
 
-function computeBadgeNumber() {
-  const totals = aggregate();
-  let n = 0;
-  for (const k of CATEGORIES) if (tracking[k]) n += totals[k];
-  return n;
+function writeTabState(tabId, patch) {
+  const prev = writeQueues.get(tabId) || Promise.resolve();
+  const next = prev.then(async () => {
+    const key = tabKey(tabId);
+    if (patch === null) {
+      await chrome.storage.session.remove(key);
+      writeQueues.delete(tabId);
+      return null;
+    }
+    const value = Object.assign({}, await readTab(tabId), patch);
+    await chrome.storage.session.set({ [key]: value });
+    return value;
+  }).catch(() => null);
+  writeQueues.set(tabId, next);
+  return next;
 }
 
-function updateBadge() {
-  const badgeCount = computeBadgeNumber();
-  const text =
-    badgeCount === 0
-      ? ''
-      : badgeCount > 9999
-        ? Math.round(badgeCount / 1000) + 'K'
-        : String(badgeCount);
-  chrome.action.setBadgeText({ text });
-  chrome.action.setBadgeBackgroundColor({ color: '#4f8cff' });
+function isRestrictedUrl(url) {
+  return !url || /^(chrome|edge|about|devtools|chrome-extension|view-source):/i.test(url) ||
+    url.includes('chromewebstore.google.com') || url.includes('chrome.google.com/webstore');
 }
 
-chrome.storage.local.get({ tracking: DEFAULT_TRACKING }, (data) => {
-  const saved = data.tracking || {};
-  for (const k of CATEGORIES) {
-    tracking[k] = typeof saved[k] === 'boolean' ? saved[k] : true;
-  }
-  updateBadge();
+chrome.tabs.onUpdated.addListener((tabId, info) => {
+  if (info.status === 'loading') writeTabState(tabId, { zapped: 0 }).then(() => syncUndoMenu(tabId));
 });
+
+chrome.tabs.onActivated.addListener(({ tabId }) => syncUndoMenu(tabId));
+
+chrome.tabs.onRemoved.addListener((tabId) => {
+  writeTabState(tabId, null);
+});
+
+async function activeTab() {
+  const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
+  return tab || null;
+}
+
+// Clear a badge left by versions up to 1.17.
+chrome.action.setBadgeText({ text: '' }).catch(() => {});
+chrome.storage.local.remove('tracking').catch(() => {});
+
+// Optional "why did you remove it?" form (GitHub issue template in the public repo).
+try {
+  chrome.runtime.setUninstallURL('https://github.com/turanburakyesilyurt/source-download/issues/new?template=uninstall-feedback.yml');
+} catch { /* noop */ }
+
+/* ============================================================
+ * Localization (shared resolver, one locale loaded at a time)
+ * ============================================================ */
+
+let currentBackgroundLang = 'auto';
+let bgMessages = {};
+
+async function loadBackgroundMessages(lang) {
+  const res = await SourceDownloadLocale.loadMessages(lang || currentBackgroundLang);
+  bgMessages = res.messages;
+  return res;
+}
+
+function getMenuTitle(key, fallback) {
+  return bgMessages[key] || fallback;
+}
+
+async function getLocalizedMessage(key, fallback) {
+  try {
+    const stored = await chrome.storage.local.get({ lang: 'auto' });
+    const { messages } = await SourceDownloadLocale.loadMessages(stored.lang || 'auto');
+    return messages[key] || fallback;
+  } catch {
+    return getMenuTitle(key, fallback);
+  }
+}
+
+/* ============================================================
+ * On-demand capture tools (content.js)
+ * ============================================================ */
+
+// Installs the capture tools in the tab if they are not there yet and hands
+// them the dictionary for the user's language (only that one locale).
+async function ensureContentScriptInjected(tabId) {
+  if (!tabId) throw new Error('No active tab available.');
+  const tab = await chrome.tabs.get(tabId);
+  if (!tab || isRestrictedUrl(tab.url)) {
+    throw new Error('Extensions cannot run on restricted browser or Web Store pages.');
+  }
+
+  const stored = await chrome.storage.local.get({ lang: 'auto' });
+  const { locale, messages } = await SourceDownloadLocale.loadMessages(stored.lang || 'auto');
+  await chrome.scripting.executeScript({
+    target: { tabId },
+    func: (loc, msgs) => {
+      const g = globalThis;
+      g.SourceDownloadI18n = g.SourceDownloadI18n || {};
+      g.SourceDownloadI18n[loc] = msgs;
+    },
+    args: [locale, messages],
+  });
+
+  try {
+    const res = await chrome.tabs.sendMessage(tabId, { type: 'ping' });
+    if (res && res.pong) return true;
+  } catch {
+    // Capture tools not installed in this document yet.
+  }
+
+  await chrome.scripting.executeScript({
+    target: { tabId },
+    files: ['lib/locale.js', 'lib/naming.js', 'lib/pdf.js', 'lib/gif.js', 'content.js'],
+  });
+  return true;
+}
+
+async function startTool(type, extra) {
+  const tab = await activeTab();
+  if (!tab || !tab.id) throw new Error('No active tab available.');
+  await ensureContentScriptInjected(tab.id);
+  const stored = await chrome.storage.local.get({ lang: 'auto' });
+  await chrome.tabs.sendMessage(tab.id, Object.assign({ type, lang: stored.lang || 'auto' }, extra || {}));
+  return tab;
+}
+
+/* ============================================================
+ * Fetch in the page's own context (cookies, session, CORS of the site)
+ * ============================================================ */
+
+// Used by the DevTools panel when a direct fetch fails (signed-in or
+// CORS-protected resources, HLS segments). chrome.scripting waits for the
+// promise, unlike devtools.inspectedWindow.eval which cannot await.
+async function fetchInPage(tabId, url) {
+  const [res] = await chrome.scripting.executeScript({
+    target: { tabId },
+    world: 'MAIN',
+    func: async (u) => {
+      try {
+        const resp = await fetch(u, { credentials: 'include' });
+        if (!resp.ok) return { ok: false, status: resp.status };
+        const bytes = new Uint8Array(await resp.arrayBuffer());
+        let bin = '';
+        for (let i = 0; i < bytes.length; i += 0x8000) {
+          bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+        }
+        return { ok: true, b64: btoa(bin), type: resp.headers.get('content-type') || '' };
+      } catch (e) {
+        return { ok: false, error: String(e && e.message || e) };
+      }
+    },
+    args: [url],
+  });
+  return (res && res.result) || { ok: false };
+}
+
+/* ============================================================
+ * Messages
+ * ============================================================ */
 
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (!msg || typeof msg !== 'object') return undefined;
-  if (msg.type === 'resourceCounts') {
-    if (sender.tab && sender.tab.id !== undefined && msg.counts && typeof msg.counts === 'object') {
-      countsByTab.set(sender.tab.id, msg.counts);
-      updateBadge();
+  if (msg.type === 'panelCounts' || msg.type === 'refreshBadge') {
+    sendResponse({ ok: true }); // sent by older panels / tabs; nothing to do
+  } else if (msg.type === 'zapState') {
+    if (sender.tab && sender.tab.id !== undefined) {
+      writeTabState(sender.tab.id, { zapped: msg.count || 0 }).then(() => syncUndoMenu(sender.tab.id));
     }
-    sendResponse({ ok: true });
-  } else if (msg.type === 'panelCounts') {
-    // From the DevTools panel — more accurate while it is open.
-    if (msg.tabId !== undefined && msg.counts && typeof msg.counts === 'object') {
-      panelCountsByTab.set(msg.tabId, msg.counts);
-      updateBadge();
-    }
-    sendResponse({ ok: true });
-  } else if (msg.type === 'getState') {
-    sendResponse({ tracking, counts: aggregate(), badgeCount: computeBadgeNumber() });
-  } else if (msg.type === 'setTracking') {
-    const next = msg.tracking || {};
-    for (const k of CATEGORIES) {
-      if (typeof next[k] === 'boolean') tracking[k] = next[k];
-    }
-    chrome.storage.local.set({ tracking });
-    updateBadge();
     sendResponse({ ok: true });
   } else if (msg.type === 'captureFullPage') {
     (async () => {
@@ -119,13 +221,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   } else if (msg.type === 'triggerAreaCapture') {
     (async () => {
       try {
-        const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-        if (!tab || !tab.id) return;
-        await ensureContentScriptInjected(tab.id);
+        const tab = await activeTab();
+        if (!tab || !tab.id) throw new Error('No active tab available.');
         const dataUrl = await chrome.tabs.captureVisibleTab(tab.windowId, { format: 'png' });
-        const stored = await chrome.storage.local.get({ lang: 'auto' });
-        const lang = stored.lang || 'auto';
-        chrome.tabs.sendMessage(tab.id, { type: 'startAreaCapture', dataUrl, lang });
+        await startTool('startAreaCapture', { dataUrl });
         sendResponse({ ok: true });
       } catch (e) {
         console.warn('triggerAreaCapture failed:', e);
@@ -133,223 +232,109 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       }
     })();
     return true;
-  } else if (msg.type === 'triggerAreaVideoRecord') {
+  } else if (msg.type === 'triggerAreaVideoRecord' || msg.type === 'triggerColorPicker') {
     (async () => {
       try {
-        const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-        if (!tab || !tab.id) return;
-        await ensureContentScriptInjected(tab.id);
-        const stored = await chrome.storage.local.get({ lang: 'auto' });
-        const lang = stored.lang || 'auto';
-        chrome.tabs.sendMessage(tab.id, { type: 'startAreaVideoRecord', lang });
+        await startTool(msg.type === 'triggerColorPicker' ? 'startColorPicker' : 'startAreaVideoRecord');
         sendResponse({ ok: true });
       } catch (e) {
-        console.warn('triggerAreaVideoRecord failed:', e);
+        console.warn(msg.type + ' failed:', e);
         sendResponse({ ok: false, error: e.message });
       }
     })();
     return true;
-  } else if (msg.type === 'triggerColorPicker') {
-    (async () => {
-      try {
-        const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-        if (!tab || !tab.id) return;
-        await ensureContentScriptInjected(tab.id);
-        const stored = await chrome.storage.local.get({ lang: 'auto' });
-        const lang = stored.lang || 'auto';
-        chrome.tabs.sendMessage(tab.id, { type: 'startColorPicker', lang });
-        sendResponse({ ok: true });
-      } catch (e) {
-        console.warn('triggerColorPicker failed:', e);
-        sendResponse({ ok: false, error: e.message });
-      }
-    })();
+  } else if (msg.type === 'fetchInPage') {
+    fetchInPage(msg.tabId, msg.url)
+      .then(sendResponse)
+      .catch((e) => sendResponse({ ok: false, error: String(e && e.message || e) }));
+    return true;
+  } else if (msg.type === 'recordMilestone') {
+    recordDownloadMilestone().then(() => sendResponse({ ok: true }));
     return true;
   }
   return undefined;
 });
 
-chrome.tabs.onRemoved.addListener((tabId) => {
-  const a = countsByTab.delete(tabId);
-  const b = panelCountsByTab.delete(tabId);
-  if (a || b) updateBadge();
-});
-
 /* ============================================================
- * Context Menus & Full Page Capture & Archiving
+ * Context menu
  * ============================================================ */
 
-async function ensureContentScriptInjected(tabId) {
-  if (!tabId) throw new Error('No active tab available.');
-  try {
-    const res = await chrome.tabs.sendMessage(tabId, { type: 'ping' });
-    if (res && res.pong) return true;
-  } catch {
-    // Content script not answering yet
-  }
-
-  const tab = await chrome.tabs.get(tabId);
-  if (!tab || !tab.url || tab.url.startsWith('chrome://') || tab.url.startsWith('edge://') || tab.url.startsWith('about:') || tab.url.includes('chromewebstore.google.com') || tab.url.includes('chrome.google.com/webstore')) {
-    throw new Error('Extensions cannot run on restricted browser or Web Store pages.');
-  }
-
-  await chrome.scripting.executeScript({
-    target: { tabId },
-    files: ['lib/i18n.js', 'lib/naming.js', 'lib/pdf.js', 'lib/gif.js', 'content.js'],
-  });
-  await new Promise((r) => setTimeout(r, 120));
-  return true;
-}
-
-let currentBackgroundLang = 'auto';
-
-const SUPPORTED_LOCALES = ["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt_PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
-
-function resolveLocale(code) {
-  if (!code || code === 'auto') {
-    const browserLang = (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getUILanguage)
-      ? chrome.i18n.getUILanguage()
-      : (typeof navigator !== 'undefined' ? navigator.language : 'en');
-    code = browserLang;
-  }
-  const raw = String(code).trim();
-  const lower = raw.toLowerCase().replace('-', '_');
-
-  if (SUPPORTED_LOCALES.includes(raw)) return raw;
-  for (const loc of SUPPORTED_LOCALES) {
-    if (loc.toLowerCase() === lower) return loc;
-  }
-
-  if (lower.startsWith('zh_tw') || lower.startsWith('zh_hk') || lower.startsWith('zh_mo')) return 'zh_TW';
-  if (lower.startsWith('zh')) return 'zh_CN';
-  if (lower.startsWith('pt_pt')) return 'pt_PT';
-  if (lower.startsWith('pt')) return 'pt_BR';
-  if (lower.startsWith('es_419')) return 'es_419';
-  if (lower.startsWith('es')) return 'es';
-  if (lower.startsWith('en_gb')) return 'en_GB';
-  if (lower.startsWith('en_us')) return 'en_US';
-  if (lower.startsWith('en')) return 'en';
-
-  const prefix = lower.split('_')[0];
-  for (const loc of SUPPORTED_LOCALES) {
-    if (loc.toLowerCase() === prefix) return loc;
-  }
-  return 'en';
-}
-
-function getMenuTitle(key, fallback, lang) {
-  const loc = resolveLocale(lang || currentBackgroundLang);
-  const dict = (typeof globalScope !== 'undefined' && globalScope.SourceDownloadI18n) || (typeof self !== 'undefined' && self.SourceDownloadI18n);
-  if (dict && dict[loc] && dict[loc][key]) {
-    return dict[loc][key];
-  }
-  try {
-    if (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getMessage) {
-      const m = chrome.i18n.getMessage(key);
-      if (m) return m;
-    }
-  } catch { /* noop */ }
-  return fallback;
-}
-
-async function getLocalizedMessage(key, fallback) {
-  try {
-    const stored = await chrome.storage.local.get({ lang: 'auto' });
-    return getMenuTitle(key, fallback, stored.lang || 'auto');
-  } catch {
-    return getMenuTitle(key, fallback, currentBackgroundLang);
-  }
-}
-
-let isSettingUpMenus = false;
+let menuSetup = Promise.resolve();
 
 function setupContextMenus(lang) {
   if (lang) currentBackgroundLang = lang;
-  if (isSettingUpMenus) return;
-  isSettingUpMenus = true;
-
-  try {
-    chrome.contextMenus.removeAll(() => {
+  menuSetup = menuSetup.then(async () => {
+    try {
+      await loadBackgroundMessages(currentBackgroundLang);
+    } catch { /* fall back to English titles */ }
+    await new Promise((resolve) => chrome.contextMenus.removeAll(() => {
       void chrome.runtime.lastError;
+      resolve();
+    }));
+    const items = [
+      { id: 'sd-zap-element', title: getMenuTitle('contextMenuZap', 'Hide this element') },
+      { id: 'sd-undo-zap', title: getMenuTitle('contextMenuUndoZap', 'Restore last hidden element'), visible: false },
+      { id: 'sd-reset-zap', title: getMenuTitle('contextMenuResetZap', 'Reset all hidden elements'), visible: false },
+      { id: 'sd-sep-1', type: 'separator' },
+      { id: 'sd-capture-area', title: getMenuTitle('contextMenuCaptureArea', 'Capture area screenshot') },
+      { id: 'sd-record-area', title: getMenuTitle('contextMenuRecordArea', 'Record area as video / GIF') },
+      { id: 'sd-pick-color', title: getMenuTitle('contextMenuPickColor', 'Pick color from screen') },
+      { id: 'sd-sep-2', type: 'separator' },
+      { id: 'sd-capture-page', title: getMenuTitle('contextMenuCapturePage', 'Capture full page screenshot') },
+      { id: 'sd-page-archive', title: getMenuTitle('contextMenuPageArchive', 'Download offline page archive') },
+    ];
+    for (const item of items) {
+      chrome.contextMenus.create(Object.assign({ contexts: ['all'] }, item), () => {
+        void chrome.runtime.lastError;
+      });
+    }
+    // Menus outlive the service worker, so remember which language they were
+    // built in; a restart compares against this instead of an in-memory value.
+    await chrome.storage.local.set({ menuLang: currentBackgroundLang });
+    const tab = await activeTab().catch(() => null);
+    if (tab) await syncUndoMenu(tab.id);
+  }).catch((e) => console.warn('Context menu creation error:', e));
+  return menuSetup;
+}
 
-      const items = [
-        {
-          id: 'sd-zap-element',
-          title: getMenuTitle('contextMenuZap', 'Zap / Hide this element', currentBackgroundLang),
-          contexts: ['all'],
-        },
-        {
-          id: 'sd-undo-zap',
-          title: getMenuTitle('contextMenuUndoZap', 'Restore last hidden element', currentBackgroundLang),
-          contexts: ['all'],
-        },
-        {
-          id: 'sd-reset-zap',
-          title: getMenuTitle('contextMenuResetZap', 'Reset all hidden elements', currentBackgroundLang),
-          contexts: ['all'],
-        },
-        { id: 'sd-sep-1', type: 'separator', contexts: ['all'] },
-        {
-          id: 'sd-capture-area',
-          title: getMenuTitle('contextMenuCaptureArea', 'Capture area screenshot', currentBackgroundLang),
-          contexts: ['all'],
-        },
-        {
-          id: 'sd-record-area',
-          title: getMenuTitle('contextMenuRecordArea', 'Record Regional Video / GIF', currentBackgroundLang),
-          contexts: ['all'],
-        },
-        { id: 'sd-sep-2', type: 'separator', contexts: ['all'] },
-        {
-          id: 'sd-pick-color',
-          title: getMenuTitle('contextMenuPickColor', 'Pick color from screen', currentBackgroundLang),
-          contexts: ['all'],
-        },
-        { id: 'sd-sep-3', type: 'separator', contexts: ['all'] },
-        {
-          id: 'sd-capture-page',
-          title: getMenuTitle('contextMenuCapturePage', 'Capture full page screenshot', currentBackgroundLang),
-          contexts: ['all'],
-        },
-        {
-          id: 'sd-page-archive',
-          title: getMenuTitle('contextMenuPageArchive', 'Download offline page archive', currentBackgroundLang),
-          contexts: ['all'],
-        },
-      ];
-
-      for (const item of items) {
-        chrome.contextMenus.create(item, () => {
-          void chrome.runtime.lastError;
-        });
-      }
-
-      isSettingUpMenus = false;
-    });
-  } catch (e) {
-    isSettingUpMenus = false;
-    console.warn('Context menu creation error:', e);
+// "Restore" / "Reset" only make sense once something was hidden in this tab.
+async function syncUndoMenu(tabId) {
+  const entry = await readTab(tabId);
+  const visible = Boolean(entry && entry.zapped > 0);
+  for (const id of ['sd-undo-zap', 'sd-reset-zap']) {
+    chrome.contextMenus.update(id, { visible }, () => void chrome.runtime.lastError);
   }
 }
 
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onInstalled.addListener((details) => {
   chrome.storage.local.get({ lang: 'auto' }, (data) => {
     currentBackgroundLang = data.lang || 'auto';
     setupContextMenus(currentBackgroundLang);
   });
+  if (details.reason === 'install') {
+    chrome.tabs.create({ url: chrome.runtime.getURL('welcome.html') }).catch(() => {});
+  }
 });
 
+// The stored language can change while this worker sleeps (the event that
+// wakes it may arrive after the value was read here), so the menus are rebuilt
+// whenever the language they were built in differs from the chosen one.
+function syncMenuLanguage(lang) {
+  currentBackgroundLang = lang || 'auto';
+  return chrome.storage.local.get({ menuLang: null }).then(({ menuLang }) => {
+    if (menuLang !== currentBackgroundLang) return setupContextMenus(currentBackgroundLang);
+    return loadBackgroundMessages(currentBackgroundLang);
+  }).catch(() => {});
+}
+
 chrome.storage.local.get({ lang: 'auto' }, (data) => {
-  currentBackgroundLang = data.lang || 'auto';
+  syncMenuLanguage(data.lang || 'auto');
 });
 
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area === 'local') {
     const newLang = changes.lang ? changes.lang.newValue : (changes.panelPrefs && changes.panelPrefs.newValue ? changes.panelPrefs.newValue.lang : null);
-    if (newLang && newLang !== currentBackgroundLang) {
-      currentBackgroundLang = newLang;
-      setupContextMenus(currentBackgroundLang);
-    }
+    if (newLang) syncMenuLanguage(newLang);
   }
 });
 
@@ -361,6 +346,10 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     console.warn('Context menu injection error:', err);
     return;
   }
+  const stored = await chrome.storage.local.get({ lang: 'auto' });
+  const lang = stored.lang || 'auto';
+  const send = (message) => chrome.tabs.sendMessage(tab.id, message, () => void chrome.runtime.lastError);
+
   if (info.menuItemId === 'sd-zap-element') {
     if (info.frameId && info.frameId !== 0) {
       chrome.scripting.executeScript({
@@ -372,62 +361,34 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
         }
       }).catch(() => {});
     }
-
-    chrome.tabs.sendMessage(tab.id, {
+    send({
       type: 'zapLastElement',
       frameId: info.frameId || 0,
       frameUrl: info.frameUrl || '',
       srcUrl: info.srcUrl || '',
       linkUrl: info.linkUrl || ''
-    }, () => {
-      void chrome.runtime.lastError;
     });
   } else if (info.menuItemId === 'sd-undo-zap') {
-    chrome.tabs.sendMessage(tab.id, { type: 'undoZapElement' }, () => {
-      void chrome.runtime.lastError;
-    });
+    send({ type: 'undoZapElement' });
   } else if (info.menuItemId === 'sd-reset-zap') {
-    chrome.tabs.sendMessage(tab.id, { type: 'resetAllZap' }, () => {
-      void chrome.runtime.lastError;
-    });
+    send({ type: 'resetAllZap' });
   } else if (info.menuItemId === 'sd-capture-area') {
     try {
       const dataUrl = await chrome.tabs.captureVisibleTab(tab.windowId, { format: 'png' });
-      const stored = await chrome.storage.local.get({ lang: 'auto' });
-      const lang = stored.lang || 'auto';
-      chrome.tabs.sendMessage(tab.id, { type: 'startAreaCapture', dataUrl, lang }, () => {
-        void chrome.runtime.lastError;
-      });
+      send({ type: 'startAreaCapture', dataUrl, lang });
     } catch (err) {
       console.warn('Area screenshot capture failed:', err);
     }
   } else if (info.menuItemId === 'sd-record-area') {
-    try {
-      const stored = await chrome.storage.local.get({ lang: 'auto' });
-      const lang = stored.lang || 'auto';
-      chrome.tabs.sendMessage(tab.id, { type: 'startAreaVideoRecord', lang }, () => {
-        void chrome.runtime.lastError;
-      });
-    } catch (err) {
-      console.warn('Area video record start failed:', err);
-    }
+    send({ type: 'startAreaVideoRecord', lang });
   } else if (info.menuItemId === 'sd-pick-color') {
-    try {
-      const stored = await chrome.storage.local.get({ lang: 'auto' });
-      const lang = stored.lang || 'auto';
-      chrome.tabs.sendMessage(tab.id, { type: 'startColorPicker', lang }, () => {
-        void chrome.runtime.lastError;
-      });
-    } catch (err) {
-      console.warn('Color picker start failed:', err);
-    }
+    send({ type: 'startColorPicker', lang });
   } else if (info.menuItemId === 'sd-capture-page') {
     await runFullPageCapture(tab);
   } else if (info.menuItemId === 'sd-page-archive') {
     await runOfflinePageArchive(tab);
   }
 });
-
 
 async function recordDownloadMilestone() {
   try {

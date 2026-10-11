@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Image & File Downloader"
   },
   "appDesc": {
-    "message": "Inspect, browse and download any web asset seamlessly as a ZIP. Full page screenshots, live table capture & developer workbench."
+    "message": "Save the images, icons and files a web page loads, one by one or as a ZIP. Includes full-page screenshots and area recording."
   },
   "actionTitle": {
     "message": "Source Download — Open panel & track resources"
   },
   "contextMenuZap": {
-    "message": "Zap / Hide this element"
+    "message": "Hide this element"
   },
   "contextMenuUndoZap": {
     "message": "Restore last hidden element"
@@ -90,7 +90,7 @@
     "message": "Download Selected"
   },
   "btnDownloadView": {
-    "message": "Download View"
+    "message": "Download Visible"
   },
   "btnDownloadAll": {
     "message": "Download All"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Download Filtered"
   },
-  "btnTheme": {
-    "message": "Switch theme"
-  },
   "btnGuide": {
     "message": "User Guide"
-  },
-  "btnCaptureFullPage": {
-    "message": "Full Page Screenshot"
-  },
-  "btnOfflineArchive": {
-    "message": "Save Single HTML"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filter page text or query live DOM…"
-  },
-  "textAllElements": {
-    "message": "All elements"
-  },
-  "textLiveOn": {
-    "message": "Live on"
-  },
-  "textLiveOff": {
-    "message": "Live off"
-  },
   "textScanNow": {
     "message": "Scan now"
-  },
-  "textReading": {
-    "message": "Reading"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Select a resource to inspect its details"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Enjoying Source Download? Support our open-source vision with a review on Chrome Web Store or a star on GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Leave a Review"
-  },
-  "ratingStar": {
-    "message": "★ Star on GitHub"
-  },
   "ratingDismiss": {
     "message": "Dismiss"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Single-file HTML archive saved."
-  },
-  "brandSignature": {
-    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Images & SVG"
-  },
-  "tabMedia": {
-    "message": "Media & Audio"
-  },
-  "tabFonts": {
-    "message": "Fonts"
-  },
-  "tabTextScraper": {
-    "message": "Text & Tables"
-  },
-  "heroScreenshotTitle": {
-    "message": "Full Page Screenshot"
-  },
-  "heroScreenshotDesc": {
-    "message": "Seamless multi-viewport stitch with sticky-header suppression"
-  },
-  "heroArchiveTitle": {
-    "message": "Single-File HTML Archive"
-  },
-  "heroArchiveDesc": {
-    "message": "Inlines CSS & Base64 images, offline-safe snapshot"
-  },
-  "copyDataUri": {
-    "message": "Copy Data-URI"
-  },
-  "copyUrl": {
-    "message": "Copy URL"
   },
   "downloadSingle": {
     "message": "Download"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "resources"
   },
-  "statusFiltered": {
-    "message": "filtered"
-  },
   "statusSelected": {
     "message": "selected"
   },
   "statusDupes": {
     "message": "duplicates hidden"
-  },
-  "statusSize": {
-    "message": "size"
   },
   "langAuto": {
     "message": "Auto (Browser)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Select Language"
   },
-  "textPillAll": {
-    "message": "All Content"
-  },
-  "textPillText": {
-    "message": "📄 Text & Articles"
-  },
-  "textPillTables": {
-    "message": "📊 Tables Only"
-  },
   "textSelectAll": {
     "message": "Select All"
   },
   "textDeselectAll": {
     "message": "Deselect All"
-  },
-  "textClearSelection": {
-    "message": "Clear"
   },
   "toastRefreshComplete": {
     "message": "Page scan complete: $count$ new resources",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ table(s) · $rows$ unique rows",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ selected — exports use these only",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Table — $count$ row(s) on screen",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Table — all $count$ unique row(s)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ snapshot(s)",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Showing all rows"
   },
-  "textTableHistory": {
-    "message": "History ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Hide history"
-  },
   "textTableNoRows": {
     "message": "No rows captured yet."
   },
   "textBtnCopy": {
     "message": "Copy text"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Copy"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ duplicate image(s)",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Export"
   },
   "inspectorLoadingSvg": {
     "message": "Loading SVG…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Font Preview"
   },
-  "inspectorBeautify": {
-    "message": "Beautify"
-  },
-  "inspectorOriginal": {
-    "message": "Original"
-  },
-  "inspectorHeaders": {
-    "message": "Headers"
-  },
-  "inspectorResponse": {
-    "message": "Response"
-  },
-  "inspectorRequest": {
-    "message": "Request"
-  },
   "inspectorQueryParams": {
     "message": "Query parameters"
   },
   "inspectorRequestBody": {
     "message": "Request body"
   },
-  "textHintHtml": {
-    "message": "A live, readable copy of the page. Every element holding text is captured in DOM order and kept here as the page changes. Query it with plain text, a regular expression, a <strong>CSS selector</strong> or an <strong>XPath</strong> expression, then export what matched. See the <a href=\"#\" id=\"text-hint-guide\">guide</a> for details."
-  },
-  "textHeadings": {
-    "message": "Headings"
-  },
-  "textAllLevels": {
-    "message": "All levels"
-  },
   "textMatches": {
     "message": "matches"
   },
   "textMatch": {
     "message": "match"
-  },
-  "textReadingOn": {
-    "message": "Reading on"
   },
   "toastDownloadStarted": {
     "message": "Download started: $name$",
@@ -756,7 +566,7 @@
     "message": "Could not fetch this resource (CORS or unsupported type)."
   },
   "ratingBannerText": {
-    "message": "Enjoying Source Download? Support our open-source vision with a review on Chrome Web Store or a star on GitHub!"
+    "message": "Glad it worked! If Source Download saves you time, a quick review helps other people find it."
   },
   "ratingBannerReview": {
     "message": "★ Review"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "How the query box is interpreted"
   },
-  "textKindTitle": {
-    "message": "Restrict to one element type"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Heading level"
-  },
   "textPlaceholderRegex": {
     "message": "^Price:\\s*\\d+  — JavaScript regular expression"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Search the guide…"
-  },
-  "popupIntro": {
-    "message": "Categories counted by the <strong>toolbar badge</strong>. Toggle one off to stop counting it — the badge instantly reflects only what you track."
-  },
-  "popupHelpTitle": {
-    "message": "How to use the full panel"
-  },
-  "popupStep1": {
-    "message": "Open DevTools for the page you want to inspect <div class=\"hint\"><kbd>F12</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Click the <strong>Source Download</strong> tab in the DevTools toolbar"
-  },
-  "popupStep3": {
-    "message": "Browse, inspect and download resources — individually or all at once as a ZIP."
-  },
-  "popupNote": {
-    "message": "Note: Chrome does not allow extensions to programmatically open DevTools, which is why the full engineering suite is reached through the DevTools toolbar."
-  },
-  "popupTrackAll": {
-    "message": "Track all categories"
   },
   "popupLanguage": {
     "message": "Language"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Merge segments & download"
   },
-  "toastHlsMerged": {
-    "message": "Merged $COUNT$ segment(s) into $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "size unknown"
-  },
   "progressFetching": {
     "message": "Fetching $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Regex search active — wrap your query in /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Include in exports"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Combine every snapshot into one deduplicated table — this is what gets exported"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Browse earlier snapshots of this table"
-  },
   "tableDownloadCsvTitle": {
     "message": "Download this table as CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Snapshot $INDEX$ — $TIME$ ($COUNT$ rows)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Toggle selection for batch download"
@@ -1150,7 +899,7 @@
     "message": "Click the <strong>Source Download</strong> tab in the DevTools toolbar (press <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, then the tab in the DevTools toolbar). Chrome does not allow extensions to open DevTools automatically, which is why the panel lives there. The toolbar icon popup lets you choose which categories feed the badge counter on the icon. The sun/moon button in the panel toolbar locks a light or dark theme independently of Chrome; that choice is remembered."
   },
   "guideSecCategoriesContent": {
-    "message": "The vertical tabs on the left group every captured resource into 17 dedicated categories by type: Images, Videos, Audio, Captions, Documents, Fonts, Source maps, WASM, SVG, APIs, Cookies, Storage, and more. Each tab shows a live count. Only one category is shown at a time; switching resets all filters, so what you see always matches the tab."
+    "message": "The vertical tabs on the left sort every captured resource into 15 categories, such as images, videos, fonts, source maps and API calls, plus a Text & Tables tab. Each tab shows a live count. Only one category is shown at a time; switching resets all filters, so what you see always matches the tab."
   },
   "guideSecSearchFiltersContent": {
     "message": "The search bar filters by name, URL, type, alt text or title. Enclose your query in <kbd>/…/</kbd> to use a regular expression, e.g. <code>/\\.(png|jpg)$/</code>. Below the toolbar, the filter bar changes per category: size and dimension ranges for media, HTTP method and request type for APIs, plus sorting and direction."
@@ -1162,13 +911,13 @@
     "message": "Click any resource to open it in the inspect pane on the right. Each opened file becomes a tab, so you can compare several resources side by side — the newest opens on the left. Specialized viewers exist for images, video, audio, fonts, SVG, and text/code (with a Beautify toggle). APIs show a split view: response on the left, request details (method, status, headers, query parameters and body) on the right."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Download View</strong> saves the currently visible resources (active category + search + filters) as a ZIP; it relabels to <em>Download Filtered (N)</em> when filters are active. Hover any download button to see an estimated archive size before you click. <strong>Download Selected</strong> downloads only the checked items. <strong>Download All</strong> captures every discovered resource into a folder-structured ZIP. Failed downloads are retried automatically and can be retried again from the context menu. <strong>Export</strong> writes the visible list as JSON or CSV, or dumps Chrome's network log as a HAR file."
+    "message": "<strong>Download Visible</strong> saves the currently visible resources (active category + search + filters) as a ZIP; it relabels to <em>Download Filtered (N)</em> when filters are active. Hover any download button to see an estimated archive size before you click. <strong>Download Selected</strong> downloads only the checked items. <strong>Download All</strong> captures every discovered resource into a folder-structured ZIP. Failed downloads are marked, and you can retry them with one click from the notification, the item's warning icon or the context menu. <strong>Export</strong> writes the visible list as JSON or CSV, or dumps Chrome's network log as a HAR file."
   },
   "guideSecLightboxContent": {
     "message": "The zoom button opens media in a full-size lightbox where you can pan by dragging, zoom with the mouse wheel, the on-screen buttons or the keyboard (<kbd>+</kbd>/<kbd>-</kbd> to zoom, <kbd>0</kbd> to reset, <kbd>Esc</kbd> to close)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>The <strong>Text</strong> category is a live, readable copy of the page. It captures every element that holds text — headings, paragraphs, list items, buttons, <code>div</code>/<code>span</code> and more — in DOM order, and keeps scanning while <strong>Live</strong> is on.</p><p>The <strong>Query</strong> box works four ways, picked from the dropdown beside it: <strong>Contains</strong> and <strong>Regex</strong> filter the text already captured, while <strong>CSS selector</strong> and <strong>XPath</strong> are run against the live page so they can reach anything in the DOM. XPath also accepts expressions that return a value rather than elements, such as <code>count(//a)</code> or <code>//@href</code>. Whatever the page says about a broken query is shown next to the box. <strong>Element</strong> narrows the result to a single tag, with the count of each tag found on the page. Clearing the query box (or pressing <strong>Clear</strong>) returns you to <em>All elements</em> and recaptures the page — you never have to reset the dropdown by hand.</p><p><strong>Reading</strong> hides tags, checkboxes and location crumbs so the stream reads like a document. Tables store a bounded history of snapshots so dynamic (SPA) tables are never lost. Press <strong>Show all rows</strong> on a table to merge every snapshot into one deduplicated view — that is exactly what an export contains. Export as <strong>TXT</strong> (the readable page), <strong>MD</strong> (Markdown, tables included), or tables as CSV, HTML or a real multi-sheet <strong>XLSX</strong> workbook. Checked items win; otherwise everything currently visible is exported.</p>"
+    "message": "<p>The <strong>Text</strong> category is a live, readable copy of the page: headings, paragraphs, lists and links in page order, refreshed while <strong>Live</strong> is on. Hover any line to copy it, or use <strong>Copy text</strong>, <strong>Markdown</strong> and <strong>TXT</strong> for everything shown.</p><p>Switch to <strong>Tables</strong> to see each table on the page as a card with a preview and its own <strong>Excel</strong>, <strong>CSV</strong> and <strong>Copy</strong> buttons; <strong>All tables to Excel</strong> puts every table in one workbook, one sheet each. Tables that change keep a history of snapshots, and <strong>Show all rows</strong> merges them into one deduplicated table — exactly what an export contains.</p><p>The boxes on the left sort the page by element type — all page text, each heading level, paragraphs, links, list items, buttons, code and more — with a count and a first line for each; pick one to see only those, and copy or export just that. The search box filters as you type, and the menu beside it switches it to a regular expression, a <strong>CSS selector</strong> or an <strong>XPath</strong> expression (also value expressions such as <code>count(//a)</code> or <code>//@href</code>) run against the live page; the <strong>Custom query</strong> box does the same. Whatever the page says about a broken query is shown inside the box.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML and other caption files — including <code>&lt;track&gt;</code> sources — land in their own <strong>Captions</strong> tab instead of mixing with documents."
@@ -1222,7 +971,7 @@
     }
   },
   "contextMenuRecordArea": {
-    "message": "Record Regional Video / GIF"
+    "message": "Record area as video / GIF"
   },
   "btnRecStart": {
     "message": "Start recording"
@@ -1240,7 +989,7 @@
     "message": "Cancel"
   },
   "toastRecSaved": {
-    "message": "Regional recording saved"
+    "message": "Recording saved"
   },
   "toastRecCancelled": {
     "message": "Video recording cancelled"
@@ -1249,7 +998,7 @@
     "message": "Screen recording permission was not granted"
   },
   "btnPopupRecordArea": {
-    "message": "Regional Video / GIF"
+    "message": "Record Area (Video / GIF)"
   },
   "btnPopupCaptureArea": {
     "message": "Area Screenshot"
@@ -1270,7 +1019,7 @@
     "message": "Colour copied to clipboard"
   },
   "toastProgressCapturing": {
-    "message": "Capturing full page... $percent$%",
+    "message": "Capturing full page… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Stitching image..."
+    "message": "Stitching image…"
   },
   "modalExportTitle": {
     "message": "Full Page Screenshot Ready"
@@ -1302,7 +1051,7 @@
     "message": "Copy to Clipboard"
   },
   "btnExportGenerating": {
-    "message": "Generating..."
+    "message": "Generating…"
   },
   "toastPdfGenerated": {
     "message": "PDF document saved."
@@ -1317,13 +1066,10 @@
     "message": "Preview:"
   },
   "toastRecGeneratingGif": {
-    "message": "Generating GIF, please wait..."
+    "message": "Generating GIF, please wait…"
   },
   "settingGifResolution": {
     "message": "Default GIF Resolution"
-  },
-  "optGifOriginal": {
-    "message": "Original (1:1 Native Resolution — Full 3K/4K, No downscaling)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (Max 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "Screen recording (Video & GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Record any screen region as MP4, WebM, or animated GIF. GIF recordings feature 1:1 native resolution, 1080p, 720p, and 480p profiles with live estimated file sizes. The maximum GIF recording duration is 1 minute (60s) for optimal browser performance."
+    "message": "Record any screen region as MP4, WebM or animated GIF. GIF recordings offer 1080p, 720p and 480p profiles with a live file-size estimate. A GIF recording can last up to 1 minute (60 s)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Maximum GIF duration of 1 minute (60s) reached. Generating GIF..."
+    "message": "Maximum GIF duration of 1 minute (60s) reached. Generating GIF…"
   },
   "labelGifMaxDuration": {
     "message": "Max 1 min (60s)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Presentation (1 frame per sec, minimal size)"
-  },
-  "popupRightClickHint": {
-    "message": "Right-click anywhere on the webpage for Screen Recording (Video/GIF) and Colour Picker."
   },
   "toastElementZappedAd": {
     "message": "Ad / iframe hidden for this session.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF resolution: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF resolution: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "No active tab found.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Click here, then pick any color on the page"
+  },
+  "welcomeTitle": {
+    "message": "Source Download is ready"
+  },
+  "welcomePrivacy": {
+    "message": "Everything runs on your computer. No account, no tracking, nothing is sent to us."
+  },
+  "welcomeHelp": {
+    "message": "Something not working? Tell us on GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Something wrong?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF reached 200 MB. Saving what was recorded…"
+  },
+  "btnPopupFullPage": {
+    "message": "Full Page Screenshot"
+  },
+  "toastRecWrongTab": {
+    "message": "To record an area of this page, choose “This tab” in the sharing dialog."
+  },
+  "popupCaptureTitle": {
+    "message": "Capture this page"
+  },
+  "popupTileOffline": {
+    "message": "Save page offline"
+  },
+  "popupTileGuide": {
+    "message": "How it works"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Files, images and tables"
+  },
+  "popupDevtoolsHint": {
+    "message": "Open DevTools, then choose the Source Download tab."
+  },
+  "popupRestricted": {
+    "message": "Chrome doesn't allow extensions on this page. Open a website to use the tools."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Right-click on any page"
+  },
+  "welcomeCardMenuText": {
+    "message": "Full-page and area screenshots, area recording, colour picker and an offline copy — right where you are."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Or use the toolbar button"
+  },
+  "welcomeCardPopupText": {
+    "message": "Click the puzzle icon in Chrome's toolbar and pin Source Download, so the tools are always one click away."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Press F12 for everything on the page"
+  },
+  "welcomeCardPanelText": {
+    "message": "Choose the Source Download tab in DevTools. Every image, video, font and file the page loaded is listed there — preview it, filter it and save it as a ZIP. Page tables export to Excel."
+  },
+  "welcomeLead": {
+    "message": "Three ways to capture what you need from any web page."
+  },
+  "btnDownloadOptions": {
+    "message": "More download options"
+  },
+  "btnMore": {
+    "message": "More actions"
+  },
+  "btnFilters": {
+    "message": "Filters"
+  },
+  "tabsShowEmpty": {
+    "message": "Show empty"
+  },
+  "tabsHideEmpty": {
+    "message": "Hide empty"
+  },
+  "textSegText": {
+    "message": "Text"
+  },
+  "textSegTables": {
+    "message": "Tables"
+  },
+  "textLive": {
+    "message": "Live"
+  },
+  "textPaused": {
+    "message": "Paused"
+  },
+  "textLivePauseTitle": {
+    "message": "Live: the page is read again as it changes. Click to pause."
+  },
+  "textLiveResumeTitle": {
+    "message": "Paused. Click to follow the page live again."
+  },
+  "textSearchText": {
+    "message": "Search the page text"
+  },
+  "textExportAllXlsx": {
+    "message": "All tables to Excel"
+  },
+  "textNoTables": {
+    "message": "No tables on this page yet. They appear here as soon as the page shows one."
+  },
+  "textTable": {
+    "message": "Table"
+  },
+  "textCopy": {
+    "message": "Copy"
+  },
+  "textShowLess": {
+    "message": "Show less"
+  },
+  "areaHintSelect": {
+    "message": "Drag to select an area"
+  },
+  "areaHintCopy": {
+    "message": "copy"
+  },
+  "areaHintSave": {
+    "message": "save"
+  },
+  "areaHintExit": {
+    "message": "exit"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Copy automatically"
+  },
+  "areaAutoCopyOn": {
+    "message": "Auto-copy is on"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Let go of the selection and it is on the clipboard."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Turn off"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Copied to clipboard (auto-copy is on)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "This page does not allow copying to the clipboard. Use Download instead."
+  },
+  "textKindAll": {
+    "message": "All page text"
+  },
+  "textKindHeading": {
+    "message": "Heading"
+  },
+  "textKindP": {
+    "message": "Paragraphs"
+  },
+  "textKindA": {
+    "message": "Links"
+  },
+  "textKindLi": {
+    "message": "List items"
+  },
+  "textKindButton": {
+    "message": "Buttons"
+  },
+  "textKindLabel": {
+    "message": "Labels and captions"
+  },
+  "textKindSpan": {
+    "message": "Inline text"
+  },
+  "textKindDiv": {
+    "message": "Other blocks"
+  },
+  "textKindCell": {
+    "message": "Table cells"
+  },
+  "textKindCode": {
+    "message": "Code"
+  },
+  "textKindQuote": {
+    "message": "Quotes"
+  },
+  "textCustomQuery": {
+    "message": "Custom query"
+  },
+  "textCustomQueryHint": {
+    "message": "CSS selector or XPath on the live page"
+  },
+  "menuSettings": {
+    "message": "Settings"
+  },
+  "settingsSave": {
+    "message": "Save"
+  },
+  "settingsReset": {
+    "message": "Reset to defaults"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Copy area screenshots automatically"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "When you let go of the selection, the image goes straight to the clipboard. The hint at the top of the page always shows when this is on."
   }
 }

@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Jelajahi, periksa, dan unduh semua aset web yang dimuat halaman dengan mulus sebagai ZIP.</em><br>
-  Source Download — setiap aset di halaman, hanya sekali klik
+  <em>Simpan gambar, ikon, dan file dari halaman web satu per satu atau dalam satu ZIP. Termasuk tangkapan layar penuh dan rekaman area.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Ini adalah **proyek open source pertama saya**, jadi masukan Anda sangat berarti
 
 ## Tur Visual & Modul Inti
 
-Jelajahi modul antarmuka beresolusi tinggi yang tertanam langsung di Google Chrome DevTools, Menu Klik Kanan, dan Popup Toolbar.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Tangkap dan unduh semua yang ada di web
-> **★ SUITE REKAYASA DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Setiap file di halaman, dalam satu panel"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Tangkap dan unduh semua yang ada di web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Klik kanan. Tangkap."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Pilih area. Sudah ada di papan klip."></p>
 
-### 2. Rekam area layar mana pun sebagai video dan GIF
-> **★ PEREKAM LAYAR REGIONAL · MP4, WEBM & GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Teks dan tabel halaman, sudah dirapikan"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Rekam area layar mana pun sebagai video dan GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Halaman penuh, rekaman, salinan offline"></p>
 
 ---
 
-### 3. Tangkapan layar halaman penuh dengan gulir mulus
-> **★ TANGKAPAN LAYAR PRESISI PIKSEL · HALAMAN PENUH & AREA**
+Source Download adalah perangkat untuk menyimpan konten web. Ekstensi ini menambahkan tab sendiri di Chrome DevTools. Di sana semua yang dimuat situs diurutkan per kategori agar Anda bisa melihat pratinjau dan menyimpan yang diperlukan saja.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Tangkapan layar halaman penuh dengan gulir mulus">
-</p>
+## Fitur utama
+- Galeri tertata: foto, ikon, dan font tampil di tab masing-masing dengan penghitung langsung dan kotak pencarian.
+- Filter presisi: tampilkan hanya item yang lebih lebar dari batas minimum (misalnya 1200 px) atau sembunyikan duplikat.
+- Pratinjau nyata: perbesar grafis dan putar media. Anda juga bisa melihat contoh font atau kode dengan penyorotan sintaks.
+- Satu arsip: centang yang Anda mau dan dapatkan satu ZIP dengan struktur folder rapi. Yang gagal bisa dicoba lagi dengan sekali klik.
+- Tangkapan layar penuh: semuanya digulir dan disatukan menjadi PNG, JPG, atau PDF. Anda juga bisa memilih satu area saja.
+- Rekaman area: ubah sebagian layar menjadi klip GIF, MP4, atau WebM.
+- Dari tabel ke spreadsheet: ekspor tabel langsung ke Excel atau CSV, termasuk kondisi sebelumnya dari tabel yang terus diperbarui.
+- Salinan offline: simpan situs sebagai satu dokumen HTML yang terbuka tanpa internet.
+- Pemilih warna: ambil warna apa pun yang terlihat dan salin sebagai HEX, RGB, atau HSL.
 
----
+## Cara memulai
+1. Buka situs yang ingin Anda kerjakan.
+2. Tekan F12 (di Mac Option + Command + I) lalu pilih tab Source Download. Jika tidak terlihat, klik » di ujung bilah tab.
+3. Biarkan panel terbuka selama pemuatan agar tidak ada yang terlewat.
 
-### 4. Tabel DOM langsung ke Excel (XLSX) dan CSV
-> **★ EKSTRAKSI DATA & PENGHAPUS ELEMEN**
-
-<sub>Ekstrak tabel dinamis beserta riwayat snapshot-nya ke file XLSX multi-sheet atau CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Tabel DOM langsung ke Excel (XLSX) dan CSV">
-</p>
-
----
-
-### 5. Pipet warna di layar dan pemformat kode
-> **★ WORKBENCH PENGEMBANG & DESAINER**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Pipet warna di layar dan pemformat kode">
-</p>
-
----
-
-Source Download adalah panel Chrome DevTools yang menemukan, memeriksa, dan mengunduh setiap sumber daya yang dimuat halaman web. Baik Anda membutuhkan file media, skrip pengembang, aset gaya, maupun respons jaringan, Anda dapat menyimpannya sebagai file terpisah atau sebagai ZIP rapi dengan struktur folder.
-
-Dibangun dari nol tanpa dependensi pihak ketiga: penulis ZIP, pembuat XLSX, penggabung HLS, dan pemformat kode semuanya ditulis manual dengan JavaScript murni. Tanpa framework, tanpa langkah build, tanpa telemetri. Semuanya berjalan secara lokal di browser Anda.
-
-## Yang Baru di v1.16.0
-- Dukungan multibahasa penuh untuk 54 bahasa dengan lokalisasi DevTools dan toko yang lengkap.
-- 17 kategori aset khusus dengan penghitung langsung yang mencakup semua media, kode, API, penyimpanan, dan dokumen.
-- Tangkapan layar halaman penuh yang disambung dan tangkapan area regional kustom dengan penekanan header lengket yang cerdas.
-- Perekaman video layar (MP4) dan mesin ekspor GIF animasi ringan tanpa kebocoran tepi.
-- Pengekstrak tabel DOM langsung ke Microsoft Excel (.XLSX) multi-sheet dan CSV dengan penghapus elemen DOM Zapper.
-- Pipet warna layar dengan penyalinan instan hex/rgb/hsl dan pemercantik kode terintegrasi.
-- Stabilitas sniffer DevTools yang ditingkatkan dan pipeline jaringan berkonkurensi tinggi.
-
-## Mengapa Anda membutuhkannya
-Tangkapan layar saja tidak cukup. Ambil file aslinya — gambar resolusi penuh, aliran video sebenarnya, stylesheet dan skrip asli — bukan gambar yang diratakan.
-
-DevTools terasa membingungkan. Source Download menampilkan galeri bersih yang terkategori dari data jaringan yang sama, lengkap dengan pencarian, filter, dan unduhan sekali klik.
-
-SPA menyembunyikan segalanya. Aplikasi dinamis membuat aset dan panggilan API yang tidak pernah Anda lihat di sumber halaman. Source Download menangkapnya saat terjadi, termasuk status perantara.
-
-## Apa yang dilakukannya
-### Temukan semuanya
-- Menggabungkan tangkapan jaringan (HAR + permintaan langsung) dengan pemindaian DOM untuk semua elemen visual dan struktural, termasuk file media, skrip, stylesheet, dan frame tersemat.
-- **Sadar CSS:** aset di dalam aturan url(...) dan @import diikuti secara rekursif, sehingga font yang terkubur di stylesheet yang diimpor pun ditemukan.
-- **Pengendusan konten:** file tak dikenal dibaca beberapa byte lalu dipromosikan ke kategori tipe file yang sebenarnya.
-- **17 kategori dengan penghitung langsung:** Aset yang ditangkap diatur rapi dalam tab khusus untuk media, kode, data, panggilan API, cookie, penyimpanan, dan dokumen.
-
-### Filter, cari, periksa
-- Pencarian berbasis regex di nama file, URL, tipe MIME, teks alt, bahkan isi file.
-- **Filter per kategori:** ukuran min/maks, dan untuk media juga lebar dan tinggi min/maks — misalnya "hanya gambar hero ≥ 1200px". Panggilan API difilter berdasarkan metode HTTP dan jenis permintaan.
-- Tampilan daftar atau kisi, dapat diurutkan, dengan dinding thumbnail langsung.
-- **Inspektur multi-tab dengan pratinjau sebenarnya:** lightbox yang dapat di-zoom, pemutaran video dan audio, spesimen font langsung, penampil SVG, kode dengan penyorotan sintaks dan nomor baris, serta sakelar Mempercantik.
-- **Tampilan terbagi API:** respons di kiri, metode, status, parameter kueri, dan isi permintaan di kanan.
-
-### Unduh dengan benar
-- Unduh Terpilih — hanya file yang Anda centang.
-- Unduh Lihat — semua yang terlihat setelah filter dan pencarian saat ini.
-- Unduh Semua — setiap sumber daya yang ditangkap ke dalam ZIP berstruktur folder dengan de-duplikasi otomatis.
-- Unduhan massal berjalan dengan konkurensi terbatas dan bilah kemajuan langsung; kegagalan dicoba ulang otomatis dan dari menu konteks.
-
-### HLS & video yang rumit
-- Aliran yang tidak dapat diputar browser secara native (HLS .m3u8, DASH .mpd, codec tak dikenal) menampilkan fallback cerdas, bukan pemutar hitam.
-- Gabungkan segmen & unduh mengubah aliran HLS menjadi satu file yang dapat diputar, langsung di dalam panel.
-
-### Workbench Teks (perangkat konten SPA)
-- **Tab Teks adalah penampil konten langsung:** setiap elemen yang membawa teks — judul, paragraf, item daftar, tombol, div, span — ditangkap sesuai urutan DOM.
-- Tabel dinamis menyimpan riwayat snapshot terbatas (mis. "8 snapshot · 124 baris unik"), sehingga dasbor yang menyegarkan otomatis tidak pernah kehilangan status perantara.
-- Ekspor sebagai Markdown, atau tabel sebagai CSV, HTML, atau workbook XLSX multi-sheet sungguhan yang dibuat oleh penulis XLSX buatan tangan kami sendiri.
-
-## Cara menggunakannya
-1. Instal Source Download, lalu tekan F12 di halaman mana pun.
-2. Klik tab Source Download di toolbar DevTools (Chrome tidak mengizinkan ekstensi membuka DevTools secara otomatis — itulah sebabnya ia berada di sana).
-3. Jelajahi tab kategori, cari, filter, dan periksa apa pun di panel sebelah kanan.
-4. Centang file yang Anda inginkan lalu tekan Unduh Terpilih, Unduh Lihat, atau Unduh Semua.
-5. Biarkan panel DevTools tetap terbuka saat halaman dimuat agar setiap permintaan jaringan tertangkap.
-
-## Kasus penggunaan nyata
-- **Analisis kompetitor:** kumpulkan thumbnail video dari saluran mana pun — dengan filter lebar minimum — ke dalam satu folder.
-- **Web scraping tanpa kode:** pantau panggilan API sebuah SPA, filter ke endpoint yang Anda butuhkan, unduh respons JSON persisnya.
-- **Bedah tipografi:** cari tahu font yang benar-benar digunakan sebuah situs dan ambil file font aslinya.
-- **Reproduksi bug:** simpan versi CSS/JS persis yang dirilis saat bug terjadi.
-- **Ekspor data dasbor:** ekspor tabel yang menyegarkan otomatis ke workbook Excel multi-sheet, lengkap dengan riwayatnya.
-- **Pengujian QA:** verifikasi varian video/audio mana yang disajikan di setiap konfigurasi A/B.
+Tangkapan layar, perekaman, dan pemilih warna juga tersedia di menu klik kanan dan tombol ekstensi.
 
 ## Privasi
-- Berjalan 100% secara lokal. Tanpa server, tanpa analitik, tidak ada data yang keluar dari perangkat Anda.
-- **Hanya meminta yang dibutuhkan:** penyimpanan (preferensi Anda), papan klip (menyalin URL dan warna), unduhan (menyimpan file melalui Chrome), menu konteks, scripting, dan akses host (untuk memindai halaman dan mengambil isi file).
-- File disimpan melalui alur unduhan normal Chrome — tanpa unduhan diam-diam.
 
-## Persyaratan
-- Chrome 116 atau lebih baru (Manifest V3).
-- Hasil terbaik saat panel dibuka selagi halaman dimuat, karena saat itulah tangkapan jaringan terjadi.
+Semuanya berjalan di komputer Anda. Tidak ada akun maupun analitik, dan tidak ada yang Anda simpan dikirim ke pengembang. Item tersimpan masuk ke folder Unduhan biasa melalui Chrome.
 
-Source Download adalah proyek open source — masukan, ide, dan pull request sangat disambut.
+Ekstensi memerlukan akses ke situs yang Anda kunjungi untuk menemukan sumber dayanya dan menjalankan fungsinya.
 
-Terhubung di LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Harap hormati hak cipta dan ketentuan penggunaan, serta simpan hanya konten yang boleh Anda gunakan.
+
+## Yang baru di 1.17
+- Jauh lebih ringan: tidak ada yang berjalan sampai Anda memakai sebuah fungsi.
+- Salinan offline kini memuat semua foto, latar, dan font.
+- Perekaman GIF tetap dalam batas memori bahkan untuk klip HD panjang.
+- Layar sambutan baru dan pintasan di tombol ekstensi.
+
+Pertanyaan atau masalah: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Pengunduh Gambar & File"
   },
   "appDesc": {
-    "message": "Periksa dan unduh aset web apa pun sebagai ZIP. Tangkapan layar halaman penuh, tangkap tabel langsung & alat pengembang."
+    "message": "Simpan gambar, ikon, dan file dari halaman web satu per satu atau dalam satu ZIP. Termasuk tangkapan layar penuh dan rekaman area."
   },
   "actionTitle": {
     "message": "Source Download — Buka panel & lacak sumber daya"
@@ -90,7 +90,7 @@
     "message": "Unduh yang Dipilih"
   },
   "btnDownloadView": {
-    "message": "Unduh Tampilan"
+    "message": "Unduh yang Terlihat"
   },
   "btnDownloadAll": {
     "message": "Unduh Semua"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Unduh yang Difilter"
   },
-  "btnTheme": {
-    "message": "Ganti tema"
-  },
   "btnGuide": {
     "message": "Panduan Pengguna"
-  },
-  "btnCaptureFullPage": {
-    "message": "Tangkapan Layar Halaman Penuh"
-  },
-  "btnOfflineArchive": {
-    "message": "Simpan HTML Tunggal"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filter teks halaman atau kueri DOM langsung…"
-  },
-  "textAllElements": {
-    "message": "Semua elemen"
-  },
-  "textLiveOn": {
-    "message": "Live aktif"
-  },
-  "textLiveOff": {
-    "message": "Live nonaktif"
-  },
   "textScanNow": {
     "message": "Pindai sekarang"
-  },
-  "textReading": {
-    "message": "Mode baca"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Pilih sumber daya untuk memeriksa detailnya"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Menikmati Source Download? Dukung visi open source kami dengan ulasan di Chrome Web Store atau bintang di GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Tinggalkan Ulasan"
-  },
-  "ratingStar": {
-    "message": "★ Beri Bintang di GitHub"
-  },
   "ratingDismiss": {
     "message": "Tutup"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Arsip HTML satu file disimpan."
-  },
-  "brandSignature": {
-    "message": "Dibuat oleh Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Gambar & SVG"
-  },
-  "tabMedia": {
-    "message": "Media & Audio"
-  },
-  "tabFonts": {
-    "message": "Font"
-  },
-  "tabTextScraper": {
-    "message": "Teks & Tabel"
-  },
-  "heroScreenshotTitle": {
-    "message": "Tangkapan Layar Halaman Penuh"
-  },
-  "heroScreenshotDesc": {
-    "message": "Penyambungan multi-viewport yang mulus dengan penyembunyian header sticky"
-  },
-  "heroArchiveTitle": {
-    "message": "Arsip HTML File Tunggal"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS & gambar Base64 disematkan, snapshot aman untuk offline"
-  },
-  "copyDataUri": {
-    "message": "Salin Data-URI"
-  },
-  "copyUrl": {
-    "message": "Salin URL"
   },
   "downloadSingle": {
     "message": "Unduh"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "sumber daya"
   },
-  "statusFiltered": {
-    "message": "difilter"
-  },
   "statusSelected": {
     "message": "dipilih"
   },
   "statusDupes": {
     "message": "duplikat disembunyikan"
-  },
-  "statusSize": {
-    "message": "ukuran"
   },
   "langAuto": {
     "message": "Otomatis (Peramban)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Pilih Bahasa"
   },
-  "textPillAll": {
-    "message": "Semua Konten"
-  },
-  "textPillText": {
-    "message": "📄 Teks & Artikel"
-  },
-  "textPillTables": {
-    "message": "📊 Tabel Saja"
-  },
   "textSelectAll": {
     "message": "Pilih Semua"
   },
   "textDeselectAll": {
     "message": "Batalkan pilihan Semua"
-  },
-  "textClearSelection": {
-    "message": "Hapus"
   },
   "toastRefreshComplete": {
     "message": "Pemindaian halaman selesai: $count$ sumber daya baru",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ tabel · $rows$ baris unik",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ dipilih — ekspor hanya menggunakan ini",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tabel — $count$ baris di layar",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tabel — semua $count$ baris unik",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ snapshot",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Menampilkan semua baris"
   },
-  "textTableHistory": {
-    "message": "Riwayat ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Sembunyikan riwayat"
-  },
   "textTableNoRows": {
     "message": "Belum ada baris yang diambil."
   },
   "textBtnCopy": {
     "message": "Salin teks"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Salin"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ gambar duplikat",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Ekspor"
   },
   "inspectorLoadingSvg": {
     "message": "Memuat SVG…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Pratinjau Font"
   },
-  "inspectorBeautify": {
-    "message": "Rapikan"
-  },
-  "inspectorOriginal": {
-    "message": "Asli"
-  },
-  "inspectorHeaders": {
-    "message": "Header"
-  },
-  "inspectorResponse": {
-    "message": "Respons"
-  },
-  "inspectorRequest": {
-    "message": "Permintaan"
-  },
   "inspectorQueryParams": {
     "message": "Parameter kueri"
   },
   "inspectorRequestBody": {
     "message": "Isi permintaan"
   },
-  "textHintHtml": {
-    "message": "Salinan halaman yang aktif dan dapat dibaca. Setiap elemen yang menyimpan teks ditangkap dalam urutan DOM dan disimpan di sini seiring perubahan halaman. Buat kueri dengan teks biasa, ekspresi reguler, <strong>pemilih CSS</strong>, atau ekspresi <strong>XPath</strong>, lalu ekspor yang cocok. Lihat <a href=\"#\" id=\"text-hint-guide\">panduan</a> untuk detailnya."
-  },
-  "textHeadings": {
-    "message": "Judul"
-  },
-  "textAllLevels": {
-    "message": "Semua tingkatan"
-  },
   "textMatches": {
     "message": "kecocokan"
   },
   "textMatch": {
     "message": "kecocokan"
-  },
-  "textReadingOn": {
-    "message": "Mode baca aktif"
   },
   "toastDownloadStarted": {
     "message": "Pengunduhan dimulai: $name$",
@@ -756,7 +566,7 @@
     "message": "Tidak dapat mengambil sumber daya ini (CORS atau jenis tidak didukung)."
   },
   "ratingBannerText": {
-    "message": "Menikmati Source Download? Dukung visi open source kami dengan ulasan di Chrome Web Store atau bintang di GitHub!"
+    "message": "Senang ini berhasil! Jika Source Download menghemat waktu Anda, ulasan singkat membantu orang lain menemukannya."
   },
   "ratingBannerReview": {
     "message": "★ Ulasan"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Bagaimana kotak kueri diinterpretasikan"
   },
-  "textKindTitle": {
-    "message": "Batasi untuk satu jenis elemen"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Tingkat judul"
-  },
   "textPlaceholderRegex": {
     "message": "^Harga:\\s*\\d+ — ekspresi reguler JavaScript"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Cari panduan…"
-  },
-  "popupIntro": {
-    "message": "Kategori yang dihitung oleh <strong>lencana toolbar</strong>. Nonaktifkan salah satu untuk berhenti menghitungnya — lencana langsung hanya mencerminkan apa yang Anda lacak."
-  },
-  "popupHelpTitle": {
-    "message": "Cara menggunakan panel penuh"
-  },
-  "popupStep1": {
-    "message": "Buka DevTools untuk halaman yang ingin Anda periksa <div class=\"hint\"><kbd>F12</kbd> atau <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Klik tab <strong>Source Download</strong> di toolbar DevTools"
-  },
-  "popupStep3": {
-    "message": "Jelajahi, periksa, dan unduh sumber daya — satu per satu atau sekaligus sebagai ZIP."
-  },
-  "popupNote": {
-    "message": "Catatan: Chrome tidak mengizinkan ekstensi membuka DevTools secara terprogram, sehingga seluruh fitur lengkapnya diakses melalui toolbar DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Lacak semua kategori"
   },
   "popupLanguage": {
     "message": "Bahasa"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Gabungkan segmen & unduh"
   },
-  "toastHlsMerged": {
-    "message": "Menggabungkan $COUNT$ segmen menjadi $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "ukuran tidak diketahui"
-  },
   "progressFetching": {
     "message": "Mengambil $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Pencarian regex aktif — bungkus kueri Anda di /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Sertakan dalam ekspor"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Gabungkan setiap snapshot ke dalam satu tabel yang dihapus duplikatnya — inilah yang akan diekspor"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Telusuri snapshot sebelumnya dari tabel ini"
-  },
   "tableDownloadCsvTitle": {
     "message": "Unduh tabel ini sebagai CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Snapshot $INDEX$ — $TIME$ ($COUNT$ baris)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Alihkan pilihan untuk unduhan massal"
@@ -1150,7 +899,7 @@
     "message": "Klik tab <strong>Source Download</strong> di toolbar DevTools (tekan <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, lalu tab di toolbar DevTools). Chrome tidak mengizinkan ekstensi untuk membuka DevTools secara otomatis, itulah sebabnya panel tersebut ada di sana. Popup ikon toolbar memungkinkan Anda memilih kategori yang dihitung oleh penghitung lencana pada ikon. Tombol matahari/bulan di toolbar panel mengunci tema terang atau gelap secara terpisah dari Chrome; pilihan itu diingat."
   },
   "guideSecCategoriesContent": {
-    "message": "Tab vertikal di sebelah kiri mengelompokkan setiap sumber daya yang diambil ke dalam 17 kategori khusus berdasarkan jenis: Gambar, Video, Audio, Takarir, Dokumen, Font, Peta sumber, WASM, SVG, API, Cookie, Penyimpanan, dan banyak lagi. Setiap tab menunjukkan hitungan langsung. Hanya satu kategori yang ditampilkan dalam satu waktu; berpindah tab akan menyetel ulang semua filter, jadi apa yang Anda lihat selalu cocok dengan tabnya."
+    "message": "Tab vertikal di kiri mengelompokkan setiap sumber daya yang tertangkap ke dalam 15 kategori, seperti gambar, video, font, source map, dan panggilan API, ditambah tab Teks & Tabel. Setiap tab menunjukkan hitungan langsung. Hanya satu kategori yang ditampilkan dalam satu waktu; berpindah tab akan menyetel ulang semua filter, jadi apa yang Anda lihat selalu cocok dengan tabnya."
   },
   "guideSecSearchFiltersContent": {
     "message": "Bilah pencarian memfilter berdasarkan nama, URL, jenis, teks alternatif, atau judul. Apit kueri Anda dengan <kbd>/…/</kbd> untuk menggunakan ekspresi reguler, mis. <code>/\\.(png|jpg)$/</code>. Di bawah toolbar, bilah filter berubah per kategori: ukuran dan rentang dimensi untuk media, metode HTTP dan jenis permintaan untuk API, serta pengurutan dan arah."
@@ -1162,13 +911,13 @@
     "message": "Klik sumber daya apa pun untuk membukanya di panel pemeriksaan di sebelah kanan. Setiap file yang dibuka menjadi tab, sehingga Anda dapat membandingkan beberapa sumber secara berdampingan — yang terbaru akan terbuka di sebelah kiri. Penampil khusus tersedia untuk gambar, video, audio, font, SVG, dan teks/kode (dengan tombol Rapikan). API menampilkan tampilan terpisah: respons di sebelah kiri, detail permintaan (metode, status, header, parameter kueri, dan isi) di sebelah kanan."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Unduh Tampilan</strong> menyimpan sumber daya yang terlihat saat ini (kategori aktif + pencarian + filter) sebagai ZIP; tombol ini berubah menjadi <em>Unduh yang Difilter (N)</em> ketika filter aktif. Arahkan kursor ke tombol unduh mana pun untuk melihat perkiraan ukuran arsip sebelum mengeklik. <strong>Unduh yang Dipilih</strong> hanya mengunduh item yang dicentang. <strong>Unduh Semua</strong> menangkap setiap sumber daya yang ditemukan ke dalam ZIP terstruktur folder. Unduhan yang gagal dicoba ulang secara otomatis dan dapat dicoba lagi dari menu konteks. <strong>Ekspor</strong> menulis daftar yang terlihat sebagai JSON atau CSV, atau membuang log jaringan Chrome sebagai file HAR."
+    "message": "<strong>Unduh yang Terlihat</strong> menyimpan sumber daya yang terlihat saat ini (kategori aktif + pencarian + filter) sebagai ZIP; tombol ini berubah menjadi <em>Unduh yang Difilter (N)</em> ketika filter aktif. Arahkan kursor ke tombol unduh mana pun untuk melihat perkiraan ukuran arsip sebelum mengeklik. <strong>Unduh yang Dipilih</strong> hanya mengunduh item yang dicentang. <strong>Unduh Semua</strong> menangkap setiap sumber daya yang ditemukan ke dalam ZIP terstruktur folder. Unduhan yang gagal ditandai, dan Anda dapat mencobanya lagi dengan sekali klik dari notifikasi, ikon peringatan item, atau menu konteks. <strong>Ekspor</strong> menulis daftar yang terlihat sebagai JSON atau CSV, atau membuang log jaringan Chrome sebagai file HAR."
   },
   "guideSecLightboxContent": {
     "message": "Tombol zoom membuka media dalam lightbox ukuran penuh tempat Anda dapat menggeser dengan menyeret, memperbesar dengan roda mouse, tombol di layar atau keyboard (<kbd>+</kbd>/<kbd>-</kbd> untuk memperbesar, <kbd>0</kbd> untuk mengatur ulang, <kbd>Esc</kbd> untuk menutup)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Kategori <strong>Teks</strong> adalah salinan laman yang aktif dan dapat dibaca. Ini menangkap setiap elemen yang menyimpan teks — judul, paragraf, item daftar, tombol, <code>div</code>/<code>span</code> dan banyak lagi — dalam urutan DOM, dan terus memindai saat <strong>Live</strong> aktif.</p><p>Kotak <strong>Kueri</strong> berfungsi dalam empat cara, dipilih dari dropdown di sampingnya: <strong>Berisi</strong> dan <strong>Regex</strong> memfilter teks yang sudah diambil, sementara <strong>CSS selector</strong> dan <strong>XPath</strong> dijalankan pada halaman aktif sehingga dapat menjangkau apa pun di DOM. XPath juga menerima ekspresi yang mengembalikan nilai, bukan elemen, seperti <code>count(//a)</code> atau <code>//@href</code>. Pesan dari halaman tentang kueri yang tidak valid ditampilkan di sebelah kotak. <strong>Elemen</strong> mempersempit hasilnya menjadi satu tag, dengan jumlah setiap tag yang ditemukan di halaman. Mengosongkan kotak kueri (atau menekan <strong>Hapus</strong>) akan mengembalikan Anda ke <em>Semua elemen</em> dan mengambil kembali laman — Anda tidak perlu mengatur ulang dropdown secara manual.</p><p><strong>Mode baca</strong> menyembunyikan tag, kotak centang, dan breadcrumb lokasi sehingga alirannya terbaca seperti dokumen. Tabel menyimpan riwayat snapshot yang dibatasi sehingga tabel dinamis (SPA) tidak pernah hilang. Tekan <strong>Tampilkan semua baris</strong> pada tabel untuk menggabungkan setiap snapshot ke dalam satu tampilan yang dihapus duplikatnya — itulah isi ekspor. Ekspor sebagai <strong>TXT</strong> (halaman yang dapat dibaca), <strong>MD</strong> (Markdown, termasuk tabel), atau tabel sebagai CSV, HTML, atau buku kerja <strong>XLSX</strong> multi-lembar yang sebenarnya. Item yang dicentang diprioritaskan; jika tidak, semua yang terlihat saat ini akan diekspor.</p>"
+    "message": "<p>Kategori <strong>Teks</strong> adalah salinan halaman yang hidup dan mudah dibaca: judul, paragraf, daftar, dan tautan sesuai urutan halaman, diperbarui selama <strong>Langsung</strong> aktif. Arahkan kursor ke sebuah baris untuk menyalinnya, atau gunakan <strong>Salin teks</strong>, <strong>Markdown</strong>, dan <strong>TXT</strong> untuk semua yang ditampilkan.</p><p>Di <strong>Tabel</strong>, setiap tabel di halaman tampil sebagai kartu dengan pratinjau dan tombolnya sendiri: <strong>Excel</strong>, <strong>CSV</strong>, dan <strong>Salin</strong>; <strong>Semua tabel ke Excel</strong> memasukkan semuanya ke satu buku kerja, satu lembar per tabel. Tabel yang berubah menyimpan riwayat snapshot, dan <strong>Tampilkan semua baris</strong> menggabungkannya menjadi satu tabel tanpa duplikat — persis yang berisi dalam ekspor.</p><p>Kotak-kotak di kiri mengelompokkan halaman menurut jenis elemen — semua teks halaman, setiap tingkat judul, paragraf, tautan, item daftar, tombol, kode, dan lainnya — masing-masing dengan jumlah dan baris pertama; pilih satu untuk melihat, menyalin, atau mengekspor hanya itu. Kotak pencarian menyaring saat Anda mengetik, dan menu di sebelahnya mengubahnya menjadi ekspresi reguler, <strong>pemilih CSS</strong>, atau ekspresi <strong>XPath</strong> (termasuk ekspresi nilai seperti <code>count(//a)</code> atau <code>//@href</code>) yang dijalankan pada halaman hidup; kotak <strong>Kueri kustom</strong> melakukan hal yang sama. Pesan halaman tentang kueri yang salah ditampilkan di dalam kotak.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML, dan file takarir lainnya — termasuk sumber <code>&lt;track&gt;</code> — ditempatkan di tab <strong>Takarir</strong> tersendiri dan tidak dicampur dengan dokumen."
@@ -1270,7 +1019,7 @@
     "message": "Warna disalin ke papan klip"
   },
   "toastProgressCapturing": {
-    "message": "Menangkap seluruh halaman... $percent$%",
+    "message": "Menangkap seluruh halaman… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Menggabungkan gambar..."
+    "message": "Menggabungkan gambar…"
   },
   "modalExportTitle": {
     "message": "Tangkapan Layar Seluruh Halaman Siap"
@@ -1302,7 +1051,7 @@
     "message": "Salin ke Papan Klip"
   },
   "btnExportGenerating": {
-    "message": "Membuat..."
+    "message": "Membuat…"
   },
   "toastPdfGenerated": {
     "message": "Dokumen PDF disimpan."
@@ -1317,13 +1066,10 @@
     "message": "Pratinjau:"
   },
   "toastRecGeneratingGif": {
-    "message": "Membuat GIF, harap tunggu..."
+    "message": "Membuat GIF, harap tunggu…"
   },
   "settingGifResolution": {
     "message": "Resolusi GIF Bawaan"
-  },
-  "optGifOriginal": {
-    "message": "Asli (resolusi asli 1:1 — 3K/4K penuh, tanpa pengecilan)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (maks. 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "Perekaman layar (Video & GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Rekam area layar mana pun sebagai MP4, WebM, atau GIF animasi. Rekaman GIF mendukung resolusi asli 1:1 serta profil 1080p, 720p, dan 480p dengan perkiraan ukuran file secara langsung. Durasi perekaman GIF maksimum adalah 1 menit (60 detik) untuk kinerja browser yang optimal."
+    "message": "Rekam area layar mana pun sebagai MP4, WebM, atau GIF animasi. Rekaman GIF menyediakan profil 1080p, 720p, dan 480p dengan perkiraan ukuran langsung. Satu rekaman GIF dapat berlangsung hingga 1 menit (60 detik)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Durasi maksimum GIF 1 menit (60 dtk) tercapai. Membuat GIF..."
+    "message": "Durasi maksimum GIF 1 menit (60 dtk) tercapai. Membuat GIF…"
   },
   "labelGifMaxDuration": {
     "message": "Maks. 1 menit (60 dtk)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Presentasi (1 bingkai per detik, ukuran minimal)"
-  },
-  "popupRightClickHint": {
-    "message": "Klik kanan di mana saja pada halaman web untuk Perekaman Layar (Video/GIF) dan Pemilih Warna."
   },
   "toastElementZappedAd": {
     "message": "Iklan / iframe disembunyikan untuk sesi ini.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Resolusi GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Resolusi GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Tab aktif tidak ditemukan.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Klik di sini, lalu pilih warna apa saja di halaman"
+  },
+  "welcomeTitle": {
+    "message": "Source Download siap digunakan"
+  },
+  "welcomePrivacy": {
+    "message": "Semuanya berjalan di komputer Anda. Tanpa akun, tanpa pelacakan, tidak ada yang dikirim ke kami."
+  },
+  "welcomeHelp": {
+    "message": "Ada yang tidak berfungsi? Beri tahu kami di GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Ada masalah?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF mencapai 200 MB. Menyimpan yang sudah direkam…"
+  },
+  "btnPopupFullPage": {
+    "message": "Tangkapan Layar Seluruh Halaman"
+  },
+  "toastRecWrongTab": {
+    "message": "Untuk merekam area di halaman ini, pilih \"Tab ini\" di dialog berbagi."
+  },
+  "popupCaptureTitle": {
+    "message": "Tangkap halaman ini"
+  },
+  "popupTileOffline": {
+    "message": "Simpan halaman untuk offline"
+  },
+  "popupTileGuide": {
+    "message": "Cara kerjanya"
+  },
+  "popupDevtoolsTitle": {
+    "message": "File, gambar, dan tabel"
+  },
+  "popupDevtoolsHint": {
+    "message": "Buka DevTools, lalu pilih tab Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome tidak mengizinkan ekstensi di halaman ini. Buka sebuah situs web untuk memakai alatnya."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Klik kanan di halaman mana pun"
+  },
+  "welcomeCardMenuText": {
+    "message": "Screenshot satu halaman penuh atau area, rekaman area, pemilih warna, dan salinan offline — tepat di tempat Anda berada."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Atau gunakan tombol di toolbar"
+  },
+  "welcomeCardPopupText": {
+    "message": "Klik ikon kepingan puzzle di toolbar Chrome dan sematkan Source Download, agar alatnya selalu hanya sekali klik."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Tekan F12 untuk semua yang ada di halaman"
+  },
+  "welcomeCardPanelText": {
+    "message": "Pilih tab Source Download di DevTools. Setiap gambar, video, font, dan file yang dimuat halaman tercantum di sana — pratinjau, filter, dan simpan sebagai ZIP. Tabel di halaman bisa diekspor ke Excel."
+  },
+  "welcomeLead": {
+    "message": "Tiga cara mengambil yang Anda perlukan dari halaman web mana pun."
+  },
+  "btnDownloadOptions": {
+    "message": "Opsi unduhan lainnya"
+  },
+  "btnMore": {
+    "message": "Tindakan lainnya"
+  },
+  "btnFilters": {
+    "message": "Filter"
+  },
+  "tabsShowEmpty": {
+    "message": "Tampilkan yang kosong"
+  },
+  "tabsHideEmpty": {
+    "message": "Sembunyikan yang kosong"
+  },
+  "textSegText": {
+    "message": "Teks"
+  },
+  "textSegTables": {
+    "message": "Tabel"
+  },
+  "textLive": {
+    "message": "Langsung"
+  },
+  "textPaused": {
+    "message": "Dijeda"
+  },
+  "textLivePauseTitle": {
+    "message": "Langsung: halaman dibaca ulang setiap kali berubah. Klik untuk menjeda."
+  },
+  "textLiveResumeTitle": {
+    "message": "Dijeda. Klik untuk mengikuti halaman secara langsung lagi."
+  },
+  "textSearchText": {
+    "message": "Cari di teks halaman"
+  },
+  "textExportAllXlsx": {
+    "message": "Semua tabel ke Excel"
+  },
+  "textNoTables": {
+    "message": "Belum ada tabel di halaman ini. Tabel akan muncul di sini begitu halaman menampilkannya."
+  },
+  "textTable": {
+    "message": "Tabel"
+  },
+  "textCopy": {
+    "message": "Salin"
+  },
+  "textShowLess": {
+    "message": "Tampilkan lebih sedikit"
+  },
+  "areaHintSelect": {
+    "message": "Seret untuk memilih area"
+  },
+  "areaHintCopy": {
+    "message": "salin"
+  },
+  "areaHintSave": {
+    "message": "simpan"
+  },
+  "areaHintExit": {
+    "message": "keluar"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Salin otomatis"
+  },
+  "areaAutoCopyOn": {
+    "message": "Salin otomatis aktif"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Lepaskan pilihan dan hasilnya sudah ada di papan klip."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Matikan"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Disalin ke papan klip (salin otomatis aktif)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Halaman ini tidak mengizinkan penyalinan ke papan klip. Gunakan Unduh sebagai gantinya."
+  },
+  "textKindAll": {
+    "message": "Semua teks halaman"
+  },
+  "textKindHeading": {
+    "message": "Judul"
+  },
+  "textKindP": {
+    "message": "Paragraf"
+  },
+  "textKindA": {
+    "message": "Tautan"
+  },
+  "textKindLi": {
+    "message": "Item daftar"
+  },
+  "textKindButton": {
+    "message": "Tombol"
+  },
+  "textKindLabel": {
+    "message": "Label dan keterangan"
+  },
+  "textKindSpan": {
+    "message": "Teks sebaris"
+  },
+  "textKindDiv": {
+    "message": "Blok lainnya"
+  },
+  "textKindCell": {
+    "message": "Sel tabel"
+  },
+  "textKindCode": {
+    "message": "Kode"
+  },
+  "textKindQuote": {
+    "message": "Kutipan"
+  },
+  "textCustomQuery": {
+    "message": "Kueri kustom"
+  },
+  "textCustomQueryHint": {
+    "message": "Pemilih CSS atau XPath pada halaman hidup"
+  },
+  "menuSettings": {
+    "message": "Setelan"
+  },
+  "settingsSave": {
+    "message": "Simpan"
+  },
+  "settingsReset": {
+    "message": "Kembalikan ke default"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Salin screenshot area secara otomatis"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Saat Anda melepaskan pilihan, gambar langsung masuk ke papan klip. Selama ini aktif, petunjuk di bagian atas halaman selalu menunjukkannya."
   }
 }

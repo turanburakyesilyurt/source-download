@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Source Download",
+    "message": "Source Download: 图片与文件批量下载器",
     "description": "扩展名称"
   },
   "appDesc": {
-    "message": "无缝浏览、检查并以ZIP格式下载网页所有资源。全页长截图、动态表格提取与开发者工作台。",
+    "message": "将网页加载的图片、图标和文件逐个保存或打包成 ZIP。还支持整页截图和区域录制。",
     "description": "扩展描述"
   },
   "actionTitle": {
@@ -98,7 +98,7 @@
     "message": "下载选中项"
   },
   "btnDownloadView": {
-    "message": "下载当前视图"
+    "message": "下载可见项"
   },
   "btnDownloadAll": {
     "message": "下载全部"
@@ -106,17 +106,8 @@
   "btnDownloadFiltered": {
     "message": "下载已筛选项"
   },
-  "btnTheme": {
-    "message": "切换主题"
-  },
   "btnGuide": {
     "message": "使用指南"
-  },
-  "btnCaptureFullPage": {
-    "message": "整页截图"
-  },
-  "btnOfflineArchive": {
-    "message": "保存单文件 HTML"
   },
   "filterMinKb": {
     "message": "最小 KB"
@@ -160,38 +151,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "筛选页面文本或实时查询 DOM…"
-  },
-  "textAllElements": {
-    "message": "所有元素"
-  },
-  "textLiveOn": {
-    "message": "实时捕获：开"
-  },
-  "textLiveOff": {
-    "message": "实时捕获：关"
-  },
   "textScanNow": {
     "message": "立即扫描"
-  },
-  "textReading": {
-    "message": "阅读模式"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "选择一个资源以查看详细信息"
@@ -235,15 +196,6 @@
   "metaAlt": {
     "message": "Alt 文本"
   },
-  "ratingPrompt": {
-    "message": "觉得 Source Download 对你有帮助吗？欢迎在 Chrome 网上应用店评分或在 GitHub 给我们一颗 Star 支持开源！"
-  },
-  "ratingReview": {
-    "message": "★ 前往评价"
-  },
-  "ratingStar": {
-    "message": "★ GitHub Star"
-  },
   "ratingDismiss": {
     "message": "稍后再说"
   },
@@ -264,39 +216,6 @@
   },
   "toastArchiveCreated": {
     "message": "单文件 HTML 存档已保存。"
-  },
-  "brandSignature": {
-    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "图像与矢量 SVG"
-  },
-  "tabMedia": {
-    "message": "媒体与音频"
-  },
-  "tabFonts": {
-    "message": "字体文件"
-  },
-  "tabTextScraper": {
-    "message": "文本与表格抓取"
-  },
-  "heroScreenshotTitle": {
-    "message": "整页截图"
-  },
-  "heroScreenshotDesc": {
-    "message": "无缝多屏拼接 • 自动抑制吸顶浮窗"
-  },
-  "heroArchiveTitle": {
-    "message": "单文件离线 HTML"
-  },
-  "heroArchiveDesc": {
-    "message": "内联样式与 Base64 图像 • 离线即开可用"
-  },
-  "copyDataUri": {
-    "message": "复制 Data-URI"
-  },
-  "copyUrl": {
-    "message": "复制 URL"
   },
   "downloadSingle": {
     "message": "下载"
@@ -349,17 +268,11 @@
   "statusResources": {
     "message": "个资源"
   },
-  "statusFiltered": {
-    "message": "已筛选"
-  },
   "statusSelected": {
     "message": "已选择"
   },
   "statusDupes": {
     "message": "重复已隐藏"
-  },
-  "statusSize": {
-    "message": "大小"
   },
   "langAuto": {
     "message": "自动（浏览器默认）"
@@ -367,23 +280,11 @@
   "langSelectorTitle": {
     "message": "语言选择"
   },
-  "textPillAll": {
-    "message": "全部内容"
-  },
-  "textPillText": {
-    "message": "📄 文本与文章"
-  },
-  "textPillTables": {
-    "message": "📊 仅表格"
-  },
   "textSelectAll": {
     "message": "全选"
   },
   "textDeselectAll": {
     "message": "取消全选"
-  },
-  "textClearSelection": {
-    "message": "清空"
   },
   "toastRefreshComplete": {
     "message": "页面扫描完成：新增 $count$ 个资源",
@@ -591,46 +492,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ 个表格 · $rows$ 行唯一数据",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "已选择 $count$ 项 — 仅导出这些项",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "表格 — 屏幕上 $count$ 行",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "表格 — 全部 $count$ 行",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ 次快照",
     "placeholders": {
@@ -661,32 +522,11 @@
   "textTableShowingAll": {
     "message": "正在显示全部行"
   },
-  "textTableHistory": {
-    "message": "历史快照 ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "隐藏历史"
-  },
   "textTableNoRows": {
     "message": "尚未捕获到行数据。"
   },
   "textBtnCopy": {
     "message": "复制文本"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 复制"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ 个重复图片",
@@ -696,9 +536,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "导出"
   },
   "inspectorLoadingSvg": {
     "message": "正在加载 SVG…"
@@ -712,44 +549,17 @@
   "inspectorFontSample": {
     "message": "字体预览"
   },
-  "inspectorBeautify": {
-    "message": "美化代码"
-  },
-  "inspectorOriginal": {
-    "message": "原始内容"
-  },
-  "inspectorHeaders": {
-    "message": "请求头"
-  },
-  "inspectorResponse": {
-    "message": "响应"
-  },
-  "inspectorRequest": {
-    "message": "请求"
-  },
   "inspectorQueryParams": {
     "message": "查询参数"
   },
   "inspectorRequestBody": {
     "message": "请求正文"
   },
-  "textHintHtml": {
-    "message": "页面的实时可读副本。包含文本的每个元素均按DOM顺序捕获。通过纯文本、正则表达式、<strong>CSS选择器</strong>或<strong>XPath</strong>表达式进行查询，然后导出匹配内容。详见<a href=\"#\" id=\"text-hint-guide\">指南</a>。"
-  },
-  "textHeadings": {
-    "message": "标题"
-  },
-  "textAllLevels": {
-    "message": "所有级别"
-  },
   "textMatches": {
     "message": "个匹配"
   },
   "textMatch": {
     "message": "个匹配"
-  },
-  "textReadingOn": {
-    "message": "阅读模式开启"
   },
   "toastDownloadStarted": {
     "message": "开始下载: $name$",
@@ -764,7 +574,7 @@
     "message": "无法获取此资源（CORS 或不受支持的类型）。"
   },
   "ratingBannerText": {
-    "message": "喜欢 Source Download 吗？欢迎在 Chrome 网上应用店撰写评价或在 GitHub 上点赞支持我们的开源愿景！"
+    "message": "很高兴对您有用！如果 Source Download 为您节省了时间，一条简短的评价能帮助更多人找到它。"
   },
   "ratingBannerReview": {
     "message": "★ 评价"
@@ -856,12 +666,6 @@
   "textModeTitle": {
     "message": "查询框解析模式"
   },
-  "textKindTitle": {
-    "message": "限制为特定元素类型"
-  },
-  "textHeadingLevelTitle": {
-    "message": "标题级别"
-  },
   "textPlaceholderRegex": {
     "message": "^价格:\\s*\\d+  — JavaScript 正则表达式"
   },
@@ -873,27 +677,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "在指南中搜索…"
-  },
-  "popupIntro": {
-    "message": "<strong>工具栏徽章</strong>统计的资源分类。关闭任一分类即可停止统计 — 徽章会立即只反映你所跟踪的内容。"
-  },
-  "popupHelpTitle": {
-    "message": "如何使用完整面板"
-  },
-  "popupStep1": {
-    "message": "在需要检查的页面上打开开发者工具 <div class=\"hint\"><kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "点击 DevTools 工具栏中的 <strong>Source Download</strong> 选项卡"
-  },
-  "popupStep3": {
-    "message": "浏览、检查并下载资源 — 可单独下载或打包为 ZIP 统一导出。"
-  },
-  "popupNote": {
-    "message": "注意：Chrome 安全机制不允许扩展程序通过代码直接打开 DevTools，因此完整功能需通过 DevTools 面板使用。"
-  },
-  "popupTrackAll": {
-    "message": "跟踪所有分类"
   },
   "popupLanguage": {
     "message": "语言"
@@ -975,20 +758,6 @@
   "btnMergeHls": {
     "message": "合并分段并下载"
   },
-  "toastHlsMerged": {
-    "message": "已将 $COUNT$ 个分段合并为 $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "大小未知"
-  },
   "progressFetching": {
     "message": "正在获取 $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1039,31 +808,11 @@
   "searchRegexHint": {
     "message": "正则表达式搜索已激活 — 请将查询包裹在 /pattern/i 中"
   },
-  "textIncludeInExports": {
-    "message": "包含在导出中"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "将每个快照合并为一个去重的表格 — 这就是导出的内容"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "浏览此表格的早期快照"
-  },
   "tableDownloadCsvTitle": {
     "message": "将此表格下载为 CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "快照 $INDEX$ — $TIME$（$COUNT$ 行）",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "切换批量下载的选择"
@@ -1158,7 +907,7 @@
     "message": "点击开发者工具（DevTools）工具栏中的 <strong>Source Download</strong> 选项卡（按 <kbd>F12</kbd> 或 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>，然后选择 DevTools 顶部栏中的选项卡）。由于 Chrome 浏览器安全规范禁止扩展程序自动唤起 DevTools，因此面板集成在此处。工具栏图标弹出窗口允许您自定义哪些分类的数据计入图标上的徽标计数器。面板工具栏上的太阳/月亮按钮可独立于 Chrome 浏览器锁定浅色或深色主题，该设置将被自动记忆。"
   },
   "guideSecCategoriesContent": {
-    "message": "左侧垂直选项卡将抓取到的所有资源按文件类型划分为 17 个专属分类：图片、视频、音频、字幕、文档、字体、源码映射、WASM、SVG、API 接口、Cookie、存储等。每个选项卡均展示实时资源计数。每次仅显示一个分类；切换分类会自动重置所有筛选器，确保您所见的内容始终与当前选中的分类严格对应。"
+    "message": "左侧的竖向标签页会把捕获到的每个资源分到 15 个类别中，例如图片、视频、字体、源映射和 API 调用，另外还有一个“文本与表格”标签页。每个标签页都会显示实时数量。一次只显示一个类别；切换标签页会重置所有筛选器，确保所见内容始终与当前标签页一致。"
   },
   "guideSecSearchFiltersContent": {
     "message": "搜索栏支持按名称、URL、文件类型、alt 替换文本或页面标题进行即时过滤。若要使用正则表达式，请将表达式包含在 <kbd>/…/</kbd> 中，例如 <code>/\\.(png|jpg)$/</code>。工具栏下方的筛选条会随所选分类动态调整：媒体分类提供文件体积与像素分辨率区间筛选，API 分类提供 HTTP 请求方法与请求类型筛选，并支持自定义排序字段与升降序。"
@@ -1170,13 +919,13 @@
     "message": "点击任何资源均可在右侧检查窗格中打开其详细信息。每个打开的文件都会以独立标签页呈现，便于您并排对比多项资源——最新打开的资源将排列在左侧。面板为图片、视频、音频、字体、SVG 以及文本/代码（配备 Beautify 代码美化格式化开关）提供了专属查看器。API 接口提供分屏视图：左侧为响应数据正文，右侧为完整的请求细节（请求方法、状态码、响应头、URL 查询参数及请求负载体）。"
   },
   "guideSecDownloadingContent": {
-    "message": "点击 <strong>下载当前视图</strong> 可将当前可见的所有资源（当前分类 + 搜索结果 + 筛选条件）打包保存为 ZIP 压缩文件；启用筛选条件时按钮会自动变为 <em>下载已筛选项 (N)</em>。在点击前将鼠标悬停在任一下载按钮上，即可预览预估的压缩包体积。<strong>下载选中项</strong> 仅保存被复选框勾选的文件。<strong>下载全部</strong> 将把检测到的所有资源打包为一个带有清晰文件夹层级结构的 ZIP 压缩包。下载失败的项目会自动发起重试，您也可以通过右键上下文菜单手动重新触发。<strong>导出</strong> 功能可将当前列表导出为 JSON 或 CSV 文件，或将 Chrome 网络日志完整导出为 HAR 文件。"
+    "message": "点击 <strong>下载可见项</strong> 可将当前可见的所有资源（当前分类 + 搜索结果 + 筛选条件）打包保存为 ZIP 压缩文件；启用筛选条件时按钮会自动变为 <em>下载已筛选项 (N)</em>。在点击前将鼠标悬停在任一下载按钮上，即可预览预估的压缩包体积。<strong>下载选中项</strong> 仅保存被复选框勾选的文件。<strong>下载全部</strong> 将把检测到的所有资源打包为一个带有清晰文件夹层级结构的 ZIP 压缩包。下载失败的项目会被标记，您可以通过通知、项目上的警告图标或右键菜单一键重试。<strong>导出</strong> 功能可将当前列表导出为 JSON 或 CSV 文件，或将 Chrome 网络日志完整导出为 HAR 文件。"
   },
   "guideSecLightboxContent": {
     "message": "缩放按钮可在全尺寸灯箱中打开媒体文件。您可以通过鼠标拖拽平移画面，并使用鼠标滚轮、屏幕控件按钮或键盘快捷键（<kbd>+</kbd>/<kbd>-</kbd> 缩放，<kbd>0</kbd> 恢复原始大小，<kbd>Esc</kbd> 退出）进行流畅的高精度缩放与查阅。"
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>文本</strong> 分类是当前网页内容的一个实时、高可读性的结构化副本。它严格按照 DOM 节点顺序抓取所有包含文本的元素——包括标题、正文段落、列表项、按钮、<code>div</code>/<code>span</code> 等——并且在 <strong>实时监听</strong> 模式开启期间持续保持扫描。</p><p><strong>查询</strong> 输入框提供四种工作模式，可通过旁边的下拉菜单自由切换：「<strong>包含</strong>」与「<strong>正则</strong>」用于对已提取的文本内容进行二次筛选；「<strong>CSS 选择器</strong>」与「<strong>XPath</strong>」则直接对网页的实时 DOM 执行深层查询，能够定位到 DOM 树中的任何节点。XPath 同样支持计算数值型表达式（而非单纯返回节点），例如 <code>count(//a)</code> 或 <code>//@href</code>。若查询语句有误，输入框旁会即时提示具体错误原因。「<strong>元素标签</strong>」筛选器会展示页面中出现的所有标签名称及各标签的出现频次，方便快速收窄范围。清空查询框（或点击 <strong>清除</strong> 按钮）即可立刻恢复至 <em>所有元素</em> 并重新抓取页面，无需手动重置下拉菜单。</p><p><strong>阅读模式</strong> 会自动隐藏标签名、复选框和层级路径面包屑，使提取的内容如同一篇排版整洁的文章般易于阅读。表格提取模块内置了具有容量上限的历史快照机制，确保单页应用（SPA）中的动态表格数据永不丢失。点击表格上的 <strong>显示所有行</strong> 按钮，即可将所有快照去重合并为完整的统一数据视图——这与导出文件包含的内容完全一致。支持导出为 <strong>TXT</strong>（纯文本页面）、<strong>MD</strong>（包含表格的 Markdown）或将表格导出为 CSV、HTML 及支持多工作表的专业 <strong>XLSX</strong> Excel 工作簿。已勾选的条目享有最高导出优先级；若未勾选任何项，则默认导出当前视图中的全部内容。</p>"
+    "message": "<p><strong>文本</strong>分类是页面的实时可读副本：标题、段落、列表和链接按页面顺序排列，并在<strong>实时</strong>开启期间持续更新。将鼠标悬停在某一行上即可复制该行，或使用<strong>复制文本</strong>、<strong>Markdown</strong> 和 <strong>TXT</strong> 处理当前显示的全部内容。</p><p>切换到<strong>表格</strong>后，页面上的每个表格都会以带预览的卡片显示，并有各自的 <strong>Excel</strong>、<strong>CSV</strong> 和<strong>复制</strong>按钮；<strong>全部表格导出到 Excel</strong> 会把所有表格放进一个工作簿，每个表格一个工作表。会变化的表格会保留快照历史，<strong>显示全部行</strong>会把它们合并成一个去重后的表格——这正是导出的内容。</p><p>左侧的方框按元素类型整理页面——全部页面文本、各级标题、段落、链接、列表项、按钮、代码等——每个都显示数量和第一行；选择其中一个即可只查看、复制或导出这部分。搜索框随输入即时筛选，旁边的菜单可将其切换为正则表达式、<strong>CSS 选择器</strong>或 <strong>XPath</strong> 表达式（也支持返回值的表达式，如 <code>count(//a)</code> 或 <code>//@href</code>），并在实时页面上运行；<strong>自定义查询</strong>方框的作用相同。页面对错误查询给出的提示会直接显示在框内。</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT、SRT、TTML 等常见字幕文件（包括 <code>&lt;track&gt;</code> 标签资源）均会自动归类至专属的 <strong>字幕</strong> 选项卡，不再与通用文档产生混淆。"
@@ -1330,9 +1079,6 @@
   "settingGifResolution": {
     "message": "默认GIF分辨率"
   },
-  "optGifOriginal": {
-    "message": "原始（1:1 原生分辨率 — 完整 3K/4K，不缩小）"
-  },
   "optGif1080p": {
     "message": "1080p Full HD（最大 1920px）"
   },
@@ -1349,7 +1095,7 @@
     "message": "屏幕录制 (视频与 GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "自由选取屏幕的任意区域并录制为 MP4、WebM 或动态 GIF 格式。GIF 录制支持 1:1 原生分辨率，提供 1080p、720p 和 480p 预设画质配置文件，并支持实时文件体积预估。为确保浏览器稳定高效运行，GIF 录制单次最大时长上限为 1 分钟（60 秒）。"
+    "message": "将屏幕的任意区域录制为 MP4、WebM 或动态 GIF。GIF 录制提供 1080p、720p 和 480p 三种规格，并实时估算文件大小。一次 GIF 录制最长 1 分钟（60 秒）。"
   },
   "msgGifMaxDurationReached": {
     "message": "已达到 GIF 最长时长 1 分钟（60 秒），正在生成 GIF…"
@@ -1374,10 +1120,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — 演示文稿（每秒 1 帧，体积最小）"
-  },
-  "popupRightClickHint": {
-    "message": "在网页任意位置右键点击，即可使用区域屏幕录制（视频/GIF）与屏幕取色。",
-    "description": "Hint informing user to use right-click context menu for recording and color picker"
   },
   "toastElementZappedAd": {
     "message": "广告 / iframe 已在本次会话中隐藏。",
@@ -1428,7 +1170,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF 分辨率：1:1 / 1080p / 720p / 480p",
+    "message": "GIF 分辨率：1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1482,5 +1224,206 @@
   "errNoActiveTab": {
     "message": "未找到活动标签页。",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "点击此处，然后在页面上选取任意颜色"
+  },
+  "welcomeTitle": {
+    "message": "Source Download 已就绪"
+  },
+  "welcomePrivacy": {
+    "message": "一切都在您的电脑上运行。无需账号，没有跟踪，不会向我们发送任何数据。"
+  },
+  "welcomeHelp": {
+    "message": "遇到问题？请在 GitHub 上告诉我们"
+  },
+  "ratingBannerIssue": {
+    "message": "遇到问题？"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF 已达到 200 MB，正在保存已录制的内容…"
+  },
+  "btnPopupFullPage": {
+    "message": "整页截图"
+  },
+  "toastRecWrongTab": {
+    "message": "要录制此页面的某个区域，请在共享对话框中选择“此标签页”。"
+  },
+  "popupCaptureTitle": {
+    "message": "捕获此页面"
+  },
+  "popupTileOffline": {
+    "message": "离线保存页面"
+  },
+  "popupTileGuide": {
+    "message": "使用方法"
+  },
+  "popupDevtoolsTitle": {
+    "message": "文件、图片和表格"
+  },
+  "popupDevtoolsHint": {
+    "message": "打开开发者工具，然后选择 Source Download 标签页。"
+  },
+  "popupRestricted": {
+    "message": "Chrome 不允许扩展程序在此页面上运行。请打开一个网站来使用这些工具。"
+  },
+  "welcomeCardMenuTitle": {
+    "message": "在任意页面上右键点击"
+  },
+  "welcomeCardMenuText": {
+    "message": "整页和区域截图、区域录制、取色器和离线副本，就在你所在的位置。"
+  },
+  "welcomeCardPopupTitle": {
+    "message": "或使用工具栏按钮"
+  },
+  "welcomeCardPopupText": {
+    "message": "点击 Chrome 工具栏中的拼图图标并固定 Source Download，工具就始终只需点击一次。"
+  },
+  "welcomeCardPanelTitle": {
+    "message": "按 F12 查看页面上的一切"
+  },
+  "welcomeCardPanelText": {
+    "message": "在开发者工具中选择 Source Download 标签页。页面加载的每张图片、每个视频、字体和文件都会列在那里——预览、筛选并保存为 ZIP。页面中的表格可导出到 Excel。"
+  },
+  "welcomeLead": {
+    "message": "从任何网页获取所需内容的三种方式。"
+  },
+  "btnDownloadOptions": {
+    "message": "更多下载选项"
+  },
+  "btnMore": {
+    "message": "更多操作"
+  },
+  "btnFilters": {
+    "message": "筛选"
+  },
+  "tabsShowEmpty": {
+    "message": "显示空分类"
+  },
+  "tabsHideEmpty": {
+    "message": "隐藏空分类"
+  },
+  "textSegText": {
+    "message": "文本"
+  },
+  "textSegTables": {
+    "message": "表格"
+  },
+  "textLive": {
+    "message": "实时"
+  },
+  "textPaused": {
+    "message": "已暂停"
+  },
+  "textLivePauseTitle": {
+    "message": "实时：页面每次变化都会重新读取。点击暂停。"
+  },
+  "textLiveResumeTitle": {
+    "message": "已暂停。点击后重新实时跟踪页面。"
+  },
+  "textSearchText": {
+    "message": "搜索页面文本"
+  },
+  "textExportAllXlsx": {
+    "message": "全部表格导出到 Excel"
+  },
+  "textNoTables": {
+    "message": "此页面上还没有表格。页面一显示表格就会出现在这里。"
+  },
+  "textTable": {
+    "message": "表格"
+  },
+  "textCopy": {
+    "message": "复制"
+  },
+  "textShowLess": {
+    "message": "收起"
+  },
+  "areaHintSelect": {
+    "message": "拖动以选择区域"
+  },
+  "areaHintCopy": {
+    "message": "复制"
+  },
+  "areaHintSave": {
+    "message": "保存"
+  },
+  "areaHintExit": {
+    "message": "退出"
+  },
+  "areaAutoCopyLabel": {
+    "message": "自动复制"
+  },
+  "areaAutoCopyOn": {
+    "message": "自动复制已开启"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "松开选区，图像就已在剪贴板中。"
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "关闭"
+  },
+  "toastAreaAutoCopied": {
+    "message": "已复制到剪贴板（自动复制已开启）"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "此页面不允许复制到剪贴板。请改用下载。"
+  },
+  "textKindAll": {
+    "message": "全部页面文本"
+  },
+  "textKindHeading": {
+    "message": "标题"
+  },
+  "textKindP": {
+    "message": "段落"
+  },
+  "textKindA": {
+    "message": "链接"
+  },
+  "textKindLi": {
+    "message": "列表项"
+  },
+  "textKindButton": {
+    "message": "按钮"
+  },
+  "textKindLabel": {
+    "message": "标签和说明文字"
+  },
+  "textKindSpan": {
+    "message": "行内文本"
+  },
+  "textKindDiv": {
+    "message": "其他区块"
+  },
+  "textKindCell": {
+    "message": "表格单元格"
+  },
+  "textKindCode": {
+    "message": "代码"
+  },
+  "textKindQuote": {
+    "message": "引用"
+  },
+  "textCustomQuery": {
+    "message": "自定义查询"
+  },
+  "textCustomQueryHint": {
+    "message": "在实时页面上使用 CSS 选择器或 XPath"
+  },
+  "menuSettings": {
+    "message": "设置"
+  },
+  "settingsSave": {
+    "message": "保存"
+  },
+  "settingsReset": {
+    "message": "恢复默认设置"
+  },
+  "settingAreaAutoCopy": {
+    "message": "自动复制区域截图"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "松开选区后，图像会直接进入剪贴板。开启期间，页面顶部的提示每次都会说明这一点。"
   }
 }

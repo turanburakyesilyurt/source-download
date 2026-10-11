@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Transferir imagens"
   },
   "appDesc": {
-    "message": "Inspecione e baixe recursos da web em ZIP com facilidade. Capturas de ecrã de página inteira e gravação de vídeo/GIF."
+    "message": "Guarde imagens, ícones e ficheiros que uma página web carrega, um a um ou em ZIP. Captura da página inteira e gravação de área."
   },
   "actionTitle": {
     "message": "Source Download — Abrir painel e rastrear recursos"
@@ -90,7 +90,7 @@
     "message": "Descarregar selecionados"
   },
   "btnDownloadView": {
-    "message": "Descarregar vista"
+    "message": "Transferir visíveis"
   },
   "btnDownloadAll": {
     "message": "Descarregar tudo"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Descarregar filtrados"
   },
-  "btnTheme": {
-    "message": "Alternar tema"
-  },
   "btnGuide": {
     "message": "Guia do utilizador"
-  },
-  "btnCaptureFullPage": {
-    "message": "Captura de ecrã da página inteira"
-  },
-  "btnOfflineArchive": {
-    "message": "Guardar HTML único"
   },
   "filterMinKb": {
     "message": "KB mín"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filtrar texto da página ou consultar o DOM ao vivo…"
-  },
-  "textAllElements": {
-    "message": "Todos os elementos"
-  },
-  "textLiveOn": {
-    "message": "Direto ativado"
-  },
-  "textLiveOff": {
-    "message": "Direto desativado"
-  },
   "textScanNow": {
     "message": "Analisar agora"
-  },
-  "textReading": {
-    "message": "Leitura"
-  },
-  "textExportTxt": {
-    "message": "Exportar em TXT"
-  },
-  "textExportMd": {
-    "message": "Exportar em Markdown"
-  },
-  "textExportCsv": {
-    "message": "Exportar em CSV"
-  },
-  "textExportHtml": {
-    "message": "Exportar em HTML"
-  },
-  "textExportXlsx": {
-    "message": "Exportar em XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Selecione um recurso para inspecionar os respetivos detalhes"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Está a gostar do Source Download? Apoie a nossa visão de código aberto com uma avaliação na Chrome Web Store ou uma estrela no GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Avaliar"
-  },
-  "ratingStar": {
-    "message": "★ Estrela no GitHub"
-  },
   "ratingDismiss": {
     "message": "Dispensar"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Arquivo HTML de ficheiro único guardado."
-  },
-  "brandSignature": {
-    "message": "Desenvolvido por Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Imagens e SVG"
-  },
-  "tabMedia": {
-    "message": "Multimédia e áudio"
-  },
-  "tabFonts": {
-    "message": "Tipos de letra"
-  },
-  "tabTextScraper": {
-    "message": "Texto e tabelas"
-  },
-  "heroScreenshotTitle": {
-    "message": "Captura de ecrã da página inteira"
-  },
-  "heroScreenshotDesc": {
-    "message": "Junção contínua • Supressão de cabeçalhos fixos"
-  },
-  "heroArchiveTitle": {
-    "message": "Arquivo HTML de ficheiro único"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS e imagens incorporados • Seguro offline"
-  },
-  "copyDataUri": {
-    "message": "Copiar Data-URI"
-  },
-  "copyUrl": {
-    "message": "Copiar URL"
   },
   "downloadSingle": {
     "message": "Descarregar"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "recursos"
   },
-  "statusFiltered": {
-    "message": "filtrados"
-  },
   "statusSelected": {
     "message": "selecionado(s)"
   },
   "statusDupes": {
     "message": "duplicados ocultos"
-  },
-  "statusSize": {
-    "message": "tamanho"
   },
   "langAuto": {
     "message": "Automático (Navegador)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Selecionar idioma"
   },
-  "textPillAll": {
-    "message": "Todo o conteúdo"
-  },
-  "textPillText": {
-    "message": "📄 Textos e artigos"
-  },
-  "textPillTables": {
-    "message": "📊 Apenas tabelas"
-  },
   "textSelectAll": {
     "message": "Selecionar tudo"
   },
   "textDeselectAll": {
     "message": "Desmarcar tudo"
-  },
-  "textClearSelection": {
-    "message": "Limpar"
   },
   "toastRefreshComplete": {
     "message": "Análise da página concluída: $count$ novo(s) recurso(s)",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ tabela(s) · $rows$ linhas únicas",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ selecionado(s) — apenas estes serão exportados",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tabela — $count$ linha(s) no ecrã",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tabela — todas as $count$ linha(s) únicas",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ captura(s)",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "A mostrar todas as linhas"
   },
-  "textTableHistory": {
-    "message": "Histórico ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Ocultar histórico"
-  },
   "textTableNoRows": {
     "message": "Ainda não foi capturada nenhuma linha."
   },
   "textBtnCopy": {
     "message": "Copiar texto"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Copiar"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ imagem(ns) duplicada(s)",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Exportar"
   },
   "inspectorLoadingSvg": {
     "message": "A carregar SVG…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Pré-visualização do tipo de letra"
   },
-  "inspectorBeautify": {
-    "message": "Formatar"
-  },
-  "inspectorOriginal": {
-    "message": "Original"
-  },
-  "inspectorHeaders": {
-    "message": "Cabeçalhos"
-  },
-  "inspectorResponse": {
-    "message": "Resposta"
-  },
-  "inspectorRequest": {
-    "message": "Pedido"
-  },
   "inspectorQueryParams": {
     "message": "Parâmetros de consulta"
   },
   "inspectorRequestBody": {
     "message": "Corpo do pedido"
   },
-  "textHintHtml": {
-    "message": "Uma cópia legível e em tempo real da página. Cada elemento com texto é capturado pela ordem do DOM e mantido aqui à medida que a página muda. Consulte-a com texto simples, uma expressão regular, um <strong>seletor CSS</strong> ou uma expressão <strong>XPath</strong> e exporte o que corresponder. Consulte o <a href=\"#\" id=\"text-hint-guide\">guia</a> para mais detalhes."
-  },
-  "textHeadings": {
-    "message": "Títulos"
-  },
-  "textAllLevels": {
-    "message": "Todos os níveis"
-  },
   "textMatches": {
     "message": "correspondências"
   },
   "textMatch": {
     "message": "correspondência"
-  },
-  "textReadingOn": {
-    "message": "Leitura ativada"
   },
   "toastDownloadStarted": {
     "message": "Descarregamento iniciado: $name$",
@@ -756,7 +566,7 @@
     "message": "Não foi possível obter este recurso (CORS ou tipo não suportado)."
   },
   "ratingBannerText": {
-    "message": "Está a gostar do Source Download? Apoie a nossa visão de código aberto com uma avaliação na Chrome Web Store ou uma estrela no GitHub!"
+    "message": "Ainda bem que funcionou! Se o Source Download lhe poupa tempo, uma avaliação rápida ajuda outras pessoas a encontrá-lo."
   },
   "ratingBannerReview": {
     "message": "★ Avaliar"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Modo de consulta"
   },
-  "textKindTitle": {
-    "message": "Tipo de elemento"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Nível de título"
-  },
   "textPlaceholderRegex": {
     "message": "^Preço:\\s*\\d+ — expressão regular JavaScript"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Pesquisar no guia…"
-  },
-  "popupIntro": {
-    "message": "Categorias contabilizadas pelo <strong>emblema da barra de ferramentas</strong>. Desative uma para deixar de a contar — o emblema reflete de imediato apenas o que acompanha."
-  },
-  "popupHelpTitle": {
-    "message": "Como usar o painel completo"
-  },
-  "popupStep1": {
-    "message": "Abra as DevTools da página que pretende inspecionar <div class=\"hint\"><kbd>F12</kbd> ou <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Clique no separador <strong>Source Download</strong> na barra de ferramentas das DevTools"
-  },
-  "popupStep3": {
-    "message": "Navegue, inspecione e descarregue recursos — individualmente ou todos de uma vez num ZIP."
-  },
-  "popupNote": {
-    "message": "Nota: o Chrome não permite que as extensões abram as DevTools por programação, pelo que o conjunto completo de ferramentas é acedido através da barra de ferramentas das DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Acompanhar todas as categorias"
   },
   "popupLanguage": {
     "message": "Idioma"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Unir segmentos e descarregar"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ segmento(s) unido(s) em $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "tamanho desconhecido"
-  },
   "progressFetching": {
     "message": "A obter $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Pesquisa por regex ativa — delimite a consulta com /padrão/i"
   },
-  "textIncludeInExports": {
-    "message": "Incluir nas exportações"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Combina todas as capturas numa só tabela sem duplicados — é isto que é exportado"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Percorrer as capturas anteriores desta tabela"
-  },
   "tableDownloadCsvTitle": {
     "message": "Descarregar esta tabela como CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Captura $INDEX$ — $TIME$ ($COUNT$ linhas)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Alternar seleção para descarregamento em lote"
@@ -1150,7 +899,7 @@
     "message": "Clique no separador <strong>Source Download</strong> na barra de ferramentas das DevTools (prima <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> e, depois, o separador na barra de ferramentas das DevTools). O Chrome não permite que as extensões abram as DevTools automaticamente, razão pela qual o painel se encontra aí. O pop-up do ícone da barra de ferramentas permite escolher quais as categorias que alimentam o contador do ícone. O botão de sol/lua na barra de ferramentas do painel fixa um tema claro ou escuro, independentemente do Chrome; a escolha fica guardada."
   },
   "guideSecCategoriesContent": {
-    "message": "Os separadores verticais à esquerda agrupam cada recurso capturado em 17 categorias dedicadas por tipo: Imagens, Vídeos, Áudio, Legendas, Documentos, Tipos de letra, Source maps, WASM, SVG, APIs, Cookies, Armazenamento e mais. Cada separador mostra uma contagem em tempo real. Só é apresentada uma categoria de cada vez; ao mudar, todos os filtros são repostos, pelo que o que vê corresponde sempre ao separador."
+    "message": "Os separadores verticais à esquerda organizam cada recurso capturado em 15 categorias, como imagens, vídeos, tipos de letra, source maps e chamadas API, além de um separador de Texto e tabelas. Cada separador mostra uma contagem em tempo real. Só é apresentada uma categoria de cada vez; ao mudar, todos os filtros são repostos, pelo que o que vê corresponde sempre ao separador."
   },
   "guideSecSearchFiltersContent": {
     "message": "A barra de pesquisa filtra por nome, URL, tipo, texto alt ou título. Delimite a consulta com <kbd>/…/</kbd> para utilizar uma expressão regular, por exemplo <code>/\\.(png|jpg)$/</code>. Abaixo da barra de ferramentas, a barra de filtros muda consoante a categoria: intervalos de tamanho e dimensões para multimédia, método HTTP e tipo de pedido para APIs, além da ordenação e respetiva direção."
@@ -1162,13 +911,13 @@
     "message": "Clique em qualquer recurso para o abrir no painel de inspeção à direita. Cada ficheiro aberto torna-se um separador, para que possa comparar vários recursos lado a lado — o mais recente abre à esquerda. Existem visualizadores dedicados para imagens, vídeo, áudio, tipos de letra, SVG e texto/código (com um botão Beautify). As APIs mostram uma vista dividida: resposta à esquerda e detalhes do pedido (método, estado, cabeçalhos, parâmetros de consulta e corpo) à direita."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Descarregar vista</strong> guarda os recursos atualmente visíveis (categoria ativa + pesquisa + filtros) como um ZIP; o rótulo muda para <em>Descarregar filtrados (N)</em> quando há filtros ativos. Passe o cursor sobre qualquer botão de descarregamento para ver o tamanho estimado do arquivo antes de clicar. <strong>Descarregar selecionados</strong> descarrega apenas os itens marcados. <strong>Descarregar tudo</strong> reúne todos os recursos descobertos num ZIP com estrutura de pastas. Os descarregamentos falhados são repetidos automaticamente e podem ser repetidos novamente a partir do menu de contexto. <strong>Exportar</strong> grava a lista visível como JSON ou CSV, ou exporta o registo de rede do Chrome como ficheiro HAR."
+    "message": "<strong>Transferir visíveis</strong> guarda os recursos atualmente visíveis (categoria ativa + pesquisa + filtros) como um ZIP; o rótulo muda para <em>Descarregar filtrados (N)</em> quando há filtros ativos. Passe o cursor sobre qualquer botão de descarregamento para ver o tamanho estimado do arquivo antes de clicar. <strong>Descarregar selecionados</strong> descarrega apenas os itens marcados. <strong>Descarregar tudo</strong> reúne todos os recursos descobertos num ZIP com estrutura de pastas. As transferências falhadas ficam assinaladas e podem ser repetidas com um clique a partir da notificação, do ícone de aviso do item ou do menu de contexto. <strong>Exportar</strong> grava a lista visível como JSON ou CSV, ou exporta o registo de rede do Chrome como ficheiro HAR."
   },
   "guideSecLightboxContent": {
     "message": "O botão de zoom abre os conteúdos multimédia num lightbox em ecrã inteiro, onde pode deslocar arrastando, aplicar zoom com a roda do rato, os botões no ecrã ou o teclado (<kbd>+</kbd>/<kbd>-</kbd> para zoom, <kbd>0</kbd> para repor, <kbd>Esc</kbd> para fechar)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>A categoria <strong>Texto</strong> é uma cópia legível e em tempo real da página. Captura todos os elementos com texto — títulos, parágrafos, itens de lista, botões, <code>div</code>/<code>span</code> e mais — pela ordem do DOM e continua a analisar enquanto o modo <strong>Direto</strong> estiver ativado.</p><p>A caixa de <strong>consulta</strong> funciona de quatro formas, escolhidas no menu pendente junto a ela: <strong>Contém</strong> e <strong>Expressão regular</strong> filtram o texto já capturado, enquanto <strong>Seletor CSS</strong> e <strong>XPath</strong> são executados na página em direto, podendo chegar a qualquer ponto do DOM. O XPath aceita também expressões que devolvem um valor em vez de elementos, como <code>count(//a)</code> ou <code>//@href</code>. O que a página indicar sobre uma consulta inválida é mostrado junto à caixa. <strong>Elemento</strong> restringe o resultado a uma única etiqueta, com a contagem de cada etiqueta encontrada na página. Limpar a caixa de consulta (ou premir <strong>Limpar</strong>) devolve-o a <em>Todos os elementos</em> e volta a capturar a página — nunca tem de repor o menu pendente manualmente.</p><p>O modo <strong>Leitura</strong> oculta etiquetas, caixas de seleção e indicadores de localização, para que o fluxo se leia como um documento. As tabelas guardam um histórico limitado de capturas, para que as tabelas dinâmicas (SPA) nunca se percam. Prima <strong>Mostrar todas as linhas</strong> numa tabela para combinar todas as capturas numa única vista sem duplicados — é exatamente isso que uma exportação contém. Exporte como <strong>TXT</strong> (a página legível), <strong>MD</strong> (Markdown, incluindo tabelas) ou tabelas como CSV, HTML ou um verdadeiro livro <strong>XLSX</strong> com várias folhas. Os itens marcados têm prioridade; caso contrário, é exportado tudo o que estiver visível.</p>"
+    "message": "<p>A categoria <strong>Texto</strong> é uma cópia viva e legível da página: títulos, parágrafos, listas e ligações pela ordem da página, atualizados enquanto <strong>Ao vivo</strong> estiver ativo. Passe o rato sobre uma linha para a copiar ou utilize <strong>Copiar texto</strong>, <strong>Markdown</strong> e <strong>TXT</strong> para tudo o que está a ser mostrado.</p><p>Em <strong>Tabelas</strong>, cada tabela da página aparece como um cartão com pré-visualização e os seus próprios botões <strong>Excel</strong>, <strong>CSV</strong> e <strong>Copiar</strong>; <strong>Todas as tabelas para o Excel</strong> reúne todas num livro, uma folha para cada. As tabelas que mudam guardam um histórico de instantâneos, e <strong>Mostrar todas as linhas</strong> junta-os numa única tabela sem duplicados — exatamente o que uma exportação contém.</p><p>Os quadros à esquerda organizam a página por tipo de elemento — todo o texto da página, cada nível de título, parágrafos, ligações, itens de lista, botões, código e mais — cada um com uma contagem e a primeira linha; escolha um para ver, copiar ou exportar apenas isso. A caixa de pesquisa filtra enquanto escreve, e o menu ao lado transforma-a numa expressão regular, num <strong>seletor CSS</strong> ou numa expressão <strong>XPath</strong> (também expressões de valor como <code>count(//a)</code> ou <code>//@href</code>) executada na página ao vivo; o quadro <strong>Consulta personalizada</strong> faz o mesmo. O que a página indicar sobre uma consulta com erro aparece dentro da caixa.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "Os ficheiros WebVTT, SRT, TTML e outros ficheiros de legendas — incluindo origens <code>&lt;track&gt;</code> — ficam no seu próprio separador <strong>Legendas</strong>, em vez de se misturarem com os documentos."
@@ -1270,7 +1019,7 @@
     "message": "Cor copiada para a área de transferência"
   },
   "toastProgressCapturing": {
-    "message": "A capturar a página inteira... $percent$%",
+    "message": "A capturar a página inteira… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "A juntar a imagem..."
+    "message": "A juntar a imagem…"
   },
   "modalExportTitle": {
     "message": "Captura de ecrã da página inteira pronta"
@@ -1302,7 +1051,7 @@
     "message": "Copiar para a área de transferência"
   },
   "btnExportGenerating": {
-    "message": "A gerar..."
+    "message": "A gerar…"
   },
   "toastPdfGenerated": {
     "message": "Documento PDF guardado."
@@ -1317,13 +1066,10 @@
     "message": "Pré-visualização:"
   },
   "toastRecGeneratingGif": {
-    "message": "A gerar GIF, aguarde..."
+    "message": "A gerar GIF, aguarde…"
   },
   "settingGifResolution": {
     "message": "Resolução GIF predefinida"
-  },
-  "optGifOriginal": {
-    "message": "Original (resolução nativa 1:1 — 3K/4K completo, sem redução)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (máx. 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "Gravação de ecrã (Vídeo e GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Grave qualquer área do ecrã como MP4, WebM ou GIF animado. As gravações GIF oferecem resolução nativa 1:1 e perfis de 1080p, 720p e 480p, com tamanhos de ficheiro estimados em tempo real. A duração máxima de gravação de GIF é de 1 minuto (60 s) para um desempenho ideal do navegador."
+    "message": "Grave qualquer região do ecrã como MP4, WebM ou GIF animado. As gravações GIF oferecem perfis 1080p, 720p e 480p com estimativa de tamanho em direto. Uma gravação GIF pode durar até 1 minuto (60 s)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Foi atingida a duração máxima do GIF de 1 minuto (60 s). A gerar GIF..."
+    "message": "Foi atingida a duração máxima do GIF de 1 minuto (60 s). A gerar GIF…"
   },
   "labelGifMaxDuration": {
     "message": "Máx. 1 min (60 s)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Apresentação (1 fotograma por segundo, tamanho mínimo)"
-  },
-  "popupRightClickHint": {
-    "message": "Clique com o botão direito na página para Gravação de Ecrã (Vídeo/GIF) e Conta-gotas de Cor."
   },
   "toastElementZappedAd": {
     "message": "Anúncio / iframe ocultado nesta sessão.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Resolução do GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Resolução do GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Nenhum separador ativo encontrado.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Clique aqui e depois escolha qualquer cor na página"
+  },
+  "welcomeTitle": {
+    "message": "O Source Download está pronto"
+  },
+  "welcomePrivacy": {
+    "message": "Tudo é executado no seu computador. Sem conta, sem rastreio, nada nos é enviado."
+  },
+  "welcomeHelp": {
+    "message": "Algo não funciona? Diga-nos no GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Algum problema?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "O GIF atingiu 200 MB. A guardar o que foi gravado…"
+  },
+  "btnPopupFullPage": {
+    "message": "Captura da página inteira"
+  },
+  "toastRecWrongTab": {
+    "message": "Para gravar uma área desta página, escolha \"Este separador\" na janela de partilha."
+  },
+  "popupCaptureTitle": {
+    "message": "Capturar esta página"
+  },
+  "popupTileOffline": {
+    "message": "Guardar a página offline"
+  },
+  "popupTileGuide": {
+    "message": "Como funciona"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Ficheiros, imagens e tabelas"
+  },
+  "popupDevtoolsHint": {
+    "message": "Abra as Ferramentas de programador e escolha o separador Source Download."
+  },
+  "popupRestricted": {
+    "message": "O Chrome não permite extensões nesta página. Abra um site para utilizar as ferramentas."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Clique com o botão direito em qualquer página"
+  },
+  "welcomeCardMenuText": {
+    "message": "Capturas de ecrã da página inteira ou de uma área, gravação de área, conta-gotas de cor e uma cópia offline, mesmo onde está."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Ou utilize o botão da barra de ferramentas"
+  },
+  "welcomeCardPopupText": {
+    "message": "Clique no ícone de peça de puzzle na barra de ferramentas do Chrome e afixe o Source Download para ter as ferramentas sempre à distância de um clique."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Prima F12 para tudo o que existe na página"
+  },
+  "welcomeCardPanelText": {
+    "message": "Escolha o separador Source Download nas Ferramentas de programador. Cada imagem, vídeo, tipo de letra e ficheiro que a página carregou aparece aí: pré-visualize, filtre e guarde num ZIP. As tabelas da página são exportadas para o Excel."
+  },
+  "welcomeLead": {
+    "message": "Três formas de obter o que precisa de qualquer página web."
+  },
+  "btnDownloadOptions": {
+    "message": "Mais opções de transferência"
+  },
+  "btnMore": {
+    "message": "Mais ações"
+  },
+  "btnFilters": {
+    "message": "Filtros"
+  },
+  "tabsShowEmpty": {
+    "message": "Mostrar vazias"
+  },
+  "tabsHideEmpty": {
+    "message": "Ocultar vazias"
+  },
+  "textSegText": {
+    "message": "Texto"
+  },
+  "textSegTables": {
+    "message": "Tabelas"
+  },
+  "textLive": {
+    "message": "Ao vivo"
+  },
+  "textPaused": {
+    "message": "Em pausa"
+  },
+  "textLivePauseTitle": {
+    "message": "Ao vivo: a página é lida de novo quando muda. Clique para colocar em pausa."
+  },
+  "textLiveResumeTitle": {
+    "message": "Em pausa. Clique para voltar a acompanhar a página ao vivo."
+  },
+  "textSearchText": {
+    "message": "Pesquisar no texto da página"
+  },
+  "textExportAllXlsx": {
+    "message": "Todas as tabelas para o Excel"
+  },
+  "textNoTables": {
+    "message": "Ainda não existem tabelas nesta página. Aparecem aqui assim que a página mostrar uma."
+  },
+  "textTable": {
+    "message": "Tabela"
+  },
+  "textCopy": {
+    "message": "Copiar"
+  },
+  "textShowLess": {
+    "message": "Mostrar menos"
+  },
+  "areaHintSelect": {
+    "message": "Arraste para selecionar uma área"
+  },
+  "areaHintCopy": {
+    "message": "copiar"
+  },
+  "areaHintSave": {
+    "message": "guardar"
+  },
+  "areaHintExit": {
+    "message": "sair"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Copiar automaticamente"
+  },
+  "areaAutoCopyOn": {
+    "message": "A cópia automática está ativa"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Largue a seleção e ela fica na área de transferência."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Desativar"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Copiado para a área de transferência (cópia automática ativa)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Esta página não permite copiar para a área de transferência. Utilize Transferir."
+  },
+  "textKindAll": {
+    "message": "Todo o texto da página"
+  },
+  "textKindHeading": {
+    "message": "Título"
+  },
+  "textKindP": {
+    "message": "Parágrafos"
+  },
+  "textKindA": {
+    "message": "Ligações"
+  },
+  "textKindLi": {
+    "message": "Itens de lista"
+  },
+  "textKindButton": {
+    "message": "Botões"
+  },
+  "textKindLabel": {
+    "message": "Rótulos e legendas"
+  },
+  "textKindSpan": {
+    "message": "Texto em linha"
+  },
+  "textKindDiv": {
+    "message": "Outros blocos"
+  },
+  "textKindCell": {
+    "message": "Células de tabela"
+  },
+  "textKindCode": {
+    "message": "Código"
+  },
+  "textKindQuote": {
+    "message": "Citações"
+  },
+  "textCustomQuery": {
+    "message": "Consulta personalizada"
+  },
+  "textCustomQueryHint": {
+    "message": "Seletor CSS ou XPath na página ao vivo"
+  },
+  "menuSettings": {
+    "message": "Definições"
+  },
+  "settingsSave": {
+    "message": "Guardar"
+  },
+  "settingsReset": {
+    "message": "Repor predefinições"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Copiar capturas de área automaticamente"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Ao largar a seleção, a imagem vai diretamente para a área de transferência. Enquanto estiver ativo, o aviso no topo da página indica-o sempre."
   }
 }

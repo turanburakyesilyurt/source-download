@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Bir sayfanın yüklediği tüm web varlıklarına göz atın, inceleyin ve tek seferde ZIP olarak indirin.</em><br>
-  Source Download — sayfadaki her varlık, tek tık uzağınızda
+  <em>Bir web sayfasının yüklediği görselleri, ikonları ve dosyaları tek tek ya da ZIP olarak kaydedin. Tam sayfa görüntü ve alan kaydı.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Bu benim **ilk açık kaynak projem**, bu yüzden geri bildirimleriniz benim iç
 
 ## Görsel Tur ve Temel Modüller
 
-Doğrudan Google Chrome DevTools, sağ tık menüsü ve araç çubuğu açılır penceresine yerleştirilmiş yüksek çözünürlüklü arayüz modüllerini keşfedin.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Web'deki her şeyi yakalayın ve indirin
-> **★ DEVTOOLS MÜHENDİSLİK SETİ · F12**
+<p align="center"><img src="../../screenshots/tr-1.png" width="100%" alt="Sayfadaki her dosya, bir panel uzağınızda"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Web'deki her şeyi yakalayın ve indirin">
-</p>
+<p align="center"><img src="../../screenshots/tr-2.png" width="100%" alt="Sağ tıklayın. Yakalayın."></p>
 
----
+<p align="center"><img src="../../screenshots/tr-3.png" width="100%" alt="Bir alan seçin. Panonuzda."></p>
 
-### 2. Ekranın herhangi bir alanını video ve GIF olarak kaydedin
-> **★ BÖLGESEL EKRAN KAYDEDİCİ · MP4, WEBM VE GIF**
+<p align="center"><img src="../../screenshots/tr-4.png" width="100%" alt="Sayfa metni ve tablolar, sizin için ayrılmış"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Ekranın herhangi bir alanını video ve GIF olarak kaydedin">
-</p>
+<p align="center"><img src="../../screenshots/tr-5.png" width="100%" alt="Tam sayfalar, kayıtlar, çevrimdışı kopyalar"></p>
 
 ---
 
-### 3. Kesintisiz tam sayfa kaydırmalı ekran görüntüsü
-> **★ PİKSEL MÜKEMMELLİĞİNDE EKRAN GÖRÜNTÜLERİ · TAM SAYFA VE ALAN**
+Source Download, web sayfaları için bir yakalama araç setidir. Chrome Geliştirici Araçları'na bir sekme ekler; sitenin yüklediği her şey orada kategorilere ayrılır, böylece önizleyip yalnızca ihtiyacınız olanı saklarsınız.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Kesintisiz tam sayfa kaydırmalı ekran görüntüsü">
-</p>
+## Başlıca özellikler
+- Düzenli galeri: resimler, ikonlar ve yazı tipleri canlı sayaçlarla kendi sekmelerinde görünür; bir arama kutusu da vardır.
+- Hassas filtreler: yalnızca belirli bir genişliğin üzerindekileri (örneğin 1200 px) gösterin ya da kopyaları gizleyin.
+- Gerçek önizleme: grafikleri yakınlaştırın, medyayı oynatın, yazı tipi örneğine bakın ya da kodu renklendirilmiş hâlde okuyun.
+- Tek arşiv: istediklerinizi işaretleyin, düzenli klasör yapısıyla tek bir ZIP alın. Başarısız olanlar tek tıkla yeniden denenebilir.
+- Tam sayfa ekran görüntüsü: sayfanın tamamı kaydırılıp birleştirilir ve PNG, JPG veya PDF olur. İsterseniz yalnızca bir alanı seçebilirsiniz.
+- Alan kaydı: ekranın bir bölümünü GIF, MP4 veya WebM klibine dönüştürün.
+- Tablodan elektronik tabloya: canlı tabloları Excel'e ya da CSV'ye aktarın; yenilenen tabloların önceki anlık görüntüleri de dahildir.
+- Çevrimdışı kopya: bir siteyi internet bağlantısı olmadan açılan tek bir HTML belgesi olarak saklayın.
+- Renk seçici: ekrandaki herhangi bir rengi seçip HEX, RGB veya HSL olarak kopyalayın.
 
----
+## Nasıl başlanır
+1. Çalışmak istediğiniz web sitesini açın.
+2. F12'ye basın (Mac'te Option + Command + I) ve Source Download sekmesini seçin. Göremiyorsanız sekme çubuğunun sonundaki » işaretine tıklayın.
+3. Site yüklenirken paneli açık tutun; böylece hiçbir şey kaçmaz.
 
-### 4. Canlı DOM tablolarından Excel (XLSX) ve CSV'ye
-> **★ VERİ ÇIKARMA VE ÖĞE KALDIRICI**
-
-<sub>Dinamik tabloları anlık görüntü geçmişiyle birlikte çok sayfalı XLSX veya CSV dosyalarına aktarın.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Canlı DOM tablolarından Excel (XLSX) ve CSV'ye">
-</p>
-
----
-
-### 5. Ekran renk seçici ve kod biçimlendirici
-> **★ GELİŞTİRİCİ VE TASARIMCI ÇALIŞMA MASASI**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Ekran renk seçici ve kod biçimlendirici">
-</p>
-
----
-
-Source Download, bir web sayfasının yüklediği her kaynağı keşfeden, inceleyen ve indiren bir Chrome DevTools panelidir. Medya dosyaları, geliştirici betikleri, stil varlıkları veya ağ yanıtları; hepsini tek tek dosyalar halinde ya da düzenli, klasör yapılı bir ZIP olarak kaydedebilirsiniz.
-
-Üçüncü taraf bağımlılık olmadan sıfırdan geliştirildi: ZIP yazıcı, XLSX oluşturucu, HLS birleştirici ve kod biçimlendiriciler tamamen elle yazılmış saf JavaScript'tir. Framework yok, derleme adımı yok, telemetri yok. Her şey tarayıcınızda yerel olarak çalışır.
-
-## v1.16.0 Sürümündeki Yenilikler
-- 54 dilde tam çok dilli destek; DevTools ve mağaza yerelleştirmesi eksiksiz.
-- Tüm medya, kod, API, depolama ve belgeleri kapsayan, canlı sayaçlı 17 özel varlık kategorisi.
-- Akıllı yapışkan başlık bastırmalı tam sayfa birleştirilmiş ekran görüntüleri ve özel bölgesel alan yakalama.
-- Ekran video kaydı (MP4) ve kenar taşması olmayan hafif animasyonlu GIF dışa aktarma motoru.
-- Canlı DOM tablolarını çok sayfalı Microsoft Excel (.XLSX) ve CSV dosyalarına aktaran çıkarıcı ve DOM Zapper öğe kaldırıcı.
-- Anında hex/rgb/hsl kopyalama sunan ekran renk seçici aracı ve entegre kod güzelleştirici.
-- Geliştirilmiş DevTools sniffer kararlılığı ve yüksek eşzamanlılıklı ağ hattı.
-
-## Neden gerekli?
-Ekran görüntüsü yetmez. Düzleştirilmiş bir resim değil, gerçek dosyaları alın: tam çözünürlüklü görseller, gerçek video akışları, özgün stil sayfaları ve betikler.
-
-DevTools gözünüzü korkutuyor. Source Download, aynı ağ verilerini arama, filtreler ve tek tıkla indirmeyle temiz, kategorilere ayrılmış bir galeride sunar.
-
-SPA'lar her şeyi gizler. Dinamik uygulamalar, sayfa kaynağında asla göremeyeceğiniz varlıklar ve API çağrıları oluşturur. Source Download bunları ara durumlar dahil, oluştukları anda yakalar.
-
-## Neler yapar?
-### Her şeyi keşfedin
-- Ağ yakalamayı (HAR + canlı istekler) tüm görsel ve yapısal öğeler için DOM taramasıyla birleştirir; medya dosyaları, betikler, stil sayfaları ve gömülü çerçeveler dahildir.
-- **CSS farkındalığı:** url(...) ve @import kuralları içindeki varlıklar özyinelemeli olarak izlenir; içe aktarılan stil sayfalarına gömülü yazı tipleri bile bulunur.
-- **İçerik koklama:** bilinmeyen dosyaların ilk baytları okunur ve gerçek dosya türü kategorisine taşınır.
-- **17 canlı sayaçlı kategori:** Yakalanan varlıklar medya, kod, veri, API çağrıları, çerezler, depolama ve belgeler için ayrılmış sekmelerde düzenli şekilde sıralanır.
-
-### Filtreleyin, arayın, inceleyin
-- Dosya adları, URL'ler, MIME türleri, alt metinler ve hatta dosya içerikleri üzerinde düzenli ifade (regex) destekli arama.
-- **Kategoriye özel filtreler:** en az/en çok boyut; medyada ayrıca en az/en çok genişlik ve yükseklik — örneğin "yalnızca ≥ 1200px ana görseller". API çağrıları HTTP yöntemine ve istek türüne göre filtrelenir.
-- Liste veya ızgara görünümü, sıralanabilir, canlı küçük resim duvarı ile.
-- **Gerçek önizlemeli çok sekmeli denetleyici:** yakınlaştırılabilir ışık kutusu, video ve ses oynatma, canlı yazı tipi örneği, SVG görüntüleyici, satır numaralı sözdizimi vurgulu kod ve Güzelleştir düğmesi.
-- **API bölünmüş görünümü:** solda yanıt, sağda yöntem, durum, sorgu parametreleri ve istek gövdesi.
-
-### Doğru şekilde indirin
-- Seçilenleri İndir — yalnızca işaretlediğiniz dosyalar.
-- Görünümü İndir — mevcut filtreler ve aramadan sonra görünen her şey.
-- Tümünü İndir — yakalanan tüm kaynaklar, klasör yapılı ve otomatik tekilleştirmeli bir ZIP içinde.
-- Toplu indirmeler sınırlı eşzamanlılıkla ve canlı ilerleme çubuğuyla çalışır; başarısız olanlar otomatik olarak yeniden denenir ve bağlam menüsünden de yeniden başlatılabilir.
-
-### HLS ve zorlu videolar
-- Tarayıcının yerel olarak oynatamadığı akışlar (HLS .m3u8, DASH .mpd, bilinmeyen kodekler) siyah bir oynatıcı yerine akıllı bir alternatif gösterir.
-- Segmentleri birleştir ve indir, bir HLS akışını doğrudan panelden tek bir oynatılabilir dosyaya dönüştürür.
-
-### Metin çalışma alanı (SPA içerik araç seti)
-- **Metin sekmesi canlı bir içerik görüntüleyicisidir:** başlıklar, paragraflar, liste öğeleri, düğmeler, div'ler, span'ler gibi metin taşıyan her öğe DOM sırasıyla yakalanır.
-- Dinamik tablolar sınırlı bir anlık görüntü geçmişi tutar (örn. "8 anlık görüntü · 124 benzersiz satır"); böylece otomatik yenilenen gösterge panelleri ara durumları asla kaybetmez.
-- Markdown olarak veya tabloları CSV, HTML ya da kendi elle yazdığımız XLSX yazıcısıyla oluşturulan gerçek çok sayfalı bir XLSX çalışma kitabı olarak dışa aktarın.
-
-## Nasıl kullanılır?
-1. Source Download'ı yükleyin, ardından herhangi bir sayfada F12'ye basın.
-2. DevTools araç çubuğundaki Source Download sekmesine tıklayın (Chrome, eklentilerin DevTools'u otomatik açmasına izin vermez — bu yüzden orada yer alır).
-3. Kategori sekmelerine göz atın, arayın, filtreleyin, sağ paneldeki her şeyi inceleyin.
-4. İstediğiniz dosyaları işaretleyin ve Seçilenleri İndir, Görünümü İndir veya Tümünü İndir'e basın.
-5. Her ağ isteğini yakalamak için sayfa yüklenirken DevTools panelini açık tutun.
-
-## Gerçek kullanım senaryoları
-- **Rakip analizi:** herhangi bir kanaldaki video küçük resimlerini, en düşük genişlik filtresiyle tek klasörde toplayın.
-- **Kodsuz web kazıma:** bir SPA'nın API çağrılarını izleyin, ihtiyacınız olan uç noktaya göre filtreleyin, tam JSON yanıtlarını indirin.
-- **Tipografi incelemesi:** bir sitenin gerçekte hangi yazı tipini kullandığını öğrenin ve gerçek yazı tipi dosyalarını alın.
-- **Hata yeniden üretme:** hata oluştuğunda yayında olan CSS/JS sürümlerinin aynısını saklayın.
-- **Gösterge paneli verisi dışa aktarma:** otomatik yenilenen bir tabloyu geçmişiyle birlikte çok sayfalı bir Excel çalışma kitabına aktarın.
-- **Kalite güvencesi testi:** her A/B yapılandırmasında hangi video/ses varyantının sunulduğunu doğrulayın.
+Ekran görüntüsü, kayıt ve renk araçları sağ tık menüsünde ve araç çubuğu düğmesinde de bulunur.
 
 ## Gizlilik
-- %100 yerel çalışır. Sunucu yok, analitik yok, hiçbir veri makinenizden çıkmaz.
-- **Yalnızca gerekeni ister:** depolama (tercihleriniz), pano (URL ve renkleri kopyalama), indirmeler (dosyaları Chrome üzerinden kaydetme), bağlam menüleri, betik çalıştırma ve ana makine erişimi (sayfaları taramak ve dosya içeriklerini almak için).
-- Dosyalar Chrome'un normal indirme akışıyla kaydedilir — sessiz indirme yoktur.
 
-## Gereksinimler
-- Chrome 116 veya üzeri (Manifest V3).
-- Ağ yakalama sayfa yüklenirken gerçekleştiği için en iyi sonuçlar, sayfa yüklenirken panel açıkken elde edilir.
+Her şey bilgisayarınızda çalışır. Hesap yok, analiz yok; yakaladığınız hiçbir şey geliştiriciye gönderilmez. Kaydedilenler Chrome üzerinden her zamanki İndirilenler klasörünüze gider.
 
-Source Download açık kaynaklı bir projedir — geri bildirim, fikir ve pull request'ler memnuniyetle karşılanır.
+Eklentinin, kaynakları bulabilmesi ve yakalama araçlarını çalıştırabilmesi için ziyaret ettiğiniz sitelere erişmesi gerekir.
 
-LinkedIn'de bağlantı kurun: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Lütfen telif haklarına ve her web sitesinin kullanım koşullarına uyun; yalnızca kullanma hakkınız olan içeriği saklayın.
+
+## 1.17 sürümündeki yenilikler
+- Çok daha hafif: siz bir aracı başlatana kadar sitede hiçbir şey çalışmaz.
+- Çevrimdışı kopyalar artık tüm resimleri, arka planları ve yazı tiplerini içerir.
+- GIF kaydı uzun HD kliplerde bile bellek sınırında kalır.
+- Yeni karşılama sayfası ve yakalama araçları için araç çubuğu düğmeleri.
+
+Soru veya sorun: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

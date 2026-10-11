@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Source Download",
+    "message": "Source Download: Scarica immagini e file",
     "description": "The name of the extension"
   },
   "appDesc": {
-    "message": "Esamina e scarica qualsiasi risorsa web come file ZIP. Screenshot a pagina intera e registrazione dello schermo in MP4 o GIF.",
+    "message": "Salva immagini, icone e file di una pagina web, uno alla volta o in un ZIP. Screenshot a pagina intera e registrazione di aree.",
     "description": "The description of the extension"
   },
   "actionTitle": {
@@ -98,7 +98,7 @@
     "message": "Scarica selezionati"
   },
   "btnDownloadView": {
-    "message": "Scarica visualizzati"
+    "message": "Scarica visibili"
   },
   "btnDownloadAll": {
     "message": "Scarica tutto"
@@ -106,17 +106,8 @@
   "btnDownloadFiltered": {
     "message": "Scarica filtrati"
   },
-  "btnTheme": {
-    "message": "Cambia tema"
-  },
   "btnGuide": {
     "message": "Guida utente"
-  },
-  "btnCaptureFullPage": {
-    "message": "Screenshot pagina intera"
-  },
-  "btnOfflineArchive": {
-    "message": "Salva singolo HTML"
   },
   "filterMinKb": {
     "message": "KB min"
@@ -160,38 +151,8 @@
   "textModeXpath": {
     "message": "Espressione XPath"
   },
-  "textPlaceholder": {
-    "message": "Filtra testo della pagina o interroga DOM in tempo reale…"
-  },
-  "textAllElements": {
-    "message": "Tutti gli elementi"
-  },
-  "textLiveOn": {
-    "message": "Live attivo"
-  },
-  "textLiveOff": {
-    "message": "Live disattivo"
-  },
   "textScanNow": {
     "message": "Analizza ora"
-  },
-  "textReading": {
-    "message": "Lettura"
-  },
-  "textExportTxt": {
-    "message": "Esporta in TXT"
-  },
-  "textExportMd": {
-    "message": "Esporta in Markdown"
-  },
-  "textExportCsv": {
-    "message": "Esporta in CSV"
-  },
-  "textExportHtml": {
-    "message": "Esporta in HTML"
-  },
-  "textExportXlsx": {
-    "message": "Esporta in Excel"
   },
   "inspectorSelectPrompt": {
     "message": "Seleziona una risorsa per visualizzarne i dettagli"
@@ -235,15 +196,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Ti piace Source Download? Sostieni il nostro progetto open source lasciando una recensione sul Chrome Web Store o una stella su GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Lascia una recensione"
-  },
-  "ratingStar": {
-    "message": "★ Stella su GitHub"
-  },
   "ratingDismiss": {
     "message": "Chiudi"
   },
@@ -264,39 +216,6 @@
   },
   "toastArchiveCreated": {
     "message": "Archivio HTML in un singolo file salvato."
-  },
-  "brandSignature": {
-    "message": "Creato da Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Immagini e SVG"
-  },
-  "tabMedia": {
-    "message": "Media e audio"
-  },
-  "tabFonts": {
-    "message": "Caratteri"
-  },
-  "tabTextScraper": {
-    "message": "Testo e tabelle"
-  },
-  "heroScreenshotTitle": {
-    "message": "Screenshot pagina intera"
-  },
-  "heroScreenshotDesc": {
-    "message": "Unione fluida • Eliminazione intestazioni fisse"
-  },
-  "heroArchiveTitle": {
-    "message": "Archivio HTML a file singolo"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS e immagini incorporati • Pronto per l'offline"
-  },
-  "copyDataUri": {
-    "message": "Copia Data-URI"
-  },
-  "copyUrl": {
-    "message": "Copia URL"
   },
   "downloadSingle": {
     "message": "Scarica"
@@ -349,17 +268,11 @@
   "statusResources": {
     "message": "risorse"
   },
-  "statusFiltered": {
-    "message": "filtrati"
-  },
   "statusSelected": {
     "message": "selezionato/i"
   },
   "statusDupes": {
     "message": "duplicati nascosti"
-  },
-  "statusSize": {
-    "message": "dimensione"
   },
   "langAuto": {
     "message": "Automatico (Browser)"
@@ -367,23 +280,11 @@
   "langSelectorTitle": {
     "message": "Seleziona lingua"
   },
-  "textPillAll": {
-    "message": "Tutti i contenuti"
-  },
-  "textPillText": {
-    "message": "📄 Testi e articoli"
-  },
-  "textPillTables": {
-    "message": "📊 Solo tabelle"
-  },
   "textSelectAll": {
     "message": "Seleziona tutto"
   },
   "textDeselectAll": {
     "message": "Deseleziona tutto"
-  },
-  "textClearSelection": {
-    "message": "Cancella"
   },
   "toastRefreshComplete": {
     "message": "Scansione completata: $count$ nuova/e risorsa/e",
@@ -591,46 +492,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ tabella/e · $rows$ righe uniche",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ selezionati — le esportazioni useranno solo questi",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tabella — $count$ riga/he sullo schermo",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tabella — tutte le $count$ righe uniche",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ istantanea/e",
     "placeholders": {
@@ -661,32 +522,11 @@
   "textTableShowingAll": {
     "message": "Visualizzazione di tutte le righe"
   },
-  "textTableHistory": {
-    "message": "Cronologia ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Nascondi cronologia"
-  },
   "textTableNoRows": {
     "message": "Nessuna riga di tabella ancora acquisita."
   },
   "textBtnCopy": {
     "message": "Copia testo"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Copia"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ immagine/i duplicata/e",
@@ -696,9 +536,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Esporta"
   },
   "inspectorLoadingSvg": {
     "message": "Caricamento SVG…"
@@ -712,44 +549,17 @@
   "inspectorFontSample": {
     "message": "Anteprima carattere"
   },
-  "inspectorBeautify": {
-    "message": "Formatta"
-  },
-  "inspectorOriginal": {
-    "message": "Originale"
-  },
-  "inspectorHeaders": {
-    "message": "Intestazioni"
-  },
-  "inspectorResponse": {
-    "message": "Risposta"
-  },
-  "inspectorRequest": {
-    "message": "Richiesta"
-  },
   "inspectorQueryParams": {
     "message": "Parametri di query"
   },
   "inspectorRequestBody": {
     "message": "Corpo della richiesta"
   },
-  "textHintHtml": {
-    "message": "Una copia leggibile e in tempo reale della pagina. Ogni elemento contenente testo viene acquisito nell'ordine DOM. Effettua query con testo semplice, regex, <strong>selettore CSS</strong> o espressione <strong>XPath</strong>, quindi esporta i risultati. Consulta la <a href=\"#\" id=\"text-hint-guide\">guida</a>."
-  },
-  "textHeadings": {
-    "message": "Intestazioni"
-  },
-  "textAllLevels": {
-    "message": "Tutti i livelli"
-  },
   "textMatches": {
     "message": "corrispondenze"
   },
   "textMatch": {
     "message": "corrispondenza"
-  },
-  "textReadingOn": {
-    "message": "Lettura attiva"
   },
   "toastDownloadStarted": {
     "message": "Download avviato: $name$",
@@ -764,7 +574,7 @@
     "message": "Impossibile recuperare questa risorsa (CORS o tipo non supportato)."
   },
   "ratingBannerText": {
-    "message": "Ti piace Source Download? Sostieni il nostro progetto open source lasciando una recensione sul Chrome Web Store o una stella su GitHub!"
+    "message": "Siamo contenti che abbia funzionato! Se Source Download ti fa risparmiare tempo, una breve recensione aiuta altre persone a trovarlo."
   },
   "ratingBannerReview": {
     "message": "★ Recensione"
@@ -856,12 +666,6 @@
   "textModeTitle": {
     "message": "Modalità di query"
   },
-  "textKindTitle": {
-    "message": "Tipo di elemento"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Livello intestazione"
-  },
   "textPlaceholderRegex": {
     "message": "^Prezzo:\\s*\\d+ — espressione regolare JavaScript"
   },
@@ -873,27 +677,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Cerca nella guida…"
-  },
-  "popupIntro": {
-    "message": "Categorie conteggiate dal <strong>badge sulla barra degli strumenti</strong>. Disattiva una categoria per non includerla nel conteggio."
-  },
-  "popupHelpTitle": {
-    "message": "Come utilizzare il pannello completo"
-  },
-  "popupStep1": {
-    "message": "Apri DevTools nella pagina che vuoi ispezionare <div class=\"hint\"><kbd>F12</kbd> oppure <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Fai clic sulla scheda <strong>Source Download</strong> nella barra degli strumenti di DevTools"
-  },
-  "popupStep3": {
-    "message": "Sfoglia, ispeziona e scarica le risorse, singolarmente o tutte insieme in un file ZIP."
-  },
-  "popupNote": {
-    "message": "Nota: Chrome non consente alle estensioni di aprire DevTools in modo automatico, quindi la suite completa è accessibile dalla barra degli strumenti di DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Tutte le categorie"
   },
   "popupLanguage": {
     "message": "Lingua"
@@ -975,20 +758,6 @@
   "btnMergeHls": {
     "message": "Unisci segmenti e scarica"
   },
-  "toastHlsMerged": {
-    "message": "Unito/i $COUNT$ segmento/i in $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "dimensione sconosciuta"
-  },
   "progressFetching": {
     "message": "Recupero $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1039,31 +808,11 @@
   "searchRegexHint": {
     "message": "Ricerca Regex attiva — usa /modello/i"
   },
-  "textIncludeInExports": {
-    "message": "Includi nelle esportazioni"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Unisci tutte le istantanee in una tabella deduplicata per l'esportazione"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Sfoglia le istantanee precedenti di questa tabella"
-  },
   "tableDownloadCsvTitle": {
     "message": "Scarica questa tabella in formato CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Istantanea $INDEX$ — $TIME$ ($COUNT$ righe)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Seleziona per download collettivo"
@@ -1158,7 +907,7 @@
     "message": "Fai clic sulla scheda <strong>Source Download</strong> nella barra degli strumenti di DevTools (premi <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, quindi seleziona la scheda nella barra di DevTools). Chrome non consente alle estensioni di aprire automaticamente DevTools, motivo per cui il pannello risiede lì. Il popup dell'icona sulla barra degli strumenti ti consente di scegliere quali categorie alimentano il badge numerico. Il pulsante sole/luna nella barra del pannello imposta un tema chiaro o scuro in modo indipendente da Chrome; tale preferenza viene memorizzata stabilmente."
   },
   "guideSecCategoriesContent": {
-    "message": "Le schede verticali a sinistra raggruppano ogni risorsa acquisita in 17 categorie dedicate in base al tipo: Immagini, Video, Audio, Sottotitoli, Documenti, Caratteri, Source map, WASM, SVG, API, Cookie, Archiviazione e altro ancora. Ciascuna scheda mostra un conteggio in tempo reale. Viene mostrata una sola categoria alla volta; il cambio di scheda azzera tutti i filtri, in modo che gli elementi visibili corrispondano sempre fedelmente alla scheda."
+    "message": "Le schede verticali a sinistra suddividono ogni risorsa catturata in 15 categorie, come immagini, video, font, source map e chiamate API, più una scheda Testo e tabelle. Ciascuna scheda mostra un conteggio in tempo reale. Viene mostrata una sola categoria alla volta; il cambio di scheda azzera tutti i filtri, in modo che gli elementi visibili corrispondano sempre fedelmente alla scheda."
   },
   "guideSecSearchFiltersContent": {
     "message": "La barra di ricerca filtra per nome, URL, tipo, testo alternativo o titolo. Racchiudi la query tra <kbd>/…/</kbd> per usare un'espressione regolare, ad esempio <code>/\\.(png|jpg)$/</code>. Sotto la barra degli strumenti, la barra dei filtri varia per ciascuna categoria: intervalli di peso e dimensioni per i media, metodo HTTP e tipo di richiesta per le API, oltre a ordinamento e direzione."
@@ -1170,13 +919,13 @@
     "message": "Fai clic su qualsiasi risorsa per aprirla nel riquadro di ispezione a destra. Ciascun file aperto diventa una scheda, consentendoti di confrontare più risorse affiancate — la più recente si apre a sinistra. Sono disponibili visualizzatori dedicati per immagini, video, audio, caratteri, SVG e testo/codice (con pulsante di formattazione Beautify). Le API mostrano una visualizzazione divisa: corpo della risposta a sinistra e dettagli della richiesta (metodo, stato, intestazioni, parametri di query e payload) a destra."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Scarica visualizzati</strong> salva le risorse attualmente visibili (categoria attiva + ricerca + filtri) in un archivio ZIP; il pulsante si rinomina in <em>Scarica filtrati (N)</em> quando i filtri sono attivi. Passa il cursore su qualunque pulsante di download per visualizzare la dimensione stimata dell'archivio prima di fare clic. <strong>Scarica selezionati</strong> preleva unicamente gli elementi contrassegnati da spunta. <strong>Scarica tutto</strong> raccoglie tutte le risorse individuate in uno ZIP organizzato in cartelle. I download non riusciti vengono ripetuti automaticamente e possono essere riavviati dal menu contestuale. <strong>Esporta</strong> salva l'elenco visibile in formato JSON o CSV, oppure esporta il registro di rete di Chrome come file HAR."
+    "message": "<strong>Scarica visibili</strong> salva le risorse attualmente visibili (categoria attiva + ricerca + filtri) in un archivio ZIP; il pulsante si rinomina in <em>Scarica filtrati (N)</em> quando i filtri sono attivi. Passa il cursore su qualunque pulsante di download per visualizzare la dimensione stimata dell'archivio prima di fare clic. <strong>Scarica selezionati</strong> preleva unicamente gli elementi contrassegnati da spunta. <strong>Scarica tutto</strong> raccoglie tutte le risorse individuate in uno ZIP organizzato in cartelle. I download non riusciti vengono segnalati e puoi riprovarli con un clic dalla notifica, dall'icona di avviso dell'elemento o dal menu contestuale. <strong>Esporta</strong> salva l'elenco visibile in formato JSON o CSV, oppure esporta il registro di rete di Chrome come file HAR."
   },
   "guideSecLightboxContent": {
     "message": "Il pulsante di zoom apre i file multimediali in un lightbox a schermo intero in cui puoi spostarti trascinando ed effettuare lo zoom con la rotellina del mouse, i pulsanti a schermo o i tasti di scelta rapida (<kbd>+</kbd>/<kbd>-</kbd> per ingrandire/ridurre, <kbd>0</kbd> per reimpostare, <kbd>Esc</kbd> per chiudere)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>La categoria <strong>Testo</strong> rappresenta una replica dinamica e leggibile della pagina. Essa estrae tutti gli elementi contenenti testo — titoli, paragrafi, elenchi, pulsanti, <code>div</code>/<code>span</code> e altri — nell'ordine esatto del DOM e prosegue la scansione finché la modalità <strong>In tempo reale</strong> resta attiva.</p><p>La casella di <strong>Query</strong> opera in quattro modalità selezionabili dal menu a discesa accanto: <strong>Contiene</strong> e <strong>Regex</strong> filtrano il testo precedentemente estratto, mentre <strong>Selettore CSS</strong> e <strong>XPath</strong> vengono eseguiti direttamente sulla pagina live per raggiungere qualunque elemento nel DOM. XPath supporta inoltre espressioni che restituiscono valori anziché nodi, come <code>count(//a)</code> o <code>//@href</code>. Eventuali messaggi d'errore su query non valide vengono mostrati accanto alla casella. <strong>Elemento</strong> restringe il risultato a un singolo tag HTML indicando il conteggio totale riscontrato sulla pagina. La cancellazione della casella (o la pressione di <strong>Cancella</strong>) ti riporta a <em>Tutti gli elementi</em> ed esegue una nuova acquisizione — senza dover reimpostare il menu a mano.</p><p>La modalità <strong>Lettura</strong> nasconde tag, caselle di controllo e percorsi gerarchici, trasformando il testo in un documento fluido. Le tabelle memorizzano una cronologia limitata di snapshot, evitando così di perdere le tabelle dinamiche (SPA). Fai clic su <strong>Mostra tutte le righe</strong> su una tabella per unire tutti gli snapshot in un'unica visualizzazione deduplicata — esattamente ciò che conterrà l'esportazione. Esporta in <strong>TXT</strong> (testo leggibile della pagina), <strong>MD</strong> (Markdown con tabelle incluse) o le tabelle come CSV, HTML o come autentica cartella di lavoro multifoglio <strong>XLSX</strong>. Gli elementi spuntati hanno la priorità; in caso contrario, viene esportato tutto ciò che risulta attualmente visibile.</p>"
+    "message": "<p>La categoria <strong>Testo</strong> è una copia viva e leggibile della pagina: titoli, paragrafi, elenchi e link nell’ordine della pagina, aggiornati finché <strong>Dal vivo</strong> è attivo. Passa il mouse su una riga per copiarla, oppure usa <strong>Copia testo</strong>, <strong>Markdown</strong> e <strong>TXT</strong> per tutto ciò che è visualizzato.</p><p>In <strong>Tabelle</strong> ogni tabella della pagina appare come una scheda con anteprima e i propri pulsanti <strong>Excel</strong>, <strong>CSV</strong> e <strong>Copia</strong>; <strong>Tutte le tabelle in Excel</strong> le raccoglie in una cartella di lavoro, un foglio per tabella. Le tabelle che cambiano conservano una cronologia di istantanee, e <strong>Mostra tutte le righe</strong> le unisce in un’unica tabella senza duplicati: esattamente ciò che contiene un’esportazione.</p><p>I riquadri a sinistra ordinano la pagina per tipo di elemento — tutto il testo della pagina, ogni livello di titolo, paragrafi, link, voci di elenco, pulsanti, codice e altro — ciascuno con un conteggio e una prima riga; scegline uno per vedere, copiare o esportare solo quello. La casella di ricerca filtra mentre scrivi, e il menu accanto la trasforma in un’espressione regolare, un <strong>selettore CSS</strong> o un’espressione <strong>XPath</strong> (anche espressioni di valore come <code>count(//a)</code> o <code>//@href</code>) eseguita sulla pagina dal vivo; il riquadro <strong>Query personalizzata</strong> fa lo stesso. Ciò che la pagina segnala su una query errata viene mostrato nella casella.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "I file WebVTT, SRT, TTML e altri formati di sottotitoli — incluse le sorgenti <code>&lt;track&gt;</code> — vengono raggruppati nella scheda dedicata <strong>Sottotitoli</strong> anziché confondersi con i documenti generici."
@@ -1278,7 +1027,7 @@
     "message": "Colore copiato negli appunti"
   },
   "toastProgressCapturing": {
-    "message": "Acquisizione dell'intera pagina... $percent$%",
+    "message": "Acquisizione dell'intera pagina… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,7 +1041,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Unione dell'immagine in corso..."
+    "message": "Unione dell'immagine in corso…"
   },
   "modalExportTitle": {
     "message": "Screenshot dell'intera pagina pronto"
@@ -1310,7 +1059,7 @@
     "message": "Copia negli appunti"
   },
   "btnExportGenerating": {
-    "message": "Creazione in corso..."
+    "message": "Creazione in corso…"
   },
   "toastPdfGenerated": {
     "message": "Documento PDF salvato."
@@ -1325,13 +1074,10 @@
     "message": "Anteprima:"
   },
   "toastRecGeneratingGif": {
-    "message": "Creazione della GIF in corso, attendi..."
+    "message": "Creazione della GIF in corso, attendi…"
   },
   "settingGifResolution": {
     "message": "Risoluzione GIF predefinita"
-  },
-  "optGifOriginal": {
-    "message": "Originale (risoluzione nativa 1:1 — 3K/4K completa, senza ridimensionamento)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (max 1920px)"
@@ -1349,10 +1095,10 @@
     "message": "Registrazione dello schermo (Video e GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Registra qualsiasi porzione dello schermo in formato MP4, WebM o GIF animata. Le registrazioni GIF supportano la risoluzione nativa 1:1, profili a 1080p, 720p e 480p, con stima in tempo reale della dimensione del file. La durata massima di registrazione per le GIF è di 1 minuto (60 s) per garantire prestazioni ottimali del browser."
+    "message": "Registra qualsiasi area dello schermo come MP4, WebM o GIF animata. Le GIF offrono i profili 1080p, 720p e 480p con una stima della dimensione in tempo reale. Una registrazione GIF può durare fino a 1 minuto (60 s)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Raggiunta la durata massima della GIF di 1 minuto (60 s). Creazione della GIF in corso..."
+    "message": "Raggiunta la durata massima della GIF di 1 minuto (60 s). Creazione della GIF in corso…"
   },
   "labelGifMaxDuration": {
     "message": "Max 1 min (60 s)"
@@ -1374,10 +1120,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Presentazione (1 fotogramma al secondo, dimensioni minime)"
-  },
-  "popupRightClickHint": {
-    "message": "Fai clic destro sulla pagina per Registrazione Schermo (Video/GIF) e Prelievo Colore.",
-    "description": "Hint informing user to use right-click context menu for recording and color picker"
   },
   "toastElementZappedAd": {
     "message": "Annuncio / iframe nascosto per questa sessione.",
@@ -1428,7 +1170,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Risoluzione GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Risoluzione GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1482,5 +1224,206 @@
   "errNoActiveTab": {
     "message": "Nessuna scheda attiva trovata.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Fai clic qui, poi scegli un colore qualsiasi nella pagina"
+  },
+  "welcomeTitle": {
+    "message": "Source Download è pronto"
+  },
+  "welcomePrivacy": {
+    "message": "Tutto avviene sul tuo computer. Nessun account, nessun tracciamento, non ci viene inviato nulla."
+  },
+  "welcomeHelp": {
+    "message": "Qualcosa non funziona? Scrivici su GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Qualcosa non va?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "La GIF ha raggiunto 200 MB. Salvataggio di quanto registrato…"
+  },
+  "btnPopupFullPage": {
+    "message": "Screenshot dell'intera pagina"
+  },
+  "toastRecWrongTab": {
+    "message": "Per registrare un'area di questa pagina, scegli \"Questa scheda\" nella finestra di condivisione."
+  },
+  "popupCaptureTitle": {
+    "message": "Cattura questa pagina"
+  },
+  "popupTileOffline": {
+    "message": "Salva la pagina offline"
+  },
+  "popupTileGuide": {
+    "message": "Come funziona"
+  },
+  "popupDevtoolsTitle": {
+    "message": "File, immagini e tabelle"
+  },
+  "popupDevtoolsHint": {
+    "message": "Apri gli Strumenti per sviluppatori e scegli la scheda Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome non consente estensioni su questa pagina. Apri un sito web per usare gli strumenti."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Clic destro su qualsiasi pagina"
+  },
+  "welcomeCardMenuText": {
+    "message": "Screenshot dell’intera pagina o di un’area, registrazione di un’area, selettore colore e copia offline, proprio dove ti trovi."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Oppure usa il pulsante nella barra degli strumenti"
+  },
+  "welcomeCardPopupText": {
+    "message": "Fai clic sull’icona del puzzle nella barra degli strumenti di Chrome e fissa Source Download: gli strumenti saranno sempre a portata di clic."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Premi F12 per tutto ciò che c’è nella pagina"
+  },
+  "welcomeCardPanelText": {
+    "message": "Scegli la scheda Source Download negli Strumenti per sviluppatori. Lì trovi ogni immagine, video, font e file caricato dalla pagina: visualizzali in anteprima, filtrali e salvali in un ZIP. Le tabelle della pagina si esportano in Excel."
+  },
+  "welcomeLead": {
+    "message": "Tre modi per ottenere ciò che ti serve da qualsiasi pagina web."
+  },
+  "btnDownloadOptions": {
+    "message": "Altre opzioni di download"
+  },
+  "btnMore": {
+    "message": "Altre azioni"
+  },
+  "btnFilters": {
+    "message": "Filtri"
+  },
+  "tabsShowEmpty": {
+    "message": "Mostra vuote"
+  },
+  "tabsHideEmpty": {
+    "message": "Nascondi vuote"
+  },
+  "textSegText": {
+    "message": "Testo"
+  },
+  "textSegTables": {
+    "message": "Tabelle"
+  },
+  "textLive": {
+    "message": "Dal vivo"
+  },
+  "textPaused": {
+    "message": "In pausa"
+  },
+  "textLivePauseTitle": {
+    "message": "Dal vivo: la pagina viene riletta a ogni modifica. Fai clic per mettere in pausa."
+  },
+  "textLiveResumeTitle": {
+    "message": "In pausa. Fai clic per seguire di nuovo la pagina dal vivo."
+  },
+  "textSearchText": {
+    "message": "Cerca nel testo della pagina"
+  },
+  "textExportAllXlsx": {
+    "message": "Tutte le tabelle in Excel"
+  },
+  "textNoTables": {
+    "message": "Ancora nessuna tabella in questa pagina. Compariranno qui non appena la pagina ne mostrerà una."
+  },
+  "textTable": {
+    "message": "Tabella"
+  },
+  "textCopy": {
+    "message": "Copia"
+  },
+  "textShowLess": {
+    "message": "Mostra meno"
+  },
+  "areaHintSelect": {
+    "message": "Trascina per selezionare un’area"
+  },
+  "areaHintCopy": {
+    "message": "copia"
+  },
+  "areaHintSave": {
+    "message": "salva"
+  },
+  "areaHintExit": {
+    "message": "esci"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Copia automaticamente"
+  },
+  "areaAutoCopyOn": {
+    "message": "La copia automatica è attiva"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Rilascia la selezione ed è negli appunti."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Disattiva"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Copiato negli appunti (copia automatica attiva)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Questa pagina non consente di copiare negli appunti. Usa invece Scarica."
+  },
+  "textKindAll": {
+    "message": "Tutto il testo della pagina"
+  },
+  "textKindHeading": {
+    "message": "Titolo"
+  },
+  "textKindP": {
+    "message": "Paragrafi"
+  },
+  "textKindA": {
+    "message": "Link"
+  },
+  "textKindLi": {
+    "message": "Voci di elenco"
+  },
+  "textKindButton": {
+    "message": "Pulsanti"
+  },
+  "textKindLabel": {
+    "message": "Etichette e didascalie"
+  },
+  "textKindSpan": {
+    "message": "Testo in linea"
+  },
+  "textKindDiv": {
+    "message": "Altri blocchi"
+  },
+  "textKindCell": {
+    "message": "Celle di tabella"
+  },
+  "textKindCode": {
+    "message": "Codice"
+  },
+  "textKindQuote": {
+    "message": "Citazioni"
+  },
+  "textCustomQuery": {
+    "message": "Query personalizzata"
+  },
+  "textCustomQueryHint": {
+    "message": "Selettore CSS o XPath sulla pagina dal vivo"
+  },
+  "menuSettings": {
+    "message": "Impostazioni"
+  },
+  "settingsSave": {
+    "message": "Salva"
+  },
+  "settingsReset": {
+    "message": "Ripristina predefiniti"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Copia automaticamente gli screenshot di un’area"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Quando rilasci la selezione, l’immagine va direttamente negli appunti. Finché è attiva, l’avviso in cima alla pagina lo ricorda ogni volta."
   }
 }

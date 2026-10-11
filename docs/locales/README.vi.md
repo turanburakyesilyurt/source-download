@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Duyệt, kiểm tra và tải xuống mọi tài nguyên web mà một trang tải về, gói gọn trong một tệp ZIP.</em><br>
-  Source Download — mọi tài nguyên của trang, chỉ cách một cú nhấp chuột
+  <em>Lưu hình ảnh, biểu tượng và tệp của một trang web, từng mục hoặc gộp thành một ZIP. Kèm chụp toàn trang và ghi lại một vùng.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Nhiều năm qua tôi xây dựng các công cụ tự động hóa cho **thu th
 
 ## Tham quan giao diện & các mô-đun cốt lõi
 
-Khám phá các mô-đun giao diện độ phân giải cao được tích hợp trực tiếp vào Google Chrome DevTools, menu chuột phải và cửa sổ bật lên trên thanh công cụ.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Bắt và tải xuống mọi thứ trên web
-> **★ BỘ CÔNG CỤ KỸ THUẬT DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Mọi tệp trên trang, trong một bảng"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Bắt và tải xuống mọi thứ trên web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Nhấp chuột phải. Chụp ngay."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Chọn một vùng. Đã nằm trong bảng nhớ tạm."></p>
 
-### 2. Quay bất kỳ vùng màn hình nào thành video và GIF
-> **★ QUAY MÀN HÌNH THEO VÙNG · MP4, WEBM & GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Văn bản và bảng của trang, đã sắp xếp sẵn"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Quay bất kỳ vùng màn hình nào thành video và GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Toàn trang, bản ghi, bản sao ngoại tuyến"></p>
 
 ---
 
-### 3. Chụp toàn trang cuộn liền mạch
-> **★ ẢNH CHỤP CHUẨN TỪNG PIXEL · TOÀN TRANG & VÙNG CHỌN**
+Source Download là bộ công cụ để lưu giữ nội dung web. Nó thêm một thẻ riêng vào Công cụ cho nhà phát triển của Chrome. Ở đó mọi nội dung đã tải được sắp xếp theo danh mục để bạn xem trước và chỉ giữ lại những gì cần.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Chụp toàn trang cuộn liền mạch">
-</p>
+## Tính năng chính
+- Thư viện gọn gàng: ảnh chụp, biểu tượng và phông chữ hiện trong thẻ riêng với bộ đếm trực tiếp và ô tìm kiếm.
+- Bộ lọc chính xác: chỉ hiện mục rộng hơn mức tối thiểu (ví dụ 1200 px) hoặc ẩn mục trùng lặp.
+- Xem trước thật: phóng to đồ họa và phát nội dung đa phương tiện. Bạn cũng có thể xem mẫu phông hoặc mã được tô màu cú pháp.
+- Một tệp nén: đánh dấu những gì bạn muốn và nhận một ZIP duy nhất với thư mục ngăn nắp. Mục nào lỗi có thể thử lại bằng một cú nhấp.
+- Chụp toàn trang: mọi thứ được cuộn và ghép thành PNG, JPG hoặc PDF. Bạn cũng có thể chọn chỉ một vùng.
+- Ghi lại một vùng: biến một phần màn hình thành clip GIF, MP4 hoặc WebM.
+- Từ bảng sang bảng tính: xuất bảng trực tiếp sang Excel hoặc CSV, kèm các trạng thái trước của những bảng liên tục làm mới.
+- Bản sao ngoại tuyến: giữ một website dưới dạng một tài liệu HTML mở được khi không có internet.
+- Bộ chọn màu: chọn bất kỳ màu nào đang hiển thị và sao chép dưới dạng HEX, RGB hoặc HSL.
 
----
+## Cách bắt đầu
+1. Mở trang web bạn muốn làm việc.
+2. Nhấn F12 (trên Mac là Option + Command + I) và chọn thẻ Source Download. Nếu không thấy, hãy nhấp » ở cuối thanh thẻ.
+3. Giữ bảng mở trong lúc tải để không bỏ sót gì.
 
-### 4. Bảng DOM trực tiếp sang Excel (XLSX) và CSV
-> **★ TRÍCH XUẤT DỮ LIỆU & ẨN PHẦN TỬ**
-
-<sub>Trích xuất các bảng động, kèm lịch sử ảnh chụp nhanh, thành tệp XLSX nhiều trang tính hoặc CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Bảng DOM trực tiếp sang Excel (XLSX) và CSV">
-</p>
-
----
-
-### 5. Công cụ lấy màu trên màn hình và định dạng mã
-> **★ BÀN LÀM VIỆC CHO NHÀ PHÁT TRIỂN & NHÀ THIẾT KẾ**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Công cụ lấy màu trên màn hình và định dạng mã">
-</p>
-
----
-
-Source Download là bảng điều khiển trong Chrome DevTools giúp phát hiện, kiểm tra và tải xuống mọi tài nguyên mà một trang web tải về. Dù bạn cần tệp phương tiện, tập lệnh dành cho nhà phát triển, tài nguyên kiểu dáng hay phản hồi mạng, bạn đều có thể lưu từng tệp riêng lẻ hoặc dưới dạng tệp ZIP gọn gàng với cấu trúc thư mục.
-
-Được xây dựng từ đầu mà không dùng thư viện bên thứ ba: trình ghi ZIP, trình tạo XLSX, trình ghép HLS và các trình định dạng mã đều là JavaScript thuần được viết tay. Không framework, không bước build, không thu thập dữ liệu từ xa. Mọi thứ chạy cục bộ ngay trong trình duyệt của bạn.
-
-## Có gì mới trong v1.16.0
-- Hỗ trợ đa ngôn ngữ đầy đủ với 54 ngôn ngữ, bản địa hóa trọn vẹn cho DevTools và trang cửa hàng.
-- 17 danh mục tài nguyên chuyên biệt có bộ đếm trực tiếp, bao quát mọi loại phương tiện, mã, API, lưu trữ và tài liệu.
-- Chụp toàn trang ghép liền mạch và chụp vùng chọn tùy ý, có khả năng ẩn thông minh các tiêu đề cố định.
-- Quay video màn hình (MP4) và bộ xuất GIF động nhẹ, không bị lem viền.
-- Trích xuất bảng DOM trực tiếp sang Microsoft Excel (.XLSX) nhiều trang tính và CSV, kèm công cụ DOM Zapper để ẩn phần tử.
-- Công cụ lấy màu trên màn hình, sao chép tức thì mã hex/rgb/hsl, tích hợp trình làm đẹp mã.
-- Cải thiện độ ổn định của bộ thu DevTools và đường ống mạng đồng thời cao.
-
-## Vì sao bạn cần nó
-Ảnh chụp màn hình là chưa đủ. Hãy lấy tệp thật: hình ảnh độ phân giải gốc, luồng video thực, stylesheet và tập lệnh nguyên bản, chứ không phải một bức ảnh phẳng.
-
-DevTools có thể gây choáng ngợp. Source Download đưa ra một thư viện được phân loại gọn gàng cho cùng dữ liệu mạng ấy, với tìm kiếm, bộ lọc và tải xuống chỉ bằng một cú nhấp.
-
-SPA che giấu mọi thứ. Các ứng dụng động tạo ra tài nguyên và lệnh gọi API mà bạn không bao giờ thấy trong mã nguồn trang. Source Download ghi lại chúng ngay khi xảy ra, kể cả các trạng thái trung gian.
-
-## Nó làm được gì
-### Khám phá mọi thứ
-- Kết hợp thu thập mạng (HAR + yêu cầu trực tiếp) với quét DOM để tìm mọi phần tử hiển thị và cấu trúc, gồm tệp phương tiện, tập lệnh, stylesheet và khung nhúng.
-- **Nhận biết CSS:** tài nguyên trong url(...) và các quy tắc @import được truy vết đệ quy, nên ngay cả phông chữ nằm sâu trong stylesheet được nhập cũng được tìm thấy.
-- **Nhận diện nội dung:** các tệp không xác định được đọc lại vài byte đầu và xếp vào đúng danh mục theo loại tệp thực tế.
-- **17 danh mục có bộ đếm trực tiếp:** tài nguyên thu được được sắp xếp gọn gàng vào các tab riêng cho phương tiện, mã, dữ liệu, lệnh gọi API, cookie, bộ nhớ lưu trữ và tài liệu.
-
-### Lọc, tìm kiếm, kiểm tra
-- Tìm kiếm bằng biểu thức chính quy trên tên tệp, URL, loại MIME, văn bản thay thế và cả nội dung tệp.
-- **Bộ lọc theo từng danh mục:** kích thước tối thiểu/tối đa và với phương tiện còn có chiều rộng, chiều cao tối thiểu/tối đa — ví dụ "chỉ ảnh banner ≥ 1200px". Lệnh gọi API được lọc theo phương thức HTTP và loại yêu cầu.
-- Chế độ danh sách hoặc lưới, có thể sắp xếp, kèm bức tường hình thu nhỏ trực tiếp.
-- **Trình kiểm tra nhiều tab với bản xem trước chuẩn xác:** lightbox phóng to được, phát video và âm thanh, mẫu phông chữ trực tiếp, trình xem SVG, mã tô sáng cú pháp có số dòng và nút bật/tắt Làm đẹp.
-- **Chế độ xem API chia đôi:** phản hồi ở bên trái, phương thức, trạng thái, tham số truy vấn và nội dung yêu cầu ở bên phải.
-
-### Tải xuống đúng cách
-- Tải xuống đã chọn — chỉ những tệp bạn đã đánh dấu.
-- Tải xuống chế độ xem — mọi thứ đang hiển thị sau khi áp dụng bộ lọc và tìm kiếm hiện tại.
-- Tải xuống tất cả — toàn bộ tài nguyên đã thu thập vào một tệp ZIP có cấu trúc thư mục, tự động loại bỏ trùng lặp.
-- Tải hàng loạt chạy với mức đồng thời có giới hạn và thanh tiến trình trực tiếp; các tệp lỗi được tự động thử lại và cũng có thể tải lại từ menu ngữ cảnh.
-
-### HLS và video khó xử lý
-- Với các luồng trình duyệt không thể phát gốc (HLS .m3u8, DASH .mpd, codec không xác định), công cụ hiển thị phương án dự phòng thông minh thay vì một trình phát đen.
-- Ghép phân đoạn & tải xuống biến luồng HLS thành một tệp duy nhất có thể phát được, ngay trong bảng điều khiển.
-
-### Bàn làm việc văn bản (bộ công cụ nội dung SPA)
-- **Tab Văn bản là trình xem nội dung trực tiếp:** mọi phần tử chứa văn bản — tiêu đề, đoạn văn, mục danh sách, nút, div, span — đều được thu theo thứ tự DOM.
-- Các bảng động giữ lịch sử ảnh chụp nhanh có giới hạn (ví dụ "8 ảnh chụp nhanh · 124 hàng duy nhất"), nên bảng điều khiển tự làm mới không bao giờ mất các trạng thái trung gian.
-- Xuất dưới dạng Markdown, hoặc xuất bảng sang CSV, HTML hay sổ làm việc XLSX nhiều trang tính thực thụ do trình ghi XLSX tự viết của chúng tôi tạo ra.
-
-## Cách sử dụng
-1. Cài đặt Source Download, rồi nhấn F12 trên bất kỳ trang nào.
-2. Nhấp vào tab Source Download trên thanh công cụ DevTools (Chrome không cho phép tiện ích tự mở DevTools — vì vậy nó nằm ở đó).
-3. Duyệt các tab danh mục, tìm kiếm, lọc và kiểm tra mọi thứ trong bảng bên phải.
-4. Đánh dấu các tệp bạn muốn rồi nhấn Tải xuống đã chọn, Tải xuống chế độ xem hoặc Tải xuống tất cả.
-5. Giữ bảng DevTools mở trong khi trang tải để thu thập mọi yêu cầu mạng.
-
-## Tình huống sử dụng thực tế
-- **Phân tích đối thủ:** gom ảnh thu nhỏ video từ bất kỳ kênh nào — với bộ lọc chiều rộng tối thiểu — vào một thư mục.
-- **Thu thập dữ liệu web không cần code:** theo dõi các lệnh gọi API của một SPA, lọc đến endpoint bạn cần, tải về chính xác phản hồi JSON của nó.
-- **Phân tích kiểu chữ:** tìm ra phông chữ mà một trang web thực sự dùng và lấy các tệp phông chữ thật.
-- **Tái hiện lỗi:** giữ nguyên các phiên bản CSS/JS đã phát hành khi lỗi xảy ra.
-- **Xuất dữ liệu dashboard:** xuất bảng tự làm mới sang sổ làm việc Excel nhiều trang tính, kèm cả lịch sử.
-- **Kiểm thử QA:** xác minh biến thể video/âm thanh nào được phục vụ trong từng cấu hình A/B.
+Chụp màn hình, ghi lại và bộ chọn màu cũng có trong menu chuột phải và nút tiện ích.
 
 ## Quyền riêng tư
-- Chạy 100% cục bộ. Không máy chủ, không phân tích, không dữ liệu nào rời khỏi máy của bạn.
-- **Chỉ xin quyền thật sự cần thiết:** bộ nhớ lưu trữ (tùy chọn của bạn), khay nhớ tạm (sao chép URL và màu), tải xuống (lưu tệp qua Chrome), menu ngữ cảnh, scripting và quyền truy cập máy chủ (để quét trang và lấy nội dung tệp).
-- Tệp được lưu qua luồng tải xuống thông thường của Chrome — không có tải xuống ngầm.
 
-## Yêu cầu
-- Chrome 116 trở lên (Manifest V3).
-- Cho kết quả tốt nhất khi bảng điều khiển được mở trong lúc trang tải, vì đó là lúc việc thu thập mạng diễn ra.
+Mọi thứ chạy trên máy tính của bạn. Không có tài khoản hay phân tích, và không gì bạn lưu giữ được gửi cho nhà phát triển. Các mục đã lưu đi vào thư mục Tải xuống quen thuộc qua Chrome.
 
-Source Download là dự án mã nguồn mở — rất hoan nghênh góp ý, ý tưởng và pull request.
+Tiện ích cần quyền truy cập vào các website bạn ghé thăm để tìm tài nguyên và thực hiện chức năng của mình.
 
-Kết nối trên LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Hãy tôn trọng bản quyền và điều khoản sử dụng, và chỉ giữ nội dung bạn được phép dùng.
+
+## Điểm mới trong 1.17
+- Nhẹ hơn nhiều: không có gì chạy cho đến khi bạn dùng một chức năng.
+- Bản sao ngoại tuyến nay chứa mọi ảnh chụp, hình nền và phông chữ.
+- Ghi GIF nằm trong giới hạn bộ nhớ ngay cả với clip HD dài.
+- Màn hình chào mừng mới và lối tắt trong nút tiện ích.
+
+Câu hỏi hoặc sự cố: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

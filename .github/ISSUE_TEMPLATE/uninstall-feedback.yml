@@ -1,0 +1,23 @@
+name: Uninstall feedback
+description: You removed Source Download — tell us why in 10 seconds (optional).
+title: "Uninstall feedback"
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Why did you remove it?
+      options:
+        - I couldn't find the DevTools panel
+        - A feature I needed didn't work
+        - It was slow or used too much memory
+        - Permission / privacy concerns
+        - I only needed it once
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else? (optional)
+      description: Which website or feature? What did you expect?

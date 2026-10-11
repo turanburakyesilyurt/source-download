@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>流畅浏览、检查并下载页面加载的每一项网页资源，并可打包为 ZIP。</em><br>
-  Source Download — 页面上的所有资源，一键即得
+  <em>将网页加载的图片、图标和文件逐个保存或打包成 ZIP。还支持整页截图和区域录制。</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@
 
 ## 可视化导览与核心模块
 
-探索直接内置于 Google Chrome DevTools、右键菜单和工具栏弹出窗口中的高清界面模块。
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. 捕获并下载网页上的一切资源
-> **★ DEVTOOLS 工程套件 · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="页面上的每个文件，一个面板全掌握"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="捕获并下载网页上的一切资源">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="右键一点，即刻捕获"></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="选中区域，已在剪贴板中"></p>
 
-### 2. 录制任意屏幕区域为视频和 GIF
-> **★ 区域屏幕录制 · MP4、WEBM 与 GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="页面文本和表格，已为你整理好"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="录制任意屏幕区域为视频和 GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="整页、录屏、离线副本"></p>
 
 ---
 
-### 3. 流畅的整页滚动截图
-> **★ 像素级精准截图 · 整页与区域**
+Source Download 是一套用于收集网页内容的工具。它在 Chrome 开发者工具中新增一个标签页，把网站加载的所有内容按类别整理，方便您预览并只保留需要的部分。
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="流畅的整页滚动截图">
-</p>
+## 主要功能
+- 井然有序的图库：照片、图标和字体分别显示在各自的标签页中，带有实时计数和搜索框。
+- 精确筛选：只显示超过最小宽度（例如 1200 px）的项目，或隐藏重复项。
+- 真实预览：放大图形并播放媒体，还能查看字体样张或带语法高亮的代码。
+- 一个压缩包：勾选想要的内容，即可得到一个目录结构清晰的 ZIP。失败的项目可一键重试。
+- 整页截图：从上到下滚动并拼接成 PNG、JPG 或 PDF。也可以只选择一个区域。
+- 区域录制：把屏幕的一部分录成 GIF、MP4 或 WebM 片段。
+- 表格转电子表格：将实时表格导出为 Excel 或 CSV，并包含不断刷新的表格的历史状态。
+- 离线副本：把网站保存为一个无需联网即可打开的 HTML 文档。
+- 取色器：选取屏幕上的任意颜色，并复制为 HEX、RGB 或 HSL。
 
----
+## 如何开始
+1. 打开您想处理的网站。
+2. 按 F12（Mac 上按 Option + Command + I），选择 Source Download 标签页。如果看不到，请点击标签栏末尾的 »。
+3. 加载期间保持面板打开，这样不会遗漏任何内容。
 
-### 4. 实时 DOM 表格导出为 Excel (XLSX) 和 CSV
-> **★ 数据提取与元素移除**
-
-<sub>将动态表格连同其快照历史提取为多工作表 XLSX 或 CSV 文件。</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="实时 DOM 表格导出为 Excel (XLSX) 和 CSV">
-</p>
-
----
-
-### 5. 屏幕取色器与代码格式化工具
-> **★ 开发者与设计师工作台**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="屏幕取色器与代码格式化工具">
-</p>
-
----
-
-Source Download 是一个 Chrome DevTools 面板，可发现、检查并下载网页加载的每一项资源。无论您需要媒体文件、开发脚本、样式资源还是网络响应，都可以保存为单个文件，或保存为目录结构清晰的 ZIP 压缩包。
-
-完全从零构建，不含任何第三方依赖：ZIP 写入器、XLSX 生成器、HLS 合并器和代码格式化工具均为手写的原生 JavaScript。无框架、无构建步骤、无遥测。一切都在您的浏览器本地运行。
-
-## v1.16.0 新功能
-- 完整支持 54 种语言，DevTools 界面与商店页面均已全面本地化。
-- 17 个专用的实时计数资源分类，涵盖所有媒体、代码、API、存储和文档。
-- 整页拼接截图和自定义区域截图，并可智能隐藏固定页眉。
-- 屏幕视频录制 (MP4) 和轻量级动态 GIF 导出引擎，画面边缘无溢色。
-- 将实时 DOM 表格提取为多工作表 Microsoft Excel (.XLSX) 和 CSV，并提供 DOM Zapper 元素隐藏工具。
-- 屏幕取色器，可即时复制 hex/rgb/hsl 色值，并集成代码美化功能。
-- 提升 DevTools 嗅探器的稳定性和高并发网络管线性能。
-
-## 为什么您需要它
-截图远远不够。获取真正的文件——原始分辨率的图片、真实的视频流、原始样式表和脚本——而不是一张扁平的图片。
-
-DevTools 用起来让人眼花缭乱。Source Download 为同样的网络数据提供了清爽、分类清晰的资源库，支持搜索、筛选和一键下载。
-
-SPA 隐藏了一切。动态应用会产生您在页面源码中看不到的资源和 API 调用。Source Download 会在它们发生时即时捕获，包括中间状态。
-
-## 功能一览
-### 全面发现
-- 将网络捕获 (HAR + 实时请求) 与 DOM 扫描相结合，找出所有可视与结构元素，包括媒体文件、脚本、样式表和嵌入框架。
-- **支持 CSS 感知：** url(...) 和 @import 规则中的资源会被递归追踪，因此即使是埋在被导入样式表里的字体也能找到。
-- **内容嗅探：** 对未知文件回读少量字节，并将其归入真实的文件类型分类。
-- **17 个实时计数分类：** 捕获的资源被整齐归入媒体、代码、数据、API 调用、Cookie、存储和文档等专属标签页。
-
-### 筛选、搜索、检查
-- 支持正则表达式搜索，范围涵盖文件名、URL、MIME 类型、替代文本，甚至文件内容。
-- **按分类筛选：** 最小/最大文件大小；媒体还可按最小/最大宽度和高度筛选——例如“仅显示 ≥ 1200px 的主视觉图片”。API 调用可按 HTTP 方法和请求类型筛选。
-- 列表或网格视图，可排序，并带有实时缩略图墙。
-- **多标签检查器，提供真实预览：** 可缩放的灯箱、视频和音频播放、实时字体样张、SVG 查看器、带行号的语法高亮代码以及美化开关。
-- **API 分栏视图：** 左侧为响应，右侧为方法、状态、查询参数和请求正文。
-
-### 规范下载
-- 下载选中项——仅下载您勾选的文件。
-- 下载当前视图——下载应用当前筛选和搜索后可见的全部内容。
-- 下载全部——将所有捕获的资源打包成目录结构清晰的 ZIP，并自动去重。
-- 批量下载以受控并发运行，并带有实时进度条；失败的文件会自动重试，也可通过右键菜单重试。
-
-### HLS 与棘手的视频
-- 对于浏览器无法原生播放的流（HLS .m3u8、DASH .mpd、未知编解码器），会显示智能回退方案，而不是一个黑屏播放器。
-- “合并分段并下载”可直接在面板中将 HLS 流合并为单个可播放文件。
-
-### 文本工作台（SPA 内容工具包）
-- **“文本”标签页是实时内容查看器：** 所有带文字的元素——标题、段落、列表项、按钮、div、span——都会按 DOM 顺序被捕获。
-- 动态表格会保留有限的快照历史（例如“8 个快照 · 124 个唯一行”），因此自动刷新的仪表盘不会丢失任何中间状态。
-- 可导出为 Markdown，或将表格导出为 CSV、HTML，或由我们自己手写的 XLSX 写入器生成的真正多工作表 XLSX 工作簿。
-
-## 使用方法
-1. 安装 Source Download，然后在任意页面按 F12。
-2. 点击 DevTools 工具栏中的 Source Download 标签页（Chrome 不允许扩展程序自动打开 DevTools，所以它位于那里）。
-3. 浏览各分类标签页，搜索、筛选，并在右侧面板中检查任何内容。
-4. 勾选所需文件，然后点击“下载选中项”“下载当前视图”或“下载全部”。
-5. 页面加载期间请保持 DevTools 面板打开，以捕获每一个网络请求。
-
-## 实际应用场景
-- **竞品分析：** 借助最小宽度筛选，将任意频道的视频缩略图收集到同一个文件夹。
-- **无需编码的网页抓取：** 观察 SPA 的 API 调用，筛选出所需端点，下载其精确的 JSON 响应。
-- **字体拆解：** 查明网站实际使用的字体，并获取真正的字体文件。
-- **缺陷复现：** 保留缺陷发生时线上实际使用的 CSS/JS 版本。
-- **仪表盘数据导出：** 将自动刷新的表格连同历史记录导出为多工作表 Excel 工作簿。
-- **QA 测试：** 验证每种 A/B 配置下实际提供的是哪种视频/音频版本。
+截图、录制和取色器也可以通过右键菜单和扩展程序按钮使用。
 
 ## 隐私
-- 100% 本地运行。无服务器、无分析统计，任何数据都不会离开您的设备。
-- **仅申请必要的权限：** 存储（您的偏好设置）、剪贴板（复制 URL 和颜色）、下载（通过 Chrome 保存文件）、右键菜单、脚本注入，以及主机访问权限（用于扫描页面和获取文件内容）。
-- 文件通过 Chrome 的常规下载流程保存——绝无静默下载。
 
-## 系统要求
-- Chrome 116 或更高版本 (Manifest V3)。
-- 在页面加载期间保持面板打开效果最佳，因为网络捕获正是在此时进行的。
+一切都在您的电脑上运行。没有账号，也没有统计分析，您收集的内容不会发送给开发者。保存的内容会通过 Chrome 存入您常用的“下载”文件夹。
 
-Source Download 是一个开源项目——欢迎提出反馈、想法和 Pull Request。
+扩展程序需要访问您浏览的网站，才能找到其中的资源并提供各项功能。
 
-在 LinkedIn 上联系我：https://www.linkedin.com/in/turan-burak-yesilyurt/
+请尊重版权和使用条款，只保留您有权使用的内容。
+
+## 1.17 版新变化
+- 更轻巧：在您使用功能之前不会运行任何内容。
+- 离线副本现在包含所有照片、背景和字体。
+- 即使是较长的高清片段，GIF 录制也能控制在内存范围内。
+- 新的欢迎界面，以及扩展程序按钮中的快捷入口。
+
+问题反馈：<https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

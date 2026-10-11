@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Gennemse, inspicér og download alle webressourcer, en side indlæser, problemfrit som en ZIP.</em><br>
-  Source Download — alle ressourcer på en side, kun ét klik væk
+  <em>Gem billeder, ikoner og filer fra en webside enkeltvis eller som én ZIP. Skærmbillede af hele siden og optagelse af et område.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Dette er mit **første open source-projekt**, så din feedback betyder alt for m
 
 ## Visuel rundtur & kernemoduler
 
-Udforsk de højopløste grænseflademoduler, der er indbygget direkte i Google Chrome DevTools, højreklikmenuen og værktøjslinjens popup.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Indfang og download alt på nettet
-> **★ DEVTOOLS-ENGINEERINGSUITE · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Hver fil på siden, ét panel væk"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Indfang og download alt på nettet">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Højreklik. Fanget."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Markér et område. Det ligger i udklipsholderen."></p>
 
-### 2. Optag ethvert skærmområde som video og GIF
-> **★ REGIONAL SKÆRMOPTAGER · MP4, WEBM & GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Sidens tekst og tabeller, sorteret for dig"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Optag ethvert skærmområde som video og GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Hele sider, optagelser, offlinekopier"></p>
 
 ---
 
-### 3. Problemfrit skærmbillede af hele siden med scroll
-> **★ PIXELPERFEKTE SKÆRMBILLEDER · HELE SIDEN & OMRÅDE**
+Source Download er en værktøjskasse til at gemme webindhold. Den tilføjer sin egen fane i Chromes udviklerværktøjer. Her sorteres alt det indlæste i kategorier. Så kan du se det og beholde præcis det nødvendige.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Problemfrit skærmbillede af hele siden med scroll">
-</p>
+## Vigtigste funktioner
+- Ordnet galleri: fotos, ikoner og skrifttyper vises på egne faner med live tællere og et søgefelt.
+- Præcise filtre: vis kun elementer bredere end et minimum (fx 1200 px), eller skjul dubletter.
+- Ægte forhåndsvisning: zoom ind på grafik og afspil medier. Du kan også se en skriftprøve eller kode med syntaksfremhævning.
+- Ét arkiv: sæt flueben ved det, du vil have, og få én ZIP med pæn mappestruktur. Det, der fejler, prøver du igen med ét klik.
+- Skærmbillede af hele siden: alt rulles og samles til PNG, JPG eller PDF. Du kan også vælge et enkelt område.
+- Optagelse af område: gør en del af skærmen til et GIF-, MP4- eller WebM-klip.
+- Fra tabel til regneark: eksportér live tabeller til Excel eller CSV sammen med tidligere tilstande af tabeller, der opdateres.
+- Offlinekopi: behold et website som ét HTML-dokument, der åbner uden internet.
+- Farvevælger: vælg en vilkårlig farve på skærmen, og kopiér den som HEX, RGB eller HSL.
 
----
+## Sådan kommer du i gang
+1. Åbn det website, du vil arbejde med.
+2. Tryk på F12 (Option + Command + I på Mac), og vælg fanen Source Download. Kan du ikke se den, så klik på » for enden af fanelinjen.
+3. Hold panelet åbent, mens websitet indlæses, så intet går tabt.
 
-### 4. Live DOM-tabeller til Excel (XLSX) og CSV
-> **★ DATAUDTRÆK & ELEMENTFJERNER**
-
-<sub>Udtræk dynamiske tabeller med deres snapshothistorik til XLSX-filer med flere ark eller til CSV-filer.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Live DOM-tabeller til Excel (XLSX) og CSV">
-</p>
-
----
-
-### 5. Farvepipette på skærmen og kodeformatering
-> **★ ARBEJDSBÆNK TIL UDVIKLERE & DESIGNERE**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Farvepipette på skærmen og kodeformatering">
-</p>
-
----
-
-Source Download er et Chrome DevTools-panel, der finder, inspicerer og downloader alle ressourcer, en webside indlæser. Uanset om du har brug for mediefiler, udviklerscripts, stilressourcer eller netværkssvar, kan du gemme dem som enkeltfiler eller som en overskuelig ZIP med mappestruktur.
-
-Bygget fra bunden uden tredjepartsafhængigheder: ZIP-skriveren, XLSX-builderen, HLS-flettefunktionen og kodeformatererne er alle håndskrevet vanilla JavaScript. Ingen frameworks, intet build-trin, ingen telemetri. Alt kører lokalt i din browser.
-
-## Nyheder i v1.16.0
-- Fuld flersproget understøttelse på 54 sprog med komplet lokalisering af DevTools og butikken.
-- 17 dedikerede ressourcekategorier med live-tæller, der dækker alle medier, kode, API'er, lager og dokumenter.
-- Sammensatte skærmbilleder af hele siden og tilpasset optagelse af områder med smart undertrykkelse af fastgjorte sidehoveder.
-- Skærmvideooptagelse (MP4) og let motor til animeret GIF-eksport uden kantudslip.
-- Live-udtræk af DOM-tabeller til Microsoft Excel (.XLSX) med flere ark og til CSV, med DOM Zapper til fjernelse af elementer.
-- Farvepipette til skærmen med øjeblikkelig kopiering af hex/rgb/hsl og integreret kodeformatering.
-- Forbedret stabilitet i DevTools-sniffer og højtydende netværkspipeline med mange samtidige forbindelser.
-
-## Derfor har du brug for det
-Et skærmbillede slår ikke til. Hent de rigtige filer — billeder i fuld opløsning, ægte videostreams, originale typografiark og scripts — ikke et fladt billede.
-
-DevTools føles overvældende. Source Download viser de samme netværksdata i et overskueligt, kategoriseret galleri med søgning, filtre og download med ét klik.
-
-SPA'er skjuler alt. Dynamiske apps opretter ressourcer og API-kald, du aldrig ser i sidens kildekode. Source Download fanger dem, mens de sker, også mellemtilstande.
-
-## Hvad det kan
-### Find alt
-- Kombinerer netværksoptagelse (HAR + live-forespørgsler) med en DOM-scanning af alle visuelle og strukturelle elementer, herunder mediefiler, scripts, typografiark og indlejrede frames.
-- **CSS-bevidst:** ressourcer i url(...) og @import-regler følges rekursivt, så selv skrifttyper gemt i importerede typografiark bliver fundet.
-- **Indholdssniffing:** ukendte filer læses et par bytes ind og flyttes til kategorien for deres faktiske filtype.
-- **17 kategorier med live-tæller:** Indfangede ressourcer er ordnet i dedikerede faner til medier, kode, data, API-kald, cookies, lager og dokumenter.
-
-### Filtrér, søg, inspicér
-- Regex-baseret søgning i filnavne, URL'er, MIME-typer, alt-tekst og endda filindhold.
-- **Filtre pr. kategori:** min./maks. størrelse, og for medier også min./maks. bredde og højde — for eksempel "kun hero-billeder ≥ 1200px". API-kald kan filtreres efter HTTP-metode og forespørgselstype.
-- Liste- eller gittervisning, sorterbar, med en live-væg af miniaturer.
-- **Inspektør med flere faner og ægte forhåndsvisninger:** zoombar lightbox, video- og lydafspilning, et live skrifttypeeksempel, en SVG-fremviser, syntaksfremhævet kode med linjenumre og en Forskønne-knap.
-- **Delt API-visning:** svaret til venstre, metode, status, queryparametre og forespørgselsindhold til højre.
-
-### Download på den rigtige måde
-- Download valgt — kun de filer, du har markeret.
-- Download visning — alt, der er synligt efter de aktuelle filtre og den aktuelle søgning.
-- Download alle — alle indfangede ressourcer i en ZIP med mappestruktur og automatisk fjernelse af dubletter.
-- Batch-downloads kører med begrænset samtidighed og en live-statuslinje; fejl forsøges automatisk igen og kan også forsøges igen fra en kontekstmenu.
-
-### HLS & drilske videoer
-- Streams, som browseren ikke kan afspille indbygget (HLS .m3u8, DASH .mpd, ukendte codecs), viser en smart reserveløsning i stedet for en sort afspiller.
-- Flet segmenter og download gør en HLS-stream til én enkelt afspilbar fil direkte i panelet.
-
-### Tekstværkstedet (indholdsværktøj til SPA'er)
-- **Fanen Tekst er en live-fremviser af indhold:** Hvert element med tekst — overskrifter, afsnit, listepunkter, knapper, divs, spans — fanges i DOM-rækkefølge.
-- Dynamiske tabeller gemmer en begrænset historik af øjebliksbilleder (f.eks. "8 øjebliksbilleder · 124 unikke rækker"), så dashboards, der opdaterer sig selv, aldrig mister mellemtilstande.
-- Eksportér som Markdown, eller tabeller som CSV, HTML eller en ægte XLSX-projektmappe med flere ark, bygget af vores egen håndskrevne XLSX-skriver.
-
-## Sådan bruger du det
-1. Installér Source Download, og tryk derefter på F12 på en vilkårlig side.
-2. Klik på fanen Source Download i DevTools-værktøjslinjen (Chrome tillader ikke, at udvidelser åbner DevTools automatisk — derfor findes den dér).
-3. Gennemse kategorifanerne, søg, filtrér og inspicér alt i panelet til højre.
-4. Markér de filer, du vil have, og klik på Download valgt, Download visning eller Download alle.
-5. Hold DevTools-panelet åbent, mens siden indlæses, for at fange alle netværksforespørgsler.
-
-## Brugsscenarier fra den virkelige verden
-- **Konkurrentanalyse:** saml videominiaturer fra en vilkårlig kanal — med et filter for minimumsbredde — i én mappe.
-- **Web scraping uden kode:** følg en SPA's API-kald, filtrér til det endpoint, du skal bruge, og download dets præcise JSON-svar.
-- **Typografianalyse:** find ud af, hvilken skrifttype et websted rent faktisk bruger, og hent de rigtige skrifttypefiler.
-- **Fejlreproduktion:** behold de præcise CSS/JS-versioner, der var i drift, da fejlen opstod.
-- **Eksport af dashboarddata:** eksportér en tabel, der opdaterer sig selv, til en Microsoft Excel-projektmappe med flere ark, inklusive historik.
-- **QA-test:** kontrollér, hvilken video-/lydvariant der leveres i hver A/B-konfiguration.
+Skærmbilleder, optagelse og farvevælgeren findes også i højrekliksmenuen og under udvidelsens knap.
 
 ## Privatliv
-- Kører 100% lokalt. Ingen server, ingen analyse, ingen data forlader din computer.
-- **Beder kun om det, den har brug for:** lager (dine indstillinger), udklipsholder (kopiér URL'er og farver), downloads (gem filer via Chrome), kontekstmenuer, scripting og værtsadgang (til at scanne sider og hente filindhold).
-- Filer gemmes via Chromes normale downloadflow — ingen skjulte downloads.
 
-## Krav
-- Chrome 116 eller nyere (Manifest V3).
-- Bedste resultat opnås, når panelet er åbent, mens siden indlæses, da det er dér, netværksoptagelsen sker.
+Alt kører på din computer. Ingen konto og ingen analyse. Intet af det gemte sendes til udvikleren. Gemte elementer havner via Chrome i din sædvanlige mappe Overførsler.
 
-Source Download er et open source-projekt — feedback, idéer og pull requests er velkomne.
+Udvidelsen skal have adgang til de websites, du besøger, for at finde deres ressourcer og udføre sine funktioner.
 
-Forbind på LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Respektér ophavsretten og brugsvilkårene, og behold kun indhold, du har ret til at bruge.
+
+## Nyt i 1.17
+- Meget lettere: intet kører, før du bruger en funktion.
+- Offlinekopier indeholder nu alle fotos, baggrunde og skrifttyper.
+- GIF-optagelse holder sig inden for hukommelsen selv ved lange HD-klip.
+- En ny velkomstskærm og genveje under udvidelsens knap.
+
+Spørgsmål eller problemer: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

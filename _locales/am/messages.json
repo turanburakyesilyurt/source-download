@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: የምስል እና ፋይል አውራጅ"
   },
   "appDesc": {
-    "message": "ማንኛውንም የድር ንብረት እንደ ዚፕ ይመርምሩ፣ ያስሱ እና ያውርዱ። የሙሉ ገጽ ቅጽበታዊ ገጽ እይታዎች፣ የቀጥታ ሰንጠረዥ ቀረጻ እና የገንቢ የስራ ቤንች።"
+    "message": "የድር ገጽ ምስሎችን፣ አዶዎችን እና ፋይሎችን አንድ በአንድ ወይም በአንድ ZIP ያስቀምጡ። የሙሉ ገጽ ቅጽበታዊ እይታ እና የአካባቢ ቀረጻም አለው።"
   },
   "actionTitle": {
     "message": "Source Download — ፓነል ክፈት እና ሀብቶችን ተከታተል"
   },
   "contextMenuZap": {
-    "message": "ይህን ክፍል ደብቅ (Zap)"
+    "message": "ይህን ክፍል ደብቅ"
   },
   "contextMenuUndoZap": {
     "message": "መጨረሻ የተደበቀውን ክፍል መልስ"
@@ -90,7 +90,7 @@
     "message": "የተመረጡትን አውርድ"
   },
   "btnDownloadView": {
-    "message": "የአሁኑን እይታ አውርድ"
+    "message": "የሚታዩትን አውርድ"
   },
   "btnDownloadAll": {
     "message": "ሁሉንም አውርድ"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "የተጣሩትን አውርድ"
   },
-  "btnTheme": {
-    "message": "ገጽታ ቀይር"
-  },
   "btnGuide": {
     "message": "የተጠቃሚ መመሪያ"
-  },
-  "btnCaptureFullPage": {
-    "message": "የሙሉ ገጽ ቅጽበታዊ ገጽ እይታ"
-  },
-  "btnOfflineArchive": {
-    "message": "ነጠላ HTML አስቀምጥ"
   },
   "filterMinKb": {
     "message": "ዝቅተኛ KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "የገጽ ጽሑፍ ወይም ጥያቄ በቀጥታ DOM አጣራ…"
-  },
-  "textAllElements": {
-    "message": "ሁሉም አካላት"
-  },
-  "textLiveOn": {
-    "message": "ቀጥታ በርቷል"
-  },
-  "textLiveOff": {
-    "message": "ቀጥታ ጠፍቷል"
-  },
   "textScanNow": {
     "message": "አሁን ይቃኙ"
-  },
-  "textReading": {
-    "message": "ንባብ"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "ዝርዝሮቹን ለመመርመር ሀብት ይምረጡ"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Source Download ይወዱታል? የክፍት ምንጭ ራዕያችንን በChrome ድር ማከማቻ ወይም በ GitHub ላይ ባለ ኮከብ ግምገማ ደግፉ!"
-  },
-  "ratingReview": {
-    "message": "★ ግምገማ ይተው"
-  },
-  "ratingStar": {
-    "message": "★ GitHub ላይ ኮከብ"
-  },
   "ratingDismiss": {
     "message": "ዝጋ"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "ባለ አንድ ፋይል የHTML ማህደር ተቀምጧል።"
-  },
-  "brandSignature": {
-    "message": "በ Turan Burak Yeşilyurt (2run.dev) የተሰራ"
-  },
-  "tabImages": {
-    "message": "ምስሎች እና SVG"
-  },
-  "tabMedia": {
-    "message": "ሚዲያ እና ኦዲዮ"
-  },
-  "tabFonts": {
-    "message": "ቅርጸ ቁምፊዎች"
-  },
-  "tabTextScraper": {
-    "message": "ጽሑፍ እና ሠንጠረዦች"
-  },
-  "heroScreenshotTitle": {
-    "message": "የሙሉ ገጽ ቅጽበታዊ ገጽ እይታ"
-  },
-  "heroScreenshotDesc": {
-    "message": "እንከን የለሽ ባለብዙ መመልከቻ ስፌት ከተጣበቀ የራስጌ ማፈን ጋር"
-  },
-  "heroArchiveTitle": {
-    "message": "ነጠላ-ፋይል HTML ማህደር"
-  },
-  "heroArchiveDesc": {
-    "message": "የውስጠ-መስመር CSS እና Base64 ምስሎች፣ ከመስመር ውጭ ደህንነቱ የተጠበቀ ቅጽበታዊ ገጽ እይታ"
-  },
-  "copyDataUri": {
-    "message": "Data-URI ቅዳ"
-  },
-  "copyUrl": {
-    "message": "URL ቅዳ"
   },
   "downloadSingle": {
     "message": "አውርድ"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "ሀብቶች"
   },
-  "statusFiltered": {
-    "message": "ተጣርቷል"
-  },
   "statusSelected": {
     "message": "ተመርጧል"
   },
   "statusDupes": {
     "message": "የተባዙ ተደብቀዋል"
-  },
-  "statusSize": {
-    "message": "መጠን"
   },
   "langAuto": {
     "message": "ራስ-ሰር (አሳሽ)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "ቋንቋ ይምረጡ"
   },
-  "textPillAll": {
-    "message": "ሁሉም ይዘት"
-  },
-  "textPillText": {
-    "message": "📄 ጽሑፍ እና መጣጥፎች"
-  },
-  "textPillTables": {
-    "message": "📊 ሠንጠረዦች ብቻ"
-  },
   "textSelectAll": {
     "message": "ሁሉንም ይምረጡ"
   },
   "textDeselectAll": {
     "message": "ሁሉንም አይምረጡ"
-  },
-  "textClearSelection": {
-    "message": "አጽዳ"
   },
   "toastRefreshComplete": {
     "message": "የገጽ ቅኝት ተጠናቅቋል፡ $count$ አዲስ ሀብቶች",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ ሠንጠረዥ(ዎች) · $rows$ ልዩ ረድፎች",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ ተመርጧል — ወደ ውጭ መላክ የሚጠቀመው እነዚህን ብቻ ነው",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "ሠንጠረዥ — $count$ ረድፍ(ዎች) በማያ ገጹ ላይ",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "ሠንጠረዥ - ሁሉም $count$ ልዩ ረድፍ(ዎች)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ ቅጽበተ-ፎቶ(ዎች)",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "ሁሉንም ረድፎች በማሳየት ላይ"
   },
-  "textTableHistory": {
-    "message": "ታሪክ ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "ታሪክን ደብቅ"
-  },
   "textTableNoRows": {
     "message": "እስካሁን ምንም ረድፎች አልተያዙም።"
   },
   "textBtnCopy": {
     "message": "ጽሑፍ ቅዳ"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 ቅዳ"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ የተባዛ ምስል(ዎች)",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "ወደ ውጭ ላክ"
   },
   "inspectorLoadingSvg": {
     "message": "SVG በመጫን ላይ…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "የቅርጸ ቁምፊ ቅድመ እይታ"
   },
-  "inspectorBeautify": {
-    "message": "አሳምር"
-  },
-  "inspectorOriginal": {
-    "message": "ኦሪጅናል"
-  },
-  "inspectorHeaders": {
-    "message": "ራስጌዎች"
-  },
-  "inspectorResponse": {
-    "message": "ምላሽ"
-  },
-  "inspectorRequest": {
-    "message": "ጥያቄ"
-  },
   "inspectorQueryParams": {
     "message": "የጥያቄ መለኪያዎች"
   },
   "inspectorRequestBody": {
     "message": "የጥያቄ አካል"
   },
-  "textHintHtml": {
-    "message": "የገጹ ቀጥታ፣ ሊነበብ የሚችል ቅጂ። ጽሑፍ የያዘ እያንዳንዱ አካል በDOM ቅደም ተከተል ተይዞ ገጹ ሲቀየር እዚህ ይቆያል። በግልጽ ጽሑፍ፣ በመደበኛ አገላለጽ፣ በ<strong>CSS መራጭ</strong> ወይም በ<strong>XPath</strong> አገላለጽ ይጠይቁ፣ ከዚያ የተዛመደውን ወደ ውጭ ይላኩ። ለዝርዝር <a href=\"#\" id=\"text-hint-guide\">መመሪያውን</a> ይመልከቱ።"
-  },
-  "textHeadings": {
-    "message": "ርዕሶች"
-  },
-  "textAllLevels": {
-    "message": "ሁሉም ደረጃዎች"
-  },
   "textMatches": {
     "message": "ተዛማጆች"
   },
   "textMatch": {
     "message": "ተዛማጅ"
-  },
-  "textReadingOn": {
-    "message": "ንባብ በርቷል"
   },
   "toastDownloadStarted": {
     "message": "ማውረድ ተጀምሯል፡ $name$",
@@ -756,7 +566,7 @@
     "message": "ይህን ሀብት (CORS ወይም የማይደገፍ ዓይነት) ማምጣት አልተቻለም።"
   },
   "ratingBannerText": {
-    "message": "Source Download ይወዱታል? የክፍት ምንጭ ራዕያችንን በChrome ድር ማከማቻ ወይም በ GitHub ላይ ባለ ኮከብ ግምገማ ደግፉ!"
+    "message": "በመስራቱ ደስ ብሎናል! Source Download ጊዜዎን ከቆጠበልዎ፣ አጭር ግምገማ ሌሎች እንዲያገኙት ይረዳል።"
   },
   "ratingBannerReview": {
     "message": "★ ግምገማ"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "የመጠይቁ ሳጥን እንዴት እንደሚተረጎም"
   },
-  "textKindTitle": {
-    "message": "ለአንድ የአካል ዓይነት ገድብ"
-  },
-  "textHeadingLevelTitle": {
-    "message": "የርዕስ ደረጃ"
-  },
   "textPlaceholderRegex": {
     "message": "^ዋጋ፡\\s*\\d+ — JavaScript መደበኛ አገላለጽ"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "መመሪያውን ይፈልጉ…"
-  },
-  "popupIntro": {
-    "message": "በ<strong>መሳሪያ አሞሌ ባጅ</strong> የተቆጠሩ ምድቦች። መቁጠሩን ለማቆም አንዱን ያጥፉ - ባጁ እርስዎ የሚከታተሉትን ብቻ ያንፀባርቃል።"
-  },
-  "popupHelpTitle": {
-    "message": "ሙሉውን ፓነል እንዴት መጠቀም እንደሚቻል"
-  },
-  "popupStep1": {
-    "message": "ለመፈተሽ በሚፈልጉት ገጽ DevToolsን ይክፈቱ <div class=\"hint\"><kbd>F12</kbd> ወይም <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "በDevTools የመሳሪያ አሞሌ ውስጥ ያለውን <strong>Source Download</strong> ትር ጠቅ ያድርጉ"
-  },
-  "popupStep3": {
-    "message": "ሀብቶችን ያስሱ፣ ይመርምሩ እና ያውርዱ — አንድ በአንድ ወይም ሁሉንም በአንድ ጊዜ እንደ ዚፕ።"
-  },
-  "popupNote": {
-    "message": "ማሳሰቢያ፡ Chrome ቅጥያዎች DevToolsን ፕሮግራማዊ በሆነ መንገድ እንዲከፍቱ አይፈቅድም፣ ለዚህም ነው ሙሉው የምህንድስና ስብስብ በDevTools የመሳሪያ አሞሌ ላይ የሚደርሰው።"
-  },
-  "popupTrackAll": {
-    "message": "ሁሉንም ምድቦች ይከታተሉ"
   },
   "popupLanguage": {
     "message": "ቋንቋ"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "ክፍሎችን ያዋህዱ እና ያውርዱ"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ ክፍል(ዎች) ወደ $NAME$ ተዋህዷል",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "መጠኑ አይታወቅም"
-  },
   "progressFetching": {
     "message": "በማምጣት ላይ $DONE$/$TOTAL$ · ዚፕ $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Regex ፍለጋ ገባሪ - ጥያቄዎን በ /pattern/i ያጠቃልሉት"
   },
-  "textIncludeInExports": {
-    "message": "ወደ ውጭ በመላክ ያካትቱ"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "እያንዳንዱን ቅጽበተ-ፎቶ ብዜት ወደ ተወገደበት አንድ ሠንጠረዥ ያዋህዱ — ወደ ውጭ የሚላከው ይህ ነው"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "የዚህን ሠንጠረዥ ቀደምት ቅጽበተ-ፎቶዎች ያስሱ"
-  },
   "tableDownloadCsvTitle": {
     "message": "ይህን ሠንጠረዥ እንደ CSV አውርድ"
-  },
-  "tableSnapshotLabel": {
-    "message": "ቅጽበተ-ፎቶ $INDEX$ — $TIME$ ($COUNT$ ረድፎች)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "ለጅምላ ማውረድ ምርጫን ቀያይር"
@@ -1150,7 +899,7 @@
     "message": "በDevTools የመሳሪያ አሞሌ ውስጥ ያለውን <strong>Source Download</strong> ትር ጠቅ ያድርጉ (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> ይጫኑ፣ ከዚያ በDevTools የመሳሪያ አሞሌ ውስጥ ያለውን ትር ይምረጡ)። Chrome ቅጥያዎች DevToolsን በራስ-ሰር እንዲከፍቱ አይፈቅድም፣ ፓነሉ እዚያ የሚገኘው ለዚህ ነው። የመሳሪያ አሞሌ አዶ ብቅ-ባይ በአዶው ላይ ያለውን የባጅ ቆጣሪ የሚመግቡ ምድቦችን እንዲመርጡ ያስችልዎታል። በፓነሉ መሳሪያ አሞሌ ውስጥ ያለው የፀሐይ/ጨረቃ አዝራር ከChrome ተለይቶ ብርሃን ወይም ጨለማ ገጽታ ይቆልፋል፤ ምርጫው ይታወሳል።"
   },
   "guideSecCategoriesContent": {
-    "message": "በግራ በኩል ያሉት ቀጥ ያሉ ትሮች እያንዳንዱን የተያዘ ሀብት በአይነት በ17 ልዩ ምድቦች ይመድባሉ፦ ምስሎች፣ ቪዲዮዎች፣ ኦዲዮ፣ መግለጫ ጽሑፎች፣ ሰነዶች፣ ቅርጸ ቁምፊዎች፣ የምንጭ ካርታዎች፣ WASM፣ SVG፣ API፣ ኩኪዎች፣ ማከማቻ እና ሌሎችም። እያንዳንዱ ትር የቀጥታ ቆጠራ ያሳያል። በአንድ ጊዜ አንድ ምድብ ብቻ ይታያል፤ መቀየር ሁሉንም ማጣሪያዎች ዳግም ያስጀምራል፣ ስለዚህ የሚያዩት ነገር ሁልጊዜ ከትሩ ጋር ይዛመዳል።"
+    "message": "በግራ በኩል ያሉት ቁመታዊ ትሮች እያንዳንዱን የተያዘ ሀብት እንደ ምስሎች፣ ቪዲዮዎች፣ ቅርጸ-ቁምፊዎች፣ የምንጭ ካርታዎች እና የAPI ጥሪዎች ባሉ 15 ምድቦች ይለያሉ፤ በተጨማሪም የጽሑፍ እና ሰንጠረዦች ትር አለ። እያንዳንዱ ትር የቀጥታ ቆጠራ ያሳያል። በአንድ ጊዜ አንድ ምድብ ብቻ ይታያል፤ መቀየር ሁሉንም ማጣሪያዎች ዳግም ያስጀምራል፣ ስለዚህ የሚያዩት ነገር ሁልጊዜ ከትሩ ጋር ይዛመዳል።"
   },
   "guideSecSearchFiltersContent": {
     "message": "የፍለጋ አሞሌው በስም፣ በURL፣ በዓይነት፣ በalt ጽሑፍ ወይም በርዕስ ያጣራል። መደበኛ አገላለጽ ለመጠቀም ጥያቄዎን በ<kbd>/…/</kbd> ውስጥ ያስገቡ፣ ለምሳሌ <code>/\\.(png|jpg)$/</code>። ከመሳሪያ አሞሌው በታች ያለው የማጣሪያ አሞሌ በምድብ ይቀየራል፡ ለሚዲያ የመጠን እና የልኬት ክልሎች፣ ለAPIዎች የHTTP ዘዴ እና የጥያቄ ዓይነት፣ እንዲሁም መደርደር እና አቅጣጫ።"
@@ -1162,13 +911,13 @@
     "message": "በቀኝ በኩል ባለው የፍተሻ መቃን ለመክፈት ማንኛውንም ሀብት ጠቅ ያድርጉ። እያንዳንዱ የተከፈተ ፋይል ትር ይሆናል፣ ስለዚህ ብዙ ሀብቶችን ጎን ለጎን ማወዳደር ይችላሉ - አዲሱ በግራ በኩል ይከፈታል። ልዩ ተመልካቾች ለምስሎች፣ ቪዲዮ፣ ኦዲዮ፣ ቅርጸ-ቁምፊዎች፣ SVG እና ጽሑፍ/ኮድ (ከአሳምር መቀየሪያ ጋር) አሉ። APIዎች የተከፈለ እይታን ያሳያሉ፡ በግራ በኩል ምላሽ፣ የጥያቄ ዝርዝሮች (ዘዴ፣ ሁኔታ፣ ራስጌዎች፣ የጥያቄ መለኪያዎች እና አካል) በቀኝ በኩል።"
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>የአሁኑን እይታ አውርድ</strong> አሁን የሚታዩትን ሀብቶች (ንቁ ምድብ + ፍለጋ + ማጣሪያዎች) እንደ ዚፕ ያስቀምጣል፤ ማጣሪያዎች ንቁ ሲሆኑ ስሙ ወደ <em>የተጣሩትን አውርድ (N)</em> ይቀየራል። ከመጫንዎ በፊት የሚገመተውን የማህደር መጠን ለማየት በማንኛውም የማውረድ አዝራር ላይ ጠቋሚውን ያስቀምጡ። <strong>የተመረጡትን አውርድ</strong> ምልክት የተደረገባቸውን ንጥሎች ብቻ ያወርዳል። <strong>ሁሉንም አውርድ</strong> የተገኘውን እያንዳንዱን ሀብት በአቃፊ መዋቅር ዚፕ ውስጥ ያስቀምጣል። ያልተሳኩ ውርዶች በራስ-ሰር እንደገና ይሞከራሉ፣ እና ከአውድ ምናሌው እንደገና መሞከር ይችላሉ። <strong>ወደ ውጭ ላክ</strong> የሚታየውን ዝርዝር እንደ JSON ወይም CSV ይጽፋል፣ ወይም የChromeን የአውታረ መረብ መዝገብ እንደ HAR ፋይል ይልካል።"
+    "message": "<strong>የሚታዩትን አውርድ</strong> አሁን የሚታዩትን ሀብቶች (ንቁ ምድብ + ፍለጋ + ማጣሪያዎች) እንደ ዚፕ ያስቀምጣል፤ ማጣሪያዎች ንቁ ሲሆኑ ስሙ ወደ <em>የተጣሩትን አውርድ (N)</em> ይቀየራል። ከመጫንዎ በፊት የሚገመተውን የማህደር መጠን ለማየት በማንኛውም የማውረድ አዝራር ላይ ጠቋሚውን ያስቀምጡ። <strong>የተመረጡትን አውርድ</strong> ምልክት የተደረገባቸውን ንጥሎች ብቻ ያወርዳል። <strong>ሁሉንም አውርድ</strong> የተገኘውን እያንዳንዱን ሀብት በአቃፊ መዋቅር ዚፕ ውስጥ ያስቀምጣል። ያልተሳኩ ውርዶች ምልክት ይደረግባቸዋል፤ ከማሳወቂያው፣ ከንጥሉ የማስጠንቀቂያ አዶ ወይም ከአውድ ምናሌው በአንድ ጠቅታ እንደገና መሞከር ይችላሉ። <strong>ወደ ውጭ ላክ</strong> የሚታየውን ዝርዝር እንደ JSON ወይም CSV ይጽፋል፣ ወይም የChromeን የአውታረ መረብ መዝገብ እንደ HAR ፋይል ይልካል።"
   },
   "guideSecLightboxContent": {
     "message": "የማጉላት አዝራሩ ሚዲያን ባለ ሙሉ መጠን ብርሃን ሳጥን ውስጥ ይከፍታል፤ በመጎተት መጓዝ፣ በመዳፊት ጎማ፣ በማያ ገጽ ላይ ባሉ አዝራሮች ወይም በቁልፍ ሰሌዳ ማጉላት ይችላሉ (<kbd>+</kbd>/<kbd>-</kbd> ለማጉላት/ለማሳነስ፣ <kbd>0</kbd> ዳግም ለማስጀመር፣ <kbd>Esc</kbd> ለመዝጋት)።"
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>ጽሑፍ</strong> ምድብ የገጹ ቀጥታ፣ ሊነበብ የሚችል ቅጂ ነው። ጽሑፍ የያዘውን እያንዳንዱን አካል — ርዕሶች፣ አንቀጾች፣ የዝርዝር ንጥሎች፣ አዝራሮች፣ <code>div</code>/<code>span</code> እና ሌሎችም — በDOM ቅደም ተከተል ይይዛል፤ <strong>ቀጥታ</strong> ሲበራም መቃኘቱን ይቀጥላል።</p><p><strong>መጠይቅ</strong> ሳጥኑ በአራት መንገዶች ይሠራል፤ ከጎኑ ካለው ተቆልቋይ ይምረጡ፦ <strong>ይዟል</strong> እና <strong>Regex</strong> ቀድሞ የተያዘውን ጽሑፍ ያጣራሉ፣ <strong>CSS መራጭ</strong> እና <strong>XPath</strong> ደግሞ በቀጥታ ገጹ ላይ ስለሚሠሩ በDOM ውስጥ ማንኛውንም ነገር መድረስ ይችላሉ። XPath እንደ <code>count(//a)</code> ወይም <code>//@href</code> ያሉ ከአካላት ይልቅ እሴት የሚመልሱ አገላለጾችንም ይቀበላል። ስለ ልክ ያልሆነ መጠይቅ ገጹ የሚናገረው ከሳጥኑ ቀጥሎ ይታያል። <strong>አካል</strong> ውጤቱን ወደ አንድ መለያ ያጠባል፣ የእያንዳንዱ መለያ ብዛትም በገጹ ላይ ተገኝቶ ይታያል። የመጠይቅ ሳጥኑን ማጽዳት (ወይም <strong>አጽዳ</strong>ን መጫን) ወደ <em>ሁሉም አካላት</em> ይመልስዎታል እና ገጹን እንደገና ይይዛል — ተቆልቋዩን በእጅ ዳግም ማስጀመር አያስፈልግዎትም።</p><p><strong>ንባብ</strong> መለያዎችን፣ አመልካች ሳጥኖችን እና የአካባቢ መንገድ ጠቋሚዎችን (breadcrumbs) ይደብቃል፣ ስለዚህ ጽሑፉ እንደ ሰነድ ይነበባል። ሠንጠረዦች የተገደበ የቅጽበተ-ፎቶ ታሪክ ያከማቻሉ፣ ስለዚህ ተለዋዋጭ (SPA) ሠንጠረዦች በጭራሽ አይጠፉም። እያንዳንዱን ቅጽበተ-ፎቶ ብዜት ወደ ተወገደበት አንድ እይታ ለማዋሃድ በሠንጠረዡ ላይ <strong>ሁሉንም ረድፎች አሳይ</strong>ን ይጫኑ — ወደ ውጭ የሚላከው ይህ ነው። እንደ <strong>TXT</strong> (ሊነበብ የሚችል ገጽ)፣ <strong>MD</strong> (Markdown፣ ሠንጠረዦችን ጨምሮ) ወይም ሠንጠረዦችን እንደ CSV፣ HTML ወይም እውነተኛ ባለብዙ ሉህ <strong>XLSX</strong> የሥራ መጽሐፍ ይላኩ። ምልክት የተደረገባቸው ንጥሎች ቅድሚያ ያገኛሉ፤ አለበለዚያ አሁን የሚታየው ሁሉ ወደ ውጭ ይላካል።</p>"
+    "message": "<p>የ<strong>ጽሑፍ</strong> ምድብ የገጹ ሕያው እና ለማንበብ ቀላል ቅጂ ነው፦ ርዕሶች፣ አንቀጾች፣ ዝርዝሮች እና አገናኞች በገጹ ቅደም ተከተል፣ <strong>ቀጥታ</strong> እስከበራ ድረስ ይዘመናሉ። አንድን መስመር ለመቅዳት ጠቋሚውን በላዩ ላይ ያሳርፉ፣ ወይም ለሚታየው ሁሉ <strong>ጽሑፍ ቅዳ</strong>፣ <strong>Markdown</strong> እና <strong>TXT</strong> ን ይጠቀሙ።</p><p>በ<strong>ሰንጠረዦች</strong> ውስጥ እያንዳንዱ የገጹ ሰንጠረዥ ቅድመ እይታ እና የራሱ <strong>Excel</strong>፣ <strong>CSV</strong> እና <strong>ቅዳ</strong> አዝራሮች ያሉት ካርድ ሆኖ ይታያል፤ <strong>ሁሉንም ሰንጠረዦች ወደ Excel</strong> ሁሉንም በአንድ የሥራ መጽሐፍ ውስጥ፣ ለእያንዳንዱ አንድ ሉህ፣ ያስቀምጣል። የሚቀየሩ ሰንጠረዦች የቅጽበታዊ ቅጂዎች ታሪክ ይይዛሉ፣ <strong>ሁሉንም ረድፎች አሳይ</strong> ደግሞ ድግግሞሽ በሌለው አንድ ሰንጠረዥ ያዋህዳቸዋል — ወደ ውጭ የሚላከው በትክክል ይህ ነው።</p><p>በግራ በኩል ያሉት ሳጥኖች ገጹን በኤለመንት አይነት ይለያሉ — የገጹ ሙሉ ጽሑፍ፣ እያንዳንዱ የርዕስ ደረጃ፣ አንቀጾች፣ አገናኞች፣ የዝርዝር ንጥሎች፣ አዝራሮች፣ ኮድ እና ሌሎችም — እያንዳንዱ ከቁጥሩ እና ከመጀመሪያው መስመር ጋር፤ ያንን ብቻ ለማየት፣ ለመቅዳት ወይም ወደ ውጭ ለመላክ አንዱን ይምረጡ። የፍለጋ ሳጥኑ ሲተይቡ ያጣራል፣ ከጎኑ ያለው ምናሌ ደግሞ ወደ መደበኛ አገላለጽ፣ <strong>CSS መራጭ</strong> ወይም <strong>XPath</strong> አገላለጽ (እንደ <code>count(//a)</code> ወይም <code>//@href</code> ያሉ እሴት የሚመልሱ አገላለጾችንም ጨምሮ) ቀይሮ በሕያው ገጹ ላይ ያስኬደዋል፤ የ<strong>ብጁ መጠይቅ</strong> ሳጥንም እንዲሁ ያደርጋል። ገጹ ስለተሳሳተ መጠይቅ የሚለው በሳጥኑ ውስጥ ይታያል።</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT፣ SRT፣ TTML እና ሌሎች የመግለጫ ጽሑፍ ፋይሎች — <code>&lt;track&gt;</code> ምንጮችን ጨምሮ — ከሰነዶች ጋር ከመቀላቀል ይልቅ በራሳቸው <strong>መግለጫ ጽሑፎች</strong> ትር ውስጥ ይቀመጣሉ።"
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "ነባሪ GIF ጥራት"
   },
-  "optGifOriginal": {
-    "message": "ኦሪጅናል (1:1 ቤተኛ ጥራት — ሙሉ 3K/4K፣ ሳይቀንስ)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (ቢበዛ 1920 px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "የማያ ገጽ ቀረጻ (ቪዲዮ እና GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "ማንኛውንም የተመረጠ የማያ ገጽ ቦታ እንደ MP4፣ WebM ወይም እንደ አኒሜሽን GIF ይቅረጹ። የGIF ቅጂዎች ኦሪጅናል 1:1 ጥራት፣ 1080p፣ 720p እና 480p መገለጫዎችን ከቀጥታ የሚገመት የፋይል መጠን ጋር ይሰጣሉ። ለተሻለ የአሳሽ አፈጻጸም ከፍተኛው የGIF ቀረጻ ጊዜ 1 ደቂቃ (60 ሰ) ነው።"
+    "message": "ማንኛውንም የማያ ገጽ ክፍል እንደ MP4፣ WebM ወይም ተንቀሳቃሽ GIF ይቅዱ። የGIF ቀረጻዎች 1080p፣ 720p እና 480p መገለጫዎችን ከቀጥታ የፋይል መጠን ግምት ጋር ያቀርባሉ። አንድ የGIF ቀረጻ እስከ 1 ደቂቃ (60 ሰከንድ) ሊቆይ ይችላል።"
   },
   "msgGifMaxDurationReached": {
     "message": "የGIF ከፍተኛው የ1 ደቂቃ (60 ሰ) ርዝመት ደርሷል። GIF በመፍጠር ላይ…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — የዝግጅት አቀራረብ (በሰከንድ 1 ፍሬም፣ አነስተኛ መጠን)"
-  },
-  "popupRightClickHint": {
-    "message": "ለማያ ገጽ ቀረጻ (ቪዲዮ/GIF) እና ቀለም መራጭ በድረ-ገጹ ላይ በማንኛውም ቦታ በቀኝ ጠቅ ያድርጉ።"
   },
   "toastElementZappedAd": {
     "message": "ማስታወቂያ / iframe ለዚህ ክፍለ ጊዜ ተደብቋል።",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "የGIF ጥራት፦ 1:1 / 1080p / 720p / 480p",
+    "message": "የGIF ጥራት፦ 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "ንቁ ትር አልተገኘም።",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "እዚህ ጠቅ ያድርጉ፣ ከዚያ በገጹ ላይ ማንኛውንም ቀለም ይምረጡ"
+  },
+  "welcomeTitle": {
+    "message": "Source Download ዝግጁ ነው"
+  },
+  "welcomePrivacy": {
+    "message": "ሁሉም ነገር በኮምፒውተርዎ ላይ ይሰራል። መለያ የለም፣ ክትትል የለም፣ ምንም ነገር ወደ እኛ አይላክም።"
+  },
+  "welcomeHelp": {
+    "message": "የማይሰራ ነገር አለ? በGitHub ላይ ይንገሩን"
+  },
+  "ratingBannerIssue": {
+    "message": "ችግር አለ?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF 200 MB ደርሷል። የተቀዳው በመቀመጥ ላይ ነው…"
+  },
+  "btnPopupFullPage": {
+    "message": "የሙሉ ገጽ ቅጽበታዊ ገጽ እይታ"
+  },
+  "toastRecWrongTab": {
+    "message": "የዚህን ገጽ አንድ አካባቢ ለመቅዳት በማጋሪያ መስኮቱ ውስጥ \"ይህ ትር\" የሚለውን ይምረጡ።"
+  },
+  "popupCaptureTitle": {
+    "message": "ይህን ገጽ ቅረጽ"
+  },
+  "popupTileOffline": {
+    "message": "ገጹን ከመስመር ውጭ አስቀምጥ"
+  },
+  "popupTileGuide": {
+    "message": "እንዴት እንደሚሰራ"
+  },
+  "popupDevtoolsTitle": {
+    "message": "ፋይሎች፣ ምስሎች እና ሰንጠረዦች"
+  },
+  "popupDevtoolsHint": {
+    "message": "DevTools ን ይክፈቱ፣ ከዚያ የ Source Download ትርን ይምረጡ።"
+  },
+  "popupRestricted": {
+    "message": "Chrome በዚህ ገጽ ላይ ቅጥያዎችን አይፈቅድም። መሣሪያዎቹን ለመጠቀም ድር ጣቢያ ይክፈቱ።"
+  },
+  "welcomeCardMenuTitle": {
+    "message": "በማንኛውም ገጽ ላይ በቀኝ ጠቅ ያድርጉ"
+  },
+  "welcomeCardMenuText": {
+    "message": "የሙሉ ገጽ እና የአካባቢ ቅጽበታዊ እይታዎች፣ የአካባቢ ቀረጻ፣ የቀለም መራጭ እና ከመስመር ውጭ ቅጂ — ባሉበት ቦታ።"
+  },
+  "welcomeCardPopupTitle": {
+    "message": "ወይም የመሣሪያ አሞሌ አዝራሩን ይጠቀሙ"
+  },
+  "welcomeCardPopupText": {
+    "message": "በ Chrome መሣሪያ አሞሌ ላይ ያለውን የእንቆቅልሽ አዶ ጠቅ አድርገው Source Download ን ይሰኩ፤ መሣሪያዎቹ ሁልጊዜ አንድ ጠቅታ ርቀት ላይ ይሆናሉ።"
+  },
+  "welcomeCardPanelTitle": {
+    "message": "በገጹ ላይ ላለው ሁሉ F12 ን ይጫኑ"
+  },
+  "welcomeCardPanelText": {
+    "message": "በ DevTools ውስጥ የ Source Download ትርን ይምረጡ። ገጹ የጫናቸው ሁሉም ምስሎች፣ ቪዲዮዎች፣ ቅርጸ-ቁምፊዎች እና ፋይሎች እዚያ ተዘርዝረዋል — ቅድመ እይታ ያድርጉ፣ ያጣሩ እና እንደ ZIP ያስቀምጡ። የገጹ ሰንጠረዦች ወደ Excel ይላካሉ።"
+  },
+  "welcomeLead": {
+    "message": "ከማንኛውም ድረ-ገጽ የሚፈልጉትን ለማግኘት ሦስት መንገዶች።"
+  },
+  "btnDownloadOptions": {
+    "message": "ተጨማሪ የማውረጃ አማራጮች"
+  },
+  "btnMore": {
+    "message": "ተጨማሪ እርምጃዎች"
+  },
+  "btnFilters": {
+    "message": "ማጣሪያዎች"
+  },
+  "tabsShowEmpty": {
+    "message": "ባዶዎቹን አሳይ"
+  },
+  "tabsHideEmpty": {
+    "message": "ባዶዎቹን ደብቅ"
+  },
+  "textSegText": {
+    "message": "ጽሑፍ"
+  },
+  "textSegTables": {
+    "message": "ሰንጠረዦች"
+  },
+  "textLive": {
+    "message": "ቀጥታ"
+  },
+  "textPaused": {
+    "message": "ቆሟል"
+  },
+  "textLivePauseTitle": {
+    "message": "ቀጥታ፦ ገጹ በተቀየረ ቁጥር እንደገና ይነበባል። ለማቆም ጠቅ ያድርጉ።"
+  },
+  "textLiveResumeTitle": {
+    "message": "ቆሟል። ገጹን እንደገና በቀጥታ ለመከታተል ጠቅ ያድርጉ።"
+  },
+  "textSearchText": {
+    "message": "በገጹ ጽሑፍ ውስጥ ፈልግ"
+  },
+  "textExportAllXlsx": {
+    "message": "ሁሉንም ሰንጠረዦች ወደ Excel"
+  },
+  "textNoTables": {
+    "message": "በዚህ ገጽ ላይ እስካሁን ሰንጠረዥ የለም። ገጹ ሰንጠረዥ እንዳሳየ ወዲያው እዚህ ይታያል።"
+  },
+  "textTable": {
+    "message": "ሰንጠረዥ"
+  },
+  "textCopy": {
+    "message": "ቅዳ"
+  },
+  "textShowLess": {
+    "message": "ያነሰ አሳይ"
+  },
+  "areaHintSelect": {
+    "message": "አካባቢ ለመምረጥ ይጎትቱ"
+  },
+  "areaHintCopy": {
+    "message": "ቅዳ"
+  },
+  "areaHintSave": {
+    "message": "አስቀምጥ"
+  },
+  "areaHintExit": {
+    "message": "ውጣ"
+  },
+  "areaAutoCopyLabel": {
+    "message": "በራስ-ሰር ቅዳ"
+  },
+  "areaAutoCopyOn": {
+    "message": "ራስ-ሰር መቅዳት በርቷል"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "ምርጫውን ሲለቁ ወዲያው በቅንጥብ ሰሌዳው ላይ ይሆናል።"
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "አጥፋ"
+  },
+  "toastAreaAutoCopied": {
+    "message": "ወደ ቅንጥብ ሰሌዳ ተቀድቷል (ራስ-ሰር መቅዳት በርቷል)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "ይህ ገጽ ወደ ቅንጥብ ሰሌዳ መቅዳትን አይፈቅድም። በምትኩ አውርድን ይጠቀሙ።"
+  },
+  "textKindAll": {
+    "message": "የገጹ ሙሉ ጽሑፍ"
+  },
+  "textKindHeading": {
+    "message": "ርዕስ"
+  },
+  "textKindP": {
+    "message": "አንቀጾች"
+  },
+  "textKindA": {
+    "message": "አገናኞች"
+  },
+  "textKindLi": {
+    "message": "የዝርዝር ንጥሎች"
+  },
+  "textKindButton": {
+    "message": "አዝራሮች"
+  },
+  "textKindLabel": {
+    "message": "መለያዎች እና መግለጫዎች"
+  },
+  "textKindSpan": {
+    "message": "በመስመር ውስጥ ያለ ጽሑፍ"
+  },
+  "textKindDiv": {
+    "message": "ሌሎች ብሎኮች"
+  },
+  "textKindCell": {
+    "message": "የሰንጠረዥ ሕዋሶች"
+  },
+  "textKindCode": {
+    "message": "ኮድ"
+  },
+  "textKindQuote": {
+    "message": "ጥቅሶች"
+  },
+  "textCustomQuery": {
+    "message": "ብጁ መጠይቅ"
+  },
+  "textCustomQueryHint": {
+    "message": "በሕያው ገጽ ላይ CSS መራጭ ወይም XPath"
+  },
+  "menuSettings": {
+    "message": "ቅንብሮች"
+  },
+  "settingsSave": {
+    "message": "አስቀምጥ"
+  },
+  "settingsReset": {
+    "message": "ወደ ነባሪ መልስ"
+  },
+  "settingAreaAutoCopy": {
+    "message": "የአካባቢ ቅጽበታዊ እይታዎችን በራስ-ሰር ቅዳ"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "ምርጫውን ሲለቁ ምስሉ በቀጥታ ወደ ቅንጥብ ሰሌዳው ይሄዳል። ይህ እስከበራ ድረስ በገጹ አናት ላይ ያለው ፍንጭ በእያንዳንዱ ጊዜ ያሳያል።"
   }
 }

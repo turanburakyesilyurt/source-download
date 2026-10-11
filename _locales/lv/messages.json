@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Attēlu un failu lejupielāde"
   },
   "appDesc": {
-    "message": "Pārbaudi un lejupielādē jebkurus tīmekļa resursus kā ZIP. Pilnas lapas ekrānuzņēmumi, tabulu tveršana, izstrādātāju rīki."
+    "message": "Saglabājiet tīmekļa lapas attēlus, ikonas un failus atsevišķi vai ZIP arhīvā. Visas lapas ekrānuzņēmums un apgabala ieraksts."
   },
   "actionTitle": {
     "message": "Source Download — atveriet paneli un izsekojiet resursus"
@@ -90,7 +90,7 @@
     "message": "Lejupielādēt atlasīto"
   },
   "btnDownloadView": {
-    "message": "Lejupielādēt skatu"
+    "message": "Lejupielādēt redzamos"
   },
   "btnDownloadAll": {
     "message": "Lejupielādēt visu"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Lejupielādēt filtrētos"
   },
-  "btnTheme": {
-    "message": "Pārslēgt motīvu"
-  },
   "btnGuide": {
     "message": "Lietotāja rokasgrāmata"
-  },
-  "btnCaptureFullPage": {
-    "message": "Pilnas lapas ekrānuzņēmums"
-  },
-  "btnOfflineArchive": {
-    "message": "Saglabāt kā vienu HTML"
   },
   "filterMinKb": {
     "message": "Min. KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filtrēt lapas tekstu vai vaicāt tiešraidē DOM…"
-  },
-  "textAllElements": {
-    "message": "Visi elementi"
-  },
-  "textLiveOn": {
-    "message": "Tiešraide ieslēgta"
-  },
-  "textLiveOff": {
-    "message": "Tiešraide izslēgta"
-  },
   "textScanNow": {
     "message": "Skenēt tūlīt"
-  },
-  "textReading": {
-    "message": "Lasīšana"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Atlasiet resursu, lai skatītu tā informāciju"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Vai jums patīk Source Download? Atbalstiet mūsu atvērtā pirmkoda redzējumu, sniedzot atsauksmi Chrome interneta veikalā vai atzīmējot zvaigznīti vietnē GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Atstājiet atsauksmi"
-  },
-  "ratingStar": {
-    "message": "★ Atzīmējiet ar zvaigznīti vietnē GitHub"
-  },
   "ratingDismiss": {
     "message": "Aizvērt"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Viena faila HTML arhīvs saglabāts."
-  },
-  "brandSignature": {
-    "message": "Izstrādāja Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Attēli un SVG"
-  },
-  "tabMedia": {
-    "message": "Multivide un audio"
-  },
-  "tabFonts": {
-    "message": "Fonti"
-  },
-  "tabTextScraper": {
-    "message": "Teksts un tabulas"
-  },
-  "heroScreenshotTitle": {
-    "message": "Pilnas lapas ekrānuzņēmums"
-  },
-  "heroScreenshotDesc": {
-    "message": "Nemanāma vairāku skatvietu savienošana ar lipīgo galveņu apslāpēšanu"
-  },
-  "heroArchiveTitle": {
-    "message": "Viena faila HTML arhīvs"
-  },
-  "heroArchiveDesc": {
-    "message": "Iegulst CSS un Base64 attēlus, bezsaistē drošs momentuzņēmums"
-  },
-  "copyDataUri": {
-    "message": "Kopēt Data-URI"
-  },
-  "copyUrl": {
-    "message": "Kopēt URL"
   },
   "downloadSingle": {
     "message": "Lejupielādēt"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "resursus"
   },
-  "statusFiltered": {
-    "message": "filtrēts"
-  },
   "statusSelected": {
     "message": "atlasīts"
   },
   "statusDupes": {
     "message": "dublikāti paslēpti"
-  },
-  "statusSize": {
-    "message": "izmērs"
   },
   "langAuto": {
     "message": "Automātiski (pārlūkprogramma)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Izvēlieties valodu"
   },
-  "textPillAll": {
-    "message": "Viss saturs"
-  },
-  "textPillText": {
-    "message": "📄 Teksts un raksti"
-  },
-  "textPillTables": {
-    "message": "📊 Tikai tabulas"
-  },
   "textSelectAll": {
     "message": "Atlasīt visu"
   },
   "textDeselectAll": {
     "message": "Noņemiet visu atlasi"
-  },
-  "textClearSelection": {
-    "message": "Notīrīt"
   },
   "toastRefreshComplete": {
     "message": "Lapas skenēšana pabeigta: $count$ jauni resursi",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ tabula(-as) · $rows$ unikālas rindas",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "Atlasīti $count$ — eksportēšanai tiek izmantoti tikai tie",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tabula — $count$ rinda(s) ekrānā",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tabula — visas $count$ unikālās rindas",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ momentuzņēmums(-i)",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Tiek rādītas visas rindas"
   },
-  "textTableHistory": {
-    "message": "Vēsture ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Slēpt vēsturi"
-  },
   "textTableNoRows": {
     "message": "Vēl nav uzņemta neviena rinda."
   },
   "textBtnCopy": {
     "message": "Kopēt tekstu"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Kopēt"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "Attēlu dublikāti: $count$",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Eksportēt"
   },
   "inspectorLoadingSvg": {
     "message": "Notiek SVG ielāde…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Fonta priekšskatījums"
   },
-  "inspectorBeautify": {
-    "message": "Formatēt"
-  },
-  "inspectorOriginal": {
-    "message": "Oriģināls"
-  },
-  "inspectorHeaders": {
-    "message": "Virsraksti"
-  },
-  "inspectorResponse": {
-    "message": "Atbilde"
-  },
-  "inspectorRequest": {
-    "message": "Pieprasījums"
-  },
   "inspectorQueryParams": {
     "message": "Vaicājuma parametri"
   },
   "inspectorRequestBody": {
     "message": "Pieprasījuma pamatteksts"
   },
-  "textHintHtml": {
-    "message": "Dzīva, lasāma lapas kopija. Katrs elements, kurā ir teksts, tiek tverts DOM secībā un tiek saglabāts šeit, mainoties lapai. Pieprasiet to, izmantojot vienkāršu tekstu, regulāru izteiksmi, <strong>CSS atlasītāju</strong> vai <strong>XPath</strong> izteiksmi, pēc tam eksportējiet atbilstošo. Plašāku informāciju skatiet <a href=\"#\" id=\"text-hint-guide\">ceļvedī</a>."
-  },
-  "textHeadings": {
-    "message": "Virsraksti"
-  },
-  "textAllLevels": {
-    "message": "Visi līmeņi"
-  },
   "textMatches": {
     "message": "atbilstības"
   },
   "textMatch": {
     "message": "atbilstība"
-  },
-  "textReadingOn": {
-    "message": "Lasīšana ieslēgta"
   },
   "toastDownloadStarted": {
     "message": "Lejupielāde sākta: $name$",
@@ -756,7 +566,7 @@
     "message": "Nevarēja ienest šo resursu (CORS vai neatbalstīts veids)."
   },
   "ratingBannerText": {
-    "message": "Vai jums patīk Source Download? Atbalstiet mūsu atvērtā pirmkoda redzējumu, sniedzot atsauksmi Chrome interneta veikalā vai atzīmējot zvaigznīti vietnē GitHub!"
+    "message": "Prieks, ka izdevās! Ja Source Download ietaupa jūsu laiku, īsa atsauksme palīdz citiem to atrast."
   },
   "ratingBannerReview": {
     "message": "★ Atsauksme"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Kā tiek interpretēts vaicājuma lodziņš"
   },
-  "textKindTitle": {
-    "message": "Ierobežot līdz vienam elementa veidam"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Virsraksta līmenis"
-  },
   "textPlaceholderRegex": {
     "message": "^Cena:\\s*\\d+ — JavaScript regulārā izteiksme"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Meklēt rokasgrāmatā…"
-  },
-  "popupIntro": {
-    "message": "Kategorijas, ko uzskaita <strong>rīkjoslas emblēma</strong>. Pārslēdziet vienu, lai pārtrauktu tās skaitīšanu — emblēma uzreiz atspoguļo tikai to, ko izsekojat."
-  },
-  "popupHelpTitle": {
-    "message": "Kā izmantot pilnu paneli"
-  },
-  "popupStep1": {
-    "message": "Atveriet DevTools tai lapai, kuru vēlaties pārbaudīt <div class=\"hint\"><kbd>F12</kbd> vai <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "DevTools rīkjoslā noklikšķiniet uz cilnes <strong>Source Download</strong>"
-  },
-  "popupStep3": {
-    "message": "Pārlūkojiet, pārbaudiet un lejupielādējiet resursus — atsevišķi vai visus vienlaikus kā ZIP failu."
-  },
-  "popupNote": {
-    "message": "Piezīme. Chrome neļauj paplašinājumiem programmatiski atvērt DevTools, tāpēc visas funkcijas ir pieejamas, izmantojot DevTools rīkjoslu."
-  },
-  "popupTrackAll": {
-    "message": "Izsekojiet visām kategorijām"
   },
   "popupLanguage": {
     "message": "Valoda"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Apvienot segmentus un lejupielādēt"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ segmenti apvienoti failā $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "izmērs nav zināms"
-  },
   "progressFetching": {
     "message": "Tiek iegūts $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Aktīva regulārās izteiksmes meklēšana — ievietojiet vaicājumu formātā /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Iekļaut eksportā"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Apvienojiet katru momentuzņēmumu vienā tabulā bez dublikātiem — tas tiek eksportēts"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Pārlūkojiet iepriekšējos šīs tabulas momentuzņēmumus"
-  },
   "tableDownloadCsvTitle": {
     "message": "Lejupielādējiet šo tabulu kā CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Momentuzņēmums $INDEX$ — $TIME$ ($COUNT$ rindas)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Pārslēgt atlasi pakešu lejupielādei"
@@ -1150,7 +899,7 @@
     "message": "DevTools rīkjoslā noklikšķiniet uz cilnes <strong>Source Download</strong> (nospiediet <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, pēc tam cilni DevTools rīkjoslā). Chrome neļauj paplašinājumiem automātiski atvērt DevTools, tāpēc panelis atrodas tur. Rīkjoslas ikonas uznirstošais logs ļauj izvēlēties, kuras kategorijas padod ikonas žetonu skaitītāju. Saules/mēness poga paneļa rīkjoslā bloķē gaišu vai tumšu motīvu neatkarīgi no Chrome; šī izvēle tiek atcerēta."
   },
   "guideSecCategoriesContent": {
-    "message": "Vertikālās cilnes kreisajā pusē sagrupē katru uzņemto resursu 17 īpašās kategorijās pēc veida: attēli, video, audio, paraksti, dokumenti, fonti, avotu kartes, WASM, SVG, API, sīkfaili, krātuve un citi. Katrā cilnē tiek rādīts reāllaika skaits. Vienlaikus tiek rādīta tikai viena kategorija; pārslēdzot, tiek atiestatīti visi filtri, tāpēc tas, ko redzat, vienmēr atbilst cilnei."
+    "message": "Vertikālās cilnes kreisajā pusē sadala katru notverto resursu 15 kategorijās, piemēram, attēli, video, fonti, avota kartes un API izsaukumi, un ir arī cilne “Teksts un tabulas”. Katrā cilnē tiek rādīts reāllaika skaits. Vienlaikus tiek rādīta tikai viena kategorija; pārslēdzot, tiek atiestatīti visi filtri, tāpēc tas, ko redzat, vienmēr atbilst cilnei."
   },
   "guideSecSearchFiltersContent": {
     "message": "Meklēšanas josla tiek filtrēta pēc nosaukuma, URL, veida, alternatīvā teksta vai nosaukuma. Iekļaujiet savu vaicājumu <kbd>/…/</kbd>, lai izmantotu regulāru izteiksmi, piemēram, <code>/\\.(png|jpg)$/</code>. Zem rīkjoslas filtru josla mainās atkarībā no kategorijas: lieluma un dimensiju diapazoni multividei, HTTP metode un pieprasījuma veids API, kā arī šķirošana un virziens."
@@ -1162,13 +911,13 @@
     "message": "Noklikšķiniet uz jebkura resursa, lai to atvērtu pārbaudes rūtī labajā pusē. Katrs atvērtais fails kļūst par cilni, lai jūs varētu salīdzināt vairākus resursus blakus — jaunākais tiek atvērts kreisajā pusē. Ir specializēti skatītāji attēliem, video, audio, fontiem, SVG un tekstam/kodam (ar Beautify slēdzi). API rāda dalītu skatu: atbilde kreisajā pusē, pieprasījuma informācija (metode, statuss, galvenes, vaicājuma parametri un pamatteksts) labajā pusē."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Lejupielādēt skatu</strong> saglabā pašlaik redzamos resursus (aktīvā kategorija + meklēšana + filtri) kā ZIP; tā nosaukums mainās uz <em>Lejupielādēt filtrētos (N)</em>, kad filtri ir aktīvi. Pirms noklikšķināšanas novietojiet kursoru virs jebkuras lejupielādes pogas, lai redzētu aptuveno arhīva lielumu. <strong>Lejupielādēt atlasītos</strong> lejupielādē tikai atzīmētos vienumus. <strong>Lejupielādēt visu</strong> katru atklāto resursu tver mapes strukturētā ZIP papīrā. Neizdevušās lejupielādes tiek atkārtoti mēģinātas automātiski, un tās var mēģināt vēlreiz no kontekstizvēlnes. <strong>Eksportēt</strong> ieraksta redzamo sarakstu JSON vai CSV formātā vai saglabā Chrome tīkla žurnālu kā HAR failu."
+    "message": "<strong>Lejupielādēt redzamos</strong> saglabā pašlaik redzamos resursus (aktīvā kategorija + meklēšana + filtri) kā ZIP; tā nosaukums mainās uz <em>Lejupielādēt filtrētos (N)</em>, kad filtri ir aktīvi. Pirms noklikšķināšanas novietojiet kursoru virs jebkuras lejupielādes pogas, lai redzētu aptuveno arhīva lielumu. <strong>Lejupielādēt atlasītos</strong> lejupielādē tikai atzīmētos vienumus. <strong>Lejupielādēt visu</strong> katru atklāto resursu tver mapes strukturētā ZIP papīrā. Neizdevušās lejupielādes tiek atzīmētas, un tās var atkārtot ar vienu klikšķi no paziņojuma, vienuma brīdinājuma ikonas vai konteksta izvēlnes. <strong>Eksportēt</strong> ieraksta redzamo sarakstu JSON vai CSV formātā vai saglabā Chrome tīkla žurnālu kā HAR failu."
   },
   "guideSecLightboxContent": {
     "message": "Tālummaiņas poga atver multividi pilna izmēra gaismas lodziņā, kurā varat panoramēt, velkot, tuvināt ar peles ritenīti, ekrāna pogām vai tastatūru (<kbd>+</kbd>/<kbd>-</kbd>, lai tuvinātu, <kbd>0</kbd>, lai atiestatītu, <kbd>Esc</kbd>, lai aizvērtu)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Kategorija <strong>Teksts</strong> ir reāllaika, lasāma lapas kopija. Tas tver visus elementus, kuros ir teksts — virsraksti, rindkopas, saraksta vienumi, pogas, <code>div</code>/<code>span</code> un citi — DOM secībā, un turpina skenēšanu, kamēr ir ieslēgts <strong>Tiešsaistes</strong>.</p><p>Lodziņš <strong>Vaicājums</strong> darbojas četros veidos, ko izvēlas blakus esošajā nolaižamajā izvēlnē: <strong>Satur</strong> un <strong>Regex</strong> filtrē jau uztverto tekstu, savukārt <strong>CSS atlasītājs</strong> un <strong>XPath</strong> tiek palaists pret tiešsaistes lapu, lai tie varētu sasniegt jebko DOM. XPath pieņem arī izteiksmes, kas atgriež vērtību, nevis elementus, piemēram, <code>count(//a)</code> vai <code>//@href</code>. Neatkarīgi no lapas teiktā par bojātu vaicājumu tiek parādīts blakus lodziņam. <strong>Elements</strong> sašaurina rezultātu līdz vienam tagam ar katra lapā atrastā taga skaitu. Notīrot vaicājuma lodziņu (vai nospiežot <strong>Notīrīt</strong>), jūs atgriežaties sadaļā <em>Visi elementi</em> un tiek atkārtoti uzņemta lapa — jums nekad nav jāatiestata nolaižamā izvēlne ar roku.</p><p><strong>Lasīšanas laikā</strong> tiek paslēptas atzīmes, izvēles rūtiņas un atrašanās vietas drupatas, tādējādi straume tiek lasīta kā dokuments. Tabulās tiek glabāta ierobežota momentuzņēmumu vēsture, tāpēc dinamiskās (SPA) tabulas nekad netiek zaudētas. Nospiediet tabulā <strong>Rādīt visas rindas</strong>, lai sapludinātu katru momentuzņēmumu vienā skatā, kurā ir noņemts dublikāts — tieši tas ir eksportēšanas saturs. Eksportējiet kā <strong>TXT</strong> (lasāma lapa), <strong>MD</strong> (Markdown, iekļautas tabulas) vai tabulas kā CSV, HTML vai īstu vairāku lapu <strong>XLSX</strong> darbgrāmatu. Atzīmētie vienumi ir prioritāri; pretējā gadījumā tiek eksportēts viss, kas pašlaik redzams.</p>"
+    "message": "<p>Kategorija <strong>Teksts</strong> ir dzīva, viegli lasāma lapas kopija: virsraksti, rindkopas, saraksti un saites lapas secībā, kas tiek atjaunināti, kamēr ieslēgts <strong>Tiešraidē</strong>. Novietojiet rādītāju virs rindas, lai to kopētu, vai visam redzamajam izmantojiet <strong>Kopēt tekstu</strong>, <strong>Markdown</strong> un <strong>TXT</strong>.</p><p>Sadaļā <strong>Tabulas</strong> katra lapas tabula ir kartīte ar priekšskatījumu un savām pogām <strong>Excel</strong>, <strong>CSV</strong> un <strong>Kopēt</strong>; <strong>Visas tabulas uz Excel</strong> saliek tās vienā darbgrāmatā, katru savā lapā. Mainīgās tabulas saglabā momentuzņēmumu vēsturi, un <strong>Rādīt visas rindas</strong> apvieno tos vienā tabulā bez dublikātiem – tieši to, ko satur eksports.</p><p>Lodziņi pa kreisi sakārto lapu pēc elementa veida – viss lapas teksts, katrs virsrakstu līmenis, rindkopas, saites, saraksta vienumi, pogas, kods un cits – katram ar skaitu un pirmo rindu; izvēlieties vienu, lai redzētu, kopētu vai eksportētu tikai to. Meklēšanas lodziņš filtrē rakstīšanas laikā, un blakus esošā izvēlne pārvērš to par regulāro izteiksmi, <strong>CSS atlasītāju</strong> vai <strong>XPath</strong> izteiksmi (arī vērtību atgriezošām izteiksmēm, piemēram, <code>count(//a)</code> vai <code>//@href</code>), kas tiek izpildīta dzīvajā lapā; lodziņš <strong>Pielāgots vaicājums</strong> dara to pašu. Tas, ko lapa ziņo par kļūdainu vaicājumu, tiek parādīts lodziņā.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML un citi parakstu faili, tostarp <code>&lt;track&gt;</code> avoti, nonāk savā cilnē <strong>Paraksti</strong>, nevis tiek sajaukti ar dokumentiem."
@@ -1270,7 +1019,7 @@
     "message": "Krāsa nokopēta starpliktuvē"
   },
   "toastProgressCapturing": {
-    "message": "Notiek visas lapas tveršana... $percent$%",
+    "message": "Notiek visas lapas tveršana… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Notiek attēla savienošana..."
+    "message": "Notiek attēla savienošana…"
   },
   "modalExportTitle": {
     "message": "Visas lapas ekrānuzņēmums ir gatavs"
@@ -1302,7 +1051,7 @@
     "message": "Kopēt starpliktuvē"
   },
   "btnExportGenerating": {
-    "message": "Notiek izveide..."
+    "message": "Notiek izveide…"
   },
   "toastPdfGenerated": {
     "message": "PDF dokuments saglabāts."
@@ -1317,13 +1066,10 @@
     "message": "Priekšskatījums:"
   },
   "toastRecGeneratingGif": {
-    "message": "Notiek GIF izveide, lūdzu, uzgaidiet..."
+    "message": "Notiek GIF izveide, lūdzu, uzgaidiet…"
   },
   "settingGifResolution": {
     "message": "Noklusējuma GIF izšķirtspēja"
-  },
-  "optGifOriginal": {
-    "message": "Oriģināls (1:1 sākotnējā izšķirtspēja — pilna 3K/4K, bez samazināšanas)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (maks. 1920 px)"
@@ -1341,10 +1087,10 @@
     "message": "Ekrāna ierakstīšana (video un GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Ierakstiet jebkuru ekrāna apgabalu kā MP4, WebM vai animētu GIF. GIF ierakstiem ir 1:1 sākotnējā izšķirtspēja, 1080p, 720p un 480p profili ar reāllaika aptuveno failu izmēru. Maksimālais GIF ierakstīšanas ilgums ir 1 minūte (60 s), lai nodrošinātu optimālu pārlūkprogrammas veiktspēju."
+    "message": "Ierakstiet jebkuru ekrāna apgabalu kā MP4, WebM vai animētu GIF. GIF ierakstiem ir 1080p, 720p un 480p profili ar tiešu izmēra novērtējumu. GIF ieraksts var ilgt līdz 1 minūtei (60 s)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Sasniegts GIF maksimālais ilgums — 1 minūte (60 s). Notiek GIF izveide..."
+    "message": "Sasniegts GIF maksimālais ilgums — 1 minūte (60 s). Notiek GIF izveide…"
   },
   "labelGifMaxDuration": {
     "message": "Maks. 1 min. (60 s)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Prezentācija (1 kadrs sekundē, minimāls izmērs)"
-  },
-  "popupRightClickHint": {
-    "message": "Ar peles labo pogu noklikšķiniet jebkurā tīmekļa lapas vietā, lai piekļūtu ekrāna ierakstīšanai (video/GIF) un krāsu atlasītājam."
   },
   "toastElementZappedAd": {
     "message": "Reklāma / iframe paslēpts šai sesijai.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF izšķirtspēja: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF izšķirtspēja: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Aktīvā cilne nav atrasta.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Noklikšķiniet šeit un pēc tam izvēlieties jebkuru krāsu lapā"
+  },
+  "welcomeTitle": {
+    "message": "Source Download ir gatavs"
+  },
+  "welcomePrivacy": {
+    "message": "Viss darbojas jūsu datorā. Bez konta, bez izsekošanas, mums nekas netiek sūtīts."
+  },
+  "welcomeHelp": {
+    "message": "Kaut kas nedarbojas? Pastāstiet mums GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Kaut kas nav kārtībā?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF sasniedza 200 MB. Tiek saglabāts ierakstītais…"
+  },
+  "btnPopupFullPage": {
+    "message": "Visas lapas ekrānuzņēmums"
+  },
+  "toastRecWrongTab": {
+    "message": "Lai ierakstītu šīs lapas apgabalu, kopīgošanas logā izvēlieties “Šī cilne”."
+  },
+  "popupCaptureTitle": {
+    "message": "Uzņemt šo lapu"
+  },
+  "popupTileOffline": {
+    "message": "Saglabāt lapu bezsaistei"
+  },
+  "popupTileGuide": {
+    "message": "Kā tas darbojas"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Faili, attēli un tabulas"
+  },
+  "popupDevtoolsHint": {
+    "message": "Atveriet DevTools un izvēlieties cilni Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome šajā lapā neatļauj paplašinājumus. Atveriet tīmekļa vietni, lai izmantotu rīkus."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Ar peles labo pogu jebkurā lapā"
+  },
+  "welcomeCardMenuText": {
+    "message": "Visas lapas vai apgabala ekrānuzņēmumi, apgabala ierakstīšana, krāsu atlasītājs un bezsaistes kopija – tieši tur, kur esat."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Vai izmantojiet rīkjoslas pogu"
+  },
+  "welcomeCardPopupText": {
+    "message": "Noklikšķiniet uz puzles ikonas Chrome rīkjoslā un piespraudiet Source Download – rīki vienmēr būs viena klikšķa attālumā."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Nospiediet F12, lai redzētu visu lapā"
+  },
+  "welcomeCardPanelText": {
+    "message": "DevTools izvēlieties cilni Source Download. Tur ir katrs lapas ielādētais attēls, video, fonts un fails – priekšskatiet, filtrējiet un saglabājiet kā ZIP. Lapas tabulas var eksportēt uz Excel."
+  },
+  "welcomeLead": {
+    "message": "Trīs veidi, kā no jebkuras tīmekļa lapas paņemt to, kas vajadzīgs."
+  },
+  "btnDownloadOptions": {
+    "message": "Vairāk lejupielādes iespēju"
+  },
+  "btnMore": {
+    "message": "Vairāk darbību"
+  },
+  "btnFilters": {
+    "message": "Filtri"
+  },
+  "tabsShowEmpty": {
+    "message": "Rādīt tukšās"
+  },
+  "tabsHideEmpty": {
+    "message": "Slēpt tukšās"
+  },
+  "textSegText": {
+    "message": "Teksts"
+  },
+  "textSegTables": {
+    "message": "Tabulas"
+  },
+  "textLive": {
+    "message": "Tiešraidē"
+  },
+  "textPaused": {
+    "message": "Pauzēts"
+  },
+  "textLivePauseTitle": {
+    "message": "Tiešraidē: lapa tiek nolasīta no jauna pēc katras izmaiņas. Noklikšķiniet, lai pauzētu."
+  },
+  "textLiveResumeTitle": {
+    "message": "Pauzēts. Noklikšķiniet, lai atkal sekotu lapai tiešraidē."
+  },
+  "textSearchText": {
+    "message": "Meklēt lapas tekstā"
+  },
+  "textExportAllXlsx": {
+    "message": "Visas tabulas uz Excel"
+  },
+  "textNoTables": {
+    "message": "Šajā lapā vēl nav tabulu. Tās parādīsies šeit, tiklīdz lapa kādu parādīs."
+  },
+  "textTable": {
+    "message": "Tabula"
+  },
+  "textCopy": {
+    "message": "Kopēt"
+  },
+  "textShowLess": {
+    "message": "Rādīt mazāk"
+  },
+  "areaHintSelect": {
+    "message": "Velciet, lai atlasītu apgabalu"
+  },
+  "areaHintCopy": {
+    "message": "kopēt"
+  },
+  "areaHintSave": {
+    "message": "saglabāt"
+  },
+  "areaHintExit": {
+    "message": "iziet"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Kopēt automātiski"
+  },
+  "areaAutoCopyOn": {
+    "message": "Automātiskā kopēšana ir ieslēgta"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Atlaidiet atlasi, un tā jau ir starpliktuvē."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Izslēgt"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Nokopēts starpliktuvē (automātiskā kopēšana ir ieslēgta)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Šī lapa neatļauj kopēt starpliktuvē. Tā vietā izmantojiet Lejupielādēt."
+  },
+  "textKindAll": {
+    "message": "Viss lapas teksts"
+  },
+  "textKindHeading": {
+    "message": "Virsraksts"
+  },
+  "textKindP": {
+    "message": "Rindkopas"
+  },
+  "textKindA": {
+    "message": "Saites"
+  },
+  "textKindLi": {
+    "message": "Saraksta vienumi"
+  },
+  "textKindButton": {
+    "message": "Pogas"
+  },
+  "textKindLabel": {
+    "message": "Etiķetes un paraksti"
+  },
+  "textKindSpan": {
+    "message": "Rindas teksts"
+  },
+  "textKindDiv": {
+    "message": "Citi bloki"
+  },
+  "textKindCell": {
+    "message": "Tabulu šūnas"
+  },
+  "textKindCode": {
+    "message": "Kods"
+  },
+  "textKindQuote": {
+    "message": "Citāti"
+  },
+  "textCustomQuery": {
+    "message": "Pielāgots vaicājums"
+  },
+  "textCustomQueryHint": {
+    "message": "CSS atlasītājs vai XPath dzīvajā lapā"
+  },
+  "menuSettings": {
+    "message": "Iestatījumi"
+  },
+  "settingsSave": {
+    "message": "Saglabāt"
+  },
+  "settingsReset": {
+    "message": "Atjaunot noklusējumu"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Automātiski kopēt apgabala ekrānuzņēmumus"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Kad atlaižat atlasi, attēls nonāk tieši starpliktuvē. Kamēr tas ir ieslēgts, padoms lapas augšdaļā par to atgādina katru reizi."
   }
 }

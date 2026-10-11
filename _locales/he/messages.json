@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: הורדת תמונות וקבצים"
   },
   "appDesc": {
-    "message": "בדוק, דפדוף והורד כל נכס אינטרנט בצורה חלקה כ-ZIP. צילומי מסך של עמוד מלא, לכידת שולחן חי ושולחן עבודה למפתחים."
+    "message": "שמרו את התמונות, הסמלים והקבצים של דף אינטרנט אחד-אחד או כקובץ ZIP. כולל צילום של הדף כולו והקלטת אזור במסך."
   },
   "actionTitle": {
     "message": "Source Download — פתיחת החלונית ומעקב אחר משאבים"
   },
   "contextMenuZap": {
-    "message": "הסתרת רכיב זה (Zap)"
+    "message": "הסתרת רכיב זה"
   },
   "contextMenuUndoZap": {
     "message": "שחזור הרכיב המוסתר האחרון"
@@ -90,7 +90,7 @@
     "message": "הורדת הנבחרים"
   },
   "btnDownloadView": {
-    "message": "הורדת התצוגה הנוכחית"
+    "message": "הורדת הפריטים המוצגים"
   },
   "btnDownloadAll": {
     "message": "הורדת הכול"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "הורדת המסוננים"
   },
-  "btnTheme": {
-    "message": "החלפת ערכת נושא"
-  },
   "btnGuide": {
     "message": "מדריך למשתמש"
-  },
-  "btnCaptureFullPage": {
-    "message": "צילום מסך של עמוד מלא"
-  },
-  "btnOfflineArchive": {
-    "message": "שמירת HTML בקובץ יחיד"
   },
   "filterMinKb": {
     "message": "מינימום KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "סינון טקסט הדף או שאילתה על ה-DOM החי…"
-  },
-  "textAllElements": {
-    "message": "כל האלמנטים"
-  },
-  "textLiveOn": {
-    "message": "חי: פעיל"
-  },
-  "textLiveOff": {
-    "message": "חי: כבוי"
-  },
   "textScanNow": {
     "message": "סרוק עכשיו"
-  },
-  "textReading": {
-    "message": "קריאה"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "בחר משאב כדי לבדוק את פרטיו"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "טקסט חלופי"
   },
-  "ratingPrompt": {
-    "message": "נהנים מ-Source Download? תמכו בחזון הקוד הפתוח שלנו בכתיבת חוות דעת בחנות האינטרנט של Chrome או בכוכב ב-GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ השאירו חוות דעת"
-  },
-  "ratingStar": {
-    "message": "★ כוכב ב-GitHub"
-  },
   "ratingDismiss": {
     "message": "סגירה"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "ארכיון HTML בקובץ יחיד נשמר."
-  },
-  "brandSignature": {
-    "message": "נוצר על ידי Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "תמונות ו-SVG"
-  },
-  "tabMedia": {
-    "message": "מדיה ואודיו"
-  },
-  "tabFonts": {
-    "message": "גופנים"
-  },
-  "tabTextScraper": {
-    "message": "טקסט וטבלאות"
-  },
-  "heroScreenshotTitle": {
-    "message": "צילום מסך של עמוד מלא"
-  },
-  "heroScreenshotDesc": {
-    "message": "חיבור חלק של כמה אזורי תצוגה, עם הסתרת כותרות דביקות"
-  },
-  "heroArchiveTitle": {
-    "message": "ארכיון HTML בקובץ יחיד"
-  },
-  "heroArchiveDesc": {
-    "message": "משלב CSS ותמונות Base64 בתוך הקובץ, תמונת מצב בטוחה לשימוש לא מקוון"
-  },
-  "copyDataUri": {
-    "message": "העתק Data-URI"
-  },
-  "copyUrl": {
-    "message": "העתק כתובת URL"
   },
   "downloadSingle": {
     "message": "הורד"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "משאבים"
   },
-  "statusFiltered": {
-    "message": "מסונן"
-  },
   "statusSelected": {
     "message": "נבחר"
   },
   "statusDupes": {
     "message": "כפילויות מוסתרות"
-  },
-  "statusSize": {
-    "message": "גודל"
   },
   "langAuto": {
     "message": "אוטומטי (דפדפן)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "בחר שפה"
   },
-  "textPillAll": {
-    "message": "כל התוכן"
-  },
-  "textPillText": {
-    "message": "📄 טקסט ומאמרים"
-  },
-  "textPillTables": {
-    "message": "📊 טבלאות בלבד"
-  },
   "textSelectAll": {
     "message": "בחר הכל"
   },
   "textDeselectAll": {
     "message": "בטל את הבחירה בהכל"
-  },
-  "textClearSelection": {
-    "message": "נקה"
   },
   "toastRefreshComplete": {
     "message": "סריקת העמוד הושלמה: $count$ משאבים חדשים",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ טבלאות · $rows$ שורות ייחודיות",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ נבחרו — הייצוא ישתמש בהם בלבד",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "טבלה — $count$ שורות על המסך",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "טבלה — כל $count$ השורות הייחודיות",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ תמונות מצב",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "מציג את כל השורות"
   },
-  "textTableHistory": {
-    "message": "היסטוריה ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "הסתר היסטוריה"
-  },
   "textTableNoRows": {
     "message": "עדיין לא נלכדו שורות."
   },
   "textBtnCopy": {
     "message": "העתק טקסט"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 העתק"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ תמונות כפולות",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "ייצוא"
   },
   "inspectorLoadingSvg": {
     "message": "טוען SVG…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "תצוגה מקדימה של גופן"
   },
-  "inspectorBeautify": {
-    "message": "עיצוב קוד"
-  },
-  "inspectorOriginal": {
-    "message": "מקורי"
-  },
-  "inspectorHeaders": {
-    "message": "כותרות HTTP"
-  },
-  "inspectorResponse": {
-    "message": "תגובה"
-  },
-  "inspectorRequest": {
-    "message": "בקשה"
-  },
   "inspectorQueryParams": {
     "message": "פרמטרי שאילתה"
   },
   "inspectorRequestBody": {
     "message": "גוף הבקשה"
   },
-  "textHintHtml": {
-    "message": "עותק חי וקריא של העמוד. כל רכיב שמחזיק טקסט נקלט בסדר DOM ונשמר כאן כשהדף משתנה. בצע שאילתה באמצעות טקסט רגיל, ביטוי רגולרי, <strong>בורר CSS</strong> או ביטוי <strong>XPath</strong>, ולאחר מכן ייצא את מה שהתאים. עיין ב<a href=\"#\" id=\"text-hint-guide\">מדריך</a> לפרטים."
-  },
-  "textHeadings": {
-    "message": "כותרות"
-  },
-  "textAllLevels": {
-    "message": "כל הרמות"
-  },
   "textMatches": {
     "message": "התאמות"
   },
   "textMatch": {
     "message": "התאמה"
-  },
-  "textReadingOn": {
-    "message": "קריאה: פעילה"
   },
   "toastDownloadStarted": {
     "message": "ההורדה החלה: $name$",
@@ -756,7 +566,7 @@
     "message": "לא ניתן היה לאחזר את המשאב הזה (CORS או סוג לא נתמך)."
   },
   "ratingBannerText": {
-    "message": "נהנים מ-Source Download? תמכו בחזון הקוד הפתוח שלנו בכתיבת חוות דעת בחנות האינטרנט של Chrome או בכוכב ב-GitHub!"
+    "message": "שמחים שזה עבד! אם Source Download חוסך לכם זמן, ביקורת קצרה עוזרת לאחרים למצוא אותו."
   },
   "ratingBannerReview": {
     "message": "★ חוות דעת"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "כיצד מתפרשת תיבת השאילתה"
   },
-  "textKindTitle": {
-    "message": "הגבלה לסוג אלמנט אחד"
-  },
-  "textHeadingLevelTitle": {
-    "message": "רמת כותרת"
-  },
   "textPlaceholderRegex": {
     "message": "^Price:\\s*\\d+ — ביטוי רגולרי של JavaScript"
   },
@@ -866,27 +670,6 @@
   "guideSearchPlaceholder": {
     "message": "חפש במדריך…"
   },
-  "popupIntro": {
-    "message": "הקטגוריות הנספרות על ידי <strong>תג סרגל הכלים</strong>. כבו קטגוריה כדי להפסיק לספור אותה — התג משקף מיד רק את מה שאתם עוקבים אחריו."
-  },
-  "popupHelpTitle": {
-    "message": "כיצד להשתמש בחלונית המלאה"
-  },
-  "popupStep1": {
-    "message": "פתח את DevTools עבור הדף שברצונך לבדוק <div class=\"hint\"><kbd>F12</kbd> או <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "לחצו על הכרטיסייה <strong>Source Download</strong> בסרגל הכלים של DevTools"
-  },
-  "popupStep3": {
-    "message": "עיינו במשאבים, בדקו אותם והורידו אותם — בנפרד או בבת אחת כקובץ ZIP."
-  },
-  "popupNote": {
-    "message": "הערה: Chrome אינו מאפשר להרחבות לפתוח את DevTools באופן אוטומטי, ולכן החלונית המלאה זמינה דרך סרגל הכלים של DevTools."
-  },
-  "popupTrackAll": {
-    "message": "עקוב אחר כל הקטגוריות"
-  },
   "popupLanguage": {
     "message": "שפה"
   },
@@ -894,13 +677,13 @@
     "message": "תגובה בינארית - הורד כדי לצפות בה"
   },
   "inspectorLoadingResponse": {
-    "message": "טוען תגובה..."
+    "message": "טוען תגובה…"
   },
   "inspectorNoResponsePreview": {
     "message": "אין תצוגה מקדימה של תגובה - לא ניתן היה לאחזר את התוכן."
   },
   "inspectorLoadingContent": {
-    "message": "טוען תוכן..."
+    "message": "טוען תוכן…"
   },
   "inspectorNoPreview": {
     "message": "אין תצוגה מקדימה זמינה - לא ניתן היה לאחזר את התוכן."
@@ -924,7 +707,7 @@
     "message": "מעצב…"
   },
   "findInContentPlaceholder": {
-    "message": "מצא בתוכן..."
+    "message": "מצא בתוכן…"
   },
   "findPreviousMatch": {
     "message": "ההתאמה הקודמת"
@@ -966,20 +749,6 @@
   },
   "btnMergeHls": {
     "message": "מיזוג קטעים והורדה"
-  },
-  "toastHlsMerged": {
-    "message": "מוזגו $COUNT$ קטעים לתוך $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "גודל לא ידוע"
   },
   "progressFetching": {
     "message": "מאחזר $DONE$/$TOTAL$ · ZIP $EST$…",
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "חיפוש בביטוי רגולרי פעיל — עטפו את השאילתה ב-/pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "כלול בייצוא"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "שלבו את כל תמונות המצב לטבלה אחת ללא כפילויות — זה מה שמיוצא"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "עיון בתמונות המצב הקודמות של הטבלה הזו"
-  },
   "tableDownloadCsvTitle": {
     "message": "הורד טבלה זו כ-CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "תמונת מצב $INDEX$ — $TIME$ ($COUNT$ שורות)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "החלפת הבחירה להורדה מרוכזת"
@@ -1150,7 +899,7 @@
     "message": "לחצו על הכרטיסייה <strong>Source Download</strong> בסרגל הכלים של DevTools (הקישו <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, ואז בחרו בכרטיסייה בסרגל הכלים של DevTools). Chrome אינו מאפשר להרחבות לפתוח את DevTools באופן אוטומטי, ולכן החלונית נמצאת שם. החלון הקופץ של סמל סרגל הכלים מאפשר לבחור אילו קטגוריות יוזנו למונה התג שעל הסמל. הכפתור שמש/ירח בסרגל הכלים של החלונית נועל ערכת נושא בהירה או כהה, ללא תלות ב-Chrome; הבחירה נשמרת."
   },
   "guideSecCategoriesContent": {
-    "message": "הכרטיסיות האנכיות מימין מקבצות כל משאב שנלכד ל-17 קטגוריות ייעודיות לפי סוג: תמונות, סרטונים, אודיו, כיתובים, מסמכים, גופנים, מפות מקור, WASM, SVG, ממשקי API, קובצי Cookie, אחסון ועוד. כל כרטיסייה מציגה ספירה חיה. מוצגת קטגוריה אחת בכל פעם; החלפה מאפסת את כל המסננים, כך שמה שאתם רואים תמיד תואם לכרטיסייה."
+    "message": "הכרטיסיות האנכיות משמאל ממיינות כל משאב שנלכד ל-15 קטגוריות, כמו תמונות, סרטונים, גופנים, מפות מקור וקריאות API, ובנוסף יש כרטיסייה של טקסט וטבלאות. כל כרטיסייה מציגה ספירה חיה. מוצגת קטגוריה אחת בכל פעם; החלפה מאפסת את כל המסננים, כך שמה שאתם רואים תמיד תואם לכרטיסייה."
   },
   "guideSecSearchFiltersContent": {
     "message": "סרגל החיפוש מסנן לפי שם, כתובת URL, סוג, טקסט חלופי או כותרת. הקיפו את השאילתה ב-<kbd>/…/</kbd> כדי להשתמש בביטוי רגולרי, למשל <code>/\\.(png|jpg)$/</code>. מתחת לסרגל הכלים, סרגל המסננים משתנה לפי קטגוריה: טווחי גודל ומידות למדיה, שיטת HTTP וסוג בקשה עבור ממשקי API, וכן מיון וכיוון."
@@ -1162,13 +911,13 @@
     "message": "לחצו על משאב כלשהו כדי לפתוח אותו בחלונית הבדיקה מימין. כל קובץ שנפתח הופך לכרטיסייה, כך שאפשר להשוות כמה משאבים זה לצד זה — החדש ביותר נפתח משמאל. קיימים מציגים ייעודיים לתמונות, וידאו, אודיו, גופנים, SVG וטקסט/קוד (עם מתג עיצוב קוד). עבור ממשקי API מוצגת תצוגה מפוצלת: התגובה בצד שמאל, ופרטי הבקשה (שיטה, סטטוס, כותרות, פרמטרי שאילתה וגוף) בצד ימין."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>הורדת התצוגה הנוכחית</strong> שומרת את המשאבים הגלויים כעת (הקטגוריה הפעילה + חיפוש + מסננים) כקובץ ZIP; כשמסננים פעילים, שם הכפתור משתנה ל-<em>הורדת המסוננים (N)</em>. החזיקו את העכבר מעל כל כפתור הורדה כדי לראות גודל משוער של הארכיון לפני הלחיצה. <strong>הורדת הנבחרים</strong> מורידה רק את הפריטים המסומנים. <strong>הורדת הכול</strong> אוספת כל משאב שהתגלה לקובץ ZIP במבנה תיקיות. הורדות שנכשלו מנוסות מחדש אוטומטית, וניתן לנסות אותן שוב מתפריט ההקשר. <strong>ייצוא</strong> כותב את הרשימה הגלויה כ-JSON או CSV, או מייצא את יומן הרשת של Chrome כקובץ HAR."
+    "message": "<strong>הורדת הפריטים המוצגים</strong> שומרת את המשאבים הגלויים כעת (הקטגוריה הפעילה + חיפוש + מסננים) כקובץ ZIP; כשמסננים פעילים, שם הכפתור משתנה ל-<em>הורדת המסוננים (N)</em>. החזיקו את העכבר מעל כל כפתור הורדה כדי לראות גודל משוער של הארכיון לפני הלחיצה. <strong>הורדת הנבחרים</strong> מורידה רק את הפריטים המסומנים. <strong>הורדת הכול</strong> אוספת כל משאב שהתגלה לקובץ ZIP במבנה תיקיות. הורדות שנכשלו מסומנות, ואפשר לנסות אותן שוב בלחיצה אחת מההתראה, מסמל האזהרה של הפריט או מתפריט ההקשר. <strong>ייצוא</strong> כותב את הרשימה הגלויה כ-JSON או CSV, או מייצא את יומן הרשת של Chrome כקובץ HAR."
   },
   "guideSecLightboxContent": {
     "message": "כפתור הזום פותח את המדיה ב-Lightbox בגודל מלא, שבו אפשר להזיז בגרירה, ולשנות זום בגלגל העכבר, בכפתורים שעל המסך או במקלדת (<kbd>+</kbd>/<kbd>-</kbd> לזום, <kbd>0</kbd> לאיפוס, <kbd>Esc</kbd> לסגירה)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>קטגוריית <strong>טקסט</strong> היא עותק חי וקריא של הדף. היא לוכדת כל אלמנט שמכיל טקסט — כותרות, פסקאות, פריטי רשימה, כפתורים, <code>div</code>/<code>span</code> ועוד — בסדר DOM, וממשיכה לסרוק כל עוד <strong>חי</strong> פעיל.</p><p>תיבת <strong>השאילתה</strong> פועלת בארבע דרכים, הנבחרות מהתפריט הנפתח שלצידה: <strong>מכיל</strong> ו<strong>ביטוי רגולרי</strong> מסננים את הטקסט שכבר נלכד, ואילו <strong>בורר CSS</strong> ו-<strong>XPath</strong> מופעלים על הדף החי ולכן יכולים להגיע לכל דבר ב-DOM. XPath מקבל גם ביטויים שמחזירים ערך במקום אלמנטים, כגון <code>count(//a)</code> או <code>//@href</code>. כל מה שהדף מדווח על שאילתה שגויה מוצג ליד התיבה. <strong>אלמנט</strong> מצמצם את התוצאה לתג בודד, עם מספר ההופעות של כל תג בדף. ניקוי תיבת השאילתה (או לחיצה על <strong>נקה</strong>) מחזיר אתכם אל <em>כל האלמנטים</em> ולוכד את הדף מחדש — אין צורך לאפס את התפריט הנפתח ידנית.</p><p>מצב <strong>קריאה</strong> מסתיר תגים, תיבות סימון ופירורי מיקום, כך שהתוכן נקרא כמו מסמך. הטבלאות שומרות היסטוריה מוגבלת של תמונות מצב, כך שטבלאות דינמיות (SPA) לא הולכות לאיבוד. לחצו על <strong>הצג את כל השורות</strong> בטבלה כדי למזג את כל תמונות המצב לתצוגה אחת ללא כפילויות — זה בדיוק מה שהייצוא כולל. ייצאו כ-<strong>TXT</strong> (הדף הקריא), כ-<strong>MD</strong> (Markdown, כולל טבלאות), או טבלאות כ-CSV, HTML או כחוברת עבודה אמיתית מרובת גיליונות <strong>XLSX</strong>. פריטים מסומנים מקבלים עדיפות; אחרת מיוצא כל מה שגלוי כעת.</p>"
+    "message": "<p>הקטגוריה <strong>טקסט</strong> היא עותק חי וקריא של הדף: כותרות, פסקאות, רשימות וקישורים לפי סדר הדף, שמתעדכנים כל עוד <strong>חי</strong> מופעל. העבירו את הסמן מעל שורה כדי להעתיק אותה, או השתמשו ב-<strong>העתק טקסט</strong>, <strong>Markdown</strong> ו-<strong>TXT</strong> לכל מה שמוצג.</p><p>ב-<strong>טבלאות</strong> כל טבלה בדף מופיעה ככרטיס עם תצוגה מקדימה ולחצנים משלה: <strong>Excel</strong>, <strong>CSV</strong> ו-<strong>העתקה</strong>; <strong>כל הטבלאות ל-Excel</strong> מכניס את כולן לחוברת אחת, גיליון לכל טבלה. טבלאות שמשתנות שומרות היסטוריה של תמונות מצב, ו-<strong>הצג את כל השורות</strong> ממזג אותן לטבלה אחת ללא כפילויות — בדיוק מה שהייצוא מכיל.</p><p>התיבות בצד ממיינות את הדף לפי סוג רכיב — כל טקסט הדף, כל רמת כותרת, פסקאות, קישורים, פריטי רשימה, לחצנים, קוד ועוד — כל אחת עם ספירה ושורה ראשונה; בחרו אחת כדי לראות, להעתיק או לייצא רק אותה. תיבת החיפוש מסננת תוך כדי הקלדה, והתפריט שלידה הופך אותה לביטוי רגולרי, ל-<strong>בורר CSS</strong> או לביטוי <strong>XPath</strong> (גם ביטויים שמחזירים ערך, כמו <code>count(//a)</code> או <code>//@href</code>) שרץ על הדף החי; התיבה <strong>שאילתה מותאמת</strong> עושה אותו דבר. מה שהדף אומר על שאילתה שגויה מוצג בתוך התיבה.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "קובצי WebVTT, SRT, TTML וקובצי כתוביות אחרים — כולל מקורות <code>&lt;track&gt;</code> — מוצגים בכרטיסייה <strong>כתוביות</strong> משלהם, ולא מעורבבים עם מסמכים."
@@ -1270,7 +1019,7 @@
     "message": "הצבע הועתק ללוח"
   },
   "toastProgressCapturing": {
-    "message": "מצלם את כל הדף... $percent$%",
+    "message": "מצלם את כל הדף… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "מחבר את התמונה..."
+    "message": "מחבר את התמונה…"
   },
   "modalExportTitle": {
     "message": "צילום המסך של הדף המלא מוכן"
@@ -1302,7 +1051,7 @@
     "message": "העתקה ללוח"
   },
   "btnExportGenerating": {
-    "message": "יוצר..."
+    "message": "יוצר…"
   },
   "toastPdfGenerated": {
     "message": "מסמך ה-PDF נשמר."
@@ -1317,13 +1066,10 @@
     "message": "תצוגה מקדימה:"
   },
   "toastRecGeneratingGif": {
-    "message": "יוצר GIF, אנא המתן..."
+    "message": "יוצר GIF, אנא המתן…"
   },
   "settingGifResolution": {
     "message": "רזולוציית GIF ברירת מחדל"
-  },
-  "optGifOriginal": {
-    "message": "מקורי (1:1 ברזולוציה מקורית — 3K/4K מלא, ללא הקטנה)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (עד 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "הקלטת מסך (וידאו ו-GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "הקליטו כל אזור במסך כ-MP4, WebM או GIF מונפש. להקלטות GIF יש פרופילים ברזולוציה מקורית 1:1, 1080p, 720p ו-480p, עם גודלי קבצים משוערים בזמן אמת. משך ההקלטה המרבי של GIF הוא דקה אחת (60 שניות) לביצועי דפדפן מיטביים."
+    "message": "הקליטו כל אזור במסך כ-MP4, ‏WebM או GIF מונפש. הקלטות GIF מציעות פרופילים של 1080p, ‏720p ו-480p עם הערכת גודל חיה. הקלטת GIF יכולה להימשך עד דקה אחת (60 שניות)."
   },
   "msgGifMaxDurationReached": {
-    "message": "הגעת למשך המרבי של GIF: דקה (60 שניות). יוצר GIF..."
+    "message": "הגעת למשך המרבי של GIF: דקה (60 שניות). יוצר GIF…"
   },
   "labelGifMaxDuration": {
     "message": "עד דקה (60 שניות)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — מצגת (פריים אחד לשנייה, גודל מינימלי)"
-  },
-  "popupRightClickHint": {
-    "message": "לחצו לחיצה ימנית בכל מקום בדף האינטרנט להקלטת מסך (וידאו/GIF) ולבורר צבעים."
   },
   "toastElementZappedAd": {
     "message": "המודעה / ה-iframe הוסתרו למשך ההפעלה הנוכחית.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "רזולוציית GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "רזולוציית GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "לא נמצאה לשונית פעילה.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "לחצו כאן ואז בחרו צבע כלשהו בדף"
+  },
+  "welcomeTitle": {
+    "message": "Source Download מוכן"
+  },
+  "welcomePrivacy": {
+    "message": "הכול רץ במחשב שלכם. בלי חשבון, בלי מעקב, שום דבר לא נשלח אלינו."
+  },
+  "welcomeHelp": {
+    "message": "משהו לא עובד? ספרו לנו ב-GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "משהו לא תקין?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "קובץ ה-GIF הגיע ל-200 MB. שומר את מה שהוקלט…"
+  },
+  "btnPopupFullPage": {
+    "message": "צילום מסך של הדף כולו"
+  },
+  "toastRecWrongTab": {
+    "message": "כדי להקליט אזור בדף הזה, בחרו \"הכרטיסייה הזו\" בחלון השיתוף."
+  },
+  "popupCaptureTitle": {
+    "message": "לכידת הדף הזה"
+  },
+  "popupTileOffline": {
+    "message": "שמירת הדף לשימוש לא מקוון"
+  },
+  "popupTileGuide": {
+    "message": "איך זה עובד"
+  },
+  "popupDevtoolsTitle": {
+    "message": "קבצים, תמונות וטבלאות"
+  },
+  "popupDevtoolsHint": {
+    "message": "פתחו את כלי הפיתוח ובחרו בכרטיסייה Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome לא מאפשר תוספים בדף הזה. פתחו אתר כדי להשתמש בכלים."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "לחיצה ימנית בכל דף"
+  },
+  "welcomeCardMenuText": {
+    "message": "צילומי מסך של הדף כולו או של אזור, הקלטת אזור, בוחר צבעים ועותק לא מקוון — בדיוק איפה שאתם נמצאים."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "או השתמשו בלחצן בסרגל הכלים"
+  },
+  "welcomeCardPopupText": {
+    "message": "לחצו על סמל פיסת הפאזל בסרגל הכלים של Chrome והצמידו את Source Download, כך שהכלים יהיו תמיד במרחק לחיצה."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "לחצו F12 לכל מה שיש בדף"
+  },
+  "welcomeCardPanelText": {
+    "message": "בחרו בכרטיסייה Source Download בכלי הפיתוח. שם מופיעים כל תמונה, סרטון, גופן וקובץ שהדף טען — אפשר להציג, לסנן ולשמור כ-ZIP. טבלאות מהדף מיוצאות ל-Excel."
+  },
+  "welcomeLead": {
+    "message": "שלוש דרכים לקחת מכל דף אינטרנט את מה שאתם צריכים."
+  },
+  "btnDownloadOptions": {
+    "message": "אפשרויות הורדה נוספות"
+  },
+  "btnMore": {
+    "message": "פעולות נוספות"
+  },
+  "btnFilters": {
+    "message": "מסננים"
+  },
+  "tabsShowEmpty": {
+    "message": "הצגת ריקות"
+  },
+  "tabsHideEmpty": {
+    "message": "הסתרת ריקות"
+  },
+  "textSegText": {
+    "message": "טקסט"
+  },
+  "textSegTables": {
+    "message": "טבלאות"
+  },
+  "textLive": {
+    "message": "חי"
+  },
+  "textPaused": {
+    "message": "מושהה"
+  },
+  "textLivePauseTitle": {
+    "message": "חי: הדף נקרא מחדש בכל שינוי. לחצו כדי להשהות."
+  },
+  "textLiveResumeTitle": {
+    "message": "מושהה. לחצו כדי לעקוב שוב אחר הדף בזמן אמת."
+  },
+  "textSearchText": {
+    "message": "חיפוש בטקסט הדף"
+  },
+  "textExportAllXlsx": {
+    "message": "כל הטבלאות ל-Excel"
+  },
+  "textNoTables": {
+    "message": "עדיין אין טבלאות בדף הזה. הן יופיעו כאן ברגע שהדף יציג טבלה."
+  },
+  "textTable": {
+    "message": "טבלה"
+  },
+  "textCopy": {
+    "message": "העתקה"
+  },
+  "textShowLess": {
+    "message": "הצגת פחות"
+  },
+  "areaHintSelect": {
+    "message": "גררו כדי לבחור אזור"
+  },
+  "areaHintCopy": {
+    "message": "העתקה"
+  },
+  "areaHintSave": {
+    "message": "שמירה"
+  },
+  "areaHintExit": {
+    "message": "יציאה"
+  },
+  "areaAutoCopyLabel": {
+    "message": "העתקה אוטומטית"
+  },
+  "areaAutoCopyOn": {
+    "message": "העתקה אוטומטית מופעלת"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "שחררו את הבחירה והיא כבר בלוח."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "כיבוי"
+  },
+  "toastAreaAutoCopied": {
+    "message": "הועתק ללוח (העתקה אוטומטית מופעלת)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "הדף הזה לא מאפשר העתקה ללוח. השתמשו בהורדה במקום."
+  },
+  "textKindAll": {
+    "message": "כל טקסט הדף"
+  },
+  "textKindHeading": {
+    "message": "כותרת"
+  },
+  "textKindP": {
+    "message": "פסקאות"
+  },
+  "textKindA": {
+    "message": "קישורים"
+  },
+  "textKindLi": {
+    "message": "פריטי רשימה"
+  },
+  "textKindButton": {
+    "message": "לחצנים"
+  },
+  "textKindLabel": {
+    "message": "תוויות וכיתובים"
+  },
+  "textKindSpan": {
+    "message": "טקסט בשורה"
+  },
+  "textKindDiv": {
+    "message": "בלוקים אחרים"
+  },
+  "textKindCell": {
+    "message": "תאי טבלה"
+  },
+  "textKindCode": {
+    "message": "קוד"
+  },
+  "textKindQuote": {
+    "message": "ציטוטים"
+  },
+  "textCustomQuery": {
+    "message": "שאילתה מותאמת"
+  },
+  "textCustomQueryHint": {
+    "message": "בורר CSS או XPath על הדף החי"
+  },
+  "menuSettings": {
+    "message": "הגדרות"
+  },
+  "settingsSave": {
+    "message": "שמירה"
+  },
+  "settingsReset": {
+    "message": "שחזור ברירות המחדל"
+  },
+  "settingAreaAutoCopy": {
+    "message": "העתקה אוטומטית של צילומי אזור"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "כשמשחררים את הבחירה, התמונה עוברת ישירות ללוח. כל עוד ההגדרה מופעלת, הפס בראש הדף מציין זאת בכל פעם."
   }
 }

@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Source Download",
+    "message": "Source Download: Загрузчик изображений",
     "description": "Название расширения"
   },
   "appDesc": {
-    "message": "Инспектируйте и скачивайте любые веб-ресурсы в ZIP. Скриншот всей страницы, извлечение таблиц и инструменты разработчика.",
+    "message": "Сохраняйте изображения, иконки и файлы веб-страницы по одному или одним ZIP. Скриншот всей страницы и запись области экрана.",
     "description": "Описание расширения"
   },
   "actionTitle": {
@@ -106,17 +106,8 @@
   "btnDownloadFiltered": {
     "message": "Скачать отфильтрованное"
   },
-  "btnTheme": {
-    "message": "Сменить тему"
-  },
   "btnGuide": {
     "message": "Справка"
-  },
-  "btnCaptureFullPage": {
-    "message": "Снимок всей страницы"
-  },
-  "btnOfflineArchive": {
-    "message": "Сохранить одним HTML"
   },
   "filterMinKb": {
     "message": "Мин КБ"
@@ -160,38 +151,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Фильтр текста или запрос к живому DOM…"
-  },
-  "textAllElements": {
-    "message": "Все элементы"
-  },
-  "textLiveOn": {
-    "message": "Живой режим вкл"
-  },
-  "textLiveOff": {
-    "message": "Живой режим выкл"
-  },
   "textScanNow": {
     "message": "Сканировать"
-  },
-  "textReading": {
-    "message": "Чтение"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Выберите ресурс для просмотра подробностей"
@@ -235,15 +196,6 @@
   "metaAlt": {
     "message": "Alt-текст"
   },
-  "ratingPrompt": {
-    "message": "Нравится Source Download? Поддержите наш проект открытого исходного кода отзывом в Chrome Web Store или звездой на GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Оставить отзыв"
-  },
-  "ratingStar": {
-    "message": "★ Поставить звезду на GitHub"
-  },
   "ratingDismiss": {
     "message": "Позже"
   },
@@ -264,39 +216,6 @@
   },
   "toastArchiveCreated": {
     "message": "HTML-архив в одном файле сохранён."
-  },
-  "brandSignature": {
-    "message": "Crafted by Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Изображения и SVG"
-  },
-  "tabMedia": {
-    "message": "Медиа и аудио"
-  },
-  "tabFonts": {
-    "message": "Шрифты"
-  },
-  "tabTextScraper": {
-    "message": "Текст и таблицы"
-  },
-  "heroScreenshotTitle": {
-    "message": "Снимок всей страницы"
-  },
-  "heroScreenshotDesc": {
-    "message": "Бесшовное сшивание • Скрытие плавающих шапок"
-  },
-  "heroArchiveTitle": {
-    "message": "Один автономный HTML-файл"
-  },
-  "heroArchiveDesc": {
-    "message": "Встроенный CSS и Base64-графика • Просмотр офлайн"
-  },
-  "copyDataUri": {
-    "message": "Копировать Data-URI"
-  },
-  "copyUrl": {
-    "message": "Копировать URL"
   },
   "downloadSingle": {
     "message": "Скачать"
@@ -349,17 +268,11 @@
   "statusResources": {
     "message": "ресурсов"
   },
-  "statusFiltered": {
-    "message": "отфильтровано"
-  },
   "statusSelected": {
     "message": "выбрано"
   },
   "statusDupes": {
     "message": "дубликаты скрыты"
-  },
-  "statusSize": {
-    "message": "размер"
   },
   "langAuto": {
     "message": "Авто (браузер)"
@@ -367,23 +280,11 @@
   "langSelectorTitle": {
     "message": "Выбор языка"
   },
-  "textPillAll": {
-    "message": "Весь контент"
-  },
-  "textPillText": {
-    "message": "📄 Текст и статьи"
-  },
-  "textPillTables": {
-    "message": "📊 Только таблицы"
-  },
   "textSelectAll": {
     "message": "Выбрать всё"
   },
   "textDeselectAll": {
     "message": "Снять выделение"
-  },
-  "textClearSelection": {
-    "message": "Очистить"
   },
   "toastRefreshComplete": {
     "message": "Сканирование страницы завершено: $count$ новых ресурсов",
@@ -591,46 +492,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ таблиц · $rows$ уникальных строк",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ выбрано — в экспорт войдут только они",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Таблица — $count$ строк на экране",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Таблица — всего $count$ строк",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ снимков",
     "placeholders": {
@@ -661,32 +522,11 @@
   "textTableShowingAll": {
     "message": "Показаны все строки"
   },
-  "textTableHistory": {
-    "message": "История ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Скрыть историю"
-  },
   "textTableNoRows": {
     "message": "Строки пока не захвачены."
   },
   "textBtnCopy": {
     "message": "Копировать текст"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Копировать"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ дубликатов изображений",
@@ -696,9 +536,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Экспорт"
   },
   "inspectorLoadingSvg": {
     "message": "Загрузка SVG…"
@@ -712,44 +549,17 @@
   "inspectorFontSample": {
     "message": "Предпросмотр шрифта"
   },
-  "inspectorBeautify": {
-    "message": "Форматировать"
-  },
-  "inspectorOriginal": {
-    "message": "Оригинал"
-  },
-  "inspectorHeaders": {
-    "message": "Заголовки"
-  },
-  "inspectorResponse": {
-    "message": "Ответ"
-  },
-  "inspectorRequest": {
-    "message": "Запрос"
-  },
   "inspectorQueryParams": {
     "message": "Параметры запроса"
   },
   "inspectorRequestBody": {
     "message": "Тело запроса"
   },
-  "textHintHtml": {
-    "message": "Живая, читаемая копия страницы. Каждый элемент с текстом фиксируется по порядку DOM. Ищите простым текстом, регулярным выражением, <strong>CSS-селектором</strong> или <strong>XPath</strong>, затем экспортируйте совпадения. См. <a href=\"#\" id=\"text-hint-guide\">руководство</a>."
-  },
-  "textHeadings": {
-    "message": "Заголовки"
-  },
-  "textAllLevels": {
-    "message": "Все уровни"
-  },
   "textMatches": {
     "message": "совпадений"
   },
   "textMatch": {
     "message": "совпадение"
-  },
-  "textReadingOn": {
-    "message": "Чтение вкл"
   },
   "toastDownloadStarted": {
     "message": "Загрузка началась: $name$",
@@ -764,7 +574,7 @@
     "message": "Не удалось получить этот ресурс (CORS или неподдерживаемый тип)."
   },
   "ratingBannerText": {
-    "message": "Нравится Source Download? Поддержите наш open-source проект отзывом в Chrome Web Store или звездой на GitHub!"
+    "message": "Рады, что всё получилось! Если Source Download экономит ваше время, короткий отзыв поможет другим его найти."
   },
   "ratingBannerReview": {
     "message": "★ Оставить отзыв"
@@ -856,12 +666,6 @@
   "textModeTitle": {
     "message": "Как интерпретировать строку запроса"
   },
-  "textKindTitle": {
-    "message": "Ограничить одним типом элементов"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Уровень заголовка"
-  },
   "textPlaceholderRegex": {
     "message": "^Цена:\\s*\\d+  — Регулярное выражение JS"
   },
@@ -873,27 +677,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Поиск по руководству…"
-  },
-  "popupIntro": {
-    "message": "Категории, отображаемые на <strong>значке панели</strong>. Отключите ненужные, чтобы значок показывал только выбранное."
-  },
-  "popupHelpTitle": {
-    "message": "Как пользоваться полной панелью"
-  },
-  "popupStep1": {
-    "message": "Откройте DevTools на проверяемой странице <div class=\"hint\"><kbd>F12</kbd> или <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Нажмите на вкладку <strong>Source Download</strong> в панели DevTools"
-  },
-  "popupStep3": {
-    "message": "Просматривайте и скачивайте ресурсы — по отдельности или все сразу в одном ZIP-архиве."
-  },
-  "popupNote": {
-    "message": "Примечание: Chrome не позволяет расширениям программно открывать DevTools, поэтому полный набор инструментов доступен через панель DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Отслеживать все категории"
   },
   "popupLanguage": {
     "message": "Язык"
@@ -975,20 +758,6 @@
   "btnMergeHls": {
     "message": "Объединить сегменты и скачать"
   },
-  "toastHlsMerged": {
-    "message": "Объединено $COUNT$ сегментов в $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "размер неизвестен"
-  },
   "progressFetching": {
     "message": "Получение $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1039,31 +808,11 @@
   "searchRegexHint": {
     "message": "Поиск по регулярным выражениям активен — оберните запрос в /шаблон/i"
   },
-  "textIncludeInExports": {
-    "message": "Включить в экспорт"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Объединить все снимки в одну дедуплицированную таблицу — именно она экспортируется"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Просмотреть более ранние снимки этой таблицы"
-  },
   "tableDownloadCsvTitle": {
     "message": "Скачать эту таблицу в формате CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Снимок $INDEX$ — $TIME$ ($COUNT$ строк)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Переключить выбор для пакетной загрузки"
@@ -1158,7 +907,7 @@
     "message": "Откройте вкладку <strong>Source Download</strong> на панели инструментов разработчика DevTools (нажмите <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, затем выберите вкладку на панели DevTools). Политика безопасности Chrome запрещает расширениям открывать DevTools автоматически, поэтому панель размещена именно там. Всплывающее окно значка на панели инструментов позволяет выбрать категории, формирующие числовой бейдж на значке. Кнопка солнца/луны на панели инструментов фиксирует светлую или темную тему оформления независимо от настроек Chrome; этот выбор сохраняется."
   },
   "guideSecCategoriesContent": {
-    "message": "Вертикальные вкладки слева распределяют каждый перехваченный ресурс по 17 специальным категориям в зависимости от его типа: Изображения, Видео, Аудио, Субтитры, Документы, Шрифты, Source maps, WASM, SVG, API, Cookie, Хранилище и другие. Каждая вкладка отображает счетчик в реальном времени. Одновременно отображается только одна категория; переключение между ними сбрасывает все фильтры, гарантируя строгое соответствие видимого контента активной вкладке."
+    "message": "Вертикальные вкладки слева распределяют каждый найденный ресурс по 15 категориям, таким как изображения, видео, шрифты, source maps и вызовы API, а также есть вкладка «Текст и таблицы». Каждая вкладка отображает счетчик в реальном времени. Одновременно отображается только одна категория; переключение между ними сбрасывает все фильтры, гарантируя строгое соответствие видимого контента активной вкладке."
   },
   "guideSecSearchFiltersContent": {
     "message": "Строка поиска фильтрует ресурсы по имени, URL, типу, тексту alt или заголовку. Заключите поисковый запрос в <kbd>/…/</kbd> для использования регулярных выражений, например <code>/\\.(png|jpg)$/</code>. Под панелью инструментов панель фильтрации динамически подстраивается под каждую категорию: диапазоны размера файлов и разрешения для медиа, метод HTTP и тип запроса для API, а также параметры и направление сортировки."
@@ -1170,13 +919,13 @@
     "message": "Нажмите на любой ресурс, чтобы открыть его в правой панели инспекции. Каждый открытый файл становится вкладкой, что позволяет сравнивать несколько ресурсов бок о бок — самый новый открывается слева. Предусмотрены специализированные просмотрщики для изображений, видео, аудио, шрифтов, SVG и текста/кода (с переключателем форматирования Beautify). Для API доступен разделенный экран: тело ответа слева и параметры запроса (метод, статус, заголовки, параметры запроса и тело) справа."
   },
   "guideSecDownloadingContent": {
-    "message": "Кнопка <strong>Скачать видимые</strong> сохраняет текущие видимые ресурсы (активная категория + поиск + фильтры) в ZIP-архив; при активных фильтрах название автоматически меняется на <em>Скачать отфильтрованное (N)</em>. Наведите курсор на любую кнопку загрузки, чтобы увидеть ориентировочный размер архива до нажатия. Кнопка <strong>Скачать выбранные</strong> сохраняет только отмеченные флажками файлы. <strong>Скачать все</strong> упаковывает абсолютно все обнаруженные ресурсы в ZIP-архив со структурой папок. Неудачные загрузки автоматически повторяются и могут быть запущены повторно из контекстного меню. <strong>Экспорт</strong> сохраняет видимый список в JSON или CSV либо выгружает сетевой журнал Chrome в виде файла HAR."
+    "message": "Кнопка <strong>Скачать видимые</strong> сохраняет текущие видимые ресурсы (активная категория + поиск + фильтры) в ZIP-архив; при активных фильтрах название автоматически меняется на <em>Скачать отфильтрованное (N)</em>. Наведите курсор на любую кнопку загрузки, чтобы увидеть ориентировочный размер архива до нажатия. Кнопка <strong>Скачать выбранные</strong> сохраняет только отмеченные флажками файлы. <strong>Скачать все</strong> упаковывает абсолютно все обнаруженные ресурсы в ZIP-архив со структурой папок. Неудачные загрузки помечаются, и их можно повторить одним кликом из уведомления, по значку предупреждения у элемента или через контекстное меню. <strong>Экспорт</strong> сохраняет видимый список в JSON или CSV либо выгружает сетевой журнал Chrome в виде файла HAR."
   },
   "guideSecLightboxContent": {
     "message": "Кнопка масштабирования открывает медиафайлы в полноразмерном лайтбоксе, где можно перемещаться перетаскиванием, а также масштабировать колесиком мыши, экранными кнопками или горячими клавишами (<kbd>+</kbd>/<kbd>-</kbd> для масштабирования, <kbd>0</kbd> для сброса, <kbd>Esc</kbd> для закрытия)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Категория <strong>Текст</strong> представляет собой интерактивную, удобную для чтения копию страницы. Она извлекает абсолютно все содержащие текст элементы — заголовки, абзацы, списки, кнопки, <code>div</code>/<code>span</code> и другие — в порядке дерева DOM и продолжает сканирование, пока включен режим <strong>Живой режим</strong>.</p><p>Поле <strong>Запрос</strong> работает в четырех режимах, выбираемых из выпадающего списка: <strong>Содержит</strong> и <strong>Regex</strong> фильтруют уже извлеченный текст, а <strong>CSS-селектор</strong> и <strong>XPath</strong> выполняются непосредственно по живому DOM веб-страницы, обеспечивая доступ к любому узлу. XPath также поддерживает выражения, вычисляющие значения вместо узлов, например <code>count(//a)</code> или <code>//@href</code>. Сообщения об ошибках некорректных запросов отображаются прямо рядом с полем. Фильтр <strong>Элемент</strong> сужает вывод до конкретного HTML-тега с указанием общего количества найденных тегов на странице. Очистка поля (или нажатие кнопки <strong>Очистить</strong>) мгновенно возвращает вас к режиму <em>Все элементы</em> и перезапускает сбор данных — сбрасывать меню вручную не требуется.</p><p>Режим <strong>Чтение</strong> скрывает технические теги, флажки и служебные пути, благодаря чему поток текста читается как аккуратный документ. Таблицы сохраняют историю моментальных снимков, предотвращая потерю динамических таблиц в одностраничных приложениях (SPA). Нажмите <strong>Показать все строки</strong> в таблице, чтобы объединить все снимки в единое представление без дубликатов — именно этот массив попадет в экспорт. Вы можете экспортировать данные в <strong>TXT</strong> (текст страницы), <strong>MD</strong> (Markdown с поддержкой таблиц) или таблицы в форматах CSV, HTML и полноценных многостраничных книг <strong>XLSX</strong>. Отмеченные флажками элементы имеют приоритет; если ничего не выбрано, экспортируется все видимое содержимое.</p>"
+    "message": "<p>Категория <strong>Текст</strong> — это живая, удобная для чтения копия страницы: заголовки, абзацы, списки и ссылки в порядке страницы, обновляемые, пока включён режим <strong>В реальном времени</strong>. Наведите курсор на строку, чтобы скопировать её, или используйте <strong>Копировать текст</strong>, <strong>Markdown</strong> и <strong>TXT</strong> для всего показанного.</p><p>В разделе <strong>Таблицы</strong> каждая таблица страницы — это карточка с предпросмотром и собственными кнопками <strong>Excel</strong>, <strong>CSV</strong> и <strong>Копировать</strong>; <strong>Все таблицы в Excel</strong> сохраняет их в одну книгу, по листу на таблицу. Изменяющиеся таблицы хранят историю снимков, а <strong>Показать все строки</strong> объединяет их в одну таблицу без повторов — ровно то, что попадает в экспорт.</p><p>Блоки слева группируют страницу по типу элементов — весь текст страницы, каждый уровень заголовков, абзацы, ссылки, пункты списков, кнопки, код и другое — с количеством и первой строкой; выберите блок, чтобы видеть, копировать или экспортировать только его. Поле поиска фильтрует по мере ввода, а меню рядом превращает его в регулярное выражение, <strong>CSS-селектор</strong> или выражение <strong>XPath</strong> (в том числе выражения со значением, например <code>count(//a)</code> или <code>//@href</code>), выполняемое на живой странице; блок <strong>Свой запрос</strong> делает то же самое. Сообщение страницы об ошибке в запросе показывается прямо в поле.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "Файлы WebVTT, SRT, TTML и другие форматы субтитров — включая исходники <code>&lt;track&gt;</code> — группируются на отдельной вкладке <strong>Субтитры</strong>, не смешиваясь с обычными документами."
@@ -1278,7 +1027,7 @@
     "message": "Цвет скопирован в буфер обмена"
   },
   "toastProgressCapturing": {
-    "message": "Захват всей страницы... $percent$%",
+    "message": "Захват всей страницы… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,7 +1041,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Склейка изображения..."
+    "message": "Склейка изображения…"
   },
   "modalExportTitle": {
     "message": "Снимок всей страницы готов"
@@ -1310,7 +1059,7 @@
     "message": "Копировать в буфер обмена"
   },
   "btnExportGenerating": {
-    "message": "Создание..."
+    "message": "Создание…"
   },
   "toastPdfGenerated": {
     "message": "PDF-документ сохранён."
@@ -1325,13 +1074,10 @@
     "message": "Предпросмотр:"
   },
   "toastRecGeneratingGif": {
-    "message": "Создание GIF, подождите..."
+    "message": "Создание GIF, подождите…"
   },
   "settingGifResolution": {
     "message": "Разрешение GIF по умолчанию"
-  },
-  "optGifOriginal": {
-    "message": "Оригинал (1:1, исходное разрешение — полное 3K/4K, без уменьшения)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (макс. 1920px)"
@@ -1349,10 +1095,10 @@
     "message": "Запись экрана (Видео и GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Записывайте любую область экрана в формате MP4, WebM или анимированного GIF. Для GIF доступны профили нативного разрешения 1:1, 1080p, 720p и 480p с динамическим расчетом размера файла. Максимальная длительность GIF-записи составляет 1 минуту (60 с) для оптимальной производительности браузера."
+    "message": "Записывайте любую область экрана в MP4, WebM или анимированный GIF. Для GIF доступны профили 1080p, 720p и 480p с оценкой размера файла в реальном времени. Запись GIF может длиться до 1 минуты (60 с)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Достигнута максимальная длительность GIF — 1 минута (60 с). Создание GIF..."
+    "message": "Достигнута максимальная длительность GIF — 1 минута (60 с). Создание GIF…"
   },
   "labelGifMaxDuration": {
     "message": "Макс. 1 мин (60 с)"
@@ -1374,10 +1120,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Презентация (1 кадр в секунду, минимальный размер)"
-  },
-  "popupRightClickHint": {
-    "message": "Нажмите правой кнопкой мыши на странице для записи экрана (видео/GIF) и пипетки.",
-    "description": "Hint informing user to use right-click context menu for recording and color picker"
   },
   "toastElementZappedAd": {
     "message": "Реклама / iframe скрыты на время этого сеанса.",
@@ -1428,7 +1170,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Разрешение GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Разрешение GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1482,5 +1224,206 @@
   "errNoActiveTab": {
     "message": "Активная вкладка не найдена.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Нажмите здесь, а затем выберите любой цвет на странице"
+  },
+  "welcomeTitle": {
+    "message": "Source Download готов к работе"
+  },
+  "welcomePrivacy": {
+    "message": "Всё работает на вашем компьютере. Без аккаунта, без отслеживания, нам ничего не отправляется."
+  },
+  "welcomeHelp": {
+    "message": "Что-то не работает? Сообщите нам на GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Что-то не так?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF достиг 200 МБ. Сохраняем записанное…"
+  },
+  "btnPopupFullPage": {
+    "message": "Скриншот всей страницы"
+  },
+  "toastRecWrongTab": {
+    "message": "Чтобы записать область этой страницы, выберите «Эта вкладка» в окне демонстрации."
+  },
+  "popupCaptureTitle": {
+    "message": "Захват этой страницы"
+  },
+  "popupTileOffline": {
+    "message": "Сохранить страницу офлайн"
+  },
+  "popupTileGuide": {
+    "message": "Как это работает"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Файлы, изображения и таблицы"
+  },
+  "popupDevtoolsHint": {
+    "message": "Откройте DevTools и выберите вкладку Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome не разрешает расширения на этой странице. Откройте любой сайт, чтобы пользоваться инструментами."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Правый клик на любой странице"
+  },
+  "welcomeCardMenuText": {
+    "message": "Снимки всей страницы или области, запись области, пипетка цвета и офлайн-копия — прямо там, где вы находитесь."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Или кнопка на панели инструментов"
+  },
+  "welcomeCardPopupText": {
+    "message": "Нажмите значок пазла на панели инструментов Chrome и закрепите Source Download — инструменты всегда будут в одном клике."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Нажмите F12, чтобы увидеть всё на странице"
+  },
+  "welcomeCardPanelText": {
+    "message": "Выберите вкладку Source Download в DevTools. Там перечислены все изображения, видео, шрифты и файлы, загруженные страницей: просматривайте, фильтруйте и сохраняйте в ZIP. Таблицы со страницы экспортируются в Excel."
+  },
+  "welcomeLead": {
+    "message": "Три способа получить нужное с любой веб-страницы."
+  },
+  "btnDownloadOptions": {
+    "message": "Другие варианты скачивания"
+  },
+  "btnMore": {
+    "message": "Другие действия"
+  },
+  "btnFilters": {
+    "message": "Фильтры"
+  },
+  "tabsShowEmpty": {
+    "message": "Показать пустые"
+  },
+  "tabsHideEmpty": {
+    "message": "Скрыть пустые"
+  },
+  "textSegText": {
+    "message": "Текст"
+  },
+  "textSegTables": {
+    "message": "Таблицы"
+  },
+  "textLive": {
+    "message": "В реальном времени"
+  },
+  "textPaused": {
+    "message": "Пауза"
+  },
+  "textLivePauseTitle": {
+    "message": "В реальном времени: страница перечитывается при каждом изменении. Нажмите, чтобы приостановить."
+  },
+  "textLiveResumeTitle": {
+    "message": "Пауза. Нажмите, чтобы снова следить за страницей в реальном времени."
+  },
+  "textSearchText": {
+    "message": "Поиск по тексту страницы"
+  },
+  "textExportAllXlsx": {
+    "message": "Все таблицы в Excel"
+  },
+  "textNoTables": {
+    "message": "На этой странице пока нет таблиц. Они появятся здесь, как только страница их покажет."
+  },
+  "textTable": {
+    "message": "Таблица"
+  },
+  "textCopy": {
+    "message": "Копировать"
+  },
+  "textShowLess": {
+    "message": "Показать меньше"
+  },
+  "areaHintSelect": {
+    "message": "Перетащите, чтобы выделить область"
+  },
+  "areaHintCopy": {
+    "message": "копировать"
+  },
+  "areaHintSave": {
+    "message": "сохранить"
+  },
+  "areaHintExit": {
+    "message": "выйти"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Копировать автоматически"
+  },
+  "areaAutoCopyOn": {
+    "message": "Автокопирование включено"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Отпустите выделение — и оно уже в буфере обмена."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Выключить"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Скопировано в буфер обмена (автокопирование включено)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Эта страница не разрешает копировать в буфер обмена. Используйте «Скачать»."
+  },
+  "textKindAll": {
+    "message": "Весь текст страницы"
+  },
+  "textKindHeading": {
+    "message": "Заголовок"
+  },
+  "textKindP": {
+    "message": "Абзацы"
+  },
+  "textKindA": {
+    "message": "Ссылки"
+  },
+  "textKindLi": {
+    "message": "Пункты списков"
+  },
+  "textKindButton": {
+    "message": "Кнопки"
+  },
+  "textKindLabel": {
+    "message": "Подписи и метки"
+  },
+  "textKindSpan": {
+    "message": "Строчный текст"
+  },
+  "textKindDiv": {
+    "message": "Другие блоки"
+  },
+  "textKindCell": {
+    "message": "Ячейки таблиц"
+  },
+  "textKindCode": {
+    "message": "Код"
+  },
+  "textKindQuote": {
+    "message": "Цитаты"
+  },
+  "textCustomQuery": {
+    "message": "Свой запрос"
+  },
+  "textCustomQueryHint": {
+    "message": "CSS-селектор или XPath на живой странице"
+  },
+  "menuSettings": {
+    "message": "Настройки"
+  },
+  "settingsSave": {
+    "message": "Сохранить"
+  },
+  "settingsReset": {
+    "message": "Сбросить настройки"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Автоматически копировать снимки области"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Как только вы отпустите выделение, изображение сразу попадёт в буфер обмена. Пока это включено, подсказка вверху страницы каждый раз напоминает об этом."
   }
 }

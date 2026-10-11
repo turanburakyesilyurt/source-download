@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: أداة تنزيل الصور والملفات"
   },
   "appDesc": {
-    "message": "فحص وتصفح وتنزيل أي أصل ويب بسلاسة كملف ZIP. لقطات شاشة كاملة للصفحة والتقاط الجدول المباشر وطاولة عمل المطور."
+    "message": "احفظ صور صفحة الويب وأيقوناتها وملفاتها واحدًا تلو الآخر أو في ملف ZIP. مع لقطة للصفحة كاملة وتسجيل لجزء من الشاشة."
   },
   "actionTitle": {
     "message": "Source Download — افتح اللوحة وتتبّع الموارد"
   },
   "contextMenuZap": {
-    "message": "إخفاء هذا العنصر (Zap)"
+    "message": "إخفاء هذا العنصر"
   },
   "contextMenuUndoZap": {
     "message": "استعادة آخر عنصر مخفي"
@@ -90,7 +90,7 @@
     "message": "تنزيل المحدد"
   },
   "btnDownloadView": {
-    "message": "تنزيل العرض الحالي"
+    "message": "تنزيل العناصر الظاهرة"
   },
   "btnDownloadAll": {
     "message": "تنزيل الكل"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "تنزيل المُصفّى"
   },
-  "btnTheme": {
-    "message": "تبديل المظهر"
-  },
   "btnGuide": {
     "message": "دليل المستخدم"
-  },
-  "btnCaptureFullPage": {
-    "message": "لقطة شاشة كاملة للصفحة"
-  },
-  "btnOfflineArchive": {
-    "message": "حفظ HTML في ملف واحد"
   },
   "filterMinKb": {
     "message": "الحد الأدنى (KB)"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "تصفية نص الصفحة أو الاستعلام عن DOM المباشر..."
-  },
-  "textAllElements": {
-    "message": "جميع العناصر"
-  },
-  "textLiveOn": {
-    "message": "مباشر: يعمل"
-  },
-  "textLiveOff": {
-    "message": "مباشر: متوقف"
-  },
   "textScanNow": {
     "message": "مسح الآن"
-  },
-  "textReading": {
-    "message": "القراءة"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "حدد موردًا لفحص تفاصيله"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "بديل"
   },
-  "ratingPrompt": {
-    "message": "هل يعجبك Source Download؟ ادعم رؤيتنا مفتوحة المصدر بتقييم على سوق Chrome الإلكتروني أو بنجمة على GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ اترك تقييمًا"
-  },
-  "ratingStar": {
-    "message": "★ نجمة على GitHub"
-  },
   "ratingDismiss": {
     "message": "تجاهل"
   },
@@ -257,44 +209,11 @@
   "toastArchiveCreated": {
     "message": "تم حفظ أرشيف HTML في ملف واحد."
   },
-  "brandSignature": {
-    "message": "من تصميم Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "الصور وSVG"
-  },
-  "tabMedia": {
-    "message": "الوسائط والصوت"
-  },
-  "tabFonts": {
-    "message": "الخطوط"
-  },
-  "tabTextScraper": {
-    "message": "النص والجداول"
-  },
-  "heroScreenshotTitle": {
-    "message": "لقطة شاشة كاملة للصفحة"
-  },
-  "heroScreenshotDesc": {
-    "message": "دمج سلس للقطات منافذ العرض المتعددة مع إخفاء الرؤوس الثابتة"
-  },
-  "heroArchiveTitle": {
-    "message": "أرشيف HTML في ملف واحد"
-  },
-  "heroArchiveDesc": {
-    "message": "يدمج CSS وصور Base64 داخل الملف، للحصول على نسخة آمنة للعرض دون اتصال"
-  },
-  "copyDataUri": {
-    "message": "نسخ Data URI"
-  },
-  "copyUrl": {
-    "message": "انسخ عنوان URL"
-  },
   "downloadSingle": {
     "message": "تنزيل"
   },
   "searchPlaceholder": {
-    "message": "التصفية حسب الاسم أو عنوان URL أو العلامة أو MIME أو /regex/..."
+    "message": "التصفية حسب الاسم أو عنوان URL أو العلامة أو MIME أو /regex/…"
   },
   "viewGrid": {
     "message": "عرض الشبكة"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "الموارد"
   },
-  "statusFiltered": {
-    "message": "مُصفّاة"
-  },
   "statusSelected": {
     "message": "محددة"
   },
   "statusDupes": {
     "message": "التكرارات مخفية"
-  },
-  "statusSize": {
-    "message": "الحجم"
   },
   "langAuto": {
     "message": "تلقائي (المتصفح)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "اختر اللغة"
   },
-  "textPillAll": {
-    "message": "كل المحتوى"
-  },
-  "textPillText": {
-    "message": "📄 النصوص والمقالات"
-  },
-  "textPillTables": {
-    "message": "📊 الجداول فقط"
-  },
   "textSelectAll": {
     "message": "تحديد الكل"
   },
   "textDeselectAll": {
     "message": "إلغاء تحديد الكل"
-  },
-  "textClearSelection": {
-    "message": "مسح"
   },
   "toastRefreshComplete": {
     "message": "اكتمل فحص الصفحة: $count$ من الموارد الجديدة",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ من الجداول · $rows$ من الصفوف الفريدة",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "تم تحديد $count$ — تستخدم عمليات التصدير هذه العناصر فقط",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "جدول — $count$ من الصفوف على الشاشة",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "جدول — جميع الصفوف الفريدة ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ من اللقطات",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "يتم عرض كل الصفوف"
   },
-  "textTableHistory": {
-    "message": "السجل ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "إخفاء السجل"
-  },
   "textTableNoRows": {
     "message": "لم يتم التقاط أي صفوف حتى الآن."
   },
   "textBtnCopy": {
     "message": "نسخ النص"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 نسخ"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ من الصور المكررة",
@@ -689,11 +529,8 @@
       }
     }
   },
-  "labelExport": {
-    "message": "تصدير"
-  },
   "inspectorLoadingSvg": {
-    "message": "جارٍ تحميل SVG..."
+    "message": "جارٍ تحميل SVG…"
   },
   "inspectorSvgError": {
     "message": "تعذر استرداد محتوى SVG."
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "معاينة الخط"
   },
-  "inspectorBeautify": {
-    "message": "تنسيق"
-  },
-  "inspectorOriginal": {
-    "message": "الأصلي"
-  },
-  "inspectorHeaders": {
-    "message": "الترويسات"
-  },
-  "inspectorResponse": {
-    "message": "الاستجابة"
-  },
-  "inspectorRequest": {
-    "message": "الطلب"
-  },
   "inspectorQueryParams": {
     "message": "معلمات الاستعلام"
   },
   "inspectorRequestBody": {
     "message": "نص الطلب"
   },
-  "textHintHtml": {
-    "message": "نسخة حية ومقروءة من الصفحة. يتم التقاط كل عنصر يحتوي على نص بترتيب DOM ويتم الاحتفاظ به هنا مع تغير الصفحة. استعلم عنه باستخدام نص عادي، أو تعبير عادي، أو <strong>محدد CSS</strong> أو تعبير <strong>XPath</strong>، ثم قم بتصدير ما يطابقه. راجع <a href=\"#\" id=\"text-hint-guide\">الدليل</a> للحصول على التفاصيل."
-  },
-  "textHeadings": {
-    "message": "العناوين"
-  },
-  "textAllLevels": {
-    "message": "جميع المستويات"
-  },
   "textMatches": {
     "message": "تطابقات"
   },
   "textMatch": {
     "message": "تطابق"
-  },
-  "textReadingOn": {
-    "message": "القراءة مفعّلة"
   },
   "toastDownloadStarted": {
     "message": "بدأ التنزيل: $name$",
@@ -756,7 +566,7 @@
     "message": "تعذر جلب هذا المورد (CORS أو نوع غير مدعوم)."
   },
   "ratingBannerText": {
-    "message": "هل يعجبك Source Download؟ ادعم رؤيتنا مفتوحة المصدر بتقييم على سوق Chrome الإلكتروني أو بنجمة على GitHub!"
+    "message": "يسعدنا أنه نجح! إذا وفّر لك Source Download الوقت، فإن مراجعة قصيرة تساعد الآخرين على العثور عليه."
   },
   "ratingBannerReview": {
     "message": "★ تقييم"
@@ -828,10 +638,10 @@
     }
   },
   "statusIndexing": {
-    "message": "فهرسة محتويات الملف..."
+    "message": "فهرسة محتويات الملف…"
   },
   "statusCheckingDuplicates": {
-    "message": "جارٍ التحقق من تكرارات الصور..."
+    "message": "جارٍ التحقق من تكرارات الصور…"
   },
   "statusWorking": {
     "message": "جارٍ العمل…"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "كيف يتم تفسير مربع الاستعلام"
   },
-  "textKindTitle": {
-    "message": "التقييد بنوع عنصر واحد"
-  },
-  "textHeadingLevelTitle": {
-    "message": "مستوى العنوان"
-  },
   "textPlaceholderRegex": {
     "message": "^Price:\\s*\\d+ — تعبير JavaScript العادي"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "ابحث في الدليل…"
-  },
-  "popupIntro": {
-    "message": "الفئات التي تحتسبها <strong>شارة شريط الأدوات</strong>. أوقف تشغيل فئة لإيقاف احتسابها — تعكس الشارة فورًا ما تتتبّعه فقط."
-  },
-  "popupHelpTitle": {
-    "message": "كيفية استخدام اللوحة الكاملة"
-  },
-  "popupStep1": {
-    "message": "افتح DevTools للصفحة التي تريد فحصها <div class=\"hint\"><kbd>F12</kbd> أو <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "انقر علامة التبويب <strong>Source Download</strong> في شريط أدوات DevTools"
-  },
-  "popupStep3": {
-    "message": "تصفّح الموارد وافحصها ونزّلها — فرديًا أو دفعة واحدة كملف ZIP."
-  },
-  "popupNote": {
-    "message": "ملاحظة: لا يسمح Chrome للإضافات بفتح DevTools برمجيًا، ولذلك تتوفر اللوحة الكاملة عبر شريط أدوات DevTools."
-  },
-  "popupTrackAll": {
-    "message": "تتبع جميع الفئات"
   },
   "popupLanguage": {
     "message": "اللغة"
@@ -967,22 +750,8 @@
   "btnMergeHls": {
     "message": "دمج المقاطع والتنزيل"
   },
-  "toastHlsMerged": {
-    "message": "تم دمج $COUNT$ من المقاطع في $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "الحجم غير معروف"
-  },
   "progressFetching": {
-    "message": "جارٍ جلب $DONE$/$TOTAL$ · ZIP $EST$...",
+    "message": "جارٍ جلب $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
       "DONE": {
         "content": "$1"
@@ -996,7 +765,7 @@
     }
   },
   "progressCreatingZip": {
-    "message": "جارٍ إنشاء ملف ZIP $PERCENT$%...",
+    "message": "جارٍ إنشاء ملف ZIP $PERCENT$%…",
     "placeholders": {
       "PERCENT": {
         "content": "$1"
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "بحث بالتعبير العادي نشط — ضع استعلامك بين /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "تضمين في عمليات التصدير"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "ادمج كل اللقطات في جدول واحد خالٍ من التكرار — هذا هو ما يتم تصديره"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "تصفح اللقطات السابقة لهذا الجدول"
-  },
   "tableDownloadCsvTitle": {
     "message": "تنزيل هذا الجدول كملف CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "لقطة $INDEX$ — $TIME$ ($COUNT$ من الصفوف)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "تبديل التحديد للتنزيل الدفعي"
@@ -1150,7 +899,7 @@
     "message": "انقر علامة التبويب <strong>Source Download</strong> في شريط أدوات DevTools (اضغط <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>، ثم علامة التبويب في شريط أدوات DevTools). لا يسمح Chrome للإضافات بفتح DevTools تلقائيًا، ولهذا السبب توجد اللوحة هناك. تتيح لك النافذة المنبثقة لأيقونة شريط الأدوات اختيار الفئات التي تغذي عدّاد الشارة على الأيقونة. يثبّت زر الشمس/القمر في شريط أدوات اللوحة المظهر الفاتح أو الداكن بشكل مستقل عن Chrome؛ ويتم تذكّر هذا الاختيار."
   },
   "guideSecCategoriesContent": {
-    "message": "تقوم علامات التبويب الرأسية على اليسار بتجميع كل مورد تم التقاطه في 17 فئة مخصصة حسب النوع: الصور ومقاطع الفيديو والصوت والتسميات التوضيحية والمستندات والخطوط وخرائط المصدر وWASM وSVG وواجهات برمجة التطبيقات وملفات تعريف الارتباط والتخزين والمزيد. تعرض كل علامة تبويب عددًا حيًا. يتم عرض فئة واحدة فقط في كل مرة؛ يؤدي التبديل إلى إعادة تعيين جميع المرشحات، لذا فإن ما تراه يتطابق دائمًا مع علامة التبويب."
+    "message": "تفرز علامات التبويب العمودية على اليسار كل مورد يتم التقاطه في 15 فئة، مثل الصور ومقاطع الفيديو والخطوط وخرائط المصدر واستدعاءات API، إضافة إلى علامة تبويب للنصوص والجداول. تعرض كل علامة تبويب عددًا حيًا. يتم عرض فئة واحدة فقط في كل مرة؛ يؤدي التبديل إلى إعادة تعيين جميع المرشحات، لذا فإن ما تراه يتطابق دائمًا مع علامة التبويب."
   },
   "guideSecSearchFiltersContent": {
     "message": "يقوم شريط البحث بالتصفية حسب الاسم أو عنوان URL أو النوع أو النص البديل أو العنوان. ضع استعلامك بين <kbd>/…/</kbd> لاستخدام تعبير عادي، مثل <code>/\\.(png|jpg)$/</code>. أسفل شريط الأدوات، يتغير شريط المرشحات حسب الفئة: نطاقات الحجم والأبعاد للوسائط، وطريقة HTTP ونوع الطلب لواجهات برمجة التطبيقات، بالإضافة إلى الفرز والاتجاه."
@@ -1162,13 +911,13 @@
     "message": "انقر أي مورد لفتحه في جزء الفحص. يتحول كل ملف مفتوح إلى علامة تبويب، حتى تتمكن من مقارنة عدة موارد جنبًا إلى جنب — ويُفتح الأحدث أولًا. تتوفر عارضات متخصصة للصور والفيديو والصوت والخطوط وSVG والنص/الشيفرة (مع مفتاح التنسيق). تعرض واجهات برمجة التطبيقات عرضًا مقسمًا: الاستجابة في جانب، وتفاصيل الطلب (الطريقة، والحالة، والترويسات، ومعلمات الاستعلام، والنص) في الجانب الآخر."
   },
   "guideSecDownloadingContent": {
-    "message": "يحفظ <strong>تنزيل العرض الحالي</strong> الموارد المرئية حاليًا (الفئة النشطة + البحث + المرشحات) كملف ZIP؛ ويتغير اسمه إلى <em>تنزيل المُصفّى (N)</em> عندما تكون المرشحات نشطة. مرّر مؤشر الماوس فوق أي زر تنزيل لرؤية الحجم المقدّر للأرشيف قبل النقر عليه. يقوم <strong>تنزيل المحدد</strong> بتنزيل العناصر المحددة فقط. يجمع <strong>تنزيل الكل</strong> كل الموارد المكتشفة في ملف ZIP منظّم في مجلدات. تتم إعادة محاولة التنزيلات الفاشلة تلقائيًا، ويمكن إعادة محاولتها مرة أخرى من قائمة السياق. يكتب <strong>تصدير</strong> القائمة المرئية بتنسيق JSON أو CSV، أو يُصدّر سجل شبكة Chrome كملف HAR."
+    "message": "يحفظ <strong>تنزيل العناصر الظاهرة</strong> الموارد المرئية حاليًا (الفئة النشطة + البحث + المرشحات) كملف ZIP؛ ويتغير اسمه إلى <em>تنزيل المُصفّى (N)</em> عندما تكون المرشحات نشطة. مرّر مؤشر الماوس فوق أي زر تنزيل لرؤية الحجم المقدّر للأرشيف قبل النقر عليه. يقوم <strong>تنزيل المحدد</strong> بتنزيل العناصر المحددة فقط. يجمع <strong>تنزيل الكل</strong> كل الموارد المكتشفة في ملف ZIP منظّم في مجلدات. يتم تمييز التنزيلات الفاشلة، ويمكنك إعادة محاولتها بنقرة واحدة من الإشعار أو من أيقونة التحذير على العنصر أو من قائمة السياق. يكتب <strong>تصدير</strong> القائمة المرئية بتنسيق JSON أو CSV، أو يُصدّر سجل شبكة Chrome كملف HAR."
   },
   "guideSecLightboxContent": {
     "message": "يفتح زر التكبير/التصغير الوسائط في مربع مبسط بالحجم الكامل حيث يمكنك التحريك عن طريق السحب أو التكبير/التصغير باستخدام عجلة الماوس أو الأزرار التي تظهر على الشاشة أو لوحة المفاتيح (<kbd>+</kbd>/<kbd>-</kbd> للتكبير/التصغير، <kbd>0</kbd> لإعادة التعيين، <kbd>Esc</kbd> للإغلاق)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>فئة <strong>النص</strong> هي نسخة مباشرة وقابلة للقراءة من الصفحة. تلتقط كل عنصر يحتوي على نص — العناوين والفقرات وعناصر القوائم والأزرار و<code>div</code>/<code>span</code> وغيرها — بترتيب DOM، وتواصل الفحص ما دام وضع <strong>المباشر</strong> قيد التشغيل.</p><p>يعمل مربع <strong>الاستعلام</strong> بأربع طرق، يتم اختيارها من القائمة المنسدلة بجانبه: يقوم <strong>يحتوي على</strong> و<strong>التعبير العادي</strong> بتصفية النص الذي تم التقاطه بالفعل، بينما يتم تنفيذ <strong>محدد CSS</strong> و<strong>XPath</strong> على الصفحة المباشرة، فيصلان إلى أي شيء في DOM. يقبل XPath أيضًا تعبيرات تُرجع قيمة بدلًا من عناصر، مثل <code>count(//a)</code> أو <code>//@href</code>. يظهر بجوار المربع أي خطأ تُبلغ عنه الصفحة بشأن استعلام غير صالح. يضيّق <strong>العنصر</strong> النتيجة إلى وسم واحد، مع عدد كل وسم موجود في الصفحة. يؤدي مسح مربع الاستعلام (أو الضغط على <strong>مسح</strong>) إلى إعادتك إلى <em>جميع العناصر</em> وإعادة التقاط الصفحة — ولن تضطر أبدًا إلى إعادة ضبط القائمة المنسدلة يدويًا.</p><p>يخفي وضع <strong>القراءة</strong> الوسوم ومربعات الاختيار ومسارات الموقع بحيث يبدو التدفق كمستند. تحتفظ الجداول بسجل محدود من اللقطات حتى لا تضيع الجداول الديناميكية (SPA) أبدًا. اضغط <strong>إظهار كل الصفوف</strong> في أحد الجداول لدمج كل اللقطات في عرض واحد خالٍ من التكرار — وهذا بالضبط ما يتضمنه التصدير. صدّر بتنسيق <strong>TXT</strong> (الصفحة القابلة للقراءة)، أو <strong>MD</strong> (Markdown، بما في ذلك الجداول)، أو الجداول بتنسيق CSV أو HTML أو كمصنف <strong>XLSX</strong> حقيقي متعدد الأوراق. تكون الأولوية للعناصر المحددة؛ وإلا فسيتم تصدير كل ما هو مرئي حاليًا.</p>"
+    "message": "<p>فئة <strong>نص</strong> نسخة حيّة وسهلة القراءة من الصفحة: العناوين والفقرات والقوائم والروابط بترتيب الصفحة، وتُحدَّث ما دام <strong>مباشر</strong> مفعّلًا. مرّر المؤشر فوق أي سطر لنسخه، أو استخدم <strong>نسخ النص</strong> و<strong>Markdown</strong> و<strong>TXT</strong> لكل ما هو معروض.</p><p>في <strong>جداول</strong> يظهر كل جدول في الصفحة كبطاقة فيها معاينة وأزرار خاصة به: <strong>Excel</strong> و<strong>CSV</strong> و<strong>نسخ</strong>؛ ويضع <strong>كل الجداول إلى Excel</strong> كل الجداول في مصنف واحد، ورقة لكل جدول. تحتفظ الجداول التي تتغيّر بسجل من اللقطات، ويدمجها <strong>إظهار كل الصفوف</strong> في جدول واحد بلا تكرار — وهذا بالضبط ما يحتويه التصدير.</p><p>تفرز المربعات على الجانب الصفحةَ حسب نوع العنصر — كل نص الصفحة، وكل مستوى من العناوين، والفقرات، والروابط، وعناصر القوائم، والأزرار، والشيفرة، وغيرها — مع عدد وأول سطر لكل منها؛ اختر مربعًا لترى أو تنسخ أو تصدّر ذلك النوع وحده. يصفّي مربع البحث أثناء الكتابة، وتحوّله القائمة المجاورة إلى تعبير نمطي أو <strong>محدد CSS</strong> أو تعبير <strong>XPath</strong> (ومنها التعبيرات التي تُرجع قيمة مثل <code>count(//a)</code> أو <code>//@href</code>) يُنفَّذ على الصفحة الحيّة؛ ومربع <strong>استعلام مخصص</strong> يؤدي الشيء نفسه. وما تقوله الصفحة عن الاستعلام الخاطئ يظهر داخل المربع.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "تظهر ملفات WebVTT وSRT وTTML وغيرها من ملفات التسميات التوضيحية — بما في ذلك مصادر <code>&lt;track&gt;</code> — في علامة تبويب <strong>التسميات التوضيحية</strong> الخاصة بها بدلًا من الاختلاط بالمستندات."
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "دقة GIF الافتراضية"
   },
-  "optGifOriginal": {
-    "message": "الأصلية (دقة 1:1 الأصلية — 3K/4K كاملة، دون تصغير)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (بحد أقصى 1920 px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "تسجيل الشاشة (فيديو وGIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "سجّل أي منطقة من الشاشة بصيغة MP4 أو WebM أو GIF متحرك. تتوفر لتسجيلات GIF إعدادات بدقة أصلية 1:1 و1080p و720p و480p مع عرض مباشر لأحجام الملفات المقدّرة. الحد الأقصى لمدة تسجيل GIF هو دقيقة واحدة (60 ثانية) للحصول على أفضل أداء للمتصفح."
+    "message": "سجّل أي منطقة من الشاشة بصيغة MP4 أو WebM أو GIF متحرك. توفر تسجيلات GIF دقة 1080p و720p و480p مع تقدير مباشر لحجم الملف. يمكن أن يستمر تسجيل GIF حتى دقيقة واحدة (60 ثانية)."
   },
   "msgGifMaxDurationReached": {
     "message": "تم بلوغ الحد الأقصى لمدة GIF وهو دقيقة واحدة (60 ثانية). جارٍ إنشاء GIF…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — عرض تقديمي (إطار واحد في الثانية، أصغر حجم)"
-  },
-  "popupRightClickHint": {
-    "message": "انقر بزر الماوس الأيمن في أي مكان على صفحة الويب لتسجيل الشاشة (فيديو/GIF) ومنتقي الألوان."
   },
   "toastElementZappedAd": {
     "message": "تم إخفاء الإعلان / iframe لهذه الجلسة.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "دقة GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "دقة GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "لم يتم العثور على علامة تبويب نشطة.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "انقر هنا، ثم اختر أي لون من الصفحة"
+  },
+  "welcomeTitle": {
+    "message": "Source Download جاهز"
+  },
+  "welcomePrivacy": {
+    "message": "يعمل كل شيء على جهازك. لا حساب، ولا تتبع، ولا يُرسَل إلينا أي شيء."
+  },
+  "welcomeHelp": {
+    "message": "هناك ما لا يعمل؟ أخبرنا على GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "هل هناك مشكلة؟"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "وصل ملف GIF إلى 200 ميغابايت. جارٍ حفظ ما تم تسجيله…"
+  },
+  "btnPopupFullPage": {
+    "message": "لقطة شاشة للصفحة كاملة"
+  },
+  "toastRecWrongTab": {
+    "message": "لتسجيل منطقة من هذه الصفحة، اختر \"علامة التبويب هذه\" في نافذة المشاركة."
+  },
+  "popupCaptureTitle": {
+    "message": "التقاط هذه الصفحة"
+  },
+  "popupTileOffline": {
+    "message": "حفظ الصفحة للاستخدام دون اتصال"
+  },
+  "popupTileGuide": {
+    "message": "طريقة العمل"
+  },
+  "popupDevtoolsTitle": {
+    "message": "الملفات والصور والجداول"
+  },
+  "popupDevtoolsHint": {
+    "message": "افتح أدوات المطوّرين ثم اختر علامة التبويب Source Download."
+  },
+  "popupRestricted": {
+    "message": "لا يسمح Chrome بالإضافات في هذه الصفحة. افتح موقعًا إلكترونيًا لاستخدام الأدوات."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "انقر بزر الماوس الأيمن في أي صفحة"
+  },
+  "welcomeCardMenuText": {
+    "message": "لقطات شاشة للصفحة كاملة أو لمنطقة، وتسجيل منطقة، ومنتقي ألوان، ونسخة للاستخدام دون اتصال — في المكان الذي أنت فيه."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "أو استخدم زر شريط الأدوات"
+  },
+  "welcomeCardPopupText": {
+    "message": "انقر رمز قطعة الأحجية في شريط أدوات Chrome وثبّت Source Download، لتكون الأدوات دائمًا على بُعد نقرة واحدة."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "اضغط F12 لكل ما في الصفحة"
+  },
+  "welcomeCardPanelText": {
+    "message": "اختر علامة التبويب Source Download في أدوات المطوّرين. ستجد هناك كل صورة وفيديو وخط وملف حمّلته الصفحة — اعرضه وصفِّه واحفظه بصيغة ZIP. ويمكن تصدير جداول الصفحة إلى Excel."
+  },
+  "welcomeLead": {
+    "message": "ثلاث طرق للحصول على ما تحتاجه من أي صفحة ويب."
+  },
+  "btnDownloadOptions": {
+    "message": "خيارات تنزيل أخرى"
+  },
+  "btnMore": {
+    "message": "إجراءات أخرى"
+  },
+  "btnFilters": {
+    "message": "عوامل التصفية"
+  },
+  "tabsShowEmpty": {
+    "message": "إظهار الفارغة"
+  },
+  "tabsHideEmpty": {
+    "message": "إخفاء الفارغة"
+  },
+  "textSegText": {
+    "message": "نص"
+  },
+  "textSegTables": {
+    "message": "جداول"
+  },
+  "textLive": {
+    "message": "مباشر"
+  },
+  "textPaused": {
+    "message": "متوقف مؤقتًا"
+  },
+  "textLivePauseTitle": {
+    "message": "مباشر: تُقرأ الصفحة من جديد كلما تغيّرت. انقر للإيقاف المؤقت."
+  },
+  "textLiveResumeTitle": {
+    "message": "متوقف مؤقتًا. انقر لمتابعة الصفحة مباشرةً من جديد."
+  },
+  "textSearchText": {
+    "message": "البحث في نص الصفحة"
+  },
+  "textExportAllXlsx": {
+    "message": "كل الجداول إلى Excel"
+  },
+  "textNoTables": {
+    "message": "لا توجد جداول في هذه الصفحة بعد. ستظهر هنا بمجرد أن تعرض الصفحة جدولًا."
+  },
+  "textTable": {
+    "message": "جدول"
+  },
+  "textCopy": {
+    "message": "نسخ"
+  },
+  "textShowLess": {
+    "message": "عرض أقل"
+  },
+  "areaHintSelect": {
+    "message": "اسحب لتحديد منطقة"
+  },
+  "areaHintCopy": {
+    "message": "نسخ"
+  },
+  "areaHintSave": {
+    "message": "حفظ"
+  },
+  "areaHintExit": {
+    "message": "خروج"
+  },
+  "areaAutoCopyLabel": {
+    "message": "النسخ تلقائيًا"
+  },
+  "areaAutoCopyOn": {
+    "message": "النسخ التلقائي مفعّل"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "اترك التحديد فيصبح في الحافظة."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "إيقاف"
+  },
+  "toastAreaAutoCopied": {
+    "message": "تم النسخ إلى الحافظة (النسخ التلقائي مفعّل)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "لا تسمح هذه الصفحة بالنسخ إلى الحافظة. استخدم التنزيل بدلًا من ذلك."
+  },
+  "textKindAll": {
+    "message": "كل نص الصفحة"
+  },
+  "textKindHeading": {
+    "message": "عنوان"
+  },
+  "textKindP": {
+    "message": "الفقرات"
+  },
+  "textKindA": {
+    "message": "الروابط"
+  },
+  "textKindLi": {
+    "message": "عناصر القوائم"
+  },
+  "textKindButton": {
+    "message": "الأزرار"
+  },
+  "textKindLabel": {
+    "message": "التسميات والتعليقات"
+  },
+  "textKindSpan": {
+    "message": "نص ضمن السطر"
+  },
+  "textKindDiv": {
+    "message": "كتل أخرى"
+  },
+  "textKindCell": {
+    "message": "خلايا الجداول"
+  },
+  "textKindCode": {
+    "message": "الشيفرة"
+  },
+  "textKindQuote": {
+    "message": "الاقتباسات"
+  },
+  "textCustomQuery": {
+    "message": "استعلام مخصص"
+  },
+  "textCustomQueryHint": {
+    "message": "محدد CSS أو XPath على الصفحة الحيّة"
+  },
+  "menuSettings": {
+    "message": "الإعدادات"
+  },
+  "settingsSave": {
+    "message": "حفظ"
+  },
+  "settingsReset": {
+    "message": "استعادة الإعدادات الافتراضية"
+  },
+  "settingAreaAutoCopy": {
+    "message": "نسخ لقطات المنطقة تلقائيًا"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "عندما تترك التحديد تنتقل الصورة مباشرةً إلى الحافظة. وما دام هذا مفعّلًا، يذكّرك الشريط أعلى الصفحة بذلك في كل مرة."
   }
 }

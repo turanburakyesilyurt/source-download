@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Sťahovanie obrázkov"
   },
   "appDesc": {
-    "message": "Prezerajte a sťahujte webové zdroje ako ZIP. Snímky celej stránky, živé zachytenie tabuliek a nástroje pre vývojárov."
+    "message": "Ukladajte obrázky, ikony a súbory z webovej stránky jednotlivo alebo ako ZIP. Snímka celej stránky a nahrávanie vybranej oblasti."
   },
   "actionTitle": {
     "message": "Source Download — Otvorte panel a sledujte zdroje"
@@ -90,7 +90,7 @@
     "message": "Stiahnuť vybrané"
   },
   "btnDownloadView": {
-    "message": "Stiahnuť zobrazené"
+    "message": "Stiahnuť viditeľné"
   },
   "btnDownloadAll": {
     "message": "Stiahnuť všetko"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Stiahnuť filtrované"
   },
-  "btnTheme": {
-    "message": "Prepnúť tému"
-  },
   "btnGuide": {
     "message": "Používateľská príručka"
-  },
-  "btnCaptureFullPage": {
-    "message": "Snímka obrazovky celej stránky"
-  },
-  "btnOfflineArchive": {
-    "message": "Uložiť ako jeden súbor HTML"
   },
   "filterMinKb": {
     "message": "Min. KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filtrovať text stránky alebo vyhľadávať v živom DOM…"
-  },
-  "textAllElements": {
-    "message": "Všetky prvky"
-  },
-  "textLiveOn": {
-    "message": "Naživo zap."
-  },
-  "textLiveOff": {
-    "message": "Naživo vyp."
-  },
   "textScanNow": {
     "message": "Skenovať teraz"
-  },
-  "textReading": {
-    "message": "Čítanie"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Vyberte zdroj a skontrolujte jeho podrobnosti"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Páči sa vám Source Download? Podporte našu víziu open source recenziou v Internetovom obchode Chrome alebo hviezdičkou na GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Zanechajte recenziu"
-  },
-  "ratingStar": {
-    "message": "★ Hviezdička na GitHub"
-  },
   "ratingDismiss": {
     "message": "Skryť"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Archív HTML v jednom súbore bol uložený."
-  },
-  "brandSignature": {
-    "message": "Vytvoril Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Obrázky a SVG"
-  },
-  "tabMedia": {
-    "message": "Médiá a zvuk"
-  },
-  "tabFonts": {
-    "message": "Písma"
-  },
-  "tabTextScraper": {
-    "message": "Text a tabuľky"
-  },
-  "heroScreenshotTitle": {
-    "message": "Snímka obrazovky celej stránky"
-  },
-  "heroScreenshotDesc": {
-    "message": "Plynulé zlepenie viacerých výrezov okna s potlačením pevných hlavičiek"
-  },
-  "heroArchiveTitle": {
-    "message": "Archív HTML v jednom súbore"
-  },
-  "heroArchiveDesc": {
-    "message": "Vkladá CSS a obrázky Base64 priamo do súboru, snímka použiteľná offline"
-  },
-  "copyDataUri": {
-    "message": "Kopírovať Data-URI"
-  },
-  "copyUrl": {
-    "message": "Kopírovať URL"
   },
   "downloadSingle": {
     "message": "Stiahnuť"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "zdrojov"
   },
-  "statusFiltered": {
-    "message": "filtrované"
-  },
   "statusSelected": {
     "message": "vybrané"
   },
   "statusDupes": {
     "message": "duplikáty skryté"
-  },
-  "statusSize": {
-    "message": "veľkosť"
   },
   "langAuto": {
     "message": "Auto (prehliadač)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Vyberte jazyk"
   },
-  "textPillAll": {
-    "message": "Všetok obsah"
-  },
-  "textPillText": {
-    "message": "📄 Texty a články"
-  },
-  "textPillTables": {
-    "message": "📊 Iba tabuľky"
-  },
   "textSelectAll": {
     "message": "Vybrať všetko"
   },
   "textDeselectAll": {
     "message": "Zrušiť výber všetkého"
-  },
-  "textClearSelection": {
-    "message": "Vymazať"
   },
   "toastRefreshComplete": {
     "message": "Skenovanie stránky dokončené: $count$ nových zdrojov",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "Tabuliek: $tables$ · jedinečných riadkov: $rows$",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "Vybraté: $count$ – exporty používajú iba tieto položky",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tabuľka – $count$ riadkov na obrazovke",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tabuľka – všetky jedinečné riadky ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "Snímky: $count$",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Zobrazujú sa všetky riadky"
   },
-  "textTableHistory": {
-    "message": "História ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Skryť históriu"
-  },
   "textTableNoRows": {
     "message": "Zatiaľ neboli zachytené žiadne riadky."
   },
   "textBtnCopy": {
     "message": "Kopírovať text"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Kopírovať"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "Duplicitných obrázkov: $count$",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Exportovať"
   },
   "inspectorLoadingSvg": {
     "message": "Načítava sa SVG…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Ukážka písma"
   },
-  "inspectorBeautify": {
-    "message": "Formátovať"
-  },
-  "inspectorOriginal": {
-    "message": "Originál"
-  },
-  "inspectorHeaders": {
-    "message": "Hlavičky"
-  },
-  "inspectorResponse": {
-    "message": "Odpoveď"
-  },
-  "inspectorRequest": {
-    "message": "Požiadavka"
-  },
   "inspectorQueryParams": {
     "message": "Parametre dopytu"
   },
   "inspectorRequestBody": {
     "message": "Telo požiadavky"
   },
-  "textHintHtml": {
-    "message": "Živá, čitateľná kópia stránky. Každý prvok obsahujúci text sa zachytí v poradí DOM a priebežne sa aktualizuje, keď sa stránka mení. Vyhľadávajte v nej pomocou obyčajného textu, regulárneho výrazu, <strong>selektora CSS</strong> alebo výrazu <strong>XPath</strong> a potom exportujte nájdené položky. Podrobnosti nájdete v <a href=\"#\" id=\"text-hint-guide\">príručke</a>."
-  },
-  "textHeadings": {
-    "message": "Nadpisy"
-  },
-  "textAllLevels": {
-    "message": "Všetky úrovne"
-  },
   "textMatches": {
     "message": "zhody"
   },
   "textMatch": {
     "message": "zhoda"
-  },
-  "textReadingOn": {
-    "message": "Čítanie zap."
   },
   "toastDownloadStarted": {
     "message": "Sťahovanie začalo: $name$",
@@ -756,7 +566,7 @@
     "message": "Tento zdroj sa nepodarilo načítať (CORS alebo nepodporovaný typ)."
   },
   "ratingBannerText": {
-    "message": "Páči sa vám Source Download? Podporte našu víziu open source recenziou v Internetovom obchode Chrome alebo hviezdičkou na GitHub!"
+    "message": "Sme radi, že to fungovalo! Ak vám Source Download šetrí čas, krátka recenzia pomôže ostatným ho nájsť."
   },
   "ratingBannerReview": {
     "message": "★ Recenzia"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Ako sa interpretuje pole dotazu"
   },
-  "textKindTitle": {
-    "message": "Obmedziť na jeden typ prvku"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Úroveň nadpisu"
-  },
   "textPlaceholderRegex": {
     "message": "^Cena:\\s*\\d+ — regulárny výraz JavaScript"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Hľadať v príručke…"
-  },
-  "popupIntro": {
-    "message": "Kategórie počítané <strong>odznakom na paneli nástrojov</strong>. Vypnutím kategórie ju prestanete počítať – odznak okamžite zobrazuje iba to, čo sledujete."
-  },
-  "popupHelpTitle": {
-    "message": "Ako používať celý panel"
-  },
-  "popupStep1": {
-    "message": "Otvorte DevTools pre stránku, ktorú chcete skontrolovať <div class=\"hint\"><kbd>F12</kbd> alebo <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Kliknite na kartu <strong>Source Download</strong> na paneli nástrojov DevTools"
-  },
-  "popupStep3": {
-    "message": "Prehliadajte, kontrolujte a sťahujte zdroje – jednotlivo alebo všetky naraz ako ZIP."
-  },
-  "popupNote": {
-    "message": "Poznámka: Chrome rozšíreniam nedovoľuje programovo otvárať DevTools, a preto je celá sada nástrojov dostupná cez panel nástrojov DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Sledovať všetky kategórie"
   },
   "popupLanguage": {
     "message": "Jazyk"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Zlúčiť segmenty a stiahnuť"
   },
-  "toastHlsMerged": {
-    "message": "Zlúčených segmentov: $COUNT$ do $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "veľkosť neznáma"
-  },
   "progressFetching": {
     "message": "Načítava sa $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Vyhľadávanie regulárnym výrazom je aktívne — uzavrite dotaz do /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Zahrnúť do exportu"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Zlúčiť všetky snímky do jednej tabuľky bez duplikátov — presne tá sa exportuje"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Prezrite si predchádzajúce snímky tejto tabuľky"
-  },
   "tableDownloadCsvTitle": {
     "message": "Stiahnuť túto tabuľku ako CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Snímka $INDEX$ — $TIME$ ($COUNT$ riadkov)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Prepnúť výber na dávkové sťahovanie"
@@ -1150,7 +899,7 @@
     "message": "Kliknite na kartu <strong>Source Download</strong> na paneli nástrojov DevTools (stlačte <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> a potom vyberte kartu na paneli nástrojov DevTools). Prehliadač Chrome neumožňuje rozšíreniam automaticky otvárať DevTools, a preto sa panel nachádza tam. V kontextovom okne ikony na paneli nástrojov si môžete vybrať, ktoré kategórie sa započítajú do odznaku na ikone. Tlačidlo slnko/mesiac na paneli nástrojov panela uzamkne svetlú alebo tmavú tému nezávisle od prehliadača Chrome; voľba sa zapamätá."
   },
   "guideSecCategoriesContent": {
-    "message": "Vertikálne záložky na ľavej strane zoskupujú každý zachytený zdroj do 17 vyhradených kategórií podľa typu: obrázky, videá, zvuk, titulky, dokumenty, písma, zdrojové mapy, WASM, SVG, API, súbory cookie, úložisko a ďalšie. Každá karta zobrazuje aktuálny počet. Naraz sa zobrazuje iba jedna kategória; prepnutím sa vynulujú všetky filtre, takže to, čo vidíte, sa vždy zhoduje s kartou."
+    "message": "Zvislé karty vľavo triedia každý zachytený zdroj do 15 kategórií, ako sú obrázky, videá, písma, zdrojové mapy a volania API, a navyše je tu karta Text a tabuľky. Každá karta zobrazuje aktuálny počet. Naraz sa zobrazuje iba jedna kategória; prepnutím sa vynulujú všetky filtre, takže to, čo vidíte, sa vždy zhoduje s kartou."
   },
   "guideSecSearchFiltersContent": {
     "message": "Vyhľadávací panel filtruje podľa názvu, adresy URL, typu, alternatívneho textu alebo titulku. Ak chcete použiť regulárny výraz, uzavrite dotaz do <kbd>/…/</kbd>, napr. <code>/\\.(png|jpg)$/</code>. Pod panelom nástrojov sa panel filtrov mení podľa kategórie: rozsahy veľkosti a rozmerov pre médiá, metóda HTTP a typ požiadavky pre API, plus triedenie a smer."
@@ -1162,13 +911,13 @@
     "message": "Kliknutím na ľubovoľný zdroj ho otvoríte v paneli kontroly vpravo. Každý otvorený súbor sa zmení na kartu, takže môžete porovnať niekoľko zdrojov vedľa seba – najnovší sa otvorí vľavo. Existujú špecializované prehliadače pre obrázky, video, zvuk, písma, SVG a text/kód (s prepínačom Formátovať). API zobrazujú rozdelené zobrazenie: odpoveď vľavo, podrobnosti požiadavky (metóda, stav, hlavičky, parametre dotazu a telo) vpravo."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Stiahnuť zobrazené</strong> uloží aktuálne viditeľné zdroje (aktívna kategória + vyhľadávanie + filtre) ako ZIP; keď sú filtre aktívne, tlačidlo sa premenuje na <em>Stiahnuť filtrované (N)</em>. Ak ukazovateľ myši podržíte nad ľubovoľným tlačidlom sťahovania, zobrazí sa odhadovaná veľkosť archívu ešte pred kliknutím. <strong>Stiahnuť vybrané</strong> stiahne iba začiarknuté položky. <strong>Stiahnuť všetko</strong> zachytí každý objavený zdroj do ZIP so štruktúrou priečinkov. Neúspešné sťahovanie sa automaticky zopakuje a možno ho zopakovať aj z kontextovej ponuky. <strong>Exportovať</strong> zapíše viditeľný zoznam ako JSON alebo CSV, prípadne vyexportuje sieťový denník prehliadača Chrome ako súbor HAR."
+    "message": "<strong>Stiahnuť viditeľné</strong> uloží aktuálne viditeľné zdroje (aktívna kategória + vyhľadávanie + filtre) ako ZIP; keď sú filtre aktívne, tlačidlo sa premenuje na <em>Stiahnuť filtrované (N)</em>. Ak ukazovateľ myši podržíte nad ľubovoľným tlačidlom sťahovania, zobrazí sa odhadovaná veľkosť archívu ešte pred kliknutím. <strong>Stiahnuť vybrané</strong> stiahne iba začiarknuté položky. <strong>Stiahnuť všetko</strong> zachytí každý objavený zdroj do ZIP so štruktúrou priečinkov. Neúspešné sťahovania sa označia a zopakujete ich jedným kliknutím z oznámenia, z ikony upozornenia pri položke alebo z kontextovej ponuky. <strong>Exportovať</strong> zapíše viditeľný zoznam ako JSON alebo CSV, prípadne vyexportuje sieťový denník prehliadača Chrome ako súbor HAR."
   },
   "guideSecLightboxContent": {
     "message": "Tlačidlo priblíženia otvorí médiá v plnohodnotnom lightboxe, kde sa môžete posúvať ťahaním, približovať pomocou kolieska myši, tlačidiel na obrazovke alebo klávesnice (<kbd>+</kbd>/<kbd>-</kbd> na priblíženie, <kbd>0</kbd> na obnovenie, <kbd>Esc</kbd> na zatvorenie)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Kategória <strong>Text</strong> je živá a čitateľná kópia stránky. Zachytáva každý prvok, ktorý obsahuje text – nadpisy, odseky, položky zoznamu, tlačidlá, <code>div</code>/<code>span</code> a ďalšie – v poradí DOM a pokračuje v skenovaní, kým je zapnutá funkcia <strong>Naživo</strong>.</p><p>Pole dotazu funguje štyrmi spôsobmi, ktoré si vyberiete v rozbaľovacej ponuke vedľa neho: <strong>Obsahuje</strong> a <strong>Regex</strong> filtrujú už zachytený text, zatiaľ čo <strong>Selektor CSS</strong> a <strong>XPath</strong> sa spúšťajú na živej stránke, takže môžu zasiahnuť čokoľvek v DOM. XPath akceptuje aj výrazy, ktoré vracajú hodnotu namiesto prvkov, napríklad <code>count(//a)</code> alebo <code>//@href</code>. Čokoľvek stránka oznámi o chybnom dotaze, zobrazí sa vedľa poľa. <strong>Prvok</strong> zúži výsledok na jednu značku a zobrazí počet každej značky nájdenej na stránke. Vymazaním poľa dotazu (alebo stlačením tlačidla <strong>Vymazať</strong>) sa vrátite na <em>Všetky prvky</em> a stránka sa znova zachytí – rozbaľovaciu ponuku už nikdy nemusíte resetovať ručne.</p><p><strong>Čítanie</strong> skryje značky, začiarkavacie políčka a údaje o umiestnení, takže sa obsah číta ako dokument. Tabuľky uchovávajú obmedzenú históriu snímok, takže dynamické (SPA) tabuľky sa nikdy nestratia. Stlačením tlačidla <strong>Zobraziť všetky riadky</strong> v tabuľke zlúčite všetky snímky do jedného zobrazenia bez duplikátov – presne to obsahuje export. Exportujte ako <strong>TXT</strong> (čitateľná stránka), <strong>MD</strong> (Markdown vrátane tabuliek) alebo tabuľky ako CSV, HTML či skutočný viachárkový zošit <strong>XLSX</strong>. Prednosť majú začiarknuté položky; inak sa exportuje všetko, čo je momentálne viditeľné.</p>"
+    "message": "<p>Kategória <strong>Text</strong> je živá a čitateľná kópia stránky: nadpisy, odseky, zoznamy a odkazy v poradí stránky, aktualizované, kým je zapnuté <strong>Naživo</strong>. Prejdením myšou cez riadok ho skopírujete, alebo použite <strong>Kopírovať text</strong>, <strong>Markdown</strong> a <strong>TXT</strong> pre všetko zobrazené.</p><p>V časti <strong>Tabuľky</strong> sa každá tabuľka stránky zobrazí ako karta s ukážkou a vlastnými tlačidlami <strong>Excel</strong>, <strong>CSV</strong> a <strong>Kopírovať</strong>; <strong>Všetky tabuľky do Excelu</strong> ich uloží do jedného zošita, každú na samostatný hárok. Meniace sa tabuľky si uchovávajú históriu snímok a <strong>Zobraziť všetky riadky</strong> ich zlúči do jednej tabuľky bez duplicít – presne to, čo obsahuje export.</p><p>Polia vľavo triedia stránku podľa typu prvku – celý text stránky, každá úroveň nadpisov, odseky, odkazy, položky zoznamov, tlačidlá, kód a ďalšie – každé s počtom a prvým riadkom; vyberte jedno a uvidíte, skopírujete či exportujete len to. Vyhľadávacie pole filtruje počas písania a ponuka vedľa z neho urobí regulárny výraz, <strong>selektor CSS</strong> alebo výraz <strong>XPath</strong> (aj výrazy vracajúce hodnotu ako <code>count(//a)</code> alebo <code>//@href</code>) spustený na živej stránke; pole <strong>Vlastný dopyt</strong> robí to isté. Čo stránka hlási k chybnému dopytu, sa zobrazí priamo v poli.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML a ďalšie súbory s titulkami – vrátane zdrojov <code>&lt;track&gt;</code> – sa namiesto miešania s dokumentmi zobrazia na vlastnej karte <strong>Titulky</strong>."
@@ -1270,7 +1019,7 @@
     "message": "Farba bola skopírovaná do schránky"
   },
   "toastProgressCapturing": {
-    "message": "Zachytáva sa celá stránka... $percent$%",
+    "message": "Zachytáva sa celá stránka… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Spája sa obrázok..."
+    "message": "Spája sa obrázok…"
   },
   "modalExportTitle": {
     "message": "Snímka celej stránky je pripravená"
@@ -1302,7 +1051,7 @@
     "message": "Kopírovať do schránky"
   },
   "btnExportGenerating": {
-    "message": "Vytvára sa..."
+    "message": "Vytvára sa…"
   },
   "toastPdfGenerated": {
     "message": "Dokument PDF bol uložený."
@@ -1317,13 +1066,10 @@
     "message": "Ukážka:"
   },
   "toastRecGeneratingGif": {
-    "message": "Vytvára sa GIF, počkajte chvíľu..."
+    "message": "Vytvára sa GIF, počkajte chvíľu…"
   },
   "settingGifResolution": {
     "message": "Predvolené rozlíšenie GIF"
-  },
-  "optGifOriginal": {
-    "message": "Originál (natívne rozlíšenie 1:1 — plné 3K/4K, bez zmenšenia)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (max. 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "Nahrávanie obrazovky (video a GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Nahrajte akúkoľvek oblasť obrazovky ako MP4, WebM alebo animovaný GIF. Nahrávky GIF obsahujú natívne rozlíšenie 1:1, profily 1080p, 720p a 480p s odhadovanou veľkosťou súborov v reálnom čase. Maximálna dĺžka záznamu GIF je 1 minúta (60 s) pre optimálny výkon prehliadača."
+    "message": "Nahrajte ľubovoľnú oblasť obrazovky ako MP4, WebM alebo animovaný GIF. Nahrávky GIF ponúkajú profily 1080p, 720p a 480p s priebežným odhadom veľkosti. Nahrávka GIF môže trvať až 1 minútu (60 s)."
   },
   "msgGifMaxDurationReached": {
-    "message": "Bola dosiahnutá maximálna dĺžka GIF 1 minúta (60 s). Vytvára sa GIF..."
+    "message": "Bola dosiahnutá maximálna dĺžka GIF 1 minúta (60 s). Vytvára sa GIF…"
   },
   "labelGifMaxDuration": {
     "message": "Max. 1 min (60 s)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Prezentácia (1 snímka za sekundu, minimálna veľkosť)"
-  },
-  "popupRightClickHint": {
-    "message": "Kliknite pravým tlačidlom myši na ľubovoľné miesto na webovej stránke pre nahrávanie obrazovky (Video/GIF) a výber farby."
   },
   "toastElementZappedAd": {
     "message": "Reklama / iframe bol skrytý pre túto reláciu.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Rozlíšenie GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Rozlíšenie GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Nenašla sa žiadna aktívna karta.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Kliknite sem a potom vyberte ľubovoľnú farbu na stránke"
+  },
+  "welcomeTitle": {
+    "message": "Source Download je pripravený"
+  },
+  "welcomePrivacy": {
+    "message": "Všetko beží na vašom počítači. Žiadny účet, žiadne sledovanie, nič sa nám neodosiela."
+  },
+  "welcomeHelp": {
+    "message": "Niečo nefunguje? Napíšte nám na GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Niečo nie je v poriadku?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF dosiahol 200 MB. Ukladá sa, čo bolo nahraté…"
+  },
+  "btnPopupFullPage": {
+    "message": "Snímka celej stránky"
+  },
+  "toastRecWrongTab": {
+    "message": "Ak chcete nahrať oblasť tejto stránky, v dialógu zdieľania vyberte „Táto karta“."
+  },
+  "popupCaptureTitle": {
+    "message": "Zachytiť túto stránku"
+  },
+  "popupTileOffline": {
+    "message": "Uložiť stránku offline"
+  },
+  "popupTileGuide": {
+    "message": "Ako to funguje"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Súbory, obrázky a tabuľky"
+  },
+  "popupDevtoolsHint": {
+    "message": "Otvorte Nástroje pre vývojárov a vyberte kartu Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome na tejto stránke nepovoľuje rozšírenia. Otvorte ľubovoľný web a použite nástroje tam."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Kliknite pravým tlačidlom na ktorúkoľvek stránku"
+  },
+  "welcomeCardMenuText": {
+    "message": "Snímky celej stránky alebo oblasti, nahrávanie oblasti, výber farby a offline kópia – priamo tam, kde ste."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Alebo použite tlačidlo na paneli nástrojov"
+  },
+  "welcomeCardPopupText": {
+    "message": "Kliknite na ikonu dielika skladačky na paneli nástrojov Chrome a pripnite Source Download – nástroje budete mať vždy na jedno kliknutie."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Stlačte F12 pre všetko, čo je na stránke"
+  },
+  "welcomeCardPanelText": {
+    "message": "V Nástrojoch pre vývojárov vyberte kartu Source Download. Nájdete tam každý obrázok, video, písmo a súbor, ktorý stránka načítala – zobrazte ukážku, filtrujte a uložte ako ZIP. Tabuľky zo stránky exportujete do Excelu."
+  },
+  "welcomeLead": {
+    "message": "Tri spôsoby, ako z ktorejkoľvek webovej stránky získať, čo potrebujete."
+  },
+  "btnDownloadOptions": {
+    "message": "Ďalšie možnosti sťahovania"
+  },
+  "btnMore": {
+    "message": "Ďalšie akcie"
+  },
+  "btnFilters": {
+    "message": "Filtre"
+  },
+  "tabsShowEmpty": {
+    "message": "Zobraziť prázdne"
+  },
+  "tabsHideEmpty": {
+    "message": "Skryť prázdne"
+  },
+  "textSegText": {
+    "message": "Text"
+  },
+  "textSegTables": {
+    "message": "Tabuľky"
+  },
+  "textLive": {
+    "message": "Naživo"
+  },
+  "textPaused": {
+    "message": "Pozastavené"
+  },
+  "textLivePauseTitle": {
+    "message": "Naživo: stránka sa znova načíta pri každej zmene. Kliknutím pozastavíte."
+  },
+  "textLiveResumeTitle": {
+    "message": "Pozastavené. Kliknutím budete stránku znova sledovať naživo."
+  },
+  "textSearchText": {
+    "message": "Hľadať v texte stránky"
+  },
+  "textExportAllXlsx": {
+    "message": "Všetky tabuľky do Excelu"
+  },
+  "textNoTables": {
+    "message": "Na tejto stránke zatiaľ nie sú žiadne tabuľky. Objavia sa tu, hneď ako stránka nejakú zobrazí."
+  },
+  "textTable": {
+    "message": "Tabuľka"
+  },
+  "textCopy": {
+    "message": "Kopírovať"
+  },
+  "textShowLess": {
+    "message": "Zobraziť menej"
+  },
+  "areaHintSelect": {
+    "message": "Ťahaním vyberte oblasť"
+  },
+  "areaHintCopy": {
+    "message": "kopírovať"
+  },
+  "areaHintSave": {
+    "message": "uložiť"
+  },
+  "areaHintExit": {
+    "message": "koniec"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Kopírovať automaticky"
+  },
+  "areaAutoCopyOn": {
+    "message": "Automatické kopírovanie je zapnuté"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Pustite výber a je v schránke."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Vypnúť"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Skopírované do schránky (automatické kopírovanie je zapnuté)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Táto stránka nepovoľuje kopírovanie do schránky. Použite namiesto toho Stiahnuť."
+  },
+  "textKindAll": {
+    "message": "Celý text stránky"
+  },
+  "textKindHeading": {
+    "message": "Nadpis"
+  },
+  "textKindP": {
+    "message": "Odseky"
+  },
+  "textKindA": {
+    "message": "Odkazy"
+  },
+  "textKindLi": {
+    "message": "Položky zoznamu"
+  },
+  "textKindButton": {
+    "message": "Tlačidlá"
+  },
+  "textKindLabel": {
+    "message": "Popisy a titulky"
+  },
+  "textKindSpan": {
+    "message": "Riadkový text"
+  },
+  "textKindDiv": {
+    "message": "Ďalšie bloky"
+  },
+  "textKindCell": {
+    "message": "Bunky tabuliek"
+  },
+  "textKindCode": {
+    "message": "Kód"
+  },
+  "textKindQuote": {
+    "message": "Citácie"
+  },
+  "textCustomQuery": {
+    "message": "Vlastný dopyt"
+  },
+  "textCustomQueryHint": {
+    "message": "Selektor CSS alebo XPath na živej stránke"
+  },
+  "menuSettings": {
+    "message": "Nastavenia"
+  },
+  "settingsSave": {
+    "message": "Uložiť"
+  },
+  "settingsReset": {
+    "message": "Obnoviť predvolené"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Automaticky kopírovať snímky oblasti"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Hneď ako pustíte výber, obrázok sa skopíruje priamo do schránky. Kým je to zapnuté, upozorní na to zakaždým lišta v hornej časti stránky."
   }
 }

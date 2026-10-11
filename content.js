@@ -1,179 +1,32 @@
 /* Source Download — content script.
  * Author: Turan Burak Yeşilyurt — https://www.linkedin.com/in/turan-burak-yesilyurt/
  *
- * Counts the resources present on the inspected page
- * (Resource Timing API + DOM scan) and reports per-category counts to the
- * background service worker, which updates the toolbar badge. */
+ * Page-side capture tools: element hider, area screenshot, area video/GIF
+ * recording, color picker, full-page screenshot helpers and the offline page
+ * archive. Injected by the service worker only when the user starts one of
+ * them (see ensureContentScriptInjected in background.js). */
 
 (() => {
-  const EXT_TYPES = {
-    png: 'image', jpg: 'image', jpeg: 'image', gif: 'image', webp: 'image',
-    ico: 'image', avif: 'image', bmp: 'image', jxl: 'image', jfif: 'image',
-    svg: 'svg', svgz: 'svg',
-    mp4: 'video', webm: 'video', mkv: 'video', mov: 'video', m4v: 'video', ogv: 'video',
-    ts: 'video', m3u8: 'video', m3u: 'video',
-    mp3: 'audio', wav: 'audio', ogg: 'audio', oga: 'audio', m4a: 'audio', aac: 'audio',
-    flac: 'audio', opus: 'audio', weba: 'audio',
-    vtt: 'caption', srt: 'caption', ttml: 'caption', sbv: 'caption', ass: 'caption', ssa: 'caption',
-    css: 'css',
-    js: 'js', mjs: 'js', cjs: 'js', jsx: 'js', ts: 'js', tsx: 'js',
-    woff: 'font', woff2: 'font', ttf: 'font', otf: 'font', eot: 'font',
-    pdf: 'document', doc: 'document', docx: 'document', xls: 'document', xlsx: 'document',
-    ppt: 'document', pptx: 'document', txt: 'document', xml: 'document',
-    html: 'document', htm: 'document', csv: 'document', md: 'document', rtf: 'document',
-    zip: 'document', gz: 'document',
-    json: 'json', json5: 'json', geojson: 'json',
-    map: 'sourcemap',
-    wasm: 'wasm',
-    webmanifest: 'manifest', manifest: 'manifest',
-  };
+  // Injected on demand by the service worker; never install twice in one document.
+  if (window.__sdCaptureToolsLoaded) return;
+  window.__sdCaptureToolsLoaded = true;
 
-  const BLOCKED = /^(chrome|chrome-extension|chromium|devtools|about|edge|moz-extension|vivaldi|brave|opera):/i;
-  const seen = new Map(); // url -> category
-
-  function getExt(url) {
+  function reportZapState() {
     try {
-      const m = new URL(url).pathname.match(/\.([a-z0-9]+)$/i);
-      return m ? m[1].toLowerCase() : '';
-    } catch {
-      const m = url.match(/\.([a-z0-9]+)(?:[?#]|$)/i);
-      return m ? m[1].toLowerCase() : '';
-    }
+      chrome.runtime.sendMessage({ type: 'zapState', count: zappedStack.length }, () => void chrome.runtime.lastError);
+    } catch { /* noop */ }
   }
-
-  function classify(url, initiator) {
-    if (!url || typeof url !== 'string') return null;
-    if (BLOCKED.test(url)) return null;
-    const ext = getExt(url);
-    if (EXT_TYPES[ext]) return EXT_TYPES[ext];
-    switch (initiator) {
-      case 'img': return 'image';
-      case 'video': return 'video';
-      case 'audio': return 'audio';
-      case 'track': return 'caption';
-      case 'script': return 'js';
-      case 'css': return 'css';
-      case 'fetch':
-      case 'xmlhttprequest': return 'api';
-      default: return 'other';
-    }
-  }
-
-  function add(url, initiator) {
-    const t = classify(url, initiator);
-    if (t && !seen.has(url)) seen.set(url, t);
-  }
-
-  function collectPerformance() {
-    let entries = [];
-    try {
-      entries = performance.getEntriesByType('resource');
-    } catch {
-      /* noop */
-    }
-    for (const e of entries) add(e.name, e.initiatorType);
-  }
-
-  function collectDom() {
-    const doc = document;
-    doc.querySelectorAll('img').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      const u = el.currentSrc || el.src;
-      if (u) add(u, 'img');
-    });
-    doc.querySelectorAll('img[srcset], source[srcset]').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      (el.srcset || '').split(',').forEach((part) => {
-        const u = part.trim().split(/\s+/)[0];
-        if (u) add(u, 'img');
-      });
-    });
-    doc.querySelectorAll('video').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      const s = el.querySelector('source');
-      const u = el.currentSrc || (s && s.src);
-      if (u) add(u, 'video');
-    });
-    doc.querySelectorAll('video source').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      add(el.src, 'video');
-    });
-    doc.querySelectorAll('audio').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      const s = el.querySelector('source');
-      const u = el.currentSrc || (s && s.src);
-      if (u) add(u, 'audio');
-    });
-    doc.querySelectorAll('audio source').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      add(el.src, 'audio');
-    });
-    doc.querySelectorAll('script[src]').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      add(el.src, 'script');
-    });
-    doc.querySelectorAll('link[rel~="stylesheet"]').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      add(el.href, 'css');
-    });
-    doc.querySelectorAll('link[rel~="icon"]').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      add(el.href, 'link');
-    });
-    doc.querySelectorAll('iframe[src]').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      add(el.src, 'document');
-    });
-    doc.querySelectorAll('track[src]').forEach((el) => {
-      if (el.closest('[data-sd-zapped]')) return;
-      add(el.src, 'track');
-    });
-  }
-
-  function computeCounts() {
-    const counts = { all: 0, api: 0, image: 0, svg: 0, video: 0, audio: 0, caption: 0, css: 0, js: 0, sourcemap: 0, font: 0, document: 0, json: 0, wasm: 0, manifest: 0, other: 0 };
-    for (const t of seen.values()) if (counts[t] !== undefined) counts[t]++;
-    counts.all = seen.size;
-    return counts;
-  }
-
-  function send() {
-    collectPerformance();
-    collectDom();
-    try {
-      chrome.runtime.sendMessage({ type: 'resourceCounts', counts: computeCounts() }, () => {
-        void chrome.runtime.lastError; // popup/background may be idle
-      });
-    } catch {
-      /* noop */
-    }
-  }
-
-  send();
-  window.addEventListener('load', send);
-
-  let domTimer = null;
-  const observer = new MutationObserver(() => {
-    if (domTimer) return;
-    domTimer = setTimeout(() => {
-      domTimer = null;
-      send();
-    }, 800);
-  });
-  try {
-    observer.observe(document.documentElement, { childList: true, subtree: true });
-  } catch {
-    /* noop */
-  }
-  setInterval(send, 5000);
 
   /* ============================================================
    * Element Zapper & Full Page Screenshot Integration
    * ============================================================ */
 
-  let lastRightClickTarget = null;
-  let lastMouseX = window.innerWidth / 2;
-  let lastMouseY = window.innerHeight / 2;
+  // content-context.js (the only always-on script) remembers the last
+  // right-click, because these tools are injected after the menu was opened.
+  const sdCtx = window.__sdContext || {};
+  let lastRightClickTarget = sdCtx.target || null;
+  let lastMouseX = typeof sdCtx.x === 'number' ? sdCtx.x : window.innerWidth / 2;
+  let lastMouseY = typeof sdCtx.y === 'number' ? sdCtx.y : window.innerHeight / 2;
 
   ['mousemove', 'pointermove', 'mousedown', 'contextmenu'].forEach((evt) => {
     window.addEventListener(evt, (e) => {
@@ -189,12 +42,37 @@
 
   const zappedStack = [];
 
+  // Light theme shared by every on-page tool (toolbars, dialogs, toasts).
+  // Inline styles reference these variables; every tool root has an
+  // "__sd_" id, so the variables never leak into the page's own elements.
+  function sdEnsureTheme() {
+    if (document.getElementById('__sd_ui_theme')) return;
+    const style = document.createElement('style');
+    style.id = '__sd_ui_theme';
+    style.textContent = [
+      '[id^="__sd_"]{--sd-surface:rgba(255,255,255,0.97);--sd-surface-2:#f3f5fa;--sd-canvas:#eef1f6;',
+      '--sd-border:rgba(16,24,40,0.11);--sd-border-strong:rgba(16,24,40,0.2);--sd-chip:rgba(16,24,40,0.05);',
+      '--sd-hover:#e8ecf4;--sd-text:#1b1f29;--sd-muted:#5f6675;--sd-accent:#2f63e0;',
+      '--sd-shadow:0 12px 32px rgba(16,24,40,0.16),0 2px 6px rgba(16,24,40,0.08);',
+      '--sd-shadow-lg:0 24px 60px rgba(16,24,40,0.28);color-scheme:light;}',
+      '[id^="__sd_"] button[style*="var(--sd-surface-2)"]:not(:disabled):hover{background:var(--sd-hover)!important;}',
+      '[id^="__sd_"] button[style*="var(--sd-chip)"]:not(:disabled):hover{background:var(--sd-hover)!important;}',
+      '[id^="__sd_"] button[style*="var(--sd-accent)"]:not(:disabled):hover{filter:brightness(1.1);}',
+      '[id^="__sd_"] button[style*="background:transparent"][style*="var(--sd-muted)"]:hover{color:var(--sd-text)!important;background:var(--sd-hover)!important;}',
+      '[id^="__sd_"] .__sd_tb_tool:hover{box-shadow:inset 0 0 0 1px var(--sd-border-strong);}',
+      '[id^="__sd_"] button:focus-visible{outline:2px solid var(--sd-accent);outline-offset:2px;}',
+    ].join('');
+    (document.head || document.documentElement).appendChild(style);
+  }
+  sdEnsureTheme();
+
   function showToast(text) {
+    sdEnsureTheme();
     let toast = document.getElementById('__sd_toast_notification');
     if (!toast) {
       toast = document.createElement('div');
       toast.id = '__sd_toast_notification';
-      toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:rgba(15,23,42,0.92);color:#f8fafc;padding:9px 18px;border-radius:8px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:13px;font-weight:500;box-shadow:0 10px 25px -5px rgba(0,0,0,0.4),0 0 0 1px rgba(255,255,255,0.1);z-index:2147483647;pointer-events:none;transition:opacity 0.25s ease, transform 0.25s ease;opacity:0;';
+      toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--sd-surface);color:var(--sd-text);padding:9px 18px;border-radius:8px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:13px;font-weight:500;box-shadow:var(--sd-shadow);border:1px solid var(--sd-border);z-index:2147483647;pointer-events:none;transition:opacity 0.25s ease, transform 0.25s ease;opacity:0;';
       document.documentElement.appendChild(toast);
     }
     toast.textContent = text;
@@ -314,7 +192,7 @@
     } catch {
       showToast('Element hidden for this session.');
     }
-    send();
+    reportZapState();
     return true;
   }
 
@@ -329,7 +207,7 @@
       } catch {
         showToast('Element restored.');
       }
-      send();
+      reportZapState();
     }
   }
 
@@ -347,7 +225,7 @@
     } catch {
       showToast('All hidden elements restored.');
     }
-    send();
+    reportZapState();
   }
 
   let screenshotState = null;
@@ -499,15 +377,86 @@
     screenshotState = null;
   }
 
+  // Offline archive budget: embeds as much as fits, links the rest absolutely.
+  const ARCHIVE_MAX_FILE = 15 * 1024 * 1024;
+  const ARCHIVE_MAX_TOTAL = 80 * 1024 * 1024;
+
+  function createAssetInliner() {
+    const cache = new Map();
+    let total = 0;
+    return async function inline(url) {
+      if (!url || /^(data|blob|javascript|about):/i.test(url)) return null;
+      let abs;
+      try { abs = new URL(url, window.location.href).href; } catch { return null; }
+      if (!cache.has(abs)) {
+        cache.set(abs, (async () => {
+          try {
+            const res = await fetch(abs);
+            if (!res.ok) return null;
+            const blob = await res.blob();
+            if (blob.size > ARCHIVE_MAX_FILE || total + blob.size > ARCHIVE_MAX_TOTAL) return null;
+            total += blob.size;
+            return await new Promise((resolve) => {
+              const reader = new FileReader();
+              reader.onloadend = () => resolve(typeof reader.result === 'string' ? reader.result : null);
+              reader.onerror = () => resolve(null);
+              reader.readAsDataURL(blob);
+            });
+          } catch {
+            return null;
+          }
+        })());
+      }
+      return cache.get(abs);
+    };
+  }
+
+  async function mapLimit(items, limit, fn) {
+    let next = 0;
+    const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
+      while (next < items.length) {
+        const i = next++;
+        await fn(items[i], i);
+      }
+    });
+    await Promise.all(workers);
+  }
+
+  // Rewrites url(...) references in CSS text: absolute first, then embedded.
+  async function inlineCssUrls(cssText, baseUrl, inline) {
+    const refs = new Map();
+    cssText.replace(/url\(\s*['"]?([^'")]+)['"]?\s*\)/gi, (m, raw) => {
+      const ref = raw.trim();
+      if (!ref.startsWith('data:') && !ref.startsWith('#')) {
+        try { refs.set(ref, new URL(ref, baseUrl).href); } catch { /* noop */ }
+      }
+      return m;
+    });
+    const embedded = new Map();
+    await mapLimit([...refs.values()], 6, async (abs) => {
+      embedded.set(abs, (await inline(abs)) || abs);
+    });
+    return cssText.replace(/url\(\s*['"]?([^'")]+)['"]?\s*\)/gi, (m, raw) => {
+      const abs = refs.get(raw.trim());
+      return abs ? `url("${embedded.get(abs) || abs}")` : m;
+    });
+  }
+
+  // Builds a single-file HTML copy of the page. Works on a clone only — the
+  // live page is never modified.
   async function buildSingleFileHtml() {
     const clone = document.documentElement.cloneNode(true);
+    const inline = createAssetInliner();
+
+    // Pair cloned <img> with live ones (same order) to read currentSrc, which
+    // reflects the srcset candidate the browser actually loaded.
+    const livePairs = Array.from(clone.querySelectorAll('img')).map((img, i) => [img, document.images[i]]);
 
     // Remove zapped elements
     clone.querySelectorAll('[data-sd-zapped]').forEach((el) => el.remove());
 
-    // Remove extension toast if present
-    const toast = clone.querySelector('#__sd_toast_notification');
-    if (toast) toast.remove();
+    // Remove extension UI if present
+    clone.querySelectorAll('[id^="__sd_"]').forEach((el) => el.remove());
 
     // Ensure <base href="..."> is present in head so relative links stay navigable
     let head = clone.querySelector('head');
@@ -522,82 +471,67 @@
     }
     base.setAttribute('href', window.location.href);
 
-    // 1. Inline External Stylesheets
+    // 1. Inline external stylesheets (fonts and background images embedded)
     const linkStyles = Array.from(clone.querySelectorAll('link[rel~="stylesheet"]'));
     for (const link of linkStyles) {
       const href = link.href;
       if (!href) continue;
-      let inlined = false;
+      let cssText = null;
       try {
         const res = await fetch(href);
-        if (res.ok) {
-          let cssText = await res.text();
-          const baseUrl = new URL(href, window.location.href);
-          cssText = cssText.replace(/url\(\s*['"]?([^'")]+)['"]?\s*\)/gi, (match, relUrl) => {
-            const trimmed = relUrl.trim();
-            if (trimmed.startsWith('data:') || trimmed.startsWith('#')) return match;
-            try {
-              const absUrl = new URL(trimmed, baseUrl).href;
-              return `url("${absUrl}")`;
-            } catch {
-              return match;
-            }
-          });
-          const styleEl = document.createElement('style');
-          styleEl.setAttribute('data-sd-inlined', 'true');
-          styleEl.textContent = cssText;
-          link.parentNode.replaceChild(styleEl, link);
-          inlined = true;
-        }
+        if (res.ok) cssText = await res.text();
       } catch { /* fetch failed */ }
-
-      if (!inlined) {
+      if (cssText === null) {
         try {
           for (const sheet of document.styleSheets) {
             if (sheet.href === href && sheet.cssRules) {
-              const cssText = Array.from(sheet.cssRules).map((r) => r.cssText).join('\n');
-              const styleEl = document.createElement('style');
-              styleEl.setAttribute('data-sd-inlined', 'true');
-              styleEl.textContent = cssText;
-              link.parentNode.replaceChild(styleEl, link);
+              cssText = Array.from(sheet.cssRules).map((r) => r.cssText).join('\n');
               break;
             }
           }
         } catch { /* cross-origin CSSOM protected */ }
       }
+      if (cssText === null) continue;
+      const styleEl = document.createElement('style');
+      styleEl.setAttribute('data-sd-inlined', 'true');
+      styleEl.textContent = await inlineCssUrls(cssText, new URL(href, window.location.href), inline);
+      link.parentNode.replaceChild(styleEl, link);
+    }
+    for (const styleEl of clone.querySelectorAll('style:not([data-sd-inlined])')) {
+      styleEl.textContent = await inlineCssUrls(styleEl.textContent || '', window.location.href, inline);
     }
 
-    // 2. Inline Images as Base64 Data URIs (up to 60 images to prevent hangs)
-    const images = Array.from(clone.querySelectorAll('img'));
-    const imageLimit = Math.min(images.length, 60);
-    for (let i = 0; i < imageLimit; i++) {
-      const img = images[i];
-      const src = img.getAttribute('src') || img.currentSrc;
-      if (!src || src.startsWith('data:')) continue;
+    // 2. Embed images (all of them, within the size budget)
+    await mapLimit(livePairs, 6, async ([img, live]) => {
+      if (!img.isConnected && !clone.contains(img)) return;
+      const src = (live && live.currentSrc) || img.getAttribute('src') || '';
+      if (!src || src.startsWith('data:')) return;
+      const dataUri = await inline(src);
       try {
-        const absSrc = new URL(src, window.location.href).href;
-        const res = await fetch(absSrc);
-        if (res.ok) {
-          const blob = await res.blob();
-          const dataUri = await new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.onloadend = () => resolve(reader.result);
-            reader.readAsDataURL(blob);
-          });
-          img.setAttribute('src', dataUri);
-          img.removeAttribute('srcset');
-        }
-      } catch {
-        try {
-          img.setAttribute('src', new URL(src, window.location.href).href);
-        } catch { /* noop */ }
+        img.setAttribute('src', dataUri || new URL(src, window.location.href).href);
+      } catch { /* noop */ }
+      if (dataUri) {
+        img.removeAttribute('srcset');
+        img.removeAttribute('sizes');
+        img.removeAttribute('loading');
+        const picture = img.parentElement && img.parentElement.tagName === 'PICTURE' ? img.parentElement : null;
+        if (picture) picture.querySelectorAll('source').forEach((s) => s.remove());
       }
-    }
-
-    // 3. Ensure all reveal/animated elements are marked visible in live DOM and clone
-    document.querySelectorAll('.reveal, [data-aos], .animate, .fade-in, [class*="reveal"]').forEach((el) => {
-      el.classList.add('visible', 'aos-animate', 'revealed', 'active');
     });
+
+    // 3. Inline style="background-image: url(...)" and similar
+    const styled = Array.from(clone.querySelectorAll('[style*="url("]'));
+    await mapLimit(styled, 6, async (el) => {
+      el.setAttribute('style', await inlineCssUrls(el.getAttribute('style') || '', window.location.href, inline));
+    });
+
+    // 4. Favicons
+    await mapLimit(Array.from(clone.querySelectorAll('link[rel~="icon"][href], link[rel="apple-touch-icon"][href]')), 4, async (link) => {
+      const dataUri = await inline(link.getAttribute('href'));
+      if (dataUri) link.setAttribute('href', dataUri);
+    });
+
+    // Scroll-reveal content is shown in the copy only (never on the live page).
     clone.querySelectorAll('.reveal, [data-aos], .animate, .fade-in, [class*="reveal"]').forEach((el) => {
       el.classList.add('visible', 'aos-animate', 'revealed', 'active');
     });
@@ -628,7 +562,15 @@
     return '<!DOCTYPE html>\n' + headerNotice + clone.outerHTML;
   }
 
+  // Counts towards the panel's review banner.
+  function sdRecordValue() {
+    try {
+      chrome.runtime.sendMessage({ type: 'recordMilestone' }, () => void chrome.runtime.lastError);
+    } catch { /* noop */ }
+  }
+
   function triggerDownload(url, filename) {
+    sdRecordValue();
     const a = document.createElement('a');
     a.href = url;
     a.download = filename || 'download';
@@ -639,8 +581,7 @@
     }, 200);
   }
 
-  const SD_LOCALES = ["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt_PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
-  const SD_RTL_LOCALES = ['ar', 'he', 'fa'];
+  const SD_RTL_LOCALES = SourceDownloadLocale.RTL;
   let sdStoredLang = 'auto';
 
   try {
@@ -654,41 +595,14 @@
   } catch { /* noop */ }
 
   function sdNormalizeLocale(code) {
-    const raw = String(code || '').trim();
-    const lower = raw.toLowerCase().replace(/-/g, '_');
-    if (!lower) return 'en';
-    for (const loc of SD_LOCALES) {
-      if (loc.toLowerCase() === lower) return loc;
-    }
-    if (lower.startsWith('zh_tw') || lower.startsWith('zh_hk') || lower.startsWith('zh_mo') || lower.startsWith('zh_hant')) return 'zh_TW';
-    if (lower.startsWith('zh')) return 'zh_CN';
-    if (lower.startsWith('pt_pt')) return 'pt_PT';
-    if (lower.startsWith('pt')) return 'pt_BR';
-    if (lower.startsWith('es_419') || /^es_(mx|ar|co|cl|pe|ve|uy|ec|bo|py|cr|pa|do|gt|hn|ni|sv|pr|cu|us)/.test(lower)) return 'es_419';
-    if (lower.startsWith('es')) return 'es';
-    if (lower.startsWith('en_gb') || /^en_(au|nz|ie|za|in)/.test(lower)) return 'en_GB';
-    if (lower.startsWith('en_us')) return 'en_US';
-    if (lower.startsWith('nb') || lower.startsWith('nn')) return 'no';
-    if (lower.startsWith('tl')) return 'fil';
-    const prefix = lower.split('_')[0];
-    for (const loc of SD_LOCALES) {
-      if (loc.toLowerCase() === prefix) return loc;
-    }
-    return 'en';
+    return SourceDownloadLocale.normalize(code);
   }
 
   function resolveDict(langCode) {
     const i18n = (typeof window !== 'undefined' && window.SourceDownloadI18n) || (typeof globalScope !== 'undefined' && globalScope.SourceDownloadI18n);
     let code = langCode;
     if (!code || code === 'auto') code = sdStoredLang;
-    if (!code || code === 'auto') {
-      try {
-        code = (chrome.i18n && chrome.i18n.getUILanguage && chrome.i18n.getUILanguage()) || navigator.language || 'en';
-      } catch {
-        code = navigator.language || 'en';
-      }
-    }
-    const resolved = sdNormalizeLocale(code);
+    const resolved = SourceDownloadLocale.resolve(code);
     const base = (i18n && i18n.en) || {};
     const own = (i18n && i18n[resolved]) || {};
     const dict = Object.assign({}, base, own);
@@ -696,11 +610,47 @@
   }
 
   function sdFill(template, vars) {
-    let out = String(template == null ? '' : template);
-    for (const [k, v] of Object.entries(vars || {})) {
-      out = out.replace(new RegExp('\\$' + k + '\\$', 'gi'), () => String(v));
+    return SourceDownloadLocale.fill(template, vars);
+  }
+
+  // Gives an injected panel dialog semantics: role + name, focus moved into it,
+  // Tab kept inside (modal only) and focus returned to the page when it closes.
+  function sdDialog(el, label, { modal = false } = {}) {
+    el.setAttribute('role', 'dialog');
+    el.setAttribute('aria-label', label);
+    if (modal) el.setAttribute('aria-modal', 'true');
+    const previous = document.activeElement;
+    const focusables = () => Array.from(el.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'))
+      .filter((n) => !n.disabled && n.offsetParent !== null);
+    requestAnimationFrame(() => {
+      const first = focusables()[0];
+      if (first) first.focus({ preventScroll: true });
+    });
+    if (modal) {
+      el.addEventListener('keydown', (e) => {
+        if (e.key !== 'Tab') return;
+        const list = focusables();
+        if (!list.length) return;
+        const first = list[0];
+        const last = list[list.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      });
     }
-    return out;
+    const parent = el.parentNode;
+    if (parent) {
+      const watcher = new MutationObserver(() => {
+        if (el.isConnected) return;
+        watcher.disconnect();
+        if (previous && previous.isConnected && typeof previous.focus === 'function') previous.focus({ preventScroll: true });
+      });
+      watcher.observe(parent, { childList: true });
+    }
   }
 
   function sdEsc(v) {
@@ -782,6 +732,7 @@
   }
 
   function startAreaCapture(dataUrl, langCode) {
+    sdEnsureTheme();
     const existing = document.getElementById('__sd_area_overlay');
     if (existing) existing.remove();
     const existingRec = document.getElementById('__sd_video_rec_overlay');
@@ -808,17 +759,20 @@
 
     // 2. Resolve translations
     const { dict, lang } = resolveDict(langCode);
-    const labelDownload = dict.btnAreaDownload || (lang === 'tr' ? 'İndir' : 'Download');
-    const labelCopy = dict.btnAreaCopy || (lang === 'tr' ? 'Panoya kopyala' : 'Copy to clipboard');
-    const labelCancel = dict.btnAreaCancel || (lang === 'tr' ? 'İptal' : 'Cancel');
-    const msgCopied = dict.toastAreaCopied || (lang === 'tr' ? 'Bölgesel ekran görüntüsü panoya kopyalandı' : 'Area screenshot copied to clipboard');
-    const msgDownloaded = dict.toastAreaDownloaded || (lang === 'tr' ? 'Bölgesel ekran görüntüsü kaydedildi' : 'Area screenshot saved');
-    const labelArrow = dict.toolArrow || (lang === 'tr' ? 'Ok çiz' : 'Arrow');
-    const labelRect = dict.toolRect || (lang === 'tr' ? 'Kutucuk çiz' : 'Rectangle');
-    const labelText = dict.toolText || (lang === 'tr' ? 'Yazı yaz' : 'Text');
-    const labelUndo = dict.toolUndo || (lang === 'tr' ? 'Geri al' : 'Undo');
-    const labelRedo = dict.toolRedo || (lang === 'tr' ? 'İleri al' : 'Redo');
-    const labelColor = dict.toolColor || (lang === 'tr' ? 'Renk' : 'Color');
+    const labelDownload = dict.btnAreaDownload || 'Download';
+    const labelCopy = dict.btnAreaCopy || 'Copy to clipboard';
+    const labelCancel = dict.btnAreaCancel || 'Cancel';
+    const msgCopied = dict.toastAreaCopied || 'Area screenshot copied to clipboard';
+    const msgDownloaded = dict.toastAreaDownloaded || 'Area screenshot saved';
+    const labelArrow = dict.toolArrow || 'Arrow';
+    const labelRect = dict.toolRect || 'Rectangle';
+    const labelText = dict.toolText || 'Text';
+    const labelUndo = dict.toolUndo || 'Undo';
+    const labelRedo = dict.toolRedo || 'Redo';
+    const labelColor = dict.toolColor || 'Color';
+    const isMac = /Mac/i.test(navigator.platform || navigator.userAgent);
+    const keyCopy = isMac ? '⌘C' : 'Ctrl+C';
+    const keySave = isMac ? '⌘S' : 'Ctrl+S';
 
     // 3. Create fullscreen container
     const overlay = document.createElement('div');
@@ -833,48 +787,50 @@
     // Floating action bar
     const bar = document.createElement('div');
     bar.id = '__sd_area_toolbar';
-    bar.style.cssText = 'position:absolute;display:none;align-items:center;gap:6px;padding:6px 10px;background:rgba(26,27,34,0.96);border:1px solid rgba(255,255,255,0.18);border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.6);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:2147483647;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:12.5px;color:#fff;';
+    bar.setAttribute('role', 'toolbar');
+    bar.setAttribute('aria-label', dict.contextMenuCaptureArea || 'Capture area screenshot');
+    bar.style.cssText = 'position:absolute;display:none;align-items:center;gap:6px;padding:6px 10px;background:var(--sd-surface);border:1px solid var(--sd-border);border-radius:8px;box-shadow:var(--sd-shadow);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:2147483647;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:12.5px;color:var(--sd-text);';
 
     bar.innerHTML = `
       <div style="display:flex;align-items:center;gap:3px;">
-        <button type="button" id="__sd_tool_arrow" title="${sdEsc(labelArrow)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_arrow" title="${sdEsc(labelArrow)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:var(--sd-text);border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
         </button>
-        <button type="button" id="__sd_tool_rect" title="${sdEsc(labelRect)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_rect" title="${sdEsc(labelRect)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:var(--sd-text);border:1px solid transparent;border-radius:6px;cursor:pointer;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect></svg>
         </button>
-        <button type="button" id="__sd_tool_text" title="${sdEsc(labelText)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#e8eaf0;border:1px solid transparent;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_text" title="${sdEsc(labelText)}" class="__sd_tb_tool" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:var(--sd-text);border:1px solid transparent;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
         </button>
       </div>
 
       <div style="position:relative;display:flex;align-items:center;margin:0 2px;">
-        <button type="button" id="__sd_tool_color" title="${sdEsc(labelColor)}" style="display:flex;align-items:center;justify-content:center;width:22px;height:22px;padding:0;background:transparent;border:2px solid #ffffff;border-radius:50%;cursor:pointer;box-shadow:0 0 4px rgba(0,0,0,0.5);">
-          <span id="__sd_color_preview" style="width:14px;height:14px;border-radius:50%;background:#ff3b30;display:block;"></span>
+        <button type="button" id="__sd_tool_color" title="${sdEsc(labelColor)}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:var(--sd-surface-2);border:1px solid var(--sd-border-strong);border-radius:7px;cursor:pointer;">
+          <span id="__sd_color_preview" style="width:16px;height:16px;border-radius:4px;background:#ff3b30;display:block;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.15);"></span>
         </button>
         <input type="color" id="__sd_color_input" value="#ff3b30" style="opacity:0;position:absolute;left:0;top:0;width:100%;height:100%;cursor:pointer;">
       </div>
 
       <div style="display:flex;align-items:center;gap:3px;">
-        <button type="button" id="__sd_tool_undo" title="${sdEsc(labelUndo)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_undo" title="${sdEsc(labelUndo)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:var(--sd-muted);border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"></path><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path></svg>
         </button>
-        <button type="button" id="__sd_tool_redo" title="${sdEsc(labelRedo)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
+        <button type="button" id="__sd_tool_redo" title="${sdEsc(labelRedo)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:transparent;color:var(--sd-muted);border:none;border-radius:6px;cursor:default;opacity:0.35;transition:all 0.15s;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7v6h-6"></path><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3L21 13"></path></svg>
         </button>
       </div>
 
-      <div style="width:1px;height:18px;background:rgba(255,255,255,0.18);margin:0 3px;"></div>
+      <div style="width:1px;height:18px;background:var(--sd-border-strong);margin:0 3px;"></div>
 
-      <button type="button" id="__sd_btn_download" style="display:flex;align-items:center;gap:5px;padding:6px 12px;background:#4f8cff;color:#fff;border:none;border-radius:6px;font-weight:600;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
+      <button type="button" id="__sd_btn_download" title="${sdEsc(labelDownload)} (${keySave})" style="display:flex;align-items:center;gap:5px;padding:6px 12px;background:var(--sd-accent);color:#fff;border:none;border-radius:6px;font-weight:600;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         <span>${labelDownload}</span>
       </button>
-      <button type="button" id="__sd_btn_copy" style="display:flex;align-items:center;gap:5px;padding:6px 12px;background:#2d313d;color:#e8eaf0;border:1px solid rgba(255,255,255,0.15);border-radius:6px;font-weight:500;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
+      <button type="button" id="__sd_btn_copy" title="${sdEsc(labelCopy)} (${keyCopy})" style="display:flex;align-items:center;gap:5px;padding:6px 12px;background:var(--sd-surface-2);color:var(--sd-text);border:1px solid var(--sd-border);border-radius:6px;font-weight:500;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         <span>${labelCopy}</span>
       </button>
-      <button type="button" id="__sd_btn_cancel" title="${sdEsc(labelCancel)}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
+      <button type="button" id="__sd_btn_cancel" title="${sdEsc(labelCancel)}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:var(--sd-muted);border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
         ✕
       </button>
     `;
@@ -884,14 +840,54 @@
     // Dimension badge
     const badge = document.createElement('div');
     badge.id = '__sd_area_badge';
-    badge.style.cssText = 'position:absolute;display:none;padding:3px 8px;background:rgba(0,0,0,0.82);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,monospace;font-size:11.5px;font-weight:600;border-radius:4px;pointer-events:none;z-index:2147483647;box-shadow:0 2px 6px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.12);';
+    badge.style.cssText = 'position:absolute;display:none;padding:3px 8px;background:var(--sd-accent);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,monospace;font-size:11.5px;font-weight:600;border-radius:4px;pointer-events:none;z-index:2147483647;box-shadow:0 2px 6px rgba(0,0,0,0.4);border:1px solid var(--sd-border);';
     overlay.appendChild(badge);
 
     // Floating wheel tooltip badge
     const wheelBadge = document.createElement('div');
     wheelBadge.id = '__sd_wheel_badge';
-    wheelBadge.style.cssText = 'position:absolute;display:none;padding:4px 8px;background:rgba(0,0,0,0.85);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11px;font-weight:600;border-radius:4px;pointer-events:none;z-index:2147483647;box-shadow:0 3px 10px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.2);white-space:nowrap;';
+    wheelBadge.style.cssText = 'position:absolute;display:none;padding:4px 8px;background:var(--sd-accent);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11px;font-weight:600;border-radius:4px;pointer-events:none;z-index:2147483647;box-shadow:0 3px 10px rgba(0,0,0,0.5);border:1px solid var(--sd-border);white-space:nowrap;';
     overlay.appendChild(wheelBadge);
+
+    // Hint at the top: what to do, the shortcuts, and the auto-copy switch.
+    // While auto-copy is on it says so every time, so it is never a surprise.
+    const hint = document.createElement('div');
+    hint.id = '__sd_area_hint';
+    hint.style.cssText = 'position:absolute;top:16px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;padding:7px 8px 7px 14px;background:var(--sd-surface);color:var(--sd-text);border:1px solid var(--sd-border);border-radius:999px;box-shadow:var(--sd-shadow);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:12.5px;white-space:nowrap;z-index:2147483647;pointer-events:auto;cursor:default;max-width:calc(100vw - 32px);overflow:hidden;';
+    if (SD_RTL_LOCALES.includes(lang)) hint.dir = 'rtl';
+    overlay.appendChild(hint);
+    let autoCopy = false;
+    const kbd = (k) => `<kbd style="font:600 11px ui-monospace,SFMono-Regular,Menlo,monospace;padding:1px 6px;border:1px solid var(--sd-border-strong);border-bottom-width:2px;border-radius:5px;background:var(--sd-surface-2);color:var(--sd-text);">${k}</kbd>`;
+    function renderHint() {
+      if (autoCopy) {
+        hint.innerHTML = `
+          <span style="display:inline-flex;align-items:center;gap:7px;"><span style="width:8px;height:8px;border-radius:50%;background:#16a34a;"></span><b>${sdEsc(dict.areaAutoCopyOn || 'Auto-copy is on')}</b></span>
+          <span style="color:var(--sd-muted);">${sdEsc(dict.areaAutoCopyOnHint || 'Let go of the selection and it is on the clipboard.')}</span>
+          <button type="button" id="__sd_area_autocopy" style="padding:4px 12px;background:var(--sd-surface-2);color:var(--sd-text);border:1px solid var(--sd-border);border-radius:999px;font:inherit;font-weight:600;cursor:pointer;">${sdEsc(dict.areaAutoCopyTurnOff || 'Turn off')}</button>`;
+      } else {
+        hint.innerHTML = `
+          <b>${sdEsc(dict.areaHintSelect || 'Drag to select an area')}</b>
+          <span style="color:var(--sd-muted);display:inline-flex;align-items:center;gap:5px;">${kbd(keyCopy)} ${sdEsc(dict.areaHintCopy || 'copy')} · ${kbd(keySave)} ${sdEsc(dict.areaHintSave || 'save')} · ${kbd('Esc')} ${sdEsc(dict.areaHintExit || 'exit')}</span>
+          <button type="button" id="__sd_area_autocopy" role="switch" aria-checked="false" style="display:inline-flex;align-items:center;gap:7px;padding:4px 10px 4px 6px;background:var(--sd-surface-2);color:var(--sd-text);border:1px solid var(--sd-border);border-radius:999px;font:inherit;cursor:pointer;">
+            <span aria-hidden="true" style="position:relative;width:26px;height:15px;border-radius:999px;background:var(--sd-border-strong);"><span style="position:absolute;top:2px;left:2px;width:11px;height:11px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.25);"></span></span>
+            ${sdEsc(dict.areaAutoCopyLabel || 'Copy automatically')}
+          </button>`;
+      }
+      hint.querySelector('#__sd_area_autocopy').addEventListener('click', (e) => {
+        e.stopPropagation();
+        autoCopy = !autoCopy;
+        try { chrome.storage.local.set({ areaAutoCopy: autoCopy }); } catch { /* noop */ }
+        renderHint();
+      });
+    }
+    hint.addEventListener('mousedown', (e) => e.stopPropagation());
+    renderHint();
+    try {
+      chrome.storage.local.get({ areaAutoCopy: false }, (v) => {
+        autoCopy = !!(v && v.areaAutoCopy);
+        renderHint();
+      });
+    } catch { /* noop */ }
 
     let wheelTimer = null;
     function showWheelBadge(text, x, y) {
@@ -1025,7 +1021,7 @@
 
         // 2. High-contrast border with subtle glow
         ctx.lineWidth = 2;
-        ctx.strokeStyle = '#4f8cff';
+        ctx.strokeStyle = '#2f63e0';
         ctx.shadowColor = 'rgba(0, 0, 0, 0.6)';
         ctx.shadowBlur = 4;
         ctx.strokeRect(x, y, w, h);
@@ -1034,7 +1030,7 @@
         // 3. 8 Grab handles (Lightshot style)
         const hs = 7;
         ctx.fillStyle = '#ffffff';
-        ctx.strokeStyle = '#4f8cff';
+        ctx.strokeStyle = '#2f63e0';
         ctx.lineWidth = 1.5;
         const handles = [
           [x - hs / 2, y - hs / 2],
@@ -1114,12 +1110,12 @@
       function setActiveTool(tool) {
         if (activeTextarea) commitTextInput();
         activeTool = (activeTool === tool ? null : tool);
-        btnArrow.style.background = activeTool === 'arrow' ? '#4f8cff' : 'transparent';
-        btnArrow.style.color = activeTool === 'arrow' ? '#ffffff' : '#e8eaf0';
-        btnRect.style.background = activeTool === 'rect' ? '#4f8cff' : 'transparent';
-        btnRect.style.color = activeTool === 'rect' ? '#ffffff' : '#e8eaf0';
-        btnText.style.background = activeTool === 'text' ? '#4f8cff' : 'transparent';
-        btnText.style.color = activeTool === 'text' ? '#ffffff' : '#e8eaf0';
+        btnArrow.style.background = activeTool === 'arrow' ? 'var(--sd-accent)' : 'transparent';
+        btnArrow.style.color = activeTool === 'arrow' ? '#ffffff' : 'var(--sd-text)';
+        btnRect.style.background = activeTool === 'rect' ? 'var(--sd-accent)' : 'transparent';
+        btnRect.style.color = activeTool === 'rect' ? '#ffffff' : 'var(--sd-text)';
+        btnText.style.background = activeTool === 'text' ? 'var(--sd-accent)' : 'transparent';
+        btnText.style.color = activeTool === 'text' ? '#ffffff' : 'var(--sd-text)';
 
         if (activeTool) {
           overlay.style.cursor = activeTool === 'text' ? 'text' : 'crosshair';
@@ -1323,6 +1319,7 @@
         startX = e.clientX;
         startY = e.clientY;
         bar.style.display = 'none';
+        hint.style.visibility = 'hidden';
         updateRender(startX, startY, startX, startY);
       });
 
@@ -1443,9 +1440,12 @@
         }
 
         if (mode === 'NONE') return;
+        const wasCreating = mode === 'CREATING';
         mode = 'NONE';
+        hint.style.visibility = 'visible';
         if (curRect && curRect.w > 10 && curRect.h > 10) {
           positionToolbar(curRect);
+          if (wasCreating && autoCopy) copySelection(true);
         } else {
           bar.style.display = 'none';
           badge.style.display = 'none';
@@ -1473,6 +1473,14 @@
           } else {
             cleanUp();
           }
+        } else if (activeTextarea) {
+          // Typing an annotation: leave the shortcuts to the text box.
+        } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'c' && curRect) {
+          e.preventDefault();
+          copySelection(false);
+        } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's' && curRect) {
+          e.preventDefault();
+          btnDownload.click();
         } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z' && !e.shiftKey) {
           e.preventDefault();
           undo();
@@ -1543,28 +1551,39 @@
         showToast(msgDownloaded);
       });
 
-      // Button: Copy to clipboard
-      const btnCopy = overlay.querySelector('#__sd_btn_copy');
-      btnCopy.addEventListener('click', async () => {
+      // Copy the selection as PNG. `auto` comes from auto-copy: when the page
+      // does not allow the clipboard, the toolbar stays open with a note
+      // instead of silently downloading a file the user did not ask for.
+      function copySelection(auto) {
         const off = getCroppedCanvas();
         if (!off) return;
         off.toBlob(async (blob) => {
           if (!blob) return;
           try {
+            if (!navigator.clipboard || typeof ClipboardItem === 'undefined') throw new Error('clipboard unavailable');
             await navigator.clipboard.write([
               new ClipboardItem({ 'image/png': blob })
             ]);
+            sdRecordValue();
             cleanUp();
-            showToast(msgCopied);
+            showToast(auto ? (dict.toastAreaAutoCopied || msgCopied) : msgCopied);
           } catch (err) {
-            console.warn('Direct clipboard.write failed, falling back:', err);
+            console.warn('Direct clipboard.write failed:', err);
+            if (auto) {
+              showToast(dict.toastAreaCopyBlocked || 'This page does not allow copying to the clipboard. Use Download instead.');
+              return;
+            }
             const ts = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
             triggerDownload(off.toDataURL('image/png'), `screenshot-area-${ts}.png`);
             cleanUp();
             showToast(msgDownloaded);
           }
         }, 'image/png');
-      });
+      }
+
+      // Button: Copy to clipboard
+      const btnCopy = overlay.querySelector('#__sd_btn_copy');
+      btnCopy.addEventListener('click', () => copySelection(false));
 
       // Button: Cancel
       const btnCancel = overlay.querySelector('#__sd_btn_cancel');
@@ -1577,7 +1596,7 @@
   }
 
   /* ============================================================
-   * Regional Screen Video Recording (startAreaVideoRecord)
+   * Area Screen Video Recording (startAreaVideoRecord)
    * Screen is 100% natural and bright (no dark overlay masks).
    * Box is smoothly movable via drag header, resizable via 8 handles.
    * Full page interaction (scroll, click, type) is preserved.
@@ -1585,6 +1604,7 @@
    * Smartly docked/positioned recording toolbar.
    * ============================================================ */
   function startAreaVideoRecord(langCode) {
+    sdEnsureTheme();
     const existingRec = document.getElementById('__sd_video_rec_overlay');
     if (existingRec) existingRec.remove();
     const existingArea = document.getElementById('__sd_area_overlay');
@@ -1592,14 +1612,14 @@
 
     // 1. Resolve i18n
     const { dict, lang } = resolveDict(langCode);
-    const labelStart = dict.btnRecStart || (lang === 'tr' ? 'Kaydı Başlat' : 'Start Recording');
-    const labelPause = dict.btnRecPause || (lang === 'tr' ? 'Durdur' : 'Pause');
-    const labelResume = dict.btnRecResume || (lang === 'tr' ? 'Devam Ettir' : 'Resume');
-    const labelStop = dict.btnRecStop || (lang === 'tr' ? 'Kaydı İndir' : 'Finish & Download');
-    const labelCancel = dict.btnRecCancel || (lang === 'tr' ? 'İptal' : 'Cancel');
-    const msgSaved = dict.toastRecSaved || (lang === 'tr' ? 'Bölgesel ekran videosu indirildi' : 'Regional video recording saved');
-    const msgCancelled = dict.toastRecCancelled || (lang === 'tr' ? 'Kayıt iptal edildi' : 'Recording cancelled');
-    const msgPermissionDenied = dict.toastRecPermissionDenied || (lang === 'tr' ? 'Ekran kaydı izni verilmedi' : 'Screen recording permission denied');
+    const labelStart = dict.btnRecStart || 'Start Recording';
+    const labelPause = dict.btnRecPause || 'Pause';
+    const labelResume = dict.btnRecResume || 'Resume';
+    const labelStop = dict.btnRecStop || 'Finish & Download';
+    const labelCancel = dict.btnRecCancel || 'Cancel';
+    const msgSaved = dict.toastRecSaved || 'Recording saved';
+    const msgCancelled = dict.toastRecCancelled || 'Recording cancelled';
+    const msgPermissionDenied = dict.toastRecPermissionDenied || 'Screen recording permission denied';
 
     // 2. Fullscreen overlay with pointer-events: none so clicks pass through to page!
     const overlay = document.createElement('div');
@@ -1615,7 +1635,7 @@
     // Dedicated drag header bar placed OUTSIDE crop box
     const dragHeader = document.createElement('div');
     dragHeader.id = '__sd_rec_drag_header';
-    dragHeader.style.cssText = 'position:absolute;top:-28px;left:0;right:0;height:26px;background:rgba(26,27,34,0.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:0 10px;cursor:move;user-select:none;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11.5px;font-weight:600;color:#fff;border-radius:5px 5px 0 0;box-shadow:0 2px 8px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.18);border-bottom:none;';
+    dragHeader.style.cssText = 'position:absolute;top:-28px;left:0;right:0;height:26px;background:var(--sd-surface);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:0 10px;cursor:move;user-select:none;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11.5px;font-weight:600;color:var(--sd-text);border-radius:5px 5px 0 0;box-shadow:0 2px 8px rgba(0,0,0,0.4);border:1px solid var(--sd-border);border-bottom:none;';
     dragHeader.innerHTML = `
       <div style="display:flex;align-items:center;gap:6px;pointer-events:none;">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ff3b30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
@@ -1653,10 +1673,12 @@
     // Docked recording toolbar
     const bar = document.createElement('div');
     bar.id = '__sd_rec_toolbar';
-    bar.style.cssText = 'position:absolute;display:flex;align-items:center;gap:8px;padding:6px 12px;background:rgba(26,27,34,0.96);border:1px solid rgba(255,255,255,0.18);border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.6);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:2147483647;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:12.5px;color:#fff;user-select:none;';
+    bar.setAttribute('role', 'toolbar');
+    bar.setAttribute('aria-label', dict.contextMenuRecordArea || 'Record area as video / GIF');
+    bar.style.cssText = 'position:absolute;display:flex;align-items:center;gap:8px;padding:6px 12px;background:var(--sd-surface);border:1px solid var(--sd-border);border-radius:8px;box-shadow:var(--sd-shadow);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:2147483647;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:12.5px;color:var(--sd-text);user-select:none;';
 
     bar.innerHTML = `
-      <div id="__sd_rec_bar_drag" title="${sdEsc(dict.tipRecDragToolbar || 'Drag toolbar')}" style="cursor:move;padding:2px 4px;color:#9aa0ae;display:flex;align-items:center;">
+      <div id="__sd_rec_bar_drag" title="${sdEsc(dict.tipRecDragToolbar || 'Drag toolbar')}" style="cursor:move;padding:2px 4px;color:var(--sd-muted);display:flex;align-items:center;">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><circle cx="8" cy="6" r="2"/><circle cx="16" cy="6" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="8" cy="18" r="2"/><circle cx="16" cy="18" r="2"/></svg>
       </div>
       <span id="__sd_rec_timer" style="display:none;align-items:center;gap:5px;font-variant-numeric:tabular-nums;font-weight:700;color:#ff4d4f;background:rgba(255,77,79,0.18);padding:3px 8px;border-radius:5px;font-size:12px;letter-spacing:0.5px;">
@@ -1667,11 +1689,11 @@
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
         <span>${labelStart}</span>
       </button>
-      <button type="button" id="__sd_rec_btn_pause" style="display:none;align-items:center;gap:6px;padding:6px 12px;background:#2d313d;color:#e8eaf0;border:1px solid rgba(255,255,255,0.15);border-radius:6px;font-weight:600;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
+      <button type="button" id="__sd_rec_btn_pause" style="display:none;align-items:center;gap:6px;padding:6px 12px;background:var(--sd-surface-2);color:var(--sd-text);border:1px solid var(--sd-border);border-radius:6px;font-weight:600;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
         <span>${labelPause}</span>
       </button>
-      <button type="button" id="__sd_rec_btn_resume" style="display:none;align-items:center;gap:6px;padding:6px 12px;background:#2d313d;color:#e8eaf0;border:1px solid rgba(255,255,255,0.15);border-radius:6px;font-weight:600;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
+      <button type="button" id="__sd_rec_btn_resume" style="display:none;align-items:center;gap:6px;padding:6px 12px;background:var(--sd-surface-2);color:var(--sd-text);border:1px solid var(--sd-border);border-radius:6px;font-weight:600;font-size:12.5px;cursor:pointer;line-height:1.2;transition:background 0.15s;">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         <span>${labelResume}</span>
       </button>
@@ -1679,19 +1701,19 @@
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
         <span>${labelStop}</span>
       </button>
-      <button type="button" id="__sd_rec_btn_format" title="${sdEsc(dict.tipRecToggleFormat || 'Toggle format: MP4 / GIF / WebM')}" style="display:flex;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#93c5fd;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
+      <button type="button" id="__sd_rec_btn_format" title="${sdEsc(dict.tipRecToggleFormat || 'Toggle format: MP4 / GIF / WebM')}" style="display:flex;align-items:center;padding:4px 8px;background:var(--sd-chip);border:1px solid var(--sd-border);border-radius:5px;color:var(--sd-accent);font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
         <span id="__sd_rec_format_text">MP4</span>
       </button>
-      <button type="button" id="__sd_rec_btn_res" title="${sdEsc(dict.tipRecGifResolution || 'GIF resolution: 1:1 / 1080p / 720p / 480p')}" style="display:none;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#a7f3d0;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
-        <span id="__sd_rec_res_text">1:1</span>
+      <button type="button" id="__sd_rec_btn_res" title="${sdEsc(dict.tipRecGifResolution || 'GIF resolution: 1080p / 720p / 480p')}" style="display:none;align-items:center;padding:4px 8px;background:var(--sd-chip);border:1px solid var(--sd-border);border-radius:5px;color:#0f8a5f;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
+        <span id="__sd_rec_res_text">720p</span>
       </button>
-      <button type="button" id="__sd_rec_btn_fps" title="${sdEsc(dict.tipRecGifFps || 'GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS')}" style="display:none;align-items:center;padding:4px 8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:5px;color:#fcd34d;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
+      <button type="button" id="__sd_rec_btn_fps" title="${sdEsc(dict.tipRecGifFps || 'GIF frame rate: 15 / 10 / 5 / 2 / 1 FPS')}" style="display:none;align-items:center;padding:4px 8px;background:var(--sd-chip);border:1px solid var(--sd-border);border-radius:5px;color:#a96800;font-weight:700;font-size:11.5px;cursor:pointer;line-height:1;transition:all 0.15s;">
         <span id="__sd_rec_fps_text">10 FPS</span>
       </button>
-      <span id="__sd_rec_gif_estimate" style="display:none;align-items:center;padding:3px 7px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:5px;color:#e2e8f0;font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap;cursor:help;">
+      <span id="__sd_rec_gif_estimate" style="display:none;align-items:center;padding:3px 7px;background:var(--sd-chip);border:1px solid var(--sd-border);border-radius:5px;color:var(--sd-muted);font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap;cursor:help;">
         <span id="__sd_rec_estimate_text">~12 MB</span>
       </span>
-      <button type="button" id="__sd_rec_btn_cancel" title="${sdEsc(labelCancel)}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:#9aa0ae;border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
+      <button type="button" id="__sd_rec_btn_cancel" title="${sdEsc(labelCancel)}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;background:transparent;color:var(--sd-muted);border:none;border-radius:6px;cursor:pointer;font-size:15px;line-height:1;transition:color 0.15s;">
         ✕
       </button>
     `;
@@ -1708,9 +1730,16 @@
 
     // Video / GIF Format, Resolution & FPS Preference
     let selectedFormat = 'mp4';
-    let selectedGifResolution = 'original'; // 'original' (1:1) | '1080p' | '720p' | '480p'
+    // 'original' (up to 4K) was removed: raw 4K frames could exhaust the tab's memory.
+    let selectedGifResolution = '720p'; // '1080p' | '720p' | '480p'
     let selectedGifFps = 10; // 15 | 10 | 5 | 2 | 1 FPS
     let gifDelayCentisec = 10;
+    const GIF_RESOLUTIONS = ['1080p', '720p', '480p'];
+    const GIF_MAX_BYTES = 200 * 1024 * 1024; // stop before the output gets unwieldy
+    const GIF_MAX_QUEUE = 4; // raw frames waiting for the encoder at most
+    function gifMaxDim(res) {
+      return res === '1080p' ? 1920 : res === '480p' ? 854 : 1280;
+    }
     const isMp4Supported = typeof MediaRecorder !== 'undefined' && (
       MediaRecorder.isTypeSupported('video/mp4;codecs=avc1') ||
       MediaRecorder.isTypeSupported('video/mp4')
@@ -1739,10 +1768,7 @@
       let targetW = Math.round(curRect.w * dpr);
       let targetH = Math.round(curRect.h * dpr);
 
-      let maxDim = 3840; // 4K UHD safety ceiling for original
-      if (selectedGifResolution === '1080p') maxDim = 1920;
-      else if (selectedGifResolution === '720p') maxDim = 1280;
-      else if (selectedGifResolution === '480p') maxDim = 854;
+      const maxDim = gifMaxDim(selectedGifResolution);
 
       if (targetW > maxDim || targetH > maxDim) {
         const sc = Math.min(maxDim / targetW, maxDim / targetH);
@@ -1758,7 +1784,7 @@
       const mb10s = Math.max(0.1, Math.round((bytesPerSec * 10 / (1024 * 1024)) * 10) / 10);
       const maxMb = Math.max(0.5, Math.round((bytesPerSec * 60 / (1024 * 1024))));
 
-      const labelMax1Min = dict.labelGifMaxDuration || (lang === 'tr' ? 'Maks 1 dk (60 sn)' : 'Max 1 min (60s)');
+      const labelMax1Min = dict.labelGifMaxDuration || 'Max 1 min (60s)';
       estimateTextEl.textContent = `~${mb10s} MB/10s (${labelMax1Min})`;
       gifEstimateEl.title = sdFill(
         dict.tipGifEstimate || 'Estimated GIF size: ~$size$ MB (for 10 s), up to ~$max$ MB for the 60 s maximum.\nFrame rate: $fps$ FPS.\nGIF recording is limited to a maximum of 1 minute (60 s).',
@@ -1768,11 +1794,7 @@
 
     function updateResDisplay() {
       if (!resText) return;
-      if (selectedGifResolution === 'original') resText.textContent = '1:1';
-      else if (selectedGifResolution === '1080p') resText.textContent = '1080p';
-      else if (selectedGifResolution === '720p') resText.textContent = '720p';
-      else if (selectedGifResolution === '480p') resText.textContent = '480p';
-      else resText.textContent = '1:1';
+      resText.textContent = GIF_RESOLUTIONS.includes(selectedGifResolution) ? selectedGifResolution : '720p';
       updateGifEstimate();
     }
 
@@ -1781,15 +1803,15 @@
       fpsText.textContent = `${selectedGifFps} FPS`;
       if (btnFps) {
         if (selectedGifFps === 2) {
-          btnFps.title = dict.optGifFps2 || (lang === 'tr' ? '2 FPS: Stop-Motion / Yavaş ("Tık-tık" adım adım, minik boyut)' : '2 FPS: Stop-Motion / Slow ("Click-click" step-by-step, tiny size)');
+          btnFps.title = dict.optGifFps2 || '2 FPS: Stop-Motion / Slow ("Click-click" step-by-step, tiny size)';
         } else if (selectedGifFps === 1) {
-          btnFps.title = dict.optGifFps1 || (lang === 'tr' ? '1 FPS: Sunum / Slayt (Saniyede 1 kare, minimum boyut)' : '1 FPS: Presentation (1 frame per sec, minimal size)');
+          btnFps.title = dict.optGifFps1 || '1 FPS: Presentation (1 frame per sec, minimal size)';
         } else if (selectedGifFps === 5) {
-          btnFps.title = dict.optGifFps5 || (lang === 'tr' ? '5 FPS: Kompakt / Meme (Hafif kademeli, küçük boyut)' : '5 FPS: Compact / Meme (Stepped motion, small size)');
+          btnFps.title = dict.optGifFps5 || '5 FPS: Compact / Meme (Stepped motion, small size)';
         } else if (selectedGifFps === 15) {
-          btnFps.title = dict.optGifFps15 || (lang === 'tr' ? '15 FPS: Akıcı (Yüksek akıcılık, büyük dosya)' : '15 FPS: Smooth (High fluidity, larger size)');
+          btnFps.title = dict.optGifFps15 || '15 FPS: Smooth (High fluidity, larger size)';
         } else {
-          btnFps.title = dict.optGifFps10 || (lang === 'tr' ? '10 FPS: Standart (Web için önerilen dengeli hız)' : '10 FPS: Standard (Recommended for web & balance)');
+          btnFps.title = dict.optGifFps10 || '10 FPS: Standard (Recommended for web & balance)';
         }
       }
       updateGifEstimate();
@@ -1808,8 +1830,8 @@
         const fmtText = bar.querySelector('#__sd_rec_format_text');
         if (fmtText) fmtText.textContent = selectedFormat.toUpperCase();
       }
-      if (data && data.gifResolution) {
-        selectedGifResolution = data.gifResolution;
+      if (data && GIF_RESOLUTIONS.includes(data.gifResolution)) {
+        selectedGifResolution = data.gifResolution; // a saved 'original' falls back to 720p
       }
       if (data && data.gifFps) {
         selectedGifFps = parseInt(data.gifFps, 10) || 10;
@@ -1840,15 +1862,8 @@
     if (btnResolution) {
       btnResolution.addEventListener('click', () => {
         if (isRecording) return;
-        if (selectedGifResolution === 'original') {
-          selectedGifResolution = '1080p';
-        } else if (selectedGifResolution === '1080p') {
-          selectedGifResolution = '720p';
-        } else if (selectedGifResolution === '720p') {
-          selectedGifResolution = '480p';
-        } else {
-          selectedGifResolution = 'original';
-        }
+        const idx = GIF_RESOLUTIONS.indexOf(selectedGifResolution);
+        selectedGifResolution = GIF_RESOLUTIONS[(idx + 1) % GIF_RESOLUTIONS.length];
         updateResDisplay();
         chrome.storage.local.set({ gifResolution: selectedGifResolution });
       });
@@ -1860,7 +1875,7 @@
         if (selectedGifFps === 10) {
           selectedGifFps = 5;
         } else if (selectedGifFps === 5) {
-          selectedGifFps = 2; // "Tık-tık" stop-motion / slide-show
+          selectedGifFps = 2; // stop-motion / slide-show
         } else if (selectedGifFps === 2) {
           selectedGifFps = 1;
         } else if (selectedGifFps === 1) {
@@ -2060,7 +2075,41 @@
 
     // GIF Recording State
     let gifInterval = null;
-    let gifFrames = [];
+    let gifFrames = []; // short queue of raw frames waiting for gifEncoder
+    let gifEncoder = null;
+    let gifPumping = false;
+
+    // Encodes queued frames one per task so the page stays responsive.
+    function pumpGifEncoder() {
+      if (gifPumping || !gifEncoder) return;
+      gifPumping = true;
+      setTimeout(function step() {
+        const next = gifFrames.shift();
+        if (next && gifEncoder) {
+          try {
+            gifEncoder.addFrame(next.data, next.delay);
+          } catch (err) {
+            console.error('GIF encoding error:', err);
+          }
+          if (isRecording && gifEncoder.byteLength > GIF_MAX_BYTES) {
+            showToast(dict.msgGifMaxSizeReached || 'GIF reached 200 MB. Saving what was recorded…');
+            stopRecording(false);
+          }
+        }
+        if (gifFrames.length && gifEncoder) setTimeout(step, 0);
+        else gifPumping = false;
+      }, 0);
+    }
+
+    async function drainGifEncoder(onProgress) {
+      const total = gifFrames.length;
+      while (gifFrames.length) {
+        const next = gifFrames.shift();
+        gifEncoder.addFrame(next.data, next.delay);
+        if (onProgress) onProgress(total - gifFrames.length, total);
+        await new Promise((r) => setTimeout(r, 0));
+      }
+    }
     let gifWidth = 0;
     let gifHeight = 0;
 
@@ -2077,6 +2126,7 @@
       if (timerInterval) clearInterval(timerInterval);
       if (gifInterval) clearInterval(gifInterval);
       gifFrames = [];
+      gifEncoder = null;
       if (activeStream) {
         activeStream.getTracks().forEach((t) => t.stop());
         activeStream = null;
@@ -2141,7 +2191,7 @@
         const displayOptions = {
           preferCurrentTab: true,
           selfBrowserSurface: 'include',
-          surfaceSwitching: 'include',
+          surfaceSwitching: 'exclude', // switching tabs mid-recording would break the crop
           systemAudio: 'include',
           video: {
             displaySurface: 'browser'
@@ -2149,6 +2199,24 @@
           audio: true
         };
         activeStream = await navigator.mediaDevices.getDisplayMedia(displayOptions);
+        // The crop is computed from this tab's layout, so another tab, window
+        // or screen would record the wrong area. Region Capture rejects cropTo
+        // unless the captured surface is this very tab.
+        const track = activeStream.getVideoTracks()[0];
+        let sameTab = !track || track.getSettings().displaySurface === 'browser';
+        if (sameTab && track && typeof window.CropTarget !== 'undefined' && typeof track.cropTo === 'function') {
+          try {
+            await track.cropTo(await window.CropTarget.fromElement(document.documentElement));
+            await track.cropTo(undefined);
+          } catch {
+            sameTab = false;
+          }
+        }
+        if (!sameTab) {
+          activeStream.getTracks().forEach((t) => t.stop());
+          activeStream = null;
+          throw Object.assign(new Error('wrong surface'), { sdWrongSurface: true });
+        }
       } catch (err) {
         // Restore setup UI on cancellation
         dragHeader.style.display = 'flex';
@@ -2163,7 +2231,9 @@
         cropBox.style.outlineOffset = '0px';
         positionToolbar(curRect);
         console.warn('Screen recording rejected or failed:', err);
-        showToast(msgPermissionDenied);
+        showToast(err && err.sdWrongSurface
+          ? (dict.toastRecWrongTab || 'To record an area of this page, choose “This tab” in the sharing dialog.')
+          : msgPermissionDenied);
         return;
       }
 
@@ -2194,7 +2264,7 @@
           recordedSeconds += 1;
           timerText.textContent = isGif ? `${formatTimer(recordedSeconds)} / 01:00` : formatTimer(recordedSeconds);
           if (isGif && recordedSeconds >= 60) {
-            showToast(dict.msgGifMaxDurationReached || (lang === 'tr' ? 'Maksimum GIF süresi olan 1 dakikaya (60 sn) ulaşıldı. GIF oluşturuluyor...' : 'Maximum GIF duration of 1 minute (60s) reached. Generating GIF...'));
+            showToast(dict.msgGifMaxDurationReached || 'Maximum GIF duration of 1 minute (60s) reached. Generating GIF...');
             stopRecording(false);
           }
         }
@@ -2281,11 +2351,9 @@
 
       // GIF Branch vs MediaRecorder Branch
       gifFrames = [];
+      gifEncoder = null;
       if (selectedFormat === 'gif') {
-        let maxDim = 3840; // 4K UHD ceiling for original
-        if (selectedGifResolution === '1080p') maxDim = 1920;
-        else if (selectedGifResolution === '720p') maxDim = 1280;
-        else if (selectedGifResolution === '480p') maxDim = 854;
+        const maxDim = gifMaxDim(selectedGifResolution);
 
         gifWidth = cw;
         gifHeight = ch;
@@ -2301,22 +2369,32 @@
         const intervalMs = Math.round(1000 / fps);
         gifDelayCentisec = Math.max(1, Math.round(100 / fps));
         const maxFrames = fps * 60; // Exact 60 seconds max
+        let captured = 0;
+
+        const gifHelper = (typeof SourceDownloadGif !== 'undefined') ? SourceDownloadGif : window.SourceDownloadGif;
+        gifEncoder = gifHelper.createGifEncoder(gifWidth, gifHeight, gifDelayCentisec);
 
         const gifSampleCanvas = document.createElement('canvas');
         gifSampleCanvas.width = gifWidth;
         gifSampleCanvas.height = gifHeight;
         const gifSampleCtx = gifSampleCanvas.getContext('2d', { willReadFrequently: true });
 
-        // Capture frames at selected fps (every intervalMs), up to maxFrames (60s max)
+        // Frames are encoded as they arrive (gifFrames is only a short queue).
+        // If encoding falls behind, the frame is skipped and its time is added
+        // to the previous one, so the GIF keeps real-time speed.
         gifInterval = setInterval(() => {
-          if (!isPaused && isRecording && video.readyState >= 2) {
+          if (isPaused || !isRecording || video.readyState < 2) return;
+          captured++;
+          if (gifFrames.length >= GIF_MAX_QUEUE) {
+            gifFrames[gifFrames.length - 1].delay += gifDelayCentisec;
+          } else {
             gifSampleCtx.drawImage(cropCanvas, 0, 0, gifWidth, gifHeight);
-            const imgData = gifSampleCtx.getImageData(0, 0, gifWidth, gifHeight);
-            gifFrames.push(imgData);
-            if (gifFrames.length >= maxFrames) {
-              showToast(dict.msgGifMaxDurationReached || (lang === 'tr' ? 'Maksimum GIF süresi olan 1 dakikaya (60 sn) ulaşıldı. GIF oluşturuluyor...' : 'Maximum GIF duration of 1 minute (60s) reached. Generating GIF...'));
-              stopRecording(false);
-            }
+            gifFrames.push({ data: gifSampleCtx.getImageData(0, 0, gifWidth, gifHeight).data, delay: gifDelayCentisec });
+            pumpGifEncoder();
+          }
+          if (captured >= maxFrames) {
+            showToast(dict.msgGifMaxDurationReached || 'Maximum GIF duration of 1 minute (60s) reached. Generating GIF...');
+            stopRecording(false);
           }
         }, intervalMs);
       } else {
@@ -2422,28 +2500,27 @@
         if (animLoopId) cancelAnimationFrame(animLoopId);
         btnStop.disabled = true;
         btnStop.style.opacity = '0.7';
-        btnStop.innerHTML = `<span>${dict.toastRecGeneratingGif || (lang === 'tr' ? 'GIF oluşturuluyor...' : 'Generating GIF...')}</span>`;
-        showToast(dict.toastRecGeneratingGif || (lang === 'tr' ? 'GIF oluşturuluyor, lütfen bekleyin...' : 'Generating GIF, please wait...'));
+        btnStop.innerHTML = `<span>${dict.toastRecGeneratingGif || 'Generating GIF...'}</span>`;
+        showToast(dict.toastRecGeneratingGif || 'Generating GIF, please wait...');
 
-        if (gifFrames.length === 0 && cropCanvas) {
-          const fallbackCanvas = document.createElement('canvas');
-          fallbackCanvas.width = gifWidth;
-          fallbackCanvas.height = gifHeight;
-          const fbCtx = fallbackCanvas.getContext('2d');
-          fbCtx.drawImage(cropCanvas, 0, 0, gifWidth, gifHeight);
-          gifFrames.push(fbCtx.getImageData(0, 0, gifWidth, gifHeight));
-        }
-
-        // Allow browser to render progress toast before heavy encoding
+        // Allow browser to render progress toast before finishing the encode
         await new Promise((r) => setTimeout(r, 50));
 
-        const gifHelper = (typeof SourceDownloadGif !== 'undefined') ? SourceDownloadGif : (typeof window !== 'undefined' && window.SourceDownloadGif);
-        if (gifHelper && typeof gifHelper.createAnimatedGifBlob === 'function' && gifFrames.length > 0) {
+        if (gifEncoder) {
           try {
-            const blob = await gifHelper.createAnimatedGifBlob(gifFrames, gifWidth, gifHeight, gifDelayCentisec, (cur, tot) => {
-              const pct = Math.round((cur / tot) * 100);
-              btnStop.innerHTML = `<span>GIF: ${pct}%</span>`;
+            await drainGifEncoder((cur, tot) => {
+              btnStop.innerHTML = `<span>GIF: ${Math.round((cur / Math.max(1, tot)) * 100)}%</span>`;
             });
+            if (gifEncoder.frameCount === 0 && cropCanvas) {
+              const fallbackCanvas = document.createElement('canvas');
+              fallbackCanvas.width = gifWidth;
+              fallbackCanvas.height = gifHeight;
+              const fbCtx = fallbackCanvas.getContext('2d');
+              fbCtx.drawImage(cropCanvas, 0, 0, gifWidth, gifHeight);
+              gifEncoder.addFrame(fbCtx.getImageData(0, 0, gifWidth, gifHeight).data);
+            }
+            const blob = gifEncoder.finish();
+            gifEncoder = null;
             const stored = await chrome.storage.local.get({ namingPatterns: {} });
             const pattern = (stored.namingPatterns && stored.namingPatterns.recording) || '{domain}-{type}-{date}_{time}';
             const namingHelper = (typeof SourceDownloadNaming !== 'undefined') ? SourceDownloadNaming : (typeof window !== 'undefined' && window.SourceDownloadNaming);
@@ -2516,27 +2593,69 @@
     }
 
     try {
-      const eyeDropper = new window.EyeDropper();
-      const result = await eyeDropper.open();
-      if (!result || !result.sRGBHex) return;
-
-      showColorInspector(result.sRGBHex, langCode);
+      await openEyeDropper(langCode);
     } catch (err) {
-      if (err && (err.name === 'AbortError' || String(err).includes('AbortError'))) {
-        return; // User pressed ESC to cancel eye dropper
+      if (isEyeDropperAbort(err)) return; // User pressed ESC to cancel eye dropper
+      if (err && err.name === 'NotAllowedError') {
+        // EyeDropper needs a click on the page. A right-click provides one;
+        // the popup or the panel do not, so ask for a single click here.
+        showColorPickerPrompt(langCode, dict);
+        return;
       }
       console.warn('Color picker failed:', err);
     }
   }
 
+  function isEyeDropperAbort(err) {
+    return Boolean(err && (err.name === 'AbortError' || String(err).includes('AbortError')));
+  }
+
+  async function openEyeDropper(langCode) {
+    const eyeDropper = new window.EyeDropper();
+    const result = await eyeDropper.open();
+    if (result && result.sRGBHex) showColorInspector(result.sRGBHex, langCode);
+  }
+
+  function showColorPickerPrompt(langCode, dict) {
+    sdEnsureTheme();
+    const old = document.getElementById('__sd_color_prompt');
+    if (old) old.remove();
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.id = '__sd_color_prompt';
+    btn.textContent = dict.colorPickerClickToStart || 'Click here, then pick any color on the page';
+    btn.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:2147483647;padding:10px 18px;border:0;border-radius:8px;background:var(--sd-accent);color:#fff;font:600 13px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;box-shadow:0 10px 25px -5px rgba(0,0,0,0.4);cursor:pointer;';
+    const close = () => {
+      btn.remove();
+      document.removeEventListener('keydown', onKey, true);
+      clearTimeout(timer);
+    };
+    const onKey = (e) => {
+      if (e.key === 'Escape') close();
+    };
+    const timer = setTimeout(close, 15000);
+    btn.addEventListener('click', async () => {
+      close();
+      try {
+        await openEyeDropper(langCode);
+      } catch (err) {
+        if (!isEyeDropperAbort(err)) console.warn('Color picker failed:', err);
+      }
+    }, { once: true });
+    document.addEventListener('keydown', onKey, true);
+    document.documentElement.appendChild(btn);
+    btn.focus();
+  }
+
   function showColorInspector(hexInput, langCode) {
+    sdEnsureTheme();
     const existing = document.getElementById('__sd_color_inspector');
     if (existing) existing.remove();
 
     const { dict, lang } = resolveDict(langCode);
-    const labelTitle = dict.colorPickerTitle || (lang === 'tr' ? 'Renk Seçici' : 'Color Picker');
-    const labelPickAgain = dict.btnColorPickAgain || (lang === 'tr' ? 'Yeniden Seç' : 'Pick Again');
-    const msgCopied = dict.toastColorCopied || (lang === 'tr' ? 'Renk panoya kopyalandı' : 'Color copied to clipboard');
+    const labelTitle = dict.colorPickerTitle || 'Color Picker';
+    const labelPickAgain = dict.btnColorPickAgain || 'Pick Again';
+    const msgCopied = dict.toastColorCopied || 'Color copied to clipboard';
 
     // Parse R, G, B
     let cleanHex = hexInput.replace(/^#/, '');
@@ -2604,17 +2723,17 @@
 
     const inspector = document.createElement('div');
     inspector.id = '__sd_color_inspector';
-    inspector.style.cssText = 'position:fixed;top:24px;right:24px;width:340px;background:rgba(26,27,34,0.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.18);border-radius:12px;box-shadow:0 18px 45px rgba(0,0,0,0.65);z-index:2147483647;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:13px;overflow:hidden;box-sizing:border-box;user-select:none;';
+    inspector.style.cssText = 'position:fixed;top:24px;right:24px;width:340px;background:var(--sd-surface);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--sd-border);border-radius:12px;box-shadow:var(--sd-shadow);z-index:2147483647;color:var(--sd-text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:13px;overflow:hidden;box-sizing:border-box;user-select:none;';
 
     // Header with drag capability
     const header = document.createElement('div');
-    header.style.cssText = 'display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.1);cursor:move;';
+    header.style.cssText = 'display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--sd-chip);border-bottom:1px solid var(--sd-border);cursor:move;';
     header.innerHTML = `
       <div style="display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4f8cff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--sd-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z"/></svg>
         <span>${labelTitle}</span>
       </div>
-      <button type="button" id="__sd_ci_close" style="display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:transparent;border:none;color:#9aa0ae;cursor:pointer;border-radius:4px;font-size:16px;line-height:1;transition:color 0.15s;">✕</button>
+      <button type="button" id="__sd_ci_close" style="display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:transparent;border:none;color:var(--sd-muted);cursor:pointer;border-radius:4px;font-size:16px;line-height:1;transition:color 0.15s;">✕</button>
     `;
     if (SD_RTL_LOCALES.includes(lang)) inspector.dir = 'rtl';
     inspector.appendChild(header);
@@ -2623,10 +2742,10 @@
     const hero = document.createElement('div');
     hero.style.cssText = 'padding:14px 14px 10px;display:flex;align-items:center;gap:14px;';
     hero.innerHTML = `
-      <div style="width:52px;height:52px;border-radius:10px;background:${hex};border:2px solid rgba(255,255,255,0.3);box-shadow:0 4px 14px rgba(0,0,0,0.4);flex-shrink:0;"></div>
+      <div style="width:52px;height:52px;border-radius:10px;background:${hex};border:2px solid var(--sd-border-strong);box-shadow:0 4px 14px rgba(0,0,0,0.4);flex-shrink:0;"></div>
       <div style="display:flex;flex-direction:column;gap:3px;overflow:hidden;">
-        <span style="font-size:18px;font-weight:700;font-family:monospace;letter-spacing:0.5px;color:#fff;">${hex}</span>
-        <span style="font-size:12px;color:#9aa0ae;font-family:monospace;">${rgb}</span>
+        <span style="font-size:18px;font-weight:700;font-family:monospace;letter-spacing:0.5px;color:var(--sd-text);">${hex}</span>
+        <span style="font-size:12px;color:var(--sd-muted);font-family:monospace;">${rgb}</span>
       </div>
     `;
     inspector.appendChild(hero);
@@ -2640,12 +2759,12 @@
 
     formats.forEach((fmt) => {
       const row = document.createElement('div');
-      row.style.cssText = 'display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;gap:8px;';
+      row.style.cssText = 'display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:var(--sd-chip);border:1px solid var(--sd-border);border-radius:6px;gap:8px;';
 
       row.innerHTML = `
-        <span style="width:46px;font-size:11px;font-weight:700;color:#9aa0ae;letter-spacing:0.3px;flex-shrink:0;">${fmt.name}</span>
-        <span style="flex:1;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:#e8eaf0;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${sdEsc(fmt.val)}">${fmt.val}</span>
-        <button type="button" class="__sd_ci_copy" title="${sdEsc(sdFill(dict.tipColorCopyFormat || 'Copy $format$', { format: fmt.name }))}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:5px;color:#e8eaf0;cursor:pointer;flex-shrink:0;transition:all 0.15s;">
+        <span style="width:46px;font-size:11px;font-weight:700;color:var(--sd-muted);letter-spacing:0.3px;flex-shrink:0;">${fmt.name}</span>
+        <span style="flex:1;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:var(--sd-text);text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${sdEsc(fmt.val)}">${fmt.val}</span>
+        <button type="button" class="__sd_ci_copy" title="${sdEsc(sdFill(dict.tipColorCopyFormat || 'Copy $format$', { format: fmt.name }))}" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--sd-chip);border:1px solid var(--sd-border);border-radius:5px;color:var(--sd-text);cursor:pointer;flex-shrink:0;transition:all 0.15s;">
           ${copySvg}
         </button>
       `;
@@ -2667,7 +2786,7 @@
         showToast(msgCopied);
         setTimeout(() => {
           btnCopy.innerHTML = copySvg;
-          btnCopy.style.borderColor = 'rgba(255,255,255,0.12)';
+          btnCopy.style.borderColor = 'var(--sd-border)';
         }, 1200);
       });
 
@@ -2677,13 +2796,13 @@
 
     // Footer actions
     const footer = document.createElement('div');
-    footer.style.cssText = 'padding:10px 14px;background:rgba(0,0,0,0.25);border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;gap:8px;';
+    footer.style.cssText = 'padding:10px 14px;background:var(--sd-surface-2);border-top:1px solid var(--sd-border);display:flex;align-items:center;justify-content:space-between;gap:8px;';
     footer.innerHTML = `
-      <button type="button" id="__sd_ci_again" style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#4f8cff;border:none;border-radius:6px;color:#fff;font-weight:600;font-size:12px;cursor:pointer;transition:background 0.15s;">
+      <button type="button" id="__sd_ci_again" style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:var(--sd-accent);border:none;border-radius:6px;color:#fff;font-weight:600;font-size:12px;cursor:pointer;transition:background 0.15s;">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z"/></svg>
         <span>${labelPickAgain}</span>
       </button>
-      <button type="button" id="__sd_ci_dismiss" style="padding:6px 12px;background:transparent;border:1px solid rgba(255,255,255,0.15);border-radius:6px;color:#9aa0ae;font-size:12px;cursor:pointer;transition:color 0.15s;">
+      <button type="button" id="__sd_ci_dismiss" style="padding:6px 12px;background:transparent;border:1px solid var(--sd-border);border-radius:6px;color:var(--sd-muted);font-size:12px;cursor:pointer;transition:color 0.15s;">
         ${dict.btnAreaCancel || 'Cancel'}
       </button>
     `;
@@ -2743,6 +2862,7 @@
     });
 
     document.body.appendChild(inspector);
+    sdDialog(inspector, labelTitle);
   }
 
   /* ============================================================
@@ -2764,9 +2884,10 @@
   }
 
   function showFullPageProgress(current, total, percent, langCode) {
+    sdEnsureTheme();
     let el = document.getElementById('__sd_fps_progress');
     const { dict, lang } = resolveDict(langCode);
-    let msgTemplate = dict.toastProgressCapturing || (lang === 'tr' ? 'Tam sayfa yakalanıyor... %$PERCENT$ ($CURRENT$/$TOTAL$)' : 'Capturing full page... $PERCENT$% ($CURRENT$/$TOTAL$)');
+    let msgTemplate = dict.toastProgressCapturing || 'Capturing full page... $PERCENT$% ($CURRENT$/$TOTAL$)';
     let text = msgTemplate
       .replace(/\$PERCENT\$/gi, String(percent))
       .replace(/\$CURRENT\$/gi, String(current))
@@ -2778,14 +2899,14 @@
     if (!el) {
       el = document.createElement('div');
       el.id = '__sd_fps_progress';
-      el.style.cssText = 'position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:2147483647;background:rgba(26,27,34,0.95);color:#fff;padding:10px 22px;border-radius:12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:13px;font-weight:600;box-shadow:0 12px 36px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;gap:14px;pointer-events:none;transition:all 0.2s ease;';
+      el.style.cssText = 'position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:2147483647;background:var(--sd-surface);color:var(--sd-text);padding:10px 22px;border-radius:12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:13px;font-weight:600;box-shadow:var(--sd-shadow);border:1px solid var(--sd-border);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;gap:14px;pointer-events:none;transition:all 0.2s ease;';
       document.body.appendChild(el);
     }
     if (SD_RTL_LOCALES.includes(lang)) el.dir = 'rtl';
     el.style.setProperty('display', 'flex', 'important');
     el.style.setProperty('visibility', 'visible', 'important');
     el.innerHTML = `
-      <div style="width:16px;height:16px;border:2.5px solid rgba(255,255,255,0.2);border-top-color:#4f8cff;border-radius:50%;animation:__sd_spin 0.8s linear infinite;flex-shrink:0;"></div>
+      <div style="width:16px;height:16px;border:2.5px solid var(--sd-border);border-top-color:var(--sd-accent);border-radius:50%;animation:__sd_spin 0.8s linear infinite;flex-shrink:0;"></div>
       <span style="letter-spacing:0.3px;">${text}</span>
     `;
     if (!document.getElementById('__sd_spin_style')) {
@@ -2799,12 +2920,12 @@
   function showFullPageStitching(langCode) {
     const el = document.getElementById('__sd_fps_progress');
     const { dict, lang } = resolveDict(langCode);
-    const text = dict.toastProgressStitching || (lang === 'tr' ? 'Görüntü birleştiriliyor...' : 'Stitching image...');
+    const text = dict.toastProgressStitching || 'Stitching image...';
     if (el) {
       el.style.setProperty('display', 'flex', 'important');
       el.style.setProperty('visibility', 'visible', 'important');
       el.innerHTML = `
-        <div style="width:16px;height:16px;border:2.5px solid rgba(255,255,255,0.2);border-top-color:#34c759;border-radius:50%;animation:__sd_spin 0.8s linear infinite;flex-shrink:0;"></div>
+        <div style="width:16px;height:16px;border:2.5px solid var(--sd-border);border-top-color:#34c759;border-radius:50%;animation:__sd_spin 0.8s linear infinite;flex-shrink:0;"></div>
         <span style="letter-spacing:0.3px;">${text}</span>
       `;
     }
@@ -2816,6 +2937,7 @@
   }
 
   function showFullPageExportModal(params) {
+    sdEnsureTheme();
     hideFullPageProgress();
     const existing = document.getElementById('__sd_fps_export_modal');
     if (existing) existing.remove();
@@ -2823,23 +2945,23 @@
     const { dataUrl, width, height, domain, title, baseFilename, lang: langCode } = params;
     const { dict, lang } = resolveDict(langCode);
 
-    const titleText = dict.modalExportTitle || (lang === 'tr' ? 'Tam Sayfa Ekran Görüntüsü Hazır' : 'Full Page Screenshot Ready');
-    const labelPng = dict.btnExportPng || (lang === 'tr' ? 'PNG İndir' : 'Download PNG');
-    const labelJpg = dict.btnExportJpg || (lang === 'tr' ? 'JPG İndir' : 'Download JPG');
-    const labelPdf = dict.btnExportPdf || (lang === 'tr' ? 'PDF Olarak Kaydet' : 'Save as PDF');
-    const labelCopy = dict.btnExportCopy || (lang === 'tr' ? 'Panoya Kopyala' : 'Copy to Clipboard');
-    const labelGenerating = dict.btnExportGenerating || (lang === 'tr' ? 'Oluşturuluyor...' : 'Generating...');
-    const msgPdfSaved = dict.toastPdfGenerated || (lang === 'tr' ? 'PDF belgesi kaydedildi.' : 'PDF document saved.');
-    const msgCopied = dict.toastImageCopied || (lang === 'tr' ? 'Görüntü panoya kopyalandı' : 'Image copied to clipboard');
-    const msgDownloaded = dict.toastAreaDownloaded || (lang === 'tr' ? 'Ekran görüntüsü indirildi' : 'Screenshot downloaded');
-    const labelClose = dict.guideClose || (lang === 'tr' ? 'Kapat (Esc)' : 'Close (Esc)');
+    const titleText = dict.modalExportTitle || 'Full Page Screenshot Ready';
+    const labelPng = dict.btnExportPng || 'Download PNG';
+    const labelJpg = dict.btnExportJpg || 'Download JPG';
+    const labelPdf = dict.btnExportPdf || 'Save as PDF';
+    const labelCopy = dict.btnExportCopy || 'Copy to Clipboard';
+    const labelGenerating = dict.btnExportGenerating || 'Generating...';
+    const msgPdfSaved = dict.toastPdfGenerated || 'PDF document saved.';
+    const msgCopied = dict.toastImageCopied || 'Image copied to clipboard';
+    const msgDownloaded = dict.toastAreaDownloaded || 'Screenshot downloaded';
+    const labelClose = dict.guideClose || 'Close (Esc)';
 
     const backdrop = document.createElement('div');
     backdrop.id = '__sd_fps_export_modal';
-    backdrop.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.68);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;user-select:none;padding:16px;box-sizing:border-box;';
+    backdrop.style.cssText = 'position:fixed;inset:0;background:rgba(15,20,35,0.42);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;user-select:none;padding:16px;box-sizing:border-box;';
 
     const modal = document.createElement('div');
-    modal.style.cssText = 'width:520px;max-width:94vw;max-height:92vh;background:rgba(26,27,34,0.98);border:1px solid rgba(255,255,255,0.18);border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,0.85);display:flex;flex-direction:column;overflow:hidden;color:#fff;box-sizing:border-box;animation:__sd_pop 0.18s ease-out;';
+    modal.style.cssText = 'width:520px;max-width:94vw;max-height:92vh;background:var(--sd-surface);border:1px solid var(--sd-border);border-radius:14px;box-shadow:var(--sd-shadow-lg);display:flex;flex-direction:column;overflow:hidden;color:var(--sd-text);box-sizing:border-box;animation:__sd_pop 0.18s ease-out;';
 
     if (!document.getElementById('__sd_pop_style')) {
       const style = document.createElement('style');
@@ -2849,38 +2971,38 @@
     }
 
     modal.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.1);">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--sd-chip);border-bottom:1px solid var(--sd-border);">
         <div style="display:flex;align-items:center;gap:9px;font-weight:600;font-size:14px;">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4f8cff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--sd-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
           <span>${titleText}</span>
         </div>
-        <button type="button" id="__sd_modal_close" title="${sdEsc(labelClose)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:transparent;border:none;color:#9aa0ae;cursor:pointer;border-radius:6px;font-size:17px;line-height:1;transition:color 0.15s;">✕</button>
+        <button type="button" id="__sd_modal_close" title="${sdEsc(labelClose)}" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:transparent;border:none;color:var(--sd-muted);cursor:pointer;border-radius:6px;font-size:17px;line-height:1;transition:color 0.15s;">✕</button>
       </div>
 
-      <div style="padding:16px 18px 12px;display:flex;flex-direction:column;gap:12px;background:rgba(0,0,0,0.25);">
-        <div style="width:100%;height:200px;background:#0d0e12;border:1px solid rgba(255,255,255,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:inset 0 2px 8px rgba(0,0,0,0.5);">
+      <div style="padding:16px 18px 12px;display:flex;flex-direction:column;gap:12px;background:var(--sd-surface-2);">
+        <div style="width:100%;height:200px;background:var(--sd-canvas);border:1px solid var(--sd-border);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:inset 0 1px 3px rgba(16,24,40,0.08);">
           <img src="${dataUrl}" style="max-width:100%;max-height:100%;object-fit:contain;display:block;" alt="${sdEsc(dict.altScreenshotPreview || 'Screenshot preview')}">
         </div>
-        <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#9aa0ae;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">
+        <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--sd-muted);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">
           <span>${width} × ${height} px</span>
           <span style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${sdEsc(title || domain)}">${sdEsc(title || domain)}</span>
         </div>
       </div>
 
       <div style="padding:16px 18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-        <button type="button" id="__sd_btn_png" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:#4f8cff;border:none;border-radius:8px;color:#fff;font-weight:600;font-size:13px;cursor:pointer;transition:background 0.15s;box-shadow:0 2px 8px rgba(79,140,255,0.35);">
+        <button type="button" id="__sd_btn_png" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:var(--sd-accent);border:none;border-radius:8px;color:#fff;font-weight:600;font-size:13px;cursor:pointer;transition:background 0.15s;box-shadow:0 2px 8px rgba(47,99,224,0.28);">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
           <span>${labelPng}</span>
         </button>
-        <button type="button" id="__sd_btn_jpg" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:#2d313d;border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:#e8eaf0;font-weight:600;font-size:13px;cursor:pointer;transition:all 0.15s;">
+        <button type="button" id="__sd_btn_jpg" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:var(--sd-surface-2);border:1px solid var(--sd-border);border-radius:8px;color:var(--sd-text);font-weight:600;font-size:13px;cursor:pointer;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           <span>${labelJpg}</span>
         </button>
-        <button type="button" id="__sd_btn_pdf" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:#2d313d;border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:#e8eaf0;font-weight:600;font-size:13px;cursor:pointer;transition:all 0.15s;">
+        <button type="button" id="__sd_btn_pdf" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:var(--sd-surface-2);border:1px solid var(--sd-border);border-radius:8px;color:var(--sd-text);font-weight:600;font-size:13px;cursor:pointer;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ff4d4f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           <span>${labelPdf}</span>
         </button>
-        <button type="button" id="__sd_btn_copy" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:#2d313d;border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:#e8eaf0;font-weight:600;font-size:13px;cursor:pointer;transition:all 0.15s;">
+        <button type="button" id="__sd_btn_copy" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;background:var(--sd-surface-2);border:1px solid var(--sd-border);border-radius:8px;color:var(--sd-text);font-weight:600;font-size:13px;cursor:pointer;transition:all 0.15s;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
           <span>${labelCopy}</span>
         </button>
@@ -2974,6 +3096,7 @@
       btnCopy.innerHTML = `<span>${labelGenerating}</span>`;
       try {
         const blob = dataUrlToBlob(dataUrl);
+        sdRecordValue();
         await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
         showToast(msgCopied);
         btnCopy.disabled = false;
@@ -2989,6 +3112,7 @@
     });
 
     document.body.appendChild(backdrop);
+    sdDialog(backdrop, titleText, { modal: true });
   }
 
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
@@ -3034,6 +3158,12 @@
       return false;
     }
     if (msg.type === 'zapLastElement') {
+      const ctx = window.__sdContext || {};
+      if (ctx.target) lastRightClickTarget = ctx.target;
+      if (typeof ctx.x === 'number') {
+        lastMouseX = ctx.x;
+        lastMouseY = ctx.y;
+      }
       const ok = zapElement(lastRightClickTarget, msg);
       sendResponse({ ok, zappedCount: zappedStack.length });
       return false;

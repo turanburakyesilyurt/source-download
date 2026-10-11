@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Mag-browse, mag-inspect at mag-download ng bawat web asset na nilo-load ng isang page nang tuloy-tuloy bilang ZIP.</em><br>
-  Source Download — bawat asset ng isang page, isang click lang
+  <em>I-save ang mga larawan, icon at file ng web page nang isa-isa o bilang isang ZIP. May full-page screenshot at pag-record ng area.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Ito ang **una kong open-source na proyekto**, kaya napakahalaga ng feedback mo �
 
 ## Visual Tour at Mga Pangunahing Module
 
-Tuklasin ang mga high-resolution na interface module na direktang nakapaloob sa Google Chrome DevTools, Right-Click Menu, at Toolbar Popup.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. I-capture at i-download ang lahat sa web
-> **★ DEVTOOLS ENGINEERING SUITE · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Bawat file sa page, sa iisang panel"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="I-capture at i-download ang lahat sa web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Mag-right-click. Kunan."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Pumili ng area. Nasa clipboard na."></p>
 
-### 2. I-record ang anumang area bilang video at GIF
-> **★ REGIONAL NA SCREEN RECORDER · MP4, WEBM AT GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Text at mga table ng page, nakaayos na para sa iyo"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="I-record ang anumang area bilang video at GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Buong page, recording, offline na kopya"></p>
 
 ---
 
-### 3. Tuloy-tuloy na full-page na screenshot
-> **★ PIXEL-PERFECT NA SCREENSHOT · BUONG PAGE AT AREA**
+Ang Source Download ay set ng mga tool para mag-imbak ng web content. Nagdadagdag ito ng sariling tab sa Chrome DevTools. Doon, nakaayos ayon sa kategorya ang lahat ng na-load ng site para ma-preview mo at maitabi lang ang kailangan.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Tuloy-tuloy na full-page na screenshot">
-</p>
+## Mga pangunahing feature
+- Maayos na gallery: lumalabas ang mga litrato, icon at font sa sarili nilang tab na may live na bilang at search box.
+- Eksaktong filter: ipakita lang ang mga item na mas malapad sa minimum (halimbawa 1200 px) o itago ang mga duplicate.
+- Totoong preview: i-zoom ang graphics at i-play ang media. Makikita mo rin ang sample ng font o code na may syntax highlighting.
+- Iisang archive: lagyan ng tsek ang gusto mo at makakuha ng iisang ZIP na may maayos na folder. Ang pumalya ay masusubukan ulit sa isang click.
+- Full-page screenshot: ini-scroll at pinagdudugtong ang lahat bilang PNG, JPG o PDF. Puwede ka ring pumili ng isang bahagi lang.
+- Pagre-record ng area: gawing GIF, MP4 o WebM clip ang isang bahagi ng display.
+- Mula table papuntang spreadsheet: i-export ang live na table sa Excel o CSV, kasama ang mga naunang estado ng table na nagre-refresh.
+- Offline na kopya: itabi ang site bilang iisang HTML document na bumubukas kahit walang internet.
+- Color picker: kumuha ng kahit anong kulay na nakikita at kopyahin bilang HEX, RGB o HSL.
 
----
+## Paano magsimula
+1. Buksan ang website na gusto mong pagtrabahuhan.
+2. Pindutin ang F12 (sa Mac Option + Command + I) at piliin ang tab na Source Download. Kung hindi makita, i-click ang » sa dulo ng tab bar.
+3. Panatilihing bukas ang panel habang naglo-load para walang makaligtaan.
 
-### 4. Mga live na DOM table papunta sa Excel (XLSX) at CSV
-> **★ PAGKUHA NG DATA AT ELEMENT REMOVER**
-
-<sub>Kunin ang mga dynamic na table, kasama ang snapshot history ng mga ito, bilang multi-sheet na XLSX o CSV file.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Mga live na DOM table papunta sa Excel (XLSX) at CSV">
-</p>
-
----
-
-### 5. Color eyedropper at code formatter
-> **★ WORKBENCH PARA SA DEVELOPER AT DESIGNER**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Color eyedropper at code formatter">
-</p>
-
----
-
-Ang Source Download ay isang Chrome DevTools panel na naghahanap, nag-i-inspect at nagda-download ng bawat resource na nilo-load ng isang web page. Media file man, developer script, style asset o network response ang kailangan mo, maaari mo itong i-save bilang hiwa-hiwalay na file o bilang maayos na ZIP na may istruktura ng folder.
-
-Binuo mula sa simula nang walang third-party na dependency: ang ZIP writer, ang XLSX builder, ang HLS merger at ang mga code formatter ay lahat hand-written na vanilla JavaScript. Walang framework, walang build step, walang telemetry. Lahat ay tumatakbo nang lokal sa iyong browser.
-
-## Ano'ng Bago sa v1.16.0
-- Buong suporta sa maraming wika sa 54 na wika, kasama ang kumpletong lokalisasyon ng DevTools at ng store.
-- 17 nakalaang kategorya ng asset na may live na bilang, na sumasaklaw sa lahat ng media, code, API, storage at dokumento.
-- Pinagtahing full-page na screenshot at custom na regional area capture na may matalinong pagtatago ng sticky header.
-- Pag-record ng video ng screen (MP4) at magaan na animated GIF export engine na walang edge bleed.
-- Live na DOM table extractor papunta sa multi-sheet na Microsoft Excel (.XLSX) at CSV, kasama ang DOM Zapper na element remover.
-- Color eyedropper sa screen na may instant na pagkopya ng hex/rgb/hsl at kasamang code beautifier.
-- Mas pinatatag na DevTools sniffer at high-concurrency na network pipeline.
-
-## Bakit mo ito kailangan
-Hindi sapat ang screenshot. Kunin ang mga totoong file — full-resolution na larawan, aktwal na video stream, orihinal na stylesheet at script — hindi isang patag na larawan.
-
-Nakakalito ang DevTools. Naglalagay ang Source Download ng malinis at nakakategoryang gallery sa harap ng parehong network data, na may search, mga filter at one-click na download.
-
-Itinatago ng mga SPA ang lahat. Gumagawa ang mga dynamic na app ng mga asset at API call na hindi mo nakikita sa source ng page. Kinukuha ng Source Download ang mga ito habang nangyayari, kasama ang mga intermediate na estado.
-
-## Ano ang ginagawa nito
-### Hanapin ang lahat
-- Pinagsasama ang network capture (HAR + mga live na request) at DOM scan para sa lahat ng visual at structural na elemento, kasama ang media file, script, stylesheet at embedded frame.
-- **CSS-aware:** sinusundan nang paulit-ulit ang mga asset sa loob ng url(...) at mga @import rule, kaya makikita pati ang mga font na nakabaon sa mga na-import na stylesheet.
-- **Content sniffing:** binabasa ang ilang byte ng mga hindi kilalang file at inililipat sa kanilang tunay na kategorya ng uri ng file.
-- **17 kategoryang may live na bilang:** maayos na inaayos ang mga na-capture na asset sa mga nakalaang tab para sa media, code, data, API call, cookie, storage at dokumento.
-
-### Mag-filter, maghanap, mag-inspect
-- Regex-powered na paghahanap sa mga filename, URL, MIME type, alt text at maging sa laman ng mga file.
-- **Mga filter bawat kategorya:** min/max na laki, at para sa media ay min/max din na lapad at taas — halimbawa "mga hero image lang na ≥ 1200px". Nagfi-filter ang mga API call ayon sa HTTP method at uri ng request.
-- List o grid view, maaaring i-sort, may live na thumbnail wall.
-- **Multi-tab na inspector na may totoong preview:** zoomable na lightbox, pag-play ng video at audio, live na font specimen, SVG viewer, syntax-highlighted na code na may line number at Beautify toggle.
-- **API split view:** ang response sa kaliwa; ang method, status, query parameter at request body sa kanan.
-
-### Mag-download nang maayos
-- I-download ang Napili — ang mga file lang na na-check mo.
-- I-download ang View — lahat ng nakikita matapos ang kasalukuyang mga filter at search.
-- I-download Lahat — bawat na-capture na resource sa ZIP na may istruktura ng folder at awtomatikong de-duplication.
-- Tumatakbo ang mga batch download na may limitadong concurrency at live na progress bar; awtomatikong inuulit ang mga nabigo, at maaari rin mula sa context menu.
-
-### HLS at mahihirap na video
-- Ang mga stream na hindi native na nape-play ng browser (HLS .m3u8, DASH .mpd, hindi kilalang codec) ay nagpapakita ng matalinong fallback sa halip na itim na player.
-- Ang Merge segments at download ay ginagawang isang playable na file ang HLS stream, mismo sa panel.
-
-### Ang Text workbench (SPA content toolkit)
-- **Ang Text tab ay isang live na content viewer:** bawat elementong may text — heading, talata, list item, button, div, span — ay kinukuha ayon sa pagkakasunod-sunod ng DOM.
-- Nagtatago ang mga dynamic na table ng limitadong snapshot history (hal. "8 snapshot · 124 natatanging row"), kaya hindi nawawalan ng intermediate na estado ang mga auto-refreshing na dashboard.
-- I-export bilang Markdown, o ang mga table bilang CSV, HTML, o totoong multi-sheet na XLSX workbook na gawa ng sarili naming hand-written na XLSX writer.
-
-## Paano gamitin
-1. I-install ang Source Download, pagkatapos ay pindutin ang F12 sa anumang page.
-2. I-click ang Source Download tab sa DevTools toolbar (hindi pinapayagan ng Chrome na awtomatikong buksan ng mga extension ang DevTools — kaya doon ito matatagpuan).
-3. I-browse ang mga category tab, maghanap, mag-filter, at mag-inspect ng kahit ano sa panel sa kanan.
-4. I-check ang mga file na gusto mo at i-click ang I-download ang Napili, I-download ang View o I-download Lahat.
-5. Panatilihing bukas ang DevTools panel habang nilo-load ang page para makuha ang bawat network request.
-
-## Mga totoong gamit
-- **Pagsusuri ng kakumpitensya:** mangolekta ng mga video thumbnail mula sa anumang channel — gamit ang minimum width filter — sa iisang folder.
-- **Web scraping nang walang code:** bantayan ang mga API call ng isang SPA, i-filter ang endpoint na kailangan mo, at i-download ang eksaktong JSON response nito.
-- **Pagsusuri ng typography:** alamin kung anong font talaga ang gamit ng isang site at kunin ang aktwal na font file.
-- **Pag-reproduce ng bug:** itago ang eksaktong bersyon ng CSS/JS na na-ship nang mangyari ang bug.
-- **Pag-export ng data ng dashboard:** i-export ang auto-refreshing na table sa multi-sheet na Excel workbook, kasama ang history.
-- **QA testing:** alamin kung aling video/audio variant ang inihahatid sa bawat A/B configuration.
+Nasa right-click menu at sa button ng extension din ang screenshot, pagre-record at color picker.
 
 ## Privacy
-- Tumatakbo nang 100% lokal. Walang server, walang analytics, walang data na umaalis sa iyong makina.
-- **Humihingi lang ng kailangan nito:** storage (ang iyong mga preference), clipboard (pagkopya ng mga URL at kulay), downloads (pag-save ng mga file sa pamamagitan ng Chrome), context menu, scripting at host access (para i-scan ang mga page at kunin ang laman ng mga file).
-- Sine-save ang mga file sa normal na download flow ng Chrome — walang palihim na download.
 
-## Mga kinakailangan
-- Chrome 116 o mas bago (Manifest V3).
-- Pinakamainam ang resulta kapag bukas ang panel habang nilo-load ang page, dahil iyon ang oras ng network capture.
+Tumatakbo ang lahat sa computer mo. Walang account o analytics, at walang anumang itinabi mo na ipinapadala sa developer. Napupunta ang mga na-save sa karaniwang Downloads folder mo sa pamamagitan ng Chrome.
 
-Ang Source Download ay isang open-source na proyekto — malugod na tinatanggap ang feedback, ideya at pull request.
+Kailangan ng extension ng access sa mga site na binibisita mo para mahanap ang mga resource nito at magawa ang trabaho nito.
 
-Kumonekta sa LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Igalang ang copyright at mga tuntunin ng paggamit, at itabi lang ang content na pinapayagan kang gamitin.
+
+## Bago sa 1.17
+- Mas magaan: walang tumatakbo hangga't hindi ka gumagamit ng isang feature.
+- Kasama na sa mga offline na kopya ang lahat ng litrato, background at font.
+- Nananatili sa limitasyon ng memory ang GIF recording kahit sa mahahabang HD clip.
+- Bagong welcome screen at mga shortcut sa button ng extension.
+
+Mga tanong o problema: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

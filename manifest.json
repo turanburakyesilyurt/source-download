@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "version": "1.16.0",
+  "short_name": "Source Download",
+  "version": "1.17.0",
   "default_locale": "en",
   "author": "Turan Burak Yeşilyurt",
   "homepage_url": "https://2run.dev",
   "description": "__MSG_appDesc__",
-  "minimum_chrome_version": "116",
+  "minimum_chrome_version": "126",
   "devtools_page": "devtools.html",
   "action": {
     "default_title": "__MSG_actionTitle__",
@@ -33,20 +34,15 @@
         "<all_urls>"
       ],
       "js": [
-        "lib/i18n.js",
-        "lib/naming.js",
-        "lib/pdf.js",
-        "lib/gif.js",
-        "content.js"
+        "content-context.js"
       ],
-      "run_at": "document_idle"
+      "run_at": "document_start"
     }
   ],
   "permissions": [
     "storage",
     "clipboardWrite",
     "contextMenus",
-    "activeTab",
     "scripting",
     "downloads"
   ],

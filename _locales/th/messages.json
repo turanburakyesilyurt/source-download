@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: ตัวดาวน์โหลดรูปภาพและไฟล์"
   },
   "appDesc": {
-    "message": "ตรวจสอบ เรียกดู และดาวน์โหลดเนื้อหาเว็บเป็น ZIP พร้อมภาพหน้าจอเต็มหน้า การจับตารางสด และเครื่องมือนักพัฒนา"
+    "message": "เก็บรูปภาพ ไอคอน และไฟล์จากหน้าเว็บทีละรายการหรือรวมเป็น ZIP เดียว พร้อมจับภาพทั้งหน้าและอัดวิดีโอบางส่วนของจอ"
   },
   "actionTitle": {
     "message": "Source Download — เปิดแผงและติดตามทรัพยากร"
@@ -90,7 +90,7 @@
     "message": "ดาวน์โหลดที่เลือก"
   },
   "btnDownloadView": {
-    "message": "ดาวน์โหลดมุมมองปัจจุบัน"
+    "message": "ดาวน์โหลดรายการที่มองเห็น"
   },
   "btnDownloadAll": {
     "message": "ดาวน์โหลดทั้งหมด"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "ดาวน์โหลดที่กรองแล้ว"
   },
-  "btnTheme": {
-    "message": "สลับธีม"
-  },
   "btnGuide": {
     "message": "คู่มือการใช้งาน"
-  },
-  "btnCaptureFullPage": {
-    "message": "ภาพหน้าจอแบบเต็มหน้า"
-  },
-  "btnOfflineArchive": {
-    "message": "บันทึกเป็น HTML ไฟล์เดียว"
   },
   "filterMinKb": {
     "message": "ขั้นต่ำ KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "กรองข้อความหน้าหรือค้นหา DOM แบบสด…"
-  },
-  "textAllElements": {
-    "message": "องค์ประกอบทั้งหมด"
-  },
-  "textLiveOn": {
-    "message": "เปิดโหมดสด"
-  },
-  "textLiveOff": {
-    "message": "ปิดโหมดสด"
-  },
   "textScanNow": {
     "message": "สแกนตอนนี้"
-  },
-  "textReading": {
-    "message": "โหมดอ่าน"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "เลือกทรัพยากรเพื่อตรวจสอบรายละเอียด"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "ชอบ Source Download ไหม? สนับสนุนวิสัยทัศน์โอเพ่นซอร์สของเราด้วยการรีวิวบน Chrome เว็บสโตร์หรือติดดาวบน GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ เขียนรีวิว"
-  },
-  "ratingStar": {
-    "message": "★ ติดดาวบน GitHub"
-  },
   "ratingDismiss": {
     "message": "ปิด"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "บันทึกไฟล์เก็บถาวร HTML แบบไฟล์เดียวแล้ว"
-  },
-  "brandSignature": {
-    "message": "สร้างสรรค์โดย Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "รูปภาพและ SVG"
-  },
-  "tabMedia": {
-    "message": "สื่อและเสียง"
-  },
-  "tabFonts": {
-    "message": "แบบอักษร"
-  },
-  "tabTextScraper": {
-    "message": "ข้อความและตาราง"
-  },
-  "heroScreenshotTitle": {
-    "message": "ภาพหน้าจอแบบเต็มหน้า"
-  },
-  "heroScreenshotDesc": {
-    "message": "เย็บต่อหลายวิวพอร์ตอย่างไร้รอยต่อ พร้อมซ่อนส่วนหัวแบบติดหน้าจอ"
-  },
-  "heroArchiveTitle": {
-    "message": "ไฟล์เก็บถาวร HTML ไฟล์เดียว"
-  },
-  "heroArchiveDesc": {
-    "message": "ฝัง CSS และรูปภาพ Base64 ไว้ในไฟล์ สแนปช็อตที่ใช้งานออฟไลน์ได้"
-  },
-  "copyDataUri": {
-    "message": "คัดลอก Data-URI"
-  },
-  "copyUrl": {
-    "message": "คัดลอก URL"
   },
   "downloadSingle": {
     "message": "ดาวน์โหลด"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "ทรัพยากร"
   },
-  "statusFiltered": {
-    "message": "กรองแล้ว"
-  },
   "statusSelected": {
     "message": "เลือกแล้ว"
   },
   "statusDupes": {
     "message": "รายการที่ซ้ำซ้อนซ่อนอยู่"
-  },
-  "statusSize": {
-    "message": "ขนาด"
   },
   "langAuto": {
     "message": "อัตโนมัติ (เบราว์เซอร์)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "เลือกภาษา"
   },
-  "textPillAll": {
-    "message": "เนื้อหาทั้งหมด"
-  },
-  "textPillText": {
-    "message": "📄 ข้อความและบทความ"
-  },
-  "textPillTables": {
-    "message": "📊 เฉพาะตาราง"
-  },
   "textSelectAll": {
     "message": "เลือกทั้งหมด"
   },
   "textDeselectAll": {
     "message": "ยกเลิกการเลือกทั้งหมด"
-  },
-  "textClearSelection": {
-    "message": "ล้าง"
   },
   "toastRefreshComplete": {
     "message": "การสแกนหน้าเสร็จสมบูรณ์: $count$ ทรัพยากรใหม่",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ ตาราง · $rows$ แถวที่ไม่ซ้ำ",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "เลือกแล้ว $count$ รายการ — การส่งออกจะใช้เฉพาะรายการเหล่านี้",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "ตาราง — $count$ แถวบนหน้าจอ",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "ตาราง — แถวที่ไม่ซ้ำกันทั้งหมด $count$ แถว",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ สแนปช็อต",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "กำลังแสดงแถวทั้งหมด"
   },
-  "textTableHistory": {
-    "message": "ประวัติ ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "ซ่อนประวัติ"
-  },
   "textTableNoRows": {
     "message": "ยังไม่มีแถวที่บันทึกไว้"
   },
   "textBtnCopy": {
     "message": "คัดลอกข้อความ"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 คัดลอก"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ รูปภาพที่ซ้ำกัน",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "ส่งออก"
   },
   "inspectorLoadingSvg": {
     "message": "กำลังโหลด SVG…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "ดูตัวอย่างแบบอักษร"
   },
-  "inspectorBeautify": {
-    "message": "จัดรูปแบบ"
-  },
-  "inspectorOriginal": {
-    "message": "ต้นฉบับ"
-  },
-  "inspectorHeaders": {
-    "message": "ส่วนหัว"
-  },
-  "inspectorResponse": {
-    "message": "การตอบกลับ"
-  },
-  "inspectorRequest": {
-    "message": "คำขอ"
-  },
   "inspectorQueryParams": {
     "message": "พารามิเตอร์คิวรี"
   },
   "inspectorRequestBody": {
     "message": "เนื้อหาคำขอ"
   },
-  "textHintHtml": {
-    "message": "สำเนาสดของหน้าเว็บที่อ่านง่าย องค์ประกอบทุกอย่างที่มีข้อความจะถูกบันทึกตามลำดับ DOM และอัปเดตที่นี่เมื่อหน้าเว็บเปลี่ยนแปลง ค้นหาด้วยข้อความธรรมดา นิพจน์ทั่วไป <strong>ตัวเลือก CSS</strong> หรือนิพจน์ <strong>XPath</strong> แล้วส่งออกสิ่งที่ตรงกัน ดู<a href=\"#\" id=\"text-hint-guide\">คู่มือ</a>สำหรับรายละเอียด"
-  },
-  "textHeadings": {
-    "message": "หัวเรื่อง"
-  },
-  "textAllLevels": {
-    "message": "ทุกระดับ"
-  },
   "textMatches": {
     "message": "ที่ตรงกัน"
   },
   "textMatch": {
     "message": "ตรงกัน"
-  },
-  "textReadingOn": {
-    "message": "เปิดโหมดอ่าน"
   },
   "toastDownloadStarted": {
     "message": "เริ่มการดาวน์โหลด: $name$",
@@ -756,7 +566,7 @@
     "message": "ไม่สามารถดึงข้อมูลทรัพยากรนี้ได้ (CORS หรือประเภทที่ไม่รองรับ)"
   },
   "ratingBannerText": {
-    "message": "ชอบ Source Download ไหม? สนับสนุนวิสัยทัศน์โอเพ่นซอร์สของเราด้วยการรีวิวบน Chrome เว็บสโตร์หรือติดดาวบน GitHub!"
+    "message": "ดีใจที่ใช้งานได้! หาก Source Download ช่วยประหยัดเวลาของคุณ รีวิวสั้นๆ จะช่วยให้คนอื่นค้นพบได้"
   },
   "ratingBannerReview": {
     "message": "★ รีวิว"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "วิธีการตีความกล่องแบบสอบถาม"
   },
-  "textKindTitle": {
-    "message": "จำกัดเพียงประเภทองค์ประกอบเดียว"
-  },
-  "textHeadingLevelTitle": {
-    "message": "ระดับหัวเรื่อง"
-  },
   "textPlaceholderRegex": {
     "message": "^ราคา:\\s*\\d+ — นิพจน์ทั่วไปของ JavaScript"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "ค้นหาคำแนะนำ…"
-  },
-  "popupIntro": {
-    "message": "หมวดหมู่ที่นับโดย <strong>ป้ายแถบเครื่องมือ</strong> สลับปิดหนึ่งรายการเพื่อหยุดนับ — ป้ายสถานะจะแสดงเฉพาะสิ่งที่คุณติดตามทันที"
-  },
-  "popupHelpTitle": {
-    "message": "วิธีใช้งานแบบเต็มแผง"
-  },
-  "popupStep1": {
-    "message": "เปิด DevTools สำหรับเพจที่คุณต้องการตรวจสอบ <div class=\"hint\"><kbd>F12</kbd> หรือ <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "คลิกแท็บ <strong>Source Download</strong> ในแถบเครื่องมือ DevTools"
-  },
-  "popupStep3": {
-    "message": "เรียกดู ตรวจสอบ และดาวน์โหลดทรัพยากร — ทีละรายการหรือทั้งหมดในครั้งเดียวในรูปแบบไฟล์ ZIP"
-  },
-  "popupNote": {
-    "message": "หมายเหตุ: Chrome ไม่อนุญาตให้ส่วนขยายเปิด DevTools โดยทางโปรแกรม ซึ่งเป็นเหตุผลว่าทำไมการเข้าถึงชุดเครื่องมือวิศวกรรมทั้งหมดผ่านแถบเครื่องมือ DevTools"
-  },
-  "popupTrackAll": {
-    "message": "ติดตามทุกหมวดหมู่"
   },
   "popupLanguage": {
     "message": "ภาษา"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "รวมเซกเมนต์และดาวน์โหลด"
   },
-  "toastHlsMerged": {
-    "message": "รวม $COUNT$ เซกเมนต์เป็น $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "ไม่ทราบขนาด"
-  },
   "progressFetching": {
     "message": "กำลังดึงข้อมูล $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "การค้นหาด้วย Regex ทำงานอยู่ — ครอบข้อความค้นหาด้วย /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "รวมไว้ในการส่งออก"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "รวมทุกสแนปช็อตไว้ในตารางเดียวที่ตัดข้อมูลซ้ำออก — นี่คือสิ่งที่จะถูกส่งออก"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "เรียกดูสแนปช็อตก่อนหน้าของตารางนี้"
-  },
   "tableDownloadCsvTitle": {
     "message": "ดาวน์โหลดตารางนี้เป็น CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "สแนปช็อต $INDEX$ — $TIME$ ($COUNT$ แถว)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "สลับการเลือกสำหรับการดาวน์โหลดเป็นชุด"
@@ -1150,7 +899,7 @@
     "message": "คลิกแท็บ <strong>Source Download</strong> ในแถบเครื่องมือ DevTools (กด <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> จากนั้นกดแท็บในแถบเครื่องมือ DevTools) Chrome ไม่อนุญาตให้ส่วนขยายเปิด DevTools โดยอัตโนมัติ ซึ่งเป็นเหตุผลว่าทำไมแผงควบคุมจึงอยู่ที่นั่น ป๊อปอัปไอคอนแถบเครื่องมือให้คุณเลือกหมวดหมู่ที่ป้อนตัวนับป้ายสถานะบนไอคอน ปุ่มพระอาทิตย์/พระจันทร์ในแถบเครื่องมือของแผงจะล็อกธีมสว่างหรือมืดโดยไม่ขึ้นอยู่กับ Chrome ทางเลือกนั้นจะถูกจดจำ"
   },
   "guideSecCategoriesContent": {
-    "message": "แท็บแนวตั้งทางด้านซ้ายจัดกลุ่มทรัพยากรที่บันทึกไว้ออกเป็น 17 หมวดหมู่เฉพาะตามประเภท: รูปภาพ วิดีโอ เสียง คำบรรยาย เอกสาร แบบอักษร Source map WASM SVG API คุกกี้ พื้นที่เก็บข้อมูล และอื่นๆ แต่ละแท็บจะแสดงจำนวนสด จะแสดงเพียงหมวดหมู่เดียวเท่านั้นในแต่ละครั้ง การสลับจะรีเซ็ตตัวกรองทั้งหมด ดังนั้นสิ่งที่คุณเห็นจะตรงกับแท็บเสมอ"
+    "message": "แท็บแนวตั้งทางซ้ายจัดทรัพยากรที่จับได้ทั้งหมดเป็น 15 หมวดหมู่ เช่น รูปภาพ วิดีโอ ฟอนต์ ซอร์สแมป และการเรียก API พร้อมแท็บข้อความและตาราง แต่ละแท็บแสดงจำนวนแบบสด แสดงได้ครั้งละหนึ่งหมวดหมู่ และการสลับแท็บจะล้างตัวกรองทั้งหมด สิ่งที่คุณเห็นจึงตรงกับแท็บเสมอ"
   },
   "guideSecSearchFiltersContent": {
     "message": "แถบค้นหาจะกรองตามชื่อ URL ประเภท ข้อความแสดงแทน หรือชื่อเรื่อง ใส่ข้อความค้นหาของคุณใน <kbd>/…/</kbd> เพื่อใช้นิพจน์ทั่วไป เช่น <code>/\\.(png|jpg)$/</code>. ใต้แถบเครื่องมือ แถบตัวกรองจะเปลี่ยนตามหมวดหมู่ ได้แก่ ขนาดและช่วงมิติข้อมูลสำหรับสื่อ วิธี HTTP และประเภทคำขอสำหรับ API รวมถึงการเรียงลำดับและทิศทาง"
@@ -1162,13 +911,13 @@
     "message": "คลิกทรัพยากรใดก็ได้เพื่อเปิดในบานหน้าต่างตรวจสอบทางด้านขวา ไฟล์ที่เปิดแต่ละไฟล์จะกลายเป็นแท็บ ดังนั้นคุณจึงสามารถเปรียบเทียบทรัพยากรต่างๆ เคียงข้างกันได้ โดยไฟล์ใหม่ล่าสุดจะเปิดทางด้านซ้าย มีตัวแสดงเฉพาะทางสำหรับรูปภาพ วิดีโอ เสียง แบบอักษร SVG และข้อความ/โค้ด (พร้อมปุ่มสลับจัดรูปแบบ) API แสดงมุมมองแยก: การตอบสนองทางด้านซ้าย รายละเอียดคำขอ (วิธีการ สถานะ ส่วนหัว พารามิเตอร์การสืบค้น และเนื้อหา) ทางด้านขวา"
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>ดาวน์โหลดมุมมองปัจจุบัน</strong> บันทึกทรัพยากรที่มองเห็นได้ในปัจจุบัน (หมวดหมู่ที่ใช้งานอยู่ + การค้นหา + ตัวกรอง) เป็นไฟล์ ZIP โดยจะติดป้ายกำกับใหม่เป็น <em>ดาวน์โหลดที่กรองแล้ว (N)</em> เมื่อตัวกรองทำงานอยู่ วางเมาส์เหนือปุ่มดาวน์โหลดเพื่อดูขนาดไฟล์เก็บถาวรโดยประมาณก่อนที่คุณจะคลิก <strong>ดาวน์โหลดที่เลือก</strong> ดาวน์โหลดเฉพาะรายการที่เลือกเท่านั้น <strong>ดาวน์โหลดทั้งหมด</strong> รวบรวมทรัพยากรทั้งหมดที่ค้นพบไว้ใน ZIP ที่มีโครงสร้างโฟลเดอร์ การดาวน์โหลดที่ล้มเหลวจะถูกลองใหม่โดยอัตโนมัติและสามารถลองใหม่ได้อีกครั้งจากเมนูบริบท <strong>ส่งออก</strong> บันทึกรายการที่มองเห็นเป็น JSON หรือ CSV หรือส่งออกบันทึกเครือข่ายของ Chrome เป็นไฟล์ HAR"
+    "message": "<strong>ดาวน์โหลดรายการที่มองเห็น</strong> บันทึกทรัพยากรที่มองเห็นได้ในปัจจุบัน (หมวดหมู่ที่ใช้งานอยู่ + การค้นหา + ตัวกรอง) เป็นไฟล์ ZIP โดยจะติดป้ายกำกับใหม่เป็น <em>ดาวน์โหลดที่กรองแล้ว (N)</em> เมื่อตัวกรองทำงานอยู่ วางเมาส์เหนือปุ่มดาวน์โหลดเพื่อดูขนาดไฟล์เก็บถาวรโดยประมาณก่อนที่คุณจะคลิก <strong>ดาวน์โหลดที่เลือก</strong> ดาวน์โหลดเฉพาะรายการที่เลือกเท่านั้น <strong>ดาวน์โหลดทั้งหมด</strong> รวบรวมทรัพยากรทั้งหมดที่ค้นพบไว้ใน ZIP ที่มีโครงสร้างโฟลเดอร์ การดาวน์โหลดที่ล้มเหลวจะถูกทำเครื่องหมายไว้ และคุณลองใหม่ได้ในคลิกเดียวจากการแจ้งเตือน ไอคอนคำเตือนของรายการ หรือเมนูบริบท <strong>ส่งออก</strong> บันทึกรายการที่มองเห็นเป็น JSON หรือ CSV หรือส่งออกบันทึกเครือข่ายของ Chrome เป็นไฟล์ HAR"
   },
   "guideSecLightboxContent": {
     "message": "ปุ่มซูมจะเปิดสื่อในไลท์บ็อกซ์ขนาดเต็มซึ่งคุณสามารถเลื่อนได้ด้วยการลาก ซูมด้วยล้อเลื่อนของเมาส์ ปุ่มบนหน้าจอ หรือแป้นพิมพ์ (<kbd>+</kbd>/<kbd>-</kbd> เพื่อซูม <kbd>0</kbd> เพื่อรีเซ็ต <kbd>Esc</kbd> เพื่อปิด)"
   },
   "guideSecTextTablesContent": {
-    "message": "<p>หมวดหมู่ <strong>ข้อความ</strong> เป็นสำเนาสดของหน้าเว็บที่อ่านง่าย โดยจะจับทุกองค์ประกอบที่เก็บข้อความ เช่น ส่วนหัว ย่อหน้า รายการ ปุ่ม <code>div</code>/<code>span</code> และอื่นๆ ตามลำดับ DOM และสแกนต่อไปในขณะที่ <strong>Live</strong> เปิดอยู่</p><p>ช่อง <strong>คำค้นหา</strong> ทำงานสี่วิธี โดยเลือกจากเมนูแบบเลื่อนลงข้างๆ: <strong>ประกอบด้วย</strong> และ <strong>Regex</strong> กรองข้อความที่บันทึกไว้แล้ว ขณะที่ <strong>ตัวเลือก CSS</strong> และ <strong>XPath</strong> ทำงานกับเพจที่ใช้งานอยู่ เพื่อให้สามารถเข้าถึงทุกสิ่งใน DOM XPath ยังยอมรับนิพจน์ที่ส่งคืนค่าแทนที่จะเป็นองค์ประกอบ เช่น <code>count(//a)</code> หรือ <code>//@href</code> ไม่ว่าหน้านั้นจะกล่าวถึงคำค้นหาที่ใช้งานไม่ได้ก็ตามจะแสดงอยู่ข้างๆ กล่อง <strong>องค์ประกอบ</strong> จะจำกัดผลลัพธ์ให้เหลือเพียงแท็กเดียว โดยนับจำนวนแท็กแต่ละแท็กที่พบในหน้าเว็บ การล้างช่องค้นหา (หรือกด <strong>ล้าง</strong>) จะทำให้คุณกลับไปที่ <em>องค์ประกอบทั้งหมด</em> และเรียกคืนหน้านั้น โดยคุณไม่จำเป็นต้องรีเซ็ตเมนูแบบเลื่อนลงด้วยตนเอง</p><p><strong>การอ่าน</strong>จะซ่อนแท็ก ช่องทำเครื่องหมาย และเส้นทางนำทาง (breadcrumb) เพื่อให้สตรีมอ่านได้เหมือนกับเอกสาร ตารางจะจัดเก็บประวัติที่มีขอบเขตของสแนปช็อต ดังนั้นตารางไดนามิก (SPA) จะไม่สูญหาย กด <strong>แสดงแถวทั้งหมด</strong> บนตารางเพื่อรวมทุกสแนปช็อตให้เป็นมุมมองเดียวที่กรองข้อมูลซ้ำออก ซึ่งก็คือสิ่งที่ส่งออกนั่นเอง ส่งออกเป็น <strong>TXT</strong> (หน้าที่อ่านได้), <strong>MD</strong> (Markdown, รวมตาราง) หรือตารางเป็น CSV, HTML หรือสมุดงาน <strong>XLSX</strong> หลายแผ่นจริง รายการที่เลือกไว้จะมีความสำคัญก่อน ไม่เช่นนั้นทุกสิ่งที่มองเห็นได้ในปัจจุบันจะถูกส่งออก</p>"
+    "message": "<p>หมวด <strong>ข้อความ</strong> คือสำเนาของหน้าที่อ่านง่ายและอัปเดตตลอดเวลา: หัวเรื่อง ย่อหน้า รายการ และลิงก์ตามลำดับในหน้า ซึ่งจะอัปเดตต่อเนื่องขณะที่ <strong>สด</strong> เปิดอยู่ วางเมาส์บนบรรทัดใดก็ได้เพื่อคัดลอก หรือใช้ <strong>คัดลอกข้อความ</strong>, <strong>Markdown</strong> และ <strong>TXT</strong> กับทุกอย่างที่แสดงอยู่</p><p>ใน <strong>ตาราง</strong> แต่ละตารางในหน้าจะแสดงเป็นการ์ดที่มีตัวอย่างและปุ่มของตัวเอง ได้แก่ <strong>Excel</strong>, <strong>CSV</strong> และ <strong>คัดลอก</strong>; <strong>ตารางทั้งหมดไปยัง Excel</strong> จะรวมทุกตารางไว้ในเวิร์กบุ๊กเดียว ตารางละหนึ่งชีต ตารางที่มีการเปลี่ยนแปลงจะเก็บประวัติสแนปช็อต และ <strong>แสดงทุกแถว</strong> จะรวมเป็นตารางเดียวโดยไม่มีแถวซ้ำ — ซึ่งก็คือสิ่งที่อยู่ในการส่งออกนั่นเอง</p><p>กล่องทางซ้ายจัดหน้าตามประเภทองค์ประกอบ — ข้อความทั้งหมดของหน้า หัวเรื่องแต่ละระดับ ย่อหน้า ลิงก์ รายการ ปุ่ม โค้ด และอื่น ๆ — แต่ละกล่องมีจำนวนและบรรทัดแรก เลือกกล่องหนึ่งเพื่อดู คัดลอก หรือส่งออกเฉพาะส่วนนั้น ช่องค้นหาจะกรองขณะพิมพ์ และเมนูข้าง ๆ เปลี่ยนให้เป็นนิพจน์ทั่วไป <strong>ตัวเลือก CSS</strong> หรือนิพจน์ <strong>XPath</strong> (รวมถึงนิพจน์ที่คืนค่า เช่น <code>count(//a)</code> หรือ <code>//@href</code>) ที่ทำงานบนหน้าจริง; กล่อง <strong>คำค้นหาที่กำหนดเอง</strong> ก็ทำแบบเดียวกัน ข้อความที่หน้าแจ้งเกี่ยวกับคำค้นหาที่ผิดจะแสดงในช่องนั้นเลย</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML และไฟล์คำบรรยายอื่นๆ รวมถึงแหล่งที่มา <code>&lt;track&gt;</code> จะอยู่ในแท็บ <strong>คำบรรยาย</strong> ของตัวเองแทนที่จะรวมกับเอกสาร"
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "ความละเอียด GIF เริ่มต้น"
   },
-  "optGifOriginal": {
-    "message": "ต้นฉบับ (1:1 ความละเอียดเดิม — 3K/4K เต็มรูปแบบ ไม่ลดขนาด)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (สูงสุด 1920px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "การบันทึกหน้าจอ (วิดีโอและ GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "บันทึกพื้นที่ใดก็ได้บนหน้าจอเป็น MP4, WebM หรือ GIF แบบเคลื่อนไหว การบันทึก GIF มีความละเอียดดั้งเดิม 1:1, โปรไฟล์ 1080p, 720p และ 480p พร้อมขนาดไฟล์โดยประมาณแบบเรียลไทม์ ระยะเวลาการบันทึก GIF สูงสุดคือ 1 นาที (60 วินาที) เพื่อประสิทธิภาพเบราว์เซอร์ที่เหมาะสมที่สุด"
+    "message": "บันทึกพื้นที่ใดก็ได้บนหน้าจอเป็น MP4, WebM หรือ GIF แบบเคลื่อนไหว การบันทึก GIF มีโปรไฟล์ 1080p, 720p และ 480p พร้อมประมาณขนาดไฟล์แบบสด การบันทึก GIF แต่ละครั้งยาวได้สูงสุด 1 นาที (60 วินาที)"
   },
   "msgGifMaxDurationReached": {
     "message": "ถึงความยาว GIF สูงสุด 1 นาที (60 วินาที) แล้ว กำลังสร้าง GIF…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — งานนำเสนอ (1 เฟรมต่อวินาที ขนาดเล็กที่สุด)"
-  },
-  "popupRightClickHint": {
-    "message": "คลิกขวาที่ใดก็ได้บนหน้าเว็บเพื่อบันทึกหน้าจอ (วิดีโอ/GIF) และเครื่องมือเลือกสี"
   },
   "toastElementZappedAd": {
     "message": "ซ่อนโฆษณา / iframe สำหรับเซสชันนี้แล้ว",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "ความละเอียด GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "ความละเอียด GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "ไม่พบแท็บที่ใช้งานอยู่",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "คลิกที่นี่ แล้วเลือกสีใดก็ได้บนหน้าเว็บ"
+  },
+  "welcomeTitle": {
+    "message": "Source Download พร้อมใช้งานแล้ว"
+  },
+  "welcomePrivacy": {
+    "message": "ทุกอย่างทำงานบนคอมพิวเตอร์ของคุณ ไม่ต้องมีบัญชี ไม่มีการติดตาม และไม่มีการส่งข้อมูลใดๆ มาให้เรา"
+  },
+  "welcomeHelp": {
+    "message": "มีบางอย่างไม่ทำงานใช่ไหม? แจ้งเราบน GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "มีปัญหาใช่ไหม?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF มีขนาดถึง 200 MB แล้ว กำลังบันทึกส่วนที่อัดไว้…"
+  },
+  "btnPopupFullPage": {
+    "message": "ภาพหน้าจอทั้งหน้า"
+  },
+  "toastRecWrongTab": {
+    "message": "หากต้องการบันทึกพื้นที่ของหน้านี้ ให้เลือก \"แท็บนี้\" ในหน้าต่างการแชร์"
+  },
+  "popupCaptureTitle": {
+    "message": "จับภาพหน้านี้"
+  },
+  "popupTileOffline": {
+    "message": "บันทึกหน้าไว้ดูออฟไลน์"
+  },
+  "popupTileGuide": {
+    "message": "วิธีใช้งาน"
+  },
+  "popupDevtoolsTitle": {
+    "message": "ไฟล์ รูปภาพ และตาราง"
+  },
+  "popupDevtoolsHint": {
+    "message": "เปิด DevTools แล้วเลือกแท็บ Source Download"
+  },
+  "popupRestricted": {
+    "message": "Chrome ไม่อนุญาตให้ใช้ส่วนขยายในหน้านี้ เปิดเว็บไซต์เพื่อใช้เครื่องมือ"
+  },
+  "welcomeCardMenuTitle": {
+    "message": "คลิกขวาที่หน้าใดก็ได้"
+  },
+  "welcomeCardMenuText": {
+    "message": "ภาพหน้าจอทั้งหน้าหรือเฉพาะพื้นที่ การบันทึกพื้นที่ ตัวเลือกสี และสำเนาออฟไลน์ — ได้ทันทีตรงที่คุณอยู่"
+  },
+  "welcomeCardPopupTitle": {
+    "message": "หรือใช้ปุ่มบนแถบเครื่องมือ"
+  },
+  "welcomeCardPopupText": {
+    "message": "คลิกไอคอนจิ๊กซอว์บนแถบเครื่องมือของ Chrome แล้วปักหมุด Source Download เพื่อให้เครื่องมืออยู่ห่างเพียงคลิกเดียวเสมอ"
+  },
+  "welcomeCardPanelTitle": {
+    "message": "กด F12 เพื่อดูทุกอย่างในหน้า"
+  },
+  "welcomeCardPanelText": {
+    "message": "เลือกแท็บ Source Download ใน DevTools รูปภาพ วิดีโอ ฟอนต์ และไฟล์ทุกรายการที่หน้าโหลดจะแสดงอยู่ที่นั่น — ดูตัวอย่าง กรอง และบันทึกเป็น ZIP ได้ ตารางในหน้าส่งออกเป็น Excel ได้"
+  },
+  "welcomeLead": {
+    "message": "สามวิธีในการเก็บสิ่งที่ต้องการจากหน้าเว็บใดก็ได้"
+  },
+  "btnDownloadOptions": {
+    "message": "ตัวเลือกการดาวน์โหลดเพิ่มเติม"
+  },
+  "btnMore": {
+    "message": "การดำเนินการเพิ่มเติม"
+  },
+  "btnFilters": {
+    "message": "ตัวกรอง"
+  },
+  "tabsShowEmpty": {
+    "message": "แสดงหมวดที่ว่าง"
+  },
+  "tabsHideEmpty": {
+    "message": "ซ่อนหมวดที่ว่าง"
+  },
+  "textSegText": {
+    "message": "ข้อความ"
+  },
+  "textSegTables": {
+    "message": "ตาราง"
+  },
+  "textLive": {
+    "message": "สด"
+  },
+  "textPaused": {
+    "message": "หยุดชั่วคราว"
+  },
+  "textLivePauseTitle": {
+    "message": "สด: อ่านหน้าใหม่ทุกครั้งที่หน้ามีการเปลี่ยนแปลง คลิกเพื่อหยุดชั่วคราว"
+  },
+  "textLiveResumeTitle": {
+    "message": "หยุดชั่วคราว คลิกเพื่อติดตามหน้าแบบสดอีกครั้ง"
+  },
+  "textSearchText": {
+    "message": "ค้นหาในข้อความของหน้า"
+  },
+  "textExportAllXlsx": {
+    "message": "ตารางทั้งหมดไปยัง Excel"
+  },
+  "textNoTables": {
+    "message": "หน้านี้ยังไม่มีตาราง ตารางจะปรากฏที่นี่ทันทีที่หน้าแสดงตาราง"
+  },
+  "textTable": {
+    "message": "ตาราง"
+  },
+  "textCopy": {
+    "message": "คัดลอก"
+  },
+  "textShowLess": {
+    "message": "แสดงน้อยลง"
+  },
+  "areaHintSelect": {
+    "message": "ลากเพื่อเลือกพื้นที่"
+  },
+  "areaHintCopy": {
+    "message": "คัดลอก"
+  },
+  "areaHintSave": {
+    "message": "บันทึก"
+  },
+  "areaHintExit": {
+    "message": "ออก"
+  },
+  "areaAutoCopyLabel": {
+    "message": "คัดลอกอัตโนมัติ"
+  },
+  "areaAutoCopyOn": {
+    "message": "เปิดการคัดลอกอัตโนมัติอยู่"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "ปล่อยการเลือกแล้วภาพจะอยู่ในคลิปบอร์ดทันที"
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "ปิด"
+  },
+  "toastAreaAutoCopied": {
+    "message": "คัดลอกไปยังคลิปบอร์ดแล้ว (เปิดการคัดลอกอัตโนมัติอยู่)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "หน้านี้ไม่อนุญาตให้คัดลอกไปยังคลิปบอร์ด ใช้ดาวน์โหลดแทน"
+  },
+  "textKindAll": {
+    "message": "ข้อความทั้งหมดของหน้า"
+  },
+  "textKindHeading": {
+    "message": "หัวเรื่อง"
+  },
+  "textKindP": {
+    "message": "ย่อหน้า"
+  },
+  "textKindA": {
+    "message": "ลิงก์"
+  },
+  "textKindLi": {
+    "message": "รายการ"
+  },
+  "textKindButton": {
+    "message": "ปุ่ม"
+  },
+  "textKindLabel": {
+    "message": "ป้ายกำกับและคำบรรยาย"
+  },
+  "textKindSpan": {
+    "message": "ข้อความในบรรทัด"
+  },
+  "textKindDiv": {
+    "message": "บล็อกอื่น ๆ"
+  },
+  "textKindCell": {
+    "message": "เซลล์ตาราง"
+  },
+  "textKindCode": {
+    "message": "โค้ด"
+  },
+  "textKindQuote": {
+    "message": "คำพูดอ้างอิง"
+  },
+  "textCustomQuery": {
+    "message": "คำค้นหาที่กำหนดเอง"
+  },
+  "textCustomQueryHint": {
+    "message": "ตัวเลือก CSS หรือ XPath บนหน้าจริง"
+  },
+  "menuSettings": {
+    "message": "การตั้งค่า"
+  },
+  "settingsSave": {
+    "message": "บันทึก"
+  },
+  "settingsReset": {
+    "message": "คืนค่าเริ่มต้น"
+  },
+  "settingAreaAutoCopy": {
+    "message": "คัดลอกภาพหน้าจอพื้นที่โดยอัตโนมัติ"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "เมื่อปล่อยการเลือก ภาพจะไปยังคลิปบอร์ดโดยตรง ขณะที่ตัวเลือกนี้เปิดอยู่ แถบคำแนะนำด้านบนของหน้าจะแสดงทุกครั้ง"
   }
 }

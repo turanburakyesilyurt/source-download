@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Изтегляне на изображения"
   },
   "appDesc": {
-    "message": "Разгледайте и свалете уеб ресурси като ZIP. Екранни снимки на цяла страница, таблици на живо и инструменти за разработчици."
+    "message": "Запазвайте изображенията, иконите и файловете на уеб страница поотделно или в ZIP. Снимка на цялата страница и запис на област."
   },
   "actionTitle": {
     "message": "Source Download — Отворете панела и проследявайте ресурсите"
   },
   "contextMenuZap": {
-    "message": "Скриване на този елемент (Zap)"
+    "message": "Скриване на този елемент"
   },
   "contextMenuUndoZap": {
     "message": "Връщане на последния скрит елемент"
@@ -90,7 +90,7 @@
     "message": "Изтегли избраните"
   },
   "btnDownloadView": {
-    "message": "Изтегли изгледа"
+    "message": "Изтегляне на видимите"
   },
   "btnDownloadAll": {
     "message": "Изтегли всички"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Изтегли филтрираните"
   },
-  "btnTheme": {
-    "message": "Превключване на темата"
-  },
   "btnGuide": {
     "message": "Ръководство за потребителя"
-  },
-  "btnCaptureFullPage": {
-    "message": "Екранна снимка на цяла страница"
-  },
-  "btnOfflineArchive": {
-    "message": "Запазване като един HTML файл"
   },
   "filterMinKb": {
     "message": "Мин. KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Филтрирайте текста на страницата или потърсете DOM на живо..."
-  },
-  "textAllElements": {
-    "message": "Всички елементи"
-  },
-  "textLiveOn": {
-    "message": "На живо: вкл."
-  },
-  "textLiveOff": {
-    "message": "На живо: изкл."
-  },
   "textScanNow": {
     "message": "Сканирай сега"
-  },
-  "textReading": {
-    "message": "Четене"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Изберете ресурс, за да проверите неговите подробности"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Харесва ли ви Source Download? Подкрепете нашата визия за отворен код с отзив в уеб магазина на Chrome или звезда в GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Оставете отзив"
-  },
-  "ratingStar": {
-    "message": "★ Звезда в GitHub"
-  },
   "ratingDismiss": {
     "message": "Затвори"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "HTML архивът в един файл е запазен."
-  },
-  "brandSignature": {
-    "message": "Изработено от Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Изображения и SVG"
-  },
-  "tabMedia": {
-    "message": "Медия и аудио"
-  },
-  "tabFonts": {
-    "message": "Шрифтове"
-  },
-  "tabTextScraper": {
-    "message": "Текст и таблици"
-  },
-  "heroScreenshotTitle": {
-    "message": "Екранна снимка на цяла страница"
-  },
-  "heroScreenshotDesc": {
-    "message": "Безпроблемно съединяване на няколко области на изгледа с потискане на залепващи заглавки"
-  },
-  "heroArchiveTitle": {
-    "message": "Еднофайлов HTML архив"
-  },
-  "heroArchiveDesc": {
-    "message": "Вгражда CSS и Base64 изображения, снимка за офлайн употреба"
-  },
-  "copyDataUri": {
-    "message": "Копиране на Data URI"
-  },
-  "copyUrl": {
-    "message": "Копиране на URL"
   },
   "downloadSingle": {
     "message": "Изтегляне"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "ресурси"
   },
-  "statusFiltered": {
-    "message": "филтрирани"
-  },
   "statusSelected": {
     "message": "избрани"
   },
   "statusDupes": {
     "message": "скрити дубликати"
-  },
-  "statusSize": {
-    "message": "размер"
   },
   "langAuto": {
     "message": "Автоматично (браузър)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Изберете език"
   },
-  "textPillAll": {
-    "message": "Цялото съдържание"
-  },
-  "textPillText": {
-    "message": "📄 Текст и статии"
-  },
-  "textPillTables": {
-    "message": "📊 Само таблици"
-  },
   "textSelectAll": {
     "message": "Избери всички"
   },
   "textDeselectAll": {
     "message": "Отмени избора"
-  },
-  "textClearSelection": {
-    "message": "Изчисти"
   },
   "toastRefreshComplete": {
     "message": "Сканирането на страницата е завършено: $count$ нови ресурси",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ таблица(и) · $rows$ уникални редове",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ избрани — експортите използват само тях",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Таблица — $count$ ред(а) на екрана",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Таблица — всичките $count$ уникални редове",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ снимка(и)",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Показани са всички редове"
   },
-  "textTableHistory": {
-    "message": "История ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Скриване на историята"
-  },
   "textTableNoRows": {
     "message": "Все още няма заснети редове."
   },
   "textBtnCopy": {
     "message": "Копиране на текст"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Копирай"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ дублирани изображения",
@@ -689,9 +529,6 @@
       }
     }
   },
-  "labelExport": {
-    "message": "Експортиране"
-  },
   "inspectorLoadingSvg": {
     "message": "SVG се зарежда…"
   },
@@ -699,25 +536,10 @@
     "message": "SVG съдържанието не можа да бъде извлечено."
   },
   "inspectorLoadingFont": {
-    "message": "Визуализацията на шрифта се зарежда..."
+    "message": "Визуализацията на шрифта се зарежда…"
   },
   "inspectorFontSample": {
     "message": "Визуализация на шрифта"
-  },
-  "inspectorBeautify": {
-    "message": "Форматирай"
-  },
-  "inspectorOriginal": {
-    "message": "Оригинален"
-  },
-  "inspectorHeaders": {
-    "message": "Заглавки"
-  },
-  "inspectorResponse": {
-    "message": "Отговор"
-  },
-  "inspectorRequest": {
-    "message": "Заявка"
   },
   "inspectorQueryParams": {
     "message": "Параметри на заявката"
@@ -725,23 +547,11 @@
   "inspectorRequestBody": {
     "message": "Тяло на заявката"
   },
-  "textHintHtml": {
-    "message": "Живо, четимо копие на страницата. Всеки елемент, съдържащ текст, се улавя в реда на DOM и се съхранява тук, докато страницата се променя. Заявете го с обикновен текст, регулярен израз, <strong>CSS селектор</strong> или <strong>XPath</strong> израз, след което експортирайте това, което съвпада. Вижте <a href=\"#\" id=\"text-hint-guide\">ръководството</a> за подробности."
-  },
-  "textHeadings": {
-    "message": "Заглавия"
-  },
-  "textAllLevels": {
-    "message": "Всички нива"
-  },
   "textMatches": {
     "message": "съвпадения"
   },
   "textMatch": {
     "message": "съвпадение"
-  },
-  "textReadingOn": {
-    "message": "Четене: вкл."
   },
   "toastDownloadStarted": {
     "message": "Изтеглянето започна: $name$",
@@ -756,7 +566,7 @@
     "message": "Този ресурс не можа да бъде извлечен (CORS или неподдържан тип)."
   },
   "ratingBannerText": {
-    "message": "Харесва ли ви Source Download? Подкрепете нашата визия за отворен код с отзив в уеб магазина на Chrome или звезда в GitHub!"
+    "message": "Радваме се, че се получи! Ако Source Download ви спестява време, кратък отзив помага на други хора да го открият."
   },
   "ratingBannerReview": {
     "message": "★ Отзив"
@@ -828,10 +638,10 @@
     }
   },
   "statusIndexing": {
-    "message": "Съдържанието на файла се индексира..."
+    "message": "Съдържанието на файла се индексира…"
   },
   "statusCheckingDuplicates": {
-    "message": "Проверяват се дубликати на изображения..."
+    "message": "Проверяват се дубликати на изображения…"
   },
   "statusWorking": {
     "message": "Обработка…"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Как се интерпретира полето за заявка"
   },
-  "textKindTitle": {
-    "message": "Ограничете до един тип елемент"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Ниво на заглавие"
-  },
   "textPlaceholderRegex": {
     "message": "^Цена:\\s*\\d+ — регулярен израз на JavaScript"
   },
@@ -864,28 +668,7 @@
     "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "Търсене в ръководството..."
-  },
-  "popupIntro": {
-    "message": "Категориите, отчетени от <strong>значката на лентата с инструменти</strong>. Изключете едно, за да спрете да го броите — значката незабавно отразява само това, което проследявате."
-  },
-  "popupHelpTitle": {
-    "message": "Как да използвате пълния панел"
-  },
-  "popupStep1": {
-    "message": "Отворете DevTools за страницата, която искате да проверите <div class=\"hint\"><kbd>F12</kbd> или <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Щракнете върху раздела <strong>Source Download</strong> в лентата с инструменти на DevTools"
-  },
-  "popupStep3": {
-    "message": "Преглеждайте, проверявайте и изтегляйте ресурси - поотделно или всички наведнъж като ZIP."
-  },
-  "popupNote": {
-    "message": "Забележка: Chrome не позволява на разширенията да отварят програмно DevTools, поради което пълният инженерен пакет се достига през лентата с инструменти DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Проследяване на всички категории"
+    "message": "Търсене в ръководството…"
   },
   "popupLanguage": {
     "message": "Език"
@@ -894,13 +677,13 @@
     "message": "Двоичен отговор — изтеглете, за да го видите"
   },
   "inspectorLoadingResponse": {
-    "message": "Отговорът се зарежда..."
+    "message": "Отговорът се зарежда…"
   },
   "inspectorNoResponsePreview": {
     "message": "Няма преглед на отговора — съдържанието не може да бъде извлечено."
   },
   "inspectorLoadingContent": {
-    "message": "Съдържанието се зарежда..."
+    "message": "Съдържанието се зарежда…"
   },
   "inspectorNoPreview": {
     "message": "Няма наличен преглед — съдържанието не може да бъде извлечено."
@@ -921,10 +704,10 @@
     "message": "Показване на SVG кода с оцветяване на синтаксиса"
   },
   "inspectorFormatting": {
-    "message": "Форматиране..."
+    "message": "Форматиране…"
   },
   "findInContentPlaceholder": {
-    "message": "Намерете в съдържанието..."
+    "message": "Намерете в съдържанието…"
   },
   "findPreviousMatch": {
     "message": "Предишно съвпадение"
@@ -966,20 +749,6 @@
   },
   "btnMergeHls": {
     "message": "Обединяване на сегменти и изтегляне"
-  },
-  "toastHlsMerged": {
-    "message": "Обединени са $COUNT$ сегмент(и) в $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "неизвестен размер"
   },
   "progressFetching": {
     "message": "Извлича се $DONE$/$TOTAL$ · ZIP $EST$…",
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Търсенето с регулярен израз е активно — поставете заявката във формат /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Включване в експортите"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Обединява всички снимки в една таблица без дубликати — това се експортира"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Прегледайте по-ранни моментни снимки на тази таблица"
-  },
   "tableDownloadCsvTitle": {
     "message": "Изтеглете тази таблица като CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Моментна снимка $INDEX$ — $TIME$ ($COUNT$ реда)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Превключване на избора за пакетно изтегляне"
@@ -1150,7 +899,7 @@
     "message": "Щракнете върху раздела <strong>Source Download</strong> в лентата с инструменти на DevTools (натиснете <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, след това изберете раздела в лентата с инструменти на DevTools). Chrome не позволява на разширенията да отварят DevTools автоматично, затова панелът е там. Изскачащият прозорец на иконата в лентата с инструменти ви позволява да изберете кои категории се отчитат в брояча върху значката на иконата. Бутонът със слънце/луна в лентата с инструменти на панела заключва светла или тъмна тема независимо от Chrome; изборът се запомня."
   },
   "guideSecCategoriesContent": {
-    "message": "Вертикалните раздели отляво групират всеки заснет ресурс в 17 специални категории по тип: изображения, видеоклипове, аудио, надписи, документи, шрифтове, изходни карти, WASM, SVG, API, бисквитки, хранилище и др. Всеки раздел показва брояч на живо. В даден момент се показва само една категория; превключването нулира всички филтри, така че видяното винаги съответства на раздела."
+    "message": "Вертикалните раздели вляво подреждат всеки уловен ресурс в 15 категории, като изображения, видеа, шрифтове, source maps и API заявки, плюс раздел „Текст и таблици“. Всеки раздел показва брояч на живо. В даден момент се показва само една категория; превключването нулира всички филтри, така че видяното винаги съответства на раздела."
   },
   "guideSecSearchFiltersContent": {
     "message": "Лентата за търсене филтрира по име, URL, тип, алтернативен текст или заглавие. Оградете заявката в <kbd>/…/</kbd>, за да използвате регулярен израз, напр. <code>/\\.(png|jpg)$/</code>. Под лентата с инструменти лентата с филтри се променя според категорията: диапазони на размер и габарити за медийните файлове, HTTP метод и тип заявка за API, плюс сортиране и посока."
@@ -1162,13 +911,13 @@
     "message": "Щракнете върху произволен ресурс, за да го отворите в панела за проверка вдясно. Всеки отворен файл се превръща в раздел, така че можете да сравнявате няколко ресурса един до друг — най-новият се отваря отляво. Има специализирани визуализатори за изображения, видео, аудио, шрифтове, SVG и текст/код (с бутон Форматирай). API ресурсите показват разделен изглед: отговор вляво, подробности за заявката (метод, състояние, заглавки, параметри на заявката и тяло) вдясно."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Изтегли изгледа</strong> запазва видимите в момента ресурси (активна категория + търсене + филтри) като ZIP; когато филтрите са активни, бутонът се преименува на <em>Изтегли филтрираните (N)</em>. Задръжте курсора върху който и да е бутон за изтегляне, за да видите приблизителния размер на архива, преди да щракнете. <strong>Изтегли избраните</strong> изтегля само маркираните елементи. <strong>Изтегли всички</strong> събира всеки открит ресурс в ZIP със структура на папки. Неуспешните изтегляния се повтарят автоматично и могат да бъдат опитани отново от контекстното меню. <strong>Експортиране</strong> записва видимия списък като JSON или CSV или изхвърля мрежовия регистър на Chrome като HAR файл."
+    "message": "<strong>Изтегляне на видимите</strong> запазва видимите в момента ресурси (активна категория + търсене + филтри) като ZIP; когато филтрите са активни, бутонът се преименува на <em>Изтегли филтрираните (N)</em>. Задръжте курсора върху който и да е бутон за изтегляне, за да видите приблизителния размер на архива, преди да щракнете. <strong>Изтегли избраните</strong> изтегля само маркираните елементи. <strong>Изтегли всички</strong> събира всеки открит ресурс в ZIP със структура на папки. Неуспешните изтегляния се отбелязват и можете да ги повторите с едно щракване от известието, от иконата за предупреждение на елемента или от контекстното меню. <strong>Експортиране</strong> записва видимия списък като JSON или CSV или изхвърля мрежовия регистър на Chrome като HAR файл."
   },
   "guideSecLightboxContent": {
     "message": "Бутонът за мащабиране отваря мултимедия в лайтбокс в пълен размер, където можете да панорамирате чрез плъзгане, мащабиране с колелцето на мишката, бутоните на екрана или клавиатурата (<kbd>+</kbd>/<kbd>-</kbd> за мащабиране, <kbd>0</kbd> за нулиране, <kbd>Esc</kbd> за затваряне)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Категорията <strong>Текст</strong> е живо, четимо копие на страницата. Тя улавя всеки елемент, който съдържа текст — заглавия, абзаци, елементи от списъци, бутони, <code>div</code>/<code>span</code> и други — в реда на DOM и продължава да сканира, докато е включено <strong>На живо</strong>.</p><p>Полето за <strong>заявка</strong> работи по четири начина, избирани от падащото меню до него: <strong>Съдържа</strong> и <strong>Regex</strong> филтрират вече заснетия текст, докато <strong>CSS селектор</strong> и <strong>XPath</strong> се изпълняват спрямо активната страница, така че могат да достигнат до всичко в DOM. XPath приема и изрази, които връщат стойност, а не елементи, като <code>count(//a)</code> или <code>//@href</code>. Каквото и да съобщи страницата за невалидна заявка, се показва до полето. <strong>Елемент</strong> стеснява резултата до един таг, с броя на всеки таг, открит на страницата. Изчистването на полето за заявка (или натискането на <strong>Изчисти</strong>) ви връща към <em>Всички елементи</em> и заснема страницата отново — никога не се налага да нулирате падащото меню на ръка.</p><p><strong>Четене</strong> скрива таговете, квадратчетата за отметка и пътеките до местоположението, така че съдържанието да се чете като документ. Таблиците съхраняват ограничена история на снимки, така че динамичните (SPA) таблици никога не се губят. Натиснете <strong>Показване на всички редове</strong> в таблица, за да обедините всички снимки в един изглед без дубликати — точно това съдържа експортът. Експортирайте като <strong>TXT</strong> (четимата страница), <strong>MD</strong> (Markdown, включително таблици) или таблици като CSV, HTML или истинска многолистова работна книга <strong>XLSX</strong>. Маркираните елементи имат предимство; в противен случай се експортира всичко, което се вижда в момента.</p>"
+    "message": "<p>Категорията <strong>Текст</strong> е жив и четлив вариант на страницата: заглавия, абзаци, списъци и връзки в реда на страницата, обновявани, докато е включено <strong>На живо</strong>. Посочете ред, за да го копирате, или използвайте <strong>Копиране на текст</strong>, <strong>Markdown</strong> и <strong>TXT</strong> за всичко показано.</p><p>В <strong>Таблици</strong> всяка таблица от страницата е карта с преглед и собствени бутони <strong>Excel</strong>, <strong>CSV</strong> и <strong>Копиране</strong>; <strong>Всички таблици в Excel</strong> ги събира в една работна книга, по лист за таблица. Променящите се таблици пазят история от моментни снимки, а <strong>Показване на всички редове</strong> ги обединява в една таблица без повторения – точно това, което съдържа експортът.</p><p>Полетата вляво подреждат страницата по тип елемент – целият текст на страницата, всяко ниво заглавие, абзаци, връзки, елементи от списъци, бутони, код и др. – всяко с брой и първи ред; изберете едно, за да виждате, копирате или експортирате само него. Полето за търсене филтрира, докато пишете, а менюто до него го превръща в регулярен израз, <strong>CSS селектор</strong> или израз <strong>XPath</strong> (включително изрази, връщащи стойност, като <code>count(//a)</code> или <code>//@href</code>), изпълнен върху живата страница; полето <strong>Собствена заявка</strong> прави същото. Каквото страницата съобщи за грешна заявка, се показва в полето.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "Файловете с надписи WebVTT, SRT, TTML и други — включително източници на <code>&lt;track&gt;</code> — се показват в собствен раздел <strong>Надписи</strong>, вместо да се смесват с документите."
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "Разделителна способност на GIF по подразбиране"
   },
-  "optGifOriginal": {
-    "message": "Оригинал (1:1 собствена разделителна способност — пълно 3K/4K, без намаляване)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (макс. 1920 px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "Запис на екрана (видео и GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Запишете всяка област на екрана като MP4, WebM или анимиран GIF. GIF записите включват естествена разделителна способност 1:1, 1080p, 720p и 480p профили с приблизителни размери на файлове на живо. Максималната продължителност на запис на GIF е 1 минута (60 секунди) за оптимална работа на браузъра."
+    "message": "Записвайте всяка област от екрана като MP4, WebM или анимиран GIF. GIF записите предлагат профили 1080p, 720p и 480p с оценка на размера на живо. Един GIF запис може да трае до 1 минута (60 сек)."
   },
   "msgGifMaxDurationReached": {
     "message": "Достигната е максималната продължителност на GIF от 1 минута (60 s). GIF файлът се създава…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Презентация (1 кадър в секунда, минимален размер)"
-  },
-  "popupRightClickHint": {
-    "message": "Щракнете с десния бутон където и да е на уеб страницата за запис на екрана (видео/GIF) и избор на цвят."
   },
   "toastElementZappedAd": {
     "message": "Реклама / iframe е скрита за тази сесия.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Резолюция на GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Резолюция на GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Не е намерен активен раздел.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Щракнете тук, след което изберете произволен цвят от страницата"
+  },
+  "welcomeTitle": {
+    "message": "Source Download е готов"
+  },
+  "welcomePrivacy": {
+    "message": "Всичко работи на вашия компютър. Без акаунт, без проследяване, нищо не се изпраща до нас."
+  },
+  "welcomeHelp": {
+    "message": "Нещо не работи? Пишете ни в GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Има проблем?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF файлът достигна 200 MB. Записаното се запазва…"
+  },
+  "btnPopupFullPage": {
+    "message": "Снимка на цялата страница"
+  },
+  "toastRecWrongTab": {
+    "message": "За да запишете област от тази страница, изберете „Този раздел“ в прозореца за споделяне."
+  },
+  "popupCaptureTitle": {
+    "message": "Заснемане на тази страница"
+  },
+  "popupTileOffline": {
+    "message": "Запазване на страницата офлайн"
+  },
+  "popupTileGuide": {
+    "message": "Как работи"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Файлове, изображения и таблици"
+  },
+  "popupDevtoolsHint": {
+    "message": "Отворете DevTools и изберете раздела Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome не разрешава разширения на тази страница. Отворете уебсайт, за да използвате инструментите."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Десен бутон на всяка страница"
+  },
+  "welcomeCardMenuText": {
+    "message": "Екранни снимки на цялата страница или на област, запис на област, избор на цвят и офлайн копие – точно там, където сте."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Или използвайте бутона в лентата с инструменти"
+  },
+  "welcomeCardPopupText": {
+    "message": "Щракнете върху иконата с пъзел в лентата с инструменти на Chrome и закачете Source Download – инструментите винаги ще са на едно щракване."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Натиснете F12 за всичко на страницата"
+  },
+  "welcomeCardPanelText": {
+    "message": "Изберете раздела Source Download в DevTools. Там е всяко изображение, видео, шрифт и файл, които страницата е заредила – прегледайте, филтрирайте и запазете като ZIP. Таблиците от страницата се експортират в Excel."
+  },
+  "welcomeLead": {
+    "message": "Три начина да вземете нужното от всяка уеб страница."
+  },
+  "btnDownloadOptions": {
+    "message": "Още опции за изтегляне"
+  },
+  "btnMore": {
+    "message": "Още действия"
+  },
+  "btnFilters": {
+    "message": "Филтри"
+  },
+  "tabsShowEmpty": {
+    "message": "Показване на празните"
+  },
+  "tabsHideEmpty": {
+    "message": "Скриване на празните"
+  },
+  "textSegText": {
+    "message": "Текст"
+  },
+  "textSegTables": {
+    "message": "Таблици"
+  },
+  "textLive": {
+    "message": "На живо"
+  },
+  "textPaused": {
+    "message": "На пауза"
+  },
+  "textLivePauseTitle": {
+    "message": "На живо: страницата се прочита отново при всяка промяна. Щракнете за пауза."
+  },
+  "textLiveResumeTitle": {
+    "message": "На пауза. Щракнете, за да следите страницата отново на живо."
+  },
+  "textSearchText": {
+    "message": "Търсене в текста на страницата"
+  },
+  "textExportAllXlsx": {
+    "message": "Всички таблици в Excel"
+  },
+  "textNoTables": {
+    "message": "На тази страница още няма таблици. Те ще се появят тук, щом страницата покаже такава."
+  },
+  "textTable": {
+    "message": "Таблица"
+  },
+  "textCopy": {
+    "message": "Копиране"
+  },
+  "textShowLess": {
+    "message": "Показване на по-малко"
+  },
+  "areaHintSelect": {
+    "message": "Плъзнете, за да изберете област"
+  },
+  "areaHintCopy": {
+    "message": "копиране"
+  },
+  "areaHintSave": {
+    "message": "запазване"
+  },
+  "areaHintExit": {
+    "message": "изход"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Автоматично копиране"
+  },
+  "areaAutoCopyOn": {
+    "message": "Автоматичното копиране е включено"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Пуснете избора и той е в буфера."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Изключване"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Копирано в буфера (автоматичното копиране е включено)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Тази страница не позволява копиране в буфера. Използвайте „Изтегляне“."
+  },
+  "textKindAll": {
+    "message": "Целият текст на страницата"
+  },
+  "textKindHeading": {
+    "message": "Заглавие"
+  },
+  "textKindP": {
+    "message": "Абзаци"
+  },
+  "textKindA": {
+    "message": "Връзки"
+  },
+  "textKindLi": {
+    "message": "Елементи от списъци"
+  },
+  "textKindButton": {
+    "message": "Бутони"
+  },
+  "textKindLabel": {
+    "message": "Етикети и надписи"
+  },
+  "textKindSpan": {
+    "message": "Текст в реда"
+  },
+  "textKindDiv": {
+    "message": "Други блокове"
+  },
+  "textKindCell": {
+    "message": "Клетки на таблици"
+  },
+  "textKindCode": {
+    "message": "Код"
+  },
+  "textKindQuote": {
+    "message": "Цитати"
+  },
+  "textCustomQuery": {
+    "message": "Собствена заявка"
+  },
+  "textCustomQueryHint": {
+    "message": "CSS селектор или XPath върху живата страница"
+  },
+  "menuSettings": {
+    "message": "Настройки"
+  },
+  "settingsSave": {
+    "message": "Запазване"
+  },
+  "settingsReset": {
+    "message": "Възстановяване на стандартните"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Автоматично копиране на екранни снимки на област"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Щом пуснете избора, изображението отива направо в буфера. Докато това е включено, подсказката горе на страницата го напомня всеки път."
   }
 }

@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Source Download",
+    "message": "Source Download: 画像・ファイル一括ダウンローダー",
     "description": "拡張機能の名前"
   },
   "appDesc": {
-    "message": "WebページのあらゆるリソースをZIP形式で検査・ダウンロード。フルページスクリーンショット、テーブル抽出、開発者ワークベンチ。",
+    "message": "Web ページが読み込んだ画像やアイコン、ファイルを個別または ZIP で保存。ページ全体のスクリーンショットと範囲の録画にも対応。",
     "description": "拡張機能の説明"
   },
   "actionTitle": {
@@ -98,7 +98,7 @@
     "message": "選択項目をダウンロード"
   },
   "btnDownloadView": {
-    "message": "表示内容をダウンロード"
+    "message": "表示中の項目をダウンロード"
   },
   "btnDownloadAll": {
     "message": "すべてダウンロード"
@@ -106,17 +106,8 @@
   "btnDownloadFiltered": {
     "message": "フィルター済みをダウンロード"
   },
-  "btnTheme": {
-    "message": "テーマ切替"
-  },
   "btnGuide": {
     "message": "使い方ガイド"
-  },
-  "btnCaptureFullPage": {
-    "message": "フルページスクリーンショット"
-  },
-  "btnOfflineArchive": {
-    "message": "単一HTMLで保存"
   },
   "filterMinKb": {
     "message": "最小 KB"
@@ -160,38 +151,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "テキスト検索またはDOMクエリ…"
-  },
-  "textAllElements": {
-    "message": "すべての要素"
-  },
-  "textLiveOn": {
-    "message": "ライブ オン"
-  },
-  "textLiveOff": {
-    "message": "ライブ オフ"
-  },
   "textScanNow": {
     "message": "今すぐスキャン"
-  },
-  "textReading": {
-    "message": "閲覧モード"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "詳細を表示するリソースを選択してください"
@@ -235,15 +196,6 @@
   "metaAlt": {
     "message": "Altテキスト"
   },
-  "ratingPrompt": {
-    "message": "Source Downloadをお使いいただきありがとうございます。Chrome Web StoreのレビューやGitHubのStarでオープンソース開発を応援してください！"
-  },
-  "ratingReview": {
-    "message": "★ レビューを書く"
-  },
-  "ratingStar": {
-    "message": "★ GitHubでStarをつける"
-  },
   "ratingDismiss": {
     "message": "後で"
   },
@@ -264,39 +216,6 @@
   },
   "toastArchiveCreated": {
     "message": "単一ファイルのHTMLアーカイブを保存しました。"
-  },
-  "brandSignature": {
-    "message": "制作: Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "画像＆SVG"
-  },
-  "tabMedia": {
-    "message": "メディア＆音声"
-  },
-  "tabFonts": {
-    "message": "フォント"
-  },
-  "tabTextScraper": {
-    "message": "テキスト＆テーブル"
-  },
-  "heroScreenshotTitle": {
-    "message": "フルページスクリーンショット"
-  },
-  "heroScreenshotDesc": {
-    "message": "シームレス結合 • 固定ヘッダー自動抑制"
-  },
-  "heroArchiveTitle": {
-    "message": "単一ファイルHTML保存"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS・画像を完全インライン化 • オフライン閲覧可能"
-  },
-  "copyDataUri": {
-    "message": "Data-URIをコピー"
-  },
-  "copyUrl": {
-    "message": "URLをコピー"
   },
   "downloadSingle": {
     "message": "ダウンロード"
@@ -349,17 +268,11 @@
   "statusResources": {
     "message": "個のリソース"
   },
-  "statusFiltered": {
-    "message": "絞り込み"
-  },
   "statusSelected": {
     "message": "選択済み"
   },
   "statusDupes": {
     "message": "重複を非表示"
-  },
-  "statusSize": {
-    "message": "サイズ"
   },
   "langAuto": {
     "message": "自動（ブラウザ言語）"
@@ -367,23 +280,11 @@
   "langSelectorTitle": {
     "message": "言語切り替え"
   },
-  "textPillAll": {
-    "message": "すべてのコンテンツ"
-  },
-  "textPillText": {
-    "message": "📄 テキストと記事"
-  },
-  "textPillTables": {
-    "message": "📊 テーブルのみ"
-  },
   "textSelectAll": {
     "message": "すべて選択"
   },
   "textDeselectAll": {
     "message": "選択を解除"
-  },
-  "textClearSelection": {
-    "message": "クリア"
   },
   "toastRefreshComplete": {
     "message": "ページスキャン完了: $count$ 個の新しいリソース",
@@ -591,46 +492,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ テーブル · $rows$ 行（重複なし）",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ 件選択済み — エクスポートは選択項目のみ対象",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "テーブル — 画面上 $count$ 行",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "テーブル — 全 $count$ 行",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ スナップショット",
     "placeholders": {
@@ -661,32 +522,11 @@
   "textTableShowingAll": {
     "message": "全行を表示中"
   },
-  "textTableHistory": {
-    "message": "履歴 ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "履歴を非表示"
-  },
   "textTableNoRows": {
     "message": "行データはまだありません。"
   },
   "textBtnCopy": {
     "message": "テキストをコピー"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 コピー"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ 件の重複画像",
@@ -696,9 +536,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "エクスポート"
   },
   "inspectorLoadingSvg": {
     "message": "SVG を読み込み中…"
@@ -712,44 +549,17 @@
   "inspectorFontSample": {
     "message": "フォントプレビュー"
   },
-  "inspectorBeautify": {
-    "message": "コード整形"
-  },
-  "inspectorOriginal": {
-    "message": "オリジナル"
-  },
-  "inspectorHeaders": {
-    "message": "ヘッダー"
-  },
-  "inspectorResponse": {
-    "message": "レスポンス"
-  },
-  "inspectorRequest": {
-    "message": "リクエスト"
-  },
   "inspectorQueryParams": {
     "message": "クエリパラメータ"
   },
   "inspectorRequestBody": {
     "message": "リクエスト本文"
   },
-  "textHintHtml": {
-    "message": "ページのライブで読み取り可能なコピー。テキストを含むすべての要素がDOM順でキャプチャされます。プレーンテキスト、正規表現、<strong>CSSセレクター</strong>、または<strong>XPath</strong>でクエリを実行し、エクスポートします。詳細は<a href=\"#\" id=\"text-hint-guide\">ガイド</a>をご覧ください。"
-  },
-  "textHeadings": {
-    "message": "見出し"
-  },
-  "textAllLevels": {
-    "message": "すべてのレベル"
-  },
   "textMatches": {
     "message": "一致"
   },
   "textMatch": {
     "message": "一致"
-  },
-  "textReadingOn": {
-    "message": "閲覧モード オン"
   },
   "toastDownloadStarted": {
     "message": "ダウンロードを開始しました: $name$",
@@ -764,7 +574,7 @@
     "message": "このリソースを取得できませんでした（CORSまたは未対応の形式）。"
   },
   "ratingBannerText": {
-    "message": "Source Downloadを気に入っていただけましたか？Chrome Web StoreでのレビューやGitHubでのスターでオープンソース活動を応援してください！"
+    "message": "お役に立ててうれしいです！Source Download で時間を節約できたら、短いレビューが他の人の役に立ちます。"
   },
   "ratingBannerReview": {
     "message": "★ レビューする"
@@ -856,12 +666,6 @@
   "textModeTitle": {
     "message": "クエリボックスの解釈方法"
   },
-  "textKindTitle": {
-    "message": "1つの要素タイプに制限"
-  },
-  "textHeadingLevelTitle": {
-    "message": "見出しレベル"
-  },
   "textPlaceholderRegex": {
     "message": "^価格:\\s*\\d+  — JavaScript正規表現"
   },
@@ -873,27 +677,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "ユーザーガイド内を検索…"
-  },
-  "popupIntro": {
-    "message": "<strong>ツールバーバッジ</strong>でカウントされるカテゴリ。追跡したくないカテゴリはオフにできます。"
-  },
-  "popupHelpTitle": {
-    "message": "フルパネルの使い方"
-  },
-  "popupStep1": {
-    "message": "検証したいページで開発者ツール（DevTools）を開きます <div class=\"hint\"><kbd>F12</kbd> または <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "DevToolsツールバーの <strong>Source Download</strong> タブをクリックします"
-  },
-  "popupStep3": {
-    "message": "リソースのプレビュー、個別ダウンロード、またはZIPでの一括保存が可能です。"
-  },
-  "popupNote": {
-    "message": "注：Chromeの仕様上、拡張機能からDevToolsを直接開くことはできないため、全機能はDevToolsタブからご利用いただけます。"
-  },
-  "popupTrackAll": {
-    "message": "全カテゴリを追跡"
   },
   "popupLanguage": {
     "message": "言語"
@@ -975,20 +758,6 @@
   "btnMergeHls": {
     "message": "セグメントを結合してダウンロード"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ 個のセグメントを $NAME$ に結合しました",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "サイズ不明"
-  },
   "progressFetching": {
     "message": "$DONE$/$TOTAL$ を取得中 · ZIP $EST$…",
     "placeholders": {
@@ -1039,31 +808,11 @@
   "searchRegexHint": {
     "message": "正規表現検索が有効 — クエリを /pattern/i で囲んでください"
   },
-  "textIncludeInExports": {
-    "message": "エクスポートに含める"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "すべてのスナップショットを1つの重複排除されたテーブルに結合します（エクスポート対象）"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "このテーブルの以前のスナップショットを参照"
-  },
   "tableDownloadCsvTitle": {
     "message": "このテーブルを CSV としてダウンロード"
-  },
-  "tableSnapshotLabel": {
-    "message": "スナップショット $INDEX$ — $TIME$（$COUNT$ 行）",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "一括ダウンロードの選択を切り替える"
@@ -1158,7 +907,7 @@
     "message": "DevTools（開発者ツール）のツールバーにある<strong>Source Download</strong>タブをクリックしてください（<kbd>F12</kbd>または<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>を押し、DevToolsツールバー内のタブを選択します）。Chromeのセキュリティ仕様上、拡張機能がDevToolsを自動で開くことは許可されていないため、パネルはここに常駐しています。ツールバーアイコンのポップアップを使用すると、アイコン上のバッジカウンターにどのカテゴリーを集計するかを任意に選択できます。パネルツールバーの太陽／月アイコンをクリックすると、Chrome本体のテーマ設定とは独立してライトテーマまたはダークテーマを固定でき、その選択内容は記憶されます。"
   },
   "guideSecCategoriesContent": {
-    "message": "左側の垂直タブは、検出されたすべてのリソースをファイル種別ごとに17の専用カテゴリー（画像、動画、音声、字幕、ドキュメント、フォント、ソースマップ、WASM、SVG、API、Cookie、ストレージなど）に分類します。各タブにはリアルタイムの検出数が表示されます。画面には一度に1つのカテゴリーのみが表示され、タブを切り替えるとすべてのフィルターがリセットされるため、常にタブの種別に一致したリソースのみが正確に表示されます。"
+    "message": "左側の縦タブは、取得したすべてのリソースを画像、動画、フォント、ソースマップ、API 呼び出しなど 15 のカテゴリーに分類し、別にテキストと表のタブもあります。各タブにはリアルタイムの件数が表示されます。一度に表示されるカテゴリーは 1 つだけで、タブを切り替えるとすべてのフィルターがリセットされるため、表示内容は常にタブと一致します。"
   },
   "guideSecSearchFiltersContent": {
     "message": "検索バーを使用すると、名前、URL、ファイルタイプ、alt属性テキスト、またはタイトルによる絞り込みが可能です。正規表現を使用する場合は、検索文字列を<kbd>/…/</kbd>で囲んでください（例: <code>/\\.(png|jpg)$/</code>）。ツールバー直下のフィルターバーは選択中のカテゴリーに応じて動的に変化し、メディア向けのファイル容量や画像解像度の範囲指定、API向けのHTTPメソッドやリクエスト種別、並べ替え順序の設定が可能です。"
@@ -1170,13 +919,13 @@
     "message": "任意のリソースをクリックすると、右側の検査ペインに詳細が開きます。開かれたファイルはそれぞれタブとして追加されるため、複数のリソースを並べて簡単に比較できます（常に最新のリソースが左側のタブに開きます）。画像、動画、音声、フォント、SVG、テキスト／ソースコード（コード整形 Beautify 切替機能付き）に対応した専用ビューアーを搭載しています。APIリクエストでは分割ビューが提供され、左側にレスポンス本文、右側にリクエスト詳細（メソッド、ステータス、HTTPヘッダー、クエリパラメータ、ペイロード本文）が表示されます。"
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>表示内容をダウンロード</strong>は、現在画面に表示されているリソース（選択中のカテゴリー＋検索絞り込み＋フィルター適用状態）をZIPアーカイブとして保存します。フィルター適用時は自動的に<em>フィルター済みをダウンロード (N)</em>という表示に切り替わります。ダウンロードボタンの上にマウスカーソルを合わせると、クリックする前にアーカイブの推定ファイル容量を確認できます。<strong>選択項目をダウンロード</strong>は、チェックボックスで選択したファイルのみを保存します。<strong>すべてダウンロード</strong>は、検出されたすべてのリソースをフォルダー階層構造のZIPにまとめて保存します。失敗したダウンロードは自動的に再試行されるほか、右クリックメニューから手動で再試行することも可能です。<strong>エクスポート</strong>を実行すると、表示中のリストをJSONまたはCSVとして保存したり、Chromeのネットワーク通信ログをHARファイルとして出力できます。"
+    "message": "<strong>表示中の項目をダウンロード</strong>は、現在画面に表示されているリソース（選択中のカテゴリー＋検索絞り込み＋フィルター適用状態）をZIPアーカイブとして保存します。フィルター適用時は自動的に<em>フィルター済みをダウンロード (N)</em>という表示に切り替わります。ダウンロードボタンの上にマウスカーソルを合わせると、クリックする前にアーカイブの推定ファイル容量を確認できます。<strong>選択項目をダウンロード</strong>は、チェックボックスで選択したファイルのみを保存します。<strong>すべてダウンロード</strong>は、検出されたすべてのリソースをフォルダー階層構造のZIPにまとめて保存します。失敗したダウンロードには印が付き、通知、項目の警告アイコン、または右クリックメニューからワンクリックで再試行できます。<strong>エクスポート</strong>を実行すると、表示中のリストをJSONまたはCSVとして保存したり、Chromeのネットワーク通信ログをHARファイルとして出力できます。"
   },
   "guideSecLightboxContent": {
     "message": "拡大ズームボタンをクリックすると、メディアがフルスクリーン表示のライトボックスで開きます。ドラッグ操作によるパン移動のほか、マウスホイール、画面上の操作ボタン、またはキーボードショートカット（拡大: <kbd>+</kbd>、縮小: <kbd>-</kbd>、リセット: <kbd>0</kbd>、閉じる: <kbd>Esc</kbd>）で拡大縮小や移動がスムーズに行えます。"
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>テキスト</strong>カテゴリーは、ウェブページのコンテンツを人間が読みやすい構造でリアルタイムに複製したものです。見出し、段落、リスト項目、ボタン、<code>div</code>/<code>span</code>など、テキストを含むあらゆる要素をDOM構造の順序通りに抽出し、<strong>ライブ</strong>モードが有効な間は継続して走査を行います。</p><p><strong>クエリ</strong>入力ボックスは、横のドロップダウンから選択可能な4つのモードで動作します。「<strong>含む</strong>」および「<strong>正規表現</strong>」は既に抽出済みのテキスト内を検索し、「<strong>CSSセレクター</strong>」および「<strong>XPath</strong>」はライブページ上のDOMを直接走査するため、DOM内のあらゆるノードへアクセスできます。XPathでは要素そのものだけでなく、<code>count(//a)</code>や<code>//@href</code>のように計算値を返す式も利用可能です。無効なクエリが入力された場合のエラー詳細はボックスのすぐ隣に表示されます。「<strong>要素</strong>」フィルターはページ内に見つかった各タグの件数を表示し、特定のHTMLタグのみに結果を絞り込みます。クエリボックスを空にするか「<strong>クリア</strong>」ボタンを押すと、自動的に<em>すべての要素</em>に戻りページの再スキャンが行われます（ドロップダウンを手動で戻す必要はありません）。</p><p>「<strong>閲覧モード</strong>」を有効にすると、タグ名、チェックボックス、階層パスが非表示になり、1つのドキュメントとして自然に通読できます。テーブル機能はスナップショットの履歴を一定数保持するため、SPA（シングルページアプリ）などの動的な表データも消失しません。テーブル内の「<strong>すべての行を表示</strong>」をクリックすると、すべてのスナップショットが重複排除された1つの結合データとして表示されます（これはエクスポート出力と完全に一致します）。<strong>TXT</strong>（可読テキスト）、<strong>MD</strong>（表組みを含むMarkdown）、または表データをCSV、HTML、本格的なマルチシート対応の<strong>XLSX</strong>ブックとしてエクスポートできます。チェックした項目が存在する場合はそれが優先され、それ以外の場合は現在表示されている全内容が出力されます。</p>"
+    "message": "<p><strong>テキスト</strong>カテゴリは、ページを読みやすい形で常に写し取ったものです。見出し、段落、リスト、リンクがページの順に並び、<strong>ライブ</strong>がオンの間は更新され続けます。行にカーソルを合わせるとその行をコピーでき、表示中のすべてには<strong>テキストをコピー</strong>、<strong>Markdown</strong>、<strong>TXT</strong>を使います。</p><p><strong>表</strong>に切り替えると、ページ内の表がそれぞれプレビュー付きのカードになり、<strong>Excel</strong>、<strong>CSV</strong>、<strong>コピー</strong>ボタンが付きます。<strong>すべての表を Excel へ</strong>は、すべての表を 1 つのブックに表ごとのシートでまとめます。内容が変わる表はスナップショットの履歴を保持し、<strong>すべての行を表示</strong>でそれらを重複のない 1 つの表に統合します。これがそのまま書き出される内容です。</p><p>左側のボックスはページを要素の種類ごとに分けます。ページ全体のテキスト、見出しの各レベル、段落、リンク、リスト項目、ボタン、コードなどがあり、それぞれ件数と最初の 1 行が表示されます。1 つ選ぶとその要素だけを表示・コピー・書き出しできます。検索ボックスは入力に合わせて絞り込み、隣のメニューで正規表現、<strong>CSS セレクター</strong>、<strong>XPath</strong> 式（<code>count(//a)</code> や <code>//@href</code> のような値を返す式も可）に切り替えて、ライブのページ上で実行できます。<strong>カスタムクエリ</strong>ボックスも同じ働きをします。クエリに誤りがある場合、ページからのメッセージがボックス内に表示されます。</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT、SRT、TTMLなどの字幕ファイル（<code>&lt;track&gt;</code>要素のソースを含む）は、一般のドキュメントと混ざることなく専用の「<strong>字幕</strong>」タブに自動分類されます。"
@@ -1278,7 +1027,7 @@
     "message": "色をクリップボードにコピーしました"
   },
   "toastProgressCapturing": {
-    "message": "ページ全体をキャプチャ中... $percent$%",
+    "message": "ページ全体をキャプチャ中… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1292,7 +1041,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "画像を結合中..."
+    "message": "画像を結合中…"
   },
   "modalExportTitle": {
     "message": "ページ全体のスクリーンショットの準備ができました"
@@ -1310,7 +1059,7 @@
     "message": "クリップボードにコピー"
   },
   "btnExportGenerating": {
-    "message": "生成中..."
+    "message": "生成中…"
   },
   "toastPdfGenerated": {
     "message": "PDFドキュメントを保存しました。"
@@ -1325,13 +1074,10 @@
     "message": "プレビュー:"
   },
   "toastRecGeneratingGif": {
-    "message": "GIFを生成しています。しばらくお待ちください..."
+    "message": "GIFを生成しています。しばらくお待ちください…"
   },
   "settingGifResolution": {
     "message": "デフォルトのGIF解像度"
-  },
-  "optGifOriginal": {
-    "message": "オリジナル (1:1 ネイティブ解像度 — フル3K/4K、縮小なし)"
   },
   "optGif1080p": {
     "message": "1080p フルHD (最大1920px)"
@@ -1349,10 +1095,10 @@
     "message": "画面録画（動画・GIFアニメーション）"
   },
   "guideSecScreenRecordingContent": {
-    "message": "画面の任意の領域を指定して、MP4、WebM、またはアニメーションGIFとして録画できます。GIF録画では1:1のネイティブ解像度、1080p、720p、480pの画質プロファイルに対応し、録画中にファイル容量のリアルタイム見積もりを表示します。ブラウザの安定した動作を確保するため、GIF録画の最大許容時間は1分間（60秒）です。"
+    "message": "画面の任意の範囲を MP4、WebM、またはアニメーション GIF として録画できます。GIF 録画は 1080p・720p・480p のプロファイルに対応し、ファイルサイズの目安をリアルタイムで表示します。GIF の録画は最長 1 分（60 秒）です。"
   },
   "msgGifMaxDurationReached": {
-    "message": "GIFの最大時間である1分 (60秒) に達しました。GIFを生成しています..."
+    "message": "GIFの最大時間である1分 (60秒) に達しました。GIFを生成しています…"
   },
   "labelGifMaxDuration": {
     "message": "最大1分 (60秒)"
@@ -1374,10 +1120,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — プレゼン用 (1秒に1フレーム、最小サイズ)"
-  },
-  "popupRightClickHint": {
-    "message": "画面録画（動画/GIF）とカラーピッカーは、Webページ上を右クリックしてご利用ください。",
-    "description": "Hint informing user to use right-click context menu for recording and color picker"
   },
   "toastElementZappedAd": {
     "message": "広告 / iframeをこのセッション中は非表示にしました。",
@@ -1428,7 +1170,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIFの解像度: 1:1 / 1080p / 720p / 480p",
+    "message": "GIFの解像度: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1482,5 +1224,206 @@
   "errNoActiveTab": {
     "message": "アクティブなタブが見つかりません。",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "ここをクリックしてから、ページ上の好きな色を選んでください"
+  },
+  "welcomeTitle": {
+    "message": "Source Download の準備ができました"
+  },
+  "welcomePrivacy": {
+    "message": "すべてお使いのパソコン上で動作します。アカウント不要、トラッキングなし、データは一切送信されません。"
+  },
+  "welcomeHelp": {
+    "message": "うまく動きませんか？ GitHub でお知らせください"
+  },
+  "ratingBannerIssue": {
+    "message": "問題がありますか？"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF が 200 MB に達しました。録画した分を保存しています…"
+  },
+  "btnPopupFullPage": {
+    "message": "ページ全体のスクリーンショット"
+  },
+  "toastRecWrongTab": {
+    "message": "このページの範囲を録画するには、共有ダイアログで「このタブ」を選んでください。"
+  },
+  "popupCaptureTitle": {
+    "message": "このページをキャプチャ"
+  },
+  "popupTileOffline": {
+    "message": "ページをオフライン保存"
+  },
+  "popupTileGuide": {
+    "message": "使い方"
+  },
+  "popupDevtoolsTitle": {
+    "message": "ファイル・画像・表"
+  },
+  "popupDevtoolsHint": {
+    "message": "デベロッパーツールを開き、Source Download タブを選択してください。"
+  },
+  "popupRestricted": {
+    "message": "このページでは Chrome が拡張機能を許可していません。ツールを使うにはウェブサイトを開いてください。"
+  },
+  "welcomeCardMenuTitle": {
+    "message": "どのページでも右クリック"
+  },
+  "welcomeCardMenuText": {
+    "message": "ページ全体や範囲のスクリーンショット、範囲の録画、カラーピッカー、オフラインコピーを、今いる場所ですぐに。"
+  },
+  "welcomeCardPopupTitle": {
+    "message": "またはツールバーのボタンから"
+  },
+  "welcomeCardPopupText": {
+    "message": "Chrome のツールバーにあるパズルのアイコンをクリックして Source Download を固定すれば、ツールはいつでもワンクリックです。"
+  },
+  "welcomeCardPanelTitle": {
+    "message": "F12 でページ内のすべてを"
+  },
+  "welcomeCardPanelText": {
+    "message": "デベロッパーツールで Source Download タブを選びます。ページが読み込んだ画像、動画、フォント、ファイルがすべて一覧になり、プレビュー、絞り込み、ZIP 保存ができます。ページ内の表は Excel に書き出せます。"
+  },
+  "welcomeLead": {
+    "message": "どんなウェブページからでも必要なものを手に入れる 3 つの方法。"
+  },
+  "btnDownloadOptions": {
+    "message": "その他のダウンロード方法"
+  },
+  "btnMore": {
+    "message": "その他の操作"
+  },
+  "btnFilters": {
+    "message": "フィルター"
+  },
+  "tabsShowEmpty": {
+    "message": "空のカテゴリを表示"
+  },
+  "tabsHideEmpty": {
+    "message": "空のカテゴリを隠す"
+  },
+  "textSegText": {
+    "message": "テキスト"
+  },
+  "textSegTables": {
+    "message": "表"
+  },
+  "textLive": {
+    "message": "ライブ"
+  },
+  "textPaused": {
+    "message": "一時停止中"
+  },
+  "textLivePauseTitle": {
+    "message": "ライブ：ページが変わるたびに読み直します。クリックで一時停止。"
+  },
+  "textLiveResumeTitle": {
+    "message": "一時停止中。クリックするとページを再びライブで追跡します。"
+  },
+  "textSearchText": {
+    "message": "ページのテキストを検索"
+  },
+  "textExportAllXlsx": {
+    "message": "すべての表を Excel へ"
+  },
+  "textNoTables": {
+    "message": "このページにはまだ表がありません。ページに表が表示されるとすぐにここに現れます。"
+  },
+  "textTable": {
+    "message": "表"
+  },
+  "textCopy": {
+    "message": "コピー"
+  },
+  "textShowLess": {
+    "message": "表示を減らす"
+  },
+  "areaHintSelect": {
+    "message": "ドラッグして範囲を選択"
+  },
+  "areaHintCopy": {
+    "message": "コピー"
+  },
+  "areaHintSave": {
+    "message": "保存"
+  },
+  "areaHintExit": {
+    "message": "終了"
+  },
+  "areaAutoCopyLabel": {
+    "message": "自動でコピー"
+  },
+  "areaAutoCopyOn": {
+    "message": "自動コピーがオンです"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "選択を離すと、そのままクリップボードに入ります。"
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "オフにする"
+  },
+  "toastAreaAutoCopied": {
+    "message": "クリップボードにコピーしました（自動コピーがオン）"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "このページではクリップボードへのコピーが許可されていません。代わりにダウンロードを使ってください。"
+  },
+  "textKindAll": {
+    "message": "ページ全体のテキスト"
+  },
+  "textKindHeading": {
+    "message": "見出し"
+  },
+  "textKindP": {
+    "message": "段落"
+  },
+  "textKindA": {
+    "message": "リンク"
+  },
+  "textKindLi": {
+    "message": "リスト項目"
+  },
+  "textKindButton": {
+    "message": "ボタン"
+  },
+  "textKindLabel": {
+    "message": "ラベルとキャプション"
+  },
+  "textKindSpan": {
+    "message": "インラインテキスト"
+  },
+  "textKindDiv": {
+    "message": "その他のブロック"
+  },
+  "textKindCell": {
+    "message": "表のセル"
+  },
+  "textKindCode": {
+    "message": "コード"
+  },
+  "textKindQuote": {
+    "message": "引用"
+  },
+  "textCustomQuery": {
+    "message": "カスタムクエリ"
+  },
+  "textCustomQueryHint": {
+    "message": "ライブのページで CSS セレクターまたは XPath"
+  },
+  "menuSettings": {
+    "message": "設定"
+  },
+  "settingsSave": {
+    "message": "保存"
+  },
+  "settingsReset": {
+    "message": "デフォルトに戻す"
+  },
+  "settingAreaAutoCopy": {
+    "message": "範囲のスクリーンショットを自動でコピー"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "選択を離すと、画像がそのままクリップボードに入ります。オンの間は、ページ上部のヒントが毎回そのことを表示します。"
   }
 }

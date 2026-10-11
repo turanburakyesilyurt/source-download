@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: इमेज और फ़ाइल डाउनलोडर"
   },
   "appDesc": {
-    "message": "किसी भी वेब एसेट को देखें और ZIP के रूप में डाउनलोड करें। पूरे पेज के स्क्रीनशॉट, लाइव टेबल कैप्चर और डेवलपर वर्कबेंच।"
+    "message": "वेब पेज की इमेज, आइकन और फ़ाइलें एक-एक करके या एक ZIP में सहेजें। पूरे पेज का स्क्रीनशॉट और स्क्रीन के हिस्से की रिकॉर्डिंग भी।"
   },
   "actionTitle": {
     "message": "Source Download - पैनल खोलें और संसाधनों को ट्रैक करें"
   },
   "contextMenuZap": {
-    "message": "यह एलिमेंट छिपाएँ (Zap)"
+    "message": "यह एलिमेंट छिपाएँ"
   },
   "contextMenuUndoZap": {
     "message": "पिछला छिपाया गया एलिमेंट वापस लाएँ"
@@ -90,7 +90,7 @@
     "message": "चयनित डाउनलोड करें"
   },
   "btnDownloadView": {
-    "message": "वर्तमान दृश्य डाउनलोड करें"
+    "message": "दिख रहे आइटम डाउनलोड करें"
   },
   "btnDownloadAll": {
     "message": "सभी डाउनलोड करें"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "फ़िल्टर किए गए डाउनलोड करें"
   },
-  "btnTheme": {
-    "message": "थीम बदलें"
-  },
   "btnGuide": {
     "message": "उपयोगकर्ता गाइड"
-  },
-  "btnCaptureFullPage": {
-    "message": "पूरे पेज का स्क्रीनशॉट"
-  },
-  "btnOfflineArchive": {
-    "message": "एकल HTML सहेजें"
   },
   "filterMinKb": {
     "message": "न्यूनतम KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "पेज का टेक्स्ट फ़िल्टर करें या लाइव DOM क्वेरी करें…"
-  },
-  "textAllElements": {
-    "message": "सभी तत्व"
-  },
-  "textLiveOn": {
-    "message": "लाइव चालू"
-  },
-  "textLiveOff": {
-    "message": "लाइव बंद"
-  },
   "textScanNow": {
     "message": "अभी स्कैन करें"
-  },
-  "textReading": {
-    "message": "पढ़ना"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "किसी संसाधन के विवरण का निरीक्षण करने के लिए उसका चयन करें"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Source Download का आनंद ले रहे हैं? Chrome वेब स्टोर पर समीक्षा या GitHub पर एक स्टार के साथ हमारे ओपन-सोर्स दृष्टिकोण का समर्थन करें!"
-  },
-  "ratingReview": {
-    "message": "★ एक समीक्षा छोड़ें"
-  },
-  "ratingStar": {
-    "message": "★ GitHub पर स्टार"
-  },
   "ratingDismiss": {
     "message": "ख़ारिज करें"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "सिंगल-फ़ाइल HTML आर्काइव सहेजा गया।"
-  },
-  "brandSignature": {
-    "message": "Turan Burak Yeşilyurt (2run.dev) द्वारा निर्मित"
-  },
-  "tabImages": {
-    "message": "छवियाँ और SVG"
-  },
-  "tabMedia": {
-    "message": "मीडिया एवं ऑडियो"
-  },
-  "tabFonts": {
-    "message": "फ़ॉन्ट्स"
-  },
-  "tabTextScraper": {
-    "message": "पाठ एवं तालिकाएँ"
-  },
-  "heroScreenshotTitle": {
-    "message": "पूरे पेज का स्क्रीनशॉट"
-  },
-  "heroScreenshotDesc": {
-    "message": "स्टिकी हेडर हटाकर निर्बाध मल्टी-व्यूपोर्ट स्टिचिंग"
-  },
-  "heroArchiveTitle": {
-    "message": "एकल-फ़ाइल HTML संग्रह"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS और Base64 छवियाँ इनलाइन, ऑफ़लाइन-सुरक्षित स्नैपशॉट"
-  },
-  "copyDataUri": {
-    "message": "Data-URI कॉपी करें"
-  },
-  "copyUrl": {
-    "message": "URL कॉपी करें"
   },
   "downloadSingle": {
     "message": "डाउनलोड करें"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "संसाधन"
   },
-  "statusFiltered": {
-    "message": "फ़िल्टर किया हुआ"
-  },
   "statusSelected": {
     "message": "चयनित"
   },
   "statusDupes": {
     "message": "डुप्लिकेट छिपाए गए"
-  },
-  "statusSize": {
-    "message": "आकार"
   },
   "langAuto": {
     "message": "ऑटो (ब्राउज़र)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "भाषा चुनें"
   },
-  "textPillAll": {
-    "message": "सभी सामग्री"
-  },
-  "textPillText": {
-    "message": "📄 पाठ एवं लेख"
-  },
-  "textPillTables": {
-    "message": "📊 केवल तालिकाएँ"
-  },
   "textSelectAll": {
     "message": "सभी का चयन करें"
   },
   "textDeselectAll": {
     "message": "सभी को अचयनित करें"
-  },
-  "textClearSelection": {
-    "message": "साफ़ करें"
   },
   "toastRefreshComplete": {
     "message": "पृष्ठ स्कैन पूर्ण: $count$ नए संसाधन",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ तालिका · $rows$ अद्वितीय पंक्तियाँ",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ चयनित - निर्यात केवल इनका उपयोग करते हैं",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "तालिका - स्क्रीन पर $count$ पंक्तियाँ",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "तालिका - सभी $count$ अद्वितीय पंक्तियाँ",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ स्नैपशॉट",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "सभी पंक्तियाँ दिखाई जा रही हैं"
   },
-  "textTableHistory": {
-    "message": "इतिहास ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "इतिहास छिपाएँ"
-  },
   "textTableNoRows": {
     "message": "अभी तक कोई पंक्ति कैप्चर नहीं की गई."
   },
   "textBtnCopy": {
     "message": "पाठ कॉपी करें"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 कॉपी"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ डुप्लिकेट छवि(याँ)",
@@ -689,35 +529,17 @@
       }
     }
   },
-  "labelExport": {
-    "message": "निर्यात करें"
-  },
   "inspectorLoadingSvg": {
-    "message": "SVG लोड हो रहा है..."
+    "message": "SVG लोड हो रहा है…"
   },
   "inspectorSvgError": {
     "message": "SVG सामग्री पुनर्प्राप्त नहीं की जा सकी."
   },
   "inspectorLoadingFont": {
-    "message": "फ़ॉन्ट पूर्वावलोकन लोड हो रहा है..."
+    "message": "फ़ॉन्ट पूर्वावलोकन लोड हो रहा है…"
   },
   "inspectorFontSample": {
     "message": "फ़ॉन्ट पूर्वावलोकन"
-  },
-  "inspectorBeautify": {
-    "message": "सुशोभित करें"
-  },
-  "inspectorOriginal": {
-    "message": "मूल"
-  },
-  "inspectorHeaders": {
-    "message": "हेडर"
-  },
-  "inspectorResponse": {
-    "message": "प्रतिक्रिया"
-  },
-  "inspectorRequest": {
-    "message": "अनुरोध"
   },
   "inspectorQueryParams": {
     "message": "क्वेरी पैरामीटर"
@@ -725,23 +547,11 @@
   "inspectorRequestBody": {
     "message": "अनुरोध बॉडी"
   },
-  "textHintHtml": {
-    "message": "पृष्ठ की एक सजीव, पठनीय प्रति। टेक्स्ट रखने वाले प्रत्येक तत्व को DOM क्रम में कैप्चर किया जाता है और पेज बदलते ही यहां रखा जाता है। इसे सादे पाठ, एक नियमित अभिव्यक्ति, एक <strong>CSS चयनकर्ता</strong> या एक <strong>XPath</strong> अभिव्यक्ति के साथ क्वेरी करें, फिर जो मेल खाता है उसे निर्यात करें। विवरण के लिए <a href='#' id='text-hint-guide'>गाइड</a> देखें।"
-  },
-  "textHeadings": {
-    "message": "शीर्षक"
-  },
-  "textAllLevels": {
-    "message": "सभी स्तर"
-  },
   "textMatches": {
     "message": "मिलान"
   },
   "textMatch": {
     "message": "मिलान"
-  },
-  "textReadingOn": {
-    "message": "पढ़ना चालू"
   },
   "toastDownloadStarted": {
     "message": "डाउनलोड प्रारंभ: $name$",
@@ -756,7 +566,7 @@
     "message": "यह संसाधन (CORS या असमर्थित प्रकार) नहीं लाया जा सका।"
   },
   "ratingBannerText": {
-    "message": "Source Download का आनंद ले रहे हैं? Chrome वेब स्टोर पर समीक्षा या GitHub पर एक स्टार के साथ हमारे ओपन-सोर्स दृष्टिकोण का समर्थन करें!"
+    "message": "खुशी है कि यह काम आया! अगर Source Download आपका समय बचाता है, तो एक छोटी समीक्षा दूसरों को इसे ढूँढने में मदद करती है।"
   },
   "ratingBannerReview": {
     "message": "★ समीक्षा"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "क्वेरी बॉक्स की व्याख्या कैसे की जाती है"
   },
-  "textKindTitle": {
-    "message": "एक तत्व प्रकार तक सीमित रखें"
-  },
-  "textHeadingLevelTitle": {
-    "message": "शीर्षक स्तर"
-  },
   "textPlaceholderRegex": {
     "message": "^मूल्य:\\s*\\d+ - जावास्क्रिप्ट नियमित अभिव्यक्ति"
   },
@@ -864,28 +668,7 @@
     "message": "//div[@class=\"row\"]//td[2]  ·  count(//a)  ·  //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "गाइड खोजें..."
-  },
-  "popupIntro": {
-    "message": "श्रेणियाँ <strong>टूलबार बैज</strong> द्वारा गिनी जाती हैं। इसे गिनना बंद करने के लिए एक को टॉगल करें - बैज तुरंत केवल वही दर्शाता है जो आप ट्रैक करते हैं।"
-  },
-  "popupHelpTitle": {
-    "message": "पूर्ण पैनल का उपयोग कैसे करें"
-  },
-  "popupStep1": {
-    "message": "जिस पेज का आप निरीक्षण करना चाहते हैं उसके लिए DevTools खोलें <div class='hint'><kbd>F12</kbd> या <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "DevTools टूलबार में <strong>Source Download</strong> टैब पर क्लिक करें"
-  },
-  "popupStep3": {
-    "message": "संसाधनों को ब्राउज़ करें, निरीक्षण करें और डाउनलोड करें - व्यक्तिगत रूप से या एक साथ ZIP के रूप में।"
-  },
-  "popupNote": {
-    "message": "ध्यान दें: Chrome एक्सटेंशन को DevTools को प्रोग्रामेटिक रूप से खोलने की अनुमति नहीं देता है, यही कारण है कि संपूर्ण इंजीनियरिंग सुइट तक DevTools टूलबार के माध्यम से पहुंचा जाता है।"
-  },
-  "popupTrackAll": {
-    "message": "सभी श्रेणियों को ट्रैक करें"
+    "message": "गाइड खोजें…"
   },
   "popupLanguage": {
     "message": "भाषा"
@@ -894,13 +677,13 @@
     "message": "बाइनरी प्रतिक्रिया - इसे देखने के लिए डाउनलोड करें"
   },
   "inspectorLoadingResponse": {
-    "message": "प्रतिक्रिया लोड हो रही है..."
+    "message": "प्रतिक्रिया लोड हो रही है…"
   },
   "inspectorNoResponsePreview": {
     "message": "कोई प्रतिक्रिया पूर्वावलोकन नहीं - सामग्री पुनर्प्राप्त नहीं की जा सकी।"
   },
   "inspectorLoadingContent": {
-    "message": "सामग्री लोड हो रही है..."
+    "message": "सामग्री लोड हो रही है…"
   },
   "inspectorNoPreview": {
     "message": "कोई पूर्वावलोकन उपलब्ध नहीं - सामग्री पुनर्प्राप्त नहीं की जा सकी."
@@ -921,10 +704,10 @@
     "message": "सिंटैक्स हाइलाइटिंग के साथ SVG मार्कअप दिखाएं"
   },
   "inspectorFormatting": {
-    "message": "स्वरूपण..."
+    "message": "स्वरूपण…"
   },
   "findInContentPlaceholder": {
-    "message": "सामग्री में खोजें..."
+    "message": "सामग्री में खोजें…"
   },
   "findPreviousMatch": {
     "message": "पिछला परिणाम"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "खंडों को मर्ज करें और डाउनलोड करें"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ खंड को $NAME$ में मिला दिया गया",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "आकार अज्ञात"
-  },
   "progressFetching": {
     "message": "प्राप्त किया जा रहा है $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -996,7 +765,7 @@
     }
   },
   "progressCreatingZip": {
-    "message": "ZIP बनाया जा रहा है $PERCENT$%...",
+    "message": "ZIP बनाया जा रहा है $PERCENT$%…",
     "placeholders": {
       "PERCENT": {
         "content": "$1"
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "रेगेक्स खोज सक्रिय - अपनी क्वेरी को /pattern/i में लपेटें"
   },
-  "textIncludeInExports": {
-    "message": "निर्यात में शामिल करें"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "प्रत्येक स्नैपशॉट को एक डुप्लिकेट-रहित तालिका में संयोजित करें - यही निर्यात किया जाता है"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "इस तालिका के पुराने स्नैपशॉट ब्राउज़ करें"
-  },
   "tableDownloadCsvTitle": {
     "message": "इस तालिका को CSV के रूप में डाउनलोड करें"
-  },
-  "tableSnapshotLabel": {
-    "message": "स्नैपशॉट $INDEX$ — $TIME$ ($COUNT$ पंक्तियाँ)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "बैच डाउनलोड के लिए चयन टॉगल करें"
@@ -1150,7 +899,7 @@
     "message": "DevTools टूलबार में <strong>Source Download</strong> टैब पर क्लिक करें (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> दबाएँ, फिर DevTools टूलबार में टैब दबाएँ)। Chrome एक्सटेंशन को DevTools को स्वचालित रूप से खोलने की अनुमति नहीं देता है, यही कारण है कि पैनल वहीं रहता है। टूलबार आइकन पॉपअप आपको यह चुनने देता है कि कौन सी श्रेणियां आइकन पर बैज काउंटर को फीड करती हैं। पैनल टूलबार में सूर्य/चंद्रमा बटन क्रोम से स्वतंत्र रूप से प्रकाश या गहरे रंग की थीम को लॉक करता है; वह विकल्प याद है."
   },
   "guideSecCategoriesContent": {
-    "message": "बाईं ओर स्थित ऊर्ध्वाधर टैब प्रत्येक कैप्चर किए गए संसाधन को प्रकार के आधार पर 17 समर्पित श्रेणियों में समूहित करते हैं: छवियाँ, वीडियो, ऑडियो, कैप्शन, दस्तावेज़, फ़ॉन्ट, स्रोत मानचित्र, WASM, SVG, API, कुकीज़, संग्रहण, और बहुत कुछ। प्रत्येक टैब एक लाइव गिनती दिखाता है। एक समय में केवल एक ही श्रेणी दिखाई जाती है; स्विच करने से सभी फ़िल्टर रीसेट हो जाते हैं, इसलिए आप जो देखते हैं वह हमेशा टैब से मेल खाता है।"
+    "message": "बाईं ओर के वर्टिकल टैब हर कैप्चर किए गए संसाधन को इमेज, वीडियो, फ़ॉन्ट, सोर्स मैप और API कॉल जैसी 15 श्रेणियों में बाँटते हैं, साथ ही टेक्स्ट और टेबल का एक टैब भी है। प्रत्येक टैब एक लाइव गिनती दिखाता है। एक समय में केवल एक ही श्रेणी दिखाई जाती है; स्विच करने से सभी फ़िल्टर रीसेट हो जाते हैं, इसलिए आप जो देखते हैं वह हमेशा टैब से मेल खाता है।"
   },
   "guideSecSearchFiltersContent": {
     "message": "खोज बार नाम, URL, प्रकार, वैकल्पिक पाठ या शीर्षक के आधार पर फ़िल्टर करता है। रेगुलर एक्सप्रेशन का उपयोग करने के लिए अपनी क्वेरी को <kbd>/…/</kbd> में संलग्न करें, उदाहरण के लिए <code>/\\.(png|jpg)$/</code>. टूलबार के नीचे, फ़िल्टर बार प्रति श्रेणी में बदलता है: मीडिया के लिए आकार और आयाम सीमा, API के लिए HTTP विधि और अनुरोध प्रकार, साथ ही सॉर्टिंग और दिशा।"
@@ -1162,13 +911,13 @@
     "message": "किसी भी संसाधन को दाईं ओर निरीक्षण फलक में खोलने के लिए उस पर क्लिक करें। प्रत्येक खोली गई फ़ाइल एक टैब बन जाती है, जिससे आप कई संसाधनों की एक साथ तुलना कर सकते हैं - नवीनतम बाईं ओर खुलता है। छवियों, वीडियो, ऑडियो, फ़ॉन्ट, SVG और टेक्स्ट/कोड (ब्यूटीफाई टॉगल के साथ) के लिए विशेष दर्शक मौजूद हैं। API एक विभाजित दृश्य दिखाते हैं: बाईं ओर प्रतिक्रिया, दाईं ओर अनुरोध विवरण (विधि, स्थिति, हेडर, क्वेरी पैरामीटर और बॉडी)।"
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>डाउनलोड दृश्य</strong> वर्तमान में दृश्यमान संसाधनों (सक्रिय श्रेणी + खोज + फ़िल्टर) को ZIP के रूप में सहेजता है; फ़िल्टर सक्रिय होने पर यह <em>फ़िल्टर किए गए डाउनलोड करें (N)</em> पर पुनः लेबल हो जाता है। क्लिक करने से पहले अनुमानित संग्रह आकार देखने के लिए किसी भी डाउनलोड बटन पर होवर करें। <strong>चयनित डाउनलोड करें</strong> केवल चेक किए गए आइटम डाउनलोड करता है। <strong>सभी डाउनलोड करें</strong> प्रत्येक खोजे गए संसाधन को एक फ़ोल्डर-संरचित ZIP में कैप्चर करता है। विफल डाउनलोड स्वचालित रूप से पुनः प्रयास किए जाते हैं और संदर्भ मेनू से पुनः प्रयास किया जा सकता है। <strong>निर्यात</strong> दृश्य सूची को JSON या CSV के रूप में लिखता है, या Chrome के नेटवर्क लॉग को HAR फ़ाइल के रूप में डंप करता है।"
+    "message": "<strong>डाउनलोड दृश्य</strong> वर्तमान में दृश्यमान संसाधनों (सक्रिय श्रेणी + खोज + फ़िल्टर) को ZIP के रूप में सहेजता है; फ़िल्टर सक्रिय होने पर यह <em>फ़िल्टर किए गए डाउनलोड करें (N)</em> पर पुनः लेबल हो जाता है। क्लिक करने से पहले अनुमानित संग्रह आकार देखने के लिए किसी भी डाउनलोड बटन पर होवर करें। <strong>चयनित डाउनलोड करें</strong> केवल चेक किए गए आइटम डाउनलोड करता है। <strong>सभी डाउनलोड करें</strong> प्रत्येक खोजे गए संसाधन को एक फ़ोल्डर-संरचित ZIP में कैप्चर करता है। विफल डाउनलोड चिह्नित हो जाते हैं, और आप उन्हें सूचना, आइटम के चेतावनी आइकन या संदर्भ मेनू से एक क्लिक में दोबारा आज़मा सकते हैं। <strong>निर्यात</strong> दृश्य सूची को JSON या CSV के रूप में लिखता है, या Chrome के नेटवर्क लॉग को HAR फ़ाइल के रूप में डंप करता है।"
   },
   "guideSecLightboxContent": {
     "message": "ज़ूम बटन मीडिया को पूर्ण आकार के लाइटबॉक्स में खोलता है जहां आप खींचकर पैन कर सकते हैं, माउस व्हील, स्क्रीन पर मौजूद बटन या कीबोर्ड (<kbd>+</kbd>/<kbd>-</kbd> ज़ूम करने के लिए, <kbd>0</kbd> रीसेट करने के लिए, <kbd>Esc</kbd> बंद करने के लिए) से ज़ूम कर सकते हैं।"
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>पाठ</strong> श्रेणी पृष्ठ की एक जीवंत, पठनीय प्रति है। यह टेक्स्ट रखने वाले प्रत्येक तत्व - शीर्षक, पैराग्राफ, सूची आइटम, बटन, <code>div</code>/<code>span</code> और अधिक - को DOM क्रम में कैप्चर करता है, और <strong>लाइव</strong> चालू होने पर स्कैन करता रहता है।</p><p><strong>क्वेरी</strong> बॉक्स चार तरीकों से काम करता है, जिसे इसके बगल में ड्रॉपडाउन से चुना गया है: <strong>शामिल है</strong> और <strong>रेगेक्स</strong> पहले से कैप्चर किए गए टेक्स्ट को फ़िल्टर करते हैं, जबकि <strong>CSS चयनकर्ता</strong> और <strong>XPath</strong> को लाइव पेज के विरुद्ध चलाया जाता है ताकि वे DOM में किसी भी चीज़ तक पहुंच सकें। XPath उन अभिव्यक्तियों को भी स्वीकार करता है जो तत्वों के बजाय मान लौटाते हैं, जैसे <code>count(//a)</code> या <code>//@href</code>। टूटी हुई क्वेरी के बारे में पृष्ठ जो कुछ भी कहता है वह बॉक्स के बगल में दिखाया गया है। <strong>तत्व</strong> पृष्ठ पर पाए जाने वाले प्रत्येक टैग की गिनती के साथ, परिणाम को एक टैग तक सीमित कर देता है। क्वेरी बॉक्स साफ़ करने (या <strong>साफ़ करें</strong> दबाने) से आप <em>सभी तत्वों</em> पर वापस आ जाते हैं और पृष्ठ पुनः कैप्चर हो जाता है - आपको कभी भी ड्रॉपडाउन को हाथ से रीसेट नहीं करना पड़ेगा।</p><p><strong>पढ़ना</strong> टैग, चेकबॉक्स और स्थान के टुकड़ों को छिपा देता है ताकि स्ट्रीम एक दस्तावेज़ की तरह पढ़ी जा सके। तालिकाएँ स्नैपशॉट का एक सीमित इतिहास संग्रहीत करती हैं ताकि गतिशील (एसपीए) तालिकाएँ कभी खो न जाएँ। प्रत्येक स्नैपशॉट को एक डुप्लिकेट किए गए दृश्य में मर्ज करने के लिए तालिका पर <strong>सभी पंक्तियाँ दिखाएँ</strong> दबाएँ - यह वही है जो एक निर्यात में होता है। <strong>TXT</strong> (पठनीय पृष्ठ), <strong>MD</strong> (मार्कडाउन, तालिकाएँ शामिल), या तालिकाओं को CSV, HTML या वास्तविक मल्टी-शीट <strong>XLSX</strong> कार्यपुस्तिका के रूप में निर्यात करें। जाँचे गए आइटम जीत गए; अन्यथा वर्तमान में दिखाई देने वाली हर चीज़ निर्यात की जाती है।</p>"
+    "message": "<p><strong>पाठ</strong> श्रेणी पेज की एक लाइव, पढ़ने में आसान कॉपी है: शीर्षक, अनुच्छेद, सूचियाँ और लिंक पेज के क्रम में, जो <strong>लाइव</strong> चालू रहने तक अपडेट होते रहते हैं। किसी पंक्ति पर पॉइंटर ले जाकर उसे कॉपी करें, या जो कुछ दिख रहा है उसके लिए <strong>पाठ कॉपी करें</strong>, <strong>Markdown</strong> और <strong>TXT</strong> का इस्तेमाल करें।</p><p><strong>तालिकाएँ</strong> में पेज की हर तालिका एक कार्ड के रूप में दिखती है, जिसमें प्रीव्यू और उसके अपने <strong>Excel</strong>, <strong>CSV</strong> और <strong>कॉपी करें</strong> बटन होते हैं; <strong>सभी तालिकाएँ Excel में</strong> सभी तालिकाओं को एक वर्कबुक में रखता है, हर तालिका के लिए एक शीट। बदलने वाली तालिकाएँ स्नैपशॉट का इतिहास रखती हैं, और <strong>सभी पंक्तियाँ दिखाएँ</strong> उन्हें बिना दोहराव वाली एक तालिका में जोड़ देता है — निर्यात में ठीक यही होता है।</p><p>बाईं ओर के बॉक्स पेज को एलिमेंट के प्रकार के अनुसार छाँटते हैं — पेज का पूरा पाठ, हर शीर्षक स्तर, अनुच्छेद, लिंक, सूची आइटम, बटन, कोड और भी — हर एक की गिनती और पहली पंक्ति के साथ; केवल वही देखने, कॉपी करने या निर्यात करने के लिए एक चुनें। खोज बॉक्स टाइप करते समय फ़िल्टर करता है, और उसके पास का मेनू उसे रेगुलर एक्सप्रेशन, <strong>CSS चयनकर्ता</strong> या <strong>XPath</strong> एक्सप्रेशन (मान लौटाने वाले एक्सप्रेशन भी, जैसे <code>count(//a)</code> या <code>//@href</code>) में बदलकर लाइव पेज पर चलाता है; <strong>कस्टम क्वेरी</strong> बॉक्स भी यही करता है। गलत क्वेरी के बारे में पेज जो कहता है, वह बॉक्स के अंदर ही दिखता है।</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML और अन्य कैप्शन फ़ाइलें - जिनमें <code>&lt;track&gt;</code> स्रोत शामिल हैं - दस्तावेज़ों के साथ मिश्रित होने के बजाय अपने स्वयं के <strong>कैप्शन</strong> टैब में आ जाती हैं।"
@@ -1270,7 +1019,7 @@
     "message": "रंग क्लिपबोर्ड पर कॉपी किया गया"
   },
   "toastProgressCapturing": {
-    "message": "पूरा पेज कैप्चर किया जा रहा है... $percent$%",
+    "message": "पूरा पेज कैप्चर किया जा रहा है… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "छवि जोड़ी जा रही है..."
+    "message": "छवि जोड़ी जा रही है…"
   },
   "modalExportTitle": {
     "message": "पूरे पेज का स्क्रीनशॉट तैयार है"
@@ -1302,7 +1051,7 @@
     "message": "क्लिपबोर्ड पर कॉपी करें"
   },
   "btnExportGenerating": {
-    "message": "बनाया जा रहा है..."
+    "message": "बनाया जा रहा है…"
   },
   "toastPdfGenerated": {
     "message": "PDF दस्तावेज़ सहेजा गया।"
@@ -1317,13 +1066,10 @@
     "message": "पूर्वावलोकन:"
   },
   "toastRecGeneratingGif": {
-    "message": "GIF बनाई जा रही है, कृपया प्रतीक्षा करें..."
+    "message": "GIF बनाई जा रही है, कृपया प्रतीक्षा करें…"
   },
   "settingGifResolution": {
     "message": "डिफ़ॉल्ट GIF रिज़ॉल्यूशन"
-  },
-  "optGifOriginal": {
-    "message": "मूल (1:1 नेटिव रिज़ॉल्यूशन — पूर्ण 3K/4K, कोई डाउनस्केलिंग नहीं)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (अधिकतम 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "स्क्रीन रिकॉर्डिंग (वीडियो और GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "किसी भी स्क्रीन क्षेत्र को MP4, WebM, या एनिमेटेड GIF के रूप में रिकॉर्ड करें। GIF रिकॉर्डिंग में लाइव अनुमानित फ़ाइल आकार के साथ 1:1 मूल रिज़ॉल्यूशन, 1080p, 720p और 480p प्रोफ़ाइल शामिल हैं। इष्टतम ब्राउज़र प्रदर्शन के लिए अधिकतम GIF रिकॉर्डिंग अवधि 1 मिनट (60 सेकंड) है।"
+    "message": "स्क्रीन के किसी भी हिस्से को MP4, WebM या एनिमेटेड GIF के रूप में रिकॉर्ड करें। GIF रिकॉर्डिंग में 1080p, 720p और 480p प्रोफ़ाइल मिलती हैं, साथ ही फ़ाइल आकार का लाइव अनुमान। एक GIF रिकॉर्डिंग अधिकतम 1 मिनट (60 सेकंड) की हो सकती है।"
   },
   "msgGifMaxDurationReached": {
-    "message": "GIF की अधिकतम अवधि 1 मिनट (60 सेकंड) पूरी हो गई। GIF बनाई जा रही है..."
+    "message": "GIF की अधिकतम अवधि 1 मिनट (60 सेकंड) पूरी हो गई। GIF बनाई जा रही है…"
   },
   "labelGifMaxDuration": {
     "message": "अधिकतम 1 मिनट (60 सेकंड)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — प्रेज़ेंटेशन (प्रति सेकंड 1 फ़्रेम, न्यूनतम आकार)"
-  },
-  "popupRightClickHint": {
-    "message": "स्क्रीन रिकॉर्डिंग (वीडियो/GIF) और रंग चयनकर्ता के लिए वेबपेज पर कहीं भी राइट-क्लिक करें।"
   },
   "toastElementZappedAd": {
     "message": "विज्ञापन / iframe इस सत्र के लिए छिपाया गया।",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF रिज़ॉल्यूशन: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF रिज़ॉल्यूशन: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "कोई सक्रिय टैब नहीं मिला।",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "यहाँ क्लिक करें, फिर पेज पर कोई भी रंग चुनें"
+  },
+  "welcomeTitle": {
+    "message": "Source Download तैयार है"
+  },
+  "welcomePrivacy": {
+    "message": "सब कुछ आपके कंप्यूटर पर चलता है। न अकाउंट, न ट्रैकिंग, हमें कुछ भी नहीं भेजा जाता।"
+  },
+  "welcomeHelp": {
+    "message": "कुछ काम नहीं कर रहा? GitHub पर हमें बताएँ"
+  },
+  "ratingBannerIssue": {
+    "message": "कोई समस्या है?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF 200 MB तक पहुँच गया। रिकॉर्ड किया गया हिस्सा सेव हो रहा है…"
+  },
+  "btnPopupFullPage": {
+    "message": "पूरे पेज का स्क्रीनशॉट"
+  },
+  "toastRecWrongTab": {
+    "message": "इस पेज का कोई हिस्सा रिकॉर्ड करने के लिए, शेयर करने वाले डायलॉग में \"यह टैब\" चुनें।"
+  },
+  "popupCaptureTitle": {
+    "message": "यह पेज कैप्चर करें"
+  },
+  "popupTileOffline": {
+    "message": "पेज ऑफ़लाइन सहेजें"
+  },
+  "popupTileGuide": {
+    "message": "यह कैसे काम करता है"
+  },
+  "popupDevtoolsTitle": {
+    "message": "फ़ाइलें, इमेज और तालिकाएँ"
+  },
+  "popupDevtoolsHint": {
+    "message": "DevTools खोलें, फिर Source Download टैब चुनें।"
+  },
+  "popupRestricted": {
+    "message": "Chrome इस पेज पर एक्सटेंशन की अनुमति नहीं देता। टूल इस्तेमाल करने के लिए कोई वेबसाइट खोलें।"
+  },
+  "welcomeCardMenuTitle": {
+    "message": "किसी भी पेज पर राइट-क्लिक करें"
+  },
+  "welcomeCardMenuText": {
+    "message": "पूरे पेज और क्षेत्र के स्क्रीनशॉट, क्षेत्र की रिकॉर्डिंग, कलर पिकर और ऑफ़लाइन कॉपी — ठीक वहीं जहाँ आप हैं।"
+  },
+  "welcomeCardPopupTitle": {
+    "message": "या टूलबार बटन का इस्तेमाल करें"
+  },
+  "welcomeCardPopupText": {
+    "message": "Chrome के टूलबार में पज़ल आइकन पर क्लिक करें और Source Download को पिन करें, ताकि टूल हमेशा एक क्लिक की दूरी पर रहें।"
+  },
+  "welcomeCardPanelTitle": {
+    "message": "पेज की हर चीज़ के लिए F12 दबाएँ"
+  },
+  "welcomeCardPanelText": {
+    "message": "DevTools में Source Download टैब चुनें। पेज ने जो भी इमेज, वीडियो, फ़ॉन्ट और फ़ाइल लोड की, वह वहाँ दिखती है — उसका प्रीव्यू देखें, फ़िल्टर करें और ZIP के रूप में सहेजें। पेज की तालिकाएँ Excel में निर्यात होती हैं।"
+  },
+  "welcomeLead": {
+    "message": "किसी भी वेब पेज से अपनी ज़रूरत की चीज़ पाने के तीन तरीके।"
+  },
+  "btnDownloadOptions": {
+    "message": "डाउनलोड के और विकल्प"
+  },
+  "btnMore": {
+    "message": "और कार्रवाइयाँ"
+  },
+  "btnFilters": {
+    "message": "फ़िल्टर"
+  },
+  "tabsShowEmpty": {
+    "message": "खाली दिखाएँ"
+  },
+  "tabsHideEmpty": {
+    "message": "खाली छिपाएँ"
+  },
+  "textSegText": {
+    "message": "पाठ"
+  },
+  "textSegTables": {
+    "message": "तालिकाएँ"
+  },
+  "textLive": {
+    "message": "लाइव"
+  },
+  "textPaused": {
+    "message": "रुका हुआ"
+  },
+  "textLivePauseTitle": {
+    "message": "लाइव: पेज बदलते ही उसे फिर से पढ़ा जाता है। रोकने के लिए क्लिक करें।"
+  },
+  "textLiveResumeTitle": {
+    "message": "रुका हुआ। पेज को फिर से लाइव देखने के लिए क्लिक करें।"
+  },
+  "textSearchText": {
+    "message": "पेज के पाठ में खोजें"
+  },
+  "textExportAllXlsx": {
+    "message": "सभी तालिकाएँ Excel में"
+  },
+  "textNoTables": {
+    "message": "इस पेज पर अभी कोई तालिका नहीं है। पेज पर तालिका दिखते ही वह यहाँ आ जाएगी।"
+  },
+  "textTable": {
+    "message": "तालिका"
+  },
+  "textCopy": {
+    "message": "कॉपी करें"
+  },
+  "textShowLess": {
+    "message": "कम दिखाएँ"
+  },
+  "areaHintSelect": {
+    "message": "क्षेत्र चुनने के लिए खींचें"
+  },
+  "areaHintCopy": {
+    "message": "कॉपी"
+  },
+  "areaHintSave": {
+    "message": "सहेजें"
+  },
+  "areaHintExit": {
+    "message": "बाहर निकलें"
+  },
+  "areaAutoCopyLabel": {
+    "message": "अपने-आप कॉपी करें"
+  },
+  "areaAutoCopyOn": {
+    "message": "अपने-आप कॉपी चालू है"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "चयन छोड़ते ही वह क्लिपबोर्ड पर होगा।"
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "बंद करें"
+  },
+  "toastAreaAutoCopied": {
+    "message": "क्लिपबोर्ड पर कॉपी हुआ (अपने-आप कॉपी चालू है)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "यह पेज क्लिपबोर्ड पर कॉपी करने की अनुमति नहीं देता। इसके बजाय डाउनलोड का इस्तेमाल करें।"
+  },
+  "textKindAll": {
+    "message": "पेज का पूरा पाठ"
+  },
+  "textKindHeading": {
+    "message": "शीर्षक"
+  },
+  "textKindP": {
+    "message": "अनुच्छेद"
+  },
+  "textKindA": {
+    "message": "लिंक"
+  },
+  "textKindLi": {
+    "message": "सूची आइटम"
+  },
+  "textKindButton": {
+    "message": "बटन"
+  },
+  "textKindLabel": {
+    "message": "लेबल और कैप्शन"
+  },
+  "textKindSpan": {
+    "message": "इनलाइन पाठ"
+  },
+  "textKindDiv": {
+    "message": "अन्य ब्लॉक"
+  },
+  "textKindCell": {
+    "message": "तालिका सेल"
+  },
+  "textKindCode": {
+    "message": "कोड"
+  },
+  "textKindQuote": {
+    "message": "उद्धरण"
+  },
+  "textCustomQuery": {
+    "message": "कस्टम क्वेरी"
+  },
+  "textCustomQueryHint": {
+    "message": "लाइव पेज पर CSS चयनकर्ता या XPath"
+  },
+  "menuSettings": {
+    "message": "सेटिंग"
+  },
+  "settingsSave": {
+    "message": "सहेजें"
+  },
+  "settingsReset": {
+    "message": "डिफ़ॉल्ट पर रीसेट करें"
+  },
+  "settingAreaAutoCopy": {
+    "message": "क्षेत्र के स्क्रीनशॉट अपने-आप कॉपी करें"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "चयन छोड़ते ही इमेज सीधे क्लिपबोर्ड पर चली जाती है। जब तक यह चालू है, पेज के ऊपर का संकेत हर बार यह बताता है।"
   }
 }

@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Kipakuzi cha Picha na Faili"
   },
   "appDesc": {
-    "message": "Kagua na pakua rasilimali za wavuti kama ZIP. Picha za skrini za ukurasa mzima, jedwali moja kwa moja, zana za wasanidi."
+    "message": "Hifadhi picha, aikoni na faili za ukurasa wa wavuti moja moja au kama ZIP moja. Pamoja na picha ya ukurasa mzima na kurekodi eneo."
   },
   "actionTitle": {
     "message": "Source Download — Fungua paneli na ufuatilie rasilimali"
@@ -90,7 +90,7 @@
     "message": "Pakua Zilizochaguliwa"
   },
   "btnDownloadView": {
-    "message": "Pakua Mwonekano"
+    "message": "Pakua Vinavyoonekana"
   },
   "btnDownloadAll": {
     "message": "Pakua Zote"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Pakua Zilizochujwa"
   },
-  "btnTheme": {
-    "message": "Badilisha mandhari"
-  },
   "btnGuide": {
     "message": "Mwongozo wa Mtumiaji"
-  },
-  "btnCaptureFullPage": {
-    "message": "Picha ya skrini ya Ukurasa Kamili"
-  },
-  "btnOfflineArchive": {
-    "message": "Hifadhi HTML Moja"
   },
   "filterMinKb": {
     "message": "Kiwango cha chini cha KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Chuja maandishi ya ukurasa au uulize moja kwa moja DOM..."
-  },
-  "textAllElements": {
-    "message": "Vipengele vyote"
-  },
-  "textLiveOn": {
-    "message": "Moja kwa moja: imewashwa"
-  },
-  "textLiveOff": {
-    "message": "Moja kwa moja: imezimwa"
-  },
   "textScanNow": {
     "message": "Changanua sasa"
-  },
-  "textReading": {
-    "message": "Hali ya kusoma"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Chagua nyenzo ili kukagua maelezo yake"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Je, unafurahia Source Download? Saidia maono yetu ya chanzo huria kwa kuacha maoni kwenye Chrome Web Store au kutoa nyota kwenye GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Acha Maoni"
-  },
-  "ratingStar": {
-    "message": "★ Toa Nyota kwenye GitHub"
-  },
   "ratingDismiss": {
     "message": "Funga"
   },
@@ -257,44 +209,11 @@
   "toastArchiveCreated": {
     "message": "Hifadhi ya HTML ya faili moja imehifadhiwa."
   },
-  "brandSignature": {
-    "message": "Iliyoundwa na Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Picha na SVG"
-  },
-  "tabMedia": {
-    "message": "Midia na Sauti"
-  },
-  "tabFonts": {
-    "message": "Fonti"
-  },
-  "tabTextScraper": {
-    "message": "Maandishi na Majedwali"
-  },
-  "heroScreenshotTitle": {
-    "message": "Picha ya skrini ya Ukurasa Kamili"
-  },
-  "heroScreenshotDesc": {
-    "message": "Picha ya skrini inayounganisha skrini nyingi bila mshono, bila vichwa vinavyobaki juu"
-  },
-  "heroArchiveTitle": {
-    "message": "Kumbukumbu ya HTML ya Faili Moja"
-  },
-  "heroArchiveDesc": {
-    "message": "Inajumuisha CSS na picha za Base64 ndani ya faili; nakala salama ya kutumia nje ya mtandao"
-  },
-  "copyDataUri": {
-    "message": "Nakili Data-URI"
-  },
-  "copyUrl": {
-    "message": "Nakili URL"
-  },
   "downloadSingle": {
     "message": "Pakua"
   },
   "searchPlaceholder": {
-    "message": "Chuja kwa jina, URL, tagi, MIME au /regex/..."
+    "message": "Chuja kwa jina, URL, tagi, MIME au /regex/…"
   },
   "viewGrid": {
     "message": "Mwonekano wa gridi"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "rasilimali"
   },
-  "statusFiltered": {
-    "message": "zilizochujwa"
-  },
   "statusSelected": {
     "message": "zilizochaguliwa"
   },
   "statusDupes": {
     "message": "nakala zimefichwa"
-  },
-  "statusSize": {
-    "message": "ukubwa"
   },
   "langAuto": {
     "message": "Otomatiki (Kivinjari)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Chagua Lugha"
   },
-  "textPillAll": {
-    "message": "Maudhui Yote"
-  },
-  "textPillText": {
-    "message": "📄 Maandishi na Makala"
-  },
-  "textPillTables": {
-    "message": "📊 Majedwali Pekee"
-  },
   "textSelectAll": {
     "message": "Chagua Zote"
   },
   "textDeselectAll": {
     "message": "Ondoa Uteuzi Wote"
-  },
-  "textClearSelection": {
-    "message": "Futa"
   },
   "toastRefreshComplete": {
     "message": "Uchanganuzi wa ukurasa umekamilika: rasilimali mpya $count$",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "Jedwali $tables$ · $rows$ safu mlalo za kipekee",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "Vilivyochaguliwa: $count$ — uhamishaji utatumia hivi pekee",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Jedwali — safu mlalo $count$ kwenye skrini",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Jedwali — safu mlalo zote za kipekee $count$",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "Nakala-tazamo $count$",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Inaonyesha safu mlalo zote"
   },
-  "textTableHistory": {
-    "message": "Historia ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Ficha historia"
-  },
   "textTableNoRows": {
     "message": "Bado hakuna safu mlalo zilizonaswa."
   },
   "textBtnCopy": {
     "message": "Nakili maandishi"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Nakili"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "Picha rudufu $count$",
@@ -689,35 +529,17 @@
       }
     }
   },
-  "labelExport": {
-    "message": "Hamisha"
-  },
   "inspectorLoadingSvg": {
-    "message": "Inapakia SVG..."
+    "message": "Inapakia SVG…"
   },
   "inspectorSvgError": {
     "message": "Maudhui ya SVG hayakuweza kupatikana."
   },
   "inspectorLoadingFont": {
-    "message": "Inapakia uhakiki wa fonti..."
+    "message": "Inapakia uhakiki wa fonti…"
   },
   "inspectorFontSample": {
     "message": "Uhakiki wa Fonti"
-  },
-  "inspectorBeautify": {
-    "message": "Pamba msimbo"
-  },
-  "inspectorOriginal": {
-    "message": "Asili"
-  },
-  "inspectorHeaders": {
-    "message": "Vichwa (Headers)"
-  },
-  "inspectorResponse": {
-    "message": "Jibu"
-  },
-  "inspectorRequest": {
-    "message": "Ombi"
   },
   "inspectorQueryParams": {
     "message": "Vigezo vya hoja"
@@ -725,23 +547,11 @@
   "inspectorRequestBody": {
     "message": "Mwili wa ombi"
   },
-  "textHintHtml": {
-    "message": "Nakala ya moja kwa moja, inayosomeka ya ukurasa. Kila kipengele kilicho na maandishi hunaswa kwa mpangilio wa DOM na kuwekwa hapa ukurasa unapobadilika. Iulize kwa maandishi wazi, msemo wa kawaida, <strong>kiteuzi cha CSS</strong> au msemo wa <strong>XPath</strong>, kisha hamisha kile kinacholingana. Tazama <a href=\"#\" id=\"text-hint-guide\">mwongozo</a> kwa maelezo."
-  },
-  "textHeadings": {
-    "message": "Vichwa vya habari"
-  },
-  "textAllLevels": {
-    "message": "Ngazi zote"
-  },
   "textMatches": {
     "message": "zinazolingana"
   },
   "textMatch": {
     "message": "inayolingana"
-  },
-  "textReadingOn": {
-    "message": "Kusoma: imewashwa"
   },
   "toastDownloadStarted": {
     "message": "Upakuaji umeanza: $name$",
@@ -756,7 +566,7 @@
     "message": "Imeshindwa kupata rasilimali hii (CORS au aina isiyotumika)."
   },
   "ratingBannerText": {
-    "message": "Je, unafurahia Source Download? Saidia maono yetu ya chanzo huria kwa kuacha maoni kwenye Chrome Web Store au kutoa nyota kwenye GitHub!"
+    "message": "Tunafurahi kimefanya kazi! Ikiwa Source Download inakuokolea muda, maoni mafupi huwasaidia wengine kuipata."
   },
   "ratingBannerReview": {
     "message": "★ Maoni"
@@ -828,13 +638,13 @@
     }
   },
   "statusIndexing": {
-    "message": "Inaorodhesha yaliyomo kwenye faili..."
+    "message": "Inaorodhesha yaliyomo kwenye faili…"
   },
   "statusCheckingDuplicates": {
-    "message": "Inakagua nakala za picha..."
+    "message": "Inakagua nakala za picha…"
   },
   "statusWorking": {
-    "message": "Inafanya kazi..."
+    "message": "Inafanya kazi…"
   },
   "filterMethodTitle": {
     "message": "Chuja kwa mbinu ya HTTP"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Jinsi kisanduku cha hoja kinafasiriwa"
   },
-  "textKindTitle": {
-    "message": "Zuia kwa aina moja ya kipengele"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Kiwango cha kichwa"
-  },
   "textPlaceholderRegex": {
     "message": "^Price:\\s*\\d+ — usemi wa kawaida wa JavaScript"
   },
@@ -864,28 +668,7 @@
     "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "Tafuta mwongozo..."
-  },
-  "popupIntro": {
-    "message": "Kategoria zinazohesabiwa na <strong>beji ya upau wa vidhibiti</strong>. Geuza moja ili uache kuihesabu - beji huakisi tu kile unachofuatilia."
-  },
-  "popupHelpTitle": {
-    "message": "Jinsi ya kutumia paneli kamili"
-  },
-  "popupStep1": {
-    "message": "Fungua DevTools kwa ukurasa unaotaka kukagua <div class=\"hint\"><kbd>F12</kbd> au <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Bofya kichupo cha <strong>Source Download</strong> kwenye upau wa zana wa DevTools"
-  },
-  "popupStep3": {
-    "message": "Vinjari, kagua na upakue rasilimali - kibinafsi au zote kwa wakati mmoja kama ZIP."
-  },
-  "popupNote": {
-    "message": "Kumbuka: Chrome hairuhusu viendelezi kufungua DevTools kiprogramu, ndiyo maana safu kamili ya uhandisi inafikiwa kupitia upau wa vidhibiti wa DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Fuatilia kategoria zote"
+    "message": "Tafuta mwongozo…"
   },
   "popupLanguage": {
     "message": "Lugha"
@@ -894,13 +677,13 @@
     "message": "Jibu la binary — pakua iliulitazame"
   },
   "inspectorLoadingResponse": {
-    "message": "Inapakia jibu..."
+    "message": "Inapakia jibu…"
   },
   "inspectorNoResponsePreview": {
     "message": "Hakuna uhakiki wa jibu — maudhui hayakuweza kupatikana."
   },
   "inspectorLoadingContent": {
-    "message": "Inapakia maudhui..."
+    "message": "Inapakia maudhui…"
   },
   "inspectorNoPreview": {
     "message": "Hakuna uhakiki unaopatikana — maudhui hayakuweza kupatikana."
@@ -921,10 +704,10 @@
     "message": "Onyesha msimbo wa SVG kwa uangaziaji wa sintaksia"
   },
   "inspectorFormatting": {
-    "message": "Inaumbiza..."
+    "message": "Inaumbiza…"
   },
   "findInContentPlaceholder": {
-    "message": "Tafuta katika maudhui..."
+    "message": "Tafuta katika maudhui…"
   },
   "findPreviousMatch": {
     "message": "Mechi iliyotangulia"
@@ -966,20 +749,6 @@
   },
   "btnMergeHls": {
     "message": "Unganisha sehemu na upakue"
-  },
-  "toastHlsMerged": {
-    "message": "Sehemu $COUNT$ zimeunganishwa kuwa $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "ukubwa haujulikani"
   },
   "progressFetching": {
     "message": "Inapakua $DONE$/$TOTAL$ · ZIP $EST$…",
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Utafutaji wa Regex unatumika — weka hoja yako ndani ya /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Jumuisha kwenye uhamishaji"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Unganisha nakala-tazamo zote kuwa jedwali moja bila marudio — hiki ndicho kinachohamishwa"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Vinjari nakala-tazamo za awali za jedwali hili"
-  },
   "tableDownloadCsvTitle": {
     "message": "Pakua jedwali hili kama CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Nakala-tazamo $INDEX$ — $TIME$ (safu mlalo $COUNT$)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Badilisha uteuzi wa upakuaji wa pamoja"
@@ -1150,7 +899,7 @@
     "message": "Bofya kichupo cha <strong>Source Download</strong> kwenye upau wa zana wa DevTools (bonyeza <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, kisha kichupo kwenye upau wa zana wa DevTools). Chrome hairuhusu viendelezi kufungua DevTools kiotomatiki, ndiyo maana paneli iko hapo. Dirisha ibukizi la aikoni ya upau wa zana hukuwezesha kuchagua ni kategoria zipi zinazohesabiwa kwenye beji ya aikoni. Kitufe cha jua/mwezi kwenye upau wa zana wa paneli hufunga mandhari angavu au meusi bila kutegemea Chrome; chaguo hilo hukumbukwa."
   },
   "guideSecCategoriesContent": {
-    "message": "Vichupo vilivyo wima upande wa kushoto huweka kila rasilimali iliyonaswa katika kategoria 17 maalum kulingana na aina: Picha, Video, Sauti, Manukuu, Nyaraka, Fonti, Ramani za chanzo, WASM, SVG, API, Vidakuzi, Hifadhi, na zaidi. Kila kichupo huonyesha hesabu ya moja kwa moja. Kategoria moja pekee huonyeshwa kwa wakati mmoja; kubadili huweka upya vichujio vyote, kwa hivyo unachoona hulingana na kichupo kila wakati."
+    "message": "Vichupo vya wima upande wa kushoto hupanga kila rasilimali iliyonaswa katika kategoria 15, kama picha, video, fonti, ramani za chanzo na miito ya API, pamoja na kichupo cha Maandishi na Majedwali. Kila kichupo huonyesha hesabu ya moja kwa moja. Kategoria moja pekee huonyeshwa kwa wakati mmoja; kubadili huweka upya vichujio vyote, kwa hivyo unachoona hulingana na kichupo kila wakati."
   },
   "guideSecSearchFiltersContent": {
     "message": "Upau wa kutafutia huchuja kwa jina, URL, aina, maandishi mbadala au kichwa. Weka hoja yako katika <kbd>/…/</kbd> ili kutumia usemi wa kawaida, k.m. <code>/\\.(png|jpg)$/</code>. Chini ya upau wa vidhibiti, upau wa kichujio hubadilika kwa kila kategoria: ukubwa na masafa ya midia, mbinu ya HTTP na aina ya ombi la API, pamoja na kupanga na mwelekeo."
@@ -1162,13 +911,13 @@
     "message": "Bofya rasilimali yoyote ili kuifungua kwenye kidirisha cha ukaguzi upande wa kulia. Kila faili iliyofunguliwa huwa kichupo, kwa hivyo unaweza kulinganisha rasilimali kadhaa kando kwa kando — mpya zaidi hufunguka upande wa kushoto. Kuna vitazamaji maalum vya picha, video, sauti, fonti, SVG, na maandishi/msimbo (vyenye kitufe cha Beautify). API huonyesha mwonekano uliogawanywa: jibu upande wa kushoto, maelezo ya ombi (mbinu, hali, vichwa, vigezo vya hoja na mwili) upande wa kulia."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Pakua Mwonekano</strong> huhifadhi rasilimali zinazoonekana kwa sasa (kategoria inayotumika + utafutaji + vichujio) kama ZIP; huonekana kama <em>Pakua Zilizochujwa (N)</em> wakati vichujio vinatumika. Elea juu ya kitufe chochote cha kupakua ili uone makadirio ya ukubwa wa kumbukumbu kabla ya kubofya. <strong>Pakua Zilizochaguliwa</strong> hupakua vipengee vilivyoteuliwa pekee. <strong>Pakua Zote</strong> hunasa kila rasilimali iliyogunduliwa kwenye ZIP yenye muundo wa folda. Vipakuliwa vilivyoshindwa hujaribiwa tena kiotomatiki na vinaweza kujaribiwa tena kutoka kwenye menyu ya muktadha. <strong>Hamisha</strong> huandika orodha inayoonekana kama JSON au CSV, au huhifadhi rekodi ya mtandao ya Chrome kama faili ya HAR."
+    "message": "<strong>Pakua Vinavyoonekana</strong> huhifadhi rasilimali zinazoonekana kwa sasa (kategoria inayotumika + utafutaji + vichujio) kama ZIP; huonekana kama <em>Pakua Zilizochujwa (N)</em> wakati vichujio vinatumika. Elea juu ya kitufe chochote cha kupakua ili uone makadirio ya ukubwa wa kumbukumbu kabla ya kubofya. <strong>Pakua Zilizochaguliwa</strong> hupakua vipengee vilivyoteuliwa pekee. <strong>Pakua Zote</strong> hunasa kila rasilimali iliyogunduliwa kwenye ZIP yenye muundo wa folda. Vipakuliwa vilivyoshindwa huwekwa alama, na unaweza kuvijaribu tena kwa mbofyo mmoja kutoka kwenye arifa, aikoni ya onyo ya kipengee au menyu ya muktadha. <strong>Hamisha</strong> huandika orodha inayoonekana kama JSON au CSV, au huhifadhi rekodi ya mtandao ya Chrome kama faili ya HAR."
   },
   "guideSecLightboxContent": {
     "message": "Kitufe cha kukuza hufungua midia katika lightbox ya ukubwa kamili ambapo unaweza kusogeza kwa kuburuta, kukuza kwa gurudumu la kipanya, vitufe vya skrini au kibodi (<kbd>+</kbd>/<kbd>-</kbd> kukuza, <kbd>0</kbd> kuweka upya, <kbd>Esc</kbd> kufunga)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Kategoria ya <strong>Maandishi</strong> ni nakala ya moja kwa moja, inayosomeka ya ukurasa. Hunasa kila kipengele chenye maandishi — vichwa, aya, vipengee vya orodha, vitufe, <code>div</code>/<code>span</code> na zaidi — kwa mpangilio wa DOM, na huendelea kuchanganua wakati <strong>Live</strong> imewashwa.</p><p>Kisanduku cha <strong>Hoja</strong> hufanya kazi kwa njia nne, zinazochaguliwa kutoka kwenye menyu kunjuzi iliyo kando yake: <strong>Inajumuisha</strong> na <strong>Regex</strong> huchuja maandishi yaliyonaswa tayari, huku <strong>Kiteuzi cha CSS</strong> na <strong>XPath</strong> zikiendeshwa dhidi ya ukurasa wa moja kwa moja ili ziweze kufikia chochote kwenye DOM. XPath pia hukubali misemo inayorudisha thamani badala ya vipengele, kama vile <code>count(//a)</code> au <code>//@href</code>. Chochote ambacho ukurasa unasema kuhusu hoja iliyo na hitilafu huonyeshwa kando ya kisanduku. <strong>Kipengele</strong> hupunguza matokeo hadi lebo moja, pamoja na hesabu ya kila lebo iliyopo kwenye ukurasa. Kufuta kisanduku cha hoja (au kubonyeza <strong>Futa</strong>) hukurudisha kwenye <em>Vipengele vyote</em> na kunasa ukurasa upya — huhitaji kuweka upya menyu kunjuzi kwa mkono.</p><p><strong>Kusoma</strong> huficha lebo, visanduku vya kuteua na njia za mahali ili mtiririko usomeke kama hati. Majedwali huhifadhi historia yenye kikomo ya nakala-tazamo ili majedwali yanayobadilika (SPA) yasipotee kamwe. Bonyeza <strong>Onyesha safu mlalo zote</strong> kwenye jedwali ili kuunganisha kila nakala-tazamo kuwa mwonekano mmoja usio na marudio — hicho ndicho hasa kinachojumuishwa kwenye uhamishaji. Hamisha kama <strong>TXT</strong> (ukurasa unaosomeka), <strong>MD</strong> (Markdown, majedwali yakijumuishwa), au majedwali kama CSV, HTML au kitabu halisi cha kazi chenye laha nyingi cha <strong>XLSX</strong>. Vipengee vilivyoteuliwa hupewa kipaumbele; vinginevyo kila kinachoonekana kwa sasa huhamishwa.</p>"
+    "message": "<p>Aina ya <strong>Maandishi</strong> ni nakala hai na rahisi kusoma ya ukurasa: vichwa, aya, orodha na viungo kwa mpangilio wa ukurasa, vinavyosasishwa wakati wote <strong>Moja kwa moja</strong> imewashwa. Elekeza kiashiria kwenye mstari ili kuunakili, au tumia <strong>Nakili maandishi</strong>, <strong>Markdown</strong> na <strong>TXT</strong> kwa kila kinachoonyeshwa.</p><p>Katika <strong>Majedwali</strong>, kila jedwali la ukurasa huonekana kama kadi yenye onyesho la kukagua na vitufe vyake vya <strong>Excel</strong>, <strong>CSV</strong> na <strong>Nakili</strong>; <strong>Majedwali yote kwenda Excel</strong> huweka yote katika kitabu kimoja cha kazi, karatasi moja kwa kila jedwali. Majedwali yanayobadilika huhifadhi historia ya picha za papo hapo, na <strong>Onyesha safu mlalo zote</strong> huziunganisha kuwa jedwali moja lisilo na nakala rudufu — ndicho hasa kilicho kwenye uhamishaji.</p><p>Visanduku vilivyo kushoto hupanga ukurasa kwa aina ya kipengele — maandishi yote ya ukurasa, kila kiwango cha kichwa, aya, viungo, vipengee vya orodha, vitufe, msimbo na zaidi — kila kimoja na idadi na mstari wa kwanza; chagua kimoja ili kuona, kunakili au kuhamisha hicho tu. Kisanduku cha utafutaji huchuja unapoandika, na menyu iliyo kando hukigeuza kuwa usemi wa kawaida, <strong>kiteuzi cha CSS</strong> au usemi wa <strong>XPath</strong> (pamoja na semi zinazorudisha thamani kama <code>count(//a)</code> au <code>//@href</code>) unaoendeshwa kwenye ukurasa hai; kisanduku cha <strong>Hoja maalum</strong> hufanya vivyo hivyo. Kile ukurasa unachosema kuhusu hoja yenye hitilafu huonyeshwa ndani ya kisanduku.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML na faili nyingine za manukuu — pamoja na vyanzo vya <code>&lt;track&gt;</code> — huwekwa kwenye kichupo chake cha <strong>Manukuu</strong> badala ya kuchanganywa na nyaraka."
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "Azimio Chaguomsingi la GIF"
   },
-  "optGifOriginal": {
-    "message": "Asili (1:1 azimio asilia — 3K/4K kamili, bila kupunguza ukubwa)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (juu zaidi 1920px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "Kurekodi skrini (Video & GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Rekodi eneo lolote la skrini kama MP4, WebM, au GIF yenye uhuishaji. Rekodi za GIF hutoa wasifu wa azimio asili 1:1, 1080p, 720p, na 480p pamoja na makadirio ya moja kwa moja ya ukubwa wa faili. Muda wa juu zaidi wa kurekodi GIF ni dakika 1 (sekunde 60) kwa utendaji bora wa kivinjari."
+    "message": "Rekodi eneo lolote la skrini kama MP4, WebM au GIF inayosonga. Rekodi za GIF zina wasifu wa 1080p, 720p na 480p pamoja na makadirio ya moja kwa moja ya ukubwa wa faili. Rekodi moja ya GIF inaweza kudumu hadi dakika 1 (sekunde 60)."
   },
   "msgGifMaxDurationReached": {
     "message": "Muda wa juu zaidi wa GIF wa dakika 1 (sekunde 60) umefikiwa. Inaunda GIF…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Wasilisho (fremu 1 kwa sekunde, ukubwa wa chini kabisa)"
-  },
-  "popupRightClickHint": {
-    "message": "Bofya kulia popote kwenye ukurasa wa wavuti ili kutumia Kurekodi Skrini (Video/GIF) na Kiteua Rangi."
   },
   "toastElementZappedAd": {
     "message": "Tangazo / iframe limefichwa kwa kipindi hiki.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Azimio la GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Azimio la GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Hakuna kichupo amilifu kilichopatikana.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Bofya hapa, kisha uchague rangi yoyote kwenye ukurasa"
+  },
+  "welcomeTitle": {
+    "message": "Source Download iko tayari"
+  },
+  "welcomePrivacy": {
+    "message": "Kila kitu kinaendeshwa kwenye kompyuta yako. Hakuna akaunti, hakuna ufuatiliaji, hakuna kinachotumwa kwetu."
+  },
+  "welcomeHelp": {
+    "message": "Kuna kitu hakifanyi kazi? Tuambie kwenye GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Kuna tatizo?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF imefikia MB 200. Inahifadhi kilichorekodiwa…"
+  },
+  "btnPopupFullPage": {
+    "message": "Picha ya Skrini ya Ukurasa Mzima"
+  },
+  "toastRecWrongTab": {
+    "message": "Ili kurekodi eneo la ukurasa huu, chagua \"Kichupo hiki\" kwenye kidirisha cha kushiriki."
+  },
+  "popupCaptureTitle": {
+    "message": "Nasa ukurasa huu"
+  },
+  "popupTileOffline": {
+    "message": "Hifadhi ukurasa nje ya mtandao"
+  },
+  "popupTileGuide": {
+    "message": "Jinsi inavyofanya kazi"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Faili, picha na majedwali"
+  },
+  "popupDevtoolsHint": {
+    "message": "Fungua DevTools, kisha uchague kichupo cha Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome hairuhusu viendelezi kwenye ukurasa huu. Fungua tovuti ili kutumia zana."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Bofya kulia kwenye ukurasa wowote"
+  },
+  "welcomeCardMenuText": {
+    "message": "Picha za skrini za ukurasa mzima au eneo, kurekodi eneo, kiteua rangi na nakala ya nje ya mtandao — palepale ulipo."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Au tumia kitufe cha upau wa zana"
+  },
+  "welcomeCardPopupText": {
+    "message": "Bofya aikoni ya kipande cha fumbo kwenye upau wa zana wa Chrome na ubandike Source Download, ili zana ziwe karibu kwa mbofyo mmoja kila wakati."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Bonyeza F12 kwa kila kitu kwenye ukurasa"
+  },
+  "welcomeCardPanelText": {
+    "message": "Chagua kichupo cha Source Download katika DevTools. Kila picha, video, fonti na faili ambayo ukurasa ulipakia imeorodheshwa hapo — hakiki, chuja na uhifadhi kama ZIP. Majedwali ya ukurasa yanahamishwa kwenda Excel."
+  },
+  "welcomeLead": {
+    "message": "Njia tatu za kupata unachohitaji kutoka ukurasa wowote wa wavuti."
+  },
+  "btnDownloadOptions": {
+    "message": "Chaguo zaidi za kupakua"
+  },
+  "btnMore": {
+    "message": "Vitendo zaidi"
+  },
+  "btnFilters": {
+    "message": "Vichujio"
+  },
+  "tabsShowEmpty": {
+    "message": "Onyesha zisizo na kitu"
+  },
+  "tabsHideEmpty": {
+    "message": "Ficha zisizo na kitu"
+  },
+  "textSegText": {
+    "message": "Maandishi"
+  },
+  "textSegTables": {
+    "message": "Majedwali"
+  },
+  "textLive": {
+    "message": "Moja kwa moja"
+  },
+  "textPaused": {
+    "message": "Imesitishwa"
+  },
+  "textLivePauseTitle": {
+    "message": "Moja kwa moja: ukurasa husomwa upya kila unapobadilika. Bofya ili kusitisha."
+  },
+  "textLiveResumeTitle": {
+    "message": "Imesitishwa. Bofya ili kufuatilia ukurasa moja kwa moja tena."
+  },
+  "textSearchText": {
+    "message": "Tafuta katika maandishi ya ukurasa"
+  },
+  "textExportAllXlsx": {
+    "message": "Majedwali yote kwenda Excel"
+  },
+  "textNoTables": {
+    "message": "Bado hakuna majedwali kwenye ukurasa huu. Yataonekana hapa mara tu ukurasa utakapoonyesha moja."
+  },
+  "textTable": {
+    "message": "Jedwali"
+  },
+  "textCopy": {
+    "message": "Nakili"
+  },
+  "textShowLess": {
+    "message": "Onyesha machache"
+  },
+  "areaHintSelect": {
+    "message": "Buruta ili kuchagua eneo"
+  },
+  "areaHintCopy": {
+    "message": "nakili"
+  },
+  "areaHintSave": {
+    "message": "hifadhi"
+  },
+  "areaHintExit": {
+    "message": "ondoka"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Nakili kiotomatiki"
+  },
+  "areaAutoCopyOn": {
+    "message": "Kunakili kiotomatiki kumewashwa"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Achilia uteuzi na tayari uko kwenye ubao wa kunakili."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Zima"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Imenakiliwa kwenye ubao wa kunakili (kunakili kiotomatiki kumewashwa)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Ukurasa huu hauruhusu kunakili kwenye ubao wa kunakili. Tumia Pakua badala yake."
+  },
+  "textKindAll": {
+    "message": "Maandishi yote ya ukurasa"
+  },
+  "textKindHeading": {
+    "message": "Kichwa"
+  },
+  "textKindP": {
+    "message": "Aya"
+  },
+  "textKindA": {
+    "message": "Viungo"
+  },
+  "textKindLi": {
+    "message": "Vipengee vya orodha"
+  },
+  "textKindButton": {
+    "message": "Vitufe"
+  },
+  "textKindLabel": {
+    "message": "Lebo na maelezo"
+  },
+  "textKindSpan": {
+    "message": "Maandishi ya mstarini"
+  },
+  "textKindDiv": {
+    "message": "Vizuizi vingine"
+  },
+  "textKindCell": {
+    "message": "Visanduku vya jedwali"
+  },
+  "textKindCode": {
+    "message": "Msimbo"
+  },
+  "textKindQuote": {
+    "message": "Manukuu"
+  },
+  "textCustomQuery": {
+    "message": "Hoja maalum"
+  },
+  "textCustomQueryHint": {
+    "message": "Kiteuzi cha CSS au XPath kwenye ukurasa hai"
+  },
+  "menuSettings": {
+    "message": "Mipangilio"
+  },
+  "settingsSave": {
+    "message": "Hifadhi"
+  },
+  "settingsReset": {
+    "message": "Rejesha chaguomsingi"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Nakili picha za skrini za eneo kiotomatiki"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Unapoachilia uteuzi, picha huenda moja kwa moja kwenye ubao wa kunakili. Wakati hili limewashwa, kidokezo kilicho juu ya ukurasa huonyesha hivyo kila mara."
   }
 }

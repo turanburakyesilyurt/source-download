@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Piltide allalaadija"
   },
   "appDesc": {
-    "message": "Uuri ja laadi veebiressursid alla ZIP-failina. Kogu lehe ekraanipildid, tabelite otsejäädvustus ja arendaja tööriistad."
+    "message": "Hoidke veebilehe pildid, ikoonid ja failid eraldi või ühe ZIP-ina alles. Kogu lehe ekraanipilt ja valitud ala video."
   },
   "actionTitle": {
     "message": "Source Download – ava paneel ja jälgi ressursse"
   },
   "contextMenuZap": {
-    "message": "Peida see element (Zap)"
+    "message": "Peida see element"
   },
   "contextMenuUndoZap": {
     "message": "Taasta viimati peidetud element"
@@ -90,7 +90,7 @@
     "message": "Laadi valitud alla"
   },
   "btnDownloadView": {
-    "message": "Laadi vaade alla"
+    "message": "Laadi nähtavad alla"
   },
   "btnDownloadAll": {
     "message": "Laadi kõik alla"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Laadi filtreeritud alla"
   },
-  "btnTheme": {
-    "message": "Vaheta teemat"
-  },
   "btnGuide": {
     "message": "Kasutusjuhend"
-  },
-  "btnCaptureFullPage": {
-    "message": "Terve lehe ekraanipilt"
-  },
-  "btnOfflineArchive": {
-    "message": "Salvesta ühe HTML-failina"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filtreeri lehe teksti või päri reaalajas DOM-i…"
-  },
-  "textAllElements": {
-    "message": "Kõik elemendid"
-  },
-  "textLiveOn": {
-    "message": "Reaalaeg sees"
-  },
-  "textLiveOff": {
-    "message": "Reaalaeg väljas"
-  },
   "textScanNow": {
     "message": "Skaneeri kohe"
-  },
-  "textReading": {
-    "message": "Lugemine"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Vali ressurss, et näha selle üksikasju"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Kas Source Download meeldib? Toeta meie avatud lähtekoodiga projekti arvustusega Chrome'i veebipoes või tärniga GitHubis!"
-  },
-  "ratingReview": {
-    "message": "★ Jäta arvustus"
-  },
-  "ratingStar": {
-    "message": "★ Anna GitHubis tärn"
-  },
   "ratingDismiss": {
     "message": "Loobu"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Ühe failina HTML-arhiiv salvestati."
-  },
-  "brandSignature": {
-    "message": "Loonud Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Pildid ja SVG"
-  },
-  "tabMedia": {
-    "message": "Meedia ja heli"
-  },
-  "tabFonts": {
-    "message": "Fondid"
-  },
-  "tabTextScraper": {
-    "message": "Tekst ja tabelid"
-  },
-  "heroScreenshotTitle": {
-    "message": "Terve lehe ekraanipilt"
-  },
-  "heroScreenshotDesc": {
-    "message": "Sujuv mitme vaateava ühendamine • Kleepuvate päiste peitmine"
-  },
-  "heroArchiveTitle": {
-    "message": "Ühefaililine HTML-arhiiv"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS ja Base64-pildid manustatakse • Töötab võrguühenduseta"
-  },
-  "copyDataUri": {
-    "message": "Kopeeri Data-URI"
-  },
-  "copyUrl": {
-    "message": "Kopeeri URL"
   },
   "downloadSingle": {
     "message": "Laadi alla"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "ressursse"
   },
-  "statusFiltered": {
-    "message": "filtreeritud"
-  },
   "statusSelected": {
     "message": "valitud"
   },
   "statusDupes": {
     "message": "duplikaadid peidetud"
-  },
-  "statusSize": {
-    "message": "suurus"
   },
   "langAuto": {
     "message": "Automaatne (brauser)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Valige keel"
   },
-  "textPillAll": {
-    "message": "Kogu sisu"
-  },
-  "textPillText": {
-    "message": "📄 Tekst ja artiklid"
-  },
-  "textPillTables": {
-    "message": "📊 Ainult tabelid"
-  },
   "textSelectAll": {
     "message": "Vali kõik"
   },
   "textDeselectAll": {
     "message": "Tühista kõigi valik"
-  },
-  "textClearSelection": {
-    "message": "Tühjenda"
   },
   "toastRefreshComplete": {
     "message": "Lehekülje skannimine lõpetatud: $count$ uut ressurssi",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ tabelit · $rows$ unikaalset rida",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ valitud – ekspordid kasutavad ainult neid",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tabel – $count$ rida ekraanil",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tabel – kõik $count$ unikaalset rida",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ hetktõmmist",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Kuvatakse kõik read"
   },
-  "textTableHistory": {
-    "message": "Ajalugu ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Peida ajalugu"
-  },
   "textTableNoRows": {
     "message": "Ühtegi rida pole veel jäädvustatud."
   },
   "textBtnCopy": {
     "message": "Kopeeri tekst"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Kopeeri"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ duplikaatpilti",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Ekspordi"
   },
   "inspectorLoadingSvg": {
     "message": "SVG laadimine…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Fondi eelvaade"
   },
-  "inspectorBeautify": {
-    "message": "Vorminda"
-  },
-  "inspectorOriginal": {
-    "message": "Originaal"
-  },
-  "inspectorHeaders": {
-    "message": "Päised"
-  },
-  "inspectorResponse": {
-    "message": "Vastus"
-  },
-  "inspectorRequest": {
-    "message": "Päring"
-  },
   "inspectorQueryParams": {
     "message": "Päringu parameetrid"
   },
   "inspectorRequestBody": {
     "message": "Päringu sisu"
   },
-  "textHintHtml": {
-    "message": "Lehe reaalajas loetav koopia. Iga teksti sisaldav element jäädvustatakse DOM-i järjekorras ja seda hoitakse siin, kui leht muutub. Esitage päring lihtteksti, regulaaravaldise, <strong>CSS-i valija</strong> või <strong>XPath</strong>-avaldise abil ja seejärel eksportige sobiv. Üksikasju vaadake <a href=\"#\" id=\"text-hint-guide\">juhendist</a>."
-  },
-  "textHeadings": {
-    "message": "Pealkirjad"
-  },
-  "textAllLevels": {
-    "message": "Kõik tasemed"
-  },
   "textMatches": {
     "message": "vastet"
   },
   "textMatch": {
     "message": "vaste"
-  },
-  "textReadingOn": {
-    "message": "Lugemine sees"
   },
   "toastDownloadStarted": {
     "message": "Allalaadimine algas: $name$",
@@ -756,7 +566,7 @@
     "message": "Seda ressurssi ei õnnestunud hankida (CORS või toetamata tüüp)."
   },
   "ratingBannerText": {
-    "message": "Kas Source Download meeldib? Toeta meie avatud lähtekoodiga projekti arvustusega Chrome'i veebipoes või tärniga GitHubis!"
+    "message": "Tore, et see õnnestus! Kui Source Download säästab teie aega, aitab lühike arvustus teistel seda leida."
   },
   "ratingBannerReview": {
     "message": "★ Arvustus"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Kuidas päringukasti tõlgendatakse"
   },
-  "textKindTitle": {
-    "message": "Piira ühe elemenditüübiga"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Pealkirja tase"
-  },
   "textPlaceholderRegex": {
     "message": "^Hind:\\s*\\d+ — JavaScripti regulaaravaldis"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Otsi juhendist…"
-  },
-  "popupIntro": {
-    "message": "Kategooriad, mida loendab <strong>tööriistariba märk</strong>. Lülita kategooria välja, et seda mitte loendada – märk näitab kohe ainult seda, mida jälgid."
-  },
-  "popupHelpTitle": {
-    "message": "Kuidas kasutada täispaneeli"
-  },
-  "popupStep1": {
-    "message": "Ava DevTools lehel, mida soovid uurida <div class=\"hint\"><kbd>F12</kbd> või <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Klõpsa DevToolsi tööriistaribal vahekaarti <strong>Source Download</strong>"
-  },
-  "popupStep3": {
-    "message": "Sirvi, uuri ja laadi ressursse alla – eraldi või kõik korraga ZIP-failina."
-  },
-  "popupNote": {
-    "message": "Märkus. Chrome ei luba laiendustel DevToolsi programmiliselt avada, mistõttu avaneb täispaneel DevToolsi tööriistariba kaudu."
-  },
-  "popupTrackAll": {
-    "message": "Jälgi kõiki kategooriaid"
   },
   "popupLanguage": {
     "message": "Keel"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Ühenda segmendid ja laadi alla"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ segmenti liideti failiks $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "suurus teadmata"
-  },
   "progressFetching": {
     "message": "Hankimine $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Regulaaravaldise otsing on aktiivne – ümbritse päring kujul /muster/i"
   },
-  "textIncludeInExports": {
-    "message": "Kaasa ekspordi hulka"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Kombineeri kõik hetktõmmised üheks duplikaatideta tabeliks – see eksporditakse"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Sirvi selle tabeli varasemaid hetktõmmiseid"
-  },
   "tableDownloadCsvTitle": {
     "message": "Laadi see tabel alla CSV-vormingus"
-  },
-  "tableSnapshotLabel": {
-    "message": "Hetktõmmis $INDEX$ – $TIME$ ($COUNT$ rida)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Lülita valik hulgiallalaadimiseks"
@@ -1150,7 +899,7 @@
     "message": "Klõpsa DevToolsi tööriistaribal vahekaarti <strong>Source Download</strong> (vajuta <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, seejärel vali DevToolsi tööriistaribal vahekaart). Chrome ei luba laiendustel DevToolsi automaatselt avada, mistõttu paneel asub seal. Tööriistariba ikooni hüpikaknas saad valida, millised kategooriad ikooni märgiloendurisse arvestatakse. Päikese/kuu nupp paneeli tööriistaribal lukustab heleda või tumeda teema Chrome'ist sõltumatult; valik jääb meelde."
   },
   "guideSecCategoriesContent": {
-    "message": "Vasakpoolsed vertikaalsed vahekaardid rühmitavad kõik jäädvustatud ressursid tüübi järgi 17 spetsiaalsesse kategooriasse: pildid, videod, heli, subtiitrid, dokumendid, fondid, allikakaardid, WASM, SVG, API-d, küpsised, salvestusruum ja palju muud. Iga vahekaart näitab reaalajas loendust. Korraga kuvatakse ainult üks kategooria; vahetamine lähtestab kõik filtrid, nii et see, mida näete, vastab alati vahekaardile."
+    "message": "Vasakpoolsed vertikaalsed vahekaardid jaotavad iga jäädvustatud ressursi 15 kategooriasse, näiteks pildid, videod, fondid, lähtekaardid ja API-kõned, lisaks on vahekaart Tekst ja tabelid. Iga vahekaart näitab reaalajas loendust. Korraga kuvatakse ainult üks kategooria; vahetamine lähtestab kõik filtrid, nii et see, mida näete, vastab alati vahekaardile."
   },
   "guideSecSearchFiltersContent": {
     "message": "Otsinguriba filtreerib nime, URL-i, tüübi, alt-teksti või pealkirja järgi. Regulaaravaldise kasutamiseks ümbritse päring märkidega <kbd>/…/</kbd>, nt <code>/\\.(png|jpg)$/</code>. Tööriistariba all olev filtririba muutub kategooriati: meedia suuruse ja mõõtmete vahemikud, API-de HTTP-meetod ja päringu tüüp ning lisaks sorteerimine ja suund."
@@ -1162,13 +911,13 @@
     "message": "Klõpsake mis tahes ressurssi, et avada see parempoolsel kontrollipaanil. Igast avatud failist saab vahekaart, nii et saate võrrelda mitut ressurssi kõrvuti – uusim avaneb vasakul. Piltide, video, heli, fontide, SVG ja teksti/koodi jaoks on olemas spetsiaalsed vaatajad (koos lülitiga Beautify). API-d näitavad jagatud vaadet: vastus vasakul, päringu üksikasjad (meetod, olek, päised, päringu parameetrid ja sisu) paremal."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Laadi vaade alla</strong> salvestab praegu nähtavad ressursid (aktiivne kategooria + otsing + filtrid) ZIP-failina; kui filtrid on aktiivsed, muutub nupu nimeks <em>Laadi filtreeritud alla (N)</em>. Hoia kursorit mis tahes allalaadimisnupu kohal, et enne klõpsamist näha arhiivi hinnangulist suurust. <strong>Laadi valitud alla</strong> laadib alla ainult märgitud üksused. <strong>Laadi kõik alla</strong> salvestab iga avastatud ressursi kaustastruktuuriga ZIP-faili. Ebaõnnestunud allalaadimisi proovitakse automaatselt uuesti ja neid saab uuesti proovida ka kontekstimenüüst. <strong>Ekspordi</strong> salvestab nähtava loendi JSON- või CSV-vormingus või Chrome'i võrgulogi HAR-failina."
+    "message": "<strong>Laadi nähtavad alla</strong> salvestab praegu nähtavad ressursid (aktiivne kategooria + otsing + filtrid) ZIP-failina; kui filtrid on aktiivsed, muutub nupu nimeks <em>Laadi filtreeritud alla (N)</em>. Hoia kursorit mis tahes allalaadimisnupu kohal, et enne klõpsamist näha arhiivi hinnangulist suurust. <strong>Laadi valitud alla</strong> laadib alla ainult märgitud üksused. <strong>Laadi kõik alla</strong> salvestab iga avastatud ressursi kaustastruktuuriga ZIP-faili. Ebaõnnestunud allalaadimised märgitakse ja neid saab ühe klõpsuga uuesti proovida teatisest, üksuse hoiatusikoonilt või kontekstimenüüst. <strong>Ekspordi</strong> salvestab nähtava loendi JSON- või CSV-vormingus või Chrome'i võrgulogi HAR-failina."
   },
   "guideSecLightboxContent": {
     "message": "Suuminupp avab meedia täissuuruses valguskastis, kus saate panoraamida lohistades, suumida hiireratta, ekraaninuppude või klaviatuuriga (<kbd>+</kbd>/<kbd>-</kbd> suumimiseks, <kbd>0</kbd> lähtestamiseks, <kbd>Esc</kbd> sulgemiseks)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Kategooria <strong>Tekst</strong> on lehe reaalajas loetav koopia. See jäädvustab kõik teksti sisaldavad elemendid – pealkirjad, lõigud, loendiüksused, nupud, <code>div</code>/<code>span</code> ja palju muud – DOM-i järjekorras ning jätkab skannimist, kui <strong>Reaalaeg</strong> on sisse lülitatud.</p><p>Kast <strong>Päring</strong> töötab nelja režiimiga, mida valid selle kõrval olevast rippmenüüst: <strong>Sisaldab</strong> ja <strong>Regex</strong> filtreerivad juba jäädvustatud teksti, samas kui <strong>CSS-valija</strong> ja <strong>XPath</strong> käivitatakse reaalajas lehel, et jõuda DOM-is ükskõik milleni. XPath aktsepteerib ka avaldisi, mis tagastavad elementide asemel väärtuse, näiteks <code>count(//a)</code> või <code>//@href</code>. Kõik, mida leht vigase päringu kohta ütleb, kuvatakse kasti kõrval. <strong>Element</strong> kitsendab tulemuse ühele märgendile, näidates iga lehelt leitud märgendi arvu. Päringukasti tühjendamine (või nupu <strong>Tühjenda</strong> vajutamine) viib sind tagasi vaatesse <em>Kõik elemendid</em> ja jäädvustab lehe uuesti – rippmenüüd ei pea kunagi käsitsi lähtestama.</p><p><strong>Lugemine</strong> peidab sildid, märkeruudud ja asukohamärgid, nii et voogu saab lugeda nagu dokumenti. Tabelid salvestavad hetktõmmiste piiratud ajaloo, nii et dünaamilised (SPA) tabelid ei lähe kunagi kaduma. Vajuta tabelis nuppu <strong>Kuva kõik read</strong>, et liita kõik hetktõmmised üheks duplikaatideta vaateks – just seda sisaldab eksport. Ekspordi <strong>TXT</strong> (loetav leht), <strong>MD</strong> (Markdown, tabelid kaasa arvatud) või tabelid CSV-, HTML- või tõelise mitmelehelise <strong>XLSX</strong>-töövihikuna. Märgitud üksused on ülimuslikud; muidu eksporditakse kõik hetkel nähtav.</p>"
+    "message": "<p>Kategooria <strong>Tekst</strong> on lehe elav ja loetav koopia: pealkirjad, lõigud, loendid ja lingid lehe järjekorras, mida värskendatakse seni, kuni <strong>Otse</strong> on sees. Rea kopeerimiseks vii kursor selle kohale või kasuta kõige kuvatu jaoks nuppe <strong>Kopeeri tekst</strong>, <strong>Markdown</strong> ja <strong>TXT</strong>.</p><p>Vaates <strong>Tabelid</strong> on iga lehe tabel kaart eelvaate ning oma nuppudega <strong>Excel</strong>, <strong>CSV</strong> ja <strong>Kopeeri</strong>; <strong>Kõik tabelid Excelisse</strong> paneb need ühte töövihikusse, iga tabeli eraldi lehele. Muutuvad tabelid säilitavad hetktõmmiste ajaloo ja <strong>Kuva kõik read</strong> liidab need üheks korduvateta tabeliks – täpselt see, mis ekspordis on.</p><p>Vasakpoolsed kastid sorteerivad lehe elemenditüübi järgi – kogu lehe tekst, iga pealkirjatase, lõigud, lingid, loendi üksused, nupud, kood ja muu – igaühel arv ja esimene rida; vali üks, et näha, kopeerida või eksportida ainult seda. Otsingukast filtreerib kirjutamise ajal ja selle kõrval olev menüü muudab selle regulaaravaldiseks, <strong>CSS-valijaks</strong> või <strong>XPath</strong>-avaldiseks (ka väärtust tagastavad avaldised nagu <code>count(//a)</code> või <code>//@href</code>), mis käivitatakse elaval lehel; kast <strong>Oma päring</strong> teeb sama. See, mida leht vigase päringu kohta ütleb, kuvatakse kastis.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML ja muud subtiitrifailid – sealhulgas <code>&lt;track&gt;</code>-allikad – jõuavad dokumentidega segamise asemel oma vahekaardile <strong>Subtiitrid</strong>."
@@ -1270,7 +1019,7 @@
     "message": "Värv kopeeriti lõikelauale"
   },
   "toastProgressCapturing": {
-    "message": "Kogu lehe jäädvustamine... $percent$%",
+    "message": "Kogu lehe jäädvustamine… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Pildi kokkuliitmine..."
+    "message": "Pildi kokkuliitmine…"
   },
   "modalExportTitle": {
     "message": "Kogu lehe ekraanipilt on valmis"
@@ -1302,7 +1051,7 @@
     "message": "Kopeeri lõikelauale"
   },
   "btnExportGenerating": {
-    "message": "Loomine..."
+    "message": "Loomine…"
   },
   "toastPdfGenerated": {
     "message": "PDF-dokument salvestati."
@@ -1317,13 +1066,10 @@
     "message": "Eelvaade:"
   },
   "toastRecGeneratingGif": {
-    "message": "GIF-i loomine, palun oota..."
+    "message": "GIF-i loomine, palun oota…"
   },
   "settingGifResolution": {
     "message": "GIF-i vaikeeraldusvõime"
-  },
-  "optGifOriginal": {
-    "message": "Originaal (1:1 algne eraldusvõime — täielik 3K/4K, ilma vähendamiseta)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (maks 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "Ekraani salvestamine (video ja GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Salvesta mis tahes ekraaniala MP4, WebM või animeeritud GIF-ina. GIF-salvestuste jaoks on 1:1 algne eraldusvõime ning 1080p, 720p ja 480p profiilid koos reaalajas hinnatud failisuurustega. GIF-i maksimaalne salvestuse kestus on 1 minut (60 s), et brauser töötaks optimaalselt."
+    "message": "Salvestage mis tahes ekraaniala MP4-, WebM- või animeeritud GIF-vormingus. GIF-salvestustel on profiilid 1080p, 720p ja 480p ning reaalajas suuruse hinnang. GIF-salvestus võib kesta kuni 1 minuti (60 s)."
   },
   "msgGifMaxDurationReached": {
-    "message": "GIF-i maksimaalne kestus 1 minut (60 s) on täis. GIF-i loomine..."
+    "message": "GIF-i maksimaalne kestus 1 minut (60 s) on täis. GIF-i loomine…"
   },
   "labelGifMaxDuration": {
     "message": "Maks 1 min (60 s)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — esitlus (1 kaader sekundis, minimaalne maht)"
-  },
-  "popupRightClickHint": {
-    "message": "Paremklõpsa mis tahes veebilehel, et avada ekraanisalvestus (video/GIF) ja värvivalija."
   },
   "toastElementZappedAd": {
     "message": "Reklaam / iframe on selleks seansiks peidetud.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF-i eraldusvõime: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF-i eraldusvõime: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Aktiivset vahekaarti ei leitud.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Klõpsake siin ja valige seejärel lehelt mis tahes värv"
+  },
+  "welcomeTitle": {
+    "message": "Source Download on valmis"
+  },
+  "welcomePrivacy": {
+    "message": "Kõik töötab teie arvutis. Kontot pole vaja, jälgimist pole, meile ei saadeta midagi."
+  },
+  "welcomeHelp": {
+    "message": "Midagi ei tööta? Andke meile GitHubis teada"
+  },
+  "ratingBannerIssue": {
+    "message": "Midagi on valesti?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF jõudis 200 MB-ni. Salvestatakse seni salvestatu…"
+  },
+  "btnPopupFullPage": {
+    "message": "Kogu lehe ekraanipilt"
+  },
+  "toastRecWrongTab": {
+    "message": "Selle lehe ala salvestamiseks valige jagamisaknas „See vahekaart“."
+  },
+  "popupCaptureTitle": {
+    "message": "Jäädvusta see leht"
+  },
+  "popupTileOffline": {
+    "message": "Salvesta leht võrguühenduseta kasutamiseks"
+  },
+  "popupTileGuide": {
+    "message": "Kuidas see töötab"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Failid, pildid ja tabelid"
+  },
+  "popupDevtoolsHint": {
+    "message": "Ava DevTools ja vali vahekaart Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome ei luba sellel lehel laiendusi. Tööriistade kasutamiseks ava mõni veebisait."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Paremklõps mis tahes lehel"
+  },
+  "welcomeCardMenuText": {
+    "message": "Kogu lehe või piirkonna ekraanipildid, piirkonna salvestus, värvivalija ja võrguühenduseta koopia – just seal, kus sa oled."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Või kasuta tööriistariba nuppu"
+  },
+  "welcomeCardPopupText": {
+    "message": "Klõpsa Chrome’i tööriistaribal pusletüki ikooni ja kinnita Source Download – tööriistad on alati ühe klõpsu kaugusel."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Vajuta F12, et näha kõike lehel"
+  },
+  "welcomeCardPanelText": {
+    "message": "Vali DevToolsis vahekaart Source Download. Seal on iga pilt, video, font ja fail, mille leht laadis – vaata eelvaadet, filtreeri ja salvesta ZIP-failina. Lehe tabelid ekspordid Excelisse."
+  },
+  "welcomeLead": {
+    "message": "Kolm viisi saada mis tahes veebilehelt see, mida vajad."
+  },
+  "btnDownloadOptions": {
+    "message": "Rohkem allalaadimisvalikuid"
+  },
+  "btnMore": {
+    "message": "Rohkem toiminguid"
+  },
+  "btnFilters": {
+    "message": "Filtrid"
+  },
+  "tabsShowEmpty": {
+    "message": "Näita tühje"
+  },
+  "tabsHideEmpty": {
+    "message": "Peida tühjad"
+  },
+  "textSegText": {
+    "message": "Tekst"
+  },
+  "textSegTables": {
+    "message": "Tabelid"
+  },
+  "textLive": {
+    "message": "Otse"
+  },
+  "textPaused": {
+    "message": "Peatatud"
+  },
+  "textLivePauseTitle": {
+    "message": "Otse: leht loetakse iga muutuse järel uuesti. Peatamiseks klõpsa."
+  },
+  "textLiveResumeTitle": {
+    "message": "Peatatud. Klõpsa, et lehte jälle otse jälgida."
+  },
+  "textSearchText": {
+    "message": "Otsi lehe tekstist"
+  },
+  "textExportAllXlsx": {
+    "message": "Kõik tabelid Excelisse"
+  },
+  "textNoTables": {
+    "message": "Sellel lehel pole veel tabeleid. Need ilmuvad siia kohe, kui leht mõne kuvab."
+  },
+  "textTable": {
+    "message": "Tabel"
+  },
+  "textCopy": {
+    "message": "Kopeeri"
+  },
+  "textShowLess": {
+    "message": "Näita vähem"
+  },
+  "areaHintSelect": {
+    "message": "Lohista ala valimiseks"
+  },
+  "areaHintCopy": {
+    "message": "kopeeri"
+  },
+  "areaHintSave": {
+    "message": "salvesta"
+  },
+  "areaHintExit": {
+    "message": "välju"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Kopeeri automaatselt"
+  },
+  "areaAutoCopyOn": {
+    "message": "Automaatne kopeerimine on sees"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Vabasta valik ja see on lõikelaual."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Lülita välja"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Kopeeriti lõikelauale (automaatne kopeerimine on sees)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "See leht ei luba lõikelauale kopeerida. Kasuta selle asemel allalaadimist."
+  },
+  "textKindAll": {
+    "message": "Kogu lehe tekst"
+  },
+  "textKindHeading": {
+    "message": "Pealkiri"
+  },
+  "textKindP": {
+    "message": "Lõigud"
+  },
+  "textKindA": {
+    "message": "Lingid"
+  },
+  "textKindLi": {
+    "message": "Loendi üksused"
+  },
+  "textKindButton": {
+    "message": "Nupud"
+  },
+  "textKindLabel": {
+    "message": "Sildid ja pildiallkirjad"
+  },
+  "textKindSpan": {
+    "message": "Reasisene tekst"
+  },
+  "textKindDiv": {
+    "message": "Muud plokid"
+  },
+  "textKindCell": {
+    "message": "Tabeli lahtrid"
+  },
+  "textKindCode": {
+    "message": "Kood"
+  },
+  "textKindQuote": {
+    "message": "Tsitaadid"
+  },
+  "textCustomQuery": {
+    "message": "Oma päring"
+  },
+  "textCustomQueryHint": {
+    "message": "CSS-valija või XPath elaval lehel"
+  },
+  "menuSettings": {
+    "message": "Seaded"
+  },
+  "settingsSave": {
+    "message": "Salvesta"
+  },
+  "settingsReset": {
+    "message": "Taasta vaikeväärtused"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Kopeeri ala ekraanipildid automaatselt"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Kui vabastad valiku, läheb pilt otse lõikelauale. Kuni see on sees, näitab lehe ülaosa vihjeriba seda iga kord."
   }
 }

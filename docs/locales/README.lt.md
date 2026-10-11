@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Naršykite, tikrinkite ir sklandžiai atsisiųskite kaip ZIP kiekvieną puslapio įkeliamą interneto išteklių.</em><br>
-  Source Download – kiekvienas puslapio išteklius vienu spustelėjimu
+  <em>Išsaugokite tinklalapio paveikslėlius, piktogramas ir failus po vieną arba ZIP archyve. Viso puslapio kopija ir srities įrašas.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Tai mano **pirmasis atvirojo kodo projektas**, todėl jūsų atsiliepimai man la
 
 ## Vizualinė ekskursija ir pagrindiniai moduliai
 
-Susipažinkite su didelės raiškos sąsajos moduliais, integruotais tiesiai į Google Chrome DevTools, dešiniojo pelės mygtuko meniu ir įrankių juostos iškylantįjį langą.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Fiksuokite ir atsisiųskite viską internete
-> **★ DEVTOOLS INŽINERIJOS RINKINYS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Kiekvienas puslapio failas viename skydelyje"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Fiksuokite ir atsisiųskite viską internete">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Dešinysis spustelėjimas. Užfiksuota."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Pažymėkite sritį. Ji jau iškarpinėje."></p>
 
-### 2. Įrašykite bet kurią ekrano sritį kaip vaizdo įrašą ir GIF
-> **★ SRITIES EKRANO ĮRAŠYMAS · MP4, WEBM IR GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Puslapio tekstas ir lentelės, surūšiuoti už jus"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Įrašykite bet kurią ekrano sritį kaip vaizdo įrašą ir GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Visi puslapiai, įrašai, kopijos neprisijungus"></p>
 
 ---
 
-### 3. Sklandi viso puslapio slenkanti ekrano kopija
-> **★ IDEALIAI TIKSLIOS EKRANO KOPIJOS · VISAS PUSLAPIS IR SRITIS**
+Source Download – tai įrankių rinkinys žiniatinklio turiniui išsaugoti. Jis prideda atskirą skirtuką prie „Chrome“ kūrėjo įrankių. Ten visas svetainės įkeltas turinys surūšiuotas pagal kategorijas. Galite jį peržiūrėti ir pasilikti tik tai, ko reikia.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Sklandi viso puslapio slenkanti ekrano kopija">
-</p>
+## Pagrindinės funkcijos
+- Tvarkinga galerija: nuotraukos, piktogramos ir šriftai rodomi atskiruose skirtukuose su gyvais skaitikliais ir paieškos laukeliu.
+- Tikslūs filtrai: rodykite tik elementus, platesnius už nurodytą minimumą (pvz., 1200 px), arba paslėpkite dublikatus.
+- Tikra peržiūra: didinkite grafiką ir leiskite mediją. Taip pat galite pamatyti šrifto pavyzdį ar kodą su sintaksės paryškinimu.
+- Vienas archyvas: pažymėkite, ko norite, ir gaukite vieną ZIP su tvarkinga aplankų struktūra. Nepavykusius elementus pakartosite vienu spustelėjimu.
+- Viso puslapio kopija: viskas slenkama ir sujungiama į PNG, JPG arba PDF. Galite pasirinkti ir vieną sritį.
+- Srities įrašas: ekrano dalį paverskite GIF, MP4 arba WebM klipu.
+- Iš lentelės į skaičiuoklę: eksportuokite gyvas lenteles į „Excel“ arba CSV kartu su ankstesnėmis atsinaujinančių lentelių būsenomis.
+- Neprisijungus pasiekiama kopija: išsaugokite svetainę kaip vieną HTML dokumentą, kuris atsidaro be interneto.
+- Spalvų parinkiklis: pasirinkite bet kurią ekrano spalvą ir nukopijuokite ją kaip HEX, RGB arba HSL.
 
----
+## Kaip pradėti
+1. Atidarykite svetainę, su kuria norite dirbti.
+2. Paspauskite F12 (Mac kompiuteryje Option + Command + I) ir pasirinkite skirtuką Source Download. Jei jo nematote, spustelėkite » skirtukų juostos gale.
+3. Kol vyksta įkėlimas, laikykite skydelį atidarytą, kad nieko nepraleistumėte.
 
-### 4. Gyvos DOM lentelės į Excel (XLSX) ir CSV
-> **★ DUOMENŲ IŠTRAUKIMAS IR ELEMENTŲ SLĖPIMAS**
-
-<sub>Ištraukite dinamines lenteles su jų momentinių nuotraukų istorija į kelių lapų XLSX arba CSV failus.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Gyvos DOM lentelės į Excel (XLSX) ir CSV">
-</p>
-
----
-
-### 5. Spalvų parinkiklis ekrane ir kodo formatuoklis
-> **★ KŪRĖJO IR DIZAINERIO DARBASTALIS**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Spalvų parinkiklis ekrane ir kodo formatuoklis">
-</p>
-
----
-
-Source Download yra Chrome DevTools skydelis, kuris aptinka, tikrina ir atsisiunčia kiekvieną tinklalapio įkeliamą išteklių. Ar jums reikia medijos failų, kūrėjų scenarijų, stilių išteklių ar tinklo atsakų – galite juos išsaugoti kaip atskirus failus arba kaip tvarkingą ZIP su aplankų struktūra.
-
-Sukurta nuo nulio be jokių trečiųjų šalių priklausomybių: ZIP rašyklė, XLSX kūrimo įrankis, HLS jungiklis ir kodo formatuokliai – visa tai ranka parašytas grynasis JavaScript. Jokių karkasų, jokio kūrimo etapo, jokios telemetrijos. Viskas veikia vietoje, jūsų naršyklėje.
-
-## Kas naujo v1.16.0
-- Visapusiška daugiakalbė parama 54 kalbomis su pilna DevTools ir parduotuvės lokalizacija.
-- 17 specialių išteklių kategorijų su gyvu skaičiavimu apima visą mediją, kodą, API, saugyklą ir dokumentus.
-- Viso puslapio sujungtos ekrano kopijos ir pasirinktos srities fiksavimas su išmaniuoju prilipusių antraščių slėpimu.
-- Ekrano vaizdo įrašymas (MP4) ir lengvas animuotų GIF eksporto variklis be kraštų išsiliejimo.
-- Gyvas DOM lentelių ištraukimas į kelių lapų Microsoft Excel (.XLSX) ir CSV su DOM elementų slėpimo įrankiu.
-- Ekrano spalvų parinkiklis su momentiniu hex/rgb/hsl kopijavimu ir integruotu kodo gražinimu.
-- Pagerintas DevTools sniferio stabilumas ir didelio lygiagretumo tinklo konvejeris.
-
-## Kodėl jums to reikia
-Ekrano kopijos neužtenka. Gaukite tikrus failus – pilnos skiriamosios gebos vaizdus, tikrus vaizdo srautus, originalius stilių lapus ir scenarijus – o ne sulygintą paveikslėlį.
-
-DevTools atrodo pernelyg sudėtingas. Source Download pateikia tuos pačius tinklo duomenis švarioje, suskirstytoje galerijoje su paieška, filtrais ir atsisiuntimu vienu spustelėjimu.
-
-SPA viską paslepia. Dinaminės programos kuria išteklius ir API iškvietimus, kurių niekada nematote puslapio šaltinyje. Source Download užfiksuoja juos jiems vykstant, įskaitant tarpines būsenas.
-
-## Ką jis daro
-### Aptinka viską
-- Sujungia tinklo fiksavimą (HAR + gyvos užklausos) su DOM nuskaitymu, kad rastų visus vaizdinius ir struktūrinius elementus, įskaitant medijos failus, scenarijus, stilių lapus ir įterptus kadrus.
-- **Supranta CSS:** ištekliai url(...) ir @import taisyklėse sekami rekursyviai, todėl randami net šriftai, paslėpti importuotuose stilių lapuose.
-- **Turinio šnipinėjimas:** nežinomi failai perskaitomi per kelis baitus ir perkeliami į tikrąją failo tipo kategoriją.
-- **17 kategorijų su gyvu skaičiavimu:** užfiksuoti ištekliai tvarkingai išdėstomi atskirose skirtukuose – medija, kodas, duomenys, API iškvietimai, slapukai, saugykla ir dokumentai.
-
-### Filtruokite, ieškokite, tikrinkite
-- Regex paieška pagal failų pavadinimus, URL, MIME tipus, alternatyvųjį tekstą ir net failų turinį.
-- **Filtrai pagal kategoriją:** min./maks. dydis, o medijai – ir min./maks. plotis bei aukštis, pavyzdžiui, „tik pagrindiniai vaizdai ≥ 1200px“. API iškvietimai filtruojami pagal HTTP metodą ir užklausos tipą.
-- Sąrašo arba tinklelio rodinys, rūšiuojamas, su gyva miniatiūrų siena.
-- **Kelių skirtukų tikrintuvė su tikromis peržiūromis:** keičiamo mastelio šviesos dėžė, vaizdo ir garso atkūrimas, gyvas šrifto pavyzdys, SVG peržiūros priemonė, sintaksės paryškinimu paženklintas kodas su eilučių numeriais ir Gražinti jungiklis.
-- **API padalytas rodinys:** kairėje – atsakas, dešinėje – metodas, būsena, užklausos parametrai ir užklausos turinys.
-
-### Atsisiųskite tinkamai
-- Atsisiųsti pasirinktą – tik jūsų pažymėti failai.
-- Atsisiųsti peržiūrą – viskas, kas matoma pritaikius dabartinius filtrus ir paiešką.
-- Atsisiųsti viską – kiekvienas užfiksuotas išteklius ZIP su aplankų struktūra ir automatiniu dublikatų šalinimu.
-- Paketiniai atsisiuntimai vykdomi ribotu lygiagretumu su gyva eigos juosta; nepavykę bandomi iš naujo automatiškai ir iš kontekstinio meniu.
-
-### HLS ir sudėtingi vaizdo įrašai
-- Srautai, kurių naršyklė negali atkurti savaime (HLS .m3u8, DASH .mpd, nežinomi kodekai), rodo išmanų atsarginį variantą vietoj juodo grotuvo.
-- Sujungti segmentus ir atsisiųsti paverčia HLS srautą vienu atkuriamu failu tiesiog skydelyje.
-
-### Teksto darbastalis (SPA turinio įrankių rinkinys)
-- **Teksto skirtukas yra gyvas turinio peržiūros įrankis:** kiekvienas elementas su tekstu – antraštės, pastraipos, sąrašo elementai, mygtukai, div, span – fiksuojamas DOM tvarka.
-- Dinaminės lentelės saugo ribotą momentinių nuotraukų istoriją (pvz., „8 momentinės nuotraukos · 124 unikalios eilutės“), todėl automatiškai atsinaujinančios skydelių lentelės niekada nepraranda tarpinių būsenų.
-- Eksportuokite kaip Markdown arba lenteles kaip CSV, HTML ar tikrą kelių lapų XLSX darbaknygę, sukurtą mūsų pačių ranka parašyta XLSX rašykle.
-
-## Kaip naudoti
-1. Įdiekite Source Download, tada bet kuriame puslapyje paspauskite F12.
-2. DevTools įrankių juostoje spustelėkite skirtuką Source Download (Chrome neleidžia plėtiniams automatiškai atverti DevTools – todėl jis yra ten).
-3. Naršykite kategorijų skirtukus, ieškokite, filtruokite, tikrinkite bet ką dešiniajame skydelyje.
-4. Pažymėkite norimus failus ir spustelėkite Atsisiųsti pasirinktą, Atsisiųsti peržiūrą arba Atsisiųsti viską.
-5. Laikykite DevTools skydelį atvertą, kol įkeliamas puslapis, kad būtų užfiksuotos visos tinklo užklausos.
-
-## Realūs naudojimo atvejai
-- **Konkurentų analizė:** surinkite bet kurio kanalo vaizdo įrašų miniatiūras – su minimalaus pločio filtru – į vieną aplanką.
-- **Svetainių duomenų rinkimas be kodo:** stebėkite SPA API iškvietimus, atfiltruokite reikiamą galinį tašką, atsisiųskite tikslius jo JSON atsakus.
-- **Tipografijos analizė:** sužinokite, kokį šriftą svetainė iš tikrųjų naudoja, ir gaukite tikrus šrifto failus.
-- **Klaidų atkūrimas:** išsaugokite tikslias CSS/JS versijas, kurios buvo išleistos, kai įvyko klaida.
-- **Skydelio duomenų eksportas:** eksportuokite automatiškai atsinaujinančią lentelę į kelių lapų Excel darbaknygę, įskaitant istoriją.
-- **QA testavimas:** patikrinkite, kuris vaizdo/garso variantas pateikiamas kiekvienoje A/B konfigūracijoje.
+Ekrano kopijos, įrašymas ir spalvų parinkiklis pasiekiami ir dešiniojo spustelėjimo meniu bei plėtinio mygtuke.
 
 ## Privatumas
-- Veikia 100% vietoje. Jokio serverio, jokios analitikos, jokie duomenys nepalieka jūsų įrenginio.
-- **Prašoma tik to, ko reikia:** saugykla (jūsų nuostatos), mainų sritis (URL ir spalvų kopijavimas), atsisiuntimai (failų išsaugojimas per Chrome), kontekstiniai meniu, scenarijų vykdymas ir prieiga prie šeimininkų (puslapiams nuskaityti ir failų turiniui gauti).
-- Failai išsaugomi per įprastą Chrome atsisiuntimo eigą – jokių slaptų atsisiuntimų.
 
-## Reikalavimai
-- Chrome 116 ar naujesnė (Manifest V3).
-- Geriausi rezultatai pasiekiami, kai skydelis atvertas įkeliant puslapį, nes būtent tada vyksta tinklo fiksavimas.
+Viskas veikia jūsų kompiuteryje. Nėra paskyros ir analizės, o niekas iš išsaugoto nesiunčiama kūrėjui. Išsaugoti elementai per „Chrome“ patenka į įprastą aplanką „Atsisiuntimai“.
 
-Source Download yra atvirojo kodo projektas – atsiliepimai, idėjos ir pull request'ai laukiami.
+Plėtiniui reikia prieigos prie lankomų svetainių, kad rastų jų išteklius ir atliktų savo funkcijas.
 
-Susisiekite „LinkedIn“: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Gerbkite autorių teises ir naudojimo sąlygas ir saugokite tik tą turinį, kurį turite teisę naudoti.
+
+## Kas nauja 1.17 versijoje
+- Gerokai lengvesnis: niekas neveikia, kol nepanaudojate funkcijos.
+- Kopijose neprisijungus dabar yra visos nuotraukos, fonai ir šriftai.
+- GIF įrašas neviršija atminties net ilguose HD klipuose.
+- Naujas pasveikinimo ekranas ir nuorodos plėtinio mygtuke.
+
+Klausimai ar problemos: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

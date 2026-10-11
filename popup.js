@@ -1,318 +1,101 @@
 /* Source Download — toolbar popup.
  * Author: Turan Burak Yeşilyurt — https://www.linkedin.com/in/turan-burak-yesilyurt/
+ *
+ * A launcher for the capture tools of the current page. File lists and
+ * counts live in the DevTools panel, which sees every network request.
  */
 'use strict';
-
-const CAT_KEY_MAP = {
-  api: 'catApi',
-  image: 'catImages',
-  svg: 'catSvg',
-  video: 'catVideos',
-  audio: 'catAudio',
-  caption: 'catCaptions',
-  css: 'catCss',
-  js: 'catJs',
-  sourcemap: 'catSourcemaps',
-  font: 'catFonts',
-  document: 'catDocuments',
-  json: 'catJson',
-  wasm: 'catWasm',
-  manifest: 'catManifests',
-  other: 'catOther',
-};
-
-const CATS = [
-  { key: 'api', label: 'API' },
-  { key: 'image', label: 'Images' },
-  { key: 'svg', label: 'SVG' },
-  { key: 'video', label: 'Videos' },
-  { key: 'audio', label: 'Audio' },
-  { key: 'caption', label: 'Captions' },
-  { key: 'css', label: 'CSS' },
-  { key: 'js', label: 'JS' },
-  { key: 'sourcemap', label: 'Source maps' },
-  { key: 'font', label: 'Fonts' },
-  { key: 'document', label: 'Documents' },
-  { key: 'json', label: 'JSON' },
-  { key: 'wasm', label: 'WASM' },
-  { key: 'manifest', label: 'Manifests' },
-  { key: 'other', label: 'Other' },
-];
-
-const state = {
-  tracking: {},
-  counts: {},
-  badgeCount: 0,
-};
-for (const c of CATS) state.tracking[c.key] = true;
 
 let currentLocale = 'auto';
 let currentMessages = null;
 
-const SUPPORTED_LOCALES = ["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt_PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
-
-function resolveLocale(code) {
-  if (!code || code === 'auto') {
-    const browserLang = (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getUILanguage)
-      ? chrome.i18n.getUILanguage()
-      : (typeof navigator !== 'undefined' ? navigator.language : 'en');
-    code = browserLang;
-  }
-  const raw = String(code).trim();
-  const lower = raw.toLowerCase().replace('-', '_');
-
-  if (SUPPORTED_LOCALES.includes(raw)) return raw;
-  for (const loc of SUPPORTED_LOCALES) {
-    if (loc.toLowerCase() === lower) return loc;
-  }
-
-  if (lower.startsWith('zh_tw') || lower.startsWith('zh_hk') || lower.startsWith('zh_mo')) return 'zh_TW';
-  if (lower.startsWith('zh')) return 'zh_CN';
-  if (lower.startsWith('pt_pt')) return 'pt_PT';
-  if (lower.startsWith('pt')) return 'pt_BR';
-  if (lower.startsWith('es_419')) return 'es_419';
-  if (lower.startsWith('es')) return 'es';
-  if (lower.startsWith('en_gb')) return 'en_GB';
-  if (lower.startsWith('en_us')) return 'en_US';
-  if (lower.startsWith('en')) return 'en';
-
-  const prefix = lower.split('_')[0];
-  for (const loc of SUPPORTED_LOCALES) {
-    if (loc.toLowerCase() === prefix) return loc;
-  }
-  return 'en';
-}
-
 function t(key, fallback) {
-  if (currentMessages && currentMessages[key] != null) {
-    return currentMessages[key];
-  }
-  try {
-    if (typeof chrome !== 'undefined' && chrome.i18n && chrome.i18n.getMessage) {
-      const m = chrome.i18n.getMessage(key);
-      if (m) return m;
-    }
-  } catch { /* noop */ }
+  if (currentMessages && currentMessages[key] != null) return currentMessages[key];
   return fallback !== undefined ? fallback : '';
 }
 
-function setPopupLanguage(lang) {
+async function setPopupLanguage(lang) {
   currentLocale = lang || 'auto';
-  const resolved = resolveLocale(currentLocale);
-  const dict = (typeof globalScope !== 'undefined' && globalScope.SourceDownloadI18n) || (typeof window !== 'undefined' && window.SourceDownloadI18n);
-  if (dict && dict[resolved]) {
-    currentMessages = dict[resolved];
-  }
-
-  const isRtl = ['ar', 'he', 'fa'].includes(resolved);
-  if (document.documentElement) {
-    document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
-  }
+  const { locale: resolved, messages } = await SourceDownloadLocale.loadMessages(currentLocale);
+  currentMessages = messages;
+  document.documentElement.setAttribute('dir', SourceDownloadLocale.RTL.includes(resolved) ? 'rtl' : 'ltr');
+  document.documentElement.lang = resolved.replace('_', '-');
 
   const langSelect = document.getElementById('popup-lang');
-  if (langSelect && langSelect.value !== currentLocale) {
-    langSelect.value = currentLocale;
-  }
+  if (langSelect && langSelect.value !== currentLocale) langSelect.value = currentLocale;
 
   document.querySelectorAll('[data-i18n]').forEach((el) => {
-    const k = el.getAttribute('data-i18n');
-    const msg = t(k);
-    if (msg) el.textContent = msg;
+    const msg = t(el.getAttribute('data-i18n'));
+    if (msg) SourceDownloadA11y.setText(el, msg);
   });
-
-  document.querySelectorAll('[data-i18n-html]').forEach((el) => {
-    const k = el.getAttribute('data-i18n-html');
-    const msg = t(k);
-    if (msg) el.innerHTML = msg;
-  });
-
   document.querySelectorAll('[data-i18n-title]').forEach((el) => {
-    const k = el.getAttribute('data-i18n-title');
-    const msg = t(k);
+    const msg = t(el.getAttribute('data-i18n-title'));
     if (msg) el.title = msg;
   });
-
-  renderList();
-}
-if (typeof window !== 'undefined') {
-  window.setPopupLanguage = setPopupLanguage;
+  SourceDownloadA11y.apply(document);
 }
 
-function allEnabled() {
-  return CATS.every((c) => !!state.tracking[c.key]);
-}
+// Capture tools run in the page; the popup only starts them and closes.
+const ACTIONS = {
+  'popup-btn-full-page': 'captureFullPage',
+  'popup-btn-area-screenshot': 'triggerAreaCapture',
+  'popup-btn-record-area': 'triggerAreaVideoRecord',
+  'popup-btn-pick-color': 'triggerColorPicker',
+  'popup-btn-offline': 'capturePageArchive',
+};
 
-function sendTracking() {
-  if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
-    chrome.runtime.sendMessage({ type: 'setTracking', tracking: state.tracking }, () => {
-      chrome.runtime.sendMessage({ type: 'getState' }, (res) => {
-        if (res) {
-          state.badgeCount = res.badgeCount || 0;
-          updateBadgePreview();
-        }
-      });
-    });
-  }
-}
+const RESTRICTED = /^(chrome|edge|about|devtools|chrome-extension|view-source|file):|chromewebstore\.google\.com|chrome\.google\.com\/webstore/i;
 
-function renderList() {
-  const list = document.getElementById('tracking-list');
-  if (!list) return;
-  list.innerHTML = '';
-
-  // Master toggle: on = track every category, off = none.
-  const master = document.createElement('div');
-  master.className = 'tracking-row tracking-row--master';
-  const masterLabel = document.createElement('span');
-  masterLabel.className = 'tracking-row__label';
-  masterLabel.textContent = t('popupTrackAll', 'Track all categories');
-  const masterCount = document.createElement('span');
-  masterCount.className = 'tracking-row__count';
-  masterCount.textContent = state.counts.all || 0;
-  const masterToggle = document.createElement('button');
-  masterToggle.type = 'button';
-  masterToggle.className = 'toggle' + (allEnabled() ? ' toggle--on' : '');
-  masterToggle.setAttribute('role', 'switch');
-  masterToggle.setAttribute('aria-checked', String(allEnabled()));
-  masterToggle.setAttribute('aria-label', t('popupTrackAll', 'Track all categories'));
-  masterToggle.addEventListener('click', () => {
-    const target = !allEnabled();
-    for (const c of CATS) state.tracking[c.key] = target;
-    sendTracking();
-    renderList();
-  });
-  master.appendChild(masterLabel);
-  master.appendChild(masterCount);
-  master.appendChild(masterToggle);
-  list.appendChild(master);
-
-  for (const c of CATS) {
-    const row = document.createElement('div');
-    row.className = 'tracking-row';
-    const label = document.createElement('span');
-    label.className = 'tracking-row__label';
-    const msgKey = CAT_KEY_MAP[c.key];
-    const catTitle = msgKey ? t(msgKey, c.label) : c.label;
-    label.textContent = catTitle;
-    const count = document.createElement('span');
-    count.className = 'tracking-row__count';
-    count.textContent = state.counts[c.key] || 0;
-    const toggle = document.createElement('button');
-    toggle.type = 'button';
-    toggle.className = 'toggle' + (state.tracking[c.key] ? ' toggle--on' : '');
-    toggle.setAttribute('role', 'switch');
-    toggle.setAttribute('aria-checked', String(!!state.tracking[c.key]));
-    toggle.setAttribute('aria-label', (t('popupTrackAll', 'Track') + ' ' + catTitle));
-    toggle.addEventListener('click', () => {
-      state.tracking[c.key] = !state.tracking[c.key];
-      sendTracking();
-      renderList();
-    });
-    row.appendChild(label);
-    row.appendChild(count);
-    row.appendChild(toggle);
-    list.appendChild(row);
-  }
-  updateBadgePreview();
-}
-
-function updateCounts() {
-  const rows = document.querySelectorAll('.tracking-row__count');
-  const cats = [{ key: 'all' }].concat(CATS);
-  cats.forEach((t, i) => {
-    if (rows[i]) rows[i].textContent = state.counts[t.key] || 0;
-  });
-  updateBadgePreview();
-}
-
-function updateBadgePreview() {
-  const el = document.getElementById('badge-preview');
-  if (!el) return;
-  const n = state.badgeCount;
-  el.hidden = n === 0;
-  if (n) el.textContent = n > 9999 ? Math.round(n / 1000) + 'K' : String(n);
-}
-
-let refreshTimer = null;
-if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onMessage) {
-  chrome.runtime.onMessage.addListener((msg) => {
-    if (msg && msg.type === 'resourceCounts') {
-      if (refreshTimer) return;
-      refreshTimer = setTimeout(() => {
-        refreshTimer = null;
-        if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
-          chrome.runtime.sendMessage({ type: 'getState' }, (res) => {
-            if (res) {
-              state.counts = res.counts || {};
-              state.badgeCount = res.badgeCount || 0;
-              updateCounts();
-            }
-          });
-        }
-      }, 400);
-    }
-  });
-}
-
-if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
-  chrome.runtime.sendMessage({ type: 'getState' }, (res) => {
-    if (res) {
-      state.tracking = res.tracking || state.tracking;
-      state.counts = res.counts || {};
-      state.badgeCount = res.badgeCount || 0;
-      renderList();
-    }
-  });
-}
-
-// Sync language changes in real-time
-if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.onChanged) {
-  chrome.storage.onChanged.addListener((changes, area) => {
-    if (area === 'local') {
-      const newLang = changes.lang ? changes.lang.newValue : (changes.panelPrefs && changes.panelPrefs.newValue ? changes.panelPrefs.newValue.lang : null);
-      if (newLang && newLang !== currentLocale) {
-        setPopupLanguage(newLang);
-      }
-    }
-  });
+async function markRestrictedPage() {
+  let url = '';
+  try {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    url = (tab && tab.url) || '';
+  } catch { /* noop */ }
+  const restricted = !url || RESTRICTED.test(url);
+  document.getElementById('popup-restricted').hidden = !restricted;
+  for (const id of Object.keys(ACTIONS)) document.getElementById(id).disabled = restricted;
 }
 
 async function initPopup() {
   let savedLang = 'auto';
   try {
-    if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
-      const data = await chrome.storage.local.get({ lang: 'auto', panelPrefs: {} });
-      savedLang = data.lang || (data.panelPrefs && data.panelPrefs.lang) || 'auto';
-    }
+    const data = await chrome.storage.local.get({ lang: 'auto', panelPrefs: {} });
+    savedLang = data.lang || (data.panelPrefs && data.panelPrefs.lang) || 'auto';
   } catch { /* noop */ }
-  setPopupLanguage(savedLang);
+  await setPopupLanguage(savedLang);
 
-  const langSelect = document.getElementById('popup-lang');
-  if (langSelect) {
-    langSelect.addEventListener('change', async (e) => {
-      const newLang = e.target.value;
-      try {
-        if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
-          const data = await chrome.storage.local.get({ panelPrefs: {} });
-          const panelPrefs = data.panelPrefs || {};
-          panelPrefs.lang = newLang;
-          await chrome.storage.local.set({ lang: newLang, panelPrefs });
-        }
-      } catch { /* noop */ }
-      setPopupLanguage(newLang);
+  document.getElementById('popup-lang').addEventListener('change', async (e) => {
+    const newLang = e.target.value;
+    try {
+      const data = await chrome.storage.local.get({ panelPrefs: {} });
+      const panelPrefs = data.panelPrefs || {};
+      panelPrefs.lang = newLang;
+      await chrome.storage.local.set({ lang: newLang, panelPrefs });
+    } catch { /* noop */ }
+    setPopupLanguage(newLang);
+  });
+
+  for (const [id, type] of Object.entries(ACTIONS)) {
+    document.getElementById(id).addEventListener('click', () => {
+      chrome.runtime.sendMessage({ type }, () => void chrome.runtime.lastError);
+      window.close();
     });
   }
+  document.getElementById('popup-btn-guide').addEventListener('click', () => {
+    chrome.tabs.create({ url: chrome.runtime.getURL('welcome.html') });
+    window.close();
+  });
 
-  const btnAreaScreenshot = document.getElementById('popup-btn-area-screenshot');
-  if (btnAreaScreenshot) {
-    btnAreaScreenshot.addEventListener('click', () => {
-      if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
-        chrome.runtime.sendMessage({ type: 'triggerAreaCapture' });
-        window.close();
-      }
-    });
-  }
+  const isMac = /Mac/i.test(navigator.platform || navigator.userAgent);
+  document.getElementById('devtools-keys').textContent = isMac ? '⌥ ⌘ I' : 'F12';
+  try {
+    document.getElementById('popup-version').textContent = 'v' + chrome.runtime.getManifest().version;
+  } catch { /* noop */ }
+  markRestrictedPage();
 }
+
+window.setPopupLanguage = setPopupLanguage;
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initPopup);

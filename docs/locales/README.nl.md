@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Blader door alle webassets die een pagina laadt, inspecteer ze en download ze naadloos als ZIP.</em><br>
-  Source Download — elke asset op een pagina, met één klik binnen bereik
+  <em>Bewaar de afbeeldingen, iconen en bestanden van een webpagina, los of als ZIP. Met screenshots van hele pagina's en gebiedsopname.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Dit is mijn **eerste open-sourceproject**, dus jouw feedback betekent enorm veel
 
 ## Visuele rondleiding en kernmodules
 
-Ontdek de hoogwaardige interfacemodules die rechtstreeks in Google Chrome DevTools, het rechtsklikmenu en de werkbalkpopup zijn ingebouwd.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Leg alles op het web vast en download het
-> **★ DEVTOOLS-ENGINEERINGSUITE · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Elk bestand van de pagina, één paneel verderop"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Leg alles op het web vast en download het">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Rechtsklik. Vastgelegd."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Kies een gebied. Het staat op je klembord."></p>
 
-### 2. Neem elk schermgebied op als video en GIF
-> **★ REGIONALE SCHERMOPNAME · MP4, WEBM EN GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Paginatekst en tabellen, voor je gesorteerd"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Neem elk schermgebied op als video en GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Hele pagina’s, opnames, offline kopieën"></p>
 
 ---
 
-### 3. Naadloze scrollende screenshot van de hele pagina
-> **★ PIXELPERFECTE SCREENSHOTS · VOLLEDIGE PAGINA EN GEBIED**
+Source Download is een set hulpmiddelen om webinhoud vast te leggen. Het voegt een tabblad toe aan Chrome DevTools waarin alles wat een site heeft geladen per categorie wordt gesorteerd. Zo bekijk je alles vooraf en houd je precies wat je nodig hebt.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Naadloze scrollende screenshot van de hele pagina">
-</p>
+## Belangrijkste functies
+- Overzichtelijke galerij: foto's, iconen en lettertypen staan in eigen tabbladen met live tellers en een zoekveld.
+- Nauwkeurige filters: toon alleen items boven een minimale breedte, zoals 1200 px, of verberg dubbele items.
+- Echte voorbeelden: zoom in op beelden, speel media af, bekijk een letterproef of lees code met syntaxiskleuring.
+- Eén archief: vink aan wat je wilt en krijg één ZIP met een nette mappenstructuur. Wat mislukt, probeer je met één klik opnieuw.
+- Screenshot van een hele pagina: alles wordt gescrold en samengevoegd tot PNG, JPG of PDF. Je kunt ook één gebied kiezen.
+- Gebiedsopname: maak van een deel van het scherm een GIF-, MP4- of WebM-clip.
+- Van tabel naar spreadsheet: exporteer live tabellen naar Excel of CSV, inclusief eerdere versies van tabellen die verversen.
+- Offline kopie: bewaar een site als één HTML-document dat zonder internetverbinding opent.
+- Kleurkiezer: kies een willekeurige kleur op het scherm en kopieer die als HEX, RGB of HSL.
 
----
+## Zo begin je
+1. Open de website waarmee je wilt werken.
+2. Druk op F12 (Option + Command + I op een Mac) en kies het tabblad Source Download. Zie je het niet, klik dan op » aan het eind van de tabbalk.
+3. Houd het paneel open terwijl de site laadt, zodat niets ontbreekt.
 
-### 4. Live DOM-tabellen naar Excel (XLSX) en CSV
-> **★ DATA-EXTRACTIE EN ELEMENTVERWIJDERAAR**
-
-<sub>Haal dynamische tabellen, inclusief hun snapshotgeschiedenis, uit naar XLSX-bestanden met meerdere werkbladen of naar CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Live DOM-tabellen naar Excel (XLSX) en CSV">
-</p>
-
----
-
-### 5. Kleurenpipet op het scherm en code-formatter
-> **★ WERKBANK VOOR ONTWIKKELAARS EN ONTWERPERS**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Kleurenpipet op het scherm en code-formatter">
-</p>
-
----
-
-Source Download is een Chrome DevTools-paneel dat alle bronnen die een webpagina laadt opspoort, inspecteert en downloadt. Of je nu mediabestanden, ontwikkelaarsscripts, stijlbestanden of netwerkreacties nodig hebt: je slaat ze op als losse bestanden of als nette ZIP met mapstructuur.
-
-Van nul af aan gebouwd, zonder externe afhankelijkheden: de ZIP-writer, de XLSX-builder, de HLS-merger en de codeformatters zijn allemaal met de hand geschreven vanilla JavaScript. Geen frameworks, geen buildstap, geen telemetrie. Alles draait lokaal in je browser.
-
-## Nieuw in v1.16.0
-- Volledige meertalige ondersteuning in 54 talen, met complete lokalisatie van DevTools en store.
-- 17 eigen categorieën met live tellers voor alle media, code, API's, opslag en documenten.
-- Gestitchte schermafbeeldingen van hele pagina's en opname van zelfgekozen gebieden, met slimme onderdrukking van sticky headers.
-- Schermopname als video (MP4) en een lichte exportengine voor geanimeerde GIF's zonder randlekken.
-- Live DOM-tabelextractor naar Microsoft Excel (.XLSX) met meerdere werkbladen en CSV, met de DOM Zapper om elementen te verwijderen.
-- Kleurenpipet voor het scherm met direct kopiëren van hex/rgb/hsl en geïntegreerde code-beautifier.
-- Verbeterde stabiliteit van de DevTools-sniffer en een netwerkpijplijn met hoge gelijktijdigheid.
-
-## Waarom je het nodig hebt
-Een screenshot is niet genoeg. Haal de echte bestanden op: afbeeldingen in volle resolutie, echte videostreams, originele stylesheets en scripts — geen platgeslagen plaatje.
-
-DevTools voelt overweldigend. Source Download zet een overzichtelijke, gecategoriseerde galerij voor dezelfde netwerkdata, met zoeken, filters en downloads met één klik.
-
-SPA's verbergen alles. Dynamische apps maken assets en API-aanroepen die je nooit in de paginabron ziet. Source Download legt ze vast terwijl ze gebeuren, inclusief tussenliggende toestanden.
-
-## Wat het doet
-### Alles ontdekken
-- Combineert netwerkopname (HAR + live verzoeken) met een DOM-scan op alle visuele en structurele elementen, waaronder mediabestanden, scripts, stylesheets en ingesloten frames.
-- **CSS-bewust:** assets in url(...) en @import-regels worden recursief gevolgd, zodat zelfs lettertypen in geïmporteerde stylesheets worden gevonden.
-- **Content sniffing:** onbekende bestanden worden een paar bytes teruggelezen en ingedeeld in hun echte bestandstypecategorie.
-- **17 categorieën met live teller:** vastgelegde assets staan overzichtelijk in aparte tabbladen voor media, code, data, API-aanroepen, cookies, opslag en documenten.
-
-### Filteren, zoeken, inspecteren
-- Zoeken met reguliere expressies in bestandsnamen, URL's, MIME-typen, alt-tekst en zelfs bestandsinhoud.
-- **Filters per categorie:** minimale/maximale grootte, en bij media ook minimale/maximale breedte en hoogte — bijvoorbeeld "alleen hero-afbeeldingen ≥ 1200px". API-aanroepen filter je op HTTP-methode en verzoektype.
-- Lijst- of rasterweergave, sorteerbaar, met een live miniaturenwand.
-- **Inspector met meerdere tabbladen en echte voorbeelden:** zoombare lightbox, video- en audioweergave, een live lettertypespecimen, een SVG-viewer en code met syntaxiskleuring, regelnummers en een Verfraai-schakelaar.
-- **API-gesplitste weergave:** de reactie links, methode, status, queryparameters en request body rechts.
-
-### Goed downloaden
-- Geselecteerd downloaden — alleen de bestanden die je hebt aangevinkt.
-- Weergave downloaden — alles wat zichtbaar is na de huidige filters en zoekopdracht.
-- Alles downloaden — elke vastgelegde bron in een ZIP met mapstructuur en automatische ontdubbeling.
-- Batchdownloads draaien met beperkte gelijktijdigheid en een live voortgangsbalk; mislukte downloads worden automatisch opnieuw geprobeerd, ook vanuit een contextmenu.
-
-### HLS en lastige video
-- Streams die de browser niet native kan afspelen (HLS .m3u8, DASH .mpd, onbekende codecs) tonen een slim alternatief in plaats van een zwarte speler.
-- Segmenten samenvoegen en downloaden maakt van een HLS-stream één afspeelbaar bestand, direct in het paneel.
-
-### De tekstwerkbank (toolkit voor SPA-content)
-- **Het tabblad Tekst is een live contentviewer:** elk element met tekst — koppen, alinea's, lijstitems, knoppen, divs, spans — wordt vastgelegd in DOM-volgorde.
-- Dynamische tabellen bewaren een beperkte snapshotgeschiedenis (bijv. "8 snapshots · 124 unieke rijen"), zodat automatisch vernieuwende dashboards nooit tussenliggende toestanden kwijtraken.
-- Exporteer als Markdown, of tabellen als CSV, HTML of een echte XLSX-werkmap met meerdere werkbladen, gemaakt door onze eigen met de hand geschreven XLSX-writer.
-
-## Zo gebruik je het
-1. Installeer Source Download en druk op een willekeurige pagina op F12.
-2. Klik op het tabblad Source Download in de DevTools-werkbalk (Chrome staat niet toe dat extensies DevTools automatisch openen — daarom zit het daar).
-3. Blader door de categorietabbladen, zoek, filter en inspecteer alles in het rechterpaneel.
-4. Vink de gewenste bestanden aan en kies Geselecteerd downloaden, Weergave downloaden of Alles downloaden.
-5. Houd het DevTools-paneel open terwijl de pagina laadt om elk netwerkverzoek vast te leggen.
-
-## Praktijkvoorbeelden
-- **Concurrentieanalyse:** verzamel videominiaturen van elk kanaal — met een filter voor minimale breedte — in één map.
-- **Webscraping zonder code:** volg de API-aanroepen van een SPA, filter op het endpoint dat je nodig hebt en download de exacte JSON-reacties.
-- **Typografie-analyse:** ontdek welk lettertype een site echt gebruikt en haal de daadwerkelijke lettertypebestanden op.
-- **Bugreproductie:** bewaar de exacte CSS/JS-versies die live stonden toen een bug optrad.
-- **Dashboarddata exporteren:** exporteer een automatisch vernieuwende tabel naar een Excel-werkmap met meerdere werkbladen, inclusief geschiedenis.
-- **QA-testen:** controleer welke video-/audiovariant in elke A/B-configuratie wordt geleverd.
+Screenshots, opnames en de kleurkiezer vind je ook in het rechtermuisknopmenu en onder de knop van de extensie.
 
 ## Privacy
-- Draait 100% lokaal. Geen server, geen analytics, geen data verlaat je computer.
-- **Vraagt alleen wat nodig is:** opslag (je voorkeuren), klembord (URL's en kleuren kopiëren), downloads (bestanden opslaan via Chrome), contextmenu's, scripting en hosttoegang (om pagina's te scannen en bestandsinhoud op te halen).
-- Bestanden worden opgeslagen via de normale downloadstroom van Chrome — geen stille downloads.
 
-## Vereisten
-- Chrome 116 of nieuwer (Manifest V3).
-- Het beste resultaat krijg je als het paneel open staat terwijl de pagina laadt, want dan vindt de netwerkopname plaats.
+Alles draait op je eigen computer. Geen account en geen analytics, en niets van wat je vastlegt wordt naar de ontwikkelaar gestuurd. Bewaarde items komen via Chrome in je gewone map Downloads.
 
-Source Download is een open-sourceproject — feedback, ideeën en pull requests zijn welkom.
+De extensie heeft toegang nodig tot de pagina's die je bezoekt om hun bronnen te vinden en haar functies te bieden.
 
-Maak contact op LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Respecteer het auteursrecht en de gebruiksvoorwaarden, en bewaar alleen inhoud die je mag gebruiken.
+
+## Nieuw in 1.17
+- Veel lichter: er draait niets totdat je een functie gebruikt.
+- Offline kopieën bevatten nu alle foto's, achtergronden en lettertypen.
+- GIF-opnames blijven binnen het geheugen, ook bij lange HD-clips.
+- Een nieuw welkomstscherm en snelkoppelingen onder de knop van de extensie.
+
+Vragen of problemen: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

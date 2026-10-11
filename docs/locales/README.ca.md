@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Explora, inspecciona i descarrega sense esforç tots els recursos web que carrega una pàgina en un ZIP.</em><br>
-  Source Download — tots els recursos d'una pàgina, a un clic
+  <em>Deseu les imatges, icones i fitxers d'una pàgina web, un a un o en un ZIP. Inclou captura de pàgina completa i gravació d'una àrea.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Aquest és el meu **primer projecte de codi obert**, així que els teus comentar
 
 ## Visita visual i mòduls principals
 
-Explora els mòduls d'interfície d'alta resolució integrats directament a Google Chrome DevTools, al menú contextual i a la finestra emergent de la barra d'eines.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Captura i descarrega tot el que hi ha al web
-> **★ SUITE D'ENGINYERIA DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Cada fitxer de la pàgina, a un tauler de distància"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Captura i descarrega tot el que hi ha al web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Clic dret. Capturat."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Selecciona una àrea. Ja és al porta-retalls."></p>
 
-### 2. Grava qualsevol àrea de la pantalla en vídeo i GIF
-> **★ GRAVADOR D'ÀREA DE PANTALLA · MP4, WEBM I GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Text i taules de la pàgina, endreçats per a tu"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Grava qualsevol àrea de la pantalla en vídeo i GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Pàgines senceres, enregistraments, còpies fora de línia"></p>
 
 ---
 
-### 3. Captura contínua de pàgina completa amb desplaçament
-> **★ CAPTURES AL PÍXEL · PÀGINA COMPLETA I ÀREA**
+Source Download és un conjunt d'eines per conservar contingut web. Afegeix una pestanya pròpia a les eines per a desenvolupadors de Chrome. Allà tot el que ha carregat el lloc s'ordena per categories perquè ho previsualitzeu i us quedeu només amb el que necessiteu.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Captura contínua de pàgina completa amb desplaçament">
-</p>
+## Funcions principals
+- Galeria ordenada: fotos, icones i tipus de lletra apareixen a les seves pestanyes amb comptadors en directe i un quadre de cerca.
+- Filtres precisos: mostreu només els elements més amples que un mínim (per exemple 1200 px) o amagueu els duplicats.
+- Previsualitzacions reals: amplieu gràfics i reproduïu mitjans. També podeu veure una mostra de lletra o codi amb ressaltat de sintaxi.
+- Un sol arxiu: marqueu el que vulgueu i obtindreu un únic ZIP amb carpetes ordenades. El que falli es torna a provar amb un clic.
+- Captura de pàgina completa: tot es desplaça i s'uneix en PNG, JPG o PDF. També podeu triar una sola àrea.
+- Gravació d'una àrea: convertiu una part de la pantalla en un clip GIF, MP4 o WebM.
+- De taules a full de càlcul: exporteu taules en directe a Excel o CSV, amb els estats anteriors de les taules que s'actualitzen.
+- Còpia fora de línia: conserveu un lloc com un únic document HTML que s'obre sense internet.
+- Selector de color: trieu qualsevol color visible i copieu-lo com a HEX, RGB o HSL.
 
----
+## Com començar
+1. Obriu el lloc web amb què voleu treballar.
+2. Premeu F12 (al Mac Option + Command + I) i trieu la pestanya Source Download. Si no la veieu, feu clic a » al final de la barra de pestanyes.
+3. Mantingueu el tauler obert mentre es carrega perquè no s'escapi res.
 
-### 4. Taules DOM en directe a Excel (XLSX) i CSV
-> **★ EXTRACCIÓ DE DADES I ELIMINADOR D'ELEMENTS**
-
-<sub>Extreu taules dinàmiques, amb el seu historial d'instantànies, a fitxers XLSX amb diversos fulls o a CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Taules DOM en directe a Excel (XLSX) i CSV">
-</p>
-
----
-
-### 5. Comptagotes de color i formatador de codi
-> **★ BANC DE TREBALL PER A DESENVOLUPADORS I DISSENYADORS**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Comptagotes de color i formatador de codi">
-</p>
-
----
-
-Source Download és un tauler de Chrome DevTools que descobreix, inspecciona i descarrega tots els recursos que carrega una pàgina web. Tant si necessites fitxers multimèdia, scripts de desenvolupador, recursos d'estil o respostes de xarxa, pots desar-los com a fitxers individuals o en un ZIP ordenat amb estructura de carpetes.
-
-Creat des de zero sense cap dependència de tercers: l'escriptor de ZIP, el generador de XLSX, el fusionador d'HLS i els formatadors de codi són JavaScript pur escrit a mà. Sense frameworks, sense pas de compilació, sense telemetria. Tot s'executa en local al teu navegador.
-
-## Novetats de la v1.16.0
-- Compatibilitat multilingüe completa en 54 idiomes, amb DevTools i fitxa de la botiga totalment localitzats.
-- 17 categories de recursos dedicades amb comptador en directe que cobreixen tot el contingut multimèdia, codi, API, emmagatzematge i documents.
-- Captures de pàgina completa unides i captura d'àrees personalitzades, amb supressió intel·ligent de capçaleres fixes.
-- Gravació de vídeo de la pantalla (MP4) i motor lleuger d'exportació de GIF animats sense vores sobrants.
-- Extractor en directe de taules DOM cap a Microsoft Excel (.XLSX) amb diversos fulls i cap a CSV, amb l'eliminador d'elements DOM Zapper.
-- Comptagotes de color a la pantalla amb còpia instantània en hex/rgb/hsl i embellidor de codi integrat.
-- Estabilitat millorada del sniffer de DevTools i canalització de xarxa d'alta concurrència.
-
-## Per què el necessites
-Una captura de pantalla no n'hi ha prou. Aconsegueix els fitxers reals — imatges a resolució completa, fluxos de vídeo autèntics, fulls d'estil i scripts originals — no una imatge aplanada.
-
-DevTools pot resultar aclaparador. Source Download t'ofereix les mateixes dades de xarxa en una galeria clara i categoritzada, amb cerca, filtres i descàrregues amb un clic.
-
-Les SPA ho amaguen tot. Les aplicacions dinàmiques creen recursos i crides a l'API que mai no veus al codi font de la pàgina. Source Download els captura quan es produeixen, també els estats intermedis.
-
-## Què fa
-### Descobreix-ho tot
-- Combina la captura de xarxa (HAR + peticions en directe) amb un escaneig del DOM de tots els elements visuals i estructurals, com ara fitxers multimèdia, scripts, fulls d'estil i marcs incrustats.
-- **Entén el CSS:** els recursos dins de url(...) i de les regles @import se segueixen de manera recursiva, de manera que es troben fins i tot les tipografies amagades en fulls d'estil importats.
-- **Detecció de contingut:** els fitxers desconeguts se'n llegeixen uns quants bytes i es reclassifiquen a la categoria del seu tipus real.
-- **17 categories amb comptador en directe:** els recursos capturats s'organitzen en pestanyes dedicades per a contingut multimèdia, codi, dades, crides a l'API, galetes, emmagatzematge i documents.
-
-### Filtra, cerca, inspecciona
-- Cerca amb expressions regulars en noms de fitxer, URL, tipus MIME, textos alternatius i fins i tot en el contingut dels fitxers.
-- **Filtres per categoria:** mida mínima/màxima i, per al contingut multimèdia, també amplada i alçada mínimes/màximes — per exemple, "només imatges destacades ≥ 1200px". Les crides a l'API es filtren per mètode HTTP i tipus de petició.
-- Vista de llista o de quadrícula, ordenable, amb un mur de miniatures en directe.
-- **Inspector de diverses pestanyes amb previsualitzacions reals:** visor ampliable, reproducció de vídeo i àudio, una mostra de tipografia en directe, un visor d'SVG i codi amb ressaltat de sintaxi, números de línia i un interruptor per embellir.
-- **Vista dividida de l'API:** la resposta a l'esquerra; el mètode, l'estat, els paràmetres de consulta i el cos de la petició a la dreta.
-
-### Descarrega com cal
-- Descarrega el seleccionat — només els fitxers que has marcat.
-- Descarrega la vista — tot el que és visible després dels filtres i la cerca actuals.
-- Descarrega-ho tot — cada recurs capturat en un ZIP amb estructura de carpetes i eliminació automàtica de duplicats.
-- Les descàrregues per lots s'executen amb concurrència limitada i una barra de progrés en directe; els errors es reintenten automàticament i també des d'un menú contextual.
-
-### HLS i vídeos complicats
-- Els fluxos que el navegador no pot reproduir de manera nativa (HLS .m3u8, DASH .mpd, còdecs desconeguts) mostren una alternativa intel·ligent en comptes d'un reproductor negre.
-- Fusiona segments i descarrega converteix un flux HLS en un únic fitxer reproduïble, directament al tauler.
-
-### El banc de treball de Text (eines de contingut per a SPA)
-- **La pestanya Text és un visor de contingut en directe:** cada element que conté text — encapçalaments, paràgrafs, elements de llista, botons, divs, spans — es captura en l'ordre del DOM.
-- Les taules dinàmiques conserven un historial limitat d'instantànies (p. ex. "8 instantànies · 124 files úniques"), de manera que els taulers de control que s'actualitzen sols mai no perden estats intermedis.
-- Exporta com a Markdown o les taules com a CSV, HTML o un llibre XLSX real amb diversos fulls, creat amb el nostre propi escriptor de XLSX escrit a mà.
-
-## Com s'utilitza
-1. Instal·la Source Download i prem F12 en qualsevol pàgina.
-2. Fes clic a la pestanya Source Download de la barra d'eines de DevTools (Chrome no permet que les extensions obrin DevTools automàticament — per això hi viu).
-3. Explora les pestanyes de categories, cerca, filtra i inspecciona qualsevol cosa al tauler de la dreta.
-4. Marca els fitxers que vulguis i prem Descarrega el seleccionat, Descarrega la vista o Descarrega-ho tot.
-5. Mantén obert el tauler de DevTools mentre es carrega la pàgina per capturar cada petició de xarxa.
-
-## Casos d'ús reals
-- **Anàlisi de la competència:** recull les miniatures de vídeo de qualsevol canal — amb un filtre d'amplada mínima — en una sola carpeta.
-- **Web scraping sense codi:** observa les crides a l'API d'una SPA, filtra fins a l'endpoint que necessites i descarrega'n les respostes JSON exactes.
-- **Anàlisi tipogràfica:** descobreix quina tipografia fa servir realment un lloc web i aconsegueix els fitxers reals.
-- **Reproducció d'errors:** conserva les versions exactes de CSS/JS que estaven en producció quan va aparèixer l'error.
-- **Exportació de dades de taulers de control:** exporta una taula que s'actualitza sola a un llibre de Microsoft Excel amb diversos fulls, historial inclòs.
-- **Proves de QA:** comprova quina variant de vídeo/àudio es serveix en cada configuració d'A/B.
+Les captures, la gravació i el selector de color també són al menú del botó dret i al botó de l'extensió.
 
 ## Privadesa
-- S'executa 100% en local. Sense servidor, sense analítica, cap dada surt del teu equip.
-- **Només demana el que necessita:** emmagatzematge (les teves preferències), porta-retalls (copiar URL i colors), descàrregues (desar fitxers a través de Chrome), menús contextuals, scripting i accés als hosts (per escanejar pàgines i obtenir el contingut dels fitxers).
-- Els fitxers es desen mitjançant el flux de descàrrega habitual de Chrome — sense descàrregues silencioses.
 
-## Requisits
-- Chrome 116 o posterior (Manifest V3).
-- Els millors resultats s'obtenen amb el tauler obert mentre es carrega la pàgina, ja que és quan es fa la captura de xarxa.
+Tot s'executa al vostre ordinador. No hi ha compte ni analítica, i res del que conserveu s'envia al desenvolupador. Els elements desats van a la carpeta de Baixades habitual a través de Chrome.
 
-Source Download és un projecte de codi obert — s'agraeixen els comentaris, les idees i les pull requests.
+L'extensió necessita accés als llocs que visiteu per trobar-ne els recursos i fer les seves funcions.
 
-Connecta amb mi a LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Respecteu els drets d'autor i les condicions d'ús, i conserveu només el contingut que tingueu permís per utilitzar.
+
+## Novetats de la 1.17
+- Molt més lleuger: no s'executa res fins que feu servir una funció.
+- Les còpies fora de línia ara inclouen totes les fotos, fons i tipus de lletra.
+- La gravació GIF es manté dins dels límits de memòria fins i tot amb clips HD llargs.
+- Una nova pantalla de benvinguda i dreceres al botó de l'extensió.
+
+Preguntes o problemes: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

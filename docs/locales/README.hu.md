@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Böngéssze, vizsgálja meg és töltse le zökkenőmentesen ZIP-fájlként az oldal által betöltött összes webes erőforrást.</em><br>
-  Source Download — az oldal minden erőforrása egy kattintásra
+  <em>Mentse egy weboldal képeit, ikonjait és fájljait egyenként vagy ZIP-ben. Teljes oldalas képernyőkép és kijelölt terület rögzítése.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Ez az **első nyílt forráskódú projektem**, ezért rengeteget jelent a vissz
 
 ## Vizuális bemutató és fő modulok
 
-Fedezze fel a közvetlenül a Google Chrome DevToolsba, a jobbklikkes menübe és az eszköztár előugró ablakába épített, nagy felbontású felületi modulokat.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Rögzítsen és töltsön le mindent a weben
-> **★ DEVTOOLS MÉRNÖKI CSOMAG · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Az oldal minden fájlja egyetlen panelen"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Rögzítsen és töltsön le mindent a weben">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Jobb kattintás. Rögzítve."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Jelöljön ki egy területet. Már a vágólapon van."></p>
 
-### 2. Bármely képernyőterület felvétele videóként és GIF-ként
-> **★ TERÜLETI KÉPERNYŐFELVEVŐ · MP4, WEBM ÉS GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Az oldal szövege és táblázatai, rendezve"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Bármely képernyőterület felvétele videóként és GIF-ként">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Teljes oldalak, felvételek, offline másolatok"></p>
 
 ---
 
-### 3. Zökkenőmentes, teljes oldalas görgetős képernyőkép
-> **★ PIXELPONTOS KÉPERNYŐKÉPEK · TELJES OLDAL ÉS TERÜLET**
+A Source Download eszközkészlet webes tartalmak megőrzéséhez. Saját lapot ad a Chrome fejlesztői eszközeihez. Ott a webhely teljes betöltött tartalma kategóriákba rendezve jelenik meg. Így előnézetben megtekintheti és csak a szükségeset tartja meg.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Zökkenőmentes, teljes oldalas görgetős képernyőkép">
-</p>
+## Fő funkciók
+- Rendezett galéria: a fotók, ikonok és betűtípusok saját lapokon jelennek meg élő számlálóval és keresőmezővel.
+- Pontos szűrők: csak a megadott minimális szélességnél (pl. 1200 px) szélesebb elemeket mutassa, vagy rejtse el az ismétlődéseket.
+- Valódi előnézet: nagyítsa a grafikákat és játssza le a médiát. Betűmintát vagy szintaxiskiemelt kódot is megnézhet.
+- Egyetlen archívum: jelölje be a kívánt elemeket, és egyetlen rendezett mappaszerkezetű ZIP-et kap. A sikertelen elemek egy kattintással újrapróbálhatók.
+- Teljes oldalas képernyőkép: minden végiggörgetve PNG, JPG vagy PDF formátumba áll össze. Egyetlen terület is kijelölhető.
+- Terület rögzítése: a képernyő egy részéből GIF, MP4 vagy WebM klip készül.
+- Táblázatból munkafüzet: az élő táblázatokat Excelbe vagy CSV-be exportálhatja a frissülő táblázatok korábbi állapotaival együtt.
+- Offline másolat: őrizze meg a webhelyet egyetlen HTML-dokumentumként, amely internet nélkül is megnyílik.
+- Színválasztó: válasszon ki bármilyen színt a képernyőn, és másolja HEX, RGB vagy HSL formában.
 
----
+## Első lépések
+1. Nyissa meg a webhelyet, amellyel dolgozni szeretne.
+2. Nyomja meg az F12 billentyűt (Macen Option + Command + I), és válassza a Source Download lapot. Ha nem látja, kattintson a lapsáv végén a » jelre.
+3. Betöltés közben hagyja nyitva a panelt, hogy semmi ne maradjon ki.
 
-### 4. Élő DOM-táblázatok Excelbe (XLSX) és CSV-be
-> **★ ADATKINYERÉS ÉS ELEMELTÁVOLÍTÓ**
-
-<sub>Nyerje ki a dinamikus táblázatokat pillanatkép-előzményeikkel együtt többlapos XLSX- vagy CSV-fájlokba.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Élő DOM-táblázatok Excelbe (XLSX) és CSV-be">
-</p>
-
----
-
-### 5. Képernyős színkiválasztó és kódformázó
-> **★ FEJLESZTŐI ÉS TERVEZŐI MŰHELY**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Képernyős színkiválasztó és kódformázó">
-</p>
-
----
-
-A Source Download egy Chrome DevTools panel, amely felderít, megvizsgál és letölt minden erőforrást, amelyet egy weboldal betölt. Legyen szó médiafájlokról, fejlesztői szkriptekről, stíluserőforrásokról vagy hálózati válaszokról, mentheti őket különálló fájlként vagy rendezett, mappaszerkezetű ZIP-fájlként.
-
-Teljesen az alapoktól építve, külső függőségek nélkül: a ZIP-író, az XLSX-készítő, a HLS-egyesítő és a kódformázók mind kézzel írt, tiszta JavaScript. Nincs keretrendszer, nincs build lépés, nincs telemetria. Minden helyben, a böngészőjében fut.
-
-## Újdonságok a v1.16.0 verzióban
-- Teljes többnyelvű támogatás 54 nyelven, teljes DevTools- és áruházi lokalizációval.
-- 17 dedikált, élőben számolt erőforrás-kategória, amely lefed minden médiát, kódot, API-t, tárhelyet és dokumentumot.
-- Teljes oldalas összefűzött képernyőképek és egyéni területkijelölős felvétel az áthúzódó fejlécek intelligens elnyomásával.
-- Képernyővideó-felvétel (MP4) és könnyű animált GIF-exportáló motor, szélszivárgás nélkül.
-- Élő DOM-táblázat-kinyerő többlapos Microsoft Excel (.XLSX) és CSV exporttal, a DOM Zapper elemeltávolítóval.
-- Képernyős színkiválasztó hex/rgb/hsl formátumú azonnali másolással és beépített kódszépítővel.
-- Továbbfejlesztett DevTools-érzékelő stabilitás és nagy párhuzamosságú hálózati csővezeték.
-
-## Miért van szüksége rá
-A képernyőkép nem elég. Szerezze meg a valódi fájlokat — teljes felbontású képeket, tényleges videófolyamokat, eredeti stíluslapokat és szkripteket — ne egy lapos képet.
-
-A DevTools elsőre túl bonyolultnak tűnhet. A Source Download ugyanazokat a hálózati adatokat tiszta, kategorizált galériában mutatja, kereséssel, szűrőkkel és egykattintásos letöltéssel.
-
-Az SPA-k mindent elrejtenek. A dinamikus alkalmazások olyan erőforrásokat és API-hívásokat hoznak létre, amelyeket sosem lát az oldal forrásában. A Source Download menet közben rögzíti őket, a köztes állapotokat is beleértve.
-
-## Mit tud
-### Fedezzen fel mindent
-- Egyesíti a hálózati rögzítést (HAR + élő kérések) a DOM-vizsgálattal minden vizuális és szerkezeti elemhez, beleértve a médiafájlokat, szkripteket, stíluslapokat és beágyazott kereteket.
-- **CSS-tudatos:** az url(...) és @import szabályokban lévő erőforrásokat rekurzívan követi, így az importált stíluslapokba rejtett betűtípusok is megtalálhatók.
-- **Tartalomfelismerés:** az ismeretlen fájlokból beolvas néhány bájtot, és besorolja őket a tényleges típusuk kategóriájába.
-- **17 élő számlálós kategória:** a rögzített erőforrások külön lapokon rendeződnek média, kód, adatok, API-hívások, sütik, tárhely és dokumentumok szerint.
-
-### Szűrés, keresés, vizsgálat
-- Reguláris kifejezésekkel működő keresés fájlnevekben, URL-ekben, MIME-típusokban, alt szövegekben és akár a fájlok tartalmában is.
-- **Kategóriánkénti szűrők:** minimális/maximális méret, médiánál pedig minimális/maximális szélesség és magasság is — például „csak a legalább 1200px széles főoldali bannerképek”. Az API-hívások HTTP-metódus és kéréstípus szerint szűrhetők.
-- Lista- vagy rácsnézet, rendezhető, élő miniatűrfallal.
-- **Többlapos vizsgáló valódi előnézetekkel:** nagyítható fénydoboz, videó- és hanglejátszás, élő betűtípus-minta, SVG-megjelenítő, szintaxiskiemeléses kód sorszámokkal és Szépít kapcsoló.
-- **API osztott nézet:** a válasz balra, a metódus, az állapot, a lekérdezési paraméterek és a kérés törzse jobbra.
-
-### Töltsön le rendesen
-- Letöltés Kijelölve — csak a bejelölt fájlok.
-- Letöltés nézet — minden, ami a jelenlegi szűrők és keresés után látható.
-- Az összes letöltése — minden rögzített erőforrás mappaszerkezetű ZIP-fájlba, automatikus duplikációszűréssel.
-- A kötegelt letöltések korlátozott párhuzamossággal és élő folyamatjelzővel futnak; a sikertelenek automatikusan, illetve helyi menüből újrapróbálhatók.
-
-### HLS és trükkös videók
-- A böngésző által natívan nem lejátszható folyamok (HLS .m3u8, DASH .mpd, ismeretlen kodekek) fekete lejátszó helyett okos tartalék megjelenítést kapnak.
-- Az egyesítés és letöltés egyetlen lejátszható fájllá alakítja a HLS-folyamot, közvetlenül a panelben.
-
-### A szövegmunkapad (SPA-tartalom eszköztár)
-- **A Szöveg lap élő tartalomnézegető:** minden szöveget tartalmazó elem — címsorok, bekezdések, listaelemek, gombok, divek, spanek — DOM-sorrendben kerül rögzítésre.
-- A dinamikus táblázatok korlátozott pillanatkép-előzményt őriznek (pl. „8 pillanatkép · 124 egyedi sor"), így az automatikusan frissülő irányítópultok sosem veszítik el a köztes állapotokat.
-- Exportálás Markdown formátumban, a táblázatok pedig CSV-ként, HTML-ként vagy valódi, többlapos XLSX munkafüzetként, saját kézzel írt XLSX-íróval.
-
-## Hogyan használja
-1. Telepítse a Source Download bővítményt, majd nyomja meg az F12 billentyűt bármely oldalon.
-2. Kattintson a Source Download fülre a DevTools eszköztárában (a Chrome nem engedi, hogy a bővítmények automatikusan megnyissák a DevTools-t — ezért található ott).
-3. Böngéssze a kategóriafüleket, keressen, szűrjön, vizsgáljon meg bármit a jobb oldali panelen.
-4. Jelölje be a kívánt fájlokat, majd kattintson a Letöltés Kijelölve, Letöltés nézet vagy Az összes letöltése gombra.
-5. Tartsa nyitva a DevTools panelt az oldal betöltése közben, hogy minden hálózati kérés rögzítésre kerüljön.
-
-## Valós felhasználási esetek
-- **Versenytárs-elemzés:** gyűjtse össze bármely csatorna videóminiatűrjeit — minimális szélességi szűrővel — egyetlen mappába.
-- **Webes adatgyűjtés kód nélkül:** figyelje egy SPA API-hívásait, szűrjön a kívánt végpontra, és töltse le pontos JSON-válaszait.
-- **Tipográfiai elemzés:** derítse ki, melyik betűtípust használja valójában egy oldal, és szerezze meg a tényleges betűtípusfájlokat.
-- **Hibareprodukció:** őrizze meg a hiba fellépésekor éles CSS/JS verziókat.
-- **Irányítópult-adatok exportálása:** exportáljon egy automatikusan frissülő táblázatot többlapos Excel munkafüzetbe, előzményekkel együtt.
-- **Minőségbiztosítási tesztelés:** ellenőrizze, melyik videó-/hangváltozatot szolgálják ki az egyes A/B konfigurációkban.
+A képernyőkép, a rögzítés és a színválasztó a jobb kattintásos menüből és a bővítmény gombjából is elérhető.
 
 ## Adatvédelem
-- 100%-ban helyben fut. Nincs szerver, nincs analitika, semmilyen adat nem hagyja el a gépét.
-- **Csak azt kéri, amire szüksége van:** tárhely (a beállításai), vágólap (URL-ek és színek másolása), letöltések (fájlok mentése a Chrome-on keresztül), helyi menük, szkriptelés és gazdagép-hozzáférés (az oldalak vizsgálatához és a fájltartalmak lekéréséhez).
-- A fájlok a Chrome szokásos letöltési folyamatán keresztül mentődnek — nincsenek néma letöltések.
 
-## Követelmények
-- Chrome 116 vagy újabb (Manifest V3).
-- A legjobb eredményt akkor adja, ha a panel az oldal betöltése közben nyitva van, mert a hálózati rögzítés ekkor történik.
+Minden a saját számítógépén fut. Nincs fiók és elemzés, és semmi sem kerül a fejlesztőhöz abból, amit megőriz. A mentett elemek a Chrome-on keresztül a szokásos Letöltések mappába kerülnek.
 
-A Source Download nyílt forráskódú projekt — a visszajelzéseket, ötleteket és pull requesteket szívesen fogadjuk.
+A bővítménynek hozzá kell férnie a meglátogatott webhelyekhez, hogy megtalálja az erőforrásaikat és ellássa a feladatait.
 
-Kapcsolat LinkedInen: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Tartsa tiszteletben a szerzői jogot és a felhasználási feltételeket. Csak olyan tartalmat őrizzen meg, amelyet jogosult használni.
+
+## Újdonságok az 1.17-es verzióban
+- Sokkal könnyebb: semmi sem fut, amíg nem használ egy funkciót.
+- Az offline másolatok mostantól minden fotót, hátteret és betűtípust tartalmaznak.
+- A GIF-rögzítés hosszú HD kliphez is a memória keretein belül marad.
+- Új üdvözlőképernyő és gyorsparancsok a bővítmény gombjában.
+
+Kérdés vagy probléma: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

@@ -24,7 +24,7 @@
              data-i18n-title="searchPlaceholder"
              title="Filter by name, URL, tag, MIME or /regex/…"
              autocomplete="off" spellcheck="false"
-             aria-label="Search resources">
+             aria-label="Search resources" data-i18n-aria="searchPlaceholder">
       <button id="search-clear" class="icon-btn toolbar__search-clear" title="Clear search" data-i18n-title="filterClear" hidden>
         <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
           <path d="M4 4l8 8M12 4l-8 8"/>
@@ -33,112 +33,56 @@
     </div>
 
     <div class="toolbar__actions">
-      <div class="view-toggle" role="group" aria-label="View mode">
-        <button id="view-grid" class="icon-btn icon-btn--active" title="Grid view" data-i18n-title="viewGrid">
-          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4">
-            <rect x="3" y="3" width="4.2" height="4.2" rx="1"/>
-            <rect x="8.8" y="3" width="4.2" height="4.2" rx="1"/>
-            <rect x="3" y="8.8" width="4.2" height="4.2" rx="1"/>
-            <rect x="8.8" y="8.8" width="4.2" height="4.2" rx="1"/>
-          </svg>
-        </button>
-        <button id="view-list" class="icon-btn" title="List view" data-i18n-title="viewList">
-          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
-            <path d="M3 4h10M3 8h10M3 12h10"/>
-          </svg>
-        </button>
+      <div class="view-toggle" role="group">
+        <button id="view-grid" class="icon-btn icon-btn--active" title="Grid view" data-i18n-title="viewGrid"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="4.2" height="4.2" rx="1"/><rect x="8.8" y="3" width="4.2" height="4.2" rx="1"/><rect x="3" y="8.8" width="4.2" height="4.2" rx="1"/><rect x="8.8" y="8.8" width="4.2" height="4.2" rx="1"/></svg></button>
+        <button id="view-list" class="icon-btn" title="List view" data-i18n-title="viewList"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h10M3 8h10M3 12h10"/></svg></button>
       </div>
-      <button id="btn-refresh" class="btn" title="Re-scan the page for resources currently in the DOM" data-i18n-title="btnRefresh">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M13.5 8A5.5 5.5 0 1 1 11 3.7"/>
-          <path d="M13.5 2v2.5H11"/>
-        </svg>
-        <span data-i18n="btnRefresh">Refresh</span>
-      </button>
-      <button id="btn-export" class="btn" title="Export the visible list as JSON/CSV, or the network log as HAR" data-i18n-title="btnExport">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 10.5V13h8v-2.5"/>
-          <path d="M8 3v8M5 6l3-3 3 3"/>
-        </svg>
-        <span data-i18n="btnExport">Export</span>
-      </button>
-      <button id="btn-download-selected" class="btn" title="Download the resources you checked as a ZIP" data-i18n-title="btnDownloadSelected">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
-          <path d="M2.5 12.5h11"/>
-        </svg>
-        <span data-i18n="btnDownloadSelected">Download Selected</span>
-        <span id="btn-download-selected-count" class="btn__badge" hidden>0</span>
-      </button>
-      <button id="btn-download-view" class="btn" title="Download only the visible resources (current category + search)" data-i18n-title="btnDownloadView">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M1.5 8s2.4-4.5 6.5-4.5S14.5 8 14.5 8 12.1 12.5 8 12.5 1.5 8 1.5 8z"/>
-          <circle cx="8" cy="8" r="2"/>
-          <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
-          <path d="M2.5 12.5h11"/>
-        </svg>
-        <span data-i18n="btnDownloadView">Download View</span>
-      </button>
-      <button id="btn-download-all" class="btn btn--primary" title="Download every captured resource as a folder-structured ZIP" data-i18n-title="btnDownloadAll">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/>
-          <path d="M2.5 12.5h11"/>
-        </svg>
-        <span data-i18n="btnDownloadAll">Download All</span>
-      </button>
-      <button id="btn-screenshot" class="btn" title="Capture seamless full page screenshot" data-i18n-title="btnScreenshot">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="12" height="12" rx="2.5"/>
-          <circle cx="8" cy="8" r="2.5"/>
-        </svg>
-        <span data-i18n="btnScreenshot">Screenshot</span>
-      </button>
-      <button id="btn-archive" class="btn" title="Save offline single-file HTML archive" data-i18n-title="btnArchive">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 2h10v12H3z"/>
-          <path d="M6 5h4M6 8h4M6 11h2"/>
-        </svg>
-        <span data-i18n="btnArchive">Save HTML</span>
-      </button>
-      <button id="btn-lang" class="icon-btn toolbar__lang-btn" title="Select Language / Dil Seçimi" data-i18n-title="langSelectorTitle" aria-label="Language">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="8" cy="8" r="6"/>
-          <path d="M2 8h12M8 2a10 10 0 0 0 0 12 10 10 0 0 0 0-12z"/>
-        </svg>
-        <span id="lang-current-label" style="font-size: 10px; font-weight: 700; margin-left: 3px; letter-spacing: 0.5px;">EN</span>
-      </button>
-      <button id="btn-theme" class="icon-btn toolbar__theme-btn" title="Switch theme" data-i18n-title="btnTheme" aria-label="Switch theme">
-        <svg class="theme-icon theme-icon--moon" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M13.5 9.2A5.5 5.5 0 1 1 6.8 2.5 4.3 4.3 0 0 0 13.5 9.2z"/>
-        </svg>
-        <svg class="theme-icon theme-icon--sun" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-          <circle cx="8" cy="8" r="3"/>
-          <path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/>
-        </svg>
-      </button>
-      <button id="btn-settings" class="icon-btn toolbar__settings-btn" title="Settings" data-i18n-title="settingNamingPatterns" aria-label="Settings">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="8" cy="8" r="2.5"/>
-          <path d="M13.5 8a5.5 5.5 0 0 0-.1-.9l1.4-1.1-1.3-2.3-1.7.7a5.3 5.3 0 0 0-1.6-.9l-.3-1.8h-2.6l-.3 1.8a5.3 5.3 0 0 0-1.6.9l-1.7-.7-1.3 2.3 1.4 1.1a5.5 5.5 0 0 0 0 1.8l-1.4 1.1 1.3 2.3 1.7-.7a5.3 5.3 0 0 0 1.6.9l.3 1.8h2.6l.3-1.8a5.3 5.3 0 0 0 1.6-.9l1.7.7 1.3-2.3-1.4-1.1c.1-.3.1-.6.1-.9z"/>
-        </svg>
-      </button>
-      <button id="btn-guide" class="icon-btn toolbar__guide-btn" title="How to use Source Download" data-i18n-title="btnGuide">
-        <span class="toolbar__guide-q">?</span>
-      </button>
+
+      <div class="dl-split" id="dl-split">
+        <button id="btn-download-main" class="btn btn--primary dl-split__main" type="button">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg>
+          <span id="btn-download-main-label">Download All</span>
+          <span id="btn-download-main-count" class="dl-split__count" hidden></span>
+        </button>
+        <button id="btn-download-caret" class="btn btn--primary dl-split__caret" type="button" aria-haspopup="menu" aria-expanded="false" title="Download options" data-i18n-title="btnDownloadOptions"><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
+        <div id="download-menu" class="menu menu--right" role="menu" hidden>
+          <button id="btn-download-selected" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg><span data-i18n="btnDownloadSelected">Download Selected</span><span id="btn-download-selected-count" class="menu__meta" hidden>0</span></button>
+          <button id="btn-download-view" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h12l-4.5 5v4l-3 1.5V9z"/></svg><span data-i18n="btnDownloadView">Download Visible</span><span id="btn-download-view-count" class="menu__meta"></span></button>
+          <button id="btn-download-all" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg><span data-i18n="btnDownloadAll">Download All</span><span id="btn-download-all-count" class="menu__meta"></span></button>
+        </div>
+      </div>
+
+      <div class="more">
+        <button id="btn-more" class="icon-btn icon-btn--lg" type="button" aria-haspopup="menu" aria-expanded="false" title="More actions" data-i18n-title="btnMore"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="3.5" cy="8" r="1.2" fill="currentColor" stroke="none"/><circle cx="8" cy="8" r="1.2" fill="currentColor" stroke="none"/><circle cx="12.5" cy="8" r="1.2" fill="currentColor" stroke="none"/></svg></button>
+        <div id="more-menu" class="menu menu--right" role="menu" hidden>
+          <button id="btn-refresh" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 8A5.5 5.5 0 1 1 11 3.7"/><path d="M13.5 2v2.5H11"/></svg><span data-i18n="btnRefresh">Refresh</span></button>
+          <button id="btn-export" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5V13h8v-2.5"/><path d="M8 3v8M5 6l3-3 3 3"/></svg><span data-i18n="btnExport">Export</span><span class="menu__chev">›</span></button>
+          <div class="menu__sep" role="separator"></div>
+          <button id="btn-screenshot" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2.5"/><circle cx="8" cy="8" r="2.5"/></svg><span data-i18n="btnScreenshot">Screenshot</span></button>
+          <button id="btn-archive" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2h10v12H3z"/><path d="M6 5h4M6 8h4M6 11h2"/></svg><span data-i18n="btnArchive">Save HTML</span></button>
+          <div class="menu__sep" role="separator"></div>
+          <button id="btn-lang" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2a10 10 0 0 0 0 12 10 10 0 0 0 0-12z"/></svg><span data-i18n="langSelectorTitle">Select Language</span><span id="lang-current-label" class="menu__meta">EN</span></button>
+          <button id="btn-theme" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 9.2A5.5 5.5 0 1 1 6.8 2.5 4.3 4.3 0 0 0 13.5 9.2z"/></svg><span>Switch theme</span></button>
+          <button id="btn-settings" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="2.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><span data-i18n="menuSettings">Settings</span></button>
+          <button id="btn-guide" class="menu__item" role="menuitem" type="button"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M6.3 6.2a1.8 1.8 0 1 1 2.5 1.7c-.5.2-.8.6-.8 1.1v.4M8 11.6h.01"/></svg><span data-i18n="btnGuide">User Guide</span></button>
+          <div class="menu__foot"><span id="menu-version"></span> · <a href="https://2run.dev" target="_blank" rel="noopener">2run.dev</a></div>
+        </div>
+      </div>
     </div>
   </header>
 
   <div id="panel-rating-banner" class="sp-rating-banner" style="background:linear-gradient(135deg,rgba(79,140,255,0.12),rgba(168,85,247,0.12));border-bottom:1px solid var(--border);padding:8px 14px;display:flex;align-items:center;justify-content:space-between;font-size:12px;gap:12px;" hidden>
-    <span data-i18n="ratingBannerText">Enjoying Source Download? Support our open-source vision with a review on Chrome Web Store or a star on GitHub!</span>
+    <span data-i18n="ratingBannerText">Glad it worked! If Source Download saves you time, a quick review helps other people find it.</span>
     <div style="display:flex;gap:8px;align-items:center;white-space:nowrap;">
-      <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd/reviews" target="_blank" rel="noopener" class="btn btn--sm btn--primary" data-i18n="ratingBannerReview">★ Review</a>
-      <a href="https://github.com/turanburakyesilyurt/source-download" target="_blank" rel="noopener" class="btn btn--sm" data-i18n="ratingBannerStar">★ Star</a>
+      <a id="panel-rating-review" href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd/reviews" target="_blank" rel="noopener" class="btn btn--sm btn--primary" data-i18n="ratingBannerReview">★ Review</a>
+      <a id="panel-rating-star" href="https://github.com/turanburakyesilyurt/source-download" target="_blank" rel="noopener" class="btn btn--sm" data-i18n="ratingBannerStar">★ Star</a>
+      <a id="panel-rating-issue" href="https://github.com/turanburakyesilyurt/source-download/issues/new?template=bug-report.yml" target="_blank" rel="noopener" class="btn btn--sm" data-i18n="ratingBannerIssue">Something wrong?</a>
       <button id="panel-rating-dismiss" class="icon-btn" title="Dismiss" data-i18n-title="ratingDismissTitle">✕</button>
     </div>
   </div>
 
   <div id="progress-wrap" class="progress" hidden>
-    <div class="progress__bar"><div id="progress-fill" class="progress__fill"></div></div>
+    <div class="progress__bar" id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="progress-label"><div id="progress-fill" class="progress__fill"></div></div>
     <span id="progress-label" class="progress__label">Preparing…</span>
   </div>
 
@@ -146,7 +90,22 @@
     <nav class="tabs-vertical" id="tabs"></nav>
 
     <section class="list-pane">
-      <div id="filterbar" class="filterbar">
+      <div class="list-top" id="list-top">
+      <div id="list-head" class="list-head">
+        <input type="checkbox" id="list-select-all" class="list-head__check" title="Select All" data-i18n-title="textSelectAll" aria-label="Select All">
+        <h2 class="list-head__title"><span id="list-head-title">All</span><span id="list-head-count" class="list-head__count">0</span></h2>
+        <div class="list-head__tools">
+          <select id="f-sort" class="filterbar__select" title="Sort resources" data-i18n-title="filterSortTitle">
+            <option value="name" data-i18n="filterSortName">Sort by name</option>
+            <option value="size" data-i18n="filterSortSize">Sort by size</option>
+            <option value="type" data-i18n="filterSortType">Sort by type</option>
+            <option value="time" data-i18n="filterSortTime">Sort by time</option>
+          </select>
+          <button id="f-sort-dir" class="icon-btn list-head__dir" title="Toggle ascending / descending" data-i18n-title="filterSortDir">↑</button>
+          <button id="btn-filters" class="btn btn--sm list-head__filters" type="button" aria-expanded="false" aria-controls="filterbar" title="Filters" data-i18n-title="btnFilters"><svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h12M4.5 8h7M7 12h2"/></svg><span data-i18n="btnFilters">Filters</span><span id="btn-filters-count" class="list-head__badge" hidden></span></button>
+        </div>
+      </div>
+      <div id="filterbar" class="filterbar" hidden>
         <input id="f-min-size" class="filterbar__input" type="number" min="0" step="1" placeholder="Min KB" data-i18n-placeholder="filterMinKb" title="Minimum file size (KB)" data-i18n-title="filterMinKb">
         <input id="f-max-size" class="filterbar__input" type="number" min="0" step="1" placeholder="Max KB" data-i18n-placeholder="filterMaxKb" title="Maximum file size (KB)" data-i18n-title="filterMaxKb">
         <span id="f-dims" class="filterbar__dims" hidden>
@@ -168,15 +127,9 @@
           <option value="xhr">XHR</option>
           <option value="fetch">Fetch</option>
         </select>
-        <select id="f-sort" class="filterbar__select" title="Sort resources" data-i18n-title="filterSortTitle">
-          <option value="name" data-i18n="filterSortName">Sort by name</option>
-          <option value="size" data-i18n="filterSortSize">Sort by size</option>
-          <option value="type" data-i18n="filterSortType">Sort by type</option>
-          <option value="time" data-i18n="filterSortTime">Sort by time</option>
-        </select>
-        <button id="f-sort-dir" class="icon-btn" title="Toggle ascending / descending" data-i18n-title="filterSortDir">↑</button>
         <button id="f-hide-dupes" class="btn btn--sm" title="Hide images that share the same bytes as another image" data-i18n-title="filterHideDupes" data-i18n="filterHideDupes" hidden>Hide duplicates</button>
         <button id="f-clear" class="btn btn--sm" title="Clear all filters" data-i18n-title="filterClear" data-i18n="filterClear">Clear</button>
+      </div>
       </div>
       <div id="list" class="list"></div>
       <div id="empty-state" class="empty" hidden>
@@ -193,82 +146,44 @@
       </div>
 
       <div id="text-view" class="text-view" hidden>
-        <div class="text-hint">
-          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="8" cy="8" r="6.5"/>
-            <path d="M8 7.2c0-1.2 1-1.9 2-1.6 1 .3 1.5 1.3 1.1 2.2-.4 1-1.3 1.2-1.9 2.1"/>
-            <path d="M8 11.8h.01"/>
-          </svg>
-          <span data-i18n-html="textHintHtml">
-            A live, readable copy of the page. Every element holding text is captured in DOM order
-            and kept here as the page changes. Query it with plain text, a regular expression, a
-            <strong>CSS selector</strong> or an <strong>XPath</strong> expression, then export what
-            matched. See the <a href="#" id="text-hint-guide">guide</a> for details.
-          </span>
-        </div>
-        <div class="text-filters">
-          <div class="text-filters__row text-filters__row--primary">
-            <div class="tf-pills" role="tablist" aria-label="Content Type">
-              <button id="tf-pill-all" class="tf-pill tf-pill--active" type="button" data-i18n="textPillAll">All Content</button>
-              <button id="tf-pill-text" class="tf-pill" type="button" data-i18n="textPillText">📄 Text &amp; Articles</button>
-              <button id="tf-pill-tables" class="tf-pill" type="button" data-i18n="textPillTables">📊 Tables Only</button>
+        <div class="tx-top">
+          <div class="tx-bar">
+            <div class="seg" role="tablist" aria-label="Text" data-i18n-aria="catText">
+              <button id="tf-pill-text" class="seg__btn" type="button" role="tab" aria-selected="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3.5h10M3 6.5h10M3 9.5h7M3 12.5h5"/></svg><span data-i18n="textSegText">Text</span><span id="tx-count-text" class="seg__count"></span></button>
+              <button id="tf-pill-tables" class="seg__btn" type="button" role="tab" aria-selected="false"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3" width="11" height="10" rx="1.5"/><path d="M2.5 6.5h11M2.5 9.8h11M6.5 6.5V13"/></svg><span data-i18n="textSegTables">Tables</span><span id="tx-count-tables" class="seg__count"></span></button>
             </div>
-
-            <div class="tf-group tf-group--selection">
-              <button id="tf-select-all" class="btn btn--sm" type="button" data-i18n="textSelectAll">Select All</button>
-              <button id="tf-clear-sel" class="btn btn--sm" type="button" data-i18n="textClearSelection" hidden>Clear</button>
-              <span id="tf-sel-badge" class="text-summary__chip" hidden>0 selected</span>
+            <button id="tf-live" class="tx-live" type="button" aria-pressed="true"><span class="tx-live__dot" aria-hidden="true"></span><span id="tf-live-label" data-i18n="textLive">Live</span></button>
+            <button id="tf-refresh" class="icon-btn" type="button" title="Scan now" data-i18n-title="textScanNow"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 8A5.5 5.5 0 1 1 11 3.7"/><path d="M13.5 2v2.5H11"/></svg></button>
+            <div id="tx-actions-text" class="tx-actions">
+              <button id="tx-copy" class="btn btn--sm" type="button"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"/></svg><span data-i18n="textBtnCopy">Copy text</span></button>
+              <button id="tf-export-md" class="btn btn--sm" type="button" title="Markdown (.md)"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg>Markdown</button>
+              <button id="tf-export-txt" class="btn btn--sm" type="button" title="Plain text (.txt)">TXT</button>
             </div>
-
-            <div class="tf-group tf-group--controls">
-              <button id="tf-refresh" class="btn btn--sm" title="Scan the page right now" data-i18n-title="textScanNow" data-i18n="textScanNow">Scan now</button>
-              <button id="tf-live" class="btn btn--sm btn--primary" title="Keep scanning the page as it changes" data-i18n-title="textLiveOn" data-i18n="textLiveOn">Live on</button>
-              <button id="tf-read" class="btn btn--sm" title="Hide tags and checkboxes for a calmer reading view" data-i18n-title="textReading" data-i18n="textReading">Reading</button>
-            </div>
-
-            <div class="tf-group tf-group--export">
-              <span class="tf-group__label" data-i18n="labelExport">Export</span>
-              <button id="tf-export-txt" class="btn btn--sm" title="Everything shown, as plain text" data-i18n-title="textExportTxt" data-i18n="textExportTxt">TXT</button>
-              <button id="tf-export-md" class="btn btn--sm" title="Everything shown, as Markdown (tables included)" data-i18n-title="textExportMd" data-i18n="textExportMd">MD</button>
-              <button id="tf-export-xlsx" class="btn btn--sm btn--primary" title="Tables as a real XLSX workbook" data-i18n-title="textExportXlsx" data-i18n="textExportXlsx">XLSX</button>
-              <button id="tf-export-csv" class="btn btn--sm" title="Tables as CSV (ZIP)" data-i18n-title="textExportCsv" data-i18n="textExportCsv">CSV</button>
+            <div id="tx-actions-tables" class="tx-actions" hidden>
+              <button id="tf-export-xlsx" class="btn btn--sm btn--primary" type="button"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg><span data-i18n="textExportAllXlsx">All tables to Excel</span></button>
+              <button id="tf-export-csv" class="btn btn--sm" type="button" title="CSV (.zip)">CSV</button>
             </div>
           </div>
-
-          <div class="text-filters__row text-filters__row--secondary">
-            <div class="tf-group tf-group--query">
-              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="tf-query-icon">
-                <circle cx="7" cy="7" r="4.5"/>
-                <path d="M10.5 10.5L14 14"/>
-              </svg>
-              <input id="tf-query" class="filterbar__input filterbar__input--wide" type="text" spellcheck="false" placeholder="Filter page text or query live DOM…" data-i18n-placeholder="textPlaceholder">
-              <select id="tf-mode" class="filterbar__select" title="How the query box is interpreted" data-i18n-title="textModeTitle">
-                <option value="text" data-i18n="textModeContains">Text</option>
+        </div>
+        <div class="tx-body">
+          <nav id="tx-nav" class="tx-nav" aria-label="All page text" data-i18n-aria="textKindAll"></nav>
+          <div class="tx-main">
+            <div class="tx-search">
+              <label class="tx-search__box">
+                <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg>
+                <input id="tf-query" type="text" spellcheck="false" autocomplete="off" placeholder="Search the page text" data-i18n-placeholder="textSearchText" aria-label="Search the page text" data-i18n-title="textSearchText">
+                <span id="tf-query-status" class="tf-status" aria-live="polite"></span>
+              </label>
+              <select id="tf-mode" class="tx-mode" title="How the query box is interpreted" data-i18n-title="textModeTitle">
+                <option value="text" data-i18n="textModeContains">Contains</option>
                 <option value="regex" data-i18n="textModeRegex">Regex</option>
-                <option value="css" data-i18n="textModeCss">CSS Selector</option>
+                <option value="css" data-i18n="textModeCss">CSS selector</option>
                 <option value="xpath" data-i18n="textModeXpath">XPath</option>
               </select>
             </div>
-
-            <div id="tf-group-tag" class="tf-group tf-group--tag">
-              <select id="tf-kind" class="filterbar__select" title="Restrict to one element type. The list is built from what the page actually contains." data-i18n-title="textKindTitle">
-                <option value="all" data-i18n="textAllElements">All elements</option>
-              </select>
-              <select id="tf-level" class="filterbar__select" title="Heading level" data-i18n-title="textHeadingLevelTitle" hidden>
-                <option value="all" data-i18n="textAllLevels">All levels</option>
-                <option value="h1">H1</option>
-                <option value="h2">H2</option>
-                <option value="h3">H3</option>
-                <option value="h4">H4</option>
-                <option value="h5">H5</option>
-                <option value="h6">H6</option>
-              </select>
-            </div>
-
-            <span id="tf-query-status" class="tf-status"></span>
+            <div id="text-stream" class="text-stream"></div>
           </div>
         </div>
-        <div id="text-stream" class="text-stream"></div>
       </div>
     </section>
 
@@ -286,7 +201,13 @@
       </div>
       <div id="inspector-body" class="inspector__body" hidden>
         <header class="inspector__header">
-          <h2 id="inspector-title" data-i18n="inspectorResourceTitle">Resource</h2>
+          <div class="inspector__heading">
+            <span id="inspector-icon" class="inspector__icon" aria-hidden="true"></span>
+            <div class="inspector__titles">
+              <h2 id="inspector-title" data-i18n="inspectorResourceTitle">Resource</h2>
+              <span id="inspector-sub" class="inspector__sub"></span>
+            </div>
+          </div>
           <div class="inspector__header-actions">
             <button id="inspector-details" class="icon-btn inspector__details-btn" title="Toggle details" data-i18n-title="inspectorDetails">
               <svg class="chev" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -368,10 +289,7 @@
     <span id="status-selected" hidden></span>
     <span id="status-dupes" hidden></span>
     <span id="status-size"></span>
-    <span id="status-message" class="statusbar__message"></span>
-    <a href="https://2run.dev" target="_blank" rel="noopener" class="statusbar__brand-link" style="margin-left:auto;color:var(--text-muted);text-decoration:none;font-size:11px;font-weight:500;display:inline-flex;align-items:center;gap:4px;" data-i18n="brandSignature">
-      Crafted by Turan Burak Yeşilyurt (2run.dev)
-    </a>
+    <span id="status-message" class="statusbar__message" role="status" aria-live="polite"></span>
   </footer>
 
   <div id="context-menu" class="context-menu" hidden></div>
@@ -446,7 +364,7 @@
     <div class="guide__backdrop" id="settings-backdrop"></div>
     <div class="guide__modal" role="dialog" aria-modal="true" aria-labelledby="settings-title" style="max-width: 560px;">
       <header class="guide__header">
-        <h2 id="settings-title" data-i18n="settingNamingPatterns">File Naming Patterns</h2>
+        <h2 id="settings-title" data-i18n="menuSettings">Settings</h2>
         <button id="settings-close" class="icon-btn guide__close" title="Close (Esc)" data-i18n-title="guideClose">
           <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
             <path d="M4 4l8 8M12 4l-8 8"/>
@@ -454,6 +372,15 @@
         </button>
       </header>
       <div class="guide__body" style="padding: 20px; display: flex; flex-direction: column; gap: 16px;">
+        <label class="setting-switch" for="setting-area-autocopy">
+          <input id="setting-area-autocopy" type="checkbox" role="switch">
+          <span class="setting-switch__track" aria-hidden="true"></span>
+          <span class="setting-switch__text">
+            <strong data-i18n="settingAreaAutoCopy">Copy area screenshots automatically</strong>
+            <span data-i18n="settingAreaAutoCopyHint">When you let go of the selection, the image goes straight to the clipboard. The hint at the top of the page always shows when this is on.</span>
+          </span>
+        </label>
+        <h3 class="setting-section" data-i18n="settingNamingPatterns">File Naming Patterns</h3>
         <div>
           <label for="setting-naming-screenshot" style="font-weight: 600; font-size: 12.5px; display: block; margin-bottom: 6px;" data-i18n="catScreenshot">Screenshot</label>
           <input id="setting-naming-screenshot" type="text" class="toolbar__search-input" style="width: 100%; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-card); color: var(--fg);" value="{domain}-{type}-{date}_{time}">
@@ -493,7 +420,7 @@
 
         <div>
           <label for="setting-video-format" style="font-weight: 600; font-size: 12.5px; display: block; margin-bottom: 6px;" data-i18n="settingVideoFormat">Default Video Format</label>
-          <select id="setting-video-format" class="filterbar__select" style="width: 100%; padding: 7px 10px; border-radius: 6px; font-size: 12.5px;">
+          <select id="setting-video-format" class="filterbar__select filterbar__select--block">
             <option value="mp4" data-i18n="optVideoMp4">MP4 (H.264 / AVC1 — Universal playback on WhatsApp, Telegram, Jira, Apple &amp; Windows)</option>
             <option value="gif" data-i18n="optVideoGif">GIF (Animated image — Ideal for READMEs, Jira, documentation &amp; messaging)</option>
             <option value="webm" data-i18n="optVideoWebm">WebM (VP9 — Open Web format)</option>
@@ -502,8 +429,7 @@
 
         <div>
           <label for="setting-gif-resolution" style="font-weight: 600; font-size: 12.5px; display: block; margin-bottom: 6px;" data-i18n="settingGifResolution">Default GIF Resolution</label>
-          <select id="setting-gif-resolution" class="filterbar__select" style="width: 100%; padding: 7px 10px; border-radius: 6px; font-size: 12.5px;">
-            <option value="original" data-i18n="optGifOriginal">Original (1:1 Native Resolution — Full 3K/4K, No downscaling)</option>
+          <select id="setting-gif-resolution" class="filterbar__select filterbar__select--block">
             <option value="1080p" data-i18n="optGif1080p">1080p Full HD (Max 1920px)</option>
             <option value="720p" data-i18n="optGif720p">720p HD (Max 1280px)</option>
             <option value="480p" data-i18n="optGif480p">480p SD (Max 854px — Faster &amp; smaller size)</option>
@@ -516,7 +442,7 @@
 
         <div>
           <label for="setting-gif-fps" style="font-weight: 600; font-size: 12.5px; display: block; margin-bottom: 6px;" data-i18n="settingGifFps">Default GIF Frame Rate (FPS)</label>
-          <select id="setting-gif-fps" class="filterbar__select" style="width: 100%; padding: 7px 10px; border-radius: 6px; font-size: 12.5px;">
+          <select id="setting-gif-fps" class="filterbar__select filterbar__select--block">
             <option value="15" data-i18n="optGifFps15">15 FPS — Smooth (High fluidity, larger size)</option>
             <option value="10" data-i18n="optGifFps10">10 FPS — Standard (Recommended for web &amp; balance)</option>
             <option value="5" data-i18n="optGifFps5">5 FPS — Compact / Meme (Stepped motion, small size)</option>
@@ -531,12 +457,14 @@
         </div>
 
         <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 4px;">
-          <button type="button" id="setting-btn-reset" class="btn" data-i18n="filterClear">Reset</button>
-          <button type="button" id="setting-btn-save" class="btn btn--primary" data-i18n="btnExport">Save</button>
+          <button type="button" id="setting-btn-reset" class="btn" data-i18n="settingsReset">Reset to defaults</button>
+          <button type="button" id="setting-btn-save" class="btn btn--primary" data-i18n="settingsSave">Save</button>
         </div>
       </div>
     </div>
   </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
   <div id="guide" class="guide" hidden>
     <div class="guide__backdrop" id="guide-backdrop"></div>
@@ -624,12 +552,13 @@
           <h3 data-i18n="guideSecDownloading">Downloading</h3>
           <div class="guide__sec-content" data-i18n-html="guideSecDownloadingContent">
             <p>
-              <strong>Download View</strong> saves the currently visible resources (active category +
+              <strong>Download Visible</strong> saves the currently visible resources (active category +
               search + filters) as a ZIP; it relabels to <em>Download Filtered (N)</em> when filters are
               active. Hover any download button to see an estimated archive size before you click.
               <strong>Download Selected</strong> downloads only the checked items. <strong>Download
               All</strong> captures every discovered resource into a folder-structured ZIP. Failed
-              downloads are retried automatically and can be retried again from the context menu.
+              downloads are marked, and you can retry them with one click from the notification, the
+              item&#39;s warning icon or the context menu.
               <strong>Export</strong> writes the visible list as JSON or CSV, or dumps Chrome's network
               log as a HAR file.
             </p>
@@ -739,29 +668,34 @@
           <h3 data-i18n="guideSecScreenRecording">Screen recording (Video &amp; GIF)</h3>
           <div class="guide__sec-content" data-i18n-html="guideSecScreenRecordingContent">
             <p>
-              Record any screen region as MP4, WebM, or animated GIF. GIF recordings feature 1:1 native resolution, 1080p, 720p, and 480p profiles with live estimated file sizes. The maximum GIF recording duration is 1 minute (60s) for optimal browser performance.
+              Record any screen region as MP4, WebM, or animated GIF. GIF recordings offer 1080p, 720p and 480p profiles with a live file-size estimate. The maximum GIF recording duration is 1 minute (60s) for optimal browser performance.
             </p>
           </div>
         </section>
       </div>
       <div class="guide__empty" id="guide-empty" data-i18n="guideEmpty">No guide sections match your search.</div>
       <footer class="guide__footer">
-        <span id="guide-version-note" data-i18n="guideVersionNote">Source Download v1.16.0 — 100% dependency-free.</span>
+        <span id="guide-version-note" data-i18n="guideVersionNote">Source Download — 100% dependency-free.</span>
       </footer>
     </div>
   </div>
 
-  <div id="lightbox" class="lightbox" hidden>
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <div class="lightbox__top">
+      <div class="lightbox__caption"><strong id="lightbox-title"></strong><span id="lightbox-meta"></span></div>
+      <button class="lightbox__close" id="lightbox-close" type="button" title="Close (Esc)" data-i18n-title="lightboxClose"><svg viewBox="0 0 16 16" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
+    </div>
     <div class="lightbox__stage" id="lightbox-stage">
       <div id="lightbox-content" class="lightbox__content"></div>
-      <div class="lightbox__toolbar">
-        <button class="lightbox__btn" id="lightbox-zoom-out" title="Zoom out (−)" data-i18n-title="lightboxZoomOut">−</button>
-        <span id="lightbox-zoom-label" class="lightbox__zoom-label">100%</span>
-        <button class="lightbox__btn" id="lightbox-zoom-in" title="Zoom in (+)" data-i18n-title="lightboxZoomIn">+</button>
-        <button class="lightbox__btn" id="lightbox-zoom-reset" title="Reset zoom (0)" data-i18n-title="lightboxZoomReset">⤾</button>
-        <span class="lightbox__sep"></span>
-        <button class="lightbox__btn lightbox__btn--close" id="lightbox-close" title="Close (Esc)" data-i18n-title="lightboxClose">✕</button>
-      </div>
+    </div>
+    <div class="lightbox__toolbar" role="toolbar">
+      <button class="lightbox__btn" id="lightbox-zoom-out" type="button" title="Zoom out (−)" data-i18n-title="lightboxZoomOut"><svg viewBox="0 0 16 16" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8h9"/></svg></button>
+      <span id="lightbox-zoom-label" class="lightbox__zoom-label">100%</span>
+      <button class="lightbox__btn" id="lightbox-zoom-in" type="button" title="Zoom in (+)" data-i18n-title="lightboxZoomIn"><svg viewBox="0 0 16 16" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3.5v9M3.5 8h9"/></svg></button>
+      <button class="lightbox__btn" id="lightbox-zoom-reset" type="button" title="Reset zoom (0)" data-i18n-title="lightboxZoomReset"><svg viewBox="0 0 16 16" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10"/></svg></button>
+      <span class="lightbox__sep"></span>
+      <button class="lightbox__btn" id="lightbox-open" type="button" title="Open in new tab" data-i18n-title="inspectorOpenTab"><svg viewBox="0 0 16 16" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2.5h4.5V7M13.5 2.5L7.5 8.5"/><path d="M12 9.5v3a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3"/></svg></button>
+      <button class="lightbox__btn lightbox__btn--primary" id="lightbox-download" type="button" title="Download this file" data-i18n-title="inspectorDownloadFile"><svg viewBox="0 0 16 16" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.5M4.5 7l3.5 3L11.5 7"/><path d="M2.5 12.5h11"/></svg></button>
     </div>
   </div>
 
@@ -770,20 +704,19 @@
   <script src="lib/xlsx.js"></script>
   <script src="lib/hls.js"></script>
   <script src="lib/beautify.js"></script>
-  <script src="lib/i18n.js"></script>
+  <script src="lib/locale.js"></script>
+  <script src="lib/a11y.js"></script>
   <script src="lib/naming.js"></script>
   <script src="lib/pdf.js"></script>
   <script src="lib/gif.js"></script>
   <!-- Domain-Driven Design (DDD) Modules -->
-  <script src="domains/core/events.js"></script>
-  <script src="domains/core/state.js"></script>
-  <script src="domains/resources/resource-store.js"></script>
-  <script src="domains/resources/resource-filter.js"></script>
-  <script src="domains/text-tables/text-engine.js"></script>
-  <script src="domains/inspector/inspector-controller.js"></script>
-  <script src="domains/export/export-controller.js"></script>
-  <script src="domains/screenshot/screenshot-controller.js"></script>
-  <script src="domains/ui/ui-controller.js"></script>
-  <script src="panel.js"></script>
+  <script src="panel/01-core.js"></script>
+  <script src="panel/02-resources.js"></script>
+  <script src="panel/03-text-capture.js"></script>
+  <script src="panel/04-render.js"></script>
+  <script src="panel/05-inspector.js"></script>
+  <script src="panel/06-downloads.js"></script>
+  <script src="panel/07-ui.js"></script>
+  <script src="panel/08-init.js"></script>
 </body>
 </html>

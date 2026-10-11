@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Download billeder og filer"
   },
   "appDesc": {
-    "message": "Inspicér og download webressourcer som ZIP. Skærmbilleder af hele siden, live tabeloptagelse og udviklerværktøjer."
+    "message": "Gem billeder, ikoner og filer fra en webside enkeltvis eller som én ZIP. Skærmbillede af hele siden og optagelse af et område."
   },
   "actionTitle": {
     "message": "Kildedownload — Åbn panel og spor ressourcer"
   },
   "contextMenuZap": {
-    "message": "Skjul dette element (Zap)"
+    "message": "Skjul dette element"
   },
   "contextMenuUndoZap": {
     "message": "Gendan det senest skjulte element"
@@ -90,7 +90,7 @@
     "message": "Download valgt"
   },
   "btnDownloadView": {
-    "message": "Download visning"
+    "message": "Download synlige"
   },
   "btnDownloadAll": {
     "message": "Download alle"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Download filtreret"
   },
-  "btnTheme": {
-    "message": "Skift tema"
-  },
   "btnGuide": {
     "message": "Brugervejledning"
-  },
-  "btnCaptureFullPage": {
-    "message": "Skærmbillede af hele siden"
-  },
-  "btnOfflineArchive": {
-    "message": "Gem enkelt HTML"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filtrer sidetekst eller forespørg live DOM..."
-  },
-  "textAllElements": {
-    "message": "Alle elementer"
-  },
-  "textLiveOn": {
-    "message": "Live til"
-  },
-  "textLiveOff": {
-    "message": "Live fra"
-  },
   "textScanNow": {
     "message": "Scan nu"
-  },
-  "textReading": {
-    "message": "Læsning"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Vælg en ressource for at inspicere dens detaljer"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Nyder du Source Download? Støt vores open source-vision med en anmeldelse i Chrome Web Store eller en stjerne på GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Skriv en anmeldelse"
-  },
-  "ratingStar": {
-    "message": "★ Stjerne på GitHub"
-  },
   "ratingDismiss": {
     "message": "Afvis"
   },
@@ -257,44 +209,11 @@
   "toastArchiveCreated": {
     "message": "HTML-arkiv i én fil gemt."
   },
-  "brandSignature": {
-    "message": "Udformet af Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Billeder og SVG"
-  },
-  "tabMedia": {
-    "message": "Medier og lyd"
-  },
-  "tabFonts": {
-    "message": "Skrifttyper"
-  },
-  "tabTextScraper": {
-    "message": "Tekst og tabeller"
-  },
-  "heroScreenshotTitle": {
-    "message": "Skærmbillede af hele siden"
-  },
-  "heroScreenshotDesc": {
-    "message": "Problemfri sammensætning af flere visningsområder med undertrykkelse af sticky headers"
-  },
-  "heroArchiveTitle": {
-    "message": "Enkelt-fil HTML-arkiv"
-  },
-  "heroArchiveDesc": {
-    "message": "Indlejrer CSS og Base64-billeder, offlinesikkert snapshot"
-  },
-  "copyDataUri": {
-    "message": "Kopiér Data-URI"
-  },
-  "copyUrl": {
-    "message": "Kopiér URL"
-  },
   "downloadSingle": {
     "message": "Download"
   },
   "searchPlaceholder": {
-    "message": "Filtrer efter navn, URL, tag, MIME eller /regex/..."
+    "message": "Filtrer efter navn, URL, tag, MIME eller /regex/…"
   },
   "viewGrid": {
     "message": "Gittervisning"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "ressourcer"
   },
-  "statusFiltered": {
-    "message": "filtreret"
-  },
   "statusSelected": {
     "message": "valgt"
   },
   "statusDupes": {
     "message": "dubletter skjult"
-  },
-  "statusSize": {
-    "message": "størrelse"
   },
   "langAuto": {
     "message": "Auto (browser)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Vælg sprog"
   },
-  "textPillAll": {
-    "message": "Alt indhold"
-  },
-  "textPillText": {
-    "message": "📄 Tekst og artikler"
-  },
-  "textPillTables": {
-    "message": "📊 Kun tabeller"
-  },
   "textSelectAll": {
     "message": "Vælg alle"
   },
   "textDeselectAll": {
     "message": "Fravælg alle"
-  },
-  "textClearSelection": {
-    "message": "Ryd"
   },
   "toastRefreshComplete": {
     "message": "Sidescanning fuldført: $count$ nye ressourcer",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ tabel(ler) · $rows$ unikke rækker",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ valgt — eksporter bruger kun disse",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tabel — $count$ række(r) på skærmen",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tabel — alle $count$ unikke række(r)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ øjebliksbillede(r)",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Viser alle rækker"
   },
-  "textTableHistory": {
-    "message": "Historik ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Skjul historik"
-  },
   "textTableNoRows": {
     "message": "Ingen rækker er fanget endnu."
   },
   "textBtnCopy": {
     "message": "Kopiér tekst"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Kopiér"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ duplikatbillede(r)",
@@ -689,35 +529,17 @@
       }
     }
   },
-  "labelExport": {
-    "message": "Eksporter"
-  },
   "inspectorLoadingSvg": {
-    "message": "Indlæser SVG..."
+    "message": "Indlæser SVG…"
   },
   "inspectorSvgError": {
     "message": "SVG-indhold kunne ikke hentes."
   },
   "inspectorLoadingFont": {
-    "message": "Indlæser forhåndsvisning af skrifttype..."
+    "message": "Indlæser forhåndsvisning af skrifttype…"
   },
   "inspectorFontSample": {
     "message": "Eksempel på skrifttype"
-  },
-  "inspectorBeautify": {
-    "message": "Formatér"
-  },
-  "inspectorOriginal": {
-    "message": "Original"
-  },
-  "inspectorHeaders": {
-    "message": "Headers"
-  },
-  "inspectorResponse": {
-    "message": "Svar"
-  },
-  "inspectorRequest": {
-    "message": "Anmodning"
   },
   "inspectorQueryParams": {
     "message": "Forespørgselsparametre"
@@ -725,23 +547,11 @@
   "inspectorRequestBody": {
     "message": "Anmodningens brødtekst"
   },
-  "textHintHtml": {
-    "message": "En levende, læsbar kopi af siden. Hvert element, der indeholder tekst, fanges i DOM-rækkefølge og opbevares her, efterhånden som siden ændres. Forespørg det med almindelig tekst, et regulært udtryk, en <strong>CSS-vælger</strong> eller et <strong>XPath</strong>-udtryk, og eksporter derefter det, der matchede. Se <a href=\"#\" id=\"text-hint-guide\">vejledningen</a> for detaljer."
-  },
-  "textHeadings": {
-    "message": "Overskrifter"
-  },
-  "textAllLevels": {
-    "message": "Alle niveauer"
-  },
   "textMatches": {
     "message": "match"
   },
   "textMatch": {
     "message": "match"
-  },
-  "textReadingOn": {
-    "message": "Læsning til"
   },
   "toastDownloadStarted": {
     "message": "Download startet: $name$",
@@ -756,7 +566,7 @@
     "message": "Kunne ikke hente denne ressource (CORS eller ikke-understøttet type)."
   },
   "ratingBannerText": {
-    "message": "Nyder du Source Download? Støt vores open source-vision med en anmeldelse i Chrome Web Store eller en stjerne på GitHub!"
+    "message": "Godt, at det virkede! Hvis Source Download sparer dig tid, hjælper en kort anmeldelse andre med at finde det."
   },
   "ratingBannerReview": {
     "message": "★ Anmeldelse"
@@ -828,13 +638,13 @@
     }
   },
   "statusIndexing": {
-    "message": "Indekserer filindhold..."
+    "message": "Indekserer filindhold…"
   },
   "statusCheckingDuplicates": {
-    "message": "Kontrollerer billedduplikater..."
+    "message": "Kontrollerer billedduplikater…"
   },
   "statusWorking": {
-    "message": "Arbejder..."
+    "message": "Arbejder…"
   },
   "filterMethodTitle": {
     "message": "Filtrer efter HTTP-metode"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Hvordan forespørgselsboksen fortolkes"
   },
-  "textKindTitle": {
-    "message": "Begræns til én elementtype"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Overskriftsniveau"
-  },
   "textPlaceholderRegex": {
     "message": "^Pris:\\s*\\d+ — JavaScript regulært udtryk"
   },
@@ -864,28 +668,7 @@
     "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "Søg i guiden..."
-  },
-  "popupIntro": {
-    "message": "Kategorier, der tælles af <strong>værktøjslinjemærket</strong>. Slå en fra for at stoppe med at tælle det - badget afspejler øjeblikkeligt kun det, du sporer."
-  },
-  "popupHelpTitle": {
-    "message": "Sådan bruger du hele panelet"
-  },
-  "popupStep1": {
-    "message": "Åbn DevTools for den side, du vil inspicere <div class=\"hint\"><kbd>F12</kbd> eller <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Klik på fanen <strong>Source Download</strong> på DevTools-værktøjslinjen"
-  },
-  "popupStep3": {
-    "message": "Gennemse, inspicer og download ressourcer - enkeltvis eller alle på én gang som en ZIP."
-  },
-  "popupNote": {
-    "message": "Bemærk: Chrome tillader ikke, at udvidelser programmæssigt åbner DevTools, hvorfor den fulde ingeniørpakke nås via DevTools-værktøjslinjen."
-  },
-  "popupTrackAll": {
-    "message": "Spor alle kategorier"
+    "message": "Søg i guiden…"
   },
   "popupLanguage": {
     "message": "Sprog"
@@ -894,13 +677,13 @@
     "message": "Binært svar - download for at se det"
   },
   "inspectorLoadingResponse": {
-    "message": "Indlæser svar..."
+    "message": "Indlæser svar…"
   },
   "inspectorNoResponsePreview": {
     "message": "Forhåndsvisning af intet svar — indholdet kunne ikke hentes."
   },
   "inspectorLoadingContent": {
-    "message": "Indlæser indhold..."
+    "message": "Indlæser indhold…"
   },
   "inspectorNoPreview": {
     "message": "Ingen forhåndsvisning tilgængelig – indholdet kunne ikke hentes."
@@ -921,10 +704,10 @@
     "message": "Vis SVG-markeringen med syntaksfremhævning"
   },
   "inspectorFormatting": {
-    "message": "Formaterer..."
+    "message": "Formaterer…"
   },
   "findInContentPlaceholder": {
-    "message": "Find i indhold..."
+    "message": "Find i indhold…"
   },
   "findPreviousMatch": {
     "message": "Forrige match"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Flet segmenter og download"
   },
-  "toastHlsMerged": {
-    "message": "Flettede $COUNT$ segment(er) til $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "størrelse ukendt"
-  },
   "progressFetching": {
     "message": "Henter $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -996,7 +765,7 @@
     }
   },
   "progressCreatingZip": {
-    "message": "Opretter ZIP $PERCENT$%...",
+    "message": "Opretter ZIP $PERCENT$%…",
     "placeholders": {
       "PERCENT": {
         "content": "$1"
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Regex-søgning aktiv — pak din forespørgsel ind i /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Inkluder i eksporten"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Kombiner hvert øjebliksbillede til én dedupliceret tabel - det er det, der eksporteres"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Gennemse tidligere snapshots af denne tabel"
-  },
   "tableDownloadCsvTitle": {
     "message": "Download denne tabel som CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Snapshot $INDEX$ — $TIME$ ($COUNT$ rækker)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Skift valg til batch-download"
@@ -1150,7 +899,7 @@
     "message": "Klik på fanen <strong>Source Download</strong> på DevTools-værktøjslinjen (tryk på <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, og find derefter fanen på DevTools-værktøjslinjen). Chrome tillader ikke, at udvidelser åbner DevTools automatisk, og derfor findes panelet der. Pop op-vinduet fra værktøjslinjeikonet lader dig vælge, hvilke kategorier der tælles med i badgetælleren på ikonet. Sol/måne-knappen på panelets værktøjslinje låser et lyst eller mørkt tema uafhængigt af Chrome; dit valg huskes."
   },
   "guideSecCategoriesContent": {
-    "message": "De lodrette faner til venstre grupperer hver optaget ressource i 17 dedikerede kategorier efter type: Billeder, videoer, lyd, billedtekster, dokumenter, skrifttyper, kildekort, WASM, SVG, API'er, cookies, lagring og mere. Hver fane viser en liveoptælling. Kun én kategori vises ad gangen; skift nulstiller alle filtre, så det du ser altid matcher fanen."
+    "message": "De lodrette faner til venstre sorterer hver opfanget ressource i 15 kategorier, fx billeder, videoer, skrifttyper, kildekort og API-kald, plus en fane til Tekst og tabeller. Hver fane viser en liveoptælling. Kun én kategori vises ad gangen; skift nulstiller alle filtre, så det du ser altid matcher fanen."
   },
   "guideSecSearchFiltersContent": {
     "message": "Søgelinjen filtrerer efter navn, URL, type, alternativ tekst eller titel. Indsæt din forespørgsel i <kbd>/…/</kbd> for at bruge et regulært udtryk, f.eks. <code>/\\.(png|jpg)$/</code>. Under værktøjslinjen ændres filterlinjen pr. kategori: størrelse og dimensionsintervaller for medier, HTTP-metode og anmodningstype for API'er, plus sortering og retning."
@@ -1162,13 +911,13 @@
     "message": "Klik på en ressource for at åbne den i inspektionsruden til højre. Hver åbnet fil bliver en fane, så du kan sammenligne flere ressourcer side om side — den nyeste åbner til venstre. Der findes specialiserede fremvisere til billeder, video, lyd, skrifttyper, SVG og tekst/kode (med en Formatér-knap). API'er viser en delt visning: svar til venstre og anmodningsdetaljer (metode, status, headers, forespørgselsparametre og brødtekst) til højre."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Download visning</strong> gemmer de aktuelt synlige ressourcer (aktiv kategori + søgning + filtre) som en ZIP; knappen skifter navn til <em>Download filtreret (N)</em>, når filtre er aktive. Hold musen over en downloadknap for at se en estimeret arkivstørrelse, før du klikker. <strong>Download valgte</strong> downloader kun de markerede elementer. <strong>Download alle</strong> henter alle fundne ressourcer i en ZIP med mappestruktur. Mislykkede downloads forsøges automatisk igen og kan prøves igen fra kontekstmenuen. <strong>Eksporter</strong> skriver den synlige liste som JSON eller CSV eller eksporterer Chromes netværkslog som en HAR-fil."
+    "message": "<strong>Download synlige</strong> gemmer de aktuelt synlige ressourcer (aktiv kategori + søgning + filtre) som en ZIP; knappen skifter navn til <em>Download filtreret (N)</em>, når filtre er aktive. Hold musen over en downloadknap for at se en estimeret arkivstørrelse, før du klikker. <strong>Download valgte</strong> downloader kun de markerede elementer. <strong>Download alle</strong> henter alle fundne ressourcer i en ZIP med mappestruktur. Mislykkede downloads markeres, og du kan prøve igen med ét klik fra notifikationen, elementets advarselsikon eller kontekstmenuen. <strong>Eksporter</strong> skriver den synlige liste som JSON eller CSV eller eksporterer Chromes netværkslog som en HAR-fil."
   },
   "guideSecLightboxContent": {
     "message": "Zoomknappen åbner medier i en lightbox i fuld størrelse, hvor du kan panorere ved at trække og zoome med musehjulet, knapperne på skærmen eller tastaturet (<kbd>+</kbd>/<kbd>-</kbd> for at zoome, <kbd>0</kbd> for at nulstille, <kbd>Esc</kbd> for at lukke)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Kategorien <strong>Tekst</strong> er en levende, læsbar kopi af siden. Den fanger alle elementer, der indeholder tekst — overskrifter, afsnit, listeelementer, knapper, <code>div</code>/<code>span</code> og mere — i DOM-rækkefølge og fortsætter med at scanne, mens <strong>Live</strong> er slået til.</p><p><strong>Forespørgselsfeltet</strong> fungerer på fire måder, som vælges i rullemenuen ved siden af: <strong>Indeholder</strong> og <strong>Regex</strong> filtrerer den tekst, der allerede er fanget, mens <strong>CSS-vælger</strong> og <strong>XPath</strong> køres mod den live side, så de kan nå alt i DOM. XPath accepterer også udtryk, der returnerer en værdi i stedet for elementer, f.eks. <code>count(//a)</code> eller <code>//@href</code>. Det, siden melder om en ugyldig forespørgsel, vises ved siden af feltet. <strong>Element</strong> indsnævrer resultatet til ét enkelt tag, med antallet af hvert tag på siden. Hvis du rydder forespørgselsfeltet (eller trykker på <strong>Ryd</strong>), vender du tilbage til <em>Alle elementer</em>, og siden fanges igen — du behøver aldrig at nulstille rullemenuen manuelt.</p><p><strong>Læsning</strong> skjuler tags, afkrydsningsfelter og placeringsspor, så strømmen læses som et dokument. Tabeller gemmer en begrænset historik af snapshots, så dynamiske (SPA) tabeller aldrig går tabt. Tryk på <strong>Vis alle rækker</strong> på en tabel for at flette alle snapshots til én dedupliceret visning — det er præcis det, en eksport indeholder. Eksportér som <strong>TXT</strong> (den læsbare side), <strong>MD</strong> (Markdown, inklusive tabeller) eller tabeller som CSV, HTML eller en ægte <strong>XLSX</strong>-projektmappe med flere ark. Markerede elementer går forud; ellers eksporteres alt, der er synligt i øjeblikket.</p>"
+    "message": "<p>Kategorien <strong>Tekst</strong> er en levende, læsbar kopi af siden: overskrifter, afsnit, lister og links i sidens rækkefølge, opdateret så længe <strong>Live</strong> er slået til. Hold markøren over en linje for at kopiere den, eller brug <strong>Kopiér tekst</strong>, <strong>Markdown</strong> og <strong>TXT</strong> til alt, der vises.</p><p>Under <strong>Tabeller</strong> vises hver tabel på siden som et kort med eksempel og egne knapper til <strong>Excel</strong>, <strong>CSV</strong> og <strong>Kopiér</strong>; <strong>Alle tabeller til Excel</strong> samler dem i én projektmappe med ét ark pr. tabel. Tabeller, der ændrer sig, gemmer en historik af øjebliksbilleder, og <strong>Vis alle rækker</strong> lægger dem sammen til én tabel uden dubletter – præcis det, en eksport indeholder.</p><p>Felterne til venstre sorterer siden efter elementtype – al sidetekst, hvert overskriftsniveau, afsnit, links, listepunkter, knapper, kode og mere – hver med antal og første linje; vælg ét for kun at se, kopiere eller eksportere netop det. Søgefeltet filtrerer, mens du skriver, og menuen ved siden af gør det til et regulært udtryk, en <strong>CSS-vælger</strong> eller et <strong>XPath</strong>-udtryk (også værdiudtryk som <code>count(//a)</code> eller <code>//@href</code>), der køres på den levende side; feltet <strong>Egen forespørgsel</strong> gør det samme. Det, siden siger om en fejlbehæftet forespørgsel, vises direkte i feltet.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML og andre filer med billedtekster — inklusive <code>&lt;track&gt;</code>-kilder — havner under deres egen fane <strong>Billedtekster</strong> i stedet for at blive blandet med dokumenter."
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "Standard GIF-opløsning"
   },
-  "optGifOriginal": {
-    "message": "Original (1:1 oprindelig opløsning — fuld 3K/4K, ingen nedskalering)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (maks. 1920 px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "Skærmoptagelse (Video & GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Optag et hvilket som helst skærmområde som MP4, WebM eller animeret GIF. GIF-optagelser har 1:1 native opløsning, 1080p, 720p og 480p profiler med live estimerede filstørrelser. Den maksimale GIF-optagelsesvarighed er 1 minut (60s) for optimal browserydelse."
+    "message": "Optag et vilkårligt skærmområde som MP4, WebM eller animeret GIF. GIF-optagelser har profilerne 1080p, 720p og 480p med et live skøn over filstørrelsen. En GIF-optagelse kan vare op til 1 minut (60 s)."
   },
   "msgGifMaxDurationReached": {
     "message": "Den maksimale GIF-længde på 1 minut (60 s) er nået. Opretter GIF …"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Præsentation (1 billede i sekundet, mindste filstørrelse)"
-  },
-  "popupRightClickHint": {
-    "message": "Højreklik hvor som helst på websiden for Skærmoptagelse (Video/GIF) og Farvevælger."
   },
   "toastElementZappedAd": {
     "message": "Annonce / iframe skjult i denne session.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF-opløsning: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF-opløsning: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Ingen aktiv fane fundet.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Klik her, og vælg derefter en hvilken som helst farve på siden"
+  },
+  "welcomeTitle": {
+    "message": "Source Download er klar"
+  },
+  "welcomePrivacy": {
+    "message": "Alt kører på din computer. Ingen konto, ingen sporing, intet sendes til os."
+  },
+  "welcomeHelp": {
+    "message": "Virker noget ikke? Fortæl os det på GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Er der noget galt?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF'en nåede 200 MB. Gemmer det optagede…"
+  },
+  "btnPopupFullPage": {
+    "message": "Skærmbillede af hele siden"
+  },
+  "toastRecWrongTab": {
+    "message": "Vælg \"Denne fane\" i delingsdialogen for at optage et område af denne side."
+  },
+  "popupCaptureTitle": {
+    "message": "Fang denne side"
+  },
+  "popupTileOffline": {
+    "message": "Gem siden offline"
+  },
+  "popupTileGuide": {
+    "message": "Sådan virker det"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Filer, billeder og tabeller"
+  },
+  "popupDevtoolsHint": {
+    "message": "Åbn DevTools, og vælg fanen Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome tillader ikke udvidelser på denne side. Åbn et website for at bruge værktøjerne."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Højreklik på en hvilken som helst side"
+  },
+  "welcomeCardMenuText": {
+    "message": "Skærmbilleder af hele siden eller et område, optagelse af et område, farvevælger og en offlinekopi – lige der, hvor du er."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Eller brug knappen på værktøjslinjen"
+  },
+  "welcomeCardPopupText": {
+    "message": "Klik på puslespilsikonet på Chromes værktøjslinje, og fastgør Source Download, så er værktøjerne altid ét klik væk."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Tryk på F12 for alt på siden"
+  },
+  "welcomeCardPanelText": {
+    "message": "Vælg fanen Source Download i DevTools. Her står hvert billede, video, skrifttype og hver fil, siden har indlæst – se et eksempel, filtrér og gem som ZIP. Sidens tabeller eksporteres til Excel."
+  },
+  "welcomeLead": {
+    "message": "Tre måder at hente det, du har brug for, fra enhver webside."
+  },
+  "btnDownloadOptions": {
+    "message": "Flere downloadmuligheder"
+  },
+  "btnMore": {
+    "message": "Flere handlinger"
+  },
+  "btnFilters": {
+    "message": "Filtre"
+  },
+  "tabsShowEmpty": {
+    "message": "Vis tomme"
+  },
+  "tabsHideEmpty": {
+    "message": "Skjul tomme"
+  },
+  "textSegText": {
+    "message": "Tekst"
+  },
+  "textSegTables": {
+    "message": "Tabeller"
+  },
+  "textLive": {
+    "message": "Live"
+  },
+  "textPaused": {
+    "message": "Sat på pause"
+  },
+  "textLivePauseTitle": {
+    "message": "Live: siden læses igen, hver gang den ændrer sig. Klik for at sætte på pause."
+  },
+  "textLiveResumeTitle": {
+    "message": "Sat på pause. Klik for at følge siden live igen."
+  },
+  "textSearchText": {
+    "message": "Søg i sidens tekst"
+  },
+  "textExportAllXlsx": {
+    "message": "Alle tabeller til Excel"
+  },
+  "textNoTables": {
+    "message": "Der er endnu ingen tabeller på denne side. De vises her, så snart siden viser en."
+  },
+  "textTable": {
+    "message": "Tabel"
+  },
+  "textCopy": {
+    "message": "Kopiér"
+  },
+  "textShowLess": {
+    "message": "Vis mindre"
+  },
+  "areaHintSelect": {
+    "message": "Træk for at markere et område"
+  },
+  "areaHintCopy": {
+    "message": "kopiér"
+  },
+  "areaHintSave": {
+    "message": "gem"
+  },
+  "areaHintExit": {
+    "message": "afslut"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Kopiér automatisk"
+  },
+  "areaAutoCopyOn": {
+    "message": "Automatisk kopiering er slået til"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Slip markeringen, så ligger den i udklipsholderen."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Slå fra"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Kopieret til udklipsholderen (automatisk kopiering er slået til)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Denne side tillader ikke kopiering til udklipsholderen. Brug Download i stedet."
+  },
+  "textKindAll": {
+    "message": "Al sidetekst"
+  },
+  "textKindHeading": {
+    "message": "Overskrift"
+  },
+  "textKindP": {
+    "message": "Afsnit"
+  },
+  "textKindA": {
+    "message": "Links"
+  },
+  "textKindLi": {
+    "message": "Listepunkter"
+  },
+  "textKindButton": {
+    "message": "Knapper"
+  },
+  "textKindLabel": {
+    "message": "Etiketter og billedtekster"
+  },
+  "textKindSpan": {
+    "message": "Løbende tekst"
+  },
+  "textKindDiv": {
+    "message": "Andre blokke"
+  },
+  "textKindCell": {
+    "message": "Tabelceller"
+  },
+  "textKindCode": {
+    "message": "Kode"
+  },
+  "textKindQuote": {
+    "message": "Citater"
+  },
+  "textCustomQuery": {
+    "message": "Egen forespørgsel"
+  },
+  "textCustomQueryHint": {
+    "message": "CSS-vælger eller XPath på den levende side"
+  },
+  "menuSettings": {
+    "message": "Indstillinger"
+  },
+  "settingsSave": {
+    "message": "Gem"
+  },
+  "settingsReset": {
+    "message": "Gendan standard"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Kopiér skærmbilleder af områder automatisk"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Når du slipper markeringen, går billedet direkte til udklipsholderen. Så længe det er slået til, viser tipslinjen øverst på siden det hver gang."
   }
 }

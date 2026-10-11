@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Prehliadajte, kontrolujte a sťahujte všetky zdroje, ktoré webová stránka načíta, pohodlne ako ZIP.</em><br>
-  Source Download — všetky zdroje stránky na jedno kliknutie
+  <em>Ukladajte obrázky, ikony a súbory z webovej stránky jednotlivo alebo ako ZIP. Snímka celej stránky a nahrávanie vybranej oblasti.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Toto je môj **prvý open-source projekt**, takže vaša spätná väzba pre mň
 
 ## Vizuálna prehliadka a hlavné moduly
 
-Preskúmajte moduly rozhrania vo vysokom rozlíšení zabudované priamo v Google Chrome DevTools, kontextovej ponuke a vyskakovacom okne na paneli nástrojov.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Zachyťte a stiahnite všetko z webu
-> **★ INŽINIERSKA SADA DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Každý súbor stránky na jednom paneli"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Zachyťte a stiahnite všetko z webu">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Pravé tlačidlo. Zachytené."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Vyberte oblasť. Už je v schránke."></p>
 
-### 2. Nahrajte ľubovoľnú oblasť obrazovky ako video a GIF
-> **★ REGIONÁLNY REKORDÉR OBRAZOVKY · MP4, WEBM A GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Text a tabuľky stránky, roztriedené za vás"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Nahrajte ľubovoľnú oblasť obrazovky ako video a GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Celé stránky, záznamy, offline kópie"></p>
 
 ---
 
-### 3. Plynulá snímka celej stránky s posúvaním
-> **★ PIXEL-PERFECT SNÍMKY · CELÁ STRÁNKA A OBLASŤ**
+Source Download je súbor nástrojov na uchovanie obsahu z webu. Do Nástrojov pre vývojárov Chrome pridá vlastnú kartu. Tam je všetko načítané webom roztriedené podľa kategórií. Môžete si to prezrieť a ponechať len to, čo potrebujete.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Plynulá snímka celej stránky s posúvaním">
-</p>
+## Hlavné funkcie
+- Prehľadná galéria: fotky, ikony a písma majú vlastné karty so živými počtami a vyhľadávacím poľom.
+- Presné filtre: zobrazte len položky širšie ako zadané minimum, napríklad 1200 px, alebo skryte duplikáty.
+- Skutočný náhľad: približujte grafiku a prehrávajte médiá. Môžete si pozrieť aj ukážku písma alebo kód so zvýraznením syntaxe.
+- Jeden archív: označte, čo chcete, a získajte jediný ZIP s úhľadnou štruktúrou priečinkov. Čo zlyhá, zopakujete jedným kliknutím.
+- Snímka celej stránky: všetko sa posunie a spojí do PNG, JPG alebo PDF. Môžete vybrať aj jedinú oblasť.
+- Nahrávanie oblasti: premeňte časť obrazovky na klip GIF, MP4 alebo WebM.
+- Z tabuľky do tabuľkového procesora: exportujte živé tabuľky do Excelu alebo CSV vrátane skorších stavov obnovujúcich sa tabuliek.
+- Offline kópia: uchovajte web ako jeden dokument HTML, ktorý sa otvorí bez internetu.
+- Kvapkadlo: vyberte ľubovoľnú farbu na obrazovke a skopírujte ju ako HEX, RGB alebo HSL.
 
----
+## Ako začať
+1. Otvorte web, s ktorým chcete pracovať.
+2. Stlačte F12 (na Macu Option + Command + I) a vyberte kartu Source Download. Ak ju nevidíte, kliknite na » na konci panela kariet.
+3. Počas načítania nechajte panel otvorený, aby nič neuniklo.
 
-### 4. DOM tabuľky naživo do Excelu (XLSX) a CSV
-> **★ EXTRAKCIA DÁT A ODSTRAŇOVAČ PRVKOV**
-
-<sub>Extrahujte dynamické tabuľky vrátane histórie snímok do viachlistových súborov XLSX alebo CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="DOM tabuľky naživo do Excelu (XLSX) a CSV">
-</p>
-
----
-
-### 5. Výber farby z obrazovky a formátovač kódu
-> **★ PRACOVISKO PRE VÝVOJÁROV A DIZAJNÉROV**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Výber farby z obrazovky a formátovač kódu">
-</p>
-
----
-
-Source Download je panel Chrome DevTools, ktorý nájde, skontroluje a stiahne každý zdroj, ktorý webová stránka načíta. Či už potrebujete mediálne súbory, vývojárske skripty, štýly alebo sieťové odpovede, môžete ich uložiť ako jednotlivé súbory alebo ako prehľadný ZIP so štruktúrou priečinkov.
-
-Vytvorený od základov bez závislostí tretích strán: zapisovač ZIP, tvorca XLSX, spájač HLS aj formátovače kódu sú ručne napísané v čistom JavaScripte. Žiadne frameworky, žiadny build krok, žiadna telemetria. Všetko beží lokálne vo vašom prehliadači.
-
-## Novinky vo v1.16.0
-- Plná viacjazyčná podpora v 54 jazykoch s kompletnou lokalizáciou DevTools aj obchodu.
-- 17 vyhradených kategórií zdrojov s počítadlami naživo, ktoré pokrývajú médiá, kód, API, úložisko a dokumenty.
-- Zošité snímky celej stránky a vlastné snímky oblasti s inteligentným potlačením pevných hlavičiek.
-- Nahrávanie videa z obrazovky (MP4) a ľahký nástroj na export animovaných GIF bez okrajových artefaktov.
-- Extraktor DOM tabuliek naživo do viachlistového súboru Microsoft Excel (.XLSX) a CSV s odstraňovačom prvkov DOM Zapper.
-- Výber farby z obrazovky s okamžitým kopírovaním hex/rgb/hsl a integrovaný formátovač kódu.
-- Vyššia stabilita detektora v DevTools a sieťový pipeline s vysokou súbežnosťou.
-
-## Prečo ho potrebujete
-Snímka obrazovky nestačí. Získajte skutočné súbory — obrázky v plnom rozlíšení, reálne video streamy, pôvodné štýly a skripty — nie sploštený obrázok.
-
-DevTools pôsobí zdrvujúco. Source Download vám predstaví prehľadnú galériu rozdelenú do kategórií nad tými istými sieťovými dátami, s vyhľadávaním, filtrami a sťahovaním na jedno kliknutie.
-
-SPA skrývajú všetko. Dynamické aplikácie vytvárajú zdroje a volania API, ktoré nikdy neuvidíte v zdrojovom kóde stránky. Source Download ich zachytí hneď, ako vzniknú, vrátane medzistavov.
-
-## Čo dokáže
-### Objaviť všetko
-- Spája sieťový záznam (HAR + živé požiadavky) so skenovaním DOM pre všetky vizuálne a štrukturálne prvky vrátane mediálnych súborov, skriptov, štýlov a vložených rámcov.
-- **Rozumie CSS:** zdroje v url(...) a pravidlách @import sa sledujú rekurzívne, takže sa nájdu aj písma ukryté v importovaných štýloch.
-- **Rozpoznávanie obsahu:** neznáme súbory sa načítajú po pár bajtov a presunú sa do kategórie podľa ich skutočného typu.
-- **17 kategórií s počítadlami naživo:** zachytené zdroje sú prehľadne usporiadané do vyhradených kariet pre médiá, kód, dáta, volania API, súbory cookie, úložisko a dokumenty.
-
-### Filtrovať, hľadať, kontrolovať
-- Vyhľadávanie pomocou regulárnych výrazov v názvoch súborov, URL, typoch MIME, alternatívnom texte a dokonca aj v obsahu súborov.
-- **Filtre pre každú kategóriu:** minimálna/maximálna veľkosť a pri médiách aj minimálna/maximálna šírka a výška — napríklad „iba hlavné obrázky ≥ 1200px“. Volania API sa filtrujú podľa metódy HTTP a typu požiadavky.
-- Zobrazenie ako zoznam alebo mriežka, so zoraďovaním a živou stenou miniatúr.
-- **Viackartový inšpektor so skutočným náhľadom:** lightbox s lupou, prehrávanie videa a zvuku, živá ukážka písma, prehliadač SVG, kód so zvýrazňovaním syntaxe a číslami riadkov a prepínač Beautify.
-- **Rozdelené zobrazenie API:** odpoveď vľavo, metóda, stav, parametre dopytu a telo požiadavky vpravo.
-
-### Sťahovať poriadne
-- Stiahnuť vybrané — iba súbory, ktoré ste označili.
-- Stiahnuť Zobraziť — všetko, čo zostane viditeľné po aktuálnych filtroch a vyhľadávaní.
-- Stiahnuť všetko — každý zachytený zdroj do ZIP so štruktúrou priečinkov a automatickým odstránením duplicít.
-- Dávkové sťahovanie beží s obmedzenou súbežnosťou a ukazovateľom priebehu naživo; zlyhania sa opakujú automaticky aj z kontextovej ponuky.
-
-### HLS a ťažké videá
-- Streamy, ktoré prehliadač nevie prehrať natívne (HLS .m3u8, DASH .mpd, neznáme kodeky), zobrazia inteligentnú náhradu namiesto čierneho prehrávača.
-- Zlúčiť segmenty a stiahnuť premení stream HLS na jediný prehrateľný súbor priamo v paneli.
-
-### Pracovisko Text (sada nástrojov pre obsah SPA)
-- **Karta Text je živý prehliadač obsahu:** každý prvok s textom — nadpisy, odseky, položky zoznamov, tlačidlá, divy, spany — sa zachytáva v poradí DOM.
-- Dynamické tabuľky uchovávajú ohraničenú históriu snímok (napr. „8 snímok · 124 jedinečných riadkov“), takže automaticky obnovované dashboardy nikdy nestratia medzistavy.
-- Export ako Markdown, alebo tabuliek ako CSV, HTML či skutočný viachlistový zošit XLSX vytvorený naším vlastným ručne napísaným zapisovačom XLSX.
-
-## Ako ho používať
-1. Nainštalujte Source Download a na ľubovoľnej stránke stlačte F12.
-2. Kliknite na kartu Source Download na paneli nástrojov DevTools (Chrome nedovoľuje rozšíreniam otvárať DevTools automaticky — preto panel žije tam).
-3. Prechádzajte karty kategórií, hľadajte, filtrujte a kontrolujte čokoľvek v pravom paneli.
-4. Označte súbory, ktoré chcete, a kliknite na Stiahnuť vybrané, Stiahnuť Zobraziť alebo Stiahnuť všetko.
-5. Nechajte panel DevTools otvorený počas načítania stránky, aby sa zachytila každá sieťová požiadavka.
-
-## Použitie v praxi
-- **Analýza konkurencie:** zozbierajte náhľady videí z ľubovoľného kanála — s filtrom minimálnej šírky — do jedného priečinka.
-- **Web scraping bez kódu:** sledujte volania API v SPA, vyfiltrujte potrebný endpoint a stiahnite presné odpovede JSON.
-- **Analýza typografie:** zistite, aké písmo stránka skutočne používa, a získajte skutočné súbory písma.
-- **Reprodukcia chýb:** uchovajte presné verzie CSS/JS, ktoré boli nasadené, keď sa chyba objavila.
-- **Export dát z dashboardov:** exportujte automaticky obnovovanú tabuľku do viachlistového zošita Excel vrátane histórie.
-- **QA testovanie:** overte, ktorý variant videa/zvuku sa servíruje v každej konfigurácii A/B.
+Snímky obrazovky, nahrávanie a kvapkadlo nájdete aj v kontextovej ponuke a pod tlačidlom rozšírenia.
 
 ## Súkromie
-- Beží 100% lokálne. Žiadny server, žiadna analytika, žiadne dáta neopúšťajú váš počítač.
-- **Žiada iba to, čo potrebuje:** úložisko (vaše predvoľby), schránku (kopírovanie URL a farieb), sťahovanie (ukladanie súborov cez Chrome), kontextové ponuky, skriptovanie a prístup k hostiteľom (na skenovanie stránok a načítanie obsahu súborov).
-- Súbory sa ukladajú cez bežné sťahovanie v Chrome — žiadne tiché sťahovanie.
 
-## Požiadavky
-- Chrome 116 alebo novší (Manifest V3).
-- Najlepšie výsledky dosiahnete, keď je panel otvorený počas načítania stránky, pretože vtedy prebieha sieťový záznam.
+Všetko beží na vašom počítači. Žiadny účet ani analytika a nič z toho, čo uchováte, sa neposiela autorovi. Uložené položky idú cez Chrome do vášho obvyklého priečinka Stiahnuté súbory.
 
-Source Download je open-source projekt — spätná väzba, nápady a pull requesty sú vítané.
+Rozšírenie potrebuje prístup k navštíveným webom, aby našlo ich zdroje a mohlo plniť svoje funkcie.
 
-Spojte sa na LinkedIne: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Rešpektujte autorské práva a podmienky používania a uchovávajte len obsah, ktorý smiete používať.
+
+## Novinky vo verzii 1.17
+- Oveľa ľahšie: nič nebeží, kým nepoužijete niektorú funkciu.
+- Offline kópie teraz obsahujú všetky fotky, pozadia a písma.
+- Nahrávanie GIF sa zmestí do pamäte aj pri dlhých HD klipoch.
+- Nová uvítacia obrazovka a skratky pod tlačidlom rozšírenia.
+
+Otázky alebo problémy: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

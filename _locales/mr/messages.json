@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: इमेज आणि फाइल डाउनलोडर"
   },
   "appDesc": {
-    "message": "कोणताही वेब अ‍ॅसेट तपासा आणि ZIP म्हणून डाउनलोड करा. फुल पेज स्क्रीनशॉट, लाइव्ह टेबल कॅप्चर आणि डेव्हलपर टूल्स."
+    "message": "वेब पेजवरील इमेज, आयकॉन आणि फाइल्स एकेक करून किंवा एका ZIP मध्ये सेव्ह करा. संपूर्ण पेजचा स्क्रीनशॉट आणि भागाचे रेकॉर्डिंगही."
   },
   "actionTitle": {
     "message": "Source Download — पॅनेल उघडा आणि संसाधनांचा मागोवा घ्या"
@@ -90,7 +90,7 @@
     "message": "निवडलेले डाउनलोड करा"
   },
   "btnDownloadView": {
-    "message": "सध्याचे दृश्य डाउनलोड करा"
+    "message": "दिसणारे डाउनलोड करा"
   },
   "btnDownloadAll": {
     "message": "सर्व डाउनलोड करा"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "फिल्टर केलेले डाउनलोड करा"
   },
-  "btnTheme": {
-    "message": "थीम बदला"
-  },
   "btnGuide": {
     "message": "वापरकर्ता मार्गदर्शक"
-  },
-  "btnCaptureFullPage": {
-    "message": "पूर्ण पृष्ठ स्क्रीनशॉट"
-  },
-  "btnOfflineArchive": {
-    "message": "सिंगल HTML जतन करा"
   },
   "filterMinKb": {
     "message": "किमान KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "पृष्ठ मजकूर फिल्टर करा किंवा थेट DOM क्वेरी करा..."
-  },
-  "textAllElements": {
-    "message": "सर्व घटक"
-  },
-  "textLiveOn": {
-    "message": "लाइव्ह चालू"
-  },
-  "textLiveOff": {
-    "message": "लाइव्ह बंद"
-  },
   "textScanNow": {
     "message": "आता स्कॅन करा"
-  },
-  "textReading": {
-    "message": "वाचन"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "तपशील पाहण्यासाठी संसाधन निवडा"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Source Download चा आनंद घेत आहात? Chrome वेब स्टोअरवरील पुनरावलोकन किंवा GitHub वरील स्टारसह आमच्या मुक्त-स्रोत उपक्रमाला पाठिंबा द्या!"
-  },
-  "ratingReview": {
-    "message": "★ पुनरावलोकन लिहा"
-  },
-  "ratingStar": {
-    "message": "★ GitHub वर तारा"
-  },
   "ratingDismiss": {
     "message": "डिसमिस करा"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "एकल-फाइल HTML आर्काइव्ह जतन केले."
-  },
-  "brandSignature": {
-    "message": "Turan Burak Yeşilyurt (2run.dev) यांनी तयार केलेले"
-  },
-  "tabImages": {
-    "message": "प्रतिमा आणि SVG"
-  },
-  "tabMedia": {
-    "message": "मीडिया आणि ऑडिओ"
-  },
-  "tabFonts": {
-    "message": "फॉन्ट"
-  },
-  "tabTextScraper": {
-    "message": "मजकूर आणि सारण्या"
-  },
-  "heroScreenshotTitle": {
-    "message": "पूर्ण पृष्ठ स्क्रीनशॉट"
-  },
-  "heroScreenshotDesc": {
-    "message": "स्टिकी हेडर लपवून अनेक व्ह्यूपोर्ट अखंडपणे जोडले जातात"
-  },
-  "heroArchiveTitle": {
-    "message": "सिंगल-फाइल HTML संग्रहण"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS आणि Base64 प्रतिमा समाविष्ट, ऑफलाइन वापरासाठी सुरक्षित स्नॅपशॉट"
-  },
-  "copyDataUri": {
-    "message": "Data URI कॉपी करा"
-  },
-  "copyUrl": {
-    "message": "URL कॉपी करा"
   },
   "downloadSingle": {
     "message": "डाउनलोड करा"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "संसाधने"
   },
-  "statusFiltered": {
-    "message": "फिल्टर केले"
-  },
   "statusSelected": {
     "message": "निवडले"
   },
   "statusDupes": {
     "message": "डुप्लिकेट लपवलेले"
-  },
-  "statusSize": {
-    "message": "आकार"
   },
   "langAuto": {
     "message": "स्वयं (ब्राउझर)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "भाषा निवडा"
   },
-  "textPillAll": {
-    "message": "सर्व सामग्री"
-  },
-  "textPillText": {
-    "message": "📄 मजकूर आणि लेख"
-  },
-  "textPillTables": {
-    "message": "📊 फक्त सारण्या"
-  },
   "textSelectAll": {
     "message": "सर्व निवडा"
   },
   "textDeselectAll": {
     "message": "सर्वांची निवड रद्द करा"
-  },
-  "textClearSelection": {
-    "message": "साफ करा"
   },
   "toastRefreshComplete": {
     "message": "पृष्ठ स्कॅन पूर्ण झाले: $count$ नवीन संसाधने",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ सारण्या · $rows$ अद्वितीय पंक्ती",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ निवडले — निर्यातीत फक्त हेच समाविष्ट होतील",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "सारणी — स्क्रीनवर $count$ पंक्ती",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "सारणी — सर्व $count$ अद्वितीय पंक्ती",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ स्नॅपशॉट",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "सर्व पंक्ती दाखवत आहे"
   },
-  "textTableHistory": {
-    "message": "इतिहास ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "इतिहास लपवा"
-  },
   "textTableNoRows": {
     "message": "अद्याप कोणतीही पंक्ती कॅप्चर केलेली नाही."
   },
   "textBtnCopy": {
     "message": "मजकूर कॉपी करा"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 कॉपी करा"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ डुप्लिकेट प्रतिमा",
@@ -689,35 +529,17 @@
       }
     }
   },
-  "labelExport": {
-    "message": "निर्यात करा"
-  },
   "inspectorLoadingSvg": {
-    "message": "SVG लोड करत आहे..."
+    "message": "SVG लोड करत आहे…"
   },
   "inspectorSvgError": {
     "message": "SVG सामग्री मिळवता आली नाही."
   },
   "inspectorLoadingFont": {
-    "message": "फॉन्ट पूर्वावलोकन लोड करत आहे..."
+    "message": "फॉन्ट पूर्वावलोकन लोड करत आहे…"
   },
   "inspectorFontSample": {
     "message": "फॉन्ट पूर्वावलोकन"
-  },
-  "inspectorBeautify": {
-    "message": "फॉरमॅट करा"
-  },
-  "inspectorOriginal": {
-    "message": "मूळ"
-  },
-  "inspectorHeaders": {
-    "message": "शीर्षलेख"
-  },
-  "inspectorResponse": {
-    "message": "प्रतिसाद"
-  },
-  "inspectorRequest": {
-    "message": "विनंती"
   },
   "inspectorQueryParams": {
     "message": "क्वेरी पॅरामीटर्स"
@@ -725,23 +547,11 @@
   "inspectorRequestBody": {
     "message": "विनंती बॉडी"
   },
-  "textHintHtml": {
-    "message": "पृष्ठाची थेट, वाचनीय प्रत. मजकूर असणारा प्रत्येक घटक DOM क्रमाने कॅप्चर केला जातो आणि पृष्ठ बदलत असताना येथे ठेवला जातो. साधा मजकूर, रेग्युलर एक्सप्रेशन, <strong>CSS सिलेक्टर</strong> किंवा <strong>XPath</strong> एक्सप्रेशनसह क्वेरी करा, नंतर जे जुळले ते निर्यात करा. तपशीलांसाठी <a href=\"#\" id=\"text-hint-guide\">मार्गदर्शक</a> पहा."
-  },
-  "textHeadings": {
-    "message": "शीर्षके"
-  },
-  "textAllLevels": {
-    "message": "सर्व स्तर"
-  },
   "textMatches": {
     "message": "जुळण्या"
   },
   "textMatch": {
     "message": "जुळणी"
-  },
-  "textReadingOn": {
-    "message": "वाचन चालू"
   },
   "toastDownloadStarted": {
     "message": "डाउनलोड सुरू झाले: $name$",
@@ -756,7 +566,7 @@
     "message": "हे संसाधन आणता आले नाही (CORS किंवा असमर्थित प्रकार)."
   },
   "ratingBannerText": {
-    "message": "Source Download चा आनंद घेत आहात? Chrome वेब स्टोअरवरील पुनरावलोकन किंवा GitHub वरील स्टारसह आमच्या मुक्त-स्रोत उपक्रमाला पाठिंबा द्या!"
+    "message": "उपयोगी पडले याचा आनंद आहे! Source Download मुळे तुमचा वेळ वाचत असेल, तर एक छोटा अभिप्राय इतरांना ते शोधण्यात मदत करतो."
   },
   "ratingBannerReview": {
     "message": "★ पुनरावलोकन"
@@ -828,10 +638,10 @@
     }
   },
   "statusIndexing": {
-    "message": "फाइल सामग्री अनुक्रमित करत आहे..."
+    "message": "फाइल सामग्री अनुक्रमित करत आहे…"
   },
   "statusCheckingDuplicates": {
-    "message": "प्रतिमांचे डुप्लिकेट तपासत आहे..."
+    "message": "प्रतिमांचे डुप्लिकेट तपासत आहे…"
   },
   "statusWorking": {
     "message": "कार्यरत आहे…"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "क्वेरी बॉक्सचा अर्थ कसा लावला जातो"
   },
-  "textKindTitle": {
-    "message": "एका घटक प्रकारापुरते मर्यादित करा"
-  },
-  "textHeadingLevelTitle": {
-    "message": "शीर्षक पातळी"
-  },
   "textPlaceholderRegex": {
     "message": "^किंमत:\\s*\\d+ — JavaScript रेग्युलर एक्सप्रेशन"
   },
@@ -866,27 +670,6 @@
   "guideSearchPlaceholder": {
     "message": "मार्गदर्शक शोधा…"
   },
-  "popupIntro": {
-    "message": "<strong>टूलबार बॅज</strong> द्वारे मोजल्या जाणाऱ्या श्रेणी. एखादी श्रेणी बंद केल्यास तिची मोजणी थांबते — बॅजमध्ये लगेच फक्त तुम्ही ट्रॅक करत असलेल्याच दिसतात."
-  },
-  "popupHelpTitle": {
-    "message": "पूर्ण पॅनेल कसे वापरावे"
-  },
-  "popupStep1": {
-    "message": "तुम्हाला तपासायच्या पृष्ठासाठी DevTools उघडा <div class=\"hint\"><kbd>F12</kbd> किंवा <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "DevTools टूलबारमधील <strong>Source Download</strong> टॅबवर क्लिक करा"
-  },
-  "popupStep3": {
-    "message": "संसाधने ब्राउझ करा, तपासा आणि डाउनलोड करा — स्वतंत्रपणे किंवा सर्व एकत्र ZIP म्हणून."
-  },
-  "popupNote": {
-    "message": "टीप: Chrome विस्तारांना DevTools प्रोग्रामॅटिकपणे उघडण्याची परवानगी देत नाही, म्हणूनच संपूर्ण टूलसेट DevTools टूलबारमधून उघडावा लागतो."
-  },
-  "popupTrackAll": {
-    "message": "सर्व श्रेणींचा मागोवा घ्या"
-  },
   "popupLanguage": {
     "message": "भाषा"
   },
@@ -894,13 +677,13 @@
     "message": "बायनरी प्रतिसाद — ते पाहण्यासाठी डाउनलोड करा"
   },
   "inspectorLoadingResponse": {
-    "message": "प्रतिसाद लोड करत आहे..."
+    "message": "प्रतिसाद लोड करत आहे…"
   },
   "inspectorNoResponsePreview": {
     "message": "प्रतिसादाचे पूर्वावलोकन नाही — सामग्री मिळवता आली नाही."
   },
   "inspectorLoadingContent": {
-    "message": "सामग्री लोड करत आहे..."
+    "message": "सामग्री लोड करत आहे…"
   },
   "inspectorNoPreview": {
     "message": "पूर्वावलोकन उपलब्ध नाही — सामग्री मिळवता आली नाही."
@@ -921,10 +704,10 @@
     "message": "सिंटॅक्स हायलाइटिंगसह SVG मार्कअप दाखवा"
   },
   "inspectorFormatting": {
-    "message": "फॉरमॅट करत आहे..."
+    "message": "फॉरमॅट करत आहे…"
   },
   "findInContentPlaceholder": {
-    "message": "सामग्रीमध्ये शोधा..."
+    "message": "सामग्रीमध्ये शोधा…"
   },
   "findPreviousMatch": {
     "message": "मागील जुळणी"
@@ -966,20 +749,6 @@
   },
   "btnMergeHls": {
     "message": "विभाग विलीन करा आणि डाउनलोड करा"
-  },
-  "toastHlsMerged": {
-    "message": "$COUNT$ विभाग $NAME$ मध्ये विलीन केले",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "आकार अज्ञात"
   },
   "progressFetching": {
     "message": "$DONE$/$TOTAL$ आणत आहे · ZIP $EST$…",
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Regex शोध सक्रिय — तुमची क्वेरी /pattern/i स्वरूपात लिहा"
   },
-  "textIncludeInExports": {
-    "message": "निर्यातीत समाविष्ट करा"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "प्रत्येक स्नॅपशॉट डुप्लिकेट वगळून एका सारणीत एकत्र करा — हेच निर्यात केले जाते"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "या सारणीचे पूर्वीचे स्नॅपशॉट ब्राउझ करा"
-  },
   "tableDownloadCsvTitle": {
     "message": "ही सारणी CSV म्हणून डाउनलोड करा"
-  },
-  "tableSnapshotLabel": {
-    "message": "स्नॅपशॉट $INDEX$ — $TIME$ ($COUNT$ पंक्ती)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "बॅच डाउनलोडसाठी निवडा / निवड रद्द करा"
@@ -1150,7 +899,7 @@
     "message": "DevTools टूलबारमधील <strong>Source Download</strong> टॅबवर क्लिक करा (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> दाबा, मग DevTools टूलबारमधील टॅब निवडा). Chrome विस्तारांना DevTools आपोआप उघडण्याची परवानगी देत नाही, म्हणूनच पॅनेल तेथे असते. टूलबार आयकॉन पॉपअपमधून तुम्ही आयकॉनवरील बॅज काउंटरमध्ये कोणत्या श्रेणी मोजायच्या हे निवडू शकता. पॅनेल टूलबारमधील सूर्य/चंद्र बटण Chrome पासून स्वतंत्रपणे हलकी किंवा गडद थीम निश्चित करते; ही निवड लक्षात ठेवली जाते."
   },
   "guideSecCategoriesContent": {
-    "message": "डावीकडील उभे टॅब प्रत्येक कॅप्चर केलेले संसाधन प्रकारानुसार 17 विशेष श्रेणींमध्ये गटबद्ध करतात: प्रतिमा, व्हिडिओ, ऑडिओ, कॅप्शन, दस्तऐवज, फॉन्ट, स्रोत नकाशे, WASM, SVG, API, कुकीज, स्टोरेज आणि बरेच काही. प्रत्येक टॅब लाइव्ह संख्या दाखवतो. एका वेळी फक्त एक श्रेणी दाखवली जाते; श्रेणी बदलल्यावर सर्व फिल्टर रीसेट होतात, त्यामुळे तुम्हाला जे दिसते ते नेहमी टॅबशी जुळते."
+    "message": "डावीकडील उभे टॅब प्रत्येक कॅप्चर केलेल्या संसाधनाला इमेज, व्हिडिओ, फॉन्ट, सोर्स मॅप आणि API कॉल अशा 15 श्रेणींमध्ये वर्गीकृत करतात, शिवाय मजकूर व तक्त्यांचा एक टॅबही आहे. प्रत्येक टॅब लाइव्ह संख्या दाखवतो. एका वेळी फक्त एक श्रेणी दाखवली जाते; श्रेणी बदलल्यावर सर्व फिल्टर रीसेट होतात, त्यामुळे तुम्हाला जे दिसते ते नेहमी टॅबशी जुळते."
   },
   "guideSecSearchFiltersContent": {
     "message": "शोध बार नाव, URL, प्रकार, Alt मजकूर किंवा शीर्षकानुसार फिल्टर करते. रेग्युलर एक्स्प्रेशन वापरण्यासाठी तुमची क्वेरी <kbd>/…/</kbd> मध्ये संलग्न करा, उदा. <code>/\\.(png|jpg)$/</code>. टूलबारच्या खाली, प्रति श्रेणी फिल्टर बार बदलतो: मीडियासाठी आकार आणि परिमाण श्रेणी, HTTP पद्धत आणि API साठी विनंती प्रकार, तसेच क्रमवारी आणि दिशा."
@@ -1162,13 +911,13 @@
     "message": "उजवीकडील तपासणी उपखंडात उघडण्यासाठी कोणत्याही संसाधनावर क्लिक करा. प्रत्येक उघडलेली फाइल एक टॅब बनते, त्यामुळे तुम्ही अनेक संसाधनांची शेजारी शेजारी तुलना करू शकता — सर्वात नवीन डावीकडे उघडते. प्रतिमा, व्हिडिओ, ऑडिओ, फॉन्ट, SVG आणि मजकूर/कोडसाठी (फॉरमॅट टॉगलसह) विशेष व्ह्यूअर आहेत. API साठी विभाजित दृश्य दिसते: डावीकडे प्रतिसाद, उजवीकडे विनंतीचे तपशील (पद्धत, स्थिती, शीर्षलेख, क्वेरी पॅरामीटर्स आणि बॉडी)."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>सध्याचे दृश्य डाउनलोड करा</strong> सध्या दिसणारी संसाधने (सक्रिय श्रेणी + शोध + फिल्टर) ZIP म्हणून जतन करते; फिल्टर सक्रिय असताना हे बटण <em>फिल्टर केलेले डाउनलोड करा (N)</em> असे बदलते. क्लिक करण्यापूर्वी अंदाजे आर्काइव्ह आकार पाहण्यासाठी कोणत्याही डाउनलोड बटणावर कर्सर ठेवा. <strong>निवडलेले डाउनलोड करा</strong> फक्त चेक केलेले आयटम डाउनलोड करते. <strong>सर्व डाउनलोड करा</strong> सापडलेली प्रत्येक संसाधने फोल्डर-रचना असलेल्या ZIP मध्ये जतन करते. अयशस्वी डाउनलोड आपोआप पुन्हा प्रयत्न केले जातात आणि संदर्भ मेनूमधून पुन्हा करता येतात. <strong>निर्यात करा</strong> दृश्यमान सूची JSON किंवा CSV म्हणून लिहिते, किंवा Chrome चा नेटवर्क लॉग HAR फाइल म्हणून जतन करते."
+    "message": "<strong>दिसणारे डाउनलोड करा</strong> सध्या दिसणारी संसाधने (सक्रिय श्रेणी + शोध + फिल्टर) ZIP म्हणून जतन करते; फिल्टर सक्रिय असताना हे बटण <em>फिल्टर केलेले डाउनलोड करा (N)</em> असे बदलते. क्लिक करण्यापूर्वी अंदाजे आर्काइव्ह आकार पाहण्यासाठी कोणत्याही डाउनलोड बटणावर कर्सर ठेवा. <strong>निवडलेले डाउनलोड करा</strong> फक्त चेक केलेले आयटम डाउनलोड करते. <strong>सर्व डाउनलोड करा</strong> सापडलेली प्रत्येक संसाधने फोल्डर-रचना असलेल्या ZIP मध्ये जतन करते. अयशस्वी डाउनलोड चिन्हांकित होतात, आणि सूचना, आयटमचा चेतावणी आयकॉन किंवा संदर्भ मेनूमधून एका क्लिकमध्ये पुन्हा प्रयत्न करता येतो. <strong>निर्यात करा</strong> दृश्यमान सूची JSON किंवा CSV म्हणून लिहिते, किंवा Chrome चा नेटवर्क लॉग HAR फाइल म्हणून जतन करते."
   },
   "guideSecLightboxContent": {
     "message": "झूम बटण मीडिया पूर्ण-आकाराच्या लाइटबॉक्समध्ये उघडते, जिथे तुम्ही ड्रॅग करून पॅन करू शकता, तसेच माउस व्हील, स्क्रीनवरील बटणे किंवा कीबोर्डने झूम करू शकता (झूम करण्यासाठी <kbd>+</kbd>/<kbd>-</kbd>, रीसेट करण्यासाठी <kbd>0</kbd>, बंद करण्यासाठी <kbd>Esc</kbd>)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>मजकूर</strong> श्रेणी म्हणजे पृष्ठाची लाइव्ह, वाचनीय प्रत. मजकूर असलेला प्रत्येक घटक — शीर्षके, परिच्छेद, सूची आयटम, बटणे, <code>div</code>/<code>span</code> आणि बरेच काही — DOM क्रमाने कॅप्चर केला जातो आणि <strong>लाइव्ह</strong> चालू असताना स्कॅनिंग सुरू राहते.</p><p><strong>क्वेरी</strong> बॉक्स चार प्रकारे काम करतो, जे बाजूच्या ड्रॉपडाउनमधून निवडता येतात: <strong>समाविष्ट आहे</strong> आणि <strong>Regex</strong> आधीच कॅप्चर केलेला मजकूर फिल्टर करतात, तर <strong>CSS सिलेक्टर</strong> आणि <strong>XPath</strong> थेट पृष्ठावर चालवले जातात, त्यामुळे ते DOM मधील कोणत्याही गोष्टीपर्यंत पोहोचू शकतात. XPath घटकांऐवजी मूल्य परत करणारी एक्सप्रेशन्सही स्वीकारतो, उदा. <code>count(//a)</code> किंवा <code>//@href</code>. चुकीच्या क्वेरीबद्दल पृष्ठ जे काही सांगते ते बॉक्सच्या शेजारी दाखवले जाते. <strong>घटक</strong> निकाल एका टॅगपुरता मर्यादित करतो आणि पृष्ठावर आढळलेल्या प्रत्येक टॅगची संख्या दाखवतो. क्वेरी बॉक्स रिकामा केल्यास (किंवा <strong>साफ करा</strong> दाबल्यास) तुम्ही <em>सर्व घटक</em> वर परत येता आणि पृष्ठ पुन्हा कॅप्चर होते — ड्रॉपडाउन हाताने रीसेट करावा लागत नाही.</p><p><strong>वाचन</strong> टॅग, चेकबॉक्स आणि स्थानाचे ब्रेडक्रंब लपवते, जेणेकरून मजकूर एखाद्या दस्तऐवजासारखा वाचता येतो. सारण्या स्नॅपशॉटचा मर्यादित इतिहास साठवतात, त्यामुळे डायनॅमिक (SPA) सारण्या कधीही गमावल्या जात नाहीत. प्रत्येक स्नॅपशॉट डुप्लिकेट वगळून एका दृश्यात एकत्र करण्यासाठी सारणीवरील <strong>सर्व पंक्ती दर्शवा</strong> दाबा — निर्यातीत नेमके तेच असते. <strong>TXT</strong> (वाचनीय पृष्ठ), <strong>MD</strong> (मार्कडाउन, सारण्यांसह) म्हणून, किंवा सारण्या CSV, HTML किंवा खऱ्या मल्टी-शीट <strong>XLSX</strong> वर्कबुक म्हणून निर्यात करा. चेक केलेल्या आयटमना प्राधान्य मिळते; अन्यथा सध्या दिसणारे सर्व काही निर्यात केले जाते.</p>"
+    "message": "<p><strong>मजकूर</strong> विभाग म्हणजे पेजची लाइव्ह, वाचायला सोपी प्रत: शीर्षके, परिच्छेद, याद्या आणि लिंक पेजच्या क्रमाने, आणि <strong>लाइव्ह</strong> चालू असेपर्यंत अपडेट होत राहतात. एखादी ओळ कॉपी करण्यासाठी तिच्यावर पॉइंटर न्या, किंवा दिसणाऱ्या सर्व मजकुरासाठी <strong>मजकूर कॉपी करा</strong>, <strong>Markdown</strong> आणि <strong>TXT</strong> वापरा.</p><p><strong>तक्ते</strong> मध्ये पेजवरील प्रत्येक तक्ता प्रिव्ह्यू आणि स्वतःची <strong>Excel</strong>, <strong>CSV</strong> आणि <strong>कॉपी करा</strong> बटणे असलेल्या कार्डच्या रूपात दिसतो; <strong>सर्व तक्ते Excel मध्ये</strong> सर्व तक्ते एका वर्कबुकमध्ये, प्रत्येकासाठी एक शीट, ठेवते. बदलणारे तक्ते स्नॅपशॉटचा इतिहास ठेवतात, आणि <strong>सर्व पंक्ती दर्शवा</strong> त्यांना पुनरावृत्ती नसलेल्या एकाच तक्त्यात एकत्र करते — निर्यातीत नेमके हेच असते.</p><p>डावीकडील चौकटी पेजला घटकाच्या प्रकारानुसार लावतात — पेजवरील सर्व मजकूर, प्रत्येक शीर्षक पातळी, परिच्छेद, लिंक, यादीतील घटक, बटणे, कोड आणि बरेच — प्रत्येकाची संख्या आणि पहिली ओळ दाखवत; फक्त तेच पाहण्यासाठी, कॉपी किंवा निर्यात करण्यासाठी एक निवडा. शोध चौकट टाइप करताना फिल्टर करते, आणि शेजारचा मेनू तिला रेग्युलर एक्सप्रेशन, <strong>CSS सिलेक्टर</strong> किंवा <strong>XPath</strong> एक्सप्रेशनमध्ये (<code>count(//a)</code> किंवा <code>//@href</code> सारखी मूल्य देणारी एक्सप्रेशनही) बदलून लाइव्ह पेजवर चालवतो; <strong>सानुकूल क्वेरी</strong> चौकटही तेच करते. चुकीच्या क्वेरीबद्दल पेज जे सांगते ते चौकटीतच दिसते.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML आणि इतर कॅप्शन फाइल्स — <code>&lt;track&gt;</code> स्रोतांसह — दस्तऐवजांमध्ये मिसळण्याऐवजी त्यांच्या स्वतःच्या <strong>कॅप्शन</strong> टॅबमध्ये दिसतात."
@@ -1270,7 +1019,7 @@
     "message": "रंग क्लिपबोर्डवर कॉपी केला"
   },
   "toastProgressCapturing": {
-    "message": "संपूर्ण पेज कॅप्चर करत आहे... $percent$%",
+    "message": "संपूर्ण पेज कॅप्चर करत आहे… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "प्रतिमा जोडत आहे..."
+    "message": "प्रतिमा जोडत आहे…"
   },
   "modalExportTitle": {
     "message": "संपूर्ण पेजचा स्क्रीनशॉट तयार आहे"
@@ -1302,7 +1051,7 @@
     "message": "क्लिपबोर्डवर कॉपी करा"
   },
   "btnExportGenerating": {
-    "message": "तयार करत आहे..."
+    "message": "तयार करत आहे…"
   },
   "toastPdfGenerated": {
     "message": "PDF दस्तऐवज जतन केला."
@@ -1317,13 +1066,10 @@
     "message": "पूर्वावलोकन:"
   },
   "toastRecGeneratingGif": {
-    "message": "GIF तयार करत आहे, कृपया प्रतीक्षा करा..."
+    "message": "GIF तयार करत आहे, कृपया प्रतीक्षा करा…"
   },
   "settingGifResolution": {
     "message": "डीफॉल्ट GIF रिझोल्यूशन"
-  },
-  "optGifOriginal": {
-    "message": "मूळ (1:1 नेटिव्ह रिझोल्यूशन — पूर्ण 3K/4K, आकार कमी न करता)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (कमाल 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "स्क्रीन रेकॉर्डिंग (व्हिडिओ आणि GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "स्क्रीनवरील कोणतेही क्षेत्र MP4, WebM किंवा ॲनिमेटेड GIF म्हणून रेकॉर्ड करा. GIF रेकॉर्डिंगसाठी 1:1 नेटिव्ह रिझोल्यूशन, 1080p, 720p आणि 480p प्रोफाइल उपलब्ध आहेत, तसेच अंदाजे फाइल आकार थेट दिसतो. ब्राउझरच्या उत्तम कामगिरीसाठी GIF रेकॉर्डिंगचा कमाल कालावधी 1 मिनिट (60s) आहे."
+    "message": "स्क्रीनचा कोणताही भाग MP4, WebM किंवा ॲनिमेटेड GIF म्हणून रेकॉर्ड करा. GIF रेकॉर्डिंगमध्ये 1080p, 720p आणि 480p प्रोफाइल आणि फाइल आकाराचा थेट अंदाज मिळतो. एक GIF रेकॉर्डिंग जास्तीत जास्त 1 मिनिट (60 सेकंद) असू शकते."
   },
   "msgGifMaxDurationReached": {
-    "message": "GIF ची कमाल कालमर्यादा 1 मिनिट (60 से) गाठली. GIF तयार करत आहे..."
+    "message": "GIF ची कमाल कालमर्यादा 1 मिनिट (60 से) गाठली. GIF तयार करत आहे…"
   },
   "labelGifMaxDuration": {
     "message": "कमाल 1 मिनिट (60 से)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — सादरीकरण (प्रति सेकंद 1 फ्रेम, किमान आकार)"
-  },
-  "popupRightClickHint": {
-    "message": "स्क्रीन रेकॉर्डिंग (व्हिडिओ/GIF) आणि कलर पिकरसाठी वेबपेजवर कुठेही राइट-क्लिक करा."
   },
   "toastElementZappedAd": {
     "message": "या सत्रासाठी जाहिरात / iframe लपवली.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF रिझोल्यूशन: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF रिझोल्यूशन: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "सक्रिय टॅब आढळला नाही.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "येथे क्लिक करा, नंतर पेजवरील कोणताही रंग निवडा"
+  },
+  "welcomeTitle": {
+    "message": "Source Download तयार आहे"
+  },
+  "welcomePrivacy": {
+    "message": "सर्व काही तुमच्या संगणकावर चालते. खाते नाही, ट्रॅकिंग नाही, आम्हाला काहीही पाठवले जात नाही."
+  },
+  "welcomeHelp": {
+    "message": "काही काम करत नाही? GitHub वर आम्हाला सांगा"
+  },
+  "ratingBannerIssue": {
+    "message": "काही अडचण आहे?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF 200 MB पर्यंत पोहोचले. रेकॉर्ड केलेला भाग सेव्ह होत आहे…"
+  },
+  "btnPopupFullPage": {
+    "message": "संपूर्ण पेजचा स्क्रीनशॉट"
+  },
+  "toastRecWrongTab": {
+    "message": "या पेजचा एखादा भाग रेकॉर्ड करण्यासाठी, शेअरिंग डायलॉगमध्ये \"हा टॅब\" निवडा."
+  },
+  "popupCaptureTitle": {
+    "message": "हे पेज कॅप्चर करा"
+  },
+  "popupTileOffline": {
+    "message": "पेज ऑफलाइन सेव्ह करा"
+  },
+  "popupTileGuide": {
+    "message": "हे कसे काम करते"
+  },
+  "popupDevtoolsTitle": {
+    "message": "फाइल्स, इमेज आणि तक्ते"
+  },
+  "popupDevtoolsHint": {
+    "message": "DevTools उघडा, नंतर Source Download टॅब निवडा."
+  },
+  "popupRestricted": {
+    "message": "Chrome या पेजवर एक्सटेन्शनना परवानगी देत नाही. टूल्स वापरण्यासाठी एखादी वेबसाइट उघडा."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "कोणत्याही पेजवर राइट-क्लिक करा"
+  },
+  "welcomeCardMenuText": {
+    "message": "पूर्ण पेज आणि क्षेत्राचे स्क्रीनशॉट, क्षेत्राचे रेकॉर्डिंग, रंग निवडक आणि ऑफलाइन प्रत — तुम्ही जिथे आहात तिथेच."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "किंवा टूलबार बटण वापरा"
+  },
+  "welcomeCardPopupText": {
+    "message": "Chrome च्या टूलबारमधील कोड्याच्या आयकॉनवर क्लिक करा आणि Source Download पिन करा, म्हणजे टूल्स नेहमी एका क्लिकवर असतील."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "पेजवरील सर्व काही पाहण्यासाठी F12 दाबा"
+  },
+  "welcomeCardPanelText": {
+    "message": "DevTools मध्ये Source Download टॅब निवडा. पेजने लोड केलेली प्रत्येक इमेज, व्हिडिओ, फॉन्ट आणि फाइल तिथे दिसते — प्रिव्ह्यू पाहा, फिल्टर करा आणि ZIP म्हणून सेव्ह करा. पेजवरील तक्ते Excel मध्ये निर्यात होतात."
+  },
+  "welcomeLead": {
+    "message": "कोणत्याही वेब पेजवरून हवे ते मिळवण्याचे तीन मार्ग."
+  },
+  "btnDownloadOptions": {
+    "message": "डाउनलोडचे आणखी पर्याय"
+  },
+  "btnMore": {
+    "message": "आणखी क्रिया"
+  },
+  "btnFilters": {
+    "message": "फिल्टर"
+  },
+  "tabsShowEmpty": {
+    "message": "रिकाम्या दाखवा"
+  },
+  "tabsHideEmpty": {
+    "message": "रिकाम्या लपवा"
+  },
+  "textSegText": {
+    "message": "मजकूर"
+  },
+  "textSegTables": {
+    "message": "तक्ते"
+  },
+  "textLive": {
+    "message": "लाइव्ह"
+  },
+  "textPaused": {
+    "message": "थांबवले"
+  },
+  "textLivePauseTitle": {
+    "message": "लाइव्ह: पेज बदलताच पुन्हा वाचले जाते. थांबवण्यासाठी क्लिक करा."
+  },
+  "textLiveResumeTitle": {
+    "message": "थांबवले. पेज पुन्हा लाइव्ह पाहण्यासाठी क्लिक करा."
+  },
+  "textSearchText": {
+    "message": "पेजच्या मजकुरात शोधा"
+  },
+  "textExportAllXlsx": {
+    "message": "सर्व तक्ते Excel मध्ये"
+  },
+  "textNoTables": {
+    "message": "या पेजवर अजून कोणताही तक्ता नाही. पेजवर तक्ता दिसताच तो इथे येईल."
+  },
+  "textTable": {
+    "message": "तक्ता"
+  },
+  "textCopy": {
+    "message": "कॉपी करा"
+  },
+  "textShowLess": {
+    "message": "कमी दाखवा"
+  },
+  "areaHintSelect": {
+    "message": "क्षेत्र निवडण्यासाठी ड्रॅग करा"
+  },
+  "areaHintCopy": {
+    "message": "कॉपी"
+  },
+  "areaHintSave": {
+    "message": "सेव्ह"
+  },
+  "areaHintExit": {
+    "message": "बाहेर पडा"
+  },
+  "areaAutoCopyLabel": {
+    "message": "आपोआप कॉपी करा"
+  },
+  "areaAutoCopyOn": {
+    "message": "आपोआप कॉपी चालू आहे"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "निवड सोडताच ती क्लिपबोर्डवर असेल."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "बंद करा"
+  },
+  "toastAreaAutoCopied": {
+    "message": "क्लिपबोर्डवर कॉपी झाले (आपोआप कॉपी चालू आहे)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "हे पेज क्लिपबोर्डवर कॉपी करू देत नाही. त्याऐवजी डाउनलोड वापरा."
+  },
+  "textKindAll": {
+    "message": "पेजवरील सर्व मजकूर"
+  },
+  "textKindHeading": {
+    "message": "शीर्षक"
+  },
+  "textKindP": {
+    "message": "परिच्छेद"
+  },
+  "textKindA": {
+    "message": "लिंक"
+  },
+  "textKindLi": {
+    "message": "यादीतील घटक"
+  },
+  "textKindButton": {
+    "message": "बटणे"
+  },
+  "textKindLabel": {
+    "message": "लेबल आणि कॅप्शन"
+  },
+  "textKindSpan": {
+    "message": "इनलाइन मजकूर"
+  },
+  "textKindDiv": {
+    "message": "इतर ब्लॉक"
+  },
+  "textKindCell": {
+    "message": "तक्त्यातील सेल"
+  },
+  "textKindCode": {
+    "message": "कोड"
+  },
+  "textKindQuote": {
+    "message": "अवतरणे"
+  },
+  "textCustomQuery": {
+    "message": "सानुकूल क्वेरी"
+  },
+  "textCustomQueryHint": {
+    "message": "लाइव्ह पेजवर CSS सिलेक्टर किंवा XPath"
+  },
+  "menuSettings": {
+    "message": "सेटिंग्ज"
+  },
+  "settingsSave": {
+    "message": "सेव्ह करा"
+  },
+  "settingsReset": {
+    "message": "डीफॉल्टवर परत आणा"
+  },
+  "settingAreaAutoCopy": {
+    "message": "क्षेत्राचे स्क्रीनशॉट आपोआप कॉपी करा"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "निवड सोडताच इमेज थेट क्लिपबोर्डवर जाते. हे चालू असेपर्यंत पेजच्या वरचा संकेत प्रत्येक वेळी हे सांगतो."
   }
 }

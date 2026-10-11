@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Pregledavajte, istražujte i preuzmite svaki web resurs koji stranica učita, jednostavno kao ZIP.</em><br>
-  Source Download — svaki resurs stranice na jedan klik
+  <em>Spremite slike, ikone i datoteke s web-stranice pojedinačno ili kao ZIP. Snimka cijele stranice i snimanje odabranog područja.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Ovo je moj **prvi projekt otvorenog koda**, pa mi vaše povratne informacije pun
 
 ## Vizualni obilazak i glavni moduli
 
-Istražite module sučelja visoke razlučivosti ugrađene izravno u Google Chrome DevTools, kontekstni izbornik i skočni prozor na alatnoj traci.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Snimite i preuzmite sve s weba
-> **★ DEVTOOLS INŽENJERSKI SKUP ALATA · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Svaka datoteka stranice na jednoj ploči"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Snimite i preuzmite sve s weba">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Desni klik. Snimljeno."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Odaberite područje. Već je u međuspremniku."></p>
 
-### 2. Snimite bilo koji dio zaslona kao video i GIF
-> **★ SNIMAČ ODABRANOG PODRUČJA ZASLONA · MP4, WEBM I GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Tekst i tablice stranice, razvrstani za vas"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Snimite bilo koji dio zaslona kao video i GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Cijele stranice, snimke, izvanmrežne kopije"></p>
 
 ---
 
-### 3. Besprijekorna snimka cijele stranice uz pomicanje
-> **★ SNIMKE ZASLONA SAVRŠENE DO PIKSELA · CIJELA STRANICA I PODRUČJE**
+Source Download je skup alata za spremanje sadržaja s weba. U Chromeove alate za razvojne programere dodaje zasebnu karticu. Ondje je sve što je web-mjesto učitalo razvrstano po kategorijama da biste to pregledali i zadržali samo potrebno.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Besprijekorna snimka cijele stranice uz pomicanje">
-</p>
+## Glavne značajke
+- Uredna galerija: fotografije, ikone i fontovi prikazuju se na vlastitim karticama s brojačima uživo i okvirom za pretraživanje.
+- Precizni filtri: prikažite samo stavke šire od zadanog minimuma (npr. 1200 px) ili sakrijte duplikate.
+- Pravi pregled: povećajte grafiku i reproducirajte medije. Možete vidjeti i uzorak fonta ili kôd s isticanjem sintakse.
+- Jedna arhiva: označite što želite i dobijte jedan ZIP s urednom strukturom mapa. Neuspjele stavke ponavljate jednim klikom.
+- Snimka cijele stranice: sve se pomiče i spaja u PNG, JPG ili PDF. Možete odabrati i samo jedno područje.
+- Snimanje područja: pretvorite dio zaslona u isječak GIF, MP4 ili WebM.
+- Iz tablice u proračunsku tablicu: izvezite žive tablice u Excel ili CSV zajedno s ranijim stanjima tablica koje se osvježavaju.
+- Izvanmrežna kopija: zadržite web-mjesto kao jedan HTML dokument koji se otvara bez interneta.
+- Birač boja: odaberite bilo koju boju na zaslonu i kopirajte je kao HEX, RGB ili HSL.
 
----
+## Kako početi
+1. Otvorite web-mjesto s kojim želite raditi.
+2. Pritisnite F12 (na Macu Option + Command + I) i odaberite karticu Source Download. Ako je ne vidite, kliknite » na kraju trake kartica.
+3. Držite ploču otvorenom tijekom učitavanja da ništa ne promakne.
 
-### 4. DOM tablice uživo u Excel (XLSX) i CSV
-> **★ IZDVAJANJE PODATAKA I UKLANJANJE ELEMENATA**
-
-<sub>Izdvojite dinamičke tablice, zajedno s poviješću njihovih snimki, u višelisne XLSX ili CSV datoteke.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="DOM tablice uživo u Excel (XLSX) i CSV">
-</p>
-
----
-
-### 5. Pipeta za boje na zaslonu i formatiranje koda
-> **★ RADNI PROSTOR ZA PROGRAMERE I DIZAJNERE**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Pipeta za boje na zaslonu i formatiranje koda">
-</p>
-
----
-
-Source Download je Chrome DevTools panel koji pronalazi, pregledava i preuzima svaki resurs koji web stranica učita. Trebate li medijske datoteke, skripte za razvoj, stilske resurse ili mrežne odgovore, možete ih spremiti kao pojedinačne datoteke ili kao uredan ZIP sa strukturom mapa.
-
-Izgrađen od nule bez ijedne vanjske ovisnosti: ZIP writer, XLSX builder, HLS merger i formateri koda ručno su napisani vanilla JavaScript. Bez okvira, bez koraka izgradnje, bez telemetrije. Sve se izvodi lokalno u vašem pregledniku.
-
-## Što je novo u v1.16.0
-- Potpuna višejezična podrška na 54 jezika, s potpunom lokalizacijom DevToolsa i trgovine.
-- 17 namjenskih kategorija resursa s brojačem uživo, koje obuhvaćaju sve medije, kod, API-je, pohranu i dokumente.
-- Snimke zaslona cijele stranice spojene u jednu i snimanje odabranog područja, uz pametno suzbijanje fiksnih zaglavlja.
-- Snimanje videa zaslona (MP4) i lagani izvoz animiranih GIF-ova bez prelijevanja na rubovima.
-- Izdvajanje DOM tablica uživo u višelisni Microsoft Excel (.XLSX) i CSV, uz DOM Zapper za uklanjanje elemenata.
-- Pipeta za boje na zaslonu s trenutnim kopiranjem hex/rgb/hsl vrijednosti i integrirano uljepšavanje koda.
-- Poboljšana stabilnost DevTools snifera i mrežni cjevovod visoke istovremenosti.
-
-## Zašto vam treba
-Snimka zaslona nije dovoljna. Uzmite prave datoteke — slike u punoj razlučivosti, stvarne video tokove, izvorne stilove i skripte — a ne spljoštenu sličicu.
-
-DevTools djeluje zastrašujuće. Source Download stavlja pred vas čistu, kategoriziranu galeriju istih mrežnih podataka, uz pretraživanje, filtre i preuzimanje jednim klikom.
-
-SPA-ovi sve skrivaju. Dinamičke aplikacije stvaraju resurse i API pozive koje nikad ne vidite u izvornom kodu stranice. Source Download ih bilježi dok se događaju, uključujući međustanja.
-
-## Što radi
-### Otkrijte sve
-- Spaja snimanje mrežnog prometa (HAR + zahtjevi uživo) s DOM skeniranjem svih vizualnih i strukturnih elemenata, uključujući medijske datoteke, skripte, stilove i ugrađene okvire.
-- **Svjestan CSS-a:** resursi unutar url(...) i @import pravila prate se rekurzivno, pa se pronalaze čak i fontovi skriveni u uvezenim stilovima.
-- **Prepoznavanje sadržaja:** nepoznate datoteke čitaju se nekoliko bajtova unatrag i svrstavaju u kategoriju njihove stvarne vrste.
-- **17 kategorija s brojačem uživo:** snimljeni resursi uredno su raspoređeni po namjenskim karticama za medije, kod, podatke, API pozive, kolačiće, pohranu i dokumente.
-
-### Filtrirajte, pretražujte, istražujte
-- Pretraga pomoću regularnih izraza po nazivima datoteka, URL-ovima, MIME tipovima, alt tekstu pa čak i sadržaju datoteka.
-- **Filtri po kategoriji:** minimalna/maksimalna veličina, a za medije i minimalna/maksimalna širina i visina — primjerice "samo naslovne slike ≥ 1200px". API pozivi filtriraju se prema HTTP metodi i vrsti zahtjeva.
-- Prikaz popisa ili mreže, uz sortiranje i zid sličica uživo.
-- **Inspektor s više kartica i pravim pregledima:** lightbox s zumiranjem, reprodukcija videa i zvuka, uzorak fonta uživo, SVG preglednik, kod s isticanjem sintakse i brojevima redaka te prekidač Uljepšati.
-- **API podijeljeni prikaz:** odgovor lijevo, a metoda, status, parametri upita i tijelo zahtjeva desno.
-
-### Preuzimajte kako treba
-- Preuzmi odabrano — samo datoteke koje ste označili.
-- Preuzmi pregled — sve što je vidljivo nakon trenutnih filtara i pretrage.
-- Preuzmi sve — svaki snimljeni resurs u ZIP sa strukturom mapa i automatskim uklanjanjem duplikata.
-- Skupna preuzimanja izvode se s ograničenom istovremenošću i trakom napretka uživo; neuspjela se automatski ponavljaju, a mogu i iz kontekstnog izbornika.
-
-### HLS i zahtjevni video
-- Za tokove koje preglednik ne može izvorno reproducirati (HLS .m3u8, DASH .mpd, nepoznati kodeci) prikazuje se pametna zamjena umjesto crnog playera.
-- Spoji segmente i preuzmi pretvara HLS tok u jednu datoteku koja se može reproducirati, izravno u panelu.
-
-### Tekstualna radionica (alat za sadržaj SPA-ova)
-- **Kartica Tekst preglednik je sadržaja uživo:** svaki element koji sadrži tekst — naslovi, odlomci, stavke popisa, gumbi, div-ovi, span-ovi — bilježi se redoslijedom DOM-a.
-- Dinamičke tablice čuvaju ograničenu povijest snimki (npr. "8 snimki · 124 jedinstvena retka"), pa nadzorne ploče koje se same osvježavaju nikad ne gube međustanja.
-- Izvezite kao Markdown, a tablice kao CSV, HTML ili pravu višelisnu XLSX radnu knjigu koju izrađuje naš ručno napisani XLSX writer.
-
-## Kako ga koristiti
-1. Instalirajte Source Download, a zatim na bilo kojoj stranici pritisnite F12.
-2. Kliknite karticu Source Download na alatnoj traci DevToolsa (Chrome ne dopušta proširenjima da automatski otvore DevTools — zato se nalazi tamo).
-3. Pregledajte kartice kategorija, pretražujte, filtrirajte i istražite bilo što u desnom panelu.
-4. Označite datoteke koje želite i pritisnite Preuzmi odabrano, Preuzmi pregled ili Preuzmi sve.
-5. Držite DevTools panel otvorenim dok se stranica učitava kako biste snimili svaki mrežni zahtjev.
-
-## Primjeri iz prakse
-- **Analiza konkurencije:** prikupite sličice videa s bilo kojeg kanala — uz filtar minimalne širine — u jednu mapu.
-- **Web scraping bez koda:** pratite API pozive SPA-a, filtrirajte do potrebne krajnje točke i preuzmite njezine točne JSON odgovore.
-- **Analiza tipografije:** saznajte koji font stranica zaista koristi i preuzmite stvarne datoteke fonta.
-- **Reprodukcija grešaka:** sačuvajte točne CSS/JS verzije koje su bile objavljene kad se greška dogodila.
-- **Izvoz podataka s nadzorne ploče:** izvezite tablicu koja se sama osvježava u višelisnu Excel radnu knjigu, zajedno s poviješću.
-- **QA testiranje:** provjerite koja se video/audio varijanta poslužuje u svakoj A/B konfiguraciji.
+Snimke zaslona, snimanje i birač boja dostupni su i u izborniku desnog klika te na gumbu proširenja.
 
 ## Privatnost
-- Radi 100% lokalno. Nema poslužitelja, nema analitike, nijedan podatak ne napušta vaše računalo.
-- **Traži samo ono što mu treba:** pohranu (vaše postavke), međuspremnik (kopiranje URL-ova i boja), preuzimanja (spremanje datoteka putem Chromea), kontekstne izbornike, skriptiranje i pristup hostovima (za skeniranje stranica i dohvaćanje sadržaja datoteka).
-- Datoteke se spremaju kroz uobičajeni Chromeov tijek preuzimanja — bez tihih preuzimanja.
 
-## Zahtjevi
-- Chrome 116 ili noviji (Manifest V3).
-- Najbolji rezultati postižu se kad je panel otvoren dok se stranica učitava, jer se tada odvija snimanje mrežnog prometa.
+Sve radi na vašem računalu. Nema računa ni analitike, a ništa od spremljenog ne šalje se razvojnom programeru. Spremljene stavke idu u vašu uobičajenu mapu Preuzimanja putem Chromea.
 
-Source Download projekt je otvorenog koda — povratne informacije, ideje i pull requestovi su dobrodošli.
+Proširenje treba pristup posjećenim web-mjestima kako bi pronašlo njihove resurse i obavljalo svoje funkcije.
 
-Povežimo se na LinkedInu: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Poštujte autorska prava i uvjete korištenja te zadržavajte samo sadržaj koji smijete koristiti.
+
+## Novo u verziji 1.17
+- Znatno lakše: ništa ne radi dok ne upotrijebite neku funkciju.
+- Izvanmrežne kopije sada sadrže sve fotografije, pozadine i fontove.
+- Snimanje GIF-a ostaje u okviru memorije čak i kod dugih HD isječaka.
+- Novi zaslon dobrodošlice i prečaci na gumbu proširenja.
+
+Pitanja ili problemi: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

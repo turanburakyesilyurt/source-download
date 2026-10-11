@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Navegue, inspecione e descarregue todos os recursos que uma página carrega, com facilidade, num ZIP.</em><br>
-  Source Download — todos os recursos de uma página a um clique de distância
+  <em>Guarde imagens, ícones e ficheiros que uma página web carrega, um a um ou em ZIP. Captura da página inteira e gravação de área.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Este é o meu **primeiro projeto de código aberto**, por isso o seu feedback si
 
 ## Tour visual e módulos principais
 
-Conheça os módulos de interface em alta resolução integrados diretamente no Google Chrome DevTools, no menu de clique direito e na janela pop-up da barra de ferramentas.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Capture e descarregue tudo da web
-> **★ SUÍTE DE ENGENHARIA PARA DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Cada ficheiro da página, à distância de um painel"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Capture e descarregue tudo da web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Clique direito. Capturado."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Selecione uma área. Já está na área de transferência."></p>
 
-### 2. Grave qualquer área do ecrã como vídeo e GIF
-> **★ GRAVADOR DE ÁREA DO ECRÃ · MP4, WEBM E GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Texto e tabelas da página, organizados para si"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Grave qualquer área do ecrã como vídeo e GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Páginas inteiras, gravações, cópias offline"></p>
 
 ---
 
-### 3. Captura de ecrã contínua da página inteira, sem emendas
-> **★ CAPTURAS DE ECRÃ PERFEITAS AO PIXEL · PÁGINA INTEIRA E ÁREA**
+O Source Download é um conjunto de ferramentas para capturar conteúdo web. Acrescenta um separador às ferramentas de programador do Chrome onde tudo o que um site carregou fica organizado por categoria, para pré-visualizar e guardar exatamente o que precisa.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Captura de ecrã contínua da página inteira, sem emendas">
-</p>
+## Principais funcionalidades
+- Galeria organizada: fotografias, ícones e tipos de letra aparecem em separadores próprios com contadores em direto e uma caixa de pesquisa.
+- Filtros precisos: mostre apenas itens acima de uma largura mínima, como 1200 px, ou oculte duplicados.
+- Pré-visualizações reais: amplie gráficos, reproduza multimédia, veja uma amostra de tipo de letra ou leia código com realce de sintaxe.
+- Um único arquivo: assinale o que pretende e receba um só ZIP com pastas organizadas. O que falhar pode ser repetido com um clique.
+- Captura da página inteira: tudo é percorrido e unido em PNG, JPG ou PDF. Também pode selecionar apenas uma área.
+- Gravação de área: transforme uma parte do ecrã num clip GIF, MP4 ou WebM.
+- De tabelas para folhas de cálculo: exporte tabelas em direto para Excel ou CSV, incluindo versões anteriores de tabelas que se atualizam.
+- Cópia offline: guarde um site como um único documento HTML que abre sem ligação à internet.
+- Seletor de cores: escolha qualquer cor no ecrã e copie-a como HEX, RGB ou HSL.
 
----
+## Como começar
+1. Abra o site com que pretende trabalhar.
+2. Prima F12 (Option + Command + I no Mac) e escolha o separador Source Download. Se não o vir, clique em » no fim da barra de separadores.
+3. Mantenha o painel aberto enquanto o site carrega para não perder nada.
 
-### 4. Tabelas DOM ao vivo para Excel (XLSX) e CSV
-> **★ EXTRAÇÃO DE DADOS E REMOÇÃO DE ELEMENTOS**
-
-<sub>Extraia tabelas dinâmicas, com o histórico de snapshots, para ficheiros XLSX com várias folhas ou CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Tabelas DOM ao vivo para Excel (XLSX) e CSV">
-</p>
-
----
-
-### 5. Conta-gotas de cores no ecrã e formatador de código
-> **★ BANCADA PARA PROGRAMADORES E DESIGNERS**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Conta-gotas de cores no ecrã e formatador de código">
-</p>
-
----
-
-Source Download é um painel do Chrome DevTools que descobre, inspeciona e descarrega todos os recursos carregados por uma página web. Quer precise de ficheiros multimédia, scripts de desenvolvimento, recursos de estilo ou respostas de rede, pode guardá-los como ficheiros individuais ou num ZIP organizado, com estrutura de pastas.
-
-Criado de raiz e sem dependências de terceiros: o gerador de ZIP, o construtor de XLSX, o fusor de HLS e os formatadores de código são todos escritos à mão em JavaScript puro. Sem frameworks, sem passo de build, sem telemetria. Tudo corre localmente no seu navegador.
-
-## Novidades da v1.16.0
-- Suporte multilingue completo em 54 idiomas, com localização total do DevTools e da loja.
-- 17 categorias de recursos dedicadas, com contagem em tempo real, abrangendo todo o multimédia, código, APIs, armazenamento e documentos.
-- Capturas de ecrã da página inteira unidas numa só imagem e captura de áreas personalizadas, com supressão inteligente de cabeçalhos fixos.
-- Gravação de vídeo do ecrã (MP4) e motor leve de exportação de GIF animado, sem fuga nas margens.
-- Extrator de tabelas DOM em tempo real para Microsoft Excel (.XLSX) com várias folhas e CSV, com o removedor de elementos DOM Zapper.
-- Conta-gotas de cores no ecrã com cópia instantânea em hex/rgb/hsl e formatador de código integrado.
-- Maior estabilidade do sniffer do DevTools e pipeline de rede de elevada concorrência.
-
-## Porque precisa dele
-Uma captura de ecrã não chega. Obtenha os ficheiros reais — imagens em resolução total, streams de vídeo verdadeiros, folhas de estilo e scripts originais — e não uma imagem achatada.
-
-O DevTools pode ser avassalador. O Source Download coloca uma galeria limpa e categorizada à frente dos mesmos dados de rede, com pesquisa, filtros e transferências com um clique.
-
-As SPAs escondem tudo. As aplicações dinâmicas criam recursos e chamadas de API que nunca vê no código-fonte da página. O Source Download captura-os à medida que acontecem, incluindo estados intermédios.
-
-## O que faz
-### Descubra tudo
-- Combina a captura de rede (HAR + pedidos em direto) com uma análise do DOM à procura de todos os elementos visuais e estruturais, incluindo ficheiros multimédia, scripts, folhas de estilo e frames incorporadas.
-- **Compatível com CSS:** os recursos dentro de url(...) e de regras @import são seguidos recursivamente, pelo que até as fontes escondidas em folhas de estilo importadas são encontradas.
-- **Deteção de conteúdo:** os ficheiros desconhecidos são lidos nos primeiros bytes e promovidos para a categoria do tipo de ficheiro real.
-- **17 categorias com contagem em tempo real:** os recursos capturados são organizados em separadores dedicados para multimédia, código, dados, chamadas de API, cookies, armazenamento e documentos.
-
-### Filtre, pesquise, inspecione
-- Pesquisa com regex em nomes de ficheiros, URLs, tipos MIME, texto alternativo e até no conteúdo dos ficheiros.
-- **Filtros por categoria:** tamanho mín./máx. e, para multimédia, também largura e altura mín./máx. — por exemplo, "só imagens de destaque ≥ 1200px". As chamadas de API são filtradas por método HTTP e tipo de pedido.
-- Visualização em lista ou grelha, com ordenação e um mural de miniaturas em direto.
-- **Inspetor com vários separadores e pré-visualizações reais:** lightbox com zoom, reprodução de vídeo e áudio, amostra de tipo de letra em direto, visualizador de SVG, código com realce de sintaxe e números de linha e um botão Formatar.
-- **Vista dividida de API:** resposta à esquerda; método, estado, parâmetros de consulta e corpo do pedido à direita.
-
-### Descarregue como deve ser
-- Descarregar selecionados — apenas os ficheiros que marcou.
-- Descarregar visualização — tudo o que está visível depois dos filtros e da pesquisa atuais.
-- Descarregar tudo — todos os recursos capturados num ZIP com estrutura de pastas e remoção automática de duplicados.
-- As transferências em lote decorrem com concorrência limitada e barra de progresso em tempo real; as falhas são repetidas automaticamente e também a partir de um menu de contexto.
-
-### HLS e vídeos complicados
-- Os streams que o navegador não reproduz nativamente (HLS .m3u8, DASH .mpd, codecs desconhecidos) apresentam uma alternativa inteligente em vez de um leitor preto.
-- Fundir segmentos e descarregar transforma um stream HLS num único ficheiro reproduzível, diretamente no painel.
-
-### A bancada de texto (kit de ferramentas para conteúdo de SPAs)
-- **O separador Texto é um visualizador de conteúdo em direto:** todos os elementos que contêm texto — títulos, parágrafos, itens de lista, botões, divs, spans — são capturados pela ordem do DOM.
-- As tabelas dinâmicas mantêm um histórico limitado de snapshots (por exemplo, "8 snapshots · 124 linhas únicas"), pelo que os dashboards com atualização automática nunca perdem estados intermédios.
-- Exporte como Markdown, ou as tabelas como CSV, HTML ou um livro XLSX real com várias folhas, gerado pelo nosso próprio gerador de XLSX escrito à mão.
-
-## Como utilizar
-1. Instale o Source Download e prima F12 em qualquer página.
-2. Clique no separador Source Download na barra de ferramentas do DevTools (o Chrome não permite que as extensões abram o DevTools automaticamente — por isso é lá que ele está).
-3. Navegue pelos separadores de categorias, pesquise, filtre e inspecione qualquer item no painel à direita.
-4. Marque os ficheiros pretendidos e clique em Descarregar selecionados, Descarregar visualização ou Descarregar tudo.
-5. Mantenha o painel do DevTools aberto enquanto a página carrega para capturar todos os pedidos de rede.
-
-## Casos de utilização reais
-- **Análise da concorrência:** reúna miniaturas de vídeos de qualquer canal — com um filtro de largura mínima — numa única pasta.
-- **Web scraping sem código:** acompanhe as chamadas de API de uma SPA, filtre pelo endpoint de que precisa e descarregue as respostas JSON exatas.
-- **Análise tipográfica:** descubra que tipo de letra um site realmente usa e obtenha os ficheiros de fontes originais.
-- **Reprodução de bugs:** guarde as versões exatas de CSS/JS que estavam em produção quando o bug ocorreu.
-- **Exportação de dados de dashboards:** exporte uma tabela com atualização automática para um livro do Excel com várias folhas, histórico incluído.
-- **Testes de QA:** verifique que variante de vídeo/áudio é entregue em cada configuração de teste A/B.
+A captura de ecrã, a gravação e o seletor de cores também estão no menu do botão direito e no botão da extensão.
 
 ## Privacidade
-- Funciona 100% localmente. Sem servidor, sem análise de utilização, nenhum dado sai do seu computador.
-- **Pede apenas o que precisa:** armazenamento (as suas preferências), área de transferência (copiar URLs e cores), transferências (guardar ficheiros através do Chrome), menus de contexto, scripting e acesso aos anfitriões (para analisar páginas e obter o conteúdo dos ficheiros).
-- Os ficheiros são guardados pelo fluxo normal de transferência do Chrome — sem transferências silenciosas.
 
-## Requisitos
-- Chrome 116 ou mais recente (Manifest V3).
-- Melhores resultados quando o painel está aberto enquanto a página carrega, pois é nessa altura que a captura de rede acontece.
+Tudo é executado no seu computador. Não há conta nem análises, e nada do que captura é enviado ao programador. O que guarda vai para a sua pasta Transferências habitual através do Chrome.
 
-O Source Download é um projeto de código aberto — comentários, ideias e pull requests são bem-vindos.
+A extensão precisa de acesso às páginas que visita para encontrar os respetivos recursos e oferecer as suas funções.
 
-Ligue-se no LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Respeite os direitos de autor e os termos de cada site, e guarde apenas conteúdo que tem autorização para utilizar.
+
+## Novidades da 1.17
+- Muito mais leve: nada é executado numa página até usar uma função.
+- As cópias offline incluem agora todas as fotografias, fundos e tipos de letra.
+- A gravação de GIF mantém-se dentro do limite de memória mesmo em clips HD longos.
+- Novo ecrã de boas-vindas e atalhos no botão da extensão.
+
+Dúvidas ou problemas: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

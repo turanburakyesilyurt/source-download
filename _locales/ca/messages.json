@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Baixada d'imatges"
   },
   "appDesc": {
-    "message": "Inspecciona i baixa recursos web en ZIP. Captures de pàgina completa, taules en directe i eines per a programadors."
+    "message": "Deseu les imatges, icones i fitxers d'una pàgina web, un a un o en un ZIP. Inclou captura de pàgina completa i gravació d'una àrea."
   },
   "actionTitle": {
     "message": "Descàrrega de la font — Obre el tauler i fes un seguiment dels recursos"
   },
   "contextMenuZap": {
-    "message": "Amaga aquest element (Zap)"
+    "message": "Amaga aquest element"
   },
   "contextMenuUndoZap": {
     "message": "Restaura l'últim element amagat"
@@ -90,7 +90,7 @@
     "message": "Descarrega la selecció"
   },
   "btnDownloadView": {
-    "message": "Descarrega la vista"
+    "message": "Baixa els visibles"
   },
   "btnDownloadAll": {
     "message": "Descarrega-ho tot"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Descarrega els filtrats"
   },
-  "btnTheme": {
-    "message": "Canvia el tema"
-  },
   "btnGuide": {
     "message": "Guia d'usuari"
-  },
-  "btnCaptureFullPage": {
-    "message": "Captura de pantalla de pàgina completa"
-  },
-  "btnOfflineArchive": {
-    "message": "Desa com a HTML únic"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Filtra el text de la pàgina o consulta DOM en directe..."
-  },
-  "textAllElements": {
-    "message": "Tots els elements"
-  },
-  "textLiveOn": {
-    "message": "Directe activat"
-  },
-  "textLiveOff": {
-    "message": "Directe desactivat"
-  },
   "textScanNow": {
     "message": "Escaneja ara"
-  },
-  "textReading": {
-    "message": "Lectura"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Seleccioneu un recurs per inspeccionar-ne els detalls"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Us agrada Source Download? Doneu suport a la nostra visió de codi obert amb una ressenya a Chrome Web Store o una estrella a GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Deixa una ressenya"
-  },
-  "ratingStar": {
-    "message": "★ Estrella a GitHub"
-  },
   "ratingDismiss": {
     "message": "Tanca"
   },
@@ -257,44 +209,11 @@
   "toastArchiveCreated": {
     "message": "Arxiu HTML d'un sol fitxer desat."
   },
-  "brandSignature": {
-    "message": "Creat per Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Imatges i SVG"
-  },
-  "tabMedia": {
-    "message": "Multimèdia i àudio"
-  },
-  "tabFonts": {
-    "message": "Tipus de lletra"
-  },
-  "tabTextScraper": {
-    "message": "Text i taules"
-  },
-  "heroScreenshotTitle": {
-    "message": "Captura de pantalla de pàgina completa"
-  },
-  "heroScreenshotDesc": {
-    "message": "Unió perfecta de diverses àrees de visualització amb supressió de capçaleres fixes"
-  },
-  "heroArchiveTitle": {
-    "message": "Arxiu HTML d'un sol fitxer"
-  },
-  "heroArchiveDesc": {
-    "message": "Incrusta CSS i imatges Base64; instantània segura fora de línia"
-  },
-  "copyDataUri": {
-    "message": "Copia l'URI de dades"
-  },
-  "copyUrl": {
-    "message": "Copia l'URL"
-  },
   "downloadSingle": {
     "message": "Descarrega"
   },
   "searchPlaceholder": {
-    "message": "Filtra per nom, URL, etiqueta, MIME o /regex/..."
+    "message": "Filtra per nom, URL, etiqueta, MIME o /regex/…"
   },
   "viewGrid": {
     "message": "Vista de quadrícula"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "recursos"
   },
-  "statusFiltered": {
-    "message": "filtrat"
-  },
   "statusSelected": {
     "message": "seleccionat"
   },
   "statusDupes": {
     "message": "duplicats ocults"
-  },
-  "statusSize": {
-    "message": "mida"
   },
   "langAuto": {
     "message": "Automàtic (navegador)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Selecciona l'idioma"
   },
-  "textPillAll": {
-    "message": "Tot el contingut"
-  },
-  "textPillText": {
-    "message": "📄 Text i articles"
-  },
-  "textPillTables": {
-    "message": "📊 Només taules"
-  },
   "textSelectAll": {
     "message": "Selecciona-ho tot"
   },
   "textDeselectAll": {
     "message": "Desseleccioneu-ho tot"
-  },
-  "textClearSelection": {
-    "message": "Esborra"
   },
   "toastRefreshComplete": {
     "message": "Escaneig de la pàgina completat: $count$ recursos nous",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ taules · $rows$ files úniques",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ seleccionats: les exportacions només els fan servir",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Taula: $count$ files a la pantalla",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Taula: totes les $count$ files úniques",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ instantànies",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Es mostren totes les files"
   },
-  "textTableHistory": {
-    "message": "Historial ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Amaga l'historial"
-  },
   "textTableNoRows": {
     "message": "Encara no s'ha capturat cap fila."
   },
   "textBtnCopy": {
     "message": "Copia el text"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Copia"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ imatges duplicades",
@@ -689,35 +529,17 @@
       }
     }
   },
-  "labelExport": {
-    "message": "Exporta"
-  },
   "inspectorLoadingSvg": {
-    "message": "S'està carregant SVG..."
+    "message": "S'està carregant SVG…"
   },
   "inspectorSvgError": {
     "message": "No s'ha pogut recuperar el contingut SVG."
   },
   "inspectorLoadingFont": {
-    "message": "S'està carregant la vista prèvia del tipus de lletra..."
+    "message": "S'està carregant la vista prèvia del tipus de lletra…"
   },
   "inspectorFontSample": {
     "message": "Vista prèvia del tipus de lletra"
-  },
-  "inspectorBeautify": {
-    "message": "Formata"
-  },
-  "inspectorOriginal": {
-    "message": "Original"
-  },
-  "inspectorHeaders": {
-    "message": "Capçaleres"
-  },
-  "inspectorResponse": {
-    "message": "Resposta"
-  },
-  "inspectorRequest": {
-    "message": "Sol·licitud"
   },
   "inspectorQueryParams": {
     "message": "Paràmetres de consulta"
@@ -725,23 +547,11 @@
   "inspectorRequestBody": {
     "message": "Cos de la sol·licitud"
   },
-  "textHintHtml": {
-    "message": "Una còpia en directe i llegible de la pàgina. Cada element que conté text es captura en ordre DOM i es manté aquí a mesura que canvia la pàgina. Consulteu-lo amb text sense format, una expressió regular, un <strong>selector CSS</strong> o una expressió <strong>XPath</strong> i, a continuació, exporteu el que coincideixi. Consulteu la <a href=\"#\" id=\"text-hint-guide\">guia</a> per obtenir més informació."
-  },
-  "textHeadings": {
-    "message": "Encapçalaments"
-  },
-  "textAllLevels": {
-    "message": "Tots els nivells"
-  },
   "textMatches": {
     "message": "coincidències"
   },
   "textMatch": {
     "message": "coincidència"
-  },
-  "textReadingOn": {
-    "message": "Lectura activada"
   },
   "toastDownloadStarted": {
     "message": "S'ha iniciat la descàrrega: $name$",
@@ -756,7 +566,7 @@
     "message": "No s'ha pogut obtenir aquest recurs (CORS o tipus no compatible)."
   },
   "ratingBannerText": {
-    "message": "Us agrada Source Download? Doneu suport a la nostra visió de codi obert amb una ressenya a Chrome Web Store o una estrella a GitHub!"
+    "message": "Ens alegra que hagi funcionat! Si Source Download us estalvia temps, una ressenya breu ajuda altres persones a trobar-lo."
   },
   "ratingBannerReview": {
     "message": "★ Ressenya"
@@ -828,10 +638,10 @@
     }
   },
   "statusIndexing": {
-    "message": "S'està indexant el contingut del fitxer..."
+    "message": "S'està indexant el contingut del fitxer…"
   },
   "statusCheckingDuplicates": {
-    "message": "S'estan comprovant les imatges duplicades..."
+    "message": "S'estan comprovant les imatges duplicades…"
   },
   "statusWorking": {
     "message": "Treballant…"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Com s'interpreta el quadre de consulta"
   },
-  "textKindTitle": {
-    "message": "Restringeix a un tipus d'element"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Nivell d'encapçalament"
-  },
   "textPlaceholderRegex": {
     "message": "^Preu:\\s*\\d+ — Expressió regular de JavaScript"
   },
@@ -864,28 +668,7 @@
     "message": "//div[@class=\"row\"]//td[2] · count(//a) · //@href"
   },
   "guideSearchPlaceholder": {
-    "message": "Busca la guia..."
-  },
-  "popupIntro": {
-    "message": "Categories comptades per la <strong>insígnia de la barra d'eines</strong>. Desactiveu-ne una per deixar de comptar-la: la insígnia reflecteix a l'instant només el que seguiu."
-  },
-  "popupHelpTitle": {
-    "message": "Com utilitzar el panell complet"
-  },
-  "popupStep1": {
-    "message": "Obriu DevTools per a la pàgina que voleu inspeccionar <div class=\"hint\"><kbd>F12</kbd> o <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Feu clic a la pestanya <strong>Source Download</strong> de la barra d'eines DevTools"
-  },
-  "popupStep3": {
-    "message": "Exploreu, inspeccioneu i baixeu recursos, individualment o tots alhora com a ZIP."
-  },
-  "popupNote": {
-    "message": "Nota: Chrome no permet que les extensions obrin DevTools amb programació, per això s'accedeix a la suite d'enginyeria completa a través de la barra d'eines DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Segueix totes les categories"
+    "message": "Busca la guia…"
   },
   "popupLanguage": {
     "message": "Idioma"
@@ -894,7 +677,7 @@
     "message": "Resposta binària: descarregueu-la per veure-la"
   },
   "inspectorLoadingResponse": {
-    "message": "S'està carregant la resposta..."
+    "message": "S'està carregant la resposta…"
   },
   "inspectorNoResponsePreview": {
     "message": "Sense previsualització de resposta: no s'ha pogut recuperar el contingut."
@@ -921,10 +704,10 @@
     "message": "Mostra el codi SVG amb ressaltat de sintaxi"
   },
   "inspectorFormatting": {
-    "message": "S'està formatant..."
+    "message": "S'està formatant…"
   },
   "findInContentPlaceholder": {
-    "message": "Troba al contingut..."
+    "message": "Troba al contingut…"
   },
   "findPreviousMatch": {
     "message": "Coincidència anterior"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Combina els segments i descarrega"
   },
-  "toastHlsMerged": {
-    "message": "S'han combinat $COUNT$ segments a $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "mida desconeguda"
-  },
   "progressFetching": {
     "message": "S'està obtenint $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -996,7 +765,7 @@
     }
   },
   "progressCreatingZip": {
-    "message": "S'està creant el ZIP $PERCENT$%...",
+    "message": "S'està creant el ZIP $PERCENT$%…",
     "placeholders": {
       "PERCENT": {
         "content": "$1"
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Cerca amb regex activa: emmarqueu la consulta com a /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Incloure en les exportacions"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Combina cada instantània en una taula desduplicada: això és el que s'exporta"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Exploreu les instantànies anteriors d'aquesta taula"
-  },
   "tableDownloadCsvTitle": {
     "message": "Descarrega aquesta taula com a CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Instantània $INDEX$ — $TIME$ ($COUNT$ files)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Alterna la selecció per a la descàrrega per lots"
@@ -1150,7 +899,7 @@
     "message": "Feu clic a la pestanya <strong>Source Download</strong> de la barra d'eines DevTools (premeu <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>I</kbd> i, a continuació, seleccioneu la pestanya de la barra d'eines DevTools). Chrome no permet que les extensions obrin DevTools automàticament, per això el tauler és allà. La finestra emergent de la icona de la barra d'eines us permet triar quines categories alimenten el comptador de la insígnia de la icona. El botó sol/lluna de la barra d'eines del tauler bloqueja un tema clar o fosc independentment de Chrome; aquesta elecció es recorda."
   },
   "guideSecCategoriesContent": {
-    "message": "Les pestanyes verticals de l'esquerra agrupen cada recurs capturat en 17 categories dedicades per tipus: imatges, vídeos, àudio, subtítols, documents, tipus de lletra, mapes font, WASM, SVG, API, galetes, emmagatzematge i molt més. Cada pestanya mostra un recompte en directe. Només es mostra una categoria alhora; el canvi restableix tots els filtres, de manera que el que veieu sempre coincideix amb la pestanya."
+    "message": "Les pestanyes verticals de l'esquerra classifiquen cada recurs capturat en 15 categories, com ara imatges, vídeos, tipus de lletra, source maps i crides API, a més d'una pestanya de Text i taules. Cada pestanya mostra un recompte en directe. Només es mostra una categoria alhora; el canvi restableix tots els filtres, de manera que el que veieu sempre coincideix amb la pestanya."
   },
   "guideSecSearchFiltersContent": {
     "message": "La barra de cerca filtra per nom, URL, tipus, text alternatiu o títol. Incloeu la consulta entre <kbd>/…/</kbd> per utilitzar una expressió regular, p. ex. <code>/\\.(png|jpg)$/</code>. A sota de la barra d'eines, la barra de filtres canvia segons la categoria: intervals de mida i dimensions per al contingut multimèdia, mètode HTTP i tipus de sol·licitud per a les API, a més d'ordenació i direcció."
@@ -1162,13 +911,13 @@
     "message": "Feu clic a qualsevol recurs per obrir-lo al tauler d'inspecció de la dreta. Cada fitxer obert es converteix en una pestanya, de manera que podeu comparar diversos recursos un al costat de l'altre; el més nou s'obre a l'esquerra. Hi ha visors especialitzats per a imatges, vídeo, àudio, tipus de lletra, SVG i text/codi (amb un botó Formata). Les API mostren una vista dividida: resposta a l'esquerra, detalls de la sol·licitud (mètode, estat, capçaleres, paràmetres de consulta i cos) a la dreta."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Descarrega la vista</strong> desa els recursos visibles actualment (categoria activa + cerca + filtres) com a ZIP; passa a dir-se <em>Descarrega els filtrats (N)</em> quan hi ha filtres actius. Passeu el cursor per qualsevol botó de descàrrega per veure una mida estimada de l'arxiu abans de fer clic. <strong>Descarrega la selecció</strong> descarrega només els elements marcats. <strong>Descarrega-ho tot</strong> captura tots els recursos descoberts en un ZIP estructurat per carpetes. Les descàrregues fallides es tornen a intentar automàticament i es poden reintentar des del menú contextual. <strong>Exporta</strong> escriu la llista visible com a JSON o CSV, o bolca el registre de xarxa de Chrome com a fitxer HAR."
+    "message": "<strong>Baixa els visibles</strong> desa els recursos visibles actualment (categoria activa + cerca + filtres) com a ZIP; passa a dir-se <em>Descarrega els filtrats (N)</em> quan hi ha filtres actius. Passeu el cursor per qualsevol botó de descàrrega per veure una mida estimada de l'arxiu abans de fer clic. <strong>Descarrega la selecció</strong> descarrega només els elements marcats. <strong>Descarrega-ho tot</strong> captura tots els recursos descoberts en un ZIP estructurat per carpetes. Les baixades fallides queden marcades i les podeu tornar a provar amb un clic des de la notificació, la icona d'avís de l'element o el menú contextual. <strong>Exporta</strong> escriu la llista visible com a JSON o CSV, o bolca el registre de xarxa de Chrome com a fitxer HAR."
   },
   "guideSecLightboxContent": {
     "message": "El botó de zoom obre el contingut multimèdia en un visor a mida completa on podeu desplaçar-vos arrossegant i fer zoom amb la roda del ratolí, els botons de la pantalla o el teclat (<kbd>+</kbd>/<kbd>-</kbd> per fer zoom, <kbd>0</kbd> per restablir, <kbd>Esc</kbd> per tancar)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>La categoria <strong>Text</strong> és una còpia en directe i llegible de la pàgina. Captura tots els elements que contenen text (encapçalaments, paràgrafs, elements de llista, botons, <code>div</code>/<code>span</code> i molt més) en ordre DOM, i continua escanejant mentre <strong>Directe</strong> està activat.</p><p>El quadre <strong>Consulta</strong> funciona de quatre maneres, que se seleccionen al menú desplegable del costat: <strong>Conté</strong> i <strong>Regex</strong> filtren el text ja capturat, mentre que <strong>Selector CSS</strong> i <strong>XPath</strong> s'executen sobre la pàgina activa i poden arribar a qualsevol cosa del DOM. XPath també accepta expressions que retornen un valor en lloc d'elements, com ara <code>count(//a)</code> o <code>//@href</code>. Tot el que la pàgina indiqui sobre una consulta incorrecta es mostra al costat del quadre. <strong>Element</strong> redueix el resultat a una única etiqueta, amb el recompte de cada etiqueta que es troba a la pàgina. Si buideu el quadre de consulta (o premeu <strong>Esborra</strong>), torneu a <em>Tots els elements</em> i es torna a capturar la pàgina; mai no haureu de restablir el menú desplegable a mà.</p><p><strong>Lectura</strong> amaga les etiquetes, les caselles de selecció i les indicacions d'ubicació perquè el contingut es llegeixi com un document. Les taules emmagatzemen un historial limitat d'instantànies perquè les taules dinàmiques (SPA) no es perdin mai. Premeu <strong>Mostra les files</strong> d'una taula per combinar totes les instantànies en una vista sense duplicats; això és exactament el que conté una exportació. Exporteu com a <strong>TXT</strong> (la pàgina llegible), <strong>MD</strong> (Markdown, taules incloses) o les taules com a CSV, HTML o un llibre <strong>XLSX</strong> real de diversos fulls. Els elements marcats tenen prioritat; en cas contrari, s'exporta tot el que es veu en aquest moment.</p>"
+    "message": "<p>La categoria <strong>Text</strong> és una còpia viva i llegible de la pàgina: títols, paràgrafs, llistes i enllaços en l’ordre de la pàgina, actualitzats mentre <strong>En directe</strong> està activat. Passa el cursor per sobre d’una línia per copiar-la, o fes servir <strong>Copia el text</strong>, <strong>Markdown</strong> i <strong>TXT</strong> per a tot el que es mostra.</p><p>A <strong>Taules</strong>, cada taula de la pàgina apareix com una targeta amb previsualització i els seus propis botons <strong>Excel</strong>, <strong>CSV</strong> i <strong>Copia</strong>; <strong>Totes les taules a Excel</strong> les desa en un llibre, un full per taula. Les taules que canvien guarden un historial d’instantànies, i <strong>Mostra totes les files</strong> les uneix en una sola taula sense duplicats: exactament el que conté una exportació.</p><p>Els quadres de l’esquerra ordenen la pàgina per tipus d’element —tot el text de la pàgina, cada nivell de títol, paràgrafs, enllaços, elements de llista, botons, codi i més— cadascun amb un recompte i la primera línia; tria’n un per veure, copiar o exportar només això. El quadre de cerca filtra mentre escrius, i el menú del costat el converteix en una expressió regular, un <strong>selector CSS</strong> o una expressió <strong>XPath</strong> (també expressions de valor com <code>count(//a)</code> o <code>//@href</code>) que s’executa a la pàgina en directe; el quadre <strong>Consulta personalitzada</strong> fa el mateix. El que la pàgina digui d’una consulta errònia es mostra dins del quadre.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "Els fitxers de subtítols WebVTT, SRT, TTML i altres, incloses les fonts <code>&lt;track&gt;</code>, es mostren a la seva pròpia pestanya <strong>Subtítols</strong> en lloc de barrejar-se amb els documents."
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "Resolució GIF predeterminada"
   },
-  "optGifOriginal": {
-    "message": "Original (resolució nativa 1:1 — 3K/4K complet, sense reduir)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (màx. 1920 px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "Gravació de pantalla (vídeo i GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Grava qualsevol regió de la pantalla com a MP4, WebM o GIF animat. Les gravacions GIF inclouen perfils de resolució nativa 1:1, 1080p, 720p i 480p amb mides de fitxer estimades en directe. La durada màxima d'enregistrament GIF és d'1 minut (60 segons) per obtenir un rendiment òptim del navegador."
+    "message": "Enregistreu qualsevol zona de la pantalla com a MP4, WebM o GIF animat. Els enregistraments GIF ofereixen perfils 1080p, 720p i 480p amb una estimació de mida en directe. Un enregistrament GIF pot durar fins a 1 minut (60 s)."
   },
   "msgGifMaxDurationReached": {
     "message": "S'ha assolit la durada màxima del GIF d'1 minut (60 s). Generant el GIF…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Presentació (1 fotograma per segon, mida mínima)"
-  },
-  "popupRightClickHint": {
-    "message": "Feu clic amb el botó dret a qualsevol lloc de la pàgina web per a la gravació de pantalla (vídeo/GIF) i el selector de colors."
   },
   "toastElementZappedAd": {
     "message": "Anunci / iframe amagat durant aquesta sessió.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Resolució del GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Resolució del GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "No s'ha trobat cap pestanya activa.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Feu clic aquí i després trieu qualsevol color de la pàgina"
+  },
+  "welcomeTitle": {
+    "message": "Source Download ja està a punt"
+  },
+  "welcomePrivacy": {
+    "message": "Tot s'executa al vostre ordinador. Sense compte, sense seguiment, no se'ns envia res."
+  },
+  "welcomeHelp": {
+    "message": "Alguna cosa no funciona? Expliqueu-nos-ho a GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Algun problema?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "El GIF ha arribat als 200 MB. S'està desant el que s'ha enregistrat…"
+  },
+  "btnPopupFullPage": {
+    "message": "Captura de pàgina completa"
+  },
+  "toastRecWrongTab": {
+    "message": "Per enregistrar una àrea d'aquesta pàgina, trieu «Aquesta pestanya» al diàleg de compartició."
+  },
+  "popupCaptureTitle": {
+    "message": "Captura aquesta pàgina"
+  },
+  "popupTileOffline": {
+    "message": "Desa la pàgina fora de línia"
+  },
+  "popupTileGuide": {
+    "message": "Com funciona"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Fitxers, imatges i taules"
+  },
+  "popupDevtoolsHint": {
+    "message": "Obre les eines per a desenvolupadors i tria la pestanya Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome no permet extensions en aquesta pàgina. Obre un lloc web per fer servir les eines."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Clic dret a qualsevol pàgina"
+  },
+  "welcomeCardMenuText": {
+    "message": "Captures de la pàgina sencera o d’una àrea, enregistrament d’una àrea, selector de colors i una còpia fora de línia, allà mateix on ets."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "O fes servir el botó de la barra d’eines"
+  },
+  "welcomeCardPopupText": {
+    "message": "Fes clic a la icona de la peça de trencaclosques de la barra d’eines de Chrome i fixa Source Download: tindràs les eines sempre a un clic."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Prem F12 per a tot el que hi ha a la pàgina"
+  },
+  "welcomeCardPanelText": {
+    "message": "Tria la pestanya Source Download a les eines per a desenvolupadors. Hi trobaràs cada imatge, vídeo, tipus de lletra i fitxer que ha carregat la pàgina: previsualitza’ls, filtra’ls i desa’ls en un ZIP. Les taules de la pàgina s’exporten a Excel."
+  },
+  "welcomeLead": {
+    "message": "Tres maneres d’obtenir el que necessites de qualsevol pàgina web."
+  },
+  "btnDownloadOptions": {
+    "message": "Més opcions de baixada"
+  },
+  "btnMore": {
+    "message": "Més accions"
+  },
+  "btnFilters": {
+    "message": "Filtres"
+  },
+  "tabsShowEmpty": {
+    "message": "Mostra les buides"
+  },
+  "tabsHideEmpty": {
+    "message": "Amaga les buides"
+  },
+  "textSegText": {
+    "message": "Text"
+  },
+  "textSegTables": {
+    "message": "Taules"
+  },
+  "textLive": {
+    "message": "En directe"
+  },
+  "textPaused": {
+    "message": "En pausa"
+  },
+  "textLivePauseTitle": {
+    "message": "En directe: la pàgina es torna a llegir a cada canvi. Fes clic per posar en pausa."
+  },
+  "textLiveResumeTitle": {
+    "message": "En pausa. Fes clic per tornar a seguir la pàgina en directe."
+  },
+  "textSearchText": {
+    "message": "Cerca al text de la pàgina"
+  },
+  "textExportAllXlsx": {
+    "message": "Totes les taules a Excel"
+  },
+  "textNoTables": {
+    "message": "Encara no hi ha taules en aquesta pàgina. Apareixeran aquí tan bon punt la pàgina en mostri una."
+  },
+  "textTable": {
+    "message": "Taula"
+  },
+  "textCopy": {
+    "message": "Copia"
+  },
+  "textShowLess": {
+    "message": "Mostra’n menys"
+  },
+  "areaHintSelect": {
+    "message": "Arrossega per seleccionar una àrea"
+  },
+  "areaHintCopy": {
+    "message": "copia"
+  },
+  "areaHintSave": {
+    "message": "desa"
+  },
+  "areaHintExit": {
+    "message": "surt"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Copia automàticament"
+  },
+  "areaAutoCopyOn": {
+    "message": "La còpia automàtica està activada"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Deixa anar la selecció i ja és al porta-retalls."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Desactiva"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Copiat al porta-retalls (còpia automàtica activada)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Aquesta pàgina no permet copiar al porta-retalls. Fes servir Baixa."
+  },
+  "textKindAll": {
+    "message": "Tot el text de la pàgina"
+  },
+  "textKindHeading": {
+    "message": "Títol"
+  },
+  "textKindP": {
+    "message": "Paràgrafs"
+  },
+  "textKindA": {
+    "message": "Enllaços"
+  },
+  "textKindLi": {
+    "message": "Elements de llista"
+  },
+  "textKindButton": {
+    "message": "Botons"
+  },
+  "textKindLabel": {
+    "message": "Etiquetes i llegendes"
+  },
+  "textKindSpan": {
+    "message": "Text en línia"
+  },
+  "textKindDiv": {
+    "message": "Altres blocs"
+  },
+  "textKindCell": {
+    "message": "Cel·les de taula"
+  },
+  "textKindCode": {
+    "message": "Codi"
+  },
+  "textKindQuote": {
+    "message": "Cites"
+  },
+  "textCustomQuery": {
+    "message": "Consulta personalitzada"
+  },
+  "textCustomQueryHint": {
+    "message": "Selector CSS o XPath a la pàgina en directe"
+  },
+  "menuSettings": {
+    "message": "Configuració"
+  },
+  "settingsSave": {
+    "message": "Desa"
+  },
+  "settingsReset": {
+    "message": "Restableix els valors per defecte"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Copia automàticament les captures d’una àrea"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Quan deixes anar la selecció, la imatge va directament al porta-retalls. Mentre estigui activat, l’avís de la part superior de la pàgina ho recorda cada vegada."
   }
 }

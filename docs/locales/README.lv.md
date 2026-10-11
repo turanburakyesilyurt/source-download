@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Pārlūkojiet, pārbaudiet un vienmērīgi lejupielādējiet kā ZIP katru tīmekļa resursu, ko ielādē lapa.</em><br>
-  Source Download — katrs lapas resurss ar vienu klikšķi
+  <em>Saglabājiet tīmekļa lapas attēlus, ikonas un failus atsevišķi vai ZIP arhīvā. Visas lapas ekrānuzņēmums un apgabala ieraksts.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Tas ir mans **pirmais atvērtā koda projekts**, tāpēc jūsu atsauksmes man no
 
 ## Vizuālā ekskursija un galvenie moduļi
 
-Iepazīstiet augstas izšķirtspējas saskarnes moduļus, kas iebūvēti tieši Google Chrome DevTools, labā klikšķa izvēlnē un rīkjoslas uznirstošajā logā.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Uzņemiet un lejupielādējiet visu tīmeklī
-> **★ DEVTOOLS INŽENIERIJAS KOMPLEKTS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Katrs lapas fails vienā panelī"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Uzņemiet un lejupielādējiet visu tīmeklī">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Labais klikšķis. Uzņemts."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Atlasiet apgabalu. Tas jau ir starpliktuvē."></p>
 
-### 2. Ierakstiet jebkuru ekrāna apgabalu kā video un GIF
-> **★ APGABALA EKRĀNA IERAKSTĪTĀJS · MP4, WEBM UN GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Lapas teksts un tabulas, sakārtoti jūsu vietā"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Ierakstiet jebkuru ekrāna apgabalu kā video un GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Veselas lapas, ieraksti, bezsaistes kopijas"></p>
 
 ---
 
-### 3. Vienmērīgs visas lapas ritināmais ekrānuzņēmums
-> **★ PIKSEĻU PRECĪZI EKRĀNUZŅĒMUMI · VISA LAPA UN APGABALS**
+Source Download ir rīku kopa tīmekļa satura saglabāšanai. Tas pievieno savu cilni Chrome izstrādātāja rīkiem. Tur viss ielādētais saturs ir sakārtots pa kategorijām. Varat to priekšskatīt un paturēt tikai vajadzīgo.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Vienmērīgs visas lapas ritināmais ekrānuzņēmums">
-</p>
+## Galvenās funkcijas
+- Kārtīga galerija: fotoattēli, ikonas un fonti tiek rādīti savās cilnēs ar tiešiem skaitītājiem un meklēšanas lauku.
+- Precīzi filtri: rādiet tikai vienumus, kas platāki par noteiktu minimumu (piem., 1200 px), vai paslēpiet dublikātus.
+- Īsts priekšskatījums: palieliniet grafiku un atskaņojiet multividi. Varat apskatīt arī fonta paraugu vai kodu ar sintakses izcelšanu.
+- Viens arhīvs: atzīmējiet vajadzīgo un saņemiet vienu ZIP ar kārtīgu mapju struktūru. Neizdevušos vienumus atkārtojiet ar vienu klikšķi.
+- Visas lapas ekrānuzņēmums: viss tiek ritināts un salikts PNG, JPG vai PDF formātā. Varat izvēlēties arī vienu apgabalu.
+- Apgabala ieraksts: pārvērtiet ekrāna daļu par GIF, MP4 vai WebM klipu.
+- No tabulas uz izklājlapu: eksportējiet tiešās tabulas uz Excel vai CSV kopā ar atsvaidzināmo tabulu iepriekšējiem stāvokļiem.
+- Bezsaistes kopija: saglabājiet vietni kā vienu HTML dokumentu, kas atveras bez interneta.
+- Krāsu atlasītājs: izvēlieties jebkuru krāsu ekrānā un kopējiet to kā HEX, RGB vai HSL.
 
----
+## Kā sākt
+1. Atveriet vietni, ar kuru vēlaties strādāt.
+2. Nospiediet F12 (Mac datorā Option + Command + I) un izvēlieties cilni Source Download. Ja tā nav redzama, noklikšķiniet uz » ciļņu joslas beigās.
+3. Ielādes laikā turiet paneli atvērtu, lai nekas netiktu palaists garām.
 
-### 4. Reāllaika DOM tabulas uz Excel (XLSX) un CSV
-> **★ DATU IZVILKŠANA UN ELEMENTU SLĒPŠANA**
-
-<sub>Izvelciet dinamiskas tabulas kopā ar to momentuzņēmumu vēsturi daudzlapu XLSX vai CSV failos.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Reāllaika DOM tabulas uz Excel (XLSX) un CSV">
-</p>
-
----
-
-### 5. Ekrāna krāsu atlasītājs un koda formatētājs
-> **★ IZSTRĀDĀTĀJA UN DIZAINERA DARBGALDS**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Ekrāna krāsu atlasītājs un koda formatētājs">
-</p>
-
----
-
-Source Download ir Chrome DevTools panelis, kas atrod, pārbauda un lejupielādē katru resursu, ko ielādē tīmekļa lapa. Neatkarīgi no tā, vai jums vajadzīgi multivides faili, izstrādātāju skripti, stilu resursi vai tīkla atbildes, tos var saglabāt kā atsevišķus failus vai kā sakārtotu ZIP ar mapju struktūru.
-
-Izveidots no nulles bez trešo pušu atkarībām: ZIP rakstītājs, XLSX veidotājs, HLS apvienotājs un koda formatētāji ir pašrocīgi uzrakstīts tīrs JavaScript. Nekādu ietvaru, nekāda būvēšanas posma, nekādas telemetrijas. Viss darbojas lokāli jūsu pārlūkā.
-
-## Kas jauns v1.16.0
-- Pilnīgs daudzvalodu atbalsts 54 valodās ar pilnu DevTools un veikala lokalizāciju.
-- 17 īpašas resursu kategorijas ar reāllaika skaitītājiem aptver visu multividi, kodu, API, krātuvi un dokumentus.
-- Visas lapas sašūti ekrānuzņēmumi un pielāgota apgabala uzņemšana ar viedu piesprausto galvenes joslu slēpšanu.
-- Ekrāna video ierakstīšana (MP4) un viegls animētu GIF eksporta dzinējs bez malu izplūšanas.
-- Reāllaika DOM tabulu izvilcējs uz daudzlapu Microsoft Excel (.XLSX) un CSV ar DOM elementu slēpšanas rīku.
-- Ekrāna krāsu atlasītājs ar tūlītēju hex/rgb/hsl kopēšanu un integrētu koda izdaiļošanu.
-- Uzlabota DevTools sniffera stabilitāte un augstas paralelitātes tīkla konveijers.
-
-## Kāpēc tas jums vajadzīgs
-Ekrānuzņēmuma nepietiek. Iegūstiet īstos failus — pilnas izšķirtspējas attēlus, faktiskās video straumes, oriģinālās stilu lapas un skriptus — nevis saplacinātu bildi.
-
-DevTools šķiet pārāk sarežģīts. Source Download parāda tos pašus tīkla datus tīrā, kategorizētā galerijā ar meklēšanu, filtriem un lejupielādi ar vienu klikšķi.
-
-SPA visu paslēpj. Dinamiskās lietotnes veido resursus un API izsaukumus, ko lapas avotā nekad neredzat. Source Download tos uzņem to rašanās brīdī, ieskaitot starpstāvokļus.
-
-## Ko tas dara
-### Atrod visu
-- Apvieno tīkla uztveršanu (HAR + reāllaika pieprasījumi) ar DOM skenēšanu, lai atrastu visus vizuālos un strukturālos elementus, tostarp multivides failus, skriptus, stilu lapas un iegultos kadrus.
-- **CSS izpratne:** resursi url(...) un @import noteikumos tiek izsekoti rekursīvi, tāpēc tiek atrasti pat fonti, kas paslēpti importētās stilu lapās.
-- **Satura šņaukāšana:** nezināmi faili tiek nolasīti pa dažiem baitiem un pārvietoti uz to faktisko failu veida kategoriju.
-- **17 kategorijas ar reāllaika skaitītājiem:** uztvertie resursi tiek sakārtoti atsevišķās cilnēs — multivide, kods, dati, API izsaukumi, sīkdatnes, krātuve un dokumenti.
-
-### Filtrējiet, meklējiet, pārbaudiet
-- Regex meklēšana pēc failu nosaukumiem, URL, MIME veidiem, alternatīvā teksta un pat failu satura.
-- **Filtri katrai kategorijai:** min./maks. izmērs, bet multividei arī min./maks. platums un augstums — piemēram, "tikai galvenie attēli ≥ 1200px". API izsaukumus filtrē pēc HTTP metodes un pieprasījuma veida.
-- Saraksta vai režģa skats, kārtojams, ar reāllaika sīktēlu sienu.
-- **Vairāku cilņu inspektors ar patiesām priekšskatījumiem:** tuvināma gaismas kaste, video un audio atskaņošana, reāllaika fonta paraugs, SVG skatītājs, sintakses iekrāsots kods ar rindu numuriem un Izdaiļot slēdzis.
-- **API sadalītais skats:** atbilde pa kreisi, metode, statuss, vaicājuma parametri un pieprasījuma pamatteksts pa labi.
-
-### Lejupielādējiet pareizi
-- Lejupielādēt atlasīto — tikai jūsu atzīmētie faili.
-- Lejupielādes skats — viss, kas redzams pēc pašreizējiem filtriem un meklēšanas.
-- Lejupielādēt visu — visi uztvertie resursi ZIP ar mapju struktūru un automātisku dublikātu novēršanu.
-- Pakešlejupielādes darbojas ar ierobežotu paralelitāti un reāllaika progresa joslu; neveiksmes tiek automātiski mēģinātas atkārtoti, kā arī no konteksta izvēlnes.
-
-### HLS un sarežģīti video
-- Straumes, ko pārlūks nevar atskaņot dabiski (HLS .m3u8, DASH .mpd, nezināmi kodeki), parāda viedu rezerves variantu melna atskaņotāja vietā.
-- Apvienot segmentus un lejupielādēt pārvērš HLS straumi vienā atskaņojamā failā tieši panelī.
-
-### Teksta darbgalds (SPA satura rīkkopa)
-- **Teksta cilne ir reāllaika satura skatītājs:** katrs elements ar tekstu — virsraksti, rindkopas, saraksta vienumi, pogas, div, span — tiek uzņemts DOM secībā.
-- Dinamiskās tabulas glabā ierobežotu momentuzņēmumu vēsturi (piem., "8 momentuzņēmumi · 124 unikālas rindas"), tāpēc automātiski atsvaidzināmi informācijas paneļi nekad nezaudē starpstāvokļus.
-- Eksportējiet kā Markdown vai tabulas kā CSV, HTML vai īstu daudzlapu XLSX darbgrāmatu, ko veido mūsu pašu rokām rakstīts XLSX rakstītājs.
-
-## Kā lietot
-1. Instalējiet Source Download, pēc tam jebkurā lapā nospiediet F12.
-2. DevTools rīkjoslā noklikšķiniet uz cilnes Source Download (Chrome neļauj paplašinājumiem automātiski atvērt DevTools — tāpēc tas atrodas tur).
-3. Pārlūkojiet kategoriju cilnes, meklējiet, filtrējiet, pārbaudiet jebko labajā panelī.
-4. Atzīmējiet vēlamos failus un nospiediet Lejupielādēt atlasīto, Lejupielādes skats vai Lejupielādēt visu.
-5. Turiet DevTools paneli atvērtu, kamēr lapa ielādējas, lai uztvertu visus tīkla pieprasījumus.
-
-## Praktiski lietojuma gadījumi
-- **Konkurentu analīze:** savāciet jebkura kanāla video sīktēlus — ar minimālā platuma filtru — vienā mapē.
-- **Tīmekļa datu iegūšana bez koda:** vērojiet SPA API izsaukumus, atfiltrējiet vajadzīgo galapunktu, lejupielādējiet tā precīzās JSON atbildes.
-- **Tipogrāfijas analīze:** noskaidrojiet, kādu fontu vietne patiešām izmanto, un iegūstiet faktiskos fontu failus.
-- **Kļūdu reproducēšana:** saglabājiet precīzās CSS/JS versijas, kas bija izlaistas, kad radās kļūda.
-- **Informācijas paneļa datu eksports:** eksportējiet automātiski atsvaidzināmu tabulu daudzlapu Excel darbgrāmatā, ieskaitot vēsturi.
-- **QA testēšana:** pārbaudiet, kurš video/audio variants tiek piegādāts katrā A/B konfigurācijā.
+Ekrānuzņēmumi, ierakstīšana un krāsu atlasītājs ir pieejami arī labā klikšķa izvēlnē un paplašinājuma pogā.
 
 ## Privātums
-- Darbojas 100% lokāli. Nekāda servera, nekādas analītikas, neviens datu fragments neatstāj jūsu ierīci.
-- **Pieprasa tikai nepieciešamo:** krātuve (jūsu preferences), starpliktuve (URL un krāsu kopēšana), lejupielādes (failu saglabāšana caur Chrome), konteksta izvēlnes, skriptēšana un resursdatoru piekļuve (lapu skenēšanai un failu satura iegūšanai).
-- Faili tiek saglabāti caur Chrome parasto lejupielādes plūsmu — nekādu slēptu lejupielāžu.
 
-## Prasības
-- Chrome 116 vai jaunāks (Manifest V3).
-- Labākie rezultāti ir, kad panelis ir atvērts lapas ielādes laikā, jo tieši tad notiek tīkla uztveršana.
+Viss darbojas jūsu datorā. Nav konta un analītikas, un nekas no saglabātā netiek nosūtīts izstrādātājam. Saglabātie vienumi caur Chrome nonāk jūsu ierastajā mapē “Lejupielādes”.
 
-Source Download ir atvērtā koda projekts — atsauksmes, idejas un pull request pieprasījumi ir laipni gaidīti.
+Paplašinājumam ir vajadzīga piekļuve apmeklētajām vietnēm, lai atrastu to resursus un veiktu savas funkcijas.
 
-Sazinieties vietnē LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Lūdzu, ievērojiet autortiesības un lietošanas noteikumus un glabājiet tikai saturu, ko drīkstat izmantot.
+
+## Jaunumi 1.17 versijā
+- Daudz vieglāks: nekas nedarbojas, kamēr neizmantojat kādu funkciju.
+- Bezsaistes kopijās tagad ir visi fotoattēli, foni un fonti.
+- GIF ieraksts iekļaujas atmiņā pat gariem HD klipiem.
+- Jauns sveiciena ekrāns un saīsnes paplašinājuma pogā.
+
+Jautājumi vai problēmas: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

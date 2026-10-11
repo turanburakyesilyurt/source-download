@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Browse, inspect and download every web asset a page loads seamlessly as a ZIP.</em><br>
-  Source Download — every asset on a page, one click away
+  <em>Save the images, icons and files a web page loads, one by one or as a ZIP. Includes full-page screenshots and area recording.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ This is my **first open-source project**, so your feedback means the world to me
 
 ## Visual Tour & Core Modules
 
-Explore the high-resolution interface modules built directly into Google Chrome DevTools, Right-Click Menu, and Toolbar Popup.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Capture and download everything on the web
-> **★ DEVTOOLS ENGINEERING SUITE · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Every file on the page, one panel away"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Capture and download everything on the web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Right-click. Capture."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Select an area. It’s on your clipboard."></p>
 
-### 2. Record any screen area as Video and GIF
-> **★ REGIONAL SCREEN RECORDER · MP4, WEBM & GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Page text and tables, sorted for you"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Record any screen area as Video and GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Whole pages, recordings, offline copies"></p>
 
 ---
 
-### 3. Seamless full page scrolling screenshot
-> **★ PIXEL-PERFECT SCREENSHOTS · FULL-PAGE & AREA**
+Source Download is a capture toolkit for web pages. It adds a tab to Chrome DevTools where everything a site has loaded is sorted into categories, so you can preview it and keep exactly what you need.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Seamless full page scrolling screenshot">
-</p>
+## Main features
+- Organised gallery: pictures, icons and fonts appear in their own tabs with live counts and a search box.
+- Precise filters: show only items above a minimum width, such as 1200 px, or hide duplicates.
+- Real previews: zoom into graphics, play media, see a font specimen or read code with syntax highlighting.
+- One archive: tick what you want and get a single ZIP with a tidy folder structure. Anything that fails can be retried with one click.
+- Full-page screenshots: the whole page is scrolled and stitched into a PNG, JPG or PDF. You can also select a single area.
+- Area recording: turn part of the screen into a GIF, MP4 or WebM clip.
+- Tables to spreadsheets: export live tables to Excel or CSV, including earlier snapshots of tables that refresh.
+- Offline copy: keep a site as one HTML document that opens without an internet connection.
+- Colour picker: pick any colour on screen and copy it as HEX, RGB or HSL.
 
----
+## How to start
+1. Open the website you want to work with.
+2. Press F12 (Option + Command + I on a Mac) and choose the Source Download tab. If you cannot see it, click » at the end of the tab bar.
+3. Keep the panel open while the site loads so nothing is missed.
 
-### 4. Live DOM tables to Excel (XLSX) and CSV
-> **★ DATA EXTRACTION & ELEMENT REMOVER**
-
-<sub>Extract dynamic tables, with their snapshot history, into multi-sheet XLSX or CSV files.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Live DOM tables to Excel (XLSX) and CSV">
-</p>
-
----
-
-### 5. On-screen colour eyedropper and code formatter
-> **★ DEVELOPER & DESIGNER WORKBENCH**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="On-screen colour eyedropper and code formatter">
-</p>
-
----
-
-Source Download is a Chrome DevTools panel that discovers, inspects and downloads every resource a web page loads. Whether you need media files, developer scripts, style assets, or network responses, you can save them as individual files or as a tidy, folder-structured ZIP.
-
-Built from scratch with zero third-party dependencies: the ZIP writer, the XLSX builder, the HLS merger and the code formatters are all hand-written vanilla JavaScript. No frameworks, no build step, no telemetry. Everything runs locally in your browser.
-
-## What's New in v1.16.0
-- Full multilingual support across 54 languages with complete DevTools and store localization.
-- 17 dedicated live-counted asset categories covering all media, code, APIs, storage, and documents.
-- Full-page stitched screenshots and custom regional area capture with smart sticky header suppression.
-- Screen video recording (MP4) and lightweight animated GIF export engine with zero edge bleed.
-- Live DOM table extractor to multi-sheet Microsoft Excel (.XLSX) and CSV with DOM Zapper element remover.
-- Screen colour eyedropper tool with instant hex/rgb/hsl copying and integrated code beautifier.
-- Enhanced DevTools sniffer stability and high-concurrency network pipeline.
-
-## Why you need it
-The screenshot won't cut it. Grab the real files — full-resolution images, actual video streams, original stylesheets and scripts — not a flattened picture.
-
-DevTools feels overwhelming. Source Download puts a clean, categorized gallery in front of the same network data, with search, filters and one-click downloads.
-
-SPAs hide everything. Dynamic apps create assets and API calls you never see in the page source. Source Download captures them as they happen, including intermediate states.
-
-## What it does
-### Discover everything
-- Combines network capture (HAR + live requests) with a DOM scan for all visual and structural elements, including media files, scripts, stylesheets, and embedded frames.
-- **CSS-aware:** assets inside url(...) and @import rules are followed recursively, so even fonts buried in imported stylesheets are found.
-- **Content sniffing:** unknown files are read back a few bytes and promoted to their actual file type category.
-- **17 live-count categories:** Captured assets are neatly organised into dedicated tabs for media, code, data, API calls, cookies, storage, and documents.
-
-### Filter, search, inspect
-- Regex-powered search across filenames, URLs, MIME types, alt text and even file contents.
-- **Per-category filters:** min/max size, and for media also min/max width and height — for example "only hero images ≥ 1200px". API calls filter by HTTP method and request type.
-- List or grid view, sortable, with a live thumbnail wall.
-- **Multi-tab inspector with true previews:** zoomable lightbox, video and audio playback, a live font specimen, an SVG viewer, syntax-highlighted code with line numbers and a Beautify toggle.
-- **API split view:** response on the left, method, status, query parameters and request body on the right.
-
-### Download properly
-- Download Selected — only the files you checked.
-- Download View — everything visible after the current filters and search.
-- Download All — every captured resource into a folder-structured ZIP with automatic de-duplication.
-- Batch downloads run with bounded concurrency and a live progress bar; failures are retried automatically and from a context menu.
-
-### HLS & tricky video
-- Streams the browser can't play natively (HLS .m3u8, DASH .mpd, unknown codecs) show a smart fallback instead of a black player.
-- Merge segments & download turns an HLS stream into a single playable file, right in the panel.
-
-### The Text workbench (SPA content toolkit)
-- **The Text tab is a live content viewer:** every element that carries text — headings, paragraphs, list items, buttons, divs, spans — is captured in DOM order.
-- Dynamic tables keep a bounded snapshot history (e.g. "8 snapshots · 124 unique rows"), so auto-refreshing dashboards never lose intermediate states.
-- Export as Markdown, or tables as CSV, HTML, or a real multi-sheet XLSX workbook built by our own hand-written XLSX writer.
-
-## How to use it
-1. Install Source Download, then press F12 on any page.
-2. Click the Source Download tab in the DevTools toolbar (Chrome doesn't allow extensions to open DevTools automatically — that's why it lives there).
-3. Browse the category tabs, search, filter, inspect anything in the right-hand panel.
-4. Check the files you want and hit Download Selected, Download View or Download All.
-5. Keep the DevTools panel open while the page loads to capture every network request.
-
-## Real-world use cases
-- **Competitor analysis:** collect video thumbnails from any channel — with a minimum width filter — into one folder.
-- **Web scraping without code:** watch a SPA's API calls, filter to the endpoint you need, download its exact JSON responses.
-- **Typography teardown:** find out which font a site really uses and grab the actual font files.
-- **Bug reproduction:** keep the exact CSS/JS versions that shipped when a bug occurred.
-- **Dashboard data export:** export an auto-refreshing table to a multi-sheet Excel workbook, history included.
-- **QA testing:** verify which video/audio variant is served in each A/B configuration.
+The screenshot, recording and colour tools are also available from the right-click menu and the toolbar button.
 
 ## Privacy
-- Runs 100% locally. No server, no analytics, no data leaves your machine.
-- **Only asks for what it needs:** storage (your preferences), clipboard (copy URLs and colours), downloads (save files through Chrome), context menus, scripting and host access (to scan pages and fetch file bodies).
-- Files are saved through Chrome's normal download flow — no silent downloads.
 
-## Requirements
-- Chrome 116 or newer (Manifest V3).
-- Best results when the panel is open while the page loads, since that's when network capture happens.
+Everything runs on your computer. There is no account and no analytics, and nothing you capture is sent to the developer. Saved items go to your usual Downloads folder through Chrome.
 
-Source Download is an open-source project — feedback, ideas and pull requests are welcome.
+The extension needs access to the sites you visit so it can find their resources and run the capture tools.
 
-Connect on LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Please respect copyright and the terms of each website, and only keep content you are allowed to use.
+
+## What's new in 1.17
+- Much lighter: nothing runs on a site until you start a tool.
+- Offline copies now include all pictures, backgrounds and fonts.
+- GIF recording stays within memory, even for long HD clips.
+- A new welcome page and toolbar buttons for the capture tools.
+
+Questions or problems: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

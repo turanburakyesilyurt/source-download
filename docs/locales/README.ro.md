@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Răsfoiește, inspectează și descarcă fără efort toate resursele pe care le încarcă o pagină web, ca arhivă ZIP.</em><br>
-  Source Download — toate resursele unei pagini, la un clic distanță
+  <em>Salvați imaginile, pictogramele și fișierele unei pagini web, separat sau într-un ZIP. Captură completă și înregistrare de zonă.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Acesta este **primul meu proiect open-source**, așa că feedback-ul tău însea
 
 ## Tur vizual și module de bază
 
-Explorează modulele de interfață de înaltă rezoluție integrate direct în Google Chrome DevTools, în meniul contextual și în fereastra pop-up din bara de instrumente.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Captează și descarcă tot ce există pe web
-> **★ SUITĂ DE INGINERIE DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Fiecare fișier din pagină, la un panou distanță"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Captează și descarcă tot ce există pe web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Clic dreapta. Capturat."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Selectați o zonă. E deja în clipboard."></p>
 
-### 2. Înregistrează orice zonă a ecranului ca video și GIF
-> **★ ÎNREGISTRARE REGIONALĂ A ECRANULUI · MP4, WEBM ȘI GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Textul și tabelele paginii, sortate pentru dvs."></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Înregistrează orice zonă a ecranului ca video și GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Pagini întregi, înregistrări, copii offline"></p>
 
 ---
 
-### 3. Captură de ecran fluidă a întregii pagini, cu derulare
-> **★ CAPTURI DE ECRAN PERFECTE LA PIXEL · PAGINĂ ÎNTREAGĂ ȘI ZONĂ**
+Source Download este un set de instrumente pentru păstrarea conținutului web. Adaugă o filă proprie în Instrumentele pentru dezvoltatori Chrome. Acolo tot ce a încărcat site-ul este sortat pe categorii, ca să previzualizați și să păstrați doar ce vă trebuie.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Captură de ecran fluidă a întregii pagini, cu derulare">
-</p>
+## Funcții principale
+- Galerie ordonată: fotografiile, pictogramele și fonturile apar în file proprii, cu contoare live și o casetă de căutare.
+- Filtre precise: afișați doar elementele peste o lățime minimă (de exemplu 1200 px) sau ascundeți duplicatele.
+- Previzualizări reale: măriți grafica și redați media. Puteți vedea și o mostră de font sau cod cu evidențierea sintaxei.
+- O singură arhivă: bifați ce doriți și primiți un singur ZIP cu dosare ordonate. Ce eșuează se reia cu un clic.
+- Captură a paginii întregi: totul se derulează și se îmbină în PNG, JPG sau PDF. Puteți alege și o singură zonă.
+- Înregistrare de zonă: transformați o parte a ecranului într-un clip GIF, MP4 sau WebM.
+- Din tabel în foaie de calcul: exportați tabelele live în Excel sau CSV, împreună cu stările anterioare ale tabelelor care se actualizează.
+- Copie offline: păstrați un site ca un singur document HTML care se deschide fără internet.
+- Selector de culoare: alegeți orice culoare de pe ecran și copiați-o ca HEX, RGB sau HSL.
 
----
+## Cum începeți
+1. Deschideți site-ul cu care vreți să lucrați.
+2. Apăsați F12 (pe Mac Option + Command + I) și alegeți fila Source Download. Dacă nu o vedeți, faceți clic pe » la capătul barei de file.
+3. Lăsați panoul deschis în timpul încărcării ca să nu scape nimic.
 
-### 4. Tabele DOM în timp real către Excel (XLSX) și CSV
-> **★ EXTRAGERE DE DATE ȘI ELIMINARE DE ELEMENTE**
-
-<sub>Extrage tabele dinamice, împreună cu istoricul lor de instantanee, în fișiere XLSX cu mai multe foi sau CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Tabele DOM în timp real către Excel (XLSX) și CSV">
-</p>
-
----
-
-### 5. Selector de culori pe ecran și formatator de cod
-> **★ ATELIER PENTRU DEZVOLTATORI ȘI DESIGNERI**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Selector de culori pe ecran și formatator de cod">
-</p>
-
----
-
-Source Download este un panou Chrome DevTools care descoperă, inspectează și descarcă fiecare resursă încărcată de o pagină web. Fie că ai nevoie de fișiere media, scripturi, resurse de stil sau răspunsuri de rețea, le poți salva ca fișiere individuale sau într-o arhivă ZIP ordonată, cu structură de foldere.
-
-Construit de la zero, fără dependențe externe: generatorul ZIP, constructorul XLSX, îmbinătorul HLS și formatatoarele de cod sunt toate scrise manual în JavaScript pur. Fără framework-uri, fără pas de build, fără telemetrie. Totul rulează local, în browserul tău.
-
-## Noutăți în v1.16.0
-- Suport multilingv complet pentru 54 de limbi, cu localizare integrală pentru DevTools și magazin.
-- 17 categorii dedicate de resurse, cu contor în timp real, care acoperă media, cod, API-uri, stocare și documente.
-- Capturi de ecran ale paginii întregi, îmbinate, și capturi personalizate ale unei zone, cu suprimare inteligentă a antetelor fixe.
-- Înregistrare video a ecranului (MP4) și motor ușor de export GIF animat, fără margini parazite.
-- Extractor de tabele DOM în timp real către Microsoft Excel (.XLSX) cu mai multe foi și CSV, plus DOM Zapper pentru eliminarea elementelor.
-- Selector de culori de pe ecran, cu copiere instantanee hex/rgb/hsl, și formatator de cod integrat.
-- Stabilitate sporită a detectorului din DevTools și flux de rețea cu concurență ridicată.
-
-## De ce ai nevoie de el
-O captură de ecran nu ajunge. Obține fișierele reale — imagini la rezoluție maximă, fluxuri video reale, foi de stil și scripturi originale — nu o imagine aplatizată.
-
-DevTools pare copleșitor. Source Download pune în fața ta o galerie curată, împărțită pe categorii, peste aceleași date de rețea, cu căutare, filtre și descărcări dintr-un clic.
-
-SPA-urile ascund totul. Aplicațiile dinamice creează resurse și apeluri API pe care nu le vezi niciodată în sursa paginii. Source Download le captează pe măsură ce apar, inclusiv stările intermediare.
-
-## Ce face
-### Descoperă totul
-- Combină captura de rețea (HAR + cereri live) cu o scanare DOM pentru toate elementele vizuale și structurale, inclusiv fișiere media, scripturi, foi de stil și cadre încorporate.
-- **Conștient de CSS:** resursele din url(...) și din regulile @import sunt urmărite recursiv, așa că sunt găsite chiar și fonturile ascunse în foi de stil importate.
-- **Detectarea conținutului:** fișierele necunoscute sunt citite parțial, câțiva octeți, și mutate în categoria corespunzătoare tipului lor real.
-- **17 categorii cu contor în timp real:** resursele captate sunt organizate în file dedicate pentru media, cod, date, apeluri API, cookie-uri, stocare și documente.
-
-### Filtrează, caută, inspectează
-- Căutare cu expresii regulate în nume de fișiere, URL-uri, tipuri MIME, text alternativ și chiar în conținutul fișierelor.
-- **Filtre pentru fiecare categorie:** dimensiune minimă/maximă și, pentru media, lățime și înălțime minime/maxime — de exemplu „doar imagini hero ≥ 1200px”. Apelurile API se filtrează după metoda HTTP și tipul cererii.
-- Vizualizare listă sau grilă, sortabilă, cu un perete de miniaturi în timp real.
-- **Inspector cu mai multe file și previzualizări reale:** lightbox cu zoom, redare video și audio, specimen de font în direct, vizualizator SVG, cod cu evidențierea sintaxei și numere de linie, plus comutator Beautify.
-- **Vizualizare API împărțită:** răspunsul în stânga; metoda, starea, parametrii de interogare și corpul cererii în dreapta.
-
-### Descarcă cum trebuie
-- Descărcați selectat — doar fișierele bifate.
-- Descărcați Vizualizare — tot ce este vizibil după filtrele și căutarea curente.
-- Descărcați toate — fiecare resursă captată, într-o arhivă ZIP cu structură de foldere și eliminare automată a duplicatelor.
-- Descărcările în lot rulează cu concurență limitată și o bară de progres în timp real; eșecurile sunt reîncercate automat, iar reîncercarea se poate face și din meniul contextual.
-
-### HLS și videoclipuri dificile
-- Fluxurile pe care browserul nu le poate reda nativ (HLS .m3u8, DASH .mpd, codecuri necunoscute) afișează o alternativă inteligentă în loc de un player negru.
-- Îmbinați segmente și descărcați transformă un flux HLS într-un singur fișier redabil, chiar în panou.
-
-### Banca de lucru Text (set de instrumente pentru conținut SPA)
-- **Fila Text este un vizualizator de conținut în timp real:** fiecare element care conține text — titluri, paragrafe, elemente de listă, butoane, div-uri, span-uri — este captat în ordinea DOM.
-- Tabelele dinamice păstrează un istoric limitat de instantanee (de ex. „8 instantanee · 124 rânduri unice”), astfel încât tablourile de bord cu reîmprospătare automată nu pierd niciodată stările intermediare.
-- Exportă ca Markdown, sau tabelele ca CSV, HTML ori ca registru XLSX real cu mai multe foi, creat de propriul nostru generator XLSX scris manual.
-
-## Cum se folosește
-1. Instalează Source Download, apoi apasă F12 pe orice pagină.
-2. Fă clic pe fila Source Download din bara de instrumente DevTools (Chrome nu permite extensiilor să deschidă automat DevTools — de aceea panoul se află acolo).
-3. Răsfoiește filele de categorii, caută, filtrează și inspectează orice în panoul din dreapta.
-4. Bifează fișierele dorite și apasă Descărcați selectat, Descărcați Vizualizare sau Descărcați toate.
-5. Ține panoul DevTools deschis cât timp se încarcă pagina, pentru a capta fiecare cerere de rețea.
-
-## Cazuri de utilizare reale
-- **Analiza concurenței:** adună miniaturile video de pe orice canal — cu filtru de lățime minimă — într-un singur folder.
-- **Web scraping fără cod:** urmărește apelurile API ale unui SPA, filtrează endpoint-ul de care ai nevoie și descarcă exact răspunsurile lui JSON.
-- **Analiza tipografiei:** află ce font folosește de fapt un site și obține fișierele de font reale.
-- **Reproducerea erorilor:** păstrează versiunile exacte de CSS/JS livrate în momentul apariției unei erori.
-- **Export de date din tablouri de bord:** exportă un tabel cu reîmprospătare automată într-un registru Excel cu mai multe foi, inclusiv istoricul.
-- **Testare QA:** verifică ce variantă video/audio este servită în fiecare configurație A/B.
+Capturile de ecran, înregistrarea și selectorul de culoare sunt disponibile și în meniul de clic dreapta și pe butonul extensiei.
 
 ## Confidențialitate
-- Rulează 100% local. Fără server, fără analiză, nicio dată nu părăsește calculatorul tău.
-- **Cere doar ce îi trebuie:** stocare (preferințele tale), clipboard (copierea URL-urilor și a culorilor), descărcări (salvarea fișierelor prin Chrome), meniuri contextuale, scripting și acces la gazde (pentru a scana paginile și a prelua conținutul fișierelor).
-- Fișierele sunt salvate prin fluxul normal de descărcare din Chrome — fără descărcări silențioase.
 
-## Cerințe
-- Chrome 116 sau mai nou (Manifest V3).
-- Cele mai bune rezultate se obțin când panoul este deschis în timpul încărcării paginii, deoarece atunci are loc captura de rețea.
+Totul rulează pe calculatorul dvs. Nu există cont sau analize, iar nimic din ce păstrați nu este trimis dezvoltatorului. Elementele salvate ajung prin Chrome în dosarul obișnuit Descărcări.
 
-Source Download este un proiect open-source — feedback-ul, ideile și pull request-urile sunt binevenite.
+Extensia are nevoie de acces la site-urile vizitate pentru a le găsi resursele și a-și îndeplini funcțiile.
 
-Conectează-te pe LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Respectați drepturile de autor și condițiile de utilizare și păstrați doar conținutul pe care aveți dreptul să-l folosiți.
+
+## Noutăți în versiunea 1.17
+- Mult mai ușor: nimic nu rulează până nu folosiți o funcție.
+- Copiile offline includ acum toate fotografiile, fundalurile și fonturile.
+- Înregistrarea GIF rămâne în limitele memoriei chiar și pentru clipuri HD lungi.
+- Un nou ecran de bun venit și comenzi rapide în butonul extensiei.
+
+Întrebări sau probleme: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

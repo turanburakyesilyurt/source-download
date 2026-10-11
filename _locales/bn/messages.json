@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: ছবি ও ফাইল ডাউনলোডার"
   },
   "appDesc": {
-    "message": "যেকোনো ওয়েব অ্যাসেট দেখুন ও ZIP হিসেবে ডাউনলোড করুন। পুরো পেজের স্ক্রিনশট, লাইভ টেবিল ক্যাপচার ও ডেভেলপার ওয়ার্কবেঞ্চ।"
+    "message": "ওয়েব পৃষ্ঠার ছবি, আইকন ও ফাইল আলাদাভাবে বা একটি ZIP-এ সংরক্ষণ করুন। পুরো পৃষ্ঠার স্ক্রিনশট ও স্ক্রিনের অংশ রেকর্ডিংও আছে।"
   },
   "actionTitle": {
     "message": "Source Download — প্যানেল খুলুন এবং রিসোর্স ট্র্যাক করুন"
   },
   "contextMenuZap": {
-    "message": "এই এলিমেন্টটি লুকান (Zap)"
+    "message": "এই এলিমেন্টটি লুকান"
   },
   "contextMenuUndoZap": {
     "message": "সর্বশেষ লুকানো এলিমেন্ট ফিরিয়ে আনুন"
@@ -90,7 +90,7 @@
     "message": "নির্বাচিতগুলো ডাউনলোড করুন"
   },
   "btnDownloadView": {
-    "message": "বর্তমান ভিউ ডাউনলোড করুন"
+    "message": "দৃশ্যমানগুলো ডাউনলোড করুন"
   },
   "btnDownloadAll": {
     "message": "সব ডাউনলোড করুন"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "ফিল্টার করা ফাইল ডাউনলোড করুন"
   },
-  "btnTheme": {
-    "message": "থিম পরিবর্তন করুন"
-  },
   "btnGuide": {
     "message": "ব্যবহারকারীর নির্দেশিকা"
-  },
-  "btnCaptureFullPage": {
-    "message": "সম্পূর্ণ পৃষ্ঠার স্ক্রিনশট"
-  },
-  "btnOfflineArchive": {
-    "message": "একক HTML সংরক্ষণ করুন"
   },
   "filterMinKb": {
     "message": "ন্যূনতম KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "পেজের টেক্সট ফিল্টার করুন বা লাইভ DOM কোয়েরি করুন…"
-  },
-  "textAllElements": {
-    "message": "সব এলিমেন্ট"
-  },
-  "textLiveOn": {
-    "message": "লাইভ চালু"
-  },
-  "textLiveOff": {
-    "message": "লাইভ বন্ধ"
-  },
   "textScanNow": {
     "message": "এখন স্ক্যান করুন"
-  },
-  "textReading": {
-    "message": "পাঠযোগ্য"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "বিবরণ দেখতে একটি রিসোর্স নির্বাচন করুন"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Source Download উপভোগ করছেন? Chrome Web Store-এ একটি রিভিউ দিয়ে বা GitHub-এ স্টার দিয়ে আমাদের ওপেন-সোর্স উদ্যোগকে সমর্থন করুন!"
-  },
-  "ratingReview": {
-    "message": "★ রিভিউ দিন"
-  },
-  "ratingStar": {
-    "message": "★ GitHub-এ স্টার দিন"
-  },
   "ratingDismiss": {
     "message": "বাতিল করুন"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "একক ফাইলের HTML আর্কাইভ সংরক্ষিত হয়েছে।"
-  },
-  "brandSignature": {
-    "message": "তৈরি করেছেন Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "ছবি ও SVG"
-  },
-  "tabMedia": {
-    "message": "মিডিয়া ও অডিও"
-  },
-  "tabFonts": {
-    "message": "ফন্ট"
-  },
-  "tabTextScraper": {
-    "message": "টেক্সট ও টেবিল"
-  },
-  "heroScreenshotTitle": {
-    "message": "সম্পূর্ণ পৃষ্ঠার স্ক্রিনশট"
-  },
-  "heroScreenshotDesc": {
-    "message": "স্টিকি হেডার বাদ দিয়ে একাধিক ভিউপোর্ট নিখুঁতভাবে জুড়ে স্ক্রিনশট"
-  },
-  "heroArchiveTitle": {
-    "message": "একক ফাইলের HTML সংরক্ষণাগার"
-  },
-  "heroArchiveDesc": {
-    "message": "CSS ও Base64 ছবি ইনলাইন করে অফলাইন-নিরাপদ স্ন্যাপশট"
-  },
-  "copyDataUri": {
-    "message": "Data-URI কপি করুন"
-  },
-  "copyUrl": {
-    "message": "URL কপি করুন"
   },
   "downloadSingle": {
     "message": "ডাউনলোড করুন"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "রিসোর্স"
   },
-  "statusFiltered": {
-    "message": "ফিল্টার করা"
-  },
   "statusSelected": {
     "message": "নির্বাচিত"
   },
   "statusDupes": {
     "message": "ডুপ্লিকেট লুকানো"
-  },
-  "statusSize": {
-    "message": "আকার"
   },
   "langAuto": {
     "message": "স্বয়ংক্রিয় (ব্রাউজার)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "ভাষা নির্বাচন করুন"
   },
-  "textPillAll": {
-    "message": "সব কনটেন্ট"
-  },
-  "textPillText": {
-    "message": "📄 টেক্সট ও আর্টিকেল"
-  },
-  "textPillTables": {
-    "message": "📊 শুধু টেবিল"
-  },
   "textSelectAll": {
     "message": "সব নির্বাচন করুন"
   },
   "textDeselectAll": {
     "message": "সব নির্বাচন বাতিল করুন"
-  },
-  "textClearSelection": {
-    "message": "মুছুন"
   },
   "toastRefreshComplete": {
     "message": "পেজ স্ক্যান সম্পূর্ণ: $count$টি নতুন রিসোর্স",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$টি টেবিল · $rows$টি অনন্য সারি",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$টি নির্বাচিত — রপ্তানিতে শুধু এগুলো ব্যবহার হবে",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "টেবিল — স্ক্রিনে $count$টি সারি",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "টেবিল — মোট $count$টি অনন্য সারি",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$টি স্ন্যাপশট",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "সব সারি দেখাচ্ছে"
   },
-  "textTableHistory": {
-    "message": "ইতিহাস ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "ইতিহাস লুকান"
-  },
   "textTableNoRows": {
     "message": "এখনও কোনো সারি ক্যাপচার করা হয়নি।"
   },
   "textBtnCopy": {
     "message": "টেক্সট কপি করুন"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 কপি"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$টি ডুপ্লিকেট ছবি",
@@ -689,35 +529,17 @@
       }
     }
   },
-  "labelExport": {
-    "message": "রপ্তানি"
-  },
   "inspectorLoadingSvg": {
-    "message": "SVG লোড হচ্ছে..."
+    "message": "SVG লোড হচ্ছে…"
   },
   "inspectorSvgError": {
     "message": "SVG কনটেন্ট আনা যায়নি।"
   },
   "inspectorLoadingFont": {
-    "message": "ফন্ট প্রিভিউ লোড হচ্ছে..."
+    "message": "ফন্ট প্রিভিউ লোড হচ্ছে…"
   },
   "inspectorFontSample": {
     "message": "ফন্ট প্রিভিউ"
-  },
-  "inspectorBeautify": {
-    "message": "সুন্দর করুন"
-  },
-  "inspectorOriginal": {
-    "message": "আসল"
-  },
-  "inspectorHeaders": {
-    "message": "হেডার"
-  },
-  "inspectorResponse": {
-    "message": "রেসপন্স"
-  },
-  "inspectorRequest": {
-    "message": "রিকুয়েস্ট"
   },
   "inspectorQueryParams": {
     "message": "কোয়েরি প্যারামিটার"
@@ -725,23 +547,11 @@
   "inspectorRequestBody": {
     "message": "রিকুয়েস্ট বডি"
   },
-  "textHintHtml": {
-    "message": "পেজের একটি লাইভ, পাঠযোগ্য কপি। টেক্সট আছে এমন প্রতিটি এলিমেন্ট DOM ক্রমে ক্যাপচার করা হয় এবং পেজ বদলালে এখানেও আপডেট হয়। সাধারণ টেক্সট, রেগুলার এক্সপ্রেশন, <strong>CSS সিলেক্টর</strong> বা <strong>XPath</strong> এক্সপ্রেশন দিয়ে কোয়েরি করুন, তারপর যা মিলেছে তা রপ্তানি করুন। বিস্তারিত জানতে <a href=\"#\" id=\"text-hint-guide\">গাইড</a> দেখুন।"
-  },
-  "textHeadings": {
-    "message": "হেডিং"
-  },
-  "textAllLevels": {
-    "message": "সব স্তর"
-  },
   "textMatches": {
     "message": "মিল"
   },
   "textMatch": {
     "message": "মিল"
-  },
-  "textReadingOn": {
-    "message": "পাঠযোগ্য মোড চালু"
   },
   "toastDownloadStarted": {
     "message": "ডাউনলোড শুরু হয়েছে: $name$",
@@ -756,7 +566,7 @@
     "message": "এই রিসোর্সটি আনা যায়নি (CORS বা অসমর্থিত ধরন)।"
   },
   "ratingBannerText": {
-    "message": "Source Download উপভোগ করছেন? Chrome Web Store-এ একটি রিভিউ দিয়ে বা GitHub-এ স্টার দিয়ে আমাদের ওপেন-সোর্স উদ্যোগকে সমর্থন করুন!"
+    "message": "কাজে লেগেছে জেনে ভালো লাগল! Source Download আপনার সময় বাঁচালে একটি ছোট রিভিউ অন্যদের এটি খুঁজে পেতে সাহায্য করে।"
   },
   "ratingBannerReview": {
     "message": "★ রিভিউ"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "কোয়েরি বক্স কীভাবে ব্যাখ্যা করা হবে"
   },
-  "textKindTitle": {
-    "message": "একটি এলিমেন্টের ধরনে সীমাবদ্ধ করুন"
-  },
-  "textHeadingLevelTitle": {
-    "message": "হেডিং স্তর"
-  },
   "textPlaceholderRegex": {
     "message": "^মূল্য:\\s*\\d+  — JavaScript রেগুলার এক্সপ্রেশন"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "গাইডে অনুসন্ধান করুন…"
-  },
-  "popupIntro": {
-    "message": "<strong>টুলবার ব্যাজ</strong> যে বিভাগগুলো গণনা করে। কোনো বিভাগের গণনা বন্ধ করতে সেটি বন্ধ করুন — ব্যাজে শুধু আপনার ট্র্যাক করা বিভাগগুলোই তাৎক্ষণিকভাবে দেখা যাবে।"
-  },
-  "popupHelpTitle": {
-    "message": "সম্পূর্ণ প্যানেল কীভাবে ব্যবহার করবেন"
-  },
-  "popupStep1": {
-    "message": "যে পেজ পরিদর্শন করতে চান সেটির DevTools খুলুন <div class=\"hint\"><kbd>F12</kbd> বা <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "DevTools টুলবারে <strong>Source Download</strong> ট্যাবে ক্লিক করুন"
-  },
-  "popupStep3": {
-    "message": "রিসোর্স ব্রাউজ করুন, পরিদর্শন করুন এবং ডাউনলোড করুন — একটি একটি করে অথবা একসাথে ZIP হিসেবে।"
-  },
-  "popupNote": {
-    "message": "দ্রষ্টব্য: Chrome এক্সটেনশনকে প্রোগ্রামের মাধ্যমে DevTools খুলতে দেয় না, তাই সম্পূর্ণ সুবিধা DevTools টুলবার থেকে ব্যবহার করতে হয়।"
-  },
-  "popupTrackAll": {
-    "message": "সব বিভাগ ট্র্যাক করুন"
   },
   "popupLanguage": {
     "message": "ভাষা"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "সেগমেন্ট মার্জ করে ডাউনলোড করুন"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$টি সেগমেন্ট $NAME$-এ মার্জ করা হয়েছে",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "আকার অজানা"
-  },
   "progressFetching": {
     "message": "আনা হচ্ছে $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Regex অনুসন্ধান সক্রিয় — কোয়েরি /pattern/i আকারে লিখুন"
   },
-  "textIncludeInExports": {
-    "message": "রপ্তানিতে অন্তর্ভুক্ত করুন"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "সব স্ন্যাপশট একটি ডুপ্লিকেটমুক্ত টেবিলে একত্র করুন — এটিই রপ্তানি করা হয়"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "এই টেবিলের আগের স্ন্যাপশট দেখুন"
-  },
   "tableDownloadCsvTitle": {
     "message": "এই টেবিলটি CSV হিসাবে ডাউনলোড করুন"
-  },
-  "tableSnapshotLabel": {
-    "message": "স্ন্যাপশট $INDEX$ — $TIME$ ($COUNT$ সারি)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "ব্যাচ ডাউনলোডের জন্য নির্বাচন টগল করুন"
@@ -1150,7 +899,7 @@
     "message": "DevTools টুলবারে <strong>Source Download</strong> ট্যাবে ক্লিক করুন (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> চাপুন, তারপর DevTools টুলবারের ট্যাবটি বেছে নিন)। Chrome এক্সটেনশনকে স্বয়ংক্রিয়ভাবে DevTools খুলতে দেয় না, তাই প্যানেলটি সেখানেই থাকে। টুলবার আইকনের পপআপ থেকে বেছে নিতে পারেন আইকনের ব্যাজ কাউন্টারে কোন বিভাগগুলো গণনা হবে। প্যানেল টুলবারের সূর্য/চাঁদ বোতাম Chrome থেকে স্বাধীনভাবে লাইট বা ডার্ক থিম নির্ধারণ করে; আপনার পছন্দ মনে রাখা হয়।"
   },
   "guideSecCategoriesContent": {
-    "message": "বাম দিকের উল্লম্ব ট্যাবগুলো ক্যাপচার করা প্রতিটি রিসোর্সকে ধরন অনুযায়ী ১৭টি নির্দিষ্ট বিভাগে ভাগ করে: ছবি, ভিডিও, অডিও, ক্যাপশন, ডকুমেন্ট, ফন্ট, সোর্স ম্যাপ, WASM, SVG, API, কুকি, স্টোরেজ এবং আরও অনেক কিছু। প্রতিটি ট্যাবে লাইভ সংখ্যা দেখানো হয়। একবারে শুধু একটি বিভাগ দেখানো হয়; বিভাগ বদলালে সব ফিল্টার রিসেট হয়, ফলে আপনি যা দেখছেন তা সবসময় ট্যাবের সাথে মিলে যায়।"
+    "message": "বাঁ দিকের উল্লম্ব ট্যাবগুলো প্রতিটি ধরা পড়া রিসোর্সকে ছবি, ভিডিও, ফন্ট, সোর্স ম্যাপ ও API কলের মতো ১৫টি বিভাগে সাজায়, পাশাপাশি একটি টেক্সট ও টেবিল ট্যাবও আছে। প্রতিটি ট্যাবে লাইভ সংখ্যা দেখানো হয়। একবারে শুধু একটি বিভাগ দেখানো হয়; বিভাগ বদলালে সব ফিল্টার রিসেট হয়, ফলে আপনি যা দেখছেন তা সবসময় ট্যাবের সাথে মিলে যায়।"
   },
   "guideSecSearchFiltersContent": {
     "message": "সার্চ বার নাম, URL, ধরন, alt টেক্সট বা শিরোনাম অনুযায়ী ফিল্টার করে। রেগুলার এক্সপ্রেশন ব্যবহার করতে কোয়েরি <kbd>/…/</kbd>-এর মধ্যে লিখুন, যেমন <code>/\\.(png|jpg)$/</code>। টুলবারের নিচে ফিল্টার বার বিভাগ অনুযায়ী বদলায়: মিডিয়ার জন্য আকার ও মাত্রার সীমা, API-এর জন্য HTTP মেথড ও রিকুয়েস্টের ধরন, সাথে সাজানো ও ক্রমের দিক।"
@@ -1162,13 +911,13 @@
     "message": "ডান দিকের পরিদর্শন প্যানেলে খুলতে যেকোনো রিসোর্সে ক্লিক করুন। খোলা প্রতিটি ফাইল একটি ট্যাব হয়ে যায়, ফলে একাধিক রিসোর্স পাশাপাশি তুলনা করা যায় — নতুনটি বাম দিকে খোলে। ছবি, ভিডিও, অডিও, ফন্ট, SVG এবং টেক্সট/কোডের জন্য বিশেষ ভিউয়ার আছে (সাথে সুন্দর করার টগল)। API-র ক্ষেত্রে বিভক্ত ভিউ দেখায়: বাম দিকে রেসপন্স, ডান দিকে রিকুয়েস্টের বিবরণ (মেথড, স্ট্যাটাস, হেডার, কোয়েরি প্যারামিটার ও বডি)।"
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>বর্তমান ভিউ ডাউনলোড করুন</strong> বর্তমানে দৃশ্যমান রিসোর্সগুলো (সক্রিয় বিভাগ + অনুসন্ধান + ফিল্টার) ZIP হিসেবে সংরক্ষণ করে; ফিল্টার সক্রিয় থাকলে এর নাম বদলে <em>ফিল্টার করা ফাইল ডাউনলোড করুন (N)</em> হয়। ক্লিক করার আগে যেকোনো ডাউনলোড বোতামের ওপর কার্সার রাখলে আনুমানিক আর্কাইভের আকার দেখা যায়। <strong>নির্বাচিতগুলো ডাউনলোড করুন</strong> শুধু টিক দেওয়া আইটেম ডাউনলোড করে। <strong>সব ডাউনলোড করুন</strong> আবিষ্কৃত প্রতিটি রিসোর্স ফোল্ডার কাঠামোসহ একটি ZIP-এ সংগ্রহ করে। ব্যর্থ ডাউনলোড স্বয়ংক্রিয়ভাবে আবার চেষ্টা করা হয় এবং প্রসঙ্গ মেনু থেকেও আবার চেষ্টা করা যায়। <strong>রপ্তানি</strong> দৃশ্যমান তালিকা JSON বা CSV হিসেবে লেখে, অথবা Chrome-এর নেটওয়ার্ক লগ HAR ফাইল হিসেবে সংরক্ষণ করে।"
+    "message": "<strong>দৃশ্যমানগুলো ডাউনলোড করুন</strong> বর্তমানে দৃশ্যমান রিসোর্সগুলো (সক্রিয় বিভাগ + অনুসন্ধান + ফিল্টার) ZIP হিসেবে সংরক্ষণ করে; ফিল্টার সক্রিয় থাকলে এর নাম বদলে <em>ফিল্টার করা ফাইল ডাউনলোড করুন (N)</em> হয়। ক্লিক করার আগে যেকোনো ডাউনলোড বোতামের ওপর কার্সার রাখলে আনুমানিক আর্কাইভের আকার দেখা যায়। <strong>নির্বাচিতগুলো ডাউনলোড করুন</strong> শুধু টিক দেওয়া আইটেম ডাউনলোড করে। <strong>সব ডাউনলোড করুন</strong> আবিষ্কৃত প্রতিটি রিসোর্স ফোল্ডার কাঠামোসহ একটি ZIP-এ সংগ্রহ করে। ব্যর্থ ডাউনলোড চিহ্নিত হয়, আর আপনি বিজ্ঞপ্তি, আইটেমের সতর্কতা আইকন বা প্রসঙ্গ মেনু থেকে এক ক্লিকে আবার চেষ্টা করতে পারেন। <strong>রপ্তানি</strong> দৃশ্যমান তালিকা JSON বা CSV হিসেবে লেখে, অথবা Chrome-এর নেটওয়ার্ক লগ HAR ফাইল হিসেবে সংরক্ষণ করে।"
   },
   "guideSecLightboxContent": {
     "message": "জুম বোতাম মিডিয়াকে পূর্ণ আকারের লাইটবক্সে খোলে, যেখানে টেনে প্যান করা, মাউস হুইল, স্ক্রিনের বোতাম বা কীবোর্ড দিয়ে জুম করা যায় (জুম করতে <kbd>+</kbd>/<kbd>-</kbd>, রিসেট করতে <kbd>0</kbd>, বন্ধ করতে <kbd>Esc</kbd>)।"
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>টেক্সট</strong> বিভাগ পেজের একটি লাইভ, পাঠযোগ্য কপি। এটি টেক্সট আছে এমন প্রতিটি এলিমেন্ট — হেডিং, অনুচ্ছেদ, তালিকা আইটেম, বোতাম, <code>div</code>/<code>span</code> এবং আরও অনেক কিছু — DOM ক্রমে ক্যাপচার করে, এবং <strong>লাইভ</strong> চালু থাকলে স্ক্যান করতে থাকে।</p><p><strong>কোয়েরি</strong> বক্স চারভাবে কাজ করে, পাশের ড্রপডাউন থেকে বেছে নিন: <strong>ধারণ করে</strong> ও <strong>Regex</strong> ইতিমধ্যে ক্যাপচার করা টেক্সট ফিল্টার করে, আর <strong>CSS সিলেক্টর</strong> ও <strong>XPath</strong> লাইভ পেজে চালানো হয়, ফলে DOM-এর যেকোনো কিছুতে পৌঁছানো যায়। XPath এলিমেন্টের বদলে মান ফেরত দেয় এমন এক্সপ্রেশনও গ্রহণ করে, যেমন <code>count(//a)</code> বা <code>//@href</code>। ভুল কোয়েরি নিয়ে পেজ যা জানায় তা বক্সের পাশে দেখানো হয়। <strong>এলিমেন্ট</strong> ফলাফলকে একটি ট্যাগে সীমিত করে, সাথে পেজে পাওয়া প্রতিটি ট্যাগের সংখ্যা দেখায়। কোয়েরি বক্স খালি করলে (বা <strong>মুছুন</strong> চাপলে) আপনি <em>সব এলিমেন্ট</em>-এ ফিরে যান এবং পেজ আবার ক্যাপচার হয় — ড্রপডাউন নিজে রিসেট করতে হয় না।</p><p><strong>পাঠযোগ্য</strong> মোড ট্যাগ, চেকবক্স ও অবস্থানের সূত্র লুকিয়ে দেয়, যাতে পুরোটা একটি ডকুমেন্টের মতো পড়া যায়। টেবিল স্ন্যাপশটের একটি সীমিত ইতিহাস রাখে, ফলে ডায়নামিক (SPA) টেবিল কখনো হারায় না। কোনো টেবিলে <strong>সব সারি দেখান</strong> চাপলে সব স্ন্যাপশট একটি ডুপ্লিকেটমুক্ত ভিউতে মার্জ হয় — রপ্তানিতে ঠিক এটিই থাকে। <strong>TXT</strong> (পাঠযোগ্য পেজ), <strong>MD</strong> (Markdown, টেবিলসহ), অথবা টেবিল CSV, HTML বা প্রকৃত মাল্টি-শীট <strong>XLSX</strong> ওয়ার্কবুক হিসেবে রপ্তানি করুন। টিক দেওয়া আইটেম অগ্রাধিকার পায়; না থাকলে বর্তমানে দৃশ্যমান সবকিছু রপ্তানি হয়।</p>"
+    "message": "<p><strong>টেক্সট</strong> বিভাগটি পেজের একটি লাইভ, সহজে পড়ার মতো কপি: শিরোনাম, অনুচ্ছেদ, তালিকা ও লিংক পেজের ক্রমে থাকে এবং <strong>লাইভ</strong> চালু থাকা পর্যন্ত হালনাগাদ হয়। কোনো লাইনের ওপর পয়েন্টার রেখে সেটি কপি করুন, অথবা যা দেখানো হচ্ছে তার জন্য <strong>টেক্সট কপি করুন</strong>, <strong>Markdown</strong> ও <strong>TXT</strong> ব্যবহার করুন।</p><p><strong>টেবিল</strong>-এ পেজের প্রতিটি টেবিল একটি কার্ড হিসেবে দেখা যায়, যাতে প্রিভিউ আর নিজস্ব <strong>Excel</strong>, <strong>CSV</strong> ও <strong>কপি</strong> বোতাম থাকে; <strong>সব টেবিল Excel-এ</strong> সব টেবিল একটি ওয়ার্কবুকে রাখে, প্রতিটির জন্য একটি শিট। যে টেবিল বদলায় সেগুলো স্ন্যাপশটের ইতিহাস রাখে, আর <strong>সব সারি দেখান</strong> সেগুলোকে পুনরাবৃত্তিহীন একটি টেবিলে মিলিয়ে দেয় — রপ্তানিতে ঠিক এটাই থাকে।</p><p>বাঁ পাশের বাক্সগুলো পেজকে উপাদানের ধরন অনুযায়ী সাজায় — পেজের সব টেক্সট, প্রতিটি শিরোনাম স্তর, অনুচ্ছেদ, লিংক, তালিকার আইটেম, বোতাম, কোড ইত্যাদি — প্রত্যেকটির সংখ্যা ও প্রথম লাইনসহ; শুধু সেটাই দেখতে, কপি বা রপ্তানি করতে একটি বেছে নিন। খোঁজার বাক্স টাইপ করার সঙ্গে সঙ্গে ফিল্টার করে, আর পাশের মেনু একে রেগুলার এক্সপ্রেশন, <strong>CSS সিলেক্টর</strong> বা <strong>XPath</strong> এক্সপ্রেশনে (যেমন <code>count(//a)</code> বা <code>//@href</code>-এর মতো মান ফেরত দেওয়া এক্সপ্রেশনও) বদলে লাইভ পেজে চালায়; <strong>কাস্টম কোয়েরি</strong> বাক্সও একই কাজ করে। ভুল কোয়েরি সম্পর্কে পেজ যা বলে তা বাক্সের ভেতরেই দেখা যায়।</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML এবং অন্যান্য ক্যাপশন ফাইল — <code>&lt;track&gt;</code> সোর্সসহ — ডকুমেন্টের সাথে মিশে না গিয়ে নিজস্ব <strong>ক্যাপশন</strong> ট্যাবে থাকে।"
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "ডিফল্ট GIF রেজোলিউশন"
   },
-  "optGifOriginal": {
-    "message": "আসল (১:১ নেটিভ রেজোলিউশন — পূর্ণ 3K/4K, ছোট না করে)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (সর্বোচ্চ 1920px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "স্ক্রিন রেকর্ডিং (ভিডিও ও GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "স্ক্রিনের যেকোনো এলাকা MP4, WebM বা অ্যানিমেটেড GIF হিসেবে রেকর্ড করুন। GIF রেকর্ডিংয়ে ১:১ নেটিভ রেজোলিউশন, 1080p, 720p ও 480p প্রোফাইল এবং লাইভ আনুমানিক ফাইলের আকার পাওয়া যায়। ব্রাউজারের সর্বোত্তম পারফরম্যান্সের জন্য GIF রেকর্ডিংয়ের সর্বোচ্চ সময় ১ মিনিট (60s)।"
+    "message": "স্ক্রিনের যেকোনো অংশ MP4, WebM বা অ্যানিমেটেড GIF হিসেবে রেকর্ড করুন। GIF রেকর্ডিংয়ে 1080p, 720p ও 480p প্রোফাইল এবং ফাইলের আকারের লাইভ অনুমান থাকে। একটি GIF রেকর্ডিং সর্বোচ্চ ১ মিনিট (৬০ সেকেন্ড) হতে পারে।"
   },
   "msgGifMaxDurationReached": {
     "message": "GIF-এর সর্বোচ্চ সময়সীমা ১ মিনিট (৬০ সেকেন্ড) পূর্ণ হয়েছে। GIF তৈরি হচ্ছে…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — প্রেজেন্টেশন (প্রতি সেকেন্ডে ১টি ফ্রেম, সবচেয়ে ছোট ফাইল)"
-  },
-  "popupRightClickHint": {
-    "message": "স্ক্রিন রেকর্ডিং (ভিডিও/GIF) ও কালার পিকারের জন্য ওয়েবপেজের যেকোনো জায়গায় রাইট-ক্লিক করুন।"
   },
   "toastElementZappedAd": {
     "message": "এই সেশনের জন্য বিজ্ঞাপন / iframe লুকানো হয়েছে।",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF রেজোলিউশন: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF রেজোলিউশন: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "কোনো সক্রিয় ট্যাব পাওয়া যায়নি।",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "এখানে ক্লিক করুন, তারপর পৃষ্ঠার যেকোনো রং বেছে নিন"
+  },
+  "welcomeTitle": {
+    "message": "Source Download প্রস্তুত"
+  },
+  "welcomePrivacy": {
+    "message": "সবকিছু আপনার কম্পিউটারেই চলে। কোনো অ্যাকাউন্ট নেই, কোনো ট্র্যাকিং নেই, আমাদের কাছে কিছুই পাঠানো হয় না।"
+  },
+  "welcomeHelp": {
+    "message": "কিছু কাজ করছে না? GitHub-এ আমাদের জানান"
+  },
+  "ratingBannerIssue": {
+    "message": "কোনো সমস্যা?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF 200 MB-তে পৌঁছেছে। রেকর্ড করা অংশ সংরক্ষণ হচ্ছে…"
+  },
+  "btnPopupFullPage": {
+    "message": "পুরো পৃষ্ঠার স্ক্রিনশট"
+  },
+  "toastRecWrongTab": {
+    "message": "এই পৃষ্ঠার একটি অংশ রেকর্ড করতে, শেয়ার ডায়ালগে \"এই ট্যাব\" বেছে নিন।"
+  },
+  "popupCaptureTitle": {
+    "message": "এই পেজ ক্যাপচার করুন"
+  },
+  "popupTileOffline": {
+    "message": "পেজ অফলাইনে সেভ করুন"
+  },
+  "popupTileGuide": {
+    "message": "কীভাবে কাজ করে"
+  },
+  "popupDevtoolsTitle": {
+    "message": "ফাইল, ছবি ও টেবিল"
+  },
+  "popupDevtoolsHint": {
+    "message": "DevTools খুলুন, তারপর Source Download ট্যাবটি বেছে নিন।"
+  },
+  "popupRestricted": {
+    "message": "Chrome এই পেজে এক্সটেনশন চালাতে দেয় না। টুলগুলো ব্যবহার করতে কোনো ওয়েবসাইট খুলুন।"
+  },
+  "welcomeCardMenuTitle": {
+    "message": "যেকোনো পেজে রাইট-ক্লিক করুন"
+  },
+  "welcomeCardMenuText": {
+    "message": "পুরো পেজ ও নির্দিষ্ট এলাকার স্ক্রিনশট, এলাকা রেকর্ডিং, রং বাছাই ও অফলাইন কপি — ঠিক যেখানে আছেন সেখানেই।"
+  },
+  "welcomeCardPopupTitle": {
+    "message": "অথবা টুলবারের বোতাম ব্যবহার করুন"
+  },
+  "welcomeCardPopupText": {
+    "message": "Chrome-এর টুলবারে ধাঁধার আইকনে ক্লিক করে Source Download পিন করুন, তাহলে টুলগুলো সবসময় এক ক্লিক দূরে থাকবে।"
+  },
+  "welcomeCardPanelTitle": {
+    "message": "পেজের সবকিছুর জন্য F12 চাপুন"
+  },
+  "welcomeCardPanelText": {
+    "message": "DevTools-এ Source Download ট্যাবটি বেছে নিন। পেজ যে ছবি, ভিডিও, ফন্ট ও ফাইল লোড করেছে তার সবই সেখানে থাকে — প্রিভিউ দেখুন, ফিল্টার করুন এবং ZIP হিসেবে সেভ করুন। পেজের টেবিল Excel-এ রপ্তানি হয়।"
+  },
+  "welcomeLead": {
+    "message": "যেকোনো ওয়েব পেজ থেকে দরকারি জিনিস নেওয়ার তিনটি উপায়।"
+  },
+  "btnDownloadOptions": {
+    "message": "আরও ডাউনলোড বিকল্প"
+  },
+  "btnMore": {
+    "message": "আরও কাজ"
+  },
+  "btnFilters": {
+    "message": "ফিল্টার"
+  },
+  "tabsShowEmpty": {
+    "message": "খালিগুলো দেখান"
+  },
+  "tabsHideEmpty": {
+    "message": "খালিগুলো লুকান"
+  },
+  "textSegText": {
+    "message": "টেক্সট"
+  },
+  "textSegTables": {
+    "message": "টেবিল"
+  },
+  "textLive": {
+    "message": "লাইভ"
+  },
+  "textPaused": {
+    "message": "থামানো"
+  },
+  "textLivePauseTitle": {
+    "message": "লাইভ: পেজ বদলালেই আবার পড়া হয়। থামাতে ক্লিক করুন।"
+  },
+  "textLiveResumeTitle": {
+    "message": "থামানো। আবার লাইভে পেজ অনুসরণ করতে ক্লিক করুন।"
+  },
+  "textSearchText": {
+    "message": "পেজের টেক্সটে খুঁজুন"
+  },
+  "textExportAllXlsx": {
+    "message": "সব টেবিল Excel-এ"
+  },
+  "textNoTables": {
+    "message": "এই পেজে এখনো কোনো টেবিল নেই। পেজে টেবিল দেখা দিলেই এখানে আসবে।"
+  },
+  "textTable": {
+    "message": "টেবিল"
+  },
+  "textCopy": {
+    "message": "কপি"
+  },
+  "textShowLess": {
+    "message": "কম দেখান"
+  },
+  "areaHintSelect": {
+    "message": "এলাকা বাছতে টেনে আনুন"
+  },
+  "areaHintCopy": {
+    "message": "কপি"
+  },
+  "areaHintSave": {
+    "message": "সেভ"
+  },
+  "areaHintExit": {
+    "message": "বের হন"
+  },
+  "areaAutoCopyLabel": {
+    "message": "স্বয়ংক্রিয়ভাবে কপি"
+  },
+  "areaAutoCopyOn": {
+    "message": "স্বয়ংক্রিয় কপি চালু আছে"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "বাছাই ছেড়ে দিলেই তা ক্লিপবোর্ডে চলে যাবে।"
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "বন্ধ করুন"
+  },
+  "toastAreaAutoCopied": {
+    "message": "ক্লিপবোর্ডে কপি হয়েছে (স্বয়ংক্রিয় কপি চালু)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "এই পেজ ক্লিপবোর্ডে কপি করতে দেয় না। এর বদলে ডাউনলোড ব্যবহার করুন।"
+  },
+  "textKindAll": {
+    "message": "পেজের সব টেক্সট"
+  },
+  "textKindHeading": {
+    "message": "শিরোনাম"
+  },
+  "textKindP": {
+    "message": "অনুচ্ছেদ"
+  },
+  "textKindA": {
+    "message": "লিংক"
+  },
+  "textKindLi": {
+    "message": "তালিকার আইটেম"
+  },
+  "textKindButton": {
+    "message": "বোতাম"
+  },
+  "textKindLabel": {
+    "message": "লেবেল ও ক্যাপশন"
+  },
+  "textKindSpan": {
+    "message": "ইনলাইন টেক্সট"
+  },
+  "textKindDiv": {
+    "message": "অন্যান্য ব্লক"
+  },
+  "textKindCell": {
+    "message": "টেবিলের সেল"
+  },
+  "textKindCode": {
+    "message": "কোড"
+  },
+  "textKindQuote": {
+    "message": "উদ্ধৃতি"
+  },
+  "textCustomQuery": {
+    "message": "কাস্টম কোয়েরি"
+  },
+  "textCustomQueryHint": {
+    "message": "লাইভ পেজে CSS সিলেক্টর বা XPath"
+  },
+  "menuSettings": {
+    "message": "সেটিংস"
+  },
+  "settingsSave": {
+    "message": "সেভ করুন"
+  },
+  "settingsReset": {
+    "message": "ডিফল্টে ফিরিয়ে নিন"
+  },
+  "settingAreaAutoCopy": {
+    "message": "এলাকার স্ক্রিনশট স্বয়ংক্রিয়ভাবে কপি করুন"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "বাছাই ছেড়ে দিলে ছবি সরাসরি ক্লিপবোর্ডে যায়। এটি চালু থাকা পর্যন্ত পেজের ওপরের সংকেত প্রতিবার তা জানায়।"
   }
 }

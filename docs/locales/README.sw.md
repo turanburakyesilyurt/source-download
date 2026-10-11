@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Vinjari, kagua na upakue kila rasilimali ya wavuti inayopakiwa na ukurasa kwa urahisi kama ZIP.</em><br>
-  Source Download — kila rasilimali ya ukurasa, kwa kubofya mara moja
+  <em>Hifadhi picha, aikoni na faili za ukurasa wa wavuti moja moja au kama ZIP moja. Pamoja na picha ya ukurasa mzima na kurekodi eneo.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Huu ni **mradi wangu wa kwanza wa chanzo huria**, kwa hivyo maoni yako yana tham
 
 ## Ziara ya Kuona na Moduli Kuu
 
-Gundua moduli za kiolesura za ubora wa juu zilizojengwa moja kwa moja ndani ya Google Chrome DevTools, Menyu ya Kubofya Kulia na Dirisha la Upau wa Zana.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Nasa na upakue kila kitu kwenye wavuti
-> **★ ZANA ZA UHANDISI ZA DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Kila faili ya ukurasa, kwenye paneli moja"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Nasa na upakue kila kitu kwenye wavuti">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Bofya kulia. Nasa."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Chagua eneo. Liko kwenye ubao wa kunakili."></p>
 
-### 2. Rekodi eneo lolote la skrini kama video na GIF
-> **★ KIREKODI CHA ENEO LA SKRINI · MP4, WEBM NA GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Maandishi na majedwali ya ukurasa, yamepangwa kwa ajili yako"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Rekodi eneo lolote la skrini kama video na GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Kurasa nzima, rekodi, nakala za nje ya mtandao"></p>
 
 ---
 
-### 3. Picha ya skrini ya ukurasa mzima kwa kusogeza
-> **★ PICHA ZA SKRINI KAMILIFU · UKURASA MZIMA NA ENEO**
+Source Download ni seti ya zana za kuhifadhi maudhui ya wavuti. Inaongeza kichupo chake katika Zana za Wasanidi Programu za Chrome. Huko kila kitu kilichopakiwa na tovuti hupangwa kwa kategoria ili uhakiki na kubaki na unachohitaji tu.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Picha ya skrini ya ukurasa mzima kwa kusogeza">
-</p>
+## Vipengele vikuu
+- Matunzio yaliyopangwa: fotografia, aikoni na fonti huonekana kwenye vichupo vyake pamoja na hesabu za moja kwa moja na kisanduku cha kutafuta.
+- Vichujio sahihi: onyesha vipengee vilivyo pana kuliko kiwango cha chini (mfano 1200 px) pekee, au ficha nakala.
+- Uhakiki halisi: kuza michoro na ucheze media. Unaweza pia kuona sampuli ya fonti au msimbo wenye rangi za sintaksia.
+- Kumbukumbu moja: weka alama kwenye unachotaka upate ZIP moja yenye folda nadhifu. Kisichofaulu kinajaribiwa tena kwa mbofyo mmoja.
+- Picha ya ukurasa mzima: kila kitu husogezwa na kuunganishwa kuwa PNG, JPG au PDF. Unaweza pia kuchagua eneo moja tu.
+- Kurekodi eneo: geuza sehemu ya onyesho kuwa klipu ya GIF, MP4 au WebM.
+- Kutoka jedwali hadi lahajedwali: hamisha majedwali hai hadi Excel au CSV pamoja na hali za awali za majedwali yanayojisasisha.
+- Nakala nje ya mtandao: hifadhi tovuti kama hati moja ya HTML inayofunguka bila intaneti.
+- Kichagua rangi: chagua rangi yoyote inayoonekana na uinakili kama HEX, RGB au HSL.
 
----
+## Jinsi ya kuanza
+1. Fungua tovuti unayotaka kufanyia kazi.
+2. Bonyeza F12 (kwenye Mac Option + Command + I) kisha uchague kichupo cha Source Download. Usipokiona, bofya » mwishoni mwa upau wa vichupo.
+3. Acha paneli wazi wakati wa kupakia ili kisikupite kitu.
 
-### 4. Jedwali za DOM za moja kwa moja kwenda Excel (XLSX) na CSV
-> **★ UTOAJI WA DATA NA KIONDOA VIPENGELE**
-
-<sub>Toa jedwali zinazobadilika, pamoja na historia ya picha zake za muda, kwenye faili za XLSX zenye kurasa nyingi au CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Jedwali za DOM za moja kwa moja kwenda Excel (XLSX) na CSV">
-</p>
-
----
-
-### 5. Kiteuzi cha rangi skrinini na kifomati cha msimbo
-> **★ KARAKANA YA WASANIDI NA WABUNIFU**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Kiteuzi cha rangi skrinini na kifomati cha msimbo">
-</p>
-
----
-
-Source Download ni paneli ya Chrome DevTools inayogundua, kukagua na kupakua kila rasilimali inayopakiwa na ukurasa wa wavuti. Iwe unahitaji faili za media, hati za wasanidi programu, rasilimali za mitindo au majibu ya mtandao, unaweza kuzihifadhi kama faili moja moja au kama ZIP nadhifu yenye muundo wa folda.
-
-Imejengwa kuanzia mwanzo bila utegemezi wowote wa wahusika wengine: kiandikaji cha ZIP, kijenzi cha XLSX, kiunganishi cha HLS na vifomati vya msimbo vyote vimeandikwa kwa mkono kwa vanilla JavaScript. Hakuna fremuweki, hakuna hatua ya ujenzi, hakuna telemetri. Kila kitu kinaendeshwa ndani ya kivinjari chako.
-
-## Mapya katika v1.16.0
-- Usaidizi kamili wa lugha nyingi kwa lugha 54 pamoja na ujanibishaji kamili wa DevTools na duka.
-- Kategoria 17 maalum za rasilimali zenye hesabu ya moja kwa moja, zinazojumuisha media zote, msimbo, API, hifadhi na hati.
-- Picha za skrini za ukurasa mzima zilizounganishwa na unasaji wa eneo maalum la skrini, pamoja na ufichaji makini wa vichwa vinavyobaki juu.
-- Kurekodi video ya skrini (MP4) na injini nyepesi ya kuhamisha GIF zilizohuishwa bila kingo kuvuja.
-- Kitoaji cha jedwali za DOM za moja kwa moja kwenda Microsoft Excel (.XLSX) yenye kurasa nyingi na CSV, pamoja na DOM Zapper ya kuondoa vipengele.
-- Kiteuzi cha rangi skrinini chenye unakili wa papo hapo wa hex/rgb/hsl na kipamba msimbo kilichojumuishwa.
-- Uthabiti ulioboreshwa wa kinusi cha DevTools na mfumo wa mtandao wenye uendeshaji sambamba wa juu.
-
-## Kwa nini unauhitaji
-Picha ya skrini haitoshi. Chukua faili halisi — picha za ubora kamili, mitiririko halisi ya video, laha asili za mitindo na hati — si picha iliyobanwa.
-
-DevTools inaonekana kuwa ngumu. Source Download inakuwekea jumba la picha safi lililopangwa kwa kategoria mbele ya data ile ile ya mtandao, pamoja na utafutaji, vichujio na upakuaji kwa kubofya mara moja.
-
-SPA huficha kila kitu. Programu zinazobadilika huunda rasilimali na miito ya API ambayo huioni kamwe kwenye chanzo cha ukurasa. Source Download huzinasa zinapotokea, ikiwa ni pamoja na hali za kati.
-
-## Inachofanya
-### Gundua kila kitu
-- Huchanganya unasaji wa mtandao (HAR + maombi ya moja kwa moja) na uchanganuzi wa DOM wa vipengele vyote vya kuona na vya muundo, ikiwemo faili za media, hati, laha za mitindo na fremu zilizopachikwa.
-- **Inaelewa CSS:** rasilimali ndani ya url(...) na kanuni za @import hufuatwa kwa kujirudia, kwa hivyo hata fonti zilizofichwa ndani ya laha za mitindo zilizoingizwa hupatikana.
-- **Unusaji wa maudhui:** faili zisizojulikana husomwa baiti chache na kuhamishiwa kwenye kategoria ya aina yake halisi.
-- **Kategoria 17 zenye hesabu ya moja kwa moja:** rasilimali zilizonaswa hupangwa vizuri katika vichupo maalum vya media, msimbo, data, miito ya API, vidakuzi, hifadhi na hati.
-
-### Chuja, tafuta, kagua
-- Utafutaji unaotumia Regex katika majina ya faili, URL, aina za MIME, maandishi mbadala na hata maudhui ya faili.
-- **Vichujio kwa kila kategoria:** ukubwa wa chini/juu zaidi, na kwa media pia upana na urefu wa chini/juu zaidi — kwa mfano "picha kuu pekee ≥ 1200px". Miito ya API huchujwa kwa njia ya HTTP na aina ya ombi.
-- Mwonekano wa orodha au gridi, unaoweza kupangwa, pamoja na ukuta wa vijipicha vya moja kwa moja.
-- **Kikaguzi cha vichupo vingi chenye hakikisho halisi:** lightbox inayokuzwa, uchezaji wa video na sauti, sampuli ya fonti ya moja kwa moja, kitazamaji cha SVG, msimbo wenye uangaziaji wa sintaksia na nambari za mistari, na kibadilishi cha Pamba.
-- **Mwonekano uliogawanywa wa API:** jibu upande wa kushoto; njia, hali, vigezo vya hoja na mwili wa ombi upande wa kulia.
-
-### Pakua ipasavyo
-- Pakua Zilizochaguliwa — faili ulizoweka alama pekee.
-- Pakua Mwonekano — kila kitu kinachoonekana baada ya vichujio na utafutaji wa sasa.
-- Pakua Zote — kila rasilimali iliyonaswa katika ZIP yenye muundo wa folda na uondoaji wa nakala kiotomatiki.
-- Upakuaji wa kundi huendeshwa kwa uendeshaji sambamba wenye kikomo na upau wa maendeleo wa moja kwa moja; hitilafu hujaribiwa tena kiotomatiki na kutoka kwenye menyu ya muktadha.
-
-### HLS na video ngumu
-- Mitiririko ambayo kivinjari hakiwezi kucheza moja kwa moja (HLS .m3u8, DASH .mpd, kodeki zisizojulikana) huonyesha mbadala mahiri badala ya kicheza cheusi.
-- Unganisha sehemu na upakue hugeuza mtiririko wa HLS kuwa faili moja inayoweza kuchezwa, moja kwa moja ndani ya paneli.
-
-### Karakana ya Maandishi (zana za maudhui ya SPA)
-- **Kichupo cha Maandishi ni kitazamaji cha maudhui cha moja kwa moja:** kila kipengele chenye maandishi — vichwa, aya, vipengee vya orodha, vitufe, div, span — hunaswa kwa mpangilio wa DOM.
-- Jedwali zinazobadilika huhifadhi historia ndogo ya picha za muda (k.m. "picha 8 za muda · safu 124 za kipekee"), hivyo dashibodi zinazojisasisha hazipotezi hali za kati kamwe.
-- Hamisha kama Markdown, au jedwali kama CSV, HTML, au kitabu halisi cha XLSX chenye kurasa nyingi kilichojengwa na kiandikaji chetu cha XLSX kilichoandikwa kwa mkono.
-
-## Jinsi ya kutumia
-1. Sakinisha Source Download, kisha bonyeza F12 kwenye ukurasa wowote.
-2. Bofya kichupo cha Source Download kwenye upau wa zana wa DevTools (Chrome hairuhusu viendelezi kufungua DevTools kiotomatiki — ndiyo maana kiko hapo).
-3. Vinjari vichupo vya kategoria, tafuta, chuja, kagua chochote katika paneli ya kulia.
-4. Weka alama kwenye faili unazotaka kisha bofya Pakua Zilizochaguliwa, Pakua Mwonekano au Pakua Zote.
-5. Weka paneli ya DevTools wazi ukurasa unapopakia ili kunasa kila ombi la mtandao.
-
-## Matumizi halisi
-- **Uchambuzi wa washindani:** kusanya vijipicha vya video kutoka chaneli yoyote — kwa kichujio cha upana wa chini — kwenye folda moja.
-- **Kuvuna data za wavuti bila msimbo:** fuatilia miito ya API ya SPA, chuja hadi sehemu ya mwisho unayohitaji, pakua majibu yake kamili ya JSON.
-- **Uchambuzi wa uchapaji:** gundua tovuti inatumia fonti gani hasa na uchukue faili halisi za fonti.
-- **Kuzalisha upya hitilafu:** hifadhi matoleo kamili ya CSS/JS yaliyotolewa hitilafu ilipotokea.
-- **Kuhamisha data ya dashibodi:** hamisha jedwali linalojisasisha kwenye kitabu cha Excel chenye kurasa nyingi, pamoja na historia.
-- **Majaribio ya QA:** thibitisha ni toleo gani la video/sauti linatolewa katika kila usanidi wa A/B.
+Picha za skrini, kurekodi na kichagua rangi vinapatikana pia kwenye menyu ya kubofya kulia na kitufe cha kiendelezi.
 
 ## Faragha
-- Inaendeshwa 100% ndani ya kifaa. Hakuna seva, hakuna uchanganuzi, hakuna data inayotoka kwenye kompyuta yako.
-- **Huomba tu kile inachohitaji:** hifadhi (mapendeleo yako), ubao wa kunakili (kunakili URL na rangi), upakuaji (kuhifadhi faili kupitia Chrome), menyu za muktadha, uandikaji wa hati na ufikiaji wa seva pangishi (kuchanganua kurasa na kuleta maudhui ya faili).
-- Faili huhifadhiwa kupitia mchakato wa kawaida wa upakuaji wa Chrome — hakuna upakuaji wa kimya kimya.
 
-## Mahitaji
-- Chrome 116 au mpya zaidi (Manifest V3).
-- Matokeo bora zaidi paneli ikiwa wazi ukurasa unapopakia, kwa kuwa ndipo unasaji wa mtandao hufanyika.
+Kila kitu kinaendeshwa kwenye kompyuta yako. Hakuna akaunti wala takwimu, na hakuna unachohifadhi kinachotumwa kwa msanidi. Vipengee vilivyohifadhiwa huenda kwenye folda yako ya kawaida ya Vipakuliwa kupitia Chrome.
 
-Source Download ni mradi wa chanzo huria — maoni, mawazo na pull request zinakaribishwa.
+Kiendelezi kinahitaji ufikiaji wa tovuti unazotembelea ili kupata rasilimali zake na kutekeleza kazi zake.
 
-Tuunganishe kwenye LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Tafadhali heshimu hakimiliki na masharti ya matumizi, na uhifadhi maudhui unayoruhusiwa kutumia pekee.
+
+## Mapya katika 1.17
+- Nyepesi zaidi: hakuna kinachoendeshwa hadi utumie kipengele.
+- Nakala za nje ya mtandao sasa zina fotografia zote, mandharinyuma na fonti.
+- Kurekodi GIF kunabaki ndani ya kikomo cha kumbukumbu hata kwa klipu ndefu za HD.
+- Skrini mpya ya kukaribisha na njia za mkato kwenye kitufe cha kiendelezi.
+
+Maswali au matatizo: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

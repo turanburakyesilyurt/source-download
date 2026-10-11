@@ -1,15 +1,15 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Kuvien lataaja"
   },
   "appDesc": {
-    "message": "Tutki ja lataa verkkosisältöä ZIP-tiedostona. Koko sivun kuvakaappaukset, taulukoiden live-tallennus ja kehittäjätyökalut."
+    "message": "Ota talteen verkkosivun kuvat, kuvakkeet ja tiedostot erikseen tai yhtenä ZIP-tiedostona. Koko sivun kuvakaappaus ja aluevideo."
   },
   "actionTitle": {
     "message": "Source Download — Avaa paneeli ja seuraa resursseja"
   },
   "contextMenuZap": {
-    "message": "Piilota tämä elementti (Zap)"
+    "message": "Piilota tämä elementti"
   },
   "contextMenuUndoZap": {
     "message": "Palauta viimeksi piilotettu elementti"
@@ -90,7 +90,7 @@
     "message": "Lataa valitut"
   },
   "btnDownloadView": {
-    "message": "Lataa näkymä"
+    "message": "Lataa näkyvät"
   },
   "btnDownloadAll": {
     "message": "Lataa kaikki"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Lataa suodatetut"
   },
-  "btnTheme": {
-    "message": "Vaihda teemaa"
-  },
   "btnGuide": {
     "message": "Käyttöopas"
-  },
-  "btnCaptureFullPage": {
-    "message": "Koko sivun kuvakaappaus"
-  },
-  "btnOfflineArchive": {
-    "message": "Tallenna yhtenä HTML-tiedostona"
   },
   "filterMinKb": {
     "message": "Väh. KB"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Suodata sivun tekstiä tai tee kysely live DOM:sta…"
-  },
-  "textAllElements": {
-    "message": "Kaikki elementit"
-  },
-  "textLiveOn": {
-    "message": "Live päällä"
-  },
-  "textLiveOff": {
-    "message": "Live pois"
-  },
   "textScanNow": {
     "message": "Skannaa nyt"
-  },
-  "textReading": {
-    "message": "Lukutila"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Valitse resurssi nähdäksesi sen tiedot"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Alt"
   },
-  "ratingPrompt": {
-    "message": "Tykkäätkö Source Downloadista? Tue avoimen lähdekoodin visiotamme arvostelulla Chrome Web Storessa tai tähdellä GitHubissa!"
-  },
-  "ratingReview": {
-    "message": "★ Jätä arvostelu"
-  },
-  "ratingStar": {
-    "message": "★ Tähti GitHubissa"
-  },
   "ratingDismiss": {
     "message": "Hylkää"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Yksittäisenä tiedostona oleva HTML-arkisto tallennettu."
-  },
-  "brandSignature": {
-    "message": "Tekijä: Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Kuvat ja SVG"
-  },
-  "tabMedia": {
-    "message": "Media ja ääni"
-  },
-  "tabFonts": {
-    "message": "Fontit"
-  },
-  "tabTextScraper": {
-    "message": "Teksti ja taulukot"
-  },
-  "heroScreenshotTitle": {
-    "message": "Koko sivun kuvakaappaus"
-  },
-  "heroScreenshotDesc": {
-    "message": "Saumaton usean näkymän yhdistäminen, kiinnitetyt ylätunnisteet piilotetaan"
-  },
-  "heroArchiveTitle": {
-    "message": "Yksitiedostoinen HTML-arkisto"
-  },
-  "heroArchiveDesc": {
-    "message": "Sisällyttää CSS:n ja Base64-kuvat mukaan, offline-käyttöön sopiva tilannekuva"
-  },
-  "copyDataUri": {
-    "message": "Kopioi Data-URI"
-  },
-  "copyUrl": {
-    "message": "Kopioi URL-osoite"
   },
   "downloadSingle": {
     "message": "Lataa"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "resursseja"
   },
-  "statusFiltered": {
-    "message": "suodatettu"
-  },
   "statusSelected": {
     "message": "valittu"
   },
   "statusDupes": {
     "message": "kaksoiskappaleet piilotettu"
-  },
-  "statusSize": {
-    "message": "koko"
   },
   "langAuto": {
     "message": "Automaattinen (selain)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Valitse kieli"
   },
-  "textPillAll": {
-    "message": "Kaikki sisältö"
-  },
-  "textPillText": {
-    "message": "📄 Tekstiä ja artikkeleita"
-  },
-  "textPillTables": {
-    "message": "📊 Vain taulukot"
-  },
   "textSelectAll": {
     "message": "Valitse kaikki"
   },
   "textDeselectAll": {
     "message": "Poista kaikki valinta"
-  },
-  "textClearSelection": {
-    "message": "Tyhjennä"
   },
   "toastRefreshComplete": {
     "message": "Sivun skannaus valmis: $count$ uutta resurssia",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ taulukko(a) · $rows$ yksilöllistä riviä",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ valittu – vienti käyttää vain näitä",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Taulukko — $count$ rivi(ä) näytöllä",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Taulukko — kaikki $count$ yksilöllistä riviä",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ tilannekuvaa",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Näytetään kaikki rivit"
   },
-  "textTableHistory": {
-    "message": "Historia ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Piilota historia"
-  },
   "textTableNoRows": {
     "message": "Rivejä ei ole vielä kaapattu."
   },
   "textBtnCopy": {
     "message": "Kopioi teksti"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Kopioi"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ kaksoiskuvaa",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Vie"
   },
   "inspectorLoadingSvg": {
     "message": "Ladataan SVG:tä…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Fontin esikatselu"
   },
-  "inspectorBeautify": {
-    "message": "Muotoile"
-  },
-  "inspectorOriginal": {
-    "message": "Alkuperäinen"
-  },
-  "inspectorHeaders": {
-    "message": "Otsakkeet"
-  },
-  "inspectorResponse": {
-    "message": "Vastaus"
-  },
-  "inspectorRequest": {
-    "message": "Pyyntö"
-  },
   "inspectorQueryParams": {
     "message": "Kyselyparametrit"
   },
   "inspectorRequestBody": {
     "message": "Pyynnön runko"
   },
-  "textHintHtml": {
-    "message": "Live, luettavissa oleva kopio sivusta. Jokainen tekstiä sisältävä elementti kaapataan DOM-järjestyksessä ja säilytetään täällä sivun muuttuessa. Tee kysely pelkällä tekstillä, säännöllisellä lausekkeella, <strong>CSS-valitsimella</strong> tai <strong>XPath</strong>-lausekkeella ja vie sitten vastaava. Katso lisätietoja <a href=\"#\" id=\"text-hint-guide\">oppaasta</a>."
-  },
-  "textHeadings": {
-    "message": "Otsikot"
-  },
-  "textAllLevels": {
-    "message": "Kaikki tasot"
-  },
   "textMatches": {
     "message": "osumaa"
   },
   "textMatch": {
     "message": "osuma"
-  },
-  "textReadingOn": {
-    "message": "Lukutila päällä"
   },
   "toastDownloadStarted": {
     "message": "Lataus aloitettu: $name$",
@@ -756,7 +566,7 @@
     "message": "Tätä resurssia ei voitu noutaa (CORS tai ei-tuettu tyyppi)."
   },
   "ratingBannerText": {
-    "message": "Tykkäätkö Source Downloadista? Tue avoimen lähdekoodin visiotamme arvostelulla Chrome Web Storessa tai tähdellä GitHubissa!"
+    "message": "Hienoa, että se toimi! Jos Source Download säästää aikaasi, lyhyt arvio auttaa muita löytämään sen."
   },
   "ratingBannerReview": {
     "message": "★ Arvostele"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Miten kyselykenttä tulkitaan"
   },
-  "textKindTitle": {
-    "message": "Rajaa yhteen elementtityyppiin"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Otsikkotaso"
-  },
   "textPlaceholderRegex": {
     "message": "^Hinta:\\s*\\d+ — JavaScriptin säännöllinen lauseke"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Hae oppaasta…"
-  },
-  "popupIntro": {
-    "message": "Kategoriat, jotka <strong>työkalupalkin merkki</strong> laskee. Poista yksi käytöstä lopettaaksesi sen laskemisen — merkki näyttää heti vain seuraamasi kategoriat."
-  },
-  "popupHelpTitle": {
-    "message": "Näin käytät koko paneelia"
-  },
-  "popupStep1": {
-    "message": "Avaa DevTools sivulle, jota haluat tarkastaa <div class=\"hint\"><kbd>F12</kbd> tai <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Napsauta DevTools-työkalupalkin <strong>Source Download</strong> -välilehteä"
-  },
-  "popupStep3": {
-    "message": "Selaa, tarkasta ja lataa resursseja – yksitellen tai kaikki kerralla ZIP-tiedostona."
-  },
-  "popupNote": {
-    "message": "Huomaa: Chrome ei salli laajennusten avata ohjelmallisesti DevToolsia, minkä vuoksi koko suunnittelupaketti saavutetaan DevTools-työkalupalkin kautta."
-  },
-  "popupTrackAll": {
-    "message": "Seuraa kaikkia luokkia"
   },
   "popupLanguage": {
     "message": "Kieli"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Yhdistä segmentit ja lataa"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ segmenttiä yhdistetty tiedostoon $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "koko tuntematon"
-  },
   "progressFetching": {
     "message": "Haetaan $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Regex-haku aktiivinen — kirjoita kysely muodossa /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Sisällytä vientiin"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Yhdistä jokainen tilannekuva yhdeksi taulukoksi, josta on poistettu kaksoiskappaleet – tämä viedään"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Selaa aiempia tilannekuvia tästä taulukosta"
-  },
   "tableDownloadCsvTitle": {
     "message": "Lataa tämä taulukko CSV-muodossa"
-  },
-  "tableSnapshotLabel": {
-    "message": "Tilannekuva $INDEX$ – $TIME$ ($COUNT$ riviä)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Valitse tai poista valinta erälatausta varten"
@@ -1150,7 +899,7 @@
     "message": "Napsauta DevTools-työkalupalkin <strong>Source Download</strong> -välilehteä (paina <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> ja valitse sitten välilehti DevTools-työkalupalkista). Chrome ei salli laajennusten avata DevToolsia automaattisesti, minkä vuoksi paneeli sijaitsee siellä. Työkalupalkin kuvakkeen ponnahdusikkunassa voit valita, mitkä kategoriat lasketaan kuvakkeen merkkilaskuriin. Paneelin työkalupalkin aurinko/kuu-painike lukitsee vaalean tai tumman teeman Chromesta riippumatta; valinta muistetaan."
   },
   "guideSecCategoriesContent": {
-    "message": "Vasemmanpuoleiset pystyvälilehdet ryhmittelevät kaikki kaapatut resurssit 17 erilliseen kategoriaan tyypin mukaan: kuvat, videot, ääni, kuvatekstit, asiakirjat, fontit, lähdekartat, WASM, SVG, API:t, evästeet, tallennustila ja paljon muuta. Jokainen välilehti näyttää reaaliaikaisen määrän. Kerrallaan näytetään vain yksi kategoria; vaihtaminen nollaa kaikki suodattimet, joten näkemäsi vastaa aina välilehteä."
+    "message": "Vasemman reunan pystyvälilehdet lajittelevat jokaisen kaapatun resurssin 15 luokkaan, kuten kuvat, videot, fontit, lähdekartat ja API-kutsut, ja lisäksi on Teksti ja taulukot -välilehti. Jokainen välilehti näyttää reaaliaikaisen määrän. Kerrallaan näytetään vain yksi kategoria; vaihtaminen nollaa kaikki suodattimet, joten näkemäsi vastaa aina välilehteä."
   },
   "guideSecSearchFiltersContent": {
     "message": "Hakupalkki suodattaa nimen, URL-osoitteen, tyypin, vaihtoehtoisen tekstin tai otsikon mukaan. Liitä kyselysi <kbd>/…/</kbd>-kenttään, jos haluat käyttää säännöllistä lauseketta, esim. <code>/\\.(png|jpg)$/</code>. Työkalurivin alapuolella oleva suodatinpalkki muuttuu luokittain: median koko- ja mittaalueet, API-menetelmä ja pyyntötyyppi sekä lajittelu ja suunta."
@@ -1162,13 +911,13 @@
     "message": "Napsauta mitä tahansa resurssia avataksesi sen oikeanpuoleisessa tarkastusruudussa. Jokaisesta avatusta tiedostosta tulee välilehti, joten voit vertailla useita resursseja vierekkäin – uusin avautuu vasemmalle. Kuville, videoille, äänelle, fonteille, SVG:lle sekä tekstille/koodille on omat katseluohjelmansa (muotoilukytkimellä). API:t näyttävät jaetun näkymän: vastaus vasemmalla ja pyynnön tiedot (metodi, tila, otsakkeet, kyselyparametrit ja runko) oikealla."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Lataa näkymä</strong> tallentaa tällä hetkellä näkyvät resurssit (aktiivinen kategoria + haku + suodattimet) ZIP-tiedostona; kun suodattimet ovat käytössä, painikkeen nimeksi tulee <em>Lataa suodatetut (N)</em>. Vie hiiren osoitin minkä tahansa latauspainikkeen päälle nähdäksesi arvioidun arkistokoon ennen napsautusta. <strong>Lataa valitut</strong> lataa vain valitut kohteet. <strong>Lataa kaikki</strong> tallentaa kaikki löydetyt resurssit kansiorakenteiseen ZIP-tiedostoon. Epäonnistuneita latauksia yritetään automaattisesti uudelleen, ja ne voi yrittää uudelleen pikavalikosta. <strong>Vie</strong> kirjoittaa näkyvän luettelon JSON- tai CSV-muodossa tai vie Chromen verkkolokin HAR-tiedostona."
+    "message": "<strong>Lataa näkyvät</strong> tallentaa tällä hetkellä näkyvät resurssit (aktiivinen kategoria + haku + suodattimet) ZIP-tiedostona; kun suodattimet ovat käytössä, painikkeen nimeksi tulee <em>Lataa suodatetut (N)</em>. Vie hiiren osoitin minkä tahansa latauspainikkeen päälle nähdäksesi arvioidun arkistokoon ennen napsautusta. <strong>Lataa valitut</strong> lataa vain valitut kohteet. <strong>Lataa kaikki</strong> tallentaa kaikki löydetyt resurssit kansiorakenteiseen ZIP-tiedostoon. Epäonnistuneet lataukset merkitään, ja voit yrittää niitä uudelleen yhdellä napsautuksella ilmoituksesta, kohteen varoituskuvakkeesta tai pikavalikosta. <strong>Vie</strong> kirjoittaa näkyvän luettelon JSON- tai CSV-muodossa tai vie Chromen verkkolokin HAR-tiedostona."
   },
   "guideSecLightboxContent": {
     "message": "Zoomauspainike avaa median täysikokoiseen lightboxiin, jossa voit panoroida vetämällä, zoomata hiiren rullalla, näytön painikkeilla tai näppäimistöllä (<kbd>+</kbd>/<kbd>-</kbd> zoomata, <kbd>0</kbd> nollaus, <kbd>Esc</kbd> sulkeaksesi)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>Teksti</strong>-kategoria on reaaliaikainen, luettava kopio sivusta. Se kaappaa kaikki tekstiä sisältävät elementit – otsikot, kappaleet, luettelokohteet, painikkeet, <code>div</code>/<code>span</code> ja paljon muuta – DOM-järjestyksessä ja jatkaa skannausta, kun <strong>Live</strong> on päällä.</p><p><strong>Kysely</strong>-kenttä toimii neljällä tavalla, jotka valitaan sen vieressä olevasta avattavasta valikosta: <strong>Sisältää</strong> ja <strong>Regex</strong> suodattavat jo kaapattua tekstiä, kun taas <strong>CSS-valitsin</strong> ja <strong>XPath</strong> ajetaan live-sivua vastaan, joten ne tavoittavat mitä tahansa DOM:ssa. XPath hyväksyy myös lausekkeet, jotka palauttavat arvon elementtien sijaan, kuten <code>count(//a)</code> tai <code>//@href</code>. Sivun ilmoittama virhe virheellisestä kyselystä näkyy kentän vieressä. <strong>Elementti</strong> rajaa tuloksen yhteen tunnisteeseen ja näyttää sivulta löytyvien tunnisteiden määrät. Kyselykentän tyhjentäminen (tai <strong>Tyhjennä</strong>-painikkeen painaminen) palauttaa tilaan <em>Kaikki elementit</em> ja kaappaa sivun uudelleen – avattavaa valikkoa ei tarvitse koskaan nollata käsin.</p><p><strong>Lukutila</strong> piilottaa tunnisteet, valintaruudut ja sijaintipolut, joten sisältö luetaan kuin asiakirja. Taulukot tallentavat rajatun historian tilannekuvista, joten dynaamiset (SPA) taulukot eivät koskaan katoa. Paina taulukossa <strong>Näytä kaikki rivit</strong> yhdistääksesi kaikki tilannekuvat yhdeksi näkymäksi, josta on poistettu kaksoiskappaleet – juuri sen vienti sisältää. Vie <strong>TXT</strong>-muodossa (luettava sivu), <strong>MD</strong>-muodossa (Markdown, taulukot mukaan lukien) tai taulukot CSV-, HTML- tai monisivuisena <strong>XLSX</strong>-työkirjana. Valitut kohteet ovat etusijalla; muuten viedään kaikki tällä hetkellä näkyvä.</p>"
+    "message": "<p><strong>Teksti</strong>-luokka on sivun elävä, luettava kopio: otsikot, kappaleet, luettelot ja linkit sivun järjestyksessä, päivittyen niin kauan kuin <strong>Reaaliaikainen</strong> on päällä. Kopioi rivi viemällä osoitin sen päälle tai käytä painikkeita <strong>Kopioi teksti</strong>, <strong>Markdown</strong> ja <strong>TXT</strong> kaikelle näytetylle.</p><p><strong>Taulukot</strong>-näkymässä jokainen sivun taulukko on kortti, jossa on esikatselu sekä omat painikkeet <strong>Excel</strong>, <strong>CSV</strong> ja <strong>Kopioi</strong>; <strong>Kaikki taulukot Exceliin</strong> kokoaa ne yhteen työkirjaan, kukin omalle välilehdelleen. Muuttuvat taulukot säilyttävät tilannekuvien historian, ja <strong>Näytä kaikki rivit</strong> yhdistää ne yhdeksi taulukoksi ilman kaksoiskappaleita – juuri sen, mitä vienti sisältää.</p><p>Vasemmalla olevat laatikot järjestävät sivun elementtityypin mukaan – kaikki sivun teksti, jokainen otsikkotaso, kappaleet, linkit, luettelon kohdat, painikkeet, koodi ja muut – kussakin määrä ja ensimmäinen rivi; valitse yksi nähdäksesi, kopioidaksesi tai viedäksesi vain sen. Hakukenttä suodattaa kirjoittaessasi, ja sen vieressä oleva valikko muuttaa sen säännölliseksi lausekkeeksi, <strong>CSS-valitsimeksi</strong> tai <strong>XPath</strong>-lausekkeeksi (myös arvon palauttavat lausekkeet kuten <code>count(//a)</code> tai <code>//@href</code>), joka ajetaan elävällä sivulla; <strong>Oma kysely</strong> -laatikko tekee saman. Sivun ilmoitus virheellisestä kyselystä näkyy suoraan kentässä.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT-, SRT-, TTML- ja muut kuvatekstitiedostot – mukaan lukien <code>&lt;track&gt;</code>-lähteet – päätyvät omalle <strong>Kuvatekstit</strong>-välilehdelleen sen sijaan, että ne sekoittuisivat asiakirjoihin."
@@ -1270,7 +1019,7 @@
     "message": "Väri kopioitu leikepöydälle"
   },
   "toastProgressCapturing": {
-    "message": "Tallennetaan koko sivua... $percent$%",
+    "message": "Tallennetaan koko sivua… $percent$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -1284,7 +1033,7 @@
     }
   },
   "toastProgressStitching": {
-    "message": "Yhdistetään kuvaa..."
+    "message": "Yhdistetään kuvaa…"
   },
   "modalExportTitle": {
     "message": "Koko sivun kuvakaappaus valmis"
@@ -1302,7 +1051,7 @@
     "message": "Kopioi leikepöydälle"
   },
   "btnExportGenerating": {
-    "message": "Luodaan..."
+    "message": "Luodaan…"
   },
   "toastPdfGenerated": {
     "message": "PDF-asiakirja tallennettu."
@@ -1317,13 +1066,10 @@
     "message": "Esikatselu:"
   },
   "toastRecGeneratingGif": {
-    "message": "Luodaan GIF-kuvaa, odota hetki..."
+    "message": "Luodaan GIF-kuvaa, odota hetki…"
   },
   "settingGifResolution": {
     "message": "GIF-oletustarkkuus"
-  },
-  "optGifOriginal": {
-    "message": "Alkuperäinen (1:1 natiiviresoluutio — täysi 3K/4K, ei skaalausta)"
   },
   "optGif1080p": {
     "message": "1080p Full HD (enintään 1920px)"
@@ -1341,10 +1087,10 @@
     "message": "Näytön tallennus (video ja GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Tallenna mikä tahansa näytön alue MP4-, WebM- tai animoituna GIF-muodossa. GIF-tallenteissa on 1:1-natiiviresoluutio sekä 1080p-, 720p- ja 480p-profiilit reaaliaikaisilla arvioiduilla tiedostokooilla. GIF-tallennuksen enimmäiskesto on 1 minuutti (60 s), jotta selain toimii optimaalisesti."
+    "message": "Tallenna mikä tahansa näytön alue MP4-, WebM- tai animoituna GIF-tiedostona. GIF-tallennuksissa on 1080p-, 720p- ja 480p-profiilit sekä reaaliaikainen kokoarvio. GIF-tallennus voi kestää enintään 1 minuutin (60 s)."
   },
   "msgGifMaxDurationReached": {
-    "message": "GIF-kuvan enimmäiskesto 1 minuutti (60 s) saavutettu. Luodaan GIF-kuvaa..."
+    "message": "GIF-kuvan enimmäiskesto 1 minuutti (60 s) saavutettu. Luodaan GIF-kuvaa…"
   },
   "labelGifMaxDuration": {
     "message": "Enintään 1 min (60 s)"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — esitys (1 kuva sekunnissa, minimikoko)"
-  },
-  "popupRightClickHint": {
-    "message": "Napsauta verkkosivua hiiren kakkospainikkeella missä tahansa saadaksesi käyttöön näytön tallennuksen (video/GIF) ja värivalitsimen."
   },
   "toastElementZappedAd": {
     "message": "Mainos / iframe piilotettu tämän istunnon ajaksi.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF-kuvan resoluutio: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF-kuvan resoluutio: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Aktiivista välilehteä ei löytynyt.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Napsauta tästä ja valitse sitten mikä tahansa väri sivulta"
+  },
+  "welcomeTitle": {
+    "message": "Source Download on valmis"
+  },
+  "welcomePrivacy": {
+    "message": "Kaikki toimii omalla tietokoneellasi. Ei tiliä, ei seurantaa, meille ei lähetetä mitään."
+  },
+  "welcomeHelp": {
+    "message": "Eikö jokin toimi? Kerro meille GitHubissa"
+  },
+  "ratingBannerIssue": {
+    "message": "Onko jokin vialla?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF saavutti 200 Mt. Tallennetaan tähän asti kuvattu…"
+  },
+  "btnPopupFullPage": {
+    "message": "Koko sivun kuvakaappaus"
+  },
+  "toastRecWrongTab": {
+    "message": "Jos haluat tallentaa tämän sivun alueen, valitse jakoikkunassa ”Tämä välilehti”."
+  },
+  "popupCaptureTitle": {
+    "message": "Tallenna tämä sivu"
+  },
+  "popupTileOffline": {
+    "message": "Tallenna sivu offline-käyttöön"
+  },
+  "popupTileGuide": {
+    "message": "Näin se toimii"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Tiedostot, kuvat ja taulukot"
+  },
+  "popupDevtoolsHint": {
+    "message": "Avaa DevTools ja valitse Source Download -välilehti."
+  },
+  "popupRestricted": {
+    "message": "Chrome ei salli laajennuksia tällä sivulla. Avaa jokin verkkosivusto käyttääksesi työkaluja."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Napsauta hiiren oikealla millä tahansa sivulla"
+  },
+  "welcomeCardMenuText": {
+    "message": "Kuvakaappaukset koko sivusta tai alueesta, alueen tallennus, värivalitsin ja offline-kopio – juuri siellä missä olet."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Tai käytä työkalupalkin painiketta"
+  },
+  "welcomeCardPopupText": {
+    "message": "Napsauta Chromen työkalupalkin palapelikuvaketta ja kiinnitä Source Download, niin työkalut ovat aina yhden napsautuksen päässä."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Paina F12 nähdäksesi kaiken sivulla"
+  },
+  "welcomeCardPanelText": {
+    "message": "Valitse DevToolsissa Source Download -välilehti. Siellä on jokainen sivun lataama kuva, video, fontti ja tiedosto – esikatsele, suodata ja tallenna ZIP-tiedostoksi. Sivun taulukot viedään Exceliin."
+  },
+  "welcomeLead": {
+    "message": "Kolme tapaa saada tarvitsemasi miltä tahansa verkkosivulta."
+  },
+  "btnDownloadOptions": {
+    "message": "Lisää latausvaihtoehtoja"
+  },
+  "btnMore": {
+    "message": "Lisää toimintoja"
+  },
+  "btnFilters": {
+    "message": "Suodattimet"
+  },
+  "tabsShowEmpty": {
+    "message": "Näytä tyhjät"
+  },
+  "tabsHideEmpty": {
+    "message": "Piilota tyhjät"
+  },
+  "textSegText": {
+    "message": "Teksti"
+  },
+  "textSegTables": {
+    "message": "Taulukot"
+  },
+  "textLive": {
+    "message": "Reaaliaikainen"
+  },
+  "textPaused": {
+    "message": "Keskeytetty"
+  },
+  "textLivePauseTitle": {
+    "message": "Reaaliaikainen: sivu luetaan uudelleen aina, kun se muuttuu. Keskeytä napsauttamalla."
+  },
+  "textLiveResumeTitle": {
+    "message": "Keskeytetty. Napsauta seurataksesi sivua taas reaaliajassa."
+  },
+  "textSearchText": {
+    "message": "Hae sivun tekstistä"
+  },
+  "textExportAllXlsx": {
+    "message": "Kaikki taulukot Exceliin"
+  },
+  "textNoTables": {
+    "message": "Tällä sivulla ei ole vielä taulukoita. Ne ilmestyvät tänne heti, kun sivu näyttää sellaisen."
+  },
+  "textTable": {
+    "message": "Taulukko"
+  },
+  "textCopy": {
+    "message": "Kopioi"
+  },
+  "textShowLess": {
+    "message": "Näytä vähemmän"
+  },
+  "areaHintSelect": {
+    "message": "Valitse alue vetämällä"
+  },
+  "areaHintCopy": {
+    "message": "kopioi"
+  },
+  "areaHintSave": {
+    "message": "tallenna"
+  },
+  "areaHintExit": {
+    "message": "poistu"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Kopioi automaattisesti"
+  },
+  "areaAutoCopyOn": {
+    "message": "Automaattinen kopiointi on päällä"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Päästä valinnasta irti, niin se on leikepöydällä."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Poista käytöstä"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Kopioitu leikepöydälle (automaattinen kopiointi on päällä)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Tämä sivu ei salli kopiointia leikepöydälle. Käytä sen sijaan Lataa-painiketta."
+  },
+  "textKindAll": {
+    "message": "Kaikki sivun teksti"
+  },
+  "textKindHeading": {
+    "message": "Otsikko"
+  },
+  "textKindP": {
+    "message": "Kappaleet"
+  },
+  "textKindA": {
+    "message": "Linkit"
+  },
+  "textKindLi": {
+    "message": "Luettelon kohdat"
+  },
+  "textKindButton": {
+    "message": "Painikkeet"
+  },
+  "textKindLabel": {
+    "message": "Nimiöt ja kuvatekstit"
+  },
+  "textKindSpan": {
+    "message": "Rivinsisäinen teksti"
+  },
+  "textKindDiv": {
+    "message": "Muut lohkot"
+  },
+  "textKindCell": {
+    "message": "Taulukon solut"
+  },
+  "textKindCode": {
+    "message": "Koodi"
+  },
+  "textKindQuote": {
+    "message": "Lainaukset"
+  },
+  "textCustomQuery": {
+    "message": "Oma kysely"
+  },
+  "textCustomQueryHint": {
+    "message": "CSS-valitsin tai XPath elävällä sivulla"
+  },
+  "menuSettings": {
+    "message": "Asetukset"
+  },
+  "settingsSave": {
+    "message": "Tallenna"
+  },
+  "settingsReset": {
+    "message": "Palauta oletukset"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Kopioi alueen kuvakaappaukset automaattisesti"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Kun päästät valinnasta irti, kuva siirtyy suoraan leikepöydälle. Niin kauan kuin tämä on päällä, sivun yläreunan vihjepalkki kertoo siitä joka kerta."
   }
 }

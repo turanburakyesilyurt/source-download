@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Layari, periksa dan muat turun setiap aset web yang dimuatkan oleh sesebuah halaman dengan lancar sebagai ZIP.</em><br>
-  Source Download — setiap aset pada halaman, hanya satu klik jauhnya
+  <em>Simpan imej, ikon dan fail daripada halaman web satu demi satu atau dalam satu ZIP. Dengan tangkapan skrin penuh dan rakaman.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Ini ialah **projek sumber terbuka pertama** saya, jadi maklum balas anda sangat 
 
 ## Lawatan Visual & Modul Teras
 
-Terokai modul antara muka beresolusi tinggi yang dibina terus ke dalam Google Chrome DevTools, Menu Klik Kanan dan Popup Bar Alat.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Tangkap dan muat turun segala-galanya di web
-> **★ SUIT KEJURUTERAAN DEVTOOLS · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Setiap fail halaman, dalam satu panel"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Tangkap dan muat turun segala-galanya di web">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Klik kanan. Tangkap."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Pilih kawasan. Sudah dalam papan keratan."></p>
 
-### 2. Rakam mana-mana kawasan skrin sebagai video dan GIF
-> **★ PERAKAM SKRIN KAWASAN · MP4, WEBM & GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Teks dan jadual halaman, tersusun untuk anda"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Rakam mana-mana kawasan skrin sebagai video dan GIF">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Halaman penuh, rakaman, salinan luar talian"></p>
 
 ---
 
-### 3. Tangkapan skrin tatal halaman penuh yang lancar
-> **★ TANGKAPAN SKRIN SEMPURNA PIKSEL · HALAMAN PENUH & KAWASAN**
+Source Download ialah set alat untuk menyimpan kandungan web. Ia menambah tab tersendiri dalam Alat Pembangun Chrome. Di situ semua yang dimuatkan oleh tapak disusun mengikut kategori supaya anda boleh pratonton dan simpan yang perlu sahaja.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Tangkapan skrin tatal halaman penuh yang lancar">
-</p>
+## Ciri utama
+- Galeri tersusun: foto, ikon dan fon dipaparkan dalam tab masing-masing dengan pembilang langsung dan kotak carian.
+- Penapis tepat: tunjukkan hanya item yang lebih lebar daripada had minimum (contohnya 1200 px) atau sembunyikan pendua.
+- Pratonton sebenar: zum grafik dan mainkan media. Anda juga boleh melihat contoh fon atau kod dengan penyerlahan sintaks.
+- Satu arkib: tandakan yang anda mahu dan dapatkan satu ZIP dengan struktur folder kemas. Yang gagal boleh dicuba semula dengan satu klik.
+- Tangkapan skrin penuh: semuanya ditatal dan dicantumkan menjadi PNG, JPG atau PDF. Anda juga boleh memilih satu kawasan sahaja.
+- Rakaman kawasan: tukar sebahagian paparan menjadi klip GIF, MP4 atau WebM.
+- Daripada jadual ke hamparan: eksport jadual langsung ke Excel atau CSV, termasuk keadaan terdahulu jadual yang sentiasa dikemas kini.
+- Salinan luar talian: simpan tapak sebagai satu dokumen HTML yang dibuka tanpa internet.
+- Pemilih warna: ambil sebarang warna yang kelihatan dan salin sebagai HEX, RGB atau HSL.
 
----
+## Cara bermula
+1. Buka tapak web yang ingin anda usahakan.
+2. Tekan F12 (pada Mac Option + Command + I) dan pilih tab Source Download. Jika tidak kelihatan, klik » di hujung bar tab.
+3. Biarkan panel terbuka semasa pemuatan supaya tiada yang tertinggal.
 
-### 4. Jadual DOM langsung ke Excel (XLSX) dan CSV
-> **★ PENGEKSTRAKAN DATA & PENYINGKIR ELEMEN**
-
-<sub>Ekstrak jadual dinamik, bersama sejarah syot kilatnya, ke dalam fail XLSX berbilang helaian atau CSV.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Jadual DOM langsung ke Excel (XLSX) dan CSV">
-</p>
-
----
-
-### 5. Pemilih warna pada skrin dan pemformat kod
-> **★ MEJA KERJA PEMBANGUN & PEREKA**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Pemilih warna pada skrin dan pemformat kod">
-</p>
-
----
-
-Source Download ialah panel Chrome DevTools yang mengesan, memeriksa dan memuat turun setiap sumber yang dimuatkan oleh halaman web. Sama ada anda memerlukan fail media, skrip pembangun, aset gaya atau respons rangkaian, anda boleh menyimpannya sebagai fail individu atau sebagai ZIP kemas dengan struktur folder.
-
-Dibina dari awal tanpa kebergantungan pihak ketiga: penulis ZIP, pembina XLSX, penggabung HLS dan pemformat kod semuanya ditulis sendiri dalam JavaScript vanila. Tiada rangka kerja, tiada langkah binaan, tiada telemetri. Semuanya berjalan secara setempat dalam pelayar anda.
-
-## Yang Baharu dalam v1.16.0
-- Sokongan berbilang bahasa sepenuhnya merentas 54 bahasa dengan penyetempatan lengkap untuk DevTools dan kedai.
-- 17 kategori aset khusus dengan kiraan langsung yang merangkumi semua media, kod, API, storan dan dokumen.
-- Tangkapan skrin halaman penuh yang dicantum dan tangkapan kawasan tersuai dengan penindasan pengepala melekit yang pintar.
-- Rakaman video skrin (MP4) dan enjin eksport GIF animasi ringan tanpa lebihan tepi.
-- Pengekstrak jadual DOM langsung ke Microsoft Excel (.XLSX) berbilang helaian dan CSV dengan penyingkir elemen DOM Zapper.
-- Alat pemilih warna skrin dengan penyalinan hex/rgb/hsl serta-merta dan pencantik kod bersepadu.
-- Kestabilan pengendus DevTools dipertingkat dan saluran rangkaian konkurensi tinggi.
-
-## Mengapa anda memerlukannya
-Tangkapan skrin tidak mencukupi. Dapatkan fail sebenar: imej resolusi penuh, strim video sebenar, helaian gaya dan skrip asal — bukan gambar yang telah dipipihkan.
-
-DevTools terasa membebankan. Source Download meletakkan galeri berkategori yang kemas di hadapan data rangkaian yang sama, lengkap dengan carian, penapis dan muat turun sekali klik.
-
-SPA menyembunyikan segala-galanya. Aplikasi dinamik mencipta aset dan panggilan API yang tidak pernah anda lihat dalam sumber halaman. Source Download menangkapnya semasa ia berlaku, termasuk keadaan perantaraan.
-
-## Apa yang ia lakukan
-### Temui segala-galanya
-- Menggabungkan tangkapan rangkaian (HAR + permintaan langsung) dengan imbasan DOM untuk semua elemen visual dan struktur, termasuk fail media, skrip, helaian gaya dan bingkai terbenam.
-- **Peka CSS:** aset dalam peraturan url(...) dan @import diikuti secara rekursif, jadi malah fon yang tersembunyi dalam helaian gaya yang diimport dapat ditemui.
-- **Pengendusan kandungan:** fail yang tidak diketahui dibaca semula beberapa bait dan dinaikkan ke kategori jenis failnya yang sebenar.
-- **17 kategori kiraan langsung:** Aset yang ditangkap disusun dengan kemas dalam tab khusus untuk media, kod, data, panggilan API, kuki, storan dan dokumen.
-
-### Tapis, cari, periksa
-- Carian berasaskan regex merentas nama fail, URL, jenis MIME, teks alt dan juga kandungan fail.
-- **Penapis bagi setiap kategori:** saiz min/maks, dan untuk media juga lebar dan tinggi min/maks — contohnya "hanya imej hero ≥ 1200px". Panggilan API ditapis mengikut kaedah HTTP dan jenis permintaan.
-- Paparan senarai atau grid, boleh disusun, dengan dinding lakaran kecil langsung.
-- **Pemeriksa berbilang tab dengan pratonton sebenar:** kotak lampu boleh zum, main balik video dan audio, spesimen fon langsung, pemapar SVG, kod dengan penyerlahan sintaks dan nombor baris serta suis Cantikkan.
-- **Paparan belah API:** respons di sebelah kiri, kaedah, status, parameter pertanyaan dan badan permintaan di sebelah kanan.
-
-### Muat turun dengan betul
-- Muat Turun Dipilih — hanya fail yang anda tandakan.
-- Muat Turun Paparan — semua yang kelihatan selepas penapis dan carian semasa.
-- Muat turun Semua — setiap sumber yang ditangkap ke dalam ZIP berstruktur folder dengan penyahduplikasian automatik.
-- Muat turun kelompok berjalan dengan konkurensi terhad dan bar kemajuan langsung; kegagalan dicuba semula secara automatik dan juga daripada menu konteks.
-
-### HLS & video yang rumit
-- Strim yang tidak boleh dimainkan secara natif oleh pelayar (HLS .m3u8, DASH .mpd, codec tidak dikenali) memaparkan sandaran pintar dan bukannya pemain hitam.
-- Gabungkan segmen & muat turun menukarkan strim HLS menjadi satu fail yang boleh dimainkan, terus dalam panel.
-
-### Meja kerja Teks (kit alat kandungan SPA)
-- **Tab Teks ialah pemapar kandungan langsung:** setiap elemen yang membawa teks — tajuk, perenggan, item senarai, butang, div, span — ditangkap mengikut susunan DOM.
-- Jadual dinamik menyimpan sejarah syot kilat yang terhad (cth. "8 syot kilat · 124 baris unik"), jadi papan pemuka yang menyegar semula secara automatik tidak kehilangan keadaan perantaraan.
-- Eksport sebagai Markdown, atau jadual sebagai CSV, HTML atau buku kerja XLSX berbilang helaian sebenar yang dibina oleh penulis XLSX tulisan sendiri kami.
-
-## Cara menggunakannya
-1. Pasang Source Download, kemudian tekan F12 pada mana-mana halaman.
-2. Klik tab Source Download pada bar alat DevTools (Chrome tidak membenarkan sambungan membuka DevTools secara automatik — itulah sebabnya ia berada di situ).
-3. Layari tab kategori, cari, tapis dan periksa apa sahaja dalam panel sebelah kanan.
-4. Tandakan fail yang anda mahu dan tekan Muat Turun Dipilih, Muat Turun Paparan atau Muat turun Semua.
-5. Biarkan panel DevTools terbuka semasa halaman dimuatkan untuk menangkap setiap permintaan rangkaian.
-
-## Kes penggunaan dunia sebenar
-- **Analisis pesaing:** kumpulkan lakaran kecil video daripada mana-mana saluran — dengan penapis lebar minimum — ke dalam satu folder.
-- **Pengikisan web tanpa kod:** perhatikan panggilan API sesebuah SPA, tapis kepada titik akhir yang anda perlukan, muat turun respons JSON yang tepat.
-- **Bedah tipografi:** ketahui fon yang sebenarnya digunakan oleh sesebuah laman dan dapatkan fail fon sebenar.
-- **Penghasilan semula pepijat:** simpan versi CSS/JS yang tepat yang dilancarkan semasa pepijat berlaku.
-- **Eksport data papan pemuka:** eksport jadual yang menyegar semula secara automatik ke buku kerja Excel berbilang helaian, termasuk sejarahnya.
-- **Ujian QA:** sahkan varian video/audio yang disajikan dalam setiap konfigurasi A/B.
+Tangkapan skrin, rakaman dan pemilih warna juga tersedia dalam menu klik kanan dan butang sambungan.
 
 ## Privasi
-- Berjalan 100% secara setempat. Tiada pelayan, tiada analitik, tiada data meninggalkan mesin anda.
-- **Hanya meminta apa yang diperlukan:** storan (pilihan anda), papan keratan (salin URL dan warna), muat turun (simpan fail melalui Chrome), menu konteks, skrip dan akses hos (untuk mengimbas halaman dan mengambil kandungan fail).
-- Fail disimpan melalui aliran muat turun biasa Chrome — tiada muat turun senyap.
 
-## Keperluan
-- Chrome 116 atau lebih baharu (Manifest V3).
-- Hasil terbaik apabila panel dibuka semasa halaman dimuatkan, kerana ketika itulah tangkapan rangkaian berlaku.
+Semuanya berjalan pada komputer anda. Tiada akaun atau analitik, dan tiada apa yang anda simpan dihantar kepada pembangun. Item tersimpan masuk ke folder Muat Turun biasa melalui Chrome.
 
-Source Download ialah projek sumber terbuka — maklum balas, idea dan pull request dialu-alukan.
+Sambungan memerlukan akses kepada tapak yang anda lawati untuk mencari sumbernya dan menjalankan fungsinya.
 
-Berhubung di LinkedIn: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Sila hormati hak cipta dan terma penggunaan, dan simpan hanya kandungan yang anda dibenarkan gunakan.
+
+## Apa yang baharu dalam 1.17
+- Jauh lebih ringan: tiada apa yang berjalan sehingga anda menggunakan sesuatu fungsi.
+- Salinan luar talian kini mengandungi semua foto, latar belakang dan fon.
+- Rakaman GIF kekal dalam had memori walaupun untuk klip HD yang panjang.
+- Skrin aluan baharu dan pintasan dalam butang sambungan.
+
+Soalan atau masalah: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

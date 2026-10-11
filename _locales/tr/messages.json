@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Source Download",
+    "message": "Source Download: Görsel ve Dosya İndirici",
     "description": "Eklentinin adı"
   },
   "appDesc": {
-    "message": "Web kaynaklarını, videoları, SVG ve tabloları ZIP olarak indirin. Dikişsiz tam sayfa ekran görüntüsü ve video/GIF kaydedin.",
+    "message": "Bir web sayfasının yüklediği görselleri, ikonları ve dosyaları tek tek ya da ZIP olarak kaydedin. Tam sayfa görüntü ve alan kaydı.",
     "description": "The description of the extension (strictly <= 132 chars)"
   },
   "actionTitle": {
@@ -98,7 +98,7 @@
     "message": "Seçilenleri İndir"
   },
   "btnDownloadView": {
-    "message": "Görünümü İndir"
+    "message": "Görünenleri İndir"
   },
   "btnDownloadAll": {
     "message": "Tümünü İndir"
@@ -106,17 +106,8 @@
   "btnDownloadFiltered": {
     "message": "Filtrelenenleri İndir"
   },
-  "btnTheme": {
-    "message": "Temayı değiştir"
-  },
   "btnGuide": {
     "message": "Kullanım Kılavuzu"
-  },
-  "btnCaptureFullPage": {
-    "message": "Tam Sayfa Ekran Görüntüsü"
-  },
-  "btnOfflineArchive": {
-    "message": "Tek HTML Dosyası Olarak Kaydet"
   },
   "filterMinKb": {
     "message": "Min KB"
@@ -160,38 +151,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Sayfa metnini filtrele veya canlı DOM sorgula…"
-  },
-  "textAllElements": {
-    "message": "Tüm öğeler"
-  },
-  "textLiveOn": {
-    "message": "Canlı açık"
-  },
-  "textLiveOff": {
-    "message": "Canlı kapalı"
-  },
   "textScanNow": {
     "message": "Şimdi tara"
-  },
-  "textReading": {
-    "message": "Okuma modu"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Ayrıntılarını incelemek için bir kaynak seçin"
@@ -235,15 +196,6 @@
   "metaAlt": {
     "message": "Alt Metin"
   },
-  "ratingPrompt": {
-    "message": "Source Download işinizi kolaylaştırdı mı? Chrome Web Store'da yorum bırakarak veya GitHub'da yıldız vererek açık kaynak vizyonumuza destek olun!"
-  },
-  "ratingReview": {
-    "message": "★ Yorum Yap"
-  },
-  "ratingStar": {
-    "message": "★ GitHub'da Yıldız Ver"
-  },
   "ratingDismiss": {
     "message": "Kapat"
   },
@@ -264,39 +216,6 @@
   },
   "toastArchiveCreated": {
     "message": "Tek dosyalı HTML arşivi kaydedildi."
-  },
-  "brandSignature": {
-    "message": "Turan Burak Yeşilyurt (2run.dev) tarafından geliştirildi"
-  },
-  "tabImages": {
-    "message": "Görseller & SVG"
-  },
-  "tabMedia": {
-    "message": "Medya & Ses"
-  },
-  "tabFonts": {
-    "message": "Yazı Tipleri"
-  },
-  "tabTextScraper": {
-    "message": "Metin & Tablolar"
-  },
-  "heroScreenshotTitle": {
-    "message": "Tam Sayfa Ekran Görüntüsü"
-  },
-  "heroScreenshotDesc": {
-    "message": "Kusursuz birleştirme • Başlık gizleme"
-  },
-  "heroArchiveTitle": {
-    "message": "Tek Dosyalı HTML Arşivi"
-  },
-  "heroArchiveDesc": {
-    "message": "Gömülü CSS & görseller • Çevrimdışı hazır"
-  },
-  "copyDataUri": {
-    "message": "Data-URI Kopyala"
-  },
-  "copyUrl": {
-    "message": "URL Kopyala"
   },
   "downloadSingle": {
     "message": "İndir"
@@ -349,17 +268,11 @@
   "statusResources": {
     "message": "kaynak"
   },
-  "statusFiltered": {
-    "message": "filtrelendi"
-  },
   "statusSelected": {
     "message": "seçildi"
   },
   "statusDupes": {
     "message": "yinelenen gizlendi"
-  },
-  "statusSize": {
-    "message": "boyut"
   },
   "langAuto": {
     "message": "Otomatik (Tarayıcı)"
@@ -367,23 +280,11 @@
   "langSelectorTitle": {
     "message": "Dil Seçimi"
   },
-  "textPillAll": {
-    "message": "Tüm İçerik"
-  },
-  "textPillText": {
-    "message": "📄 Metinler ve Makaleler"
-  },
-  "textPillTables": {
-    "message": "📊 Yalnızca Tablolar"
-  },
   "textSelectAll": {
     "message": "Tümünü Seç"
   },
   "textDeselectAll": {
     "message": "Seçimi Kaldır"
-  },
-  "textClearSelection": {
-    "message": "Temizle"
   },
   "toastRefreshComplete": {
     "message": "Sayfa taraması tamamlandı: $count$ yeni kaynak",
@@ -591,46 +492,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ tablo · $rows$ benzersiz satır",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ seçildi — yalnızca bunlar dışa aktarılır",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Tablo — ekranda $count$ satır",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Tablo — toplam $count$ benzersiz satır",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ anlık görüntü",
     "placeholders": {
@@ -661,32 +522,11 @@
   "textTableShowingAll": {
     "message": "Tüm satırlar gösteriliyor"
   },
-  "textTableHistory": {
-    "message": "Geçmiş ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Geçmişi gizle"
-  },
   "textTableNoRows": {
     "message": "Henüz satır yakalanmadı."
   },
   "textBtnCopy": {
     "message": "Metni kopyala"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Kopyala"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ yinelenen görsel",
@@ -696,9 +536,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Dışa Aktar"
   },
   "inspectorLoadingSvg": {
     "message": "SVG yükleniyor…"
@@ -712,44 +549,17 @@
   "inspectorFontSample": {
     "message": "Yazı Tipi Önizlemesi"
   },
-  "inspectorBeautify": {
-    "message": "Biçimlendir"
-  },
-  "inspectorOriginal": {
-    "message": "Orijinal"
-  },
-  "inspectorHeaders": {
-    "message": "Başlıklar"
-  },
-  "inspectorResponse": {
-    "message": "Yanıt"
-  },
-  "inspectorRequest": {
-    "message": "İstek"
-  },
   "inspectorQueryParams": {
     "message": "Sorgu parametreleri"
   },
   "inspectorRequestBody": {
     "message": "İstek gövdesi"
   },
-  "textHintHtml": {
-    "message": "Sayfanın canlı, okunabilir bir kopyası. Metin içeren her öge DOM sırasına göre yakalanır ve sayfa değiştikçe güncellenir. Düz metin, normal ifade (regex), <strong>CSS seçici</strong> veya <strong>XPath</strong> ifadesi ile sorgulayın, ardından eşleşenleri dışa aktarın. Ayrıntılar için <a href=\"#\" id=\"text-hint-guide\">kılavuza</a> bakın."
-  },
-  "textHeadings": {
-    "message": "Başlıklar"
-  },
-  "textAllLevels": {
-    "message": "Tüm düzeyler"
-  },
   "textMatches": {
     "message": "eşleşme"
   },
   "textMatch": {
     "message": "eşleşme"
-  },
-  "textReadingOn": {
-    "message": "Okuma açık"
   },
   "toastDownloadStarted": {
     "message": "İndirme başladı: $name$",
@@ -764,7 +574,7 @@
     "message": "Bu kaynak indirilemedi (CORS veya desteklenmeyen tür)."
   },
   "ratingBannerText": {
-    "message": "Source Download'ı beğendiniz mi? Açık kaynak vizyonumuza Chrome Web Mağazası'nda bir inceleme veya GitHub'da yıldız vererek destek olun!"
+    "message": "İşinize yaradığına sevindik! Source Download zaman kazandırıyorsa kısa bir yorum, başkalarının da onu bulmasına yardım eder."
   },
   "ratingBannerReview": {
     "message": "★ İnceleme Yaz"
@@ -856,12 +666,6 @@
   "textModeTitle": {
     "message": "Sorgu kutusunun yorumlanma şekli"
   },
-  "textKindTitle": {
-    "message": "Tek bir öge türüyle sınırla"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Başlık düzeyi"
-  },
   "textPlaceholderRegex": {
     "message": "^Fiyat:\\s*\\d+  — JavaScript düzenli ifadesi"
   },
@@ -873,27 +677,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Kılavuzda arayın…"
-  },
-  "popupIntro": {
-    "message": "<strong>Araç çubuğu rozetinde</strong> sayılan kategoriler. Sayılmasını istemediğiniz kategoriyi kapatın — rozet yalnızca takip ettiklerinizi yansıtır."
-  },
-  "popupHelpTitle": {
-    "message": "Tam paneli nasıl kullanabilirsiniz?"
-  },
-  "popupStep1": {
-    "message": "İncelemek istediğiniz sayfada Geliştirici Araçlarını (DevTools) açın <div class=\"hint\"><kbd>F12</kbd> veya <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "DevTools araç çubuğundaki <strong>Source Download</strong> sekmesine tıklayın"
-  },
-  "popupStep3": {
-    "message": "Kaynakları inceleyin, önizleyin ve tek tek ya da topluca ZIP olarak indirin."
-  },
-  "popupNote": {
-    "message": "Not: Chrome güvenlik kuralları gereği uzantıların DevTools'u doğrudan kodla açmasına izin vermez; bu sebeple tüm gelişmiş araçlar DevTools paneli üzerinden çalışır."
-  },
-  "popupTrackAll": {
-    "message": "Tüm kategorileri takip et"
   },
   "popupLanguage": {
     "message": "Dil"
@@ -975,20 +758,6 @@
   "btnMergeHls": {
     "message": "Parçaları birleştir ve indir"
   },
-  "toastHlsMerged": {
-    "message": "$COUNT$ parça $NAME$ olarak birleştirildi",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "boyut bilinmiyor"
-  },
   "progressFetching": {
     "message": "$DONE$/$TOTAL$ alınıyor · ZIP $EST$…",
     "placeholders": {
@@ -1039,31 +808,11 @@
   "searchRegexHint": {
     "message": "Regex arama aktif — sorgunuzu /desen/i içine alın"
   },
-  "textIncludeInExports": {
-    "message": "Dışa aktarmalara dahil et"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Tüm anlık görüntüleri tek bir tekilleştirilmiş tabloda birleştirin — dışa aktarılan içerik budur"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Bu tablonun önceki anlık görüntülerine göz atın"
-  },
   "tableDownloadCsvTitle": {
     "message": "Bu tabloyu CSV olarak indir"
-  },
-  "tableSnapshotLabel": {
-    "message": "Anlık görüntü $INDEX$ — $TIME$ ($COUNT$ satır)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Toplu indirme için seçimi değiştir"
@@ -1158,7 +907,7 @@
     "message": "Geliştirici Araçları (DevTools) araç çubuğundaki <strong>Source Download</strong> sekmesine tıklayın (<kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> tuşlarına basın ve ardından DevTools araç çubuğundaki sekmeye geçin). Chrome, eklentilerin DevTools panelini otomatik olarak açmasına izin vermez; panelin burada yer almasının nedeni budur. Araç çubuğu simgesi açılır penceresi, hangi kategorilerin simge üzerindeki sayaç rozetini besleyeceğini seçmenizi sağlar. Panel araç çubuğundaki güneş/ay düğmesi, Chrome temasından bağımsız olarak açık veya koyu temayı sabitler; bu tercihiniz kaydedilir."
   },
   "guideSecCategoriesContent": {
-    "message": "Sol taraftaki dikey sekmeler yakalanan her kaynağı türüne göre 17 özel kategoriye ayırır: Resimler, Videolar, Sesler, Altyazılar, Belgeler, Yazı Tipleri, Kaynak Haritaları (Source maps), WASM, SVG, API'ler, Çerezler, Depolama ve daha fazlası. Her sekme canlı bir sayaç gösterir. Aynı anda yalnızca bir kategori görüntülenir; sekmeler arasında geçiş yapmak tüm filtreleri sıfırlar, böylece gördüğünüz içerik her zaman geçerli sekmeyle tam olarak eşleşir."
+    "message": "Sol taraftaki dikey sekmeler yakalanan her kaynağı görseller, videolar, yazı tipleri, kaynak haritaları ve API çağrıları gibi 15 kategoriye ayırır; ayrıca bir Metin ve Tablolar sekmesi vardır. Her sekme canlı bir sayaç gösterir. Aynı anda yalnızca bir kategori görüntülenir; sekmeler arasında geçiş yapmak tüm filtreleri sıfırlar, böylece gördüğünüz içerik her zaman geçerli sekmeyle tam olarak eşleşir."
   },
   "guideSecSearchFiltersContent": {
     "message": "Arama çubuğu ad, URL, tür, alt metin veya başlığa göre filtreleme yapar. Düzenli ifade (regex) kullanmak için sorgunuzu <kbd>/…/</kbd> içine alın, örneğin <code>/\\.(png|jpg)$/</code>. Araç çubuğunun altındaki filtre çubuğu her kategoriye göre dinamik olarak değişir: medya için dosya boyutu ve piksel çözünürlük aralıkları, API'ler için HTTP yöntemi ve istek türü, ayrıca sıralama kriteri ve yönü."
@@ -1170,13 +919,13 @@
     "message": "Herhangi bir kaynağa tıklayarak sağdaki inceleme bölmesinde açabilirsiniz. Açılan her dosya bir sekmeye dönüşür, böylece birden fazla kaynağı yan yana karşılaştırabilirsiniz — en yeni açılan dosya sol tarafta yer alır. Resimler, video, ses, yazı tipleri, SVG ve metin/kod için (Güzelleştirme/Beautify anahtarıyla birlikte) özel görüntüleyiciler mevcuttur. API'ler bölünmüş görünüm sunar: sol tarafta yanıt gövdesi, sağ tarafta ise istek detayları (yöntem, durum kodu, başlıklar, sorgu parametreleri ve gövde) yer alır."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Görünümü İndir</strong> o anda görünür olan kaynakları (aktif kategori + arama + filtreler) bir ZIP arşivi olarak kaydeder; filtreler aktif olduğunda adı otomatik olarak <em>Filtrelenenleri İndir (N)</em> şeklinde değişir. Tıklamadan önce tahmini arşiv boyutunu görmek için herhangi bir indirme düğmesinin üzerine gelin. <strong>Seçilenleri İndir</strong> yalnızca onay kutusu işaretlenmiş ögeleri indirir. <strong>Tümünü İndir</strong> keşfedilen her kaynağı klasör yapısına göre düzenlenmiş tek bir ZIP içinde toplar. Başarısız olan indirmeler otomatik olarak yeniden denenir ve bağlam menüsünden manuel olarak tekrar başlatılabilir. <strong>Dışa Aktar</strong> görünür listeyi JSON veya CSV olarak kaydeder ya da Chrome'un ağ günlüğünü HAR dosyası olarak dışa aktarır."
+    "message": "<strong>Görünenleri İndir</strong> o anda görünür olan kaynakları (aktif kategori + arama + filtreler) bir ZIP arşivi olarak kaydeder; filtreler aktif olduğunda adı otomatik olarak <em>Filtrelenenleri İndir (N)</em> şeklinde değişir. Tıklamadan önce tahmini arşiv boyutunu görmek için herhangi bir indirme düğmesinin üzerine gelin. <strong>Seçilenleri İndir</strong> yalnızca onay kutusu işaretlenmiş öğeleri indirir. <strong>Tümünü İndir</strong> keşfedilen her kaynağı klasör yapısına göre düzenlenmiş tek bir ZIP içinde toplar. Başarısız indirmeler işaretlenir; bildirimden, öğenin uyarı simgesinden ya da sağ tık menüsünden tek tıkla yeniden deneyebilirsiniz. <strong>Dışa Aktar</strong> görünür listeyi JSON veya CSV olarak kaydeder ya da Chrome'un ağ günlüğünü HAR dosyası olarak dışa aktarır."
   },
   "guideSecLightboxContent": {
     "message": "Yakınlaştırma düğmesi, medyayı sürükleyerek kaydırabileceğiniz, fare tekerleğiyle, ekran üzerindeki düğmelerle veya klavye kısayollarıyla (<kbd>+</kbd>/<kbd>-</kbd> yakınlaştırma, <kbd>0</kbd> sıfırlama, <kbd>Esc</kbd> kapatma) yakınlaştırıp uzaklaştırabileceğiniz tam boyutlu bir lightbox içinde açar."
   },
   "guideSecTextTablesContent": {
-    "message": "<p><strong>Metin</strong> kategorisi sayfanın canlı ve okunabilir bir kopyasıdır. Metin barındıran tüm ögeleri — başlıklar, paragraflar, liste ögeleri, düğmeler, <code>div</code>/<code>span</code> ve daha fazlası — DOM hiyerarşisi sırasıyla yakalar ve <strong>Canlı</strong> modu açık olduğu sürece sayfayı taramaya devam eder.</p><p><strong>Sorgu</strong> kutusu, yanındaki açılır menüden seçilebilen dört farklı modda çalışır: <strong>İçerir</strong> ve <strong>Regex</strong> daha önce yakalanmış olan metni filtrelerken, <strong>CSS seçici</strong> ve <strong>XPath</strong> doğrudan canlı sayfa üzerinde çalıştırılır ve böylece DOM içerisindeki her noktaya erişebilir. XPath ayrıca ögelerin kendisi yerine değer döndüren <code>count(//a)</code> veya <code>//@href</code> gibi ifadeleri de destekler. Hatalı veya geçersiz bir sorguda sayfanın döndürdüğü hata doğrudan kutunun yanında gösterilir. <strong>Öge</strong> filtresi, sayfada bulunan her bir etiket sayısı ile birlikte sonucu tek bir HTML etiketine daraltır. Sorgu kutusunu temizlemek (veya <strong>Temizle</strong> düğmesine basmak) sizi <em>Tüm ögeler</em> görünümüne döndürür ve sayfayı yeniden yakalar — açılır menüyü elle sıfırlamanıza gerek kalmaz.</p><p><strong>Okuma</strong> modu etiketleri, onay kutularını ve konum izlerini gizler, böylece metin akışı bir belge gibi rahatça okunur. Tablolar, anlık görüntülerin sınırlandırılmış geçmişini saklar, bu sayede dinamik (SPA) tablolar hiçbir zaman kaybolmaz. Tüm anlık görüntüleri tek bir tekilleştirilmiş görünümde birleştirmek için tablodaki <strong>Tüm satırları göster</strong> düğmesine basın — dışa aktarma işlemi tam olarak bu içeriği kaydeder. <strong>TXT</strong> (okunabilir sayfa metni), <strong>MD</strong> (tablolar dahil Markdown) veya tabloları CSV, HTML ya da gerçek çok sayfalı <strong>XLSX</strong> çalışma kitabı olarak dışa aktarabilirsiniz. İşaretli ögeler önceliklidir; aksi takdirde o an görünür olan her şey dışa aktarılır.</p>"
+    "message": "<p><strong>Metin</strong> kategorisi sayfanın canlı ve okunabilir bir kopyasıdır: başlıklar, paragraflar, listeler ve bağlantılar sayfadaki sırasıyla gösterilir ve <strong>Canlı</strong> açıkken güncellenir. Bir satırı kopyalamak için üzerine gelin; gösterilen her şey için <strong>Metni kopyala</strong>, <strong>Markdown</strong> ve <strong>TXT</strong> düğmelerini kullanın.</p><p><strong>Tablolar</strong>'a geçtiğinizde sayfadaki her tablo önizlemeli bir kart olarak, kendi <strong>Excel</strong>, <strong>CSV</strong> ve <strong>Kopyala</strong> düğmeleriyle görünür; <strong>Tüm tablolar Excel'e</strong> hepsini her biri ayrı sayfada olmak üzere tek çalışma kitabına koyar. Değişen tablolar anlık görüntü geçmişi tutar; <strong>Tüm satırları göster</strong> bunları tekilleştirilmiş tek bir tabloda birleştirir — dışa aktarılan da tam olarak budur.</p><p>Soldaki kutular sayfayı öğe türüne göre ayırır — tüm sayfa metni, her başlık düzeyi, paragraflar, bağlantılar, liste öğeleri, düğmeler, kod ve dahası — her birinde sayı ve ilk satır görünür; birini seçince yalnızca onlar listelenir, kopyalama ve dışa aktarma da yalnızca onlara uygulanır. Arama kutusu yazdıkça süzer; yanındaki menü onu düzenli ifade, <strong>CSS seçici</strong> ya da <strong>XPath</strong> ifadesine (ayrıca <code>count(//a)</code> veya <code>//@href</code> gibi değer döndüren ifadeler) çevirir ve canlı sayfada çalıştırır; <strong>Özel sorgu</strong> kutusu da aynısını yapar. Sayfanın hatalı sorgu hakkında söyledikleri kutunun içinde gösterilir.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML ve <code>&lt;track&gt;</code> kaynakları dahil diğer tüm altyazı dosyaları belgelerle karışmak yerine kendilerine özel <strong>Altyazılar</strong> sekmesine toplanır."
@@ -1330,9 +1079,6 @@
   "settingGifResolution": {
     "message": "Varsayılan GIF Çözünürlüğü"
   },
-  "optGifOriginal": {
-    "message": "Orijinal (1:1 yerel çözünürlük — tam 3K/4K, küçültme yok)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (en fazla 1920 px)"
   },
@@ -1349,7 +1095,7 @@
     "message": "Ekran kaydı (Video ve GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Ekranın dilediğiniz bölgesini MP4, WebM veya animasyonlu GIF olarak kaydedin. GIF kayıtları 1:1 orijinal çözünürlük, 1080p, 720p ve 480p profilleri ile anlık tahmini dosya boyutu hesaplaması sunar. En yüksek tarayıcı performansı için maksimum GIF kayıt süresi 1 dakikadır (60 saniye)."
+    "message": "Ekranın herhangi bir bölgesini MP4, WebM veya animasyonlu GIF olarak kaydedin. GIF kayıtları 1080p, 720p ve 480p profilleri sunar ve dosya boyutunu anlık tahmin eder. Bir GIF kaydı en fazla 1 dakika (60 sn) sürebilir."
   },
   "msgGifMaxDurationReached": {
     "message": "GIF için en fazla 1 dakikalık (60 sn) süreye ulaşıldı. GIF oluşturuluyor…"
@@ -1374,10 +1120,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Sunum (saniyede 1 kare, en küçük boyut)"
-  },
-  "popupRightClickHint": {
-    "message": "Ekran kaydı (Video/GIF) ve Renk Seçici için sayfada herhangi bir yere sağ tıklayın.",
-    "description": "Hint informing user to use right-click context menu for recording and color picker"
   },
   "toastElementZappedAd": {
     "message": "Reklam / iframe bu oturum için gizlendi.",
@@ -1428,7 +1170,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "GIF çözünürlüğü: 1:1 / 1080p / 720p / 480p",
+    "message": "GIF çözünürlüğü: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1482,5 +1224,206 @@
   "errNoActiveTab": {
     "message": "Etkin sekme bulunamadı.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Buraya tıklayın, ardından sayfadan istediğiniz rengi seçin"
+  },
+  "welcomeTitle": {
+    "message": "Source Download hazır"
+  },
+  "welcomePrivacy": {
+    "message": "Her şey bilgisayarınızda çalışır. Hesap yok, izleme yok, bize hiçbir veri gönderilmez."
+  },
+  "welcomeHelp": {
+    "message": "Bir şey çalışmıyor mu? GitHub'da bize yazın"
+  },
+  "ratingBannerIssue": {
+    "message": "Sorun mu var?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF 200 MB'a ulaştı. Kaydedilen kısım kaydediliyor…"
+  },
+  "btnPopupFullPage": {
+    "message": "Tam Sayfa Ekran Görüntüsü"
+  },
+  "toastRecWrongTab": {
+    "message": "Bu sayfanın bir alanını kaydetmek için paylaşım penceresinde \"Bu sekme\"yi seçin."
+  },
+  "popupCaptureTitle": {
+    "message": "Bu sayfayı yakala"
+  },
+  "popupTileOffline": {
+    "message": "Sayfayı çevrimdışı kaydet"
+  },
+  "popupTileGuide": {
+    "message": "Nasıl çalışır?"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Dosyalar, görseller ve tablolar"
+  },
+  "popupDevtoolsHint": {
+    "message": "Geliştirici Araçları'nı açın ve Source Download sekmesini seçin."
+  },
+  "popupRestricted": {
+    "message": "Chrome bu sayfada eklentilere izin vermiyor. Araçları kullanmak için bir web sitesi açın."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Herhangi bir sayfada sağ tıklayın"
+  },
+  "welcomeCardMenuText": {
+    "message": "Tam sayfa ve alan ekran görüntüsü, alan kaydı, renk seçici ve çevrimdışı kopya — bulunduğunuz yerde."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Ya da araç çubuğu düğmesini kullanın"
+  },
+  "welcomeCardPopupText": {
+    "message": "Chrome araç çubuğundaki yapboz simgesine tıklayıp Source Download'ı sabitleyin; araçlar hep bir tık uzağınızda olsun."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Sayfadaki her şey için F12"
+  },
+  "welcomeCardPanelText": {
+    "message": "Geliştirici Araçları'nda Source Download sekmesini seçin. Sayfanın yüklediği her görsel, video, yazı tipi ve dosya orada listelenir; önizleyin, filtreleyin ve ZIP olarak kaydedin. Sayfadaki tablolar Excel'e aktarılır."
+  },
+  "welcomeLead": {
+    "message": "Herhangi bir web sayfasından ihtiyacınız olanı almanın üç yolu."
+  },
+  "btnDownloadOptions": {
+    "message": "Diğer indirme seçenekleri"
+  },
+  "btnMore": {
+    "message": "Diğer işlemler"
+  },
+  "btnFilters": {
+    "message": "Filtreler"
+  },
+  "tabsShowEmpty": {
+    "message": "Boşları göster"
+  },
+  "tabsHideEmpty": {
+    "message": "Boşları gizle"
+  },
+  "textSegText": {
+    "message": "Metin"
+  },
+  "textSegTables": {
+    "message": "Tablolar"
+  },
+  "textLive": {
+    "message": "Canlı"
+  },
+  "textPaused": {
+    "message": "Duraklatıldı"
+  },
+  "textLivePauseTitle": {
+    "message": "Canlı: sayfa değiştikçe yeniden okunur. Duraklatmak için tıklayın."
+  },
+  "textLiveResumeTitle": {
+    "message": "Duraklatıldı. Sayfayı yeniden canlı izlemek için tıklayın."
+  },
+  "textSearchText": {
+    "message": "Sayfa metninde ara"
+  },
+  "textExportAllXlsx": {
+    "message": "Tüm tablolar Excel'e"
+  },
+  "textNoTables": {
+    "message": "Bu sayfada henüz tablo yok. Sayfa bir tablo gösterdiği anda burada belirir."
+  },
+  "textTable": {
+    "message": "Tablo"
+  },
+  "textCopy": {
+    "message": "Kopyala"
+  },
+  "textShowLess": {
+    "message": "Daha az göster"
+  },
+  "areaHintSelect": {
+    "message": "Bir alan seçmek için sürükleyin"
+  },
+  "areaHintCopy": {
+    "message": "kopyala"
+  },
+  "areaHintSave": {
+    "message": "kaydet"
+  },
+  "areaHintExit": {
+    "message": "çık"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Otomatik kopyala"
+  },
+  "areaAutoCopyOn": {
+    "message": "Otomatik kopyalama açık"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Seçimi bıraktığınızda görüntü panoya kopyalanır."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Kapat"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Panoya kopyalandı (otomatik kopyalama açık)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Bu sayfa panoya kopyalamaya izin vermiyor. Bunun yerine İndir'i kullanın."
+  },
+  "textKindAll": {
+    "message": "Tüm sayfa metni"
+  },
+  "textKindHeading": {
+    "message": "Başlık"
+  },
+  "textKindP": {
+    "message": "Paragraflar"
+  },
+  "textKindA": {
+    "message": "Bağlantılar"
+  },
+  "textKindLi": {
+    "message": "Liste öğeleri"
+  },
+  "textKindButton": {
+    "message": "Düğmeler"
+  },
+  "textKindLabel": {
+    "message": "Etiketler ve açıklamalar"
+  },
+  "textKindSpan": {
+    "message": "Satır içi metinler"
+  },
+  "textKindDiv": {
+    "message": "Diğer bloklar"
+  },
+  "textKindCell": {
+    "message": "Tablo hücreleri"
+  },
+  "textKindCode": {
+    "message": "Kod"
+  },
+  "textKindQuote": {
+    "message": "Alıntılar"
+  },
+  "textCustomQuery": {
+    "message": "Özel sorgu"
+  },
+  "textCustomQueryHint": {
+    "message": "Canlı sayfada CSS seçici veya XPath"
+  },
+  "menuSettings": {
+    "message": "Ayarlar"
+  },
+  "settingsSave": {
+    "message": "Kaydet"
+  },
+  "settingsReset": {
+    "message": "Varsayılana dön"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Alan görüntüsünü otomatik kopyala"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Seçimi bıraktığınızda görüntü doğrudan panoya kopyalanır. Bu ayar açıkken sayfanın üstündeki ipucu şeridi bunu her seferinde gösterir."
   }
 }

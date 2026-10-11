@@ -1,0 +1,21 @@
+name: Something isn't working
+description: Report a problem with Source Download.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you try, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Website (optional)
+      placeholder: https://example.com
+  - type: input
+    id: version
+    attributes:
+      label: Extension and Chrome version
+      placeholder: Source Download 1.17.0, Chrome 130

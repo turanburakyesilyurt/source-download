@@ -225,7 +225,7 @@ async function main() {
   // inspectedWindow.eval(). Pull them out of panel.js verbatim so a regression
   // in the capture logic (headings/paragraphs/tables/CSS selector) fails the
   // test suite instead of silently producing an empty Text tab.
-  const panelSrc = fs.readFileSync('panel.js', 'utf8');
+  const panelSrc = require('./panel_source').readPanelSource();
   const metaFnSrc = panelSrc.match(/function textCaptureExpr\(mode, query\) \{[\s\S]*?\n\}/)[0];
   const fullFnSrc = panelSrc.match(/function tableFullExpr\(sig\) \{[\s\S]*?\n\}/)[0];
   const { textCaptureExpr, tableFullExpr } = new Function(

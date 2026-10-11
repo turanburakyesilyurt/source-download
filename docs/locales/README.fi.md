@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Selaa, tarkastele ja lataa kaikki sivun lataamat verkkoresurssit saumattomasti ZIP-pakettina.</em><br>
-  Source Download — kaikki sivun resurssit yhden napsautuksen päässä
+  <em>Ota talteen verkkosivun kuvat, kuvakkeet ja tiedostot erikseen tai yhtenä ZIP-tiedostona. Koko sivun kuvakaappaus ja aluevideo.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ Tämä on **ensimmäinen avoimen lähdekoodin projektini**, joten palautteellasi
 
 ## Visuaalinen kierros ja ydinmoduulit
 
-Tutustu korkearesoluutioisiin käyttöliittymämoduuleihin, jotka on rakennettu suoraan Google Chrome DevToolsiin, hiiren kakkospainikkeen valikkoon ja työkalupalkin ponnahdusikkunaan.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Tallenna ja lataa kaikki verkosta
-> **★ DEVTOOLS-INSINÖÖRIVÄLINEET · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Jokainen sivun tiedosto yhdessä paneelissa"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Tallenna ja lataa kaikki verkosta">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Hiiren oikea. Talteen."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Valitse alue. Se on leikepöydällä."></p>
 
-### 2. Tallenna mikä tahansa alue videoksi ja GIF-kuvaksi
-> **★ ALUEELLINEN NÄYTÖNTALLENNIN · MP4, WEBM JA GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Sivun teksti ja taulukot valmiiksi lajiteltuina"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Tallenna mikä tahansa alue videoksi ja GIF-kuvaksi">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Kokonaiset sivut, tallenteet, offline-kopiot"></p>
 
 ---
 
-### 3. Saumaton koko sivun vieritettävä kuvakaappaus
-> **★ PIKSELITARKAT KUVAKAAPPAUKSET · KOKO SIVU JA ALUE**
+Source Download on työkalupakki verkkosisällön säilyttämiseen. Se lisää Chromen kehittäjätyökaluihin oman välilehden. Siellä kaikki sivuston lataama on lajiteltu luokkiin, jotta voit esikatsella ja pitää vain tarvitsemasi.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Saumaton koko sivun vieritettävä kuvakaappaus">
-</p>
+## Tärkeimmät ominaisuudet
+- Järjestetty galleria: valokuvat, kuvakkeet ja fontit näkyvät omilla välilehdillään reaaliaikaisten laskurien ja hakukentän kera.
+- Tarkat suodattimet: näytä vain kohteet, jotka ovat leveämpiä kuin valittu vähimmäisleveys (esim. 1200 px), tai piilota kaksoiskappaleet.
+- Aito esikatselu: suurenna grafiikkaa ja toista mediaa. Voit katsoa myös fonttinäytettä tai syntaksikorostettua koodia.
+- Yksi arkisto: valitse haluamasi ja saat yhden ZIPin siistillä kansiorakenteella. Epäonnistuneet kohteet voi yrittää uudelleen yhdellä napsautuksella.
+- Koko sivun kuvakaappaus: kaikki vieritetään ja yhdistetään PNG-, JPG- tai PDF-muotoon. Voit valita myös yhden alueen.
+- Aluevideo: tee osasta näyttöä GIF-, MP4- tai WebM-leike.
+- Taulukosta laskentataulukkoon: vie reaaliaikaiset taulukot Exceliin tai CSV-muotoon yhdessä päivittyvien taulukoiden aiempien tilojen kanssa.
+- Offline-kopio: säilytä sivusto yhtenä HTML-asiakirjana, joka aukeaa ilman internetiä.
+- Värivalitsin: valitse mikä tahansa väri näytöltä ja kopioi se HEX-, RGB- tai HSL-muodossa.
 
----
+## Näin aloitat
+1. Avaa sivusto, jonka parissa haluat työskennellä.
+2. Paina F12 (Macissa Option + Command + I) ja valitse välilehti Source Download. Jos et näe sitä, napsauta » välilehtipalkin lopussa.
+3. Pidä paneeli auki latauksen ajan, jotta mitään ei jää huomaamatta.
 
-### 4. Live-DOM-taulukot Exceliin (XLSX) ja CSV-muotoon
-> **★ DATAN POIMINTA JA ELEMENTTIEN POISTO**
-
-<sub>Poimi dynaamiset taulukot tilannekuvahistorioineen monisivuisiksi XLSX- tai CSV-tiedostoiksi.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Live-DOM-taulukot Exceliin (XLSX) ja CSV-muotoon">
-</p>
-
----
-
-### 5. Värinpoimija ja koodin muotoilija
-> **★ KEHITTÄJÄN JA SUUNNITTELIJAN TYÖPÖYTÄ**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Värinpoimija ja koodin muotoilija">
-</p>
-
----
-
-Source Download on Chrome DevTools -paneeli, joka löytää, tarkastelee ja lataa kaikki verkkosivun lataamat resurssit. Tarvitsetpa mediatiedostoja, kehittäjäskriptejä, tyylitiedostoja tai verkkovastauksia, voit tallentaa ne yksittäisinä tiedostoina tai siistinä, kansiorakenteisena ZIP-pakettina.
-
-Rakennettu alusta alkaen ilman kolmannen osapuolen riippuvuuksia: ZIP-kirjoittaja, XLSX-rakentaja, HLS-yhdistäjä ja koodin muotoilijat ovat kaikki käsin kirjoitettua vanilla-JavaScriptiä. Ei kehyksiä, ei build-vaihetta, ei telemetriaa. Kaikki toimii paikallisesti selaimessasi.
-
-## Uutta versiossa v1.16.0
-- Täysi monikielinen tuki 54 kielellä, sisältäen DevToolsin ja kauppasivun täydelliset käännökset.
-- 17 omaa reaaliaikaisesti laskettua resurssiluokkaa, jotka kattavat kaiken median, koodin, API-rajapinnat, tallennustilan ja asiakirjat.
-- Koko sivun yhdistetyt kuvakaappaukset ja mukautettu aluekaappaus älykkäällä kiinnitettyjen yläpalkkien piilotuksella.
-- Näytön videotallennus (MP4) ja kevyt animoitu GIF-vientimoottori ilman reunavuotoa.
-- Reaaliaikainen DOM-taulukoiden poimija monisivuiseen Microsoft Excel (.XLSX) -tiedostoon ja CSV-muotoon sekä DOM Zapper -elementtienpoistotyökalu.
-- Näytön värinpoimija, jossa hex/rgb/hsl-arvojen välitön kopiointi, sekä integroitu koodin kaunistin.
-- Parannettu DevTools-snifferin vakaus ja korkean rinnakkaisuuden verkkoputki.
-
-## Miksi tarvitset sitä
-Kuvakaappaus ei riitä. Hanki oikeat tiedostot — täysresoluutioiset kuvat, todelliset videovirrat, alkuperäiset tyylitiedostot ja skriptit — ei litistettyä kuvaa.
-
-DevTools tuntuu ylivoimaiselta. Source Download tuo saman verkkodatan eteen selkeän, luokitellun gallerian, jossa on haku, suodattimet ja yhden napsautuksen lataukset.
-
-SPA-sivut piilottavat kaiken. Dynaamiset sovellukset luovat resursseja ja API-kutsuja, joita et koskaan näe sivun lähdekoodissa. Source Download tallentaa ne sitä mukaa kun ne tapahtuvat, myös välitilat.
-
-## Mitä se tekee
-### Löydä kaikki
-- Yhdistää verkkoliikenteen tallennuksen (HAR + live-pyynnöt) ja DOM-skannauksen kaikille visuaalisille ja rakenteellisille elementeille, mukaan lukien mediatiedostot, skriptit, tyylitiedostot ja upotetut kehykset.
-- **CSS-tietoinen:** url(...)-viittausten ja @import-sääntöjen resurssit seurataan rekursiivisesti, joten löytyvät jopa tuotuihin tyylitiedostoihin kätketyt fontit.
-- **Sisällön tunnistus:** tuntemattomista tiedostoista luetaan muutama tavu, ja ne siirretään todelliseen tiedostotyyppiluokkaansa.
-- **17 reaaliaikaisesti laskettua luokkaa:** tallennetut resurssit järjestetään siististi omille välilehdilleen medialle, koodille, datalle, API-kutsuille, evästeille, tallennustilalle ja asiakirjoille.
-
-### Suodata, hae, tarkastele
-- Säännöllisiin lausekkeisiin perustuva haku tiedostonimistä, URL-osoitteista, MIME-tyypeistä, alt-teksteistä ja jopa tiedostojen sisällöstä.
-- **Luokkakohtaiset suodattimet:** vähimmäis-/enimmäiskoko ja medialle myös vähimmäis-/enimmäisleveys ja -korkeus — esimerkiksi ”vain hero-kuvat ≥ 1200px”. API-kutsut suodatetaan HTTP-metodin ja pyyntötyypin mukaan.
-- Luettelo- tai ruudukkonäkymä, lajiteltavissa, reaaliaikaisella pikkukuvaseinällä.
-- **Monivälilehtinen tarkastelija todellisilla esikatseluilla:** zoomattava kuvakatselu, video- ja äänentoisto, live-fonttinäyte, SVG-katselin, syntaksikorostettu koodi rivinumeroineen ja Kaunista-kytkin.
-- **API-jaettu näkymä:** vastaus vasemmalla, metodi, tila, kyselyparametrit ja pyynnön runko oikealla.
-
-### Lataa kunnolla
-- Lataa valittu — vain ne tiedostot, jotka olet merkinnyt.
-- Lataa näkymä — kaikki, mikä on näkyvissä nykyisten suodattimien ja haun jälkeen.
-- Lataa kaikki — jokainen tallennettu resurssi kansiorakenteiseen ZIP-pakettiin automaattisella päällekkäisyyksien poistolla.
-- Erälataukset ajetaan rajatulla rinnakkaisuudella ja reaaliaikaisella edistymispalkilla; epäonnistuneet yritetään automaattisesti uudelleen myös kontekstivalikosta.
-
-### HLS ja hankalat videot
-- Virrat, joita selain ei osaa toistaa natiivisti (HLS .m3u8, DASH .mpd, tuntemattomat koodekit), näyttävät älykkään varavaihtoehdon mustan soittimen sijaan.
-- Yhdistä segmentit ja lataa muuttaa HLS-virran yhdeksi toistettavaksi tiedostoksi suoraan paneelissa.
-
-### Teksti-työpöytä (SPA-sisällön työkalupakki)
-- **Teksti-välilehti on reaaliaikainen sisältönäkymä:** jokainen tekstiä sisältävä elementti — otsikot, kappaleet, luettelon kohdat, painikkeet, div- ja span-elementit — tallennetaan DOM-järjestyksessä.
-- Dynaamiset taulukot säilyttävät rajatun tilannekuvahistorian (esim. ”8 tilannekuvaa · 124 yksilöllistä riviä”), joten automaattisesti päivittyvät kojelaudat eivät koskaan menetä välitiloja.
-- Vie Markdown-muodossa tai taulukot CSV-, HTML- tai aitona monisivuisena XLSX-työkirjana, jonka tekee oma käsin kirjoitettu XLSX-kirjoittajamme.
-
-## Näin käytät sitä
-1. Asenna Source Download ja paina F12 millä tahansa sivulla.
-2. Napsauta Source Download -välilehteä DevTools-työkalupalkissa (Chrome ei salli laajennusten avata DevToolsia automaattisesti — siksi se sijaitsee siellä).
-3. Selaa luokkavälilehtiä, hae, suodata ja tarkastele mitä tahansa oikeanpuoleisessa paneelissa.
-4. Valitse haluamasi tiedostot ja paina Lataa valittu, Lataa näkymä tai Lataa kaikki.
-5. Pidä DevTools-paneeli auki sivun latautuessa, jotta kaikki verkkopyynnöt tallentuvat.
-
-## Käyttötapaukset käytännössä
-- **Kilpailija-analyysi:** kerää minkä tahansa kanavan videoiden pikkukuvat yhteen kansioon — vähimmäisleveyssuodattimella.
-- **Verkkoscrapaus ilman koodia:** seuraa SPA:n API-kutsuja, suodata tarvitsemaasi rajapintaan ja lataa sen täsmälliset JSON-vastaukset.
-- **Typografian purku:** selvitä, mitä fonttia sivusto todella käyttää, ja hanki varsinaiset fonttitiedostot.
-- **Virheen toisto:** säilytä täsmälleen ne CSS/JS-versiot, jotka olivat käytössä virheen ilmetessä.
-- **Kojelaudan datan vienti:** vie automaattisesti päivittyvä taulukko monisivuiseen Excel-työkirjaan, historia mukana.
-- **QA-testaus:** varmista, mikä video-/äänivariantti tarjoillaan kussakin A/B-kokoonpanossa.
+Kuvakaappaukset, aluevideo ja värivalitsin löytyvät myös hiiren oikean painikkeen valikosta ja laajennuksen painikkeesta.
 
 ## Tietosuoja
-- Toimii 100% paikallisesti. Ei palvelinta, ei analytiikkaa, mikään data ei poistu koneeltasi.
-- **Pyytää vain tarvitsemansa:** tallennustila (asetuksesi), leikepöytä (URL-osoitteiden ja värien kopiointi), lataukset (tiedostojen tallennus Chromen kautta), kontekstivalikot, komentosarjat ja isäntäoikeudet (sivujen skannaus ja tiedostojen sisällön nouto).
-- Tiedostot tallennetaan Chromen normaalin latausprosessin kautta — ei hiljaisia latauksia.
 
-## Vaatimukset
-- Chrome 116 tai uudempi (Manifest V3).
-- Parhaat tulokset saat, kun paneeli on auki sivun latautuessa, koska silloin verkkoliikenne tallennetaan.
+Kaikki toimii omalla tietokoneellasi. Tiliä ja analytiikkaa ei ole, eikä mitään säilyttämääsi lähetetä kehittäjälle. Tallennetut kohteet menevät Chromen kautta tavalliseen Lataukset-kansioosi.
 
-Source Download on avoimen lähdekoodin projekti — palaute, ideat ja pull requestit ovat tervetulleita.
+Laajennus tarvitsee pääsyn vierailemiisi sivustoihin löytääkseen niiden resurssit ja hoitaakseen tehtävänsä.
 
-Löydät minut LinkedInistä: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Kunnioita tekijänoikeuksia ja käyttöehtoja ja säilytä vain sisältöä, jota sinulla on oikeus käyttää.
+
+## Uutta versiossa 1.17
+- Paljon kevyempi: mitään ei suoriteta ennen kuin käytät jotakin toimintoa.
+- Offline-kopiot sisältävät nyt kaikki valokuvat, taustat ja fontit.
+- GIF-tallennus pysyy muistin rajoissa pitkissäkin HD-leikkeissä.
+- Uusi tervetulonäkymä ja pikalinkit laajennuksen painikkeessa.
+
+Kysymyksiä tai ongelmia: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 

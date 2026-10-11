@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Source Download"
+    "message": "Source Download: Tải ảnh và tệp hàng loạt"
   },
   "appDesc": {
-    "message": "Kiểm tra, duyệt và tải mọi tài nguyên web dạng ZIP. Chụp toàn trang, bắt bảng trực tiếp và bộ công cụ cho nhà phát triển."
+    "message": "Lưu hình ảnh, biểu tượng và tệp của một trang web, từng mục hoặc gộp thành một ZIP. Kèm chụp toàn trang và ghi lại một vùng."
   },
   "actionTitle": {
     "message": "Source Download — Mở bảng điều khiển và theo dõi tài nguyên"
@@ -98,17 +98,8 @@
   "btnDownloadFiltered": {
     "message": "Tải xuống mục đã lọc"
   },
-  "btnTheme": {
-    "message": "Chuyển giao diện"
-  },
   "btnGuide": {
     "message": "Hướng dẫn sử dụng"
-  },
-  "btnCaptureFullPage": {
-    "message": "Ảnh chụp màn hình toàn trang"
-  },
-  "btnOfflineArchive": {
-    "message": "Lưu thành một tệp HTML"
   },
   "filterMinKb": {
     "message": "KB tối thiểu"
@@ -152,38 +143,8 @@
   "textModeXpath": {
     "message": "XPath"
   },
-  "textPlaceholder": {
-    "message": "Lọc văn bản trang hoặc truy vấn DOM trực tiếp…"
-  },
-  "textAllElements": {
-    "message": "Tất cả các phần tử"
-  },
-  "textLiveOn": {
-    "message": "Trực tiếp: bật"
-  },
-  "textLiveOff": {
-    "message": "Trực tiếp: tắt"
-  },
   "textScanNow": {
     "message": "Quét ngay"
-  },
-  "textReading": {
-    "message": "Chế độ đọc"
-  },
-  "textExportTxt": {
-    "message": "TXT"
-  },
-  "textExportMd": {
-    "message": "MD"
-  },
-  "textExportCsv": {
-    "message": "CSV"
-  },
-  "textExportHtml": {
-    "message": "HTML"
-  },
-  "textExportXlsx": {
-    "message": "XLSX"
   },
   "inspectorSelectPrompt": {
     "message": "Chọn một tài nguyên để kiểm tra chi tiết của nó"
@@ -227,15 +188,6 @@
   "metaAlt": {
     "message": "Văn bản thay thế"
   },
-  "ratingPrompt": {
-    "message": "Bạn thích Source Download? Hãy ủng hộ dự án mã nguồn mở của chúng tôi bằng một đánh giá trên Chrome Web Store hoặc một ngôi sao trên GitHub!"
-  },
-  "ratingReview": {
-    "message": "★ Viết đánh giá"
-  },
-  "ratingStar": {
-    "message": "★ Gắn dấu sao trên GitHub"
-  },
   "ratingDismiss": {
     "message": "Bỏ qua"
   },
@@ -256,39 +208,6 @@
   },
   "toastArchiveCreated": {
     "message": "Đã lưu bản lưu HTML một tệp."
-  },
-  "brandSignature": {
-    "message": "Được tạo bởi Turan Burak Yeşilyurt (2run.dev)"
-  },
-  "tabImages": {
-    "message": "Hình ảnh & SVG"
-  },
-  "tabMedia": {
-    "message": "Phương tiện & Âm thanh"
-  },
-  "tabFonts": {
-    "message": "Phông chữ"
-  },
-  "tabTextScraper": {
-    "message": "Văn bản & Bảng"
-  },
-  "heroScreenshotTitle": {
-    "message": "Ảnh chụp màn hình toàn trang"
-  },
-  "heroScreenshotDesc": {
-    "message": "Ghép nhiều khung nhìn liền mạch, tự động ẩn tiêu đề cố định"
-  },
-  "heroArchiveTitle": {
-    "message": "Lưu trữ HTML một tệp"
-  },
-  "heroArchiveDesc": {
-    "message": "Nhúng CSS và ảnh Base64 vào tệp, bản chụp an toàn để xem ngoại tuyến"
-  },
-  "copyDataUri": {
-    "message": "Sao chép Data URI"
-  },
-  "copyUrl": {
-    "message": "Sao chép URL"
   },
   "downloadSingle": {
     "message": "Tải xuống"
@@ -341,17 +260,11 @@
   "statusResources": {
     "message": "tài nguyên"
   },
-  "statusFiltered": {
-    "message": "đã lọc"
-  },
   "statusSelected": {
     "message": "đã chọn"
   },
   "statusDupes": {
     "message": "bản trùng lặp bị ẩn"
-  },
-  "statusSize": {
-    "message": "kích thước"
   },
   "langAuto": {
     "message": "Tự động (Trình duyệt)"
@@ -359,23 +272,11 @@
   "langSelectorTitle": {
     "message": "Chọn ngôn ngữ"
   },
-  "textPillAll": {
-    "message": "Tất cả nội dung"
-  },
-  "textPillText": {
-    "message": "📄 Văn bản & Bài viết"
-  },
-  "textPillTables": {
-    "message": "📊 Chỉ bảng"
-  },
   "textSelectAll": {
     "message": "Chọn tất cả"
   },
   "textDeselectAll": {
     "message": "Bỏ chọn tất cả"
-  },
-  "textClearSelection": {
-    "message": "Xóa"
   },
   "toastRefreshComplete": {
     "message": "Quét trang hoàn tất: $count$ tài nguyên mới",
@@ -583,46 +484,6 @@
       }
     }
   },
-  "textSummaryTables": {
-    "message": "$tables$ bảng · $rows$ hàng duy nhất",
-    "placeholders": {
-      "tables": {
-        "content": "$1",
-        "example": "2"
-      },
-      "rows": {
-        "content": "$2",
-        "example": "50"
-      }
-    }
-  },
-  "textSummarySelected": {
-    "message": "$count$ đã chọn — chỉ xuất các mục này",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableOnScreen": {
-    "message": "Bảng — $count$ hàng trên màn hình",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableAllRows": {
-    "message": "Bảng — tất cả $count$ hàng duy nhất",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
   "textTableSnapshots": {
     "message": "$count$ ảnh chụp nhanh",
     "placeholders": {
@@ -653,32 +514,11 @@
   "textTableShowingAll": {
     "message": "Hiển thị tất cả các hàng"
   },
-  "textTableHistory": {
-    "message": "Lịch sử ($count$)",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "5"
-      }
-    }
-  },
-  "textTableHideHistory": {
-    "message": "Ẩn lịch sử"
-  },
   "textTableNoRows": {
     "message": "Chưa có hàng nào được ghi lại."
   },
   "textBtnCopy": {
     "message": "Sao chép văn bản"
-  },
-  "textBtnCopyTable": {
-    "message": "📋 Sao chép"
-  },
-  "textBtnExportXlsx": {
-    "message": "⬇ XLSX"
-  },
-  "textBtnExportCsv": {
-    "message": "⬇ CSV"
   },
   "statusDuplicateImages": {
     "message": "$count$ hình ảnh trùng lặp",
@@ -688,9 +528,6 @@
         "example": "5"
       }
     }
-  },
-  "labelExport": {
-    "message": "Xuất"
   },
   "inspectorLoadingSvg": {
     "message": "Đang tải SVG…"
@@ -704,44 +541,17 @@
   "inspectorFontSample": {
     "message": "Xem trước phông chữ"
   },
-  "inspectorBeautify": {
-    "message": "Định dạng"
-  },
-  "inspectorOriginal": {
-    "message": "Bản gốc"
-  },
-  "inspectorHeaders": {
-    "message": "Header"
-  },
-  "inspectorResponse": {
-    "message": "Phản hồi"
-  },
-  "inspectorRequest": {
-    "message": "Yêu cầu"
-  },
   "inspectorQueryParams": {
     "message": "Tham số truy vấn"
   },
   "inspectorRequestBody": {
     "message": "Nội dung yêu cầu"
   },
-  "textHintHtml": {
-    "message": "Một bản sao trực tiếp, có thể đọc được của trang. Mọi phần tử chứa văn bản đều được ghi lại theo thứ tự DOM và được giữ ở đây khi trang thay đổi. Truy vấn nó bằng văn bản thuần túy, biểu thức chính quy, <strong>bộ chọn CSS</strong> hoặc biểu thức <strong>XPath</strong>, sau đó xuất nội dung phù hợp. Xem <a href=\"#\" id=\"text-hint-guide\">hướng dẫn</a> để biết chi tiết."
-  },
-  "textHeadings": {
-    "message": "Tiêu đề"
-  },
-  "textAllLevels": {
-    "message": "Tất cả các cấp"
-  },
   "textMatches": {
     "message": "kết quả khớp"
   },
   "textMatch": {
     "message": "kết quả khớp"
-  },
-  "textReadingOn": {
-    "message": "Chế độ đọc: bật"
   },
   "toastDownloadStarted": {
     "message": "Đã bắt đầu tải xuống: $name$",
@@ -756,7 +566,7 @@
     "message": "Không thể tìm nạp tài nguyên này (CORS hoặc loại không được hỗ trợ)."
   },
   "ratingBannerText": {
-    "message": "Bạn thích Source Download? Hãy ủng hộ dự án mã nguồn mở của chúng tôi bằng một đánh giá trên Chrome Web Store hoặc một ngôi sao trên GitHub!"
+    "message": "Rất vui vì nó hữu ích! Nếu Source Download giúp bạn tiết kiệm thời gian, một đánh giá ngắn sẽ giúp người khác tìm thấy nó."
   },
   "ratingBannerReview": {
     "message": "★ Đánh giá"
@@ -848,12 +658,6 @@
   "textModeTitle": {
     "message": "Hộp truy vấn được diễn giải như thế nào"
   },
-  "textKindTitle": {
-    "message": "Giới hạn ở một loại phần tử"
-  },
-  "textHeadingLevelTitle": {
-    "message": "Cấp độ tiêu đề"
-  },
   "textPlaceholderRegex": {
     "message": "^Giá:\\s*\\d+ — Biểu thức chính quy JavaScript"
   },
@@ -865,27 +669,6 @@
   },
   "guideSearchPlaceholder": {
     "message": "Tìm kiếm hướng dẫn…"
-  },
-  "popupIntro": {
-    "message": "Danh mục được tính bằng <strong>huy hiệu trên thanh công cụ</strong>. Tắt một danh mục để ngừng đếm — huy hiệu sẽ lập tức chỉ phản ánh những gì bạn theo dõi."
-  },
-  "popupHelpTitle": {
-    "message": "Cách sử dụng bảng điều khiển đầy đủ"
-  },
-  "popupStep1": {
-    "message": "Mở DevTools cho trang bạn muốn kiểm tra <div class=\"hint\"><kbd>F12</kbd> hoặc <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (macOS: <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>I</kbd>)</div>"
-  },
-  "popupStep2": {
-    "message": "Nhấp vào tab <strong>Source Download</strong> trên thanh công cụ DevTools"
-  },
-  "popupStep3": {
-    "message": "Duyệt, kiểm tra và tải xuống các tài nguyên — riêng lẻ hoặc tất cả cùng một lúc dưới dạng ZIP."
-  },
-  "popupNote": {
-    "message": "Lưu ý: Chrome không cho phép các tiện ích mở DevTools theo chương trình, đó là lý do tại sao bạn có thể truy cập bộ kỹ thuật đầy đủ thông qua thanh công cụ DevTools."
-  },
-  "popupTrackAll": {
-    "message": "Theo dõi tất cả danh mục"
   },
   "popupLanguage": {
     "message": "Ngôn ngữ"
@@ -967,20 +750,6 @@
   "btnMergeHls": {
     "message": "Hợp nhất các phân đoạn và tải xuống"
   },
-  "toastHlsMerged": {
-    "message": "Đã hợp nhất $COUNT$ phân đoạn thành $NAME$",
-    "placeholders": {
-      "COUNT": {
-        "content": "$1"
-      },
-      "NAME": {
-        "content": "$2"
-      }
-    }
-  },
-  "sizeUnknown": {
-    "message": "kích thước không rõ"
-  },
   "progressFetching": {
     "message": "Đang tìm nạp $DONE$/$TOTAL$ · ZIP $EST$…",
     "placeholders": {
@@ -1031,31 +800,11 @@
   "searchRegexHint": {
     "message": "Đang bật tìm kiếm regex — đặt truy vấn của bạn trong /pattern/i"
   },
-  "textIncludeInExports": {
-    "message": "Bao gồm khi xuất"
-  },
   "tableMergeSnapshotsTitle": {
     "message": "Gộp mọi ảnh chụp nhanh vào một bảng đã loại bỏ trùng lặp — đây là nội dung sẽ được xuất"
   },
-  "tableBrowseSnapshotsTitle": {
-    "message": "Duyệt các ảnh chụp nhanh trước đó của bảng này"
-  },
   "tableDownloadCsvTitle": {
     "message": "Tải xuống bảng này dưới dạng CSV"
-  },
-  "tableSnapshotLabel": {
-    "message": "Ảnh chụp nhanh $INDEX$ — $TIME$ ($COUNT$ hàng)",
-    "placeholders": {
-      "INDEX": {
-        "content": "$1"
-      },
-      "TIME": {
-        "content": "$2"
-      },
-      "COUNT": {
-        "content": "$3"
-      }
-    }
   },
   "cardToggleBatchTitle": {
     "message": "Chuyển đổi lựa chọn để tải xuống hàng loạt"
@@ -1150,7 +899,7 @@
     "message": "Nhấp vào tab <strong>Source Download</strong> trong thanh công cụ DevTools (nhấn <kbd>F12</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>, sau đó chọn tab trong thanh công cụ DevTools). Chrome không cho phép các tiện ích mở rộng tự động mở DevTools, đó là lý do bảng điều khiển nằm ở đó. Cửa sổ bật lên của biểu tượng trên thanh công cụ cho phép bạn chọn danh mục nào được tính vào bộ đếm huy hiệu trên biểu tượng. Nút mặt trời/mặt trăng trên thanh công cụ của bảng điều khiển sẽ cố định giao diện sáng hoặc tối độc lập với Chrome; lựa chọn đó được ghi nhớ."
   },
   "guideSecCategoriesContent": {
-    "message": "Các tab dọc ở bên trái nhóm mọi tài nguyên đã thu thập thành 17 danh mục chuyên dụng theo loại: Hình ảnh, Video, Âm thanh, Phụ đề, Tài liệu, Phông chữ, Bản đồ nguồn, WASM, SVG, API, Cookie, Bộ nhớ, v.v. Mỗi tab hiển thị số lượng trực tiếp. Mỗi lần chỉ có một danh mục được hiển thị; chuyển danh mục sẽ đặt lại tất cả các bộ lọc, vì vậy những gì bạn nhìn thấy luôn khớp với tab."
+    "message": "Các thẻ dọc bên trái phân loại mọi tài nguyên thu được vào 15 danh mục như hình ảnh, video, phông chữ, source map và lệnh gọi API, cùng một thẻ Văn bản và bảng. Mỗi tab hiển thị số lượng trực tiếp. Mỗi lần chỉ có một danh mục được hiển thị; chuyển danh mục sẽ đặt lại tất cả các bộ lọc, vì vậy những gì bạn nhìn thấy luôn khớp với tab."
   },
   "guideSecSearchFiltersContent": {
     "message": "Thanh tìm kiếm lọc theo tên, URL, loại, văn bản thay thế hoặc tiêu đề. Đặt truy vấn của bạn trong cặp <kbd>/…/</kbd> để dùng biểu thức chính quy, ví dụ: <code>/\\.(png|jpg)$/</code>. Bên dưới thanh công cụ, thanh bộ lọc thay đổi theo danh mục: phạm vi dung lượng và kích thước cho phương tiện, phương thức HTTP và loại yêu cầu cho API, cùng với sắp xếp và chiều sắp xếp."
@@ -1162,13 +911,13 @@
     "message": "Bấm vào bất kỳ tài nguyên nào để mở nó trong khung kiểm tra ở bên phải. Mỗi tệp được mở sẽ trở thành một tab, do đó bạn có thể so sánh nhiều tài nguyên cạnh nhau — tệp mới nhất sẽ mở ở bên trái. Có các trình xem chuyên dụng cho hình ảnh, video, âm thanh, phông chữ, SVG và văn bản/mã (với nút Định dạng). API hiển thị chế độ xem chia đôi: phản hồi ở bên trái, chi tiết yêu cầu (phương thức, trạng thái, header, tham số truy vấn và nội dung) ở bên phải."
   },
   "guideSecDownloadingContent": {
-    "message": "<strong>Tải xuống mục đang hiển thị</strong> lưu các tài nguyên hiện đang hiển thị (danh mục đang chọn + tìm kiếm + bộ lọc) dưới dạng ZIP; nút đổi nhãn thành <em>Tải xuống mục đã lọc (N)</em> khi có bộ lọc đang bật. Di chuột vào bất kỳ nút tải xuống nào để xem dung lượng tệp nén ước tính trước khi bạn nhấp. <strong>Tải xuống mục đã chọn</strong> chỉ tải xuống các mục đã đánh dấu. <strong>Tải xuống tất cả</strong> gom mọi tài nguyên được phát hiện vào một ZIP có cấu trúc thư mục. Các lượt tải xuống không thành công sẽ được thử lại tự động và có thể được thử lại từ menu ngữ cảnh. <strong>Xuất</strong> ghi danh sách hiển thị dưới dạng JSON hoặc CSV, hoặc xuất nhật ký mạng của Chrome dưới dạng tệp HAR."
+    "message": "<strong>Tải xuống mục đang hiển thị</strong> lưu các tài nguyên hiện đang hiển thị (danh mục đang chọn + tìm kiếm + bộ lọc) dưới dạng ZIP; nút đổi nhãn thành <em>Tải xuống mục đã lọc (N)</em> khi có bộ lọc đang bật. Di chuột vào bất kỳ nút tải xuống nào để xem dung lượng tệp nén ước tính trước khi bạn nhấp. <strong>Tải xuống mục đã chọn</strong> chỉ tải xuống các mục đã đánh dấu. <strong>Tải xuống tất cả</strong> gom mọi tài nguyên được phát hiện vào một ZIP có cấu trúc thư mục. Các lượt tải xuống lỗi sẽ được đánh dấu và bạn có thể thử lại bằng một cú nhấp từ thông báo, biểu tượng cảnh báo của mục hoặc menu ngữ cảnh. <strong>Xuất</strong> ghi danh sách hiển thị dưới dạng JSON hoặc CSV, hoặc xuất nhật ký mạng của Chrome dưới dạng tệp HAR."
   },
   "guideSecLightboxContent": {
     "message": "Nút phóng to sẽ mở phương tiện trong trình xem phóng to toàn kích thước, nơi bạn có thể kéo để di chuyển, thu phóng bằng con lăn chuột, các nút trên màn hình hoặc bàn phím (<kbd>+</kbd>/<kbd>-</kbd> để thu phóng, <kbd>0</kbd> để đặt lại, <kbd>Esc</kbd> để đóng)."
   },
   "guideSecTextTablesContent": {
-    "message": "<p>Danh mục <strong>Văn bản</strong> là bản sao trực tiếp, có thể đọc được của trang. Nó thu thập mọi phần tử chứa văn bản — tiêu đề, đoạn văn, mục danh sách, nút, <code>div</code>/<code>span</code> và hơn thế nữa — theo thứ tự DOM và tiếp tục quét khi <strong>Trực tiếp</strong> được bật.</p><p>Hộp <strong>Truy vấn</strong> hoạt động theo bốn cách, chọn từ danh sách thả xuống bên cạnh: <strong>Chứa</strong> và <strong>Regex</strong> lọc văn bản đã thu thập, trong khi <strong>Bộ chọn CSS</strong> và <strong>XPath</strong> được chạy trên trang trực tiếp nên có thể truy cập mọi thứ trong DOM. XPath cũng chấp nhận các biểu thức trả về một giá trị thay vì các phần tử, chẳng hạn như <code>count(//a)</code> hoặc <code>//@href</code>. Mọi thông báo của trang về truy vấn bị lỗi đều được hiển thị bên cạnh hộp. <strong>Phần tử</strong> thu hẹp kết quả về một thẻ duy nhất, kèm số lượng của từng thẻ được tìm thấy trên trang. Việc xóa hộp truy vấn (hoặc nhấn <strong>Xóa</strong>) sẽ đưa bạn trở lại <em>Tất cả các phần tử</em> và thu thập lại trang — bạn không bao giờ phải tự đặt lại danh sách thả xuống.</p><p><strong>Chế độ đọc</strong> ẩn các thẻ, hộp kiểm và đường dẫn vị trí để luồng nội dung đọc giống như một tài liệu. Các bảng lưu một lịch sử ảnh chụp nhanh có giới hạn để bảng động (SPA) không bao giờ bị mất. Nhấn <strong>Hiển thị tất cả các hàng</strong> trên một bảng để gộp mọi ảnh chụp nhanh vào một chế độ xem đã loại bỏ trùng lặp — đó chính xác là nội dung của bản xuất. Xuất dưới dạng <strong>TXT</strong> (trang có thể đọc được), <strong>MD</strong> (Markdown, bao gồm bảng), hoặc bảng dưới dạng CSV, HTML hoặc sổ làm việc <strong>XLSX</strong> nhiều trang thực thụ. Các mục đã chọn được ưu tiên; nếu không, mọi thứ đang hiển thị sẽ được xuất.</p>"
+    "message": "<p>Danh mục <strong>Văn bản</strong> là bản sao trực tiếp, dễ đọc của trang: tiêu đề, đoạn văn, danh sách và liên kết theo thứ tự trên trang, được cập nhật khi <strong>Trực tiếp</strong> đang bật. Di con trỏ lên một dòng để sao chép dòng đó, hoặc dùng <strong>Sao chép văn bản</strong>, <strong>Markdown</strong> và <strong>TXT</strong> cho mọi thứ đang hiển thị.</p><p>Trong <strong>Bảng</strong>, mỗi bảng trên trang hiển thị thành một thẻ có bản xem trước và các nút riêng <strong>Excel</strong>, <strong>CSV</strong> và <strong>Sao chép</strong>; <strong>Tất cả bảng sang Excel</strong> đưa tất cả vào một sổ làm việc, mỗi bảng một trang tính. Các bảng thay đổi sẽ giữ lịch sử ảnh chụp nhanh, và <strong>Hiển thị tất cả hàng</strong> gộp chúng thành một bảng không trùng lặp — đúng như nội dung khi xuất.</p><p>Các ô bên trái sắp xếp trang theo loại phần tử — toàn bộ văn bản của trang, từng cấp tiêu đề, đoạn văn, liên kết, mục danh sách, nút, mã và hơn thế — mỗi ô có số lượng và dòng đầu tiên; chọn một ô để chỉ xem, sao chép hoặc xuất phần đó. Hộp tìm kiếm lọc ngay khi bạn gõ, và menu bên cạnh chuyển nó thành biểu thức chính quy, <strong>bộ chọn CSS</strong> hoặc biểu thức <strong>XPath</strong> (kể cả biểu thức trả về giá trị như <code>count(//a)</code> hoặc <code>//@href</code>) chạy trên trang trực tiếp; ô <strong>Truy vấn tùy chỉnh</strong> cũng làm như vậy. Thông báo của trang về truy vấn sai được hiển thị ngay trong hộp.</p>"
   },
   "guideSecCaptionsContent": {
     "message": "WebVTT, SRT, TTML và các tệp phụ đề khác — bao gồm các nguồn <code>&lt;track&gt;</code> — nằm trong tab <strong>Phụ đề</strong> riêng thay vì trộn lẫn với các tài liệu."
@@ -1322,9 +1071,6 @@
   "settingGifResolution": {
     "message": "Độ phân giải GIF mặc định"
   },
-  "optGifOriginal": {
-    "message": "Gốc (1:1 độ phân giải gốc — đủ 3K/4K, không thu nhỏ)"
-  },
   "optGif1080p": {
     "message": "1080p Full HD (tối đa 1920px)"
   },
@@ -1341,7 +1087,7 @@
     "message": "Ghi màn hình (Video & GIF)"
   },
   "guideSecScreenRecordingContent": {
-    "message": "Ghi lại bất kỳ vùng màn hình nào dưới dạng MP4, WebM hoặc GIF động. Bản ghi GIF có độ phân giải gốc 1:1, cấu hình 1080p, 720p và 480p với kích thước tệp ước tính trực tiếp. Thời lượng ghi GIF tối đa là 1 phút (60 giây) để có hiệu suất trình duyệt tối ưu."
+    "message": "Ghi lại bất kỳ vùng nào trên màn hình dưới dạng MP4, WebM hoặc GIF động. Bản ghi GIF có các cấu hình 1080p, 720p và 480p cùng ước tính dung lượng trực tiếp. Mỗi bản ghi GIF dài tối đa 1 phút (60 giây)."
   },
   "msgGifMaxDurationReached": {
     "message": "Đã đạt thời lượng GIF tối đa 1 phút (60 giây). Đang tạo GIF…"
@@ -1366,9 +1112,6 @@
   },
   "optGifFps1": {
     "message": "1 FPS — Trình chiếu (1 khung hình/giây, dung lượng tối thiểu)"
-  },
-  "popupRightClickHint": {
-    "message": "Nhấp chuột phải vào bất kỳ đâu trên trang web để Ghi màn hình (Video/GIF) và Bộ chọn màu."
   },
   "toastElementZappedAd": {
     "message": "Đã ẩn quảng cáo / iframe trong phiên này.",
@@ -1419,7 +1162,7 @@
     "description": "Toggle format: MP4 / GIF / WebM"
   },
   "tipRecGifResolution": {
-    "message": "Độ phân giải GIF: 1:1 / 1080p / 720p / 480p",
+    "message": "Độ phân giải GIF: 1080p / 720p / 480p",
     "description": "GIF resolution: 1:1 / 1080p / 720p / 480p"
   },
   "tipRecGifFps": {
@@ -1473,5 +1216,206 @@
   "errNoActiveTab": {
     "message": "Không tìm thấy tab đang hoạt động.",
     "description": "No active tab found."
+  },
+  "colorPickerClickToStart": {
+    "message": "Nhấp vào đây, sau đó chọn bất kỳ màu nào trên trang"
+  },
+  "welcomeTitle": {
+    "message": "Source Download đã sẵn sàng"
+  },
+  "welcomePrivacy": {
+    "message": "Mọi thứ chạy trên máy tính của bạn. Không cần tài khoản, không theo dõi, không gửi gì cho chúng tôi."
+  },
+  "welcomeHelp": {
+    "message": "Có gì đó không hoạt động? Hãy báo cho chúng tôi trên GitHub"
+  },
+  "ratingBannerIssue": {
+    "message": "Có vấn đề gì?"
+  },
+  "msgGifMaxSizeReached": {
+    "message": "GIF đã đạt 200 MB. Đang lưu phần đã ghi…"
+  },
+  "btnPopupFullPage": {
+    "message": "Chụp toàn bộ trang"
+  },
+  "toastRecWrongTab": {
+    "message": "Để ghi một vùng của trang này, hãy chọn \"Thẻ này\" trong hộp thoại chia sẻ."
+  },
+  "popupCaptureTitle": {
+    "message": "Chụp trang này"
+  },
+  "popupTileOffline": {
+    "message": "Lưu trang để xem ngoại tuyến"
+  },
+  "popupTileGuide": {
+    "message": "Cách hoạt động"
+  },
+  "popupDevtoolsTitle": {
+    "message": "Tệp, hình ảnh và bảng"
+  },
+  "popupDevtoolsHint": {
+    "message": "Mở DevTools rồi chọn thẻ Source Download."
+  },
+  "popupRestricted": {
+    "message": "Chrome không cho phép tiện ích trên trang này. Hãy mở một trang web để dùng các công cụ."
+  },
+  "welcomeCardMenuTitle": {
+    "message": "Nhấp chuột phải trên bất kỳ trang nào"
+  },
+  "welcomeCardMenuText": {
+    "message": "Ảnh chụp toàn trang hoặc một vùng, quay video vùng, công cụ chọn màu và bản sao ngoại tuyến — ngay tại nơi bạn đang ở."
+  },
+  "welcomeCardPopupTitle": {
+    "message": "Hoặc dùng nút trên thanh công cụ"
+  },
+  "welcomeCardPopupText": {
+    "message": "Nhấp vào biểu tượng mảnh ghép trên thanh công cụ Chrome và ghim Source Download để công cụ luôn chỉ cách một cú nhấp."
+  },
+  "welcomeCardPanelTitle": {
+    "message": "Nhấn F12 để xem mọi thứ trên trang"
+  },
+  "welcomeCardPanelText": {
+    "message": "Chọn thẻ Source Download trong DevTools. Mọi hình ảnh, video, phông chữ và tệp mà trang đã tải đều được liệt kê ở đó — xem trước, lọc và lưu thành ZIP. Bảng trên trang có thể xuất sang Excel."
+  },
+  "welcomeLead": {
+    "message": "Ba cách lấy những gì bạn cần từ bất kỳ trang web nào."
+  },
+  "btnDownloadOptions": {
+    "message": "Tùy chọn tải xuống khác"
+  },
+  "btnMore": {
+    "message": "Thao tác khác"
+  },
+  "btnFilters": {
+    "message": "Bộ lọc"
+  },
+  "tabsShowEmpty": {
+    "message": "Hiện mục trống"
+  },
+  "tabsHideEmpty": {
+    "message": "Ẩn mục trống"
+  },
+  "textSegText": {
+    "message": "Văn bản"
+  },
+  "textSegTables": {
+    "message": "Bảng"
+  },
+  "textLive": {
+    "message": "Trực tiếp"
+  },
+  "textPaused": {
+    "message": "Đã tạm dừng"
+  },
+  "textLivePauseTitle": {
+    "message": "Trực tiếp: trang được đọc lại mỗi khi thay đổi. Nhấp để tạm dừng."
+  },
+  "textLiveResumeTitle": {
+    "message": "Đã tạm dừng. Nhấp để theo dõi trang trực tiếp trở lại."
+  },
+  "textSearchText": {
+    "message": "Tìm trong văn bản của trang"
+  },
+  "textExportAllXlsx": {
+    "message": "Tất cả bảng sang Excel"
+  },
+  "textNoTables": {
+    "message": "Trang này chưa có bảng nào. Bảng sẽ xuất hiện ở đây ngay khi trang hiển thị."
+  },
+  "textTable": {
+    "message": "Bảng"
+  },
+  "textCopy": {
+    "message": "Sao chép"
+  },
+  "textShowLess": {
+    "message": "Thu gọn"
+  },
+  "areaHintSelect": {
+    "message": "Kéo để chọn một vùng"
+  },
+  "areaHintCopy": {
+    "message": "sao chép"
+  },
+  "areaHintSave": {
+    "message": "lưu"
+  },
+  "areaHintExit": {
+    "message": "thoát"
+  },
+  "areaAutoCopyLabel": {
+    "message": "Tự động sao chép"
+  },
+  "areaAutoCopyOn": {
+    "message": "Tự động sao chép đang bật"
+  },
+  "areaAutoCopyOnHint": {
+    "message": "Thả vùng chọn là ảnh đã nằm trong bảng nhớ tạm."
+  },
+  "areaAutoCopyTurnOff": {
+    "message": "Tắt"
+  },
+  "toastAreaAutoCopied": {
+    "message": "Đã sao chép vào bảng nhớ tạm (tự động sao chép đang bật)"
+  },
+  "toastAreaCopyBlocked": {
+    "message": "Trang này không cho phép sao chép vào bảng nhớ tạm. Hãy dùng Tải xuống thay thế."
+  },
+  "textKindAll": {
+    "message": "Toàn bộ văn bản của trang"
+  },
+  "textKindHeading": {
+    "message": "Tiêu đề"
+  },
+  "textKindP": {
+    "message": "Đoạn văn"
+  },
+  "textKindA": {
+    "message": "Liên kết"
+  },
+  "textKindLi": {
+    "message": "Mục danh sách"
+  },
+  "textKindButton": {
+    "message": "Nút"
+  },
+  "textKindLabel": {
+    "message": "Nhãn và chú thích"
+  },
+  "textKindSpan": {
+    "message": "Văn bản nội dòng"
+  },
+  "textKindDiv": {
+    "message": "Khối khác"
+  },
+  "textKindCell": {
+    "message": "Ô của bảng"
+  },
+  "textKindCode": {
+    "message": "Mã"
+  },
+  "textKindQuote": {
+    "message": "Trích dẫn"
+  },
+  "textCustomQuery": {
+    "message": "Truy vấn tùy chỉnh"
+  },
+  "textCustomQueryHint": {
+    "message": "Bộ chọn CSS hoặc XPath trên trang trực tiếp"
+  },
+  "menuSettings": {
+    "message": "Cài đặt"
+  },
+  "settingsSave": {
+    "message": "Lưu"
+  },
+  "settingsReset": {
+    "message": "Khôi phục mặc định"
+  },
+  "settingAreaAutoCopy": {
+    "message": "Tự động sao chép ảnh chụp vùng"
+  },
+  "settingAreaAutoCopyHint": {
+    "message": "Khi bạn thả vùng chọn, hình ảnh được đưa thẳng vào bảng nhớ tạm. Khi tùy chọn này đang bật, dòng gợi ý ở đầu trang sẽ báo mỗi lần."
   }
 }

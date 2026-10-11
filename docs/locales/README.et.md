@@ -66,13 +66,12 @@
 </p>
 
 <p align="center">
-  <em>Sirvige, uurige ja laadige ZIP-failina alla kõik ressursid, mida veebileht laadib – vaevata.</em><br>
-  Source Download – kõik lehe ressursid ühe klõpsu kaugusel
+  <em>Hoidke veebilehe pildid, ikoonid ja failid eraldi või ühe ZIP-ina alles. Kogu lehe ekraanipilt ja valitud ala video.</em>
 </p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/source-download/nockdgincmpfojabnhbofkddgcmnodpd"><img src="https://img.shields.io/chrome-web-store/v/nockdgincmpfojabnhbofkddgcmnodpd?style=flat-square&logo=googlechrome&label=Chrome%20Web%20Store" alt="Chrome Web Store"></a>
-  <img src="https://img.shields.io/badge/version-1.16.0-4f8cff?style=flat-square" alt="Version 1.16.0">
+  <img src="https://img.shields.io/badge/version-1.17.0-4f8cff?style=flat-square" alt="Version 1.17.0">
   <img src="https://img.shields.io/badge/locales-54%20languages-10b981?style=flat-square" alt="54 languages">
   <img src="https://img.shields.io/badge/Chrome%20Manifest-V3-00C853?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/dependencies-zero-22c55e?style=flat-square" alt="Zero dependencies">
@@ -101,131 +100,57 @@ See on minu **esimene avatud lähtekoodiga projekt**, mistõttu on teie tagasisi
 
 ## Visuaalne tuur ja põhimoodulid
 
-Tutvuge kõrge eraldusvõimega liidese moodulitega, mis on otse integreeritud Google Chrome DevToolsi, paremklõpsumenüüsse ja tööriistariba hüpikaknasse.
+<p align="center"><img src="../../screenshots/banner.png" width="100%" alt="Source Download"></p>
 
-### 1. Jäädvustage ja laadige alla kõik veebis leiduv
-> **★ DEVTOOLSI INSENERITÖÖRIISTAD · F12**
+<p align="center"><img src="../../screenshots/en-1.png" width="100%" alt="Iga lehe fail ühe paneeli kaugusel"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/01-asset-inspector-downloader.png" width="100%" alt="Jäädvustage ja laadige alla kõik veebis leiduv">
-</p>
+<p align="center"><img src="../../screenshots/en-2.png" width="100%" alt="Paremklõps. Jäädvustatud."></p>
 
----
+<p align="center"><img src="../../screenshots/en-3.png" width="100%" alt="Vali ala. See on lõikelaual."></p>
 
-### 2. Salvestage mis tahes ekraaniala videona ja GIF-ina
-> **★ PIIRKONNAPÕHINE EKRAANISALVESTAJA · MP4, WEBM JA GIF**
+<p align="center"><img src="../../screenshots/en-4.png" width="100%" alt="Lehe tekst ja tabelid, sinu jaoks sorditud"></p>
 
-<p align="center">
-  <img src="../../screenshots/en/02-screen-recorder-gif.png" width="100%" alt="Salvestage mis tahes ekraaniala videona ja GIF-ina">
-</p>
+<p align="center"><img src="../../screenshots/en-5.png" width="100%" alt="Terved lehed, salvestised, võrguühenduseta koopiad"></p>
 
 ---
 
-### 3. Sujuv kogu lehe kerimisega ekraanipilt
-> **★ PIKSLITÄPSED EKRAANIPILDID · KOGU LEHT JA PIIRKOND**
+Source Download on tööriistakomplekt veebisisu säilitamiseks. See lisab Chrome'i arendustööriistadesse oma vahekaardi. Seal on kogu laaditud sisu kategooriate kaupa sorditud. Nii saate seda eelvaates vaadata ja alles hoida ainult vajaliku.
 
-<p align="center">
-  <img src="../../screenshots/en/03-fullpage-screenshot-capture.png" width="100%" alt="Sujuv kogu lehe kerimisega ekraanipilt">
-</p>
+## Peamised funktsioonid
+- Korras galerii: fotod, ikoonid ja fondid on oma vahekaartidel koos reaalajas loendurite ja otsinguväljaga.
+- Täpsed filtrid: näidake ainult üksusi, mis on laiemad kui valitud miinimum (nt 1200 px), või peitke duplikaadid.
+- Päris eelvaade: suurendage graafikat ja esitage meediat. Vaadata saab ka fondinäidist või süntaksiesiletõstuga koodi.
+- Üks arhiiv: märkige soovitu ja saate ühe ZIP-i korras kaustastruktuuriga. Ebaõnnestunud üksusi saab ühe klõpsuga uuesti proovida.
+- Kogu lehe ekraanipilt: kõik keritakse ja liidetakse PNG-, JPG- või PDF-failiks. Valida saab ka ühe ala.
+- Ala video: muutke osa ekraanist GIF-, MP4- või WebM-klipiks.
+- Tabelist arvutustabelisse: eksportige reaalajas tabelid Excelisse või CSV-sse koos värskenevate tabelite varasemate seisudega.
+- Võrguühenduseta koopia: hoidke saiti ühe HTML-dokumendina, mis avaneb ilma internetita.
+- Värvivalija: valige ekraanilt mis tahes värv ja kopeerige see HEX-, RGB- või HSL-kujul.
 
----
+## Kuidas alustada
+1. Avage sait, millega soovite töötada.
+2. Vajutage F12 (Macis Option + Command + I) ja valige vahekaart Source Download. Kui seda ei näe, klõpsake vahekaardiriba lõpus »-märgil.
+3. Hoidke paneel laadimise ajal avatuna, et midagi kaduma ei läheks.
 
-### 4. Reaalajas DOM-tabelid Excelisse (XLSX) ja CSV-sse
-> **★ ANDMETE ERALDAMINE JA ELEMENTIDE EEMALDAJA**
-
-<sub>Eraldage dünaamilised tabelid koos nende hetktõmmiste ajalooga mitme lehega XLSX- või CSV-failidesse.</sub>
-
-<p align="center">
-  <img src="../../screenshots/en/04-dom-tables-excel-export.png" width="100%" alt="Reaalajas DOM-tabelid Excelisse (XLSX) ja CSV-sse">
-</p>
-
----
-
-### 5. Ekraanil töötav värvitilguti ja koodivormindaja
-> **★ ARENDAJA JA DISAINERI TÖÖLAUD**
-
-<p align="center">
-  <img src="../../screenshots/en/05-color-picker-palette.png" width="100%" alt="Ekraanil töötav värvitilguti ja koodivormindaja">
-</p>
-
----
-
-Source Download on Chrome DevTools paneel, mis leiab üles, kontrollib ja laadib alla kõik ressursid, mida veebileht laadib. Olenemata sellest, kas vajate meediafaile, arendusskripte, stiilifaile või võrguvastuseid, saate need salvestada üksikute failidena või korrastatud kaustastruktuuriga ZIP-failina.
-
-Loodud nullist ilma kolmandate osapoolte sõltuvusteta: ZIP-i kirjutaja, XLSX-i koostaja, HLS-i ühendaja ja koodivormindajad on kõik käsitsi kirjutatud vanilla JavaScript. Ei mingeid raamistikke, ehitusetappe ega telemeetriat. Kõik töötab lokaalselt teie brauseris.
-
-## Mis on uut v1.16.0-s
-- Täielik mitmekeelne tugi 54 keeles, sh DevToolsi ja poe täielik lokaliseerimine.
-- 17 spetsiaalset reaalajas loendatavat ressursikategooriat, mis katavad kogu meedia, koodi, API-d, salvestusruumi ja dokumendid.
-- Kokku õmmeldud kogu lehe ekraanipildid ja kohandatud piirkonna jäädvustus, nutika kleepuvate päiste summutamisega.
-- Ekraani videosalvestus (MP4) ja kerge animeeritud GIF-i ekspordimootor ilma servade hajumiseta.
-- Reaalajas DOM-tabelite eraldaja mitme lehega Microsoft Excelisse (.XLSX) ja CSV-sse koos DOM Zapperi elemendieemaldajaga.
-- Ekraanil töötav värvitilguti koos hex/rgb/hsl-väärtuste kohese kopeerimisega ja integreeritud koodikaunistajaga.
-- Parem DevToolsi nuusutaja stabiilsus ja suure paralleelsusega võrgutoru.
-
-## Miks seda vaja on
-Ekraanipildist ei piisa. Hankige päris failid – täisresolutsiooniga pildid, tegelikud videovood, originaalsed stiililehed ja skriptid –, mitte lamestatud pilt.
-
-DevTools tundub ülekaalukas. Source Download toob samade võrguandmete ette puhta kategoriseeritud galerii koos otsingu, filtrite ja ühe klõpsuga allalaadimistega.
-
-SPA-d peidavad kõik. Dünaamilised rakendused loovad ressursse ja API-kutseid, mida te lehe lähtekoodis kunagi ei näe. Source Download jäädvustab need nende toimumise ajal, sh vaheolekud.
-
-## Mida see teeb
-### Leidke kõik üles
-- Ühendab võrgujäädvustuse (HAR + reaalajas päringud) DOM-i skannimisega kõigi visuaalsete ja struktuursete elementide jaoks, sh meediafailid, skriptid, stiililehed ja manustatud raamid.
-- **CSS-i arvestav:** ressursse url(...) sees ja @import-reeglites jälgitakse rekursiivselt, nii et leitakse isegi imporditud stiililehtedesse peidetud fondid.
-- **Sisu nuusutamine:** tundmatutest failidest loetakse mõned baidid ja need viiakse nende tegeliku failitüübi kategooriasse.
-- **17 reaalajas loendatavat kategooriat:** jäädvustatud ressursid on korralikult jaotatud eraldi vahekaartidele – meedia, kood, andmed, API-kutsed, küpsised, salvestusruum ja dokumendid.
-
-### Filtreerige, otsige, uurige
-- Regulaaravaldistega otsing failinimedest, URL-idest, MIME-tüüpidest, alt-tekstist ja isegi failide sisust.
-- **Kategooriapõhised filtrid:** minimaalne/maksimaalne suurus ning meedia puhul ka minimaalne/maksimaalne laius ja kõrgus – näiteks „ainult peapildid ≥ 1200px“. API-kutseid saab filtreerida HTTP-meetodi ja päringu tüübi järgi.
-- Loendi- või võrgustikuvaade, sorteeritav, koos reaalajas pisipiltide seinaga.
-- **Mitme vahekaardiga inspektor päris eelvaadetega:** suumitav lightbox, video ja heli esitus, reaalajas fondinäidis, SVG-vaatur, süntaksi esiletõstuga kood koos reanumbritega ning Kaunista-lüliti.
-- **API jagatud vaade:** vastus vasakul, meetod, olek, päringuparameetrid ja päringu sisu paremal.
-
-### Laadige alla õigesti
-- Laadi valitud alla – ainult need failid, mille olete märkinud.
-- Laadi vaade alla – kõik, mis on nähtav praeguste filtrite ja otsingu järel.
-- Laadi kõik alla – kõik jäädvustatud ressursid kaustastruktuuriga ZIP-failis, automaatse duplikaatide eemaldamisega.
-- Hulgiallalaadimised töötavad piiratud paralleelsusega ja reaalajas edenemisribaga; ebaõnnestumisi korratakse automaatselt ning neid saab korrata ka kontekstimenüüst.
-
-### HLS ja keerulised videod
-- Voogude puhul, mida brauser natiivselt esitada ei saa (HLS .m3u8, DASH .mpd, tundmatud koodekid), kuvatakse musta pleieri asemel nutikas varulahendus.
-- Ühenda segmendid ja laadi alla muudab HLS-voo üheks esitatavaks failiks otse paneelis.
-
-### Tekstitöölaud (SPA sisutööriistakomplekt)
-- **Vahekaart Tekst on reaalajas sisuvaatur:** iga tekstiga element – pealkirjad, lõigud, loendikirjed, nupud, div-id, span-id – jäädvustatakse DOM-i järjekorras.
-- Dünaamilised tabelid säilitavad piiratud hetktõmmiste ajaloo (nt „8 hetktõmmist · 124 unikaalset rida“), nii et automaatselt värskenduvad juhtpaneelid ei kaota kunagi vaheolekuid.
-- Eksportige Markdownina või tabelid CSV-, HTML- või päris mitme lehega XLSX-töövihikuna, mille koostab meie enda käsitsi kirjutatud XLSX-i kirjutaja.
-
-## Kuidas kasutada
-1. Installige Source Download ja vajutage mis tahes lehel F12.
-2. Klõpsake DevToolsi tööriistaribal vahekaarti Source Download (Chrome ei luba laienditel DevToolsi automaatselt avada – seepärast asub see seal).
-3. Sirvige kategooriate vahekaarte, otsige, filtreerige ja uurige paremal paneelil mida tahes.
-4. Märkige soovitud failid ja vajutage Laadi valitud alla, Laadi vaade alla või Laadi kõik alla.
-5. Hoidke DevToolsi paneel lehe laadimise ajal avatud, et jäädvustada kõik võrgupäringud.
-
-## Tegelikud kasutusjuhud
-- **Konkurentsianalüüs:** koguge ühte kausta mis tahes kanali videote pisipildid – minimaalse laiuse filtriga.
-- **Veebiandmete kaevandamine ilma koodita:** jälgige SPA API-kutseid, filtreerige vajaliku lõpp-punktini ja laadige alla täpsed JSON-vastused.
-- **Tüpograafia analüüs:** uurige välja, millist fonti sait tegelikult kasutab, ja hankige päris fondifailid.
-- **Vigade reprodutseerimine:** säilitage täpsed CSS-i/JS-i versioonid, mis olid kasutusel vea tekkimise ajal.
-- **Juhtpaneeli andmete eksport:** eksportige automaatselt värskenduv tabel mitme lehega Microsoft Exceli töövihikusse, ajalugu kaasa arvatud.
-- **QA-testimine:** kontrollige, milline video/heli variant igas A/B-konfiguratsioonis edastatakse.
+Ekraanipildid, ala video ja värvivalija on saadaval ka paremklõpsu menüüs ja laienduse nupus.
 
 ## Privaatsus
-- Töötab 100% lokaalselt. Ei mingit serverit, ei analüütikat, ükski andmebait ei lahku teie seadmest.
-- **Küsib ainult seda, mida vajab:** salvestusruum (teie eelistused), lõikelaud (URL-ide ja värvide kopeerimine), allalaadimised (failide salvestamine Chrome'i kaudu), kontekstimenüüd, skriptimine ja hostipääs (lehtede skannimiseks ja failisisu toomiseks).
-- Failid salvestatakse Chrome'i tavalise allalaadimisvoo kaudu – ilma vaikse allalaadimiseta.
 
-## Nõuded
-- Chrome 116 või uuem (Manifest V3).
-- Parimad tulemused saab siis, kui paneel on lehe laadimise ajal avatud, sest just siis toimub võrgujäädvustus.
+Kõik töötab teie arvutis. Kontot ega analüütikat pole ning arendajale ei saadeta midagi sellest, mida säilitate. Salvestatu jõuab Chrome'i kaudu teie tavapärasesse allalaadimiste kausta.
 
-Source Download on avatud lähtekoodiga projekt – tagasiside, ideed ja pull request'id on teretulnud.
+Laiendus vajab juurdepääsu külastatavatele saitidele, et leida nende ressursid ja täita oma ülesandeid.
 
-Ühendust võib võtta LinkedInis: https://www.linkedin.com/in/turan-burak-yesilyurt/
+Palun austage autoriõigust ja kasutustingimusi ning säilitage ainult sisu, mida teil on õigus kasutada.
+
+## Mis on uut versioonis 1.17
+- Palju kergem: midagi ei tööta enne, kui kasutate mõnda funktsiooni.
+- Võrguühenduseta koopiad sisaldavad nüüd kõiki fotosid, taustu ja fonte.
+- GIF-salvestus püsib mälu piires ka pikkade HD-klippide puhul.
+- Uus tervituskuva ja otseteed laienduse nupus.
+
+Küsimused või probleemid: <https://github.com/turanburakyesilyurt/source-download/issues>
+
+→ [PRIVACY.md](../../PRIVACY.md)
 
 ---
 
